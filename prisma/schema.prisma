@@ -1,0 +1,787 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum AccountType {
+  BIREYSEL
+  EMLAKCI
+  GALERICI
+  BIREYSEL_TICARI
+  TICARI
+}
+
+enum UserRole {
+  USER
+  ADMIN
+}
+
+enum ListingStatus {
+  DRAFT
+  PENDING_REVIEW
+  REJECTED
+  ACTIVE
+  SELECTION
+  APPROVED
+  EXPIRED
+  ARCHIVED
+}
+
+enum ExtensionRequestStatus {
+  PENDING
+  APPROVED
+  REJECTED
+}
+
+enum EditRequestStatus {
+  PENDING
+  APPROVED
+  REJECTED
+}
+
+enum SellerAdminRequestStatus {
+  PENDING
+  GRANTED
+  PENDING_APPROVAL
+  APPROVED
+  REJECTED
+  RESOLVED
+}
+
+enum DealType {
+  SATILIK
+  KIRALIK
+  DEVREN_SATILIK
+  DEVREN_KIRALIK
+}
+
+enum BidStatus {
+  ACTIVE
+  EXPIRED
+  APPROVED
+  REJECTED
+  WITHDRAWN
+}
+
+enum NotificationChannel {
+  IN_APP
+  EMAIL
+  SMS
+  PUSH
+}
+
+enum PaymentStatus {
+  PENDING
+  SIMULATED
+  PAID
+  FAILED
+  CANCELLED
+}
+
+enum ContentKind {
+  PAGE
+  HELP
+  BANNER
+  FAQ
+  /**
+   * Anasayfa orta “Teklif ver kazan” kayan reklam
+   */
+  PROMO
+}
+
+enum EscrowStatus {
+  AWAITING_PAYMENT
+  FUNDED
+  AWAITING_SHIPMENT
+  SHIPPED
+  BUYER_REVIEW
+  RELEASED
+  REFUNDED
+  DISPUTED
+  CANCELLED
+  EXPIRED
+}
+
+/// SaaS tenant (platform müşterisi / iş yeri sahibi alanı)
+model Tenant {
+  id        String   @id @default(cuid())
+  name      String
+  slug      String   @unique
+  ownerId   String
+  plan      String   @default("standard")
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  owner     User          @relation("TenantOwner", fields: [ownerId], references: [id])
+  members   User[]        @relation("TenantMembers")
+  shops     Shop[]
+  listings  Listing[]
+  contents  ContentPage[]
+  auditLogs AuditLog[]
+  payments  Payment[]
+
+  @@index([ownerId])
+}
+
+/// Kurumsal mağaza / ofis (tenant altında, sahibi bir User)
+model Shop {
+  id          String      @id @default(cuid())
+  tenantId    String
+  ownerId     String
+  accountType AccountType
+  name        String
+  slug        String?
+  city        String?
+  phone       String?
+  isActive    Boolean     @default(true)
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+
+  tenant       Tenant            @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  owner        User              @relation(fields: [ownerId], references: [id], onDelete: Cascade)
+  subscription ShopSubscription?
+  listings     Listing[]
+
+  @@unique([tenantId, ownerId])
+  @@index([tenantId])
+  @@index([ownerId])
+}
+
+model User {
+  id                     String      @id @default(cuid())
+  tenantId               String?
+  phone                  String      @unique
+  phoneVerified          Boolean     @default(false)
+  name                   String?
+  email                  String?     @unique
+  passwordHash           String?
+  accountType            AccountType @default(BIREYSEL_TICARI)
+  /**
+   * Ticari üyelik alt seçenekleri: EMLAK_OFISI, GALERI, MAGAZA, OTEL, LOJISTIK
+   */
+  commercialSubtypes     String[]    @default([])
+  /**
+   * PENDING | APPROVED | REJECTED — yalnızca TICARI
+   */
+  commercialStatus       String?
+  commercialReviewedAt   DateTime?
+  commercialReviewNote   String?
+  role                   UserRole    @default(USER)
+  tokenBalance           Int         @default(0)
+  avatarUrl              String?
+  /**
+   * Ticari işletme logosu
+   */
+  logoUrl                String?
+  /**
+   * Mağaza kapak / vitrin görseli (logo karşısı)
+   */
+  storeCoverUrl          String?
+  /**
+   * Admin: premium ticari üye rozeti
+   */
+  isPremiumSeller        Boolean     @default(false)
+  premiumSellerUntil     DateTime?
+  isActive               Boolean     @default(true)
+  memberSince            DateTime    @default(now())
+  /**
+   * EİDS kullaniciKodu (e-Devlet doğrulama sonrası)
+   */
+  eidsKullaniciKodu      String?
+  eidsIdentityVerifiedAt DateTime?
+  /**
+   * Kullanıcı bildirim tercihleri (eventKey -> boolean)
+   */
+  notificationPrefs      Json?
+  /**
+   * Hesap ayarları ekstra alanlar (ad, soyad, TC, adres vb.)
+   */
+  profile                Json?
+  /**
+   * Güvenli Öde (escrow) satış geliri IBAN'ı
+   */
+  iban                   String?
+  createdAt              DateTime    @default(now())
+  updatedAt              DateTime    @updatedAt
+
+  tenant                Tenant?                    @relation("TenantMembers", fields: [tenantId], references: [id])
+  ownedTenants          Tenant[]                   @relation("TenantOwner")
+  ownedShops            Shop[]
+  listings              Listing[]
+  bids                  Bid[]
+  favorites             Favorite[]
+  favoriteSellers       FavoriteSeller[]           @relation("UserFavoriteSellers")
+  favoritedByUsers      FavoriteSeller[]           @relation("SellerFavoritedBy")
+  notifications         Notification[]
+  sentMessages          Message[]                  @relation("SentMessages")
+  receivedMessages      Message[]                  @relation("ReceivedMessages")
+  tokenLedger           TokenLedger[]
+  tokenRefunds          TokenRefund[]
+  payments              Payment[]
+  otpCodes              OtpCode[]
+  shopSubscription      ShopSubscription?
+  auditLogs             AuditLog[]
+  contentUpdates        ContentPage[]              @relation("ContentAuthor")
+  sellerAdminRequests   SellerAdminRequest[]
+  bulkListingUpdates    BulkListingUpdateRequest[]
+  sellerReviewsReceived SellerReview[]             @relation("SellerReviewsReceived")
+  sellerReviewsWritten  SellerReview[]             @relation("SellerReviewsWritten")
+  escrowBuys            EscrowDeal[]               @relation("EscrowBuyer")
+  escrowSells           EscrowDeal[]               @relation("EscrowSeller")
+
+  @@index([tenantId])
+}
+
+model OtpCode {
+  id        String   @id @default(cuid())
+  userId    String?
+  phone     String
+  code      String
+  expiresAt DateTime
+  consumed  Boolean  @default(false)
+  createdAt DateTime @default(now())
+  user      User?    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([phone])
+}
+
+model Category {
+  id              String     @id @default(cuid())
+  slug            String     @unique
+  name            String
+  icon            String?
+  sortOrder       Int        @default(0)
+  isActive        Boolean    @default(true)
+  /**
+   * Kapasite / premium dikey (otel, lojistik, yolculuk)
+   */
+  isPremium       Boolean    @default(false)
+  /**
+   * hotel | logistics | rideshare
+   */
+  premiumVertical String?
+  parentId        String?
+  parent          Category?  @relation("CategoryTree", fields: [parentId], references: [id], onDelete: SetNull)
+  children        Category[] @relation("CategoryTree")
+  listings        Listing[]
+
+  @@index([parentId])
+  @@index([isActive, sortOrder])
+  @@index([isPremium, premiumVertical])
+}
+
+model Listing {
+  id                   String        @id @default(cuid())
+  listingNo            String        @unique
+  tenantId             String?
+  shopId               String?
+  sellerId             String
+  categoryId           String
+  title                String
+  description          String        @db.Text
+  city                 String
+  district             String?
+  neighborhood         String?
+  dealType             DealType      @default(SATILIK)
+  askPrice             BigInt
+  highestBid           BigInt        @default(0)
+  bidCount             Int           @default(0)
+  status               ListingStatus @default(DRAFT)
+  isFeatured           Boolean       @default(false)
+  /**
+   * Öne çıkarma süresi (3 veya 7); onayda featuredUntil set edilir
+   */
+  featuredDays         Int           @default(0)
+  featuredUntil        DateTime?
+  titleBold            Boolean       @default(false)
+  titleLarge           Boolean       @default(false)
+  isColored            Boolean       @default(false)
+  durationDays         Int           @default(7)
+  startsAt             DateTime?
+  endsAt               DateTime?
+  selectionEndsAt      DateTime?
+  republishAvailableAt DateTime?
+  approvedBidId        String?       @unique
+  contactPhone         String?
+  attributes           Json?
+  coverImage           String?
+  images               String[]
+  viewCount            Int           @default(0)
+  rejectionReason      String?       @db.Text
+  reviewedAt           DateTime?
+  reviewedById         String?
+  /**
+   * EİDS yetki doğrulaması (ilan yayınında)
+   */
+  eidsVerified         Boolean       @default(false)
+  eidsVerifiedAt       DateTime?
+  eidsPropertyId       String?
+  eidsVehiclePlate     String?
+  latitude             Float?
+  longitude            Float?
+  /**
+   * Son onaylanan teklif-sonrası düzenleme farkı (teklif verenlere kırmızı gösterim)
+   */
+  lastChangeDiff       Json?
+  lastChangeAt         DateTime?
+  lastChangeRequestId  String?
+  bidderReviseUntil    DateTime?
+  /**
+   * Güvenli Öde (escrow) ile satılabilir mi
+   */
+  escrowEligible       Boolean       @default(false)
+  createdAt            DateTime      @default(now())
+  updatedAt            DateTime      @updatedAt
+
+  tenant              Tenant?                   @relation(fields: [tenantId], references: [id])
+  shop                Shop?                     @relation(fields: [shopId], references: [id])
+  seller              User                      @relation(fields: [sellerId], references: [id])
+  category            Category                  @relation(fields: [categoryId], references: [id])
+  bids                Bid[]                     @relation("ListingBids")
+  favorites           Favorite[]
+  messages            Message[]
+  sellerReviews       SellerReview[]
+  approvedBid         Bid?                      @relation("ApprovedBid", fields: [approvedBidId], references: [id])
+  extensionRequests   ListingExtensionRequest[]
+  editRequests        ListingEditRequest[]
+  sellerAdminRequests SellerAdminRequest[]
+  tokenRefunds        TokenRefund[]
+  escrowDeals         EscrowDeal[]
+
+  @@index([status, endsAt])
+  @@index([categoryId])
+  @@index([sellerId])
+  @@index([tenantId])
+  @@index([shopId])
+  @@index([city, district])
+  @@index([dealType])
+  @@index([listingNo])
+}
+
+model ListingExtensionRequest {
+  id              String                 @id @default(cuid())
+  listingId       String
+  sellerId        String
+  days            Int
+  status          ExtensionRequestStatus @default(PENDING)
+  rejectionReason String?                @db.Text
+  reviewedAt      DateTime?
+  reviewedById    String?
+  createdAt       DateTime               @default(now())
+  updatedAt       DateTime               @updatedAt
+
+  listing Listing @relation(fields: [listingId], references: [id], onDelete: Cascade)
+
+  @@index([status, createdAt])
+  @@index([listingId])
+  @@index([sellerId])
+}
+
+model ListingEditRequest {
+  id              String            @id @default(cuid())
+  listingId       String
+  sellerId        String
+  payload         Json
+  status          EditRequestStatus @default(PENDING)
+  rejectionReason String?           @db.Text
+  reviewedAt      DateTime?
+  reviewedById    String?
+  createdAt       DateTime          @default(now())
+  updatedAt       DateTime          @updatedAt
+
+  listing Listing @relation(fields: [listingId], references: [id], onDelete: Cascade)
+
+  @@index([status, createdAt])
+  @@index([listingId])
+  @@index([sellerId])
+}
+
+/**
+ * Ticari üye toplu ilan güncelleme (ad / fiyat / süre) — yönetici onayı
+ */
+model BulkListingUpdateRequest {
+  id              String            @id @default(cuid())
+  sellerId        String
+  /**
+   * [{ listingId, before: {title, askPrice, durationDays}, after: {...} }]
+   */
+  items           Json
+  status          EditRequestStatus @default(PENDING)
+  rejectionReason String?           @db.Text
+  reviewedAt      DateTime?
+  reviewedById    String?
+  createdAt       DateTime          @default(now())
+  updatedAt       DateTime          @updatedAt
+
+  seller User @relation(fields: [sellerId], references: [id], onDelete: Cascade)
+
+  @@index([status, createdAt])
+  @@index([sellerId])
+}
+
+model SellerAdminRequest {
+  id              String                   @id @default(cuid())
+  listingId       String
+  sellerId        String
+  kind            String                   @default("EDIT_HELP")
+  message         String                   @db.Text
+  status          SellerAdminRequestStatus @default(PENDING)
+  /**
+   * Admin'in açtığı düzenlenebilir alanlar: title, askPrice, ...
+   */
+  allowedFields   Json?
+  adminNote       String?                  @db.Text
+  grantedAt       DateTime?
+  /**
+   * Satıcının gönderdiği kısmi düzenleme
+   */
+  editPayload     Json?
+  beforeSnapshot  Json?
+  /**
+   * Onay sonrası { field: { from, to } }
+   */
+  changedFields   Json?
+  resolvedAt      DateTime?
+  resolvedById    String?
+  approvedAt      DateTime?
+  rejectionReason String?                  @db.Text
+  createdAt       DateTime                 @default(now())
+  updatedAt       DateTime                 @updatedAt
+
+  listing Listing @relation(fields: [listingId], references: [id], onDelete: Cascade)
+  seller  User    @relation(fields: [sellerId], references: [id], onDelete: Cascade)
+
+  @@index([status, createdAt])
+  @@index([listingId])
+  @@index([sellerId])
+}
+
+model TokenRefund {
+  id          String   @id @default(cuid())
+  userId      String
+  bidId       String?
+  listingId   String?
+  requestId   String?
+  amount      Int
+  reason      String
+  description String   @db.Text
+  createdAt   DateTime @default(now())
+
+  user    User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  listing Listing? @relation(fields: [listingId], references: [id], onDelete: SetNull)
+
+  @@index([createdAt])
+  @@index([listingId])
+  @@index([userId])
+  @@index([reason])
+}
+
+/**
+ * Güvenli Öde (escrow) — havuz üzerinden korumalı alım/satım anlaşması
+ */
+model EscrowDeal {
+  id                     String       @id @default(cuid())
+  listingId              String
+  buyerId                String
+  sellerId               String
+  /**
+   * Kurusuz TL (Int)
+   */
+  amountTl               Int
+  commissionTl           Int          @default(0)
+  sellerPayoutTl         Int
+  shipDays               Int
+  status                 EscrowStatus @default(AWAITING_PAYMENT)
+  /**
+   * Ödeme (Payment.id) bağlantısı
+   */
+  paymentId              String?
+  cargoTrackingNo        String?
+  cargoCarrier           String?
+  cargoReceiptUrl        String?
+  cargoNote              String?      @db.Text
+  shippedAt              DateTime?
+  shipDeadlineAt         DateTime?
+  buyerConfirmDeadlineAt DateTime?
+  buyerConfirmedAt       DateTime?
+  releasedAt             DateTime?
+  refundedAt             DateTime?
+  disputeReason          String?      @db.Text
+  adminNote              String?      @db.Text
+  sellerIbanSnapshot     String?
+  meta                   Json?
+  createdAt              DateTime     @default(now())
+  updatedAt              DateTime     @updatedAt
+
+  listing Listing @relation(fields: [listingId], references: [id], onDelete: Cascade)
+  buyer   User    @relation("EscrowBuyer", fields: [buyerId], references: [id])
+  seller  User    @relation("EscrowSeller", fields: [sellerId], references: [id])
+
+  @@index([status])
+  @@index([listingId])
+  @@index([buyerId])
+  @@index([sellerId])
+}
+
+model Bid {
+  id                   String    @id @default(cuid())
+  listingId            String
+  bidderId             String
+  amount               BigInt
+  durationDays         Int
+  expiresAt            DateTime
+  status               BidStatus @default(ACTIVE)
+  tokensSpent          Int       @default(1)
+  /**
+   * Satıcı ilanı kaldırdı/sildiğinde teklif geçmişinde gösterilir
+   */
+  listingGone          Boolean   @default(false)
+  listingTitleSnapshot String?
+  createdAt            DateTime  @default(now())
+  updatedAt            DateTime  @updatedAt
+
+  listing         Listing  @relation("ListingBids", fields: [listingId], references: [id], onDelete: Cascade)
+  bidder          User     @relation(fields: [bidderId], references: [id])
+  approvedListing Listing? @relation("ApprovedBid")
+
+  @@index([listingId, status])
+  @@index([bidderId])
+}
+
+model Favorite {
+  id        String   @id @default(cuid())
+  userId    String
+  listingId String
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  listing   Listing  @relation(fields: [listingId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, listingId])
+}
+
+/**
+ * Favori mağaza / satıcı (ticari üye)
+ */
+model FavoriteSeller {
+  id        String   @id @default(cuid())
+  userId    String
+  sellerId  String
+  createdAt DateTime @default(now())
+  user      User     @relation("UserFavoriteSellers", fields: [userId], references: [id], onDelete: Cascade)
+  seller    User     @relation("SellerFavoritedBy", fields: [sellerId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, sellerId])
+  @@index([userId])
+  @@index([sellerId])
+}
+
+/**
+ * Ticari satıcıya kullanıcı yorumu — admin onayı veya otomatik
+ */
+model SellerReview {
+  id           String            @id @default(cuid())
+  sellerId     String
+  authorId     String
+  listingId    String?
+  body         String            @db.Text
+  rating       Int?
+  status       EditRequestStatus @default(PENDING)
+  rejectReason String?
+  reviewedAt   DateTime?
+  reviewedById String?
+  createdAt    DateTime          @default(now())
+  updatedAt    DateTime          @updatedAt
+
+  seller  User     @relation("SellerReviewsReceived", fields: [sellerId], references: [id], onDelete: Cascade)
+  author  User     @relation("SellerReviewsWritten", fields: [authorId], references: [id], onDelete: Cascade)
+  listing Listing? @relation(fields: [listingId], references: [id], onDelete: SetNull)
+
+  @@index([sellerId, status])
+  @@index([status, createdAt])
+  @@index([authorId])
+}
+
+model Message {
+  id         String   @id @default(cuid())
+  listingId  String?
+  senderId   String
+  receiverId String
+  body       String   @db.Text
+  isRead     Boolean  @default(false)
+  createdAt  DateTime @default(now())
+
+  listing  Listing? @relation(fields: [listingId], references: [id])
+  sender   User     @relation("SentMessages", fields: [senderId], references: [id])
+  receiver User     @relation("ReceivedMessages", fields: [receiverId], references: [id])
+
+  @@index([receiverId, isRead])
+}
+
+model Notification {
+  id        String              @id @default(cuid())
+  userId    String
+  title     String
+  body      String
+  channel   NotificationChannel @default(IN_APP)
+  eventKey  String?
+  link      String?
+  isRead    Boolean             @default(false)
+  createdAt DateTime            @default(now())
+  user      User                @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, isRead])
+}
+
+model TokenPackage {
+  id              String   @id @default(cuid())
+  name            String
+  /**
+   * Paket kartında / jeton sayfasında görünen kısa açıklama
+   */
+  description     String?
+  tokenAmount     Int
+  priceTl         Int
+  /**
+   * true = priceTl KDV dahil; false = KDV hariç (ödeme tutarı KDV eklenerek hesaplanır)
+   */
+  pricesIncludeVat Boolean @default(true)
+  vatPercent      Float    @default(20)
+  /**
+   * Kartta "%X avantaj" rozeti; 0 = gizle
+   */
+  discountPercent Int      @default(0)
+  isActive        Boolean  @default(true)
+  sortOrder       Int      @default(0)
+  createdAt       DateTime @default(now())
+}
+
+model TokenLedger {
+  id           String   @id @default(cuid())
+  userId       String
+  delta        Int
+  balanceAfter Int
+  reason       String
+  meta         Json?
+  createdAt    DateTime @default(now())
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Payment {
+  id        String        @id @default(cuid())
+  tenantId  String?
+  userId    String
+  amountTl  Float
+  purpose   String
+  status    PaymentStatus @default(SIMULATED)
+  meta      Json?
+  createdAt DateTime      @default(now())
+  user      User          @relation(fields: [userId], references: [id])
+  tenant    Tenant?       @relation(fields: [tenantId], references: [id])
+
+  @@index([tenantId])
+  @@index([userId])
+}
+
+model ShopPackage {
+  id                     String             @id @default(cuid())
+  accountType            AccountType
+  name                   String
+  /**
+   * MONTHLY = aylık abonelik ücreti; DAILY = gün başı ücret (kullanıcı gün seçer)
+   */
+  billingType            String             @default("MONTHLY")
+  /**
+   * Aylık pakette aylık TL; günlük pakette 1 gün ücreti TL
+   */
+  monthlyPrice           Int
+  /**
+   * true = monthlyPrice KDV dahil
+   */
+  pricesIncludeVat       Boolean            @default(true)
+  vatPercent             Float              @default(20)
+  /**
+   * Jeton ile alınabilirse: dönem / gün başı jeton (null veya 0 = jeton kapalı)
+   */
+  tokenPrice             Int?
+  listingLimit           Int
+  /**
+   * Günlük paket: seçilebilir min gün
+   */
+  minDays                Int                @default(1)
+  /**
+   * Günlük paket: seçilebilir max gün
+   */
+  maxDays                Int                @default(30)
+  description            String?
+  /**
+   * Aktif abonelikte premium ilan özelliklerine uygulanan indirim (%)
+   */
+  premiumDiscountPercent Int                @default(0)
+  isActive               Boolean            @default(true)
+  createdAt              DateTime           @default(now())
+  subscriptions          ShopSubscription[]
+}
+
+model ShopSubscription {
+  id        String      @id @default(cuid())
+  userId    String      @unique
+  shopId    String?     @unique
+  packageId String
+  startsAt  DateTime    @default(now())
+  endsAt    DateTime
+  isActive  Boolean     @default(true)
+  user      User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  shop      Shop?       @relation(fields: [shopId], references: [id], onDelete: SetNull)
+  package   ShopPackage @relation(fields: [packageId], references: [id])
+}
+
+model ContentPage {
+  id          String      @id @default(cuid())
+  tenantId    String
+  slug        String
+  title       String
+  body        String      @db.Text
+  kind        ContentKind @default(PAGE)
+  isPublished Boolean     @default(false)
+  sortOrder   Int         @default(0)
+  authorId    String?
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+
+  tenant Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  author User?  @relation("ContentAuthor", fields: [authorId], references: [id])
+
+  @@unique([tenantId, slug])
+  @@index([tenantId, kind, isPublished])
+}
+
+model AuditLog {
+  id        String   @id @default(cuid())
+  tenantId  String?
+  actorId   String?
+  action    String
+  entity    String
+  entityId  String?
+  meta      Json?
+  createdAt DateTime @default(now())
+
+  tenant Tenant? @relation(fields: [tenantId], references: [id], onDelete: SetNull)
+  actor  User?   @relation(fields: [actorId], references: [id], onDelete: SetNull)
+
+  @@index([tenantId, createdAt])
+  @@index([actorId])
+  @@index([entity, entityId])
+}
+
+model SystemSetting {
+  key       String   @id
+  value     Json
+  label     String?
+  group     String?
+  updatedAt DateTime @updatedAt
+}

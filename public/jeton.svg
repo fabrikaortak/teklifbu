@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <circle cx="32" cy="32" r="30" fill="#FFB020"/>
+  <circle cx="32" cy="32" r="24" fill="#FF8A00"/>
+  <circle cx="32" cy="32" r="20" fill="#FFB84D"/>
+  <circle cx="32" cy="32" r="16" stroke="#FFF3D6" stroke-width="2" fill="#FF9F1A"/>
+  <text x="32" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="800" fill="#fff">T</text>
+</svg>

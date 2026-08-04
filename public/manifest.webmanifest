@@ -1,0 +1,17 @@
+{
+  "name": "TeklifBu",
+  "short_name": "TeklifBu",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B1F3A",
+  "theme_color": "#FF6A00",
+  "description": "Şeffaf teklif pazarı",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

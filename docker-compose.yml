@@ -1,0 +1,36 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: teklifbu-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: teklifbu
+      POSTGRES_PASSWORD: teklifbu_secret
+      POSTGRES_DB: teklifbu
+    ports:
+      - "5433:5432"
+    volumes:
+      - teklifbu_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U teklifbu -d teklifbu"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  web:
+    build: .
+    container_name: teklifbu-web
+    restart: unless-stopped
+    ports:
+      - "3010:3010"
+    environment:
+      DATABASE_URL: postgresql://teklifbu:teklifbu_secret@db:5432/teklifbu?schema=public
+      AUTH_SECRET: ${AUTH_SECRET:-teklifbu-prod-change-me}
+      NODE_ENV: production
+      OTP_PROVIDER: ${OTP_PROVIDER:-dev}
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  teklifbu_pgdata:
