@@ -262,7 +262,97 @@ async function main() {
     record("E reconcile twice stock once", mid === before && after === before, `stock ${before}→${mid}→${after}`);
   }
 
-  // --- F: payment vs timeout race ---
+  // --- F-A: payment wins lock first, then timeout must no-op ---
+  {
+    const offer = await makeOffer(shop, variant.id, product.id, 3);
+    const stockBefore = (await prisma.sellerOffer.findUnique({ where: { id: offer.id } }))!.stockQty;
+    const co = await checkoutCatalogOffer({
+      buyer: { id: buyer.id },
+      sellerOfferId: offer.id,
+      quantity: 1,
+      shipDays: 7,
+      idempotencyKey: `fa-${Date.now()}`,
+    });
+    await prisma.order.update({
+      where: { id: co.order.id },
+      data: { expiresAt: new Date(Date.now() - 1000) },
+    });
+
+    const payRes = await completeEscrowPayment(sessionOf(buyer), co.payment.id);
+    const cancelRes = await cancelExpiredCatalogOrder(co.order.id);
+    const reconcile = await reconcileExpiredCatalogOrders({ limit: 20, force: true });
+
+    const order = await prisma.order.findUnique({ where: { id: co.order.id } });
+    const pay = await prisma.payment.findUnique({ where: { id: co.payment.id } });
+    const deal = await prisma.escrowDeal.findUnique({ where: { id: co.deal.id } });
+    const item = await prisma.orderItem.findFirst({ where: { orderId: co.order.id } });
+    const stockAfter = (await prisma.sellerOffer.findUnique({ where: { id: offer.id } }))!.stockQty;
+    const reconcileTouched = reconcile.results.some((r) => r.orderId === co.order.id && r.ok && r.reason === "CANCELLED");
+
+    const okFa =
+      Boolean(payRes.ok) &&
+      order?.status === OrderStatus.PAID &&
+      Boolean(order.paidAt) &&
+      pay?.status === PaymentStatus.PAID &&
+      deal?.status === EscrowStatus.AWAITING_SHIPMENT &&
+      !cancelRes.ok &&
+      item?.stockReleasedAt == null &&
+      stockAfter === stockBefore - 1 &&
+      !reconcileTouched;
+
+    record(
+      "F-A payment first then timeout no-op",
+      okFa,
+      `order=${order?.status} pay=${pay?.status} deal=${deal?.status} cancel=${cancelRes.reason} stock=${stockBefore}→${stockAfter} releasedAt=${item?.stockReleasedAt ?? "null"}`
+    );
+  }
+
+  // --- F-B: timeout/reconcile wins lock first, then payment must not revive ---
+  {
+    const offer = await makeOffer(shop, variant.id, product.id, 3);
+    const stockBefore = (await prisma.sellerOffer.findUnique({ where: { id: offer.id } }))!.stockQty;
+    const co = await checkoutCatalogOffer({
+      buyer: { id: buyer.id },
+      sellerOfferId: offer.id,
+      quantity: 1,
+      shipDays: 7,
+      idempotencyKey: `fb-${Date.now()}`,
+    });
+    await prisma.order.update({
+      where: { id: co.order.id },
+      data: { expiresAt: new Date(Date.now() - 1000) },
+    });
+
+    const cancelRes = await cancelExpiredCatalogOrder(co.order.id);
+    const payRes = await completeEscrowPayment(sessionOf(buyer), co.payment.id);
+
+    const order = await prisma.order.findUnique({ where: { id: co.order.id } });
+    const pay = await prisma.payment.findUnique({ where: { id: co.payment.id } });
+    const item = await prisma.orderItem.findFirst({ where: { orderId: co.order.id } });
+    const stockAfter = (await prisma.sellerOffer.findUnique({ where: { id: offer.id } }))!.stockQty;
+
+    // Second cancel must not double-restore stock
+    await cancelExpiredCatalogOrder(co.order.id);
+    const stockAfter2 = (await prisma.sellerOffer.findUnique({ where: { id: offer.id } }))!.stockQty;
+
+    const okFb =
+      cancelRes.ok &&
+      order?.status === OrderStatus.CANCELLED &&
+      pay?.status === PaymentStatus.CANCELLED &&
+      Boolean(item?.stockReleasedAt) &&
+      stockAfter === stockBefore &&
+      stockAfter2 === stockBefore &&
+      order.status !== OrderStatus.PAID &&
+      (!payRes.ok || order.status === OrderStatus.CANCELLED);
+
+    record(
+      "F-B timeout first then payment rejected",
+      okFb,
+      `order=${order?.status} pay=${pay?.status} payOk=${payRes.ok} cancel=${cancelRes.reason} stock=${stockBefore}→${stockAfter}→${stockAfter2}`
+    );
+  }
+
+  // --- F concurrent race (either winner OK; PAID never cancelled) ---
   {
     const offer = await makeOffer(shop, variant.id, product.id, 3);
     const co = await checkoutCatalogOffer({
@@ -281,18 +371,18 @@ async function main() {
       cancelExpiredCatalogOrder(co.order.id),
     ]);
     const order = await prisma.order.findUnique({ where: { id: co.order.id } });
-    const paidWins = order?.status === OrderStatus.PAID && Boolean(payRes.ok) && !cancelRes.ok;
+    const pay = await prisma.payment.findUnique({ where: { id: co.payment.id } });
+    const paidWins = order?.status === OrderStatus.PAID && pay?.status === PaymentStatus.PAID && !cancelRes.ok;
     const cancelWins =
-      order?.status === OrderStatus.CANCELLED && cancelRes.ok && (!payRes.ok || order.status === OrderStatus.CANCELLED);
-    // If pay won, order must not be CANCELLED
-    const okRace =
-      (paidWins && order?.status === OrderStatus.PAID) ||
-      (cancelWins && order?.status === OrderStatus.CANCELLED && (await prisma.payment.findUnique({ where: { id: co.payment.id } }))?.status !== PaymentStatus.PAID) ||
-      (order?.status === OrderStatus.PAID && !cancelRes.ok);
+      order?.status === OrderStatus.CANCELLED &&
+      pay?.status === PaymentStatus.CANCELLED &&
+      cancelRes.ok &&
+      (!payRes.ok || order.status === OrderStatus.CANCELLED);
+    const okRace = (paidWins || cancelWins) && !(order?.status === OrderStatus.PAID && cancelRes.ok && cancelRes.reason === "CANCELLED");
     record(
-      "F payment vs timeout race",
-      Boolean(okRace) && order?.status !== undefined && !(order.status === OrderStatus.PAID && cancelRes.ok && cancelRes.reason === "CANCELLED"),
-      `order=${order?.status} payOk=${payRes.ok} cancel=${cancelRes.reason}`
+      "F concurrent payment vs timeout race",
+      Boolean(okRace),
+      `order=${order?.status} pay=${pay?.status} payOk=${payRes.ok} cancel=${cancelRes.reason}`
     );
   }
 
