@@ -12,6 +12,10 @@
     "db:seed": "tsx prisma/seed.ts",
     "db:reset": "prisma migrate reset --force",
     "locations:build": "node scripts/build-turkey-locations.mjs",
+    "audit:catalog-checkout": "tsx scripts/audit-catalog-checkout-consistency.ts",
+    "staging:phase1": "tsx scripts/staging-phase1-catalog-without-mirror.ts",
+    "staging:analyze-warnings": "tsx scripts/analyze-staging-audit-warnings.ts",
+    "staging:phase2-allowlist": "tsx scripts/select-staging-phase2-allowlist.ts",
     "postinstall": "prisma generate"
   },
   "prisma": {

@@ -54,4 +54,5 @@ next-env.d.ts
 backups/
 .tmp-*.png
 public/uploads/
+scripts/output/
 
