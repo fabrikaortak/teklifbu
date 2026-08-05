@@ -158,24 +158,76 @@ export async function listSellerMagazaOrders(sellerId: string, status?: string) 
     take: 100,
     include: {
       listing: { select: { id: true, title: true, coverImage: true, listingNo: true } },
+      linkedOrder: {
+        select: {
+          id: true,
+          orderNo: true,
+          items: {
+            take: 1,
+            select: {
+              productNameSnapshot: true,
+              variantTitleSnapshot: true,
+              productImageSnapshot: true,
+              productId: true,
+            },
+          },
+        },
+      },
+      sellerOffer: {
+        select: {
+          id: true,
+          product: { select: { id: true, name: true, mainImage: true } },
+          variant: { select: { title: true } },
+        },
+      },
       buyer: { select: { id: true, name: true, phone: true } },
     },
   });
 
-  return rows.map((d) => ({
-    id: d.id,
-    status: d.status,
-    amountTl: d.amountTl,
-    sellerPayoutTl: d.sellerPayoutTl,
-    shipDays: d.shipDays,
-    cargoTrackingNo: d.cargoTrackingNo,
-    cargoCarrier: d.cargoCarrier,
-    cargoNote: d.cargoNote,
-    shippedAt: d.shippedAt?.toISOString() || null,
-    shipDeadlineAt: d.shipDeadlineAt?.toISOString() || null,
-    createdAt: d.createdAt.toISOString(),
-    updatedAt: d.updatedAt.toISOString(),
-    listing: d.listing,
-    buyer: { id: d.buyer.id, name: d.buyer.name },
-  }));
+  return rows.map((d) => {
+    const item = d.linkedOrder?.items?.[0];
+    const title =
+      d.listing?.title ||
+      (item?.productNameSnapshot
+        ? `${item.productNameSnapshot}${item.variantTitleSnapshot ? ` · ${item.variantTitleSnapshot}` : ""}`
+        : null) ||
+      (d.sellerOffer?.product?.name
+        ? `${d.sellerOffer.product.name}${
+            d.sellerOffer.variant?.title ? ` · ${d.sellerOffer.variant.title}` : ""
+          }`
+        : null) ||
+      d.linkedOrder?.orderNo ||
+      "Katalog sipariş";
+    const coverImage =
+      d.listing?.coverImage ||
+      item?.productImageSnapshot ||
+      d.sellerOffer?.product?.mainImage ||
+      null;
+    const productId = item?.productId || d.sellerOffer?.product?.id || null;
+    return {
+      id: d.id,
+      status: d.status,
+      amountTl: d.amountTl,
+      sellerPayoutTl: d.sellerPayoutTl,
+      shipDays: d.shipDays,
+      cargoTrackingNo: d.cargoTrackingNo,
+      cargoCarrier: d.cargoCarrier,
+      cargoNote: d.cargoNote,
+      shippedAt: d.shippedAt?.toISOString() || null,
+      shipDeadlineAt: d.shipDeadlineAt?.toISOString() || null,
+      createdAt: d.createdAt.toISOString(),
+      updatedAt: d.updatedAt.toISOString(),
+      listing: d.listing
+        ? d.listing
+        : {
+            id: productId || d.id,
+            title,
+            coverImage,
+            listingNo: d.linkedOrder?.orderNo || null,
+            isCatalog: true,
+            productId,
+          },
+      buyer: { id: d.buyer.id, name: d.buyer.name },
+    };
+  });
 }

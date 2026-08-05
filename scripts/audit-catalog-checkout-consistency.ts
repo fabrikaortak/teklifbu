@@ -19,8 +19,8 @@ export type AuditFinding = {
 };
 
 export type AuditScopeOptions = {
-  /** full = tüm DB; phase2 = since + shop/buyer allowlist */
-  scope?: "full" | "phase2";
+  /** full = tüm DB; phase2 = since + shop/buyer allowlist; phase3 = since-only (allowlist yok) */
+  scope?: "full" | "phase2" | "phase3";
   since?: Date | string | null;
   shopIds?: string[];
   buyerIds?: string[];
@@ -29,7 +29,7 @@ export type AuditScopeOptions = {
 export type AuditReport = {
   generatedAt: string;
   scope: {
-    mode: "full" | "phase2";
+    mode: "full" | "phase2" | "phase3";
     since?: string | null;
     shopIds?: string[];
     buyerIds?: string[];
@@ -61,7 +61,8 @@ function parseSince(v?: Date | string | null): Date | null {
 export async function auditCatalogCheckoutConsistency(
   opts: AuditScopeOptions = {}
 ): Promise<AuditReport> {
-  const mode = opts.scope === "phase2" ? "phase2" : "full";
+  const mode =
+    opts.scope === "phase2" ? "phase2" : opts.scope === "phase3" ? "phase3" : "full";
   const since = parseSince(opts.since);
   const shopIds = (opts.shopIds || []).filter(Boolean);
   const buyerIds = (opts.buyerIds || []).filter(Boolean);
@@ -90,8 +91,9 @@ export async function auditCatalogCheckoutConsistency(
     }),
   ]);
 
-  // Phase2 scope: kritik kurallar aynı — yalnız incelenen küme daralır
-  if (mode === "phase2") {
+  // Phase2/Phase3 scope: kritik kurallar aynı — yalnız incelenen küme daralır.
+  // Phase3 allowlist kullanmaz (shopIds/buyerIds boş) — since-only filtre.
+  if (mode === "phase2" || mode === "phase3") {
     orders = orders.filter((o) => {
       if (since && o.createdAt < since) return false;
       if (buyerIds.length && !buyerIds.includes(o.buyerId)) return false;
@@ -133,8 +135,8 @@ export async function auditCatalogCheckoutConsistency(
         select: { id: true, stockQty: true },
       });
     }
-    counts.phase2Scoped = 1;
-    counts.phase2OrderCount = orders.length;
+    counts[`${mode}Scoped`] = 1;
+    counts[`${mode}OrderCount`] = orders.length;
   }
 
   const paymentById = new Map(payments.map((p) => [p.id, p]));
@@ -627,7 +629,7 @@ function parseArg(name: string): string | undefined {
 }
 
 async function main() {
-  const scope = (parseArg("scope") as "full" | "phase2") || "full";
+  const scope = (parseArg("scope") as "full" | "phase2" | "phase3") || "full";
   const since = parseArg("since") || null;
   const shopIds = (parseArg("shopIds") || "")
     .split(",")
@@ -641,7 +643,9 @@ async function main() {
     parseArg("out") ||
     (scope === "phase2"
       ? "catalog-checkout-consistency-phase2.json"
-      : "catalog-checkout-consistency-report.json");
+      : scope === "phase3"
+        ? "catalog-checkout-consistency-phase3.json"
+        : "catalog-checkout-consistency-report.json");
 
   const report = await auditCatalogCheckoutConsistency({
     scope,

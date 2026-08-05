@@ -873,7 +873,23 @@ export async function listEscrowDeals(filters: EscrowDealFilters = {}) {
       listing: {
         select: { id: true, title: true, listingNo: true, coverImage: true, askPrice: true },
       },
-      linkedOrder: { select: { id: true, orderNo: true, status: true } },
+      linkedOrder: {
+        select: {
+          id: true,
+          orderNo: true,
+          status: true,
+          items: {
+            take: 1,
+            select: {
+              productNameSnapshot: true,
+              variantTitleSnapshot: true,
+              productImageSnapshot: true,
+              productId: true,
+              sellerOfferId: true,
+            },
+          },
+        },
+      },
       sellerOffer: {
         select: {
           id: true,

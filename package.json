@@ -14,8 +14,12 @@
     "locations:build": "node scripts/build-turkey-locations.mjs",
     "audit:catalog-checkout": "tsx scripts/audit-catalog-checkout-consistency.ts",
     "staging:phase1": "tsx scripts/staging-phase1-catalog-without-mirror.ts",
+    "staging:phase2": "tsx scripts/staging-phase2-catalog-run.ts",
+    "staging:phase3": "tsx scripts/staging-phase3-catalog-run.ts",
     "staging:analyze-warnings": "tsx scripts/analyze-staging-audit-warnings.ts",
     "staging:phase2-allowlist": "tsx scripts/select-staging-phase2-allowlist.ts",
+    "staging:cleanup-test-jobs": "tsx scripts/cleanup-test-force-projection-jobs.ts",
+    "staging:set-mirrorless-flag": "tsx scripts/staging-set-mirrorless-flag.ts",
     "postinstall": "prisma generate"
   },
   "prisma": {

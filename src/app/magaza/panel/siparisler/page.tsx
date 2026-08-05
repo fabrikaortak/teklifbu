@@ -16,7 +16,14 @@ type Order = {
   shippedAt: string | null;
   shipDeadlineAt: string | null;
   createdAt: string;
-  listing: { id: string; title: string; coverImage: string | null; listingNo: string };
+  listing: {
+    id: string;
+    title: string;
+    coverImage: string | null;
+    listingNo: string | null;
+    isCatalog?: boolean;
+    productId?: string | null;
+  } | null;
   buyer: { id: string; name: string | null };
 };
 
@@ -136,7 +143,7 @@ export default function MagazaSiparislerPage() {
             const shipOk = o.status === "AWAITING_SHIPMENT";
             return (
               <div key={o.id} className="sp-row" style={{ gridTemplateColumns: "56px 1fr", alignItems: "start" }}>
-                {o.listing.coverImage ? (
+                {o.listing?.coverImage ? (
                   // eslint-disable-next-line @next/next/no-img-element
                   <img src={o.listing.coverImage} alt="" className="sp-thumb" />
                 ) : (
@@ -147,15 +154,21 @@ export default function MagazaSiparislerPage() {
                     <SpStatus tone={st.tone}>{st.label}</SpStatus>
                     <span className="sp-row-meta">{formatTl(o.amountTl)}</span>
                   </div>
-                  <p className="sp-row-title">{o.listing.title}</p>
+                  <p className="sp-row-title">{o.listing?.title || "Katalog sipariş"}</p>
                   <div className="sp-row-meta">
                     Alıcı: {o.buyer.name || "—"} · {new Date(o.createdAt).toLocaleString("tr-TR")}
                     {o.cargoTrackingNo ? ` · ${o.cargoCarrier || "Kargo"} ${o.cargoTrackingNo}` : ""}
                   </div>
                   <div className="sp-actions">
-                    <Link href={`/ilan/${o.listing.id}`} className="sp-btn-outline">
-                      İlan
-                    </Link>
+                    {o.listing?.isCatalog && o.listing.productId ? (
+                      <Link href={`/urun/${o.listing.productId}`} className="sp-btn-outline">
+                        Ürün
+                      </Link>
+                    ) : o.listing?.id ? (
+                      <Link href={`/ilan/${o.listing.id}`} className="sp-btn-outline">
+                        İlan
+                      </Link>
+                    ) : null}
                   </div>
                   {shipOk ? (
                     <div style={{ marginTop: 12, display: "grid", gap: 8, maxWidth: 480 }}>

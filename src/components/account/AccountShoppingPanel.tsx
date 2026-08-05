@@ -143,7 +143,10 @@ function matchesScope(deal: Deal, scope: ScopeFilter, userId?: string) {
 }
 
 function orderNo(deal: Deal) {
-  const raw = deal.listing?.listingNo || deal.id.replace(/[^a-zA-Z0-9]/g, "").slice(-10);
+  const raw =
+    deal.linkedOrder?.orderNo ||
+    deal.listing?.listingNo ||
+    deal.id.replace(/[^a-zA-Z0-9]/g, "").slice(-10);
   return String(raw).replace(/(.{3})/g, "$1 ").trim();
 }
 
@@ -404,6 +407,7 @@ export function AccountShoppingPanel({ userId }: { userId?: string }) {
                   </span>
 
                   <span className="acc-order__no">
+                    <strong style={{ display: "block", marginBottom: 2 }}>{title}</strong>
                     Sipariş no: <strong>{orderNo(d)}</strong>
                   </span>
 

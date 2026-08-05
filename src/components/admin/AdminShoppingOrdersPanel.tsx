@@ -25,9 +25,46 @@ type DealRow = {
     listingNo?: string | null;
     coverImage?: string | null;
   } | null;
+  linkedOrder?: {
+    id: string;
+    orderNo: string;
+    items?: Array<{
+      productNameSnapshot: string;
+      variantTitleSnapshot?: string | null;
+      productId?: string | null;
+    }>;
+  } | null;
+  sellerOffer?: {
+    id: string;
+    product?: { id: string; name: string; mainImage?: string | null } | null;
+    variant?: { title: string } | null;
+  } | null;
   buyer?: { id: string; name?: string | null; phone?: string | null } | null;
   seller?: { id: string; name?: string | null; phone?: string | null } | null;
 };
+
+function dealDisplayTitle(d: DealRow): string {
+  if (d.listing?.title) return d.listing.title;
+  const item = d.linkedOrder?.items?.[0];
+  if (item?.productNameSnapshot) {
+    return `${item.productNameSnapshot}${
+      item.variantTitleSnapshot ? ` · ${item.variantTitleSnapshot}` : ""
+    }`;
+  }
+  if (d.sellerOffer?.product?.name) {
+    return `${d.sellerOffer.product.name}${
+      d.sellerOffer.variant?.title ? ` · ${d.sellerOffer.variant.title}` : ""
+    }`;
+  }
+  if (d.linkedOrder?.orderNo) return `Sipariş ${d.linkedOrder.orderNo}`;
+  return "Katalog sipariş";
+}
+
+function dealProductHref(d: DealRow): string | null {
+  if (d.listing?.id) return `/ilan/${d.listing.id}`;
+  const productId = d.linkedOrder?.items?.[0]?.productId || d.sellerOffer?.product?.id;
+  return productId ? `/urun/${productId}` : null;
+}
 
 const STATUS_FILTERS: { key: string; label: string }[] = [
   { key: "", label: "Tümü" },
@@ -279,8 +316,11 @@ export function AdminShoppingOrdersPanel() {
                 {deals.map((d) => {
                   const tone = statusTone(d.status);
                   const orderRef =
+                    d.linkedOrder?.orderNo ||
                     d.listing?.listingNo ||
                     d.id.replace(/[^a-zA-Z0-9]/g, "").slice(-10).toUpperCase();
+                  const title = dealDisplayTitle(d);
+                  const href = dealProductHref(d);
                   return (
                     <tr key={d.id}>
                       <td style={{ whiteSpace: "nowrap" }}>
@@ -296,12 +336,12 @@ export function AdminShoppingOrdersPanel() {
                         <div style={{ fontSize: 11, color: "var(--adm-muted)", fontWeight: 700 }}>
                           #{orderRef}
                         </div>
-                        {d.listing?.id ? (
-                          <Link href={`/ilan/${d.listing.id}`} target="_blank" style={{ fontWeight: 700 }}>
-                            {d.listing.title}
+                        {href ? (
+                          <Link href={href} target="_blank" style={{ fontWeight: 700 }}>
+                            {title}
                           </Link>
                         ) : (
-                          <span>—</span>
+                          <span style={{ fontWeight: 700 }}>{title}</span>
                         )}
                       </td>
                       <td>
