@@ -43,6 +43,45 @@ export async function submitListingEditRequest(input: {
     throw new Error("İlanınıza teklif geldiği için düzenleme talebi oluşturulamaz");
   }
 
+  // Kategori değişiminde dikey ACL
+  if (input.payload.categoryId && input.payload.categoryId !== listing.categoryId) {
+    const { resolveListingVerticalFromDb } = await import("@/lib/listingVertical");
+    const { assertUserMayPostVertical, VerticalAccessError } = await import(
+      "@/core/guards/verticalAccessGuard"
+    );
+    const seller = await prisma.user.findUnique({
+      where: { id: input.sellerId },
+      select: {
+        id: true,
+        accountType: true,
+        commercialSubtypes: true,
+        commercialStatus: true,
+        profile: true,
+        role: true,
+      },
+    });
+    const shop = await prisma.shop.findFirst({
+      where: { ownerId: input.sellerId },
+      select: { id: true, ownerId: true, isActive: true },
+    });
+    const vertical = await resolveListingVerticalFromDb({
+      categoryId: input.payload.categoryId,
+      attributes: (input.payload.attributes || {}) as Record<string, unknown>,
+    });
+    try {
+      await assertUserMayPostVertical({
+        user: seller || { id: input.sellerId },
+        shop,
+        vertical,
+        action: "UPDATE_LISTING_CATEGORY",
+        categoryId: input.payload.categoryId,
+      });
+    } catch (e) {
+      if (e instanceof VerticalAccessError) throw e;
+      throw e;
+    }
+  }
+
   const existing = await prisma.listingEditRequest.findFirst({
     where: { listingId: listing.id, status: EditRequestStatus.PENDING },
   });
@@ -79,7 +118,13 @@ export async function submitListingEditRequest(input: {
 export async function approveListingEditRequest(
   requestId: string,
   adminId: string,
-  tenantId?: string | null
+  tenantId?: string | null,
+  opts?: {
+    /** Admin bilinçli dikey ACL override */
+    adminBypass?: boolean;
+    /** Bypass gerekçesi (adminBypass true ise zorunlu) */
+    bypassReason?: string | null;
+  }
 ) {
   const req = await prisma.listingEditRequest.findUnique({
     where: { id: requestId },
@@ -94,6 +139,71 @@ export async function approveListingEditRequest(
   }
 
   const p = req.payload as ListingEditPayload;
+  const nextCategoryId = p.categoryId || listing.categoryId;
+
+  // Onay öncesi güncel subtype/shopFocus ile dikey ACL
+  {
+    const { resolveListingVerticalFromDb } = await import("@/lib/listingVertical");
+    const { assertUserMayPostVertical, VerticalAccessError } = await import(
+      "@/core/guards/verticalAccessGuard"
+    );
+    const seller = await prisma.user.findUnique({
+      where: { id: req.sellerId },
+      select: {
+        id: true,
+        accountType: true,
+        commercialSubtypes: true,
+        commercialStatus: true,
+        profile: true,
+        role: true,
+      },
+    });
+    const shop = await prisma.shop.findFirst({
+      where: { ownerId: req.sellerId },
+      select: { id: true, ownerId: true, isActive: true },
+    });
+    const vertical = await resolveListingVerticalFromDb({
+      categoryId: nextCategoryId,
+      attributes: (p.attributes || listing.attributes || {}) as Record<string, unknown>,
+    });
+
+    try {
+      await assertUserMayPostVertical({
+        user: seller || { id: req.sellerId },
+        shop,
+        vertical,
+        action: "UPDATE_LISTING_CATEGORY",
+        categoryId: nextCategoryId,
+      });
+    } catch (e) {
+      if (!(e instanceof VerticalAccessError)) throw e;
+      if (!opts?.adminBypass) throw e;
+      const reason = String(opts.bypassReason || "").trim();
+      if (!reason) {
+        throw new Error("Dikey ACL bypass için gerekçe zorunludur");
+      }
+      await writeAuditLog({
+        tenantId: tenantId || listing.tenantId,
+        actorId: adminId,
+        action: "vertical.access.admin_bypass",
+        entity: "ListingEditRequest",
+        entityId: req.id,
+        meta: {
+          userId: req.sellerId,
+          adminId,
+          listingId: listing.id,
+          editRequestId: req.id,
+          oldCategoryId: listing.categoryId,
+          newCategoryId: nextCategoryId,
+          vertical,
+          reason,
+          currentSubtypes: seller?.commercialSubtypes || [],
+          accountType: seller?.accountType || null,
+          timestamp: new Date().toISOString(),
+        },
+      });
+    }
+  }
 
   await prisma.$transaction(async (tx) => {
     await tx.listingEditRequest.update({

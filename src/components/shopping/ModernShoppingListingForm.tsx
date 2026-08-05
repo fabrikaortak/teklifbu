@@ -28,6 +28,8 @@ import {
   writeListingDraft,
 } from "@/lib/listingDraft";
 import { useDialog } from "@/components/ui/ConfirmDialog";
+import { useAlisverisBrowseTree } from "@/hooks/useAlisverisBrowseTree";
+import { CatalogOfferWizard } from "@/components/shopping/CatalogOfferWizard";
 
 const STEPS = [
   { id: 1, label: "Temel Bilgiler" },
@@ -102,9 +104,15 @@ export function ModernShoppingListingForm() {
   const [busy, setBusy] = useState(false);
   const [msg, setMsg] = useState("");
 
+  const { tree: alisverisTree, meta: browseMeta } = useAlisverisBrowseTree();
+  if (browseMeta.source === "fallback-ts" && browseMeta.warning !== "loading") {
+    // already logged in hook
+  }
+
   const levels = useMemo(() => {
+    const root = alisverisTree.length ? alisverisTree : ALISVERIS_BROWSE_TREE;
     const out: Array<{ options: BrowseNode[]; selectedId: string }> = [
-      { options: ALISVERIS_BROWSE_TREE, selectedId: path[0]?.id || "" },
+      { options: root, selectedId: path[0]?.id || "" },
     ];
     for (let i = 0; i < path.length; i++) {
       const children = path[i].children;
@@ -113,7 +121,7 @@ export function ModernShoppingListingForm() {
       }
     }
     return out;
-  }, [path]);
+  }, [path, alisverisTree]);
 
   const { categorySlug, subSlug, subtype, brandFromPath } = useMemo(
     () => shoppingPathMeta(path),
@@ -121,12 +129,151 @@ export function ModernShoppingListingForm() {
   );
   const phoneMode = isPhoneCategory(categorySlug, subSlug);
   const color = COLOR_OPTS.find((c) => c.id === colorId) || COLOR_OPTS[0];
+  const [categoryId, setCategoryId] = useState("");
+  const [modelMode, setModelMode] = useState<"REQUIRED" | "OPTIONAL" | "DISABLED">("OPTIONAL");
+  const [dbBrands, setDbBrands] = useState<string[]>([]);
+  const [dbModels, setDbModels] = useState<string[]>([]);
+  const [dbAttrs, setDbAttrs] = useState<
+    Array<{
+      slug: string;
+      name: string;
+      type: string;
+      isVariant: boolean;
+      options: Array<{ label: string; value: string }>;
+    }>
+  >([]);
+  const [apiBrandsOk, setApiBrandsOk] = useState(false);
+  const [apiModelsOk, setApiModelsOk] = useState(false);
+  const [sellMode, setSellMode] = useState<"listing" | "catalog">("listing");
+  const [brandId, setBrandId] = useState("");
+  const [brandRows, setBrandRows] = useState<Array<{ id: string; name: string }>>([]);
+  const [modelId, setModelId] = useState("");
+  const [modelRows, setModelRows] = useState<Array<{ id: string; name: string }>>([]);
+
   const catalogBrands = useMemo(() => {
+    if (apiBrandsOk) return dbBrands.length ? dbBrands : ["Diğer"];
     if (!subSlug) return ["Diğer"];
     const names = shopBrandNamesFor(subSlug, subtype);
     return names.length ? names : ["Diğer"];
-  }, [subSlug, subtype]);
-  const models = SHOP_PHONE_MODELS[brand] || [];
+  }, [apiBrandsOk, dbBrands, subSlug, subtype]);
+
+  const models = useMemo(() => {
+    if (apiModelsOk) return dbModels;
+    return SHOP_PHONE_MODELS[brand] || [];
+  }, [apiModelsOk, dbModels, brand]);
+
+  const showModelField = modelMode !== "DISABLED";
+
+  useEffect(() => {
+    let cancelled = false;
+    async function loadBrands() {
+      if (!subSlug && !categorySlug) {
+        setDbBrands([]);
+        setCategoryId("");
+        setApiBrandsOk(false);
+        return;
+      }
+      try {
+        const qs = categorySlug
+          ? `categorySlug=${encodeURIComponent(categorySlug)}`
+          : `subSlug=${encodeURIComponent(subSlug)}`;
+        const res = await fetch(`/api/catalog/brands?${qs}`);
+        const data = await res.json();
+        if (cancelled) return;
+        if (!data.ok) {
+          setApiBrandsOk(false);
+          return;
+        }
+        setApiBrandsOk(true);
+        const list = (data.brands || []) as Array<{ id: string; name: string }>;
+        setBrandRows(list);
+        const names = list.map((b) => b.name).filter(Boolean);
+        setDbBrands(names);
+        if (data.categoryId) setCategoryId(String(data.categoryId));
+        if (data.modelMode === "REQUIRED" || data.modelMode === "OPTIONAL" || data.modelMode === "DISABLED") {
+          setModelMode(data.modelMode);
+        }
+      } catch {
+        if (!cancelled) {
+          setDbBrands([]);
+          setApiBrandsOk(false);
+        }
+      }
+    }
+    void loadBrands();
+    return () => {
+      cancelled = true;
+    };
+  }, [categorySlug, subSlug]);
+
+  useEffect(() => {
+    let cancelled = false;
+    async function loadModelsAndAttrs() {
+      if (!categorySlug && !categoryId) {
+        setDbModels([]);
+        setDbAttrs([]);
+        setApiModelsOk(false);
+        return;
+      }
+      try {
+        const catQs = categoryId
+          ? `categoryId=${encodeURIComponent(categoryId)}`
+          : `categorySlug=${encodeURIComponent(categorySlug)}`;
+        const brandQs = brand ? `&brand=${encodeURIComponent(brand)}` : "";
+        const [mRes, aRes] = await Promise.all([
+          fetch(`/api/catalog/models?${catQs}${brandQs}`),
+          fetch(`/api/catalog/attributes?${catQs}`),
+        ]);
+        const mData = await mRes.json();
+        const aData = await aRes.json();
+        if (cancelled) return;
+        if (mData.ok) {
+          setApiModelsOk(true);
+          const list = (mData.models || []) as Array<{ id: string; name: string }>;
+          setModelRows(list);
+          setDbModels(list.map((m) => m.name).filter(Boolean));
+          if (mData.modelMode === "REQUIRED" || mData.modelMode === "OPTIONAL" || mData.modelMode === "DISABLED") {
+            setModelMode(mData.modelMode);
+          }
+        } else {
+          setApiModelsOk(false);
+        }
+        if (aData.ok) {
+          setDbAttrs(
+            (aData.attributes || [])
+              .filter((a: { formVisible?: boolean }) => a.formVisible !== false)
+              .map(
+                (a: {
+                  slug: string;
+                  name: string;
+                  type: string;
+                  isVariant: boolean;
+                  options: Array<{ label: string; value: string }>;
+                }) => ({
+                  slug: a.slug,
+                  name: a.name,
+                  type: a.type,
+                  isVariant: Boolean(a.isVariant),
+                  options: a.options || [],
+                })
+              )
+          );
+          if (aData.modelMode === "REQUIRED" || aData.modelMode === "OPTIONAL" || aData.modelMode === "DISABLED") {
+            setModelMode(aData.modelMode);
+          }
+        }
+      } catch {
+        if (!cancelled) {
+          setApiModelsOk(false);
+          setDbModels([]);
+        }
+      }
+    }
+    void loadModelsAndAttrs();
+    return () => {
+      cancelled = true;
+    };
+  }, [categorySlug, categoryId, brand]);
 
   useEffect(() => {
     if (brandFromPath && brandFromPath !== brand) {
@@ -417,27 +564,56 @@ export function ModernShoppingListingForm() {
       {step === 1 ? (
         <div className="msf-card">
           <h2>Temel Bilgiler</h2>
+          <div className="msf-seg" style={{ marginBottom: 14 }}>
+            <button
+              type="button"
+              className={`msf-seg__btn${sellMode === "listing" ? " is-on" : ""}`}
+              onClick={() => setSellMode("listing")}
+            >
+              Klasik ilan (Listing)
+            </button>
+            <button
+              type="button"
+              className={`msf-seg__btn${sellMode === "catalog" ? " is-on" : ""}`}
+              onClick={() => setSellMode("catalog")}
+            >
+              Katalog teklifi (SellerOffer)
+            </button>
+          </div>
+
+          <div style={{ marginBottom: 12 }}>
+            <FieldLabel>Kategori</FieldLabel>
+            <div className="msf-cat-row">
+              {levels.map((level, idx) => (
+                <select
+                  key={`cat-top-${idx}`}
+                  className="msf-select"
+                  value={level.selectedId}
+                  onChange={(e) => pickLevel(idx, e.target.value)}
+                >
+                  <option value="">{idx === 0 ? "Ana kategori" : "Seçin…"}</option>
+                  {level.options.map((o) => (
+                    <option key={o.id} value={o.id}>
+                      {o.name}
+                    </option>
+                  ))}
+                </select>
+              ))}
+            </div>
+          </div>
+
+          {sellMode === "catalog" ? (
+            <CatalogOfferWizard
+              categoryId={categoryId || undefined}
+              brandId={brandId || brandRows.find((b) => b.name === brand)?.id || undefined}
+              modelId={modelId || modelRows.find((m) => m.name === model)?.id || undefined}
+              city={city}
+              district={district}
+            />
+          ) : (
+            <>
           <div className="msf-grid-2">
             <div className="msf-col">
-              <FieldLabel>Kategori</FieldLabel>
-              <div className="msf-cat-row">
-                {levels.map((level, idx) => (
-                  <select
-                    key={`cat-${idx}`}
-                    className="msf-select"
-                    value={level.selectedId}
-                    onChange={(e) => pickLevel(idx, e.target.value)}
-                  >
-                    <option value="">{idx === 0 ? "Ana kategori" : "Seçin…"}</option>
-                    {level.options.map((o) => (
-                      <option key={o.id} value={o.id}>
-                        {o.name}
-                      </option>
-                    ))}
-                  </select>
-                ))}
-              </div>
-
               <FieldLabel hint="Kısa, net ve aranabilir bir başlık yazın.">İlan Başlığı</FieldLabel>
               <div className="msf-input-wrap">
                 <input
@@ -503,8 +679,11 @@ export function ModernShoppingListingForm() {
                 className="msf-select msf-select--full"
                 value={brand}
                 onChange={(e) => {
-                  setBrand(e.target.value);
+                  const name = e.target.value;
+                  setBrand(name);
+                  setBrandId(brandRows.find((b) => b.name === name)?.id || "");
                   setModel("");
+                  setModelId("");
                 }}
               >
                 <option value="">Marka seçin</option>
@@ -515,34 +694,47 @@ export function ModernShoppingListingForm() {
                 ))}
               </select>
 
-              <FieldLabel>Model</FieldLabel>
-              {phoneMode && models.length ? (
-                <select
-                  className="msf-select msf-select--full"
-                  value={model}
-                  onChange={(e) => setModel(e.target.value)}
-                >
-                  <option value="">Model seçin</option>
-                  {models.map((m) => (
-                    <option key={m} value={m}>
-                      {m}
-                    </option>
-                  ))}
-                </select>
-              ) : (
-                <input
-                  className="msf-input"
-                  value={model}
-                  onChange={(e) => setModel(e.target.value)}
-                  placeholder="Model"
-                />
-              )}
+              {showModelField ? (
+                <>
+                  <FieldLabel hint={modelMode === "REQUIRED" ? "Zorunlu" : "Opsiyonel"}>Model</FieldLabel>
+                  {(apiModelsOk ? models.length > 0 : phoneMode && models.length > 0) ? (
+                    <select
+                      className="msf-select msf-select--full"
+                      value={model}
+                      onChange={(e) => {
+                        const name = e.target.value;
+                        setModel(name);
+                        setModelId(modelRows.find((m) => m.name === name)?.id || "");
+                      }}
+                      required={modelMode === "REQUIRED"}
+                    >
+                      <option value="">Model seçin</option>
+                      {models.map((m) => (
+                        <option key={m} value={m}>
+                          {m}
+                        </option>
+                      ))}
+                    </select>
+                  ) : (
+                    <input
+                      className="msf-input"
+                      value={model}
+                      onChange={(e) => setModel(e.target.value)}
+                      placeholder="Model"
+                      required={modelMode === "REQUIRED"}
+                    />
+                  )}
+                </>
+              ) : null}
 
               {phoneMode ? (
                 <>
                   <FieldLabel>Depolama Kapasitesi</FieldLabel>
                   <div className="msf-seg msf-seg--wrap">
-                    {STORAGE_OPTS.map((s) => (
+                    {(
+                      dbAttrs.find((a) => a.slug === "depolama")?.options.map((o) => o.label) ||
+                      STORAGE_OPTS
+                    ).map((s) => (
                       <button
                         key={s}
                         type="button"
@@ -599,6 +791,8 @@ export function ModernShoppingListingForm() {
               ))}
             </div>
           </div>
+            </>
+          )}
         </div>
       ) : null}
 
@@ -735,6 +929,7 @@ export function ModernShoppingListingForm() {
         </div>
       ) : null}
 
+      {sellMode === "listing" ? (
       <div className="msf-footer">
         <button
           type="button"
@@ -754,6 +949,7 @@ export function ModernShoppingListingForm() {
           </button>
         )}
       </div>
+      ) : null}
     </div>
   );
 }

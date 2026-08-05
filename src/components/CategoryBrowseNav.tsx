@@ -33,6 +33,7 @@ import {
   sortOrderFor,
   type BrowseNavConfig,
 } from "@/lib/browseNavConfig";
+import { useAlisverisBrowseTree } from "@/hooks/useAlisverisBrowseTree";
 
 /** Kök satır ikonları — klasik v2 ile aynı */
 const ROOT_LUCIDE: Record<string, LucideIcon> = {
@@ -43,9 +44,18 @@ const ROOT_LUCIDE: Record<string, LucideIcon> = {
   "ikinci-el": ShoppingBag,
   "sifir-urun": Package,
   elektronik: Smartphone,
+  "alisveris/elektronik": Smartphone,
   "ev-yasam": Sofa,
+  "alisveris/ev-ve-yasam": Sofa,
+  "ev-aletleri": Smartphone,
+  "alisveris/ev-aletleri": Smartphone,
   moda: Shirt,
+  "alisveris/moda": Shirt,
   hobi: Bike,
+  "spor-outdoor": Bike,
+  "alisveris/spor-outdoor": Bike,
+  "mutfak-ve-sofra": Package,
+  "alisveris/mutfak-ve-sofra": Package,
   "is-makineleri": Truck,
   diger: Package,
   isyeri: Home,
@@ -62,6 +72,8 @@ type Props = {
   hideHeader?: boolean;
   /** classic: Emlak+Vasıta; alisveris: /alisveris ağacı; default: tam ağaç */
   variant?: "default" | "classic" | "alisveris";
+  /** Alışveriş DB ağacı (yoksa API’den yüklenir / TS fallback) */
+  browseTree?: BrowseNode[] | null;
 };
 
 type NavNode = {
@@ -104,7 +116,12 @@ function isBrowseNodeVisible(facets: FacetCounts | null, id: string, filter: Bro
 }
 
 function pruneNavTree(nodes: NavNode[], facets: FacetCounts | null): NavNode[] {
-  const showEmpty = facets?.showEmptyCategories !== false;
+  // facets henüz yokken boş dalları GÖSTERME (admin varsayılanı hideEmptyUntilListing=true).
+  // Aksi halde API gelene kadar tüm (0) menüler flaşlanır.
+  const showEmpty =
+    facets == null
+      ? !DEFAULT_BROWSE_NAV_CONFIG.hideEmptyUntilListing
+      : facets.showEmptyCategories !== false;
   const cfg = browseConfig(facets);
   return nodes
     .map((n) => {
@@ -494,24 +511,33 @@ export function CategoryBrowseNav({
   rootsOnly,
   hideHeader = false,
   variant = "default",
+  browseTree = null,
 }: Props) {
   /** classic/alisveris: Sahibinden drill (ayara göre); tree/default: klasik accordion */
   const sahibindenMode =
     (variant === "classic" || variant === "alisveris") &&
     browseConfig(facets || null).sahibindenTreeExpand !== false;
 
+  const dbAlisveris = useAlisverisBrowseTree();
+  const alisverisSource =
+    variant === "alisveris"
+      ? browseTree && browseTree.length
+        ? browseTree
+        : dbAlisveris.tree
+      : null;
+
   const tree = useMemo(() => {
     const source =
       variant === "classic"
         ? CLASSIC_BROWSE_TREE
         : variant === "alisveris"
-          ? ALISVERIS_BROWSE_TREE
+          ? alisverisSource || ALISVERIS_BROWSE_TREE
           : CATEGORY_BROWSE_TREE;
     const full = toNavTree(source, facets || null);
     if (!rootsOnly?.length) return full;
     const allow = new Set(rootsOnly);
     return full.filter((n) => allow.has(n.id));
-  }, [facets, rootsOnly?.join("|"), variant]);
+  }, [facets, rootsOnly?.join("|"), variant, alisverisSource]);
 
   const matchedPath = useMemo(() => matchNavPath(filters, tree), [filters, tree]);
   const [openIds, setOpenIds] = useState<Set<string>>(() => new Set(matchedPath));

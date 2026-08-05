@@ -22,6 +22,7 @@ import { ListingKindChooser } from "@/components/ListingKindChooser";
 import { needsListingKindChoice, normalizeAccountType } from "@/lib/accountTypes";
 import { isPremiumCategorySlug, anyPremiumVerticalEnabled } from "@/data/premiumCategories";
 import { ALISVERIS_BROWSE_TREE, isAlisverisCategorySlug } from "@/data/classicBrowseTree";
+import { useAlisverisBrowseTree } from "@/hooks/useAlisverisBrowseTree";
 import { HousingExtrasPicker } from "@/components/HousingExtrasPicker";
 import { VehicleExtrasPicker } from "@/components/VehicleExtrasPicker";
 import { VehicleExpertiseReportPanel } from "@/components/VehicleExpertiseReport";
@@ -194,6 +195,8 @@ const divider: CSSProperties = { height: 1, background: "var(--line)", margin: "
 function CreateListingInner() {
   const router = useRouter();
   const search = useSearchParams();
+  const { tree: dbAlisverisTree } = useAlisverisBrowseTree();
+  const shopBrowseTree = dbAlisverisTree.length ? dbAlisverisTree : ALISVERIS_BROWSE_TREE;
   const editId = search.get("edit");
   const fromAi = search.get("from") === "ai";
   const kindParam = search.get("kind");
@@ -202,6 +205,11 @@ function CreateListingInner() {
   const silentResume =
     search.get("resume") === "1" || search.get("from") === "pos" || fromAi;
   const [accountType, setAccountType] = useState<string | null>(null);
+  const [authUser, setAuthUser] = useState<{
+    accountType?: string | null;
+    commercialSubtypes?: string[] | null;
+    profile?: unknown;
+  } | null>(null);
   const [categories, setCategories] = useState<Array<{ id: string; slug: string; name: string; group?: string | null }>>([]);
   const [form, setForm] = useState({
     title: "",
@@ -413,6 +421,11 @@ function CreateListingInner() {
           return;
         }
         setAccountType(normalizeAccountType(d.user.accountType));
+        setAuthUser({
+          accountType: d.user.accountType,
+          commercialSubtypes: d.user.commercialSubtypes || [],
+          profile: d.user.profile || null,
+        });
         setAuthChecked(true);
       })
       .catch(() => router.replace(`/giris?next=${encodeURIComponent("/ilan-ver")}`));
@@ -884,7 +897,7 @@ function CreateListingInner() {
     } else if (
       !isCategoryLadderComplete(
         ladderValue,
-        effectiveKind === "alisveris" ? ALISVERIS_BROWSE_TREE : CATEGORY_BROWSE_TREE
+        effectiveKind === "alisveris" ? shopBrowseTree : CATEGORY_BROWSE_TREE
       )
     ) {
       return effectiveKind === "alisveris"
@@ -1215,7 +1228,7 @@ function CreateListingInner() {
     accountType &&
     needsListingKindChoice(accountType)
   ) {
-    return <ListingKindChooser showPremium={anyPremiumOpen} />;
+    return <ListingKindChooser showPremium={anyPremiumOpen} user={authUser} />;
   }
 
   if (mode === "done") {
@@ -1961,7 +1974,7 @@ function CreateListingInner() {
             ) : (
               <CategoryLadderPicker
                 disabled={editBlockedByBids}
-                tree={effectiveKind === "alisveris" ? ALISVERIS_BROWSE_TREE : CATEGORY_BROWSE_TREE}
+                tree={effectiveKind === "alisveris" ? shopBrowseTree : CATEGORY_BROWSE_TREE}
                 hint={
                   effectiveKind === "alisveris" ? (
                     <>

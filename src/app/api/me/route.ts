@@ -651,10 +651,39 @@ export async function PATCH(req: Request) {
       data.commercialSubtypes = await parseAllowedCommercialSubtypes(body.commercialSubtypes);
     }
 
+    const prevUser = await prisma.user.findUnique({
+      where: { id: session.id },
+      select: { commercialSubtypes: true, accountType: true, profile: true },
+    });
+    const prevSubtypes = Array.isArray(prevUser?.commercialSubtypes)
+      ? [...prevUser!.commercialSubtypes]
+      : [];
+
     const updated = await prisma.user.update({
       where: { id: session.id },
       data,
     });
+
+    if (
+      body.commercialSubtypes !== undefined ||
+      (config.accountType?.enabled && values.accountType)
+    ) {
+      try {
+        const { reportSellerOffersAfterSubtypeChange } = await import(
+          "@/core/services/verticalSubtypeChangeReport"
+        );
+        await reportSellerOffersAfterSubtypeChange({
+          userId: session.id,
+          actorId: session.id,
+          previousSubtypes: prevSubtypes,
+          nextSubtypes: updated.commercialSubtypes || [],
+          accountType: updated.accountType,
+          profile: updated.profile,
+        });
+      } catch {
+        /* best-effort */
+      }
+    }
 
     return NextResponse.json({ ok: true, user: userProfilePayload(updated) });
   }

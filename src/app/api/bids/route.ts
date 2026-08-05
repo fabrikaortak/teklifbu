@@ -70,7 +70,10 @@ export async function POST(req: Request) {
 
   if (action === "republish") {
     const result = await republishListing(body.listingId, session.id);
-    if (!result.ok) return NextResponse.json({ error: result.error }, { status: 400 });
+    if (!result.ok) {
+      const status = "code" in result && result.code === "VERTICAL_ACCESS_DENIED" ? 403 : 400;
+      return NextResponse.json(result, { status });
+    }
     return NextResponse.json(result);
   }
 

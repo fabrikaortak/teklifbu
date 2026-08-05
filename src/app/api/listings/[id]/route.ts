@@ -42,6 +42,41 @@ export async function PATCH(req: Request, ctx: Ctx) {
 
   const body = await req.json();
 
+  // Katalog offer mirror: ticari alanlar Listing PATCH ile değiştirilemez
+  if (listing.sellerOfferId) {
+    const blocked: string[] = [];
+    if (body.askPrice != null) blocked.push("askPrice");
+    if (body.title != null) blocked.push("title");
+    if (body.coverImage != null) blocked.push("coverImage");
+    if (body.images != null) blocked.push("images");
+    if (body.attributes && typeof body.attributes === "object") {
+      const managed = [
+        "stockQty",
+        "condition",
+        "sellerSku",
+        "brand",
+        "model",
+        "variantTitle",
+        "catalogOffer",
+        "priceInKurus",
+        "outOfStock",
+      ];
+      for (const k of managed) {
+        if (Object.prototype.hasOwnProperty.call(body.attributes, k)) blocked.push(`attributes.${k}`);
+      }
+    }
+    if (blocked.length) {
+      return NextResponse.json(
+        {
+          error: "Katalog teklifine bağlı ilanda bu alanlar değiştirilemez",
+          code: "CATALOG_MANAGED_FIELD",
+          fields: blocked,
+        },
+        { status: 403 }
+      );
+    }
+  }
+
   if (body.action === "unpublish") {
     if (!isLiveListingStatus(listing.status)) {
       return NextResponse.json({ error: "İlan zaten yayında değil" }, { status: 400 });
@@ -191,6 +226,32 @@ export async function PATCH(req: Request, ctx: Ctx) {
   });
   if (catErr) return NextResponse.json({ error: catErr }, { status: 400 });
 
+  // Dikey ACL — kategori değişimi / taslak yeniden gönderim
+  try {
+    const { enforceListingVerticalAccess } = await import("@/core/guards/enforceVerticalAccess");
+    const { VerticalAccessError } = await import("@/core/guards/verticalAccessGuard");
+    const categoryChanged = category.id !== listing.categoryId;
+    const isDraftPublish = listing.status === "DRAFT";
+    await enforceListingVerticalAccess({
+      session,
+      categoryId: category.id,
+      categorySlug: category.slug,
+      attributes: mergedAttributes,
+      listingKind: body.listingKind ? String(body.listingKind) : null,
+      action: isDraftPublish
+        ? "PUBLISH_DRAFT"
+        : categoryChanged
+          ? "UPDATE_LISTING_CATEGORY"
+          : "UPDATE_LISTING_CATEGORY",
+    });
+  } catch (e) {
+    const { VerticalAccessError } = await import("@/core/guards/verticalAccessGuard");
+    if (e instanceof VerticalAccessError) {
+      return NextResponse.json(e.toJSON(), { status: e.status });
+    }
+    throw e;
+  }
+
   const dealType = parseDealType(String(body.dealType || listing.dealType), category.slug) as DealType;
 
   const eidsCheck = await guardListingEids({
@@ -260,6 +321,10 @@ export async function PATCH(req: Request, ctx: Ctx) {
           "Düzenleme talebiniz yönetici onayına gönderildi. Onaylanana kadar ilan eski haliyle yayında kalır.",
       });
     } catch (e) {
+      const { VerticalAccessError } = await import("@/core/guards/verticalAccessGuard");
+      if (e instanceof VerticalAccessError) {
+        return NextResponse.json(e.toJSON(), { status: e.status });
+      }
       return NextResponse.json(
         { error: e instanceof Error ? e.message : "Düzenleme talebi gönderilemedi" },
         { status: 400 }

@@ -137,11 +137,14 @@ export function isAlisverisCategorySlug(slug?: string | null): boolean {
 
   if ((ALISVERIS_GROUP_IDS as readonly string[]).includes(slug)) return true;
   if (slug === "alisveris") return true;
+  if (slug === "ikinci-el" || slug === "sifir-urun") return true;
+  if (slug.startsWith("ikinci-el__") || slug.startsWith("sifir-urun__")) return true;
 
   for (const sub of ALISVERIS_SUB_SLUGS) {
     if (slug === sub) return true;
     if (slug === `ikinci-el-${sub}` || slug === `sifir-urun-${sub}`) return true;
     if (slug.startsWith(`ikinci-el-${sub}-`) || slug.startsWith(`sifir-urun-${sub}-`)) return true;
+    if (slug.startsWith(`ikinci-el-${sub}__`) || slug.startsWith(`sifir-urun-${sub}__`)) return true;
   }
 
   if (slug === "diger") return true;

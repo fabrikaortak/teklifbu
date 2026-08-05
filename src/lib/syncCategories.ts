@@ -15,7 +15,15 @@ export async function syncCategories(client: PrismaClient) {
   for (const c of base) {
     await client.category.upsert({
       where: { slug: c.slug },
-      create: { ...c, parentId: null, isActive: true, isPremium: false, premiumVertical: null },
+      create: {
+        ...c,
+        parentId: null,
+        isActive: true,
+        isPremium: false,
+        premiumVertical: null,
+        level: 0,
+        path: c.slug,
+      },
       update: {
         name: c.name,
         icon: c.icon,
@@ -24,6 +32,8 @@ export async function syncCategories(client: PrismaClient) {
         isActive: true,
         isPremium: false,
         premiumVertical: null,
+        level: 0,
+        path: c.slug,
       },
     });
   }
@@ -54,6 +64,8 @@ export async function syncCategories(client: PrismaClient) {
         parentId: null,
         isPremium: false,
         premiumVertical: null,
+        level: 0,
+        path: root.slug,
       },
       update: {
         name: root.name,
@@ -63,6 +75,8 @@ export async function syncCategories(client: PrismaClient) {
         parentId: null,
         isPremium: false,
         premiumVertical: null,
+        level: 0,
+        path: root.slug,
       },
     });
 
@@ -79,6 +93,8 @@ export async function syncCategories(client: PrismaClient) {
           parentId: parent.id,
           isPremium: false,
           premiumVertical: null,
+          level: 1,
+          path: `${root.slug}/${sub.slug}`,
         },
         update: {
           name: sub.name,
@@ -88,6 +104,8 @@ export async function syncCategories(client: PrismaClient) {
           parentId: parent.id,
           isPremium: false,
           premiumVertical: null,
+          level: 1,
+          path: `${root.slug}/${sub.slug}`,
         },
       });
     }
@@ -105,6 +123,8 @@ export async function syncCategories(client: PrismaClient) {
         parentId: null,
         isPremium: true,
         premiumVertical: root.vertical,
+        level: 0,
+        path: root.slug,
       },
       update: {
         name: root.name,
@@ -114,6 +134,8 @@ export async function syncCategories(client: PrismaClient) {
         parentId: null,
         isPremium: true,
         premiumVertical: root.vertical,
+        level: 0,
+        path: root.slug,
       },
     });
 
@@ -130,6 +152,8 @@ export async function syncCategories(client: PrismaClient) {
           parentId: parent.id,
           isPremium: true,
           premiumVertical: root.vertical,
+          level: 1,
+          path: `${root.slug}/${sub.slug}`,
         },
         update: {
           name: sub.name,
@@ -139,21 +163,47 @@ export async function syncCategories(client: PrismaClient) {
           parentId: parent.id,
           isPremium: true,
           premiumVertical: root.vertical,
+          level: 1,
+          path: `${root.slug}/${sub.slug}`,
         },
       });
     }
   }
 }
 
-/** Filtre slug'ı için kategori id listesi (kök ise altlar dahil). */
+/** Filtre slug'ı için kategori id listesi (kök ise tüm altlar dahil). */
 export async function resolveCategoryFilterIds(client: PrismaClient, slug: string): Promise<string[] | null> {
   const cat = await client.category.findUnique({
     where: { slug },
-    include: { children: { where: { isActive: true }, select: { id: true } } },
+    select: { id: true, isActive: true, deletedAt: true, path: true },
   });
-  if (!cat || !cat.isActive) return null;
-  if (cat.children.length) {
-    return [cat.id, ...cat.children.map((c) => c.id)];
+  if (!cat || !cat.isActive || cat.deletedAt) return null;
+
+  if (cat.path) {
+    const rows = await client.category.findMany({
+      where: {
+        deletedAt: null,
+        isActive: true,
+        OR: [{ id: cat.id }, { path: cat.path }, { path: { startsWith: `${cat.path}/` } }],
+      },
+      select: { id: true },
+    });
+    return rows.map((r) => r.id);
   }
-  return [cat.id];
+
+  const ids: string[] = [];
+  const queue = [cat.id];
+  const seen = new Set<string>();
+  while (queue.length) {
+    const id = queue.shift()!;
+    if (seen.has(id)) continue;
+    seen.add(id);
+    ids.push(id);
+    const kids = await client.category.findMany({
+      where: { parentId: id, isActive: true, deletedAt: null },
+      select: { id: true },
+    });
+    for (const k of kids) queue.push(k.id);
+  }
+  return ids;
 }

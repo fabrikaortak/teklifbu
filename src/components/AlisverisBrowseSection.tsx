@@ -1,32 +1,40 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
-import { ChevronDown, ChevronRight, Smartphone, Sofa, Shirt, Bike, Package } from "lucide-react";
-import { ALISVERIS_BROWSE_TREE, isAlisverisCategorySlug } from "@/data/classicBrowseTree";
+import { useEffect, useState } from "react";
+import { ChevronDown, ChevronRight, Smartphone, Sofa, Shirt, Bike, Package, Utensils, Wrench } from "lucide-react";
+import { isAlisverisCategorySlug } from "@/data/classicBrowseTree";
 import { browseFilterToSearchPatch, type BrowseFilter } from "@/data/categoryBrowseTree";
 import type { SearchFilters } from "@/components/SearchPanel";
+import { useAlisverisBrowseTree } from "@/hooks/useAlisverisBrowseTree";
 
 type Props = {
   filters: SearchFilters;
   onSelect: (patch: ReturnType<typeof browseFilterToSearchPatch>) => void;
-  /** /alisveris sayfasında her zaman «Klasik vitrine dön» göster */
   alwaysShowClassicBack?: boolean;
 };
 
 const GROUP_ICON: Record<string, typeof Smartphone> = {
   elektronik: Smartphone,
+  "alisveris/elektronik": Smartphone,
   "ev-yasam": Sofa,
+  "alisveris/ev-ve-yasam": Sofa,
+  "ev-aletleri": Wrench,
+  "alisveris/ev-aletleri": Wrench,
   moda: Shirt,
+  "alisveris/moda": Shirt,
   hobi: Bike,
+  "spor-outdoor": Bike,
+  "alisveris/spor-outdoor": Bike,
+  "mutfak-ve-sofra": Utensils,
+  "alisveris/mutfak-ve-sofra": Utensils,
   diger: Package,
 };
 
-/** Ana sayfa: klasik menünün altında Alışveriş grubu → /alisveris */
+/** Ana sayfa: klasik menünün altında Alışveriş grubu → /alisveris (DB tree) */
 export function AlisverisBrowseSection({ filters, onSelect, alwaysShowClassicBack }: Props) {
+  const { tree } = useAlisverisBrowseTree();
   const [openIds, setOpenIds] = useState<Set<string>>(() => new Set());
   const [userCollapsed, setUserCollapsed] = useState<Set<string>>(() => new Set());
-
-  const tree = useMemo(() => ALISVERIS_BROWSE_TREE, []);
 
   useEffect(() => {
     if (!filters.category || !isAlisverisCategorySlug(filters.category)) return;
@@ -129,7 +137,8 @@ export function AlisverisBrowseSection({ filters, onSelect, alwaysShowClassicBac
       </div>
       <div className="v2-alisveris-list">
         {tree.map((node) => {
-          const Icon = GROUP_ICON[node.id] || Package;
+          const Icon =
+            GROUP_ICON[node.id] || GROUP_ICON[node.id.replace(/^alisveris\//, "")] || Package;
           const rootCat = node.filter.category || "";
           const rootActive =
             filters.category === rootCat ||
@@ -137,7 +146,15 @@ export function AlisverisBrowseSection({ filters, onSelect, alwaysShowClassicBac
             Boolean(
               filters.category &&
                 rootCat &&
-                rootCat.split(",").some((p) => p && (filters.category === p || filters.category!.startsWith(`${p}-`)))
+                rootCat
+                  .split(",")
+                  .some(
+                    (p) =>
+                      p &&
+                      (filters.category === p ||
+                        filters.category!.startsWith(`${p}-`) ||
+                        filters.category!.startsWith(`${p}/`))
+                  )
             );
           const hasChildren = Boolean(node.children?.length);
           const open = openIds.has(node.id);

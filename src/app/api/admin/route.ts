@@ -52,6 +52,7 @@ import {
 import { getEscrowRuntimeSettings } from "@/core/services/escrowSettingsService";
 import { categoryWhereForVertical, parseAdminVertical } from "@/lib/adminVertical";
 import { getFacetCounts, invalidateFacetCache } from "@/lib/facetCounts";
+import { invalidateCatalogTreeCache } from "@/core/services/catalog/catalogTreeCache";
 import { normalizeBrowseNavConfig } from "@/lib/browseNavConfig";
 import {
   COMMERCIAL_BUSINESS_TYPES_SETTING_KEY,
@@ -2375,6 +2376,10 @@ export async function POST(req: Request) {
       data.profile = mergeCommercialIntoProfile(asStringMap, commercial) as object;
     }
 
+    const prevSubtypes = Array.isArray(existing.commercialSubtypes)
+      ? [...existing.commercialSubtypes]
+      : [];
+
     const updated = await prisma.user.update({
       where: { id: userId },
       data,
@@ -2389,8 +2394,26 @@ export async function POST(req: Request) {
         role: true,
         tokenBalance: true,
         isActive: true,
+        profile: true,
       },
     });
+    if (body.commercialSubtypes !== undefined) {
+      try {
+        const { reportSellerOffersAfterSubtypeChange } = await import(
+          "@/core/services/verticalSubtypeChangeReport"
+        );
+        await reportSellerOffersAfterSubtypeChange({
+          userId,
+          actorId: admin.id,
+          previousSubtypes: prevSubtypes,
+          nextSubtypes: updated.commercialSubtypes || [],
+          accountType: updated.accountType,
+          profile: updated.profile,
+        });
+      } catch {
+        /* best-effort */
+      }
+    }
     if (String(updated.accountType).toUpperCase() === "TICARI") {
       const { syncShopNameFromUserProfile } = await import("@/core/services/tenantService");
       await syncShopNameFromUserProfile(userId);
@@ -2781,9 +2804,16 @@ export async function POST(req: Request) {
 
   if (action === "approve-edit") {
     try {
-      await approveListingEditRequest(String(body.requestId), admin.id, tenant.id);
+      await approveListingEditRequest(String(body.requestId), admin.id, tenant.id, {
+        adminBypass: Boolean(body.adminBypass),
+        bypassReason: body.bypassReason != null ? String(body.bypassReason) : null,
+      });
       return NextResponse.json({ ok: true });
     } catch (e) {
+      const { VerticalAccessError } = await import("@/core/guards/verticalAccessGuard");
+      if (e instanceof VerticalAccessError) {
+        return NextResponse.json(e.toJSON(), { status: e.status });
+      }
       return NextResponse.json(
         { error: e instanceof Error ? e.message : "Onay başarısız" },
         { status: 400 }
@@ -2973,6 +3003,7 @@ export async function POST(req: Request) {
       data: { isActive: Boolean(body.isActive) },
     });
     invalidateFacetCache();
+    invalidateCatalogTreeCache();
     await writeAuditLog({
       tenantId: tenant.id,
       actorId: admin.id,
@@ -2998,11 +3029,19 @@ export async function POST(req: Request) {
 
     let categoryId = body.id as string | undefined;
     if (categoryId) {
-      await prisma.category.update({ where: { id: categoryId }, data });
+      await prisma.category.update({
+        where: { id: categoryId },
+        data: { ...data, managedBySeed: false, source: "ADMIN" },
+      });
     } else {
-      const created = await prisma.category.create({ data });
+      const created = await prisma.category.create({
+        data: { ...data, managedBySeed: false, source: "ADMIN" },
+      });
       categoryId = created.id;
     }
+
+    invalidateFacetCache();
+    invalidateCatalogTreeCache();
 
     await writeAuditLog({
       tenantId: tenant.id,
@@ -3028,6 +3067,8 @@ export async function POST(req: Request) {
     }
 
     await prisma.category.delete({ where: { id } });
+    invalidateFacetCache();
+    invalidateCatalogTreeCache();
     await writeAuditLog({
       tenantId: tenant.id,
       actorId: admin.id,

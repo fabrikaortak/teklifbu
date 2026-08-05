@@ -214,6 +214,51 @@ export async function republishListing(listingId: string, sellerId: string) {
     return { ok: false as const, error: "Bekleme süresi dolmadı" };
   }
 
+  try {
+    const { resolveListingVerticalFromDb } = await import("@/lib/listingVertical");
+    const { assertUserMayPostVertical, VerticalAccessError } = await import(
+      "@/core/guards/verticalAccessGuard"
+    );
+    const seller = await prisma.user.findUnique({
+      where: { id: sellerId },
+      select: {
+        id: true,
+        accountType: true,
+        commercialSubtypes: true,
+        commercialStatus: true,
+        profile: true,
+        role: true,
+      },
+    });
+    const shop = await prisma.shop.findFirst({
+      where: { ownerId: sellerId },
+      select: { id: true, ownerId: true, isActive: true },
+    });
+    const vertical = await resolveListingVerticalFromDb({
+      categoryId: listing.categoryId,
+      attributes: (listing.attributes || {}) as Record<string, unknown>,
+    });
+    await assertUserMayPostVertical({
+      user: seller || { id: sellerId },
+      shop,
+      vertical,
+      action: "REPUBLISH",
+      categoryId: listing.categoryId,
+    });
+  } catch (e) {
+    const { VerticalAccessError } = await import("@/core/guards/verticalAccessGuard");
+    if (e instanceof VerticalAccessError) {
+      return {
+        ok: false as const,
+        error: e.message,
+        code: e.code,
+        vertical: e.vertical,
+        requiredSubtype: e.requiredSubtype,
+      };
+    }
+    throw e;
+  }
+
   const mode = String(settings.republish_mode || "same_reset");
   const minDays = Number(settings.listing_min_days ?? 3);
   const endsAt = new Date(Date.now() + minDays * 24 * 60 * 60 * 1000);

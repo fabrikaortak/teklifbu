@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { Smartphone, Sofa, Shirt, Bike, Package, type LucideIcon } from "lucide-react";
 import { ListingCard, type ListingCardData } from "@/components/ListingCard";
-import { ALISVERIS_BROWSE_TREE } from "@/data/classicBrowseTree";
 import { formatCompact } from "@/lib/format";
 
 const ICONS: Record<string, LucideIcon> = {
@@ -74,8 +73,13 @@ export function AlisverisGroupCards({ buckets, limit = 4, activeCategory, onSele
   );
 }
 
-export function emptyAlisverisBuckets(): GroupBucket[] {
-  return ALISVERIS_BROWSE_TREE.map((n) => ({
+export function emptyAlisverisBuckets(tree?: Array<{ id: string; name: string; filter: { category?: string } }>): GroupBucket[] {
+  const source = tree?.length ? tree : [];
+  if (!source.length) {
+    // Emergency: caller should pass DB tree; empty until loaded
+    return [];
+  }
+  return source.map((n) => ({
     id: n.id,
     name: n.name,
     category: n.filter.category || n.id,

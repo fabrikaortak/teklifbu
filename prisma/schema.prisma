@@ -146,6 +146,8 @@ model Shop {
   owner        User              @relation(fields: [ownerId], references: [id], onDelete: Cascade)
   subscription ShopSubscription?
   listings     Listing[]
+  sellerOffers SellerOffer[]
+  orderItems   OrderItem[]
 
   @@unique([tenantId, ownerId])
   @@index([tenantId])
@@ -235,6 +237,10 @@ model User {
   escrowSells           EscrowDeal[]               @relation("EscrowSeller")
   listingQuestionsAsked ListingQuestion[]          @relation("ListingQuestionsAsked")
   listingQuestionsAnswered ListingQuestion[]       @relation("ListingQuestionsAnswered")
+  sellerOffers          SellerOffer[]
+  catalogProductRequests CatalogProductRequest[]
+  ordersAsBuyer         Order[]                    @relation("OrderBuyer")
+  orderItemsAsSeller    OrderItem[]                @relation("OrderItemSeller")
 
   @@index([tenantId])
 }
@@ -267,14 +273,49 @@ model Category {
    * hotel | logistics | rideshare
    */
   premiumVertical String?
+  /**
+   * Ağaç derinliği (0 = kök). Mevcut satırlar migration ile doldurulur.
+   */
+  level           Int        @default(0)
+  /**
+   * Materialized path: "elektronik/telefon/cep-telefonu"
+   */
+  path            String?
+  description     String?    @db.Text
+  metaTitle       String?
+  metaDescription String?    @db.Text
+  canonicalUrl    String?
+  image           String?
+  deletedAt       DateTime?
+  /**
+   * Formda model alanı: zorunlu / opsiyonel / gizli
+   */
+  modelMode             CatalogModelMode      @default(OPTIONAL)
+  /**
+   * Marka mirası: çocuk kategori parent markalarını nasıl alsın
+   */
+  brandInheritanceMode  BrandInheritanceMode  @default(NONE)
+  /**
+   * true ise seed bu kaydı güncelleyebilir; admin düzenleyince false yapılır
+   */
+  managedBySeed         Boolean               @default(true)
+  source                CatalogRecordSource   @default(SYSTEM_SEED)
   parentId        String?
   parent          Category?  @relation("CategoryTree", fields: [parentId], references: [id], onDelete: SetNull)
   children        Category[] @relation("CategoryTree")
   listings        Listing[]
+  categoryBrands  CategoryBrand[]
+  categoryModels  CategoryModel[]
+  categoryAttributes CategoryAttribute[]
+  products        Product[]
 
   @@index([parentId])
   @@index([isActive, sortOrder])
   @@index([isPremium, premiumVertical])
+  @@index([level])
+  @@index([path])
+  @@index([deletedAt])
+  @@index([managedBySeed])
 }
 
 model Listing {
@@ -337,6 +378,12 @@ model Listing {
    * Güvenli Öde (escrow) ile satılabilir mi
    */
   escrowEligible       Boolean       @default(false)
+  /**
+   * Katalog bağlantıları (nullable — mevcut ilanlar etkilenmez)
+   */
+  productId            String?
+  variantId            String?
+  sellerOfferId        String?
   createdAt            DateTime      @default(now())
   updatedAt            DateTime      @updatedAt
 
@@ -344,6 +391,9 @@ model Listing {
   shop                Shop?                     @relation(fields: [shopId], references: [id])
   seller              User                      @relation(fields: [sellerId], references: [id])
   category            Category                  @relation(fields: [categoryId], references: [id])
+  product             Product?                  @relation(fields: [productId], references: [id], onDelete: SetNull)
+  variant             ProductVariant?           @relation(fields: [variantId], references: [id], onDelete: SetNull)
+  sellerOffer         SellerOffer?              @relation("ListingPrimaryOffer", fields: [sellerOfferId], references: [id], onDelete: SetNull)
   bids                Bid[]                     @relation("ListingBids")
   favorites           Favorite[]
   messages            Message[]
@@ -355,6 +405,8 @@ model Listing {
   tokenRefunds        TokenRefund[]
   escrowDeals         EscrowDeal[]
   listingQuestions    ListingQuestion[]
+  linkedOffers        SellerOffer[]             @relation("OfferLinkedListing")
+  orderItems          OrderItem[]
 
   @@index([status, endsAt])
   @@index([categoryId])
@@ -364,6 +416,9 @@ model Listing {
   @@index([city, district])
   @@index([dealType])
   @@index([listingNo])
+  @@index([productId])
+  @@index([variantId])
+  @@index([sellerOfferId])
 }
 
 model ListingExtensionRequest {
@@ -524,6 +579,7 @@ model EscrowDeal {
   listing Listing @relation(fields: [listingId], references: [id], onDelete: Cascade)
   buyer   User    @relation("EscrowBuyer", fields: [buyerId], references: [id])
   seller  User    @relation("EscrowSeller", fields: [sellerId], references: [id])
+  order   Order?
 
   @@index([status])
   @@index([listingId])
@@ -809,4 +865,440 @@ model SystemSetting {
   label     String?
   group     String?
   updatedAt DateTime @updatedAt
+}
+
+/* ——— Alışveriş katalog (PHASE 0) — mevcut Listing akışına paralel ——— */
+
+enum AttributeType {
+  TEXT
+  NUMBER
+  SINGLE_SELECT
+  MULTI_SELECT
+  BOOLEAN
+  COLOR
+  DATE
+  RANGE
+}
+
+enum ProductStatus {
+  DRAFT
+  ACTIVE
+  ARCHIVED
+}
+
+enum SellerOfferStatus {
+  DRAFT
+  PENDING_REVIEW
+  ACTIVE
+  PAUSED
+  SOLD_OUT
+  REJECTED
+  ARCHIVED
+}
+
+enum OrderStatus {
+  PENDING_PAYMENT
+  PAID
+  SHIPPED
+  COMPLETED
+  CANCELLED
+  REFUNDED
+  DISPUTED
+}
+
+enum CatalogModelMode {
+  REQUIRED
+  OPTIONAL
+  DISABLED
+}
+
+enum BrandInheritanceMode {
+  NONE
+  MERGE
+  OVERRIDE
+}
+
+enum CatalogRecordSource {
+  SYSTEM_SEED
+  ADMIN
+}
+
+enum CatalogProductRequestStatus {
+  DRAFT
+  PENDING
+  APPROVED
+  REJECTED
+  MERGED
+}
+
+model Brand {
+  id            String              @id @default(cuid())
+  name          String
+  slug          String              @unique
+  logo          String?
+  isActive      Boolean             @default(true)
+  sortOrder     Int                 @default(0)
+  managedBySeed Boolean             @default(true)
+  source        CatalogRecordSource @default(SYSTEM_SEED)
+  createdAt     DateTime            @default(now())
+  updatedAt     DateTime            @updatedAt
+  deletedAt     DateTime?
+
+  models         ProductModel[]
+  categoryBrands CategoryBrand[]
+  products       Product[]
+
+  @@index([isActive, sortOrder])
+  @@index([deletedAt])
+  @@index([managedBySeed])
+}
+
+model ProductModel {
+  id            String              @id @default(cuid())
+  brandId       String
+  name          String
+  slug          String
+  isActive      Boolean             @default(true)
+  sortOrder     Int                 @default(0)
+  managedBySeed Boolean             @default(true)
+  source        CatalogRecordSource @default(SYSTEM_SEED)
+  createdAt     DateTime            @default(now())
+  updatedAt     DateTime            @updatedAt
+  deletedAt     DateTime?
+
+  brand          Brand           @relation(fields: [brandId], references: [id], onDelete: Cascade)
+  categoryModels CategoryModel[]
+  products       Product[]
+
+  @@unique([brandId, slug])
+  @@index([brandId, isActive, sortOrder])
+  @@index([deletedAt])
+}
+
+model CategoryBrand {
+  categoryId String
+  brandId    String
+  sortOrder  Int     @default(0)
+  isFeatured Boolean @default(false)
+
+  category Category @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  brand    Brand    @relation(fields: [brandId], references: [id], onDelete: Cascade)
+
+  @@id([categoryId, brandId])
+  @@index([brandId])
+  @@index([categoryId, sortOrder])
+}
+
+model CategoryModel {
+  categoryId String
+  modelId    String
+  sortOrder  Int    @default(0)
+
+  category Category     @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  model    ProductModel @relation(fields: [modelId], references: [id], onDelete: Cascade)
+
+  @@id([categoryId, modelId])
+  @@index([modelId])
+  @@index([categoryId, sortOrder])
+}
+
+model Attribute {
+  id            String              @id @default(cuid())
+  name          String
+  slug          String              @unique
+  type          AttributeType
+  isActive      Boolean             @default(true)
+  managedBySeed Boolean             @default(true)
+  source        CatalogRecordSource @default(SYSTEM_SEED)
+  createdAt     DateTime            @default(now())
+  updatedAt     DateTime            @updatedAt
+  deletedAt     DateTime?
+
+  options             AttributeOption[]
+  categoryAttributes  CategoryAttribute[]
+  variantValues       ProductVariantValue[]
+
+  @@index([isActive])
+  @@index([deletedAt])
+  @@index([managedBySeed])
+}
+
+model AttributeOption {
+  id          String   @id @default(cuid())
+  attributeId String
+  label       String
+  value       String
+  colorCode   String?
+  sortOrder   Int      @default(0)
+  isActive    Boolean  @default(true)
+
+  attribute     Attribute             @relation(fields: [attributeId], references: [id], onDelete: Cascade)
+  variantValues ProductVariantValue[]
+
+  @@unique([attributeId, value])
+  @@index([attributeId, sortOrder])
+}
+
+model CategoryAttribute {
+  categoryId         String
+  attributeId        String
+  required           Boolean @default(false)
+  filterable         Boolean @default(false)
+  formVisible        Boolean @default(true)
+  detailVisible      Boolean @default(true)
+  comparisonVisible  Boolean @default(false)
+  searchable         Boolean @default(false)
+  isVariant          Boolean @default(false)
+  unit               String?
+  sortOrder          Int     @default(0)
+
+  category  Category  @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  attribute Attribute @relation(fields: [attributeId], references: [id], onDelete: Cascade)
+
+  @@id([categoryId, attributeId])
+  @@index([attributeId])
+  @@index([categoryId, sortOrder])
+}
+
+model Product {
+  id             String        @id @default(cuid())
+  categoryId     String
+  brandId        String?
+  modelId        String?
+  /**
+   * Katalog kanonik adı (satıcı serbest başlık değil)
+   */
+  name           String
+  slug           String
+  description    String?       @db.Text
+  mainImage      String?
+  barcode        String?
+  status         ProductStatus @default(DRAFT)
+  managedByAdmin Boolean       @default(true)
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+  deletedAt      DateTime?
+
+  category Category         @relation(fields: [categoryId], references: [id], onDelete: Restrict)
+  brand    Brand?           @relation(fields: [brandId], references: [id], onDelete: SetNull)
+  model    ProductModel?    @relation(fields: [modelId], references: [id], onDelete: SetNull)
+  variants ProductVariant[]
+  offers   SellerOffer[]
+  listings Listing[]
+  orderItems OrderItem[]
+  requestsAsMerged CatalogProductRequest[] @relation("MergedIntoProduct")
+
+  @@unique([categoryId, slug])
+  @@index([brandId])
+  @@index([modelId])
+  @@index([status])
+  @@index([barcode])
+  @@index([deletedAt])
+  @@index([name])
+}
+
+model ProductVariant {
+  id             String    @id @default(cuid())
+  productId      String
+  sku            String
+  barcode        String?
+  title          String
+  /**
+   * Normalize edilmiş özellik kombinasyonu: attrId:optionId|...
+   */
+  attributesHash String
+  isActive       Boolean   @default(true)
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+  deletedAt      DateTime?
+
+  product  Product               @relation(fields: [productId], references: [id], onDelete: Cascade)
+  values   ProductVariantValue[]
+  offers   SellerOffer[]
+  listings Listing[]
+  orderItems OrderItem[]
+
+  @@unique([productId, sku])
+  @@unique([productId, attributesHash])
+  @@index([sku])
+  @@index([barcode])
+  @@index([isActive])
+  @@index([deletedAt])
+}
+
+model ProductVariantValue {
+  id           String   @id @default(cuid())
+  variantId    String
+  attributeId  String
+  optionId     String?
+  textValue    String?
+  numberValue  Float?
+  booleanValue Boolean?
+
+  variant   ProductVariant   @relation(fields: [variantId], references: [id], onDelete: Cascade)
+  attribute Attribute        @relation(fields: [attributeId], references: [id], onDelete: Restrict)
+  option    AttributeOption? @relation(fields: [optionId], references: [id], onDelete: SetNull)
+
+  @@unique([variantId, attributeId])
+  @@index([attributeId])
+  @@index([optionId])
+}
+
+model SellerOffer {
+  id                 String            @id @default(cuid())
+  productId          String
+  variantId          String
+  sellerId           String
+  shopId             String
+  listingId          String?
+  sellerSku          String?
+  sellerNote         String?           @db.Text
+  price              BigInt
+  discountedPrice    BigInt?
+  stockQty           Int               @default(0)
+  shippingTimeDays   Int?
+  shippingPrice      BigInt?
+  warrantyType       String?
+  warrantyMonths     Int?
+  invoiceAvailable   Boolean           @default(false)
+  condition          String?
+  /**
+   * ShippingProfile tablosu Phase 2+; şimdilik serbest id
+   */
+  shippingProfileId  String?
+  status             SellerOfferStatus @default(DRAFT)
+  /**
+   * Admin onayı kaydı — SOLD_OUT→ACTIVE restock için gerekli
+   */
+  approvedAt         DateTime?
+  approvedBy         String?
+  createdAt          DateTime          @default(now())
+  updatedAt          DateTime          @updatedAt
+  deletedAt          DateTime?
+
+  product  Product         @relation(fields: [productId], references: [id], onDelete: Restrict)
+  variant  ProductVariant  @relation(fields: [variantId], references: [id], onDelete: Restrict)
+  seller   User            @relation(fields: [sellerId], references: [id], onDelete: Cascade)
+  shop     Shop            @relation(fields: [shopId], references: [id], onDelete: Cascade)
+  listing  Listing?        @relation("OfferLinkedListing", fields: [listingId], references: [id], onDelete: SetNull)
+  primaryListings Listing[] @relation("ListingPrimaryOffer")
+  orderItems OrderItem[]
+
+  @@index([productId, status])
+  @@index([variantId, status])
+  @@index([sellerId])
+  @@index([shopId, status])
+  @@index([listingId])
+  @@index([deletedAt])
+  @@index([approvedAt])
+}
+
+/**
+ * Katalog checkout siparişi (1 Order = 1 SellerOffer = 1 OrderItem).
+ * Tutarlar kuruş (BIGINT). Geçmiş snapshot ile korunur.
+ */
+model Order {
+  id            String      @id @default(cuid())
+  orderNo       String      @unique
+  buyerId       String
+  status        OrderStatus @default(PENDING_PAYMENT)
+  currency      String      @default("TRY")
+  subtotal      BigInt
+  shippingTotal BigInt      @default(0)
+  discountTotal BigInt      @default(0)
+  taxTotal      BigInt      @default(0)
+  grandTotal    BigInt
+  escrowDealId  String?     @unique
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+  cancelledAt   DateTime?
+
+  buyer      User        @relation("OrderBuyer", fields: [buyerId], references: [id], onDelete: Restrict)
+  escrowDeal EscrowDeal? @relation(fields: [escrowDealId], references: [id], onDelete: SetNull)
+  items      OrderItem[]
+
+  @@index([buyerId, createdAt])
+  @@index([status])
+}
+
+model OrderItem {
+  id                        String   @id @default(cuid())
+  orderId                   String
+  productId                 String?
+  variantId                 String?
+  sellerOfferId             String
+  listingId                 String?
+  shopId                    String?
+  sellerId                  String
+  productNameSnapshot       String
+  variantTitleSnapshot      String?
+  sellerNameSnapshot        String
+  shopNameSnapshot          String?
+  sellerSkuSnapshot         String?
+  productImageSnapshot      String?
+  barcodeSnapshot           String?
+  categoryPathSnapshot      String?
+  invoiceAvailableSnapshot  Boolean?
+  conditionSnapshot         String?
+  unitPriceSnapshot         BigInt
+  discountedPriceSnapshot   BigInt?
+  effectiveUnitPriceSnapshot BigInt
+  shippingPriceSnapshot     BigInt   @default(0)
+  warrantyTypeSnapshot      String?
+  warrantyMonthsSnapshot    Int?
+  taxRateSnapshot           Float?
+  quantity                  Int
+  lineSubtotal              BigInt
+  lineShipping              BigInt   @default(0)
+  lineTax                   BigInt   @default(0)
+  lineTotal                 BigInt
+  createdAt                 DateTime @default(now())
+
+  order       Order           @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  product     Product?        @relation(fields: [productId], references: [id], onDelete: SetNull)
+  variant     ProductVariant? @relation(fields: [variantId], references: [id], onDelete: SetNull)
+  sellerOffer SellerOffer     @relation(fields: [sellerOfferId], references: [id], onDelete: Restrict)
+  listing     Listing?        @relation(fields: [listingId], references: [id], onDelete: SetNull)
+  shop        Shop?           @relation(fields: [shopId], references: [id], onDelete: SetNull)
+  seller      User            @relation("OrderItemSeller", fields: [sellerId], references: [id], onDelete: Restrict)
+
+  @@index([orderId])
+  @@index([sellerOfferId])
+  @@index([sellerId])
+  @@index([listingId])
+  @@index([productId])
+  @@index([variantId])
+}
+
+/**
+ * Satıcı yeni katalog ürünü oluşturamaz; talep açar, admin onaylar.
+ */
+model CatalogProductRequest {
+  id              String                      @id @default(cuid())
+  requesterUserId String
+  shopId          String?
+  categoryId      String
+  brandId         String?
+  modelId         String?
+  proposedName    String
+  barcode         String?
+  description     String?                     @db.Text
+  attributesJson  Json?
+  imageUrls       String[]                    @default([])
+  status          CatalogProductRequestStatus @default(PENDING)
+  reviewedBy      String?
+  reviewedAt      DateTime?
+  rejectionReason String?                     @db.Text
+  mergedProductId String?
+  createdAt       DateTime                    @default(now())
+  updatedAt       DateTime                    @updatedAt
+
+  requester     User     @relation(fields: [requesterUserId], references: [id], onDelete: Cascade)
+  mergedProduct Product? @relation("MergedIntoProduct", fields: [mergedProductId], references: [id], onDelete: SetNull)
+
+  @@index([status, createdAt])
+  @@index([requesterUserId])
+  @@index([categoryId])
+  @@index([brandId])
+  @@index([mergedProductId])
 }

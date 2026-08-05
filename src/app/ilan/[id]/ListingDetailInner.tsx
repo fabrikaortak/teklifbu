@@ -373,6 +373,7 @@ export default function ListingDetailInner() {
   const [canMessage, setCanMessage] = useState(false);
   const [messagingAccess, setMessagingAccess] = useState<"approved" | "everyone" | "logged_in">("approved");
   const [sellerFav, setSellerFav] = useState(false);
+  const [shopCrumbs, setShopCrumbs] = useState<Array<{ label: string; href: string }> | null>(null);
   const [housingFieldsEnabled, setHousingFieldsEnabled] = useState(DEFAULT_HOUSING_FORM_FIELDS_ENABLED);
   const [detailLayout, setDetailLayout] = useState<"classic" | "sahibinden">("classic");
   const [premiumDetailLayout, setPremiumDetailLayout] = useState<"premium" | "sahibinden" | "classic">("premium");
@@ -479,6 +480,39 @@ export default function ListingDetailInner() {
     load();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [params.id]);
+
+  const slugForCrumb = String(listing?.category?.slug || "");
+  const shoppingSlug = isAlisverisCategorySlug(slugForCrumb);
+  useEffect(() => {
+    if (!shoppingSlug || !slugForCrumb) {
+      setShopCrumbs(null);
+      return;
+    }
+    let cancelled = false;
+    fetch(`/api/catalog/breadcrumb?categorySlug=${encodeURIComponent(slugForCrumb)}`)
+      .then((r) => r.json())
+      .then((d) => {
+        if (cancelled) return;
+        if (d.ok && Array.isArray(d.crumbs) && d.crumbs.length) {
+          setShopCrumbs(
+            d.crumbs.map((c: { name: string; href: string; slug: string }) => ({
+              label: c.name,
+              href: c.href || `/alisveris?category=${encodeURIComponent(c.slug)}`,
+            }))
+          );
+        } else {
+          console.warn("[listing-breadcrumb] empty DB chain → TS fallback");
+          setShopCrumbs(null);
+        }
+      })
+      .catch((e) => {
+        console.warn("[listing-breadcrumb] API fail → TS fallback", e);
+        if (!cancelled) setShopCrumbs(null);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [shoppingSlug, slugForCrumb]);
 
   useEffect(() => {
     if (search.get("revise") === "1") {
@@ -839,13 +873,13 @@ export default function ListingDetailInner() {
   }
 
   const location = [listing.neighborhood, listing.district, listing.city].filter(Boolean).join(", ");
-  const categoryCrumbs = listingCategoryCrumbs(listing);
+  const isShoppingCategory = shoppingSlug;
+  const categoryCrumbs = shopCrumbs?.length ? shopCrumbs : listingCategoryCrumbs(listing);
   const memberLabel = new Date(listing.seller.memberSince).toLocaleDateString("tr-TR", {
     month: "long",
     year: "numeric",
   });
 
-  const isShoppingCategory = isAlisverisCategorySlug(listing.category?.slug);
   const useEcommerceDetail = isShoppingCategory && shoppingDetailTemplate === "ecommerce_v1";
 
   if (useEcommerceDetail) {

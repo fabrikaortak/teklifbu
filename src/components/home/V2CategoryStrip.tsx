@@ -1,5 +1,6 @@
 "use client";
 
+import { useMemo } from "react";
 import {
   V2_ALISVERIS_STRIP,
   V2_CLASSIC_STRIP,
@@ -7,10 +8,13 @@ import {
   classicCatIcon,
   resolveCatSlug,
   v2CatIcon,
+  type V2NavCat,
 } from "@/components/home/v2StripCats";
 import type { SearchFilters } from "@/components/SearchPanel";
 import { useTheme } from "@/components/ThemeProvider";
 import { ShoppingCartControl } from "@/components/cart/ShoppingCartControl";
+import { useAlisverisBrowseTree } from "@/hooks/useAlisverisBrowseTree";
+import { Smartphone, Sofa, Shirt, Bike, Package, Utensils, Wrench, type LucideIcon } from "lucide-react";
 
 type BrowsePatch = {
   category: string;
@@ -32,6 +36,18 @@ const EMPTY_PATCH: BrowsePatch = {
   trim: "",
 };
 
+const STRIP_ICONS: Record<string, LucideIcon> = {
+  elektronik: Smartphone,
+  "ev-ve-yasam": Sofa,
+  "ev-yasam": Sofa,
+  "ev-aletleri": Wrench,
+  moda: Shirt,
+  "spor-outdoor": Bike,
+  hobi: Bike,
+  "mutfak-ve-sofra": Utensils,
+  diger: Package,
+};
+
 export function V2CategoryStrip({
   filters,
   onSelect,
@@ -39,14 +55,31 @@ export function V2CategoryStrip({
 }: {
   filters: Pick<SearchFilters, "category">;
   onSelect: (patch: BrowsePatch) => void;
-  /** home: Emlak/Vasıta/Alışveriş · alisveris: alışveriş grupları */
   mode?: "home" | "alisveris";
 }) {
   const { categoriesTheme, shoppingCartPlacement } = useTheme();
   const classicCats = categoriesTheme === "v2";
+  const { tree: dbTree } = useAlisverisBrowseTree();
+
+  const dbStrip: V2NavCat[] = useMemo(
+    () =>
+      dbTree.map((n) => {
+        const key = n.id.replace(/^alisveris\//, "");
+        return {
+          slug: key,
+          name: n.name,
+          mapTo: n.filter.category || n.id,
+          Icon: STRIP_ICONS[key] || Package,
+        };
+      }),
+    [dbTree]
+  );
+
   const stripCats =
     mode === "alisveris"
-      ? V2_ALISVERIS_STRIP
+      ? dbStrip.length
+        ? dbStrip
+        : V2_ALISVERIS_STRIP
       : classicCats
         ? V2_CLASSIC_STRIP
         : V2_NAV_CATS;
@@ -76,6 +109,7 @@ export function V2CategoryStrip({
                   (p) =>
                     filters.category === p ||
                     filters.category.startsWith(`${p}-`) ||
+                    filters.category.startsWith(`${p}__`) ||
                     (p.includes("-") &&
                       filters.category.startsWith(p.split("-").slice(0, 2).join("-")))
                 ));

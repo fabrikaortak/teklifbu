@@ -136,6 +136,52 @@ export async function createListingForSeller(
     };
   }
 
+  // Dikey ACL
+  try {
+    const { resolveListingVerticalFromDb } = await import("@/lib/listingVertical");
+    const { assertUserMayPostVertical, VerticalAccessError } = await import(
+      "@/core/guards/verticalAccessGuard"
+    );
+    const vertical = await resolveListingVerticalFromDb({
+      categoryId: category.id,
+      categorySlug: category.slug,
+      attributes: (body.attributes || {}) as Record<string, unknown>,
+      listingKind: body.listingKind ? String(body.listingKind) : null,
+    });
+    const fullUser = await prisma.user.findUnique({
+      where: { id: session.id },
+      select: {
+        id: true,
+        accountType: true,
+        commercialSubtypes: true,
+        commercialStatus: true,
+        profile: true,
+        role: true,
+      },
+    });
+    const shopRow = limitCheck.shopId
+      ? await prisma.shop.findUnique({
+          where: { id: limitCheck.shopId },
+          select: { id: true, ownerId: true, isActive: true },
+        })
+      : null;
+    await assertUserMayPostVertical({
+      user: fullUser || { id: session.id, accountType: session.accountType },
+      shop: shopRow,
+      vertical,
+      action: "CREATE_LISTING",
+      categoryId: category.id,
+      adminBypass: Boolean(body.adminBypass) && session.role === "ADMIN",
+      adminId: session.role === "ADMIN" ? session.id : null,
+    });
+  } catch (e) {
+    const { VerticalAccessError } = await import("@/core/guards/verticalAccessGuard");
+    if (e instanceof VerticalAccessError) {
+      return { ok: false, status: e.status, body: e.toJSON() };
+    }
+    throw e;
+  }
+
   const eidsCheck = await guardListingEids({
     userId: session.id,
     categorySlug: category.slug,

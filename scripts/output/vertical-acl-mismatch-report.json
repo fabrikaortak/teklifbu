@@ -1,0 +1,77 @@
+{
+  "generatedAt": "2026-08-05T15:55:20.104Z",
+  "note": "Salt okunur admin inceleme raporu — otomatik silme/kapatma yok",
+  "summary": {
+    "emlakOfisiWrongListings": 1,
+    "galeriWrongListings": 0,
+    "magazaWrongListings": 1,
+    "sellerOffersWithoutMagaza": 1,
+    "productRequestsWithoutMagaza": 0,
+    "activeOffersOnInactiveShop": 0
+  },
+  "buckets": {
+    "emlakOfisi_vasita_or_alisveris_listings": [
+      {
+        "listingId": "cmsg6sbsm0005uzu0jl24vcah",
+        "listingNo": "590690862797",
+        "title": "Apple Apple iPhone 14 Pro 256 GB · 128 GB",
+        "status": "ACTIVE",
+        "categoryId": "cmsg3xg0i000vuzdcq5lzaldx",
+        "categorySlug": "sifir-urun-cep-telefonu__akilli-telefon",
+        "vertical": "alisveris",
+        "userId": "cms6n14fm000juzssd50de93f",
+        "userName": "Ayşe Emlak",
+        "phone": "05329998877",
+        "accountType": "TICARI",
+        "commercialSubtypes": [
+          "EMLAK_OFISI"
+        ],
+        "allowedVerticals": [
+          "emlak"
+        ]
+      }
+    ],
+    "galeri_emlak_or_alisveris_listings": [],
+    "magaza_emlak_or_vasita_listings": [
+      {
+        "listingId": "cmsdd15x6000euzhwyy8lkbnd",
+        "listingNo": "288394018584",
+        "title": "SAHİBİNDEN SATILIK LÜKS DAİRE",
+        "status": "ACTIVE",
+        "categoryId": "cms6gwzms0000uzqonwbhzue2",
+        "categorySlug": "konut",
+        "vertical": "emlak",
+        "userId": "cmsdcksyt000uuz9sz58ztx7i",
+        "userName": "EMRAH KAHRAMAN",
+        "phone": "05444041010",
+        "accountType": "TICARI",
+        "commercialSubtypes": [
+          "MAGAZA"
+        ],
+        "allowedVerticals": [
+          "alisveris"
+        ]
+      }
+    ],
+    "sellerOffers_without_magaza": [
+      {
+        "offerId": "cmsg7otem0003uznkouv9zeie",
+        "status": "PAUSED",
+        "shopId": "cms6n14fv000luzsselqeteq6",
+        "shopName": "Ayşe Emlak Ofisi",
+        "shopActive": true,
+        "productId": "cmsg6rv600001uzvopftlu81o",
+        "userId": "cms6n14fm000juzssd50de93f",
+        "userName": "Ayşe Emlak",
+        "phone": "05329998877",
+        "accountType": "TICARI",
+        "commercialSubtypes": [
+          "EMLAK_OFISI"
+        ],
+        "createdAt": "2026-08-05T14:58:09.502Z"
+      }
+    ],
+    "productRequests_without_magaza": [],
+    "activeSellerOffers_on_inactive_shop": []
+  }
+}

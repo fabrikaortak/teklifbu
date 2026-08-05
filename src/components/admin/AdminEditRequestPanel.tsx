@@ -106,7 +106,10 @@ function EditDetailModal({
   busy,
   reason,
   msg,
+  verticalDenied,
+  adminBypass,
   onReasonChange,
+  onAdminBypassChange,
   onClose,
   onApprove,
   onReject,
@@ -116,7 +119,10 @@ function EditDetailModal({
   busy: boolean;
   reason: string;
   msg: string;
+  verticalDenied: boolean;
+  adminBypass: boolean;
   onReasonChange: (v: string) => void;
+  onAdminBypassChange: (v: boolean) => void;
   onClose: () => void;
   onApprove: () => void;
   onReject: () => void;
@@ -239,12 +245,50 @@ function EditDetailModal({
 
         {mode === "pending" ? (
           <>
+            {verticalDenied ? (
+              <div
+                style={{
+                  marginBottom: 12,
+                  padding: 12,
+                  borderRadius: 10,
+                  background: "#fef2f2",
+                  border: "1px solid #fecaca",
+                  fontSize: 13,
+                  color: "#991b1b",
+                }}
+              >
+                <strong>VERTICAL_ACCESS_DENIED</strong> — Satıcının güncel faaliyet alanı bu dikeye izin
+                vermiyor. Bilinçli onay için bypass işaretleyin ve gerekçe yazın.
+                <label
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: 8,
+                    marginTop: 10,
+                    fontWeight: 700,
+                    color: "#7f1d1d",
+                    cursor: "pointer",
+                  }}
+                >
+                  <input
+                    type="checkbox"
+                    checked={adminBypass}
+                    onChange={(e) => onAdminBypassChange(e.target.checked)}
+                  />
+                  Admin bypass (audit log tutulur)
+                </label>
+              </div>
+            ) : null}
             <label style={{ display: "grid", gap: 4, fontSize: 12, fontWeight: 700, marginBottom: 12 }}>
-              Red sebebi
+              {verticalDenied && adminBypass ? "Bypass / red gerekçesi" : "Red sebebi"}
               <textarea
                 className="input"
                 rows={2}
-                placeholder="Reddetmek için sebep yazın…"
+                placeholder={
+                  verticalDenied && adminBypass
+                    ? "Neden dikey ACL override ediyorsunuz?"
+                    : "Reddetmek için sebep yazın…"
+                }
                 value={reason}
                 onChange={(e) => onReasonChange(e.target.value)}
                 style={{ fontWeight: 500 }}
@@ -256,7 +300,14 @@ function EditDetailModal({
                   fontSize: 12.5,
                   fontWeight: 600,
                   marginBottom: 10,
-                  color: msg.includes("başarısız") || msg.includes("yazın") ? "#b91c1c" : "#059669",
+                  color:
+                    msg.includes("başarısız") ||
+                    msg.includes("yazın") ||
+                    msg.includes("VERTICAL") ||
+                    msg.includes("yetki") ||
+                    msg.includes("gerekçe")
+                      ? "#b91c1c"
+                      : "#059669",
                 }}
               >
                 {msg}
@@ -282,7 +333,7 @@ function EditDetailModal({
               <button
                 type="button"
                 className="btn-orange"
-                disabled={busy}
+                disabled={busy || (verticalDenied && (!adminBypass || !reason.trim()))}
                 onClick={onApprove}
                 style={{
                   padding: "8px 16px",
@@ -292,7 +343,8 @@ function EditDetailModal({
                   fontWeight: 800,
                 }}
               >
-                <CheckCircle2 size={15} /> Onayla
+                <CheckCircle2 size={15} />{" "}
+                {verticalDenied && adminBypass ? "Bypass ile onayla" : "Onayla"}
               </button>
             </div>
           </>
@@ -318,6 +370,8 @@ export function AdminEditRequestPanel({ vertical }: { vertical?: AdminVertical }
   const [busy, setBusy] = useState(false);
   const [reason, setReason] = useState("");
   const [msg, setMsg] = useState("");
+  const [verticalDenied, setVerticalDenied] = useState(false);
+  const [adminBypass, setAdminBypass] = useState(false);
 
   const load = useCallback(async () => {
     setLoading(true);
@@ -348,6 +402,8 @@ export function AdminEditRequestPanel({ vertical }: { vertical?: AdminVertical }
   useEffect(() => {
     setReason("");
     setMsg("");
+    setVerticalDenied(false);
+    setAdminBypass(false);
   }, [selectedId]);
 
   const rows = tab === "pending" ? pending : tab === "approved" ? approved : rejected;
@@ -365,20 +421,39 @@ export function AdminEditRequestPanel({ vertical }: { vertical?: AdminVertical }
   }, [selected, pending, approved, rejected, tab]);
 
   async function approve(id: string) {
+    if (verticalDenied && (!adminBypass || !reason.trim())) {
+      setMsg("Bypass için gerekçe yazın.");
+      return;
+    }
     setBusy(true);
     setMsg("");
     const res = await fetch("/api/admin", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ action: "approve-edit", requestId: id }),
+      body: JSON.stringify({
+        action: "approve-edit",
+        requestId: id,
+        ...(adminBypass
+          ? { adminBypass: true, bypassReason: reason.trim() }
+          : {}),
+      }),
     });
     const d = await res.json().catch(() => ({}));
     setBusy(false);
     if (!res.ok) {
+      if (d.code === "VERTICAL_ACCESS_DENIED") {
+        setVerticalDenied(true);
+        setMsg(
+          `${d.code}${d.vertical ? ` (${d.vertical})` : ""}: ${d.error || "Dikey yetki yok"}`
+        );
+        return;
+      }
       setMsg(d.error || "Onay başarısız");
       return;
     }
     setSelectedId(null);
+    setVerticalDenied(false);
+    setAdminBypass(false);
     await load();
   }
 
@@ -554,7 +629,10 @@ export function AdminEditRequestPanel({ vertical }: { vertical?: AdminVertical }
           busy={busy}
           reason={reason}
           msg={msg}
+          verticalDenied={verticalDenied}
+          adminBypass={adminBypass}
           onReasonChange={setReason}
+          onAdminBypassChange={setAdminBypass}
           onClose={() => setSelectedId(null)}
           onApprove={() => approve(selected.id)}
           onReject={() => reject(selected.id)}

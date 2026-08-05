@@ -12,7 +12,6 @@ import { ListingViewToggle, useListingView } from "@/components/ListingViewToggl
 import { CategoryBrowseNav } from "@/components/CategoryBrowseNav";
 import { PremiumBrowseSection } from "@/components/PremiumBrowseSection";
 import {
-  ALISVERIS_BROWSE_TREE,
   allAlisverisCategoryParam,
   isAlisverisCategorySlug,
 } from "@/data/classicBrowseTree";
@@ -38,6 +37,8 @@ import {
   emptyAlisverisBuckets,
 } from "@/components/home/AlisverisGroupCards";
 import { useRegisterShoppingSurface } from "@/components/cart/CartProvider";
+import { useAlisverisBrowseTree } from "@/hooks/useAlisverisBrowseTree";
+import type { BrowseNode } from "@/data/categoryBrowseTree";
 
 function formatChangePct(n: number) {
   const abs = Math.abs(n);
@@ -78,13 +79,13 @@ function listingQuery(filters: SearchFilters) {
 }
 
 /** Durumu seçimine göre alışveriş kategori parametresini daralt */
-function scopeAlisverisCategory(category: string, condition: string): string {
+function scopeAlisverisCategory(category: string, condition: string, allParam: string): string {
   const base =
     !category || category === "alisveris"
-      ? allAlisverisCategoryParam()
+      ? allParam
       : isAlisverisCategorySlug(category)
         ? category
-        : allAlisverisCategoryParam();
+        : allParam;
 
   if (condition === "all") return base;
 
@@ -93,10 +94,43 @@ function scopeAlisverisCategory(category: string, condition: string): string {
     .split(",")
     .map((s) => s.trim())
     .filter(Boolean)
-    .filter((p) => p === prefix || p.startsWith(`${prefix}-`) || (prefix === "ikinci-el" && p === "diger"));
+    .filter(
+      (p) =>
+        p === prefix ||
+        p.startsWith(`${prefix}-`) ||
+        p.startsWith(`${prefix}__`) ||
+        (prefix === "ikinci-el" && p === "diger")
+    );
 
   if (parts.length) return parts.join(",");
   return prefix;
+}
+
+function allParamFromTree(tree: BrowseNode[]): string {
+  const parts = tree.map((n) => n.filter.category || "").filter(Boolean);
+  return parts.length ? parts.join(",") : allAlisverisCategoryParam();
+}
+
+function findCatLabel(tree: BrowseNode[], category: string): string | null {
+  for (const root of tree) {
+    if (category === root.filter.category || category === root.id) return root.name;
+    for (const ch of root.children || []) {
+      if (category === ch.filter.category || category === ch.id) {
+        return `${root.name} › ${ch.name}`;
+      }
+      for (const leaf of ch.children || []) {
+        if (category === leaf.filter.category || category === leaf.id) {
+          return `${root.name} › ${ch.name} › ${leaf.name}`;
+        }
+        for (const deep of leaf.children || []) {
+          if (category === deep.filter.category || category === deep.id) {
+            return `${root.name} › ${ch.name} › ${leaf.name} › ${deep.name}`;
+          }
+        }
+      }
+    }
+  }
+  return null;
 }
 
 const VITRIN_LIMIT = 4;
@@ -107,6 +141,8 @@ export function AlisverisHome() {
   const searchParams = useSearchParams();
   const { categoriesTheme, offersEnabled } = useTheme();
   const classicCats = categoriesTheme === "v2";
+  const { tree: alisverisTree } = useAlisverisBrowseTree();
+  const allShopParam = useMemo(() => allParamFromTree(alisverisTree), [alisverisTree]);
 
   const initialCat = searchParams.get("category") || "";
   const [browse, setBrowse] = useState<SearchFilters>({
@@ -154,7 +190,7 @@ export function AlisverisHome() {
     promo: { heightPx: 168, slideSeconds: 5 },
     sidebar: { heightPx: 148, slideSeconds: 5 },
   });
-  const [buckets, setBuckets] = useState(emptyAlisverisBuckets);
+  const [buckets, setBuckets] = useState(() => emptyAlisverisBuckets());
   const { view, changeView } = useListingView("teklifbu:alisveris-home-view", "grid");
   const [sort, setSort] = useState("market-desc");
   const [page, setPage] = useState(1);
@@ -169,25 +205,12 @@ export function AlisverisHome() {
 
   const activeCatName = useMemo(() => {
     if (!browse.category) return null;
-    for (const root of ALISVERIS_BROWSE_TREE) {
-      if (browse.category === root.filter.category || browse.category === root.id) return root.name;
-      for (const ch of root.children || []) {
-        if (browse.category === ch.filter.category || browse.category === ch.id) {
-          return `${root.name} › ${ch.name}`;
-        }
-        for (const leaf of ch.children || []) {
-          if (browse.category === leaf.filter.category || browse.category === leaf.id) {
-            return `${root.name} › ${ch.name} › ${leaf.name}`;
-          }
-        }
-      }
-    }
-    return browse.category;
-  }, [browse.category]);
+    return findCatLabel(alisverisTree, browse.category) || browse.category;
+  }, [browse.category, alisverisTree]);
 
   const loadListings = useCallback(
     (filters: SearchFilters, pageNum = 1, cond = condition) => {
-      const categoryParam = scopeAlisverisCategory(filters.category || "", cond);
+      const categoryParam = scopeAlisverisCategory(filters.category || "", cond, allShopParam);
       const qs = listingQuery({ ...filters, category: categoryParam });
       const pageQ = `page=${Math.max(1, pageNum)}`;
       const url = qs ? `/api/listings?home=1&${pageQ}&${qs}` : `/api/listings?home=1&${pageQ}`;
@@ -200,12 +223,17 @@ export function AlisverisHome() {
           if (d.facets) setFacets(d.facets);
         });
     },
-    [condition]
+    [condition, allShopParam]
   );
 
   const loadVitrin = useCallback(() => {
+    const roots = alisverisTree;
+    if (!roots.length) {
+      setBuckets(emptyAlisverisBuckets());
+      return;
+    }
     Promise.all(
-      ALISVERIS_BROWSE_TREE.map(async (n) => {
+      roots.map(async (n) => {
         const cat = n.filter.category || n.id;
         const d = await fetch(
           `/api/listings?category=${encodeURIComponent(cat)}&limit=${VITRIN_LIMIT}`
@@ -218,7 +246,7 @@ export function AlisverisHome() {
         };
       })
     ).then((rows) => setBuckets(rows));
-  }, []);
+  }, [alisverisTree]);
 
   function goToPage(nextPage: number) {
     const totalPages = pagination?.totalPages || 1;

@@ -95,6 +95,15 @@ export async function createEscrowCheckout(
     return fail(403, "Kendi ilanınız için Güvenli Öde başlatamazsınız.");
   }
 
+  // Katalog offer mirror: stoklu checkout /api/catalog/checkout üzerinden
+  if (listing.sellerOfferId) {
+    return fail(
+      400,
+      "Bu ürün katalog teklifidir. /api/catalog/checkout kullanın.",
+      "USE_CATALOG_CHECKOUT"
+    );
+  }
+
   const shipDays = Math.floor(Number(shipDaysInput));
   if (!isValidShipDays(shipDays, settings.shipDaysOptions)) {
     return fail(
@@ -176,7 +185,17 @@ export async function createEscrowCheckout(
     );
   }
 
-  const amountTl = Math.round(Number(listing.askPrice));
+  const amountTl = (() => {
+    const attrs =
+      listing.attributes && typeof listing.attributes === "object"
+        ? (listing.attributes as Record<string, unknown>)
+        : {};
+    const raw = Number(listing.askPrice);
+    if (attrs.priceInKurus === true || attrs.catalogOffer === true) {
+      return Math.round(raw / 100);
+    }
+    return Math.round(raw);
+  })();
   if (!Number.isFinite(amountTl) || amountTl <= 0) {
     return fail(400, "İlan tutarı geçersiz.");
   }
