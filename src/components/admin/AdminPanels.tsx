@@ -315,7 +315,9 @@ export function AdminSettingsPanel({
   };
 
   const toastTone = msg && /başarısız|hata|edilmedi/i.test(msg) ? "err" : "ok";
-  const isTemaOnly = onlyGroups?.length === 1 && onlyGroups[0] === "v2";
+  const isTemaOnly =
+    Boolean(onlyGroups?.includes("v2")) &&
+    (onlyGroups?.every((g) => g === "v2" || g === "general") ?? false);
   const isCompact = Boolean(onlyKeys?.length);
 
   return (

@@ -37,6 +37,24 @@ async function main() {
   await prisma.user.update({ where: { id: admin.id }, data: { tenantId: tenant.id } });
 
   const sellerHash = await bcrypt.hash("123456", 10);
+  const sellerCommercialProfile = {
+    companyName: "Demo Alışveriş Mağazası",
+    commercialTitle: "Demo Alışveriş Mağazası",
+    companyType: "LIMITED",
+    taxOffice: "Kadıköy",
+    taxNumber: "1111111111",
+    tradeRegistryNo: "100001",
+    mersisNo: "0111111111111111",
+    naceCode: "47.19",
+    businessCity: "İstanbul",
+    businessDistrict: "Kadıköy",
+    businessAddress: "Demo Cad. No:1",
+    authorizedTitle: "Mağaza Sahibi",
+    authorizedPhone: "05321112233",
+    shopFocusRoot: "alisveris",
+    shopFocusSub: "elektronik",
+    shopFocusOtherNote: "",
+  };
   const seller = await prisma.user.upsert({
     where: { phone: "05321112233" },
     create: {
@@ -45,7 +63,9 @@ async function main() {
       name: "Ahmet Yılmaz",
       email: "satici@teklifbu.com",
       passwordHash: sellerHash,
-      accountType: AccountType.BIREYSEL,
+      accountType: AccountType.TICARI,
+      commercialStatus: "APPROVED",
+      profile: sellerCommercialProfile,
       tokenBalance: 50,
       tenantId: tenant.id,
     },
@@ -54,8 +74,26 @@ async function main() {
       passwordHash: sellerHash,
       email: "satici@teklifbu.com",
       phoneVerified: true,
+      accountType: AccountType.TICARI,
+      commercialStatus: "APPROVED",
+      profile: sellerCommercialProfile,
     },
   });
+  const existingSellerShop = await prisma.shop.findFirst({ where: { ownerId: seller.id } });
+  if (!existingSellerShop) {
+    await prisma.shop.create({
+      data: {
+        name: "Demo Alışveriş Mağazası",
+        slug: `demo-alisveris-${seller.id.slice(-6)}`,
+        ownerId: seller.id,
+        accountType: AccountType.TICARI,
+        city: "İstanbul",
+        phone: "05321112233",
+        isActive: true,
+        tenantId: tenant.id,
+      },
+    });
+  }
 
   const buyer = await prisma.user.upsert({
     where: { phone: "05324445566" },

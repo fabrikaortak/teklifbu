@@ -479,9 +479,9 @@ export function AdminShell({ children }: { children: ReactNode }) {
             <kbd>⌘K</kbd>
           </div>
           <div className="adm-top-actions">
-            <button type="button" className="adm-icon-btn" aria-label="Tema">
+            <Link href="/admin/tema" className="adm-icon-btn" aria-label="Tema" title="Tema ayarları">
               <Sun size={18} />
-            </button>
+            </Link>
             <Link
               href={
                 commercialPendingCount > 0
@@ -503,9 +503,9 @@ export function AdminShell({ children }: { children: ReactNode }) {
               <Bell size={18} />
               {bellCount > 0 ? <span className="adm-dot">{bellCount}</span> : null}
             </Link>
-            <button type="button" className="adm-icon-btn" aria-label="Yardım">
+            <Link href="/admin/ayarlar" className="adm-icon-btn" aria-label="Yardım" title="Sistem ayarları ve yardım">
               <HelpCircle size={18} />
-            </button>
+            </Link>
             <div className="adm-user-wrap">
               <button
                 type="button"

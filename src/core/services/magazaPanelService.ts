@@ -6,6 +6,34 @@ import { parseCommercialProfile } from "@/data/commercialProfile";
 
 const LIVE: ListingStatus[] = [ListingStatus.ACTIVE, ListingStatus.SELECTION, ListingStatus.PENDING_REVIEW];
 
+/** Panel erişimi + pasif shop engeli */
+export async function assertMagazaSellerAccess(user: {
+  id: string;
+  accountType?: string | null;
+  commercialStatus?: string | null;
+  profile?: unknown;
+}) {
+  const access = await resolveMagazaPanelAccess(user);
+  if (!access.allowed) {
+    return { ok: false as const, status: 403 as const, error: access.reason || "Erişim yok", access };
+  }
+  const shop = await prisma.shop.findFirst({
+    where: { ownerId: user.id },
+    orderBy: { createdAt: "desc" },
+    select: { id: true, isActive: true, name: true },
+  });
+  if (shop && shop.isActive === false) {
+    return {
+      ok: false as const,
+      status: 403 as const,
+      error: "Mağazanız pasif durumda.",
+      access,
+      shop,
+    };
+  }
+  return { ok: true as const, access, shop };
+}
+
 export async function getMagazaOverview(sellerId: string) {
   const user = await prisma.user.findUnique({
     where: { id: sellerId },
@@ -13,9 +41,10 @@ export async function getMagazaOverview(sellerId: string) {
   });
   if (!user) return { ok: false as const, status: 404, error: "Kullanıcı yok" };
 
-  const access = await resolveMagazaPanelAccess(user);
-  if (!access.allowed) return { ok: false as const, status: 403, error: access.reason || "Erişim yok" };
+  const gate = await assertMagazaSellerAccess(user);
+  if (!gate.ok) return { ok: false as const, status: gate.status, error: gate.error };
 
+  const access = gate.access;
   const qaSla = Number((await getSetting<number>("seller_panel_qa_sla_hours", 24)) || 24);
   const shipReminder = Number((await getSetting<number>("seller_panel_ship_reminder_hours", 48)) || 48);
   const slaCut = new Date(Date.now() - qaSla * 3600_000);

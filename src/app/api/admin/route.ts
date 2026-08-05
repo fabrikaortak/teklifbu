@@ -2287,6 +2287,27 @@ export async function POST(req: Request) {
     return NextResponse.json({ ok: true });
   }
 
+  if (action === "toggle-shop") {
+    const shopId = String(body.shopId || "").trim();
+    if (!shopId) return NextResponse.json({ error: "shopId gerekli" }, { status: 400 });
+    const shop = await prisma.shop.findUnique({ where: { id: shopId } });
+    if (!shop) return NextResponse.json({ error: "Mağaza bulunamadı" }, { status: 404 });
+    const isActive = Boolean(body.isActive);
+    await prisma.shop.update({
+      where: { id: shopId },
+      data: { isActive },
+    });
+    await writeAuditLog({
+      tenantId: tenant.id,
+      actorId: admin.id,
+      action: isActive ? "shop.activate" : "shop.deactivate",
+      entity: "Shop",
+      entityId: shopId,
+      meta: { isActive, ownerId: shop.ownerId, bypass: true },
+    });
+    return NextResponse.json({ ok: true, shopId, isActive });
+  }
+
   if (action === "update-user") {
     const userId = String(body.userId || "").trim();
     if (!userId) return NextResponse.json({ error: "userId gerekli" }, { status: 400 });

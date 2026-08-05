@@ -22,6 +22,10 @@
     "staging:set-mirrorless-flag": "tsx scripts/staging-set-mirrorless-flag.ts",
     "staging:phase4": "tsx scripts/staging-phase4-stop-mirror-create.ts",
     "staging:phase4-adversarial": "tsx scripts/staging-phase4-adversarial.ts",
+    "smoke:panels": "tsx scripts/smoke-magaza-admin-panels.ts",
+    "click:panels": "tsx scripts/click-tour-magaza-admin.ts",
+    "test:panel-acl": "tsx scripts/test-panel-acl.ts",
+    "test:panel-actions": "tsx scripts/test-panel-actions.ts",
     "postinstall": "prisma generate"
   },
   "prisma": {
@@ -50,6 +54,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.12",
+    "playwright": "^1.52.0",
     "prisma": "6.19.3",
     "tailwindcss": "^4",
     "tsx": "^4.23.1",

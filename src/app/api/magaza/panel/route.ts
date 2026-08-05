@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { getSession, requireUser } from "@/lib/auth";
-import { resolveMagazaPanelAccess } from "@/lib/magazaPanelAccess";
 import {
+  assertMagazaSellerAccess,
   getMagazaOverview,
   listSellerMagazaListings,
   listSellerMagazaOrders,
@@ -15,16 +15,17 @@ import { sellerSubmitCargo } from "@/core/services/escrowService";
 export async function GET(req: Request) {
   try {
     const user = await requireUser();
-    const access = await resolveMagazaPanelAccess(user);
-    if (!access.allowed) {
-      return NextResponse.json({ error: access.reason || "Erişim yok", access }, { status: 403 });
+    const gate = await assertMagazaSellerAccess(user);
+    if (!gate.ok) {
+      return NextResponse.json({ error: gate.error, access: gate.access }, { status: gate.status });
     }
+    const access = gate.access;
 
     const url = new URL(req.url);
     const view = url.searchParams.get("view") || "overview";
 
     if (view === "access") {
-      return NextResponse.json({ ok: true, access });
+      return NextResponse.json({ ok: true, access, shopId: gate.shop?.id || null });
     }
     if (view === "overview") {
       const data = await getMagazaOverview(user.id);
@@ -73,10 +74,11 @@ export async function POST(req: Request) {
     const session = await getSession();
     if (!session) return NextResponse.json({ error: "Giriş gerekli" }, { status: 401 });
 
-    const access = await resolveMagazaPanelAccess(user);
-    if (!access.allowed) {
-      return NextResponse.json({ error: access.reason || "Erişim yok" }, { status: 403 });
+    const gate = await assertMagazaSellerAccess(user);
+    if (!gate.ok) {
+      return NextResponse.json({ error: gate.error }, { status: gate.status });
     }
+    const access = gate.access;
 
     const body = await req.json();
     const action = String(body.action || "");
