@@ -33,9 +33,24 @@ type DealRow = {
   buyerConfirmDeadlineAt?: string | null;
   createdAt: string;
   listing?: { id: string; title: string; listingNo?: string | null } | null;
+  linkedOrder?: { id: string; orderNo: string; status?: string } | null;
+  sellerOffer?: {
+    id: string;
+    product?: { id: string; name: string; mainImage?: string | null } | null;
+    variant?: { title: string } | null;
+  } | null;
   buyer?: { id: string; name?: string | null; phone?: string | null } | null;
   seller?: { id: string; name?: string | null; phone?: string | null; iban?: string | null } | null;
 };
+
+function dealTitle(d: DealRow): string {
+  if (d.listing?.title) return d.listing.title;
+  if (d.sellerOffer?.product?.name) {
+    return `${d.sellerOffer.product.name}${d.sellerOffer.variant?.title ? ` · ${d.sellerOffer.variant.title}` : ""}`;
+  }
+  if (d.linkedOrder?.orderNo) return `Sipariş ${d.linkedOrder.orderNo}`;
+  return "Katalog sipariş";
+}
 
 export function AdminEscrowPanel() {
   const [summary, setSummary] = useState<PoolSummary | null>(null);
@@ -200,9 +215,16 @@ export function AdminEscrowPanel() {
                       <Link href={`/ilan/${d.listing.id}`} target="_blank">
                         {d.listing.title}
                       </Link>
+                    ) : d.sellerOffer?.product?.id ? (
+                      <Link href={`/urun/${d.sellerOffer.product.id}`} target="_blank">
+                        {dealTitle(d)}
+                      </Link>
                     ) : (
-                      "—"
+                      dealTitle(d)
                     )}
+                    {d.linkedOrder?.orderNo ? (
+                      <div style={{ fontSize: 11, color: "var(--adm-muted)" }}>{d.linkedOrder.orderNo}</div>
+                    ) : null}
                   </td>
                   <td>{d.buyer?.name || d.buyer?.phone || "—"}</td>
                   <td>{d.seller?.name || d.seller?.phone || "—"}</td>
@@ -245,7 +267,7 @@ export function AdminEscrowPanel() {
             <h3 style={{ marginTop: 0 }}>İşlem yönetimi</h3>
             <div style={{ fontSize: 13, display: "grid", gap: 6, marginBottom: 12 }}>
               <div>
-                <strong>{selected.listing?.title}</strong>
+                <strong>{dealTitle(selected)}</strong>
               </div>
               <div>Durum: {escrowStatusLabelTr(selected.status)}</div>
               <div>Tutar: {formatTl(selected.amountTl)} · Satıcıya: {formatTl(selected.sellerPayoutTl)}</div>

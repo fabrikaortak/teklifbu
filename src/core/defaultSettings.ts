@@ -1258,19 +1258,21 @@ export const DEFAULT_SETTINGS: Record<string, SettingMeta> = {
     min: 1,
     unit: "dk",
   },
-  /** Gelecek faz — yalnızca tanım, Faz 1’de kullanılmaz */
-  catalog_checkout_without_mirror: {
-    value: false,
-    label: "Katalog checkout mirror’suz (gelecek faz)",
-    group: "payment",
-    description: "Faz 1’de kullanılmaz. Açıkken Listing mirror zorunluluğu kalkacak.",
-    control: "toggle",
-  },
+  /** Gelecek faz — alışveriş feed */
   alisveris_feed_from_offers: {
     value: false,
     label: "Alışveriş feed SellerOffer (gelecek faz)",
     group: "payment",
     description: "Faz 1’de kullanılmaz. Açıkken vitrin Offer projection okuyacak.",
+    control: "toggle",
+  },
+  /** Faz 1.5 — katalog checkout mirror’suz */
+  catalog_checkout_without_mirror: {
+    value: false,
+    label: "Katalog checkout mirror’suz",
+    group: "payment",
+    description:
+      "Açıkken Listing mirror zorunlu değildir; EscrowDeal Order’a bağlanır; mirror sync post-commit + retry job. Production varsayılan kapalı.",
     control: "toggle",
   },
   payment_tokens_only_enabled: {

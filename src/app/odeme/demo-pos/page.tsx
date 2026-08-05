@@ -21,6 +21,7 @@ function DemoPosInner() {
     status: string;
     demoPosEnabled: boolean;
     listingId?: string | null;
+    orderId?: string | null;
     purpose?: string;
     fee?: {
       baseFeeTl: number;
@@ -331,7 +332,11 @@ function DemoPosInner() {
             onClick={() => {
               if (isEscrow) {
                 window.location.assign(
-                  info?.listingId ? `/ilan/${info.listingId}` : "/hesabim?s=guvenli-ode"
+                  info?.listingId
+                    ? `/ilan/${info.listingId}`
+                    : info?.orderId
+                      ? "/hesabim?s=alisveris"
+                      : "/hesabim?s=guvenli-ode"
                 );
                 return;
               }

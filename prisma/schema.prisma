@@ -541,10 +541,20 @@ model TokenRefund {
 
 /**
  * Güvenli Öde (escrow) — havuz üzerinden korumalı alım/satım anlaşması
+ * Klasik: listingId dolu, orderId boş
+ * Katalog (flag ON): orderId dolu, listingId null
  */
 model EscrowDeal {
   id                     String       @id @default(cuid())
-  listingId              String
+  listingId              String?
+  /**
+   * Katalog escrow SoT — Order bağlantısı (Order.escrowDealId ile birlikte yazılır)
+   */
+  orderId                String?      @unique
+  /**
+   * Denormalize kolaylık; ticari doğrulama OrderItem.sellerOfferId üzerinden
+   */
+  sellerOfferId          String?
   buyerId                String
   sellerId               String
   /**
@@ -576,15 +586,24 @@ model EscrowDeal {
   createdAt              DateTime     @default(now())
   updatedAt              DateTime     @updatedAt
 
-  listing Listing @relation(fields: [listingId], references: [id], onDelete: Cascade)
-  buyer   User    @relation("EscrowBuyer", fields: [buyerId], references: [id])
-  seller  User    @relation("EscrowSeller", fields: [sellerId], references: [id])
-  order   Order?
+  listing     Listing?     @relation(fields: [listingId], references: [id], onDelete: SetNull)
+  buyer       User         @relation("EscrowBuyer", fields: [buyerId], references: [id])
+  seller      User         @relation("EscrowSeller", fields: [sellerId], references: [id])
+  /**
+   * Reverse of Order.escrowDealId
+   */
+  order       Order?       @relation("OrderEscrowDeal")
+  /**
+   * EscrowDeal.orderId → Order
+   */
+  linkedOrder Order?       @relation("EscrowDealOrderId", fields: [orderId], references: [id], onDelete: SetNull)
+  sellerOffer SellerOffer? @relation(fields: [sellerOfferId], references: [id], onDelete: SetNull)
 
   @@index([status])
   @@index([listingId])
   @@index([buyerId])
   @@index([sellerId])
+  @@index([sellerOfferId])
 }
 
 model ListingQuestion {
@@ -929,6 +948,13 @@ enum CatalogRecordSource {
   ADMIN
 }
 
+enum CatalogProjectionJobStatus {
+  PENDING
+  PROCESSING
+  COMPLETED
+  FAILED
+}
+
 enum CatalogProductRequestStatus {
   DRAFT
   PENDING
@@ -1189,6 +1215,7 @@ model SellerOffer {
   listing  Listing?        @relation("OfferLinkedListing", fields: [listingId], references: [id], onDelete: SetNull)
   primaryListings Listing[] @relation("ListingPrimaryOffer")
   orderItems OrderItem[]
+  escrowDeals EscrowDeal[]
 
   @@index([productId, status])
   @@index([variantId, status])
@@ -1197,6 +1224,29 @@ model SellerOffer {
   @@index([listingId])
   @@index([deletedAt])
   @@index([approvedAt])
+}
+
+/**
+ * Katalog projection / mirror sync retry (Faz 1.5 — hafif job tablosu, queue değil)
+ */
+model CatalogProjectionJob {
+  id            String                     @id @default(cuid())
+  jobType       String
+  sellerOfferId String?
+  listingId     String?
+  payloadJson   Json?
+  status        CatalogProjectionJobStatus @default(PENDING)
+  attempts      Int                        @default(0)
+  maxAttempts   Int                        @default(5)
+  nextAttemptAt DateTime                   @default(now())
+  lastError     String?                    @db.Text
+  createdAt     DateTime                   @default(now())
+  updatedAt     DateTime                   @updatedAt
+  completedAt   DateTime?
+
+  @@index([status, nextAttemptAt])
+  @@index([sellerOfferId, jobType, status])
+  @@index([listingId])
 }
 
 /**
@@ -1236,7 +1286,11 @@ model Order {
   cancelledAt     DateTime?
 
   buyer      User        @relation("OrderBuyer", fields: [buyerId], references: [id], onDelete: Restrict)
-  escrowDeal EscrowDeal? @relation(fields: [escrowDealId], references: [id], onDelete: SetNull)
+  escrowDeal EscrowDeal? @relation("OrderEscrowDeal", fields: [escrowDealId], references: [id], onDelete: SetNull)
+  /**
+   * Reverse of EscrowDeal.orderId
+   */
+  escrowDealByOrderId EscrowDeal? @relation("EscrowDealOrderId")
   items      OrderItem[]
 
   @@unique([buyerId, idempotencyKey])

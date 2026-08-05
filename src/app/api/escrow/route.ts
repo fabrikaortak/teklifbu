@@ -12,6 +12,30 @@ const DEAL_INCLUDE = {
   listing: {
     select: { id: true, title: true, listingNo: true, coverImage: true, askPrice: true, status: true },
   },
+  linkedOrder: {
+    select: {
+      id: true,
+      orderNo: true,
+      status: true,
+      items: {
+        take: 1,
+        select: {
+          productNameSnapshot: true,
+          variantTitleSnapshot: true,
+          productImageSnapshot: true,
+          productId: true,
+          sellerOfferId: true,
+        },
+      },
+    },
+  },
+  sellerOffer: {
+    select: {
+      id: true,
+      product: { select: { id: true, name: true, mainImage: true } },
+      variant: { select: { title: true } },
+    },
+  },
   buyer: { select: { id: true, name: true, phone: true } },
   seller: { select: { id: true, name: true, phone: true, iban: true } },
 } as const;

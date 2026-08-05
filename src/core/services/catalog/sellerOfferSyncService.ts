@@ -1,8 +1,8 @@
-import type { Prisma, SellerOffer } from "@prisma/client";
+import type { Prisma, PrismaClient } from "@prisma/client";
 import { listingStatusForOffer } from "@/core/services/catalog/sellerOfferStateMachine";
 import { getCategoryBreadcrumb } from "@/core/services/catalog/categoryTreeService";
 
-type Tx = Prisma.TransactionClient;
+type Tx = Prisma.TransactionClient | PrismaClient;
 
 /**
  * SellerOffer → Listing mirror tek yön senkron.

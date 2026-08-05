@@ -37,6 +37,18 @@ export async function GET(req: Request) {
           select: { title: true },
         })
       : null;
+    let listingTitle = escrowListing?.title || null;
+    if (!listingTitle && meta.orderId) {
+      const item = await prisma.orderItem.findFirst({
+        where: { orderId: String(meta.orderId) },
+        select: { productNameSnapshot: true, variantTitleSnapshot: true },
+      });
+      if (item) {
+        listingTitle = `${item.productNameSnapshot}${
+          item.variantTitleSnapshot ? ` · ${item.variantTitleSnapshot}` : ""
+        }`;
+      }
+    }
     return NextResponse.json({
       intentId: payment.id,
       amountTl: payment.amountTl,
@@ -47,10 +59,11 @@ export async function GET(req: Request) {
       provider,
       title: "Güvenli Öde",
       listingId: meta.listingId || null,
+      orderId: meta.orderId || null,
       escrow: {
         dealId: meta.escrowDealId || null,
         shipDays: meta.shipDays || null,
-        listingTitle: escrowListing?.title || null,
+        listingTitle,
       },
       fee: {
         baseFeeTl: payment.amountTl,

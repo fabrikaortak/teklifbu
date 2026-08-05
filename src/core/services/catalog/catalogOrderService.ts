@@ -16,12 +16,14 @@ import { isDemoPosEnabled } from "@/core/services/paymentModeService";
 import { getEscrowRuntimeSettings } from "@/core/services/escrowSettingsService";
 import { isValidShipDays } from "@/lib/escrowTypes";
 import { writeAuditLog } from "@/core/services/tenantService";
+import { getSetting } from "@/core/settings";
 import {
   getCatalogCheckoutPendingTtlMinutes,
   isCatalogCheckoutIdempotencyEnabled,
   isCatalogExpiredReconcileEnabled,
 } from "@/core/services/catalog/catalogOrderLifecycleService";
 import { reconcileExpiredCatalogOrders } from "@/core/services/catalog/catalogOrderReconcileService";
+import { runPostCommitMirrorSync } from "@/core/services/catalog/catalogProjectionJobService";
 
 type Buyer = { id: string; name?: string | null };
 
@@ -39,6 +41,10 @@ function asJson(value: unknown): Prisma.InputJsonValue {
   return value as Prisma.InputJsonValue;
 }
 
+export async function isCatalogCheckoutWithoutMirrorEnabled(): Promise<boolean> {
+  return (await getSetting<boolean>("catalog_checkout_without_mirror", false)) === true;
+}
+
 export type CheckoutCatalogResult = {
   order: {
     id: string;
@@ -52,13 +58,13 @@ export type CheckoutCatalogResult = {
   payment: { id: string };
   payUrl: string;
   amountTl: number;
-  /** Effective unit price in kuruş */
   effectiveUnitPriceMinor: bigint;
-  /** alias */
   priceKurus: bigint;
   amountKurus: bigint;
   stockQtyAfter: number;
   idempotentReplay?: boolean;
+  withoutMirror?: boolean;
+  projectionJobId?: string | null;
 };
 
 /**
@@ -70,9 +76,7 @@ export async function checkoutCatalogOffer(input: {
   sellerOfferId: string;
   quantity: number;
   shipDays: number;
-  /** Opsiyonel: client önizleme fiyatı (kuruş) — uyuşmazsa PRICE_CHANGED */
   expectedEffectiveUnitPriceMinor?: bigint | null;
-  /** Client idempotency key */
   idempotencyKey?: string | null;
 }): Promise<CheckoutCatalogResult> {
   const quantity = Math.floor(Number(input.quantity));
@@ -98,7 +102,6 @@ export async function checkoutCatalogOffer(input: {
     );
   }
 
-  // Opportunistic reconcile (best-effort)
   if (await isCatalogExpiredReconcileEnabled()) {
     try {
       await reconcileExpiredCatalogOrders({ limit: 5 });
@@ -106,6 +109,8 @@ export async function checkoutCatalogOffer(input: {
       /* ignore */
     }
   }
+
+  const withoutMirror = await isCatalogCheckoutWithoutMirrorEnabled();
 
   const idempotencyOn = await isCatalogCheckoutIdempotencyEnabled();
   const idempotencyKey =
@@ -161,6 +166,7 @@ export async function checkoutCatalogOffer(input: {
         amountKurus: existing.grandTotal,
         stockQtyAfter: 0,
         idempotentReplay: true,
+        withoutMirror,
       };
     }
   }
@@ -171,8 +177,7 @@ export async function checkoutCatalogOffer(input: {
     ? new Date(Date.now() + ttlMin * 60 * 1000)
     : null;
 
-  return prisma.$transaction(async (tx) => {
-    // Re-check idempotency inside tx
+  const txResult = await prisma.$transaction(async (tx) => {
     if (idempotencyKey) {
       const again = await tx.order.findFirst({
         where: { buyerId: input.buyer.id, idempotencyKey },
@@ -206,11 +211,10 @@ export async function checkoutCatalogOffer(input: {
     if (offer.sellerId === input.buyer.id) {
       throw new CatalogCommerceError("SELF_PURCHASE", "Kendi teklifinizi satın alamazsınız");
     }
-    if (!offer.listingId || !offer.listing) {
+    if (!withoutMirror && (!offer.listingId || !offer.listing)) {
       throw new CatalogCommerceError("LISTING_MIRROR_MISSING", "Vitrin ilanı yok");
     }
 
-    // Fiyat yalnız SellerOffer (Listing.askPrice kullanılmaz)
     try {
       assertValidOfferPrices(offer.price, offer.discountedPrice);
     } catch (e) {
@@ -275,6 +279,10 @@ export async function checkoutCatalogOffer(input: {
     const categoryPath = await buildCategoryPathSnapshot(offer.product.categoryId);
     const barcode = offer.variant.barcode || offer.product.barcode || null;
 
+    // Flag ON: listingId null on deal; OrderItem may keep snapshot listing for display if present
+    const dealListingId = withoutMirror ? null : offer.listingId;
+    const itemListingId = withoutMirror ? null : offer.listingId;
+
     const order = await tx.order.create({
       data: {
         orderNo,
@@ -297,7 +305,7 @@ export async function checkoutCatalogOffer(input: {
         productId: offer.productId,
         variantId: offer.variantId,
         sellerOfferId: offer.id,
-        listingId: offer.listingId,
+        listingId: itemListingId,
         shopId: offer.shopId,
         sellerId: offer.sellerId,
         productNameSnapshot: offer.product.name,
@@ -328,7 +336,9 @@ export async function checkoutCatalogOffer(input: {
 
     const deal = await tx.escrowDeal.create({
       data: {
-        listingId: offer.listingId,
+        listingId: dealListingId,
+        orderId: order.id,
+        sellerOfferId: offer.id,
         buyerId: input.buyer.id,
         sellerId: offer.sellerId,
         amountTl,
@@ -346,6 +356,7 @@ export async function checkoutCatalogOffer(input: {
           amountKurus: amountKurus.toString(),
           priceKurus: unit.toString(),
           shippingKurus: shippingKurus.toString(),
+          withoutMirror,
         }),
       },
     });
@@ -360,10 +371,12 @@ export async function checkoutCatalogOffer(input: {
           kind: "escrow",
           channel: "demo_pos",
           escrowDealId: deal.id,
-          listingId: offer.listingId,
+          listingId: dealListingId,
           orderId: order.id,
+          sellerOfferId: offer.id,
           shipDays,
           catalogCheckout: true,
+          withoutMirror,
           amountKurus: amountKurus.toString(),
         }),
       },
@@ -379,14 +392,24 @@ export async function checkoutCatalogOffer(input: {
       data: { escrowDealId: deal.id, paymentId: payment.id },
     });
 
-    await syncListingMirrorFromOffer(tx, offer.id);
+    // Flag OFF: mirror sync inside commercial tx (legacy)
+    if (!withoutMirror) {
+      await syncListingMirrorFromOffer(tx, offer.id);
+    }
 
     await writeAuditLog({
       actorId: input.buyer.id,
       action: "catalog.checkout.create",
       entity: "Order",
       entityId: order.id,
-      meta: { dealId: deal.id, offerId: offer.id, quantity, amountTl, amountKurus: amountKurus.toString() },
+      meta: {
+        dealId: deal.id,
+        offerId: offer.id,
+        quantity,
+        amountTl,
+        amountKurus: amountKurus.toString(),
+        withoutMirror,
+      },
     });
 
     return {
@@ -401,6 +424,21 @@ export async function checkoutCatalogOffer(input: {
       amountKurus,
       stockQtyAfter: fresh.stockQty,
       idempotentReplay: false,
+      withoutMirror,
+      sellerOfferId: offer.id,
     };
   });
+
+  let projectionJobId: string | null = null;
+  if (withoutMirror && !txResult.idempotentReplay) {
+    const sync = await runPostCommitMirrorSync({
+      sellerOfferId: txResult.sellerOfferId,
+      actorId: input.buyer.id,
+      orderId: txResult.order.id,
+    });
+    projectionJobId = sync.jobId || null;
+  }
+
+  const { sellerOfferId: _o, ...rest } = txResult as typeof txResult & { sellerOfferId: string };
+  return { ...rest, projectionJobId };
 }

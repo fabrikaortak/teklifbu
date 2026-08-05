@@ -3,6 +3,7 @@
 import { Suspense, use, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { formatMoneyTr } from "@/lib/format";
+import { CatalogCheckoutButton } from "@/components/catalog/CatalogCheckoutButton";
 
 type Offer = {
   id: string;
@@ -191,13 +192,18 @@ function ProductDetailInner({ id }: { id: string }) {
                   En iyi teklif · {best.shop?.name || best.seller?.name || "Satıcı"}
                   {best.stockQty > 0 ? ` · Stok: ${best.stockQty}` : ""}
                 </p>
-                {best.listingId ? (
-                  <Link href={`/ilan/${best.listingId}`} className="btn-orange" style={{ width: "fit-content", marginTop: 4 }}>
+                {best ? (
+                  <CatalogCheckoutButton
+                    sellerOfferId={best.id}
+                    expectedPriceTl={best.effectivePrice}
+                    label="Hemen Al"
+                  />
+                ) : null}
+                {best?.listingId ? (
+                  <Link href={`/ilan/${best.listingId}`} style={{ fontSize: 13, color: "#ea580c", marginTop: 4 }}>
                     Satıcı vitrinine git
                   </Link>
-                ) : (
-                  <span style={{ fontSize: 13, color: "#94a3b8" }}>Bu teklifin vitrin ilanı yok</span>
-                )}
+                ) : null}
               </>
             ) : (
               <p style={{ margin: 0, color: "#64748b" }}>
@@ -252,9 +258,14 @@ function ProductDetailInner({ id }: { id: string }) {
                 </div>
                 <div style={{ textAlign: "right", display: "grid", gap: 6 }}>
                   <strong>{formatMoneyTr(o.effectivePrice)} TL</strong>
+                  <CatalogCheckoutButton
+                    sellerOfferId={o.id}
+                    expectedPriceTl={o.effectivePrice}
+                    label="Al"
+                  />
                   {o.listingId ? (
                     <Link href={`/ilan/${o.listingId}`} style={{ fontSize: 13, color: "#ea580c" }}>
-                      İncele
+                      Vitrin
                     </Link>
                   ) : null}
                 </div>

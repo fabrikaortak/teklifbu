@@ -41,9 +41,53 @@ type Deal = {
     listingNo?: string | null;
     askPrice?: number;
   } | null;
+  linkedOrder?: {
+    id: string;
+    orderNo: string;
+    items?: Array<{
+      productNameSnapshot: string;
+      variantTitleSnapshot?: string | null;
+      productImageSnapshot?: string | null;
+      productId?: string | null;
+      sellerOfferId?: string;
+    }>;
+  } | null;
+  sellerOffer?: {
+    id: string;
+    product?: { id: string; name: string; mainImage?: string | null } | null;
+    variant?: { title: string } | null;
+  } | null;
   buyer?: { id: string; name: string | null; phone: string | null } | null;
   seller?: { id: string; name: string | null; phone: string | null } | null;
 };
+
+function dealDisplayTitle(d: Deal): string {
+  if (d.listing?.title) return d.listing.title;
+  const item = d.linkedOrder?.items?.[0];
+  if (item?.productNameSnapshot) {
+    return `${item.productNameSnapshot}${item.variantTitleSnapshot ? ` · ${item.variantTitleSnapshot}` : ""}`;
+  }
+  if (d.sellerOffer?.product?.name) {
+    return `${d.sellerOffer.product.name}${d.sellerOffer.variant?.title ? ` · ${d.sellerOffer.variant.title}` : ""}`;
+  }
+  return "Ürün";
+}
+
+function dealDisplayCover(d: Deal): string | null {
+  return (
+    d.listing?.coverImage ||
+    d.linkedOrder?.items?.[0]?.productImageSnapshot ||
+    d.sellerOffer?.product?.mainImage ||
+    null
+  );
+}
+
+function dealProductHref(d: Deal): string | null {
+  if (d.listing?.id) return `/ilan/${d.listing.id}`;
+  const productId = d.linkedOrder?.items?.[0]?.productId || d.sellerOffer?.product?.id;
+  if (productId) return `/urun/${productId}`;
+  return null;
+}
 
 type StatusFilter = "all" | "ongoing" | "cancelled" | "refunded" | "undelivered";
 type ScopeFilter = "all" | "buyer" | "seller" | "30d" | "90d" | "180d" | "year";
@@ -227,9 +271,9 @@ export function AccountShoppingPanel({ userId }: { userId?: string }) {
       if (!matchesStatus(d.status, statusFilter)) return false;
       if (!matchesScope(d, scope, userId)) return false;
       if (!needle) return true;
-      const title = String(d.listing?.title || "").toLocaleLowerCase("tr-TR");
+      const title = dealDisplayTitle(d).toLocaleLowerCase("tr-TR");
       const id = String(d.id || "").toLocaleLowerCase("tr-TR");
-      const no = String(d.listing?.listingNo || "").toLocaleLowerCase("tr-TR");
+      const no = String(d.listing?.listingNo || d.linkedOrder?.orderNo || "").toLocaleLowerCase("tr-TR");
       return title.includes(needle) || id.includes(needle) || no.includes(needle);
     });
   }, [deals, q, statusFilter, scope, userId]);
@@ -334,8 +378,9 @@ export function AccountShoppingPanel({ userId }: { userId?: string }) {
             const isBuyer = Boolean(userId && d.buyerId === userId);
             const sellerName = d.seller?.name || "Satıcı";
             const buyerName = d.buyer?.name || "Alıcı";
-            const cover = d.listing?.coverImage || null;
-            const title = d.listing?.title || "Ürün";
+            const cover = dealDisplayCover(d);
+            const title = dealDisplayTitle(d);
+            const productHref = dealProductHref(d);
             const deliveredAt = d.buyerConfirmedAt || d.releasedAt || d.shippedAt;
 
             return (
@@ -391,9 +436,9 @@ export function AccountShoppingPanel({ userId }: { userId?: string }) {
                         <div>
                           Satıcı: <strong>{sellerName}</strong>
                         </div>
-                        {d.listing?.id ? (
-                          <Link href={`/ilan/${d.listing.id}`} className="acc-order__ask">
-                            Satıcıya sor
+                        {productHref ? (
+                          <Link href={productHref} className="acc-order__ask">
+                            Ürüne git
                           </Link>
                         ) : null}
                       </div>
@@ -409,8 +454,8 @@ export function AccountShoppingPanel({ userId }: { userId?: string }) {
                             )}
                           </span>
                           <div>
-                            {d.listing?.id ? (
-                              <Link href={`/ilan/${d.listing.id}`} className="acc-order__product-title">
+                            {productHref ? (
+                              <Link href={productHref} className="acc-order__product-title">
                                 {title}
                               </Link>
                             ) : (
@@ -418,8 +463,8 @@ export function AccountShoppingPanel({ userId }: { userId?: string }) {
                             )}
                             <div className="acc-order__product-price">{formatTl(d.amountTl)}</div>
                             <div className="acc-order__product-actions">
-                              {d.listing?.id ? (
-                                <Link href={`/ilan/${d.listing.id}`} className="acc-order__mini-btn">
+                              {productHref ? (
+                                <Link href={productHref} className="acc-order__mini-btn">
                                   Tekrar al
                                 </Link>
                               ) : null}

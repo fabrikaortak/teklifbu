@@ -402,8 +402,23 @@ export async function completeEscrowPayment(session: SessionUser, intentId: stri
       }
 
       const paymentMeta = (payment.meta || {}) as Record<string, unknown>;
-      const dealId = dealIdEarly;
+      let dealId = dealIdEarly;
       const orderId = orderIdEarly;
+
+      if (!dealId && orderId) {
+        const ordLink = await tx.order.findUnique({
+          where: { id: orderId },
+          select: { escrowDealId: true },
+        });
+        dealId = ordLink?.escrowDealId || "";
+      }
+      if (!dealId) {
+        const byOrder = await tx.escrowDeal.findFirst({
+          where: { orderId: orderId || undefined },
+          select: { id: true },
+        });
+        if (byOrder) dealId = byOrder.id;
+      }
 
       if (lockedPay[0].status === PaymentStatus.PENDING || lockedPay[0].status === "PENDING") {
         // Unique providerTransactionId — second completion no-ops via catch
@@ -857,6 +872,14 @@ export async function listEscrowDeals(filters: EscrowDealFilters = {}) {
     include: {
       listing: {
         select: { id: true, title: true, listingNo: true, coverImage: true, askPrice: true },
+      },
+      linkedOrder: { select: { id: true, orderNo: true, status: true } },
+      sellerOffer: {
+        select: {
+          id: true,
+          product: { select: { id: true, name: true, mainImage: true } },
+          variant: { select: { title: true } },
+        },
       },
       buyer: { select: { id: true, name: true, phone: true, email: true } },
       seller: { select: { id: true, name: true, phone: true, email: true, iban: true } },
