@@ -48,7 +48,8 @@ export async function POST(req: Request) {
       sellerNote: body.sellerNote ?? body.description ?? null,
       city: body.city,
       district: body.district,
-      createListingMirror: body.createListingMirror !== false,
+      // Aşama 4: default OFF — mirror yalnız açıkça true ise
+      createListingMirror: body.createListingMirror === true,
     });
     return NextResponse.json({
       ok: true,

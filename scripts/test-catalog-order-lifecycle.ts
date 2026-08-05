@@ -90,6 +90,11 @@ async function makeOffer(shop: { id: string; ownerId: string }, variantId: strin
     },
     data: { status: "EXPIRED" },
   });
+  // Unique (shopId, variantId) EXPIRED kayıtlarda da tutulur — mirror create çakışmasın
+  await prisma.listing.updateMany({
+    where: { shopId: shop.id, variantId },
+    data: { variantId: null, sellerOfferId: null, status: "EXPIRED" },
+  });
   const offer = await createSellerOffer({
     sellerId: shop.ownerId,
     shopId: shop.id,

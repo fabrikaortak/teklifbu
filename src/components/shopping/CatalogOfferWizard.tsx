@@ -117,8 +117,9 @@ export function CatalogOfferWizard({
     const d = await res.json().catch(() => ({}));
     setBusy(false);
     if (res.status === 409 && d.code === "ACTIVE_OFFER_EXISTS") {
-      setMsg("Bu varyant için aktif teklifiniz var — düzenleme ekranına yönlendiriliyorsunuz.");
-      router.push(`/hesabim?s=katalog-teklif&edit=${d.offerId}`);
+      setMsg("Bu varyant için aktif teklifiniz var — ürün sayfasına yönlendiriliyorsunuz.");
+      if (productId) router.push(`/urun/${productId}`);
+      else router.push("/hesabim?s=alisveris");
       return;
     }
     if (!res.ok) {
@@ -126,7 +127,9 @@ export function CatalogOfferWizard({
       return;
     }
     setMsg("SellerOffer oluşturuldu");
-    if (d.offer?.listingId) router.push(`/ilan/${d.offer.listingId}`);
+    // Mirror yoksa /urun; legacy mirror varsa da katalog ürün sayfası tercih edilir
+    if (productId) router.push(`/urun/${productId}`);
+    else if (d.offer?.listingId) router.push(`/ilan/${d.offer.listingId}`);
   }
 
   async function submitRequest(force = false) {

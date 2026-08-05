@@ -20,6 +20,8 @@
     "staging:phase2-allowlist": "tsx scripts/select-staging-phase2-allowlist.ts",
     "staging:cleanup-test-jobs": "tsx scripts/cleanup-test-force-projection-jobs.ts",
     "staging:set-mirrorless-flag": "tsx scripts/staging-set-mirrorless-flag.ts",
+    "staging:phase4": "tsx scripts/staging-phase4-stop-mirror-create.ts",
+    "staging:phase4-adversarial": "tsx scripts/staging-phase4-adversarial.ts",
     "postinstall": "prisma generate"
   },
   "prisma": {

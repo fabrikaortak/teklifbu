@@ -862,6 +862,19 @@ export async function listEscrowDeals(filters: EscrowDealFilters = {}) {
       { seller: { phone: { contains: q, mode: "insensitive" } } },
       { cargoTrackingNo: { contains: q, mode: "insensitive" } },
       { id: { contains: q, mode: "insensitive" } },
+      { linkedOrder: { orderNo: { contains: q, mode: "insensitive" } } },
+      {
+        linkedOrder: {
+          items: {
+            some: { productNameSnapshot: { contains: q, mode: "insensitive" } },
+          },
+        },
+      },
+      {
+        sellerOffer: {
+          product: { name: { contains: q, mode: "insensitive" } },
+        },
+      },
     ];
   }
 

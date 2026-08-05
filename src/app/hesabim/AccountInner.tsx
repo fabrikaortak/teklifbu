@@ -1743,9 +1743,34 @@ function EscrowDealsPanel() {
             >
               <div style={{ display: "flex", justifyContent: "space-between", gap: 10, flexWrap: "wrap" }}>
                 <div style={{ minWidth: 0 }}>
-                  <Link href={`/ilan/${d.listing?.id}`} style={{ fontWeight: 800, fontSize: 14 }}>
-                    {d.listing?.title || "İlan"}
-                  </Link>
+                  {(() => {
+                    const item = d.linkedOrder?.items?.[0];
+                    const title =
+                      d.listing?.title ||
+                      (item?.productNameSnapshot
+                        ? `${item.productNameSnapshot}${
+                            item.variantTitleSnapshot ? ` · ${item.variantTitleSnapshot}` : ""
+                          }`
+                        : null) ||
+                      (d.sellerOffer?.product?.name
+                        ? `${d.sellerOffer.product.name}${
+                            d.sellerOffer.variant?.title ? ` · ${d.sellerOffer.variant.title}` : ""
+                          }`
+                        : null) ||
+                      (d.linkedOrder?.orderNo ? `Sipariş ${d.linkedOrder.orderNo}` : "Katalog sipariş");
+                    const href = d.listing?.id
+                      ? `/ilan/${d.listing.id}`
+                      : item?.productId || d.sellerOffer?.product?.id
+                        ? `/urun/${item?.productId || d.sellerOffer.product.id}`
+                        : null;
+                    return href ? (
+                      <Link href={href} style={{ fontWeight: 800, fontSize: 14 }}>
+                        {title}
+                      </Link>
+                    ) : (
+                      <span style={{ fontWeight: 800, fontSize: 14 }}>{title}</span>
+                    );
+                  })()}
                   <div style={{ fontSize: 12, color: "var(--muted)", marginTop: 2 }}>
                     {isBuyer ? "Alıcı" : isSeller ? "Satıcı" : ""} ·{" "}
                     {new Date(d.createdAt).toLocaleDateString("tr-TR")}

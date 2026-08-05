@@ -428,6 +428,7 @@ export async function createSellerOffer(input: {
   sellerNote?: string | null;
   /** Satıcı create'te ACTIVE gönderemez; yok sayılır */
   status?: SellerOfferStatus;
+  /** Aşama 4: default OFF — yalnız açıkça true ise Listing mirror üretilir */
   createListingMirror?: boolean;
   city?: string;
   district?: string;
@@ -481,7 +482,8 @@ export async function createSellerOffer(input: {
 
   return prisma.$transaction(async (tx) => {
     let listingId: string | null = null;
-    if (input.createListingMirror !== false) {
+    // Opt-in only (Phase 4). Default: no Listing mirror for catalog SellerOffer.
+    if (input.createListingMirror === true) {
       const title = `${product.brand?.name ? product.brand.name + " " : ""}${product.name}${variant.title ? " · " + variant.title : ""}`.trim();
       const listingNo = await generateListingNo();
       const listing = await tx.listing.create({

@@ -100,20 +100,23 @@ function DemoPosInner() {
         setInfo(data);
         purposeRef.current = data.purpose;
 
-        if (data.status === "PAID" && data.listingId) {
-          setLoading(false);
-          goSuccess();
-          return;
-        }
-
-        if (data.status === "PAID" && !data.listingId && !autoTried.current) {
-          autoTried.current = true;
-          setLoading(false);
-          const ok = await completePay(true);
-          if (!ok && !cancelled) {
-            setError("Ödeme alınmış ancak ilan oluşturulamadı. «Öde (Demo)» ile tekrar deneyin.");
+        if (data.status === "PAID") {
+          // Katalog escrow: listingId null normal; listing-fee ise listingId beklenir
+          const isEscrowPurpose = data.purpose === "escrow_hold" || Boolean(data.orderId);
+          if (isEscrowPurpose || data.listingId) {
+            setLoading(false);
+            goSuccess();
+            return;
           }
-          return;
+          if (!autoTried.current) {
+            autoTried.current = true;
+            setLoading(false);
+            const ok = await completePay(true);
+            if (!ok && !cancelled) {
+              setError("Ödeme alınmış ancak ilan oluşturulamadı. «Öde (Demo)» ile tekrar deneyin.");
+            }
+            return;
+          }
         }
 
         setLoading(false);
