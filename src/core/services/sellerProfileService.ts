@@ -119,7 +119,7 @@ export async function getSellerPublicProfile(
       gallery: string[];
       achievements: SellerAchievement[];
     }
-  | { ok: false; status: number; error: string }
+  | { ok: false; status: number; error: string; code?: string }
 > {
   const user = await prisma.user.findUnique({
     where: { id: sellerId },
@@ -127,7 +127,24 @@ export async function getSellerPublicProfile(
       ownedShops: { take: 1, select: { id: true, name: true, city: true, phone: true } },
     },
   });
-  if (!user || !user.isActive) {
+  if (!user) {
+    return { ok: false, status: 404, error: "Satıcı bulunamadı" };
+  }
+
+  const isOwnProfile = Boolean(opts?.viewerId && opts.viewerId === user.id);
+  const commercialStatus = String(user.commercialStatus || "").toUpperCase();
+  const pendingCommercial =
+    isCorporateAccount(user.accountType) && commercialStatus === "PENDING";
+
+  if (!user.isActive) {
+    if (isOwnProfile && pendingCommercial) {
+      return {
+        ok: false,
+        status: 403,
+        error: "Mağazanız yönetici onayından sonra aktif olacak.",
+        code: "PENDING_COMMERCIAL_APPROVAL",
+      };
+    }
     return { ok: false, status: 404, error: "Satıcı bulunamadı" };
   }
 

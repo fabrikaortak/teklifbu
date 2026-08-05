@@ -2,12 +2,31 @@
 
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { useEffect, useRef, useState, type FormEvent } from "react";
-import { Bell, Heart, UserRound, Plus, ChevronDown, Search } from "lucide-react";
+import { useEffect, useMemo, useRef, useState, type FormEvent, type ReactNode } from "react";
+import {
+  Bell,
+  Heart,
+  UserRound,
+  Plus,
+  ChevronDown,
+  Search,
+  LayoutDashboard,
+  FileText,
+  Gavel,
+  ShoppingBag,
+  Coins,
+  MessagesSquare,
+  ShieldCheck,
+  Settings,
+  LogOut,
+  Shield,
+} from "lucide-react";
 import { AuthModal } from "@/components/AuthModal";
 import { BrandLogo } from "@/components/BrandLogo";
 import { getCatIcon } from "@/components/CategoryIcons";
 import { useTheme } from "@/components/ThemeProvider";
+import { useShoppingSurfaceFlag } from "@/components/cart/CartProvider";
+import { ShoppingCartControl } from "@/components/cart/ShoppingCartControl";
 import { formatCompact } from "@/lib/format";
 
 type User = {
@@ -22,10 +41,15 @@ type User = {
 
 type Cat = { slug: string; name: string; _count?: { listings: number } };
 
+type MenuItem = { href: string; label: string; icon: ReactNode; badge?: number | null };
+
 export function SiteHeader() {
   const pathname = usePathname();
   const router = useRouter();
-  const { theme } = useTheme();
+  const { theme, shoppingCartPlacement, offersEnabled, escrow } = useTheme();
+  const { shoppingSurface } = useShoppingSurfaceFlag();
+  const isShopNav = shoppingSurface || Boolean(pathname?.startsWith("/alisveris")) || pathname === "/sepet";
+  const showHeaderCart = isShopNav && shoppingCartPlacement === "ust";
   const [user, setUser] = useState<User | null>(null);
   const [unread, setUnread] = useState(0);
   const [authOpen, setAuthOpen] = useState(false);
@@ -33,8 +57,10 @@ export function SiteHeader() {
   const [loaded, setLoaded] = useState(false);
   const [categories, setCategories] = useState<Cat[]>([]);
   const [catsOpen, setCatsOpen] = useState(false);
+  const [userMenuOpen, setUserMenuOpen] = useState(false);
   const [headerQ, setHeaderQ] = useState("");
   const catsRef = useRef<HTMLDivElement>(null);
+  const userMenuRef = useRef<HTMLDivElement>(null);
 
   async function refreshAuth() {
     const d = await fetch("/api/auth").then((r) => r.json());
@@ -68,6 +94,7 @@ export function SiteHeader() {
 
   useEffect(() => {
     setCatsOpen(false);
+    setUserMenuOpen(false);
   }, [pathname]);
 
   useEffect(() => {
@@ -80,9 +107,13 @@ export function SiteHeader() {
   useEffect(() => {
     function onDoc(e: MouseEvent) {
       if (!catsRef.current?.contains(e.target as Node)) setCatsOpen(false);
+      if (!userMenuRef.current?.contains(e.target as Node)) setUserMenuOpen(false);
     }
     function onKey(e: KeyboardEvent) {
-      if (e.key === "Escape") setCatsOpen(false);
+      if (e.key === "Escape") {
+        setCatsOpen(false);
+        setUserMenuOpen(false);
+      }
     }
     document.addEventListener("mousedown", onDoc);
     document.addEventListener("keydown", onKey);
@@ -91,6 +122,57 @@ export function SiteHeader() {
       document.removeEventListener("keydown", onKey);
     };
   }, []);
+
+  const userMenuItems = useMemo<MenuItem[]>(() => {
+    if (!user) return [];
+    const items: MenuItem[] = [
+      { href: "/hesabim", label: "Ana Sayfa", icon: <LayoutDashboard size={15} /> },
+      { href: "/hesabim?s=ilanlarim", label: "İlanlarım", icon: <FileText size={15} /> },
+    ];
+    if (offersEnabled) {
+      items.push({ href: "/hesabim?s=tekliflerim", label: "Tekliflerim", icon: <Gavel size={15} /> });
+    }
+    items.push(
+      { href: "/hesabim?s=alisveris", label: "Alışverişlerim", icon: <ShoppingBag size={15} /> },
+      { href: "/hesabim?s=favoriler", label: "Favorilerim", icon: <Heart size={15} /> },
+      { href: "/hesabim?s=mesajlar", label: "Mesajlarım", icon: <MessagesSquare size={15} /> },
+      {
+        href: "/hesabim?s=jetonlarim",
+        label: "Jetonlarım",
+        icon: <Coins size={15} />,
+        badge: user.tokenBalance ?? 0,
+      },
+      {
+        href: "/hesabim?s=bildirimler",
+        label: "Bildirimlerim",
+        icon: <Bell size={15} />,
+        badge: unread || null,
+      }
+    );
+    if (escrow?.enabled) {
+      items.push({ href: "/hesabim?s=guvenli-ode", label: "Güvenli Öde", icon: <ShieldCheck size={15} /> });
+    }
+    items.push(
+      { href: "/hesabim?s=ayarlar", label: "Ayarlarım", icon: <Settings size={15} /> },
+      { href: "/hesabim?s=guvenlik", label: "Güvenlik", icon: <Shield size={15} /> }
+    );
+    if (user.role === "ADMIN") {
+      items.unshift({ href: "/admin", label: "Yönetim Paneli", icon: <Shield size={15} /> });
+    }
+    return items;
+  }, [user, offersEnabled, escrow?.enabled, unread]);
+
+  async function logout() {
+    setUserMenuOpen(false);
+    await fetch("/api/auth", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ action: "logout" }),
+    });
+    window.dispatchEvent(new Event("teklifbu:auth"));
+    router.push("/");
+    router.refresh();
+  }
 
   if (pathname?.startsWith("/admin")) return null;
 
@@ -112,11 +194,51 @@ export function SiteHeader() {
     e.preventDefault();
     const params = new URLSearchParams();
     if (headerQ.trim()) params.set("q", headerQ.trim());
-    router.push(`/ilanlar?${params.toString()}`);
+    router.push(isShopNav ? `/alisveris?${params.toString()}` : `/ilanlar?${params.toString()}`);
   }
 
   const displayName = (user?.name || "Hesabım").toLocaleUpperCase("tr-TR");
   const jetonLabel = `JETON: ${formatCompact(user?.tokenBalance ?? 0)}`;
+  const cartControl = showHeaderCart ? <ShoppingCartControl variant="header" /> : null;
+
+  const userMenuPanel = user ? (
+    <div className={`hdr-user-menu${userMenuOpen ? " is-open" : ""}`} role="menu">
+      <div className="hdr-user-menu__head">
+        <span className="hdr-user-menu__avatar" aria-hidden>
+          {user.avatarUrl ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img src={user.avatarUrl} alt="" />
+          ) : (
+            <UserRound size={18} strokeWidth={1.5} />
+          )}
+        </span>
+        <div>
+          <strong>{user.name || "Kullanıcı"}</strong>
+          <span>{jetonLabel}</span>
+        </div>
+      </div>
+      <div className="hdr-user-menu__list">
+        {userMenuItems.map((item) => (
+          <Link
+            key={item.href + item.label}
+            href={item.href}
+            className="hdr-user-menu__item"
+            role="menuitem"
+            onClick={() => setUserMenuOpen(false)}
+          >
+            <span className="hdr-user-menu__ico">{item.icon}</span>
+            <span className="hdr-user-menu__label">{item.label}</span>
+            {item.badge != null && item.badge !== 0 ? (
+              <span className="hdr-user-menu__badge">{item.badge}</span>
+            ) : null}
+          </Link>
+        ))}
+      </div>
+      <button type="button" className="hdr-user-menu__logout" onClick={logout}>
+        <LogOut size={15} /> Çıkış Yap
+      </button>
+    </div>
+  ) : null;
 
   const authModal = (
     <AuthModal
@@ -166,7 +288,7 @@ export function SiteHeader() {
 
             <div className="v2-header-actions">
               {user ? (
-                <button type="button" onClick={openFavorites}>
+                <button type="button" onClick={openFavorites} aria-label="Favorilerim" title="Favorilerim">
                   <Heart size={17} strokeWidth={1.75} /> <span className="hide-mobile">Favorilerim</span>
                 </button>
               ) : null}
@@ -178,21 +300,33 @@ export function SiteHeader() {
                   </span>
                 </Link>
               ) : null}
+              {cartControl}
               {user ? (
-                <Link href={user.role === "ADMIN" ? "/admin" : "/hesabim"} className="v2-user-link" title={displayName}>
-                  <span className="v2-avatar" aria-hidden>
-                    {user.avatarUrl ? (
-                      // eslint-disable-next-line @next/next/no-img-element
-                      <img src={user.avatarUrl} alt="" className="v2-avatar-img" />
-                    ) : (
-                      <UserRound size={22} strokeWidth={1.5} className="v2-avatar-ico" />
-                    )}
-                  </span>
-                  <span className="v2-user-meta hide-mobile">
-                    <span className="v2-user-name">{displayName}</span>
-                    <span className="v2-user-jeton">{jetonLabel}</span>
-                  </span>
-                </Link>
+                <div className="hdr-user-wrap" ref={userMenuRef}>
+                  <button
+                    type="button"
+                    className={`v2-user-link hdr-user-trigger${userMenuOpen ? " is-open" : ""}`}
+                    title={displayName}
+                    aria-expanded={userMenuOpen}
+                    aria-haspopup="menu"
+                    onClick={() => setUserMenuOpen((v) => !v)}
+                  >
+                    <span className="v2-avatar" aria-hidden>
+                      {user.avatarUrl ? (
+                        // eslint-disable-next-line @next/next/no-img-element
+                        <img src={user.avatarUrl} alt="" className="v2-avatar-img" />
+                      ) : (
+                        <UserRound size={22} strokeWidth={1.5} className="v2-avatar-ico" />
+                      )}
+                    </span>
+                    <span className="v2-user-meta hide-mobile">
+                      <span className="v2-user-name">{displayName}</span>
+                      <span className="v2-user-jeton">{jetonLabel}</span>
+                    </span>
+                    <ChevronDown size={14} className="hdr-user-chevron hide-mobile" />
+                  </button>
+                  {userMenuPanel}
+                </div>
               ) : (
                 <button type="button" onClick={() => openAuth("login")}>
                   <UserRound size={16} /> Giriş Yap
@@ -349,6 +483,8 @@ export function SiteHeader() {
               <button
                 type="button"
                 onClick={openFavorites}
+                aria-label="Favorilerim"
+                title="Favorilerim"
                 style={{
                   display: "inline-flex",
                   alignItems: "center",
@@ -391,38 +527,58 @@ export function SiteHeader() {
                 )}
               </Link>
             ) : null}
+            {cartControl}
             {user ? (
-              <Link
-                href={user.role === "ADMIN" ? "/admin" : "/hesabim"}
-                style={{ display: "inline-flex", alignItems: "center", gap: 8, fontSize: 12, lineHeight: 1.15 }}
-                title={displayName}
-              >
-                <span
+              <div className="hdr-user-wrap" ref={userMenuRef}>
+                <button
+                  type="button"
+                  className={`hdr-user-trigger${userMenuOpen ? " is-open" : ""}`}
+                  title={displayName}
+                  aria-expanded={userMenuOpen}
+                  aria-haspopup="menu"
+                  onClick={() => setUserMenuOpen((v) => !v)}
                   style={{
-                    width: 36,
-                    height: 36,
-                    borderRadius: 10,
-                    background: "#e8eaed",
-                    display: "grid",
-                    placeItems: "center",
-                    overflow: "hidden",
-                    flexShrink: 0,
-                    color: "#9aa0a6",
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: 8,
+                    fontSize: 12,
+                    lineHeight: 1.15,
+                    background: "transparent",
+                    border: "none",
+                    color: "inherit",
+                    cursor: "pointer",
+                    padding: 0,
                   }}
-                  aria-hidden
                 >
-                  {user.avatarUrl ? (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img src={user.avatarUrl} alt="" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-                  ) : (
-                    <UserRound size={20} strokeWidth={1.5} />
-                  )}
-                </span>
-                <span className="hide-mobile" style={{ display: "flex", flexDirection: "column", gap: 2, alignItems: "flex-start" }}>
-                  <span style={{ fontWeight: 800, color: "#fff", textTransform: "uppercase" }}>{displayName}</span>
-                  <span style={{ fontWeight: 800, color: "var(--orange, #ff6600)", textTransform: "uppercase" }}>{jetonLabel}</span>
-                </span>
-              </Link>
+                  <span
+                    style={{
+                      width: 36,
+                      height: 36,
+                      borderRadius: 10,
+                      background: "#e8eaed",
+                      display: "grid",
+                      placeItems: "center",
+                      overflow: "hidden",
+                      flexShrink: 0,
+                      color: "#9aa0a6",
+                    }}
+                    aria-hidden
+                  >
+                    {user.avatarUrl ? (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img src={user.avatarUrl} alt="" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                    ) : (
+                      <UserRound size={20} strokeWidth={1.5} />
+                    )}
+                  </span>
+                  <span className="hide-mobile" style={{ display: "flex", flexDirection: "column", gap: 2, alignItems: "flex-start" }}>
+                    <span style={{ fontWeight: 800, color: "#fff", textTransform: "uppercase" }}>{displayName}</span>
+                    <span style={{ fontWeight: 800, color: "var(--orange, #ff6600)", textTransform: "uppercase" }}>{jetonLabel}</span>
+                  </span>
+                  <ChevronDown size={14} className="hide-mobile" style={{ opacity: 0.85 }} />
+                </button>
+                {userMenuPanel}
+              </div>
             ) : (
               <button
                 type="button"

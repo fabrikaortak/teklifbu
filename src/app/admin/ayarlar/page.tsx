@@ -12,8 +12,8 @@ export default function AdminSettingsPage() {
         <div>
           <h1>Sistem Ayarları</h1>
           <p>
-            Teklif kuralları, PWA ve ilan süresi dolunca (teklifli / teklifsiz / satın al) davranışları. Diğer ayarlar
-            ilgili menülerdedir.
+            Teklif kuralları, PWA ve ilan süresi dolunca davranışları. Satıcı / mağaza paneli için menüde{" "}
+            <strong>Satıcı paneli</strong> bölümüne gidin.
           </p>
         </div>
       </div>

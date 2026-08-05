@@ -64,6 +64,7 @@ export async function GET() {
       avatarUrl: true,
       phoneVerified: true,
       memberSince: true,
+      profile: true,
     },
   });
   return NextResponse.json({ user });

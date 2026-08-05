@@ -95,6 +95,9 @@ function userProfilePayload(user: {
       authorizedTitle: profile.authorizedTitle || "",
       authorizedPhone: profile.authorizedPhone || "",
       naceCode: profile.naceCode || "",
+      shopFocusRoot: profile.shopFocusRoot || "",
+      shopFocusSub: profile.shopFocusSub || "",
+      shopFocusOtherNote: profile.shopFocusOtherNote || "",
       email: user.email || "",
       phone: user.phone || "",
       accountType,
@@ -108,7 +111,7 @@ export async function GET() {
 
   await processExpiredListings();
 
-  const [listings, bids, receivedBids, favorites, notifications, user, listingEditWhileLive, profileFieldsConfig, shopSub, payments] =
+  const [listings, bids, receivedBids, favorites, notifications, user, listingEditWhileLive, profileFieldsConfig, shopSub, payments, listingFavorites, unreadMessages, reviewAgg] =
     await Promise.all([
       prisma.listing.findMany({
         where: { sellerId: session.id },
@@ -137,7 +140,7 @@ export async function GET() {
       prisma.bid.findMany({
         where: { listing: { sellerId: session.id } },
         include: {
-          listing: { select: { id: true, title: true, status: true, listingNo: true } },
+          listing: { select: { id: true, title: true, status: true, listingNo: true, coverImage: true } },
           bidder: { select: { id: true, name: true, phone: true } },
         },
         orderBy: { createdAt: "desc" },
@@ -160,6 +163,15 @@ export async function GET() {
         where: { userId: session.id },
         orderBy: { createdAt: "desc" },
         take: 30,
+      }),
+      prisma.favorite.count({ where: { listing: { sellerId: session.id } } }),
+      prisma.message.count({
+        where: { receiverId: session.id, isRead: false },
+      }).catch(() => 0),
+      prisma.sellerReview.aggregate({
+        where: { sellerId: session.id, status: EditRequestStatus.APPROVED },
+        _count: { _all: true },
+        _avg: { rating: true },
       }),
     ]);
 
@@ -236,6 +248,9 @@ export async function GET() {
     ? (await getSetting<boolean>("account_payments_visible_ticari", true)) !== false
     : (await getSetting<boolean>("account_payments_visible_bireysel", true)) !== false;
 
+  const { resolveMagazaPanelAccess } = await import("@/lib/magazaPanelAccess");
+  const sellerPanel = await resolveMagazaPanelAccess(user);
+
   return NextResponse.json({
     user: userProfilePayload(user),
     profileFields: enabledFields,
@@ -247,10 +262,25 @@ export async function GET() {
       bidsReceived: receivedBids.length,
       bidsReceivedActive: receivedBids.filter((b) => b.status === "ACTIVE").length,
       favorites,
+      listingFavorites,
+      unreadMessages,
+      totalViews: listings.reduce((sum, l) => sum + (l.viewCount || 0), 0),
       tokenBalance: user.tokenBalance ?? 0,
+      avgRating:
+        reviewAgg._avg.rating != null ? Math.round(Number(reviewAgg._avg.rating) * 10) / 10 : null,
+      reviewCount: reviewAgg._count._all || 0,
+      satisfactionPct:
+        reviewAgg._avg.rating != null
+          ? Math.round((Number(reviewAgg._avg.rating) / 5) * 100)
+          : null,
     },
     shopPackage,
     shopPackageBuyEnabled: buyPopupEnabled,
+    sellerPanel: {
+      allowed: sellerPanel.allowed,
+      buttonLabel: sellerPanel.buttonLabel,
+      reason: sellerPanel.reason || null,
+    },
     paymentsVisible,
     payments: paymentsVisible
       ? payments.map((p) => {
@@ -305,6 +335,7 @@ export async function GET() {
       listingId: b.listing.id,
       listingTitle: b.listing.title,
       listingStatus: b.listing.status,
+      listingCoverImage: b.listing.coverImage || null,
       bidderName: b.bidder?.name || null,
       bidderPhone: b.bidder?.phone || null,
     })),

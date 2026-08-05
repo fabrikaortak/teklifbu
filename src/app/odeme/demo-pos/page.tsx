@@ -7,7 +7,7 @@ import { clearListingDraft, readListingDraft, writeListingDraft } from "@/lib/li
 import type { ListingFeeInvoice } from "@/lib/listingFeeInvoice";
 
 const SUCCESS_HREF = "/hesabim?s=ilanlarim";
-const ESCROW_SUCCESS_HREF = "/hesabim?s=guvenli-ode";
+const ESCROW_SUCCESS_HREF = "/hesabim?s=alisveris";
 
 function DemoPosInner() {
   const params = useSearchParams();
@@ -146,7 +146,7 @@ function DemoPosInner() {
           <h1 style={{ margin: 0, fontSize: 22, fontWeight: 900 }}>Ödeme alındı</h1>
           <p style={{ margin: 0, color: "var(--muted)" }}>
             {isEscrow
-              ? "Ödemeniz TeklifBu Güvenli Öde havuzuna aktarıldı. Hesabım sayfasına yönlendiriliyorsunuz…"
+              ? "Ödemeniz TeklifBu Güvenli Öde havuzuna aktarıldı. Alışverişlerim sayfasına yönlendiriliyorsunuz…"
               : "İlanınız onay kuyruğuna gönderildi. İlanlarım sayfasına yönlendiriliyorsunuz…"}
           </p>
           <button
@@ -157,7 +157,7 @@ function DemoPosInner() {
               window.location.assign(successHref);
             }}
           >
-            {isEscrow ? "Güvenli Öde işlemlerime git" : "İlanlarıma git"}
+            {isEscrow ? "Alışverişlerime git" : "İlanlarıma git"}
           </button>
         </div>
       </div>

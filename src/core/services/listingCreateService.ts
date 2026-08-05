@@ -18,6 +18,7 @@ import { spendTokens } from "@/core/services/tokenSpendService";
 import type { SessionUser } from "@/lib/auth";
 import { validateListingDescription } from "@/lib/listingDescription";
 import { deleteLocalUploadUrls } from "@/lib/uploadFiles";
+import { isAlisverisCategorySlug } from "@/data/classicBrowseTree";
 
 function roundMoney(n: number) {
   return Math.round((Number(n) || 0) * 100) / 100;
@@ -451,7 +452,7 @@ export async function createListingForSeller(
         district: (body.district as string) || null,
         neighborhood: (body.neighborhood as string) || null,
         dealType,
-        askPrice: BigInt(Number(body.askPrice)),
+        askPrice: BigInt(Math.round(Number(body.askPrice) || 0)),
         status: autoApprove ? ListingStatus.ACTIVE : ListingStatus.PENDING_REVIEW,
         durationDays: days,
         startsAt,
@@ -468,7 +469,7 @@ export async function createListingForSeller(
         titleBold: premium.titleBold,
         titleLarge: premium.titleLarge,
         isColored: premium.isColored,
-        escrowEligible: Boolean(body.escrowEligible),
+        escrowEligible: Boolean(body.escrowEligible) || isAlisverisCategorySlug(category.slug),
         rejectionReason: null,
         reviewedAt: autoApprove ? now : null,
         reviewedById: null,

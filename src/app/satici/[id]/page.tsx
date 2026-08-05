@@ -78,6 +78,7 @@ export default function SellerProfilePage() {
   const [isOwn, setIsOwn] = useState(false);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
+  const [errorCode, setErrorCode] = useState("");
   const [brandMsg, setBrandMsg] = useState("");
   const [brandBusy, setBrandBusy] = useState<"logo" | "cover" | null>(null);
   const [logoFee, setLogoFee] = useState(0);
@@ -116,11 +117,13 @@ export default function SellerProfilePage() {
     if (!id) return;
     setLoading(true);
     setError("");
+    setErrorCode("");
     fetch(`/api/sellers/${encodeURIComponent(id)}`)
       .then(async (r) => {
         const d = await r.json().catch(() => ({}));
         if (!r.ok) {
           setError(d.error || "Satıcı yüklenemedi");
+          setErrorCode(String(d.code || ""));
           setSeller(null);
           return;
         }
@@ -252,12 +255,26 @@ export default function SellerProfilePage() {
   }
 
   if (error || !seller) {
+    const pendingApproval = errorCode === "PENDING_COMMERCIAL_APPROVAL";
     return (
       <div className="page-shell store-page">
         <div className="card store-empty">
-          <div className="store-empty__title">{error || "Satıcı bulunamadı"}</div>
-          <Link href="/ilanlar" className="btn-outline" style={{ padding: "10px 16px" }}>
-            İlanlara dön
+          <div className="store-empty__title">
+            {pendingApproval
+              ? "Mağazanız yönetici onayından sonra aktif olacak"
+              : error || "Satıcı bulunamadı"}
+          </div>
+          {pendingApproval ? (
+            <p style={{ margin: 0, fontSize: 13, color: "#64748b", maxWidth: 420, lineHeight: 1.5 }}>
+              Kurumsal kaydınız incelemede. Yönetici onayladığında mağaza sayfanız burada yayınlanır.
+            </p>
+          ) : null}
+          <Link
+            href={pendingApproval ? "/hesabim" : "/ilanlar"}
+            className="btn-outline"
+            style={{ padding: "10px 16px" }}
+          >
+            {pendingApproval ? "Hesabıma dön" : "İlanlara dön"}
           </Link>
         </div>
       </div>

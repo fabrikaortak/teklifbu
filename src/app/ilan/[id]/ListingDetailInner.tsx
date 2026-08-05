@@ -35,10 +35,13 @@ import { SellerOwnerCard } from "@/components/SellerOwnerCard";
 import { SellerReviewsPanel } from "@/components/SellerReviewsPanel";
 import { BidSentModal } from "@/components/BidSentModal";
 import { SimilarListingsStrip } from "@/components/SimilarListingsStrip";
+import { ListingQuestionsBlock } from "@/components/ListingQuestionsBlock";
 import { RecentSalesStrip } from "@/components/RecentSalesStrip";
 import { EidsBadge } from "@/components/EidsBadge";
 import { ListingDescriptionHtml } from "@/components/ListingDescriptionHtml";
 import { useTheme } from "@/components/ThemeProvider";
+import { ShoppingProductDetail } from "@/components/shopping/ShoppingProductDetail";
+import { isAlisverisCategorySlug } from "@/data/classicBrowseTree";
 import dynamic from "next/dynamic";
 import {
   Heart,
@@ -99,6 +102,7 @@ type Listing = {
     logoUrl?: string | null;
     isPremiumSeller?: boolean;
     showPremiumBadge?: boolean;
+    showPremiumStoreBadge?: boolean;
     showYearsBadge?: boolean;
     reviewCount?: number;
     avgRating?: number | null;
@@ -372,6 +376,8 @@ export default function ListingDetailInner() {
   const [housingFieldsEnabled, setHousingFieldsEnabled] = useState(DEFAULT_HOUSING_FORM_FIELDS_ENABLED);
   const [detailLayout, setDetailLayout] = useState<"classic" | "sahibinden">("classic");
   const [premiumDetailLayout, setPremiumDetailLayout] = useState<"premium" | "sahibinden" | "classic">("premium");
+  const [shoppingDetailTemplate, setShoppingDetailTemplate] = useState<"classic" | "ecommerce_v1">("classic");
+  const [shoppingOffersEnabled, setShoppingOffersEnabled] = useState(true);
   const [bidTipsOpen, setBidTipsOpen] = useState(false);
   const [maxBidsPerListing, setMaxBidsPerListing] = useState(4);
   const [escrowOpen, setEscrowOpen] = useState(false);
@@ -393,6 +399,10 @@ export default function ListingDetailInner() {
         setDetailLayout(d?.listingDetailLayout === "sahibinden" ? "sahibinden" : "classic");
         const p = d?.listingDetailLayoutPremium;
         setPremiumDetailLayout(p === "sahibinden" || p === "classic" ? p : "premium");
+        setShoppingDetailTemplate(
+          d?.shoppingListingDetailTemplate === "ecommerce_v1" ? "ecommerce_v1" : "classic"
+        );
+        setShoppingOffersEnabled(d?.shoppingOffersEnabled !== false);
         const maxB = Number(d?.maxBidsPerListing);
         if (Number.isFinite(maxB) && maxB >= 1) setMaxBidsPerListing(maxB);
       })
@@ -834,6 +844,298 @@ export default function ListingDetailInner() {
     month: "long",
     year: "numeric",
   });
+
+  const isShoppingCategory = isAlisverisCategorySlug(listing.category?.slug);
+  const useEcommerceDetail = isShoppingCategory && shoppingDetailTemplate === "ecommerce_v1";
+
+  if (useEcommerceDetail) {
+    const attrSpecs = formatListingAttributeRows(listing.attributes, listing.category?.slug, {
+      showEmptyAsBelirtilmedi: false,
+      housingFieldsEnabled,
+    })
+      .filter((r) => {
+        if (["highlights", "installments", "installmentNote", "videoUrl", "viewAngle360", "badgeText", "promoBadge"].includes(r.key)) {
+          return false;
+        }
+        const raw = (listing.attributes as Record<string, unknown> | null)?.[r.key];
+        if (raw != null && typeof raw === "object") return false;
+        return true;
+      })
+      .map((r) => ({ label: r.label, value: r.value }));
+
+    const statusParts: ReactNode[] = [];
+    if (isCompleted) {
+      statusParts.push(
+        <div
+          key="done"
+          style={{
+            marginBottom: 14,
+            padding: "12px 14px",
+            borderRadius: 12,
+            background: "#ecfdf5",
+            border: "1px solid #a7f3d0",
+            color: "#065f46",
+            fontSize: 14,
+            fontWeight: 700,
+          }}
+        >
+          Sonuçlandı — Bu ürün ilanı artık satılmıyor.
+        </div>
+      );
+    }
+    if (isSeller && listing.canEdit) {
+      statusParts.push(
+        <div key="edit" style={{ marginBottom: 14, display: "flex", justifyContent: "flex-end" }}>
+          <Link href={`/ilan-ver?edit=${listing.id}`} className="btn-outline" style={{ padding: "8px 12px" }}>
+            Düzenle
+          </Link>
+        </div>
+      );
+    }
+
+    const shoppingOffersOn = offersEnabled && shoppingOffersEnabled;
+    const handleBuyNow = async () => {
+      if (!me) {
+        router.push(`/giris?next=${encodeURIComponent(`/ilan/${listing.id}`)}`);
+        return;
+      }
+      if (!listing.escrowAvailable && !isShoppingCategory) {
+        await alert({
+          title: "Hemen Al kullanılamıyor",
+          message:
+            "Bu ilan için Güvenli Öde / Hemen Al kapalı. İlanın escrow uygun olduğundan ve modülün açık olduğundan emin olun.",
+          tone: "danger",
+        });
+        return;
+      }
+      const shipDays =
+        Number(listing.escrowSettings?.defaultShipDays) ||
+        Number(listing.escrowSettings?.shipDaysOptions?.[0]) ||
+        7;
+      setEscrowBusy(true);
+      setEscrowError("");
+      try {
+        const res = await fetch("/api/escrow", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            action: "checkout",
+            listingId: listing.id,
+            shipDays,
+          }),
+        });
+        const data = await res.json().catch(() => ({}));
+        if (!res.ok) {
+          setEscrowBusy(false);
+          await alert({
+            title: "Hemen Al kullanılamıyor",
+            message:
+              data?.error ||
+              "Bu ilan için Güvenli Öde / Hemen Al kapalı. Admin’de Güvenli Öde ve Demo POS’un açık olduğundan emin olun.",
+            tone: "danger",
+          });
+          return;
+        }
+        const payUrl = String(data.payUrl || "");
+        if (!payUrl) {
+          setEscrowBusy(false);
+          await alert({
+            title: "Ödeme adresi yok",
+            message: "Demo POS yönlendirme adresi alınamadı.",
+            tone: "danger",
+          });
+          return;
+        }
+        window.location.assign(payUrl);
+      } catch {
+        setEscrowBusy(false);
+        await alert({
+          title: "Bağlantı hatası",
+          message: "Lütfen tekrar deneyin.",
+          tone: "danger",
+        });
+      }
+    };
+    const handleOffer = () => {
+      if (!shoppingOffersOn || !canPlaceBid) return;
+    };
+
+    const placeShoppingOffer = async (amountTl: number) => {
+      setError("");
+      setMsg("");
+      if (!me) {
+        requireAuth("bid");
+        return false;
+      }
+      const days = durationDays || 7;
+      if (!durationDays) setDurationDays(7);
+      const amount = Math.round(Number(amountTl) * 100) / 100;
+      const res = await fetch("/api/bids", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          action: "place",
+          listingId: params.id,
+          amount,
+          durationDays: days,
+        }),
+      });
+      const data = await res.json();
+      if (res.status === 401) {
+        requireAuth("bid");
+        return false;
+      }
+      if (res.status === 402 || data.code === "INSUFFICIENT_TOKENS") {
+        setTokenNeed(Number(data.requiredTokens || 1));
+        setTokenBalance(Number(data.balance || 0));
+        setTokenModalOpen(true);
+        return false;
+      }
+      if (!res.ok) {
+        setError(data.error || "Teklif verilemedi");
+        return false;
+      }
+      setBidSentAmount(amount);
+      setBidSentOpen(true);
+      setAmountRaw(0);
+      await load();
+      return true;
+    };
+
+    return (
+      <>
+        <ShoppingProductDetail
+          listing={listing}
+          crumbs={categoryCrumbs}
+          specs={attrSpecs.length ? attrSpecs : midSpecs}
+          favorited={favorited}
+          isSeller={isSeller}
+          onFavorite={toggleFavorite}
+          onShare={shareListing}
+          onBuy={handleBuyNow}
+          onOffer={handleOffer}
+          onSubmitOffer={async (amount) => {
+            const ok = await placeShoppingOffer(amount);
+            return ok;
+          }}
+          buyDisabled={isCompleted || isSeller || escrowBusy}
+          offerDisabled={!shoppingOffersOn || !canPlaceBid}
+          buyLabel={escrowBusy ? "Ödemeye yönlendiriliyor…" : "Hemen Al"}
+          offerLabel="Teklif Ver"
+          statusBanner={statusParts.length ? <>{statusParts}</> : null}
+          afterActions={
+            error || msg ? (
+              <div style={{ fontSize: 13 }}>
+                {error && <div style={{ color: "#dc2626" }}>{error}</div>}
+                {msg && <div style={{ color: "var(--green)" }}>{msg}</div>}
+              </div>
+            ) : null
+          }
+        />
+
+        {false && shoppingOffersOn && canPlaceBid && (
+          <div id="teklifler-panel" className="page-shell" style={{ paddingBottom: 40 }}>
+            <div className="card" style={{ padding: 16, borderRadius: 14 }}>
+              <div style={{ fontWeight: 850, marginBottom: 10 }}>Teklif ver</div>
+              <div style={{ display: "grid", gap: 10, maxWidth: 420 }}>
+                <input
+                  className="input"
+                  inputMode="numeric"
+                  value={amountRaw ? formatNumberTr(amountRaw) : ""}
+                  onChange={(e) => setAmountRaw(parseNumberTr(e.target.value) || 0)}
+                  placeholder="Teklif tutarı (TL)"
+                />
+                <select
+                  className="select"
+                  value={durationDays || ""}
+                  onChange={(e) => setDurationDays(Number(e.target.value) || 0)}
+                >
+                  <option value="">Süre seçin</option>
+                  {[1, 3, 7, 14, 30].map((d) => (
+                    <option key={d} value={d}>
+                      {d} gün
+                    </option>
+                  ))}
+                </select>
+                <button type="button" className="btn-orange" onClick={placeBid} style={{ padding: 12 }}>
+                  Teklif Bu
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {escrowOpen && (
+          <div
+            role="dialog"
+            aria-modal
+            onClick={() => !escrowBusy && setEscrowOpen(false)}
+            style={{
+              position: "fixed",
+              inset: 0,
+              zIndex: 70,
+              background: "rgba(15,23,42,.55)",
+              display: "grid",
+              placeItems: "center",
+              padding: 16,
+            }}
+          >
+            <div
+              className="card"
+              onClick={(e) => e.stopPropagation()}
+              style={{ width: "min(420px, 100%)", padding: 20, borderRadius: 16, display: "grid", gap: 12 }}
+            >
+              <div style={{ fontWeight: 900, fontSize: 17 }}>
+                {listing.escrowSettings?.buttonLabel || "Güvenli Öde"}
+              </div>
+              <div style={{ fontSize: 14, color: "#64748b" }}>
+                Tutar: <strong style={{ color: "#0f172a" }}>{formatTl(listing.askPrice)}</strong>
+              </div>
+              <label style={{ display: "grid", gap: 6 }}>
+                <span style={{ fontSize: 13, fontWeight: 700 }}>Kargo süresi</span>
+                <select
+                  className="select"
+                  value={escrowShipDays ?? ""}
+                  onChange={(e) => setEscrowShipDays(Number(e.target.value) || null)}
+                  disabled={escrowBusy}
+                >
+                  {(listing.escrowSettings?.shipDaysOptions || [3, 7, 10]).map((d) => (
+                    <option key={d} value={d}>
+                      {d} gün
+                    </option>
+                  ))}
+                </select>
+              </label>
+              {escrowError && <div style={{ color: "#dc2626", fontSize: 13, fontWeight: 600 }}>{escrowError}</div>}
+              <div style={{ display: "flex", gap: 8, justifyContent: "flex-end" }}>
+                <button type="button" className="btn-outline" disabled={escrowBusy} onClick={() => setEscrowOpen(false)}>
+                  Vazgeç
+                </button>
+                <button type="button" className="btn-orange" disabled={escrowBusy} onClick={startEscrowCheckout}>
+                  {escrowBusy ? "Yönlendiriliyor..." : "Ödemeye Geç"}
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
+        <AuthModal
+          open={authOpen}
+          onClose={() => setAuthOpen(false)}
+          onSuccess={() => {
+            setAuthOpen(false);
+            load();
+          }}
+        />
+        <TokenBuyModal
+          open={tokenModalOpen}
+          onClose={() => setTokenModalOpen(false)}
+          requiredTokens={tokenNeed}
+          balance={tokenBalance}
+        />
+      </>
+    );
+  }
 
   return (
     <div className="page-shell" style={{ paddingTop: 18, paddingBottom: 48 }}>
@@ -1607,6 +1909,7 @@ export default function ListingDetailInner() {
             <div className="card" style={{ padding: 18, display: "grid", gap: 14 }}>
               <EidsBadge text={listing.eidsBadge} />
               <ListingDescriptionHtml text={listing.description} />
+              <ListingQuestionsBlock listingId={listing.id} />
               {showExpertise && (
                 <div style={{ display: "grid", gap: 10, borderTop: "1px solid #eef2f7", paddingTop: 14 }}>
                   <div style={{ fontSize: 14, fontWeight: 800 }}>Boyalı veya Değişen Parça</div>

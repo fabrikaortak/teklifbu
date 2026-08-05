@@ -42,7 +42,7 @@ export function PremiumCategoryLadderPicker({ value, onChange, disabled }: Props
   if (enabled && !roots.length) {
     return (
       <div style={{ fontSize: 13, color: "#64748b", lineHeight: 1.45 }}>
-        Şu an açık premium dikey yok. Genel kategori ilanı kullanın.
+        Şu an açık premium dikey yok. Genel veya alışveriş kategori ilanı kullanın.
       </div>
     );
   }

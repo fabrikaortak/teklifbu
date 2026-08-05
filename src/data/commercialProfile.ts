@@ -1,5 +1,15 @@
 /** Ticari / işletme üyelik formu alanları ve demo veri */
 
+import {
+  EMPTY_SHOP_FOCUS,
+  parseShopFocus,
+  shopFocusFromProfileMap,
+  validateShopFocus,
+  type ShopFocus,
+} from "@/data/shopFocus";
+
+export { validateShopFocus };
+
 export type CommercialProfile = {
   commercialTitle: string;
   companyType: string;
@@ -14,6 +24,10 @@ export type CommercialProfile = {
   authorizedTitle: string;
   authorizedPhone: string;
   naceCode: string;
+  /** Mağaza ilan odağı */
+  shopFocusRoot: string;
+  shopFocusSub: string;
+  shopFocusOtherNote: string;
 };
 
 export const EMPTY_COMMERCIAL_PROFILE: CommercialProfile = {
@@ -30,6 +44,9 @@ export const EMPTY_COMMERCIAL_PROFILE: CommercialProfile = {
   authorizedTitle: "",
   authorizedPhone: "",
   naceCode: "",
+  shopFocusRoot: "",
+  shopFocusSub: "",
+  shopFocusOtherNote: "",
 };
 
 export const COMPANY_TYPE_OPTIONS = [
@@ -55,6 +72,9 @@ export const COMMERCIAL_FIELD_LABELS: Record<keyof CommercialProfile, string> = 
   authorizedTitle: "Yetkili görevi / ünvanı",
   authorizedPhone: "Yetkili telefon",
   naceCode: "NACE / faaliyet kodu",
+  shopFocusRoot: "Mağaza ana kategori",
+  shopFocusSub: "Mağaza alt kategori",
+  shopFocusOtherNote: "Mağaza diğer açıklama",
 };
 
 /** Zorunlu alanlar (kayıt + onay) */
@@ -83,6 +103,9 @@ const DEMO_POOL: CommercialProfile[] = [
     authorizedTitle: "Şirket Müdürü",
     authorizedPhone: "05321234567",
     naceCode: "68.31",
+    shopFocusRoot: "emlak",
+    shopFocusSub: "konut",
+    shopFocusOtherNote: "",
   },
   {
     commercialTitle: "Boğaziçi Oto Galeri A.Ş.",
@@ -98,6 +121,9 @@ const DEMO_POOL: CommercialProfile[] = [
     authorizedTitle: "Yönetim Kurulu Üyesi",
     authorizedPhone: "05329876543",
     naceCode: "45.11",
+    shopFocusRoot: "vasita",
+    shopFocusSub: "otomobil",
+    shopFocusOtherNote: "",
   },
   {
     commercialTitle: "Ege Lojistik Taşımacılık Ltd. Şti.",
@@ -113,6 +139,9 @@ const DEMO_POOL: CommercialProfile[] = [
     authorizedTitle: "Genel Müdür",
     authorizedPhone: "05335551234",
     naceCode: "49.41",
+    shopFocusRoot: "premium",
+    shopFocusSub: "premium-lojistik",
+    shopFocusOtherNote: "",
   },
   {
     commercialTitle: "Akdeniz Otel İşletmeleri Ltd. Şti.",
@@ -128,6 +157,9 @@ const DEMO_POOL: CommercialProfile[] = [
     authorizedTitle: "İşletme Müdürü",
     authorizedPhone: "05324445566",
     naceCode: "55.10",
+    shopFocusRoot: "premium",
+    shopFocusSub: "premium-otel",
+    shopFocusOtherNote: "",
   },
   {
     commercialTitle: "Yıldız Ticaret (Şahıs)",
@@ -143,6 +175,9 @@ const DEMO_POOL: CommercialProfile[] = [
     authorizedTitle: "İşletme Sahibi",
     authorizedPhone: "05336667788",
     naceCode: "47.19",
+    shopFocusRoot: "alisveris",
+    shopFocusSub: "elektronik",
+    shopFocusOtherNote: "",
   },
 ];
 
@@ -183,7 +218,34 @@ export function parseCommercialProfile(raw: unknown): CommercialProfile {
   for (const key of Object.keys(base) as Array<keyof CommercialProfile>) {
     if (o[key] != null) base[key] = String(o[key]);
   }
+  // Nested shopFocus desteği
+  const focus = shopFocusFromProfileMap(o);
+  if (focus.root) {
+    base.shopFocusRoot = focus.root;
+    base.shopFocusSub = focus.sub;
+    base.shopFocusOtherNote = focus.otherNote;
+  }
   return base;
+}
+
+export function commercialToShopFocus(p: CommercialProfile): ShopFocus {
+  return parseShopFocus({
+    root: p.shopFocusRoot,
+    sub: p.shopFocusSub,
+    otherNote: p.shopFocusOtherNote,
+  });
+}
+
+export function applyShopFocusToCommercial(
+  p: CommercialProfile,
+  focus: ShopFocus
+): CommercialProfile {
+  return {
+    ...p,
+    shopFocusRoot: focus.root,
+    shopFocusSub: focus.sub,
+    shopFocusOtherNote: focus.otherNote,
+  };
 }
 
 export function validateCommercialProfile(p: CommercialProfile): string | null {
@@ -196,6 +258,8 @@ export function validateCommercialProfile(p: CommercialProfile): string | null {
   if (tax.length < 10 || tax.length > 11) {
     return "Vergi numarası 10 veya 11 hane olmalıdır";
   }
+  const focusErr = validateShopFocus(commercialToShopFocus(p));
+  if (focusErr) return focusErr;
   return null;
 }
 
@@ -209,6 +273,9 @@ export function mergeCommercialIntoProfile(
     companyName: commercial.commercialTitle,
   };
 }
+
+export { EMPTY_SHOP_FOCUS };
+export type { ShopFocus };
 
 export type CommercialStatus = "PENDING" | "APPROVED" | "REJECTED";
 

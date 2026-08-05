@@ -9,7 +9,7 @@ export default function AdminOdemeAyarlariPage() {
         <div>
           <h1>Ödeme Ayarları</h1>
           <p>
-            Kurumsal / bireysel paket satışı, hesap ödemeleri görünürlüğü ve premium ilan jeton ödemesi
+            Kurumsal / bireysel paket satışı, Premium Mağaza rozeti ücretleri ve premium ilan jeton ödemesi
             kuralları.
           </p>
         </div>
@@ -30,6 +30,23 @@ export default function AdminOdemeAyarlariPage() {
               "shop_package_pay_with_tokens_enabled",
               "account_payments_visible_bireysel",
               "account_payments_visible_ticari",
+            ]}
+          />
+        </div>
+        <div className="adm-card">
+          <h2 style={{ margin: "0 0 8px", fontSize: 15, fontWeight: 800 }}>Premium Mağaza rozeti</h2>
+          <p style={{ margin: "0 0 12px", fontSize: 13, color: "var(--adm-muted)", lineHeight: 1.45 }}>
+            Alışveriş ürün detayındaki satıcı kartında görünen «Premium Mağaza» amblemi. Nasıl sahip
+            olunacağını (admin / jeton / TL) ve ücretleri buradan ayarlayın. Admin ataması her zaman
+            kullanıcı detayından yapılabilir.
+          </p>
+          <AdminSettingsPanel
+            onlyKeys={[
+              "premium_store_badge_enabled",
+              "premium_store_badge_acquire",
+              "premium_store_badge_fee_tl",
+              "premium_store_badge_fee_tokens",
+              "premium_store_badge_duration_days",
             ]}
           />
         </div>

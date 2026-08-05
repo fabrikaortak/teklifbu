@@ -26,6 +26,7 @@ import {
   isCorporateAccount,
   normalizeAccountType,
   parseCommercialSubtypes,
+  accountTypeLabelTr,
   type CommercialSubtype,
 } from "@/lib/accountTypes";
 import {
@@ -38,7 +39,6 @@ import {
 import {
   MessageSquareWarning,
   X,
-  LayoutDashboard,
   FileText,
   Gavel,
   Bell,
@@ -50,28 +50,41 @@ import {
   Shield,
   ShieldCheck,
   Sparkles,
+  ShoppingBag,
+  Store,
+  LogOut,
+  HelpCircle,
+  Crown,
+  Home,
+  Star,
 } from "lucide-react";
 import { SellerGrantEditModal } from "@/components/SellerGrantEditModal";
 import { AiBulkListingPanel } from "@/components/account/AiBulkListingPanel";
-import { CommercialEditModal, MemberTypeBadge } from "@/components/CommercialEditModal";
+import { AccountDashboard } from "@/components/account/AccountDashboard";
+import { AccountShoppingPanel } from "@/components/account/AccountShoppingPanel";
+import { AccountListingCreatePanel } from "@/components/account/AccountListingCreatePanel";
+import { CommercialEditModal } from "@/components/CommercialEditModal";
 import { CommercialBulkListingUpdate } from "@/components/account/CommercialBulkListingUpdate";
 import { ShopPackageBuyModal } from "@/components/ShopPackageBuyModal";
 import { useTheme } from "@/components/ThemeProvider";
 import { CLASSIFIED_NOTIFICATION_KEYS } from "@/lib/notificationPrefs";
 
 const MENU_ICONS: Record<string, ReactNode> = {
-  ozet: <LayoutDashboard size={14} strokeWidth={2} />,
-  ilanlarim: <FileText size={14} strokeWidth={2} />,
-  "ai-ilan": <Sparkles size={14} strokeWidth={2} />,
-  tekliflerim: <Gavel size={14} strokeWidth={2} />,
-  bildirimler: <Bell size={14} strokeWidth={2} />,
-  "bildirim-ayarlar": <BellRing size={14} strokeWidth={2} />,
-  favoriler: <Heart size={14} strokeWidth={2} />,
-  jetonlarim: <Coins size={14} strokeWidth={2} />,
-  mesajlar: <MessagesSquare size={14} strokeWidth={2} />,
-  "guvenli-ode": <ShieldCheck size={14} strokeWidth={2} />,
-  ayarlar: <Settings size={14} strokeWidth={2} />,
-  guvenlik: <Shield size={14} strokeWidth={2} />,
+  ozet: <Home size={15} strokeWidth={2.2} />,
+  ilanlarim: <FileText size={15} strokeWidth={2} />,
+  "ilan-ekle": <ShoppingBag size={15} strokeWidth={2} />,
+  "ai-ilan": <Sparkles size={15} strokeWidth={2} />,
+  tekliflerim: <Gavel size={15} strokeWidth={2} />,
+  alisveris: <ShoppingBag size={15} strokeWidth={2} />,
+  bildirimler: <Bell size={15} strokeWidth={2} />,
+  "bildirim-ayarlar": <BellRing size={15} strokeWidth={2} />,
+  favoriler: <Heart size={15} strokeWidth={2} />,
+  jetonlarim: <Coins size={15} strokeWidth={2} />,
+  mesajlar: <MessagesSquare size={15} strokeWidth={2} />,
+  "guvenli-ode": <ShieldCheck size={15} strokeWidth={2} />,
+  ayarlar: <Settings size={15} strokeWidth={2} />,
+  guvenlik: <Shield size={15} strokeWidth={2} />,
+  faturalar: <FileText size={15} strokeWidth={2} />,
 };
 
 export default function AccountInner() {
@@ -114,64 +127,158 @@ export default function AccountInner() {
   if (!data) return <div className="page-shell" style={{ paddingTop: 40, paddingBottom: 40 }}>Yükleniyor...</div>;
 
   const menu: [string, string][] = [
-    ["ozet", "Özet"],
+    ["ozet", "Ana Sayfa"],
     ["ilanlarim", "İlanlarım"],
+    ["ilan-ekle", "İlan Ekle"],
     ...(aiEnabled ? [["ai-ilan", "AI ile ilan ekle"] as [string, string]] : []),
     ...(offersEnabled ? [["tekliflerim", "Tekliflerim"] as [string, string]] : []),
-    ["bildirimler", "Bildirimler"],
-    ["bildirim-ayarlar", "Bildirim Ayarları"],
-    ["favoriler", "Favoriler"],
+    ["alisveris", "Alışverişlerim"],
+    ["favoriler", "Favorilerim"],
+    ["mesajlar", "Mesajlarım"],
     ["jetonlarim", "Jetonlarım"],
-    ["mesajlar", "Mesajlar"],
+    ...(data.paymentsVisible !== false ? [["faturalar", "Faturalarım"] as [string, string]] : []),
+    ["bildirimler", "Bildirimlerim"],
+    ["bildirim-ayarlar", "Bildirim Ayarları"],
     ...(escrow.enabled ? [["guvenli-ode", "Güvenli Öde"] as [string, string]] : []),
-    ["ayarlar", "Hesap Ayarları"],
+    ["ayarlar", "Ayarlarım"],
     ["guvenlik", "Güvenlik"],
   ];
 
+  const menuBadges: Record<string, number | string | null> = {
+    ilanlarim: data.stats?.activeListings || null,
+    tekliflerim: offersEnabled ? data.stats?.bidsGiven || null : null,
+    favoriler: data.stats?.favorites || null,
+    mesajlar: data.stats?.unreadMessages || null,
+    jetonlarim: data.stats?.tokenBalance ?? 0,
+    bildirimler: (data.notifications || []).filter((n: any) => !n.isRead).length || null,
+  };
+
+  const avatarSrc = data.user.avatarUrl || data.user.logoUrl || null;
+  const initials = String(data.user.name || "Ü")
+    .trim()
+    .split(/\s+/)
+    .slice(0, 2)
+    .map((p: string) => p[0]?.toUpperCase() || "")
+    .join("") || "Ü";
+  const isCorp = isCorporateAccount(data.user.accountType);
+  const memberLabel = isCorp
+    ? "Kurumsal Üye"
+    : accountTypeLabelTr(data.user.accountType) || "Üye";
+  const avgRating = data.stats?.avgRating != null ? Number(data.stats.avgRating) : null;
+  const reviewCount = Number(data.stats?.reviewCount || 0);
+  const satisfactionPct =
+    data.stats?.satisfactionPct != null
+      ? Number(data.stats.satisfactionPct)
+      : avgRating != null
+        ? Math.round((avgRating / 5) * 100)
+        : null;
+
   return (
     <>
-    <div className="page-shell account-layout">
-      <aside className="card account-menu">
-        <div className="account-menu-user">
-          <MemberTypeBadge
-            accountType={data.user.accountType}
-            onCommercialClick={
-              normalizeAccountType(data.user.accountType) === "TICARI"
-                ? () => setCommercialOpen(true)
-                : undefined
-            }
-          />
-          <div className="account-menu-user__name">{data.user.name || "Kullanıcı"}</div>
-          <div className="account-menu-user__phone">{data.user.phone}</div>
-          {normalizeAccountType(data.user.accountType) === "TICARI" && data.user.commercialStatus ? (
-            <div className="account-menu-user__status">
-              {commercialStatusLabel(data.user.commercialStatus)}
-              {data.user.hasPendingCommercialUpdate ? " · Güncelleme bekliyor" : ""}
+    <div className={`page-shell account-layout${section === "ilan-ekle" ? " account-layout--form" : ""}`}>
+      {section !== "ilan-ekle" ? (
+      <aside className="account-menu">
+        <div className="account-menu-profile">
+          <div className="account-menu-profile__top">
+            <div className="account-menu-avatar">
+              {avatarSrc ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img src={avatarSrc} alt="" />
+              ) : (
+                <span>{initials}</span>
+              )}
             </div>
-          ) : null}
+            <div className="account-menu-profile__meta">
+              <div className="account-menu-user__name">{data.user.name || "Kullanıcı"}</div>
+              {isCorp && normalizeAccountType(data.user.accountType) === "TICARI" ? (
+                <button
+                  type="button"
+                  className="account-menu-type-pill"
+                  onClick={() => setCommercialOpen(true)}
+                  title="Ticari bilgileri düzenle"
+                >
+                  {memberLabel}
+                </button>
+              ) : (
+                <span className="account-menu-type-pill">{memberLabel}</span>
+              )}
+              {avgRating != null && reviewCount > 0 ? (
+                <div className="account-menu-rating">
+                  <Star size={13} fill="currentColor" strokeWidth={0} />
+                  <strong>{avgRating.toFixed(1)}</strong>
+                  <span>({reviewCount})</span>
+                </div>
+              ) : null}
+              {normalizeAccountType(data.user.accountType) === "TICARI" && data.user.commercialStatus ? (
+                <div className="account-menu-user__status">
+                  {commercialStatusLabel(data.user.commercialStatus)}
+                  {data.user.hasPendingCommercialUpdate ? " · Güncelleme bekliyor" : ""}
+                </div>
+              ) : null}
+            </div>
+          </div>
+
+          <div className="account-menu-mini-stats">
+            <div>
+              <strong>{data.stats?.activeListings ?? 0}</strong>
+              <span>Aktif İlan</span>
+            </div>
+            <div>
+              <strong>{offersEnabled ? (data.stats?.bidsReceived ?? 0) : (data.stats?.totalViews ?? 0)}</strong>
+              <span>{offersEnabled ? "Teklif Aldı" : "Görüntülenme"}</span>
+            </div>
+            <div>
+              <strong>{satisfactionPct != null ? `%${satisfactionPct}` : "—"}</strong>
+              <span>Memnuniyet</span>
+            </div>
+          </div>
+
+          <div className="account-menu-actions">
+            {isCorp ? (
+              <Link href={`/satici/${data.user.id}`} className="account-menu-store-btn">
+                <Store size={16} strokeWidth={2.2} /> Mağazamı Görüntüle
+              </Link>
+            ) : null}
+            {data.sellerPanel?.allowed ? (
+              <Link href="/magaza/panel" className="account-menu-store-btn account-menu-store-btn--ghost">
+                <Sparkles size={15} strokeWidth={2.2} /> {data.sellerPanel.buttonLabel || "Satıcı Paneli"}
+              </Link>
+            ) : null}
+            {(data.shopPackage ||
+              isCorp ||
+              normalizeAccountType(data.user.accountType) === "BIREYSEL_TICARI") &&
+            data.shopPackageBuyEnabled !== false ? (
+              <button
+                type="button"
+                className="account-menu-store-btn account-menu-store-btn--ghost"
+                onClick={() => setShopPackageOpen(true)}
+              >
+                <Crown size={15} strokeWidth={2.2} /> {data.shopPackage ? "Paketim" : "Premium"}
+              </button>
+            ) : null}
+          </div>
         </div>
-        {menu.map(([k, label]) => (
-          <Link
-            key={k}
-            href={`/hesabim?s=${k}`}
-            className="account-menu-link"
-            style={{
-              background: section === k ? "#fff7f0" : "transparent",
-              color: section === k ? "var(--orange)" : "#111",
-            }}
-          >
-            <span
-              className="account-menu-ico"
-              style={{
-                background: section === k ? "rgba(255,102,0,.12)" : "#f1f5f9",
-                color: section === k ? "var(--orange)" : "#64748b",
-              }}
-            >
-              {MENU_ICONS[k]}
-            </span>
-            {label}
-          </Link>
-        ))}
+
+        <nav className="account-menu-nav">
+          {menu.map(([k, label]) => {
+            const badge = menuBadges[k];
+            const showBadge = badge != null && badge !== 0;
+            return (
+              <Link
+                key={k}
+                href={`/hesabim?s=${k}`}
+                className={`account-menu-link${section === k ? " is-active" : ""}`}
+              >
+                <span className="account-menu-ico">
+                  {MENU_ICONS[k] || <HelpCircle size={15} strokeWidth={2} />}
+                </span>
+                <span className="account-menu-link__label">{label}</span>
+                {showBadge ? <span className="account-menu-badge">{badge}</span> : null}
+              </Link>
+            );
+          })}
+        </nav>
+
         <button
           className="btn-outline account-menu-logout"
           onClick={async () => {
@@ -185,196 +292,70 @@ export default function AccountInner() {
             router.refresh();
           }}
         >
+          <LogOut size={14} style={{ marginRight: 6, verticalAlign: -2 }} />
           Çıkış Yap
         </button>
       </aside>
+      ) : null}
 
       <section style={{ display: "grid", gap: 16, alignContent: "start", alignSelf: "start", minWidth: 0 }}>
-        {(section === "ozet" || section === "tekliflerim") && (
+        {section === "ozet" && (
+          <AccountDashboard
+            data={data}
+            offersEnabled={offersEnabled}
+            onOpenShopPackage={() => setShopPackageOpen(true)}
+          />
+        )}
+
+        {section === "alisveris" && <AccountShoppingPanel userId={data.user.id} />}
+
+        {section === "ilan-ekle" && <AccountListingCreatePanel />}
+
+        {section === "faturalar" && data.paymentsVisible !== false && (
+          <div className="card account-bids-card">
+            <div className="account-bids-card__head">Faturalarım / Ödemeler</div>
+            <table className="account-bids-table">
+              <thead>
+                <tr>
+                  <th>Tarih</th>
+                  <th>Açıklama</th>
+                  <th>Tutar</th>
+                  <th>Durum</th>
+                </tr>
+              </thead>
+              <tbody>
+                {(data.payments || []).map((p: any) => (
+                  <tr key={p.id}>
+                    <td>{new Date(p.createdAt).toLocaleDateString("tr-TR")}</td>
+                    <td>
+                      <div style={{ fontWeight: 700 }}>{paymentPurposeLabel(p.purpose)}</div>
+                      {p.months ? (
+                        <div style={{ fontSize: 12, color: "var(--muted)" }}>{p.months} ay</div>
+                      ) : null}
+                      {p.days ? (
+                        <div style={{ fontSize: 12, color: "var(--muted)" }}>{p.days} gün</div>
+                      ) : null}
+                    </td>
+                    <td className="price-bid">{formatTl(p.amountTl)}</td>
+                    <td style={{ fontWeight: 700 }}>{paymentStatusLabel(p.status)}</td>
+                  </tr>
+                ))}
+                {!(data.payments || []).length && (
+                  <tr>
+                    <td colSpan={4} className="account-bids-empty">
+                      Henüz ödeme kaydı yok.
+                    </td>
+                  </tr>
+                )}
+              </tbody>
+            </table>
+          </div>
+        )}
+
+        {section === "tekliflerim" && offersEnabled && (
           <>
-            <div
-              className={`account-stat-grid${
-                section === "ozet" && isCorporateAccount(data.user.accountType)
-                  ? " account-stat-grid--with-store"
-                  : ""
-              }`}
-            >
-              {section === "ozet" && isCorporateAccount(data.user.accountType) ? (
-                <Link
-                  href={`/satici/${data.user.id}`}
-                  className="card account-stat-card account-stat-card--store"
-                  title="Mağazama git"
-                >
-                  <div className="account-stat-card__store-media">
-                    {data.user.logoUrl ? (
-                      // eslint-disable-next-line @next/next/no-img-element
-                      <img src={data.user.logoUrl} alt="" className="account-stat-card__store-logo" />
-                    ) : (
-                      <span className="account-stat-card__store-logo is-empty">M</span>
-                    )}
-                    {data.user.storeCoverUrl ? (
-                      // eslint-disable-next-line @next/next/no-img-element
-                      <img src={data.user.storeCoverUrl} alt="" className="account-stat-card__store-cover" />
-                    ) : (
-                      <span className="account-stat-card__store-cover is-empty" />
-                    )}
-                  </div>
-                  <div className="account-stat-card__label">Mağaza</div>
-                </Link>
-              ) : null}
-              {[
-                ["Aktif İlan", data.stats.activeListings],
-                ...(offersEnabled
-                  ? [
-                      ["Verilen Teklif", data.stats.bidsGiven],
-                      ["Kabul Edilen", data.stats.bidsAccepted],
-                    ]
-                  : []),
-              ].map(([t, v]) => (
-                <div key={String(t)} className="card account-stat-card">
-                  <div className="account-stat-card__value">{v}</div>
-                  <div className="account-stat-card__label">{t}</div>
-                </div>
-              ))}
-              <Link href="/jeton" className="card account-stat-card account-stat-card--jeton">
-                <div className="account-stat-card__jeton-row">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/jeton.svg" alt="" width={22} height={22} />
-                  <div className="account-stat-card__value">{data.stats.tokenBalance}</div>
-                </div>
-                <div className="account-stat-card__label">Jeton Al</div>
-              </Link>
-            </div>
+            <ApprovedDealsPanel bids={(data.bids || []).filter((b: any) => b.status === "APPROVED")} />
 
-            {section === "ozet" &&
-            (data.shopPackage ||
-              isCorporateAccount(data.user.accountType) ||
-              (normalizeAccountType(data.user.accountType) === "BIREYSEL_TICARI" &&
-                data.shopPackageBuyEnabled !== false)) ? (
-              <div className="card" style={{ padding: 16, display: "grid", gap: 12 }}>
-                <div style={{ display: "flex", justifyContent: "space-between", gap: 12, alignItems: "flex-start", flexWrap: "wrap" }}>
-                  <div>
-                    <div style={{ fontSize: 12, fontWeight: 800, color: "var(--muted)", letterSpacing: "0.04em" }}>
-                      İLAN PAKETİ
-                    </div>
-                    {data.shopPackage ? (
-                      <>
-                        <div style={{ fontSize: 18, fontWeight: 900, marginTop: 4 }}>{data.shopPackage.name}</div>
-                        <div style={{ fontSize: 13, color: "var(--muted)", marginTop: 4 }}>
-                          {(() => {
-                            const bt = String(data.shopPackage.billingType || "").toUpperCase();
-                            if (bt === "DAILY") return `${formatTl(data.shopPackage.monthlyPrice)} / gün`;
-                            if (bt === "YEARLY" || bt === "ANNUAL")
-                              return `${formatTl(data.shopPackage.monthlyPrice)} / yıl`;
-                            return `${formatTl(data.shopPackage.monthlyPrice)} / ay`;
-                          })()}
-                          {" · "}
-                          Bitiş: {new Date(data.shopPackage.endsAt).toLocaleDateString("tr-TR")}
-                          {data.shopPackage.premiumDiscountPercent > 0
-                            ? ` · Premium %${data.shopPackage.premiumDiscountPercent} indirim`
-                            : ""}
-                        </div>
-                      </>
-                    ) : (
-                      <>
-                        <div style={{ fontSize: 16, fontWeight: 800, marginTop: 4 }}>Aktif paket yok</div>
-                        <div style={{ fontSize: 13, color: "var(--muted)", marginTop: 4 }}>
-                          {isCorporateAccount(data.user.accountType)
-                            ? "İlan vermek için paket alın veya yöneticiden atama isteyin."
-                            : "İsterseniz günlük, aylık veya yıllık ilan paketi satın alabilirsiniz."}
-                        </div>
-                      </>
-                    )}
-                  </div>
-                  {data.shopPackageBuyEnabled !== false ? (
-                    <button
-                      type="button"
-                      className="btn-orange"
-                      style={{ padding: "10px 14px", fontWeight: 800 }}
-                      onClick={() => setShopPackageOpen(true)}
-                    >
-                      {data.shopPackage ? "Paket yenile / yükselt" : "Paket al"}
-                    </button>
-                  ) : null}
-                </div>
-
-                {data.shopPackage ? (
-                  <div
-                    style={{
-                      display: "grid",
-                      gridTemplateColumns: "repeat(3, minmax(0, 1fr))",
-                      gap: 8,
-                    }}
-                  >
-                    {[
-                      ["İlan limiti", String(data.shopPackage.listingLimit)],
-                      ["Kullanılan", String(data.shopPackage.listingUsed)],
-                      ["Kalan hak", String(data.shopPackage.listingRemaining)],
-                    ].map(([label, val]) => (
-                      <div
-                        key={label}
-                        style={{
-                          background: "#f8fafc",
-                          borderRadius: 10,
-                          padding: "10px 12px",
-                          textAlign: "center",
-                        }}
-                      >
-                        <div style={{ fontSize: 18, fontWeight: 900, color: "var(--navy)" }}>{val}</div>
-                        <div style={{ fontSize: 11, color: "var(--muted)", fontWeight: 700, marginTop: 2 }}>{label}</div>
-                      </div>
-                    ))}
-                  </div>
-                ) : null}
-              </div>
-            ) : null}
-
-            {section === "ozet" && data.paymentsVisible !== false ? (
-              <div className="card account-bids-card">
-                <div className="account-bids-card__head">Faturalar / Ödemeler</div>
-                <table className="account-bids-table">
-                  <thead>
-                    <tr>
-                      <th>Tarih</th>
-                      <th>Açıklama</th>
-                      <th>Tutar</th>
-                      <th>Durum</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {(data.payments || []).map((p: any) => (
-                      <tr key={p.id}>
-                        <td>{new Date(p.createdAt).toLocaleDateString("tr-TR")}</td>
-                        <td>
-                          <div style={{ fontWeight: 700 }}>{paymentPurposeLabel(p.purpose)}</div>
-                          {p.months ? (
-                            <div style={{ fontSize: 12, color: "var(--muted)" }}>{p.months} ay</div>
-                          ) : null}
-                          {p.days ? (
-                            <div style={{ fontSize: 12, color: "var(--muted)" }}>{p.days} gün</div>
-                          ) : null}
-                        </td>
-                        <td className="price-bid">{formatTl(p.amountTl)}</td>
-                        <td style={{ fontWeight: 700 }}>{paymentStatusLabel(p.status)}</td>
-                      </tr>
-                    ))}
-                    {!(data.payments || []).length && (
-                      <tr>
-                        <td colSpan={4} className="account-bids-empty">
-                          Henüz ödeme kaydı yok.
-                        </td>
-                      </tr>
-                    )}
-                  </tbody>
-                </table>
-              </div>
-            ) : null}
-
-            {offersEnabled && section === "tekliflerim" && (
-              <ApprovedDealsPanel bids={(data.bids || []).filter((b: any) => b.status === "APPROVED")} />
-            )}
-
-            {offersEnabled && (
             <div className="card account-bids-card">
               <div className="account-bids-card__head">
                 Aldığım Teklifler
@@ -430,9 +411,7 @@ export default function AccountInner() {
                 </tbody>
               </table>
             </div>
-            )}
 
-            {offersEnabled && (
             <div className="card account-bids-card">
               <div className="account-bids-card__head">Verdiğim Teklifler</div>
               <table className="account-bids-table">
@@ -490,7 +469,6 @@ export default function AccountInner() {
                 </tbody>
               </table>
             </div>
-            )}
           </>
         )}
 
@@ -1606,6 +1584,8 @@ function escrowStatusLabel(status?: string) {
   switch (status) {
     case "AWAITING_PAYMENT":
       return "Ödeme bekleniyor";
+    case "FUNDED":
+      return "Ödeme alındı";
     case "AWAITING_SHIPMENT":
       return "Kargo bekleniyor";
     case "SHIPPED":
@@ -1620,6 +1600,8 @@ function escrowStatusLabel(status?: string) {
       return "Anlaşmazlık";
     case "CANCELLED":
       return "İptal edildi";
+    case "EXPIRED":
+      return "Süresi doldu";
     default:
       return status || "—";
   }

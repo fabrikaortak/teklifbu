@@ -37,6 +37,7 @@ import {
   AlisverisGroupCards,
   emptyAlisverisBuckets,
 } from "@/components/home/AlisverisGroupCards";
+import { useRegisterShoppingSurface } from "@/components/cart/CartProvider";
 
 function formatChangePct(n: number) {
   const abs = Math.abs(n);
@@ -101,6 +102,7 @@ function scopeAlisverisCategory(category: string, condition: string): string {
 const VITRIN_LIMIT = 4;
 
 export function AlisverisHome() {
+  useRegisterShoppingSurface(true);
   const router = useRouter();
   const searchParams = useSearchParams();
   const { categoriesTheme, offersEnabled } = useTheme();

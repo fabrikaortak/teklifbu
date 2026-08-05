@@ -94,7 +94,7 @@ const VERTICAL_UI: Record<
   alisveris: {
     accent: "blue",
     eyebrow: "Alışveriş",
-    blurb: "İkinci el / sıfır ürün. Mağaza paketleri ve abonelikler alt menüde.",
+    blurb: "İkinci el / sıfır ürün. Siparişler, mağaza paketleri ve abonelikler alt menüde.",
     Icon: ShoppingBag,
   },
   premium: {
@@ -192,7 +192,12 @@ export function VerticalOverviewPage({ vertical }: { vertical: AdminVertical }) 
       { href: `${base}/ayarlar`, label: "Ayarlar", description: "Dikey kuralları" },
     ];
     if (vertical === "alisveris") {
-      links.splice(5, 0, {
+      links.splice(1, 0, {
+        href: `${base}/siparisler`,
+        label: "Siparişler",
+        description: "Tüm Güvenli Öde siparişleri",
+      });
+      links.splice(6, 0, {
         href: `${base}/magaza-paketleri`,
         label: "Mağaza paketleri",
         description: "Paket tanımları",
@@ -477,12 +482,16 @@ export function VerticalSettingsPage({ vertical }: { vertical: AdminVertical }) 
               "shop_package_buy_popup_bireysel",
               "shop_package_buy_popup_ticari",
               "shop_package_pay_with_tokens_enabled",
+              "shopping_listing_form_template",
+              "shopping_listing_detail_template",
+              "shopping_offers_enabled",
             ]}
           />
           <div className="adm-card" style={{ padding: 16, lineHeight: 1.55 }}>
             <p style={{ margin: 0, color: "#475569", fontSize: 14 }}>
-              Ticari üyelik onayı ve diğer kurumsal kurallar için Platform → Kullanıcılar → Ticari Üyeler sayfasına
-              bakın. Genel ilan ücret / süre kuralları Vasıta &amp; Emlak → Ayarlar’dadır.
+              <strong>İlan giriş formu:</strong> Modern Tema seçilirse alışveriş ilanı Hesabım içinde adımlı
+              (Temel Bilgiler → … → Yayınla) formda açılır. Detay şablonu ürün sayfası görünümünü belirler.
+              Ticari üyelik onayı için Platform → Kullanıcılar → Ticari Üyeler.
             </p>
           </div>
         </div>
@@ -494,11 +503,18 @@ export function VerticalSettingsPage({ vertical }: { vertical: AdminVertical }) 
     <div>
       <Head
         title={`${meta.label} — Ayarlar`}
-        description="İlan ücretleri, süreler ve yaşam döngüsü (platform geneli ilan kuralları)."
+        description="İlan süreleri ve yaşam döngüsü (platform geneli ilan kuralları)."
       />
       <AdminSettingsPanel
         onlyGroups={["listing"]}
         excludeKeys={[
+          "listing_fee_mode",
+          "listing_free_quota",
+          "listing_free_quota_by_account_type",
+          "listing_fee_tl",
+          "listing_fee_by_account_type",
+          "listing_fee_vat_percent",
+          "listing_fee_prices_include_vat",
           "premium_pay_with_tokens_enabled",
           "premium_title_bold_tl",
           "premium_title_large_tl",
@@ -515,7 +531,9 @@ export function VerticalSettingsPage({ vertical }: { vertical: AdminVertical }) 
         ]}
       />
       <div className="adm-card" style={{ padding: 14, marginTop: 12, lineHeight: 1.5, fontSize: 13, color: "#64748b" }}>
-        Süre dolunca / teklif seçim penceresi ayarları Platform → <strong>Sistem ayarları</strong> içindedir.
+        İlan hakkı / ücretsiz kota / üyelik tipine göre ücretler Platform →{" "}
+        <strong>Kullanıcı ayarları</strong> içindedir. Süre dolunca ayarları{" "}
+        <strong>Sistem ayarları</strong> içindedir.
       </div>
     </div>
   );

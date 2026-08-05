@@ -7,6 +7,7 @@ export type UiTheme = "v1" | "v2";
 export type CategoriesTheme = "tree" | "v2";
 export type V2GridCols = "4" | "5" | "6";
 export type HeaderBelt = "navy" | "white";
+export type ShoppingCartPlacement = "ust" | "alt";
 
 const V2_COLS_MAX: Record<V2GridCols, string> = {
   "4": "1480px",
@@ -46,6 +47,8 @@ type ThemeCtx = {
   /** Öne çıkan vitrinde hover ile kartı yükselt */
   featuredCardHoverLift: boolean;
   escrow: EscrowThemeConfig;
+  /** Alışveriş sepet ikonu: üst kuşak veya kategori satırı */
+  shoppingCartPlacement: ShoppingCartPlacement;
   ready: boolean;
 };
 
@@ -145,6 +148,7 @@ const Ctx = createContext<ThemeCtx>({
   featuredCardTitlePriceOnly: false,
   featuredCardHoverLift: true,
   escrow: DEFAULT_ESCROW_THEME,
+  shoppingCartPlacement: "alt",
   ready: false,
 });
 
@@ -163,6 +167,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   const [featuredCardTitlePriceOnly, setFeaturedCardTitlePriceOnly] = useState(false);
   const [featuredCardHoverLift, setFeaturedCardHoverLift] = useState(true);
   const [escrow, setEscrow] = useState<EscrowThemeConfig>(DEFAULT_ESCROW_THEME);
+  const [shoppingCartPlacement, setShoppingCartPlacement] = useState<ShoppingCartPlacement>("alt");
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
@@ -179,6 +184,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
       featuredCardTitlePriceOnly?: boolean;
       featuredCardHoverLift?: boolean;
       escrow?: Partial<EscrowThemeConfig>;
+      shoppingCartPlacement?: string;
     }) {
       const t: UiTheme = d.theme === "v2" ? "v2" : "v1";
       const ct: CategoriesTheme = d.categoriesTheme === "v2" ? "v2" : "tree";
@@ -191,6 +197,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
       const belt: HeaderBelt = d.headerBelt === "white" ? "white" : "navy";
       const featuredMinimal = Boolean(d.featuredCardTitlePriceOnly);
       const featuredHover = d.featuredCardHoverLift !== false;
+      const cartPlacement: ShoppingCartPlacement = d.shoppingCartPlacement === "ust" ? "ust" : "alt";
       setTheme(t);
       setCategoriesTheme(ct);
       setMarketplaceMode(mode);
@@ -200,6 +207,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
       setBrandName(String(d.brandName || "TeklifBu"));
       setFeaturedCardTitlePriceOnly(featuredMinimal);
       setFeaturedCardHoverLift(featuredHover);
+      setShoppingCartPlacement(cartPlacement);
       setEscrow({
         enabled: Boolean(d.escrow?.enabled),
         buttonLabel: String(d.escrow?.buttonLabel || DEFAULT_ESCROW_THEME.buttonLabel),
@@ -222,6 +230,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
         "data-featured-hover-lift",
         featuredHover ? "1" : "0"
       );
+      document.documentElement.setAttribute("data-cart-placement", cartPlacement);
       try {
         localStorage.setItem(STORAGE_KEY, t);
         localStorage.setItem(CAT_STORAGE_KEY, ct);
@@ -307,6 +316,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
         featuredCardTitlePriceOnly,
         featuredCardHoverLift,
         escrow,
+        shoppingCartPlacement,
         ready,
       }}
     >

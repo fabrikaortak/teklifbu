@@ -622,8 +622,6 @@ export function CategoryBrowseNav({
               border: "1px solid var(--line)",
               borderRadius: 12,
               padding: "6px 4px",
-              maxHeight: 520,
-              overflowY: "auto",
               background: "#fff",
             }
       }

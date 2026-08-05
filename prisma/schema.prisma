@@ -233,6 +233,8 @@ model User {
   sellerReviewsWritten  SellerReview[]             @relation("SellerReviewsWritten")
   escrowBuys            EscrowDeal[]               @relation("EscrowBuyer")
   escrowSells           EscrowDeal[]               @relation("EscrowSeller")
+  listingQuestionsAsked ListingQuestion[]          @relation("ListingQuestionsAsked")
+  listingQuestionsAnswered ListingQuestion[]       @relation("ListingQuestionsAnswered")
 
   @@index([tenantId])
 }
@@ -352,6 +354,7 @@ model Listing {
   sellerAdminRequests SellerAdminRequest[]
   tokenRefunds        TokenRefund[]
   escrowDeals         EscrowDeal[]
+  listingQuestions    ListingQuestion[]
 
   @@index([status, endsAt])
   @@index([categoryId])
@@ -526,6 +529,28 @@ model EscrowDeal {
   @@index([listingId])
   @@index([buyerId])
   @@index([sellerId])
+}
+
+model ListingQuestion {
+  id           String    @id @default(cuid())
+  listingId    String
+  askerId      String
+  body         String    @db.Text
+  isPublic     Boolean   @default(true)
+  answerBody   String?   @db.Text
+  answeredAt   DateTime?
+  answeredById String?
+  isHidden     Boolean   @default(false)
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+
+  listing    Listing @relation(fields: [listingId], references: [id], onDelete: Cascade)
+  asker      User    @relation("ListingQuestionsAsked", fields: [askerId], references: [id], onDelete: Cascade)
+  answeredBy User?   @relation("ListingQuestionsAnswered", fields: [answeredById], references: [id], onDelete: SetNull)
+
+  @@index([listingId, createdAt])
+  @@index([answeredAt])
+  @@index([askerId])
 }
 
 model Bid {

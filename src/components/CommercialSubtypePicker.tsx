@@ -54,7 +54,9 @@ export function CommercialSubtypePicker({ value, onChange, disabled }: Props) {
   return (
     <div style={{ display: "grid", gap: 8 }}>
       <div style={{ fontSize: 12, color: "#64748b", fontWeight: 600 }}>
-        Kurumsal faaliyet alanları (birden fazla seçebilirsiniz)
+        Kurumsal faaliyet alanları <span style={{ color: "#dc2626" }}>*</span>{" "}
+        <span style={{ color: "#b91c1c", fontWeight: 800 }}>(zorunlu)</span>
+        <span style={{ fontWeight: 500 }}> — birden fazla seçebilirsiniz</span>
       </div>
       <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
         {options.map((opt) => {

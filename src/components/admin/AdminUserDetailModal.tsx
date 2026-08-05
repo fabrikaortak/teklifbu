@@ -7,13 +7,14 @@ import {
   commercialSubtypeLabelTr,
   isCorporateAccount,
 } from "@/lib/accountTypes";
-import { commercialStatusLabel } from "@/data/commercialProfile";
+import { commercialStatusLabel, commercialToShopFocus } from "@/data/commercialProfile";
 import {
   COMMERCIAL_FIELD_LABELS,
   COMPANY_TYPE_OPTIONS,
   EMPTY_COMMERCIAL_PROFILE,
   type CommercialProfile,
 } from "@/data/commercialProfile";
+import { formatShopFocusLine } from "@/data/shopFocus";
 import {
   formatPhoneTr,
   formatTl,
@@ -1189,6 +1190,10 @@ function CommercialProfileReadonly({
       value: subtypes.length
         ? subtypes.map((s) => commercialSubtypeLabelTr(s)).join(", ")
         : "—",
+    },
+    {
+      label: "Mağaza odağı",
+      value: formatShopFocusLine(commercialToShopFocus(profile)),
     },
     { label: COMMERCIAL_FIELD_LABELS.commercialTitle, value: profile.commercialTitle || "—" },
     { label: COMMERCIAL_FIELD_LABELS.companyType, value: companyType },

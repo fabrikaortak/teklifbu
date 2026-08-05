@@ -15,7 +15,10 @@ export async function GET(_req: Request, ctx: Ctx) {
   const session = await getSession();
   const profile = await getSellerPublicProfile(id, { viewerId: session?.id || null });
   if (!profile.ok) {
-    return NextResponse.json({ error: profile.error }, { status: profile.status });
+    return NextResponse.json(
+      { error: profile.error, ...(profile.code ? { code: profile.code } : {}) },
+      { status: profile.status }
+    );
   }
 
   const [listings, completedListings] = await Promise.all([

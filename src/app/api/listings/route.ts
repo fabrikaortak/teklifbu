@@ -250,10 +250,13 @@ export async function GET(req: Request) {
 
     const escrowCheck = await assertEscrowModuleAvailable();
     const { isBuyButtonOpen, getBuyButtonLabel } = await import("@/core/services/listingExpiryService");
+    const { isAlisverisCategorySlug } = await import("@/data/classicBrowseTree");
+    const shoppingListing = isAlisverisCategorySlug(listing.category?.slug);
     const buyOpen = await isBuyButtonOpen({
       status: listing.status,
       endsAt: listing.endsAt,
       escrowEligible: listing.escrowEligible,
+      forceEligible: shoppingListing,
     });
     const escrowAvailable = escrowCheck.allowed && buyOpen;
     const buyLabel = await getBuyButtonLabel();
@@ -262,7 +265,7 @@ export async function GET(req: Request) {
           buttonLabel: buyLabel || escrowCheck.settings.buttonLabel,
           shipDaysOptions: escrowCheck.settings.shipDaysOptions,
           defaultShipDays: escrowCheck.settings.defaultShipDays,
-          requireSellerIban: escrowCheck.settings.requireSellerIban,
+          requireSellerIban: shoppingListing ? false : escrowCheck.settings.requireSellerIban,
           commissionPercent: escrowCheck.settings.commissionPercent,
         }
       : null;
@@ -299,10 +302,11 @@ export async function GET(req: Request) {
     const showPhone = showContact && contactReveal.phone !== false;
 
     const { EditRequestStatus, BidStatus } = await import("@prisma/client");
-    const [showPremiumBadge, showYearsBadge, reviewSettings, reviewAgg, sellerListingStats, bidDecisionStats, lastListingActivity] =
+    const [showPremiumBadge, showYearsBadge, showPremiumStoreBadge, reviewSettings, reviewAgg, sellerListingStats, bidDecisionStats, lastListingActivity] =
       await Promise.all([
         getSetting<boolean>("commercial_premium_badge_enabled", true),
         getSetting<boolean>("commercial_member_years_badge_enabled", true),
+        getSetting<boolean>("premium_store_badge_enabled", true),
         getSellerReviewSettings(),
         isCommercial
           ? prisma.sellerReview.aggregate({
@@ -430,6 +434,7 @@ export async function GET(req: Request) {
           logoUrl: showIdentity && isCommercial ? listing.seller.logoUrl || null : null,
           isPremiumSeller: premiumActive,
           showPremiumBadge: showPremiumBadge !== false,
+          showPremiumStoreBadge: showPremiumStoreBadge !== false,
           showYearsBadge: showYearsBadge !== false,
           reviewCount: reviewAgg._count._all || 0,
           avgRating: reviewAgg._avg.rating,

@@ -47,6 +47,7 @@ export const SETTING_GROUP_LABELS: Record<string, string> = {
   ai: "AI (Yapay Zeka)",
   account: "Kullanıcı / Hesap",
   escrow: "Güvenli Öde (Escrow)",
+  seller_panel: "Satıcı Paneli",
 };
 
 const CAT_COST_KEYS = [
@@ -258,7 +259,7 @@ export const DEFAULT_SETTINGS: Record<string, SettingMeta> = {
   listing_fee_mode: {
     value: "free",
     label: "İlan ücreti modu",
-    group: "listing",
+    group: "account",
     description:
       "Ücretsiz: herkes bedava. Ücretli: her ilan ücretli. Freemium: önce ücretsiz kota, sonra ücret.",
     control: "select",
@@ -270,16 +271,26 @@ export const DEFAULT_SETTINGS: Record<string, SettingMeta> = {
   },
   listing_free_quota: {
     value: 3,
-    label: "Ücretsiz ilan kotası (freemium)",
-    group: "listing",
-    description: "Freemium modunda kullanıcı başına kaç ilan ücretsiz. Örn: 1 → yalnızca ilk ilan bedava.",
+    label: "Ücretsiz ilan kotası — genel (freemium)",
+    group: "account",
+    description:
+      "Üyelik tipine özel kota 0 veya tanımsızsa bu genel kota kullanılır. Freemium’da ilk N ilan bedava, sonrası ücretli.",
     control: "number",
     min: 0,
+  },
+  listing_free_quota_by_account_type: {
+    value: { BIREYSEL_TICARI: 3, TICARI: 3, BIREYSEL: 3, EMLAKCI: 3, GALERICI: 3 },
+    label: "Üyelik tipine göre ücretsiz ilan hakkı",
+    group: "account",
+    description:
+      "Freemium modunda bireysel / kurumsal üyenin kaç ilanı bedava. Sonraki ilanlar üyelik tipine göre ücretlenir.",
+    control: "accountFees",
+    unit: "adet",
   },
   listing_fee_tl: {
     value: 0,
     label: "İlan ücreti (genel)",
-    group: "listing",
+    group: "account",
     description: "Üyelik tipine özel fiyat 0 ise bu genel tutar kullanılır.",
     control: "number",
     min: 0,
@@ -288,11 +299,29 @@ export const DEFAULT_SETTINGS: Record<string, SettingMeta> = {
   listing_fee_by_account_type: {
     value: { BIREYSEL_TICARI: 0, TICARI: 0, BIREYSEL: 0, EMLAKCI: 0, GALERICI: 0 },
     label: "Üyelik tipine göre ilan ücreti",
-    group: "listing",
+    group: "account",
     description:
-      "Bireysel / Emlakçı / Galerici için ayrı fiyat. 0 yazarsanız yukarıdaki genel ilan ücreti geçerli olur.",
+      "Bireysel / Kurumsal için ayrı fiyat (kota sonrası veya ücretli modda). 0 yazarsanız genel ilan ücreti geçerli olur.",
     control: "accountFees",
     unit: "TL",
+  },
+  listing_fee_vat_percent: {
+    value: 20,
+    label: "İlan ücreti KDV oranı",
+    group: "account",
+    description: "İlan / premium özellik ödemelerinde KDV yüzdesi (0 = KDV gösterme).",
+    control: "number",
+    min: 0,
+    max: 40,
+    unit: "%",
+  },
+  listing_fee_prices_include_vat: {
+    value: true,
+    label: "Fiyatlara KDV dahil",
+    group: "account",
+    description:
+      "Açıkken admin’in girdiği TL tutarlar KDV dahildir. Kapalıysa tutarlar KDV hariçtir; ödeme anında KDV eklenir.",
+    control: "toggle",
   },
   premium_title_bold_tl: {
     value: 49,
@@ -338,24 +367,6 @@ export const DEFAULT_SETTINGS: Record<string, SettingMeta> = {
     control: "number",
     min: 0,
     unit: "TL",
-  },
-  listing_fee_vat_percent: {
-    value: 20,
-    label: "İlan ücreti KDV oranı",
-    group: "listing",
-    description: "İlan / premium özellik ödemelerinde KDV yüzdesi (0 = KDV gösterme).",
-    control: "number",
-    min: 0,
-    max: 40,
-    unit: "%",
-  },
-  listing_fee_prices_include_vat: {
-    value: true,
-    label: "Fiyatlara KDV dahil",
-    group: "listing",
-    description:
-      "Açıkken admin’in girdiği TL tutarlar KDV dahildir. Kapalıysa tutarlar KDV hariçtir; ödeme anında KDV eklenir.",
-    control: "toggle",
   },
   premium_badge_rule: {
     value: "premium_3",
@@ -1222,6 +1233,58 @@ export const DEFAULT_SETTINGS: Record<string, SettingMeta> = {
       "Açıkken TL / sanal POS kapanır. İlan ücreti, premium özellikler ve kurumsal paketler yalnızca jetonla ödenir. Paketlerde jeton fiyatı tanımlı olmalıdır. Temel ilan ücreti, hızlı jeton birim fiyatına göre jetona çevrilir (birim 0 ise 1 TL ≈ 1 jeton).",
     control: "toggle",
   },
+  premium_store_badge_enabled: {
+    value: true,
+    label: "Premium Mağaza rozeti açık",
+    group: "payment",
+    description:
+      "Açıkken premium satıcı kartında «Premium Mağaza» amblemi gösterilir (alışveriş ürün detayı vb.).",
+    control: "toggle",
+  },
+  premium_store_badge_acquire: {
+    value: "admin_only",
+    label: "Premium Mağaza — nasıl alınır",
+    group: "payment",
+    description:
+      "Rozetin nasıl verileceğini seçin. «Yalnızca admin» mevcut akış: yönetici kullanıcı detayından premium üye yapar. Jeton/TL seçenekleri satış fiyatlarını belirler (satın alma ekranı sonraki adımda bağlanır).",
+    control: "select",
+    options: [
+      { value: "admin_only", label: "Yalnızca admin atar" },
+      { value: "tokens", label: "Jeton ile satın alınır" },
+      { value: "tl", label: "TL / POS ile satın alınır" },
+      { value: "tokens_or_tl", label: "Jeton veya TL (ikisi de)" },
+    ],
+  },
+  premium_store_badge_fee_tl: {
+    value: 499,
+    label: "Premium Mağaza ücreti (TL)",
+    group: "payment",
+    description: "TL / POS ile alınacaksa dönem ücreti.",
+    control: "number",
+    min: 0,
+    max: 100000,
+    unit: "TL",
+  },
+  premium_store_badge_fee_tokens: {
+    value: 50,
+    label: "Premium Mağaza ücreti (jeton)",
+    group: "payment",
+    description: "Jetonla alınacaksa kesilecek jeton.",
+    control: "number",
+    min: 0,
+    max: 99999,
+    unit: "jeton",
+  },
+  premium_store_badge_duration_days: {
+    value: 30,
+    label: "Premium Mağaza süresi",
+    group: "payment",
+    description: "0 = süresiz (admin kapatana kadar). Aksi halde satın alma / atama sonrası gün sayısı.",
+    control: "number",
+    min: 0,
+    max: 3650,
+    unit: "gün",
+  },
   revenue_finance: {
     value: {
       vatPercentDefault: 20,
@@ -1482,6 +1545,161 @@ export const DEFAULT_SETTINGS: Record<string, SettingMeta> = {
     value: "Güvenli Öde",
     label: "Buton metni",
     group: "escrow",
+    control: "text",
+  },
+
+  seller_panel_enabled: {
+    value: true,
+    label: "Satıcı paneli açık",
+    group: "seller_panel",
+    description: "Kapalıysa satıcılar /magaza/panel ve Satıcı Paneli butonunu göremez.",
+    control: "toggle",
+  },
+  seller_panel_button_label: {
+    value: "Satıcı Paneli",
+    label: "Hesabım buton metni",
+    group: "seller_panel",
+    control: "text",
+  },
+  seller_panel_require_alisveris_focus: {
+    value: true,
+    label: "Yalnızca Alışveriş mağaza odağı",
+    group: "seller_panel",
+    description:
+      "Açıksa yalnızca mağaza odağı Alışveriş olan onaylı kurumsal üyeler panele girer. Kapalıysa tüm onaylı kurumsal üyeler girer.",
+    control: "toggle",
+  },
+  seller_panel_module_listings: {
+    value: true,
+    label: "Modül: İlanlar & kargo",
+    group: "seller_panel",
+    control: "toggle",
+  },
+  seller_panel_module_questions: {
+    value: true,
+    label: "Modül: Soru–cevap",
+    group: "seller_panel",
+    control: "toggle",
+  },
+  seller_panel_module_orders: {
+    value: true,
+    label: "Modül: Sipariş / kargo / iade",
+    group: "seller_panel",
+    description: "Güvenli Öde siparişleri satıcı panelinde listelenir.",
+    control: "toggle",
+  },
+  seller_panel_qa_sla_hours: {
+    value: 24,
+    label: "Soru yanıtlama süresi (SLA)",
+    group: "seller_panel",
+    description: "Kaç saat içinde yanıt beklenir; panelde geciken sorular vurgulanır.",
+    control: "number",
+    min: 1,
+    max: 168,
+    unit: "saat",
+  },
+  seller_panel_ship_reminder_hours: {
+    value: 48,
+    label: "Kargo hatırlatma eşiği",
+    group: "seller_panel",
+    description: "Ödeme sonrası bu süre geçince «kargo bekliyor» uyarıya düşer.",
+    control: "number",
+    min: 1,
+    max: 240,
+    unit: "saat",
+  },
+  shopping_listing_detail_template: {
+    value: "ecommerce_v1",
+    label: "Alışveriş — ilan detayı şablonu",
+    group: "seller_panel",
+    description:
+      "Yalnızca Alışveriş kategorisi ilanlarında geçerli. E-ticaret şablonu: galeri, satıcı kartı, indirim/stok, yan paneller (Trendyol tarzı).",
+    control: "select",
+    options: [
+      { value: "classic", label: "Klasik — mevcut ilan detayı" },
+      { value: "ecommerce_v1", label: "E-ticaret ürün sayfası (v1)" },
+    ],
+  },
+  shopping_listing_form_template: {
+    value: "ecommerce_v1",
+    label: "Alışveriş — ilan giriş formu",
+    group: "seller_panel",
+    description:
+      "Yalnızca Alışveriş kategorisi seçildiğinde geçerli. Modern Tema: Hesabım içinde adımlı (stepper) ilan formu. E-ticaret v1: marka, barkod, fiyat katmanları, stok, kargo.",
+    control: "select",
+    options: [
+      { value: "classic", label: "Klasik — marka / model / durum" },
+      { value: "ecommerce_v1", label: "E-ticaret ürün formu (v1)" },
+      { value: "modern_v1", label: "Modern Tema — adımlı ilan formu" },
+    ],
+  },
+  shopping_offers_enabled: {
+    value: true,
+    label: "Alışveriş ürün detayında teklif kabulü",
+    group: "seller_panel",
+    description:
+      "Açıksa e-ticaret ürün sayfasında «Teklif Ver» butonu aktif olur (genel site teklifli moda bağlıdır). Kapalıysa genel site teklifli olsa bile alışveriş ürün detayında teklif alınmaz; «Hemen Al» çalışır.",
+    control: "toggle",
+  },
+  shopping_cart_placement: {
+    value: "alt",
+    label: "Sepet yeri",
+    group: "seller_panel",
+    description:
+      "Üst kuşak: header’da bildirim ile profil arasında. Alt: kategori menü satırının (Tümü / Elektronik / Ev Yaşam…) en sağında.",
+    control: "select",
+    options: [
+      { value: "ust", label: "Üst kuşak (header)" },
+      { value: "alt", label: "Alt (kategori menü satırı)" },
+    ],
+  },
+  shopping_buy_button_color: {
+    value: "#2563eb",
+    label: "«Hemen Al» buton rengi",
+    group: "seller_panel",
+    description: "Alışveriş ürün detayındaki «Hemen Al» butonunun arka plan rengi.",
+    control: "color",
+  },
+  premium_store_popup_enabled: {
+    value: true,
+    label: "Premium Mağaza popup açık",
+    group: "seller_panel",
+    description:
+      "Açıksa ürün detayındaki Premium Mağaza amblemine tıklanınca bilgilendirme popup’ı açılır. Kapalıysa tıklama tepki vermez.",
+    control: "toggle",
+  },
+  premium_store_popup_title: {
+    value: "Premium Mağaza nedir?",
+    label: "Popup başlığı",
+    group: "seller_panel",
+    control: "text",
+  },
+  premium_store_popup_body: {
+    value:
+      "Premium Mağaza rozeti, alışveriş vitrininde güven ve görünürlük sağlar.\n\nNasıl Premium Mağaza olunur?\n• Onaylı kurumsal / mağaza üyeliğiniz olmalı\n• Admin Ödemeler ayarlarındaki Premium Mağaza ücretine göre jeton veya TL ile başvuru yapılabilir\n• Başvurunuz yönetici onayından sonra aktif olur\n• Rozet süresi dolunca yenileme veya admin ataması gerekir\n\nAvantajlar: ürün detayında altın amblem, alıcı güveni ve vitrin vurgusu.",
+    label: "Popup içeriği",
+    group: "seller_panel",
+    description: "Satır sonları korunur. Madde için «•» veya tire kullanabilirsiniz.",
+    control: "textarea",
+  },
+  premium_store_popup_apply_enabled: {
+    value: true,
+    label: "Popup’ta Başvur butonu",
+    group: "seller_panel",
+    description: "Kapalıysa yalnızca bilgilendirme metni ve kapat gösterilir.",
+    control: "toggle",
+  },
+  premium_store_popup_apply_label: {
+    value: "Başvur",
+    label: "Başvur buton metni",
+    group: "seller_panel",
+    control: "text",
+  },
+  premium_store_popup_apply_url: {
+    value: "/hesabim?s=magaza",
+    label: "Başvur yönlendirme URL",
+    group: "seller_panel",
+    description: "Butona tıklanınca gidilecek adres (örn. /hesabim, /premium, /magaza/panel).",
     control: "text",
   },
 };

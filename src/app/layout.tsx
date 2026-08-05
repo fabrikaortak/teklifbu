@@ -2,11 +2,14 @@ import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import "./theme-v2.css";
+import "./shopping-product.css";
+import "./modern-shopping-form.css";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteTopBeltBanner } from "@/components/SiteBeltBanner";
 import { ConfirmDialogProvider } from "@/components/ui/ConfirmDialog";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import { CartProvider } from "@/components/cart/CartProvider";
 
 const sans = Plus_Jakarta_Sans({
   subsets: ["latin", "latin-ext"],
@@ -27,10 +30,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body className={sans.className}>
         <ThemeProvider>
           <ConfirmDialogProvider>
-            <SiteTopBeltBanner />
-            <SiteHeader />
-            <main>{children}</main>
-            <SiteFooter />
+            <CartProvider>
+              <SiteTopBeltBanner />
+              <SiteHeader />
+              <main>{children}</main>
+              <SiteFooter />
+            </CartProvider>
           </ConfirmDialogProvider>
         </ThemeProvider>
       </body>

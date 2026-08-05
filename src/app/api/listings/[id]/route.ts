@@ -277,7 +277,7 @@ export async function PATCH(req: Request, ctx: Ctx) {
       district: payloadFields.district,
       neighborhood: payloadFields.neighborhood,
       dealType,
-      askPrice: BigInt(payloadFields.askPrice),
+      askPrice: BigInt(Math.round(Number(payloadFields.askPrice) || 0)),
       durationDays: days,
       coverImage: payloadFields.coverImage,
       images: payloadFields.images,

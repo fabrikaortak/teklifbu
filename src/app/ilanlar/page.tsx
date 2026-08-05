@@ -278,8 +278,6 @@ function ListingsInner() {
             style={{
               position: "sticky",
               top: "calc(var(--v2-header-h, 60px) + var(--v2-cat-h, 44px) + 12px)",
-              maxHeight: "calc(100vh - var(--v2-header-h, 60px) - var(--v2-cat-h, 44px) - 24px)",
-              overflowY: "auto",
             }}
           >
             {classicCats ? (

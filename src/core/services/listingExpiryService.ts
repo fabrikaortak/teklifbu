@@ -209,8 +209,10 @@ export async function isBuyButtonOpen(listing: {
   status: string;
   endsAt?: Date | string | null;
   escrowEligible?: boolean | null;
+  /** Alışveriş kategorisi: escrowEligible bayrağı aranmaz */
+  forceEligible?: boolean;
 }) {
-  if (!listing.escrowEligible) return false;
+  if (!listing.escrowEligible && !listing.forceEligible) return false;
   const rules = await getListingExpiryRules();
   if (!rules.buy.closesWhenBiddingEnds) return listing.status === "ACTIVE" || listing.status === "SELECTION";
   if (listing.status !== "ACTIVE") return false;

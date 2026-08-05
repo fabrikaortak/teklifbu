@@ -413,6 +413,10 @@ export function AuthModal({
               const cerr = validateCommercialProfile(commercialProfile);
               if (cerr) {
                 setError(cerr);
+                document.getElementById("shop-focus-picker")?.scrollIntoView({
+                  behavior: "smooth",
+                  block: "center",
+                });
                 return;
               }
               void requestRegisterOtp();
@@ -430,6 +434,7 @@ export function AuthModal({
               demoFillEnabled={demoFillEnabled}
               wide
               hideIntro
+              showFocusError={Boolean(error && /kategori|Mağaza/i.test(error))}
             />
             <div className="auth-modal__actions">
               <button
@@ -445,7 +450,11 @@ export function AuthModal({
               <button
                 type="submit"
                 className="btn-orange auth-modal__submit"
-                disabled={loading}
+                disabled={
+                  loading ||
+                  !commercialSubtypes.length ||
+                  Boolean(validateCommercialProfile(commercialProfile))
+                }
               >
                 {loading ? "Gönderiliyor..." : "Doğrulama Kodu Gönder"}
               </button>

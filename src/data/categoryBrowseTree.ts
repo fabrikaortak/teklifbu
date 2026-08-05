@@ -407,27 +407,37 @@ function categoryParts(cat?: string): string[] {
 
 function categoryMatches(nodeCat: string | undefined, filterCat: string): boolean {
   if (!nodeCat) return true;
-  const parts = categoryParts(nodeCat);
-  if (parts.includes(filterCat)) return true;
   if (nodeCat === filterCat) return true;
-  // alışveriş: kök «ikinci-el» → çocuk «ikinci-el-cep-telefonu»
-  if (parts.length === 1 && filterCat.startsWith(`${parts[0]}-`)) return true;
-  return false;
+  const nodeParts = categoryParts(nodeCat);
+  const filterParts = categoryParts(filterCat);
+  if (filterParts.length === 1) {
+    const one = filterParts[0];
+    if (nodeParts.includes(one)) return true;
+    // alışveriş: kök «ikinci-el» → çocuk «ikinci-el-cep-telefonu»
+    if (nodeParts.length === 1 && one.startsWith(`${nodeParts[0]}-`)) return true;
+    return false;
+  }
+  // Ara düğüm (virgüllü liste): seçilen slug’lar düğümün altında olmalı
+  return filterParts.every((p) => nodeParts.includes(p));
 }
 
 /** Mevcut filtreye en uygun düğüm yolu (accordion açmak için). */
-export function matchBrowsePath(filters: {
-  category: string;
-  dealType: string;
-  subtype: string;
-  rental: string;
-}): string[] {
+export function matchBrowsePath(
+  filters: {
+    category: string;
+    dealType: string;
+    subtype: string;
+    rental: string;
+  },
+  nodes: BrowseNode[] = ALL_BROWSE_TREE
+): string[] {
   if (!filters.category) return [];
 
   // Eski «kiralik» kökü → Konut / Kiralık
   const category = filters.category === "kiralik" ? "konut" : filters.category;
   const dealType =
     filters.category === "kiralik" && !filters.dealType ? "KIRALIK" : filters.dealType;
+  const filterParts = categoryParts(category);
 
   const path: string[] = [];
 
@@ -448,18 +458,26 @@ export function matchBrowsePath(filters: {
     const f = node.filter;
     let s = 0;
     const parts = categoryParts(f.category);
-    if (parts.length === 1 && parts[0] === category) s += 4;
-    else if (parts.includes(category)) s += 2;
+    // Tam filtre eşleşmesi (ara düğüm veya yaprak) en yüksek puan
+    if (f.category === category) s += 12;
+    else if (filterParts.length === 1 && parts.length === 1 && parts[0] === filterParts[0]) s += 6;
+    else if (filterParts.length === 1 && parts.includes(filterParts[0])) s += 3;
+    else if (filterParts.length > 1 && filterParts.every((p) => parts.includes(p))) {
+      // Daha dar düğüm (daha az slug) tercih edilir — Sıfır / İkinci El vs ana grup
+      s += 4 + Math.max(0, 6 - Math.abs(parts.length - filterParts.length));
+    }
     if (f.dealType && f.dealType === dealType) s += 3;
     if (f.subtype && f.subtype === filters.subtype) s += 5;
     if (f.rental && f.rental === filters.rental) s += 3;
+    // Yaprak + tam kategori → ekstra
+    if (!node.children?.length && filterParts.length === 1 && parts[0] === filterParts[0]) s += 4;
     return s;
   }
 
-  function walk(nodes: BrowseNode[], trail: string[]) {
+  function walk(list: BrowseNode[], trail: string[]) {
     let best: BrowseNode | null = null;
     let bestScore = -1;
-    for (const n of nodes) {
+    for (const n of list) {
       const sc = score(n);
       if (sc > bestScore) {
         bestScore = sc;
@@ -473,7 +491,7 @@ export function matchBrowsePath(filters: {
     if (best.children?.length) walk(best.children, next);
   }
 
-  walk(ALL_BROWSE_TREE, []);
+  walk(nodes, []);
   return path;
 }
 

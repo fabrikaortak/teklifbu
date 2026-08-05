@@ -43,6 +43,10 @@ export async function GET() {
   })) || {};
   const marketplaceMode = await getMarketplaceMode();
   const offersEnabled = isOffersEnabledMode(marketplaceMode);
+  const shoppingFormTemplateSetting = await getSetting<string>(
+    "shopping_listing_form_template",
+    "classic"
+  );
   const insightDefaults = {
     ending_soon: true,
     most_bids_today: true,
@@ -58,6 +62,10 @@ export async function GET() {
   /** Modül kapalıysa veya sadece teklifsiz modda çalışıyorsa (mevcut mod teklifli ise) UI'da gizli kalır */
   const escrowEnabledForUi =
     escrowSettings.enabled && !(!escrowSettings.allowInBiddingMode && offersEnabled);
+  const buyColorRaw = String(
+    (await getSetting<string>("shopping_buy_button_color", "#2563eb")) || "#2563eb"
+  ).trim();
+  const shoppingBuyButtonColor = /^#[0-9a-fA-F]{6}$/.test(buyColorRaw) ? buyColorRaw : "#2563eb";
   /** Teklifsiz modda teklif panelleri zorla kapalı; harita üye haritası olarak kalır */
   const homeInsightSections = offersEnabled
     ? insightRaw
@@ -136,6 +144,41 @@ export async function GET() {
       defaultShipDays: escrowSettings.defaultShipDays,
       requireSellerIban: escrowSettings.requireSellerIban,
       allowInBiddingMode: escrowSettings.allowInBiddingMode,
+    },
+    shoppingListingDetailTemplate:
+      String((await getSetting<string>("shopping_listing_detail_template", "classic")) || "classic") ===
+      "ecommerce_v1"
+        ? "ecommerce_v1"
+        : "classic",
+    shoppingListingFormTemplate: (() => {
+      const raw = String(shoppingFormTemplateSetting || "classic");
+      if (raw === "ecommerce_v1" || raw === "modern_v1") return raw;
+      return "classic";
+    })(),
+    shoppingOffersEnabled: (await getSetting<boolean>("shopping_offers_enabled", true)) !== false,
+    shoppingCartPlacement:
+      String((await getSetting<string>("shopping_cart_placement", "alt")) || "alt") === "ust"
+        ? "ust"
+        : "alt",
+    shoppingBuyButtonColor,
+    premiumStorePopup: {
+      enabled: (await getSetting<boolean>("premium_store_popup_enabled", true)) !== false,
+      title: String(
+        (await getSetting<string>("premium_store_popup_title", "Premium Mağaza nedir?")) ||
+          "Premium Mağaza nedir?"
+      ),
+      body: String(
+        (await getSetting<string>(
+          "premium_store_popup_body",
+          "Premium Mağaza rozeti hakkında bilgi yakında."
+        )) || ""
+      ),
+      applyEnabled: (await getSetting<boolean>("premium_store_popup_apply_enabled", true)) !== false,
+      applyLabel: String((await getSetting<string>("premium_store_popup_apply_label", "Başvur")) || "Başvur"),
+      applyUrl: String(
+        (await getSetting<string>("premium_store_popup_apply_url", "/hesabim?s=magaza")) ||
+          "/hesabim?s=magaza"
+      ),
     },
   });
 }

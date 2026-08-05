@@ -608,6 +608,26 @@ export async function GET(req: Request) {
     return NextResponse.json({ settings: map, meta: DEFAULT_SETTINGS });
   }
 
+  if (view === "seller-panel-overview") {
+    const { getAdminSellerPanelOverview } = await import("@/core/services/adminSellerPanelService");
+    const data = await getAdminSellerPanelOverview();
+    return NextResponse.json({ ok: true, ...data });
+  }
+
+  if (view === "seller-panel-orders") {
+    const { listAdminSellerOrders } = await import("@/core/services/adminSellerPanelService");
+    const status = searchParams.get("status") || undefined;
+    const orders = await listAdminSellerOrders(status || undefined);
+    return NextResponse.json({ ok: true, orders });
+  }
+
+  if (view === "seller-panel-questions") {
+    const { listAdminSellerQuestions } = await import("@/core/services/adminSellerPanelService");
+    const filter = (searchParams.get("filter") || "open") as "open" | "overdue" | "answered" | "all";
+    const questions = await listAdminSellerQuestions(filter);
+    return NextResponse.json({ ok: true, questions });
+  }
+
   /** Reklam Ayarları — hafif payload (tam dashboard çekilmez) */
   if (view === "ads") {
     const map = await getSettingsMap(true);
@@ -2427,10 +2447,26 @@ export async function POST(req: Request) {
     const {
       applyPendingCommercialToProfile,
       getPendingCommercialFromProfile,
+      parseCommercialProfile,
+      validateShopFocus,
+      commercialToShopFocus,
     } = await import("@/data/commercialProfile");
     const hasPendingUpdate = Boolean(getPendingCommercialFromProfile(user.profile).profile);
 
     if (approved) {
+      const pending = getPendingCommercialFromProfile(user.profile);
+      const profileToCheck = pending.profile
+        ? pending.profile
+        : parseCommercialProfile(user.profile);
+      const focusErr = validateShopFocus(commercialToShopFocus(profileToCheck));
+      if (focusErr) {
+        return NextResponse.json(
+          {
+            error: `Onay için mağaza kategori seçimi zorunlu: ${focusErr}`,
+          },
+          { status: 400 }
+        );
+      }
       const applied = applyPendingCommercialToProfile(user.profile);
       await prisma.user.update({
         where: { id: userId },

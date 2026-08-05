@@ -9,9 +9,9 @@ import { ListingDescriptionField } from "@/components/ListingDescriptionField";
 import { ListingDescriptionHtml } from "@/components/ListingDescriptionHtml";
 import { validateListingDescription } from "@/lib/listingDescription";
 import type { MapPoint } from "@/components/LocationMapPicker";
-import { formatNumberTr, parseNumberTr, formatTl } from "@/lib/format";
+import { formatNumberTr, parseNumberTr, formatTl, formatMoneyTr, parseMoneyTr } from "@/lib/format";
 import { dealTypeLabel, isRentDeal } from "@/lib/dealType";
-import { findBrowseNode, matchBrowsePath } from "@/data/categoryBrowseTree";
+import { findBrowseNode, matchBrowsePath, CATEGORY_BROWSE_TREE } from "@/data/categoryBrowseTree";
 import { brandName, modelName, trimName } from "@/data/vehicleCatalog";
 import { CategoryLadderPicker, isCategoryLadderComplete } from "@/components/CategoryLadderPicker";
 import {
@@ -21,6 +21,7 @@ import {
 import { ListingKindChooser } from "@/components/ListingKindChooser";
 import { needsListingKindChoice, normalizeAccountType } from "@/lib/accountTypes";
 import { isPremiumCategorySlug, anyPremiumVerticalEnabled } from "@/data/premiumCategories";
+import { ALISVERIS_BROWSE_TREE, isAlisverisCategorySlug } from "@/data/classicBrowseTree";
 import { HousingExtrasPicker } from "@/components/HousingExtrasPicker";
 import { VehicleExtrasPicker } from "@/components/VehicleExtrasPicker";
 import { VehicleExpertiseReportPanel } from "@/components/VehicleExpertiseReport";
@@ -48,6 +49,8 @@ import {
 } from "@/data/vehicleFormFields";
 import { formatListingAttributeRows } from "@/lib/listingEditFields";
 import { BUILDING_AGE_OPTIONS } from "@/data/housingMatch";
+import { SHOPPING_PRODUCT_ATTR_KEYS, parseInstallments } from "@/data/shoppingProductAttrs";
+import { ShoppingProductFormFields } from "@/components/shopping/ShoppingProductFormFields";
 import {
   DEFAULT_HOUSING_FORM_FIELDS_ENABLED,
   HOUSING_ENERGY_CERT_OPTIONS,
@@ -136,6 +139,24 @@ const emptyAttrs: Attrs = {
   boyaDurumu: "",
   degisenDurumu: "",
   hasarDurumu: "",
+  sku: "",
+  barcode: "",
+  listPrice: "",
+  premiumPrice: "",
+  stockQty: "",
+  shippingFree: "",
+  sameDayShipping: "",
+  shippingLabel: "",
+  badgeText: "",
+  promoBadge: "",
+  highlights: "",
+  videoUrl: "",
+  viewAngle360: "",
+  installmentNote: "",
+  installments: "",
+  returnDays: "",
+  originCountry: "",
+  gtin: "",
 };
 
 function Field({
@@ -175,8 +196,9 @@ function CreateListingInner() {
   const search = useSearchParams();
   const editId = search.get("edit");
   const fromAi = search.get("from") === "ai";
-  const listingKind = search.get("kind") === "premium" ? "premium" : search.get("kind") === "genel" ? "genel" : null;
-  const effectiveKind = listingKind || "genel";
+  const kindParam = search.get("kind");
+  const listingKind =
+    kindParam === "premium" || kindParam === "genel" || kindParam === "alisveris" ? kindParam : null;
   const silentResume =
     search.get("resume") === "1" || search.get("from") === "pos" || fromAi;
   const [accountType, setAccountType] = useState<string | null>(null);
@@ -236,6 +258,10 @@ function CreateListingInner() {
   const [housingFieldsEnabled, setHousingFieldsEnabled] = useState(DEFAULT_HOUSING_FORM_FIELDS_ENABLED);
   const [escrowEligible, setEscrowEligible] = useState(false);
   const [escrowUiEnabled, setEscrowUiEnabled] = useState(false);
+  const [shoppingFormTemplate, setShoppingFormTemplate] = useState<
+    "classic" | "ecommerce_v1" | "modern_v1"
+  >("classic");
+  const [askPriceFocused, setAskPriceFocused] = useState(false);
   const [escrowButtonLabel, setEscrowButtonLabel] = useState("Güvenli Öde");
   const [aiOfferOpen, setAiOfferOpen] = useState(false);
   const [aiImportEnabled, setAiImportEnabled] = useState(false);
@@ -410,6 +436,13 @@ function CreateListingInner() {
         }
         setEscrowUiEnabled(Boolean(d?.escrow?.enabled));
         if (d?.escrow?.buttonLabel) setEscrowButtonLabel(String(d.escrow.buttonLabel));
+        const formTpl = String(d?.shoppingListingFormTemplate || "classic");
+        const normalized =
+          formTpl === "ecommerce_v1" || formTpl === "modern_v1" ? formTpl : "classic";
+        setShoppingFormTemplate(normalized as "classic" | "ecommerce_v1" | "modern_v1");
+        if (normalized === "modern_v1" && listingKind === "alisveris" && !editId) {
+          router.replace("/hesabim?s=ilan-ekle");
+        }
       })
       .catch(() => {
         setAnyPremiumOpen(true);
@@ -540,7 +573,17 @@ function CreateListingInner() {
 
   const districts = useMemo(() => getDistricts(form.city), [form.city]);
   const slug = form.categorySlug || "";
-  const isShop = slug.startsWith("ikinci-el") || slug.startsWith("sifir-urun");
+  const isShop = isAlisverisCategorySlug(slug) || slug.startsWith("ikinci-el") || slug.startsWith("sifir-urun");
+  const effectiveKind =
+    listingKind ||
+    (editId
+      ? isPremiumCategorySlug(slug)
+        ? "premium"
+        : isShop
+          ? "alisveris"
+          : "genel"
+      : "genel");
+  const useEcommerceForm = isShop && shoppingFormTemplate === "ecommerce_v1";
 
   const premiumEstimate = useMemo(() => {
     const breakdown: Array<{ key: string; label: string; amountTl: number }> = [];
@@ -633,18 +676,40 @@ function CreateListingInner() {
           district: l.district || "",
           neighborhood: l.neighborhood || "",
           dealType: l.dealType || "SATILIK",
-          askPrice: String(l.askPrice || ""),
+          askPrice: (() => {
+            const a0 = (l.attributes || {}) as Record<string, unknown>;
+            const tl = a0.askPriceTl != null ? Number(a0.askPriceTl) : NaN;
+            if (Number.isFinite(tl) && tl > 0) return String(tl);
+            return String(l.askPrice || "");
+          })(),
           categorySlug: l.category?.slug || "",
           days: l.durationDays ? String(l.durationDays) : "",
         });
-        const a = (l.attributes || {}) as Record<string, string | number | string[]>;
+        const a = (l.attributes || {}) as Record<string, string | number | string[] | object>;
         const nextAttrs = { ...emptyAttrs };
         for (const key of Object.keys(emptyAttrs)) {
-          if (a[key] != null && !Array.isArray(a[key])) {
-            let v = String(a[key]);
-            if (key === "floor") v = normalizeFloorOption(v) || v;
-            nextAttrs[key] = v;
+          if (a[key] == null) continue;
+          if (key === "installments") {
+            const raw = a[key];
+            nextAttrs[key] =
+              typeof raw === "string" ? raw : JSON.stringify(raw);
+            continue;
           }
+          if (Array.isArray(a[key])) {
+            nextAttrs[key] = (a[key] as string[]).map(String).join("\n");
+            continue;
+          }
+          if (typeof a[key] === "object") {
+            nextAttrs[key] = JSON.stringify(a[key]);
+            continue;
+          }
+          let v = String(a[key]);
+          if (key === "floor") v = normalizeFloorOption(v) || v;
+          if (key === "listPrice" || key === "premiumPrice") {
+            const n = Number(a[key]);
+            if (Number.isFinite(n)) v = String(n);
+          }
+          nextAttrs[key] = v;
         }
         setAttrs(nextAttrs);
         const catSlug = String(l.category?.slug || "");
@@ -688,12 +753,34 @@ function CreateListingInner() {
   }
 
   function buildAttributes() {
-    const out: Record<string, string | number | string[] | VehicleExpertiseReport> = {};
+    const out: Record<string, string | number | string[] | object | VehicleExpertiseReport> = {};
     if (attrs.subtype?.trim()) out.subtype = attrs.subtype.trim();
     if (attrs.rentalPeriod?.trim()) out.rentalPeriod = attrs.rentalPeriod.trim();
     for (const key of ["brand", "model", "trim", "condition", "warranty"] as const) {
       const v = attrs[key]?.trim();
       if (v) out[key] = v;
+    }
+    if (isShop && useEcommerceForm) {
+      for (const key of SHOPPING_PRODUCT_ATTR_KEYS) {
+        if (key === "brand" || key === "model" || key === "condition" || key === "warranty") continue;
+        if (key === "installmentNote") continue;
+        if (key === "askPriceTl") continue;
+        const v = attrs[key]?.trim();
+        if (!v) continue;
+        if (key === "installments") {
+          const plans = parseInstallments(v);
+          if (plans.length) out.installments = plans;
+          continue;
+        }
+        if (["listPrice", "premiumPrice", "stockQty", "returnDays"].includes(key)) {
+          const n = parseMoneyTr(v);
+          out[key] = Number.isFinite(n) && n > 0 ? Math.round(n * 100) / 100 : v;
+        } else {
+          out[key] = v;
+        }
+      }
+      const saleTl = parseMoneyTr(form.askPrice);
+      if (saleTl > 0) out.askPriceTl = Math.round(saleTl * 100) / 100;
     }
     const map: Array<[string, string]> = [];
     if (isHomeLike || isWorkplace) {
@@ -794,11 +881,24 @@ function CreateListingInner() {
       if (!isPremiumCategoryLadderComplete(ladderValue)) {
         return "Premium dikey ve alt kategoriyi seçin (ör. Otel Konaklama › Suit).";
       }
-    } else if (!isCategoryLadderComplete(ladderValue)) {
-      return "Kategoriyi merdiven gibi tamamlayın (ör. Vasıta › Otomobil › BMW › 3 Serisi › 320d). Kategori seçilmeden ilan yayınlanamaz.";
+    } else if (
+      !isCategoryLadderComplete(
+        ladderValue,
+        effectiveKind === "alisveris" ? ALISVERIS_BROWSE_TREE : CATEGORY_BROWSE_TREE
+      )
+    ) {
+      return effectiveKind === "alisveris"
+        ? "Alışveriş kategorisini tamamlayın (ör. Elektronik › İkinci El › Cep Telefonu)."
+        : "Kategoriyi merdiven gibi tamamlayın (ör. Vasıta › Otomobil › BMW › 3 Serisi › 320d). Kategori seçilmeden ilan yayınlanamaz.";
     }
     if (effectiveKind === "premium" && !isPremiumCategorySlug(form.categorySlug)) {
       return "Premium ilan için premium kategori seçmelisiniz.";
+    }
+    if (effectiveKind === "alisveris" && !isAlisverisCategorySlug(form.categorySlug)) {
+      return "Alışveriş ilanı için alışveriş kategorisi seçmelisiniz.";
+    }
+    if (effectiveKind === "genel" && isAlisverisCategorySlug(form.categorySlug)) {
+      return "Alışveriş kategorisi bu formda kullanılamaz. Alışveriş kategori ilanı yolunu seçin.";
     }
     if (effectiveKind !== "premium" && isPremiumCategorySlug(form.categorySlug)) {
       return "Genel ilan formunda premium kategori kullanılamaz. Premium ilan ekle yolunu seçin.";
@@ -814,7 +914,7 @@ function CreateListingInner() {
       return "Geçerli bir ilan süresi seçin";
     }
     if (!images.length) return "En az bir fotoğraf ekleyin";
-    if (!parseNumberTr(form.askPrice)) return "Geçerli bir fiyat girin";
+    if (!parseNumberTr(form.askPrice) && !parseMoneyTr(form.askPrice)) return "Geçerli bir fiyat girin";
     return "";
   }
 
@@ -851,12 +951,16 @@ function CreateListingInner() {
     if (editId) {
       // Düzenlemede ücret yok
     }
-    const price = parseNumberTr(form.askPrice);
+    const price = useEcommerceForm ? parseMoneyTr(form.askPrice) : parseNumberTr(form.askPrice);
+    if (!price) {
+      await showValidationError("Geçerli bir fiyat girin");
+      return;
+    }
     setLoading(true);
     try {
       const payload: Record<string, unknown> = {
         ...form,
-        askPrice: price,
+        askPrice: useEcommerceForm ? Math.round(price * 100) / 100 : price,
         days: Number(form.days),
         coverImage: images[0],
         images,
@@ -1102,17 +1206,16 @@ function CreateListingInner() {
     );
   }
 
-  // Ticari üye: Genel / Premium seçim — en az bir premium dikey açıksa
+  // Ticari üye: Genel / Alışveriş / Premium seçim
   if (
     !editId &&
     !fromAi &&
     !silentResume &&
     !listingKind &&
     accountType &&
-    needsListingKindChoice(accountType) &&
-    anyPremiumOpen
+    needsListingKindChoice(accountType)
   ) {
-    return <ListingKindChooser />;
+    return <ListingKindChooser showPremium={anyPremiumOpen} />;
   }
 
   if (mode === "done") {
@@ -1409,7 +1512,9 @@ function CreateListingInner() {
                     <div className="listing-card-body" style={{ padding: "10px 12px 12px", display: "grid", gap: 5 }}>
                       <div className={homeTitleClass}>{previewTitle || "Başlık"}</div>
                       <div className="price-ask" style={{ fontWeight: 800, color: "var(--orange)" }}>
-                        {formatTl(parseNumberTr(form.askPrice))}
+                        {formatTl(useEcommerceForm ? parseMoneyTr(form.askPrice) : parseNumberTr(form.askPrice), {
+                          fractionDigits: useEcommerceForm ? 2 : 0,
+                        })}
                       </div>
                       <div style={{ fontSize: 12, color: "var(--muted)" }}>En yüksek teklif: —</div>
                       <div style={{ fontSize: 12, color: "var(--muted)" }}>{locHome}</div>
@@ -1435,7 +1540,9 @@ function CreateListingInner() {
                 {isRentDeal(form.dealType) ? "Aylık bedel" : "Talep fiyatı"}
               </div>
               <div style={{ fontSize: 28, fontWeight: 900, color: "var(--orange)" }}>
-                {formatTl(parseNumberTr(form.askPrice))}
+                {formatTl(useEcommerceForm ? parseMoneyTr(form.askPrice) : parseNumberTr(form.askPrice), {
+                  fractionDigits: useEcommerceForm ? 2 : 0,
+                })}
               </div>
             </div>
             <div style={{ textAlign: "right" }}>
@@ -1818,7 +1925,9 @@ function CreateListingInner() {
             hint={
               effectiveKind === "premium"
                 ? "Premium dikey → alt kategori (zorunlu)."
-                : "Ana kategori → tür → alt tip (zorunlu)."
+                : effectiveKind === "alisveris"
+                  ? "Alışveriş grubu → ikinci el / sıfır → ürün kategorisi (zorunlu)."
+                  : "Ana kategori → tür → alt tip (zorunlu)."
             }
           >
             {effectiveKind === "premium" ? (
@@ -1852,6 +1961,15 @@ function CreateListingInner() {
             ) : (
               <CategoryLadderPicker
                 disabled={editBlockedByBids}
+                tree={effectiveKind === "alisveris" ? ALISVERIS_BROWSE_TREE : CATEGORY_BROWSE_TREE}
+                hint={
+                  effectiveKind === "alisveris" ? (
+                    <>
+                      Alışveriş kategorisini adım adım seçin. Örn: <strong>Elektronik</strong> →{" "}
+                      <strong>İkinci El</strong> → <strong>Cep Telefonu</strong>
+                    </>
+                  ) : undefined
+                }
                 value={{
                   categorySlug: form.categorySlug,
                   dealType: form.dealType,
@@ -1865,7 +1983,13 @@ function CreateListingInner() {
                   setForm((f) => ({
                     ...f,
                     categorySlug: next.categorySlug,
-                    dealType: next.dealType || (next.categorySlug === "kiralik" ? "KIRALIK" : ""),
+                    dealType:
+                      next.dealType ||
+                      (effectiveKind === "alisveris"
+                        ? "SATILIK"
+                        : next.categorySlug === "kiralik"
+                          ? "KIRALIK"
+                          : ""),
                   }));
                   setAttrs((a) => ({
                     ...a,
@@ -1941,7 +2065,9 @@ function CreateListingInner() {
                 : isLand
                   ? "Arsa m², imar ve tapu bilgileri."
                   : isShop
-                    ? "Ürün detayları (marka, model, durum)."
+                    ? useEcommerceForm
+                      ? "Ürün detayları (marka, stok, fiyat katmanları, kargo, özellikler)."
+                      : "Ürün detayları (marka, model, durum)."
                     : "Konut/işyeri detayları — m², oda, kat, ısınma vb."
           }
         >
@@ -2427,7 +2553,11 @@ function CreateListingInner() {
             </>
           )}
 
-          {isShop && (
+          {isShop && useEcommerceForm && (
+            <ShoppingProductFormFields attrs={attrs} setAttr={setAttr} askPrice={form.askPrice} />
+          )}
+
+          {isShop && !useEcommerceForm && (
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
               <Field label="Marka">
                 <input className="input" value={attrs.brand || ""} onChange={(e) => setAttr("brand", e.target.value)} placeholder="Örn: Apple, Samsung" disabled={slug === "arac"} />
@@ -2471,14 +2601,44 @@ function CreateListingInner() {
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
             <Field
               label={isRentDeal(form.dealType) ? "Aylık kira / bedel (TL)" : "İlan / talep fiyatı (TL)"}
-              hint="Alıcıların göreceği başlangıç fiyatı."
+              hint={
+                useEcommerceForm
+                  ? "Kuruşlu yazın (örn. 1.458,99). Detayda kuruş üstte yarım boyutta gösterilir."
+                  : "Alıcıların göreceği başlangıç fiyatı."
+              }
             >
               <input
                 className="input"
-                inputMode="numeric"
-                value={form.askPrice ? formatNumberTr(parseNumberTr(form.askPrice)) : ""}
-                onChange={(e) => setForm({ ...form, askPrice: String(parseNumberTr(e.target.value) || "") })}
-                placeholder="Örn: 1.000.000"
+                inputMode={useEcommerceForm ? "decimal" : "numeric"}
+                value={
+                  useEcommerceForm
+                    ? askPriceFocused
+                      ? form.askPrice
+                      : form.askPrice
+                        ? formatMoneyTr(parseMoneyTr(form.askPrice))
+                        : ""
+                    : form.askPrice
+                      ? formatNumberTr(parseNumberTr(form.askPrice))
+                      : ""
+                }
+                onFocus={() => {
+                  if (useEcommerceForm) setAskPriceFocused(true);
+                }}
+                onBlur={() => {
+                  if (!useEcommerceForm) return;
+                  setAskPriceFocused(false);
+                  const n = parseMoneyTr(form.askPrice);
+                  setForm({ ...form, askPrice: n > 0 ? String(Math.round(n * 100) / 100) : "" });
+                }}
+                onChange={(e) => {
+                  if (useEcommerceForm) {
+                    const raw = e.target.value.replace(/[^\d.,]/g, "");
+                    setForm({ ...form, askPrice: raw });
+                    return;
+                  }
+                  setForm({ ...form, askPrice: String(parseNumberTr(e.target.value) || "") });
+                }}
+                placeholder={useEcommerceForm ? "Örn: 1.458,99" : "Örn: 1.000.000"}
               />
             </Field>
             <Field

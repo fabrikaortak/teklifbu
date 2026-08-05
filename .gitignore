@@ -49,3 +49,9 @@ next-env.d.ts
 /public/uploads/*
 !/public/uploads/.gitkeep
 
+
+# Local backups / temp
+backups/
+.tmp-*.png
+public/uploads/
+

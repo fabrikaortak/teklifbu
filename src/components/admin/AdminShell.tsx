@@ -30,6 +30,7 @@ import {
   Building2,
   ShoppingBag,
   Car,
+  Store,
 } from "lucide-react";
 
 type NavChild = {
@@ -120,6 +121,8 @@ export function AdminShell({ children }: { children: ReactNode }) {
       pathname.startsWith("/admin/guvenli-ode"),
     gelirler: pathname.startsWith("/admin/gelirler"),
     raporlar: pathname.startsWith("/admin/raporlar"),
+    ayarlar: pathname.startsWith("/admin/ayarlar"),
+    "satici-paneli": pathname.startsWith("/admin/satici-paneli"),
   });
 
   useEffect(() => {
@@ -195,6 +198,8 @@ export function AdminShell({ children }: { children: ReactNode }) {
           : m.odemeler,
       gelirler: pathname.startsWith("/admin/gelirler") ? true : m.gelirler,
       raporlar: pathname.startsWith("/admin/raporlar") ? true : m.raporlar,
+      ayarlar: pathname.startsWith("/admin/ayarlar") ? true : m.ayarlar,
+      "satici-paneli": pathname.startsWith("/admin/satici-paneli") ? true : m["satici-paneli"],
     }));
   }, [pathname]);
 
@@ -245,6 +250,7 @@ export function AdminShell({ children }: { children: ReactNode }) {
       menuKey: "alisveris",
       badge: verticalBadgeSum(vAlisveris),
       children: verticalChildren("/admin/alisveris", vAlisveris, [
+        { href: "/admin/alisveris/siparisler", label: "Siparişler" },
         { href: "/admin/alisveris/magaza-paketleri", label: "Mağaza paketleri" },
         { href: "/admin/alisveris/abonelikler", label: "Abonelikler" },
       ]),
@@ -256,6 +262,18 @@ export function AdminShell({ children }: { children: ReactNode }) {
       menuKey: "premium",
       badge: verticalBadgeSum(vPremium),
       children: verticalChildren("/admin/premium", vPremium),
+    },
+    {
+      href: "/admin/satici-paneli",
+      label: "Satıcı paneli",
+      icon: <Store size={18} />,
+      menuKey: "satici-paneli",
+      children: [
+        { href: "/admin/satici-paneli", label: "Özet" },
+        { href: "/admin/satici-paneli/siparisler", label: "Sipariş & kargo" },
+        { href: "/admin/satici-paneli/sorular", label: "Soru–cevap" },
+        { href: "/admin/satici-paneli/ayarlar", label: "Ayarlar" },
+      ],
     },
     {
       href: "/admin/kullanicilar",
@@ -319,7 +337,13 @@ export function AdminShell({ children }: { children: ReactNode }) {
     { href: "/admin/kullanici-ayarlari", label: "Kullanıcı ayarları", icon: <UserCog size={18} /> },
     { href: "/admin/tema", label: "Tema", icon: <Palette size={18} /> },
     { href: "/admin/footer", label: "Footer", icon: <PanelBottom size={18} /> },
-    { href: "/admin/ayarlar", label: "Sistem ayarları", icon: <Settings size={18} /> },
+    {
+      href: "/admin/ayarlar",
+      label: "Sistem ayarları",
+      icon: <Settings size={18} />,
+      menuKey: "ayarlar",
+      children: [{ href: "/admin/ayarlar", label: "Genel" }],
+    },
     { href: "/admin/loglar", label: "Log", icon: <ScrollText size={18} /> },
   ];
 
@@ -329,6 +353,7 @@ export function AdminShell({ children }: { children: ReactNode }) {
       href === "/admin/emlak-vasita" ||
       href === "/admin/alisveris" ||
       href === "/admin/premium" ||
+      href === "/admin/satici-paneli" ||
       href === "/admin/kullanicilar" ||
       href === "/admin/odemeler" ||
       href === "/admin/gelirler" ||
@@ -340,7 +365,12 @@ export function AdminShell({ children }: { children: ReactNode }) {
   }
 
   function childActive(href: string) {
-    if (href === "/admin/kullanicilar" || href === "/admin/odemeler") {
+    if (
+      href === "/admin/kullanicilar" ||
+      href === "/admin/odemeler" ||
+      href === "/admin/ayarlar" ||
+      href === "/admin/satici-paneli"
+    ) {
       return pathname === href;
     }
     return pathname === href;

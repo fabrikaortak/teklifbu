@@ -3323,14 +3323,14 @@ function SettingInput({
     const rows = [
       { key: "BIREYSEL_TICARI", label: "Bireysel" },
       { key: "TICARI", label: "Kurumsal" },
-      { key: "BIREYSEL", label: "Bireysel" },
-      { key: "EMLAKCI", label: "Kurumsal" },
-      { key: "GALERICI", label: "Kurumsal" },
+      { key: "BIREYSEL", label: "Bireysel (eski)" },
+      { key: "EMLAKCI", label: "Kurumsal (eski emlakçı)" },
+      { key: "GALERICI", label: "Kurumsal (eski galerici)" },
     ];
     return (
       <div style={{ display: "grid", gap: 8, maxWidth: 420 }}>
         {rows.map((r) => (
-          <div key={r.key} style={{ display: "grid", gridTemplateColumns: "120px 1fr auto", gap: 8, alignItems: "center" }}>
+          <div key={r.key} style={{ display: "grid", gridTemplateColumns: "160px 1fr auto", gap: 8, alignItems: "center" }}>
             <div style={{ fontWeight: 700, fontSize: 13 }}>{r.label}</div>
             <input
               className="input"

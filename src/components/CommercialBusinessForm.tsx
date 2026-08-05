@@ -4,11 +4,14 @@ import { CITY_NAMES, getDistricts } from "@/data/turkey-locations";
 import {
   COMMERCIAL_FIELD_LABELS,
   COMPANY_TYPE_OPTIONS,
+  applyShopFocusToCommercial,
+  commercialToShopFocus,
   nextDemoCommercialBundle,
   nextDemoCommercialProfile,
   type CommercialProfile,
 } from "@/data/commercialProfile";
 import type { CommercialSubtype } from "@/lib/accountTypes";
+import { ShopFocusPicker } from "@/components/ShopFocusPicker";
 
 type Props = {
   value: CommercialProfile;
@@ -21,6 +24,8 @@ type Props = {
   /** Yatay 2 sütun düzeni (kayıt adım 2) */
   wide?: boolean;
   hideIntro?: boolean;
+  /** Kategori eksikse kırmızı uyarı */
+  showFocusError?: boolean;
 };
 
 export function CommercialBusinessForm({
@@ -32,6 +37,7 @@ export function CommercialBusinessForm({
   compact = false,
   wide = false,
   hideIntro = false,
+  showFocusError = false,
 }: Props) {
   const districts = value.businessCity ? getDistricts(value.businessCity) : [];
   const gap = compact || wide ? 8 : 10;
@@ -66,6 +72,13 @@ export function CommercialBusinessForm({
             </p>
           </>
         ) : null}
+
+        <ShopFocusPicker
+          value={commercialToShopFocus(value)}
+          onChange={(focus) => onChange(applyShopFocusToCommercial(value, focus))}
+          disabled={disabled}
+          showError={showFocusError}
+        />
 
         <div style={{ display: "grid", gridTemplateColumns: "1.2fr 1fr", gap }}>
           <label style={{ display: "grid", gap: 4 }}>
@@ -252,6 +265,13 @@ export function CommercialBusinessForm({
           </p>
         </>
       ) : null}
+
+      <ShopFocusPicker
+        value={commercialToShopFocus(value)}
+        onChange={(focus) => onChange(applyShopFocusToCommercial(value, focus))}
+        disabled={disabled}
+        showError={showFocusError}
+      />
 
       <label style={{ display: "grid", gap: 4 }}>
         {label(COMMERCIAL_FIELD_LABELS.commercialTitle, true)}

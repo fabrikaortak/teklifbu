@@ -17,7 +17,7 @@ export function formatTl(
     n = Number(String(value).trim().replace(/\./g, "").replace(/,/g, "."));
   }
   if (!Number.isFinite(n)) return "—";
-  const digits = Math.max(0, Math.min(2, opts?.fractionDigits ?? 0));
+  const digits = Math.max(0, Math.min(2, opts?.fractionDigits ?? 2));
   const rounded = digits === 0 ? Math.round(n) : Math.round(n * 100) / 100;
   return (
     new Intl.NumberFormat("tr-TR", {
@@ -76,10 +76,75 @@ export function formatNumberTr(value: number | bigint | string | null | undefine
   return new Intl.NumberFormat("tr-TR", { maximumFractionDigits: 0 }).format(Math.round(n));
 }
 
+/** Kuruşlu TR para girişi: 1.458,99 */
+export function formatMoneyTr(value: number | bigint | string | null | undefined) {
+  if (value === null || value === undefined || value === "") return "";
+  let n: number;
+  if (typeof value === "bigint") {
+    n = Number(value);
+  } else if (typeof value === "number") {
+    n = value;
+  } else {
+    n = parseMoneyTr(String(value));
+  }
+  if (!Number.isFinite(n)) return "";
+  const rounded = Math.round(n * 100) / 100;
+  return new Intl.NumberFormat("tr-TR", {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  }).format(rounded);
+}
+
 export function parseNumberTr(raw: string) {
   const cleaned = String(raw || "").replace(/[^\d]/g, "");
   if (!cleaned) return 0;
   return Number(cleaned);
+}
+
+/**
+ * TR para metni → sayı.
+ * "1.458,99" | "1458,99" | "1458.99" | "1.458"
+ */
+export function parseMoneyTr(raw: string) {
+  const s = String(raw || "").trim().replace(/\s/g, "").replace(/[^\d.,]/g, "");
+  if (!s) return 0;
+  if (s.includes(",")) {
+    const normalized = s.replace(/\./g, "").replace(",", ".");
+    const n = Number(normalized);
+    return Number.isFinite(n) ? n : 0;
+  }
+  // yalnızca nokta: son kısım 1–2 hane ise ondalık, aksi binlik
+  const parts = s.split(".");
+  if (parts.length === 1) {
+    const n = Number(parts[0]);
+    return Number.isFinite(n) ? n : 0;
+  }
+  const last = parts[parts.length - 1] || "";
+  if (parts.length === 2 && last.length <= 2) {
+    const n = Number(`${parts[0]}.${last}`);
+    return Number.isFinite(n) ? n : 0;
+  }
+  const n = Number(parts.join(""));
+  return Number.isFinite(n) ? n : 0;
+}
+
+export function hasPriceInKurus(attributes?: unknown): boolean {
+  if (!attributes || typeof attributes !== "object") return false;
+  const v = (attributes as Record<string, unknown>).priceInKurus;
+  return v === 1 || v === true || v === "1";
+}
+
+/** DB askPrice → TL (priceInKurus ise /100) */
+export function askPriceToTl(askPrice: number | bigint | string | null | undefined, attributes?: unknown) {
+  const n = typeof askPrice === "bigint" ? Number(askPrice) : Number(askPrice);
+  if (!Number.isFinite(n)) return 0;
+  return hasPriceInKurus(attributes) ? Math.round(n) / 100 : n;
+}
+
+/** TL → DB BigInt (priceInKurus ise ×100) */
+export function askPriceToStored(tl: number, priceInKurus: boolean): bigint {
+  if (!Number.isFinite(tl) || tl < 0) return BigInt(0);
+  return BigInt(priceInKurus ? Math.round(tl * 100) : Math.round(tl));
 }
 
 /** Sadece rakamlar (boşluk/tire temiz) */
@@ -166,7 +231,7 @@ export function formatListingDate(iso: Date | string | null | undefined) {
   return `${day} ${TR_MONTHS[d.getMonth()]} ${d.getFullYear()}`;
 }
 
-export function serializeListing<T extends { askPrice: bigint; highestBid: bigint }>(listing: T) {
+export function serializeListing<T extends { askPrice: bigint | number; highestBid: bigint | number }>(listing: T) {
   return {
     ...listing,
     askPrice: Number(listing.askPrice),

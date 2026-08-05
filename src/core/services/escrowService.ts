@@ -8,6 +8,7 @@ import { isDemoPosEnabled } from "@/core/services/paymentModeService";
 import { isOffersEnabled } from "@/core/services/marketplaceModeService";
 import { isOffersEnabledMode, type MarketplaceMode } from "@/lib/marketplaceMode";
 import { ESCROW_ACTIVE_STATUSES, ESCROW_HELD_STATUSES, isValidShipDays } from "@/lib/escrowTypes";
+import { isAlisverisCategorySlug } from "@/data/classicBrowseTree";
 
 function asJson(value: unknown): Prisma.InputJsonValue {
   return value as Prisma.InputJsonValue;
@@ -69,12 +70,25 @@ export async function createEscrowCheckout(
   if (!avail.allowed) return fail(403, avail.error, avail.code);
   const settings = avail.settings;
 
-  const listing = await prisma.listing.findUnique({ where: { id: String(listingId || "") } });
+  const demoEnabled = await isDemoPosEnabled();
+  if (!demoEnabled) {
+    return fail(
+      403,
+      "Demo sanal POS kapalı. Admin → Ödemeler ayarlarından Demo POS’u açın.",
+      "DEMO_POS_DISABLED"
+    );
+  }
+
+  const listing = await prisma.listing.findUnique({
+    where: { id: String(listingId || "") },
+    include: { category: { select: { slug: true } } },
+  });
   if (!listing) return fail(404, "İlan bulunamadı.");
   if (listing.status !== ListingStatus.ACTIVE && listing.status !== ListingStatus.SELECTION) {
     return fail(400, "Bu ilan şu anda satışa açık değil.");
   }
-  if (!listing.escrowEligible) {
+  const shoppingListing = isAlisverisCategorySlug(listing.category?.slug);
+  if (!listing.escrowEligible && !shoppingListing) {
     return fail(400, "Bu ilan Güvenli Öde ile satışa uygun değil.", "ESCROW_NOT_ELIGIBLE");
   }
   if (listing.sellerId === session.id) {
@@ -89,34 +103,72 @@ export async function createEscrowCheckout(
     );
   }
 
+  // Aynı alıcının ödenmemiş checkout'unu sürdür
+  const myPending = await prisma.escrowDeal.findFirst({
+    where: {
+      listingId: listing.id,
+      buyerId: session.id,
+      status: EscrowStatus.AWAITING_PAYMENT,
+    },
+    orderBy: { createdAt: "desc" },
+  });
+  if (myPending?.paymentId) {
+    return {
+      ok: true,
+      payUrl: `/odeme/demo-pos?intent=${myPending.paymentId}`,
+      dealId: myPending.id,
+      amountTl: myPending.amountTl,
+      intentId: myPending.paymentId,
+    };
+  }
+
   const existing = await prisma.escrowDeal.findFirst({
     where: { listingId: listing.id, status: { in: ESCROW_ACTIVE_STATUSES } },
     orderBy: { createdAt: "desc" },
   });
   if (existing) {
-    if (
-      existing.buyerId === session.id &&
-      existing.status === EscrowStatus.AWAITING_PAYMENT &&
-      existing.paymentId
-    ) {
-      return {
-        ok: true,
-        payUrl: `/odeme/demo-pos?intent=${existing.paymentId}`,
-        dealId: existing.id,
-        amountTl: existing.amountTl,
-        intentId: existing.paymentId,
-      };
+    // Alışveriş (stoklu): başka alıcının işlemi bu ilanı kilitlemez — demo/çoklu satış
+    if (shoppingListing) {
+      // ödenmemiş terk edilmiş kayıtları kapat (aynı alıcı hariç zaten yukarıda ele alındı)
+      if (existing.status === EscrowStatus.AWAITING_PAYMENT && existing.buyerId !== session.id) {
+        const ageMs = Date.now() - new Date(existing.createdAt).getTime();
+        if (ageMs > 30 * 60 * 1000) {
+          await prisma.escrowDeal.update({
+            where: { id: existing.id },
+            data: { status: EscrowStatus.CANCELLED },
+          });
+        }
+      }
+    } else {
+      // Tekil ilan: aktif Güvenli Öde varken ikinci satış yok
+      // Demo: 30 dk+ ödenmemiş checkout'u iptal edip yeniye izin ver
+      if (existing.status === EscrowStatus.AWAITING_PAYMENT) {
+        const ageMs = Date.now() - new Date(existing.createdAt).getTime();
+        if (ageMs > 30 * 60 * 1000) {
+          await prisma.escrowDeal.update({
+            where: { id: existing.id },
+            data: { status: EscrowStatus.CANCELLED },
+          });
+        } else {
+          return fail(
+            409,
+            "Bu ilan için zaten devam eden bir Güvenli Öde işlemi var. Önceki alışveriş başka bir hesapla yapıldıysa o sipariş tamamlanana veya iptal edilene kadar bu ilan kilitli kalır.",
+            "ESCROW_ALREADY_ACTIVE"
+          );
+        }
+      } else {
+        return fail(
+          409,
+          "Bu ilan için zaten devam eden bir Güvenli Öde işlemi var. Önceki alışveriş başka bir hesapla yapıldıysa o sipariş tamamlanana veya iptal edilene kadar bu ilan kilitli kalır.",
+          "ESCROW_ALREADY_ACTIVE"
+        );
+      }
     }
-    return fail(
-      409,
-      "Bu ilan için zaten devam eden bir Güvenli Öde işlemi var.",
-      "ESCROW_ALREADY_ACTIVE"
-    );
   }
 
   const seller = await prisma.user.findUnique({ where: { id: listing.sellerId } });
   if (!seller) return fail(404, "Satıcı bulunamadı.");
-  if (settings.requireSellerIban && !seller.iban) {
+  if (settings.requireSellerIban && !seller.iban && !shoppingListing) {
     return fail(
       400,
       "Satıcı IBAN bilgisini tanımlamadığı için Güvenli Öde kullanılamıyor.",

@@ -357,6 +357,7 @@ function LoginInner() {
               demoFillEnabled={demoFillEnabled}
               wide
               hideIntro
+              showFocusError={Boolean(error && /kategori|Mağaza/i.test(error))}
             />
             <div style={{ display: "grid", gridTemplateColumns: "140px 1fr", gap: 10 }}>
               <button
@@ -372,7 +373,11 @@ function LoginInner() {
               <button
                 className="btn-orange"
                 style={{ padding: 12 }}
-                disabled={loading}
+                disabled={
+                  loading ||
+                  !commercialSubtypes.length ||
+                  Boolean(validateCommercialProfile(commercialProfile))
+                }
                 onClick={() => {
                   if (!commercialSubtypes.length) {
                     setError("En az bir faaliyet alanı seçin (veya Demo doldur kullanın)");
@@ -381,6 +386,10 @@ function LoginInner() {
                   const cerr = validateCommercialProfile(commercialProfile);
                   if (cerr) {
                     setError(cerr);
+                    document.getElementById("shop-focus-picker")?.scrollIntoView({
+                      behavior: "smooth",
+                      block: "center",
+                    });
                     return;
                   }
                   void requestRegisterOtp();

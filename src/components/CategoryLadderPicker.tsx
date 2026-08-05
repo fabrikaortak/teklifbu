@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import {
   CATEGORY_BROWSE_TREE,
   BrowseNode,
@@ -28,6 +28,10 @@ type Props = {
   value: CategoryLadderValue;
   onChange: (next: CategoryLadderValue) => void;
   disabled?: boolean;
+  /** Kök ağaç: genel (emlak/vasıta) veya alışveriş */
+  tree?: BrowseNode[];
+  /** İpucu metni */
+  hint?: ReactNode;
 };
 
 function applyNodeFilter(node: BrowseNode, prev: CategoryLadderValue): CategoryLadderValue {
@@ -46,7 +50,7 @@ function applyNodeFilter(node: BrowseNode, prev: CategoryLadderValue): CategoryL
     model: "",
     trim: "",
   };
-  // Vasıta alt tip seçildiğinde marka/model sıfırlanır
+  // Vasıta alt tip seçildiğinde marka/model sıfırlanır; dealType korunur
   if (f.category === "arac" && f.subtype) {
     next.dealType = prev.dealType || "SATILIK";
   }
@@ -65,40 +69,62 @@ function isBrowseComplete(node: BrowseNode | null, value: CategoryLadderValue) {
   return true;
 }
 
-export function CategoryLadderPicker({ value, onChange, disabled }: Props) {
-  const initialPath = useMemo(() => {
-    const ids = matchBrowsePath({
+function pathMatchesValue(path: BrowseNode[], value: CategoryLadderValue): boolean {
+  if (!path.length) return !value.categorySlug;
+  const last = path[path.length - 1];
+  if ((last.filter.category || "") !== value.categorySlug) return false;
+  if (last.filter.dealType && value.dealType && last.filter.dealType !== value.dealType) return false;
+  if (last.filter.subtype && value.subtype && last.filter.subtype !== value.subtype) return false;
+  if (last.filter.rental && value.rentalPeriod && last.filter.rental !== value.rentalPeriod) {
+    return false;
+  }
+  return true;
+}
+
+function hydratePath(value: CategoryLadderValue, tree: BrowseNode[]): BrowseNode[] {
+  if (!value.categorySlug) return [];
+  const ids = matchBrowsePath(
+    {
       category: value.categorySlug,
       dealType: value.dealType,
       subtype: value.subtype,
       rental: value.rentalPeriod,
-    });
-    return ids.map((id) => findBrowseNode(id)).filter(Boolean) as BrowseNode[];
-  }, [value.categorySlug, value.dealType, value.subtype, value.rentalPeriod]);
+    },
+    tree
+  );
+  return ids.map((id) => findBrowseNode(id, tree)).filter(Boolean) as BrowseNode[];
+}
 
-  const [path, setPath] = useState<BrowseNode[]>(initialPath);
+export function CategoryLadderPicker({
+  value,
+  onChange,
+  disabled,
+  tree = CATEGORY_BROWSE_TREE,
+  hint,
+}: Props) {
+  const [path, setPath] = useState<BrowseNode[]>(() => hydratePath(value, tree));
+  /** Kullanıcı seçimi sonrası value sync’inin path’i ezmesini engeller */
+  const skipHydrateRef = useRef(false);
 
   useEffect(() => {
-    if (!value.categorySlug) {
-      setPath((prev) => (prev.length ? [] : prev));
+    if (skipHydrateRef.current) {
+      skipHydrateRef.current = false;
       return;
     }
-    const ids = matchBrowsePath({
-      category: value.categorySlug,
-      dealType: value.dealType,
-      subtype: value.subtype,
-      rental: value.rentalPeriod,
-    });
-    const nodes = ids.map((id) => findBrowseNode(id)).filter(Boolean) as BrowseNode[];
     setPath((prev) => {
-      const same = nodes.length === prev.length && nodes.every((n, i) => n.id === prev[i]?.id);
-      return same ? prev : nodes;
+      if (pathMatchesValue(prev, value)) return prev;
+      const next = hydratePath(value, tree);
+      // Eşleşme bulunamadıysa mevcut merdiveni koru (ara seçim sıfırlanmasın)
+      if (!next.length && prev.length && value.categorySlug) return prev;
+      const same =
+        next.length === prev.length && next.every((n, i) => n.id === prev[i]?.id);
+      return same ? prev : next;
     });
-  }, [value.categorySlug, value.dealType, value.subtype, value.rentalPeriod]);
+  }, [value.categorySlug, value.dealType, value.subtype, value.rentalPeriod, tree]);
 
   const levels: Array<{ options: BrowseNode[]; selectedId: string }> = [];
   levels.push({
-    options: CATEGORY_BROWSE_TREE,
+    options: tree,
     selectedId: path[0]?.id || "",
   });
   for (let i = 0; i < path.length; i++) {
@@ -137,6 +163,7 @@ export function CategoryLadderPicker({ value, onChange, disabled }: Props) {
   function pickAtLevel(levelIndex: number, nodeId: string) {
     if (!nodeId) {
       const nextPath = path.slice(0, levelIndex);
+      skipHydrateRef.current = true;
       setPath(nextPath);
       if (nextPath.length === 0) {
         onChange({
@@ -157,25 +184,28 @@ export function CategoryLadderPicker({ value, onChange, disabled }: Props) {
     const node = options.find((o) => o.id === nodeId);
     if (!node) return;
     const nextPath = [...path.slice(0, levelIndex), node];
+    skipHydrateRef.current = true;
     setPath(nextPath);
     onChange(applyNodeFilter(node, value));
   }
 
-  const stepLabels = ["Ana kategori", "Tür / bölüm", "Alt kategori"];
+  const stepLabels = ["Tür / bölüm", "Alt kategori", "Detay"];
 
   return (
     <div style={{ display: "grid", gap: 12 }}>
       <div style={{ fontSize: 13, color: "var(--muted)", lineHeight: 1.45 }}>
-        Kategoriyi merdiven gibi adım adım seçin. Örn: <strong>Vasıta</strong> → <strong>Otomobil</strong> →{" "}
-        <strong>BMW</strong> → <strong>3 Serisi</strong> → <strong>320d</strong>
+        {hint || (
+          <>
+            Kategoriyi merdiven gibi adım adım seçin. Her adımda bir seçenek belirleyin; seçim
+            korunur.
+          </>
+        )}
       </div>
 
       {levels.map((level, idx) => (
-        <div key={`lvl-${idx}`}>
+        <div key={`lvl-${idx}-${level.options.map((o) => o.id).join("|").slice(0, 48)}`}>
           <label style={{ display: "block", fontSize: 12, fontWeight: 700, marginBottom: 6, color: "#475569" }}>
-            {idx === 0
-              ? "1) Ana kategori *"
-              : `${idx + 1}) ${stepLabels[Math.min(idx, stepLabels.length - 1)]} *`}
+            {idx === 0 ? "1) Ana kategori *" : `${idx + 1}) ${stepLabels[Math.min(idx - 1, stepLabels.length - 1)]} *`}
           </label>
           <select
             className="select"
@@ -206,7 +236,13 @@ export function CategoryLadderPicker({ value, onChange, disabled }: Props) {
               disabled={disabled}
               value={value.brand}
               onChange={(e) =>
-                onChange({ ...value, brand: e.target.value, model: "", trim: "", dealType: value.dealType || "SATILIK" })
+                onChange({
+                  ...value,
+                  brand: e.target.value,
+                  model: "",
+                  trim: "",
+                  dealType: value.dealType || "SATILIK",
+                })
               }
               style={{ width: "100%" }}
             >
@@ -279,22 +315,29 @@ export function CategoryLadderPicker({ value, onChange, disabled }: Props) {
         </div>
       ) : path.length > 0 ? (
         <div style={{ fontSize: 12.5, color: "#b45309", fontWeight: 600 }}>
-          Seçimi tamamlayın — marka / model / paket seçilmeden ilan yayınlanamaz.
+          {isVehicle
+            ? "Seçimi tamamlayın — marka / model / paket seçilmeden ilan yayınlanamaz."
+            : "Seçimi tamamlayın — tüm alt kategorileri sırayla seçin."}
         </div>
       ) : null}
     </div>
   );
 }
 
-export function isCategoryLadderComplete(value: CategoryLadderValue): boolean {
+export function isCategoryLadderComplete(value: CategoryLadderValue, tree?: BrowseNode[]): boolean {
   if (!value.categorySlug) return false;
-  const ids = matchBrowsePath({
-    category: value.categorySlug,
-    dealType: value.dealType,
-    subtype: value.subtype,
-    rental: value.rentalPeriod,
-  });
+  // Virgüllü ara seçim (henüz yaprak değil) tamamlanmış sayılmaz
+  if (value.categorySlug.includes(",")) return false;
+  const ids = matchBrowsePath(
+    {
+      category: value.categorySlug,
+      dealType: value.dealType,
+      subtype: value.subtype,
+      rental: value.rentalPeriod,
+    },
+    tree
+  );
   if (!ids.length) return false;
-  const leaf = findBrowseNode(ids[ids.length - 1]);
+  const leaf = findBrowseNode(ids[ids.length - 1], tree);
   return isBrowseComplete(leaf, value);
 }

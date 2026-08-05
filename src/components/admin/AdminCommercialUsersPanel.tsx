@@ -1,7 +1,8 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
-import { commercialStatusLabel, parseCommercialProfile, getPendingCommercialFromProfile } from "@/data/commercialProfile";
+import { commercialStatusLabel, parseCommercialProfile, getPendingCommercialFromProfile, commercialToShopFocus } from "@/data/commercialProfile";
+import { formatShopFocusLine } from "@/data/shopFocus";
 import { commercialSubtypeLabelTr } from "@/lib/accountTypes";
 import { formatPhoneTr } from "@/lib/format";
 import { commercialBusinessTypeLabel } from "@/lib/commercialBusinessTypes";
@@ -40,9 +41,13 @@ function ProfileBlock({
   p: ReturnType<typeof parseCommercialProfile>;
   subs: string;
 }) {
+  const focusLine = formatShopFocusLine(commercialToShopFocus(p));
   return (
     <div style={{ fontSize: 13, color: "#475569", lineHeight: 1.5 }}>
       <div style={{ fontWeight: 800, color: "#0f172a", marginBottom: 4 }}>{title}</div>
+      <div>
+        <strong style={{ color: "#0f172a" }}>Mağaza odağı:</strong> {focusLine}
+      </div>
       <div>Faaliyet: {subs || "—"}</div>
       <div>
         Unvan: {p.commercialTitle || "—"} · Tür: {p.companyType || "—"}
