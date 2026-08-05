@@ -753,16 +753,22 @@ model TokenLedger {
 }
 
 model Payment {
-  id        String        @id @default(cuid())
-  tenantId  String?
-  userId    String
-  amountTl  Float
-  purpose   String
-  status    PaymentStatus @default(SIMULATED)
-  meta      Json?
-  createdAt DateTime      @default(now())
-  user      User          @relation(fields: [userId], references: [id])
-  tenant    Tenant?       @relation(fields: [tenantId], references: [id])
+  id                     String        @id @default(cuid())
+  tenantId               String?
+  userId                 String
+  amountTl               Float
+  purpose                String
+  status                 PaymentStatus @default(SIMULATED)
+  /**
+   * PSP / demo completion idempotency (unique when set)
+   */
+  providerTransactionId  String?       @unique
+  paidAt                 DateTime?
+  cancelledAt            DateTime?
+  meta                   Json?
+  createdAt              DateTime      @default(now())
+  user                   User          @relation(fields: [userId], references: [id])
+  tenant                 Tenant?       @relation(fields: [tenantId], references: [id])
 
   @@index([tenantId])
   @@index([userId])
@@ -1198,27 +1204,45 @@ model SellerOffer {
  * Tutarlar kuruş (BIGINT). Geçmiş snapshot ile korunur.
  */
 model Order {
-  id            String      @id @default(cuid())
-  orderNo       String      @unique
-  buyerId       String
-  status        OrderStatus @default(PENDING_PAYMENT)
-  currency      String      @default("TRY")
-  subtotal      BigInt
-  shippingTotal BigInt      @default(0)
-  discountTotal BigInt      @default(0)
-  taxTotal      BigInt      @default(0)
-  grandTotal    BigInt
-  escrowDealId  String?     @unique
-  createdAt     DateTime    @default(now())
-  updatedAt     DateTime    @updatedAt
-  cancelledAt   DateTime?
+  id              String      @id @default(cuid())
+  orderNo         String      @unique
+  buyerId         String
+  status          OrderStatus @default(PENDING_PAYMENT)
+  currency        String      @default("TRY")
+  /**
+   * Tutarlar kuruş (BIGINT)
+   */
+  subtotal        BigInt
+  shippingTotal   BigInt      @default(0)
+  discountTotal   BigInt      @default(0)
+  taxTotal        BigInt      @default(0)
+  grandTotal      BigInt
+  escrowDealId    String?     @unique
+  /**
+   * İlişkili Payment.id (loose — Payment modelinde FK yok)
+   */
+  paymentId       String?
+  /**
+   * Client checkout idempotency (unique with buyerId when set)
+   */
+  idempotencyKey  String?
+  paidAt          DateTime?
+  /**
+   * PENDING_PAYMENT sonu — süre dolunca reconcile iptal eder
+   */
+  expiresAt       DateTime?
+  createdAt       DateTime    @default(now())
+  updatedAt       DateTime    @updatedAt
+  cancelledAt     DateTime?
 
   buyer      User        @relation("OrderBuyer", fields: [buyerId], references: [id], onDelete: Restrict)
   escrowDeal EscrowDeal? @relation(fields: [escrowDealId], references: [id], onDelete: SetNull)
   items      OrderItem[]
 
+  @@unique([buyerId, idempotencyKey])
   @@index([buyerId, createdAt])
   @@index([status])
+  @@index([status, expiresAt])
 }
 
 model OrderItem {
@@ -1252,6 +1276,14 @@ model OrderItem {
   lineShipping              BigInt   @default(0)
   lineTax                   BigInt   @default(0)
   lineTotal                 BigInt
+  /**
+   * Checkout anında düşülen adet (iade için); null → quantity
+   */
+  stockReservedQty          Int?
+  /**
+   * Stok iadesi yapıldıysa set — ikinci iade no-op
+   */
+  stockReleasedAt           DateTime?
   createdAt                 DateTime @default(now())
 
   order       Order           @relation(fields: [orderId], references: [id], onDelete: Cascade)

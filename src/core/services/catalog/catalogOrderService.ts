@@ -16,6 +16,12 @@ import { isDemoPosEnabled } from "@/core/services/paymentModeService";
 import { getEscrowRuntimeSettings } from "@/core/services/escrowSettingsService";
 import { isValidShipDays } from "@/lib/escrowTypes";
 import { writeAuditLog } from "@/core/services/tenantService";
+import {
+  getCatalogCheckoutPendingTtlMinutes,
+  isCatalogCheckoutIdempotencyEnabled,
+  isCatalogExpiredReconcileEnabled,
+} from "@/core/services/catalog/catalogOrderLifecycleService";
+import { reconcileExpiredCatalogOrders } from "@/core/services/catalog/catalogOrderReconcileService";
 
 type Buyer = { id: string; name?: string | null };
 
@@ -33,9 +39,31 @@ function asJson(value: unknown): Prisma.InputJsonValue {
   return value as Prisma.InputJsonValue;
 }
 
+export type CheckoutCatalogResult = {
+  order: {
+    id: string;
+    orderNo: string;
+    status: string;
+    escrowDealId: string | null;
+    paymentId?: string | null;
+  };
+  item: { id: string };
+  deal: { id: string };
+  payment: { id: string };
+  payUrl: string;
+  amountTl: number;
+  /** Effective unit price in kuruş */
+  effectiveUnitPriceMinor: bigint;
+  /** alias */
+  priceKurus: bigint;
+  amountKurus: bigint;
+  stockQtyAfter: number;
+  idempotentReplay?: boolean;
+};
+
 /**
  * Katalog checkout: 1 Order = 1 SellerOffer = 1 OrderItem + zorunlu EscrowDeal.
- * Client fiyatı hesaplama kaynağı değildir.
+ * Fiyat kaynağı yalnız SellerOffer (Listing.askPrice okunmaz).
  */
 export async function checkoutCatalogOffer(input: {
   buyer: Buyer;
@@ -44,7 +72,9 @@ export async function checkoutCatalogOffer(input: {
   shipDays: number;
   /** Opsiyonel: client önizleme fiyatı (kuruş) — uyuşmazsa PRICE_CHANGED */
   expectedEffectiveUnitPriceMinor?: bigint | null;
-}) {
+  /** Client idempotency key */
+  idempotencyKey?: string | null;
+}): Promise<CheckoutCatalogResult> {
   const quantity = Math.floor(Number(input.quantity));
   if (!Number.isFinite(quantity) || quantity <= 0) {
     throw new CatalogCommerceError("INVALID_QUANTITY", "Adet pozitif tam sayı olmalı");
@@ -68,8 +98,91 @@ export async function checkoutCatalogOffer(input: {
     );
   }
 
+  // Opportunistic reconcile (best-effort)
+  if (await isCatalogExpiredReconcileEnabled()) {
+    try {
+      await reconcileExpiredCatalogOrders({ limit: 5 });
+    } catch {
+      /* ignore */
+    }
+  }
+
+  const idempotencyOn = await isCatalogCheckoutIdempotencyEnabled();
+  const idempotencyKey =
+    idempotencyOn && input.idempotencyKey
+      ? String(input.idempotencyKey).trim().slice(0, 120) || null
+      : null;
+
+  if (idempotencyKey) {
+    const existing = await prisma.order.findFirst({
+      where: { buyerId: input.buyer.id, idempotencyKey },
+      include: {
+        items: { take: 1 },
+        escrowDeal: true,
+      },
+    });
+    if (existing) {
+      const deal = existing.escrowDeal;
+      const paymentId =
+        existing.paymentId ||
+        deal?.paymentId ||
+        (deal?.meta && typeof deal.meta === "object"
+          ? String((deal.meta as Record<string, unknown>).paymentId || "")
+          : "") ||
+        null;
+      let payment = paymentId
+        ? await prisma.payment.findUnique({ where: { id: paymentId } })
+        : null;
+      if (!payment && deal?.id) {
+        payment = await prisma.payment.findFirst({
+          where: {
+            purpose: "escrow_hold",
+            meta: { path: ["orderId"], equals: existing.id },
+          },
+        });
+      }
+      const item = existing.items[0];
+      const unit = item?.effectiveUnitPriceSnapshot ?? BigInt(0);
+      return {
+        order: {
+          id: existing.id,
+          orderNo: existing.orderNo,
+          status: existing.status,
+          escrowDealId: existing.escrowDealId,
+          paymentId: payment?.id || existing.paymentId,
+        },
+        item: { id: item?.id || "" },
+        deal: { id: deal?.id || "" },
+        payment: { id: payment?.id || "" },
+        payUrl: payment ? `/odeme/demo-pos?intent=${payment.id}` : "",
+        amountTl: Math.round(minorToTl(existing.grandTotal)),
+        effectiveUnitPriceMinor: unit,
+        priceKurus: unit,
+        amountKurus: existing.grandTotal,
+        stockQtyAfter: 0,
+        idempotentReplay: true,
+      };
+    }
+  }
+
+  const ttlMin = await getCatalogCheckoutPendingTtlMinutes();
+  const reconcileOn = await isCatalogExpiredReconcileEnabled();
+  const expiresAt = reconcileOn
+    ? new Date(Date.now() + ttlMin * 60 * 1000)
+    : null;
+
   return prisma.$transaction(async (tx) => {
-    // 1) Validate offer + product + variant
+    // Re-check idempotency inside tx
+    if (idempotencyKey) {
+      const again = await tx.order.findFirst({
+        where: { buyerId: input.buyer.id, idempotencyKey },
+        select: { id: true },
+      });
+      if (again) {
+        throw new CatalogCommerceError("IDEMPOTENCY_RACE", "Tekrar deneyin");
+      }
+    }
+
     const offer = await tx.sellerOffer.findFirst({
       where: { id: input.sellerOfferId, deletedAt: null },
       include: {
@@ -97,7 +210,21 @@ export async function checkoutCatalogOffer(input: {
       throw new CatalogCommerceError("LISTING_MIRROR_MISSING", "Vitrin ilanı yok");
     }
 
-    // 2) Atomic stock decrement
+    // Fiyat yalnız SellerOffer (Listing.askPrice kullanılmaz)
+    try {
+      assertValidOfferPrices(offer.price, offer.discountedPrice);
+    } catch (e) {
+      const err = e as Error & { code?: string };
+      throw new CatalogCommerceError(err.code || "INVALID_PRICE", err.message);
+    }
+    const unit = effectiveOfferPriceMinor(offer.price, offer.discountedPrice);
+    if (
+      input.expectedEffectiveUnitPriceMinor != null &&
+      input.expectedEffectiveUnitPriceMinor !== unit
+    ) {
+      throw new CatalogCommerceError("PRICE_CHANGED", "Fiyat değişti; lütfen yenileyin");
+    }
+
     const stockResult = await tx.$executeRaw`
       UPDATE "SellerOffer"
       SET
@@ -116,36 +243,21 @@ export async function checkoutCatalogOffer(input: {
       throw new CatalogCommerceError("INSUFFICIENT_STOCK", "Yetersiz stok");
     }
 
-    // 3) Re-read offer inside transaction
     const fresh = await tx.sellerOffer.findUnique({ where: { id: offer.id } });
     if (!fresh) throw new CatalogCommerceError("OFFER_NOT_FOUND", "Teklif kayboldu");
 
-    // 4) Server-side price
-    try {
-      assertValidOfferPrices(fresh.price, fresh.discountedPrice);
-    } catch (e) {
-      const err = e as Error & { code?: string };
-      throw new CatalogCommerceError(err.code || "INVALID_PRICE", err.message);
-    }
-    const unit = effectiveOfferPriceMinor(fresh.price, fresh.discountedPrice);
-    if (
-      input.expectedEffectiveUnitPriceMinor != null &&
-      input.expectedEffectiveUnitPriceMinor !== unit
-    ) {
-      throw new CatalogCommerceError("PRICE_CHANGED", "Fiyat değişti; lütfen yenileyin");
-    }
-
-    const shipping = fresh.shippingPrice != null && fresh.shippingPrice > BigInt(0) ? fresh.shippingPrice : BigInt(0);
+    const shippingKurus =
+      fresh.shippingPrice != null && fresh.shippingPrice > BigInt(0) ? fresh.shippingPrice : BigInt(0);
     const lineSubtotal = unit * BigInt(quantity);
-    const lineShipping = shipping;
+    const lineShipping = shippingKurus;
     const lineTax = BigInt(0);
-    const lineTotal = lineSubtotal + lineShipping + lineTax;
+    const amountKurus = lineSubtotal + lineShipping + lineTax;
     const discountTotal =
       fresh.discountedPrice != null && fresh.discountedPrice < fresh.price
         ? (fresh.price - fresh.discountedPrice) * BigInt(quantity)
         : BigInt(0);
 
-    const amountTl = Math.round(minorToTl(lineTotal));
+    const amountTl = Math.round(minorToTl(amountKurus));
     if (!Number.isFinite(amountTl) || amountTl <= 0) {
       throw new CatalogCommerceError("INVALID_AMOUNT", "Sipariş tutarı geçersiz");
     }
@@ -159,11 +271,9 @@ export async function checkoutCatalogOffer(input: {
     const commissionTl = Math.round((amountTl * settings.commissionPercent) / 100);
     const sellerPayoutTl = amountTl - commissionTl;
 
-    // 5) Order + OrderItem snapshots
     const orderNo = await generateOrderNo(tx);
     const categoryPath = await buildCategoryPathSnapshot(offer.product.categoryId);
-    const barcode =
-      offer.variant.barcode || offer.product.barcode || null;
+    const barcode = offer.variant.barcode || offer.product.barcode || null;
 
     const order = await tx.order.create({
       data: {
@@ -175,7 +285,9 @@ export async function checkoutCatalogOffer(input: {
         shippingTotal: lineShipping,
         discountTotal,
         taxTotal: lineTax,
-        grandTotal: lineTotal,
+        grandTotal: amountKurus,
+        idempotencyKey: idempotencyKey || undefined,
+        expiresAt: expiresAt || undefined,
       },
     });
 
@@ -201,19 +313,19 @@ export async function checkoutCatalogOffer(input: {
         unitPriceSnapshot: fresh.price,
         discountedPriceSnapshot: fresh.discountedPrice,
         effectiveUnitPriceSnapshot: unit,
-        shippingPriceSnapshot: shipping,
+        shippingPriceSnapshot: shippingKurus,
         warrantyTypeSnapshot: fresh.warrantyType,
         warrantyMonthsSnapshot: fresh.warrantyMonths,
         taxRateSnapshot: null,
         quantity,
+        stockReservedQty: quantity,
         lineSubtotal,
         lineShipping,
         lineTax,
-        lineTotal,
+        lineTotal: amountKurus,
       },
     });
 
-    // 6) EscrowDeal + Payment (zorunlu)
     const deal = await tx.escrowDeal.create({
       data: {
         listingId: offer.listingId,
@@ -231,6 +343,9 @@ export async function checkoutCatalogOffer(input: {
           orderItemId: item.id,
           sellerOfferId: offer.id,
           quantity,
+          amountKurus: amountKurus.toString(),
+          priceKurus: unit.toString(),
+          shippingKurus: shippingKurus.toString(),
         }),
       },
     });
@@ -249,6 +364,7 @@ export async function checkoutCatalogOffer(input: {
           orderId: order.id,
           shipDays,
           catalogCheckout: true,
+          amountKurus: amountKurus.toString(),
         }),
       },
     });
@@ -260,10 +376,9 @@ export async function checkoutCatalogOffer(input: {
 
     await tx.order.update({
       where: { id: order.id },
-      data: { escrowDealId: deal.id },
+      data: { escrowDealId: deal.id, paymentId: payment.id },
     });
 
-    // 7) Listing mirror sync
     await syncListingMirrorFromOffer(tx, offer.id);
 
     await writeAuditLog({
@@ -271,18 +386,21 @@ export async function checkoutCatalogOffer(input: {
       action: "catalog.checkout.create",
       entity: "Order",
       entityId: order.id,
-      meta: { dealId: deal.id, offerId: offer.id, quantity, amountTl },
+      meta: { dealId: deal.id, offerId: offer.id, quantity, amountTl, amountKurus: amountKurus.toString() },
     });
 
     return {
-      order: { ...order, escrowDealId: deal.id },
+      order: { ...order, escrowDealId: deal.id, paymentId: payment.id },
       item,
       deal,
       payment,
       payUrl: `/odeme/demo-pos?intent=${payment.id}`,
       amountTl,
       effectiveUnitPriceMinor: unit,
+      priceKurus: unit,
+      amountKurus,
       stockQtyAfter: fresh.stockQty,
+      idempotentReplay: false,
     };
   });
 }

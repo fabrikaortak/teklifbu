@@ -1,4 +1,4 @@
-import { EscrowStatus, ListingStatus, PaymentStatus, Prisma } from "@prisma/client";
+import { EscrowStatus, ListingStatus, OrderStatus, PaymentStatus, Prisma } from "@prisma/client";
 import { prisma } from "@/lib/db";
 import type { SessionUser } from "@/lib/auth";
 import { notifyUser } from "@/core/notify";
@@ -270,22 +270,60 @@ export async function fundEscrowFromPayment(paymentId: string) {
   if (!deal) return { ok: false as const, error: "Güvenli Öde kaydı bulunamadı." };
 
   if (deal.status !== EscrowStatus.AWAITING_PAYMENT) {
+    // Idempotent: ensure Order PAID if lifecycle on
+    const { isCatalogLifecycleV2Enabled, markOrderPaidInTx } = await import(
+      "@/core/services/catalog/catalogOrderLifecycleService"
+    );
+    if (await isCatalogLifecycleV2Enabled()) {
+      const orderId = String(meta.orderId || "") || null;
+      if (orderId) {
+        await prisma.$transaction(async (tx) => {
+          await markOrderPaidInTx(tx, { orderId, paymentId: payment.id });
+        });
+      }
+    }
     return { ok: true as const, deal, alreadyFunded: true };
   }
 
   const now = new Date();
   const shipDeadlineAt = new Date(now.getTime() + deal.shipDays * 24 * 60 * 60 * 1000);
   const dealMeta = (deal.meta || {}) as Record<string, unknown>;
+  const orderId =
+    String(meta.orderId || dealMeta.orderId || "") || null;
 
-  // FUNDED anı ile AWAITING_SHIPMENT'a geçiş aynı ödeme onayında gerçekleşir (satıcı artık kargolamalı).
-  const updated = await prisma.escrowDeal.update({
-    where: { id: deal.id },
-    data: {
-      status: EscrowStatus.AWAITING_SHIPMENT,
-      shipDeadlineAt,
-      meta: asJson({ ...dealMeta, fundedAt: now.toISOString() }),
-    },
+  const { isCatalogLifecycleV2Enabled, markOrderPaidInTx } = await import(
+    "@/core/services/catalog/catalogOrderLifecycleService"
+  );
+  const lifecycleOn = await isCatalogLifecycleV2Enabled();
+
+  const updated = await prisma.$transaction(async (tx) => {
+    const locked = await tx.$queryRaw<Array<{ id: string; status: string }>>`
+      SELECT id, status::text AS status FROM "EscrowDeal" WHERE id = ${deal.id} FOR UPDATE
+    `;
+    if (!locked[0] || locked[0].status !== EscrowStatus.AWAITING_PAYMENT) {
+      return null;
+    }
+
+    const next = await tx.escrowDeal.update({
+      where: { id: deal.id },
+      data: {
+        status: EscrowStatus.AWAITING_SHIPMENT,
+        shipDeadlineAt,
+        meta: asJson({ ...dealMeta, fundedAt: now.toISOString() }),
+      },
+    });
+
+    if (lifecycleOn && orderId) {
+      await markOrderPaidInTx(tx, { orderId, paymentId: payment.id, now });
+    }
+
+    return next;
   });
+
+  if (!updated) {
+    const current = await prisma.escrowDeal.findUnique({ where: { id: deal.id } });
+    return { ok: true as const, deal: current || deal, alreadyFunded: true };
+  }
 
   await notifyUser(deal.sellerId, {
     title: "Güvenli Öde: Ödeme alındı",
@@ -304,7 +342,7 @@ export async function fundEscrowFromPayment(paymentId: string) {
     action: "escrow.funded",
     entity: "EscrowDeal",
     entityId: deal.id,
-    meta: { paymentId },
+    meta: { paymentId, orderId },
   });
 
   return { ok: true as const, deal: updated };
@@ -319,34 +357,156 @@ export async function completeEscrowPayment(session: SessionUser, intentId: stri
   if (!payment || payment.userId !== session.id || payment.purpose !== "escrow_hold") {
     return fail(404, "Ödeme oturumu bulunamadı.");
   }
-  if (payment.status !== PaymentStatus.PENDING && payment.status !== PaymentStatus.PAID) {
+  if (
+    payment.status !== PaymentStatus.PENDING &&
+    payment.status !== PaymentStatus.PAID
+  ) {
     return fail(409, `Ödeme durumu uygun değil: ${payment.status}`);
   }
 
-  if (payment.status !== PaymentStatus.PAID) {
-    const paymentMeta = (payment.meta || {}) as Record<string, unknown>;
-    await prisma.payment.update({
-      where: { id: payment.id },
-      data: {
-        status: PaymentStatus.PAID,
-        meta: asJson({
-          ...paymentMeta,
-          channel: "demo_pos",
-          paidAt: new Date().toISOString(),
-          simulated: true,
-        }),
-      },
+  const now = new Date();
+  const providerTxId = `demo-${payment.id}`;
+
+  // Single transaction: Payment PAID + Escrow fund + Order PAID
+  const { isCatalogLifecycleV2Enabled, markOrderPaidInTx } = await import(
+    "@/core/services/catalog/catalogOrderLifecycleService"
+  );
+  const lifecycleOn = await isCatalogLifecycleV2Enabled();
+
+  try {
+    const result = await prisma.$transaction(async (tx) => {
+      const paymentMetaEarly = (payment.meta || {}) as Record<string, unknown>;
+      const orderIdEarly = String(paymentMetaEarly.orderId || "") || null;
+      const dealIdEarly = String(paymentMetaEarly.escrowDealId || "");
+
+      // Consistent lock order with cancel: Order → Payment → EscrowDeal
+      if (orderIdEarly) {
+        await tx.$queryRaw`SELECT id FROM "Order" WHERE id = ${orderIdEarly} FOR UPDATE`;
+        const ord = await tx.order.findUnique({ where: { id: orderIdEarly } });
+        if (ord?.status === OrderStatus.CANCELLED) {
+          throw new Error("ORDER_CANCELLED");
+        }
+      }
+
+      const lockedPay = await tx.$queryRaw<Array<{ id: string; status: string }>>`
+        SELECT id, status::text AS status FROM "Payment" WHERE id = ${payment.id} FOR UPDATE
+      `;
+      if (!lockedPay[0]) throw new Error("PAYMENT_NOT_FOUND");
+      if (
+        lockedPay[0].status !== PaymentStatus.PENDING &&
+        lockedPay[0].status !== PaymentStatus.PAID &&
+        lockedPay[0].status !== "PENDING" &&
+        lockedPay[0].status !== "PAID"
+      ) {
+        throw new Error(`PAYMENT_STATUS_${lockedPay[0].status}`);
+      }
+
+      const paymentMeta = (payment.meta || {}) as Record<string, unknown>;
+      const dealId = dealIdEarly;
+      const orderId = orderIdEarly;
+
+      if (lockedPay[0].status === PaymentStatus.PENDING || lockedPay[0].status === "PENDING") {
+        // Unique providerTransactionId — second completion no-ops via catch
+        await tx.payment.update({
+          where: { id: payment.id },
+          data: {
+            status: PaymentStatus.PAID,
+            paidAt: now,
+            providerTransactionId: providerTxId,
+            meta: asJson({
+              ...paymentMeta,
+              channel: "demo_pos",
+              paidAt: now.toISOString(),
+              simulated: true,
+            }),
+          },
+        });
+      }
+
+      if (!dealId) throw new Error("NO_DEAL");
+
+      const lockedDeal = await tx.$queryRaw<Array<{ id: string; status: string; shipDays: number }>>`
+        SELECT id, status::text AS status, "shipDays" FROM "EscrowDeal" WHERE id = ${dealId} FOR UPDATE
+      `;
+      const d = lockedDeal[0];
+      if (!d) throw new Error("NO_DEAL");
+
+      let alreadyFunded = false;
+      if (d.status === EscrowStatus.AWAITING_PAYMENT || d.status === "AWAITING_PAYMENT") {
+        const shipDeadlineAt = new Date(now.getTime() + d.shipDays * 24 * 60 * 60 * 1000);
+        const dealRow = await tx.escrowDeal.findUnique({ where: { id: dealId } });
+        const dealMeta = (dealRow?.meta || {}) as Record<string, unknown>;
+        await tx.escrowDeal.update({
+          where: { id: dealId },
+          data: {
+            status: EscrowStatus.AWAITING_SHIPMENT,
+            shipDeadlineAt,
+            meta: asJson({ ...dealMeta, fundedAt: now.toISOString() }),
+          },
+        });
+      } else {
+        alreadyFunded = true;
+      }
+
+      if (lifecycleOn && orderId) {
+        await markOrderPaidInTx(tx, { orderId, paymentId: payment.id, now });
+      }
+
+      return { dealId, alreadyFunded, orderId };
     });
+
+    if (!result.alreadyFunded) {
+      const deal = await prisma.escrowDeal.findUnique({ where: { id: result.dealId } });
+      if (deal) {
+        await notifyUser(deal.sellerId, {
+          title: "Güvenli Öde: Ödeme alındı",
+          body: `Alıcı ödemeyi TeklifBu Güvenli Öde havuzuna yatırdı. Ürünü ${deal.shipDays} gün içinde kargoya vermelisiniz.`,
+          eventKey: "escrow_funded",
+          link: `/hesabim/guvenli-ode/${deal.id}`,
+        });
+        await notifyUser(deal.buyerId, {
+          title: "Güvenli Öde: Ödemeniz alındı",
+          body: "Ödemeniz güvenle TeklifBu havuzunda tutuluyor. Satıcı ürünü kargoya verince bilgilendirileceksiniz.",
+          eventKey: "escrow_funded",
+          link: `/hesabim/guvenli-ode/${deal.id}`,
+        });
+      }
+      await writeAuditLog({
+        action: "escrow.funded",
+        entity: "EscrowDeal",
+        entityId: result.dealId,
+        meta: { paymentId: payment.id, orderId: result.orderId },
+      });
+    }
+
+    return {
+      ok: true as const,
+      dealId: result.dealId,
+      alreadyCompleted: result.alreadyFunded,
+      message: result.alreadyFunded
+        ? "Ödeme zaten tamamlanmış."
+        : "Ödemeniz alındı ve Güvenli Öde havuzuna aktarıldı.",
+    };
+  } catch (e) {
+    const msg = e instanceof Error ? e.message : String(e);
+    if (msg.includes("ORDER_CANCELLED")) {
+      return fail(409, "Sipariş süresi doldu / iptal edildi.", "ORDER_CANCELLED");
+    }
+    if (msg.includes("Unique constraint") || msg.includes("providerTransactionId")) {
+      // Second completion with same provider id — treat as success
+      const meta = (payment.meta || {}) as Record<string, unknown>;
+      return {
+        ok: true as const,
+        dealId: String(meta.escrowDealId || ""),
+        alreadyCompleted: true,
+        message: "Ödeme zaten tamamlanmış.",
+      };
+    }
+    if (msg.startsWith("PAYMENT_STATUS_")) {
+      return fail(409, `Ödeme durumu uygun değil: ${msg.replace("PAYMENT_STATUS_", "")}`);
+    }
+    return fail(400, msg || "Güvenli Öde fonlanamadı.");
   }
-
-  const funded = await fundEscrowFromPayment(payment.id);
-  if (!funded.ok) return fail(400, funded.error || "Güvenli Öde fonlanamadı.");
-
-  return {
-    ok: true as const,
-    dealId: funded.deal.id,
-    message: "Ödemeniz alındı ve Güvenli Öde havuzuna aktarıldı.",
-  };
 }
 
 /** Satıcı kargo bilgisi girer: SHIPPED üzerinden BUYER_REVIEW'a geçer (aynı adımda). */

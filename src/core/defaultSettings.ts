@@ -1225,6 +1225,54 @@ export const DEFAULT_SETTINGS: Record<string, SettingMeta> = {
       "Açıkken ilan ücreti ödemesi /odeme/demo-pos üzerinden simüle edilir. «Yalnızca jeton» açıksa POS kullanılmaz.",
     control: "toggle",
   },
+  /** Faz 1 — katalog Order/Payment lifecycle */
+  catalog_order_payment_lifecycle_v2: {
+    value: true,
+    label: "Katalog sipariş ödeme yaşam döngüsü v2",
+    group: "payment",
+    description:
+      "Açıkken escrow ödemesi sonrası Order PAID+paidAt aynı transaction’da yazılır. Production’da kontrollü açın.",
+    control: "toggle",
+  },
+  catalog_checkout_idempotency: {
+    value: true,
+    label: "Katalog checkout idempotency",
+    group: "payment",
+    description: "Açıkken buyerId+idempotencyKey ile tekrar checkout tek sipariş döner.",
+    control: "toggle",
+  },
+  catalog_expired_order_reconcile: {
+    value: true,
+    label: "Süresi dolan katalog sipariş reconcile",
+    group: "payment",
+    description:
+      "Açıkken PENDING_PAYMENT siparişlere expiresAt yazılır; reconcile stok iadesi yapar.",
+    control: "toggle",
+  },
+  catalog_checkout_pending_ttl_minutes: {
+    value: 15,
+    label: "Katalog checkout TTL (dk)",
+    group: "payment",
+    description: "PENDING_PAYMENT siparişin ödeme bekleme süresi (dakika).",
+    control: "number",
+    min: 1,
+    unit: "dk",
+  },
+  /** Gelecek faz — yalnızca tanım, Faz 1’de kullanılmaz */
+  catalog_checkout_without_mirror: {
+    value: false,
+    label: "Katalog checkout mirror’suz (gelecek faz)",
+    group: "payment",
+    description: "Faz 1’de kullanılmaz. Açıkken Listing mirror zorunluluğu kalkacak.",
+    control: "toggle",
+  },
+  alisveris_feed_from_offers: {
+    value: false,
+    label: "Alışveriş feed SellerOffer (gelecek faz)",
+    group: "payment",
+    description: "Faz 1’de kullanılmaz. Açıkken vitrin Offer projection okuyacak.",
+    control: "toggle",
+  },
   payment_tokens_only_enabled: {
     value: false,
     label: "Yalnızca jeton ödemesi (POS kapalı)",

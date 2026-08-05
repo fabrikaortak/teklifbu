@@ -5,8 +5,7 @@ import { CatalogCommerceError, tlToMinor, minorToTl } from "@/lib/catalogCommerc
 
 /**
  * POST /api/catalog/checkout
- * Body: { sellerOfferId, quantity, shipDays, expectedPriceTl? }
- * 1 Order = 1 Offer = 1 Item + EscrowDeal
+ * Body: { sellerOfferId, quantity, shipDays, expectedPriceTl?, idempotencyKey? }
  */
 export async function POST(req: Request) {
   const user = await getSession();
@@ -29,6 +28,7 @@ export async function POST(req: Request) {
       shipDays: Number(body.shipDays ?? 7),
       expectedEffectiveUnitPriceMinor:
         expectedTl != null && expectedTl !== "" ? tlToMinor(Number(expectedTl)) : null,
+      idempotencyKey: body.idempotencyKey != null ? String(body.idempotencyKey) : null,
     });
     return NextResponse.json({
       ok: true,
@@ -36,10 +36,14 @@ export async function POST(req: Request) {
       orderNo: result.order.orderNo,
       orderItemId: result.item.id,
       dealId: result.deal.id,
+      paymentId: result.payment.id,
       payUrl: result.payUrl,
       amountTl: result.amountTl,
+      amountKurus: result.amountKurus.toString(),
+      priceKurus: result.priceKurus.toString(),
       effectiveUnitPrice: minorToTl(result.effectiveUnitPriceMinor),
       stockQtyAfter: result.stockQtyAfter,
+      idempotentReplay: Boolean(result.idempotentReplay),
     });
   } catch (e) {
     if (e instanceof CatalogCommerceError) {

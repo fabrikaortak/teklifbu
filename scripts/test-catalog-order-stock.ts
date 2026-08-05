@@ -253,22 +253,49 @@ async function main() {
   ok("I variant pause → PAUSED", vp.status === "PAUSED");
 
   // L) classic listing escrow path still callable (no sellerOfferId)
-  const classic = await prisma.listing.findFirst({
+  let classic = await prisma.listing.findFirst({
     where: {
       sellerOfferId: null,
       status: "ACTIVE",
+      escrowEligible: true,
       askPrice: { gt: 0 },
       sellerId: { not: buyer.id },
     },
   });
+  if (!classic) {
+    const cat = await prisma.category.findFirst();
+    const seller = await prisma.user.findFirst({ where: { id: { not: buyer.id }, isActive: true } });
+    if (cat && seller) {
+      classic = await prisma.listing.create({
+        data: {
+          listingNo: `CL-STOCK-${Date.now()}`,
+          sellerId: seller.id,
+          categoryId: cat.id,
+          title: "Stock test classic escrow listing",
+          description: "classic escrow regression",
+          city: "İstanbul",
+          askPrice: BigInt(100),
+          status: "ACTIVE",
+          durationDays: 14,
+          startsAt: new Date(),
+          endsAt: new Date(Date.now() + 14 * 86400000),
+          escrowEligible: true,
+          sellerOfferId: null,
+        },
+      });
+    }
+  }
   if (classic) {
-    // Should not throw USE_CATALOG_CHECKOUT
     const session = { id: buyer.id, role: "USER" as const, phone: buyer.phone, name: buyer.name };
     try {
       const res = await createEscrowCheckout(session as never, classic.id, 7);
-      ok("L classic escrow still works", res.ok === true || (res.ok === false && res.body?.code !== "USE_CATALOG_CHECKOUT"), JSON.stringify(res).slice(0, 120));
+      ok(
+        "L classic escrow still works",
+        res.ok === true && Boolean((res as { payUrl?: string }).payUrl),
+        JSON.stringify(res).slice(0, 120)
+      );
     } catch (e) {
-      ok("L classic escrow path reachable", true, String(e));
+      ok("L classic escrow still works", false, String(e));
     }
   } else {
     console.log("SKIP L — no classic ACTIVE listing without sellerOfferId");
