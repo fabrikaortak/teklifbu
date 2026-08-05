@@ -38,15 +38,15 @@ docker exec -i teklifbu-postgres pg_restore -U teklifbu -d teklifbu --clean --if
 
 ## Faz 1 — Temel sağlamlaştırma (mirror KALIR)
 
-**Neden önce:** En yüksek üretim değeri, en düşük yıkım.
+**Detay plan:** [`docs/faz1-order-lifecycle-plan.md`](./faz1-order-lifecycle-plan.md) (onay öncesi — migration henüz yok)
 
-1. **Order lifecycle** — Escrow fund olunca `Order` → `PAID` (ve iptal yolları)
-2. **Terk checkout reconcile** — PENDING ödeme timeout → stok iade + Order CANCELLED
-3. **Idempotency** — katalog checkout / payment intent tekilleştirme
-4. **Fiyat birimi** — katalog yolunda kuruş/TL tek kural; `priceInKurus` zorunlu netlik
-5. **Çift yayın kilidi** — aynı shop+product/variant için klasik Listing + ACTIVE SellerOffer çakışmasını engelle (politika)
+1. Order → PAID (escrow fund ile aynı tx)
+2. Terk checkout reconcile + stok iadesi (idempotent)
+3. Checkout + payment completion idempotency
+4. Fiyat birimi netliği (checkout Listing.askPrice okumaz)
+5. Feature flags (lifecycle / idempotency / reconcile)
 
-**Çıkış kriteri:** `test-catalog-order-stock` + yeni reconcile smoke yeşil; mirror davranışı aynı.
+**Çıkış kriteri:** Plan dosyasındaki A–L testler PASS; klasik escrow regresyon OK; mirror davranışı aynı.
 
 ---
 
