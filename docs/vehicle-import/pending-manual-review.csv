@@ -1,0 +1,7 @@
+category,subcategory,brand,series,modelVariant,level,name,slug,fullPath,source,status,notes,canonicalRef
+Otomobil,,Cupra,Formentor,1.5 TSI | 2.0 TSI | VZ | e-Hybrid,SERIES,Formentor,formentor,Vasıta > Otomobil > Cupra > Formentor,plan,CURATED_REVIEW,Cross body-type category move blocked: [arac/arazi-suv-pickup] → arac/otomobil,
+Otomobil,,MG,HS,Comfort | Luxury | PHEV,SERIES,HS,hs,Vasıta > Otomobil > MG > HS,plan,CURATED_REVIEW,Cross body-type category move blocked: [arac/arazi-suv-pickup] → arac/otomobil,
+Otomobil,,MG,ZS,Comfort | Luxury | EV,SERIES,ZS,zs,Vasıta > Otomobil > MG > ZS,plan,CURATED_REVIEW,Cross body-type category move blocked: [arac/arazi-suv-pickup] → arac/otomobil,
+Minivan & Panelvan,,Iveco,Daily,35C15 | 35S16 | 50C15 | 70C15,SERIES,Daily,daily,Vasıta > Minivan & Panelvan > Iveco > Daily,plan,CURATED_REVIEW,Cross body-type category move blocked: [arac/ticari-araclar] → arac/minivan-panelvan,
+Minivan & Panelvan,,Volkswagen,Crafter,2.0 TDI L3H2 | L4H3,SERIES,Crafter,crafter,Vasıta > Minivan & Panelvan > Volkswagen > Crafter,plan,CURATED_REVIEW,Cross body-type category move blocked: [arac/ticari-araclar] → arac/minivan-panelvan,
+Ticari Araçlar,Minibüs & Midibüs,Mercedes-Benz,Vito,Vito,SERIES,Vito,vito,Vasıta > Ticari Araçlar > Mercedes-Benz > Vito,plan,CURATED_REVIEW,Cross body-type category move blocked: [arac/minivan-panelvan] → arac/ticari-araclar,

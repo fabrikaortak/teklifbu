@@ -1,0 +1,130 @@
+{
+  "generatedAt": "2026-08-06T22:05:50.610188+00:00",
+  "version": "2026.08-curated-v1",
+  "exactSahibindenClone": false,
+  "levelCounts": {
+    "VEHICLE_CATEGORY": 15,
+    "BRAND": 488,
+    "SERIES": 2308,
+    "MODEL_VARIANT": 1355,
+    "SUBCATEGORY": 22
+  },
+  "statusCounts": {
+    "PUBLIC_NAV_VERIFIED": 512,
+    "CURATED_REVIEW": 3676
+  },
+  "totalRows": 4188,
+  "categoryCounts": {
+    "Otomobil": {
+      "VEHICLE_CATEGORY": 1,
+      "BRAND": 96,
+      "SERIES": 774,
+      "MODEL_VARIANT": 704
+    },
+    "Arazi, SUV & Pickup": {
+      "VEHICLE_CATEGORY": 1,
+      "BRAND": 71,
+      "SERIES": 309,
+      "MODEL_VARIANT": 455
+    },
+    "Elektrikli Araçlar": {
+      "VEHICLE_CATEGORY": 1,
+      "BRAND": 37,
+      "SERIES": 134
+    },
+    "Motosiklet": {
+      "VEHICLE_CATEGORY": 1,
+      "BRAND": 100,
+      "SERIES": 561,
+      "MODEL_VARIANT": 1
+    },
+    "Minivan & Panelvan": {
+      "VEHICLE_CATEGORY": 1,
+      "BRAND": 34,
+      "SERIES": 92,
+      "MODEL_VARIANT": 96
+    },
+    "Ticari Araçlar": {
+      "VEHICLE_CATEGORY": 1,
+      "SUBCATEGORY": 9,
+      "BRAND": 56,
+      "SERIES": 175,
+      "MODEL_VARIANT": 99
+    },
+    "Kiralık Araçlar": {
+      "VEHICLE_CATEGORY": 1
+    },
+    "Deniz Araçları": {
+      "VEHICLE_CATEGORY": 1,
+      "SUBCATEGORY": 5,
+      "BRAND": 26,
+      "SERIES": 71
+    },
+    "Hasarlı Araçlar": {
+      "VEHICLE_CATEGORY": 1
+    },
+    "Karavan": {
+      "VEHICLE_CATEGORY": 1,
+      "SUBCATEGORY": 4,
+      "BRAND": 32,
+      "SERIES": 76
+    },
+    "Klasik Araçlar": {
+      "VEHICLE_CATEGORY": 1
+    },
+    "Hava Araçları": {
+      "VEHICLE_CATEGORY": 1,
+      "SUBCATEGORY": 4,
+      "BRAND": 16,
+      "SERIES": 46
+    },
+    "ATV": {
+      "VEHICLE_CATEGORY": 1,
+      "BRAND": 12,
+      "SERIES": 43
+    },
+    "UTV": {
+      "VEHICLE_CATEGORY": 1,
+      "BRAND": 8,
+      "SERIES": 27
+    },
+    "Engelli Plakalı Araçlar": {
+      "VEHICLE_CATEGORY": 1
+    }
+  },
+  "emptyBrandBranches": [
+    "Vasıta > Arazi, SUV & Pickup > Daewoo",
+    "Vasıta > Arazi, SUV & Pickup > Santana",
+    "Vasıta > Motosiklet > Abush",
+    "Vasıta > Motosiklet > Aeon",
+    "Vasıta > Motosiklet > Ariic",
+    "Vasıta > Motosiklet > Barossa",
+    "Vasıta > Motosiklet > Belderia",
+    "Vasıta > Motosiklet > Better",
+    "Vasıta > Motosiklet > Bianchi",
+    "Vasıta > Motosiklet > Boom",
+    "Vasıta > Motosiklet > Borelli Ledow",
+    "Vasıta > Motosiklet > BSA",
+    "Vasıta > Motosiklet > BuMoto/Jinling",
+    "Vasıta > Motosiklet > Cheeta",
+    "Vasıta > Motosiklet > Cosmopolitan",
+    "Vasıta > Motosiklet > CRN",
+    "Vasıta > Motosiklet > CSN Motor",
+    "Vasıta > Motosiklet > Dayun",
+    "Vasıta > Motosiklet > Delta Motorcycle",
+    "Vasıta > Motosiklet > Dofern",
+    "Vasıta > Motosiklet > Dorado",
+    "Vasıta > Motosiklet > Enbest",
+    "Vasıta > Motosiklet > FCM",
+    "Vasıta > Motosiklet > Fosti",
+    "Vasıta > Motosiklet > Italjet",
+    "Vasıta > Motosiklet > Jawa",
+    "Vasıta > Motosiklet > Jialing",
+    "Vasıta > Motosiklet > Mash",
+    "Vasıta > Motosiklet > Meka",
+    "Vasıta > Motosiklet > Motron",
+    "Vasıta > Motosiklet > MZ",
+    "Vasıta > Motosiklet > Skyjet",
+    "Vasıta > Motosiklet > Çelik Motor"
+  ]
+}

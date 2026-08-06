@@ -28,7 +28,11 @@
     "test:panel-actions": "tsx scripts/test-panel-actions.ts",
     "postinstall": "prisma generate",
     "test:vehicle-stage1-e2e": "tsx scripts/test-vehicle-stage1-end-to-end.ts",
-    "test:vehicle-stage1-browser": "tsx scripts/test-vehicle-stage1-browser-e2e.ts"
+    "test:vehicle-stage1-browser": "tsx scripts/test-vehicle-stage1-browser-e2e.ts",
+    "vehicle:catalog-validate": "tsx scripts/vehicle/validate-and-plan-catalog-import.ts",
+    "vehicle:catalog-apply": "tsx scripts/vehicle/apply-safe-catalog-import.ts --apply",
+    "vehicle:catalog-apply-dry": "tsx scripts/vehicle/apply-safe-catalog-import.ts --dry-run",
+    "vehicle:catalog-test": "tsx scripts/vehicle/test-vehicle-catalog-import.ts"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"
