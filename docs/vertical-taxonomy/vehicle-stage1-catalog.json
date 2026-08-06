@@ -1,12 +1,14 @@
 {
-  "version": "vehicle-stage1-catalog-v3-safe-import",
+  "version": "vehicle-stage1-catalog-v4-complete",
   "generatedAt": "2026-08-06",
-  "source": "validated-file-import",
+  "source": "complete-vehicle-catalog-2026.08",
   "notes": [
     "Built by validate-and-plan-catalog-import.ts — only CREATE/UPDATE/MOVE/KEEP safe series.",
     "Elektrikli hub skipped; Tesla Model Y/Cybertruck promoted to Arazi when missing.",
     "Real generation codes from prior Stage1 pack preserved.",
-    "Never emits generationCode default / generationLabel Standart."
+    "Never emits generationCode default / generationLabel Standart.",
+    "v4 complete: empty brands filled/hidden, manual series finalized, electric overlay + fuelTypes ELECTRIC on pure EV series.",
+    "v4 complete: empty brands filled/hidden, manual series finalized, electric overlay + fuelTypes ELECTRIC on pure EV series."
   ],
   "entries": [
     {
@@ -632,12 +634,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -674,12 +679,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -3072,6 +3080,10 @@
         {
           "slug": "performance",
           "name": "Performance"
+        },
+        {
+          "slug": "long-range",
+          "name": "Long Range"
         }
       ],
       "modelYears": [
@@ -3082,12 +3094,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -3124,12 +3139,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -4174,12 +4192,13 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
       "fuelTypes": [],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "manual-review-final-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -5468,12 +5487,13 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
       "fuelTypes": [],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "manual-review-final-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -5514,12 +5534,13 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
       "fuelTypes": [],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "manual-review-final-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -6654,6 +6675,18 @@
         {
           "slug": "model-y",
           "name": "Model Y"
+        },
+        {
+          "slug": "rwd",
+          "name": "RWD"
+        },
+        {
+          "slug": "long-range",
+          "name": "Long Range"
+        },
+        {
+          "slug": "performance",
+          "name": "Performance"
         }
       ],
       "modelYears": [
@@ -6664,12 +6697,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "electric-canonical-promote",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -6704,6 +6740,10 @@
         {
           "slug": "v2-rwd-uzun-menzil",
           "name": "V2 RWD Uzun Menzil"
+        },
+        {
+          "slug": "t10x",
+          "name": "T10X"
         }
       ],
       "modelYears": [
@@ -6714,12 +6754,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -9336,12 +9379,13 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
       "fuelTypes": [],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "manual-review-final-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -10372,12 +10416,13 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
       "fuelTypes": [],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "manual-review-final-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -11292,12 +11337,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -11326,12 +11374,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -11360,12 +11411,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -13242,6 +13296,10 @@
         {
           "slug": "rs-e-tron-gt",
           "name": "RS e-tron GT"
+        },
+        {
+          "slug": "e-tron-gt",
+          "name": "e-tron GT"
         }
       ],
       "modelYears": [
@@ -13252,12 +13310,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -15026,6 +15087,10 @@
         {
           "slug": "executive",
           "name": "Executive"
+        },
+        {
+          "slug": "han",
+          "name": "Han"
         }
       ],
       "modelYears": [
@@ -15036,12 +15101,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -17194,6 +17262,10 @@
         {
           "slug": "e-boost",
           "name": "e-Boost"
+        },
+        {
+          "slug": "born",
+          "name": "Born"
         }
       ],
       "modelYears": [
@@ -17204,12 +17276,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -23762,6 +23837,10 @@
         {
           "slug": "design",
           "name": "Design"
+        },
+        {
+          "slug": "t03",
+          "name": "T03"
         }
       ],
       "modelYears": [
@@ -23772,12 +23851,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -26462,6 +26544,10 @@
         {
           "slug": "amg-eqe-53",
           "name": "AMG EQE 53"
+        },
+        {
+          "slug": "eqe",
+          "name": "EQE"
         }
       ],
       "modelYears": [
@@ -26472,12 +26558,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -26504,6 +26593,18 @@
         {
           "slug": "amg-eqs-53",
           "name": "AMG EQS 53"
+        },
+        {
+          "slug": "450-plus",
+          "name": "450+"
+        },
+        {
+          "slug": "580",
+          "name": "580"
+        },
+        {
+          "slug": "53-amg",
+          "name": "53 AMG"
         }
       ],
       "modelYears": [
@@ -26514,12 +26615,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -26782,6 +26886,10 @@
         {
           "slug": "xpower",
           "name": "XPower"
+        },
+        {
+          "slug": "mg4",
+          "name": "MG4"
         }
       ],
       "modelYears": [
@@ -26792,12 +26900,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -28034,6 +28145,14 @@
         {
           "slug": "tekna",
           "name": "Tekna"
+        },
+        {
+          "slug": "acenta",
+          "name": "Acenta"
+        },
+        {
+          "slug": "n-connecta",
+          "name": "N-Connecta"
         }
       ],
       "modelYears": [
@@ -28044,12 +28163,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -29954,6 +30076,10 @@
         {
           "slug": "long-range-dual-motor",
           "name": "Long Range Dual Motor"
+        },
+        {
+          "slug": "2",
+          "name": "2"
         }
       ],
       "modelYears": [
@@ -29964,12 +30090,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -30528,12 +30657,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -31516,6 +31648,18 @@
         {
           "slug": "intens",
           "name": "Intens"
+        },
+        {
+          "slug": "equilibre",
+          "name": "Equilibre"
+        },
+        {
+          "slug": "evolution",
+          "name": "Evolution"
+        },
+        {
+          "slug": "iconic",
+          "name": "Iconic"
         }
       ],
       "modelYears": [
@@ -31526,12 +31670,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -34198,6 +34345,10 @@
         {
           "slug": "v2-rwd-uzun-menzil",
           "name": "V2 RWD Uzun Menzil"
+        },
+        {
+          "slug": "t10f",
+          "name": "T10F"
         }
       ],
       "modelYears": [
@@ -34208,12 +34359,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -34830,6 +34984,10 @@
         {
           "slug": "pro-s",
           "name": "Pro S"
+        },
+        {
+          "slug": "id-3",
+          "name": "ID.3"
         }
       ],
       "modelYears": [
@@ -34840,12 +34998,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -35430,12 +35591,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -35860,6 +36024,10 @@
         {
           "slug": "50-quattro",
           "name": "50 quattro"
+        },
+        {
+          "slug": "q4-e-tron",
+          "name": "Q4 e-tron"
         }
       ],
       "modelYears": [
@@ -35870,12 +36038,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -35904,12 +36075,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -36016,6 +36190,10 @@
         {
           "slug": "55-quattro",
           "name": "55 quattro"
+        },
+        {
+          "slug": "q8-e-tron",
+          "name": "Q8 e-tron"
         }
       ],
       "modelYears": [
@@ -36026,12 +36204,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -36274,6 +36455,10 @@
         {
           "slug": "m60",
           "name": "M60"
+        },
+        {
+          "slug": "ix",
+          "name": "iX"
         }
       ],
       "modelYears": [
@@ -36284,12 +36469,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -36312,6 +36500,10 @@
         {
           "slug": "xdrive30",
           "name": "xDrive30"
+        },
+        {
+          "slug": "ix1",
+          "name": "iX1"
         }
       ],
       "modelYears": [
@@ -36322,12 +36514,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -36350,6 +36545,10 @@
         {
           "slug": "xdrive30",
           "name": "xDrive30"
+        },
+        {
+          "slug": "ix2",
+          "name": "iX2"
         }
       ],
       "modelYears": [
@@ -36360,12 +36559,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -36388,6 +36590,10 @@
         {
           "slug": "impressive",
           "name": "Impressive"
+        },
+        {
+          "slug": "ix3",
+          "name": "iX3"
         }
       ],
       "modelYears": [
@@ -36398,12 +36604,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -36656,6 +36865,10 @@
         {
           "slug": "design",
           "name": "Design"
+        },
+        {
+          "slug": "atto-3",
+          "name": "Atto 3"
         }
       ],
       "modelYears": [
@@ -36666,12 +36879,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -36702,6 +36918,10 @@
         {
           "slug": "dm-i-excellence",
           "name": "DM-i Excellence"
+        },
+        {
+          "slug": "seal-u",
+          "name": "Seal U"
         }
       ],
       "modelYears": [
@@ -36712,12 +36932,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -36736,6 +36959,10 @@
         {
           "slug": "flagship",
           "name": "Flagship"
+        },
+        {
+          "slug": "tang",
+          "name": "Tang"
         }
       ],
       "modelYears": [
@@ -36746,12 +36973,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -37428,6 +37658,10 @@
         {
           "slug": "vz",
           "name": "VZ"
+        },
+        {
+          "slug": "tavascan",
+          "name": "Tavascan"
         }
       ],
       "modelYears": [
@@ -37438,12 +37672,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -39164,6 +39401,18 @@
         {
           "slug": "awd",
           "name": "AWD"
+        },
+        {
+          "slug": "se",
+          "name": "SE"
+        },
+        {
+          "slug": "sel",
+          "name": "SEL"
+        },
+        {
+          "slug": "limited",
+          "name": "Limited"
         }
       ],
       "modelYears": [
@@ -39174,12 +39423,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -39864,6 +40116,10 @@
         {
           "slug": "ev400-hse",
           "name": "EV400 HSE"
+        },
+        {
+          "slug": "i-pace",
+          "name": "I-Pace"
         }
       ],
       "modelYears": [
@@ -39874,12 +40130,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -40296,6 +40555,10 @@
         {
           "slug": "prestige",
           "name": "Prestige"
+        },
+        {
+          "slug": "ev3",
+          "name": "EV3"
         }
       ],
       "modelYears": [
@@ -40306,12 +40569,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -40334,6 +40600,18 @@
         {
           "slug": "gt",
           "name": "GT"
+        },
+        {
+          "slug": "light",
+          "name": "Light"
+        },
+        {
+          "slug": "air",
+          "name": "Air"
+        },
+        {
+          "slug": "gt-line",
+          "name": "GT-Line"
         }
       ],
       "modelYears": [
@@ -40344,12 +40622,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -40368,6 +40649,10 @@
         {
           "slug": "gt-line",
           "name": "GT-Line"
+        },
+        {
+          "slug": "ev9",
+          "name": "EV9"
         }
       ],
       "modelYears": [
@@ -40378,12 +40663,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -41680,6 +41968,10 @@
         {
           "slug": "eqa-350-4matic",
           "name": "EQA 350 4MATIC"
+        },
+        {
+          "slug": "eqa",
+          "name": "EQA"
         }
       ],
       "modelYears": [
@@ -41690,12 +41982,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -41718,6 +42013,10 @@
         {
           "slug": "eqb-350-4matic",
           "name": "EQB 350 4MATIC"
+        },
+        {
+          "slug": "eqb",
+          "name": "EQB"
         }
       ],
       "modelYears": [
@@ -41728,12 +42027,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -41752,6 +42054,10 @@
         {
           "slug": "eqc-400-4matic",
           "name": "EQC 400 4MATIC"
+        },
+        {
+          "slug": "eqc",
+          "name": "EQC"
         }
       ],
       "modelYears": [
@@ -41762,12 +42068,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -41794,6 +42103,10 @@
         {
           "slug": "amg-eqe-53",
           "name": "AMG EQE 53"
+        },
+        {
+          "slug": "eqe-suv",
+          "name": "EQE SUV"
         }
       ],
       "modelYears": [
@@ -41804,12 +42117,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -41832,6 +42148,10 @@
         {
           "slug": "eqs-580-4matic",
           "name": "EQS 580 4MATIC"
+        },
+        {
+          "slug": "eqs-suv",
+          "name": "EQS SUV"
         }
       ],
       "modelYears": [
@@ -41842,12 +42162,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -42160,6 +42483,10 @@
         {
           "slug": "performance",
           "name": "Performance"
+        },
+        {
+          "slug": "marvel-r",
+          "name": "Marvel R"
         }
       ],
       "modelYears": [
@@ -42170,12 +42497,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -42198,6 +42528,10 @@
         {
           "slug": "se",
           "name": "SE"
+        },
+        {
+          "slug": "aceman",
+          "name": "Aceman"
         }
       ],
       "modelYears": [
@@ -42208,12 +42542,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -42308,6 +42645,10 @@
         {
           "slug": "evolve",
           "name": "Evolve"
+        },
+        {
+          "slug": "ariya",
+          "name": "Ariya"
         }
       ],
       "modelYears": [
@@ -42318,12 +42659,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -42978,12 +43322,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -43146,6 +43493,10 @@
         {
           "slug": "premium",
           "name": "Premium"
+        },
+        {
+          "slug": "seres-3",
+          "name": "Seres 3"
         }
       ],
       "modelYears": [
@@ -43156,12 +43507,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -43180,6 +43534,10 @@
         {
           "slug": "premium",
           "name": "Premium"
+        },
+        {
+          "slug": "seres-5",
+          "name": "Seres 5"
         }
       ],
       "modelYears": [
@@ -43190,12 +43548,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -43222,6 +43583,10 @@
         {
           "slug": "85",
           "name": "85"
+        },
+        {
+          "slug": "elroq",
+          "name": "Elroq"
         }
       ],
       "modelYears": [
@@ -43232,12 +43597,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -43268,6 +43636,10 @@
         {
           "slug": "coupe-rs",
           "name": "Coupe RS"
+        },
+        {
+          "slug": "enyaq",
+          "name": "Enyaq"
         }
       ],
       "modelYears": [
@@ -43278,12 +43650,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -43344,6 +43719,10 @@
         {
           "slug": "lr-legend",
           "name": "LR Legend"
+        },
+        {
+          "slug": "et5",
+          "name": "ET5"
         }
       ],
       "modelYears": [
@@ -43354,12 +43733,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -43412,6 +43794,10 @@
         {
           "slug": "e-xtreme",
           "name": "e-Xtreme"
+        },
+        {
+          "slug": "solterra",
+          "name": "Solterra"
         }
       ],
       "modelYears": [
@@ -43422,12 +43808,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -43880,12 +44269,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -43908,6 +44300,10 @@
         {
           "slug": "gtx",
           "name": "GTX"
+        },
+        {
+          "slug": "id-5",
+          "name": "ID.5"
         }
       ],
       "modelYears": [
@@ -43918,12 +44314,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -44022,6 +44421,10 @@
         {
           "slug": "twin-motor",
           "name": "Twin Motor"
+        },
+        {
+          "slug": "c40-recharge",
+          "name": "C40 Recharge"
         }
       ],
       "modelYears": [
@@ -44032,12 +44435,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -44060,6 +44466,10 @@
         {
           "slug": "twin-motor-performance",
           "name": "Twin Motor Performance"
+        },
+        {
+          "slug": "ex30",
+          "name": "EX30"
         }
       ],
       "modelYears": [
@@ -44070,12 +44480,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -44104,12 +44517,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -44138,12 +44554,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -44242,6 +44661,10 @@
         {
           "slug": "long-range",
           "name": "Long Range"
+        },
+        {
+          "slug": "free",
+          "name": "Free"
         }
       ],
       "modelYears": [
@@ -44252,12 +44675,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "vasita-file-import-2026.08",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -44320,12 +44746,15 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "fuelTypes": [],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
       "transmissions": [],
       "bodyTypes": [],
-      "source": "electric-canonical-promote",
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true
@@ -79332,6 +79761,3678 @@
       "transmissions": [],
       "bodyTypes": [],
       "source": "vasita-file-import-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "daewoo",
+      "brandName": "Daewoo",
+      "modelSlug": "musso",
+      "modelName": "Musso",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "musso",
+          "name": "Musso"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "empty-brand-fill-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "daewoo",
+      "brandName": "Daewoo",
+      "modelSlug": "korando",
+      "modelName": "Korando",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "korando",
+          "name": "Korando"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "empty-brand-fill-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "santana",
+      "brandName": "Santana",
+      "modelSlug": "anibal",
+      "modelName": "Anibal",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "anibal",
+          "name": "Anibal"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "empty-brand-fill-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "santana",
+      "brandName": "Santana",
+      "modelSlug": "ps-10",
+      "modelName": "PS-10",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "ps-10",
+          "name": "PS-10"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "empty-brand-fill-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "aeon",
+      "brandName": "Aeon",
+      "modelSlug": "cobra-320",
+      "modelName": "Cobra 320",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "cobra-320",
+          "name": "Cobra 320"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "empty-brand-fill-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "aeon",
+      "brandName": "Aeon",
+      "modelSlug": "3d-350",
+      "modelName": "3D 350",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "3d-350",
+          "name": "3D 350"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "empty-brand-fill-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "aeon",
+      "brandName": "Aeon",
+      "modelSlug": "elite-350i",
+      "modelName": "Elite 350i",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "elite-350i",
+          "name": "Elite 350i"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "empty-brand-fill-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "bsa",
+      "brandName": "BSA",
+      "modelSlug": "gold-star-650",
+      "modelName": "Gold Star 650",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "gold-star-650",
+          "name": "Gold Star 650"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "empty-brand-fill-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "dayun",
+      "brandName": "Dayun",
+      "modelSlug": "dy125",
+      "modelName": "DY125",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "dy125",
+          "name": "DY125"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "empty-brand-fill-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "dayun",
+      "brandName": "Dayun",
+      "modelSlug": "dy150",
+      "modelName": "DY150",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "dy150",
+          "name": "DY150"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "empty-brand-fill-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "italjet",
+      "brandName": "Italjet",
+      "modelSlug": "dragster-125",
+      "modelName": "Dragster 125",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "dragster-125",
+          "name": "Dragster 125"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "empty-brand-fill-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "italjet",
+      "brandName": "Italjet",
+      "modelSlug": "dragster-200",
+      "modelName": "Dragster 200",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "dragster-200",
+          "name": "Dragster 200"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "empty-brand-fill-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "jawa",
+      "brandName": "Jawa",
+      "modelSlug": "42",
+      "modelName": "42",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "42",
+          "name": "42"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "empty-brand-fill-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "jawa",
+      "brandName": "Jawa",
+      "modelSlug": "42-bobber",
+      "modelName": "42 Bobber",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "42-bobber",
+          "name": "42 Bobber"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "empty-brand-fill-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "jawa",
+      "brandName": "Jawa",
+      "modelSlug": "350",
+      "modelName": "350",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "350",
+          "name": "350"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "empty-brand-fill-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "jialing",
+      "brandName": "Jialing",
+      "modelSlug": "jh125",
+      "modelName": "JH125",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "jh125",
+          "name": "JH125"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "empty-brand-fill-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "jialing",
+      "brandName": "Jialing",
+      "modelSlug": "jh150",
+      "modelName": "JH150",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "jh150",
+          "name": "JH150"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "empty-brand-fill-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "mash",
+      "brandName": "Mash",
+      "modelSlug": "seventy-five-125",
+      "modelName": "Seventy Five 125",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "seventy-five-125",
+          "name": "Seventy Five 125"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "empty-brand-fill-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "mash",
+      "brandName": "Mash",
+      "modelSlug": "cafe-racer-125",
+      "modelName": "Cafe Racer 125",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "cafe-racer-125",
+          "name": "Cafe Racer 125"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "empty-brand-fill-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "mash",
+      "brandName": "Mash",
+      "modelSlug": "dirt-track-650",
+      "modelName": "Dirt Track 650",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "dirt-track-650",
+          "name": "Dirt Track 650"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "empty-brand-fill-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "motron",
+      "brandName": "Motron",
+      "modelSlug": "arena-50",
+      "modelName": "Arena 50",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "arena-50",
+          "name": "Arena 50"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "empty-brand-fill-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "motron",
+      "brandName": "Motron",
+      "modelSlug": "contender-125",
+      "modelName": "Contender 125",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "contender-125",
+          "name": "Contender 125"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "empty-brand-fill-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "motron",
+      "brandName": "Motron",
+      "modelSlug": "x-force-125",
+      "modelName": "X-Force 125",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "x-force-125",
+          "name": "X-Force 125"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "empty-brand-fill-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "mz",
+      "brandName": "MZ",
+      "modelSlug": "rt-125",
+      "modelName": "RT 125",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "rt-125",
+          "name": "RT 125"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "empty-brand-fill-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "mz",
+      "brandName": "MZ",
+      "modelSlug": "1000-s",
+      "modelName": "1000 S",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "1000-s",
+          "name": "1000 S"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "empty-brand-fill-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/minivan-panelvan"
+      ],
+      "brandSlug": "iveco",
+      "brandName": "Iveco",
+      "modelSlug": "daily",
+      "modelName": "Daily",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "daily",
+          "name": "Daily"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "manual-review-final-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/minivan-panelvan"
+      ],
+      "brandSlug": "volkswagen",
+      "brandName": "Volkswagen",
+      "modelSlug": "crafter",
+      "modelName": "Crafter",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "crafter",
+          "name": "Crafter"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "manual-review-final-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/ticari-araclar"
+      ],
+      "brandSlug": "volkswagen",
+      "brandName": "Volkswagen",
+      "modelSlug": "crafter",
+      "modelName": "Crafter",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "crafter",
+          "name": "Crafter"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "manual-review-final-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "aion",
+      "brandName": "Aion",
+      "modelSlug": "y-plus",
+      "modelName": "Y Plus",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "y-plus",
+          "name": "Y Plus"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "audi",
+      "brandName": "Audi",
+      "modelSlug": "a6-e-tron",
+      "modelName": "A6 e-tron",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "sportback",
+          "name": "Sportback"
+        },
+        {
+          "slug": "avant",
+          "name": "Avant"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "bmw",
+      "brandName": "BMW",
+      "modelSlug": "i3",
+      "modelName": "i3",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "i3",
+          "name": "i3"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "bmw",
+      "brandName": "BMW",
+      "modelSlug": "i4",
+      "modelName": "i4",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "e-drive35",
+          "name": "eDrive35"
+        },
+        {
+          "slug": "e-drive40",
+          "name": "eDrive40"
+        },
+        {
+          "slug": "m50",
+          "name": "M50"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "bmw",
+      "brandName": "BMW",
+      "modelSlug": "i5",
+      "modelName": "i5",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "i5",
+          "name": "i5"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "bmw",
+      "brandName": "BMW",
+      "modelSlug": "i7",
+      "modelName": "i7",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "i7",
+          "name": "i7"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "citroen",
+      "brandName": "Citroen",
+      "modelSlug": "ami",
+      "modelName": "Ami",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "ami",
+          "name": "Ami"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/minivan-panelvan"
+      ],
+      "brandSlug": "citroen",
+      "brandName": "Citroen",
+      "modelSlug": "e-berlingo",
+      "modelName": "e-Berlingo",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "e-berlingo",
+          "name": "e-Berlingo"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "citroen",
+      "brandName": "Citroen",
+      "modelSlug": "e-c3",
+      "modelName": "e-C3",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "e-c3",
+          "name": "e-C3"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "citroen",
+      "brandName": "Citroen",
+      "modelSlug": "e-c4",
+      "modelName": "e-C4",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "e-c4",
+          "name": "e-C4"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "citroen",
+      "brandName": "Citroen",
+      "modelSlug": "e-c4-x",
+      "modelName": "e-C4 X",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "e-c4-x",
+          "name": "e-C4 X"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "ds-automobiles",
+      "brandName": "DS Automobiles",
+      "modelSlug": "ds-3-e-tense",
+      "modelName": "DS 3 E-Tense",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "ds-3-e-tense",
+          "name": "DS 3 E-Tense"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "ds-automobiles",
+      "brandName": "DS Automobiles",
+      "modelSlug": "ds-4-e-tense",
+      "modelName": "DS 4 E-Tense",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "ds-4-e-tense",
+          "name": "DS 4 E-Tense"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "fiat",
+      "brandName": "Fiat",
+      "modelSlug": "500e",
+      "modelName": "500e",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "red",
+          "name": "RED"
+        },
+        {
+          "slug": "la-prima",
+          "name": "La Prima"
+        },
+        {
+          "slug": "icon",
+          "name": "Icon"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "fiat",
+      "brandName": "Fiat",
+      "modelSlug": "600e",
+      "modelName": "600e",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "600e",
+          "name": "600e"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/minivan-panelvan"
+      ],
+      "brandSlug": "fiat",
+      "brandName": "Fiat",
+      "modelSlug": "e-doblo",
+      "modelName": "E-Doblo",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "e-doblo",
+          "name": "E-Doblo"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/ticari-araclar"
+      ],
+      "brandSlug": "fiat",
+      "brandName": "Fiat",
+      "modelSlug": "e-ducato",
+      "modelName": "E-Ducato",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "e-ducato",
+          "name": "E-Ducato"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "fiat",
+      "brandName": "Fiat",
+      "modelSlug": "topolino",
+      "modelName": "Topolino",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "topolino",
+          "name": "Topolino"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "ford",
+      "brandName": "Ford",
+      "modelSlug": "capri-ev",
+      "modelName": "Capri EV",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "capri-ev",
+          "name": "Capri EV"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/ticari-araclar"
+      ],
+      "brandSlug": "ford",
+      "brandName": "Ford",
+      "modelSlug": "e-transit",
+      "modelName": "E-Transit",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "e-transit",
+          "name": "E-Transit"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/minivan-panelvan"
+      ],
+      "brandSlug": "ford",
+      "brandName": "Ford",
+      "modelSlug": "e-transit-courier",
+      "modelName": "E-Transit Courier",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "e-transit-courier",
+          "name": "E-Transit Courier"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "ford",
+      "brandName": "Ford",
+      "modelSlug": "explorer-ev",
+      "modelName": "Explorer EV",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "explorer-ev",
+          "name": "Explorer EV"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "ford",
+      "brandName": "Ford",
+      "modelSlug": "mustang-mach-e",
+      "modelName": "Mustang Mach-E",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "select",
+          "name": "Select"
+        },
+        {
+          "slug": "premium",
+          "name": "Premium"
+        },
+        {
+          "slug": "gt",
+          "name": "GT"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "honda",
+      "brandName": "Honda",
+      "modelSlug": "e-ny1",
+      "modelName": "e:Ny1",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "e-ny1",
+          "name": "e:Ny1"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "honda",
+      "brandName": "Honda",
+      "modelSlug": "honda-e",
+      "modelName": "Honda e",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "honda-e",
+          "name": "Honda e"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "hyundai",
+      "brandName": "Hyundai",
+      "modelSlug": "inster",
+      "modelName": "Inster",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "inster",
+          "name": "Inster"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "hyundai",
+      "brandName": "Hyundai",
+      "modelSlug": "ioniq-6",
+      "modelName": "Ioniq 6",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "ioniq-6",
+          "name": "Ioniq 6"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "hyundai",
+      "brandName": "Hyundai",
+      "modelSlug": "kona-electric",
+      "modelName": "Kona Electric",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "kona-electric",
+          "name": "Kona Electric"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "jeep",
+      "brandName": "Jeep",
+      "modelSlug": "avenger-electric",
+      "modelName": "Avenger Electric",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "avenger-electric",
+          "name": "Avenger Electric"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "kia",
+      "brandName": "Kia",
+      "modelSlug": "ev5",
+      "modelName": "EV5",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "ev5",
+          "name": "EV5"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "kia",
+      "brandName": "Kia",
+      "modelSlug": "niro-ev",
+      "modelName": "Niro EV",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "niro-ev",
+          "name": "Niro EV"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "leapmotor",
+      "brandName": "Leapmotor",
+      "modelSlug": "c10",
+      "modelName": "C10",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "c10",
+          "name": "C10"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "leapmotor",
+      "brandName": "Leapmotor",
+      "modelSlug": "c11",
+      "modelName": "C11",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "c11",
+          "name": "C11"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "lexus",
+      "brandName": "Lexus",
+      "modelSlug": "rz",
+      "modelName": "RZ",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "rz",
+          "name": "RZ"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "lexus",
+      "brandName": "Lexus",
+      "modelSlug": "ux-300e",
+      "modelName": "UX 300e",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "ux-300e",
+          "name": "UX 300e"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "mercedes-benz",
+      "brandName": "Mercedes-Benz",
+      "modelSlug": "g-580-eq",
+      "modelName": "G 580 EQ",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "g-580-eq",
+          "name": "G 580 EQ"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "mg",
+      "brandName": "MG",
+      "modelSlug": "mg5-electric",
+      "modelName": "MG5 Electric",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "mg5-electric",
+          "name": "MG5 Electric"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "mg",
+      "brandName": "MG",
+      "modelSlug": "zs-ev",
+      "modelName": "ZS EV",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "zs-ev",
+          "name": "ZS EV"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "mini",
+      "brandName": "Mini",
+      "modelSlug": "cooper-electric",
+      "modelName": "Cooper Electric",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "cooper-electric",
+          "name": "Cooper Electric"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "mini",
+      "brandName": "Mini",
+      "modelSlug": "countryman-electric",
+      "modelName": "Countryman Electric",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "countryman-electric",
+          "name": "Countryman Electric"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/minivan-panelvan"
+      ],
+      "brandSlug": "nissan",
+      "brandName": "Nissan",
+      "modelSlug": "townstar-ev",
+      "modelName": "Townstar EV",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "townstar-ev",
+          "name": "Townstar EV"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "opel",
+      "brandName": "Opel",
+      "modelSlug": "astra-electric",
+      "modelName": "Astra Electric",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "astra-electric",
+          "name": "Astra Electric"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/minivan-panelvan"
+      ],
+      "brandSlug": "opel",
+      "brandName": "Opel",
+      "modelSlug": "combo-electric",
+      "modelName": "Combo Electric",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "combo-electric",
+          "name": "Combo Electric"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "opel",
+      "brandName": "Opel",
+      "modelSlug": "corsa-electric",
+      "modelName": "Corsa Electric",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "corsa-electric",
+          "name": "Corsa Electric"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "opel",
+      "brandName": "Opel",
+      "modelSlug": "frontera-electric",
+      "modelName": "Frontera Electric",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "frontera-electric",
+          "name": "Frontera Electric"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "opel",
+      "brandName": "Opel",
+      "modelSlug": "mokka-electric",
+      "modelName": "Mokka Electric",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "mokka-electric",
+          "name": "Mokka Electric"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/minivan-panelvan"
+      ],
+      "brandSlug": "opel",
+      "brandName": "Opel",
+      "modelSlug": "vivaro-electric",
+      "modelName": "Vivaro Electric",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "vivaro-electric",
+          "name": "Vivaro Electric"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "peugeot",
+      "brandName": "Peugeot",
+      "modelSlug": "e-2008",
+      "modelName": "e-2008",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "e-2008",
+          "name": "e-2008"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "peugeot",
+      "brandName": "Peugeot",
+      "modelSlug": "e-208",
+      "modelName": "e-208",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "e-208",
+          "name": "e-208"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "peugeot",
+      "brandName": "Peugeot",
+      "modelSlug": "e-3008",
+      "modelName": "e-3008",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "e-3008",
+          "name": "e-3008"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "peugeot",
+      "brandName": "Peugeot",
+      "modelSlug": "e-5008",
+      "modelName": "e-5008",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "e-5008",
+          "name": "e-5008"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/minivan-panelvan"
+      ],
+      "brandSlug": "peugeot",
+      "brandName": "Peugeot",
+      "modelSlug": "e-expert",
+      "modelName": "e-Expert",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "e-expert",
+          "name": "e-Expert"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/minivan-panelvan"
+      ],
+      "brandSlug": "peugeot",
+      "brandName": "Peugeot",
+      "modelSlug": "e-partner",
+      "modelName": "e-Partner",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "e-partner",
+          "name": "e-Partner"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/minivan-panelvan"
+      ],
+      "brandSlug": "peugeot",
+      "brandName": "Peugeot",
+      "modelSlug": "e-rifter",
+      "modelName": "e-Rifter",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "e-rifter",
+          "name": "e-Rifter"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "polestar",
+      "brandName": "Polestar",
+      "modelSlug": "3",
+      "modelName": "3",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "3",
+          "name": "3"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "polestar",
+      "brandName": "Polestar",
+      "modelSlug": "4",
+      "modelName": "4",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "4",
+          "name": "4"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "porsche",
+      "brandName": "Porsche",
+      "modelSlug": "macan-electric",
+      "modelName": "Macan Electric",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "macan-electric",
+          "name": "Macan Electric"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/minivan-panelvan"
+      ],
+      "brandSlug": "renault",
+      "brandName": "Renault",
+      "modelSlug": "kangoo-e-tech",
+      "modelName": "Kangoo E-Tech",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "kangoo-e-tech",
+          "name": "Kangoo E-Tech"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/ticari-araclar"
+      ],
+      "brandSlug": "renault",
+      "brandName": "Renault",
+      "modelSlug": "master-e-tech",
+      "modelName": "Master E-Tech",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "master-e-tech",
+          "name": "Master E-Tech"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "renault",
+      "brandName": "Renault",
+      "modelSlug": "megane-e-tech",
+      "modelName": "Megane E-Tech",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "megane-e-tech",
+          "name": "Megane E-Tech"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "skoda",
+      "brandName": "Skoda",
+      "modelSlug": "citigo-e",
+      "modelName": "Citigo-e",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "citigo-e",
+          "name": "Citigo-e"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "skywell",
+      "brandName": "Skywell",
+      "modelSlug": "ht-i",
+      "modelName": "HT-i",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "ht-i",
+          "name": "HT-i"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "smart",
+      "brandName": "Smart",
+      "modelSlug": "1",
+      "modelName": "#1",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "1",
+          "name": "#1"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "smart",
+      "brandName": "Smart",
+      "modelSlug": "3",
+      "modelName": "#3",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "3",
+          "name": "#3"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "tesla",
+      "brandName": "Tesla",
+      "modelSlug": "model-x",
+      "modelName": "Model X",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "model-x",
+          "name": "Model X"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "toyota",
+      "brandName": "Toyota",
+      "modelSlug": "bz4x",
+      "modelName": "bZ4X",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "bz4x",
+          "name": "bZ4X"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/minivan-panelvan"
+      ],
+      "brandSlug": "toyota",
+      "brandName": "Toyota",
+      "modelSlug": "proace-city-electric",
+      "modelName": "Proace City Electric",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "proace-city-electric",
+          "name": "Proace City Electric"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/minivan-panelvan"
+      ],
+      "brandSlug": "toyota",
+      "brandName": "Toyota",
+      "modelSlug": "proace-electric",
+      "modelName": "Proace Electric",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "proace-electric",
+          "name": "Proace Electric"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/minivan-panelvan"
+      ],
+      "brandSlug": "volkswagen",
+      "brandName": "Volkswagen",
+      "modelSlug": "id-buzz",
+      "modelName": "ID. Buzz",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "id-buzz",
+          "name": "ID. Buzz"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "volkswagen",
+      "brandName": "Volkswagen",
+      "modelSlug": "id-7",
+      "modelName": "ID.7",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "id-7",
+          "name": "ID.7"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/minivan-panelvan"
+      ],
+      "brandSlug": "voyah",
+      "brandName": "Voyah",
+      "modelSlug": "dream",
+      "modelName": "Dream",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "dream",
+          "name": "Dream"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "voyah",
+      "brandName": "Voyah",
+      "modelSlug": "passion",
+      "modelName": "Passion",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "passion",
+          "name": "Passion"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "electric-canonical-2026.08",
       "verified": true,
       "market": "TR",
       "active": true

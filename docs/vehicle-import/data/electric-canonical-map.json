@@ -1,0 +1,2688 @@
+{
+  "version": "2026.08-complete-v1",
+  "vehicleTypes": [
+    {
+      "slug": "elektrikli-otomobil",
+      "name": "Elektrikli Otomobil",
+      "canonicalCategoryPath": "arac/otomobil"
+    },
+    {
+      "slug": "elektrikli-suv-pickup",
+      "name": "Elektrikli SUV & Pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup"
+    },
+    {
+      "slug": "elektrikli-minivan-panelvan",
+      "name": "Elektrikli Minivan & Panelvan",
+      "canonicalCategoryPath": "arac/minivan-panelvan"
+    },
+    {
+      "slug": "elektrikli-ticari",
+      "name": "Elektrikli Ticari Araç",
+      "canonicalCategoryPath": "arac/ticari-araclar"
+    },
+    {
+      "slug": "elektrikli-motosiklet",
+      "name": "Elektrikli Motosiklet",
+      "canonicalCategoryPath": "arac/motosiklet"
+    },
+    {
+      "slug": "elektrikli-atv",
+      "name": "Elektrikli ATV",
+      "canonicalCategoryPath": "arac/atv"
+    },
+    {
+      "slug": "elektrikli-utv",
+      "name": "Elektrikli UTV",
+      "canonicalCategoryPath": "arac/utv"
+    }
+  ],
+  "entries": [
+    {
+      "brandName": "Aion",
+      "brandSlug": "aion",
+      "seriesName": "ES",
+      "seriesSlug": "es",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "es",
+          "name": "ES"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "medium"
+    },
+    {
+      "brandName": "Aion",
+      "brandSlug": "aion",
+      "seriesName": "Hyper GT",
+      "seriesSlug": "hyper-gt",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "hyper-gt",
+          "name": "Hyper GT"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "medium"
+    },
+    {
+      "brandName": "Aion",
+      "brandSlug": "aion",
+      "seriesName": "S",
+      "seriesSlug": "s",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "s",
+          "name": "S"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "medium"
+    },
+    {
+      "brandName": "Aion",
+      "brandSlug": "aion",
+      "seriesName": "Y Plus",
+      "seriesSlug": "y-plus",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "y-plus",
+          "name": "Y Plus"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "medium"
+    },
+    {
+      "brandName": "Audi",
+      "brandSlug": "audi",
+      "seriesName": "A6 e-tron",
+      "seriesSlug": "a6-e-tron",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "sportback",
+          "name": "Sportback"
+        },
+        {
+          "slug": "avant",
+          "name": "Avant"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Audi",
+      "brandSlug": "audi",
+      "seriesName": "e-tron GT",
+      "seriesSlug": "e-tron-gt",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "e-tron-gt",
+          "name": "e-tron GT"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Audi",
+      "brandSlug": "audi",
+      "seriesName": "Q4 e-tron",
+      "seriesSlug": "q4-e-tron",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "q4-e-tron",
+          "name": "Q4 e-tron"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Audi",
+      "brandSlug": "audi",
+      "seriesName": "Q6 e-tron",
+      "seriesSlug": "q6-e-tron",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "q6-e-tron",
+          "name": "Q6 e-tron"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Audi",
+      "brandSlug": "audi",
+      "seriesName": "Q8 e-tron",
+      "seriesSlug": "q8-e-tron",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "q8-e-tron",
+          "name": "Q8 e-tron"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "BMW",
+      "brandSlug": "bmw",
+      "seriesName": "i3",
+      "seriesSlug": "i3",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "i3",
+          "name": "i3"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "BMW",
+      "brandSlug": "bmw",
+      "seriesName": "i4",
+      "seriesSlug": "i4",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "e-drive35",
+          "name": "eDrive35"
+        },
+        {
+          "slug": "e-drive40",
+          "name": "eDrive40"
+        },
+        {
+          "slug": "m50",
+          "name": "M50"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "BMW",
+      "brandSlug": "bmw",
+      "seriesName": "i5",
+      "seriesSlug": "i5",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "i5",
+          "name": "i5"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "BMW",
+      "brandSlug": "bmw",
+      "seriesName": "i7",
+      "seriesSlug": "i7",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "i7",
+          "name": "i7"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "BMW",
+      "brandSlug": "bmw",
+      "seriesName": "iX",
+      "seriesSlug": "ix",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "ix",
+          "name": "iX"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "BMW",
+      "brandSlug": "bmw",
+      "seriesName": "iX1",
+      "seriesSlug": "ix1",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "ix1",
+          "name": "iX1"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "BMW",
+      "brandSlug": "bmw",
+      "seriesName": "iX2",
+      "seriesSlug": "ix2",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "ix2",
+          "name": "iX2"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "BMW",
+      "brandSlug": "bmw",
+      "seriesName": "iX3",
+      "seriesSlug": "ix3",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "ix3",
+          "name": "iX3"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "BYD",
+      "brandSlug": "byd",
+      "seriesName": "Atto 3",
+      "seriesSlug": "atto-3",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "atto-3",
+          "name": "Atto 3"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "BYD",
+      "brandSlug": "byd",
+      "seriesName": "Dolphin",
+      "seriesSlug": "dolphin",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "dolphin",
+          "name": "Dolphin"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "BYD",
+      "brandSlug": "byd",
+      "seriesName": "Han",
+      "seriesSlug": "han",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "han",
+          "name": "Han"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "BYD",
+      "brandSlug": "byd",
+      "seriesName": "Seal",
+      "seriesSlug": "seal",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "seal",
+          "name": "Seal"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "BYD",
+      "brandSlug": "byd",
+      "seriesName": "Seal U",
+      "seriesSlug": "seal-u",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "seal-u",
+          "name": "Seal U"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "BYD",
+      "brandSlug": "byd",
+      "seriesName": "Tang",
+      "seriesSlug": "tang",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "tang",
+          "name": "Tang"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Citroen",
+      "brandSlug": "citroen",
+      "seriesName": "Ami",
+      "seriesSlug": "ami",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "ami",
+          "name": "Ami"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Citroen",
+      "brandSlug": "citroen",
+      "seriesName": "e-Berlingo",
+      "seriesSlug": "e-berlingo",
+      "electricVehicleType": "elektrikli-minivan-panelvan",
+      "canonicalCategoryPath": "arac/minivan-panelvan",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "e-berlingo",
+          "name": "e-Berlingo"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Citroen",
+      "brandSlug": "citroen",
+      "seriesName": "e-C3",
+      "seriesSlug": "e-c3",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "e-c3",
+          "name": "e-C3"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Citroen",
+      "brandSlug": "citroen",
+      "seriesName": "e-C4",
+      "seriesSlug": "e-c4",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "e-c4",
+          "name": "e-C4"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Citroen",
+      "brandSlug": "citroen",
+      "seriesName": "e-C4 X",
+      "seriesSlug": "e-c4-x",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "e-c4-x",
+          "name": "e-C4 X"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Cupra",
+      "brandSlug": "cupra",
+      "seriesName": "Born",
+      "seriesSlug": "born",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "born",
+          "name": "Born"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Cupra",
+      "brandSlug": "cupra",
+      "seriesName": "Tavascan",
+      "seriesSlug": "tavascan",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "tavascan",
+          "name": "Tavascan"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "DS Automobiles",
+      "brandSlug": "ds-automobiles",
+      "seriesName": "DS 3 E-Tense",
+      "seriesSlug": "ds-3-e-tense",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "ds-3-e-tense",
+          "name": "DS 3 E-Tense"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "DS Automobiles",
+      "brandSlug": "ds-automobiles",
+      "seriesName": "DS 4 E-Tense",
+      "seriesSlug": "ds-4-e-tense",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "ds-4-e-tense",
+          "name": "DS 4 E-Tense"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Fiat",
+      "brandSlug": "fiat",
+      "seriesName": "500e",
+      "seriesSlug": "500e",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "red",
+          "name": "RED"
+        },
+        {
+          "slug": "la-prima",
+          "name": "La Prima"
+        },
+        {
+          "slug": "icon",
+          "name": "Icon"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Fiat",
+      "brandSlug": "fiat",
+      "seriesName": "600e",
+      "seriesSlug": "600e",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "600e",
+          "name": "600e"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Fiat",
+      "brandSlug": "fiat",
+      "seriesName": "E-Doblo",
+      "seriesSlug": "e-doblo",
+      "electricVehicleType": "elektrikli-minivan-panelvan",
+      "canonicalCategoryPath": "arac/minivan-panelvan",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "e-doblo",
+          "name": "E-Doblo"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Fiat",
+      "brandSlug": "fiat",
+      "seriesName": "E-Ducato",
+      "seriesSlug": "e-ducato",
+      "electricVehicleType": "elektrikli-ticari",
+      "canonicalCategoryPath": "arac/ticari-araclar",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "e-ducato",
+          "name": "E-Ducato"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Fiat",
+      "brandSlug": "fiat",
+      "seriesName": "Topolino",
+      "seriesSlug": "topolino",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "topolino",
+          "name": "Topolino"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Ford",
+      "brandSlug": "ford",
+      "seriesName": "Capri EV",
+      "seriesSlug": "capri-ev",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "capri-ev",
+          "name": "Capri EV"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Ford",
+      "brandSlug": "ford",
+      "seriesName": "E-Transit",
+      "seriesSlug": "e-transit",
+      "electricVehicleType": "elektrikli-ticari",
+      "canonicalCategoryPath": "arac/ticari-araclar",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "e-transit",
+          "name": "E-Transit"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Ford",
+      "brandSlug": "ford",
+      "seriesName": "E-Transit Courier",
+      "seriesSlug": "e-transit-courier",
+      "electricVehicleType": "elektrikli-minivan-panelvan",
+      "canonicalCategoryPath": "arac/minivan-panelvan",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "e-transit-courier",
+          "name": "E-Transit Courier"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Ford",
+      "brandSlug": "ford",
+      "seriesName": "Explorer EV",
+      "seriesSlug": "explorer-ev",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "explorer-ev",
+          "name": "Explorer EV"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Ford",
+      "brandSlug": "ford",
+      "seriesName": "Mustang Mach-E",
+      "seriesSlug": "mustang-mach-e",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "select",
+          "name": "Select"
+        },
+        {
+          "slug": "premium",
+          "name": "Premium"
+        },
+        {
+          "slug": "gt",
+          "name": "GT"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Honda",
+      "brandSlug": "honda",
+      "seriesName": "e:Ny1",
+      "seriesSlug": "e-ny1",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "e-ny1",
+          "name": "e:Ny1"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Honda",
+      "brandSlug": "honda",
+      "seriesName": "Honda e",
+      "seriesSlug": "honda-e",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "honda-e",
+          "name": "Honda e"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Hyundai",
+      "brandSlug": "hyundai",
+      "seriesName": "Inster",
+      "seriesSlug": "inster",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "inster",
+          "name": "Inster"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Hyundai",
+      "brandSlug": "hyundai",
+      "seriesName": "Ioniq 5",
+      "seriesSlug": "ioniq-5",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "se",
+          "name": "SE"
+        },
+        {
+          "slug": "sel",
+          "name": "SEL"
+        },
+        {
+          "slug": "limited",
+          "name": "Limited"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Hyundai",
+      "brandSlug": "hyundai",
+      "seriesName": "Ioniq 6",
+      "seriesSlug": "ioniq-6",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "ioniq-6",
+          "name": "Ioniq 6"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Hyundai",
+      "brandSlug": "hyundai",
+      "seriesName": "Kona Electric",
+      "seriesSlug": "kona-electric",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "kona-electric",
+          "name": "Kona Electric"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Jaguar",
+      "brandSlug": "jaguar",
+      "seriesName": "I-Pace",
+      "seriesSlug": "i-pace",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "i-pace",
+          "name": "I-Pace"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Jeep",
+      "brandSlug": "jeep",
+      "seriesName": "Avenger Electric",
+      "seriesSlug": "avenger-electric",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "avenger-electric",
+          "name": "Avenger Electric"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Kia",
+      "brandSlug": "kia",
+      "seriesName": "EV3",
+      "seriesSlug": "ev3",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "ev3",
+          "name": "EV3"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Kia",
+      "brandSlug": "kia",
+      "seriesName": "EV5",
+      "seriesSlug": "ev5",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "ev5",
+          "name": "EV5"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Kia",
+      "brandSlug": "kia",
+      "seriesName": "EV6",
+      "seriesSlug": "ev6",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "light",
+          "name": "Light"
+        },
+        {
+          "slug": "air",
+          "name": "Air"
+        },
+        {
+          "slug": "gt-line",
+          "name": "GT-Line"
+        },
+        {
+          "slug": "gt",
+          "name": "GT"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Kia",
+      "brandSlug": "kia",
+      "seriesName": "EV9",
+      "seriesSlug": "ev9",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "ev9",
+          "name": "EV9"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Kia",
+      "brandSlug": "kia",
+      "seriesName": "Niro EV",
+      "seriesSlug": "niro-ev",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "niro-ev",
+          "name": "Niro EV"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Leapmotor",
+      "brandSlug": "leapmotor",
+      "seriesName": "C10",
+      "seriesSlug": "c10",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "c10",
+          "name": "C10"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "medium"
+    },
+    {
+      "brandName": "Leapmotor",
+      "brandSlug": "leapmotor",
+      "seriesName": "C11",
+      "seriesSlug": "c11",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "c11",
+          "name": "C11"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "medium"
+    },
+    {
+      "brandName": "Leapmotor",
+      "brandSlug": "leapmotor",
+      "seriesName": "T03",
+      "seriesSlug": "t03",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "t03",
+          "name": "T03"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "medium"
+    },
+    {
+      "brandName": "Lexus",
+      "brandSlug": "lexus",
+      "seriesName": "RZ",
+      "seriesSlug": "rz",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "rz",
+          "name": "RZ"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Lexus",
+      "brandSlug": "lexus",
+      "seriesName": "UX 300e",
+      "seriesSlug": "ux-300e",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "ux-300e",
+          "name": "UX 300e"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Mercedes-Benz",
+      "brandSlug": "mercedes-benz",
+      "seriesName": "EQA",
+      "seriesSlug": "eqa",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "eqa",
+          "name": "EQA"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Mercedes-Benz",
+      "brandSlug": "mercedes-benz",
+      "seriesName": "EQB",
+      "seriesSlug": "eqb",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "eqb",
+          "name": "EQB"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Mercedes-Benz",
+      "brandSlug": "mercedes-benz",
+      "seriesName": "EQC",
+      "seriesSlug": "eqc",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "eqc",
+          "name": "EQC"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Mercedes-Benz",
+      "brandSlug": "mercedes-benz",
+      "seriesName": "EQE",
+      "seriesSlug": "eqe",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "eqe",
+          "name": "EQE"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Mercedes-Benz",
+      "brandSlug": "mercedes-benz",
+      "seriesName": "EQE SUV",
+      "seriesSlug": "eqe-suv",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "eqe-suv",
+          "name": "EQE SUV"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Mercedes-Benz",
+      "brandSlug": "mercedes-benz",
+      "seriesName": "EQS",
+      "seriesSlug": "eqs",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "450-plus",
+          "name": "450+"
+        },
+        {
+          "slug": "580",
+          "name": "580"
+        },
+        {
+          "slug": "53-amg",
+          "name": "53 AMG"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Mercedes-Benz",
+      "brandSlug": "mercedes-benz",
+      "seriesName": "EQS SUV",
+      "seriesSlug": "eqs-suv",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "eqs-suv",
+          "name": "EQS SUV"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Mercedes-Benz",
+      "brandSlug": "mercedes-benz",
+      "seriesName": "G 580 EQ",
+      "seriesSlug": "g-580-eq",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "g-580-eq",
+          "name": "G 580 EQ"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "MG",
+      "brandSlug": "mg",
+      "seriesName": "Marvel R",
+      "seriesSlug": "marvel-r",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "marvel-r",
+          "name": "Marvel R"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "MG",
+      "brandSlug": "mg",
+      "seriesName": "MG4",
+      "seriesSlug": "mg4",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "mg4",
+          "name": "MG4"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "MG",
+      "brandSlug": "mg",
+      "seriesName": "MG5 Electric",
+      "seriesSlug": "mg5-electric",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "mg5-electric",
+          "name": "MG5 Electric"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "MG",
+      "brandSlug": "mg",
+      "seriesName": "ZS EV",
+      "seriesSlug": "zs-ev",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "zs-ev",
+          "name": "ZS EV"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Mini",
+      "brandSlug": "mini",
+      "seriesName": "Aceman",
+      "seriesSlug": "aceman",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "aceman",
+          "name": "Aceman"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Mini",
+      "brandSlug": "mini",
+      "seriesName": "Cooper Electric",
+      "seriesSlug": "cooper-electric",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "cooper-electric",
+          "name": "Cooper Electric"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Mini",
+      "brandSlug": "mini",
+      "seriesName": "Countryman Electric",
+      "seriesSlug": "countryman-electric",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "countryman-electric",
+          "name": "Countryman Electric"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Nissan",
+      "brandSlug": "nissan",
+      "seriesName": "Ariya",
+      "seriesSlug": "ariya",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "ariya",
+          "name": "Ariya"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Nissan",
+      "brandSlug": "nissan",
+      "seriesName": "Leaf",
+      "seriesSlug": "leaf",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "acenta",
+          "name": "Acenta"
+        },
+        {
+          "slug": "n-connecta",
+          "name": "N-Connecta"
+        },
+        {
+          "slug": "tekna",
+          "name": "Tekna"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Nissan",
+      "brandSlug": "nissan",
+      "seriesName": "Townstar EV",
+      "seriesSlug": "townstar-ev",
+      "electricVehicleType": "elektrikli-minivan-panelvan",
+      "canonicalCategoryPath": "arac/minivan-panelvan",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "townstar-ev",
+          "name": "Townstar EV"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Opel",
+      "brandSlug": "opel",
+      "seriesName": "Astra Electric",
+      "seriesSlug": "astra-electric",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "astra-electric",
+          "name": "Astra Electric"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Opel",
+      "brandSlug": "opel",
+      "seriesName": "Combo Electric",
+      "seriesSlug": "combo-electric",
+      "electricVehicleType": "elektrikli-minivan-panelvan",
+      "canonicalCategoryPath": "arac/minivan-panelvan",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "combo-electric",
+          "name": "Combo Electric"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Opel",
+      "brandSlug": "opel",
+      "seriesName": "Corsa Electric",
+      "seriesSlug": "corsa-electric",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "corsa-electric",
+          "name": "Corsa Electric"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Opel",
+      "brandSlug": "opel",
+      "seriesName": "Frontera Electric",
+      "seriesSlug": "frontera-electric",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "frontera-electric",
+          "name": "Frontera Electric"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Opel",
+      "brandSlug": "opel",
+      "seriesName": "Mokka Electric",
+      "seriesSlug": "mokka-electric",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "mokka-electric",
+          "name": "Mokka Electric"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Opel",
+      "brandSlug": "opel",
+      "seriesName": "Vivaro Electric",
+      "seriesSlug": "vivaro-electric",
+      "electricVehicleType": "elektrikli-minivan-panelvan",
+      "canonicalCategoryPath": "arac/minivan-panelvan",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "vivaro-electric",
+          "name": "Vivaro Electric"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Peugeot",
+      "brandSlug": "peugeot",
+      "seriesName": "e-2008",
+      "seriesSlug": "e-2008",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "e-2008",
+          "name": "e-2008"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Peugeot",
+      "brandSlug": "peugeot",
+      "seriesName": "e-208",
+      "seriesSlug": "e-208",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "e-208",
+          "name": "e-208"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Peugeot",
+      "brandSlug": "peugeot",
+      "seriesName": "e-3008",
+      "seriesSlug": "e-3008",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "e-3008",
+          "name": "e-3008"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Peugeot",
+      "brandSlug": "peugeot",
+      "seriesName": "e-5008",
+      "seriesSlug": "e-5008",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "e-5008",
+          "name": "e-5008"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Peugeot",
+      "brandSlug": "peugeot",
+      "seriesName": "e-Expert",
+      "seriesSlug": "e-expert",
+      "electricVehicleType": "elektrikli-minivan-panelvan",
+      "canonicalCategoryPath": "arac/minivan-panelvan",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "e-expert",
+          "name": "e-Expert"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Peugeot",
+      "brandSlug": "peugeot",
+      "seriesName": "e-Partner",
+      "seriesSlug": "e-partner",
+      "electricVehicleType": "elektrikli-minivan-panelvan",
+      "canonicalCategoryPath": "arac/minivan-panelvan",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "e-partner",
+          "name": "e-Partner"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Peugeot",
+      "brandSlug": "peugeot",
+      "seriesName": "e-Rifter",
+      "seriesSlug": "e-rifter",
+      "electricVehicleType": "elektrikli-minivan-panelvan",
+      "canonicalCategoryPath": "arac/minivan-panelvan",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "e-rifter",
+          "name": "e-Rifter"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Polestar",
+      "brandSlug": "polestar",
+      "seriesName": "2",
+      "seriesSlug": "2",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "2",
+          "name": "2"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Polestar",
+      "brandSlug": "polestar",
+      "seriesName": "3",
+      "seriesSlug": "3",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "3",
+          "name": "3"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Polestar",
+      "brandSlug": "polestar",
+      "seriesName": "4",
+      "seriesSlug": "4",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "4",
+          "name": "4"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Porsche",
+      "brandSlug": "porsche",
+      "seriesName": "Macan Electric",
+      "seriesSlug": "macan-electric",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "macan-electric",
+          "name": "Macan Electric"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Porsche",
+      "brandSlug": "porsche",
+      "seriesName": "Taycan",
+      "seriesSlug": "taycan",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "4s",
+          "name": "4S"
+        },
+        {
+          "slug": "turbo",
+          "name": "Turbo"
+        },
+        {
+          "slug": "turbo-s",
+          "name": "Turbo S"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Renault",
+      "brandSlug": "renault",
+      "seriesName": "Kangoo E-Tech",
+      "seriesSlug": "kangoo-e-tech",
+      "electricVehicleType": "elektrikli-minivan-panelvan",
+      "canonicalCategoryPath": "arac/minivan-panelvan",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "kangoo-e-tech",
+          "name": "Kangoo E-Tech"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Renault",
+      "brandSlug": "renault",
+      "seriesName": "Master E-Tech",
+      "seriesSlug": "master-e-tech",
+      "electricVehicleType": "elektrikli-ticari",
+      "canonicalCategoryPath": "arac/ticari-araclar",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "master-e-tech",
+          "name": "Master E-Tech"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Renault",
+      "brandSlug": "renault",
+      "seriesName": "Megane E-Tech",
+      "seriesSlug": "megane-e-tech",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "megane-e-tech",
+          "name": "Megane E-Tech"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Renault",
+      "brandSlug": "renault",
+      "seriesName": "Scenic E-Tech",
+      "seriesSlug": "scenic-e-tech",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "scenic-e-tech",
+          "name": "Scenic E-Tech"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Renault",
+      "brandSlug": "renault",
+      "seriesName": "Zoe",
+      "seriesSlug": "zoe",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "equilibre",
+          "name": "Equilibre"
+        },
+        {
+          "slug": "evolution",
+          "name": "Evolution"
+        },
+        {
+          "slug": "iconic",
+          "name": "Iconic"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Seres",
+      "brandSlug": "seres",
+      "seriesName": "Seres 3",
+      "seriesSlug": "seres-3",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "seres-3",
+          "name": "Seres 3"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "medium"
+    },
+    {
+      "brandName": "Seres",
+      "brandSlug": "seres",
+      "seriesName": "Seres 5",
+      "seriesSlug": "seres-5",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "seres-5",
+          "name": "Seres 5"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "medium"
+    },
+    {
+      "brandName": "Skoda",
+      "brandSlug": "skoda",
+      "seriesName": "Citigo-e",
+      "seriesSlug": "citigo-e",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "citigo-e",
+          "name": "Citigo-e"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Skoda",
+      "brandSlug": "skoda",
+      "seriesName": "Elroq",
+      "seriesSlug": "elroq",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "elroq",
+          "name": "Elroq"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Skoda",
+      "brandSlug": "skoda",
+      "seriesName": "Enyaq",
+      "seriesSlug": "enyaq",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "enyaq",
+          "name": "Enyaq"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Skywell",
+      "brandSlug": "skywell",
+      "seriesName": "ET5",
+      "seriesSlug": "et5",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "et5",
+          "name": "ET5"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "medium"
+    },
+    {
+      "brandName": "Skywell",
+      "brandSlug": "skywell",
+      "seriesName": "HT-i",
+      "seriesSlug": "ht-i",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "ht-i",
+          "name": "HT-i"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "medium"
+    },
+    {
+      "brandName": "Smart",
+      "brandSlug": "smart",
+      "seriesName": "#1",
+      "seriesSlug": "1",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "1",
+          "name": "#1"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Smart",
+      "brandSlug": "smart",
+      "seriesName": "#3",
+      "seriesSlug": "3",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "3",
+          "name": "#3"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Subaru",
+      "brandSlug": "subaru",
+      "seriesName": "Solterra",
+      "seriesSlug": "solterra",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "solterra",
+          "name": "Solterra"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Tesla",
+      "brandSlug": "tesla",
+      "seriesName": "Cybertruck",
+      "seriesSlug": "cybertruck",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "cybertruck",
+          "name": "Cybertruck"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Tesla",
+      "brandSlug": "tesla",
+      "seriesName": "Model 3",
+      "seriesSlug": "model-3",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "rwd",
+          "name": "RWD"
+        },
+        {
+          "slug": "long-range",
+          "name": "Long Range"
+        },
+        {
+          "slug": "performance",
+          "name": "Performance"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Tesla",
+      "brandSlug": "tesla",
+      "seriesName": "Model S",
+      "seriesSlug": "model-s",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "model-s",
+          "name": "Model S"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Tesla",
+      "brandSlug": "tesla",
+      "seriesName": "Model X",
+      "seriesSlug": "model-x",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "model-x",
+          "name": "Model X"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Tesla",
+      "brandSlug": "tesla",
+      "seriesName": "Model Y",
+      "seriesSlug": "model-y",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "rwd",
+          "name": "RWD"
+        },
+        {
+          "slug": "long-range",
+          "name": "Long Range"
+        },
+        {
+          "slug": "performance",
+          "name": "Performance"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "TOGG",
+      "brandSlug": "togg",
+      "seriesName": "T10F",
+      "seriesSlug": "t10f",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "t10f",
+          "name": "T10F"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "medium"
+    },
+    {
+      "brandName": "TOGG",
+      "brandSlug": "togg",
+      "seriesName": "T10X",
+      "seriesSlug": "t10x",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "t10x",
+          "name": "T10X"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "medium"
+    },
+    {
+      "brandName": "Toyota",
+      "brandSlug": "toyota",
+      "seriesName": "bZ4X",
+      "seriesSlug": "bz4x",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "bz4x",
+          "name": "bZ4X"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Toyota",
+      "brandSlug": "toyota",
+      "seriesName": "Proace City Electric",
+      "seriesSlug": "proace-city-electric",
+      "electricVehicleType": "elektrikli-minivan-panelvan",
+      "canonicalCategoryPath": "arac/minivan-panelvan",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "proace-city-electric",
+          "name": "Proace City Electric"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Toyota",
+      "brandSlug": "toyota",
+      "seriesName": "Proace Electric",
+      "seriesSlug": "proace-electric",
+      "electricVehicleType": "elektrikli-minivan-panelvan",
+      "canonicalCategoryPath": "arac/minivan-panelvan",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "proace-electric",
+          "name": "Proace Electric"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Volkswagen",
+      "brandSlug": "volkswagen",
+      "seriesName": "ID. Buzz",
+      "seriesSlug": "id-buzz",
+      "electricVehicleType": "elektrikli-minivan-panelvan",
+      "canonicalCategoryPath": "arac/minivan-panelvan",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "id-buzz",
+          "name": "ID. Buzz"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Volkswagen",
+      "brandSlug": "volkswagen",
+      "seriesName": "ID.3",
+      "seriesSlug": "id-3",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "id-3",
+          "name": "ID.3"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Volkswagen",
+      "brandSlug": "volkswagen",
+      "seriesName": "ID.4",
+      "seriesSlug": "id-4",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "pro",
+          "name": "Pro"
+        },
+        {
+          "slug": "gtx",
+          "name": "GTX"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Volkswagen",
+      "brandSlug": "volkswagen",
+      "seriesName": "ID.5",
+      "seriesSlug": "id-5",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "id-5",
+          "name": "ID.5"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Volkswagen",
+      "brandSlug": "volkswagen",
+      "seriesName": "ID.7",
+      "seriesSlug": "id-7",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "id-7",
+          "name": "ID.7"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Volvo",
+      "brandSlug": "volvo",
+      "seriesName": "C40 Recharge",
+      "seriesSlug": "c40-recharge",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "c40-recharge",
+          "name": "C40 Recharge"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Volvo",
+      "brandSlug": "volvo",
+      "seriesName": "EX30",
+      "seriesSlug": "ex30",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "ex30",
+          "name": "EX30"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Volvo",
+      "brandSlug": "volvo",
+      "seriesName": "EX40",
+      "seriesSlug": "ex40",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "ex40",
+          "name": "EX40"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Volvo",
+      "brandSlug": "volvo",
+      "seriesName": "EX90",
+      "seriesSlug": "ex90",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "ex90",
+          "name": "EX90"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "high"
+    },
+    {
+      "brandName": "Voyah",
+      "brandSlug": "voyah",
+      "seriesName": "Dream",
+      "seriesSlug": "dream",
+      "electricVehicleType": "elektrikli-minivan-panelvan",
+      "canonicalCategoryPath": "arac/minivan-panelvan",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "dream",
+          "name": "Dream"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "medium"
+    },
+    {
+      "brandName": "Voyah",
+      "brandSlug": "voyah",
+      "seriesName": "Free",
+      "seriesSlug": "free",
+      "electricVehicleType": "elektrikli-suv-pickup",
+      "canonicalCategoryPath": "arac/arazi-suv-pickup",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "free",
+          "name": "Free"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "medium"
+    },
+    {
+      "brandName": "Voyah",
+      "brandSlug": "voyah",
+      "seriesName": "Passion",
+      "seriesSlug": "passion",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "passion",
+          "name": "Passion"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "medium"
+    },
+    {
+      "brandName": "XEV",
+      "brandSlug": "xev",
+      "seriesName": "Yoyo",
+      "seriesSlug": "yoyo",
+      "electricVehicleType": "elektrikli-otomobil",
+      "canonicalCategoryPath": "arac/otomobil",
+      "fuelTypes": [
+        "ELECTRIC"
+      ],
+      "versions": [
+        {
+          "slug": "yoyo",
+          "name": "Yoyo"
+        }
+      ],
+      "source": "oem-public-nav",
+      "confidence": "medium"
+    }
+  ]
+}

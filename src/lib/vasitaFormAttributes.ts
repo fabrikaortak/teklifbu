@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { canonicalSubtypeForForms } from "@/lib/vasitaElectric";
 
 /**
  * Adapter between the DB-backed Vasıta attribute templates
@@ -92,7 +93,8 @@ export const SUBTYPE_TO_ATTRIBUTE_TEMPLATE: Record<string, string> = {
 };
 
 export function attributeTemplateForSubtype(subtype: string): string {
-  return SUBTYPE_TO_ATTRIBUTE_TEMPLATE[subtype] || "PASSENGER_CAR";
+  const canonical = canonicalSubtypeForForms(subtype);
+  return SUBTYPE_TO_ATTRIBUTE_TEMPLATE[canonical] || SUBTYPE_TO_ATTRIBUTE_TEMPLATE[subtype] || "PASSENGER_CAR";
 }
 
 export function legacyAttrKeyFor(fieldKey: string): string {
@@ -139,7 +141,7 @@ export function useVasitaFormAttributes(subtype: string | undefined | null) {
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
-    const s = (subtype || "").trim();
+    const s = canonicalSubtypeForForms((subtype || "").trim());
     if (!s) {
       setFields([]);
       setLoaded(false);

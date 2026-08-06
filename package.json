@@ -32,7 +32,10 @@
     "vehicle:catalog-validate": "tsx scripts/vehicle/validate-and-plan-catalog-import.ts",
     "vehicle:catalog-apply": "tsx scripts/vehicle/apply-safe-catalog-import.ts --apply",
     "vehicle:catalog-apply-dry": "tsx scripts/vehicle/apply-safe-catalog-import.ts --dry-run",
-    "vehicle:catalog-test": "tsx scripts/vehicle/test-vehicle-catalog-import.ts"
+    "vehicle:catalog-test": "tsx scripts/vehicle/test-vehicle-catalog-import.ts",
+    "vehicle:catalog-complete-plan": "tsx scripts/vehicle/plan-complete-vehicle-catalog.ts",
+    "vehicle:catalog-complete-apply": "tsx scripts/vehicle/apply-complete-vehicle-catalog.ts --apply",
+    "vehicle:catalog-complete-test": "tsx scripts/vehicle/test-complete-vehicle-catalog.ts"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"

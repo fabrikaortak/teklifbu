@@ -1,0 +1,537 @@
+{
+  "version": "2026.08-complete-v1",
+  "brands": [
+    {
+      "category": "Arazi, SUV & Pickup",
+      "categoryPath": "arac/arazi-suv-pickup",
+      "brandName": "Daewoo",
+      "brandSlug": "daewoo",
+      "action": "FILL",
+      "isSelectable": true,
+      "series": [
+        {
+          "name": "Musso",
+          "slug": "musso",
+          "versions": [{ "slug": "musso", "name": "Musso" }]
+        },
+        {
+          "name": "Korando",
+          "slug": "korando",
+          "versions": [{ "slug": "korando", "name": "Korando" }]
+        }
+      ],
+      "source": "historical-public-market",
+      "confidence": "medium",
+      "reason": "Historical SsangYong-related Daewoo-badged SUVs sold in many markets"
+    },
+    {
+      "category": "Arazi, SUV & Pickup",
+      "categoryPath": "arac/arazi-suv-pickup",
+      "brandName": "Santana",
+      "brandSlug": "santana",
+      "action": "FILL",
+      "isSelectable": true,
+      "series": [
+        {
+          "name": "Anibal",
+          "slug": "anibal",
+          "versions": [{ "slug": "anibal", "name": "Anibal" }]
+        },
+        {
+          "name": "PS-10",
+          "slug": "ps-10",
+          "versions": [{ "slug": "ps-10", "name": "PS-10" }]
+        }
+      ],
+      "source": "historical-public-market",
+      "confidence": "medium",
+      "reason": "Spanish Santana Motor off-road models with verified public naming"
+    },
+    {
+      "category": "Motosiklet",
+      "categoryPath": "arac/motosiklet",
+      "brandName": "Abush",
+      "brandSlug": "abush",
+      "action": "HIDE",
+      "isSelectable": false,
+      "series": [],
+      "source": "none",
+      "confidence": "high",
+      "reason": "No verified public series/model tree; hide from cascade until curated"
+    },
+    {
+      "category": "Motosiklet",
+      "categoryPath": "arac/motosiklet",
+      "brandName": "Aeon",
+      "brandSlug": "aeon",
+      "action": "FILL",
+      "isSelectable": true,
+      "series": [
+        {
+          "name": "Cobra 320",
+          "slug": "cobra-320",
+          "versions": [{ "slug": "cobra-320", "name": "Cobra 320" }]
+        },
+        {
+          "name": "3D 350",
+          "slug": "3d-350",
+          "versions": [{ "slug": "3d-350", "name": "3D 350" }]
+        },
+        {
+          "name": "Elite 350i",
+          "slug": "elite-350i",
+          "versions": [{ "slug": "elite-350i", "name": "Elite 350i" }]
+        }
+      ],
+      "source": "oem-public",
+      "confidence": "high",
+      "reason": "Verified Aeon model lineup with internationally recognized names"
+    },
+    {
+      "category": "Motosiklet",
+      "categoryPath": "arac/motosiklet",
+      "brandName": "Ariic",
+      "brandSlug": "ariic",
+      "action": "HIDE",
+      "isSelectable": false,
+      "series": [],
+      "source": "none",
+      "confidence": "high",
+      "reason": "No verified public series/model tree; hide from cascade until curated"
+    },
+    {
+      "category": "Motosiklet",
+      "categoryPath": "arac/motosiklet",
+      "brandName": "Barossa",
+      "brandSlug": "barossa",
+      "action": "HIDE",
+      "isSelectable": false,
+      "series": [],
+      "source": "none",
+      "confidence": "high",
+      "reason": "Primarily ATV/off-road; no verified road motorcycle series for catalog"
+    },
+    {
+      "category": "Motosiklet",
+      "categoryPath": "arac/motosiklet",
+      "brandName": "Belderia",
+      "brandSlug": "belderia",
+      "action": "HIDE",
+      "isSelectable": false,
+      "series": [],
+      "source": "none",
+      "confidence": "high",
+      "reason": "No verified public series/model tree; hide from cascade until curated"
+    },
+    {
+      "category": "Motosiklet",
+      "categoryPath": "arac/motosiklet",
+      "brandName": "Better",
+      "brandSlug": "better",
+      "action": "HIDE",
+      "isSelectable": false,
+      "series": [],
+      "source": "none",
+      "confidence": "high",
+      "reason": "Not clearly established as motorcycle brand on TR market; hide until curated"
+    },
+    {
+      "category": "Motosiklet",
+      "categoryPath": "arac/motosiklet",
+      "brandName": "Bianchi",
+      "brandSlug": "bianchi",
+      "action": "HIDE",
+      "isSelectable": false,
+      "series": [],
+      "source": "none",
+      "confidence": "high",
+      "reason": "Primarily bicycle brand; not applicable to motorcycle catalog"
+    },
+    {
+      "category": "Motosiklet",
+      "categoryPath": "arac/motosiklet",
+      "brandName": "Boom",
+      "brandSlug": "boom",
+      "action": "HIDE",
+      "isSelectable": false,
+      "series": [],
+      "source": "none",
+      "confidence": "high",
+      "reason": "No verified public series/model tree; hide from cascade until curated"
+    },
+    {
+      "category": "Motosiklet",
+      "categoryPath": "arac/motosiklet",
+      "brandName": "Borelli Ledow",
+      "brandSlug": "borelli-ledow",
+      "action": "HIDE",
+      "isSelectable": false,
+      "series": [],
+      "source": "none",
+      "confidence": "high",
+      "reason": "No verified public series/model tree; hide from cascade until curated"
+    },
+    {
+      "category": "Motosiklet",
+      "categoryPath": "arac/motosiklet",
+      "brandName": "BSA",
+      "brandSlug": "bsa",
+      "action": "FILL",
+      "isSelectable": true,
+      "series": [
+        {
+          "name": "Gold Star 650",
+          "slug": "gold-star-650",
+          "versions": [{ "slug": "gold-star-650", "name": "Gold Star 650" }]
+        }
+      ],
+      "source": "oem-public",
+      "confidence": "high",
+      "reason": "Verified BSA Gold Star 650 model"
+    },
+    {
+      "category": "Motosiklet",
+      "categoryPath": "arac/motosiklet",
+      "brandName": "BuMoto/Jinling",
+      "brandSlug": "bumoto-jinling",
+      "action": "HIDE",
+      "isSelectable": false,
+      "series": [],
+      "source": "none",
+      "confidence": "high",
+      "reason": "No verified public series/model tree; hide from cascade until curated"
+    },
+    {
+      "category": "Motosiklet",
+      "categoryPath": "arac/motosiklet",
+      "brandName": "Cheeta",
+      "brandSlug": "cheeta",
+      "action": "HIDE",
+      "isSelectable": false,
+      "series": [],
+      "source": "none",
+      "confidence": "high",
+      "reason": "No verified public series/model tree; hide from cascade until curated"
+    },
+    {
+      "category": "Motosiklet",
+      "categoryPath": "arac/motosiklet",
+      "brandName": "Cosmopolitan",
+      "brandSlug": "cosmopolitan",
+      "action": "HIDE",
+      "isSelectable": false,
+      "series": [],
+      "source": "none",
+      "confidence": "high",
+      "reason": "No verified public series/model tree; hide from cascade until curated"
+    },
+    {
+      "category": "Motosiklet",
+      "categoryPath": "arac/motosiklet",
+      "brandName": "CRN",
+      "brandSlug": "crn",
+      "action": "HIDE",
+      "isSelectable": false,
+      "series": [],
+      "source": "none",
+      "confidence": "high",
+      "reason": "No verified public series/model tree; hide from cascade until curated"
+    },
+    {
+      "category": "Motosiklet",
+      "categoryPath": "arac/motosiklet",
+      "brandName": "CSN Motor",
+      "brandSlug": "csn-motor",
+      "action": "HIDE",
+      "isSelectable": false,
+      "series": [],
+      "source": "none",
+      "confidence": "high",
+      "reason": "No verified public series/model tree; hide from cascade until curated"
+    },
+    {
+      "category": "Motosiklet",
+      "categoryPath": "arac/motosiklet",
+      "brandName": "Çelik Motor",
+      "brandSlug": "celik-motor",
+      "action": "HIDE",
+      "isSelectable": false,
+      "series": [],
+      "source": "none",
+      "confidence": "high",
+      "reason": "No verified public series/model tree; hide from cascade until curated"
+    },
+    {
+      "category": "Motosiklet",
+      "categoryPath": "arac/motosiklet",
+      "brandName": "Dayun",
+      "brandSlug": "dayun",
+      "action": "FILL",
+      "isSelectable": true,
+      "series": [
+        {
+          "name": "DY125",
+          "slug": "dy125",
+          "versions": [{ "slug": "dy125", "name": "DY125" }]
+        },
+        {
+          "name": "DY150",
+          "slug": "dy150",
+          "versions": [{ "slug": "dy150", "name": "DY150" }]
+        }
+      ],
+      "source": "export-naming",
+      "confidence": "medium",
+      "reason": "Common Dayun export model naming (DY125, DY150)"
+    },
+    {
+      "category": "Motosiklet",
+      "categoryPath": "arac/motosiklet",
+      "brandName": "Delta Motorcycle",
+      "brandSlug": "delta-motorcycle",
+      "action": "HIDE",
+      "isSelectable": false,
+      "series": [],
+      "source": "none",
+      "confidence": "high",
+      "reason": "No verified public series/model tree; hide from cascade until curated"
+    },
+    {
+      "category": "Motosiklet",
+      "categoryPath": "arac/motosiklet",
+      "brandName": "Dofern",
+      "brandSlug": "dofern",
+      "action": "HIDE",
+      "isSelectable": false,
+      "series": [],
+      "source": "none",
+      "confidence": "high",
+      "reason": "No verified public series/model tree; hide from cascade until curated"
+    },
+    {
+      "category": "Motosiklet",
+      "categoryPath": "arac/motosiklet",
+      "brandName": "Dorado",
+      "brandSlug": "dorado",
+      "action": "HIDE",
+      "isSelectable": false,
+      "series": [],
+      "source": "none",
+      "confidence": "high",
+      "reason": "No verified public series/model tree; hide from cascade until curated"
+    },
+    {
+      "category": "Motosiklet",
+      "categoryPath": "arac/motosiklet",
+      "brandName": "Enbest",
+      "brandSlug": "enbest",
+      "action": "HIDE",
+      "isSelectable": false,
+      "series": [],
+      "source": "none",
+      "confidence": "high",
+      "reason": "No verified public series/model tree; hide from cascade until curated"
+    },
+    {
+      "category": "Motosiklet",
+      "categoryPath": "arac/motosiklet",
+      "brandName": "FCM",
+      "brandSlug": "fcm",
+      "action": "HIDE",
+      "isSelectable": false,
+      "series": [],
+      "source": "none",
+      "confidence": "high",
+      "reason": "No verified public series/model tree; hide from cascade until curated"
+    },
+    {
+      "category": "Motosiklet",
+      "categoryPath": "arac/motosiklet",
+      "brandName": "Fosti",
+      "brandSlug": "fosti",
+      "action": "HIDE",
+      "isSelectable": false,
+      "series": [],
+      "source": "none",
+      "confidence": "high",
+      "reason": "No verified public series/model tree; hide from cascade until curated"
+    },
+    {
+      "category": "Motosiklet",
+      "categoryPath": "arac/motosiklet",
+      "brandName": "Italjet",
+      "brandSlug": "italjet",
+      "action": "FILL",
+      "isSelectable": true,
+      "series": [
+        {
+          "name": "Dragster 125",
+          "slug": "dragster-125",
+          "versions": [{ "slug": "dragster-125", "name": "Dragster 125" }]
+        },
+        {
+          "name": "Dragster 200",
+          "slug": "dragster-200",
+          "versions": [{ "slug": "dragster-200", "name": "Dragster 200" }]
+        }
+      ],
+      "source": "oem-public",
+      "confidence": "high",
+      "reason": "Verified Italjet Dragster model lineup"
+    },
+    {
+      "category": "Motosiklet",
+      "categoryPath": "arac/motosiklet",
+      "brandName": "Jawa",
+      "brandSlug": "jawa",
+      "action": "FILL",
+      "isSelectable": true,
+      "series": [
+        {
+          "name": "42",
+          "slug": "42",
+          "versions": [{ "slug": "42", "name": "42" }]
+        },
+        {
+          "name": "42 Bobber",
+          "slug": "42-bobber",
+          "versions": [{ "slug": "42-bobber", "name": "42 Bobber" }]
+        },
+        {
+          "name": "350",
+          "slug": "350",
+          "versions": [{ "slug": "350", "name": "350" }]
+        }
+      ],
+      "source": "oem-public",
+      "confidence": "high",
+      "reason": "Verified Jawa model lineup"
+    },
+    {
+      "category": "Motosiklet",
+      "categoryPath": "arac/motosiklet",
+      "brandName": "Jialing",
+      "brandSlug": "jialing",
+      "action": "FILL",
+      "isSelectable": true,
+      "series": [
+        {
+          "name": "JH125",
+          "slug": "jh125",
+          "versions": [{ "slug": "jh125", "name": "JH125" }]
+        },
+        {
+          "name": "JH150",
+          "slug": "jh150",
+          "versions": [{ "slug": "jh150", "name": "JH150" }]
+        }
+      ],
+      "source": "export-naming",
+      "confidence": "medium",
+      "reason": "Common Jialing export model naming (JH125, JH150)"
+    },
+    {
+      "category": "Motosiklet",
+      "categoryPath": "arac/motosiklet",
+      "brandName": "Mash",
+      "brandSlug": "mash",
+      "action": "FILL",
+      "isSelectable": true,
+      "series": [
+        {
+          "name": "Seventy Five 125",
+          "slug": "seventy-five-125",
+          "versions": [{ "slug": "seventy-five-125", "name": "Seventy Five 125" }]
+        },
+        {
+          "name": "Cafe Racer 125",
+          "slug": "cafe-racer-125",
+          "versions": [{ "slug": "cafe-racer-125", "name": "Cafe Racer 125" }]
+        },
+        {
+          "name": "Dirt Track 650",
+          "slug": "dirt-track-650",
+          "versions": [{ "slug": "dirt-track-650", "name": "Dirt Track 650" }]
+        }
+      ],
+      "source": "oem-public",
+      "confidence": "high",
+      "reason": "Verified Mash model lineup"
+    },
+    {
+      "category": "Motosiklet",
+      "categoryPath": "arac/motosiklet",
+      "brandName": "Meka",
+      "brandSlug": "meka",
+      "action": "HIDE",
+      "isSelectable": false,
+      "series": [],
+      "source": "none",
+      "confidence": "high",
+      "reason": "No verified public series/model tree; hide from cascade until curated"
+    },
+    {
+      "category": "Motosiklet",
+      "categoryPath": "arac/motosiklet",
+      "brandName": "Motron",
+      "brandSlug": "motron",
+      "action": "FILL",
+      "isSelectable": true,
+      "series": [
+        {
+          "name": "Arena 50",
+          "slug": "arena-50",
+          "versions": [{ "slug": "arena-50", "name": "Arena 50" }]
+        },
+        {
+          "name": "Contender 125",
+          "slug": "contender-125",
+          "versions": [{ "slug": "contender-125", "name": "Contender 125" }]
+        },
+        {
+          "name": "X-Force 125",
+          "slug": "x-force-125",
+          "versions": [{ "slug": "x-force-125", "name": "X-Force 125" }]
+        }
+      ],
+      "source": "oem-public",
+      "confidence": "high",
+      "reason": "Verified Motron model lineup"
+    },
+    {
+      "category": "Motosiklet",
+      "categoryPath": "arac/motosiklet",
+      "brandName": "MZ",
+      "brandSlug": "mz",
+      "action": "FILL",
+      "isSelectable": true,
+      "series": [
+        {
+          "name": "RT 125",
+          "slug": "rt-125",
+          "versions": [{ "slug": "rt-125", "name": "RT 125" }]
+        },
+        {
+          "name": "1000 S",
+          "slug": "1000-s",
+          "versions": [{ "slug": "1000-s", "name": "1000 S" }]
+        }
+      ],
+      "source": "oem-public",
+      "confidence": "high",
+      "reason": "Verified MZ model lineup"
+    },
+    {
+      "category": "Motosiklet",
+      "categoryPath": "arac/motosiklet",
+      "brandName": "Skyjet",
+      "brandSlug": "skyjet",
+      "action": "HIDE",
+      "isSelectable": false,
+      "series": [],
+      "source": "none",
+      "confidence": "high",
+      "reason": "No verified public series/model tree; hide from cascade until curated"
+    }
+  ]
+}

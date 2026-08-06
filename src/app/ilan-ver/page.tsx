@@ -12,7 +12,7 @@ import type { MapPoint } from "@/components/LocationMapPicker";
 import { formatNumberTr, parseNumberTr, formatTl, formatMoneyTr, parseMoneyTr } from "@/lib/format";
 import { dealTypeLabel, isRentDeal } from "@/lib/dealType";
 import { findBrowseNode, matchBrowsePath, CATEGORY_BROWSE_TREE } from "@/data/categoryBrowseTree";
-import { brandName, modelName, trimName } from "@/data/vehicleCatalog";
+import { brandLabel, modelLabel, trimLabel } from "@/lib/vasitaLabels";
 import { CategoryLadderPicker, isCategoryLadderComplete } from "@/components/CategoryLadderPicker";
 import {
   PremiumCategoryLadderPicker,
@@ -25,6 +25,7 @@ import { ALISVERIS_BROWSE_TREE, isAlisverisCategorySlug } from "@/data/classicBr
 import { useAlisverisBrowseTree } from "@/hooks/useAlisverisBrowseTree";
 import { useVasitaBrowseTree } from "@/hooks/useVasitaBrowseTree";
 import { useVasitaFormAttributes, visibleVasitaFormFields, legacyAttrKeyFor, attributeTemplateForSubtype } from "@/lib/vasitaFormAttributes";
+import { resolveElectricListingAttrs } from "@/lib/vasitaElectric";
 import { HousingExtrasPicker } from "@/components/HousingExtrasPicker";
 import { VehicleExtrasPicker } from "@/components/VehicleExtrasPicker";
 import { VehicleExpertiseReportPanel } from "@/components/VehicleExpertiseReport";
@@ -35,21 +36,13 @@ import { ShopPackageBuyModal } from "@/components/ShopPackageBuyModal";
 import { buildListingFeeInvoice, type ListingFeeInvoice } from "@/lib/listingFeeInvoice";
 import { Sparkles, X } from "lucide-react";
 import { groupHousingExtras, parseHousingExtras } from "@/data/housingExtras";
-import { groupVehicleExtras, parseVehicleExtras, VEHICLE_EKSPERTIZ } from "@/data/vehicleExtras";
+import { groupVehicleExtras, parseVehicleExtras } from "@/data/vehicleExtras";
 import {
   expertiseReportHasDamage,
   parseExpertiseReport,
   supportsVehicleExpertiseReport,
   type VehicleExpertiseReport,
 } from "@/data/vehicleExpertiseReport";
-import {
-  VEHICLE_BODY_TYPE_OPTIONS,
-  VEHICLE_CHASSIS_OPTIONS,
-  VEHICLE_DRIVE_OPTIONS,
-  VEHICLE_SELLER_OPTIONS,
-  VEHICLE_STATUS_OPTIONS,
-  VEHICLE_YES_NO_OPTIONS,
-} from "@/data/vehicleFormFields";
 import { formatListingAttributeRows } from "@/lib/listingEditFields";
 import { BUILDING_AGE_OPTIONS } from "@/data/housingMatch";
 import { SHOPPING_PRODUCT_ATTR_KEYS, parseInstallments } from "@/data/shoppingProductAttrs";
@@ -667,9 +660,9 @@ function CreateListingInner() {
     if (!path.length) return categories.find((c) => c.slug === slug)?.name || slug || "—";
     const labels = path.map((id) => findBrowseNode(id)?.name).filter(Boolean) as string[];
     if (slug === "arac" && attrs.brand) {
-      labels.push(brandName(attrs.subtype, attrs.brand));
-      if (attrs.model) labels.push(modelName(attrs.subtype, attrs.brand, attrs.model));
-      if (attrs.trim) labels.push(trimName(attrs.subtype, attrs.brand, attrs.model, attrs.trim));
+      labels.push(brandLabel(attrs.brand));
+      if (attrs.model) labels.push(modelLabel(attrs.model));
+      if (attrs.trim) labels.push(trimLabel(attrs.trim));
     }
     return labels.join(" › ");
   }, [form.categorySlug, form.dealType, attrs.subtype, attrs.rentalPeriod, attrs.brand, attrs.model, attrs.trim, categories, slug]);
@@ -798,7 +791,16 @@ function CreateListingInner() {
 
   function buildAttributes() {
     const out: Record<string, string | number | string[] | object | VehicleExpertiseReport> = {};
-    if (attrs.subtype?.trim()) out.subtype = attrs.subtype.trim();
+    if (attrs.subtype?.trim()) {
+      const electric = resolveElectricListingAttrs(attrs.subtype.trim());
+      if (electric) {
+        out.subtype = electric.subtype;
+        out.fuel = electric.fuel;
+        if (electric.electricVehicleType) out.electricVehicleType = electric.electricVehicleType;
+      } else {
+        out.subtype = attrs.subtype.trim();
+      }
+    }
     if (attrs.rentalPeriod?.trim()) out.rentalPeriod = attrs.rentalPeriod.trim();
     for (const key of ["brand", "model", "trim", "condition", "warranty"] as const) {
       const v = attrs[key]?.trim();
@@ -891,6 +893,8 @@ function CreateListingInner() {
     for (const [key] of map) {
       const v = attrs[key]?.trim();
       if (!v) continue;
+      // Electric overlay listings always store fuel=ELECTRIC (canonical).
+      if (key === "fuel" && attrs.subtype && resolveElectricListingAttrs(attrs.subtype.trim())) continue;
       if (key === "buildingAge" || key === "floor") {
         out[key] = v; // "0"/"Giriş Kat"/metin — sayıya zorlama
       } else if (["m2", "netM2", "totalFloors", "bathrooms", "dues", "year", "km"].includes(key)) {
@@ -1995,7 +1999,7 @@ function CreateListingInner() {
                 ? "Premium dikey → alt kategori (zorunlu)."
                 : effectiveKind === "alisveris"
                   ? "Alışveriş grubu → ikinci el / sıfır → ürün kategorisi (zorunlu)."
-                  : "Ana kategori → tür → alt tip (zorunlu)."
+                  : "Ana kategori → tür → marka / model (zorunlu)."
             }
           >
             {effectiveKind === "premium" ? (
@@ -2494,167 +2498,6 @@ function CreateListingInner() {
             </div>
           )}
 
-          {isVehicle && !useDbVehicleFields && (
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
-              <Field label="Seri">
-                <input className="input" value={attrs.series} onChange={(e) => setAttr("series", e.target.value)} placeholder="Örn: Fiorino Cargo" />
-              </Field>
-              <Field label="Model yılı">
-                <input className="input" inputMode="numeric" value={attrs.year} onChange={(e) => setAttr("year", e.target.value)} placeholder="Örn: 2021" />
-              </Field>
-              <Field label="Kilometre">
-                <input className="input" inputMode="numeric" value={attrs.km} onChange={(e) => setAttr("km", e.target.value)} placeholder="Örn: 42000" />
-              </Field>
-              <Field label="Yakıt">
-                <select className="select" value={attrs.fuel} onChange={(e) => setAttr("fuel", e.target.value)}>
-                  <option value="">Seçin</option>
-                  {["Benzin", "Dizel", "LPG", "Hibrit", "Elektrik"].map((f) => (
-                    <option key={f} value={f}>
-                      {f}
-                    </option>
-                  ))}
-                </select>
-              </Field>
-              <Field label="Vites">
-                <select className="select" value={attrs.gear} onChange={(e) => setAttr("gear", e.target.value)}>
-                  <option value="">Seçin</option>
-                  {["Manuel", "Otomatik", "Yarı Otomatik"].map((g) => (
-                    <option key={g} value={g}>
-                      {g}
-                    </option>
-                  ))}
-                </select>
-              </Field>
-              <Field label="Araç durumu">
-                <select className="select" value={attrs.vehicleStatus} onChange={(e) => setAttr("vehicleStatus", e.target.value)}>
-                  <option value="">Seçin</option>
-                  {VEHICLE_STATUS_OPTIONS.map((o) => (
-                    <option key={o} value={o}>
-                      {o}
-                    </option>
-                  ))}
-                </select>
-              </Field>
-              <Field label="Kasa tipi">
-                <select className="select" value={attrs.bodyType} onChange={(e) => setAttr("bodyType", e.target.value)}>
-                  <option value="">Seçin</option>
-                  {VEHICLE_BODY_TYPE_OPTIONS.map((o) => (
-                    <option key={o} value={o}>
-                      {o}
-                    </option>
-                  ))}
-                </select>
-              </Field>
-              <Field label="Şasi">
-                <select className="select" value={attrs.chassis} onChange={(e) => setAttr("chassis", e.target.value)}>
-                  <option value="">Seçin</option>
-                  {VEHICLE_CHASSIS_OPTIONS.map((o) => (
-                    <option key={o} value={o}>
-                      {o}
-                    </option>
-                  ))}
-                </select>
-              </Field>
-              <Field label="Motor gücü">
-                <input className="input" value={attrs.enginePower} onChange={(e) => setAttr("enginePower", e.target.value)} placeholder="Örn: 95 hp" />
-              </Field>
-              <Field label="Motor hacmi">
-                <input className="input" value={attrs.engineSize} onChange={(e) => setAttr("engineSize", e.target.value)} placeholder="Örn: 1248 cc" />
-              </Field>
-              <Field label="Çekiş">
-                <select className="select" value={attrs.drive} onChange={(e) => setAttr("drive", e.target.value)}>
-                  <option value="">Seçin</option>
-                  {VEHICLE_DRIVE_OPTIONS.map((o) => (
-                    <option key={o} value={o}>
-                      {o}
-                    </option>
-                  ))}
-                </select>
-              </Field>
-              <Field label="Koltuk sayısı">
-                <input className="input" value={attrs.seats} onChange={(e) => setAttr("seats", e.target.value)} placeholder="Örn: 1+1" />
-              </Field>
-              <Field label="Renk">
-                <input className="input" value={attrs.color} onChange={(e) => setAttr("color", e.target.value)} placeholder="Örn: Beyaz" />
-              </Field>
-              <Field label="Ruhsat kaydı">
-                <input className="input" value={attrs.licenseRecord} onChange={(e) => setAttr("licenseRecord", e.target.value)} placeholder="Örn: Kamyonet" />
-              </Field>
-              <Field label="Ağır hasar kayıtlı">
-                <select className="select" value={attrs.heavyDamage} onChange={(e) => setAttr("heavyDamage", e.target.value)}>
-                  <option value="">Seçin</option>
-                  {VEHICLE_YES_NO_OPTIONS.map((o) => (
-                    <option key={o} value={o}>
-                      {o}
-                    </option>
-                  ))}
-                </select>
-              </Field>
-              <Field label="Kimden">
-                <select className="select" value={attrs.sellerType} onChange={(e) => setAttr("sellerType", e.target.value)}>
-                  <option value="">Seçin</option>
-                  {VEHICLE_SELLER_OPTIONS.map((o) => (
-                    <option key={o} value={o}>
-                      {o}
-                    </option>
-                  ))}
-                </select>
-              </Field>
-              <Field label="Plaka / uyruk">
-                <input className="input" value={attrs.plateOrigin} onChange={(e) => setAttr("plateOrigin", e.target.value)} placeholder="Örn: Türkiye (TR) Plakalı" />
-              </Field>
-              <Field label="Takas">
-                <select className="select" value={attrs.swap} onChange={(e) => setAttr("swap", e.target.value)}>
-                  <option value="">Seçin</option>
-                  {VEHICLE_YES_NO_OPTIONS.map((o) => (
-                    <option key={o} value={o}>
-                      {o}
-                    </option>
-                  ))}
-                </select>
-              </Field>
-              <Field label="Tramer">
-                <select className="select" value={attrs.tramer} onChange={(e) => setAttr("tramer", e.target.value)}>
-                  <option value="">Seçin</option>
-                  {VEHICLE_EKSPERTIZ.tramer.map((t) => (
-                    <option key={t} value={t}>
-                      {t}
-                    </option>
-                  ))}
-                </select>
-              </Field>
-              <Field label="Boya durumu">
-                <select className="select" value={attrs.boyaDurumu} onChange={(e) => setAttr("boyaDurumu", e.target.value)}>
-                  <option value="">Seçin</option>
-                  {VEHICLE_EKSPERTIZ.boyaDurumu.map((t) => (
-                    <option key={t} value={t}>
-                      {t}
-                    </option>
-                  ))}
-                </select>
-              </Field>
-              <Field label="Değişen durumu">
-                <select className="select" value={attrs.degisenDurumu} onChange={(e) => setAttr("degisenDurumu", e.target.value)}>
-                  <option value="">Seçin</option>
-                  {VEHICLE_EKSPERTIZ.degisenDurumu.map((t) => (
-                    <option key={t} value={t}>
-                      {t}
-                    </option>
-                  ))}
-                </select>
-              </Field>
-              <Field label="Hasar durumu">
-                <select className="select" value={attrs.hasarDurumu} onChange={(e) => setAttr("hasarDurumu", e.target.value)}>
-                  <option value="">Seçin</option>
-                  {VEHICLE_EKSPERTIZ.hasarDurumu.map((t) => (
-                    <option key={t} value={t}>
-                      {t}
-                    </option>
-                  ))}
-                </select>
-              </Field>
-            </div>
-          )}
 
           {isVehicle && supportsVehicleExpertiseReport(attrs.subtype) && (
             <>

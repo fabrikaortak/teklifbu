@@ -1,0 +1,135 @@
+brand,series,sourcePath,hintedCanonicalCategory,canonicalInSource,canonicalInDb,hasCanonical,fuelTypeElectricExpected,criticalMissing
+Aion,ES,Vasıta > Elektrikli Araçlar > Aion > ES,,Otomobil,arac/otomobil,true,true,false
+Aion,Hyper GT,Vasıta > Elektrikli Araçlar > Aion > Hyper GT,,Otomobil,arac/otomobil,true,true,false
+Aion,S,Vasıta > Elektrikli Araçlar > Aion > S,,Otomobil,arac/otomobil,true,true,false
+Aion,Y Plus,Vasıta > Elektrikli Araçlar > Aion > Y Plus,,Otomobil,arac/otomobil,true,true,false
+Audi,A6 e-tron,Vasıta > Elektrikli Araçlar > Audi > A6 e-tron,,,,false,true,true
+Audi,e-tron GT,Vasıta > Elektrikli Araçlar > Audi > e-tron GT,,Otomobil,arac/otomobil,true,true,false
+Audi,Q4 e-tron,Vasıta > Elektrikli Araçlar > Audi > Q4 e-tron,,"Arazi, SUV & Pickup",arac/arazi-suv-pickup,true,true,false
+Audi,Q6 e-tron,Vasıta > Elektrikli Araçlar > Audi > Q6 e-tron,,"Arazi, SUV & Pickup",arac/arazi-suv-pickup,true,true,false
+Audi,Q8 e-tron,Vasıta > Elektrikli Araçlar > Audi > Q8 e-tron,,"Arazi, SUV & Pickup",arac/arazi-suv-pickup,true,true,false
+BMW,i3,Vasıta > Elektrikli Araçlar > BMW > i3,Otomobil,,,false,true,true
+BMW,i4,Vasıta > Elektrikli Araçlar > BMW > i4,Otomobil,,,false,true,true
+BMW,i5,Vasıta > Elektrikli Araçlar > BMW > i5,Otomobil,,,false,true,true
+BMW,i7,Vasıta > Elektrikli Araçlar > BMW > i7,Otomobil,,,false,true,true
+BMW,iX,Vasıta > Elektrikli Araçlar > BMW > iX,"Arazi, SUV & Pickup","Arazi, SUV & Pickup",arac/arazi-suv-pickup,true,true,false
+BMW,iX1,Vasıta > Elektrikli Araçlar > BMW > iX1,"Arazi, SUV & Pickup","Arazi, SUV & Pickup",arac/arazi-suv-pickup,true,true,false
+BMW,iX2,Vasıta > Elektrikli Araçlar > BMW > iX2,"Arazi, SUV & Pickup","Arazi, SUV & Pickup",arac/arazi-suv-pickup,true,true,false
+BMW,iX3,Vasıta > Elektrikli Araçlar > BMW > iX3,"Arazi, SUV & Pickup","Arazi, SUV & Pickup",arac/arazi-suv-pickup,true,true,false
+BYD,Atto 3,Vasıta > Elektrikli Araçlar > BYD > Atto 3,,"Otomobil|Arazi, SUV & Pickup",arac/otomobil|arac/arazi-suv-pickup,true,true,false
+BYD,Dolphin,Vasıta > Elektrikli Araçlar > BYD > Dolphin,,Otomobil,arac/otomobil,true,true,false
+BYD,Han,Vasıta > Elektrikli Araçlar > BYD > Han,,Otomobil,arac/otomobil,true,true,false
+BYD,Seal,Vasıta > Elektrikli Araçlar > BYD > Seal,,Otomobil,arac/otomobil,true,true,false
+BYD,Seal U,Vasıta > Elektrikli Araçlar > BYD > Seal U,,"Otomobil|Arazi, SUV & Pickup",arac/otomobil|arac/arazi-suv-pickup,true,true,false
+BYD,Tang,Vasıta > Elektrikli Araçlar > BYD > Tang,,"Otomobil|Arazi, SUV & Pickup",arac/otomobil|arac/arazi-suv-pickup,true,true,false
+Citroen,Ami,Vasıta > Elektrikli Araçlar > Citroen > Ami,,,,false,true,true
+Citroen,e-Berlingo,Vasıta > Elektrikli Araçlar > Citroen > e-Berlingo,,,,false,true,true
+Citroen,e-C3,Vasıta > Elektrikli Araçlar > Citroen > e-C3,,,,false,true,true
+Citroen,e-C4,Vasıta > Elektrikli Araçlar > Citroen > e-C4,,,,false,true,true
+Citroen,e-C4 X,Vasıta > Elektrikli Araçlar > Citroen > e-C4 X,,,,false,true,true
+Cupra,Born,Vasıta > Elektrikli Araçlar > Cupra > Born,,Otomobil,arac/otomobil,true,true,false
+Cupra,Tavascan,Vasıta > Elektrikli Araçlar > Cupra > Tavascan,,"Arazi, SUV & Pickup",arac/arazi-suv-pickup,true,true,false
+DS Automobiles,DS 3 E-Tense,Vasıta > Elektrikli Araçlar > DS Automobiles > DS 3 E-Tense,,,,false,true,true
+DS Automobiles,DS 4 E-Tense,Vasıta > Elektrikli Araçlar > DS Automobiles > DS 4 E-Tense,,,,false,true,true
+Fiat,500e,Vasıta > Elektrikli Araçlar > Fiat > 500e,,,,false,true,true
+Fiat,600e,Vasıta > Elektrikli Araçlar > Fiat > 600e,,,,false,true,true
+Fiat,E-Doblo,Vasıta > Elektrikli Araçlar > Fiat > E-Doblo,,,,false,true,true
+Fiat,E-Ducato,Vasıta > Elektrikli Araçlar > Fiat > E-Ducato,,,,false,true,true
+Fiat,Topolino,Vasıta > Elektrikli Araçlar > Fiat > Topolino,,,,false,true,true
+Ford,Capri EV,Vasıta > Elektrikli Araçlar > Ford > Capri EV,,,,false,true,true
+Ford,E-Transit,Vasıta > Elektrikli Araçlar > Ford > E-Transit,,,,false,true,true
+Ford,E-Transit Courier,Vasıta > Elektrikli Araçlar > Ford > E-Transit Courier,,,,false,true,true
+Ford,Explorer EV,Vasıta > Elektrikli Araçlar > Ford > Explorer EV,,,,false,true,true
+Ford,Mustang Mach-E,Vasıta > Elektrikli Araçlar > Ford > Mustang Mach-E,,,,false,true,true
+Honda,e:Ny1,Vasıta > Elektrikli Araçlar > Honda > e:Ny1,,,,false,true,true
+Honda,Honda e,Vasıta > Elektrikli Araçlar > Honda > Honda e,,,,false,true,true
+Hyundai,Inster,Vasıta > Elektrikli Araçlar > Hyundai > Inster,,,,false,true,true
+Hyundai,Ioniq 5,Vasıta > Elektrikli Araçlar > Hyundai > Ioniq 5,,"Arazi, SUV & Pickup",arac/arazi-suv-pickup,true,true,false
+Hyundai,Ioniq 6,Vasıta > Elektrikli Araçlar > Hyundai > Ioniq 6,,,,false,true,true
+Hyundai,Kona Electric,Vasıta > Elektrikli Araçlar > Hyundai > Kona Electric,,,,false,true,true
+Jaguar,I-Pace,Vasıta > Elektrikli Araçlar > Jaguar > I-Pace,,"Arazi, SUV & Pickup",arac/arazi-suv-pickup,true,true,false
+Jeep,Avenger Electric,Vasıta > Elektrikli Araçlar > Jeep > Avenger Electric,,,,false,true,true
+Kia,EV3,Vasıta > Elektrikli Araçlar > Kia > EV3,,"Arazi, SUV & Pickup",arac/arazi-suv-pickup,true,true,false
+Kia,EV5,Vasıta > Elektrikli Araçlar > Kia > EV5,,,,false,true,true
+Kia,EV6,Vasıta > Elektrikli Araçlar > Kia > EV6,,"Arazi, SUV & Pickup",arac/arazi-suv-pickup,true,true,false
+Kia,EV9,Vasıta > Elektrikli Araçlar > Kia > EV9,,"Arazi, SUV & Pickup",arac/arazi-suv-pickup,true,true,false
+Kia,Niro EV,Vasıta > Elektrikli Araçlar > Kia > Niro EV,,,,false,true,true
+Leapmotor,C10,Vasıta > Elektrikli Araçlar > Leapmotor > C10,,Otomobil,arac/otomobil,true,true,false
+Leapmotor,C11,Vasıta > Elektrikli Araçlar > Leapmotor > C11,,Otomobil,arac/otomobil,true,true,false
+Leapmotor,T03,Vasıta > Elektrikli Araçlar > Leapmotor > T03,,Otomobil,arac/otomobil,true,true,false
+Lexus,RZ,Vasıta > Elektrikli Araçlar > Lexus > RZ,,,,false,true,true
+Lexus,UX 300e,Vasıta > Elektrikli Araçlar > Lexus > UX 300e,,,,false,true,true
+Mercedes-Benz,EQA,Vasıta > Elektrikli Araçlar > Mercedes-Benz > EQA,,"Arazi, SUV & Pickup",arac/arazi-suv-pickup,true,true,false
+Mercedes-Benz,EQB,Vasıta > Elektrikli Araçlar > Mercedes-Benz > EQB,,"Arazi, SUV & Pickup",arac/arazi-suv-pickup,true,true,false
+Mercedes-Benz,EQC,Vasıta > Elektrikli Araçlar > Mercedes-Benz > EQC,,"Arazi, SUV & Pickup",arac/arazi-suv-pickup,true,true,false
+Mercedes-Benz,EQE,Vasıta > Elektrikli Araçlar > Mercedes-Benz > EQE,,Otomobil,arac/otomobil,true,true,false
+Mercedes-Benz,EQE SUV,Vasıta > Elektrikli Araçlar > Mercedes-Benz > EQE SUV,,"Arazi, SUV & Pickup",arac/arazi-suv-pickup,true,true,false
+Mercedes-Benz,EQS,Vasıta > Elektrikli Araçlar > Mercedes-Benz > EQS,,Otomobil,arac/otomobil,true,true,false
+Mercedes-Benz,EQS SUV,Vasıta > Elektrikli Araçlar > Mercedes-Benz > EQS SUV,,"Arazi, SUV & Pickup",arac/arazi-suv-pickup,true,true,false
+Mercedes-Benz,G 580 EQ,Vasıta > Elektrikli Araçlar > Mercedes-Benz > G 580 EQ,,,,false,true,true
+MG,Marvel R,Vasıta > Elektrikli Araçlar > MG > Marvel R,,"Arazi, SUV & Pickup",arac/arazi-suv-pickup,true,true,false
+MG,MG4,Vasıta > Elektrikli Araçlar > MG > MG4,,Otomobil,arac/otomobil,true,true,false
+MG,MG5 Electric,Vasıta > Elektrikli Araçlar > MG > MG5 Electric,,,,false,true,true
+MG,ZS EV,Vasıta > Elektrikli Araçlar > MG > ZS EV,,,,false,true,true
+Mini,Aceman,Vasıta > Elektrikli Araçlar > Mini > Aceman,,"Arazi, SUV & Pickup",arac/arazi-suv-pickup,true,true,false
+Mini,Cooper Electric,Vasıta > Elektrikli Araçlar > Mini > Cooper Electric,,,,false,true,true
+Mini,Countryman Electric,Vasıta > Elektrikli Araçlar > Mini > Countryman Electric,,,,false,true,true
+Nissan,Ariya,Vasıta > Elektrikli Araçlar > Nissan > Ariya,,"Arazi, SUV & Pickup",arac/arazi-suv-pickup,true,true,false
+Nissan,Leaf,Vasıta > Elektrikli Araçlar > Nissan > Leaf,,Otomobil,arac/otomobil,true,true,false
+Nissan,Townstar EV,Vasıta > Elektrikli Araçlar > Nissan > Townstar EV,,,,false,true,true
+Opel,Astra Electric,Vasıta > Elektrikli Araçlar > Opel > Astra Electric,,,,false,true,true
+Opel,Combo Electric,Vasıta > Elektrikli Araçlar > Opel > Combo Electric,,,,false,true,true
+Opel,Corsa Electric,Vasıta > Elektrikli Araçlar > Opel > Corsa Electric,,,,false,true,true
+Opel,Frontera Electric,Vasıta > Elektrikli Araçlar > Opel > Frontera Electric,,,,false,true,true
+Opel,Mokka Electric,Vasıta > Elektrikli Araçlar > Opel > Mokka Electric,,,,false,true,true
+Opel,Vivaro Electric,Vasıta > Elektrikli Araçlar > Opel > Vivaro Electric,,,,false,true,true
+Peugeot,e-2008,Vasıta > Elektrikli Araçlar > Peugeot > e-2008,,,,false,true,true
+Peugeot,e-208,Vasıta > Elektrikli Araçlar > Peugeot > e-208,,,,false,true,true
+Peugeot,e-3008,Vasıta > Elektrikli Araçlar > Peugeot > e-3008,,,,false,true,true
+Peugeot,e-5008,Vasıta > Elektrikli Araçlar > Peugeot > e-5008,,,,false,true,true
+Peugeot,e-Expert,Vasıta > Elektrikli Araçlar > Peugeot > e-Expert,,,,false,true,true
+Peugeot,e-Partner,Vasıta > Elektrikli Araçlar > Peugeot > e-Partner,,,,false,true,true
+Peugeot,e-Rifter,Vasıta > Elektrikli Araçlar > Peugeot > e-Rifter,,,,false,true,true
+Polestar,2,Vasıta > Elektrikli Araçlar > Polestar > 2,,Otomobil,arac/otomobil,true,true,false
+Polestar,3,Vasıta > Elektrikli Araçlar > Polestar > 3,,Otomobil,arac/otomobil,true,true,false
+Polestar,4,Vasıta > Elektrikli Araçlar > Polestar > 4,,Otomobil,arac/otomobil,true,true,false
+Porsche,Macan Electric,Vasıta > Elektrikli Araçlar > Porsche > Macan Electric,,,,false,true,true
+Porsche,Taycan,Vasıta > Elektrikli Araçlar > Porsche > Taycan,,Otomobil,arac/otomobil,true,true,false
+Renault,Kangoo E-Tech,Vasıta > Elektrikli Araçlar > Renault > Kangoo E-Tech,,,,false,true,true
+Renault,Master E-Tech,Vasıta > Elektrikli Araçlar > Renault > Master E-Tech,,,,false,true,true
+Renault,Megane E-Tech,Vasıta > Elektrikli Araçlar > Renault > Megane E-Tech,,,,false,true,true
+Renault,Scenic E-Tech,Vasıta > Elektrikli Araçlar > Renault > Scenic E-Tech,,"Arazi, SUV & Pickup",arac/arazi-suv-pickup,true,true,false
+Renault,Zoe,Vasıta > Elektrikli Araçlar > Renault > Zoe,,Otomobil,arac/otomobil,true,true,false
+Seres,Seres 3,Vasıta > Elektrikli Araçlar > Seres > Seres 3,,"Arazi, SUV & Pickup",arac/arazi-suv-pickup,true,true,false
+Seres,Seres 5,Vasıta > Elektrikli Araçlar > Seres > Seres 5,,"Arazi, SUV & Pickup",arac/arazi-suv-pickup,true,true,false
+Skoda,Citigo-e,Vasıta > Elektrikli Araçlar > Skoda > Citigo-e,,,,false,true,true
+Skoda,Elroq,Vasıta > Elektrikli Araçlar > Skoda > Elroq,,"Arazi, SUV & Pickup",arac/arazi-suv-pickup,true,true,false
+Skoda,Enyaq,Vasıta > Elektrikli Araçlar > Skoda > Enyaq,,"Arazi, SUV & Pickup",arac/arazi-suv-pickup,true,true,false
+Skywell,ET5,Vasıta > Elektrikli Araçlar > Skywell > ET5,,"Arazi, SUV & Pickup",arac/arazi-suv-pickup,true,true,false
+Skywell,HT-i,Vasıta > Elektrikli Araçlar > Skywell > HT-i,,,,false,true,true
+Smart,#1,Vasıta > Elektrikli Araçlar > Smart > #1,,Otomobil,arac/otomobil,true,true,false
+Smart,#3,Vasıta > Elektrikli Araçlar > Smart > #3,,Otomobil,arac/otomobil,true,true,false
+Subaru,Solterra,Vasıta > Elektrikli Araçlar > Subaru > Solterra,,"Arazi, SUV & Pickup",arac/arazi-suv-pickup,true,true,false
+Tesla,Cybertruck,Vasıta > Elektrikli Araçlar > Tesla > Cybertruck,"Arazi, SUV & Pickup",,arac/arazi-suv-pickup,true,true,false
+Tesla,Model 3,Vasıta > Elektrikli Araçlar > Tesla > Model 3,Otomobil,Otomobil,arac/otomobil,true,true,false
+Tesla,Model S,Vasıta > Elektrikli Araçlar > Tesla > Model S,Otomobil,Otomobil,arac/otomobil,true,true,false
+Tesla,Model X,Vasıta > Elektrikli Araçlar > Tesla > Model X,"Arazi, SUV & Pickup",Otomobil,arac/otomobil,true,true,false
+Tesla,Model Y,Vasıta > Elektrikli Araçlar > Tesla > Model Y,"Arazi, SUV & Pickup",,arac/arazi-suv-pickup,true,true,false
+TOGG,T10F,Vasıta > Elektrikli Araçlar > TOGG > T10F,Otomobil,Otomobil,arac/otomobil,true,true,false
+TOGG,T10X,Vasıta > Elektrikli Araçlar > TOGG > T10X,"Arazi, SUV & Pickup","Arazi, SUV & Pickup",arac/arazi-suv-pickup,true,true,false
+Toyota,bZ4X,Vasıta > Elektrikli Araçlar > Toyota > bZ4X,,,,false,true,true
+Toyota,Proace City Electric,Vasıta > Elektrikli Araçlar > Toyota > Proace City Electric,,,,false,true,true
+Toyota,Proace Electric,Vasıta > Elektrikli Araçlar > Toyota > Proace Electric,,,,false,true,true
+Volkswagen,ID. Buzz,Vasıta > Elektrikli Araçlar > Volkswagen > ID. Buzz,,,,false,true,true
+Volkswagen,ID.3,Vasıta > Elektrikli Araçlar > Volkswagen > ID.3,,Otomobil,arac/otomobil,true,true,false
+Volkswagen,ID.4,Vasıta > Elektrikli Araçlar > Volkswagen > ID.4,,"Arazi, SUV & Pickup",arac/arazi-suv-pickup,true,true,false
+Volkswagen,ID.5,Vasıta > Elektrikli Araçlar > Volkswagen > ID.5,,"Arazi, SUV & Pickup",arac/arazi-suv-pickup,true,true,false
+Volkswagen,ID.7,Vasıta > Elektrikli Araçlar > Volkswagen > ID.7,,,,false,true,true
+Volvo,C40 Recharge,Vasıta > Elektrikli Araçlar > Volvo > C40 Recharge,,"Arazi, SUV & Pickup",arac/arazi-suv-pickup,true,true,false
+Volvo,EX30,Vasıta > Elektrikli Araçlar > Volvo > EX30,,"Arazi, SUV & Pickup",arac/arazi-suv-pickup,true,true,false
+Volvo,EX40,Vasıta > Elektrikli Araçlar > Volvo > EX40,,"Arazi, SUV & Pickup",arac/arazi-suv-pickup,true,true,false
+Volvo,EX90,Vasıta > Elektrikli Araçlar > Volvo > EX90,,"Arazi, SUV & Pickup",arac/arazi-suv-pickup,true,true,false
+Voyah,Dream,Vasıta > Elektrikli Araçlar > Voyah > Dream,,"Arazi, SUV & Pickup",arac/arazi-suv-pickup,true,true,false
+Voyah,Free,Vasıta > Elektrikli Araçlar > Voyah > Free,,"Arazi, SUV & Pickup",arac/arazi-suv-pickup,true,true,false
+Voyah,Passion,Vasıta > Elektrikli Araçlar > Voyah > Passion,,"Arazi, SUV & Pickup",arac/arazi-suv-pickup,true,true,false
+XEV,Yoyo,Vasıta > Elektrikli Araçlar > XEV > Yoyo,,Otomobil,arac/otomobil,true,true,false

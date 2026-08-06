@@ -1,0 +1,418 @@
+{
+  "at": "2026-08-06T22:52:22.226Z",
+  "commit": "cd25df359a6c3d58780dccb31bcab2a173611b42",
+  "readOnly": true,
+  "byLevel": {
+    "VEHICLE_CATEGORY": {
+      "sourceTotal": 15,
+      "keepExisting": 10,
+      "created": 0,
+      "updated": 0,
+      "moved": 0,
+      "skippedOverlay": 5,
+      "invalid": 0,
+      "manualReview": 0,
+      "missingAfterApply": 0,
+      "finalDatabaseTotal": 15
+    },
+    "SUBCATEGORY": {
+      "sourceTotal": 22,
+      "keepExisting": 22,
+      "created": 0,
+      "updated": 0,
+      "moved": 0,
+      "skippedOverlay": 0,
+      "invalid": 0,
+      "manualReview": 0,
+      "missingAfterApply": 0,
+      "finalDatabaseTotal": 130
+    },
+    "BRAND": {
+      "sourceTotal": 488,
+      "keepExisting": 126,
+      "created": 291,
+      "updated": 0,
+      "moved": 0,
+      "skippedOverlay": 37,
+      "invalid": 33,
+      "manualReview": 1,
+      "missingAfterApply": 0,
+      "finalDatabaseTotal": 385
+    },
+    "SERIES": {
+      "sourceTotal": 2308,
+      "keepExisting": 203,
+      "created": 1963,
+      "updated": 2,
+      "moved": 0,
+      "skippedOverlay": 134,
+      "invalid": 0,
+      "manualReview": 6,
+      "missingAfterApply": 0,
+      "finalDatabaseTotal": 2232
+    },
+    "MODEL_VARIANT": {
+      "sourceTotal": 1355,
+      "keepExisting": 618,
+      "created": 719,
+      "updated": 2,
+      "moved": 0,
+      "skippedOverlay": 0,
+      "invalid": 0,
+      "manualReview": 16,
+      "missingAfterApply": 0,
+      "finalDatabaseTotal": 3201
+    }
+  },
+  "equality": {
+    "VEHICLE_CATEGORY": {
+      "ok": true,
+      "sum": 15,
+      "sourceTotal": 15
+    },
+    "SUBCATEGORY": {
+      "ok": true,
+      "sum": 22,
+      "sourceTotal": 22
+    },
+    "BRAND": {
+      "ok": true,
+      "sum": 488,
+      "sourceTotal": 488
+    },
+    "SERIES": {
+      "ok": true,
+      "sum": 2308,
+      "sourceTotal": 2308
+    },
+    "MODEL_VARIANT": {
+      "ok": true,
+      "sum": 1355,
+      "sourceTotal": 1355
+    }
+  },
+  "categoryCoverage": {
+    "Otomobil": {
+      "sourceBrand": 96,
+      "dbBrand": 97,
+      "sourceSeries": 774,
+      "dbSeries": 777,
+      "sourceModelVariant": 704,
+      "dbModelVariant": 1306,
+      "missingBrand": 0,
+      "missingSeries": 0,
+      "missingModelVariant": 0,
+      "manualReview": 13,
+      "invalid": 0,
+      "overlay": 0
+    },
+    "Arazi, SUV & Pickup": {
+      "sourceBrand": 71,
+      "dbBrand": 72,
+      "sourceSeries": 309,
+      "dbSeries": 320,
+      "sourceModelVariant": 455,
+      "dbModelVariant": 664,
+      "missingBrand": 0,
+      "missingSeries": 0,
+      "missingModelVariant": 0,
+      "manualReview": 0,
+      "invalid": 2,
+      "overlay": 0
+    },
+    "Elektrikli Araçlar": {
+      "sourceBrand": 37,
+      "dbBrand": 0,
+      "sourceSeries": 134,
+      "dbSeries": 0,
+      "sourceModelVariant": 0,
+      "dbModelVariant": 0,
+      "missingBrand": 0,
+      "missingSeries": 0,
+      "missingModelVariant": 0,
+      "manualReview": 0,
+      "invalid": 0,
+      "overlay": 171
+    },
+    "Motosiklet": {
+      "sourceBrand": 100,
+      "dbBrand": 70,
+      "sourceSeries": 561,
+      "dbSeries": 609,
+      "sourceModelVariant": 1,
+      "dbModelVariant": 597,
+      "missingBrand": 0,
+      "missingSeries": 0,
+      "missingModelVariant": 0,
+      "manualReview": 0,
+      "invalid": 31,
+      "overlay": 0
+    },
+    "Minivan & Panelvan": {
+      "sourceBrand": 34,
+      "dbBrand": 33,
+      "sourceSeries": 92,
+      "dbSeries": 94,
+      "sourceModelVariant": 96,
+      "dbModelVariant": 144,
+      "missingBrand": 0,
+      "missingSeries": 0,
+      "missingModelVariant": 0,
+      "manualReview": 9,
+      "invalid": 0,
+      "overlay": 0
+    },
+    "Ticari Araçlar": {
+      "sourceBrand": 56,
+      "dbBrand": 30,
+      "sourceSeries": 175,
+      "dbSeries": 169,
+      "sourceModelVariant": 99,
+      "dbModelVariant": 227,
+      "missingBrand": 0,
+      "missingSeries": 0,
+      "missingModelVariant": 0,
+      "manualReview": 1,
+      "invalid": 0,
+      "overlay": 0
+    },
+    "Kiralık Araçlar": {
+      "sourceBrand": 0,
+      "dbBrand": 0,
+      "sourceSeries": 0,
+      "dbSeries": 0,
+      "sourceModelVariant": 0,
+      "dbModelVariant": 0,
+      "missingBrand": 0,
+      "missingSeries": 0,
+      "missingModelVariant": 0,
+      "manualReview": 0,
+      "invalid": 0,
+      "overlay": 0
+    },
+    "Deniz Araçları": {
+      "sourceBrand": 26,
+      "dbBrand": 23,
+      "sourceSeries": 71,
+      "dbSeries": 71,
+      "sourceModelVariant": 0,
+      "dbModelVariant": 71,
+      "missingBrand": 0,
+      "missingSeries": 0,
+      "missingModelVariant": 0,
+      "manualReview": 0,
+      "invalid": 0,
+      "overlay": 0
+    },
+    "Hasarlı Araçlar": {
+      "sourceBrand": 0,
+      "dbBrand": 0,
+      "sourceSeries": 0,
+      "dbSeries": 0,
+      "sourceModelVariant": 0,
+      "dbModelVariant": 0,
+      "missingBrand": 0,
+      "missingSeries": 0,
+      "missingModelVariant": 0,
+      "manualReview": 0,
+      "invalid": 0,
+      "overlay": 0
+    },
+    "Karavan": {
+      "sourceBrand": 32,
+      "dbBrand": 24,
+      "sourceSeries": 76,
+      "dbSeries": 76,
+      "sourceModelVariant": 0,
+      "dbModelVariant": 76,
+      "missingBrand": 0,
+      "missingSeries": 0,
+      "missingModelVariant": 0,
+      "manualReview": 0,
+      "invalid": 0,
+      "overlay": 0
+    },
+    "Klasik Araçlar": {
+      "sourceBrand": 0,
+      "dbBrand": 0,
+      "sourceSeries": 0,
+      "dbSeries": 0,
+      "sourceModelVariant": 0,
+      "dbModelVariant": 0,
+      "missingBrand": 0,
+      "missingSeries": 0,
+      "missingModelVariant": 0,
+      "manualReview": 0,
+      "invalid": 0,
+      "overlay": 0
+    },
+    "Hava Araçları": {
+      "sourceBrand": 16,
+      "dbBrand": 16,
+      "sourceSeries": 46,
+      "dbSeries": 46,
+      "sourceModelVariant": 0,
+      "dbModelVariant": 46,
+      "missingBrand": 0,
+      "missingSeries": 0,
+      "missingModelVariant": 0,
+      "manualReview": 0,
+      "invalid": 0,
+      "overlay": 0
+    },
+    "ATV": {
+      "sourceBrand": 12,
+      "dbBrand": 12,
+      "sourceSeries": 43,
+      "dbSeries": 43,
+      "sourceModelVariant": 0,
+      "dbModelVariant": 43,
+      "missingBrand": 0,
+      "missingSeries": 0,
+      "missingModelVariant": 0,
+      "manualReview": 0,
+      "invalid": 0,
+      "overlay": 0
+    },
+    "UTV": {
+      "sourceBrand": 8,
+      "dbBrand": 8,
+      "sourceSeries": 27,
+      "dbSeries": 27,
+      "sourceModelVariant": 0,
+      "dbModelVariant": 27,
+      "missingBrand": 0,
+      "missingSeries": 0,
+      "missingModelVariant": 0,
+      "manualReview": 0,
+      "invalid": 0,
+      "overlay": 0
+    },
+    "Engelli Plakalı Araçlar": {
+      "sourceBrand": 0,
+      "dbBrand": 0,
+      "sourceSeries": 0,
+      "dbSeries": 0,
+      "sourceModelVariant": 0,
+      "dbModelVariant": 0,
+      "missingBrand": 0,
+      "missingSeries": 0,
+      "missingModelVariant": 0,
+      "manualReview": 0,
+      "invalid": 0,
+      "overlay": 0
+    }
+  },
+  "emptyBrandBranchCount": 33,
+  "manualReviewCount": 6,
+  "electricOverlay": {
+    "skippedSeries": 134,
+    "withoutCanonical": 62,
+    "ui": {
+      "brandsStatus": 200,
+      "brandCount": 0,
+      "sampleBrands": [],
+      "navBrandCount": 0,
+      "bmwIx3OnArazi": {
+        "status": 200,
+        "found": true
+      },
+      "teslaModelYOnArazi": {
+        "status": 200,
+        "found": true
+      },
+      "toggT10xOnArazi": {
+        "status": 200,
+        "found": true
+      },
+      "bmwIx3OnElectric": {
+        "status": 200,
+        "found": false
+      },
+      "teslaModelYOnElectric": {
+        "status": 200,
+        "found": false
+      },
+      "toggT10xOnElectric": {
+        "status": 200,
+        "found": false
+      },
+      "browseTreeOk": true,
+      "browseMentionsElectricFuel": true
+    },
+    "packFuelTypes": {
+      "ix3": [],
+      "note": "Stage1 pack entries typically have fuelTypes:[]; Elektrikli browse uses requiredFilters.fuelType=ELECTRIC on MARKET_SEGMENT, not per-model fuelTypes in pack"
+    }
+  },
+  "specialChecks": {
+    "bmw3": {
+      "path": "Otomobil > BMW > 3 Serisi",
+      "inDb": true,
+      "inPack": true,
+      "variantOk": true
+    },
+    "bmwX3": {
+      "path": "Arazi, SUV & Pickup > BMW > X3",
+      "inDb": true,
+      "inPack": true,
+      "variantOk": true
+    },
+    "tesla3": {
+      "path": "Otomobil > Tesla > Model 3",
+      "inDb": true,
+      "inPack": true,
+      "variantOk": true
+    },
+    "teslaY": {
+      "path": "Arazi, SUV & Pickup > Tesla > Model Y",
+      "inDb": true,
+      "inPack": true,
+      "variantOk": true
+    },
+    "toggX": {
+      "path": "Arazi, SUV & Pickup > TOGG > T10X",
+      "inDb": true,
+      "inPack": true,
+      "variantOk": true
+    },
+    "toggF": {
+      "path": "Otomobil > TOGG > T10F",
+      "inDb": true,
+      "inPack": true,
+      "variantOk": true
+    },
+    "subaruLegacy": {
+      "path": "Otomobil > Subaru > Legacy > 2.0 AWD",
+      "inDb": true,
+      "inPack": true,
+      "variantOk": true
+    },
+    "smart1": {
+      "path": "Otomobil > Smart > #1 > Premium",
+      "inDb": true,
+      "inPack": true,
+      "variantOk": true
+    }
+  },
+  "integrity": {
+    "noPremiumLegacy": true,
+    "noHash1UnderSubaru": true,
+    "noLegacyUnderSmart": true,
+    "noEmptyNames": true,
+    "noMergedBrandSeriesToken": true,
+    "duplicateUnderParent": 0
+  },
+  "verdicts": {
+    "A_systemWorking": "EVET",
+    "B_safeSubsetProductionReady": "EVET",
+    "C_fullSourceTreeComplete": "HAYIR"
+  },
+  "files": {
+    "emptyBrandBranches": "docs/vehicle-import/empty-brand-branches-final.csv",
+    "manualReview": "docs/vehicle-import/manual-review-final-decisions.csv",
+    "missingPaths": "docs/vehicle-import/missing-source-paths-after-apply.csv",
+    "electricOverlay": "docs/vehicle-import/electric-overlay-skip-audit.csv",
+    "reportJson": "scripts/output/vehicle-catalog-completeness-audit.json"
+  }
+}

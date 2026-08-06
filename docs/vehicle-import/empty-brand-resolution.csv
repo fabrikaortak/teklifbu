@@ -1,0 +1,34 @@
+category,brand,originalStatus,resolvedBrandName,source,verifiedSeriesCount,verifiedVariantCount,action,isSelectable,aliasCreated,reason,confidence
+"Arazi, SUV & Pickup",Daewoo,empty_branch,Daewoo,historical-public-market,2,2,FILL,true,false,Historical SsangYong-related Daewoo-badged SUVs sold in many markets,medium
+"Arazi, SUV & Pickup",Santana,empty_branch,Santana,historical-public-market,2,2,FILL,true,false,Spanish Santana Motor off-road models with verified public naming,medium
+Motosiklet,Abush,empty_branch,Abush,none,0,0,HIDE,false,false,No verified public series/model tree; hide from cascade until curated,high
+Motosiklet,Aeon,empty_branch,Aeon,oem-public,3,3,FILL,true,false,Verified Aeon model lineup with internationally recognized names,high
+Motosiklet,Ariic,empty_branch,Ariic,none,0,0,HIDE,false,false,No verified public series/model tree; hide from cascade until curated,high
+Motosiklet,Barossa,empty_branch,Barossa,none,0,0,HIDE,false,false,Primarily ATV/off-road; no verified road motorcycle series for catalog,high
+Motosiklet,Belderia,empty_branch,Belderia,none,0,0,HIDE,false,false,No verified public series/model tree; hide from cascade until curated,high
+Motosiklet,Better,empty_branch,Better,none,0,0,HIDE,false,false,Not clearly established as motorcycle brand on TR market; hide until curated,high
+Motosiklet,Bianchi,empty_branch,Bianchi,none,0,0,HIDE,false,false,Primarily bicycle brand; not applicable to motorcycle catalog,high
+Motosiklet,Boom,empty_branch,Boom,none,0,0,HIDE,false,false,No verified public series/model tree; hide from cascade until curated,high
+Motosiklet,Borelli Ledow,empty_branch,Borelli Ledow,none,0,0,HIDE,false,false,No verified public series/model tree; hide from cascade until curated,high
+Motosiklet,BSA,empty_branch,BSA,oem-public,1,1,FILL,true,false,Verified BSA Gold Star 650 model,high
+Motosiklet,BuMoto/Jinling,empty_branch,BuMoto/Jinling,none,0,0,HIDE,false,false,No verified public series/model tree; hide from cascade until curated,high
+Motosiklet,Cheeta,empty_branch,Cheeta,none,0,0,HIDE,false,false,No verified public series/model tree; hide from cascade until curated,high
+Motosiklet,Cosmopolitan,empty_branch,Cosmopolitan,none,0,0,HIDE,false,false,No verified public series/model tree; hide from cascade until curated,high
+Motosiklet,CRN,empty_branch,CRN,none,0,0,HIDE,false,false,No verified public series/model tree; hide from cascade until curated,high
+Motosiklet,CSN Motor,empty_branch,CSN Motor,none,0,0,HIDE,false,false,No verified public series/model tree; hide from cascade until curated,high
+Motosiklet,Çelik Motor,empty_branch,Çelik Motor,none,0,0,HIDE,false,false,No verified public series/model tree; hide from cascade until curated,high
+Motosiklet,Dayun,empty_branch,Dayun,export-naming,2,2,FILL,true,false,"Common Dayun export model naming (DY125, DY150)",medium
+Motosiklet,Delta Motorcycle,empty_branch,Delta Motorcycle,none,0,0,HIDE,false,false,No verified public series/model tree; hide from cascade until curated,high
+Motosiklet,Dofern,empty_branch,Dofern,none,0,0,HIDE,false,false,No verified public series/model tree; hide from cascade until curated,high
+Motosiklet,Dorado,empty_branch,Dorado,none,0,0,HIDE,false,false,No verified public series/model tree; hide from cascade until curated,high
+Motosiklet,Enbest,empty_branch,Enbest,none,0,0,HIDE,false,false,No verified public series/model tree; hide from cascade until curated,high
+Motosiklet,FCM,empty_branch,FCM,none,0,0,HIDE,false,false,No verified public series/model tree; hide from cascade until curated,high
+Motosiklet,Fosti,empty_branch,Fosti,none,0,0,HIDE,false,false,No verified public series/model tree; hide from cascade until curated,high
+Motosiklet,Italjet,empty_branch,Italjet,oem-public,2,2,FILL,true,false,Verified Italjet Dragster model lineup,high
+Motosiklet,Jawa,empty_branch,Jawa,oem-public,3,3,FILL,true,false,Verified Jawa model lineup,high
+Motosiklet,Jialing,empty_branch,Jialing,export-naming,2,2,FILL,true,false,"Common Jialing export model naming (JH125, JH150)",medium
+Motosiklet,Mash,empty_branch,Mash,oem-public,3,3,FILL,true,false,Verified Mash model lineup,high
+Motosiklet,Meka,empty_branch,Meka,none,0,0,HIDE,false,false,No verified public series/model tree; hide from cascade until curated,high
+Motosiklet,Motron,empty_branch,Motron,oem-public,3,3,FILL,true,false,Verified Motron model lineup,high
+Motosiklet,MZ,empty_branch,MZ,oem-public,2,2,FILL,true,false,Verified MZ model lineup,high
+Motosiklet,Skyjet,empty_branch,Skyjet,none,0,0,HIDE,false,false,No verified public series/model tree; hide from cascade until curated,high

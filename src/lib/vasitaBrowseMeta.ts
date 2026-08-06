@@ -63,6 +63,13 @@ export function subtypeForMeta(
   slug: string,
   parentMeta?: VasitaMeta | null
 ): string {
+  // Electric MARKET_SEGMENT leaves keep overlay slug so cascade uses vasita_electric_overlay.
+  if (
+    meta?.attributeTemplate === "ELECTRIC_OVERLAY" ||
+    String(meta?.requiredFilters?.fuelType || "").toUpperCase() === "ELECTRIC"
+  ) {
+    return slug;
+  }
   const fromFilter = meta?.requiredFilters?.catalogScope;
   if (typeof fromFilter === "string" && CATALOG_SCOPE_TO_SUBTYPE[fromFilter]) {
     return CATALOG_SCOPE_TO_SUBTYPE[fromFilter];
@@ -123,4 +130,17 @@ export function filterForMeta(
 /** `filter._attrs` accessor shared by CategoryLadderPicker regardless of tree source. */
 export function readBrowseExtraAttrs(filter: BrowseFilter): Record<string, string> {
   return (filter as FilterWithAttrs)._attrs || {};
+}
+
+/** SUV/Crossover/Pickup bodySubtype dalları menüde yok — Arazi ana kategorisinden markaya. */
+export function isBodySubtypeOnlyBrowseChild(
+  meta: VasitaMeta | null | undefined,
+  parentMeta?: VasitaMeta | null
+): boolean {
+  const maps = meta?.mapsToAttribute;
+  if (!maps || typeof maps !== "object") return false;
+  const keys = Object.keys(maps);
+  if (keys.length !== 1 || keys[0] !== "bodySubtype") return false;
+  const parentScope = parentMeta?.catalogScope || parentMeta?.attributeTemplate;
+  return parentScope === "SUV_PICKUP" || parentMeta?.legacySubtype === "arazi-suv-pickup";
 }

@@ -1,0 +1,228 @@
+category,subcategory,brand,series,modelVariant,level,sourceStatus,reasonNotApplied,invalid,manualReview,overlay,requiredAction
+Otomobil,,Cupra,Formentor,,SERIES,CURATED_REVIEW,manual_review_blocked,false,true,false,Human decide canonical category then MOVE/CREATE
+Otomobil,,Cupra,Formentor,1.5 TSI,MODEL_VARIANT,CURATED_REVIEW,manual_review_blocked,false,true,false,Human decide canonical category then MOVE/CREATE
+Otomobil,,Cupra,Formentor,2.0 TSI,MODEL_VARIANT,CURATED_REVIEW,manual_review_blocked,false,true,false,Human decide canonical category then MOVE/CREATE
+Otomobil,,Cupra,Formentor,VZ,MODEL_VARIANT,CURATED_REVIEW,manual_review_blocked,false,true,false,Human decide canonical category then MOVE/CREATE
+Otomobil,,Cupra,Formentor,e-Hybrid,MODEL_VARIANT,CURATED_REVIEW,manual_review_blocked,false,true,false,Human decide canonical category then MOVE/CREATE
+Otomobil,,MG,HS,,SERIES,CURATED_REVIEW,manual_review_blocked,false,true,false,Human decide canonical category then MOVE/CREATE
+Otomobil,,MG,HS,Comfort,MODEL_VARIANT,CURATED_REVIEW,manual_review_blocked,false,true,false,Human decide canonical category then MOVE/CREATE
+Otomobil,,MG,HS,Luxury,MODEL_VARIANT,CURATED_REVIEW,manual_review_blocked,false,true,false,Human decide canonical category then MOVE/CREATE
+Otomobil,,MG,HS,PHEV,MODEL_VARIANT,CURATED_REVIEW,manual_review_blocked,false,true,false,Human decide canonical category then MOVE/CREATE
+Otomobil,,MG,ZS,,SERIES,CURATED_REVIEW,manual_review_blocked,false,true,false,Human decide canonical category then MOVE/CREATE
+Otomobil,,MG,ZS,Comfort,MODEL_VARIANT,CURATED_REVIEW,manual_review_blocked,false,true,false,Human decide canonical category then MOVE/CREATE
+Otomobil,,MG,ZS,Luxury,MODEL_VARIANT,CURATED_REVIEW,manual_review_blocked,false,true,false,Human decide canonical category then MOVE/CREATE
+Otomobil,,MG,ZS,EV,MODEL_VARIANT,CURATED_REVIEW,manual_review_blocked,false,true,false,Human decide canonical category then MOVE/CREATE
+"Arazi, SUV & Pickup",,Daewoo,,,BRAND,PUBLIC_NAV_VERIFIED,empty_brand_branch,true,false,false,Supply series/models or hide brand from cascade
+"Arazi, SUV & Pickup",,Santana,,,BRAND,PUBLIC_NAV_VERIFIED,empty_brand_branch,true,false,false,Supply series/models or hide brand from cascade
+Elektrikli Araçlar,,Aion,,,BRAND,PUBLIC_NAV_VERIFIED,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Aion,ES,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Aion,Hyper GT,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Aion,S,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Aion,Y Plus,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Audi,,,BRAND,PUBLIC_NAV_VERIFIED,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Audi,A6 e-tron,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Audi,e-tron GT,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Audi,Q4 e-tron,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Audi,Q6 e-tron,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Audi,Q8 e-tron,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,BMW,,,BRAND,PUBLIC_NAV_VERIFIED,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,BMW,i3,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,BMW,i4,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,BMW,i5,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,BMW,i7,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,BMW,iX,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,BMW,iX1,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,BMW,iX2,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,BMW,iX3,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,BYD,,,BRAND,PUBLIC_NAV_VERIFIED,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,BYD,Atto 3,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,BYD,Dolphin,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,BYD,Han,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,BYD,Seal,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,BYD,Seal U,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,BYD,Tang,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Citroen,,,BRAND,PUBLIC_NAV_VERIFIED,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Citroen,Ami,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Citroen,e-Berlingo,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Citroen,e-C3,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Citroen,e-C4,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Citroen,e-C4 X,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Cupra,,,BRAND,PUBLIC_NAV_VERIFIED,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Cupra,Born,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Cupra,Tavascan,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,DS Automobiles,,,BRAND,PUBLIC_NAV_VERIFIED,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,DS Automobiles,DS 3 E-Tense,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,DS Automobiles,DS 4 E-Tense,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Fiat,,,BRAND,PUBLIC_NAV_VERIFIED,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Fiat,500e,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Fiat,600e,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Fiat,E-Doblo,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Fiat,E-Ducato,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Fiat,Topolino,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Ford,,,BRAND,PUBLIC_NAV_VERIFIED,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Ford,Capri EV,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Ford,E-Transit,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Ford,E-Transit Courier,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Ford,Explorer EV,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Ford,Mustang Mach-E,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Honda,,,BRAND,PUBLIC_NAV_VERIFIED,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Honda,e:Ny1,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Honda,Honda e,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Hyundai,,,BRAND,PUBLIC_NAV_VERIFIED,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Hyundai,Inster,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Hyundai,Ioniq 5,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Hyundai,Ioniq 6,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Hyundai,Kona Electric,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Jaguar,,,BRAND,PUBLIC_NAV_VERIFIED,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Jaguar,I-Pace,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Jeep,,,BRAND,PUBLIC_NAV_VERIFIED,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Jeep,Avenger Electric,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Kia,,,BRAND,PUBLIC_NAV_VERIFIED,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Kia,EV3,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Kia,EV5,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Kia,EV6,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Kia,EV9,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Kia,Niro EV,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Leapmotor,,,BRAND,PUBLIC_NAV_VERIFIED,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Leapmotor,C10,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Leapmotor,C11,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Leapmotor,T03,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Lexus,,,BRAND,PUBLIC_NAV_VERIFIED,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Lexus,RZ,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Lexus,UX 300e,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Mercedes-Benz,,,BRAND,PUBLIC_NAV_VERIFIED,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Mercedes-Benz,EQA,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Mercedes-Benz,EQB,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Mercedes-Benz,EQC,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Mercedes-Benz,EQE,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Mercedes-Benz,EQE SUV,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Mercedes-Benz,EQS,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Mercedes-Benz,EQS SUV,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Mercedes-Benz,G 580 EQ,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,MG,,,BRAND,PUBLIC_NAV_VERIFIED,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,MG,Marvel R,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,MG,MG4,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,MG,MG5 Electric,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,MG,ZS EV,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Mini,,,BRAND,PUBLIC_NAV_VERIFIED,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Mini,Aceman,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Mini,Cooper Electric,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Mini,Countryman Electric,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Nissan,,,BRAND,PUBLIC_NAV_VERIFIED,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Nissan,Ariya,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Nissan,Leaf,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Nissan,Townstar EV,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Opel,,,BRAND,PUBLIC_NAV_VERIFIED,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Opel,Astra Electric,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Opel,Combo Electric,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Opel,Corsa Electric,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Opel,Frontera Electric,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Opel,Mokka Electric,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Opel,Vivaro Electric,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Peugeot,,,BRAND,PUBLIC_NAV_VERIFIED,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Peugeot,e-2008,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Peugeot,e-208,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Peugeot,e-3008,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Peugeot,e-5008,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Peugeot,e-Expert,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Peugeot,e-Partner,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Peugeot,e-Rifter,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Polestar,,,BRAND,PUBLIC_NAV_VERIFIED,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Polestar,2,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Polestar,3,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Polestar,4,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Porsche,,,BRAND,PUBLIC_NAV_VERIFIED,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Porsche,Macan Electric,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Porsche,Taycan,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Renault,,,BRAND,PUBLIC_NAV_VERIFIED,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Renault,Kangoo E-Tech,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Renault,Master E-Tech,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Renault,Megane E-Tech,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Renault,Scenic E-Tech,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Renault,Zoe,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Seres,,,BRAND,PUBLIC_NAV_VERIFIED,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Seres,Seres 3,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Seres,Seres 5,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Skoda,,,BRAND,PUBLIC_NAV_VERIFIED,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Skoda,Citigo-e,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Skoda,Elroq,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Skoda,Enyaq,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Skywell,,,BRAND,PUBLIC_NAV_VERIFIED,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Skywell,ET5,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Skywell,HT-i,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Smart,,,BRAND,PUBLIC_NAV_VERIFIED,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Smart,#1,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Smart,#3,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Subaru,,,BRAND,PUBLIC_NAV_VERIFIED,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Subaru,Solterra,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Tesla,,,BRAND,PUBLIC_NAV_VERIFIED,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Tesla,Cybertruck,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Tesla,Model 3,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Tesla,Model S,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Tesla,Model X,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Tesla,Model Y,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,TOGG,,,BRAND,PUBLIC_NAV_VERIFIED,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,TOGG,T10F,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,TOGG,T10X,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Toyota,,,BRAND,PUBLIC_NAV_VERIFIED,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Toyota,bZ4X,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Toyota,Proace City Electric,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Toyota,Proace Electric,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Volkswagen,,,BRAND,PUBLIC_NAV_VERIFIED,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Volkswagen,ID. Buzz,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Volkswagen,ID.3,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Volkswagen,ID.4,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Volkswagen,ID.5,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Volkswagen,ID.7,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Volvo,,,BRAND,PUBLIC_NAV_VERIFIED,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Volvo,C40 Recharge,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Volvo,EX30,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Volvo,EX40,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Volvo,EX90,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Voyah,,,BRAND,PUBLIC_NAV_VERIFIED,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Voyah,Dream,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Voyah,Free,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,Voyah,Passion,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,XEV,,,BRAND,PUBLIC_NAV_VERIFIED,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Elektrikli Araçlar,,XEV,Yoyo,,SERIES,CURATED_REVIEW,overlay_hub_not_seeded,false,false,true,Keep as fuelType/filter overlay; ensure canonical series exists
+Motosiklet,,Abush,,,BRAND,PUBLIC_NAV_VERIFIED,empty_brand_branch,true,false,false,Supply series/models or hide brand from cascade
+Motosiklet,,Aeon,,,BRAND,PUBLIC_NAV_VERIFIED,empty_brand_branch,true,false,false,Supply series/models or hide brand from cascade
+Motosiklet,,Ariic,,,BRAND,PUBLIC_NAV_VERIFIED,empty_brand_branch,true,false,false,Supply series/models or hide brand from cascade
+Motosiklet,,Barossa,,,BRAND,PUBLIC_NAV_VERIFIED,empty_brand_branch,true,false,false,Supply series/models or hide brand from cascade
+Motosiklet,,Belderia,,,BRAND,PUBLIC_NAV_VERIFIED,empty_brand_branch,true,false,false,Supply series/models or hide brand from cascade
+Motosiklet,,Better,,,BRAND,PUBLIC_NAV_VERIFIED,empty_brand_branch,true,false,false,Supply series/models or hide brand from cascade
+Motosiklet,,Bianchi,,,BRAND,PUBLIC_NAV_VERIFIED,empty_brand_branch,true,false,false,Supply series/models or hide brand from cascade
+Motosiklet,,Boom,,,BRAND,PUBLIC_NAV_VERIFIED,empty_brand_branch,true,false,false,Supply series/models or hide brand from cascade
+Motosiklet,,Borelli Ledow,,,BRAND,PUBLIC_NAV_VERIFIED,empty_brand_branch,true,false,false,Supply series/models or hide brand from cascade
+Motosiklet,,BSA,,,BRAND,PUBLIC_NAV_VERIFIED,empty_brand_branch,true,false,false,Supply series/models or hide brand from cascade
+Motosiklet,,BuMoto/Jinling,,,BRAND,PUBLIC_NAV_VERIFIED,empty_brand_branch,true,false,false,Supply series/models or hide brand from cascade
+Motosiklet,,Cheeta,,,BRAND,PUBLIC_NAV_VERIFIED,empty_brand_branch,true,false,false,Supply series/models or hide brand from cascade
+Motosiklet,,Cosmopolitan,,,BRAND,PUBLIC_NAV_VERIFIED,empty_brand_branch,true,false,false,Supply series/models or hide brand from cascade
+Motosiklet,,CRN,,,BRAND,PUBLIC_NAV_VERIFIED,empty_brand_branch,true,false,false,Supply series/models or hide brand from cascade
+Motosiklet,,CSN Motor,,,BRAND,PUBLIC_NAV_VERIFIED,empty_brand_branch,true,false,false,Supply series/models or hide brand from cascade
+Motosiklet,,Dayun,,,BRAND,PUBLIC_NAV_VERIFIED,empty_brand_branch,true,false,false,Supply series/models or hide brand from cascade
+Motosiklet,,Delta Motorcycle,,,BRAND,PUBLIC_NAV_VERIFIED,empty_brand_branch,true,false,false,Supply series/models or hide brand from cascade
+Motosiklet,,Dofern,,,BRAND,PUBLIC_NAV_VERIFIED,empty_brand_branch,true,false,false,Supply series/models or hide brand from cascade
+Motosiklet,,Dorado,,,BRAND,PUBLIC_NAV_VERIFIED,empty_brand_branch,true,false,false,Supply series/models or hide brand from cascade
+Motosiklet,,Enbest,,,BRAND,PUBLIC_NAV_VERIFIED,empty_brand_branch,true,false,false,Supply series/models or hide brand from cascade
+Motosiklet,,FCM,,,BRAND,PUBLIC_NAV_VERIFIED,empty_brand_branch,true,false,false,Supply series/models or hide brand from cascade
+Motosiklet,,Fosti,,,BRAND,PUBLIC_NAV_VERIFIED,empty_brand_branch,true,false,false,Supply series/models or hide brand from cascade
+Motosiklet,,Italjet,,,BRAND,PUBLIC_NAV_VERIFIED,empty_brand_branch,true,false,false,Supply series/models or hide brand from cascade
+Motosiklet,,Jawa,,,BRAND,PUBLIC_NAV_VERIFIED,empty_brand_branch,true,false,false,Supply series/models or hide brand from cascade
+Motosiklet,,Jialing,,,BRAND,PUBLIC_NAV_VERIFIED,empty_brand_branch,true,false,false,Supply series/models or hide brand from cascade
+Motosiklet,,Mash,,,BRAND,PUBLIC_NAV_VERIFIED,empty_brand_branch,true,false,false,Supply series/models or hide brand from cascade
+Motosiklet,,Meka,,,BRAND,PUBLIC_NAV_VERIFIED,empty_brand_branch,true,false,false,Supply series/models or hide brand from cascade
+Motosiklet,,Motron,,,BRAND,PUBLIC_NAV_VERIFIED,empty_brand_branch,true,false,false,Supply series/models or hide brand from cascade
+Motosiklet,,MZ,,,BRAND,PUBLIC_NAV_VERIFIED,empty_brand_branch,true,false,false,Supply series/models or hide brand from cascade
+Motosiklet,,Skyjet,,,BRAND,PUBLIC_NAV_VERIFIED,empty_brand_branch,true,false,false,Supply series/models or hide brand from cascade
+Motosiklet,,Çelik Motor,,,BRAND,PUBLIC_NAV_VERIFIED,empty_brand_branch,true,false,false,Supply series/models or hide brand from cascade
+Minivan & Panelvan,,Iveco,,,BRAND,PUBLIC_NAV_VERIFIED,manual_review_blocked,false,true,false,Human decide canonical category then MOVE/CREATE
+Minivan & Panelvan,,Iveco,Daily,,SERIES,CURATED_REVIEW,manual_review_blocked,false,true,false,Human decide canonical category then MOVE/CREATE
+Minivan & Panelvan,,Iveco,Daily,35C15,MODEL_VARIANT,CURATED_REVIEW,manual_review_blocked,false,true,false,Human decide canonical category then MOVE/CREATE
+Minivan & Panelvan,,Iveco,Daily,35S16,MODEL_VARIANT,CURATED_REVIEW,manual_review_blocked,false,true,false,Human decide canonical category then MOVE/CREATE
+Minivan & Panelvan,,Iveco,Daily,50C15,MODEL_VARIANT,CURATED_REVIEW,manual_review_blocked,false,true,false,Human decide canonical category then MOVE/CREATE
+Minivan & Panelvan,,Iveco,Daily,70C15,MODEL_VARIANT,CURATED_REVIEW,manual_review_blocked,false,true,false,Human decide canonical category then MOVE/CREATE
+Minivan & Panelvan,,Volkswagen,Crafter,,SERIES,CURATED_REVIEW,manual_review_blocked,false,true,false,Human decide canonical category then MOVE/CREATE
+Minivan & Panelvan,,Volkswagen,Crafter,2.0 TDI L3H2,MODEL_VARIANT,CURATED_REVIEW,manual_review_blocked,false,true,false,Human decide canonical category then MOVE/CREATE
+Minivan & Panelvan,,Volkswagen,Crafter,L4H3,MODEL_VARIANT,CURATED_REVIEW,manual_review_blocked,false,true,false,Human decide canonical category then MOVE/CREATE
+Ticari Araçlar,Minibüs & Midibüs,Mercedes-Benz,Vito,,SERIES,CURATED_REVIEW,manual_review_blocked,false,true,false,Human decide canonical category then MOVE/CREATE

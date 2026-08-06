@@ -1,0 +1,7 @@
+brand,series,previousPath,canonicalPath,overlayPaths,variantRule,existingId,preservedId,listingCount,action,reason
+Cupra,Formentor,arac/arazi-suv-pickup,arac/arazi-suv-pickup,,none,cmshvhoft002wuza8mpky4uju,yes,0,KEEP_ARAZI_ONLY,SUV/crossover — never duplicate under Otomobil
+MG,HS,arac/arazi-suv-pickup,arac/arazi-suv-pickup,,none,cmshvhowl003uuza8q8w73r9s,yes,0,KEEP_ARAZI_ONLY,Crossover/SUV
+MG,ZS,arac/arazi-suv-pickup,arac/arazi-suv-pickup,,ZS EV electric overlay; ICE stays arazi,cmshvhovn003suza84he1edaa,yes,0,KEEP_ARAZI_ONLY,Crossover/SUV; ZS EV via electric overlay
+Mercedes-Benz,Vito,arac/minivan-panelvan,arac/minivan-panelvan,,none,cmshtjju40070uz6sgvpxwvyw,yes,0,KEEP_MINIVAN_ONLY,Canonical minivan-panelvan; no ticari duplicate series
+Iveco,Daily,arac/ticari-araclar,arac/minivan-panelvan,arac/ticari-araclar,panelvan/minibus→minivan; chassis/open→ticari via dual CategoryModel link (single ProductModel),cmshtjkc7007kuz6s5rodb3gh,yes,0,DUAL_LINK_MINIVAN_TICARI,"One series, two category links by body use — no duplicate ProductModel"
+Volkswagen,Crafter,arac/ticari-araclar,arac/minivan-panelvan,arac/ticari-araclar,panelvan→minivan; chassis/truck→ticari via dual CategoryModel link,cmshtjk9r007iuz6siqv8al9z,yes,0,DUAL_LINK_MINIVAN_TICARI,"One series, two category links — no duplicate ProductModel"

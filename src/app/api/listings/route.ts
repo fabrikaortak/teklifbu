@@ -10,6 +10,7 @@ import { isListingNoQuery, normalizeListingNoQuery } from "@/lib/listingNo";
 import { canSellerEditListing } from "@/lib/listingStatus";
 import { shouldShowPremiumBadge } from "@/lib/listingPremiumDisplay";
 import { assertEscrowModuleAvailable } from "@/core/services/escrowService";
+import { resolveElectricListingAttrs } from "@/lib/vasitaElectric";
 
 export async function GET(req: Request) {
   await processExpiredListings();
@@ -513,10 +514,26 @@ export async function GET(req: Request) {
     where.dealType = dealType;
   }
   if (subtype) {
-    where.AND = [
-      ...((where.AND as unknown[]) || []),
-      { attributes: { path: ["subtype"], equals: subtype } },
-    ];
+    const electric = resolveElectricListingAttrs(subtype);
+    if (electric) {
+      where.AND = [
+        ...((where.AND as unknown[]) || []),
+        { attributes: { path: ["subtype"], equals: electric.subtype } },
+        {
+          OR: [
+            { attributes: { path: ["fuel"], equals: electric.fuel } },
+            { attributes: { path: ["fuelType"], equals: electric.fuel } },
+            { attributes: { path: ["fuel"], equals: "Elektrik" } },
+            { attributes: { path: ["fuel"], equals: "ELEKTRIK" } },
+          ],
+        },
+      ];
+    } else {
+      where.AND = [
+        ...((where.AND as unknown[]) || []),
+        { attributes: { path: ["subtype"], equals: subtype } },
+      ];
+    }
   }
   if (rental === "gunluk") {
     where.AND = [

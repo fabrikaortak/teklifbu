@@ -1,0 +1,23 @@
+category,brand,brandSlug,existingId,action,reason
+Motosiklet,Abush,abush,,SET_INACTIVE,No verified public series/model tree; hide from cascade until curated
+Motosiklet,Ariic,ariic,,SET_INACTIVE,No verified public series/model tree; hide from cascade until curated
+Motosiklet,Barossa,barossa,,SET_INACTIVE,Primarily ATV/off-road; no verified road motorcycle series for catalog
+Motosiklet,Belderia,belderia,,SET_INACTIVE,No verified public series/model tree; hide from cascade until curated
+Motosiklet,Better,better,,SET_INACTIVE,Not clearly established as motorcycle brand on TR market; hide until curated
+Motosiklet,Bianchi,bianchi,cmsg3mrax007zuzsws1525ygn,SET_INACTIVE,Primarily bicycle brand; not applicable to motorcycle catalog
+Motosiklet,Boom,boom,,SET_INACTIVE,No verified public series/model tree; hide from cascade until curated
+Motosiklet,Borelli Ledow,borelli-ledow,,SET_INACTIVE,No verified public series/model tree; hide from cascade until curated
+Motosiklet,BuMoto/Jinling,bumoto-jinling,,SET_INACTIVE,No verified public series/model tree; hide from cascade until curated
+Motosiklet,Cheeta,cheeta,,SET_INACTIVE,No verified public series/model tree; hide from cascade until curated
+Motosiklet,Cosmopolitan,cosmopolitan,,SET_INACTIVE,No verified public series/model tree; hide from cascade until curated
+Motosiklet,CRN,crn,,SET_INACTIVE,No verified public series/model tree; hide from cascade until curated
+Motosiklet,CSN Motor,csn-motor,,SET_INACTIVE,No verified public series/model tree; hide from cascade until curated
+Motosiklet,Çelik Motor,celik-motor,,SET_INACTIVE,No verified public series/model tree; hide from cascade until curated
+Motosiklet,Delta Motorcycle,delta-motorcycle,,SET_INACTIVE,No verified public series/model tree; hide from cascade until curated
+Motosiklet,Dofern,dofern,,SET_INACTIVE,No verified public series/model tree; hide from cascade until curated
+Motosiklet,Dorado,dorado,,SET_INACTIVE,No verified public series/model tree; hide from cascade until curated
+Motosiklet,Enbest,enbest,,SET_INACTIVE,No verified public series/model tree; hide from cascade until curated
+Motosiklet,FCM,fcm,,SET_INACTIVE,No verified public series/model tree; hide from cascade until curated
+Motosiklet,Fosti,fosti,,SET_INACTIVE,No verified public series/model tree; hide from cascade until curated
+Motosiklet,Meka,meka,,SET_INACTIVE,No verified public series/model tree; hide from cascade until curated
+Motosiklet,Skyjet,skyjet,,SET_INACTIVE,No verified public series/model tree; hide from cascade until curated
