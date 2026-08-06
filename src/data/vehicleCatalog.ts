@@ -1,4 +1,21 @@
-/** Vasıta kataloğu — Sahibinden tarzı marka / model / paket (trim) */
+/**
+ * Vasıta kataloğu — Sahibinden tarzı marka / model / paket (trim)
+ *
+ * ⚠️ EMERGENCY FALLBACK ONLY. The DB-backed Stage1 catalog
+ * (docs/vertical-taxonomy/vehicle-stage1-catalog.json, built by
+ * scripts/build-vehicle-stage1-catalog-v2.ts + applied via
+ * scripts/vehicle-stage1-catalog-apply.ts) is the source of truth for
+ * brand/model coverage — it has ~75 brands across otomobil/arazi-suv-pickup/
+ * motosiklet/ticari-araclar/minivan-panelvan, all real TR-market models,
+ * real generations where verified (no fake "Standart"/"default").
+ *
+ * This static list is only consulted by CategoryLadderPicker/vehicleMatch.ts
+ * when the DB/API is unreachable or has no rows for a subtype+brand. It is
+ * intentionally NOT kept in full parity with the v2 pack — full validation
+ * loosening (accepting any brand/model the DB catalog knows about, not just
+ * this static subset) should be handled separately if/when the emergency
+ * fallback path needs the same coverage as the primary DB path.
+ */
 
 export type VehicleTrim = { slug: string; name: string };
 export type VehicleModel = { slug: string; name: string; trims?: VehicleTrim[] };
@@ -231,6 +248,16 @@ export const VEHICLE_CATALOG: Record<string, VehicleBrand[]> = {
         { slug: "model-s", name: "Model S" },
       ],
     },
+    // Light additions — real TR-market models, kept in sync with build-vehicle-stage1-catalog-v2.ts.
+    { slug: "kia", name: "Kia", models: [{ slug: "ceed", name: "Ceed" }, { slug: "picanto", name: "Picanto" }] },
+    { slug: "mazda", name: "Mazda", models: [{ slug: "3", name: "Mazda3" }] },
+    { slug: "dacia", name: "Dacia", models: [{ slug: "sandero", name: "Sandero" }, { slug: "logan", name: "Logan" }] },
+    { slug: "mg", name: "MG", models: [{ slug: "mg5", name: "MG5" }] },
+    { slug: "alfa-romeo", name: "Alfa Romeo", models: [{ slug: "giulia", name: "Giulia" }] },
+    { slug: "jaguar", name: "Jaguar", models: [{ slug: "xe", name: "XE" }, { slug: "xf", name: "XF" }] },
+    { slug: "porsche", name: "Porsche", models: [{ slug: "panamera", name: "Panamera" }, { slug: "911", name: "911" }] },
+    { slug: "lexus", name: "Lexus", models: [{ slug: "es", name: "ES" }] },
+    { slug: "cupra", name: "Cupra", models: [{ slug: "leon", name: "Leon" }] },
   ],
 
   "arazi-suv-pickup": [
@@ -335,6 +362,15 @@ export const VEHICLE_CATALOG: Record<string, VehicleBrand[]> = {
         { slug: "defender", name: "Defender" },
       ],
     },
+    // Light additions — real TR-market models, kept in sync with build-vehicle-stage1-catalog-v2.ts.
+    { slug: "dacia", name: "Dacia", models: [{ slug: "duster", name: "Duster" }] },
+    { slug: "mitsubishi", name: "Mitsubishi", models: [{ slug: "outlander", name: "Outlander" }, { slug: "asx", name: "ASX" }] },
+    { slug: "subaru", name: "Subaru", models: [{ slug: "forester", name: "Forester" }, { slug: "outback", name: "Outback" }] },
+    { slug: "suzuki", name: "Suzuki", models: [{ slug: "vitara", name: "Vitara" }, { slug: "s-cross", name: "S-Cross" }] },
+    { slug: "kgm", name: "KGM", models: [{ slug: "torres", name: "Torres" }, { slug: "korando", name: "Korando" }] },
+    { slug: "isuzu", name: "Isuzu", models: [{ slug: "d-max", name: "D-Max" }] },
+    { slug: "porsche", name: "Porsche", models: [{ slug: "macan", name: "Macan" }, { slug: "cayenne", name: "Cayenne" }] },
+    { slug: "togg", name: "TOGG", models: [{ slug: "t10x", name: "T10X" }] },
   ],
 
   motosiklet: [
@@ -391,6 +427,11 @@ export const VEHICLE_CATALOG: Record<string, VehicleBrand[]> = {
         { slug: "adventure", name: "Adventure" },
       ],
     },
+    // Light additions — real TR-market models, kept in sync with build-vehicle-stage1-catalog-v2.ts.
+    { slug: "bmw-motorrad", name: "BMW Motorrad", models: [{ slug: "r1250gs", name: "R 1250 GS" }, { slug: "g310r", name: "G 310 R" }] },
+    { slug: "ducati", name: "Ducati", models: [{ slug: "monster", name: "Monster" }] },
+    { slug: "vespa", name: "Vespa", models: [{ slug: "primavera150", name: "Primavera 150" }] },
+    { slug: "royal-enfield", name: "Royal Enfield", models: [{ slug: "classic350", name: "Classic 350" }] },
   ],
 
   "minivan-panelvan": [
@@ -462,6 +503,11 @@ export const VEHICLE_CATALOG: Record<string, VehicleBrand[]> = {
       name: "Iveco",
       models: [{ slug: "daily", name: "Daily" }, { slug: "eurocargo", name: "Eurocargo" }],
     },
+    // Light additions — real TR-market models, kept in sync with build-vehicle-stage1-catalog-v2.ts.
+    { slug: "bmc", name: "BMC", models: [{ slug: "tugra", name: "Tuğra" }] },
+    { slug: "otokar", name: "Otokar", models: [{ slug: "kent", name: "Kent" }, { slug: "atlas", name: "Atlas" }] },
+    { slug: "man", name: "MAN", models: [{ slug: "tgx", name: "TGX" }] },
+    { slug: "scania", name: "Scania", models: [{ slug: "r-series", name: "R Serisi" }] },
   ],
 
   "elektrikli-araclar": [

@@ -1,0 +1,16 @@
+legacy_subtype,legacy_source,target_path,target_slug,browse_role,catalog_scope,persists_as_category,listing_write_strategy,alias_needed,notes
+otomobil,categoryBrowseTree.ARAC_TYPES,arac/otomobil,otomobil,VEHICLE_TYPE,PASSENGER_CAR,true,categoryId=otomobil + attributes.subtype=otomobil,yes,bodyType attribute not category
+arazi-suv-pickup,categoryBrowseTree.ARAC_TYPES,arac/arazi-suv-pickup,arazi-suv-pickup,VEHICLE_TYPE,SUV_PICKUP,true,categoryId=arazi-suv-pickup + optional bodySubtype,yes,
+motosiklet,categoryBrowseTree.ARAC_TYPES,arac/motosiklet,motosiklet,VEHICLE_TYPE,MOTORCYCLE,true,categoryId=motosiklet or leaf class + motorcycleClass,yes,
+minivan-panelvan,categoryBrowseTree.ARAC_TYPES,arac/minivan-panelvan,minivan-panelvan,VEHICLE_TYPE,MINIVAN_PANELVAN,true,categoryId=minivan-panelvan + usageClass,yes,
+ticari-araclar,categoryBrowseTree.ARAC_TYPES,arac/ticari-araclar,ticari-araclar,VEHICLE_TYPE,null,true,resolve to commercial leaf catalogScope,yes,expand under ticari
+kiralik-araclar,categoryBrowseTree.ARAC_TYPES,arac/kiralik-araclar,kiralik-araclar,TRANSACTION_MODE,null,true(hub),canonical vehicle type + dealType=KIRALIK,yes,do not duplicate brand catalog
+deniz-araclari,categoryBrowseTree.ARAC_TYPES,arac/deniz-araclari,deniz-araclari,VEHICLE_TYPE,MARINE_VEHICLE,true,categoryId=marine leaf,yes,
+hasarli-araclar,categoryBrowseTree.ARAC_TYPES,arac/hasarli-araclar,hasarli-araclar,CONDITION_SEGMENT,null,true(hub),canonical type + condition=DAMAGED,yes,
+karavan,categoryBrowseTree.ARAC_TYPES,arac/karavan,karavan,VEHICLE_TYPE,CARAVAN,true,categoryId=karavan leaf,yes,
+klasik-araclar,categoryBrowseTree.ARAC_TYPES,arac/klasik-araclar,klasik-araclar,SPECIAL_SEGMENT,null,true(hub),canonical type + classicStatus=true,yes,
+elektrikli-araclar,categoryBrowseTree.ARAC_TYPES,arac/elektrikli-araclar,elektrikli-araclar,MARKET_SEGMENT,null,true(hub),canonical type + fuelType=ELECTRIC,yes,
+atv,categoryBrowseTree.ARAC_TYPES,arac/atv,atv,VEHICLE_TYPE,ATV,true,categoryId=atv leaf,yes,
+ucak,categoryBrowseTree.ARAC_TYPES,arac/hava-araclari,hava-araclari,VEHICLE_TYPE,AIRCRAFT,true,map ucak→hava-araclari (+ leaf ucak),yes,rename browse label
+engelli-plakali,categoryBrowseTree.ARAC_TYPES,arac/engelli-plakali,engelli-plakali,SPECIAL_SEGMENT,null,true(hub),canonical type + disabledPlateEligible=true,yes,
+(none),NEW,arac/utv,utv,VEHICLE_TYPE,UTV,true,new main nav,no,greenfield UTV

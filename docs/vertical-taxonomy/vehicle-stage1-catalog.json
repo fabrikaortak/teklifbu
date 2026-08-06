@@ -1,0 +1,8723 @@
+{
+  "version": "vehicle-stage1-catalog-v2",
+  "generatedAt": "2026-08-06",
+  "source": "tr-market-oem-model-2024",
+  "notes": [
+    "v2 — real TR-market brand/model/generation data only. NEVER emits generationCode/Label default/Standart/Genel.",
+    "Models with no verified generation carry generationCode:\"\" / generationLabel:\"\" — versions attach directly to the model row.",
+    "Only real, well-known chassis/generation codes included (BMW F30/G20/G30/G60, VW Golf mk7/mk8, Mercedes W205/W206, Toyota Corolla E210, Renault Clio V, Ford Focus mk4, Honda Civic 11th gen, Peugeot 208 P21).",
+    "elektrikli-araclar (MARKET_SEGMENT hub) intentionally excluded — see dedupeRules; EV filtering works via requiredFilters.fuelType on otomobil/arazi-suv-pickup brands instead.",
+    "minivan-panelvan kept from src/data/vehicleCatalog.ts (already real TR van/minivan model names) — no generation invented for it either.",
+    "modelYears: real generation year ranges where known, else Stage1 default market range 2018-2025.",
+    "bmw-motorrad is a distinct Brand slug from bmw (motorcycle division vs automobiles)."
+  ],
+  "entries": [
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "abarth",
+      "brandName": "Abarth",
+      "modelSlug": "595",
+      "modelName": "595",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "595",
+          "name": "595"
+        },
+        {
+          "slug": "595-turismo",
+          "name": "595 Turismo"
+        },
+        {
+          "slug": "595-competizione",
+          "name": "595 Competizione"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "alfa-romeo",
+      "brandName": "Alfa Romeo",
+      "modelSlug": "giulia",
+      "modelName": "Giulia",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "giulia",
+          "name": "Giulia"
+        },
+        {
+          "slug": "giulia-veloce",
+          "name": "Giulia Veloce"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "audi",
+      "brandName": "Audi",
+      "modelSlug": "a3",
+      "modelName": "A3",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "a3-35-tfsi",
+          "name": "35 TFSI"
+        },
+        {
+          "slug": "a3-30-tdi",
+          "name": "30 TDI"
+        },
+        {
+          "slug": "a3-sportback",
+          "name": "Sportback"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "audi",
+      "brandName": "Audi",
+      "modelSlug": "a4",
+      "modelName": "A4",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "a4-40-tfsi",
+          "name": "40 TFSI"
+        },
+        {
+          "slug": "a4-35-tdi",
+          "name": "35 TDI"
+        },
+        {
+          "slug": "a4-avant",
+          "name": "Avant"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "audi",
+      "brandName": "Audi",
+      "modelSlug": "a6",
+      "modelName": "A6",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "a6-45-tfsi",
+          "name": "45 TFSI"
+        },
+        {
+          "slug": "a6-40-tdi",
+          "name": "40 TDI"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "bmw",
+      "brandName": "BMW",
+      "modelSlug": "3-serisi",
+      "modelName": "3 Serisi",
+      "generationCode": "F30",
+      "generationLabel": "F30",
+      "versions": [
+        {
+          "slug": "316i",
+          "name": "316i"
+        },
+        {
+          "slug": "318i",
+          "name": "318i"
+        },
+        {
+          "slug": "320i",
+          "name": "320i"
+        },
+        {
+          "slug": "320d",
+          "name": "320d"
+        },
+        {
+          "slug": "330i",
+          "name": "330i"
+        }
+      ],
+      "modelYears": [
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "bmw",
+      "brandName": "BMW",
+      "modelSlug": "3-serisi",
+      "modelName": "3 Serisi",
+      "generationCode": "G20",
+      "generationLabel": "G20",
+      "versions": [
+        {
+          "slug": "318i-g20",
+          "name": "318i"
+        },
+        {
+          "slug": "320i-g20",
+          "name": "320i"
+        },
+        {
+          "slug": "320d-g20",
+          "name": "320d"
+        },
+        {
+          "slug": "330i-g20",
+          "name": "330i"
+        },
+        {
+          "slug": "m340i",
+          "name": "M340i"
+        }
+      ],
+      "modelYears": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "bmw",
+      "brandName": "BMW",
+      "modelSlug": "5-serisi",
+      "modelName": "5 Serisi",
+      "generationCode": "G30",
+      "generationLabel": "G30",
+      "versions": [
+        {
+          "slug": "520i-g30",
+          "name": "520i"
+        },
+        {
+          "slug": "520d-g30",
+          "name": "520d"
+        },
+        {
+          "slug": "530i-g30",
+          "name": "530i"
+        }
+      ],
+      "modelYears": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "bmw",
+      "brandName": "BMW",
+      "modelSlug": "5-serisi",
+      "modelName": "5 Serisi",
+      "generationCode": "G60",
+      "generationLabel": "G60",
+      "versions": [
+        {
+          "slug": "520i-g60",
+          "name": "520i"
+        },
+        {
+          "slug": "520d-g60",
+          "name": "520d"
+        },
+        {
+          "slug": "530e-g60",
+          "name": "530e"
+        }
+      ],
+      "modelYears": [
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "bmw",
+      "brandName": "BMW",
+      "modelSlug": "1-serisi",
+      "modelName": "1 Serisi",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "116i",
+          "name": "116i"
+        },
+        {
+          "slug": "118i",
+          "name": "118i"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "bmw",
+      "brandName": "BMW",
+      "modelSlug": "x1",
+      "modelName": "X1",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "x1-sdrive18i",
+          "name": "sDrive18i"
+        },
+        {
+          "slug": "x1-xdrive20d",
+          "name": "xDrive20d"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "byd",
+      "brandName": "BYD",
+      "modelSlug": "seal",
+      "modelName": "Seal",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "seal",
+          "name": "Seal"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "byd",
+      "brandName": "BYD",
+      "modelSlug": "dolphin",
+      "modelName": "Dolphin",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "dolphin",
+          "name": "Dolphin"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "chevrolet",
+      "brandName": "Chevrolet",
+      "modelSlug": "aveo",
+      "modelName": "Aveo",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "aveo",
+          "name": "Aveo"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "citroen",
+      "brandName": "Citroën",
+      "modelSlug": "c3",
+      "modelName": "C3",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "c3",
+          "name": "C3"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "citroen",
+      "brandName": "Citroën",
+      "modelSlug": "c4",
+      "modelName": "C4",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "c4",
+          "name": "C4"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "citroen",
+      "brandName": "Citroën",
+      "modelSlug": "c-elysee",
+      "modelName": "C-Elysée",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "c-elysee",
+          "name": "C-Elysée"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "cupra",
+      "brandName": "Cupra",
+      "modelSlug": "leon",
+      "modelName": "Leon",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "leon",
+          "name": "Leon"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "dacia",
+      "brandName": "Dacia",
+      "modelSlug": "sandero",
+      "modelName": "Sandero",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "sandero",
+          "name": "Sandero"
+        },
+        {
+          "slug": "sandero-stepway",
+          "name": "Stepway"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "dacia",
+      "brandName": "Dacia",
+      "modelSlug": "logan",
+      "modelName": "Logan",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "logan",
+          "name": "Logan"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "ds",
+      "brandName": "DS Automobiles",
+      "modelSlug": "ds4",
+      "modelName": "DS 4",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "ds4",
+          "name": "DS 4"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "fiat",
+      "brandName": "Fiat",
+      "modelSlug": "egea",
+      "modelName": "Egea",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "egea-1-4",
+          "name": "1.4"
+        },
+        {
+          "slug": "egea-1-6-multijet",
+          "name": "1.6 Multijet"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "fiat",
+      "brandName": "Fiat",
+      "modelSlug": "tipo",
+      "modelName": "Tipo",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "tipo",
+          "name": "Tipo"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "fiat",
+      "brandName": "Fiat",
+      "modelSlug": "500",
+      "modelName": "500",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "500",
+          "name": "500"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "ford",
+      "brandName": "Ford",
+      "modelSlug": "focus",
+      "modelName": "Focus",
+      "generationCode": "mk4",
+      "generationLabel": "MK4",
+      "versions": [
+        {
+          "slug": "focus-1-0-ecoboost",
+          "name": "1.0 EcoBoost"
+        },
+        {
+          "slug": "focus-1-5-tdci",
+          "name": "1.5 TDCi"
+        },
+        {
+          "slug": "focus-st-line",
+          "name": "ST-Line"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "ford",
+      "brandName": "Ford",
+      "modelSlug": "fiesta",
+      "modelName": "Fiesta",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "fiesta",
+          "name": "Fiesta"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "honda",
+      "brandName": "Honda",
+      "modelSlug": "civic",
+      "modelName": "Civic",
+      "generationCode": "11-gen",
+      "generationLabel": "11. Nesil",
+      "versions": [
+        {
+          "slug": "civic-1-5-vtec",
+          "name": "1.5 VTEC Turbo"
+        },
+        {
+          "slug": "civic-eco",
+          "name": "Elegance"
+        }
+      ],
+      "modelYears": [
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "honda",
+      "brandName": "Honda",
+      "modelSlug": "city",
+      "modelName": "City",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "city",
+          "name": "City"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "hyundai",
+      "brandName": "Hyundai",
+      "modelSlug": "i20",
+      "modelName": "i20",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "i20",
+          "name": "i20"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "hyundai",
+      "brandName": "Hyundai",
+      "modelSlug": "i30",
+      "modelName": "i30",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "i30",
+          "name": "i30"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "hyundai",
+      "brandName": "Hyundai",
+      "modelSlug": "elantra",
+      "modelName": "Elantra",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "elantra",
+          "name": "Elantra"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "hyundai",
+      "brandName": "Hyundai",
+      "modelSlug": "accent",
+      "modelName": "Accent",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "accent",
+          "name": "Accent"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "jaguar",
+      "brandName": "Jaguar",
+      "modelSlug": "xe",
+      "modelName": "XE",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "xe",
+          "name": "XE"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "jaguar",
+      "brandName": "Jaguar",
+      "modelSlug": "xf",
+      "modelName": "XF",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "xf",
+          "name": "XF"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "kia",
+      "brandName": "Kia",
+      "modelSlug": "ceed",
+      "modelName": "Ceed",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "ceed",
+          "name": "Ceed"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "kia",
+      "brandName": "Kia",
+      "modelSlug": "picanto",
+      "modelName": "Picanto",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "picanto",
+          "name": "Picanto"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "lexus",
+      "brandName": "Lexus",
+      "modelSlug": "es",
+      "modelName": "ES",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "es",
+          "name": "ES"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "mazda",
+      "brandName": "Mazda",
+      "modelSlug": "3",
+      "modelName": "Mazda3",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "mazda3",
+          "name": "Mazda3"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "mercedes-benz",
+      "brandName": "Mercedes-Benz",
+      "modelSlug": "c-serisi",
+      "modelName": "C Serisi",
+      "generationCode": "W205",
+      "generationLabel": "W205",
+      "versions": [
+        {
+          "slug": "c180-w205",
+          "name": "C 180"
+        },
+        {
+          "slug": "c200-w205",
+          "name": "C 200"
+        },
+        {
+          "slug": "c220d-w205",
+          "name": "C 220 d"
+        }
+      ],
+      "modelYears": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "mercedes-benz",
+      "brandName": "Mercedes-Benz",
+      "modelSlug": "c-serisi",
+      "modelName": "C Serisi",
+      "generationCode": "W206",
+      "generationLabel": "W206",
+      "versions": [
+        {
+          "slug": "c200-w206",
+          "name": "C 200"
+        },
+        {
+          "slug": "c220d-w206",
+          "name": "C 220 d"
+        },
+        {
+          "slug": "c300-w206",
+          "name": "C 300"
+        }
+      ],
+      "modelYears": [
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "mercedes-benz",
+      "brandName": "Mercedes-Benz",
+      "modelSlug": "e-serisi",
+      "modelName": "E Serisi",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "e200",
+          "name": "E 200"
+        },
+        {
+          "slug": "e220d",
+          "name": "E 220 d"
+        },
+        {
+          "slug": "e300",
+          "name": "E 300"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "mercedes-benz",
+      "brandName": "Mercedes-Benz",
+      "modelSlug": "a-serisi",
+      "modelName": "A Serisi",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "a180",
+          "name": "A 180"
+        },
+        {
+          "slug": "a200",
+          "name": "A 200"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "mercedes-benz",
+      "brandName": "Mercedes-Benz",
+      "modelSlug": "cla",
+      "modelName": "CLA",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "cla",
+          "name": "CLA"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "mg",
+      "brandName": "MG",
+      "modelSlug": "mg5",
+      "modelName": "MG5",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "mg5",
+          "name": "MG5"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "mini",
+      "brandName": "Mini",
+      "modelSlug": "cooper",
+      "modelName": "Cooper",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "cooper",
+          "name": "Cooper"
+        },
+        {
+          "slug": "cooper-s",
+          "name": "Cooper S"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "opel",
+      "brandName": "Opel",
+      "modelSlug": "astra",
+      "modelName": "Astra",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "astra-1-2",
+          "name": "1.2"
+        },
+        {
+          "slug": "astra-1-5-diesel",
+          "name": "1.5 Dizel"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "opel",
+      "brandName": "Opel",
+      "modelSlug": "corsa",
+      "modelName": "Corsa",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "corsa",
+          "name": "Corsa"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "peugeot",
+      "brandName": "Peugeot",
+      "modelSlug": "208",
+      "modelName": "208",
+      "generationCode": "P21",
+      "generationLabel": "P21",
+      "versions": [
+        {
+          "slug": "208-active",
+          "name": "Active"
+        },
+        {
+          "slug": "208-allure",
+          "name": "Allure"
+        },
+        {
+          "slug": "208-gt",
+          "name": "GT"
+        }
+      ],
+      "modelYears": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "peugeot",
+      "brandName": "Peugeot",
+      "modelSlug": "308",
+      "modelName": "308",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "308",
+          "name": "308"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "porsche",
+      "brandName": "Porsche",
+      "modelSlug": "panamera",
+      "modelName": "Panamera",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "panamera",
+          "name": "Panamera"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "porsche",
+      "brandName": "Porsche",
+      "modelSlug": "911",
+      "modelName": "911",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "911-carrera",
+          "name": "Carrera"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "renault",
+      "brandName": "Renault",
+      "modelSlug": "clio",
+      "modelName": "Clio",
+      "generationCode": "clio-v",
+      "generationLabel": "Clio V",
+      "versions": [
+        {
+          "slug": "clio-1-0-tce",
+          "name": "1.0 TCe"
+        },
+        {
+          "slug": "clio-1-5-dci",
+          "name": "1.5 dCi"
+        },
+        {
+          "slug": "clio-e-tech",
+          "name": "E-Tech"
+        }
+      ],
+      "modelYears": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "renault",
+      "brandName": "Renault",
+      "modelSlug": "megane",
+      "modelName": "Megane",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "megane-1-3-tce",
+          "name": "1.3 TCe"
+        },
+        {
+          "slug": "megane-1-5-dci",
+          "name": "1.5 dCi"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "renault",
+      "brandName": "Renault",
+      "modelSlug": "talisman",
+      "modelName": "Talisman",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "talisman",
+          "name": "Talisman"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "renault",
+      "brandName": "Renault",
+      "modelSlug": "symbol",
+      "modelName": "Symbol",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "symbol",
+          "name": "Symbol"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "seat",
+      "brandName": "Seat",
+      "modelSlug": "leon",
+      "modelName": "Leon",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "seat-leon",
+          "name": "Leon"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "seat",
+      "brandName": "Seat",
+      "modelSlug": "ibiza",
+      "modelName": "Ibiza",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "ibiza",
+          "name": "Ibiza"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "skoda",
+      "brandName": "Skoda",
+      "modelSlug": "octavia",
+      "modelName": "Octavia",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "octavia-1-0-tsi",
+          "name": "1.0 TSI"
+        },
+        {
+          "slug": "octavia-1-6-tdi",
+          "name": "1.6 TDI"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "skoda",
+      "brandName": "Skoda",
+      "modelSlug": "fabia",
+      "modelName": "Fabia",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "fabia",
+          "name": "Fabia"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "smart",
+      "brandName": "Smart",
+      "modelSlug": "fortwo",
+      "modelName": "Fortwo",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "fortwo",
+          "name": "Fortwo"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "smart",
+      "brandName": "Smart",
+      "modelSlug": "forfour",
+      "modelName": "Forfour",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "forfour",
+          "name": "Forfour"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "suzuki",
+      "brandName": "Suzuki",
+      "modelSlug": "swift",
+      "modelName": "Swift",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "swift",
+          "name": "Swift"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "tesla",
+      "brandName": "Tesla",
+      "modelSlug": "model-3",
+      "modelName": "Model 3",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "model-3-rwd",
+          "name": "RWD"
+        },
+        {
+          "slug": "model-3-long-range",
+          "name": "Long Range"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "tesla",
+      "brandName": "Tesla",
+      "modelSlug": "model-s",
+      "modelName": "Model S",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "model-s",
+          "name": "Model S"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "toyota",
+      "brandName": "Toyota",
+      "modelSlug": "corolla",
+      "modelName": "Corolla",
+      "generationCode": "E210",
+      "generationLabel": "E210",
+      "versions": [
+        {
+          "slug": "corolla-1-6",
+          "name": "1.6"
+        },
+        {
+          "slug": "corolla-hybrid",
+          "name": "Hybrid"
+        }
+      ],
+      "modelYears": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "toyota",
+      "brandName": "Toyota",
+      "modelSlug": "yaris",
+      "modelName": "Yaris",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "yaris",
+          "name": "Yaris"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "toyota",
+      "brandName": "Toyota",
+      "modelSlug": "camry",
+      "modelName": "Camry",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "camry",
+          "name": "Camry"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "toyota",
+      "brandName": "Toyota",
+      "modelSlug": "auris",
+      "modelName": "Auris",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "auris",
+          "name": "Auris"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "volkswagen",
+      "brandName": "Volkswagen",
+      "modelSlug": "golf",
+      "modelName": "Golf",
+      "generationCode": "mk7",
+      "generationLabel": "MK7",
+      "versions": [
+        {
+          "slug": "golf-mk7-1-0-tsi",
+          "name": "1.0 TSI"
+        },
+        {
+          "slug": "golf-mk7-1-5-tsi",
+          "name": "1.5 TSI"
+        },
+        {
+          "slug": "golf-mk7-2-0-tdi",
+          "name": "2.0 TDI"
+        }
+      ],
+      "modelYears": [
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "volkswagen",
+      "brandName": "Volkswagen",
+      "modelSlug": "golf",
+      "modelName": "Golf",
+      "generationCode": "mk8",
+      "generationLabel": "MK8",
+      "versions": [
+        {
+          "slug": "golf-mk8-1-0-tsi",
+          "name": "1.0 TSI"
+        },
+        {
+          "slug": "golf-mk8-1-5-tsi",
+          "name": "1.5 TSI"
+        },
+        {
+          "slug": "golf-mk8-gtd",
+          "name": "GTD"
+        }
+      ],
+      "modelYears": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "volkswagen",
+      "brandName": "Volkswagen",
+      "modelSlug": "passat",
+      "modelName": "Passat",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "passat-1-5-tsi",
+          "name": "1.5 TSI"
+        },
+        {
+          "slug": "passat-2-0-tdi",
+          "name": "2.0 TDI"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "volkswagen",
+      "brandName": "Volkswagen",
+      "modelSlug": "polo",
+      "modelName": "Polo",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "polo-1-0-tsi",
+          "name": "1.0 TSI"
+        },
+        {
+          "slug": "polo-1-0",
+          "name": "1.0"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "volkswagen",
+      "brandName": "Volkswagen",
+      "modelSlug": "jetta",
+      "modelName": "Jetta",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "jetta",
+          "name": "Jetta"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "volvo",
+      "brandName": "Volvo",
+      "modelSlug": "s60",
+      "modelName": "S60",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "s60",
+          "name": "S60"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "volvo",
+      "brandName": "Volvo",
+      "modelSlug": "s90",
+      "modelName": "S90",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "s90",
+          "name": "S90"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "volvo",
+      "brandName": "Volvo",
+      "modelSlug": "v40",
+      "modelName": "V40",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "v40",
+          "name": "V40"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "audi",
+      "brandName": "Audi",
+      "modelSlug": "q2",
+      "modelName": "Q2",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "q2",
+          "name": "Q2"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "audi",
+      "brandName": "Audi",
+      "modelSlug": "q3",
+      "modelName": "Q3",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "q3",
+          "name": "Q3"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "audi",
+      "brandName": "Audi",
+      "modelSlug": "q5",
+      "modelName": "Q5",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "q5",
+          "name": "Q5"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "bmw",
+      "brandName": "BMW",
+      "modelSlug": "x3",
+      "modelName": "X3",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "x3",
+          "name": "X3"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "bmw",
+      "brandName": "BMW",
+      "modelSlug": "x5",
+      "modelName": "X5",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "x5-30d",
+          "name": "xDrive30d"
+        },
+        {
+          "slug": "x5-40i",
+          "name": "xDrive40i"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "chery",
+      "brandName": "Chery",
+      "modelSlug": "tiggo-7-pro",
+      "modelName": "Tiggo 7 Pro",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "tiggo-7-pro",
+          "name": "Tiggo 7 Pro"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "chery",
+      "brandName": "Chery",
+      "modelSlug": "tiggo-8-pro",
+      "modelName": "Tiggo 8 Pro",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "tiggo-8-pro",
+          "name": "Tiggo 8 Pro"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "chevrolet",
+      "brandName": "Chevrolet",
+      "modelSlug": "captiva",
+      "modelName": "Captiva",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "captiva",
+          "name": "Captiva"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "citroen",
+      "brandName": "Citroën",
+      "modelSlug": "c5-aircross",
+      "modelName": "C5 Aircross",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "c5-aircross",
+          "name": "C5 Aircross"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "cupra",
+      "brandName": "Cupra",
+      "modelSlug": "formentor",
+      "modelName": "Formentor",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "formentor",
+          "name": "Formentor"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "dacia",
+      "brandName": "Dacia",
+      "modelSlug": "duster",
+      "modelName": "Duster",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "duster",
+          "name": "Duster"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "dacia",
+      "brandName": "Dacia",
+      "modelSlug": "spring",
+      "modelName": "Spring",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "spring",
+          "name": "Spring"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "ds",
+      "brandName": "DS Automobiles",
+      "modelSlug": "ds3",
+      "modelName": "DS 3",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "ds3",
+          "name": "DS 3"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "ds",
+      "brandName": "DS Automobiles",
+      "modelSlug": "ds7",
+      "modelName": "DS 7",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "ds7",
+          "name": "DS 7"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "ford",
+      "brandName": "Ford",
+      "modelSlug": "puma",
+      "modelName": "Puma",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "puma",
+          "name": "Puma"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "ford",
+      "brandName": "Ford",
+      "modelSlug": "kuga",
+      "modelName": "Kuga",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "kuga",
+          "name": "Kuga"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "ford",
+      "brandName": "Ford",
+      "modelSlug": "ranger",
+      "modelName": "Ranger",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "ranger",
+          "name": "Ranger"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "honda",
+      "brandName": "Honda",
+      "modelSlug": "cr-v",
+      "modelName": "CR-V",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "cr-v",
+          "name": "CR-V"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "honda",
+      "brandName": "Honda",
+      "modelSlug": "hr-v",
+      "modelName": "HR-V",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "hr-v",
+          "name": "HR-V"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "hyundai",
+      "brandName": "Hyundai",
+      "modelSlug": "tucson",
+      "modelName": "Tucson",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "tucson",
+          "name": "Tucson"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "hyundai",
+      "brandName": "Hyundai",
+      "modelSlug": "bayon",
+      "modelName": "Bayon",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "bayon",
+          "name": "Bayon"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "isuzu",
+      "brandName": "Isuzu",
+      "modelSlug": "d-max",
+      "modelName": "D-Max",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "d-max",
+          "name": "D-Max"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "jaguar",
+      "brandName": "Jaguar",
+      "modelSlug": "f-pace",
+      "modelName": "F-Pace",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "f-pace",
+          "name": "F-Pace"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "jeep",
+      "brandName": "Jeep",
+      "modelSlug": "renegade",
+      "modelName": "Renegade",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "renegade",
+          "name": "Renegade"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "jeep",
+      "brandName": "Jeep",
+      "modelSlug": "compass",
+      "modelName": "Compass",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "compass",
+          "name": "Compass"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "jeep",
+      "brandName": "Jeep",
+      "modelSlug": "avenger",
+      "modelName": "Avenger",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "avenger",
+          "name": "Avenger"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "kia",
+      "brandName": "Kia",
+      "modelSlug": "sportage",
+      "modelName": "Sportage",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "sportage",
+          "name": "Sportage"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "kia",
+      "brandName": "Kia",
+      "modelSlug": "stonic",
+      "modelName": "Stonic",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "stonic",
+          "name": "Stonic"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "land-rover",
+      "brandName": "Land Rover",
+      "modelSlug": "range-rover-evoque",
+      "modelName": "Range Rover Evoque",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "range-rover-evoque",
+          "name": "Range Rover Evoque"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "land-rover",
+      "brandName": "Land Rover",
+      "modelSlug": "discovery-sport",
+      "modelName": "Discovery Sport",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "discovery-sport",
+          "name": "Discovery Sport"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "land-rover",
+      "brandName": "Land Rover",
+      "modelSlug": "defender",
+      "modelName": "Defender",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "defender",
+          "name": "Defender"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "lexus",
+      "brandName": "Lexus",
+      "modelSlug": "nx",
+      "modelName": "NX",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "nx",
+          "name": "NX"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "lexus",
+      "brandName": "Lexus",
+      "modelSlug": "rx",
+      "modelName": "RX",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "rx",
+          "name": "RX"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "mazda",
+      "brandName": "Mazda",
+      "modelSlug": "cx-5",
+      "modelName": "CX-5",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "cx-5",
+          "name": "CX-5"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "mazda",
+      "brandName": "Mazda",
+      "modelSlug": "cx-30",
+      "modelName": "CX-30",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "cx-30",
+          "name": "CX-30"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "mercedes-benz",
+      "brandName": "Mercedes-Benz",
+      "modelSlug": "glc",
+      "modelName": "GLC",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "glc",
+          "name": "GLC"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "mercedes-benz",
+      "brandName": "Mercedes-Benz",
+      "modelSlug": "gle",
+      "modelName": "GLE",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "gle",
+          "name": "GLE"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "mercedes-benz",
+      "brandName": "Mercedes-Benz",
+      "modelSlug": "g-class",
+      "modelName": "G-Class",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "g-63-amg",
+          "name": "G 63 AMG"
+        },
+        {
+          "slug": "g-500",
+          "name": "G 500"
+        },
+        {
+          "slug": "g-350d",
+          "name": "G 350d"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "mg",
+      "brandName": "MG",
+      "modelSlug": "zs",
+      "modelName": "ZS",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "zs",
+          "name": "ZS"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "mg",
+      "brandName": "MG",
+      "modelSlug": "hs",
+      "modelName": "HS",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "hs",
+          "name": "HS"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "mini",
+      "brandName": "Mini",
+      "modelSlug": "countryman",
+      "modelName": "Countryman",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "countryman",
+          "name": "Countryman"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "mitsubishi",
+      "brandName": "Mitsubishi",
+      "modelSlug": "outlander",
+      "modelName": "Outlander",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "outlander",
+          "name": "Outlander"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "mitsubishi",
+      "brandName": "Mitsubishi",
+      "modelSlug": "asx",
+      "modelName": "ASX",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "asx",
+          "name": "ASX"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "mitsubishi",
+      "brandName": "Mitsubishi",
+      "modelSlug": "l200",
+      "modelName": "L200",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "l200",
+          "name": "L200"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "nissan",
+      "brandName": "Nissan",
+      "modelSlug": "qashqai",
+      "modelName": "Qashqai",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "qashqai",
+          "name": "Qashqai"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "nissan",
+      "brandName": "Nissan",
+      "modelSlug": "x-trail",
+      "modelName": "X-Trail",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "x-trail",
+          "name": "X-Trail"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "nissan",
+      "brandName": "Nissan",
+      "modelSlug": "juke",
+      "modelName": "Juke",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "juke",
+          "name": "Juke"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "opel",
+      "brandName": "Opel",
+      "modelSlug": "mokka",
+      "modelName": "Mokka",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "mokka",
+          "name": "Mokka"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "peugeot",
+      "brandName": "Peugeot",
+      "modelSlug": "2008",
+      "modelName": "2008",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "2008",
+          "name": "2008"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "peugeot",
+      "brandName": "Peugeot",
+      "modelSlug": "3008",
+      "modelName": "3008",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "3008",
+          "name": "3008"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "porsche",
+      "brandName": "Porsche",
+      "modelSlug": "macan",
+      "modelName": "Macan",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "macan",
+          "name": "Macan"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "porsche",
+      "brandName": "Porsche",
+      "modelSlug": "cayenne",
+      "modelName": "Cayenne",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "cayenne",
+          "name": "Cayenne"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "renault",
+      "brandName": "Renault",
+      "modelSlug": "captur",
+      "modelName": "Captur",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "captur",
+          "name": "Captur"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "renault",
+      "brandName": "Renault",
+      "modelSlug": "austral",
+      "modelName": "Austral",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "austral",
+          "name": "Austral"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "seat",
+      "brandName": "Seat",
+      "modelSlug": "ateca",
+      "modelName": "Ateca",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "ateca",
+          "name": "Ateca"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "skoda",
+      "brandName": "Skoda",
+      "modelSlug": "kodiaq",
+      "modelName": "Kodiaq",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "kodiaq",
+          "name": "Kodiaq"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "skoda",
+      "brandName": "Skoda",
+      "modelSlug": "karoq",
+      "modelName": "Karoq",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "karoq",
+          "name": "Karoq"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "kgm",
+      "brandName": "KGM",
+      "modelSlug": "torres",
+      "modelName": "Torres",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "torres",
+          "name": "Torres"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "kgm",
+      "brandName": "KGM",
+      "modelSlug": "korando",
+      "modelName": "Korando",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "korando",
+          "name": "Korando"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "kgm",
+      "brandName": "KGM",
+      "modelSlug": "tivoli",
+      "modelName": "Tivoli",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "tivoli",
+          "name": "Tivoli"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "kgm",
+      "brandName": "KGM",
+      "modelSlug": "musso",
+      "modelName": "Musso",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "musso",
+          "name": "Musso"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "subaru",
+      "brandName": "Subaru",
+      "modelSlug": "forester",
+      "modelName": "Forester",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "forester",
+          "name": "Forester"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "subaru",
+      "brandName": "Subaru",
+      "modelSlug": "xv",
+      "modelName": "XV",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "xv",
+          "name": "XV"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "subaru",
+      "brandName": "Subaru",
+      "modelSlug": "outback",
+      "modelName": "Outback",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "outback",
+          "name": "Outback"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "suzuki",
+      "brandName": "Suzuki",
+      "modelSlug": "vitara",
+      "modelName": "Vitara",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "vitara",
+          "name": "Vitara"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "suzuki",
+      "brandName": "Suzuki",
+      "modelSlug": "s-cross",
+      "modelName": "S-Cross",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "s-cross",
+          "name": "S-Cross"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "tesla",
+      "brandName": "Tesla",
+      "modelSlug": "model-y",
+      "modelName": "Model Y",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "model-y",
+          "name": "Model Y"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "togg",
+      "brandName": "TOGG",
+      "modelSlug": "t10x",
+      "modelName": "T10X",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "t10x-v1",
+          "name": "V1"
+        },
+        {
+          "slug": "t10x-v2",
+          "name": "V2"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "toyota",
+      "brandName": "Toyota",
+      "modelSlug": "rav4",
+      "modelName": "RAV4",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "rav4",
+          "name": "RAV4"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "toyota",
+      "brandName": "Toyota",
+      "modelSlug": "c-hr",
+      "modelName": "C-HR",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "c-hr",
+          "name": "C-HR"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "toyota",
+      "brandName": "Toyota",
+      "modelSlug": "hilux",
+      "modelName": "Hilux",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "hilux-2-4",
+          "name": "2.4"
+        },
+        {
+          "slug": "hilux-2-8",
+          "name": "2.8"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "toyota",
+      "brandName": "Toyota",
+      "modelSlug": "land-cruiser",
+      "modelName": "Land Cruiser",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "land-cruiser",
+          "name": "Land Cruiser"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "volkswagen",
+      "brandName": "Volkswagen",
+      "modelSlug": "tiguan",
+      "modelName": "Tiguan",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "tiguan",
+          "name": "Tiguan"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "volkswagen",
+      "brandName": "Volkswagen",
+      "modelSlug": "t-roc",
+      "modelName": "T-Roc",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "t-roc",
+          "name": "T-Roc"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "volkswagen",
+      "brandName": "Volkswagen",
+      "modelSlug": "touareg",
+      "modelName": "Touareg",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "touareg",
+          "name": "Touareg"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "volkswagen",
+      "brandName": "Volkswagen",
+      "modelSlug": "amarok",
+      "modelName": "Amarok",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "amarok",
+          "name": "Amarok"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "volvo",
+      "brandName": "Volvo",
+      "modelSlug": "xc60",
+      "modelName": "XC60",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "xc60",
+          "name": "XC60"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "volvo",
+      "brandName": "Volvo",
+      "modelSlug": "xc40",
+      "modelName": "XC40",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "xc40",
+          "name": "XC40"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "aprilia",
+      "brandName": "Aprilia",
+      "modelSlug": "rs660",
+      "modelName": "RS 660",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "rs660",
+          "name": "RS 660"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "aprilia",
+      "brandName": "Aprilia",
+      "modelSlug": "tuono660",
+      "modelName": "Tuono 660",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "tuono660",
+          "name": "Tuono 660"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "bajaj",
+      "brandName": "Bajaj",
+      "modelSlug": "pulsar-ns200",
+      "modelName": "Pulsar NS200",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "pulsar-ns200",
+          "name": "Pulsar NS200"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "bajaj",
+      "brandName": "Bajaj",
+      "modelSlug": "dominar-400",
+      "modelName": "Dominar 400",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "dominar-400",
+          "name": "Dominar 400"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "benelli",
+      "brandName": "Benelli",
+      "modelSlug": "trk502",
+      "modelName": "TRK 502",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "trk502",
+          "name": "TRK 502"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "benelli",
+      "brandName": "Benelli",
+      "modelSlug": "leoncino500",
+      "modelName": "Leoncino 500",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "leoncino500",
+          "name": "Leoncino 500"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "bmw-motorrad",
+      "brandName": "BMW Motorrad",
+      "modelSlug": "r1250gs",
+      "modelName": "R 1250 GS",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "r1250gs",
+          "name": "R 1250 GS"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "bmw-motorrad",
+      "brandName": "BMW Motorrad",
+      "modelSlug": "s1000rr",
+      "modelName": "S 1000 RR",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "s1000rr",
+          "name": "S 1000 RR"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "bmw-motorrad",
+      "brandName": "BMW Motorrad",
+      "modelSlug": "g310r",
+      "modelName": "G 310 R",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "g310r",
+          "name": "G 310 R"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "ducati",
+      "brandName": "Ducati",
+      "modelSlug": "monster",
+      "modelName": "Monster",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "monster",
+          "name": "Monster"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "ducati",
+      "brandName": "Ducati",
+      "modelSlug": "panigale-v2",
+      "modelName": "Panigale V2",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "panigale-v2",
+          "name": "Panigale V2"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "ducati",
+      "brandName": "Ducati",
+      "modelSlug": "multistrada-v4",
+      "modelName": "Multistrada V4",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "multistrada-v4",
+          "name": "Multistrada V4"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "harley-davidson",
+      "brandName": "Harley-Davidson",
+      "modelSlug": "sportster-s",
+      "modelName": "Sportster S",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "sportster-s",
+          "name": "Sportster S"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "harley-davidson",
+      "brandName": "Harley-Davidson",
+      "modelSlug": "street-glide",
+      "modelName": "Street Glide",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "street-glide",
+          "name": "Street Glide"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "honda",
+      "brandName": "Honda",
+      "modelSlug": "pcx160",
+      "modelName": "PCX160",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "pcx160",
+          "name": "PCX160"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "honda",
+      "brandName": "Honda",
+      "modelSlug": "cbr500r",
+      "modelName": "CBR500R",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "cbr500r",
+          "name": "CBR500R"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "honda",
+      "brandName": "Honda",
+      "modelSlug": "africa-twin",
+      "modelName": "Africa Twin",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "africa-twin",
+          "name": "Africa Twin"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "husqvarna",
+      "brandName": "Husqvarna",
+      "modelSlug": "svartpilen-401",
+      "modelName": "Svartpilen 401",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "svartpilen-401",
+          "name": "Svartpilen 401"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "husqvarna",
+      "brandName": "Husqvarna",
+      "modelSlug": "vitpilen-401",
+      "modelName": "Vitpilen 401",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "vitpilen-401",
+          "name": "Vitpilen 401"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "indian",
+      "brandName": "Indian",
+      "modelSlug": "scout",
+      "modelName": "Scout",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "scout",
+          "name": "Scout"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "indian",
+      "brandName": "Indian",
+      "modelSlug": "chief",
+      "modelName": "Chief",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "chief",
+          "name": "Chief"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "kawasaki",
+      "brandName": "Kawasaki",
+      "modelSlug": "ninja400",
+      "modelName": "Ninja 400",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "ninja400",
+          "name": "Ninja 400"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "kawasaki",
+      "brandName": "Kawasaki",
+      "modelSlug": "z900",
+      "modelName": "Z900",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "z900",
+          "name": "Z900"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "kawasaki",
+      "brandName": "Kawasaki",
+      "modelSlug": "versys650",
+      "modelName": "Versys 650",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "versys650",
+          "name": "Versys 650"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "ktm",
+      "brandName": "KTM",
+      "modelSlug": "duke390",
+      "modelName": "Duke 390",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "duke390",
+          "name": "Duke 390"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "ktm",
+      "brandName": "KTM",
+      "modelSlug": "adventure890",
+      "modelName": "890 Adventure",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "adventure890",
+          "name": "890 Adventure"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "kymco",
+      "brandName": "Kymco",
+      "modelSlug": "like150i",
+      "modelName": "Like 150i",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "like150i",
+          "name": "Like 150i"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "kymco",
+      "brandName": "Kymco",
+      "modelSlug": "ak550",
+      "modelName": "AK 550",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "ak550",
+          "name": "AK 550"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "mondial",
+      "brandName": "Mondial",
+      "modelSlug": "hps125",
+      "modelName": "HPS 125",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "hps125",
+          "name": "HPS 125"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "mondial",
+      "brandName": "Mondial",
+      "modelSlug": "250-ressivo",
+      "modelName": "250 Ressivo",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "250-ressivo",
+          "name": "250 Ressivo"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "mondial",
+      "brandName": "Mondial",
+      "modelSlug": "250-nevada",
+      "modelName": "250 Nevada",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "250-nevada",
+          "name": "250 Nevada"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "moto-guzzi",
+      "brandName": "Moto Guzzi",
+      "modelSlug": "v7",
+      "modelName": "V7",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "v7",
+          "name": "V7"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "moto-guzzi",
+      "brandName": "Moto Guzzi",
+      "modelSlug": "v85tt",
+      "modelName": "V85 TT",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "v85tt",
+          "name": "V85 TT"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "piaggio",
+      "brandName": "Piaggio",
+      "modelSlug": "liberty125",
+      "modelName": "Liberty 125",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "liberty125",
+          "name": "Liberty 125"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "piaggio",
+      "brandName": "Piaggio",
+      "modelSlug": "mp3-300",
+      "modelName": "MP3 300",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "mp3-300",
+          "name": "MP3 300"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "rks",
+      "brandName": "RKS",
+      "modelSlug": "srk125r",
+      "modelName": "SRK125R",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "srk125r",
+          "name": "SRK125R"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "rks",
+      "brandName": "RKS",
+      "modelSlug": "srk250rs",
+      "modelName": "SRK250RS",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "srk250rs",
+          "name": "SRK250RS"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "rks",
+      "brandName": "RKS",
+      "modelSlug": "rodos",
+      "modelName": "RODOS",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "rodos",
+          "name": "RODOS"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "royal-enfield",
+      "brandName": "Royal Enfield",
+      "modelSlug": "classic350",
+      "modelName": "Classic 350",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "classic350",
+          "name": "Classic 350"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "royal-enfield",
+      "brandName": "Royal Enfield",
+      "modelSlug": "himalayan",
+      "modelName": "Himalayan",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "himalayan",
+          "name": "Himalayan"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "suzuki",
+      "brandName": "Suzuki",
+      "modelSlug": "gsx-r750",
+      "modelName": "GSX-R750",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "gsx-r750",
+          "name": "GSX-R750"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "suzuki",
+      "brandName": "Suzuki",
+      "modelSlug": "v-strom650",
+      "modelName": "V-Strom 650",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "v-strom650",
+          "name": "V-Strom 650"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "sym",
+      "brandName": "SYM",
+      "modelSlug": "jet14-125",
+      "modelName": "Jet14 125",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "jet14-125",
+          "name": "Jet14 125"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "sym",
+      "brandName": "SYM",
+      "modelSlug": "symphony-st200",
+      "modelName": "Symphony ST 200",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "symphony-st200",
+          "name": "Symphony ST 200"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "triumph",
+      "brandName": "Triumph",
+      "modelSlug": "bonneville-t120",
+      "modelName": "Bonneville T120",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "bonneville-t120",
+          "name": "Bonneville T120"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "triumph",
+      "brandName": "Triumph",
+      "modelSlug": "tiger900",
+      "modelName": "Tiger 900",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "tiger900",
+          "name": "Tiger 900"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "vespa",
+      "brandName": "Vespa",
+      "modelSlug": "primavera150",
+      "modelName": "Primavera 150",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "primavera150",
+          "name": "Primavera 150"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "vespa",
+      "brandName": "Vespa",
+      "modelSlug": "gts300",
+      "modelName": "GTS 300",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "gts300",
+          "name": "GTS 300"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "yamaha",
+      "brandName": "Yamaha",
+      "modelSlug": "nmax155",
+      "modelName": "NMAX 155",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "nmax155",
+          "name": "NMAX 155"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "yamaha",
+      "brandName": "Yamaha",
+      "modelSlug": "mt-07",
+      "modelName": "MT-07",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "mt-07",
+          "name": "MT-07"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "yuki",
+      "brandName": "Yuki",
+      "modelSlug": "hammer125",
+      "modelName": "Hammer 125",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "hammer125",
+          "name": "Hammer 125"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "yuki",
+      "brandName": "Yuki",
+      "modelSlug": "huracan",
+      "modelName": "Huracan",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "huracan",
+          "name": "Huracan"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "zontes",
+      "brandName": "Zontes",
+      "modelSlug": "310-x1",
+      "modelName": "310 X1",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "310-x1",
+          "name": "310 X1"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "zontes",
+      "brandName": "Zontes",
+      "modelSlug": "zt350t2",
+      "modelName": "ZT-350T2",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "zt350t2",
+          "name": "ZT-350T2"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/ticari-araclar"
+      ],
+      "brandSlug": "bmc",
+      "brandName": "BMC",
+      "modelSlug": "tugra",
+      "modelName": "Tuğra",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "tugra",
+          "name": "Tuğra"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/ticari-araclar"
+      ],
+      "brandSlug": "bmc",
+      "brandName": "BMC",
+      "modelSlug": "professional",
+      "modelName": "Professional",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "professional",
+          "name": "Professional"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/ticari-araclar"
+      ],
+      "brandSlug": "daf",
+      "brandName": "DAF",
+      "modelSlug": "xf",
+      "modelName": "XF",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "xf",
+          "name": "XF"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/ticari-araclar"
+      ],
+      "brandSlug": "daf",
+      "brandName": "DAF",
+      "modelSlug": "cf",
+      "modelName": "CF",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "cf",
+          "name": "CF"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/ticari-araclar"
+      ],
+      "brandSlug": "ford-trucks",
+      "brandName": "Ford Trucks",
+      "modelSlug": "f-max",
+      "modelName": "F-MAX",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "f-max",
+          "name": "F-MAX"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/ticari-araclar"
+      ],
+      "brandSlug": "ford-trucks",
+      "brandName": "Ford Trucks",
+      "modelSlug": "cargo",
+      "modelName": "Cargo",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "cargo",
+          "name": "Cargo"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/ticari-araclar"
+      ],
+      "brandSlug": "isuzu",
+      "brandName": "Isuzu",
+      "modelSlug": "npr",
+      "modelName": "NPR",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "npr",
+          "name": "NPR"
+        },
+        {
+          "slug": "npr-10",
+          "name": "NPR 10"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/ticari-araclar"
+      ],
+      "brandSlug": "isuzu",
+      "brandName": "Isuzu",
+      "modelSlug": "nlr",
+      "modelName": "NLR",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "nlr",
+          "name": "NLR"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/ticari-araclar"
+      ],
+      "brandSlug": "iveco",
+      "brandName": "Iveco",
+      "modelSlug": "daily",
+      "modelName": "Daily",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "daily",
+          "name": "Daily"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/ticari-araclar"
+      ],
+      "brandSlug": "iveco",
+      "brandName": "Iveco",
+      "modelSlug": "eurocargo",
+      "modelName": "Eurocargo",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "eurocargo",
+          "name": "Eurocargo"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/ticari-araclar"
+      ],
+      "brandSlug": "man",
+      "brandName": "MAN",
+      "modelSlug": "tgx",
+      "modelName": "TGX",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "tgx",
+          "name": "TGX"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/ticari-araclar"
+      ],
+      "brandSlug": "man",
+      "brandName": "MAN",
+      "modelSlug": "tgs",
+      "modelName": "TGS",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "tgs",
+          "name": "TGS"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/ticari-araclar"
+      ],
+      "brandSlug": "mercedes-benz",
+      "brandName": "Mercedes-Benz",
+      "modelSlug": "actros",
+      "modelName": "Actros",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "actros",
+          "name": "Actros"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/ticari-araclar"
+      ],
+      "brandSlug": "mercedes-benz",
+      "brandName": "Mercedes-Benz",
+      "modelSlug": "atego",
+      "modelName": "Atego",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "atego",
+          "name": "Atego"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/ticari-araclar"
+      ],
+      "brandSlug": "mitsubishi-fuso",
+      "brandName": "Mitsubishi Fuso",
+      "modelSlug": "canter",
+      "modelName": "Canter",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "canter",
+          "name": "Canter"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/ticari-araclar"
+      ],
+      "brandSlug": "mitsubishi-fuso",
+      "brandName": "Mitsubishi Fuso",
+      "modelSlug": "fighter",
+      "modelName": "Fighter",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "fighter",
+          "name": "Fighter"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/ticari-araclar"
+      ],
+      "brandSlug": "otokar",
+      "brandName": "Otokar",
+      "modelSlug": "kent",
+      "modelName": "Kent",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "kent",
+          "name": "Kent"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/ticari-araclar"
+      ],
+      "brandSlug": "otokar",
+      "brandName": "Otokar",
+      "modelSlug": "sultan",
+      "modelName": "Sultan",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "sultan",
+          "name": "Sultan"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/ticari-araclar"
+      ],
+      "brandSlug": "otokar",
+      "brandName": "Otokar",
+      "modelSlug": "atlas",
+      "modelName": "Atlas",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "atlas",
+          "name": "Atlas"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/ticari-araclar"
+      ],
+      "brandSlug": "renault-trucks",
+      "brandName": "Renault Trucks",
+      "modelSlug": "t-series",
+      "modelName": "T Serisi",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "t-series",
+          "name": "T Serisi"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/ticari-araclar"
+      ],
+      "brandSlug": "renault-trucks",
+      "brandName": "Renault Trucks",
+      "modelSlug": "d-series",
+      "modelName": "D Serisi",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "d-series",
+          "name": "D Serisi"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/ticari-araclar"
+      ],
+      "brandSlug": "scania",
+      "brandName": "Scania",
+      "modelSlug": "r-series",
+      "modelName": "R Serisi",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "r-series",
+          "name": "R Serisi"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/ticari-araclar"
+      ],
+      "brandSlug": "scania",
+      "brandName": "Scania",
+      "modelSlug": "p-series",
+      "modelName": "P Serisi",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "p-series",
+          "name": "P Serisi"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/ticari-araclar"
+      ],
+      "brandSlug": "temsa",
+      "brandName": "Temsa",
+      "modelSlug": "safir",
+      "modelName": "Safir",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "safir",
+          "name": "Safir"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/ticari-araclar"
+      ],
+      "brandSlug": "temsa",
+      "brandName": "Temsa",
+      "modelSlug": "opalin",
+      "modelName": "Opalin",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "opalin",
+          "name": "Opalin"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/ticari-araclar"
+      ],
+      "brandSlug": "volvo-trucks",
+      "brandName": "Volvo Trucks",
+      "modelSlug": "fh",
+      "modelName": "FH",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "fh",
+          "name": "FH"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/ticari-araclar"
+      ],
+      "brandSlug": "volvo-trucks",
+      "brandName": "Volvo Trucks",
+      "modelSlug": "fmx",
+      "modelName": "FMX",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "fmx",
+          "name": "FMX"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "tr-market-oem-model-2024",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/minivan-panelvan"
+      ],
+      "brandSlug": "volkswagen",
+      "brandName": "Volkswagen",
+      "modelSlug": "transporter",
+      "modelName": "Transporter",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "transporter",
+          "name": "Transporter"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "curated-vehicleCatalog-ts",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/minivan-panelvan"
+      ],
+      "brandSlug": "volkswagen",
+      "brandName": "Volkswagen",
+      "modelSlug": "caddy",
+      "modelName": "Caddy",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "caddy",
+          "name": "Caddy"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "curated-vehicleCatalog-ts",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/minivan-panelvan"
+      ],
+      "brandSlug": "volkswagen",
+      "brandName": "Volkswagen",
+      "modelSlug": "multivan",
+      "modelName": "Multivan",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "multivan",
+          "name": "Multivan"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "curated-vehicleCatalog-ts",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/minivan-panelvan"
+      ],
+      "brandSlug": "ford",
+      "brandName": "Ford",
+      "modelSlug": "transit",
+      "modelName": "Transit",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "transit",
+          "name": "Transit"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "curated-vehicleCatalog-ts",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/minivan-panelvan"
+      ],
+      "brandSlug": "ford",
+      "brandName": "Ford",
+      "modelSlug": "transit-custom",
+      "modelName": "Transit Custom",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "transit-custom",
+          "name": "Transit Custom"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "curated-vehicleCatalog-ts",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/minivan-panelvan"
+      ],
+      "brandSlug": "ford",
+      "brandName": "Ford",
+      "modelSlug": "tourneo",
+      "modelName": "Tourneo",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "tourneo",
+          "name": "Tourneo"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "curated-vehicleCatalog-ts",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/minivan-panelvan"
+      ],
+      "brandSlug": "mercedes-benz",
+      "brandName": "Mercedes-Benz",
+      "modelSlug": "sprinter",
+      "modelName": "Sprinter",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "sprinter",
+          "name": "Sprinter"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "curated-vehicleCatalog-ts",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/minivan-panelvan"
+      ],
+      "brandSlug": "mercedes-benz",
+      "brandName": "Mercedes-Benz",
+      "modelSlug": "vito",
+      "modelName": "Vito",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "vito",
+          "name": "Vito"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "curated-vehicleCatalog-ts",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/minivan-panelvan"
+      ],
+      "brandSlug": "mercedes-benz",
+      "brandName": "Mercedes-Benz",
+      "modelSlug": "v-class",
+      "modelName": "V Class",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "v-class",
+          "name": "V Class"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "curated-vehicleCatalog-ts",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/minivan-panelvan"
+      ],
+      "brandSlug": "fiat",
+      "brandName": "Fiat",
+      "modelSlug": "doblo",
+      "modelName": "Doblo",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "doblo",
+          "name": "Doblo"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "curated-vehicleCatalog-ts",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/minivan-panelvan"
+      ],
+      "brandSlug": "fiat",
+      "brandName": "Fiat",
+      "modelSlug": "ducato",
+      "modelName": "Ducato",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "ducato",
+          "name": "Ducato"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "curated-vehicleCatalog-ts",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/minivan-panelvan"
+      ],
+      "brandSlug": "fiat",
+      "brandName": "Fiat",
+      "modelSlug": "fiorino",
+      "modelName": "Fiorino",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "fiorino",
+          "name": "Fiorino"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "curated-vehicleCatalog-ts",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/minivan-panelvan"
+      ],
+      "brandSlug": "renault",
+      "brandName": "Renault",
+      "modelSlug": "trafic",
+      "modelName": "Trafic",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "trafic",
+          "name": "Trafic"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "curated-vehicleCatalog-ts",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/minivan-panelvan"
+      ],
+      "brandSlug": "renault",
+      "brandName": "Renault",
+      "modelSlug": "master",
+      "modelName": "Master",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "master",
+          "name": "Master"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "curated-vehicleCatalog-ts",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/minivan-panelvan"
+      ],
+      "brandSlug": "renault",
+      "brandName": "Renault",
+      "modelSlug": "kangoo",
+      "modelName": "Kangoo",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "kangoo",
+          "name": "Kangoo"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "curated-vehicleCatalog-ts",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    }
+  ]
+}

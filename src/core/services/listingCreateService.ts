@@ -102,7 +102,11 @@ export async function createListingForSeller(
       body: { error: "İlan kategorisi seçmelisiniz. Kategori seçilmeden ilan yayınlanamaz." },
     };
   }
-  if (category._count.children > 0) {
+  // Vasıta: Stage1 browse taxonomy children live under `arac`, but listings remain on
+  // root categorySlug=arac + attributes.subtype (not a leaf Category row).
+  const isVasitaListingRoot =
+    category.slug === "arac" || category.path === "arac";
+  if (category._count.children > 0 && !isVasitaListingRoot) {
     return {
       ok: false,
       status: 400,

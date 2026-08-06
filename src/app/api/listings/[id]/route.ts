@@ -210,7 +210,11 @@ export async function PATCH(req: Request, ctx: Ctx) {
       { status: 400 }
     );
   }
-  if (category._count.children > 0) {
+  // Vasıta: Stage1 browse taxonomy children live under `arac`, but listings remain on
+  // root categorySlug=arac + attributes.subtype (not a leaf Category row). Mirrors the
+  // same exception in listingCreateService.ts so editing a vehicle listing isn't blocked.
+  const isVasitaListingRoot = category.slug === "arac" || category.path === "arac";
+  if (category._count.children > 0 && !isVasitaListingRoot) {
     return NextResponse.json(
       { error: "Lütfen alt kategori seçin (ör. Cep Telefonu, Bilgisayar)." },
       { status: 400 }

@@ -23,6 +23,8 @@ import { needsListingKindChoice, normalizeAccountType } from "@/lib/accountTypes
 import { isPremiumCategorySlug, anyPremiumVerticalEnabled } from "@/data/premiumCategories";
 import { ALISVERIS_BROWSE_TREE, isAlisverisCategorySlug } from "@/data/classicBrowseTree";
 import { useAlisverisBrowseTree } from "@/hooks/useAlisverisBrowseTree";
+import { useVasitaBrowseTree } from "@/hooks/useVasitaBrowseTree";
+import { useVasitaFormAttributes, visibleVasitaFormFields, legacyAttrKeyFor, attributeTemplateForSubtype } from "@/lib/vasitaFormAttributes";
 import { HousingExtrasPicker } from "@/components/HousingExtrasPicker";
 import { VehicleExtrasPicker } from "@/components/VehicleExtrasPicker";
 import { VehicleExpertiseReportPanel } from "@/components/VehicleExpertiseReport";
@@ -197,6 +199,13 @@ function CreateListingInner() {
   const search = useSearchParams();
   const { tree: dbAlisverisTree } = useAlisverisBrowseTree();
   const shopBrowseTree = dbAlisverisTree.length ? dbAlisverisTree : ALISVERIS_BROWSE_TREE;
+  // Genel form (emlak + vasıta): Emlak dalı statik (CATEGORY_BROWSE_TREE), Vasıta dalı DB'den
+  // (useVasitaBrowseTree → /api/catalog/tree?format=vasita-browse; API/DB down → JSON fallback).
+  const { root: vasitaRoot } = useVasitaBrowseTree();
+  const genelBrowseTree = useMemo(
+    () => [CATEGORY_BROWSE_TREE[0], vasitaRoot],
+    [vasitaRoot]
+  );
   const editId = search.get("edit");
   const fromAi = search.get("from") === "ai";
   const kindParam = search.get("kind");
@@ -239,6 +248,8 @@ function CreateListingInner() {
   const [editBlockedByBids, setEditBlockedByBids] = useState(false);
   const [authChecked, setAuthChecked] = useState(false);
   const [premiumVerticalsReady, setPremiumVerticalsReady] = useState(false);
+  /** Auth/taslak hızlıysa boş geç; yavaşsa spinner (metin flash yok) */
+  const [showBootSpinner, setShowBootSpinner] = useState(false);
   const [anyPremiumOpen, setAnyPremiumOpen] = useState(true);
   const [premium, setPremium] = useState({
     titleBold: false,
@@ -464,6 +475,16 @@ function CreateListingInner() {
   }, [router, editId, listingKind]);
 
   useEffect(() => {
+    const bootDone = authChecked && draftReady && premiumVerticalsReady;
+    if (bootDone) {
+      setShowBootSpinner(false);
+      return;
+    }
+    const t = window.setTimeout(() => setShowBootSpinner(true), 300);
+    return () => window.clearTimeout(t);
+  }, [authChecked, draftReady, premiumVerticalsReady]);
+
+  useEffect(() => {
     if (!authChecked || editId) return;
 
     const draft = readListingDraft();
@@ -622,6 +643,16 @@ function CreateListingInner() {
   }, [premium, premiumPrices]);
   const isRealty = ["konut", "isyeri", "arsa", "kiralik"].includes(slug);
   const isVehicle = slug === "arac";
+  // DB-backed attribute fields (Stage1) — visibility/order/options from CategoryAttribute.
+  // Hardcoded block below is emergency fallback when API returns no fields.
+  const { fields: vasitaAttrFields, loaded: vasitaAttrsLoaded } = useVasitaFormAttributes(
+    isVehicle ? attrs.subtype : ""
+  );
+  const vasitaVisibleFields = useMemo(
+    () => visibleVasitaFormFields(vasitaAttrFields),
+    [vasitaAttrFields]
+  );
+  const useDbVehicleFields = vasitaAttrsLoaded && vasitaVisibleFields.length > 0;
   const isLand = slug === "arsa";
   const isHomeLike = slug === "konut" || slug === "kiralik";
   const isWorkplace = slug === "isyeri";
@@ -897,7 +928,7 @@ function CreateListingInner() {
     } else if (
       !isCategoryLadderComplete(
         ladderValue,
-        effectiveKind === "alisveris" ? shopBrowseTree : CATEGORY_BROWSE_TREE
+        effectiveKind === "alisveris" ? shopBrowseTree : genelBrowseTree
       )
     ) {
       return effectiveKind === "alisveris"
@@ -1212,9 +1243,33 @@ function CreateListingInner() {
   }
 
   if (!authChecked || !draftReady || !premiumVerticalsReady) {
+    if (!showBootSpinner) return null;
     return (
-      <div className="page-shell" style={{ maxWidth: 560, marginTop: 48, marginBottom: 48, textAlign: "center", color: "var(--muted)" }}>
-        {!authChecked ? "Giriş kontrol ediliyor..." : "Taslak kontrol ediliyor..."}
+      <div
+        className="page-shell"
+        style={{
+          maxWidth: 560,
+          marginTop: 80,
+          marginBottom: 48,
+          display: "grid",
+          placeItems: "center",
+          minHeight: 120,
+        }}
+        aria-busy
+        aria-label="Yükleniyor"
+      >
+        <span
+          style={{
+            width: 36,
+            height: 36,
+            borderRadius: "50%",
+            border: "3px solid #e2e8f0",
+            borderTopColor: "var(--orange, #ea580c)",
+            animation: "ilan-ver-boot-spin 0.7s linear infinite",
+            display: "inline-block",
+          }}
+        />
+        <style>{`@keyframes ilan-ver-boot-spin { to { transform: rotate(360deg); } }`}</style>
       </div>
     );
   }
@@ -1974,7 +2029,7 @@ function CreateListingInner() {
             ) : (
               <CategoryLadderPicker
                 disabled={editBlockedByBids}
-                tree={effectiveKind === "alisveris" ? shopBrowseTree : CATEGORY_BROWSE_TREE}
+                tree={effectiveKind === "alisveris" ? shopBrowseTree : genelBrowseTree}
                 hint={
                   effectiveKind === "alisveris" ? (
                     <>
@@ -2007,10 +2062,14 @@ function CreateListingInner() {
                   setAttrs((a) => ({
                     ...a,
                     subtype: next.subtype,
-                    rentalPeriod: next.rentalPeriod,
+                    rentalPeriod: next.rentalPeriod || next.extraAttrs?.rentalPeriod || "",
                     brand: next.brand,
                     model: next.model,
                     trim: next.trim,
+                    // Ladder'ın "Model yılı" seçimi (DB katalog cascade) → serbest "Model Yılı" alanına
+                    // öneri olarak yazılır; kullanıcı yine de değiştirebilir (input aynı kalır).
+                    ...(next.modelYear ? { year: next.modelYear } : {}),
+                    ...(next.extraAttrs || {}),
                   }));
                 }}
               />
@@ -2376,7 +2435,66 @@ function CreateListingInner() {
             </div>
           )}
 
-          {isVehicle && (
+          {isVehicle && useDbVehicleFields && (
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
+              {vasitaVisibleFields.map((field) => {
+                const legacyKey = legacyAttrKeyFor(field.key);
+                const value = String((attrs as Record<string, string>)[legacyKey] || "");
+                const label = field.required ? `${field.label} *` : field.label;
+                const unitHint = field.unit ? ` (${field.unit})` : "";
+                if (field.type === "SINGLE_SELECT" || field.type === "MULTI_SELECT" || field.options?.length) {
+                  return (
+                    <Field key={field.key} label={`${label}${unitHint}`}>
+                      <select
+                        className="select"
+                        value={value}
+                        required={field.required}
+                        onChange={(e) => setAttr(legacyKey, e.target.value)}
+                      >
+                        <option value="">Seçin</option>
+                        {(field.options || []).map((o) => (
+                          <option key={o.value} value={o.value}>
+                            {o.label || o.value}
+                          </option>
+                        ))}
+                      </select>
+                    </Field>
+                  );
+                }
+                if (field.type === "BOOLEAN") {
+                  return (
+                    <Field key={field.key} label={label}>
+                      <select
+                        className="select"
+                        value={value}
+                        required={field.required}
+                        onChange={(e) => setAttr(legacyKey, e.target.value)}
+                      >
+                        <option value="">Seçin</option>
+                        <option value="Evet">Evet</option>
+                        <option value="Hayır">Hayır</option>
+                      </select>
+                    </Field>
+                  );
+                }
+                return (
+                  <Field key={field.key} label={`${label}${unitHint}`}>
+                    <input
+                      className="input"
+                      type={field.type === "DATE" ? "date" : "text"}
+                      inputMode={field.type === "NUMBER" ? "numeric" : undefined}
+                      value={value}
+                      required={field.required}
+                      onChange={(e) => setAttr(legacyKey, e.target.value)}
+                      placeholder={field.unit ? `Örn: ${field.unit}` : undefined}
+                    />
+                  </Field>
+                );
+              })}
+            </div>
+          )}
+
+          {isVehicle && !useDbVehicleFields && (
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
               <Field label="Seri">
                 <input className="input" value={attrs.series} onChange={(e) => setAttr("series", e.target.value)} placeholder="Örn: Fiorino Cargo" />
@@ -2561,7 +2679,11 @@ function CreateListingInner() {
                 title="Araç donanım özellikleri"
                 desc="Güvenlik, iç/dış donanım ve multimedya. Sahibinden tarzı seçenekler — istediğinizi işaretleyin."
               >
-                <VehicleExtrasPicker value={vehicleExtras} onChange={setVehicleExtras} />
+                <VehicleExtrasPicker
+                  value={vehicleExtras}
+                  onChange={setVehicleExtras}
+                  attributeTemplate={attributeTemplateForSubtype(attrs.subtype || "otomobil")}
+                />
               </Section>
             </>
           )}

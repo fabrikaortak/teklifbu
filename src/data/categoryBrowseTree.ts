@@ -6,6 +6,7 @@ import {
   modelsForBrand,
 } from "@/data/vehicleCatalog";
 import { PREMIUM_CATEGORY_SEEDS, childPremiumSlug } from "@/data/premiumCategories";
+import { buildVasitaBrowseNode } from "@/lib/vasitaBrowseFromTarget";
 
 /** Sol menü + URL filtresi eşlemesi (Sahibinden tarzı). */
 export type BrowseFilter = {
@@ -80,6 +81,7 @@ const ARSA_TYPES: Array<{ slug: string; name: string }> = [
 const ARAC_TYPES: Array<{ slug: string; name: string }> = [
   { slug: "otomobil", name: "Otomobil" },
   { slug: "arazi-suv-pickup", name: "Arazi, SUV & Pickup" },
+  { slug: "elektrikli-araclar", name: "Elektrikli Araçlar" },
   { slug: "motosiklet", name: "Motosiklet" },
   { slug: "minivan-panelvan", name: "Minivan & Panelvan" },
   { slug: "ticari-araclar", name: "Ticari Araçlar" },
@@ -88,9 +90,10 @@ const ARAC_TYPES: Array<{ slug: string; name: string }> = [
   { slug: "hasarli-araclar", name: "Hasarlı Araçlar" },
   { slug: "karavan", name: "Karavan" },
   { slug: "klasik-araclar", name: "Klasik Araçlar" },
-  { slug: "elektrikli-araclar", name: "Elektrikli Araçlar" },
-  { slug: "atv", name: "ATV" },
+  { slug: "hava-araclari", name: "Hava Araçları" },
   { slug: "ucak", name: "Uçak" },
+  { slug: "atv", name: "ATV" },
+  { slug: "utv", name: "UTV" },
   { slug: "engelli-plakali", name: "Engelli Plakalı Araçlar" },
 ];
 
@@ -225,55 +228,15 @@ const ARSA_NODE: BrowseNode = {
   ],
 };
 
-const VASITA_NODE: BrowseNode = {
-  id: "arac",
-  name: "Vasıta",
-  filter: { category: "arac" },
-  children: ARAC_TYPES.map((t) => {
-    const base: BrowseNode = {
-      id: `arac/${t.slug}`,
-      name: t.name,
-      filter: { category: "arac", subtype: t.slug },
-    };
-    if (t.slug !== "ticari-araclar") return base;
-    return {
-      ...base,
-      children: [
-        {
-          id: "arac/ticari-araclar/is-makineleri",
-          name: "İş Makineleri",
-          filter: {
-            category: [
-              "ikinci-el-is-makinesi",
-              "sifir-urun-is-makinesi",
-              "ikinci-el-tarim-makinesi",
-              "sifir-urun-tarim-makinesi",
-              "ikinci-el-sanayi-makinesi",
-              "sifir-urun-sanayi-makinesi",
-            ].join(","),
-          },
-          children: ["ikinci-el", "sifir-urun"].map((root) => {
-            const leaves = ["is-makinesi", "tarim-makinesi", "sanayi-makinesi"].map((sub) => {
-              const id = childSlug(root, sub);
-              const meta = SHOP_SUBCATEGORIES.find((s) => s.slug === sub);
-              return {
-                id,
-                name: meta?.name || sub,
-                filter: { category: id },
-              } as BrowseNode;
-            });
-            return {
-              id: `arac/ticari-araclar/is-makineleri/${root}`,
-              name: root === "sifir-urun" ? "Sıfır" : "İkinci El",
-              filter: { category: leaves.map((l) => l.filter.category!).join(",") },
-              children: leaves,
-            } as BrowseNode;
-          }),
-        },
-      ],
-    };
-  }),
-};
+/**
+ * ⚠️ FALLBACK ONLY ⚠️ — built from the static JSON target tree (vasitaBrowseFromTarget.ts).
+ * Runtime source of truth for the Vasıta browse tree is the DB (src/lib/vasitaBrowseFromDb.ts
+ * + GET /api/catalog/tree?format=vasita-browse + useVasitaBrowseTree hook). The primary
+ * ilan-ver form path merges the live DB tree with this module's static Emlak branch — see
+ * src/app/ilan-ver/page.tsx. This constant only feeds server-side/synchronous consumers
+ * (e.g. listingCreateService validation) that cannot await a client fetch.
+ */
+const VASITA_NODE: BrowseNode = buildVasitaBrowseNode();
 
 /**
  * Ana menü kökleri: yalnızca Emlak + Vasıta.
@@ -354,16 +317,20 @@ export function validateListingCategorySelection(input: {
   }
   const leaf = findBrowseNode(path[path.length - 1]);
 
-  // Vasıta: merdiven otomobil → marka → model → (paket)
+  // Vasıta: merdiven otomobil → marka → model → (paket/versiyon)
+  // Primary cascade is DB (/api/vasita/catalog). vehicleCatalog.ts is emergency fallback —
+  // if brand is in the static list, validate model/trim there; otherwise require non-empty
+  // brand+model (DB-seeded brands not yet mirrored in the TS fallback).
   if (slug === "arac") {
     if (!subtype) return "Vasıta alt kategorisi seçin (ör. Otomobil, Motosiklet).";
+    if (!brand) return "Araç markası seçmelisiniz.";
+    if (!model) return "Araç modeli seçmelisiniz.";
     const brands = brandsForSubtype(subtype);
-    if (brands.length) {
-      if (!brand) return "Araç markası seçmelisiniz.";
-      if (!brands.some((b) => b.slug === brand)) return "Geçerli bir marka seçin.";
-      if (!model) return "Araç modeli seçmelisiniz.";
+    if (brands.length && brands.some((b) => b.slug === brand)) {
       const models = modelsForBrand(subtype, brand);
-      if (!models.some((m) => m.slug === model)) return "Geçerli bir model seçin.";
+      if (models.length && !models.some((m) => m.slug === model)) {
+        return "Geçerli bir model seçin.";
+      }
       if (modelRequiresTrim(subtype, brand, model) && !trim) {
         return "Model paket / motor seçeneğini seçmelisiniz.";
       }

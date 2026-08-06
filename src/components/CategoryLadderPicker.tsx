@@ -7,12 +7,15 @@ import {
   findBrowseNode,
   matchBrowsePath,
 } from "@/data/categoryBrowseTree";
+// ⚠️ EMERGENCY FALLBACK ONLY — used when /api/vasita/catalog has no data for a subtype/brand
+// (e.g. DB down, or brand/model not yet in the curated Stage1 pack). Primary path is the API.
 import {
   brandsForSubtype,
   modelRequiresTrim,
   modelsForBrand,
   trimsForModel,
 } from "@/data/vehicleCatalog";
+import { readBrowseExtraAttrs } from "@/lib/vasitaBrowseFromTarget";
 
 export type CategoryLadderValue = {
   categorySlug: string;
@@ -22,7 +25,120 @@ export type CategoryLadderValue = {
   brand: string;
   model: string;
   trim: string;
+  /** Nesil / kasa kodu (Stage1: genellikle "default"). */
+  generation?: string;
+  /** Versiyon/paket — legacy attributes.trim ile senkron tutulur. */
+  version?: string;
+  /** Model yılı (opsiyonel; formda ayrıca serbest "Model Yılı" alanı da vardır). */
+  modelYear?: string;
+  /** Segment / class flags from Stage1 browse tree (fuelType, motorcycleClass, …) */
+  extraAttrs?: Record<string, string>;
 };
+
+type CatalogOption = { slug: string; name: string };
+type GenerationOption = { code: string; label: string };
+
+type VasitaCatalogState = {
+  brands: CatalogOption[];
+  brandsLoaded: boolean;
+  models: CatalogOption[];
+  modelsLoaded: boolean;
+  generations: GenerationOption[];
+  versions: CatalogOption[];
+  years: number[];
+  generationsLoaded: boolean;
+};
+
+const EMPTY_CATALOG_STATE: VasitaCatalogState = {
+  brands: [],
+  brandsLoaded: false,
+  models: [],
+  modelsLoaded: false,
+  generations: [],
+  versions: [],
+  years: [],
+  generationsLoaded: false,
+};
+
+/** /api/vasita/catalog cascade — DB source of truth. Empty result → caller falls back to vehicleCatalog.ts. */
+function useVasitaCatalogCascade(subtype: string, brand: string, model: string): VasitaCatalogState {
+  const [state, setState] = useState<VasitaCatalogState>(EMPTY_CATALOG_STATE);
+
+  useEffect(() => {
+    if (!subtype) {
+      setState(EMPTY_CATALOG_STATE);
+      return;
+    }
+    let cancelled = false;
+    setState((s) => ({ ...EMPTY_CATALOG_STATE, generations: s.generations }));
+    fetch(`/api/vasita/catalog?action=brands&subtype=${encodeURIComponent(subtype)}`, { cache: "no-store" })
+      .then((r) => r.json())
+      .then((data) => {
+        if (cancelled) return;
+        setState((s) => ({ ...s, brands: Array.isArray(data?.brands) ? data.brands : [], brandsLoaded: true }));
+      })
+      .catch(() => {
+        if (!cancelled) setState((s) => ({ ...s, brands: [], brandsLoaded: true }));
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [subtype]);
+
+  useEffect(() => {
+    if (!subtype || !brand) {
+      setState((s) => ({ ...s, models: [], modelsLoaded: false }));
+      return;
+    }
+    let cancelled = false;
+    fetch(
+      `/api/vasita/catalog?action=models&subtype=${encodeURIComponent(subtype)}&brand=${encodeURIComponent(brand)}`,
+      { cache: "no-store" }
+    )
+      .then((r) => r.json())
+      .then((data) => {
+        if (cancelled) return;
+        setState((s) => ({ ...s, models: Array.isArray(data?.models) ? data.models : [], modelsLoaded: true }));
+      })
+      .catch(() => {
+        if (!cancelled) setState((s) => ({ ...s, models: [], modelsLoaded: true }));
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [subtype, brand]);
+
+  useEffect(() => {
+    if (!subtype || !brand || !model) {
+      setState((s) => ({ ...s, generations: [], versions: [], years: [], generationsLoaded: false }));
+      return;
+    }
+    let cancelled = false;
+    fetch(
+      `/api/vasita/catalog?action=generations&subtype=${encodeURIComponent(subtype)}&brand=${encodeURIComponent(brand)}&model=${encodeURIComponent(model)}`,
+      { cache: "no-store" }
+    )
+      .then((r) => r.json())
+      .then((data) => {
+        if (cancelled) return;
+        setState((s) => ({
+          ...s,
+          generations: Array.isArray(data?.generations) ? data.generations : [],
+          versions: Array.isArray(data?.versions) ? data.versions : [],
+          years: Array.isArray(data?.years) ? data.years : [],
+          generationsLoaded: true,
+        }));
+      })
+      .catch(() => {
+        if (!cancelled) setState((s) => ({ ...s, generations: [], versions: [], years: [], generationsLoaded: true }));
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [subtype, brand, model]);
+
+  return state;
+}
 
 type Props = {
   value: CategoryLadderValue;
@@ -41,18 +157,24 @@ function applyNodeFilter(node: BrowseNode, prev: CategoryLadderValue): CategoryL
   if (isLeaf && !dealType && f.category !== "arac") {
     dealType = f.category === "kiralik" ? "KIRALIK" : "SATILIK";
   }
+  const extras = readBrowseExtraAttrs(f);
   const next: CategoryLadderValue = {
     categorySlug: f.category || "",
     dealType,
     subtype: f.subtype || "",
-    rentalPeriod: f.rental || "",
+    rentalPeriod: f.rental || extras.rentalPeriod || "",
     brand: "",
     model: "",
     trim: "",
+    generation: "",
+    version: "",
+    modelYear: "",
+    extraAttrs: extras,
   };
-  // Vasıta alt tip seçildiğinde marka/model sıfırlanır; dealType korunur
+  // Vasıta alt tip seçildiğinde marka/model sıfırlanır; dealType korunur (kiralık hub hariç)
   if (f.category === "arac" && f.subtype) {
-    next.dealType = prev.dealType || "SATILIK";
+    if (f.dealType === "KIRALIK") next.dealType = "KIRALIK";
+    else next.dealType = prev.dealType || "SATILIK";
   }
   return next;
 }
@@ -139,10 +261,30 @@ export function CategoryLadderPicker({
 
   const last = path[path.length - 1] || null;
   const isVehicle = value.categorySlug === "arac" && Boolean(value.subtype);
-  const brandOptions = isVehicle ? brandsForSubtype(value.subtype) : [];
-  const modelOptions = isVehicle && value.brand ? modelsForBrand(value.subtype, value.brand) : [];
-  const trimOptions =
+
+  // Primary path: /api/vasita/catalog (DB). Empty/failed → vehicleCatalog.ts fallback.
+  const cascade = useVasitaCatalogCascade(isVehicle ? value.subtype : "", value.brand, value.model);
+  const fallbackBrandOptions = isVehicle ? brandsForSubtype(value.subtype) : [];
+  const usingDbBrands = cascade.brandsLoaded && cascade.brands.length > 0;
+  const brandOptions = usingDbBrands ? cascade.brands : fallbackBrandOptions;
+
+  const fallbackModelOptions = isVehicle && value.brand ? modelsForBrand(value.subtype, value.brand) : [];
+  const usingDbModels = usingDbBrands && cascade.modelsLoaded && cascade.models.length > 0;
+  const modelOptions = usingDbModels ? cascade.models : fallbackModelOptions;
+
+  const fallbackTrimOptions =
     isVehicle && value.brand && value.model ? trimsForModel(value.subtype, value.brand, value.model) : [];
+  // When DB brand/model cascade is live, do NOT flash static vehicleCatalog trims while
+  // generations/versions are still loading — that mixed SoT breaks required trim selection.
+  const usingDbVersions = usingDbModels && cascade.generationsLoaded && cascade.versions.length > 0;
+  const versionOptions = usingDbModels
+    ? cascade.generationsLoaded
+      ? cascade.versions
+      : []
+    : fallbackTrimOptions;
+  const generationOptions =
+    usingDbModels && cascade.generationsLoaded ? cascade.generations : [];
+  const yearOptions = usingDbModels && cascade.generationsLoaded ? cascade.years : [];
 
   const complete = isBrowseComplete(last, value);
   const breadcrumbParts = path.map((n) => n.name);
@@ -155,7 +297,7 @@ export function CategoryLadderPicker({
     breadcrumbParts.push(m?.name || value.model);
   }
   if (value.trim) {
-    const t = trimOptions.find((x) => x.slug === value.trim);
+    const t = versionOptions.find((x) => x.slug === value.trim);
     breadcrumbParts.push(t?.name || value.trim);
   }
   const breadcrumb = breadcrumbParts.join(" › ");
@@ -241,6 +383,9 @@ export function CategoryLadderPicker({
                   brand: e.target.value,
                   model: "",
                   trim: "",
+                  generation: "",
+                  version: "",
+                  modelYear: "",
                   dealType: value.dealType || "SATILIK",
                 })
               }
@@ -263,7 +408,16 @@ export function CategoryLadderPicker({
                 className="select"
                 disabled={disabled}
                 value={value.model}
-                onChange={(e) => onChange({ ...value, model: e.target.value, trim: "" })}
+                onChange={(e) =>
+                  onChange({
+                    ...value,
+                    model: e.target.value,
+                    trim: "",
+                    generation: "",
+                    version: "",
+                    modelYear: "",
+                  })
+                }
                 style={{ width: "100%" }}
               >
                 <option value="">Model seçin</option>
@@ -275,22 +429,79 @@ export function CategoryLadderPicker({
               </select>
             </div>
           )}
-          {value.model && trimOptions.length > 0 && (
+          {value.model && usingDbModels && generationOptions.length > 0 && (
             <div>
               <label style={{ display: "block", fontSize: 12, fontWeight: 700, marginBottom: 6, color: "#475569" }}>
-                Paket / motor *
+                Kasa / Nesil
               </label>
               <select
                 className="select"
                 disabled={disabled}
-                value={value.trim}
-                onChange={(e) => onChange({ ...value, trim: e.target.value })}
+                value={value.generation || (generationOptions.length === 1 ? generationOptions[0].code : "")}
+                onChange={(e) =>
+                  onChange({
+                    ...value,
+                    generation: e.target.value,
+                    version: "",
+                    trim: "",
+                    modelYear: "",
+                  })
+                }
                 style={{ width: "100%" }}
               >
-                <option value="">Paket seçin</option>
-                {trimOptions.map((t) => (
+                {generationOptions.length > 1 ? <option value="">Seçin…</option> : null}
+                {generationOptions.map((g) => (
+                  <option key={g.code} value={g.code}>
+                    {g.label}
+                  </option>
+                ))}
+              </select>
+            </div>
+          )}
+          {value.model && versionOptions.length > 0 && (
+            <div>
+              <label style={{ display: "block", fontSize: 12, fontWeight: 700, marginBottom: 6, color: "#475569" }}>
+                {usingDbVersions ? "Versiyon" : "Paket / motor *"}
+              </label>
+              <select
+                className="select"
+                disabled={disabled}
+                value={value.version || value.trim}
+                onChange={(e) =>
+                  onChange({
+                    ...value,
+                    version: e.target.value,
+                    trim: e.target.value,
+                    modelYear: "",
+                  })
+                }
+                style={{ width: "100%" }}
+              >
+                <option value="">{usingDbVersions ? "Versiyon seçin" : "Paket seçin"}</option>
+                {versionOptions.map((t) => (
                   <option key={t.slug} value={t.slug}>
                     {t.name}
+                  </option>
+                ))}
+              </select>
+            </div>
+          )}
+          {value.model && usingDbModels && yearOptions.length > 0 && (
+            <div>
+              <label style={{ display: "block", fontSize: 12, fontWeight: 700, marginBottom: 6, color: "#475569" }}>
+                Model yılı
+              </label>
+              <select
+                className="select"
+                disabled={disabled}
+                value={value.modelYear || ""}
+                onChange={(e) => onChange({ ...value, modelYear: e.target.value })}
+                style={{ width: "100%" }}
+              >
+                <option value="">Seçin…</option>
+                {yearOptions.map((y) => (
+                  <option key={y} value={String(y)}>
+                    {y}
                   </option>
                 ))}
               </select>

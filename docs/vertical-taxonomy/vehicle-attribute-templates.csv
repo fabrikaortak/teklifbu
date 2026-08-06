@@ -1,0 +1,132 @@
+template_key,field_key,label_tr,data_type,required,filterable,form_visible,detail_visible,unit,legacy_attributes_key,option_source,sort_order
+PASSENGER_CAR,modelYear,Model Yılı,NUMBER,true,true,true,true,,year,YEAR_RANGE,10
+PASSENGER_CAR,mileage,Kilometre,NUMBER,true,true,true,true,km,km,none,20
+PASSENGER_CAR,fuelType,Yakıt,SINGLE_SELECT,true,true,true,true,,fuel,FUEL_TYPES,30
+PASSENGER_CAR,transmission,Vites,SINGLE_SELECT,true,true,true,true,,gear,TRANSMISSIONS,40
+PASSENGER_CAR,bodyType,Kasa Tipi,SINGLE_SELECT,false,true,true,true,,bodyType,BODY_TYPES_CAR,50
+PASSENGER_CAR,engineDisplacement,Motor Hacmi,NUMBER,false,true,true,true,cc,engineSize,none,60
+PASSENGER_CAR,enginePower,Motor Gücü,NUMBER,false,true,true,true,HP,enginePower,none,70
+PASSENGER_CAR,driveType,Çekiş,SINGLE_SELECT,false,true,true,true,,drive,DRIVE_TYPES,80
+PASSENGER_CAR,color,Renk,TEXT,false,true,true,true,,color,none,90
+PASSENGER_CAR,plateStatus,Plaka Durumu,SINGLE_SELECT,false,true,true,true,,plateStatus,PLATE_STATUS,92
+PASSENGER_CAR,registrationDate,Tescil Tarihi,DATE,false,false,true,true,,registrationDate,none,94
+PASSENGER_CAR,condition,Durum,SINGLE_SELECT,false,true,true,true,,vehicleStatus,VEHICLE_STATUS,100
+PASSENGER_CAR,exchange,Takas,SINGLE_SELECT,false,true,true,true,,swap,YES_NO,110
+PASSENGER_CAR,warranty,Garanti,SINGLE_SELECT,false,true,true,true,,warranty,YES_NO,120
+PASSENGER_CAR,damageAmount,Hasar Tutarı,NUMBER,false,true,true,true,TRY,damageAmount,none,300
+PASSENGER_CAR,paintedParts,Boyalı Parça,TEXT,false,false,true,true,,paintedParts,none,310
+PASSENGER_CAR,replacedParts,Değişen Parça,TEXT,false,false,true,true,,replacedParts,none,320
+PASSENGER_CAR,accidentHistory,Kaza Geçmişi,SINGLE_SELECT,false,true,true,true,,accidentHistory,YES_NO,330
+PASSENGER_CAR,inspectionAvailable,Ekspertiz Var,SINGLE_SELECT,false,true,true,true,,inspectionAvailable,YES_NO,340
+PASSENGER_CAR,inspectionDate,Ekspertiz Tarihi,DATE,false,false,true,true,,inspectionDate,none,350
+PASSENGER_CAR,batteryCapacityKwh,Batarya (kWh),NUMBER,false,true,true,true,kWh,batteryCapacity,none,200
+PASSENGER_CAR,electricRangeKm,Menzil,NUMBER,false,true,true,true,km,electricRange,none,210
+PASSENGER_CAR,chargingType,Şarj Tipi,SINGLE_SELECT,false,true,true,true,,chargingType,CHARGING_TYPES,220
+PASSENGER_CAR,fastCharging,Hızlı Şarj,SINGLE_SELECT,false,true,true,true,,fastCharging,YES_NO,230
+SUV_PICKUP,modelYear,Model Yılı,NUMBER,true,true,true,true,,year,YEAR_RANGE,10
+SUV_PICKUP,mileage,Kilometre,NUMBER,true,true,true,true,km,km,none,20
+SUV_PICKUP,fuelType,Yakıt,SINGLE_SELECT,true,true,true,true,,fuel,FUEL_TYPES,30
+SUV_PICKUP,transmission,Vites,SINGLE_SELECT,true,true,true,true,,gear,TRANSMISSIONS,40
+SUV_PICKUP,bodySubtype,Alt Tip,SINGLE_SELECT,false,true,true,true,,bodySubtype,SUV_PICKUP_SUBTYPES,45
+SUV_PICKUP,bodyType,Kasa Tipi,SINGLE_SELECT,false,true,true,true,,bodyType,BODY_TYPES_CAR,50
+SUV_PICKUP,engineDisplacement,Motor Hacmi,NUMBER,false,true,true,true,cc,engineSize,none,60
+SUV_PICKUP,enginePower,Motor Gücü,NUMBER,false,true,true,true,HP,enginePower,none,70
+SUV_PICKUP,driveType,Çekiş,SINGLE_SELECT,false,true,true,true,,drive,DRIVE_TYPES,80
+SUV_PICKUP,color,Renk,TEXT,false,true,true,true,,color,none,90
+SUV_PICKUP,plateStatus,Plaka Durumu,SINGLE_SELECT,false,true,true,true,,plateStatus,PLATE_STATUS,92
+SUV_PICKUP,condition,Durum,SINGLE_SELECT,false,true,true,true,,vehicleStatus,VEHICLE_STATUS,100
+SUV_PICKUP,exchange,Takas,SINGLE_SELECT,false,true,true,true,,swap,YES_NO,110
+SUV_PICKUP,warranty,Garanti,SINGLE_SELECT,false,true,true,true,,warranty,YES_NO,120
+SUV_PICKUP,damageAmount,Hasar Tutarı,NUMBER,false,true,true,true,TRY,damageAmount,none,300
+SUV_PICKUP,paintedParts,Boyalı Parça,TEXT,false,false,true,true,,paintedParts,none,310
+SUV_PICKUP,replacedParts,Değişen Parça,TEXT,false,false,true,true,,replacedParts,none,320
+SUV_PICKUP,accidentHistory,Kaza Geçmişi,SINGLE_SELECT,false,true,true,true,,accidentHistory,YES_NO,330
+SUV_PICKUP,inspectionAvailable,Ekspertiz Var,SINGLE_SELECT,false,true,true,true,,inspectionAvailable,YES_NO,340
+SUV_PICKUP,inspectionDate,Ekspertiz Tarihi,DATE,false,false,true,true,,inspectionDate,none,350
+SUV_PICKUP,batteryCapacityKwh,Batarya (kWh),NUMBER,false,true,true,true,kWh,batteryCapacity,none,200
+SUV_PICKUP,electricRangeKm,Menzil,NUMBER,false,true,true,true,km,electricRange,none,210
+SUV_PICKUP,chargingType,Şarj Tipi,SINGLE_SELECT,false,true,true,true,,chargingType,CHARGING_TYPES,220
+SUV_PICKUP,fastCharging,Hızlı Şarj,SINGLE_SELECT,false,true,true,true,,fastCharging,YES_NO,230
+MOTORCYCLE,modelYear,Model Yılı,NUMBER,true,true,true,true,,year,YEAR_RANGE,10
+MOTORCYCLE,mileage,Kilometre,NUMBER,true,true,true,true,km,km,none,20
+MOTORCYCLE,motorcycleClass,Motosiklet Türü,SINGLE_SELECT,true,true,true,true,,motorcycleClass,MOTO_CLASSES,15
+MOTORCYCLE,fuelType,Yakıt,SINGLE_SELECT,false,true,true,true,,fuel,FUEL_TYPES,30
+MOTORCYCLE,transmission,Vites,SINGLE_SELECT,false,true,true,true,,gear,TRANSMISSIONS,40
+MOTORCYCLE,engineDisplacement,Motor Hacmi,NUMBER,false,true,true,true,cc,engineSize,none,60
+MOTORCYCLE,enginePower,Motor Gücü,NUMBER,false,true,true,true,HP,enginePower,none,70
+MOTORCYCLE,cylinderCount,Silindir,NUMBER,false,false,true,true,,cylinders,none,75
+MOTORCYCLE,coolingType,Soğutma,SINGLE_SELECT,false,false,true,true,,cooling,COOLING_TYPES,78
+MOTORCYCLE,color,Renk,TEXT,false,true,true,true,,color,none,90
+MOTORCYCLE,plateStatus,Plaka Durumu,SINGLE_SELECT,false,true,true,true,,plateStatus,PLATE_STATUS,92
+MOTORCYCLE,condition,Durum,SINGLE_SELECT,false,true,true,true,,vehicleStatus,VEHICLE_STATUS,100
+MOTORCYCLE,exchange,Takas,SINGLE_SELECT,false,true,true,true,,swap,YES_NO,110
+MOTORCYCLE,warranty,Garanti,SINGLE_SELECT,false,true,true,true,,warranty,YES_NO,120
+MOTORCYCLE,accidentHistory,Kaza Geçmişi,SINGLE_SELECT,false,true,true,true,,accidentHistory,YES_NO,330
+MINIVAN_PANELVAN,modelYear,Model Yılı,NUMBER,true,true,true,true,,year,YEAR_RANGE,10
+MINIVAN_PANELVAN,mileage,Kilometre,NUMBER,true,true,true,true,km,km,none,20
+MINIVAN_PANELVAN,usageClass,Kullanım,SINGLE_SELECT,false,true,true,true,,usageClass,VAN_USAGE,25
+MINIVAN_PANELVAN,fuelType,Yakıt,SINGLE_SELECT,true,true,true,true,,fuel,FUEL_TYPES,30
+MINIVAN_PANELVAN,transmission,Vites,SINGLE_SELECT,false,true,true,true,,gear,TRANSMISSIONS,40
+MINIVAN_PANELVAN,enginePower,Motor Gücü,NUMBER,false,true,true,true,HP,enginePower,none,70
+MINIVAN_PANELVAN,loadCapacity,Yük Kapasitesi,NUMBER,false,true,true,true,kg,loadCapacity,none,50
+MINIVAN_PANELVAN,color,Renk,TEXT,false,true,true,true,,color,none,90
+MINIVAN_PANELVAN,condition,Durum,SINGLE_SELECT,false,true,true,true,,vehicleStatus,VEHICLE_STATUS,100
+MINIVAN_PANELVAN,exchange,Takas,SINGLE_SELECT,false,true,true,true,,swap,YES_NO,110
+TRUCK,modelYear,Model Yılı,NUMBER,true,true,true,true,,year,YEAR_RANGE,10
+TRUCK,mileage,Kilometre,NUMBER,true,true,true,true,km,km,none,20
+TRUCK,fuelType,Yakıt,SINGLE_SELECT,true,true,true,true,,fuel,FUEL_TYPES,30
+TRUCK,transmission,Vites,SINGLE_SELECT,false,true,true,true,,gear,TRANSMISSIONS,35
+TRUCK,axleCount,Aks,NUMBER,false,true,true,true,,axles,none,40
+TRUCK,loadCapacity,Yük Kapasitesi,NUMBER,false,true,true,true,kg,loadCapacity,none,50
+TRUCK,grossWeight,Azami Ağırlık,NUMBER,false,true,true,true,kg,grossWeight,none,60
+TRUCK,cabinType,Kabin Tipi,SINGLE_SELECT,false,true,true,true,,cabinType,CABIN_TYPES,65
+TRUCK,enginePower,Motor Gücü,NUMBER,false,true,true,true,HP,enginePower,none,70
+TRUCK,color,Renk,TEXT,false,true,true,true,,color,none,90
+TRUCK,condition,Durum,SINGLE_SELECT,false,true,true,true,,vehicleStatus,VEHICLE_STATUS,100
+TRUCK,inspectionAvailable,Ekspertiz Var,SINGLE_SELECT,false,true,true,true,,inspectionAvailable,YES_NO,340
+TRUCK,inspectionDate,Ekspertiz Tarihi,DATE,false,false,true,true,,inspectionDate,none,350
+ELECTRIC_OVERLAY,batteryCapacityKwh,Batarya (kWh),NUMBER,false,true,true,true,kWh,batteryCapacity,none,200
+ELECTRIC_OVERLAY,electricRangeKm,Menzil,NUMBER,false,true,true,true,km,electricRange,none,210
+ELECTRIC_OVERLAY,chargingType,Şarj Tipi,SINGLE_SELECT,false,true,true,true,,chargingType,CHARGING_TYPES,220
+ELECTRIC_OVERLAY,fastCharging,Hızlı Şarj,SINGLE_SELECT,false,true,true,true,,fastCharging,YES_NO,230
+DAMAGE_OVERLAY,damageAmount,Hasar Tutarı,NUMBER,false,true,true,true,TRY,damageAmount,none,300
+DAMAGE_OVERLAY,paintedParts,Boyalı Parça,TEXT,false,false,true,true,,paintedParts,none,310
+DAMAGE_OVERLAY,replacedParts,Değişen Parça,TEXT,false,false,true,true,,replacedParts,none,320
+DAMAGE_OVERLAY,accidentHistory,Kaza Geçmişi,SINGLE_SELECT,false,true,true,true,,accidentHistory,YES_NO,330
+DISABLED_PLATE_OVERLAY,disabledPlateEligible,Engelli Plaka,BOOLEAN,true,true,true,true,,disabledPlateEligible,none,400
+DISABLED_PLATE_OVERLAY,specialEquipment,Özel Tertibat,TEXT,false,false,true,true,,specialEquipment,none,410
+DISABLED_PLATE_OVERLAY,wheelchairAccess,Sandalye Erişimi,SINGLE_SELECT,false,true,true,true,,wheelchairAccess,YES_NO,420
+CLASSIC_OVERLAY,classicStatus,Klasik,BOOLEAN,true,true,true,true,,classicStatus,none,500
+CARAVAN,modelYear,Model Yılı,NUMBER,false,true,true,true,,year,YEAR_RANGE,10
+CARAVAN,mileage,Kilometre,NUMBER,false,true,true,true,km,km,none,20
+ATV_UTV,modelYear,Model Yılı,NUMBER,true,true,true,true,,year,YEAR_RANGE,10
+ATV_UTV,mileage,Kilometre / Saat,NUMBER,false,true,true,true,,km,none,20
+ATV_UTV,operatingHours,Çalışma Saati,NUMBER,false,true,true,true,saat,operatingHours,none,25
+MARINE_VEHICLE,modelYear,Model Yılı,NUMBER,false,true,true,true,,year,YEAR_RANGE,10
+AIRCRAFT,modelYear,Model Yılı,NUMBER,false,true,true,true,,year,YEAR_RANGE,10
+LIGHT_COMMERCIAL,modelYear,Model Yılı,NUMBER,true,true,true,true,,year,YEAR_RANGE,10
+LIGHT_COMMERCIAL,mileage,Kilometre,NUMBER,true,true,true,true,km,km,none,20
+LIGHT_COMMERCIAL,fuelType,Yakıt,SINGLE_SELECT,true,true,true,true,,fuel,FUEL_TYPES,30
+LIGHT_COMMERCIAL,transmission,Vites,SINGLE_SELECT,false,true,true,true,,gear,TRANSMISSIONS,40
+LIGHT_COMMERCIAL,axleCount,Aks,NUMBER,false,true,true,true,,axles,none,45
+LIGHT_COMMERCIAL,loadCapacity,Yük Kapasitesi,NUMBER,false,true,true,true,kg,loadCapacity,none,50
+LIGHT_COMMERCIAL,grossWeight,Azami Ağırlık,NUMBER,false,true,true,true,kg,grossWeight,none,52
+LIGHT_COMMERCIAL,cabinType,Kabin Tipi,SINGLE_SELECT,false,true,true,true,,cabinType,CABIN_TYPES,55
+LIGHT_COMMERCIAL,enginePower,Motor Gücü,NUMBER,false,true,true,true,HP,enginePower,none,70
+LIGHT_COMMERCIAL,color,Renk,TEXT,false,true,true,true,,color,none,90
+LIGHT_COMMERCIAL,condition,Durum,SINGLE_SELECT,false,true,true,true,,vehicleStatus,VEHICLE_STATUS,100
+LIGHT_COMMERCIAL,inspectionAvailable,Ekspertiz Var,SINGLE_SELECT,false,true,true,true,,inspectionAvailable,YES_NO,340
+LIGHT_COMMERCIAL,inspectionDate,Ekspertiz Tarihi,DATE,false,false,true,true,,inspectionDate,none,350
+BUS_MINIBUS,modelYear,Model Yılı,NUMBER,true,true,true,true,,year,YEAR_RANGE,10
+BUS_MINIBUS,mileage,Kilometre,NUMBER,true,true,true,true,km,km,none,20
+BUS_MINIBUS,fuelType,Yakıt,SINGLE_SELECT,true,true,true,true,,fuel,FUEL_TYPES,30
+BUS_MINIBUS,transmission,Vites,SINGLE_SELECT,false,true,true,true,,gear,TRANSMISSIONS,40
+BUS_MINIBUS,seatCount,Koltuk Sayısı,NUMBER,false,true,true,true,,seats,none,50
+TRACTOR_UNIT,modelYear,Model Yılı,NUMBER,true,true,true,true,,year,YEAR_RANGE,10
+TRACTOR_UNIT,mileage,Kilometre,NUMBER,true,true,true,true,km,km,none,20
+TRACTOR_UNIT,axleCount,Aks,NUMBER,false,true,true,true,,axles,none,30
+TRACTOR_UNIT,enginePower,Motor Gücü,NUMBER,false,true,true,true,HP,enginePower,none,40
+TRACTOR_UNIT,cabinType,Kabin Tipi,SINGLE_SELECT,false,true,true,true,,cabinType,CABIN_TYPES,45
+TRAILER,axleCount,Aks,NUMBER,false,true,true,true,,axles,none,10
+TRAILER,loadCapacity,Yük Kapasitesi,NUMBER,false,true,true,true,kg,loadCapacity,none,20
+TRAILER,floorType,Zemin Tipi,SINGLE_SELECT,false,true,true,true,,floorType,FLOOR_TYPES,30

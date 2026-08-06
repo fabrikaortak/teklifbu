@@ -308,6 +308,7 @@ model Category {
   categoryModels  CategoryModel[]
   categoryAttributes CategoryAttribute[]
   products        Product[]
+  categoryAliases CategoryAlias[]
 
   @@index([parentId])
   @@index([isActive, sortOrder])
@@ -316,6 +317,22 @@ model Category {
   @@index([path])
   @@index([deletedAt])
   @@index([managedBySeed])
+}
+
+/** Eski slug → kanonik Category (taxonomy cleanup / SEO redirect) */
+model CategoryAlias {
+  id           String   @id @default(cuid())
+  oldSlug      String   @unique
+  categoryId   String
+  redirectType String   @default("INTERNAL_ALIAS")
+  active       Boolean  @default(true)
+  notes        String?
+  createdAt    DateTime @default(now())
+
+  category Category @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+
+  @@index([categoryId])
+  @@index([active])
 }
 
 model Listing {

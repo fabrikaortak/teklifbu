@@ -1,15 +1,19 @@
 "use client";
 
-import { VEHICLE_EXTRA_GROUPS } from "@/data/vehicleExtras";
+import { vehicleExtraGroupsForTemplate } from "@/data/vehicleExtras";
 
 export function VehicleExtrasPicker({
   value,
   onChange,
+  attributeTemplate,
 }: {
   value: string[];
   onChange: (next: string[]) => void;
+  /** CategoryAttribute template key — filters extras (e.g. MOTORCYCLE hides car-cabin items). */
+  attributeTemplate?: string;
 }) {
   const selected = new Set(value);
+  const groups = vehicleExtraGroupsForTemplate(attributeTemplate || "PASSENGER_CAR");
 
   function toggle(id: string) {
     const next = new Set(selected);
@@ -20,7 +24,7 @@ export function VehicleExtrasPicker({
 
   return (
     <div style={{ display: "grid", gap: 14 }}>
-      {VEHICLE_EXTRA_GROUPS.map((group) => (
+      {groups.map((group) => (
         <div key={group.id} style={{ display: "grid", gap: 8 }}>
           <div style={{ fontSize: 13, fontWeight: 800, color: "#0f172a" }}>{group.label}</div>
           <div

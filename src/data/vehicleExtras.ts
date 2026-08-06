@@ -1,10 +1,70 @@
 /** Sahibinden tarzı vasıta donanım / güvenlik özellikleri */
 
+export type VehicleExtraItem = {
+  id: string;
+  label: string;
+  /** Attribute template keys this extra applies to. Empty/undefined → car-like defaults. */
+  applicableTemplates?: string[];
+  sortOrder?: number;
+  active?: boolean;
+};
+
 export type VehicleExtraGroup = {
   id: string;
   label: string;
-  items: Array<{ id: string; label: string }>;
+  items: VehicleExtraItem[];
 };
+
+const CAR_LIKE = [
+  "PASSENGER_CAR",
+  "SUV_PICKUP",
+  "MINIVAN_PANELVAN",
+  "LIGHT_COMMERCIAL",
+  "BUS_MINIBUS",
+  "CARAVAN",
+] as const;
+const MOTO_LIKE = ["MOTORCYCLE"] as const;
+const TRUCK_LIKE = ["TRUCK", "TRACTOR_UNIT", "LIGHT_COMMERCIAL"] as const;
+const ATV_LIKE = ["ATV_UTV"] as const;
+
+/** Per-item template overrides (items not listed default to CAR_LIKE). */
+const EXTRA_TEMPLATE_OVERRIDES: Record<string, string[]> = {
+  // Car-cabin / family features — hide on moto & heavy truck
+  isofix: [...CAR_LIKE],
+  elektrikli_bagaj: [...CAR_LIKE],
+  arka_klima: [...CAR_LIKE],
+  arka_koltuk_katlanir: [...CAR_LIKE],
+  panoramik_tavan: [...CAR_LIKE],
+  sunroof: [...CAR_LIKE, ...ATV_LIKE],
+  deri_koltuk: [...CAR_LIKE],
+  kumas_koltuk: [...CAR_LIKE],
+  alcantara: [...CAR_LIKE],
+  elektrikli_koltuk: [...CAR_LIKE],
+  isitmali_koltuk: [...CAR_LIKE],
+  sogutmali_koltuk: [...CAR_LIKE],
+  masaj_koltuk: [...CAR_LIKE],
+  memory_koltuk: [...CAR_LIKE],
+  // Shared safety/media across land vehicles
+  abs: [...CAR_LIKE, ...MOTO_LIKE, ...TRUCK_LIKE, ...ATV_LIKE],
+  esp: [...CAR_LIKE, ...MOTO_LIKE, ...TRUCK_LIKE],
+  asr: [...CAR_LIKE, ...MOTO_LIKE, ...TRUCK_LIKE],
+  ebd: [...CAR_LIKE, ...TRUCK_LIKE],
+  alarm: [...CAR_LIKE, ...MOTO_LIKE, ...TRUCK_LIKE, ...ATV_LIKE],
+  immobilizer: [...CAR_LIKE, ...MOTO_LIKE, ...TRUCK_LIKE],
+  bluetooth: [...CAR_LIKE, ...MOTO_LIKE, ...TRUCK_LIKE],
+  usb: [...CAR_LIKE, ...MOTO_LIKE, ...TRUCK_LIKE],
+  kamera_arka: [...CAR_LIKE, ...TRUCK_LIKE],
+  cruise: [...CAR_LIKE, ...TRUCK_LIKE],
+  cekis_4x4: ["SUV_PICKUP", "PASSENGER_CAR", "TRUCK", "ATV_UTV"],
+  airbag_surucu: [...CAR_LIKE, ...TRUCK_LIKE],
+  airbag_yolcu: [...CAR_LIKE],
+  airbag_yan: [...CAR_LIKE],
+  airbag_perde: [...CAR_LIKE],
+};
+
+function templatesForExtra(id: string): string[] {
+  return EXTRA_TEMPLATE_OVERRIDES[id] || [...CAR_LIKE];
+}
 
 export const VEHICLE_EXTRA_GROUPS: VehicleExtraGroup[] = [
   {
@@ -29,6 +89,8 @@ export const VEHICLE_EXTRA_GROUPS: VehicleExtraGroup[] = [
       { id: "yorgunluk", label: "Yorgunluk Algılama" },
       { id: "gece_gorus", label: "Gece Görüş" },
       { id: "cekis_4x4", label: "4x4 / 4WD" },
+      { id: "acil_fren_asistani", label: "Acil Fren Asistanı (AEB)" },
+      { id: "trafik_isareti_tanima", label: "Trafik İşareti Tanıma" },
     ],
   },
   {
@@ -62,6 +124,7 @@ export const VEHICLE_EXTRA_GROUPS: VehicleExtraGroup[] = [
       { id: "dijital_gosterg", label: "Dijital Gösterge" },
       { id: "kol_dayama", label: "Kol Dayama" },
       { id: "arka_koltuk_katlanir", label: "Katlanır Arka Koltuk" },
+      { id: "arka_klima", label: "Arka Koltuk Klima Kontrolü" },
     ],
   },
   {
@@ -76,6 +139,7 @@ export const VEHICLE_EXTRA_GROUPS: VehicleExtraGroup[] = [
       { id: "gun_isigi", label: "Gündüz Farları" },
       { id: "park_sensor_on", label: "Park Sensörü (Ön)" },
       { id: "park_sensor_arka", label: "Park Sensörü (Arka)" },
+      { id: "park_sensor_yan", label: "Park Sensörü (Yan)" },
       { id: "kamera_arka", label: "Geri Görüş Kamerası" },
       { id: "kamera_360", label: "360° Kamera" },
       { id: "park_asistani", label: "Park Asistanı" },
@@ -87,6 +151,7 @@ export const VEHICLE_EXTRA_GROUPS: VehicleExtraGroup[] = [
       { id: "cam_tavan", label: "Cam Tavan" },
       { id: "night_package", label: "Night Package" },
       { id: "carbon", label: "Karbon / Carbon Paket" },
+      { id: "elektrikli_bagaj", label: "Elektrikli Bagaj Kapağı" },
     ],
   },
   {
@@ -106,9 +171,27 @@ export const VEHICLE_EXTRA_GROUPS: VehicleExtraGroup[] = [
       { id: "burmester", label: "Burmester / Hi-Fi" },
       { id: "wireless_charge", label: "Kablosuz Şarj" },
       { id: "wifi_hotspot", label: "Wi-Fi Hotspot" },
+      { id: "dijital_radyo", label: "Dijital Radyo (DAB)" },
     ],
   },
-];
+].map((group) => ({
+  ...group,
+  items: group.items.map((item, idx) => ({
+    ...item,
+    applicableTemplates: templatesForExtra(item.id),
+    sortOrder: idx + 1,
+    active: true,
+  })),
+}));
+
+/** Filter extras by CategoryAttribute template (e.g. MOTORCYCLE hides car-cabin items). */
+export function vehicleExtraGroupsForTemplate(template: string | null | undefined): VehicleExtraGroup[] {
+  const t = String(template || "PASSENGER_CAR").trim() || "PASSENGER_CAR";
+  return VEHICLE_EXTRA_GROUPS.map((g) => ({
+    ...g,
+    items: g.items.filter((i) => i.active !== false && (i.applicableTemplates || []).includes(t)),
+  })).filter((g) => g.items.length > 0);
+}
 
 const LABEL_BY_ID = new Map(
   VEHICLE_EXTRA_GROUPS.flatMap((g) => g.items.map((i) => [i.id, i.label] as const))
@@ -134,6 +217,8 @@ const SYNONYMS: Array<{ id: string; keys: string[] }> = [
   { id: "yorgunluk", keys: ["yorgunluk"] },
   { id: "gece_gorus", keys: ["gece görüş", "gece gorus", "night view"] },
   { id: "cekis_4x4", keys: ["4x4", "4wd", "awd", "çift çeker", "cift ceker", "all wheel"] },
+  { id: "acil_fren_asistani", keys: ["acil fren", "aeb", "otomatik fren", "emergency brak"] },
+  { id: "trafik_isareti_tanima", keys: ["trafik işareti", "trafik isareti", "traffic sign"] },
   { id: "deri_koltuk", keys: ["deri koltuk", "leather", "deri döşeme", "deri doseme"] },
   { id: "kumas_koltuk", keys: ["kumaş koltuk", "kumas koltuk"] },
   { id: "alcantara", keys: ["alcantara", "spor koltuk"] },
@@ -161,6 +246,7 @@ const SYNONYMS: Array<{ id: string; keys: string[] }> = [
   { id: "head_up", keys: ["head-up", "head up", "hud"] },
   { id: "kol_dayama", keys: ["kol dayama"] },
   { id: "arka_koltuk_katlanir", keys: ["katlanır arka", "katlanir arka"] },
+  { id: "arka_klima", keys: ["arka klima", "arka koltuk klima", "rear climate", "çift bölgeli klima"] },
   { id: "alloy", keys: ["alaşım jant", "alasim jant", "alloy", "çelik jant", "celik jant"] },
   { id: "led_far", keys: ["led far", "led light"] },
   { id: "xenon_far", keys: ["xenon"] },
@@ -169,6 +255,7 @@ const SYNONYMS: Array<{ id: string; keys: string[] }> = [
   { id: "gun_isigi", keys: ["gündüz far", "gunduz far", "daytime"] },
   { id: "park_sensor_on", keys: ["ön park", "park sensörü (ön)", "park sensoru (on)"] },
   { id: "park_sensor_arka", keys: ["arka park", "park sensörü (arka)", "park sensör", "park sensor"] },
+  { id: "park_sensor_yan", keys: ["yan park sensör", "yan park sensor", "side sensor"] },
   { id: "kamera_arka", keys: ["geri görüş", "geri gorus", "arka kamera", "rear camera"] },
   { id: "kamera_360", keys: ["360 kamera", "360°", "surround", "kuş bakışı", "kus bakisi"] },
   { id: "park_asistani", keys: ["park asistan", "parking assist"] },
@@ -180,6 +267,7 @@ const SYNONYMS: Array<{ id: string; keys: string[] }> = [
   { id: "cam_tavan", keys: ["cam tavan"] },
   { id: "night_package", keys: ["night package", "night paket"] },
   { id: "carbon", keys: ["carbon", "karbon"] },
+  { id: "elektrikli_bagaj", keys: ["elektrikli bagaj", "power tailgate", "otomatik bagaj"] },
   { id: "bluetooth", keys: ["bluetooth"] },
   { id: "usb", keys: ["usb"] },
   { id: "aux", keys: ["aux"] },
@@ -193,6 +281,7 @@ const SYNONYMS: Array<{ id: string; keys: string[] }> = [
   { id: "wifi_hotspot", keys: ["wifi", "wi-fi", "hotspot"] },
   { id: "tv", keys: ["televizyon"] },
   { id: "cd_dvd", keys: ["cd / dvd", "cd/dvd", "dvd"] },
+  { id: "dijital_radyo", keys: ["dijital radyo", "dab", "digital radio"] },
 ];
 
 export function vehicleExtraLabel(id: string) {
