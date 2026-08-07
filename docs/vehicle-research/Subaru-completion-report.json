@@ -1,0 +1,68 @@
+{
+  "at": "2026-08-07T10:15:27.263Z",
+  "brand": "Subaru",
+  "status": "COMPLETED",
+  "gate": {
+    "seriesWithoutResearch": [],
+    "seriesWithoutResearchCount": 0,
+    "pass": true
+  },
+  "selectableSeries": [
+    "Forester",
+    "Crosstrek",
+    "Solterra",
+    "XV",
+    "Outback"
+  ],
+  "researchedSeries": [
+    "Forester",
+    "Crosstrek",
+    "Solterra",
+    "XV",
+    "Outback"
+  ],
+  "verifiedVersions": [
+    "1.6i Lineartronic",
+    "2.0i e-BOXER",
+    "Electric"
+  ],
+  "verifiedTrims": [
+    "Fun",
+    "Style",
+    "Xclusive",
+    "Xtreme",
+    "e-Xcellent",
+    "e-Xtreme"
+  ],
+  "verifiedConfigurations": 7,
+  "officialSources": 5,
+  "multiSources": 2,
+  "reviewRequired": 2,
+  "rejected": 0,
+  "noVerifiedTrimFound": 0,
+  "seriesWithCurrentOnlyCoverage": [
+    "Forester",
+    "Crosstrek",
+    "Solterra"
+  ],
+  "historicalCoverageIncompleteSeries": [
+    {
+      "series": "Forester",
+      "historicalCoverage": "CURRENT_ONLY"
+    },
+    {
+      "series": "Crosstrek",
+      "historicalCoverage": "CURRENT_ONLY"
+    },
+    {
+      "series": "Solterra",
+      "historicalCoverage": "CURRENT_ONLY"
+    }
+  ],
+  "sourceUrls": [
+    "https://otohavadis.com/2020/12/08/subaru-xv-daha-sportif-ve-konforlu-oldu/",
+    "https://subaru.com.tr/fiyat-listesi",
+    "https://www.cnnturk.com/otomobil/yenilenen-subaru-xv-359-9-bin-tlden-geldi-1595764"
+  ],
+  "notes": "Completed means every selectable series was systematically researched. Current-only and incomplete historical gens remain explicitly flagged. Research-only; applyAllowed=false. Not final absolute historical complete."
+}

@@ -1,0 +1,56 @@
+{
+  "at": "2026-08-07T10:01:24.535Z",
+  "brand": "Audi",
+  "status": "COMPLETED",
+  "gate": {
+    "seriesWithoutResearch": [],
+    "pass": true
+  },
+  "selectableSeries": [
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A6 e-tron",
+    "A7",
+    "A8",
+    "Q2",
+    "Q3",
+    "Q5",
+    "Q7",
+    "Q8",
+    "Q4 e-tron",
+    "e-tron",
+    "TT"
+  ],
+  "researchedSeries": [
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A6 e-tron",
+    "A7",
+    "A8",
+    "Q2",
+    "Q3",
+    "Q5",
+    "Q7",
+    "Q8",
+    "Q4 e-tron",
+    "e-tron",
+    "TT"
+  ],
+  "verifiedConfigurations": 33,
+  "officialSources": 11,
+  "multiSources": 22,
+  "reviewRequired": 13,
+  "rejected": 0,
+  "seriesWithCurrentOnlyCoverage": [
+    "A3",
+    "A6",
+    "A6 e-tron",
+    "Q3",
+    "Q5",
+    "Q4 e-tron"
+  ]
+}

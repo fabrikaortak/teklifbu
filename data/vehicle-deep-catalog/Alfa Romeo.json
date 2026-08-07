@@ -1,13 +1,13 @@
 {
   "brand": "Alfa Romeo",
   "brandSlug": "alfa-romeo",
-  "version": "2026.08-deep-alfa-romeo-v1-current-tr",
-  "generatedAt": "2026-08-07T12:05:00.000Z",
+  "version": "2026.08-deep-alfa-romeo-v2-premium",
+  "generatedAt": "2026-08-07T10:15:27.174Z",
   "seriesCovered": [
-    "Junior",
-    "Tonale",
     "Giulia",
-    "Stelvio"
+    "Junior",
+    "Stelvio",
+    "Tonale"
   ],
   "status": "COMPLETED",
   "notes": "Junior Elettrica/Ibrida + Tonale from Jul 2026 published TR tables. Giulia/Stelvio stubs.",
@@ -209,19 +209,195 @@
           "role": "primary"
         }
       ]
+    },
+    {
+      "brand": "Alfa Romeo",
+      "series": "Giulia",
+      "model": "2.0 200hp RWD AT",
+      "trim": "Sprint",
+      "generation": "Giulia TR MY2020",
+      "generationCode": "952",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1995",
+      "powerHp": "200",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Kasım 2020 Giulia 2.0 200hp RWD AT Sprint — archive price list (version≠trim).",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/alfa-romeo-giulia-fiyat/",
+          "title": "Alfa Romeo Giulia/Stelvio Kasım 2020 fiyat listesi",
+          "date": "2020-11-10",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        },
+        {
+          "url": "https://www.otokokpit.com/alfa-romeo-modelleri-2019-2020-fiyat-karsilastirmasi/",
+          "title": "Alfa Romeo 2019–2020 Stelvio/Giulietta fiyat karşılaştırması",
+          "date": "2020-04-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otokokpit.com"
+        },
+        {
+          "url": "https://www.alfaromeo.com.tr/",
+          "title": "Alfa Romeo Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary",
+          "publisher": "Alfa Romeo Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "Alfa Romeo",
+      "series": "Giulia",
+      "model": "2.0 280hp AWD AT",
+      "trim": "Veloce",
+      "generation": "Giulia TR MY2020",
+      "generationCode": "952",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1995",
+      "powerHp": "280",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Kasım 2020 Giulia 2.0 280hp AWD AT Veloce — archive price list (version≠trim).",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/alfa-romeo-giulia-fiyat/",
+          "title": "Alfa Romeo Giulia/Stelvio Kasım 2020 fiyat listesi",
+          "date": "2020-11-10",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        },
+        {
+          "url": "https://www.otokokpit.com/alfa-romeo-modelleri-2019-2020-fiyat-karsilastirmasi/",
+          "title": "Alfa Romeo 2019–2020 Stelvio/Giulietta fiyat karşılaştırması",
+          "date": "2020-04-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otokokpit.com"
+        },
+        {
+          "url": "https://www.alfaromeo.com.tr/",
+          "title": "Alfa Romeo Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary",
+          "publisher": "Alfa Romeo Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "Alfa Romeo",
+      "series": "Stelvio",
+      "model": "2.0 200hp AWD AT",
+      "trim": "Sprint",
+      "generation": "Stelvio TR MY2020",
+      "generationCode": "949",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1995",
+      "powerHp": "200",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Kasım 2020 Stelvio 2.0 200hp AWD AT Sprint — archive price list.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/alfa-romeo-giulia-fiyat/",
+          "title": "Alfa Romeo Giulia/Stelvio Kasım 2020 fiyat listesi",
+          "date": "2020-11-10",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        },
+        {
+          "url": "https://www.otokokpit.com/alfa-romeo-modelleri-2019-2020-fiyat-karsilastirmasi/",
+          "title": "Alfa Romeo 2019–2020 Stelvio/Giulietta fiyat karşılaştırması",
+          "date": "2020-04-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otokokpit.com"
+        },
+        {
+          "url": "https://www.alfaromeo.com.tr/",
+          "title": "Alfa Romeo Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary",
+          "publisher": "Alfa Romeo Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "Alfa Romeo",
+      "series": "Stelvio",
+      "model": "2.0 280hp AWD AT",
+      "trim": "Veloce",
+      "generation": "Stelvio TR MY2020",
+      "generationCode": "949",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1995",
+      "powerHp": "280",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Kasım 2020 Stelvio 2.0 280hp AWD AT Veloce — archive price list.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/alfa-romeo-giulia-fiyat/",
+          "title": "Alfa Romeo Giulia/Stelvio Kasım 2020 fiyat listesi",
+          "date": "2020-11-10",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        },
+        {
+          "url": "https://www.otokokpit.com/alfa-romeo-modelleri-2019-2020-fiyat-karsilastirmasi/",
+          "title": "Alfa Romeo 2019–2020 Stelvio/Giulietta fiyat karşılaştırması",
+          "date": "2020-04-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otokokpit.com"
+        },
+        {
+          "url": "https://www.alfaromeo.com.tr/",
+          "title": "Alfa Romeo Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary",
+          "publisher": "Alfa Romeo Türkiye"
+        }
+      ]
     }
   ],
   "researchNotes": {
-    "researchedSeriesPass": [
+    "noApply": true,
+    "applyAllowed": false,
+    "phase": "research-premium-ev-batch",
+    "seriesWithoutResearch": [],
+    "currentOnlySeries": [
       "Junior",
-      "Tonale",
-      "Giulia",
-      "Stelvio"
+      "Tonale"
     ],
-    "reviewRequiredSeries": [
-      "Giulia",
-      "Stelvio"
-    ]
+    "addedThisPass": 4,
+    "electricOverlayNote": "Do not invent duplicate EV series"
   },
   "completedAt": "2026-08-07T09:13:29.864Z"
 }

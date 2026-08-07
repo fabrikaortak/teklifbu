@@ -1,8 +1,8 @@
 {
   "brand": "BMW",
   "brandSlug": "bmw",
-  "version": "2026.08-deep-bmw-v3b",
-  "generatedAt": "2026-08-07T08:55:12.451Z",
+  "version": "2026.08-deep-bmw-v4-historical-coverage",
+  "generatedAt": "2026-08-07T09:55:23.048Z",
   "seriesCovered": [
     "1 Serisi",
     "2 Serisi",
@@ -3864,72 +3864,6 @@
     },
     {
       "brand": "BMW",
-      "series": "M Serisi",
-      "model": "",
-      "trim": "",
-      "generation": "",
-      "generationCode": "",
-      "yearFrom": null,
-      "yearTo": null,
-      "confidence": "REVIEW_REQUIRED",
-      "verifiedForTurkey": false,
-      "category": "Otomobil",
-      "notes": "Selectable M Serisi tree researched; discrete M performance models (M2/M3/M4/M5/X3 M/X5 M) need per-model official TR price rows — not inventing from global catalogs.",
-      "sources": [
-        {
-          "url": "https://www.bmw.com.tr/tr/index.html",
-          "title": "BMW Türkiye Modeller / M Serisi",
-          "date": "2026-08-07",
-          "role": "primary"
-        }
-      ]
-    },
-    {
-      "brand": "BMW",
-      "series": "Z Serisi",
-      "model": "",
-      "trim": "",
-      "generation": "",
-      "generationCode": "",
-      "yearFrom": null,
-      "yearTo": null,
-      "confidence": "REVIEW_REQUIRED",
-      "verifiedForTurkey": false,
-      "category": "Otomobil",
-      "notes": "Z4 TR historical availability needs dedicated official archive rows; no unverified versions added.",
-      "sources": [
-        {
-          "url": "https://www.bmw.com.tr/tr/index.html",
-          "title": "BMW Türkiye",
-          "date": "2026-08-07",
-          "role": "primary"
-        }
-      ]
-    },
-    {
-      "brand": "BMW",
-      "series": "X4",
-      "model": "",
-      "trim": "",
-      "generation": "",
-      "generationCode": "",
-      "yearFrom": null,
-      "yearTo": null,
-      "confidence": "REVIEW_REQUIRED",
-      "verifiedForTurkey": false,
-      "category": "Arazi, SUV & Pickup",
-      "notes": "X4 TR historical/current price-list rows not yet captured in this ingest pass.",
-      "sources": [
-        {
-          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
-          "title": "Teknik Oto fiyat listesi (X4 absent in Aug 2026 MY extract)",
-          "date": "2026-08-07",
-          "role": "primary"
-        }
-      ]
-    },
-    {
-      "brand": "BMW",
       "series": "X5",
       "model": "xDrive25d",
       "trim": "M Sport",
@@ -3992,86 +3926,3596 @@
     },
     {
       "brand": "BMW",
-      "series": "i3",
+      "series": "1 Serisi",
+      "model": "118i",
+      "trim": "",
+      "generation": "F20 5-kapı",
+      "generationCode": "F20",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ],
+      "engineVolume": null,
+      "powerHp": null
+    },
+    {
+      "brand": "BMW",
+      "series": "1 Serisi",
+      "model": "120i",
+      "trim": "",
+      "generation": "F20 5-kapı",
+      "generationCode": "F20",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "1 Serisi",
+      "model": "116d",
+      "trim": "",
+      "generation": "F20 5-kapı",
+      "generationCode": "F20",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "1 Serisi",
+      "model": "116d ED",
+      "trim": "",
+      "generation": "F20 5-kapı Manuel",
+      "generationCode": "F20",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "DIESEL",
+      "transmission": "MANUAL",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "2 Serisi",
+      "model": "218i",
+      "trim": "",
+      "generation": "F22 Coupé",
+      "generationCode": "F22",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "2 Serisi",
+      "model": "220d",
+      "trim": "",
+      "generation": "F22 Coupé",
+      "generationCode": "F22",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "2 Serisi",
+      "model": "218i Cabrio",
+      "trim": "",
+      "generation": "F23 Cabrio",
+      "generationCode": "F23",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "2 Serisi Active Tourer",
+      "model": "218i",
+      "trim": "",
+      "generation": "F45 Active Tourer",
+      "generationCode": "F45",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "2 Serisi Active Tourer",
+      "model": "216d",
+      "trim": "",
+      "generation": "F45 Active Tourer",
+      "generationCode": "F45",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "3 Serisi",
+      "model": "318i",
+      "trim": "",
+      "generation": "F30 Sedan",
+      "generationCode": "F30",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "3 Serisi",
+      "model": "320i ED",
+      "trim": "",
+      "generation": "F30 Sedan",
+      "generationCode": "F30",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "3 Serisi",
+      "model": "320d",
+      "trim": "",
+      "generation": "F30 Sedan",
+      "generationCode": "F30",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "3 Serisi",
+      "model": "320d xDrive",
+      "trim": "",
+      "generation": "F30 Sedan",
+      "generationCode": "F30",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ],
+      "driveType": "AWD"
+    },
+    {
+      "brand": "BMW",
+      "series": "3 Serisi",
+      "model": "316i",
+      "trim": "",
+      "generation": "F30 Sedan",
+      "generationCode": "F30",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "3 Serisi",
+      "model": "320i ED",
+      "trim": "Joy",
+      "generation": "F30 Sedan",
+      "generationCode": "F30",
+      "yearFrom": 2016,
+      "yearTo": 2016,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1598",
+      "powerHp": "170",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2016 TR model/year version+package matrix (published TR price table)",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/bmw/3-serisi-sedan/2016/bmw-3-serisi-320i-ed-1-6-luxury-plus-at-fiyatlari",
+          "title": "2016 BMW 3 Serisi Sedan versiyon/donanım fiyat matrisi",
+          "date": "2016-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        },
+        {
+          "url": "https://arabavs.com/model/2016/bmw/3-serisi/320i-ed-1-6/sport-line-otomatik.html",
+          "title": "2016 BMW 320i ED Sport Line (F30) TR model page",
+          "date": "2016-01-01",
+          "role": "secondary",
+          "type": "model_page",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "3 Serisi",
+      "model": "320i ED",
+      "trim": "Sport Plus",
+      "generation": "F30 Sedan",
+      "generationCode": "F30",
+      "yearFrom": 2016,
+      "yearTo": 2016,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1598",
+      "powerHp": "170",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2016 TR model/year version+package matrix (published TR price table)",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/bmw/3-serisi-sedan/2016/bmw-3-serisi-320i-ed-1-6-luxury-plus-at-fiyatlari",
+          "title": "2016 BMW 3 Serisi Sedan versiyon/donanım fiyat matrisi",
+          "date": "2016-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        },
+        {
+          "url": "https://arabavs.com/model/2016/bmw/3-serisi/320i-ed-1-6/sport-line-otomatik.html",
+          "title": "2016 BMW 320i ED Sport Line (F30) TR model page",
+          "date": "2016-01-01",
+          "role": "secondary",
+          "type": "model_page",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "3 Serisi",
+      "model": "320i ED",
+      "trim": "Luxury Plus",
+      "generation": "F30 Sedan",
+      "generationCode": "F30",
+      "yearFrom": 2016,
+      "yearTo": 2016,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1598",
+      "powerHp": "170",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2016 TR model/year version+package matrix (published TR price table)",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/bmw/3-serisi-sedan/2016/bmw-3-serisi-320i-ed-1-6-luxury-plus-at-fiyatlari",
+          "title": "2016 BMW 3 Serisi Sedan versiyon/donanım fiyat matrisi",
+          "date": "2016-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        },
+        {
+          "url": "https://arabavs.com/model/2016/bmw/3-serisi/320i-ed-1-6/sport-line-otomatik.html",
+          "title": "2016 BMW 320i ED Sport Line (F30) TR model page",
+          "date": "2016-01-01",
+          "role": "secondary",
+          "type": "model_page",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "3 Serisi",
+      "model": "320i ED",
+      "trim": "M Plus",
+      "generation": "F30 Sedan",
+      "generationCode": "F30",
+      "yearFrom": 2016,
+      "yearTo": 2016,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1598",
+      "powerHp": "170",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2016 TR model/year version+package matrix (published TR price table)",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/bmw/3-serisi-sedan/2016/bmw-3-serisi-320i-ed-1-6-luxury-plus-at-fiyatlari",
+          "title": "2016 BMW 3 Serisi Sedan versiyon/donanım fiyat matrisi",
+          "date": "2016-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        },
+        {
+          "url": "https://arabavs.com/model/2016/bmw/3-serisi/320i-ed-1-6/sport-line-otomatik.html",
+          "title": "2016 BMW 320i ED Sport Line (F30) TR model page",
+          "date": "2016-01-01",
+          "role": "secondary",
+          "type": "model_page",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "3 Serisi",
+      "model": "320d",
+      "trim": "Techno Plus",
+      "generation": "F30 Sedan",
+      "generationCode": "F30",
+      "yearFrom": 2016,
+      "yearTo": 2016,
+      "fuelType": "DIESEL",
+      "engineVolume": "1995",
+      "powerHp": null,
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2016 TR model/year version+package matrix (published TR price table)",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/bmw/3-serisi-sedan/2016/bmw-3-serisi-320i-ed-1-6-luxury-plus-at-fiyatlari",
+          "title": "2016 BMW 3 Serisi Sedan versiyon/donanım fiyat matrisi",
+          "date": "2016-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        },
+        {
+          "url": "https://arabavs.com/model/2016/bmw/3-serisi/320i-ed-1-6/sport-line-otomatik.html",
+          "title": "2016 BMW 320i ED Sport Line (F30) TR model page",
+          "date": "2016-01-01",
+          "role": "secondary",
+          "type": "model_page",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "3 Serisi",
+      "model": "320d",
+      "trim": "Prestige",
+      "generation": "F30 Sedan",
+      "generationCode": "F30",
+      "yearFrom": 2016,
+      "yearTo": 2016,
+      "fuelType": "DIESEL",
+      "engineVolume": "1995",
+      "powerHp": null,
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2016 TR model/year version+package matrix (published TR price table)",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/bmw/3-serisi-sedan/2016/bmw-3-serisi-320i-ed-1-6-luxury-plus-at-fiyatlari",
+          "title": "2016 BMW 3 Serisi Sedan versiyon/donanım fiyat matrisi",
+          "date": "2016-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        },
+        {
+          "url": "https://arabavs.com/model/2016/bmw/3-serisi/320i-ed-1-6/sport-line-otomatik.html",
+          "title": "2016 BMW 320i ED Sport Line (F30) TR model page",
+          "date": "2016-01-01",
+          "role": "secondary",
+          "type": "model_page",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "3 Serisi",
+      "model": "320d",
+      "trim": "Sport Line",
+      "generation": "F30 Sedan",
+      "generationCode": "F30",
+      "yearFrom": 2016,
+      "yearTo": 2016,
+      "fuelType": "DIESEL",
+      "engineVolume": "1995",
+      "powerHp": null,
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2016 TR model/year version+package matrix (published TR price table)",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/bmw/3-serisi-sedan/2016/bmw-3-serisi-320i-ed-1-6-luxury-plus-at-fiyatlari",
+          "title": "2016 BMW 3 Serisi Sedan versiyon/donanım fiyat matrisi",
+          "date": "2016-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        },
+        {
+          "url": "https://arabavs.com/model/2016/bmw/3-serisi/320i-ed-1-6/sport-line-otomatik.html",
+          "title": "2016 BMW 320i ED Sport Line (F30) TR model page",
+          "date": "2016-01-01",
+          "role": "secondary",
+          "type": "model_page",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "3 Serisi",
+      "model": "320d",
+      "trim": "Luxury Line",
+      "generation": "F30 Sedan",
+      "generationCode": "F30",
+      "yearFrom": 2016,
+      "yearTo": 2016,
+      "fuelType": "DIESEL",
+      "engineVolume": "1995",
+      "powerHp": null,
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2016 TR model/year version+package matrix (published TR price table)",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/bmw/3-serisi-sedan/2016/bmw-3-serisi-320i-ed-1-6-luxury-plus-at-fiyatlari",
+          "title": "2016 BMW 3 Serisi Sedan versiyon/donanım fiyat matrisi",
+          "date": "2016-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        },
+        {
+          "url": "https://arabavs.com/model/2016/bmw/3-serisi/320i-ed-1-6/sport-line-otomatik.html",
+          "title": "2016 BMW 320i ED Sport Line (F30) TR model page",
+          "date": "2016-01-01",
+          "role": "secondary",
+          "type": "model_page",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "3 Serisi",
+      "model": "320d",
+      "trim": "M Sport",
+      "generation": "F30 Sedan",
+      "generationCode": "F30",
+      "yearFrom": 2016,
+      "yearTo": 2016,
+      "fuelType": "DIESEL",
+      "engineVolume": "1995",
+      "powerHp": null,
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2016 TR model/year version+package matrix (published TR price table)",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/bmw/3-serisi-sedan/2016/bmw-3-serisi-320i-ed-1-6-luxury-plus-at-fiyatlari",
+          "title": "2016 BMW 3 Serisi Sedan versiyon/donanım fiyat matrisi",
+          "date": "2016-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        },
+        {
+          "url": "https://arabavs.com/model/2016/bmw/3-serisi/320i-ed-1-6/sport-line-otomatik.html",
+          "title": "2016 BMW 320i ED Sport Line (F30) TR model page",
+          "date": "2016-01-01",
+          "role": "secondary",
+          "type": "model_page",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "3 Serisi",
+      "model": "320d xDrive",
+      "trim": "Prestige",
+      "generation": "F30 Sedan",
+      "generationCode": "F30",
+      "yearFrom": 2016,
+      "yearTo": 2016,
+      "fuelType": "DIESEL",
+      "engineVolume": "1995",
+      "powerHp": null,
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2016 TR model/year version+package matrix (published TR price table)",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/bmw/3-serisi-sedan/2016/bmw-3-serisi-320i-ed-1-6-luxury-plus-at-fiyatlari",
+          "title": "2016 BMW 3 Serisi Sedan versiyon/donanım fiyat matrisi",
+          "date": "2016-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        },
+        {
+          "url": "https://arabavs.com/model/2016/bmw/3-serisi/320i-ed-1-6/sport-line-otomatik.html",
+          "title": "2016 BMW 320i ED Sport Line (F30) TR model page",
+          "date": "2016-01-01",
+          "role": "secondary",
+          "type": "model_page",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "3 Serisi",
+      "model": "320d xDrive",
+      "trim": "Sport Line",
+      "generation": "F30 Sedan",
+      "generationCode": "F30",
+      "yearFrom": 2016,
+      "yearTo": 2016,
+      "fuelType": "DIESEL",
+      "engineVolume": "1995",
+      "powerHp": null,
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2016 TR model/year version+package matrix (published TR price table)",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/bmw/3-serisi-sedan/2016/bmw-3-serisi-320i-ed-1-6-luxury-plus-at-fiyatlari",
+          "title": "2016 BMW 3 Serisi Sedan versiyon/donanım fiyat matrisi",
+          "date": "2016-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        },
+        {
+          "url": "https://arabavs.com/model/2016/bmw/3-serisi/320i-ed-1-6/sport-line-otomatik.html",
+          "title": "2016 BMW 320i ED Sport Line (F30) TR model page",
+          "date": "2016-01-01",
+          "role": "secondary",
+          "type": "model_page",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "3 Serisi",
+      "model": "320d xDrive",
+      "trim": "Techno Plus",
+      "generation": "F30 Sedan",
+      "generationCode": "F30",
+      "yearFrom": 2016,
+      "yearTo": 2016,
+      "fuelType": "DIESEL",
+      "engineVolume": "1995",
+      "powerHp": null,
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2016 TR model/year version+package matrix (published TR price table)",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/bmw/3-serisi-sedan/2016/bmw-3-serisi-320i-ed-1-6-luxury-plus-at-fiyatlari",
+          "title": "2016 BMW 3 Serisi Sedan versiyon/donanım fiyat matrisi",
+          "date": "2016-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        },
+        {
+          "url": "https://arabavs.com/model/2016/bmw/3-serisi/320i-ed-1-6/sport-line-otomatik.html",
+          "title": "2016 BMW 320i ED Sport Line (F30) TR model page",
+          "date": "2016-01-01",
+          "role": "secondary",
+          "type": "model_page",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "3 Serisi",
+      "model": "320d xDrive",
+      "trim": "Luxury Line",
+      "generation": "F30 Sedan",
+      "generationCode": "F30",
+      "yearFrom": 2016,
+      "yearTo": 2016,
+      "fuelType": "DIESEL",
+      "engineVolume": "1995",
+      "powerHp": null,
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2016 TR model/year version+package matrix (published TR price table)",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/bmw/3-serisi-sedan/2016/bmw-3-serisi-320i-ed-1-6-luxury-plus-at-fiyatlari",
+          "title": "2016 BMW 3 Serisi Sedan versiyon/donanım fiyat matrisi",
+          "date": "2016-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        },
+        {
+          "url": "https://arabavs.com/model/2016/bmw/3-serisi/320i-ed-1-6/sport-line-otomatik.html",
+          "title": "2016 BMW 320i ED Sport Line (F30) TR model page",
+          "date": "2016-01-01",
+          "role": "secondary",
+          "type": "model_page",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "3 Serisi",
+      "model": "320d xDrive",
+      "trim": "M Sport",
+      "generation": "F30 Sedan",
+      "generationCode": "F30",
+      "yearFrom": 2016,
+      "yearTo": 2016,
+      "fuelType": "DIESEL",
+      "engineVolume": "1995",
+      "powerHp": null,
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2016 TR model/year version+package matrix (published TR price table)",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/bmw/3-serisi-sedan/2016/bmw-3-serisi-320i-ed-1-6-luxury-plus-at-fiyatlari",
+          "title": "2016 BMW 3 Serisi Sedan versiyon/donanım fiyat matrisi",
+          "date": "2016-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        },
+        {
+          "url": "https://arabavs.com/model/2016/bmw/3-serisi/320i-ed-1-6/sport-line-otomatik.html",
+          "title": "2016 BMW 320i ED Sport Line (F30) TR model page",
+          "date": "2016-01-01",
+          "role": "secondary",
+          "type": "model_page",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "3 Serisi",
+      "model": "318i",
+      "trim": "Joy",
+      "generation": "F30 Sedan",
+      "generationCode": "F30",
+      "yearFrom": 2016,
+      "yearTo": 2016,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1499",
+      "powerHp": null,
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2016 TR model/year version+package matrix (published TR price table)",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/bmw/3-serisi-sedan/2016/bmw-3-serisi-320i-ed-1-6-luxury-plus-at-fiyatlari",
+          "title": "2016 BMW 3 Serisi Sedan versiyon/donanım fiyat matrisi",
+          "date": "2016-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        },
+        {
+          "url": "https://arabavs.com/model/2016/bmw/3-serisi/320i-ed-1-6/sport-line-otomatik.html",
+          "title": "2016 BMW 320i ED Sport Line (F30) TR model page",
+          "date": "2016-01-01",
+          "role": "secondary",
+          "type": "model_page",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "3 Serisi",
+      "model": "318i",
+      "trim": "Prestige",
+      "generation": "F30 Sedan",
+      "generationCode": "F30",
+      "yearFrom": 2016,
+      "yearTo": 2016,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1499",
+      "powerHp": null,
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2016 TR model/year version+package matrix (published TR price table)",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/bmw/3-serisi-sedan/2016/bmw-3-serisi-320i-ed-1-6-luxury-plus-at-fiyatlari",
+          "title": "2016 BMW 3 Serisi Sedan versiyon/donanım fiyat matrisi",
+          "date": "2016-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        },
+        {
+          "url": "https://arabavs.com/model/2016/bmw/3-serisi/320i-ed-1-6/sport-line-otomatik.html",
+          "title": "2016 BMW 320i ED Sport Line (F30) TR model page",
+          "date": "2016-01-01",
+          "role": "secondary",
+          "type": "model_page",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "3 Serisi",
+      "model": "320i",
+      "trim": "",
+      "generation": "E90 Sedan",
+      "generationCode": "E90",
+      "yearFrom": 2008,
+      "yearTo": 2008,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1995",
+      "powerHp": "156",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "2008 TR retail list row for 320i Sedan; base row without Premium label.",
+      "sources": [
+        {
+          "url": "https://bmwcikemo.tr.gg/BMW-Fiyat-Listesi.htm",
+          "title": "BMW Fiyat Listesi arşivi (2008 TR rows)",
+          "date": "2008-01-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "bmwcikemo.tr.gg"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "3 Serisi",
+      "model": "320i",
+      "trim": "Premium",
+      "generation": "E90 Sedan",
+      "generationCode": "E90",
+      "yearFrom": 2008,
+      "yearTo": 2008,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1995",
+      "powerHp": "156",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2008 TR list: BMW 320i Sedan Premium",
+      "sources": [
+        {
+          "url": "https://bmwcikemo.tr.gg/BMW-Fiyat-Listesi.htm",
+          "title": "BMW Fiyat Listesi arşivi (2008 TR rows)",
+          "date": "2008-01-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "bmwcikemo.tr.gg"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "3 Serisi",
+      "model": "320d",
+      "trim": "",
+      "generation": "E90 Sedan",
+      "generationCode": "E90",
+      "yearFrom": 2008,
+      "yearTo": 2008,
+      "fuelType": "DIESEL",
+      "engineVolume": "1995",
+      "powerHp": "177",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "2008 TR retail list row for 320d Sedan.",
+      "sources": [
+        {
+          "url": "https://bmwcikemo.tr.gg/BMW-Fiyat-Listesi.htm",
+          "title": "BMW Fiyat Listesi arşivi (2008 TR rows)",
+          "date": "2008-01-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "bmwcikemo.tr.gg"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "3 Serisi",
+      "model": "320d",
+      "trim": "Premium",
+      "generation": "E90 Sedan",
+      "generationCode": "E90",
+      "yearFrom": 2008,
+      "yearTo": 2008,
+      "fuelType": "DIESEL",
+      "engineVolume": "1995",
+      "powerHp": "177",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2008 TR list: BMW 320d Sedan Premium",
+      "sources": [
+        {
+          "url": "https://bmwcikemo.tr.gg/BMW-Fiyat-Listesi.htm",
+          "title": "BMW Fiyat Listesi arşivi (2008 TR rows)",
+          "date": "2008-01-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "bmwcikemo.tr.gg"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "3 Serisi",
       "model": "",
       "trim": "",
-      "generation": "",
-      "generationCode": "",
+      "generation": "E36",
+      "generationCode": "E36",
       "yearFrom": null,
       "yearTo": null,
       "confidence": "REVIEW_REQUIRED",
       "verifiedForTurkey": false,
       "category": "Otomobil",
-      "notes": "i3 TR historical rows need dedicated official archive; not inventing from global catalog.",
+      "historicalCoverage": "HISTORICAL_COVERAGE_INCOMPLETE",
+      "notes": "E36 TR second-hand volume high; reliable official TR price/package matrix not located in this research pass.",
       "sources": [
         {
           "url": "https://www.bmw.com.tr/tr/index.html",
-          "title": "BMW Türkiye",
+          "title": "BMW Türkiye — E36 archive matrix not published on current portal",
           "date": "2026-08-07",
-          "role": "primary"
+          "role": "primary",
+          "type": "research_note",
+          "publisher": "BMW Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "3 Serisi",
+      "model": "",
+      "trim": "",
+      "generation": "E46",
+      "generationCode": "E46",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "historicalCoverage": "HISTORICAL_COVERAGE_INCOMPLETE",
+      "notes": "E46 researched; discrete sourced TR version×trim rows not found — no invented configs.",
+      "sources": [
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye — E46 archive search",
+          "date": "2026-08-07",
+          "role": "primary",
+          "type": "research_note",
+          "publisher": "BMW Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "4 Serisi",
+      "model": "420d",
+      "trim": "",
+      "generation": "F32 Coupé",
+      "generationCode": "F32",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "4 Serisi",
+      "model": "420d xDrive",
+      "trim": "",
+      "generation": "F32 Coupé",
+      "generationCode": "F32",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ],
+      "driveType": "AWD"
+    },
+    {
+      "brand": "BMW",
+      "series": "4 Serisi",
+      "model": "428i",
+      "trim": "",
+      "generation": "F32 Coupé",
+      "generationCode": "F32",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "4 Serisi",
+      "model": "418i",
+      "trim": "",
+      "generation": "F36 Gran Coupé",
+      "generationCode": "F36",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "4 Serisi",
+      "model": "420d Gran Coupé",
+      "trim": "",
+      "generation": "F36 Gran Coupé",
+      "generationCode": "F36",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "5 Serisi",
+      "model": "520i",
+      "trim": "",
+      "generation": "F10 Sedan",
+      "generationCode": "F10",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "5 Serisi",
+      "model": "520d",
+      "trim": "",
+      "generation": "F10 Sedan",
+      "generationCode": "F10",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "5 Serisi",
+      "model": "525d xDrive",
+      "trim": "",
+      "generation": "F10 Sedan",
+      "generationCode": "F10",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ],
+      "driveType": "AWD"
+    },
+    {
+      "brand": "BMW",
+      "series": "5 Serisi",
+      "model": "535d xDrive",
+      "trim": "",
+      "generation": "F10 Sedan",
+      "generationCode": "F10",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ],
+      "driveType": "AWD"
+    },
+    {
+      "brand": "BMW",
+      "series": "5 Serisi",
+      "model": "520d",
+      "trim": "Pure",
+      "generation": "F10 Sedan",
+      "generationCode": "F10",
+      "yearFrom": 2016,
+      "yearTo": 2016,
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "F10 late-cycle TR package names for 520d cited as then-current Türkiye list prices.",
+      "sources": [
+        {
+          "url": "https://www.sekizsilindir.com/2016/10/yeni-bmw-5-serisi-fiya.html",
+          "title": "F10 520d TR paket fiyatları (Pure/Executive…)",
+          "date": "2016-10-01",
+          "role": "primary",
+          "type": "automotive_press",
+          "publisher": "sekizsilindir.com"
+        },
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 — 520d Sedan TR retail presence",
+          "date": "2015-11-22",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "5 Serisi",
+      "model": "520d",
+      "trim": "Executive",
+      "generation": "F10 Sedan",
+      "generationCode": "F10",
+      "yearFrom": 2016,
+      "yearTo": 2016,
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "F10 late-cycle TR package names for 520d cited as then-current Türkiye list prices.",
+      "sources": [
+        {
+          "url": "https://www.sekizsilindir.com/2016/10/yeni-bmw-5-serisi-fiya.html",
+          "title": "F10 520d TR paket fiyatları (Pure/Executive…)",
+          "date": "2016-10-01",
+          "role": "primary",
+          "type": "automotive_press",
+          "publisher": "sekizsilindir.com"
+        },
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 — 520d Sedan TR retail presence",
+          "date": "2015-11-22",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "5 Serisi",
+      "model": "520d",
+      "trim": "Executive Plus",
+      "generation": "F10 Sedan",
+      "generationCode": "F10",
+      "yearFrom": 2016,
+      "yearTo": 2016,
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "F10 late-cycle TR package names for 520d cited as then-current Türkiye list prices.",
+      "sources": [
+        {
+          "url": "https://www.sekizsilindir.com/2016/10/yeni-bmw-5-serisi-fiya.html",
+          "title": "F10 520d TR paket fiyatları (Pure/Executive…)",
+          "date": "2016-10-01",
+          "role": "primary",
+          "type": "automotive_press",
+          "publisher": "sekizsilindir.com"
+        },
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 — 520d Sedan TR retail presence",
+          "date": "2015-11-22",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "5 Serisi",
+      "model": "520d",
+      "trim": "Executive Sport",
+      "generation": "F10 Sedan",
+      "generationCode": "F10",
+      "yearFrom": 2016,
+      "yearTo": 2016,
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "F10 late-cycle TR package names for 520d cited as then-current Türkiye list prices.",
+      "sources": [
+        {
+          "url": "https://www.sekizsilindir.com/2016/10/yeni-bmw-5-serisi-fiya.html",
+          "title": "F10 520d TR paket fiyatları (Pure/Executive…)",
+          "date": "2016-10-01",
+          "role": "primary",
+          "type": "automotive_press",
+          "publisher": "sekizsilindir.com"
+        },
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 — 520d Sedan TR retail presence",
+          "date": "2015-11-22",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "5 Serisi",
+      "model": "520d",
+      "trim": "Executive M Sport",
+      "generation": "F10 Sedan",
+      "generationCode": "F10",
+      "yearFrom": 2016,
+      "yearTo": 2016,
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "F10 late-cycle TR package names for 520d cited as then-current Türkiye list prices.",
+      "sources": [
+        {
+          "url": "https://www.sekizsilindir.com/2016/10/yeni-bmw-5-serisi-fiya.html",
+          "title": "F10 520d TR paket fiyatları (Pure/Executive…)",
+          "date": "2016-10-01",
+          "role": "primary",
+          "type": "automotive_press",
+          "publisher": "sekizsilindir.com"
+        },
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 — 520d Sedan TR retail presence",
+          "date": "2015-11-22",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "5 Serisi",
+      "model": "",
+      "trim": "",
+      "generation": "E39",
+      "generationCode": "E39",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "historicalCoverage": "HISTORICAL_COVERAGE_INCOMPLETE",
+      "notes": "E39 researched; sourced TR version×trim matrix not found.",
+      "sources": [
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye — E39 archive search",
+          "date": "2026-08-07",
+          "role": "primary",
+          "type": "research_note",
+          "publisher": "BMW Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "5 Serisi",
+      "model": "",
+      "trim": "",
+      "generation": "E60",
+      "generationCode": "E60",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "historicalCoverage": "HISTORICAL_COVERAGE_INCOMPLETE",
+      "notes": "E60/E61 researched; sourced TR version×trim matrix not found.",
+      "sources": [
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye — E60 archive search",
+          "date": "2026-08-07",
+          "role": "primary",
+          "type": "research_note",
+          "publisher": "BMW Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "6 Serisi",
+      "model": "640d xDrive",
+      "trim": "",
+      "generation": "F13 Coupé",
+      "generationCode": "F13",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ],
+      "driveType": "AWD"
+    },
+    {
+      "brand": "BMW",
+      "series": "6 Serisi",
+      "model": "640d xDrive Gran Coupé",
+      "trim": "",
+      "generation": "F06 Gran Coupé",
+      "generationCode": "F06",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ],
+      "driveType": "AWD"
+    },
+    {
+      "brand": "BMW",
+      "series": "7 Serisi",
+      "model": "730d xDrive",
+      "trim": "",
+      "generation": "F01 Sedan",
+      "generationCode": "F01",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ],
+      "driveType": "AWD"
+    },
+    {
+      "brand": "BMW",
+      "series": "7 Serisi",
+      "model": "730i",
+      "trim": "",
+      "generation": "G11 Sedan",
+      "generationCode": "G11",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "7 Serisi",
+      "model": "730Li",
+      "trim": "",
+      "generation": "G12 LWB",
+      "generationCode": "G12",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "7 Serisi",
+      "model": "730d xDrive",
+      "trim": "",
+      "generation": "G11 Sedan",
+      "generationCode": "G11",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ],
+      "driveType": "AWD"
+    },
+    {
+      "brand": "BMW",
+      "series": "7 Serisi",
+      "model": "",
+      "trim": "",
+      "generation": "E38",
+      "generationCode": "E38",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "historicalCoverage": "HISTORICAL_COVERAGE_INCOMPLETE",
+      "notes": "E38 researched; sourced TR version×trim matrix not found.",
+      "sources": [
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye — E38 archive search",
+          "date": "2026-08-07",
+          "role": "primary",
+          "type": "research_note",
+          "publisher": "BMW Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "7 Serisi",
+      "model": "",
+      "trim": "",
+      "generation": "E65",
+      "generationCode": "E65",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "historicalCoverage": "HISTORICAL_COVERAGE_INCOMPLETE",
+      "notes": "E65/E66 researched; sourced TR version×trim matrix not found.",
+      "sources": [
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye — E65 archive search",
+          "date": "2026-08-07",
+          "role": "primary",
+          "type": "research_note",
+          "publisher": "BMW Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "Z Serisi",
+      "model": "Z4 sDrive20i",
+      "trim": "",
+      "generation": "E89 Roadster",
+      "generationCode": "E89",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "Z Serisi",
+      "model": "Z4 sDrive28i",
+      "trim": "",
+      "generation": "E89 Roadster",
+      "generationCode": "E89",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "M Serisi",
+      "model": "M235i",
+      "trim": "",
+      "generation": "F22 Coupé",
+      "generationCode": "F22",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "M Serisi",
+      "model": "M3",
+      "trim": "",
+      "generation": "F80 Sedan",
+      "generationCode": "F80",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "M Serisi",
+      "model": "M4",
+      "trim": "",
+      "generation": "F82 Coupé",
+      "generationCode": "F82",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "M Serisi",
+      "model": "M5",
+      "trim": "",
+      "generation": "F10 Sedan",
+      "generationCode": "F10",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "M Serisi",
+      "model": "M6",
+      "trim": "",
+      "generation": "F13 Coupé",
+      "generationCode": "F13",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "M Serisi",
+      "model": "X5 M",
+      "trim": "",
+      "generation": "F15 SAV",
+      "generationCode": "F15",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "M Serisi",
+      "model": "X6 M",
+      "trim": "",
+      "generation": "F16 SAC",
+      "generationCode": "F16",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X1",
+      "model": "sDrive16i",
+      "trim": "",
+      "generation": "E84",
+      "generationCode": "E84",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X1",
+      "model": "sDrive16d",
+      "trim": "",
+      "generation": "F48",
+      "generationCode": "F48",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X1",
+      "model": "sDrive18i",
+      "trim": "",
+      "generation": "F48",
+      "generationCode": "F48",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X1",
+      "model": "xDrive20d",
+      "trim": "",
+      "generation": "F48",
+      "generationCode": "F48",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ],
+      "driveType": "AWD"
+    },
+    {
+      "brand": "BMW",
+      "series": "X1",
+      "model": "sDrive 16d",
+      "trim": "Joy",
+      "generation": "F48",
+      "generationCode": "F48",
+      "yearFrom": 2016,
+      "yearTo": 2016,
+      "fuelType": "DIESEL",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "engineVolume": "1496",
+      "powerHp": "116",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2016 TR X1 F48 version×package matrix",
+      "sources": [
+        {
+          "url": "https://arabamyeni.com/sifir/bmw/x1/2016",
+          "title": "2016 BMW X1 versiyon/donanım fiyat listesi",
+          "date": "2016-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "arabamyeni.com"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/bmw/x1/2016/bmw-x1-16i-sdrive-fiyatlari",
+          "title": "2016 BMW X1 16i sDrive ve paket matrisi",
+          "date": "2016-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X1",
+      "model": "sDrive 16d",
+      "trim": "Prestige",
+      "generation": "F48",
+      "generationCode": "F48",
+      "yearFrom": 2016,
+      "yearTo": 2016,
+      "fuelType": "DIESEL",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "engineVolume": "1496",
+      "powerHp": "116",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2016 TR X1 F48 version×package matrix",
+      "sources": [
+        {
+          "url": "https://arabamyeni.com/sifir/bmw/x1/2016",
+          "title": "2016 BMW X1 versiyon/donanım fiyat listesi",
+          "date": "2016-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "arabamyeni.com"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/bmw/x1/2016/bmw-x1-16i-sdrive-fiyatlari",
+          "title": "2016 BMW X1 16i sDrive ve paket matrisi",
+          "date": "2016-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X1",
+      "model": "sDrive 16d",
+      "trim": "Sport Line",
+      "generation": "F48",
+      "generationCode": "F48",
+      "yearFrom": 2016,
+      "yearTo": 2016,
+      "fuelType": "DIESEL",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "engineVolume": "1496",
+      "powerHp": "116",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2016 TR X1 F48 version×package matrix",
+      "sources": [
+        {
+          "url": "https://arabamyeni.com/sifir/bmw/x1/2016",
+          "title": "2016 BMW X1 versiyon/donanım fiyat listesi",
+          "date": "2016-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "arabamyeni.com"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/bmw/x1/2016/bmw-x1-16i-sdrive-fiyatlari",
+          "title": "2016 BMW X1 16i sDrive ve paket matrisi",
+          "date": "2016-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X1",
+      "model": "sDrive 16d",
+      "trim": "X Line",
+      "generation": "F48",
+      "generationCode": "F48",
+      "yearFrom": 2016,
+      "yearTo": 2016,
+      "fuelType": "DIESEL",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "engineVolume": "1496",
+      "powerHp": "116",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2016 TR X1 F48 version×package matrix",
+      "sources": [
+        {
+          "url": "https://arabamyeni.com/sifir/bmw/x1/2016",
+          "title": "2016 BMW X1 versiyon/donanım fiyat listesi",
+          "date": "2016-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "arabamyeni.com"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/bmw/x1/2016/bmw-x1-16i-sdrive-fiyatlari",
+          "title": "2016 BMW X1 16i sDrive ve paket matrisi",
+          "date": "2016-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X1",
+      "model": "sDrive 16d",
+      "trim": "M Sport",
+      "generation": "F48",
+      "generationCode": "F48",
+      "yearFrom": 2016,
+      "yearTo": 2016,
+      "fuelType": "DIESEL",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "engineVolume": "1496",
+      "powerHp": "116",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2016 TR X1 F48 version×package matrix",
+      "sources": [
+        {
+          "url": "https://arabamyeni.com/sifir/bmw/x1/2016",
+          "title": "2016 BMW X1 versiyon/donanım fiyat listesi",
+          "date": "2016-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "arabamyeni.com"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/bmw/x1/2016/bmw-x1-16i-sdrive-fiyatlari",
+          "title": "2016 BMW X1 16i sDrive ve paket matrisi",
+          "date": "2016-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X1",
+      "model": "sDrive 18i",
+      "trim": "Joy",
+      "generation": "F48",
+      "generationCode": "F48",
+      "yearFrom": 2016,
+      "yearTo": 2016,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "engineVolume": "1499",
+      "powerHp": "136",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2016 TR X1 F48 version×package matrix",
+      "sources": [
+        {
+          "url": "https://arabamyeni.com/sifir/bmw/x1/2016",
+          "title": "2016 BMW X1 versiyon/donanım fiyat listesi",
+          "date": "2016-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "arabamyeni.com"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/bmw/x1/2016/bmw-x1-16i-sdrive-fiyatlari",
+          "title": "2016 BMW X1 16i sDrive ve paket matrisi",
+          "date": "2016-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X1",
+      "model": "sDrive 18i",
+      "trim": "Prestige",
+      "generation": "F48",
+      "generationCode": "F48",
+      "yearFrom": 2016,
+      "yearTo": 2016,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "engineVolume": "1499",
+      "powerHp": "136",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2016 TR X1 F48 version×package matrix",
+      "sources": [
+        {
+          "url": "https://arabamyeni.com/sifir/bmw/x1/2016",
+          "title": "2016 BMW X1 versiyon/donanım fiyat listesi",
+          "date": "2016-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "arabamyeni.com"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/bmw/x1/2016/bmw-x1-16i-sdrive-fiyatlari",
+          "title": "2016 BMW X1 16i sDrive ve paket matrisi",
+          "date": "2016-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X1",
+      "model": "sDrive 18i",
+      "trim": "Sport Line",
+      "generation": "F48",
+      "generationCode": "F48",
+      "yearFrom": 2016,
+      "yearTo": 2016,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "engineVolume": "1499",
+      "powerHp": "136",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2016 TR X1 F48 version×package matrix",
+      "sources": [
+        {
+          "url": "https://arabamyeni.com/sifir/bmw/x1/2016",
+          "title": "2016 BMW X1 versiyon/donanım fiyat listesi",
+          "date": "2016-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "arabamyeni.com"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/bmw/x1/2016/bmw-x1-16i-sdrive-fiyatlari",
+          "title": "2016 BMW X1 16i sDrive ve paket matrisi",
+          "date": "2016-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X1",
+      "model": "sDrive 18i",
+      "trim": "X Line",
+      "generation": "F48",
+      "generationCode": "F48",
+      "yearFrom": 2016,
+      "yearTo": 2016,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "engineVolume": "1499",
+      "powerHp": "136",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2016 TR X1 F48 version×package matrix",
+      "sources": [
+        {
+          "url": "https://arabamyeni.com/sifir/bmw/x1/2016",
+          "title": "2016 BMW X1 versiyon/donanım fiyat listesi",
+          "date": "2016-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "arabamyeni.com"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/bmw/x1/2016/bmw-x1-16i-sdrive-fiyatlari",
+          "title": "2016 BMW X1 16i sDrive ve paket matrisi",
+          "date": "2016-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X1",
+      "model": "sDrive 18i",
+      "trim": "M Sport",
+      "generation": "F48",
+      "generationCode": "F48",
+      "yearFrom": 2016,
+      "yearTo": 2016,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "engineVolume": "1499",
+      "powerHp": "136",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2016 TR X1 F48 version×package matrix",
+      "sources": [
+        {
+          "url": "https://arabamyeni.com/sifir/bmw/x1/2016",
+          "title": "2016 BMW X1 versiyon/donanım fiyat listesi",
+          "date": "2016-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "arabamyeni.com"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/bmw/x1/2016/bmw-x1-16i-sdrive-fiyatlari",
+          "title": "2016 BMW X1 16i sDrive ve paket matrisi",
+          "date": "2016-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X1",
+      "model": "xDrive 20d",
+      "trim": "Joy",
+      "generation": "F48",
+      "generationCode": "F48",
+      "yearFrom": 2016,
+      "yearTo": 2016,
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "engineVolume": "1995",
+      "powerHp": "190",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2016 TR X1 F48 version×package matrix",
+      "sources": [
+        {
+          "url": "https://arabamyeni.com/sifir/bmw/x1/2016",
+          "title": "2016 BMW X1 versiyon/donanım fiyat listesi",
+          "date": "2016-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "arabamyeni.com"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/bmw/x1/2016/bmw-x1-16i-sdrive-fiyatlari",
+          "title": "2016 BMW X1 16i sDrive ve paket matrisi",
+          "date": "2016-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X1",
+      "model": "xDrive 20d",
+      "trim": "Prestige",
+      "generation": "F48",
+      "generationCode": "F48",
+      "yearFrom": 2016,
+      "yearTo": 2016,
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "engineVolume": "1995",
+      "powerHp": "190",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2016 TR X1 F48 version×package matrix",
+      "sources": [
+        {
+          "url": "https://arabamyeni.com/sifir/bmw/x1/2016",
+          "title": "2016 BMW X1 versiyon/donanım fiyat listesi",
+          "date": "2016-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "arabamyeni.com"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/bmw/x1/2016/bmw-x1-16i-sdrive-fiyatlari",
+          "title": "2016 BMW X1 16i sDrive ve paket matrisi",
+          "date": "2016-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X1",
+      "model": "xDrive 20d",
+      "trim": "Sport Line",
+      "generation": "F48",
+      "generationCode": "F48",
+      "yearFrom": 2016,
+      "yearTo": 2016,
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "engineVolume": "1995",
+      "powerHp": "190",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2016 TR X1 F48 version×package matrix",
+      "sources": [
+        {
+          "url": "https://arabamyeni.com/sifir/bmw/x1/2016",
+          "title": "2016 BMW X1 versiyon/donanım fiyat listesi",
+          "date": "2016-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "arabamyeni.com"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/bmw/x1/2016/bmw-x1-16i-sdrive-fiyatlari",
+          "title": "2016 BMW X1 16i sDrive ve paket matrisi",
+          "date": "2016-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X1",
+      "model": "xDrive 20d",
+      "trim": "X Line",
+      "generation": "F48",
+      "generationCode": "F48",
+      "yearFrom": 2016,
+      "yearTo": 2016,
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "engineVolume": "1995",
+      "powerHp": "190",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2016 TR X1 F48 version×package matrix",
+      "sources": [
+        {
+          "url": "https://arabamyeni.com/sifir/bmw/x1/2016",
+          "title": "2016 BMW X1 versiyon/donanım fiyat listesi",
+          "date": "2016-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "arabamyeni.com"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/bmw/x1/2016/bmw-x1-16i-sdrive-fiyatlari",
+          "title": "2016 BMW X1 16i sDrive ve paket matrisi",
+          "date": "2016-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X1",
+      "model": "xDrive 20d",
+      "trim": "M Sport",
+      "generation": "F48",
+      "generationCode": "F48",
+      "yearFrom": 2016,
+      "yearTo": 2016,
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "engineVolume": "1995",
+      "powerHp": "190",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2016 TR X1 F48 version×package matrix",
+      "sources": [
+        {
+          "url": "https://arabamyeni.com/sifir/bmw/x1/2016",
+          "title": "2016 BMW X1 versiyon/donanım fiyat listesi",
+          "date": "2016-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "arabamyeni.com"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/bmw/x1/2016/bmw-x1-16i-sdrive-fiyatlari",
+          "title": "2016 BMW X1 16i sDrive ve paket matrisi",
+          "date": "2016-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X3",
+      "model": "sDrive20i",
+      "trim": "",
+      "generation": "F25",
+      "generationCode": "F25",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ],
+      "engineVolume": "1598",
+      "powerHp": "170"
+    },
+    {
+      "brand": "BMW",
+      "series": "X3",
+      "model": "xDrive20d",
+      "trim": "",
+      "generation": "F25",
+      "generationCode": "F25",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ],
+      "engineVolume": "1995",
+      "powerHp": "190",
+      "driveType": "AWD"
+    },
+    {
+      "brand": "BMW",
+      "series": "X3",
+      "model": "",
+      "trim": "",
+      "generation": "E83",
+      "generationCode": "E83",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "historicalCoverage": "HISTORICAL_COVERAGE_INCOMPLETE",
+      "notes": "E83 researched; sourced TR version×trim matrix not found.",
+      "sources": [
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye — X3 E83 archive search",
+          "date": "2026-08-07",
+          "role": "primary",
+          "type": "research_note",
+          "publisher": "BMW Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X4",
+      "model": "xDrive20d",
+      "trim": "",
+      "generation": "F26",
+      "generationCode": "F26",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ],
+      "driveType": "AWD"
+    },
+    {
+      "brand": "BMW",
+      "series": "X5",
+      "model": "xDrive25d",
+      "trim": "",
+      "generation": "F15",
+      "generationCode": "F15",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ],
+      "driveType": "AWD"
+    },
+    {
+      "brand": "BMW",
+      "series": "X5",
+      "model": "xDrive30d",
+      "trim": "",
+      "generation": "F15",
+      "generationCode": "F15",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ],
+      "driveType": "AWD"
+    },
+    {
+      "brand": "BMW",
+      "series": "X5",
+      "model": "xDrive25d",
+      "trim": "Pure",
+      "generation": "F15",
+      "generationCode": "F15",
+      "yearFrom": 2016,
+      "yearTo": 2016,
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "F15 xDrive25d TR package prices (Pure/Prestige/Premium/M Sport)",
+      "sources": [
+        {
+          "url": "http://bmwuzmani.blogspot.com/2016/08/bmw-x5-f15.html",
+          "title": "BMW X5 F15 TR paket incelemesi ve fiyatlar",
+          "date": "2016-08-01",
+          "role": "primary",
+          "type": "automotive_press",
+          "publisher": "bmwuzmani.blogspot.com"
+        },
+        {
+          "url": "https://www.arabalar.com.tr/bmw/x5/2016",
+          "title": "2016 BMW X5 paket listesi (Pure/Prestige/Premium/M Sport)",
+          "date": "2016-01-01",
+          "role": "secondary",
+          "type": "model_index",
+          "publisher": "arabalar.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X5",
+      "model": "xDrive25d",
+      "trim": "Prestige",
+      "generation": "F15",
+      "generationCode": "F15",
+      "yearFrom": 2016,
+      "yearTo": 2016,
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "F15 xDrive25d TR package prices (Pure/Prestige/Premium/M Sport)",
+      "sources": [
+        {
+          "url": "http://bmwuzmani.blogspot.com/2016/08/bmw-x5-f15.html",
+          "title": "BMW X5 F15 TR paket incelemesi ve fiyatlar",
+          "date": "2016-08-01",
+          "role": "primary",
+          "type": "automotive_press",
+          "publisher": "bmwuzmani.blogspot.com"
+        },
+        {
+          "url": "https://www.arabalar.com.tr/bmw/x5/2016",
+          "title": "2016 BMW X5 paket listesi (Pure/Prestige/Premium/M Sport)",
+          "date": "2016-01-01",
+          "role": "secondary",
+          "type": "model_index",
+          "publisher": "arabalar.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X5",
+      "model": "xDrive25d",
+      "trim": "Premium",
+      "generation": "F15",
+      "generationCode": "F15",
+      "yearFrom": 2016,
+      "yearTo": 2016,
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "F15 xDrive25d TR package prices (Pure/Prestige/Premium/M Sport)",
+      "sources": [
+        {
+          "url": "http://bmwuzmani.blogspot.com/2016/08/bmw-x5-f15.html",
+          "title": "BMW X5 F15 TR paket incelemesi ve fiyatlar",
+          "date": "2016-08-01",
+          "role": "primary",
+          "type": "automotive_press",
+          "publisher": "bmwuzmani.blogspot.com"
+        },
+        {
+          "url": "https://www.arabalar.com.tr/bmw/x5/2016",
+          "title": "2016 BMW X5 paket listesi (Pure/Prestige/Premium/M Sport)",
+          "date": "2016-01-01",
+          "role": "secondary",
+          "type": "model_index",
+          "publisher": "arabalar.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X5",
+      "model": "xDrive25d",
+      "trim": "M Sport",
+      "generation": "F15",
+      "generationCode": "F15",
+      "yearFrom": 2016,
+      "yearTo": 2016,
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "F15 xDrive25d TR package prices (Pure/Prestige/Premium/M Sport)",
+      "sources": [
+        {
+          "url": "http://bmwuzmani.blogspot.com/2016/08/bmw-x5-f15.html",
+          "title": "BMW X5 F15 TR paket incelemesi ve fiyatlar",
+          "date": "2016-08-01",
+          "role": "primary",
+          "type": "automotive_press",
+          "publisher": "bmwuzmani.blogspot.com"
+        },
+        {
+          "url": "https://www.arabalar.com.tr/bmw/x5/2016",
+          "title": "2016 BMW X5 paket listesi (Pure/Prestige/Premium/M Sport)",
+          "date": "2016-01-01",
+          "role": "secondary",
+          "type": "model_index",
+          "publisher": "arabalar.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X5",
+      "model": "",
+      "trim": "",
+      "generation": "E53",
+      "generationCode": "E53",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "historicalCoverage": "HISTORICAL_COVERAGE_INCOMPLETE",
+      "notes": "E53 researched; sourced TR version×trim matrix not found.",
+      "sources": [
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye — X5 E53 archive search",
+          "date": "2026-08-07",
+          "role": "primary",
+          "type": "research_note",
+          "publisher": "BMW Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X5",
+      "model": "",
+      "trim": "",
+      "generation": "E70",
+      "generationCode": "E70",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "historicalCoverage": "HISTORICAL_COVERAGE_INCOMPLETE",
+      "notes": "E70 researched; sourced TR version×trim matrix not found.",
+      "sources": [
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye — X5 E70 archive search",
+          "date": "2026-08-07",
+          "role": "primary",
+          "type": "research_note",
+          "publisher": "BMW Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X6",
+      "model": "xDrive40d",
+      "trim": "",
+      "generation": "F16",
+      "generationCode": "F16",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
+        }
+      ],
+      "driveType": "AWD"
+    },
+    {
+      "brand": "BMW",
+      "series": "i3",
+      "model": "i3",
+      "trim": "",
+      "generation": "I01",
+      "generationCode": "I01",
+      "yearFrom": 2014,
+      "yearTo": 2015,
+      "fuelType": "ELECTRIC",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
+      "sources": [
+        {
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
         }
       ]
     },
     {
       "brand": "BMW",
       "series": "i Serisi",
-      "model": "",
+      "model": "i8",
       "trim": "",
-      "generation": "",
-      "generationCode": "",
-      "yearFrom": null,
-      "yearTo": null,
-      "confidence": "REVIEW_REQUIRED",
-      "verifiedForTurkey": false,
+      "generation": "I12",
+      "generationCode": "I12",
+      "yearFrom": 2015,
+      "yearTo": 2015,
+      "fuelType": "HYBRID",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
       "category": "Otomobil",
-      "notes": "Umbrella i Serisi node in catalog; concrete EV depth lives under i3/i4/i5/i7/iX* — avoid duplicate EV series.",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "TR 2015 retail list names engine/version only; package/trim not printed on sourced page — trim left empty (not invented).",
       "sources": [
         {
-          "url": "https://www.bmw.com.tr/tr/index.html",
-          "title": "BMW Türkiye elektrikli modeller",
-          "date": "2026-08-07",
-          "role": "primary"
+          "url": "https://otopark.com/2015/11/22/bmw-kasim-2015-fiyat-listesi/",
+          "title": "BMW Kasım 2015 Fiyat Listesi (otopark arşivi)",
+          "date": "2015-11-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com citing BMW TR retail"
+        },
+        {
+          "url": "https://otopark.com/2015/09/14/bmw-eylul-2015-fiyat-listesi/",
+          "title": "BMW Eylül 2015 Fiyat Listesi",
+          "date": "2015-09-14",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otopark.com"
         }
       ]
     }
   ],
   "researchNotes": {
-    "researchedSeriesPass": [
-      "1 Serisi",
-      "2 Serisi",
-      "2 Serisi Active Tourer",
-      "3 Serisi",
-      "4 Serisi",
-      "5 Serisi",
-      "6 Serisi",
-      "7 Serisi",
-      "8 Serisi",
-      "M Serisi",
-      "X1",
+    "coverageCsv": "docs/vehicle-research/deep-catalog-coverage.csv",
+    "completionReport": "docs/vehicle-research/BMW-completion-report.json",
+    "historicalArchives": [
+      "otopark 2015-09/11 BMW TR",
+      "yeniarabafiyatlari 2016 F30",
+      "arabamyeni 2016 X1 F48",
+      "sekizsilindir 2016 F10 520d packages",
+      "bmwuzmani/arabalar 2016 X5 F15 packages",
+      "bmwcikemo 2008 E90",
+      "arabavs 2019 (prior ingest)"
+    ],
+    "seriesWithoutResearch": [],
+    "currentOnlySeries": [
       "X2",
-      "X3",
-      "X4",
-      "X5",
-      "X6",
       "X7",
-      "Z Serisi",
-      "i4",
-      "i5",
-      "i7",
       "iX",
       "iX1",
       "iX2",
-      "iX3"
+      "iX3",
+      "i4",
+      "i5",
+      "i7"
     ],
-    "historicalArchivesIngested": [
-      "2019-11 BMW TR",
-      "2020-04 BMW TR"
-    ],
-    "reviewRequiredSeries": [
-      "M Serisi",
-      "Z Serisi",
-      "X4"
-    ]
+    "noApply": true
   },
   "completedAt": "2026-08-07T09:05:59.034Z",
   "completionNotes": "All selectable otomobil/SUV series researched. Verified Teknik Oto MY + historical BMW TR archives. REVIEW_REQUIRED for M/Z/X4/i3/i Serisi without invention."

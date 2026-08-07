@@ -1,14 +1,16 @@
 {
   "brand": "Ford",
   "brandSlug": "ford",
-  "version": "2026.08-deep-ford-v1-current-tr",
-  "generatedAt": "2026-08-07T12:00:00.000Z",
+  "version": "2026.08-deep-ford-v2-historical",
+  "generatedAt": "2026-08-07T10:07:24.276Z",
   "seriesCovered": [
-    "Focus",
-    "Tourneo Courier",
     "Fiesta",
-    "Tourneo Custom",
-    "Focus Hatchback Hybrid"
+    "Focus",
+    "Focus Hatchback Hybrid",
+    "Kuga",
+    "Puma",
+    "Tourneo Courier",
+    "Tourneo Custom"
   ],
   "status": "COMPLETED",
   "notes": "Focus Sedan EcoBlue + Journey/Tourneo Courier rows from Jul 2026 ford.com.tr-cited tables. Fiesta/Custom historical pending.",
@@ -300,21 +302,1326 @@
           "role": "secondary"
         }
       ]
+    },
+    {
+      "brand": "Ford",
+      "series": "Focus",
+      "model": "1.5 Ti-VCT 123 PS",
+      "trim": "Trend X",
+      "generation": "Focus Mk4 TR MY2019",
+      "generationCode": "C519",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "powerHp": "123",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Aralık 2019 Focus resmi PDF — Trend X/Titanium/ST-Line only on listed engines.",
+      "sources": [
+        {
+          "url": "https://www.ford.com.tr/getmedia/6e576d2f-1f33-4549-948a-8244c0115ca6/Focus-2019-aralik-fiyat-listesi.pdf.aspx",
+          "title": "Ford Focus Aralık 2019 resmi fiyat PDF",
+          "date": "2019-12-01",
+          "role": "primary",
+          "type": "official_price_list",
+          "publisher": "Ford Türkiye"
+        },
+        {
+          "url": "https://www.arabavs.com/ford-aralik-fiyat-listesi-2019.html",
+          "title": "Ford Aralık 2019 fiyat listesi — Focus",
+          "date": "2019-12-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Ford",
+      "series": "Focus",
+      "model": "1.5 Ti-VCT 123 PS",
+      "trim": "Trend X",
+      "generation": "Focus Mk4 TR MY2019",
+      "generationCode": "C519",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "powerHp": "123",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Aralık 2019 Focus resmi PDF — Trend X/Titanium/ST-Line only on listed engines.",
+      "sources": [
+        {
+          "url": "https://www.ford.com.tr/getmedia/6e576d2f-1f33-4549-948a-8244c0115ca6/Focus-2019-aralik-fiyat-listesi.pdf.aspx",
+          "title": "Ford Focus Aralık 2019 resmi fiyat PDF",
+          "date": "2019-12-01",
+          "role": "primary",
+          "type": "official_price_list",
+          "publisher": "Ford Türkiye"
+        },
+        {
+          "url": "https://www.arabavs.com/ford-aralik-fiyat-listesi-2019.html",
+          "title": "Ford Aralık 2019 fiyat listesi — Focus",
+          "date": "2019-12-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Ford",
+      "series": "Focus",
+      "model": "1.5 Ti-VCT 123 PS",
+      "trim": "Titanium",
+      "generation": "Focus Mk4 TR MY2019",
+      "generationCode": "C519",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "powerHp": "123",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Aralık 2019 Focus resmi PDF — Trend X/Titanium/ST-Line only on listed engines.",
+      "sources": [
+        {
+          "url": "https://www.ford.com.tr/getmedia/6e576d2f-1f33-4549-948a-8244c0115ca6/Focus-2019-aralik-fiyat-listesi.pdf.aspx",
+          "title": "Ford Focus Aralık 2019 resmi fiyat PDF",
+          "date": "2019-12-01",
+          "role": "primary",
+          "type": "official_price_list",
+          "publisher": "Ford Türkiye"
+        },
+        {
+          "url": "https://www.arabavs.com/ford-aralik-fiyat-listesi-2019.html",
+          "title": "Ford Aralık 2019 fiyat listesi — Focus",
+          "date": "2019-12-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Ford",
+      "series": "Focus",
+      "model": "1.5 Ti-VCT 123 PS",
+      "trim": "Titanium",
+      "generation": "Focus Mk4 TR MY2019",
+      "generationCode": "C519",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "powerHp": "123",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Aralık 2019 Focus resmi PDF — Trend X/Titanium/ST-Line only on listed engines.",
+      "sources": [
+        {
+          "url": "https://www.ford.com.tr/getmedia/6e576d2f-1f33-4549-948a-8244c0115ca6/Focus-2019-aralik-fiyat-listesi.pdf.aspx",
+          "title": "Ford Focus Aralık 2019 resmi fiyat PDF",
+          "date": "2019-12-01",
+          "role": "primary",
+          "type": "official_price_list",
+          "publisher": "Ford Türkiye"
+        },
+        {
+          "url": "https://www.arabavs.com/ford-aralik-fiyat-listesi-2019.html",
+          "title": "Ford Aralık 2019 fiyat listesi — Focus",
+          "date": "2019-12-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Ford",
+      "series": "Focus",
+      "model": "1.0 EcoBoost 125 PS",
+      "trim": "ST-Line",
+      "generation": "Focus Mk4 TR MY2019",
+      "generationCode": "C519",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "powerHp": "125",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Aralık 2019 Focus resmi PDF — Trend X/Titanium/ST-Line only on listed engines.",
+      "sources": [
+        {
+          "url": "https://www.ford.com.tr/getmedia/6e576d2f-1f33-4549-948a-8244c0115ca6/Focus-2019-aralik-fiyat-listesi.pdf.aspx",
+          "title": "Ford Focus Aralık 2019 resmi fiyat PDF",
+          "date": "2019-12-01",
+          "role": "primary",
+          "type": "official_price_list",
+          "publisher": "Ford Türkiye"
+        },
+        {
+          "url": "https://www.arabavs.com/ford-aralik-fiyat-listesi-2019.html",
+          "title": "Ford Aralık 2019 fiyat listesi — Focus",
+          "date": "2019-12-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Ford",
+      "series": "Focus",
+      "model": "1.5 EcoBlue 120 PS",
+      "trim": "Trend X",
+      "generation": "Focus Mk4 TR MY2019",
+      "generationCode": "C519",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "powerHp": "120",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Aralık 2019 Focus resmi PDF — Trend X/Titanium/ST-Line only on listed engines.",
+      "sources": [
+        {
+          "url": "https://www.ford.com.tr/getmedia/6e576d2f-1f33-4549-948a-8244c0115ca6/Focus-2019-aralik-fiyat-listesi.pdf.aspx",
+          "title": "Ford Focus Aralık 2019 resmi fiyat PDF",
+          "date": "2019-12-01",
+          "role": "primary",
+          "type": "official_price_list",
+          "publisher": "Ford Türkiye"
+        },
+        {
+          "url": "https://www.arabavs.com/ford-aralik-fiyat-listesi-2019.html",
+          "title": "Ford Aralık 2019 fiyat listesi — Focus",
+          "date": "2019-12-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Ford",
+      "series": "Focus",
+      "model": "1.5 EcoBlue 120 PS",
+      "trim": "Trend X",
+      "generation": "Focus Mk4 TR MY2019",
+      "generationCode": "C519",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "powerHp": "120",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Aralık 2019 Focus resmi PDF — Trend X/Titanium/ST-Line only on listed engines.",
+      "sources": [
+        {
+          "url": "https://www.ford.com.tr/getmedia/6e576d2f-1f33-4549-948a-8244c0115ca6/Focus-2019-aralik-fiyat-listesi.pdf.aspx",
+          "title": "Ford Focus Aralık 2019 resmi fiyat PDF",
+          "date": "2019-12-01",
+          "role": "primary",
+          "type": "official_price_list",
+          "publisher": "Ford Türkiye"
+        },
+        {
+          "url": "https://www.arabavs.com/ford-aralik-fiyat-listesi-2019.html",
+          "title": "Ford Aralık 2019 fiyat listesi — Focus",
+          "date": "2019-12-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Ford",
+      "series": "Focus",
+      "model": "1.5 EcoBlue 120 PS",
+      "trim": "Titanium",
+      "generation": "Focus Mk4 TR MY2019",
+      "generationCode": "C519",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "powerHp": "120",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Aralık 2019 Focus resmi PDF — Trend X/Titanium/ST-Line only on listed engines.",
+      "sources": [
+        {
+          "url": "https://www.ford.com.tr/getmedia/6e576d2f-1f33-4549-948a-8244c0115ca6/Focus-2019-aralik-fiyat-listesi.pdf.aspx",
+          "title": "Ford Focus Aralık 2019 resmi fiyat PDF",
+          "date": "2019-12-01",
+          "role": "primary",
+          "type": "official_price_list",
+          "publisher": "Ford Türkiye"
+        },
+        {
+          "url": "https://www.arabavs.com/ford-aralik-fiyat-listesi-2019.html",
+          "title": "Ford Aralık 2019 fiyat listesi — Focus",
+          "date": "2019-12-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Ford",
+      "series": "Focus",
+      "model": "1.5 EcoBlue 120 PS",
+      "trim": "Titanium",
+      "generation": "Focus Mk4 TR MY2019",
+      "generationCode": "C519",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "powerHp": "120",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Aralık 2019 Focus resmi PDF — Trend X/Titanium/ST-Line only on listed engines.",
+      "sources": [
+        {
+          "url": "https://www.ford.com.tr/getmedia/6e576d2f-1f33-4549-948a-8244c0115ca6/Focus-2019-aralik-fiyat-listesi.pdf.aspx",
+          "title": "Ford Focus Aralık 2019 resmi fiyat PDF",
+          "date": "2019-12-01",
+          "role": "primary",
+          "type": "official_price_list",
+          "publisher": "Ford Türkiye"
+        },
+        {
+          "url": "https://www.arabavs.com/ford-aralik-fiyat-listesi-2019.html",
+          "title": "Ford Aralık 2019 fiyat listesi — Focus",
+          "date": "2019-12-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Ford",
+      "series": "Focus",
+      "model": "1.5 EcoBlue 120 PS",
+      "trim": "ST-Line",
+      "generation": "Focus Mk4 TR MY2019",
+      "generationCode": "C519",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "powerHp": "120",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Aralık 2019 Focus resmi PDF — Trend X/Titanium/ST-Line only on listed engines.",
+      "sources": [
+        {
+          "url": "https://www.ford.com.tr/getmedia/6e576d2f-1f33-4549-948a-8244c0115ca6/Focus-2019-aralik-fiyat-listesi.pdf.aspx",
+          "title": "Ford Focus Aralık 2019 resmi fiyat PDF",
+          "date": "2019-12-01",
+          "role": "primary",
+          "type": "official_price_list",
+          "publisher": "Ford Türkiye"
+        },
+        {
+          "url": "https://www.arabavs.com/ford-aralik-fiyat-listesi-2019.html",
+          "title": "Ford Aralık 2019 fiyat listesi — Focus",
+          "date": "2019-12-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Ford",
+      "series": "Fiesta",
+      "model": "1.1L 85 PS",
+      "trim": "Trend",
+      "generation": "Fiesta Mk8 TR MY2019",
+      "generationCode": "Fiesta-Mk8",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "powerHp": "85",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "05 Aralık 2019 Fiesta TR — Trend/Titanium only as published (no EcoBoost×Trend invent).",
+      "sources": [
+        {
+          "url": "https://aracbulten.com/ford-fiesta-fiyat-listesi-2019/",
+          "title": "Ford Fiesta Aralık 2019 tavsiye edilen fiyat listesi",
+          "date": "2019-12-05",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "aracbulten.com"
+        }
+      ]
+    },
+    {
+      "brand": "Ford",
+      "series": "Fiesta",
+      "model": "1.0 EcoBoost 100 PS",
+      "trim": "Titanium",
+      "generation": "Fiesta Mk8 TR MY2019",
+      "generationCode": "Fiesta-Mk8",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "powerHp": "100",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "05 Aralık 2019 Fiesta TR — Trend/Titanium only as published (no EcoBoost×Trend invent).",
+      "sources": [
+        {
+          "url": "https://aracbulten.com/ford-fiesta-fiyat-listesi-2019/",
+          "title": "Ford Fiesta Aralık 2019 tavsiye edilen fiyat listesi",
+          "date": "2019-12-05",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "aracbulten.com"
+        }
+      ]
+    },
+    {
+      "brand": "Ford",
+      "series": "Fiesta",
+      "model": "1.5 TDCi 85 PS",
+      "trim": "Trend",
+      "generation": "Fiesta Mk8 TR MY2019",
+      "generationCode": "Fiesta-Mk8",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "powerHp": "85",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "05 Aralık 2019 Fiesta TR — Trend/Titanium only as published (no EcoBoost×Trend invent).",
+      "sources": [
+        {
+          "url": "https://aracbulten.com/ford-fiesta-fiyat-listesi-2019/",
+          "title": "Ford Fiesta Aralık 2019 tavsiye edilen fiyat listesi",
+          "date": "2019-12-05",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "aracbulten.com"
+        }
+      ]
+    },
+    {
+      "brand": "Ford",
+      "series": "Fiesta",
+      "model": "1.5 TDCi 85 PS",
+      "trim": "Titanium",
+      "generation": "Fiesta Mk8 TR MY2019",
+      "generationCode": "Fiesta-Mk8",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "powerHp": "85",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "05 Aralık 2019 Fiesta TR — Trend/Titanium only as published (no EcoBoost×Trend invent).",
+      "sources": [
+        {
+          "url": "https://aracbulten.com/ford-fiesta-fiyat-listesi-2019/",
+          "title": "Ford Fiesta Aralık 2019 tavsiye edilen fiyat listesi",
+          "date": "2019-12-05",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "aracbulten.com"
+        }
+      ]
+    },
+    {
+      "brand": "Ford",
+      "series": "Tourneo Courier",
+      "model": "1.5 TDCi 75 PS",
+      "trim": "Trend",
+      "generation": "Tourneo Courier I TR MY2019",
+      "generationCode": "Tourneo Courier",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "powerHp": "75",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Minivan & Panelvan",
+      "notes": "2019 Tourneo Courier — Trend/Deluxe/Titanium/Blackline/Titanium Plus as published.",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/ford/tourneo-courier/2019-fiyatlari",
+          "title": "2019 Ford Tourneo Courier Trend/Deluxe/Titanium matrisi",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Ford",
+      "series": "Tourneo Courier",
+      "model": "1.5 TDCi 75 PS",
+      "trim": "Deluxe",
+      "generation": "Tourneo Courier I TR MY2019",
+      "generationCode": "Tourneo Courier",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "powerHp": "75",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Minivan & Panelvan",
+      "notes": "2019 Tourneo Courier — Trend/Deluxe/Titanium/Blackline/Titanium Plus as published.",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/ford/tourneo-courier/2019-fiyatlari",
+          "title": "2019 Ford Tourneo Courier Trend/Deluxe/Titanium matrisi",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Ford",
+      "series": "Tourneo Courier",
+      "model": "1.5 TDCi 95 PS",
+      "trim": "Titanium",
+      "generation": "Tourneo Courier I TR MY2019",
+      "generationCode": "Tourneo Courier",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "powerHp": "95",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Minivan & Panelvan",
+      "notes": "2019 Tourneo Courier — Trend/Deluxe/Titanium/Blackline/Titanium Plus as published.",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/ford/tourneo-courier/2019-fiyatlari",
+          "title": "2019 Ford Tourneo Courier Trend/Deluxe/Titanium matrisi",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Ford",
+      "series": "Tourneo Courier",
+      "model": "1.5 TDCi 95 PS",
+      "trim": "Blackline",
+      "generation": "Tourneo Courier I TR MY2019",
+      "generationCode": "Tourneo Courier",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "powerHp": "95",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Minivan & Panelvan",
+      "notes": "2019 Tourneo Courier — Trend/Deluxe/Titanium/Blackline/Titanium Plus as published.",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/ford/tourneo-courier/2019-fiyatlari",
+          "title": "2019 Ford Tourneo Courier Trend/Deluxe/Titanium matrisi",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Ford",
+      "series": "Tourneo Courier",
+      "model": "1.5 TDCi 95 PS",
+      "trim": "Titanium Plus",
+      "generation": "Tourneo Courier I TR MY2019",
+      "generationCode": "Tourneo Courier",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "powerHp": "95",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Minivan & Panelvan",
+      "notes": "2019 Tourneo Courier — Trend/Deluxe/Titanium/Blackline/Titanium Plus as published.",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/ford/tourneo-courier/2019-fiyatlari",
+          "title": "2019 Ford Tourneo Courier Trend/Deluxe/Titanium matrisi",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Ford",
+      "series": "Tourneo Courier",
+      "model": "1.5 TDCi 75 PS",
+      "trim": "Trend",
+      "generation": "Tourneo Courier I TR MY2020",
+      "generationCode": "Tourneo Courier",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "powerHp": "75",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Minivan & Panelvan",
+      "notes": "Haziran 2020 Tourneo Courier kampanyalı tablo.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/ford-tourneo-custom-kampanyali-fiyatlari/",
+          "title": "Ford Tourneo Courier/Custom Haziran 2020 kampanyalı listeler",
+          "date": "2020-06-05",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Ford",
+      "series": "Tourneo Courier",
+      "model": "1.5 TDCi 75 PS",
+      "trim": "Deluxe",
+      "generation": "Tourneo Courier I TR MY2020",
+      "generationCode": "Tourneo Courier",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "powerHp": "75",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Minivan & Panelvan",
+      "notes": "Haziran 2020 Tourneo Courier kampanyalı tablo.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/ford-tourneo-custom-kampanyali-fiyatlari/",
+          "title": "Ford Tourneo Courier/Custom Haziran 2020 kampanyalı listeler",
+          "date": "2020-06-05",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Ford",
+      "series": "Tourneo Courier",
+      "model": "1.5 TDCi 100 PS",
+      "trim": "Deluxe",
+      "generation": "Tourneo Courier I TR MY2020",
+      "generationCode": "Tourneo Courier",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "powerHp": "100",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Minivan & Panelvan",
+      "notes": "Haziran 2020 Tourneo Courier kampanyalı tablo.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/ford-tourneo-custom-kampanyali-fiyatlari/",
+          "title": "Ford Tourneo Courier/Custom Haziran 2020 kampanyalı listeler",
+          "date": "2020-06-05",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Ford",
+      "series": "Tourneo Courier",
+      "model": "1.5 TDCi 100 PS",
+      "trim": "Titanium",
+      "generation": "Tourneo Courier I TR MY2020",
+      "generationCode": "Tourneo Courier",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "powerHp": "100",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Minivan & Panelvan",
+      "notes": "Haziran 2020 Tourneo Courier kampanyalı tablo.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/ford-tourneo-custom-kampanyali-fiyatlari/",
+          "title": "Ford Tourneo Courier/Custom Haziran 2020 kampanyalı listeler",
+          "date": "2020-06-05",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Ford",
+      "series": "Tourneo Courier",
+      "model": "1.5 TDCi 100 PS",
+      "trim": "Blackline",
+      "generation": "Tourneo Courier I TR MY2020",
+      "generationCode": "Tourneo Courier",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "powerHp": "100",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Minivan & Panelvan",
+      "notes": "Haziran 2020 Tourneo Courier kampanyalı tablo.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/ford-tourneo-custom-kampanyali-fiyatlari/",
+          "title": "Ford Tourneo Courier/Custom Haziran 2020 kampanyalı listeler",
+          "date": "2020-06-05",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Ford",
+      "series": "Tourneo Courier",
+      "model": "1.5 TDCi 100 PS",
+      "trim": "Titanium Plus",
+      "generation": "Tourneo Courier I TR MY2020",
+      "generationCode": "Tourneo Courier",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "powerHp": "100",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Minivan & Panelvan",
+      "notes": "Haziran 2020 Tourneo Courier kampanyalı tablo.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/ford-tourneo-custom-kampanyali-fiyatlari/",
+          "title": "Ford Tourneo Courier/Custom Haziran 2020 kampanyalı listeler",
+          "date": "2020-06-05",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Ford",
+      "series": "Tourneo Custom",
+      "model": "2.0 EcoBlue 130 PS",
+      "trim": "Trend",
+      "generation": "Tourneo Custom TR MY2020",
+      "generationCode": "Tourneo Custom",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "powerHp": "130",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Minivan & Panelvan",
+      "notes": "Haziran 2020 Tourneo Custom — Trend/Titanium/Titanium Plus × listed EcoBlue engines only.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/ford-tourneo-custom-kampanyali-fiyatlari/",
+          "title": "Ford Tourneo Courier/Custom Haziran 2020 kampanyalı listeler",
+          "date": "2020-06-05",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Ford",
+      "series": "Tourneo Custom",
+      "model": "2.0 EcoBlue 170 PS",
+      "trim": "Titanium",
+      "generation": "Tourneo Custom TR MY2020",
+      "generationCode": "Tourneo Custom",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "powerHp": "170",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Minivan & Panelvan",
+      "notes": "Haziran 2020 Tourneo Custom — Trend/Titanium/Titanium Plus × listed EcoBlue engines only.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/ford-tourneo-custom-kampanyali-fiyatlari/",
+          "title": "Ford Tourneo Courier/Custom Haziran 2020 kampanyalı listeler",
+          "date": "2020-06-05",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Ford",
+      "series": "Tourneo Custom",
+      "model": "2.0 EcoBlue 170 PS",
+      "trim": "Titanium",
+      "generation": "Tourneo Custom TR MY2020",
+      "generationCode": "Tourneo Custom",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "powerHp": "170",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Minivan & Panelvan",
+      "notes": "Haziran 2020 Tourneo Custom — Trend/Titanium/Titanium Plus × listed EcoBlue engines only.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/ford-tourneo-custom-kampanyali-fiyatlari/",
+          "title": "Ford Tourneo Courier/Custom Haziran 2020 kampanyalı listeler",
+          "date": "2020-06-05",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Ford",
+      "series": "Tourneo Custom",
+      "model": "2.0 EcoBlue 170 PS",
+      "trim": "Titanium Plus",
+      "generation": "Tourneo Custom TR MY2020",
+      "generationCode": "Tourneo Custom",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "powerHp": "170",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Minivan & Panelvan",
+      "notes": "Haziran 2020 Tourneo Custom — Trend/Titanium/Titanium Plus × listed EcoBlue engines only.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/ford-tourneo-custom-kampanyali-fiyatlari/",
+          "title": "Ford Tourneo Courier/Custom Haziran 2020 kampanyalı listeler",
+          "date": "2020-06-05",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Ford",
+      "series": "Tourneo Custom",
+      "model": "2.0 EcoBlue Hibrit 185 PS",
+      "trim": "Titanium Plus",
+      "generation": "Tourneo Custom TR MY2020",
+      "generationCode": "Tourneo Custom",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "HYBRID",
+      "powerHp": "185",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Minivan & Panelvan",
+      "notes": "Haziran 2020 Tourneo Custom — Trend/Titanium/Titanium Plus × listed EcoBlue engines only.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/ford-tourneo-custom-kampanyali-fiyatlari/",
+          "title": "Ford Tourneo Courier/Custom Haziran 2020 kampanyalı listeler",
+          "date": "2020-06-05",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Ford",
+      "series": "Tourneo Custom",
+      "model": "2.0 EcoBlue Upgrade 185 PS",
+      "trim": "Titanium Plus",
+      "generation": "Tourneo Custom TR MY2020",
+      "generationCode": "Tourneo Custom",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "powerHp": "185",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Minivan & Panelvan",
+      "notes": "Haziran 2020 Tourneo Custom — Trend/Titanium/Titanium Plus × listed EcoBlue engines only.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/ford-tourneo-custom-kampanyali-fiyatlari/",
+          "title": "Ford Tourneo Courier/Custom Haziran 2020 kampanyalı listeler",
+          "date": "2020-06-05",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Ford",
+      "series": "Puma",
+      "model": "1.0 EcoBoost 95 PS",
+      "trim": "Style",
+      "generation": "Puma TR MY2020",
+      "generationCode": "Puma",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "powerHp": "95",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2020 Puma ÖTV sonrası — Style/ST-Line only on listed EcoBoost variants.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3013928-ford-2020-arac-modellerinin-fiyatlarini-acikladi-iste-mondeo-puma-focus-kuga-fiyat-listesi",
+          "title": "Ford 2020 ÖTV sonrası Puma/Kuga/Focus fiyatları",
+          "date": "2020-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        }
+      ]
+    },
+    {
+      "brand": "Ford",
+      "series": "Puma",
+      "model": "1.0 EcoBoost 125 PS",
+      "trim": "Style",
+      "generation": "Puma TR MY2020",
+      "generationCode": "Puma",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "powerHp": "125",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2020 Puma ÖTV sonrası — Style/ST-Line only on listed EcoBoost variants.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3013928-ford-2020-arac-modellerinin-fiyatlarini-acikladi-iste-mondeo-puma-focus-kuga-fiyat-listesi",
+          "title": "Ford 2020 ÖTV sonrası Puma/Kuga/Focus fiyatları",
+          "date": "2020-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        }
+      ]
+    },
+    {
+      "brand": "Ford",
+      "series": "Puma",
+      "model": "1.0 EcoBoost 125 PS",
+      "trim": "ST-Line",
+      "generation": "Puma TR MY2020",
+      "generationCode": "Puma",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "powerHp": "125",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2020 Puma ÖTV sonrası — Style/ST-Line only on listed EcoBoost variants.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3013928-ford-2020-arac-modellerinin-fiyatlarini-acikladi-iste-mondeo-puma-focus-kuga-fiyat-listesi",
+          "title": "Ford 2020 ÖTV sonrası Puma/Kuga/Focus fiyatları",
+          "date": "2020-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        }
+      ]
+    },
+    {
+      "brand": "Ford",
+      "series": "Puma",
+      "model": "1.0 EcoBoost mHEV 155 PS",
+      "trim": "ST-Line",
+      "generation": "Puma TR MY2020",
+      "generationCode": "Puma",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "HYBRID",
+      "powerHp": "155",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2020 Puma ÖTV sonrası — Style/ST-Line only on listed EcoBoost variants.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3013928-ford-2020-arac-modellerinin-fiyatlarini-acikladi-iste-mondeo-puma-focus-kuga-fiyat-listesi",
+          "title": "Ford 2020 ÖTV sonrası Puma/Kuga/Focus fiyatları",
+          "date": "2020-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        }
+      ]
+    },
+    {
+      "brand": "Ford",
+      "series": "Kuga",
+      "model": "1.5 EcoBoost 120 PS",
+      "trim": "Style",
+      "generation": "Kuga III TR MY2020",
+      "generationCode": "Kuga-III",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "powerHp": "120",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2020 Kuga — Style/Titanium/ST-Line × listed engines; PHEV only ST-Line as published.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3013928-ford-2020-arac-modellerinin-fiyatlarini-acikladi-iste-mondeo-puma-focus-kuga-fiyat-listesi",
+          "title": "Ford 2020 ÖTV sonrası Puma/Kuga/Focus fiyatları",
+          "date": "2020-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        },
+        {
+          "url": "https://www.arabahabercisi.com/yeni-ford-kuga-fiyat-listesi/",
+          "title": "Yeni Ford Kuga 2020 lansman fiyat listesi",
+          "date": "2020-01-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabahabercisi.com"
+        }
+      ]
+    },
+    {
+      "brand": "Ford",
+      "series": "Kuga",
+      "model": "1.5 EcoBlue 120 PS",
+      "trim": "Style",
+      "generation": "Kuga III TR MY2020",
+      "generationCode": "Kuga-III",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "powerHp": "120",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2020 Kuga — Style/Titanium/ST-Line × listed engines; PHEV only ST-Line as published.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3013928-ford-2020-arac-modellerinin-fiyatlarini-acikladi-iste-mondeo-puma-focus-kuga-fiyat-listesi",
+          "title": "Ford 2020 ÖTV sonrası Puma/Kuga/Focus fiyatları",
+          "date": "2020-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        },
+        {
+          "url": "https://www.arabahabercisi.com/yeni-ford-kuga-fiyat-listesi/",
+          "title": "Yeni Ford Kuga 2020 lansman fiyat listesi",
+          "date": "2020-01-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabahabercisi.com"
+        }
+      ]
+    },
+    {
+      "brand": "Ford",
+      "series": "Kuga",
+      "model": "1.5 EcoBlue 120 PS",
+      "trim": "Style",
+      "generation": "Kuga III TR MY2020",
+      "generationCode": "Kuga-III",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "powerHp": "120",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2020 Kuga — Style/Titanium/ST-Line × listed engines; PHEV only ST-Line as published.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3013928-ford-2020-arac-modellerinin-fiyatlarini-acikladi-iste-mondeo-puma-focus-kuga-fiyat-listesi",
+          "title": "Ford 2020 ÖTV sonrası Puma/Kuga/Focus fiyatları",
+          "date": "2020-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        },
+        {
+          "url": "https://www.arabahabercisi.com/yeni-ford-kuga-fiyat-listesi/",
+          "title": "Yeni Ford Kuga 2020 lansman fiyat listesi",
+          "date": "2020-01-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabahabercisi.com"
+        }
+      ]
+    },
+    {
+      "brand": "Ford",
+      "series": "Kuga",
+      "model": "1.5 EcoBlue 120 PS",
+      "trim": "Titanium",
+      "generation": "Kuga III TR MY2020",
+      "generationCode": "Kuga-III",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "powerHp": "120",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2020 Kuga — Style/Titanium/ST-Line × listed engines; PHEV only ST-Line as published.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3013928-ford-2020-arac-modellerinin-fiyatlarini-acikladi-iste-mondeo-puma-focus-kuga-fiyat-listesi",
+          "title": "Ford 2020 ÖTV sonrası Puma/Kuga/Focus fiyatları",
+          "date": "2020-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        },
+        {
+          "url": "https://www.arabahabercisi.com/yeni-ford-kuga-fiyat-listesi/",
+          "title": "Yeni Ford Kuga 2020 lansman fiyat listesi",
+          "date": "2020-01-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabahabercisi.com"
+        }
+      ]
+    },
+    {
+      "brand": "Ford",
+      "series": "Kuga",
+      "model": "1.5 EcoBlue 120 PS",
+      "trim": "ST-Line",
+      "generation": "Kuga III TR MY2020",
+      "generationCode": "Kuga-III",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "powerHp": "120",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2020 Kuga — Style/Titanium/ST-Line × listed engines; PHEV only ST-Line as published.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3013928-ford-2020-arac-modellerinin-fiyatlarini-acikladi-iste-mondeo-puma-focus-kuga-fiyat-listesi",
+          "title": "Ford 2020 ÖTV sonrası Puma/Kuga/Focus fiyatları",
+          "date": "2020-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        },
+        {
+          "url": "https://www.arabahabercisi.com/yeni-ford-kuga-fiyat-listesi/",
+          "title": "Yeni Ford Kuga 2020 lansman fiyat listesi",
+          "date": "2020-01-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabahabercisi.com"
+        }
+      ]
+    },
+    {
+      "brand": "Ford",
+      "series": "Kuga",
+      "model": "2.5 PHEV 225 PS",
+      "trim": "ST-Line",
+      "generation": "Kuga III TR MY2020",
+      "generationCode": "Kuga-III",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "HYBRID",
+      "powerHp": "225",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2020 Kuga — Style/Titanium/ST-Line × listed engines; PHEV only ST-Line as published.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3013928-ford-2020-arac-modellerinin-fiyatlarini-acikladi-iste-mondeo-puma-focus-kuga-fiyat-listesi",
+          "title": "Ford 2020 ÖTV sonrası Puma/Kuga/Focus fiyatları",
+          "date": "2020-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        },
+        {
+          "url": "https://www.arabahabercisi.com/yeni-ford-kuga-fiyat-listesi/",
+          "title": "Yeni Ford Kuga 2020 lansman fiyat listesi",
+          "date": "2020-01-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabahabercisi.com"
+        }
+      ]
+    },
+    {
+      "brand": "Ford",
+      "series": "Focus Hatchback Hybrid",
+      "model": "1.0 EcoBoost Hybrid",
+      "trim": "",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "generation": "Focus Mk4 Hybrid TR",
+      "generationCode": "C519",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "historicalCoverage": "HISTORICAL_COVERAGE_INCOMPLETE",
+      "notes": "Focus Hatchback Hybrid reported in secondary Jul 2026 roundups; official trim row not confirmed this pass.",
+      "sources": [
+        {
+          "url": "https://teknodiot.com/ford-fiyat-listesi",
+          "title": "Ford Temmuz 2026 fiyat derlemesi — Hybrid Active Stil note",
+          "date": "2026-07-10",
+          "role": "primary",
+          "type": "research_note",
+          "publisher": "teknodiot.com"
+        },
+        {
+          "url": "https://www.ford.com.tr/fiyat-listesi",
+          "title": "Ford Türkiye fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary",
+          "type": "official_hub",
+          "publisher": "Ford Türkiye"
+        }
+      ]
     }
   ],
   "researchNotes": {
-    "researchedSeriesPass": [
-      "Focus",
-      "Tourneo Courier",
-      "Fiesta",
-      "Tourneo Custom"
-    ],
-    "historicalArchivesIngested": [],
-    "reviewRequiredSeries": [
-      "Fiesta",
-      "Tourneo Custom",
-      "Focus Hatchback Hybrid"
-    ]
+    "noApply": true,
+    "applyAllowed": false,
+    "phase": "research-mass-market-batch",
+    "seriesWithoutResearch": [],
+    "currentOnlySeries": [],
+    "addedThisPass": 42
   },
   "completedAt": "2026-08-07T09:13:29.886Z"
 }

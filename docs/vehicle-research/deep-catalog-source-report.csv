@@ -3,6 +3,10 @@ Alfa Romeo,Junior,Elettrica,Speciale+,,2025,2026,VERIFIED_MULTI_SOURCE,CREATE_MO
 Alfa Romeo,Junior,Ibrida,Speciale+,,2025,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Alfa Romeo,Tonale,Hybrid DCT,Speciale,,2023,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Alfa Romeo,Tonale,Diesel DCT,Ti,,2023,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Alfa Romeo,Giulia,2.0 200hp RWD AT,Sprint,952,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Alfa Romeo,Giulia,2.0 280hp AWD AT,Veloce,952,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Alfa Romeo,Stelvio,2.0 200hp AWD AT,Sprint,949,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Alfa Romeo,Stelvio,2.0 280hp AWD AT,Veloce,949,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Audi,A3,TFSI 110 kW,Advanced,8Y,2024,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Audi,A3,TFSI 110 kW,S line,8Y,2024,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Audi,A3,TFSI 110 kW,,8Y,2024,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
@@ -21,6 +25,21 @@ Audi,Q3,TFSI 110 kW,Advanced,FJ,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine 
 Audi,Q5,TDI quattro 150 kW,Advanced,GU,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Audi,Q5,TFSI quattro 150 kW,Advanced,GU,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Audi,Q4 e-tron,40 e-tron,Premium,,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Audi,A4,2.0 TDI,Dynamic,B9,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Audi,A4,2.0 TDI,Design,B9,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Audi,A4,2.0 TDI,Sport,B9,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Audi,A4,2.0 TDI quattro,Dynamic,B9,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Audi,A4,2.0 TDI quattro,Design,B9,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Audi,A4,2.0 TDI quattro,Sport,B9,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Audi,A4,1.4 TFSI,Dynamic,B9,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Audi,A4,1.4 TFSI,Design,B9,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Audi,A4,1.4 TFSI,Sport,B9,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Audi,A4,40 TDI,Advanced,B9,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Audi,A4,40 TDI,S line,B9,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Audi,A4,40 TDI quattro,Advanced,B9,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Audi,A4,40 TDI quattro,S line,B9,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Audi,A4,45 TFSI quattro,Advanced,B9,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Audi,A4,45 TFSI quattro,S line,B9,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 BMW,5 Serisi,520i,M Sport,G60,2023,2026,VERIFIED_OFFICIAL,CREATE_TRIM,Engine already present as pack version leaf; trim layer missing in runtime
 BMW,5 Serisi,520i,Edition M Sport,G60,2023,2026,VERIFIED_OFFICIAL,CREATE_TRIM,Engine already present as pack version leaf; trim layer missing in runtime
 BMW,5 Serisi,520d xDrive,M Sport,G60,2023,2026,VERIFIED_OFFICIAL,CREATE_TRIM,Engine already present as pack version leaf; trim layer missing in runtime
@@ -139,10 +158,107 @@ BMW,5 Serisi,520i,Special Edition M Sport,G30,2020,2020,VERIFIED_MULTI_SOURCE,CR
 BMW,5 Serisi,530i xDrive,Special Edition M Sport,G30,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_TRIM,Engine already present as pack version leaf; trim layer missing in runtime
 BMW,X5,xDrive25d,M Sport,G05,2018,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 BMW,X5,xDrive25d,M Excellence,G05,2018,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,1 Serisi,118i,,F20,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,1 Serisi,120i,,F20,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,1 Serisi,116d,,F20,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,1 Serisi,116d ED,,F20,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,2 Serisi,218i,,F22,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,2 Serisi,220d,,F22,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,2 Serisi,218i Cabrio,,F23,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,2 Serisi Active Tourer,218i,,F45,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,2 Serisi Active Tourer,216d,,F45,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,3 Serisi,318i,,F30,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,3 Serisi,320i ED,,F30,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,3 Serisi,320d,,F30,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,3 Serisi,320d xDrive,,F30,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,3 Serisi,316i,,F30,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,3 Serisi,320i ED,Joy,F30,2016,2016,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,3 Serisi,320i ED,Sport Plus,F30,2016,2016,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,3 Serisi,320i ED,Luxury Plus,F30,2016,2016,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,3 Serisi,320i ED,M Plus,F30,2016,2016,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,3 Serisi,320d,Techno Plus,F30,2016,2016,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,3 Serisi,320d,Prestige,F30,2016,2016,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,3 Serisi,320d,Sport Line,F30,2016,2016,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,3 Serisi,320d,Luxury Line,F30,2016,2016,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,3 Serisi,320d,M Sport,F30,2016,2016,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,3 Serisi,320d xDrive,Prestige,F30,2016,2016,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,3 Serisi,320d xDrive,Sport Line,F30,2016,2016,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,3 Serisi,320d xDrive,Techno Plus,F30,2016,2016,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,3 Serisi,320d xDrive,Luxury Line,F30,2016,2016,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,3 Serisi,320d xDrive,M Sport,F30,2016,2016,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,3 Serisi,318i,Joy,F30,2016,2016,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,3 Serisi,318i,Prestige,F30,2016,2016,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,3 Serisi,320i,,E90,2008,2008,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,3 Serisi,320i,Premium,E90,2008,2008,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,3 Serisi,320d,,E90,2008,2008,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,3 Serisi,320d,Premium,E90,2008,2008,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,4 Serisi,420d,,F32,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,4 Serisi,420d xDrive,,F32,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,4 Serisi,428i,,F32,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,4 Serisi,418i,,F36,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,4 Serisi,420d Gran Coupé,,F36,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,5 Serisi,520i,,F10,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_TRIM,Engine already present as pack version leaf; trim layer missing in runtime
+BMW,5 Serisi,520d,,F10,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_TRIM,Engine already present as pack version leaf; trim layer missing in runtime
+BMW,5 Serisi,525d xDrive,,F10,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,5 Serisi,535d xDrive,,F10,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,5 Serisi,520d,Pure,F10,2016,2016,VERIFIED_MULTI_SOURCE,CREATE_TRIM,Engine already present as pack version leaf; trim layer missing in runtime
+BMW,5 Serisi,520d,Executive,F10,2016,2016,VERIFIED_MULTI_SOURCE,CREATE_TRIM,Engine already present as pack version leaf; trim layer missing in runtime
+BMW,5 Serisi,520d,Executive Plus,F10,2016,2016,VERIFIED_MULTI_SOURCE,CREATE_TRIM,Engine already present as pack version leaf; trim layer missing in runtime
+BMW,5 Serisi,520d,Executive Sport,F10,2016,2016,VERIFIED_MULTI_SOURCE,CREATE_TRIM,Engine already present as pack version leaf; trim layer missing in runtime
+BMW,5 Serisi,520d,Executive M Sport,F10,2016,2016,VERIFIED_MULTI_SOURCE,CREATE_TRIM,Engine already present as pack version leaf; trim layer missing in runtime
+BMW,6 Serisi,640d xDrive,,F13,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,6 Serisi,640d xDrive Gran Coupé,,F06,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,7 Serisi,730d xDrive,,F01,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,7 Serisi,730i,,G11,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,7 Serisi,730Li,,G12,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,7 Serisi,730d xDrive,,G11,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,Z Serisi,Z4 sDrive20i,,E89,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,Z Serisi,Z4 sDrive28i,,E89,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,M Serisi,M235i,,F22,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,M Serisi,M3,,F80,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,M Serisi,M4,,F82,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,M Serisi,M5,,F10,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,M Serisi,M6,,F13,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,M Serisi,X5 M,,F15,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,M Serisi,X6 M,,F16,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,X1,sDrive16i,,E84,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,X1,sDrive16d,,F48,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,X1,sDrive18i,,F48,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,X1,xDrive20d,,F48,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,X1,sDrive 16d,Joy,F48,2016,2016,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,X1,sDrive 16d,Prestige,F48,2016,2016,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,X1,sDrive 16d,Sport Line,F48,2016,2016,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,X1,sDrive 16d,X Line,F48,2016,2016,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,X1,sDrive 16d,M Sport,F48,2016,2016,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,X1,sDrive 18i,Joy,F48,2016,2016,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,X1,sDrive 18i,Prestige,F48,2016,2016,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,X1,sDrive 18i,Sport Line,F48,2016,2016,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,X1,sDrive 18i,X Line,F48,2016,2016,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,X1,sDrive 18i,M Sport,F48,2016,2016,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,X1,xDrive 20d,Joy,F48,2016,2016,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,X1,xDrive 20d,Prestige,F48,2016,2016,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,X1,xDrive 20d,Sport Line,F48,2016,2016,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,X1,xDrive 20d,X Line,F48,2016,2016,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,X1,xDrive 20d,M Sport,F48,2016,2016,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,X3,sDrive20i,,F25,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,X3,xDrive20d,,F25,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,X4,xDrive20d,,F26,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,X5,xDrive25d,,F15,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,X5,xDrive30d,,F15,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,X5,xDrive25d,Pure,F15,2016,2016,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,X5,xDrive25d,Prestige,F15,2016,2016,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,X5,xDrive25d,Premium,F15,2016,2016,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,X5,xDrive25d,M Sport,F15,2016,2016,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,X6,xDrive40d,,F16,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,i3,i3,,I01,2014,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,i Serisi,i8,,I12,2015,2015,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 BYD,SEAL,390 kW AWD,Excellence,,2024,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 BYD,SEALION 7,390 kW AWD,Excellence,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 BYD,HAN,380 kW AWD,Executive,,2024,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 BYD,TANG,380 kW AWD,Flagship,,2024,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BYD,Atto 3,150 kW,Design,Atto3,2023,2025,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BYD,Dolphin,150 kW,Comfort,Dolphin,2024,2025,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BYD,Dolphin,150 kW,Design,Dolphin,2024,2025,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Citroen,C3,ë-C3 83 kW,Plus,CC21 EV,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Citroen,C3,ë-C3 83 kW,Max,CC21 EV,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Citroen,C5 Aircross,1.2 Hybrid 145 eDCS6,Plus,C5 Aircross III,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
@@ -151,6 +267,31 @@ Citroen,C5 Aircross,ë-C5 Aircross 157 kW,Plus,C5 Aircross III EV,2025,2026,VERI
 Citroen,C3 Aircross,1.2 Hybrid 145 eDCS6,Plus,C3 Aircross II,2024,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Citroen,C3 Aircross,1.2 Hybrid 145 eDCS6,Max,C3 Aircross II,2024,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Citroen,C3 Aircross,1.2 Hybrid 145 eDCS6,Max - 7 Koltuk,C3 Aircross II,2024,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Citroen,C3,1.2 PureTech 82 HP,Live,CC21,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Citroen,C3 (ICE historical),1.2 PureTech 82 HP,Live,CC21,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Citroen,C3,1.2 PureTech 82 HP,Feel,CC21,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Citroen,C3 (ICE historical),1.2 PureTech 82 HP,Feel,CC21,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Citroen,C3,1.2 PureTech 110 HP,Live,CC21,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Citroen,C3 (ICE historical),1.2 PureTech 110 HP,Live,CC21,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Citroen,C3,1.2 PureTech 110 HP,Feel,CC21,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Citroen,C3 (ICE historical),1.2 PureTech 110 HP,Feel,CC21,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Citroen,C3,1.2 PureTech 110 HP,Shine,CC21,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Citroen,C3 (ICE historical),1.2 PureTech 110 HP,Shine,CC21,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Citroen,C3,1.2 PureTech 83 HP,Feel,CC21,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Citroen,C3 (ICE historical),1.2 PureTech 83 HP,Feel,CC21,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Citroen,C3,1.2 PureTech 110 HP,Feel Bold,CC21,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Citroen,C3 (ICE historical),1.2 PureTech 110 HP,Feel Bold,CC21,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Citroen,C3,1.2 PureTech 110 HP,Shine,CC21,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Citroen,C3 (ICE historical),1.2 PureTech 110 HP,Shine,CC21,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Citroen,C3 Aircross,1.2 PureTech 110 HP,Feel,Aircross I,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Citroen,C3 Aircross,1.2 PureTech 110 HP,Shine,Aircross I,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Citroen,C3 Aircross,1.5 BlueHDi 120 HP,Feel,Aircross I,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Citroen,C3 Aircross,1.5 BlueHDi 120 HP,Shine,Aircross I,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Citroen,C5 Aircross,1.6 PureTech 180 HP,Shine,C5 Aircross I,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Citroen,C5 Aircross,1.5 BlueHDi 130 HP,Feel,C5 Aircross I,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Citroen,C5 Aircross,1.5 BlueHDi 130 HP,Feel Adventure,C5 Aircross I,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Citroen,C5 Aircross,1.5 BlueHDi 130 HP,Shine,C5 Aircross I,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Citroen,C5 Aircross,1.5 BlueHDi 130 HP,Shine Bold,C5 Aircross I,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Cupra,Formentor,1.5 eTSI ACT 150 PS,Impulse,,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Cupra,Formentor,1.5 eTSI ACT 150 PS,Supreme,,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Cupra,Formentor,1.5 eTSI ACT 150 PS,VZ-Line,,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
@@ -158,6 +299,16 @@ Cupra,Leon,1.5 eTSI ACT 150 PS,Impulse,,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_M
 Cupra,Terramar,1.5 eTSI ACT 150 PS,Impulse,,2025,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Cupra,Terramar,1.5 eTSI ACT 150 PS,Supreme,,2025,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Cupra,Terramar,1.5 eTSI ACT 150 PS,VZ-Line,,2025,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Cupra,Formentor,1.5 TSI 150 HP DSG,,KM7,2021,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Cupra,Formentor,2.0 TSI 310 HP DSG 4Drive,,KM7,2021,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Cupra,Formentor,1.4 eHybrid 205 HP DSG,,KM7,2021,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Cupra,Formentor,1.4 eHybrid 245 HP DSG,,KM7,2021,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Cupra,Formentor,1.5 TSI DSG,,KM7,2023,2023,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Cupra,Formentor,2.0 TSI VZ 4Drive DSG,,KM7,2023,2023,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Cupra,Formentor,1.4 eHybrid DSG,,KM7,2023,2023,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Cupra,Leon,1.5 eTSI mHEV DSG,,KL,2023,2023,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Cupra,Leon,VZ 1.4 eHybrid PHEV DSG,,KL,2023,2023,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Cupra,Leon,VZ 2.0 TSI 300 HP DSG,,KL,2023,2023,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Dacia,Sandero,TCe 100,essential,,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Dacia,Sandero,TCe 100,expression,,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Dacia,Sandero Stepway,Eco-G 120,expression,,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
@@ -173,6 +324,28 @@ Dacia,Duster,TCe 150 4x4,expression,,2022,2024,VERIFIED_MULTI_SOURCE,CREATE_MODE
 Dacia,Duster,TCe 150 EDC,journey,,2022,2024,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Dacia,Duster,TCe 150 EDC,extreme,,2022,2024,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Dacia,Duster,Blue dCi 115 4x4,journey,,2022,2024,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Dacia,Duster,1.6 16v 115 bg 4x2,Comfort,HM,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Dacia,Duster,1.3 TCe 130 bg 4x2,Comfort,HM,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Dacia,Duster,ECO-G 115 bg 4x2,Comfort,HM,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Dacia,Duster,1.5 Blue dCi 95 bg 4x2,Comfort,HM,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Dacia,Duster,1.5 Blue dCi 115 bg 4x4,Comfort,HM,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Dacia,Duster,1.3 TCe 130 bg 4x2,Prestige,HM,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Dacia,Duster,ECO-G 115 bg 4x2,Prestige,HM,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Dacia,Duster,1.5 Blue dCi 115 bg 4x2,Prestige,HM,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Dacia,Duster,1.5 Blue dCi 115 bg 4x4,Prestige,HM,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Dacia,Duster,1.3 TCe 130 bg 4x2,Prestige Plus,HM,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Dacia,Duster,1.5 Blue dCi 115 bg 4x2,Prestige Plus,HM,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Dacia,Duster,1.5 Blue dCi 115 bg 4x4,Prestige Plus,HM,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Dacia,Duster,1.3 TCe 150 bg 4x2,Techroad,HM,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Dacia,Duster,1.5 Blue dCi 115 bg 4x4,Techroad,HM,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Dacia,Sandero,1.0 SCe 75 bg,Ambiance,B52,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Dacia,Sandero,1.5 Blue dCi 75 bg,Ambiance,B52,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Dacia,Sandero Stepway,Turbo 90 bg,Stepway,B52-Stepway,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Dacia,Sandero Stepway,Turbo 90 bg Easy-R,Stepway,B52-Stepway,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Dacia,Sandero Stepway,Turbo 90 ECO-G,Stepway,B52-Stepway,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Dacia,Sandero Stepway,1.5 Blue dCi 95 bg,Stepway,B52-Stepway,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Dacia,Sandero Stepway,Turbo 90 bg,Techroad,B52-Stepway,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Dacia,Sandero Stepway,Turbo 90 bg Easy-R,Techroad,B52-Stepway,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Fiat,Egea,1.6 Multijet 130 HP,Easy,Tipo/Egea,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Fiat,Egea,1.6 Multijet 130 HP,Urban,Tipo/Egea,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Fiat,Egea,1.6 Multijet 130 HP,Lounge,Tipo/Egea,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
@@ -180,14 +353,120 @@ Fiat,Egea Cross,1.6 Multijet 130 HP Traction+,Street,Tipo/Egea Cross,2024,2026,V
 Fiat,Egea Cross,1.6 Multijet 130 HP Traction+,Urban,Tipo/Egea Cross,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Fiat,Egea Cross,1.6 Multijet 130 HP Traction+,Lounge,Tipo/Egea Cross,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Fiat,Egea Cross,1.6 Multijet 130 HP Traction+,Limited,Tipo/Egea Cross,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Egea,1.4 Fire 95 HP,Easy,Tipo/Egea,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Egea,1.3 Multijet 95 HP,Easy,Tipo/Egea,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Egea,1.6 Multijet 120 HP,Easy,Tipo/Egea,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Egea,1.4 Fire 95 HP,Urban Plus,Tipo/Egea,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Egea,1.3 Multijet 95 HP,Urban Plus,Tipo/Egea,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Egea,1.6 Multijet 120 HP,Urban Plus,Tipo/Egea,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Egea,1.6 Multijet 120 HP,Urban Plus,Tipo/Egea,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Egea,1.4 Fire 95 HP,Mirror,Tipo/Egea,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Egea,1.3 Multijet 95 HP,Mirror,Tipo/Egea,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Egea,1.6 Multijet 120 HP,Mirror,Tipo/Egea,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Egea,1.6 Multijet 120 HP,Mirror,Tipo/Egea,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Egea,1.6 Multijet 120 HP,Lounge Plus,Tipo/Egea,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Egea,1.6 Multijet 120 HP,Lounge Plus,Tipo/Egea,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Egea,1.4 Fire 95 HP,Easy,Tipo/Egea,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Egea,1.3 Multijet 95 HP,Easy,Tipo/Egea,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Egea,1.6 Multijet 120 HP,Easy,Tipo/Egea,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Egea,1.6 Multijet 120 HP,Lounge Plus,Tipo/Egea,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Egea,1.4 Fire 95 HP,Easy,Tipo/Egea,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Egea,1.3 Multijet 95 HP,Easy,Tipo/Egea,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Egea,1.6 Multijet 120 HP,Easy,Tipo/Egea,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Egea,1.4 Fire 95 HP,Urban,Tipo/Egea,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Egea,1.3 Multijet 95 HP,Urban,Tipo/Egea,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Egea,1.6 Multijet 120 HP,Urban,Tipo/Egea,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Egea,1.6 Multijet 120 HP,Urban,Tipo/Egea,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Egea,1.6 E-Torq 110 HP,Urban,Tipo/Egea,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Egea,1.6 Multijet 120 HP,Lounge Plus,Tipo/Egea,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Egea,1.6 Multijet 120 HP,Lounge Plus,Tipo/Egea,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Egea,1.6 E-Torq 110 HP,Lounge Plus,Tipo/Egea,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Egea Wagon,1.3 Multijet 95 HP,Urban Plus,Tipo/Egea SW,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Egea Wagon,1.6 E-Torq 110 HP,Urban Plus,Tipo/Egea SW,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Egea Wagon,1.6 Multijet 120 HP,Urban Plus,Tipo/Egea SW,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Egea Wagon,1.6 E-Torq 110 HP,Lounge Plus,Tipo/Egea SW,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Egea Wagon,1.6 Multijet 120 HP,Lounge Plus,Tipo/Egea SW,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Egea Wagon,1.6 Multijet 120 HP,Lounge Plus,Tipo/Egea SW,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Doblo Combi,1.4 Fire 95 HP,Easy,Doblo-II,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Doblo Combi,1.4 Fire 95 HP,Safeline,Doblo-II,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Doblo Combi,1.4 Fire 95 HP,Premio,Doblo-II,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Doblo Combi,1.3 Multijet 95 HP,Easy,Doblo-II,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Doblo Combi,1.3 Multijet 95 HP,Safeline,Doblo-II,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Doblo Combi,1.6 Multijet 120 HP,Easy,Doblo-II,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Doblo Combi,1.6 Multijet 120 HP,Safeline,Doblo-II,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Doblo Combi,1.6 Multijet 120 HP,Premio,Doblo-II,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Doblo,1.6 Multijet 120 HP,Easy,Doblo-II,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Fiat,Doblo,1.6 Multijet 120 HP,Lounge,Doblo-II,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Ford,Focus,1.5 EcoBlue 115 PS,Titanium Stil,C519,2025,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Ford,Focus,1.5 EcoBlue 115 PS,Titanium X,C519,2025,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Ford,Tourneo Courier,1.0 EcoBoost 125 PS,Deluxe,Tourneo Courier / Journey,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Ford,Tourneo Courier,1.0 EcoBoost 125 PS,Titanium,Tourneo Courier / Journey,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Ford,Tourneo Courier,100 kW,Titanium,Tourneo Courier BEV,2025,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Ford,Focus,1.5 Ti-VCT 123 PS,Trend X,C519,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Ford,Focus,1.5 Ti-VCT 123 PS,Trend X,C519,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Ford,Focus,1.5 Ti-VCT 123 PS,Titanium,C519,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Ford,Focus,1.5 Ti-VCT 123 PS,Titanium,C519,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Ford,Focus,1.0 EcoBoost 125 PS,ST-Line,C519,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Ford,Focus,1.5 EcoBlue 120 PS,Trend X,C519,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Ford,Focus,1.5 EcoBlue 120 PS,Trend X,C519,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Ford,Focus,1.5 EcoBlue 120 PS,Titanium,C519,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Ford,Focus,1.5 EcoBlue 120 PS,Titanium,C519,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Ford,Focus,1.5 EcoBlue 120 PS,ST-Line,C519,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Ford,Fiesta,1.1L 85 PS,Trend,Fiesta-Mk8,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Ford,Fiesta,1.0 EcoBoost 100 PS,Titanium,Fiesta-Mk8,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Ford,Fiesta,1.5 TDCi 85 PS,Trend,Fiesta-Mk8,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Ford,Fiesta,1.5 TDCi 85 PS,Titanium,Fiesta-Mk8,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Ford,Tourneo Courier,1.5 TDCi 75 PS,Trend,Tourneo Courier,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Ford,Tourneo Courier,1.5 TDCi 75 PS,Deluxe,Tourneo Courier,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Ford,Tourneo Courier,1.5 TDCi 95 PS,Titanium,Tourneo Courier,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Ford,Tourneo Courier,1.5 TDCi 95 PS,Blackline,Tourneo Courier,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Ford,Tourneo Courier,1.5 TDCi 95 PS,Titanium Plus,Tourneo Courier,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Ford,Tourneo Courier,1.5 TDCi 75 PS,Trend,Tourneo Courier,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Ford,Tourneo Courier,1.5 TDCi 75 PS,Deluxe,Tourneo Courier,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Ford,Tourneo Courier,1.5 TDCi 100 PS,Deluxe,Tourneo Courier,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Ford,Tourneo Courier,1.5 TDCi 100 PS,Titanium,Tourneo Courier,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Ford,Tourneo Courier,1.5 TDCi 100 PS,Blackline,Tourneo Courier,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Ford,Tourneo Courier,1.5 TDCi 100 PS,Titanium Plus,Tourneo Courier,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Ford,Tourneo Custom,2.0 EcoBlue 130 PS,Trend,Tourneo Custom,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Ford,Tourneo Custom,2.0 EcoBlue 170 PS,Titanium,Tourneo Custom,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Ford,Tourneo Custom,2.0 EcoBlue 170 PS,Titanium,Tourneo Custom,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Ford,Tourneo Custom,2.0 EcoBlue 170 PS,Titanium Plus,Tourneo Custom,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Ford,Tourneo Custom,2.0 EcoBlue Hibrit 185 PS,Titanium Plus,Tourneo Custom,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Ford,Tourneo Custom,2.0 EcoBlue Upgrade 185 PS,Titanium Plus,Tourneo Custom,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Ford,Puma,1.0 EcoBoost 95 PS,Style,Puma,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Ford,Puma,1.0 EcoBoost 125 PS,Style,Puma,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Ford,Puma,1.0 EcoBoost 125 PS,ST-Line,Puma,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Ford,Puma,1.0 EcoBoost mHEV 155 PS,ST-Line,Puma,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Ford,Kuga,1.5 EcoBoost 120 PS,Style,Kuga-III,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Ford,Kuga,1.5 EcoBlue 120 PS,Style,Kuga-III,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Ford,Kuga,1.5 EcoBlue 120 PS,Style,Kuga-III,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Ford,Kuga,1.5 EcoBlue 120 PS,Titanium,Kuga-III,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Ford,Kuga,1.5 EcoBlue 120 PS,ST-Line,Kuga-III,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Ford,Kuga,2.5 PHEV 225 PS,ST-Line,Kuga-III,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Honda,HR-V,1.5 e:HEV 131 PS,Elegance,RV,2022,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Honda,HR-V,1.5 e:HEV 131 PS,Advance,RV,2022,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Honda,HR-V,1.5 e:HEV 131 PS,Style+,RV,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Honda,HR-V,1.5 130 PS,Executive,RU,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Honda,HR-V,1.5 130 PS,Executive,RU,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Honda,HR-V,1.5 VTEC Turbo 182 PS,Sport,RU,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Honda,HR-V,1.5 130 PS,Executive,RU,2021,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Honda,HR-V,1.5 VTEC Turbo 182 PS,Sport,RU,2021,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Honda,Civic,1.5 VTEC Turbo 182 PS,Elegance,FC,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Honda,Civic,1.5 VTEC Turbo 182 PS,Executive+,FC,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Honda,Civic,1.6 Dream Eco,Dream,FC,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Honda,Civic,1.6 Elegance Eco,Elegance,FC,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Honda,Civic,1.6 Executive Eco,Executive,FC,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Honda,Civic,1.6 Elegance Dizel,Elegance,FC,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Honda,Civic,1.6 125 PS,Elegance,FC,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Honda,Civic,1.5 VTEC Turbo 182 PS,Elegance,FC,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Honda,Civic,1.5 VTEC Turbo 182 PS,Executive+,FC,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Honda,Civic,1.6 ECO,Elegance,FC,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Honda,Civic,1.6 ECO,Executive,FC,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Honda,Civic,1.6 125 PS,Elegance,FC,2021,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Honda,Civic,1.6 ECO,Elegance,FC,2021,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Honda,Civic,1.6 ECO,Executive,FC,2021,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Honda,Civic,1.5 VTEC Turbo 182 PS,Elegance,FC,2021,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Honda,Civic,1.5 VTEC Turbo 182 PS,Executive+,FC,2021,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Hyundai,i20,1.0 T-GDI 90 PS,Jump,BC3,2023,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Hyundai,i20,1.0 T-GDI 90 PS,Style,BC3,2023,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Hyundai,i20,1.0 T-GDI 90 PS,Elite,BC3,2023,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
@@ -200,6 +479,36 @@ Hyundai,Tucson,1.6 T-GDI 180 PS,Elite,NX4,2024,2026,VERIFIED_MULTI_SOURCE,CREATE
 Hyundai,Tucson,1.6 T-GDI 180 PS,Elite Plus,NX4,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Hyundai,Tucson,1.6 CRDi 136 PS,Comfort,NX4,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Hyundai,Tucson,1.6 T-GDI 215 PS HEV,Elite,NX4 HEV,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Hyundai,i20,1.2 MPI 84 PS,Jump,GB,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Hyundai,i20,1.2 MPI 84 PS,Style,GB,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Hyundai,i20,1.4 MPI 100 PS,Jump,GB,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Hyundai,i20,1.4 MPI 100 PS,Style,GB,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Hyundai,i20,1.4 MPI 100 PS,Elite,GB,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Hyundai,i20,1.0 T-GDI 100 PS,Style,GB,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Hyundai,i20,1.0 T-GDI 100 PS,Elite,GB,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Hyundai,i20,1.4 CRDi 90 PS,Jump,GB,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Hyundai,i20,1.4 CRDi 90 PS,Style,GB,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Hyundai,i20,1.4 CRDi 90 PS,Elite,GB,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Hyundai,i20,1.4 MPI 100 PS,Jump,BC3,2020,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Hyundai,i20,1.4 MPI 100 PS,Style,BC3,2020,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Hyundai,i20,1.4 MPI 100 PS,Jump,BC3,2020,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Hyundai,i20,1.4 MPI 100 PS,Style,BC3,2020,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Hyundai,i20,1.4 MPI 100 PS,Elite,BC3,2020,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Hyundai,i20,1.0 T-GDI 100 PS,Style,BC3,2020,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Hyundai,i20,1.0 T-GDI 100 PS,Elite,BC3,2020,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Hyundai,Bayon,1.4 MPI 100 PS,Jump,BC3 SUV,2021,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Hyundai,Bayon,1.4 MPI 100 PS,Style,BC3 SUV,2021,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Hyundai,Bayon,1.4 MPI 100 PS,Elite,BC3 SUV,2021,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Hyundai,Bayon,1.0 T-GDI 100 PS,Style,BC3 SUV,2021,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Hyundai,Bayon,1.0 T-GDI 100 PS,Elite,BC3 SUV,2021,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Hyundai,Tucson,1.6 T-GDI 177 PS,Power Edition,TL,2020,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Hyundai,Tucson,1.6 CRDi 136 PS,Smart,TL,2020,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Hyundai,Tucson,1.6 CRDi 136 PS,Elite,TL,2020,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Hyundai,Tucson,1.6 CRDi 136 PS,Elite Plus,TL,2020,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Hyundai,Tucson,1.6 T-GDI 180 PS,Comfort,NX4,2021,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Hyundai,Tucson,1.6 CRDi 136 PS,Prime,NX4,2021,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Hyundai,Tucson,1.6 CRDi 136 PS,Elite,NX4,2021,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Hyundai,Tucson,1.6 CRDi 136 PS,Elite Plus,NX4,2021,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Jaguar,E-Pace,P250,R-Dynamic S,X540,2024,2024,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Jaguar,E-Pace,P250,R-Dynamic SE,X540,2024,2024,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Jaguar,E-Pace,P250,R-Dynamic HSE,X540,2024,2024,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
@@ -212,16 +521,56 @@ Jeep,Compass,E-Hybrid,Summit,,2025,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engin
 Jeep,Avenger,1.2 110 HP E-Hybrid,Summit,,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Jeep,Avenger,1.2 145 HP 4xe,Overland,,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Jeep,Avenger,115 kW Electric,Summit,,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Jeep,Renegade,1.3 150 hp DDCT,Longitude,BU,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Jeep,Renegade,1.6 120 hp DDCT,Longitude,BU,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Jeep,Renegade,1.6 120 hp DDCT,Limited,BU,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Jeep,Renegade,1.3 180 hp AT,Longitude,BU,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Jeep,Wrangler,2.0 272 hp 8AT,Rubicon,JL,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Jeep,Compass,1.4 170 hp 9AT,Limited,MP,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Jeep,Compass,1.4 170 hp 9AT,Limited Executive,MP,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Kia,Sportage,1.6L 150 PS DCT,Live,NQ5,2024,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Kia,Sportage,1.6L 150 PS DCT,Vision,NQ5,2024,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Kia,Sportage,1.6L 150 PS DCT,Cool,NQ5,2024,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Kia,Sportage,1.6L 150 PS DCT,Elegance,NQ5,2024,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Kia,Sportage,1.6L 150 PS DCT,Prestige,NQ5,2024,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Kia,Sportage,1.6L 180 PS 4X4 DCT,GT-Line,NQ5,2024,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Kia,Sportage,1.6L 132 PS,Cool,QL,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Kia,Sportage,1.6L CRDi 136 PS DCT,Cool,QL,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Kia,Sportage,1.6L CRDi 136 PS DCT,Elegance,QL,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Kia,Sportage,1.6L CRDi 136 PS DCT 4x4,Elegance,QL,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Kia,Sportage,1.6L CRDi 136 PS DCT,Prestige,QL,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Kia,Sportage,1.6L CRDi 136 PS DCT 4x4,Prestige,QL,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Kia,Sportage,1.6L CRDi 136 PS DCT,Prestige Design Pack,QL,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Kia,Sportage,1.6L CRDi 136 PS DCT 4x4,Prestige Design Pack,QL,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Kia,Sportage,1.6L CRDi 136 PS DCT 4x4,GT-Line,QL,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Kia,Picanto,1.0L 67 PS,Live,JA,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Kia,Stonic,1.4L 100 PS,Elegance Sunroof,YB,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Kia,Stonic,1.0L T-GDI 120 PS DCT,Elegance Turbo Sunroof,YB,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Kia,Stonic,1.0L T-GDI 120 PS DCT,Elegance Design Pack,YB,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Kia,Stonic,1.4L 100 PS,Elegance Design Pack,YB,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Kia,Sorento,2.0L Dizel,Prestige,UM,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Kia,Sorento,2.0L Dizel,GT-Line,UM,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Land Rover,Defender,110 3.0D Mild Hybrid 200 bg,ULTIMATE,L663,2020,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Land Rover,Defender,110 2.0 PHEV 300 bg,X-DYNAMIC HSE,L663,2020,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Land Rover,Defender,110 4.4 Mild Hybrid 635 bg,OCTA,L663,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Land Rover,Defender,130 3.0D Mild Hybrid 350 bg,X-DYNAMIC HSE,L663,2022,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Land Rover,Range Rover Evoque,1.5 MHEV 160 bg,S,L551,2024,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Land Rover,Range Rover Evoque,1.5 MHEV 160 bg,DYNAMIC SE,L551,2024,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Land Rover,Range Rover Evoque,1.5 PHEV 269 bg,S,L551,2024,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Land Rover,Range Rover Evoque,1.5 PHEV 269 bg,DYNAMIC SE,L551,2024,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Land Rover,Range Rover Velar,2.0D MHEV 204 bg,S,L560,2024,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Land Rover,Range Rover Velar,2.0D MHEV 204 bg,DYNAMIC SE,L560,2024,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Land Rover,Discovery Sport,1.5 PHEV 269 bg,DYNAMIC S,L550,2024,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Land Rover,Discovery Sport,1.5 PHEV 269 bg,LANDMARK,L550,2024,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Land Rover,Range Rover Sport,3.0D MHEV 300 bg,DYNAMIC SE,L461,2023,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Land Rover,Range Rover Sport,3.0D MHEV 300 bg,DYNAMIC HSE,L461,2023,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Land Rover,Range Rover Sport,3.0D MHEV 350 bg,AUTOBIOGRAPHY,L461,2023,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Land Rover,Range Rover Sport,4.4 MHEV 615 bg,SV BLACK,L461,2023,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Land Rover,Range Rover,SWB 3.0D MHEV 300 bg,SIGNATURE,L460,2022,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Land Rover,Range Rover,SWB 3.0D MHEV 300 bg,SIGNATURE PLUS,L460,2022,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Land Rover,Range Rover,SWB 3.0D MHEV 350 bg,AUTOBIOGRAPHY,L460,2022,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Land Rover,Range Rover,SWB 3.0 PHEV 460 bg,AUTOBIOGRAPHY,L460,2022,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Land Rover,Range Rover,SWB 4.4 MHEV 530 bg,AUTOBIOGRAPHY,L460,2022,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Lexus,LBX,1.5 Hybrid E-CVT,Base,,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Lexus,LBX,1.5 Hybrid E-CVT,Elegant,,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Lexus,LBX,1.5 Hybrid E-CVT,Emotion,,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
@@ -229,6 +578,11 @@ Lexus,LBX,1.5 Hybrid E-CVT,Relax,,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,E
 Lexus,LBX,1.5 Hybrid E-CVT,Cool,,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Lexus,NX,350h AWD,Business Plus,,2022,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Lexus,NX,350h AWD,Executive,,2022,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Lexus,RX,350h AWD,Executive,AL10,2023,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Lexus,RX,350h AWD,Exclusive,AL10,2023,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Lexus,RX,500h AWD,F Sport,AL10,2023,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Lexus,LM,350h 4 Koltuklu E-CVT,4-Seat,AW10,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Lexus,LM,350h 7 Koltuklu E-CVT,7-Seat,AW10,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Mazda,CX-5,2.0 SKY-G,Power Sense,,2023,2023,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Mazda,CX-5,2.0 SKY-G,Power Sense Sport,,2023,2023,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Mazda,CX-5,2.0 SKY-G,Power Sense Plus,,2023,2023,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
@@ -240,6 +594,17 @@ Mazda,CX-5,2.0 SKY-G 4x4 AT,Power Sense,KF,2023,2023,VERIFIED_MULTI_SOURCE,CREAT
 Mazda,CX-5,2.0 SKY-G 4x4 AT,Power Sense Sport,KF,2023,2023,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Mazda,CX-5,2.0 SKY-G 4x4 AT,Power Sense Plus,KF,2023,2023,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Mazda,MX-5,1.5 SKY-G,Power Sense,ND,2023,2023,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mazda,Mazda3,1.5 SKY-G,Motion,BP,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mazda,Mazda3,1.5 SKY-G,Reflex,BP,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mazda,Mazda3,1.5 SKY-G,Motion,BP,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mazda,Mazda3,1.5 SKY-G,Reflex,BP,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mazda,Mazda3,1.5 SKY-G,Power,BP,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mazda,Mazda3,1.5 SKY-G,Power Sense,BP,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mazda,Mazda3,1.5 SKY-D,Motion,BP,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mazda,Mazda3,1.5 SKY-D,Reflex,BP,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mazda,Mazda3,1.5 SKY-D,Power Sense,BP,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mazda,CX-5,2.0 SKY-G AT,Power Sense,KF,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mazda,CX-5,2.0 SKY-G AT,Power Sense Plus,KF,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Mercedes-Benz,A Serisi,A 200,AMG Line,W177,2025,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Mercedes-Benz,A Serisi,Mercedes-AMG A 45 S 4MATIC+,Performance,W177,2025,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Mercedes-Benz,A Serisi,A 200,AMG Line,W177,2023,2024,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
@@ -313,6 +678,57 @@ Mercedes-Benz,EQE,EQE 280,AMG Line,V295,2023,2026,VERIFIED_OFFICIAL,CREATE_MODEL
 Mercedes-Benz,EQE,EQE 350 4MATIC,AMG Line,V295,2023,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Mercedes-Benz,EQS,EQS 450 4MATIC,Inspiration,V297,2022,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Mercedes-Benz,EQS,EQS 580 4MATIC,Heritage Edition,V297,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,C Serisi,C 200,Exclusive,W205,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,C Serisi,C 200,AMG,W205,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,C Serisi,C 200 d,AMG,W205,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,C Serisi,C 200 4MATIC,Exclusive,W205,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,C Serisi,C 200 4MATIC,AMG,W205,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,C Serisi,C 200 d,Comfort,W205,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,C Serisi,C 200 d,Exclusive,W205,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,C Serisi,C 200 d,AMG,W205,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,C Serisi,C 180,Comfort,W205,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,C Serisi,C 200 d,Comfort,W205,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,C Serisi,C 200,Exclusive,W205,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,C Serisi,C 200 d,Exclusive,W205,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,C Serisi,C 200,AMG,W205,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,C Serisi,C 200 d,AMG,W205,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,E Serisi,E 180,Avantgarde,W213,2017,2017,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,E Serisi,E 180,Exclusive,W213,2017,2017,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,E Serisi,E 180,AMG,W213,2017,2017,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,E Serisi,E 300,Avantgarde,W213,2017,2017,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,E Serisi,E 300,Exclusive,W213,2017,2017,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,E Serisi,E 300,AMG,W213,2017,2017,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,E Serisi,E 220 d 4MATIC,Avantgarde,W213,2017,2017,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,E Serisi,E 220 d 4MATIC,Exclusive,W213,2017,2017,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,E Serisi,E 220 d 4MATIC,AMG,W213,2017,2017,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,E Serisi,E 350 d,Avantgarde,W213,2017,2017,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,E Serisi,E 350 d,Exclusive,W213,2017,2017,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,E Serisi,E 350 d,AMG,W213,2017,2017,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,E Serisi,Mercedes-AMG E 63 4MATIC+,Performance,W213,2017,2017,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,E Serisi,E 180,Avantgarde,W213,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,A Serisi,A 180,Style,W177,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,A Serisi,A 180 d,Style,W177,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,A Serisi,A 200,AMG,W177,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,A Serisi,A 180 d,AMG,W177,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,A Serisi,A 200 Sedan,Style,W177,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,A Serisi,A 180 d Sedan,Style,W177,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,A Serisi,A 200 Sedan,AMG,W177,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,A Serisi,A 180 d Sedan,AMG,W177,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,A Serisi,A 180 Sedan,Progressive,V177,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,A Serisi,A 180 Sedan,Progressive BlackArt Edition,V177,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,A Serisi,A 200 Sedan,Style,V177,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,A Serisi,A 200 Sedan,AMG,V177,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,A Serisi,A 180 d Sedan,Style,V177,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,A Serisi,A 180 d Sedan,AMG,V177,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,C Serisi,C 200 4MATIC,Avantgarde,W206,2024,2024,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,C Serisi,C 200 4MATIC,AMG,W206,2024,2024,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,C Serisi,Mercedes-AMG C 43 4MATIC,Performance,W206,2024,2024,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,E Serisi,E 180,Exclusive,W214,2024,2024,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,E Serisi,E 180,AMG,W214,2024,2024,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,E Serisi,E 180,Edition 1 Exclusive,W214,2024,2024,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,E Serisi,E 180,Edition 1 AMG,W214,2024,2024,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,E Serisi,E 220 d 4MATIC,Exclusive,W214,2024,2024,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mercedes-Benz,E Serisi,E 220 d 4MATIC,AMG,W214,2024,2024,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 MG,ZS Hybrid+,Hybrid+ 197 PS,Luxury Cam Tavanlı,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 MG,HS Hybrid+,Hybrid+,Luxury,,2025,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 MG,HS,Gasoline,Luxury,,2025,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
@@ -324,11 +740,39 @@ Mini,Countryman,Countryman C,John Cooper Works,,2024,2026,VERIFIED_MULTI_SOURCE,
 Mini,Cooper,Cooper 3 Kapı,Favoured,,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Mini,Cooper,Cooper S 3 Kapı,Favoured,,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Mini,Cooper,Cooper 5 Kapı,Favoured,,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mini,Cooper,Cooper 3 Kapı 1.5,Türkiye Paketi,F56,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mini,Cooper,Cooper 3 Kapı 1.5,Salt,F56,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mini,Cooper,Cooper 3 Kapı 1.5,Pepper,F56,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mini,Cooper,Cooper 3 Kapı 1.5,Chili,F56,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mini,Cooper,Cooper D 3 Kapı 1.5,Türkiye Paketi,F56,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mini,Cooper,Cooper D 3 Kapı 1.5,Salt,F56,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mini,Cooper,Cooper D 3 Kapı 1.5,Pepper,F56,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mini,Cooper,Cooper D 3 Kapı 1.5,Chili,F56,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mini,Cooper,Cooper 5 Kapı 1.5,Türkiye Paketi,F56,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mini,Cooper,Cooper 5 Kapı 1.5,Salt,F56,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mini,Cooper,Cooper 5 Kapı 1.5,Pepper,F56,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mini,Cooper,Cooper 5 Kapı 1.5,Chili,F56,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mini,Cooper,Cooper D 5 Kapı 1.5,Türkiye Paketi,F56,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mini,Cooper,Cooper D 5 Kapı 1.5,Salt,F56,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mini,Cooper,Cooper D 5 Kapı 1.5,Pepper,F56,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mini,Cooper,Cooper D 5 Kapı 1.5,Chili,F56,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mini,Countryman,Cooper Countryman 1.5,Türkiye Paketi,F60,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mini,Countryman,Cooper Countryman 1.5,Salt,F60,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Mitsubishi,Space Star,1.2,Intense,,2022,2024,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Mitsubishi,ASX,1.6,Intense,GA0,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Mitsubishi,ASX,1.6,Invite,GA0,2017,2017,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Mitsubishi,ASX,1.6 D,Intense,GA0,2017,2017,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Mitsubishi,ASX,1.6 D,Instyle,GA0,2017,2017,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mitsubishi,Eclipse Cross,1.5 Invite MT,Invite,GK,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mitsubishi,Eclipse Cross,1.5 Invite CVT,Invite,GK,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mitsubishi,Eclipse Cross,1.5 Intense CVT,Intense,GK,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mitsubishi,Eclipse Cross,1.5 Instyle CVT,Instyle,GK,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mitsubishi,L200,4x2 Tornado MT,Tornado,KJ,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mitsubishi,L200,4x2 Tornado AT,Tornado,KJ,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mitsubishi,L200,4x4 Storm MT,Storm,KJ,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mitsubishi,L200,4x4 Tornado MT,Tornado,KJ,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mitsubishi,L200,4x4 Blizzard AT,Blizzard,KJ,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Mitsubishi,L200,4x4 Premium AT,Premium,KJ,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Nissan,Qashqai,1.3 DIG-T Mild Hybrid 158PS,Designpack,J12,2022,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Nissan,Qashqai,1.3 DIG-T Mild Hybrid 158PS,Skypack,J12,2022,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Nissan,Qashqai,1.3 DIG-T Mild Hybrid 158PS,Skypack 4x4,J12,2022,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
@@ -343,18 +787,95 @@ Nissan,Juke,1.0 DIG-T 115PS,Platinum,F16,2020,2026,VERIFIED_MULTI_SOURCE,CREATE_
 Nissan,Juke,1.0 DIG-T 115PS,Platinum Premium,F16,2020,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Nissan,X-Trail,1.5 VC-T Mild Hybrid 163PS,Platinum,T33,2023,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Nissan,X-Trail,1.5 VC-T Mild Hybrid 163PS,Platinum Premium,T33,2023,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Nissan,Qashqai,1.3 DIG-T 160 DCT,Visia,J11,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Nissan,Qashqai,1.3 DIG-T 160 DCT,Tekna,J11,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Nissan,Qashqai,1.3 DIG-T 160 DCT,Sky Pack,J11,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Nissan,Qashqai,1.3 DIG-T 160 DCT,Platinum Premium Pack,J11,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Nissan,Qashqai,1.5 dCi 115,Visia,J11,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Nissan,Qashqai,1.5 dCi 115,Tekna,J11,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Nissan,Qashqai,1.5 dCi 115,Sky Pack,J11,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Nissan,Qashqai,1.5 dCi 115 DCT,Visia,J11,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Nissan,Qashqai,1.5 dCi 115 DCT,Tekna,J11,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Nissan,Qashqai,1.5 dCi 115 DCT,Sky Pack,J11,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Nissan,Qashqai,1.5 dCi 115 DCT,Platinum Premium Pack,J11,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Nissan,Juke,1.0 DIG-T 115,Tekna,F16,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Nissan,Juke,1.0 DIG-T 115 DCT,Tekna,F16,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Nissan,Juke,1.0 DIG-T 115 DCT,Platinum,F16,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Nissan,Juke,1.0 DIG-T 115 DCT,Platinum Perso,F16,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Nissan,Juke,1.0 DIG-T 115 DCT,Platinum Premium,F16,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Opel,Corsa,1.2 100 HP,Edition,F,2024,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Opel,Corsa,1.2 Hybrid 110 (100 HP),Edition,F,2024,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Opel,Corsa,1.2 Hybrid 145 (136 HP),GS,F,2024,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Opel,Corsa,100 kW,GS,F EV,2024,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Opel,Astra,1.5 130 HP Dizel,Edition,L,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Opel,Astra,1.5 130 HP Dizel,GS,L,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Opel,Corsa,1.2 70 HP,Essentia,E,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Opel,Corsa,1.2 70 HP,Enjoy,E,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Opel,Corsa,1.4 90 HP,Essentia,E,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Opel,Corsa,1.4 90 HP,Design,E,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Opel,Corsa,1.4 90 HP,Enjoy,E,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Opel,Corsa,1.4 90 HP,120.Yıl Özel Seri,E,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Opel,Corsa,1.2 75 HP,Essential,F,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Opel,Corsa,1.2 100 HP,Edition,F,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Opel,Corsa,1.5 100 HP Dizel,Edition,F,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Opel,Corsa,1.2 100 HP,Elegance,F,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Opel,Corsa,1.2 100 HP,Ultimate,F,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Opel,Astra,1.4 150 HP,Enjoy,K,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Opel,Astra,1.4 150 HP,Dynamic,K,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Opel,Astra,1.4 150 HP,120.Yıl Özel Seri,K,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Opel,Astra,1.4 150 HP,Dynamic,K,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Opel,Astra,1.4 150 HP,Excellence,K,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Opel,Astra,1.6 Dizel 136 HP,Dynamic,K,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Opel,Astra,1.6 Dizel 136 HP,120.Yıl Özel Seri,K,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Opel,Astra,1.6 Dizel 136 HP,Elite,K,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Opel,Astra,1.6 Dizel 136 HP,Dynamic,K,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Opel,Astra,1.6 Dizel 136 HP,Excellence,K,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Opel,Crossland,1.2 110 HP,Enjoy,P2UO,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Opel,Crossland,1.2 110 HP,120.Yıl Özel Seri,P2UO,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Opel,Crossland,1.2 130 HP,Enjoy,P2UO,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Opel,Crossland,1.2 130 HP,120.Yıl Özel Seri,P2UO,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Opel,Crossland,1.5 Dizel 120 HP,Enjoy,P2UO,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Opel,Crossland,1.5 Dizel 120 HP,120.Yıl Özel Seri,P2UO,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Opel,Crossland,1.5 Dizel 120 HP,Excellence,P2UO,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Opel,Crossland,1.2 130 HP,Essentia,P2UO,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Opel,Crossland,1.2 130 HP,Enjoy,P2UO,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Opel,Crossland,1.5 Dizel 120 HP,Enjoy,P2UO,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Opel,Crossland,1.5 Dizel 120 HP,Excellence,P2UO,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Peugeot,3008,1.2 Hybrid 145 hp eDCS6,Allure,P84/STLA Medium,2024,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Peugeot,3008,1.2 Hybrid 145 hp eDCS6,GT,P84/STLA Medium,2024,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Peugeot,E-3008,157 kW (210 hp),Allure,STLA Medium EV,2024,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Peugeot,E-3008,157 kW (210 hp),GT,STLA Medium EV,2024,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Peugeot,208,E-208 100 kW,GT,P21 EV,2024,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Peugeot,308,E-308 115 kW,GT,P51 EV,2024,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Peugeot,208,1.2 PureTech 82 hp,Signature,P21,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Peugeot,208,1.2 PureTech 110 hp,Signature,P21,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Peugeot,308,1.2 PureTech 130 hp,Style,T9,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Peugeot,308,1.2 PureTech 130 hp,Style,T9,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Peugeot,308,1.5 BlueHDi 130 hp,Style,T9,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Peugeot,3008,1.2 PureTech 130 hp,Active,P84,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Peugeot,3008,1.6 PureTech 180 hp,Active,P84,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Peugeot,3008,1.6 PureTech 180 hp,GT-Line,P84,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Peugeot,3008,1.5 BlueHDi 130 hp,Active,P84,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Peugeot,3008,1.5 BlueHDi 130 hp,Allure Selection,P84,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Peugeot,3008,1.5 BlueHDi 130 hp,GT-Line,P84,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Peugeot,2008,1.5 BlueHDi 120 hp,Allure,2008-I,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Peugeot,2008,1.5 BlueHDi 120 hp,GT-Line,2008-I,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Peugeot,2008,1.2 PureTech 130 hp,Active,2008-II,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Peugeot,2008,1.2 PureTech 130 hp,Allure,2008-II,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Peugeot,2008,1.2 PureTech 130 hp,GT-Line,2008-II,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Peugeot,2008,1.2 PureTech 155 hp,GT,2008-II,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Peugeot,2008,1.5 BlueHDi 100 hp,Active,2008-II,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Peugeot,2008,1.5 BlueHDi 130 hp,Active,2008-II,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Peugeot,2008,1.5 BlueHDi 130 hp,Allure,2008-II,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Peugeot,2008,1.5 BlueHDi 130 hp,GT-Line,2008-II,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Peugeot,3008,1.2 PureTech 130 hp,Active Prime,P84,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Peugeot,3008,1.6 PureTech 180 hp,Allure,P84,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Peugeot,3008,1.6 PureTech 180 hp,GT Selection,P84,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Peugeot,3008,1.6 PureTech 180 hp,GT,P84,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Peugeot,3008,1.5 BlueHDi 130 hp,Active Prime,P84,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Peugeot,3008,1.5 BlueHDi 130 hp,Allure,P84,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Peugeot,3008,1.5 BlueHDi 130 hp,GT Selection,P84,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Peugeot,3008,1.5 BlueHDi 130 hp,GT,P84,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Porsche,Macan,Macan,,,2025,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Porsche,Macan,4,,,2025,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Porsche,Macan,4S,,,2025,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
@@ -436,11 +957,50 @@ Renault,Kangoo,1.5 115,Van,,2024,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not 
 Renault,Clio,1.0 TCe X-Tronic 90 bg,Icon,BV,2023,2023,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Renault,Clio,1.0 TCe X-Tronic 90 bg,Touch,BV,2023,2023,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Renault,Clio,1.0 TCe 90 bg,Touch,BV,2023,2023,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Renault,Clio,0.9 TCe,Joy,Clio-IV,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Renault,Clio,1.2,Joy,Clio-IV,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Renault,Clio,1.2 TCe,Joy,Clio-IV,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Renault,Clio,1.5 dCi,Joy,Clio-IV,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Renault,Clio,1.2 TCe,Touch,Clio-IV,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Renault,Clio,1.5 dCi,Touch,Clio-IV,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Renault,Clio,1.5 dCi,Touch,Clio-IV,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Renault,Clio,1.2 TCe,Icon,Clio-IV,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Renault,Clio,1.5 dCi,Icon,Clio-IV,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Renault,Clio,1.5 dCi,Icon,Clio-IV,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Renault,Megane,1.6 16V,Joy,Megane-IV,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Renault,Megane,1.5 dCi,Joy,Megane-IV,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Renault,Megane,1.5 dCi,Joy,Megane-IV,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Renault,Megane,1.2 TCe,Touch,Megane-IV,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Renault,Megane,1.5 dCi,Touch,Megane-IV,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Renault,Megane,1.5 dCi,Touch,Megane-IV,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Renault,Megane,1.2 TCe,Icon,Megane-IV,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Renault,Megane,1.5 dCi,Icon,Megane-IV,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Renault,Megane,1.5 dCi,Icon,Megane-IV,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Renault,Captur,1.5 dCi,Touch,Captur-I,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Renault,Captur,1.5 dCi,Touch,Captur-I,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Renault,Captur,1.5 dCi,Icon,Captur-I,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Renault,Captur,1.5 dCi,Icon,Captur-I,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Seat,Ibiza,1.0 TSI 116 PS,Style Plus,KJ,2025,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Seat,Leon,1.5 eTSI 116 PS mHEV,Style,KL,2025,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Seat,Leon,1.5 eHybrid 204 PS,FR,KL PHEV,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Seat,Ateca,1.5 EcoTSI ACT 150 PS,Style Plus,Ateca,2025,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Seat,Ateca,1.5 EcoTSI ACT 150 PS,FR Dark Edition,Ateca,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Seat,Ibiza,1.0 EcoTSI 115 HP,Style,KJ,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Seat,Ibiza,1.0 EcoTSI 115 HP,Style,KJ,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Seat,Leon,1.5 EcoTSI ACT 150 HP,FR,5F,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Seat,Leon,1.5 EcoTSI ACT 150 HP,Xcellence,5F,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Seat,Leon,1.6 TDI 115 HP,Style,5F,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Seat,Leon,1.6 TDI 115 HP,Xcellence,5F,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Seat,Leon,1.6 TDI 115 HP,FR,5F,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Seat,Leon,1.0 EcoTSI 115 HP,Style,5F,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Seat,Leon,1.5 EcoTSI 130 HP,FR,5F,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Seat,Leon,1.5 EcoTSI ACT 150 HP,Style,5F,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Seat,Leon,1.5 EcoTSI ACT 150 HP,FR,5F,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Seat,Leon,1.5 EcoTSI ACT 150 HP,Xcellence,5F,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Seat,Ateca,1.6 TDI 115 HP,Xcellence,Ateca,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Seat,Ateca,1.5 EcoTSI ACT 150 HP,Xcellence,Ateca,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Seat,Ateca,1.5 EcoTSI ACT 150 HP,FR,Ateca,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Seat,Ateca,1.6 TDI 115 HP,Xcellence,Ateca,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Skoda,Fabia,1.0 TSI 115 PS,Premium,NJ,2022,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Skoda,Fabia,1.5 TSI 150 PS,Monte Carlo,NJ,2022,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Skoda,Octavia,1.5 TSI mHEV 150 PS,Elite,NX,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
@@ -453,17 +1013,61 @@ Skoda,Superb,1.5 TSI mHEV 150 PS,Premium,IV,2024,2026,VERIFIED_MULTI_SOURCE,CREA
 Skoda,Superb,1.5 TSI mHEV 150 PS,Prestige,IV,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Skoda,Superb,1.5 TSI mHEV 150 PS,Sportline,IV,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Skoda,Superb,1.5 TSI mHEV 150 PS,L&K Crystal,IV,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Skoda,Fabia,1.0 75 PS,Ambition,NJ3,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Skoda,Fabia,1.0 TSI 110 PS,Style,NJ3,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Skoda,Fabia,1.0 TSI 95 PS,Premium,NJ3,2021,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Skoda,Octavia,1.0 TSI 115 PS,Ambition,5E,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Skoda,Octavia,1.0 TSI 115 PS,Style,5E,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Skoda,Octavia,1.5 TSI 150 PS ACT,Sport,5E,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Skoda,Octavia,1.6 TDI 115 PS,Ambition,5E,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Skoda,Octavia,1.6 TDI 115 PS,Style,5E,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Skoda,Octavia,1.6 TDI 115 PS,Ambition,5E,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Skoda,Octavia,1.6 TDI 115 PS,Optimal,5E,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Skoda,Octavia,1.6 TDI 115 PS,Style,5E,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Skoda,Octavia,1.5 TSI 150 PS ACT,Style,5E,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Skoda,Octavia,1.5 TSI 150 PS ACT,Sport,5E,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Skoda,Octavia,1.0 TSI ACT 110 PS,Elite,NX,2021,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Skoda,Octavia,1.5 TSI ACT 150 PS,Elite,NX,2021,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Skoda,Octavia,1.0 TSI ACT 110 PS,Premium,NX,2021,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Skoda,Octavia,1.5 TSI ACT 150 PS,Premium,NX,2021,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Skoda,Superb,1.5 TSI 150 PS ACT,Active,3V,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Skoda,Superb,1.5 TSI 150 PS ACT,Style,3V,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Skoda,Superb,1.5 TSI 150 PS ACT,Prestige,3V,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Skoda,Superb,1.6 TDI 120 PS,Comfort,3V,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Skoda,Superb,1.6 TDI 120 PS,Style,3V,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Skoda,Superb,1.6 TDI 120 PS,Prestige,3V,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Skoda,Superb,2.0 TDI 190 PS 4x4,L&K,3V,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Skoda,Superb,1.5 TSI ACT 150 PS,Elite,3V,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Skoda,Superb,1.5 TSI ACT 150 PS,Premium,3V,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Skoda,Superb,1.5 TSI ACT 150 PS,Prestige,3V,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Skoda,Superb,1.6 TDI SCR 120 PS,Elite,3V,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Skoda,Superb,1.6 TDI SCR 120 PS,Premium,3V,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Skoda,Superb,1.6 TDI SCR 120 PS,Prestige,3V,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Skoda,Superb,2.0 TDI SCR 190 PS 4x4,L&K Crystal,3V,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Skoda,Superb,1.5 TSI ACT 150 PS,Elite,3V,2021,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Skoda,Superb,1.5 TSI ACT 150 PS,Premium,3V,2021,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Skoda,Superb,1.5 TSI ACT 150 PS,Prestige,3V,2021,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Skoda,Superb,1.6 TDI SCR 120 PS,Elite,3V,2021,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Skoda,Superb,1.6 TDI SCR 120 PS,Premium,3V,2021,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Skoda,Superb,1.6 TDI SCR 120 PS,Prestige,3V,2021,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Skoda,Superb,2.0 TDI SCR 190 PS 4x4,L&K Crystal,3V,2021,2021,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Subaru,Forester,2.0i e-BOXER,Style,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Subaru,Forester,2.0i e-BOXER,Fun,,2025,2025,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Subaru,Crosstrek,2.0i e-BOXER,Xclusive,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Subaru,Solterra,Electric,e-Xcellent,,2023,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Subaru,Solterra,Electric,e-Xtreme,,2023,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Subaru,XV,1.6i Lineartronic,Xtreme,GT,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Subaru,XV,1.6i Lineartronic,Xclusive,GT,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Suzuki,Vitara,1.4 MHEV 6AT AllGrip,GL Elegance,,2024,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Suzuki,Swift,1.2 MHEV CVT,GL Techno,,2024,2024,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Suzuki,Swift,1.2 MHEV CVT,GLX Premium,,2024,2024,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Suzuki,Vitara,1.4 MHEV 6AT,GLX Premium,,2024,2024,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Suzuki,Vitara,1.4 MHEV 6AT AllGrip,GL Elegance,,2024,2024,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Suzuki,Jimny,1.5 Allgrip 4AT,GLX,,2024,2024,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Suzuki,S-Cross,1.4 MHEV 6AT,GL Elegance,JY,2024,2024,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Suzuki,S-Cross,1.4 MHEV 6AT AllGrip,GL Elegance,JY,2024,2024,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Suzuki,S-Cross,1.4 MHEV 6AT,GLX Premium,JY,2024,2024,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Suzuki,S-Cross,1.4 MHEV 6AT AllGrip,GLX Premium,JY,2024,2024,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Tesla,Model Y,RWD,,,2025,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Tesla,Model Y,Long Range RWD,Premium,,2025,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Tesla,Model Y,Long Range AWD,Premium,,2025,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
@@ -491,6 +1095,40 @@ Toyota,C-HR,1.8 Hybrid e-CVT,Flame,AX20,2023,2026,VERIFIED_MULTI_SOURCE,CREATE_M
 Toyota,C-HR,1.8 Hybrid e-CVT,Passion,AX20,2023,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Toyota,C-HR,1.8 Hybrid e-CVT,Passion X-Sport,AX20,2023,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Toyota,C-HR,1.8 Hybrid e-CVT,GR SPORT,AX20,2023,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Toyota,Corolla,1.6,Vision,E210,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Toyota,Corolla,1.6 Multidrive S,Vision,E210,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Toyota,Corolla,1.6,Dream,E210,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Toyota,Corolla,1.6 Multidrive S,Dream,E210,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Toyota,Corolla,1.6,Flame,E210,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Toyota,Corolla,1.6 Multidrive S,Flame,E210,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Toyota,Corolla,1.6,Flame X-Pack,E210,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Toyota,Corolla,1.6 Multidrive S,Flame X-Pack,E210,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Toyota,Corolla,1.6 Multidrive S,Passion,E210,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Toyota,Corolla,1.6 Multidrive S,Passion X-Pack,E210,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Toyota,Corolla,1.8 Hybrid e-CVT,Vision,E210,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Toyota,Corolla,1.8 Hybrid e-CVT,Dream,E210,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Toyota,Corolla,1.8 Hybrid e-CVT,Flame,E210,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Toyota,Corolla,1.8 Hybrid e-CVT,Flame X-Pack,E210,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Toyota,Corolla,1.8 Hybrid e-CVT,Passion,E210,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Toyota,Corolla,1.8 Hybrid e-CVT,Passion X-Pack,E210,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Toyota,C-HR,1.8 Hybrid e-CVT,Flame,AX10,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Toyota,C-HR,1.8 Hybrid e-CVT,Passion,AX10,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Toyota,C-HR,1.8 Hybrid e-CVT,Passion X-Pack,AX10,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Toyota,C-HR,1.2 Turbo,Flame,AX10,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Toyota,C-HR,1.2 Turbo Multidrive S,Flame,AX10,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Toyota,C-HR,1.2 Turbo Multidrive S,Passion,AX10,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Toyota,RAV4,2.5 Hybrid 4x4 e-CVT,Flame,XA50,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Toyota,RAV4,2.5 Hybrid 4x4 e-CVT,Passion,XA50,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Toyota,RAV4,2.5 Hybrid 4x4 e-CVT,Passion X-Pack,XA50,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Toyota,RAV4,2.5 Hybrid 4x4 e-CVT,Flame,XA50,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Toyota,RAV4,2.5 Hybrid 4x4 e-CVT,Passion,XA50,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Toyota,RAV4,2.5 Hybrid 4x4 e-CVT,Passion X-Pack,XA50,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Toyota,RAV4,2.5 Hybrid 4x4 e-CVT,Passion X-Sport,XA50,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Toyota,Corolla,1.8 Hybrid e-CVT,Dream,E210,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Toyota,Corolla,1.8 Hybrid e-CVT,Flame,E210,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Toyota,Corolla,1.8 Hybrid e-CVT,Flame X-Pack,E210,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Toyota,Corolla,1.8 Hybrid e-CVT,Passion,E210,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Toyota,Corolla,1.8 Hybrid e-CVT,Passion X-Pack,E210,2020,2020,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Volkswagen,Golf,1.5 TSI 116 PS,Impression,CD,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Volkswagen,Golf,1.5 eTSI 116 PS,Life,CD,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Volkswagen,Golf,1.5 eTSI 116 PS,Style,CD,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
@@ -516,8 +1154,38 @@ Volkswagen,Caddy,2.0 TDI 122 PS,Cargo,SB,2024,2026,VERIFIED_OFFICIAL,CREATE_MODE
 Volkswagen,Caddy,2.0 TDI 122 PS,Cargo Maxi,SB,2024,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Volkswagen,ID.4,125 kW 170 PS,Pure,,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Volkswagen,ID.7,210 kW 286 PS,Pro S,,2024,2026,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Volkswagen,Golf,1.0 TSI,Midline Plus,Mk7,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Volkswagen,Golf,1.0 TSI,Comfortline,Mk7,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Volkswagen,Golf,1.0 TSI,Comfortline,Mk7,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Volkswagen,Golf,1.0 TSI,Highline,Mk7,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Volkswagen,Golf,1.4 TSI,Comfortline,Mk7,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Volkswagen,Golf,1.4 TSI,Comfortline,Mk7,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Volkswagen,Golf,1.4 TSI,Highline,Mk7,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Volkswagen,Golf,1.4 TSI,Highline,Mk7,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Volkswagen,Golf,1.6 TDI,Midline Plus,Mk7,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Volkswagen,Golf,1.6 TDI,Comfortline,Mk7,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Volkswagen,Golf,1.6 TDI,Comfortline,Mk7,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Volkswagen,Golf,1.6 TDI,Highline,Mk7,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Volkswagen,Golf,1.6 TDI,Highline,Mk7,2018,2018,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Volkswagen,Golf,1.0 TSI,Midline Plus,Mk7,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Volkswagen,Golf,1.0 TSI,Midline Plus,Mk7,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Volkswagen,Golf,1.0 TSI,Comfortline,Mk7,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Volkswagen,Golf,1.0 TSI,Highline,Mk7,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Volkswagen,Golf,1.5 TSI,Comfortline,Mk7,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Volkswagen,Golf,1.5 TSI,Highline,Mk7,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Volkswagen,Golf,1.6 TDI,Comfortline,Mk7,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Volkswagen,Golf,1.6 TDI,Comfortline,Mk7,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Volkswagen,Golf,1.6 TDI,Highline,Mk7,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Volkswagen,Golf,1.6 TDI,Highline,Mk7,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Volvo,XC60,B5 AWD Mild hybrid,Plus Dark,,2024,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Volvo,XC60,B5 AWD Mild hybrid,Plus Bright,,2024,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Volvo,XC60,T8 AWD Plug-in hybrid,Plus Dark,,2024,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Volvo,EX40,Single Motor Extended Range 150kW,Ultra,,2024,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
 Volvo,V60,B4 FWD Mild hybrid,Plus Dark,,2024,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Volvo,XC60,2.0 D4,Momentum,SPA/XC60,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Volvo,XC60,2.0 D4,R-Design,SPA/XC60,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Volvo,XC60,2.0 D4,Inscription,SPA/XC60,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Volvo,XC90,2.0 D5,Momentum,SPA/XC90,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Volvo,XC90,2.0 D5,Inscription,SPA/XC90,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Volvo,XC90,2.0 D5,R-Design,SPA/XC90,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+Volvo,XC90,2.0 T8,Momentum,SPA/XC90,2019,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth

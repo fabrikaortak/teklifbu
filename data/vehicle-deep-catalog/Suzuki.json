@@ -1,8 +1,8 @@
 {
   "brand": "Suzuki",
   "brandSlug": "suzuki",
-  "version": "2026.08-deep-suzuki-v1-current-tr",
-  "generatedAt": "2026-08-07T09:18:08.010Z",
+  "version": "2026.08-deep-suzuki-v2-premium",
+  "generatedAt": "2026-08-07T10:15:27.277Z",
   "seriesCovered": [
     "Jimny",
     "S-Cross",
@@ -329,20 +329,165 @@
           "role": "secondary"
         }
       ]
+    },
+    {
+      "brand": "Suzuki",
+      "series": "S-Cross",
+      "model": "1.4 MHEV 6AT",
+      "trim": "GL Elegance",
+      "generation": "S-Cross Hybrid TR MY2024",
+      "generationCode": "JY",
+      "yearFrom": 2024,
+      "yearTo": 2024,
+      "fuelType": "HYBRID",
+      "engineVolume": "1373",
+      "powerHp": "129",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Ağustos 2024 S-Cross 1.4 MHEV 6AT GL Elegance — Onedio citing Suzuki TR list + official price hub.",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/suzuki-fiyat-listesi-agustos-2024-iste-suzuki-swift-vitara-s-cross-ve-jimny-guncel-fiyatlari-1238324",
+          "title": "Suzuki Ağustos 2024 Swift/Vitara/S-Cross/Jimny listesi",
+          "date": "2024-08-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "onedio.com"
+        },
+        {
+          "url": "https://www.suzuki.com.tr/tr/otomobil/fiyat-listesi.html",
+          "title": "Suzuki Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary",
+          "publisher": "Suzuki Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "Suzuki",
+      "series": "S-Cross",
+      "model": "1.4 MHEV 6AT AllGrip",
+      "trim": "GL Elegance",
+      "generation": "S-Cross Hybrid TR MY2024",
+      "generationCode": "JY",
+      "yearFrom": 2024,
+      "yearTo": 2024,
+      "fuelType": "HYBRID",
+      "engineVolume": "1373",
+      "powerHp": "129",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Ağustos 2024 S-Cross 1.4 MHEV 6AT AllGrip GL Elegance — Onedio citing Suzuki TR list + official price hub.",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/suzuki-fiyat-listesi-agustos-2024-iste-suzuki-swift-vitara-s-cross-ve-jimny-guncel-fiyatlari-1238324",
+          "title": "Suzuki Ağustos 2024 Swift/Vitara/S-Cross/Jimny listesi",
+          "date": "2024-08-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "onedio.com"
+        },
+        {
+          "url": "https://www.suzuki.com.tr/tr/otomobil/fiyat-listesi.html",
+          "title": "Suzuki Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary",
+          "publisher": "Suzuki Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "Suzuki",
+      "series": "S-Cross",
+      "model": "1.4 MHEV 6AT",
+      "trim": "GLX Premium",
+      "generation": "S-Cross Hybrid TR MY2024",
+      "generationCode": "JY",
+      "yearFrom": 2024,
+      "yearTo": 2024,
+      "fuelType": "HYBRID",
+      "engineVolume": "1373",
+      "powerHp": "129",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Ağustos 2024 S-Cross 1.4 MHEV 6AT GLX Premium — Onedio citing Suzuki TR list + official price hub.",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/suzuki-fiyat-listesi-agustos-2024-iste-suzuki-swift-vitara-s-cross-ve-jimny-guncel-fiyatlari-1238324",
+          "title": "Suzuki Ağustos 2024 Swift/Vitara/S-Cross/Jimny listesi",
+          "date": "2024-08-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "onedio.com"
+        },
+        {
+          "url": "https://www.suzuki.com.tr/tr/otomobil/fiyat-listesi.html",
+          "title": "Suzuki Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary",
+          "publisher": "Suzuki Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "Suzuki",
+      "series": "S-Cross",
+      "model": "1.4 MHEV 6AT AllGrip",
+      "trim": "GLX Premium",
+      "generation": "S-Cross Hybrid TR MY2024",
+      "generationCode": "JY",
+      "yearFrom": 2024,
+      "yearTo": 2024,
+      "fuelType": "HYBRID",
+      "engineVolume": "1373",
+      "powerHp": "129",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Ağustos 2024 S-Cross 1.4 MHEV 6AT AllGrip GLX Premium — Onedio citing Suzuki TR list + official price hub.",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/suzuki-fiyat-listesi-agustos-2024-iste-suzuki-swift-vitara-s-cross-ve-jimny-guncel-fiyatlari-1238324",
+          "title": "Suzuki Ağustos 2024 Swift/Vitara/S-Cross/Jimny listesi",
+          "date": "2024-08-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "onedio.com"
+        },
+        {
+          "url": "https://www.suzuki.com.tr/tr/otomobil/fiyat-listesi.html",
+          "title": "Suzuki Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary",
+          "publisher": "Suzuki Türkiye"
+        }
+      ]
     }
   ],
   "researchNotes": {
-    "researchedSeriesPass": [
+    "noApply": true,
+    "applyAllowed": false,
+    "phase": "research-premium-ev-batch",
+    "seriesWithoutResearch": [],
+    "currentOnlySeries": [
       "Vitara",
       "Swift",
       "S-Cross",
       "Jimny"
     ],
-    "reviewRequiredSeries": [
-      "Swift",
-      "S-Cross",
-      "Jimny"
-    ]
+    "addedThisPass": 4,
+    "electricOverlayNote": "Do not invent duplicate EV series"
   },
   "revertedReason": "verifiedConfigs < 3 — insufficient for completedBrands",
   "completedAt": "2026-08-07T09:18:08.152Z"

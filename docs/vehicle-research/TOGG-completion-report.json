@@ -1,0 +1,54 @@
+{
+  "at": "2026-08-07T10:15:27.312Z",
+  "brand": "TOGG",
+  "status": "COMPLETED",
+  "gate": {
+    "seriesWithoutResearch": [],
+    "seriesWithoutResearchCount": 0,
+    "pass": true
+  },
+  "selectableSeries": [
+    "T10X",
+    "T10F"
+  ],
+  "researchedSeries": [
+    "T10X",
+    "T10F"
+  ],
+  "verifiedVersions": [
+    "4More AWD",
+    "RWD Standart Menzil",
+    "RWD Uzun Menzil"
+  ],
+  "verifiedTrims": [
+    "V1",
+    "V2",
+    "V2 Obsidiyen"
+  ],
+  "verifiedConfigurations": 8,
+  "officialSources": 4,
+  "multiSources": 4,
+  "reviewRequired": 0,
+  "rejected": 0,
+  "noVerifiedTrimFound": 0,
+  "seriesWithCurrentOnlyCoverage": [
+    "T10X",
+    "T10F"
+  ],
+  "historicalCoverageIncompleteSeries": [
+    {
+      "series": "T10X",
+      "historicalCoverage": "CURRENT_ONLY"
+    },
+    {
+      "series": "T10F",
+      "historicalCoverage": "CURRENT_ONLY"
+    }
+  ],
+  "sourceUrls": [
+    "https://www.gzt.com/gundem/togg-agustos-2026-fiyat-listesi-t10x-t10f-kampanyasi-4248755",
+    "https://www.togg.com.tr/price-list",
+    "https://www.webtekno.com/temmuz-2026-togg-fiyat-listesi-h219591.html"
+  ],
+  "notes": "Completed means every selectable series was systematically researched. Current-only and incomplete historical gens remain explicitly flagged. Research-only; applyAllowed=false. Not final absolute historical complete."
+}

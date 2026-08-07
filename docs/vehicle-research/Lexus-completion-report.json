@@ -1,0 +1,82 @@
+{
+  "at": "2026-08-07T10:15:27.200Z",
+  "brand": "Lexus",
+  "status": "COMPLETED",
+  "gate": {
+    "seriesWithoutResearch": [],
+    "seriesWithoutResearchCount": 0,
+    "pass": true
+  },
+  "selectableSeries": [
+    "LBX",
+    "NX",
+    "RX",
+    "RZ",
+    "ES",
+    "LM"
+  ],
+  "researchedSeries": [
+    "LBX",
+    "NX",
+    "RX",
+    "RZ",
+    "ES",
+    "LM"
+  ],
+  "verifiedVersions": [
+    "1.5 Hybrid E-CVT",
+    "350h 4 Koltuklu E-CVT",
+    "350h 7 Koltuklu E-CVT",
+    "350h AWD",
+    "500h AWD"
+  ],
+  "verifiedTrims": [
+    "4-Seat",
+    "7-Seat",
+    "Base",
+    "Business Plus",
+    "Cool",
+    "Elegant",
+    "Emotion",
+    "Exclusive",
+    "Executive",
+    "F Sport",
+    "Relax"
+  ],
+  "verifiedConfigurations": 12,
+  "officialSources": 0,
+  "multiSources": 12,
+  "reviewRequired": 4,
+  "rejected": 0,
+  "noVerifiedTrimFound": 0,
+  "seriesWithCurrentOnlyCoverage": [
+    "LBX",
+    "NX",
+    "RX",
+    "LM"
+  ],
+  "historicalCoverageIncompleteSeries": [
+    {
+      "series": "LBX",
+      "historicalCoverage": "CURRENT_ONLY"
+    },
+    {
+      "series": "NX",
+      "historicalCoverage": "CURRENT_ONLY"
+    },
+    {
+      "series": "RX",
+      "historicalCoverage": "CURRENT_ONLY"
+    },
+    {
+      "series": "LM",
+      "historicalCoverage": "CURRENT_ONLY"
+    }
+  ],
+  "sourceUrls": [
+    "https://onedio.com/haber/temmuz-2026-lexus-fiyat-listesi-iste-lexus-es-rx-rz-lbx-nx-ve-ls-guncel-fiyatlari-1369820",
+    "https://teknobirinci.com.tr/agustos-2026-lexus-fiyat-listesi-aciklandi-27-milyon-tl-indirim-var/",
+    "https://www.lexus.com.tr/"
+  ],
+  "notes": "Completed means every selectable series was systematically researched. Current-only and incomplete historical gens remain explicitly flagged. Research-only; applyAllowed=false. Not final absolute historical complete."
+}

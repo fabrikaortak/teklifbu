@@ -18,6 +18,8 @@
     "v7 deep multi-brand: nested version+trims from verified TR sources.",
     "v7 deep multi-brand: nested version+trims from verified TR sources.",
     "v7 deep multi-brand: nested version+trims from verified TR sources.",
+    "v7 deep multi-brand: nested version+trims from verified TR sources.",
+    "v7 deep multi-brand: nested version+trims from verified TR sources.",
     "v7 deep multi-brand: nested version+trims from verified TR sources."
   ],
   "entries": [
@@ -86112,6 +86114,112 @@
       "categoryPaths": [
         "arac/otomobil"
       ],
+      "brandSlug": "alfa-romeo",
+      "brandName": "Alfa Romeo",
+      "modelSlug": "giulia",
+      "modelName": "Giulia",
+      "generationCode": "952",
+      "generationLabel": "952",
+      "versions": [
+        {
+          "slug": "2-0-200hp-rwd-at",
+          "name": "2.0 200hp RWD AT",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "sprint",
+              "name": "Sprint",
+              "generationCode": "952",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        },
+        {
+          "slug": "2-0-280hp-awd-at",
+          "name": "2.0 280hp AWD AT",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "veloce",
+              "name": "Veloce",
+              "generationCode": "952",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2020
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-alfa-romeo-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "alfa-romeo",
+      "brandName": "Alfa Romeo",
+      "modelSlug": "stelvio",
+      "modelName": "Stelvio",
+      "generationCode": "949",
+      "generationLabel": "949",
+      "versions": [
+        {
+          "slug": "2-0-200hp-awd-at",
+          "name": "2.0 200hp AWD AT",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "sprint",
+              "name": "Sprint",
+              "generationCode": "949",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        },
+        {
+          "slug": "2-0-280hp-awd-at",
+          "name": "2.0 280hp AWD AT",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "veloce",
+              "name": "Veloce",
+              "generationCode": "949",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2020
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-alfa-romeo-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
       "brandSlug": "audi",
       "brandName": "Audi",
       "modelSlug": "a3",
@@ -86167,9 +86275,96 @@
       "generationLabel": "B9",
       "versions": [
         {
+          "slug": "1-4-tfsi",
+          "name": "1.4 TFSI",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "design",
+              "name": "Design",
+              "generationCode": "B9",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "dynamic",
+              "name": "Dynamic",
+              "generationCode": "B9",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "sport",
+              "name": "Sport",
+              "generationCode": "B9",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "2-0-tdi",
+          "name": "2.0 TDI",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "design",
+              "name": "Design",
+              "generationCode": "B9",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "dynamic",
+              "name": "Dynamic",
+              "generationCode": "B9",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "sport",
+              "name": "Sport",
+              "generationCode": "B9",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "2-0-tdi-quattro",
+          "name": "2.0 TDI quattro",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "design",
+              "name": "Design",
+              "generationCode": "B9",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "dynamic",
+              "name": "Dynamic",
+              "generationCode": "B9",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "sport",
+              "name": "Sport",
+              "generationCode": "B9",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
           "slug": "40-tdi",
           "name": "40 TDI",
-          "yearFrom": 2022,
+          "yearFrom": 2020,
           "yearTo": 2023,
           "trims": [
             {
@@ -86178,13 +86373,20 @@
               "generationCode": "B9",
               "yearFrom": 2022,
               "yearTo": 2023
+            },
+            {
+              "slug": "s-line",
+              "name": "S line",
+              "generationCode": "B9",
+              "yearFrom": 2020,
+              "yearTo": 2020
             }
           ]
         },
         {
           "slug": "40-tdi-quattro",
           "name": "40 TDI quattro",
-          "yearFrom": 2022,
+          "yearFrom": 2020,
           "yearTo": 2024,
           "trims": [
             {
@@ -86200,6 +86402,28 @@
               "generationCode": "B9",
               "yearFrom": 2022,
               "yearTo": 2023
+            }
+          ]
+        },
+        {
+          "slug": "45-tfsi-quattro",
+          "name": "45 TFSI quattro",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "advanced",
+              "name": "Advanced",
+              "generationCode": "B9",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "s-line",
+              "name": "S line",
+              "generationCode": "B9",
+              "yearFrom": 2020,
+              "yearTo": 2020
             }
           ]
         },
@@ -86227,6 +86451,9 @@
         }
       ],
       "modelYears": [
+        2019,
+        2020,
+        2021,
         2022,
         2023,
         2024
@@ -88209,6 +88436,92 @@
       "generationLabel": "F48",
       "versions": [
         {
+          "slug": "sdrive-16d",
+          "name": "sDrive 16d",
+          "yearFrom": 2016,
+          "yearTo": 2016,
+          "trims": [
+            {
+              "slug": "joy",
+              "name": "Joy",
+              "generationCode": "F48",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            },
+            {
+              "slug": "m-sport",
+              "name": "M Sport",
+              "generationCode": "F48",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            },
+            {
+              "slug": "prestige",
+              "name": "Prestige",
+              "generationCode": "F48",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            },
+            {
+              "slug": "sport-line",
+              "name": "Sport Line",
+              "generationCode": "F48",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            },
+            {
+              "slug": "x-line",
+              "name": "X Line",
+              "generationCode": "F48",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            }
+          ]
+        },
+        {
+          "slug": "sdrive-18i",
+          "name": "sDrive 18i",
+          "yearFrom": 2016,
+          "yearTo": 2016,
+          "trims": [
+            {
+              "slug": "joy",
+              "name": "Joy",
+              "generationCode": "F48",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            },
+            {
+              "slug": "m-sport",
+              "name": "M Sport",
+              "generationCode": "F48",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            },
+            {
+              "slug": "prestige",
+              "name": "Prestige",
+              "generationCode": "F48",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            },
+            {
+              "slug": "sport-line",
+              "name": "Sport Line",
+              "generationCode": "F48",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            },
+            {
+              "slug": "x-line",
+              "name": "X Line",
+              "generationCode": "F48",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            }
+          ]
+        },
+        {
           "slug": "sdrive16d",
           "name": "sDrive16d",
           "yearFrom": 2020,
@@ -88265,9 +88578,56 @@
               "yearTo": 2022
             }
           ]
+        },
+        {
+          "slug": "xdrive-20d",
+          "name": "xDrive 20d",
+          "yearFrom": 2016,
+          "yearTo": 2016,
+          "trims": [
+            {
+              "slug": "joy",
+              "name": "Joy",
+              "generationCode": "F48",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            },
+            {
+              "slug": "m-sport",
+              "name": "M Sport",
+              "generationCode": "F48",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            },
+            {
+              "slug": "prestige",
+              "name": "Prestige",
+              "generationCode": "F48",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            },
+            {
+              "slug": "sport-line",
+              "name": "Sport Line",
+              "generationCode": "F48",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            },
+            {
+              "slug": "x-line",
+              "name": "X Line",
+              "generationCode": "F48",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            }
+          ]
         }
       ],
       "modelYears": [
+        2016,
+        2017,
+        2018,
+        2019,
         2020,
         2021,
         2022
@@ -88461,6 +88821,351 @@
       "categoryPaths": [
         "arac/otomobil"
       ],
+      "brandSlug": "bmw",
+      "brandName": "BMW",
+      "modelSlug": "3-serisi",
+      "modelName": "3 Serisi",
+      "generationCode": "F30",
+      "generationLabel": "F30",
+      "versions": [
+        {
+          "slug": "318i",
+          "name": "318i",
+          "yearFrom": 2016,
+          "yearTo": 2016,
+          "trims": [
+            {
+              "slug": "joy",
+              "name": "Joy",
+              "generationCode": "F30",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            },
+            {
+              "slug": "prestige",
+              "name": "Prestige",
+              "generationCode": "F30",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            }
+          ]
+        },
+        {
+          "slug": "320d",
+          "name": "320d",
+          "yearFrom": 2016,
+          "yearTo": 2016,
+          "trims": [
+            {
+              "slug": "luxury-line",
+              "name": "Luxury Line",
+              "generationCode": "F30",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            },
+            {
+              "slug": "m-sport",
+              "name": "M Sport",
+              "generationCode": "F30",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            },
+            {
+              "slug": "prestige",
+              "name": "Prestige",
+              "generationCode": "F30",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            },
+            {
+              "slug": "sport-line",
+              "name": "Sport Line",
+              "generationCode": "F30",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            },
+            {
+              "slug": "techno-plus",
+              "name": "Techno Plus",
+              "generationCode": "F30",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            }
+          ]
+        },
+        {
+          "slug": "320d-xdrive",
+          "name": "320d xDrive",
+          "yearFrom": 2016,
+          "yearTo": 2016,
+          "trims": [
+            {
+              "slug": "luxury-line",
+              "name": "Luxury Line",
+              "generationCode": "F30",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            },
+            {
+              "slug": "m-sport",
+              "name": "M Sport",
+              "generationCode": "F30",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            },
+            {
+              "slug": "prestige",
+              "name": "Prestige",
+              "generationCode": "F30",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            },
+            {
+              "slug": "sport-line",
+              "name": "Sport Line",
+              "generationCode": "F30",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            },
+            {
+              "slug": "techno-plus",
+              "name": "Techno Plus",
+              "generationCode": "F30",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            }
+          ]
+        },
+        {
+          "slug": "320i-ed",
+          "name": "320i ED",
+          "yearFrom": 2016,
+          "yearTo": 2016,
+          "trims": [
+            {
+              "slug": "joy",
+              "name": "Joy",
+              "generationCode": "F30",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            },
+            {
+              "slug": "luxury-plus",
+              "name": "Luxury Plus",
+              "generationCode": "F30",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            },
+            {
+              "slug": "m-plus",
+              "name": "M Plus",
+              "generationCode": "F30",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            },
+            {
+              "slug": "sport-plus",
+              "name": "Sport Plus",
+              "generationCode": "F30",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2016
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-bmw-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "bmw",
+      "brandName": "BMW",
+      "modelSlug": "3-serisi",
+      "modelName": "3 Serisi",
+      "generationCode": "E90",
+      "generationLabel": "E90",
+      "versions": [
+        {
+          "slug": "320d",
+          "name": "320d",
+          "yearFrom": 2008,
+          "yearTo": 2008,
+          "trims": [
+            {
+              "slug": "premium",
+              "name": "Premium",
+              "generationCode": "E90",
+              "yearFrom": 2008,
+              "yearTo": 2008
+            }
+          ]
+        },
+        {
+          "slug": "320i",
+          "name": "320i",
+          "yearFrom": 2008,
+          "yearTo": 2008,
+          "trims": [
+            {
+              "slug": "premium",
+              "name": "Premium",
+              "generationCode": "E90",
+              "yearFrom": 2008,
+              "yearTo": 2008
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2008
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-bmw-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "bmw",
+      "brandName": "BMW",
+      "modelSlug": "5-serisi",
+      "modelName": "5 Serisi",
+      "generationCode": "F10",
+      "generationLabel": "F10",
+      "versions": [
+        {
+          "slug": "520d",
+          "name": "520d",
+          "yearFrom": 2016,
+          "yearTo": 2016,
+          "trims": [
+            {
+              "slug": "executive",
+              "name": "Executive",
+              "generationCode": "F10",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            },
+            {
+              "slug": "executive-m-sport",
+              "name": "Executive M Sport",
+              "generationCode": "F10",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            },
+            {
+              "slug": "executive-plus",
+              "name": "Executive Plus",
+              "generationCode": "F10",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            },
+            {
+              "slug": "executive-sport",
+              "name": "Executive Sport",
+              "generationCode": "F10",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            },
+            {
+              "slug": "pure",
+              "name": "Pure",
+              "generationCode": "F10",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2016
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-bmw-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "bmw",
+      "brandName": "BMW",
+      "modelSlug": "x5",
+      "modelName": "X5",
+      "generationCode": "F15",
+      "generationLabel": "F15",
+      "versions": [
+        {
+          "slug": "xdrive25d",
+          "name": "xDrive25d",
+          "yearFrom": 2016,
+          "yearTo": 2016,
+          "trims": [
+            {
+              "slug": "m-sport",
+              "name": "M Sport",
+              "generationCode": "F15",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            },
+            {
+              "slug": "premium",
+              "name": "Premium",
+              "generationCode": "F15",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            },
+            {
+              "slug": "prestige",
+              "name": "Prestige",
+              "generationCode": "F15",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            },
+            {
+              "slug": "pure",
+              "name": "Pure",
+              "generationCode": "F15",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2016
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-bmw-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
       "brandSlug": "byd",
       "brandName": "BYD",
       "modelSlug": "seal",
@@ -88603,6 +89308,92 @@
         2024,
         2025,
         2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-byd-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "byd",
+      "brandName": "BYD",
+      "modelSlug": "atto-3",
+      "modelName": "Atto 3",
+      "generationCode": "Atto3",
+      "generationLabel": "Atto3",
+      "versions": [
+        {
+          "slug": "150-kw",
+          "name": "150 kW",
+          "yearFrom": 2023,
+          "yearTo": 2025,
+          "trims": [
+            {
+              "slug": "design",
+              "name": "Design",
+              "generationCode": "Atto3",
+              "yearFrom": 2023,
+              "yearTo": 2025
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2023,
+        2024,
+        2025
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-byd-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "byd",
+      "brandName": "BYD",
+      "modelSlug": "dolphin",
+      "modelName": "Dolphin",
+      "generationCode": "Dolphin",
+      "generationLabel": "Dolphin",
+      "versions": [
+        {
+          "slug": "150-kw",
+          "name": "150 kW",
+          "yearFrom": 2024,
+          "yearTo": 2025,
+          "trims": [
+            {
+              "slug": "comfort",
+              "name": "Comfort",
+              "generationCode": "Dolphin",
+              "yearFrom": 2024,
+              "yearTo": 2025
+            },
+            {
+              "slug": "design",
+              "name": "Design",
+              "generationCode": "Dolphin",
+              "yearFrom": 2024,
+              "yearTo": 2025
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2024,
+        2025
       ],
       "fuelTypes": [],
       "transmissions": [],
@@ -88789,6 +89580,341 @@
         2024,
         2025,
         2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-citroen-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "citroen",
+      "brandName": "Citroen",
+      "modelSlug": "c3",
+      "modelName": "C3",
+      "generationCode": "CC21",
+      "generationLabel": "CC21",
+      "versions": [
+        {
+          "slug": "1-2-puretech-110-hp",
+          "name": "1.2 PureTech 110 HP",
+          "yearFrom": 2019,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "feel",
+              "name": "Feel",
+              "generationCode": "CC21",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "feel-bold",
+              "name": "Feel Bold",
+              "generationCode": "CC21",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "live",
+              "name": "Live",
+              "generationCode": "CC21",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "shine",
+              "name": "Shine",
+              "generationCode": "CC21",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-2-puretech-82-hp",
+          "name": "1.2 PureTech 82 HP",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "feel",
+              "name": "Feel",
+              "generationCode": "CC21",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "live",
+              "name": "Live",
+              "generationCode": "CC21",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-2-puretech-83-hp",
+          "name": "1.2 PureTech 83 HP",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "feel",
+              "name": "Feel",
+              "generationCode": "CC21",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2019,
+        2020
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-citroen-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "citroen",
+      "brandName": "Citroen",
+      "modelSlug": "c3-ice-historical",
+      "modelName": "C3 (ICE historical)",
+      "generationCode": "CC21",
+      "generationLabel": "CC21",
+      "versions": [
+        {
+          "slug": "1-2-puretech-110-hp",
+          "name": "1.2 PureTech 110 HP",
+          "yearFrom": 2019,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "feel",
+              "name": "Feel",
+              "generationCode": "CC21",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "feel-bold",
+              "name": "Feel Bold",
+              "generationCode": "CC21",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "live",
+              "name": "Live",
+              "generationCode": "CC21",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "shine",
+              "name": "Shine",
+              "generationCode": "CC21",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-2-puretech-82-hp",
+          "name": "1.2 PureTech 82 HP",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "feel",
+              "name": "Feel",
+              "generationCode": "CC21",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "live",
+              "name": "Live",
+              "generationCode": "CC21",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-2-puretech-83-hp",
+          "name": "1.2 PureTech 83 HP",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "feel",
+              "name": "Feel",
+              "generationCode": "CC21",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2019,
+        2020
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-citroen-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "citroen",
+      "brandName": "Citroen",
+      "modelSlug": "c3-aircross",
+      "modelName": "C3 Aircross",
+      "generationCode": "Aircross I",
+      "generationLabel": "Aircross I",
+      "versions": [
+        {
+          "slug": "1-2-puretech-110-hp",
+          "name": "1.2 PureTech 110 HP",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "feel",
+              "name": "Feel",
+              "generationCode": "Aircross I",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "shine",
+              "name": "Shine",
+              "generationCode": "Aircross I",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-5-bluehdi-120-hp",
+          "name": "1.5 BlueHDi 120 HP",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "feel",
+              "name": "Feel",
+              "generationCode": "Aircross I",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "shine",
+              "name": "Shine",
+              "generationCode": "Aircross I",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2019
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-citroen-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "citroen",
+      "brandName": "Citroen",
+      "modelSlug": "c5-aircross",
+      "modelName": "C5 Aircross",
+      "generationCode": "C5 Aircross I",
+      "generationLabel": "C5 Aircross I",
+      "versions": [
+        {
+          "slug": "1-5-bluehdi-130-hp",
+          "name": "1.5 BlueHDi 130 HP",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "feel",
+              "name": "Feel",
+              "generationCode": "C5 Aircross I",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "feel-adventure",
+              "name": "Feel Adventure",
+              "generationCode": "C5 Aircross I",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "shine",
+              "name": "Shine",
+              "generationCode": "C5 Aircross I",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "shine-bold",
+              "name": "Shine Bold",
+              "generationCode": "C5 Aircross I",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        },
+        {
+          "slug": "1-6-puretech-180-hp",
+          "name": "1.6 PureTech 180 HP",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "shine",
+              "name": "Shine",
+              "generationCode": "C5 Aircross I",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2020
       ],
       "fuelTypes": [],
       "transmissions": [],
@@ -89234,6 +90360,333 @@
     },
     {
       "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "dacia",
+      "brandName": "Dacia",
+      "modelSlug": "duster",
+      "modelName": "Duster",
+      "generationCode": "HM",
+      "generationLabel": "HM",
+      "versions": [
+        {
+          "slug": "1-3-tce-130-bg-4x2",
+          "name": "1.3 TCe 130 bg 4x2",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "comfort",
+              "name": "Comfort",
+              "generationCode": "HM",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "prestige",
+              "name": "Prestige",
+              "generationCode": "HM",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "prestige-plus",
+              "name": "Prestige Plus",
+              "generationCode": "HM",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-3-tce-150-bg-4x2",
+          "name": "1.3 TCe 150 bg 4x2",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "techroad",
+              "name": "Techroad",
+              "generationCode": "HM",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-5-blue-dci-115-bg-4x2",
+          "name": "1.5 Blue dCi 115 bg 4x2",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "prestige",
+              "name": "Prestige",
+              "generationCode": "HM",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "prestige-plus",
+              "name": "Prestige Plus",
+              "generationCode": "HM",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-5-blue-dci-115-bg-4x4",
+          "name": "1.5 Blue dCi 115 bg 4x4",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "comfort",
+              "name": "Comfort",
+              "generationCode": "HM",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "prestige",
+              "name": "Prestige",
+              "generationCode": "HM",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "prestige-plus",
+              "name": "Prestige Plus",
+              "generationCode": "HM",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "techroad",
+              "name": "Techroad",
+              "generationCode": "HM",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-5-blue-dci-95-bg-4x2",
+          "name": "1.5 Blue dCi 95 bg 4x2",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "comfort",
+              "name": "Comfort",
+              "generationCode": "HM",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-6-16v-115-bg-4x2",
+          "name": "1.6 16v 115 bg 4x2",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "comfort",
+              "name": "Comfort",
+              "generationCode": "HM",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "eco-g-115-bg-4x2",
+          "name": "ECO-G 115 bg 4x2",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "comfort",
+              "name": "Comfort",
+              "generationCode": "HM",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "prestige",
+              "name": "Prestige",
+              "generationCode": "HM",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2019
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-dacia-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "dacia",
+      "brandName": "Dacia",
+      "modelSlug": "sandero",
+      "modelName": "Sandero",
+      "generationCode": "B52",
+      "generationLabel": "B52",
+      "versions": [
+        {
+          "slug": "1-0-sce-75-bg",
+          "name": "1.0 SCe 75 bg",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "ambiance",
+              "name": "Ambiance",
+              "generationCode": "B52",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-5-blue-dci-75-bg",
+          "name": "1.5 Blue dCi 75 bg",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "ambiance",
+              "name": "Ambiance",
+              "generationCode": "B52",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2019
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-dacia-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "dacia",
+      "brandName": "Dacia",
+      "modelSlug": "sandero-stepway",
+      "modelName": "Sandero Stepway",
+      "generationCode": "B52-Stepway",
+      "generationLabel": "B52-Stepway",
+      "versions": [
+        {
+          "slug": "1-5-blue-dci-95-bg",
+          "name": "1.5 Blue dCi 95 bg",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "stepway",
+              "name": "Stepway",
+              "generationCode": "B52-Stepway",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "turbo-90-bg",
+          "name": "Turbo 90 bg",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "stepway",
+              "name": "Stepway",
+              "generationCode": "B52-Stepway",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "techroad",
+              "name": "Techroad",
+              "generationCode": "B52-Stepway",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "turbo-90-bg-easy-r",
+          "name": "Turbo 90 bg Easy-R",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "stepway",
+              "name": "Stepway",
+              "generationCode": "B52-Stepway",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "techroad",
+              "name": "Techroad",
+              "generationCode": "B52-Stepway",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "turbo-90-eco-g",
+          "name": "Turbo 90 ECO-G",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "stepway",
+              "name": "Stepway",
+              "generationCode": "B52-Stepway",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2019
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-dacia-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
         "arac/otomobil"
       ],
       "brandSlug": "fiat",
@@ -89243,6 +90696,143 @@
       "generationCode": "Tipo/Egea",
       "generationLabel": "Tipo/Egea",
       "versions": [
+        {
+          "slug": "1-3-multijet-95-hp",
+          "name": "1.3 Multijet 95 HP",
+          "yearFrom": 2018,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "easy",
+              "name": "Easy",
+              "generationCode": "Tipo/Egea",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "mirror",
+              "name": "Mirror",
+              "generationCode": "Tipo/Egea",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "urban",
+              "name": "Urban",
+              "generationCode": "Tipo/Egea",
+              "yearFrom": 2018,
+              "yearTo": 2018
+            },
+            {
+              "slug": "urban-plus",
+              "name": "Urban Plus",
+              "generationCode": "Tipo/Egea",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-4-fire-95-hp",
+          "name": "1.4 Fire 95 HP",
+          "yearFrom": 2018,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "easy",
+              "name": "Easy",
+              "generationCode": "Tipo/Egea",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "mirror",
+              "name": "Mirror",
+              "generationCode": "Tipo/Egea",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "urban",
+              "name": "Urban",
+              "generationCode": "Tipo/Egea",
+              "yearFrom": 2018,
+              "yearTo": 2018
+            },
+            {
+              "slug": "urban-plus",
+              "name": "Urban Plus",
+              "generationCode": "Tipo/Egea",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-6-e-torq-110-hp",
+          "name": "1.6 E-Torq 110 HP",
+          "yearFrom": 2018,
+          "yearTo": 2018,
+          "trims": [
+            {
+              "slug": "lounge-plus",
+              "name": "Lounge Plus",
+              "generationCode": "Tipo/Egea",
+              "yearFrom": 2018,
+              "yearTo": 2018
+            },
+            {
+              "slug": "urban",
+              "name": "Urban",
+              "generationCode": "Tipo/Egea",
+              "yearFrom": 2018,
+              "yearTo": 2018
+            }
+          ]
+        },
+        {
+          "slug": "1-6-multijet-120-hp",
+          "name": "1.6 Multijet 120 HP",
+          "yearFrom": 2018,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "easy",
+              "name": "Easy",
+              "generationCode": "Tipo/Egea",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "lounge-plus",
+              "name": "Lounge Plus",
+              "generationCode": "Tipo/Egea",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "mirror",
+              "name": "Mirror",
+              "generationCode": "Tipo/Egea",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "urban",
+              "name": "Urban",
+              "generationCode": "Tipo/Egea",
+              "yearFrom": 2018,
+              "yearTo": 2018
+            },
+            {
+              "slug": "urban-plus",
+              "name": "Urban Plus",
+              "generationCode": "Tipo/Egea",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
         {
           "slug": "1-6-multijet-130-hp",
           "name": "1.6 Multijet 130 HP",
@@ -89274,6 +90864,12 @@
         }
       ],
       "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
         2024,
         2025,
         2026
@@ -89351,6 +90947,236 @@
       "categoryPaths": [
         "arac/otomobil"
       ],
+      "brandSlug": "fiat",
+      "brandName": "Fiat",
+      "modelSlug": "egea-wagon",
+      "modelName": "Egea Wagon",
+      "generationCode": "Tipo/Egea SW",
+      "generationLabel": "Tipo/Egea SW",
+      "versions": [
+        {
+          "slug": "1-3-multijet-95-hp",
+          "name": "1.3 Multijet 95 HP",
+          "yearFrom": 2018,
+          "yearTo": 2018,
+          "trims": [
+            {
+              "slug": "urban-plus",
+              "name": "Urban Plus",
+              "generationCode": "Tipo/Egea SW",
+              "yearFrom": 2018,
+              "yearTo": 2018
+            }
+          ]
+        },
+        {
+          "slug": "1-6-e-torq-110-hp",
+          "name": "1.6 E-Torq 110 HP",
+          "yearFrom": 2018,
+          "yearTo": 2018,
+          "trims": [
+            {
+              "slug": "lounge-plus",
+              "name": "Lounge Plus",
+              "generationCode": "Tipo/Egea SW",
+              "yearFrom": 2018,
+              "yearTo": 2018
+            },
+            {
+              "slug": "urban-plus",
+              "name": "Urban Plus",
+              "generationCode": "Tipo/Egea SW",
+              "yearFrom": 2018,
+              "yearTo": 2018
+            }
+          ]
+        },
+        {
+          "slug": "1-6-multijet-120-hp",
+          "name": "1.6 Multijet 120 HP",
+          "yearFrom": 2018,
+          "yearTo": 2018,
+          "trims": [
+            {
+              "slug": "lounge-plus",
+              "name": "Lounge Plus",
+              "generationCode": "Tipo/Egea SW",
+              "yearFrom": 2018,
+              "yearTo": 2018
+            },
+            {
+              "slug": "urban-plus",
+              "name": "Urban Plus",
+              "generationCode": "Tipo/Egea SW",
+              "yearFrom": 2018,
+              "yearTo": 2018
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2018
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-fiat-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/minivan-panelvan"
+      ],
+      "brandSlug": "fiat",
+      "brandName": "Fiat",
+      "modelSlug": "doblo-combi",
+      "modelName": "Doblo Combi",
+      "generationCode": "Doblo-II",
+      "generationLabel": "Doblo-II",
+      "versions": [
+        {
+          "slug": "1-3-multijet-95-hp",
+          "name": "1.3 Multijet 95 HP",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "easy",
+              "name": "Easy",
+              "generationCode": "Doblo-II",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "safeline",
+              "name": "Safeline",
+              "generationCode": "Doblo-II",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-4-fire-95-hp",
+          "name": "1.4 Fire 95 HP",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "easy",
+              "name": "Easy",
+              "generationCode": "Doblo-II",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "premio",
+              "name": "Premio",
+              "generationCode": "Doblo-II",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "safeline",
+              "name": "Safeline",
+              "generationCode": "Doblo-II",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-6-multijet-120-hp",
+          "name": "1.6 Multijet 120 HP",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "easy",
+              "name": "Easy",
+              "generationCode": "Doblo-II",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "premio",
+              "name": "Premio",
+              "generationCode": "Doblo-II",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "safeline",
+              "name": "Safeline",
+              "generationCode": "Doblo-II",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2019
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-fiat-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/minivan-panelvan"
+      ],
+      "brandSlug": "fiat",
+      "brandName": "Fiat",
+      "modelSlug": "doblo",
+      "modelName": "Doblo",
+      "generationCode": "Doblo-II",
+      "generationLabel": "Doblo-II",
+      "versions": [
+        {
+          "slug": "1-6-multijet-120-hp",
+          "name": "1.6 Multijet 120 HP",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "easy",
+              "name": "Easy",
+              "generationCode": "Doblo-II",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "lounge",
+              "name": "Lounge",
+              "generationCode": "Doblo-II",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2020
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-fiat-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
       "brandSlug": "ford",
       "brandName": "Ford",
       "modelSlug": "focus",
@@ -89358,6 +91184,21 @@
       "generationCode": "C519",
       "generationLabel": "C519",
       "versions": [
+        {
+          "slug": "1-0-ecoboost-125-ps",
+          "name": "1.0 EcoBoost 125 PS",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "st-line",
+              "name": "ST-Line",
+              "generationCode": "C519",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
         {
           "slug": "1-5-ecoblue-115-ps",
           "name": "1.5 EcoBlue 115 PS",
@@ -89379,9 +91220,66 @@
               "yearTo": 2026
             }
           ]
+        },
+        {
+          "slug": "1-5-ecoblue-120-ps",
+          "name": "1.5 EcoBlue 120 PS",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "st-line",
+              "name": "ST-Line",
+              "generationCode": "C519",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "titanium",
+              "name": "Titanium",
+              "generationCode": "C519",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "trend-x",
+              "name": "Trend X",
+              "generationCode": "C519",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-5-ti-vct-123-ps",
+          "name": "1.5 Ti-VCT 123 PS",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "titanium",
+              "name": "Titanium",
+              "generationCode": "C519",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "trend-x",
+              "name": "Trend X",
+              "generationCode": "C519",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
         }
       ],
       "modelYears": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
         2025,
         2026
       ],
@@ -89483,6 +91381,439 @@
       "categoryPaths": [
         "arac/otomobil"
       ],
+      "brandSlug": "ford",
+      "brandName": "Ford",
+      "modelSlug": "fiesta",
+      "modelName": "Fiesta",
+      "generationCode": "Fiesta-Mk8",
+      "generationLabel": "Fiesta-Mk8",
+      "versions": [
+        {
+          "slug": "1-0-ecoboost-100-ps",
+          "name": "1.0 EcoBoost 100 PS",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "titanium",
+              "name": "Titanium",
+              "generationCode": "Fiesta-Mk8",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-1l-85-ps",
+          "name": "1.1L 85 PS",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "trend",
+              "name": "Trend",
+              "generationCode": "Fiesta-Mk8",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-5-tdci-85-ps",
+          "name": "1.5 TDCi 85 PS",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "titanium",
+              "name": "Titanium",
+              "generationCode": "Fiesta-Mk8",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "trend",
+              "name": "Trend",
+              "generationCode": "Fiesta-Mk8",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2019
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-ford-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/minivan-panelvan"
+      ],
+      "brandSlug": "ford",
+      "brandName": "Ford",
+      "modelSlug": "tourneo-courier",
+      "modelName": "Tourneo Courier",
+      "generationCode": "Tourneo Courier",
+      "generationLabel": "Tourneo Courier",
+      "versions": [
+        {
+          "slug": "1-5-tdci-100-ps",
+          "name": "1.5 TDCi 100 PS",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "blackline",
+              "name": "Blackline",
+              "generationCode": "Tourneo Courier",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "deluxe",
+              "name": "Deluxe",
+              "generationCode": "Tourneo Courier",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "titanium",
+              "name": "Titanium",
+              "generationCode": "Tourneo Courier",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "titanium-plus",
+              "name": "Titanium Plus",
+              "generationCode": "Tourneo Courier",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        },
+        {
+          "slug": "1-5-tdci-75-ps",
+          "name": "1.5 TDCi 75 PS",
+          "yearFrom": 2019,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "deluxe",
+              "name": "Deluxe",
+              "generationCode": "Tourneo Courier",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "trend",
+              "name": "Trend",
+              "generationCode": "Tourneo Courier",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-5-tdci-95-ps",
+          "name": "1.5 TDCi 95 PS",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "blackline",
+              "name": "Blackline",
+              "generationCode": "Tourneo Courier",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "titanium",
+              "name": "Titanium",
+              "generationCode": "Tourneo Courier",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "titanium-plus",
+              "name": "Titanium Plus",
+              "generationCode": "Tourneo Courier",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2019,
+        2020
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-ford-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/minivan-panelvan"
+      ],
+      "brandSlug": "ford",
+      "brandName": "Ford",
+      "modelSlug": "tourneo-custom",
+      "modelName": "Tourneo Custom",
+      "generationCode": "Tourneo Custom",
+      "generationLabel": "Tourneo Custom",
+      "versions": [
+        {
+          "slug": "2-0-ecoblue-130-ps",
+          "name": "2.0 EcoBlue 130 PS",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "trend",
+              "name": "Trend",
+              "generationCode": "Tourneo Custom",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        },
+        {
+          "slug": "2-0-ecoblue-170-ps",
+          "name": "2.0 EcoBlue 170 PS",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "titanium",
+              "name": "Titanium",
+              "generationCode": "Tourneo Custom",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "titanium-plus",
+              "name": "Titanium Plus",
+              "generationCode": "Tourneo Custom",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        },
+        {
+          "slug": "2-0-ecoblue-hibrit-185-ps",
+          "name": "2.0 EcoBlue Hibrit 185 PS",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "titanium-plus",
+              "name": "Titanium Plus",
+              "generationCode": "Tourneo Custom",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        },
+        {
+          "slug": "2-0-ecoblue-upgrade-185-ps",
+          "name": "2.0 EcoBlue Upgrade 185 PS",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "titanium-plus",
+              "name": "Titanium Plus",
+              "generationCode": "Tourneo Custom",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2020
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-ford-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "ford",
+      "brandName": "Ford",
+      "modelSlug": "puma",
+      "modelName": "Puma",
+      "generationCode": "Puma",
+      "generationLabel": "Puma",
+      "versions": [
+        {
+          "slug": "1-0-ecoboost-125-ps",
+          "name": "1.0 EcoBoost 125 PS",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "st-line",
+              "name": "ST-Line",
+              "generationCode": "Puma",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "style",
+              "name": "Style",
+              "generationCode": "Puma",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        },
+        {
+          "slug": "1-0-ecoboost-95-ps",
+          "name": "1.0 EcoBoost 95 PS",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "style",
+              "name": "Style",
+              "generationCode": "Puma",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        },
+        {
+          "slug": "1-0-ecoboost-mhev-155-ps",
+          "name": "1.0 EcoBoost mHEV 155 PS",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "st-line",
+              "name": "ST-Line",
+              "generationCode": "Puma",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2020
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-ford-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "ford",
+      "brandName": "Ford",
+      "modelSlug": "kuga",
+      "modelName": "Kuga",
+      "generationCode": "Kuga-III",
+      "generationLabel": "Kuga-III",
+      "versions": [
+        {
+          "slug": "1-5-ecoblue-120-ps",
+          "name": "1.5 EcoBlue 120 PS",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "st-line",
+              "name": "ST-Line",
+              "generationCode": "Kuga-III",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "style",
+              "name": "Style",
+              "generationCode": "Kuga-III",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "titanium",
+              "name": "Titanium",
+              "generationCode": "Kuga-III",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        },
+        {
+          "slug": "1-5-ecoboost-120-ps",
+          "name": "1.5 EcoBoost 120 PS",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "style",
+              "name": "Style",
+              "generationCode": "Kuga-III",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        },
+        {
+          "slug": "2-5-phev-225-ps",
+          "name": "2.5 PHEV 225 PS",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "st-line",
+              "name": "ST-Line",
+              "generationCode": "Kuga-III",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2020
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-ford-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
       "brandSlug": "honda",
       "brandName": "Honda",
       "modelSlug": "hr-v",
@@ -89537,6 +91868,205 @@
     },
     {
       "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "honda",
+      "brandName": "Honda",
+      "modelSlug": "hr-v",
+      "modelName": "HR-V",
+      "generationCode": "RU",
+      "generationLabel": "RU",
+      "versions": [
+        {
+          "slug": "1-5-130-ps",
+          "name": "1.5 130 PS",
+          "yearFrom": 2019,
+          "yearTo": 2021,
+          "trims": [
+            {
+              "slug": "executive",
+              "name": "Executive",
+              "generationCode": "RU",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-5-vtec-turbo-182-ps",
+          "name": "1.5 VTEC Turbo 182 PS",
+          "yearFrom": 2020,
+          "yearTo": 2021,
+          "trims": [
+            {
+              "slug": "sport",
+              "name": "Sport",
+              "generationCode": "RU",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2019,
+        2020,
+        2021
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-honda-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "honda",
+      "brandName": "Honda",
+      "modelSlug": "civic",
+      "modelName": "Civic",
+      "generationCode": "FC",
+      "generationLabel": "FC",
+      "versions": [
+        {
+          "slug": "1-5-vtec-turbo-182-ps",
+          "name": "1.5 VTEC Turbo 182 PS",
+          "yearFrom": 2019,
+          "yearTo": 2021,
+          "trims": [
+            {
+              "slug": "elegance",
+              "name": "Elegance",
+              "generationCode": "FC",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "executive",
+              "name": "Executive+",
+              "generationCode": "FC",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-6-125-ps",
+          "name": "1.6 125 PS",
+          "yearFrom": 2020,
+          "yearTo": 2021,
+          "trims": [
+            {
+              "slug": "elegance",
+              "name": "Elegance",
+              "generationCode": "FC",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        },
+        {
+          "slug": "1-6-dream-eco",
+          "name": "1.6 Dream Eco",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "dream",
+              "name": "Dream",
+              "generationCode": "FC",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-6-eco",
+          "name": "1.6 ECO",
+          "yearFrom": 2020,
+          "yearTo": 2021,
+          "trims": [
+            {
+              "slug": "elegance",
+              "name": "Elegance",
+              "generationCode": "FC",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "executive",
+              "name": "Executive",
+              "generationCode": "FC",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        },
+        {
+          "slug": "1-6-elegance-dizel",
+          "name": "1.6 Elegance Dizel",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "elegance",
+              "name": "Elegance",
+              "generationCode": "FC",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-6-elegance-eco",
+          "name": "1.6 Elegance Eco",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "elegance",
+              "name": "Elegance",
+              "generationCode": "FC",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-6-executive-eco",
+          "name": "1.6 Executive Eco",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "executive",
+              "name": "Executive",
+              "generationCode": "FC",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2019,
+        2020,
+        2021
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-honda-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
         "arac/otomobil"
       ],
       "brandSlug": "hyundai",
@@ -89546,6 +92076,28 @@
       "generationCode": "BC3",
       "generationLabel": "BC3",
       "versions": [
+        {
+          "slug": "1-0-t-gdi-100-ps",
+          "name": "1.0 T-GDI 100 PS",
+          "yearFrom": 2020,
+          "yearTo": 2021,
+          "trims": [
+            {
+              "slug": "elite",
+              "name": "Elite",
+              "generationCode": "BC3",
+              "yearFrom": 2020,
+              "yearTo": 2021
+            },
+            {
+              "slug": "style",
+              "name": "Style",
+              "generationCode": "BC3",
+              "yearFrom": 2020,
+              "yearTo": 2021
+            }
+          ]
+        },
         {
           "slug": "1-0-t-gdi-90-ps",
           "name": "1.0 T-GDI 90 PS",
@@ -89574,9 +92126,41 @@
               "yearTo": 2026
             }
           ]
+        },
+        {
+          "slug": "1-4-mpi-100-ps",
+          "name": "1.4 MPI 100 PS",
+          "yearFrom": 2020,
+          "yearTo": 2021,
+          "trims": [
+            {
+              "slug": "elite",
+              "name": "Elite",
+              "generationCode": "BC3",
+              "yearFrom": 2020,
+              "yearTo": 2021
+            },
+            {
+              "slug": "jump",
+              "name": "Jump",
+              "generationCode": "BC3",
+              "yearFrom": 2020,
+              "yearTo": 2021
+            },
+            {
+              "slug": "style",
+              "name": "Style",
+              "generationCode": "BC3",
+              "yearFrom": 2020,
+              "yearTo": 2021
+            }
+          ]
         }
       ],
       "modelYears": [
+        2020,
+        2021,
+        2022,
         2023,
         2024,
         2025,
@@ -89754,6 +92338,340 @@
         2024,
         2025,
         2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-hyundai-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "hyundai",
+      "brandName": "Hyundai",
+      "modelSlug": "i20",
+      "modelName": "i20",
+      "generationCode": "GB",
+      "generationLabel": "GB",
+      "versions": [
+        {
+          "slug": "1-0-t-gdi-100-ps",
+          "name": "1.0 T-GDI 100 PS",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "elite",
+              "name": "Elite",
+              "generationCode": "GB",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "style",
+              "name": "Style",
+              "generationCode": "GB",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-2-mpi-84-ps",
+          "name": "1.2 MPI 84 PS",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "jump",
+              "name": "Jump",
+              "generationCode": "GB",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "style",
+              "name": "Style",
+              "generationCode": "GB",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-4-crdi-90-ps",
+          "name": "1.4 CRDi 90 PS",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "elite",
+              "name": "Elite",
+              "generationCode": "GB",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "jump",
+              "name": "Jump",
+              "generationCode": "GB",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "style",
+              "name": "Style",
+              "generationCode": "GB",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-4-mpi-100-ps",
+          "name": "1.4 MPI 100 PS",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "elite",
+              "name": "Elite",
+              "generationCode": "GB",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "jump",
+              "name": "Jump",
+              "generationCode": "GB",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "style",
+              "name": "Style",
+              "generationCode": "GB",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2019
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-hyundai-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "hyundai",
+      "brandName": "Hyundai",
+      "modelSlug": "bayon",
+      "modelName": "Bayon",
+      "generationCode": "BC3 SUV",
+      "generationLabel": "BC3 SUV",
+      "versions": [
+        {
+          "slug": "1-0-t-gdi-100-ps",
+          "name": "1.0 T-GDI 100 PS",
+          "yearFrom": 2021,
+          "yearTo": 2021,
+          "trims": [
+            {
+              "slug": "elite",
+              "name": "Elite",
+              "generationCode": "BC3 SUV",
+              "yearFrom": 2021,
+              "yearTo": 2021
+            },
+            {
+              "slug": "style",
+              "name": "Style",
+              "generationCode": "BC3 SUV",
+              "yearFrom": 2021,
+              "yearTo": 2021
+            }
+          ]
+        },
+        {
+          "slug": "1-4-mpi-100-ps",
+          "name": "1.4 MPI 100 PS",
+          "yearFrom": 2021,
+          "yearTo": 2021,
+          "trims": [
+            {
+              "slug": "elite",
+              "name": "Elite",
+              "generationCode": "BC3 SUV",
+              "yearFrom": 2021,
+              "yearTo": 2021
+            },
+            {
+              "slug": "jump",
+              "name": "Jump",
+              "generationCode": "BC3 SUV",
+              "yearFrom": 2021,
+              "yearTo": 2021
+            },
+            {
+              "slug": "style",
+              "name": "Style",
+              "generationCode": "BC3 SUV",
+              "yearFrom": 2021,
+              "yearTo": 2021
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2021
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-hyundai-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "hyundai",
+      "brandName": "Hyundai",
+      "modelSlug": "tucson",
+      "modelName": "Tucson",
+      "generationCode": "TL",
+      "generationLabel": "TL",
+      "versions": [
+        {
+          "slug": "1-6-crdi-136-ps",
+          "name": "1.6 CRDi 136 PS",
+          "yearFrom": 2020,
+          "yearTo": 2021,
+          "trims": [
+            {
+              "slug": "elite",
+              "name": "Elite",
+              "generationCode": "TL",
+              "yearFrom": 2020,
+              "yearTo": 2021
+            },
+            {
+              "slug": "elite-plus",
+              "name": "Elite Plus",
+              "generationCode": "TL",
+              "yearFrom": 2020,
+              "yearTo": 2021
+            },
+            {
+              "slug": "smart",
+              "name": "Smart",
+              "generationCode": "TL",
+              "yearFrom": 2020,
+              "yearTo": 2021
+            }
+          ]
+        },
+        {
+          "slug": "1-6-t-gdi-177-ps",
+          "name": "1.6 T-GDI 177 PS",
+          "yearFrom": 2020,
+          "yearTo": 2021,
+          "trims": [
+            {
+              "slug": "power-edition",
+              "name": "Power Edition",
+              "generationCode": "TL",
+              "yearFrom": 2020,
+              "yearTo": 2021
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2020,
+        2021
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-hyundai-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "hyundai",
+      "brandName": "Hyundai",
+      "modelSlug": "tucson",
+      "modelName": "Tucson",
+      "generationCode": "NX4",
+      "generationLabel": "NX4",
+      "versions": [
+        {
+          "slug": "1-6-crdi-136-ps",
+          "name": "1.6 CRDi 136 PS",
+          "yearFrom": 2021,
+          "yearTo": 2021,
+          "trims": [
+            {
+              "slug": "elite",
+              "name": "Elite",
+              "generationCode": "NX4",
+              "yearFrom": 2021,
+              "yearTo": 2021
+            },
+            {
+              "slug": "elite-plus",
+              "name": "Elite Plus",
+              "generationCode": "NX4",
+              "yearFrom": 2021,
+              "yearTo": 2021
+            },
+            {
+              "slug": "prime",
+              "name": "Prime",
+              "generationCode": "NX4",
+              "yearFrom": 2021,
+              "yearTo": 2021
+            }
+          ]
+        },
+        {
+          "slug": "1-6-t-gdi-180-ps",
+          "name": "1.6 T-GDI 180 PS",
+          "yearFrom": 2021,
+          "yearTo": 2021,
+          "trims": [
+            {
+              "slug": "comfort",
+              "name": "Comfort",
+              "generationCode": "NX4",
+              "yearFrom": 2021,
+              "yearTo": 2021
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2021
       ],
       "fuelTypes": [],
       "transmissions": [],
@@ -90020,6 +92938,164 @@
       "categoryPaths": [
         "arac/arazi-suv-pickup"
       ],
+      "brandSlug": "jeep",
+      "brandName": "Jeep",
+      "modelSlug": "renegade",
+      "modelName": "Renegade",
+      "generationCode": "BU",
+      "generationLabel": "BU",
+      "versions": [
+        {
+          "slug": "1-3-150-hp-ddct",
+          "name": "1.3 150 hp DDCT",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "longitude",
+              "name": "Longitude",
+              "generationCode": "BU",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        },
+        {
+          "slug": "1-3-180-hp-at",
+          "name": "1.3 180 hp AT",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "longitude",
+              "name": "Longitude",
+              "generationCode": "BU",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        },
+        {
+          "slug": "1-6-120-hp-ddct",
+          "name": "1.6 120 hp DDCT",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "limited",
+              "name": "Limited",
+              "generationCode": "BU",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "longitude",
+              "name": "Longitude",
+              "generationCode": "BU",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2020
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-jeep-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "jeep",
+      "brandName": "Jeep",
+      "modelSlug": "wrangler",
+      "modelName": "Wrangler",
+      "generationCode": "JL",
+      "generationLabel": "JL",
+      "versions": [
+        {
+          "slug": "2-0-272-hp-8at",
+          "name": "2.0 272 hp 8AT",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "rubicon",
+              "name": "Rubicon",
+              "generationCode": "JL",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2020
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-jeep-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "jeep",
+      "brandName": "Jeep",
+      "modelSlug": "compass",
+      "modelName": "Compass",
+      "generationCode": "MP",
+      "generationLabel": "MP",
+      "versions": [
+        {
+          "slug": "1-4-170-hp-9at",
+          "name": "1.4 170 hp 9AT",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "limited",
+              "name": "Limited",
+              "generationCode": "MP",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "limited-executive",
+              "name": "Limited Executive",
+              "generationCode": "MP",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2020
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-jeep-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
       "brandSlug": "kia",
       "brandName": "Kia",
       "modelSlug": "sportage",
@@ -90090,6 +93166,266 @@
         2024,
         2025,
         2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-kia-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "kia",
+      "brandName": "Kia",
+      "modelSlug": "sportage",
+      "modelName": "Sportage",
+      "generationCode": "QL",
+      "generationLabel": "QL",
+      "versions": [
+        {
+          "slug": "1-6l-132-ps",
+          "name": "1.6L 132 PS",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "cool",
+              "name": "Cool",
+              "generationCode": "QL",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-6l-crdi-136-ps-dct",
+          "name": "1.6L CRDi 136 PS DCT",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "cool",
+              "name": "Cool",
+              "generationCode": "QL",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "elegance",
+              "name": "Elegance",
+              "generationCode": "QL",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "prestige",
+              "name": "Prestige",
+              "generationCode": "QL",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "prestige-design-pack",
+              "name": "Prestige Design Pack",
+              "generationCode": "QL",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-6l-crdi-136-ps-dct-4x4",
+          "name": "1.6L CRDi 136 PS DCT 4x4",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "elegance",
+              "name": "Elegance",
+              "generationCode": "QL",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "gt-line",
+              "name": "GT-Line",
+              "generationCode": "QL",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "prestige",
+              "name": "Prestige",
+              "generationCode": "QL",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "prestige-design-pack",
+              "name": "Prestige Design Pack",
+              "generationCode": "QL",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2019
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-kia-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "kia",
+      "brandName": "Kia",
+      "modelSlug": "picanto",
+      "modelName": "Picanto",
+      "generationCode": "JA",
+      "generationLabel": "JA",
+      "versions": [
+        {
+          "slug": "1-0l-67-ps",
+          "name": "1.0L 67 PS",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "live",
+              "name": "Live",
+              "generationCode": "JA",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2019
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-kia-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "kia",
+      "brandName": "Kia",
+      "modelSlug": "stonic",
+      "modelName": "Stonic",
+      "generationCode": "YB",
+      "generationLabel": "YB",
+      "versions": [
+        {
+          "slug": "1-0l-t-gdi-120-ps-dct",
+          "name": "1.0L T-GDI 120 PS DCT",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "elegance-design-pack",
+              "name": "Elegance Design Pack",
+              "generationCode": "YB",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "elegance-turbo-sunroof",
+              "name": "Elegance Turbo Sunroof",
+              "generationCode": "YB",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-4l-100-ps",
+          "name": "1.4L 100 PS",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "elegance-design-pack",
+              "name": "Elegance Design Pack",
+              "generationCode": "YB",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "elegance-sunroof",
+              "name": "Elegance Sunroof",
+              "generationCode": "YB",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2019
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-kia-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "kia",
+      "brandName": "Kia",
+      "modelSlug": "sorento",
+      "modelName": "Sorento",
+      "generationCode": "UM",
+      "generationLabel": "UM",
+      "versions": [
+        {
+          "slug": "2-0l-dizel",
+          "name": "2.0L Dizel",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "gt-line",
+              "name": "GT-Line",
+              "generationCode": "UM",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "prestige",
+              "name": "Prestige",
+              "generationCode": "UM",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2019
       ],
       "fuelTypes": [],
       "transmissions": [],
@@ -90174,6 +93510,341 @@
       "modelYears": [
         2020,
         2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-land-rover-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "land-rover",
+      "brandName": "Land Rover",
+      "modelSlug": "range-rover-evoque",
+      "modelName": "Range Rover Evoque",
+      "generationCode": "L551",
+      "generationLabel": "L551",
+      "versions": [
+        {
+          "slug": "1-5-mhev-160-bg",
+          "name": "1.5 MHEV 160 bg",
+          "yearFrom": 2024,
+          "yearTo": 2026,
+          "trims": [
+            {
+              "slug": "dynamic-se",
+              "name": "DYNAMIC SE",
+              "generationCode": "L551",
+              "yearFrom": 2024,
+              "yearTo": 2026
+            },
+            {
+              "slug": "s",
+              "name": "S",
+              "generationCode": "L551",
+              "yearFrom": 2024,
+              "yearTo": 2026
+            }
+          ]
+        },
+        {
+          "slug": "1-5-phev-269-bg",
+          "name": "1.5 PHEV 269 bg",
+          "yearFrom": 2024,
+          "yearTo": 2026,
+          "trims": [
+            {
+              "slug": "dynamic-se",
+              "name": "DYNAMIC SE",
+              "generationCode": "L551",
+              "yearFrom": 2024,
+              "yearTo": 2026
+            },
+            {
+              "slug": "s",
+              "name": "S",
+              "generationCode": "L551",
+              "yearFrom": 2024,
+              "yearTo": 2026
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-land-rover-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "land-rover",
+      "brandName": "Land Rover",
+      "modelSlug": "range-rover-velar",
+      "modelName": "Range Rover Velar",
+      "generationCode": "L560",
+      "generationLabel": "L560",
+      "versions": [
+        {
+          "slug": "2-0d-mhev-204-bg",
+          "name": "2.0D MHEV 204 bg",
+          "yearFrom": 2024,
+          "yearTo": 2026,
+          "trims": [
+            {
+              "slug": "dynamic-se",
+              "name": "DYNAMIC SE",
+              "generationCode": "L560",
+              "yearFrom": 2024,
+              "yearTo": 2026
+            },
+            {
+              "slug": "s",
+              "name": "S",
+              "generationCode": "L560",
+              "yearFrom": 2024,
+              "yearTo": 2026
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-land-rover-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "land-rover",
+      "brandName": "Land Rover",
+      "modelSlug": "discovery-sport",
+      "modelName": "Discovery Sport",
+      "generationCode": "L550",
+      "generationLabel": "L550",
+      "versions": [
+        {
+          "slug": "1-5-phev-269-bg",
+          "name": "1.5 PHEV 269 bg",
+          "yearFrom": 2024,
+          "yearTo": 2026,
+          "trims": [
+            {
+              "slug": "dynamic-s",
+              "name": "DYNAMIC S",
+              "generationCode": "L550",
+              "yearFrom": 2024,
+              "yearTo": 2026
+            },
+            {
+              "slug": "landmark",
+              "name": "LANDMARK",
+              "generationCode": "L550",
+              "yearFrom": 2024,
+              "yearTo": 2026
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-land-rover-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "land-rover",
+      "brandName": "Land Rover",
+      "modelSlug": "range-rover-sport",
+      "modelName": "Range Rover Sport",
+      "generationCode": "L461",
+      "generationLabel": "L461",
+      "versions": [
+        {
+          "slug": "3-0d-mhev-300-bg",
+          "name": "3.0D MHEV 300 bg",
+          "yearFrom": 2023,
+          "yearTo": 2026,
+          "trims": [
+            {
+              "slug": "dynamic-hse",
+              "name": "DYNAMIC HSE",
+              "generationCode": "L461",
+              "yearFrom": 2023,
+              "yearTo": 2026
+            },
+            {
+              "slug": "dynamic-se",
+              "name": "DYNAMIC SE",
+              "generationCode": "L461",
+              "yearFrom": 2023,
+              "yearTo": 2026
+            }
+          ]
+        },
+        {
+          "slug": "3-0d-mhev-350-bg",
+          "name": "3.0D MHEV 350 bg",
+          "yearFrom": 2023,
+          "yearTo": 2026,
+          "trims": [
+            {
+              "slug": "autobiography",
+              "name": "AUTOBIOGRAPHY",
+              "generationCode": "L461",
+              "yearFrom": 2023,
+              "yearTo": 2026
+            }
+          ]
+        },
+        {
+          "slug": "4-4-mhev-615-bg",
+          "name": "4.4 MHEV 615 bg",
+          "yearFrom": 2023,
+          "yearTo": 2026,
+          "trims": [
+            {
+              "slug": "sv-black",
+              "name": "SV BLACK",
+              "generationCode": "L461",
+              "yearFrom": 2023,
+              "yearTo": 2026
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-land-rover-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "land-rover",
+      "brandName": "Land Rover",
+      "modelSlug": "range-rover",
+      "modelName": "Range Rover",
+      "generationCode": "L460",
+      "generationLabel": "L460",
+      "versions": [
+        {
+          "slug": "swb-3-0-phev-460-bg",
+          "name": "SWB 3.0 PHEV 460 bg",
+          "yearFrom": 2022,
+          "yearTo": 2026,
+          "trims": [
+            {
+              "slug": "autobiography",
+              "name": "AUTOBIOGRAPHY",
+              "generationCode": "L460",
+              "yearFrom": 2022,
+              "yearTo": 2026
+            }
+          ]
+        },
+        {
+          "slug": "swb-3-0d-mhev-300-bg",
+          "name": "SWB 3.0D MHEV 300 bg",
+          "yearFrom": 2022,
+          "yearTo": 2026,
+          "trims": [
+            {
+              "slug": "signature",
+              "name": "SIGNATURE",
+              "generationCode": "L460",
+              "yearFrom": 2022,
+              "yearTo": 2026
+            },
+            {
+              "slug": "signature-plus",
+              "name": "SIGNATURE PLUS",
+              "generationCode": "L460",
+              "yearFrom": 2022,
+              "yearTo": 2026
+            }
+          ]
+        },
+        {
+          "slug": "swb-3-0d-mhev-350-bg",
+          "name": "SWB 3.0D MHEV 350 bg",
+          "yearFrom": 2022,
+          "yearTo": 2026,
+          "trims": [
+            {
+              "slug": "autobiography",
+              "name": "AUTOBIOGRAPHY",
+              "generationCode": "L460",
+              "yearFrom": 2022,
+              "yearTo": 2026
+            }
+          ]
+        },
+        {
+          "slug": "swb-4-4-mhev-530-bg",
+          "name": "SWB 4.4 MHEV 530 bg",
+          "yearFrom": 2022,
+          "yearTo": 2026,
+          "trims": [
+            {
+              "slug": "autobiography",
+              "name": "AUTOBIOGRAPHY",
+              "generationCode": "L460",
+              "yearFrom": 2022,
+              "yearTo": 2026
+            }
+          ]
+        }
+      ],
+      "modelYears": [
         2022,
         2023,
         2024,
@@ -90286,6 +93957,124 @@
       "modelYears": [
         2022,
         2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-lexus-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "lexus",
+      "brandName": "Lexus",
+      "modelSlug": "rx",
+      "modelName": "RX",
+      "generationCode": "AL10",
+      "generationLabel": "AL10",
+      "versions": [
+        {
+          "slug": "350h-awd",
+          "name": "350h AWD",
+          "yearFrom": 2023,
+          "yearTo": 2026,
+          "trims": [
+            {
+              "slug": "exclusive",
+              "name": "Exclusive",
+              "generationCode": "AL10",
+              "yearFrom": 2023,
+              "yearTo": 2026
+            },
+            {
+              "slug": "executive",
+              "name": "Executive",
+              "generationCode": "AL10",
+              "yearFrom": 2023,
+              "yearTo": 2026
+            }
+          ]
+        },
+        {
+          "slug": "500h-awd",
+          "name": "500h AWD",
+          "yearFrom": 2023,
+          "yearTo": 2026,
+          "trims": [
+            {
+              "slug": "f-sport",
+              "name": "F Sport",
+              "generationCode": "AL10",
+              "yearFrom": 2023,
+              "yearTo": 2026
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-lexus-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/minivan-panelvan"
+      ],
+      "brandSlug": "lexus",
+      "brandName": "Lexus",
+      "modelSlug": "lm",
+      "modelName": "LM",
+      "generationCode": "AW10",
+      "generationLabel": "AW10",
+      "versions": [
+        {
+          "slug": "350h-4-koltuklu-e-cvt",
+          "name": "350h 4 Koltuklu E-CVT",
+          "yearFrom": 2024,
+          "yearTo": 2026,
+          "trims": [
+            {
+              "slug": "4-seat",
+              "name": "4-Seat",
+              "generationCode": "AW10",
+              "yearFrom": 2024,
+              "yearTo": 2026
+            }
+          ]
+        },
+        {
+          "slug": "350h-7-koltuklu-e-cvt",
+          "name": "350h 7 Koltuklu E-CVT",
+          "yearFrom": 2024,
+          "yearTo": 2026,
+          "trims": [
+            {
+              "slug": "7-seat",
+              "name": "7-Seat",
+              "generationCode": "AW10",
+              "yearFrom": 2024,
+              "yearTo": 2026
+            }
+          ]
+        }
+      ],
+      "modelYears": [
         2024,
         2025,
         2026
@@ -90472,9 +94261,34 @@
               "yearTo": 2023
             }
           ]
+        },
+        {
+          "slug": "2-0-sky-g-at",
+          "name": "2.0 SKY-G AT",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "power-sense",
+              "name": "Power Sense",
+              "generationCode": "KF",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "power-sense-plus",
+              "name": "Power Sense Plus",
+              "generationCode": "KF",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
         }
       ],
       "modelYears": [
+        2020,
+        2021,
+        2022,
         2023
       ],
       "fuelTypes": [],
@@ -90527,6 +94341,94 @@
       "categoryPaths": [
         "arac/otomobil"
       ],
+      "brandSlug": "mazda",
+      "brandName": "Mazda",
+      "modelSlug": "mazda3",
+      "modelName": "Mazda3",
+      "generationCode": "BP",
+      "generationLabel": "BP",
+      "versions": [
+        {
+          "slug": "1-5-sky-d",
+          "name": "1.5 SKY-D",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "motion",
+              "name": "Motion",
+              "generationCode": "BP",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "power-sense",
+              "name": "Power Sense",
+              "generationCode": "BP",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "reflex",
+              "name": "Reflex",
+              "generationCode": "BP",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        },
+        {
+          "slug": "1-5-sky-g",
+          "name": "1.5 SKY-G",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "motion",
+              "name": "Motion",
+              "generationCode": "BP",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "power",
+              "name": "Power",
+              "generationCode": "BP",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "power-sense",
+              "name": "Power Sense",
+              "generationCode": "BP",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "reflex",
+              "name": "Reflex",
+              "generationCode": "BP",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2020
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-mazda-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
       "brandSlug": "mercedes-benz",
       "brandName": "Mercedes-Benz",
       "modelSlug": "a-serisi",
@@ -90535,17 +94437,105 @@
       "generationLabel": "W177",
       "versions": [
         {
+          "slug": "a-180",
+          "name": "A 180",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "style",
+              "name": "Style",
+              "generationCode": "W177",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "a-180-d",
+          "name": "A 180 d",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "amg",
+              "name": "AMG",
+              "generationCode": "W177",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "style",
+              "name": "Style",
+              "generationCode": "W177",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "a-180-d-sedan",
+          "name": "A 180 d Sedan",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "amg",
+              "name": "AMG",
+              "generationCode": "W177",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "style",
+              "name": "Style",
+              "generationCode": "W177",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
           "slug": "a-200",
           "name": "A 200",
-          "yearFrom": 2023,
+          "yearFrom": 2019,
           "yearTo": 2026,
           "trims": [
+            {
+              "slug": "amg",
+              "name": "AMG",
+              "generationCode": "W177",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
             {
               "slug": "amg-line",
               "name": "AMG Line",
               "generationCode": "W177",
               "yearFrom": 2025,
               "yearTo": 2026
+            }
+          ]
+        },
+        {
+          "slug": "a-200-sedan",
+          "name": "A 200 Sedan",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "amg",
+              "name": "AMG",
+              "generationCode": "W177",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "style",
+              "name": "Style",
+              "generationCode": "W177",
+              "yearFrom": 2019,
+              "yearTo": 2019
             }
           ]
         },
@@ -90566,6 +94556,10 @@
         }
       ],
       "modelYears": [
+        2019,
+        2020,
+        2021,
+        2022,
         2023,
         2024,
         2025,
@@ -90591,22 +94585,83 @@
       "generationLabel": "V177",
       "versions": [
         {
+          "slug": "a-180-d-sedan",
+          "name": "A 180 d Sedan",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "amg",
+              "name": "AMG",
+              "generationCode": "V177",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "style",
+              "name": "Style",
+              "generationCode": "V177",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        },
+        {
+          "slug": "a-180-sedan",
+          "name": "A 180 Sedan",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "progressive",
+              "name": "Progressive",
+              "generationCode": "V177",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "progressive-blackart-edition",
+              "name": "Progressive BlackArt Edition",
+              "generationCode": "V177",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        },
+        {
           "slug": "a-200-sedan",
           "name": "A 200 Sedan",
-          "yearFrom": 2023,
+          "yearFrom": 2020,
           "yearTo": 2024,
           "trims": [
+            {
+              "slug": "amg",
+              "name": "AMG",
+              "generationCode": "V177",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
             {
               "slug": "amg-line",
               "name": "AMG Line",
               "generationCode": "V177",
               "yearFrom": 2023,
               "yearTo": 2024
+            },
+            {
+              "slug": "style",
+              "name": "Style",
+              "generationCode": "V177",
+              "yearFrom": 2020,
+              "yearTo": 2020
             }
           ]
         }
       ],
       "modelYears": [
+        2020,
+        2021,
+        2022,
         2023,
         2024
       ],
@@ -90682,6 +94737,13 @@
               "yearTo": 2026
             },
             {
+              "slug": "amg",
+              "name": "AMG",
+              "generationCode": "W206",
+              "yearFrom": 2024,
+              "yearTo": 2024
+            },
+            {
               "slug": "amg-line",
               "name": "AMG Line",
               "generationCode": "W206",
@@ -90740,11 +94802,55 @@
       "generationLabel": "W205",
       "versions": [
         {
+          "slug": "c-180",
+          "name": "C 180",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "comfort",
+              "name": "Comfort",
+              "generationCode": "W205",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "c-200",
+          "name": "C 200",
+          "yearFrom": 2018,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "amg",
+              "name": "AMG",
+              "generationCode": "W205",
+              "yearFrom": 2018,
+              "yearTo": 2018
+            },
+            {
+              "slug": "exclusive",
+              "name": "Exclusive",
+              "generationCode": "W205",
+              "yearFrom": 2018,
+              "yearTo": 2018
+            }
+          ]
+        },
+        {
           "slug": "c-200-4matic",
           "name": "C 200 4MATIC",
           "yearFrom": 2018,
           "yearTo": 2021,
           "trims": [
+            {
+              "slug": "amg",
+              "name": "AMG",
+              "generationCode": "W205",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
             {
               "slug": "amg-line",
               "name": "AMG Line",
@@ -90767,6 +94873,13 @@
           "yearFrom": 2018,
           "yearTo": 2021,
           "trims": [
+            {
+              "slug": "amg",
+              "name": "AMG",
+              "generationCode": "W205",
+              "yearFrom": 2018,
+              "yearTo": 2018
+            },
             {
               "slug": "amg-line",
               "name": "AMG Line",
@@ -91069,11 +95182,25 @@
           "yearTo": 2026,
           "trims": [
             {
+              "slug": "amg",
+              "name": "AMG",
+              "generationCode": "W214",
+              "yearFrom": 2024,
+              "yearTo": 2024
+            },
+            {
               "slug": "amg-line",
               "name": "AMG Line",
               "generationCode": "W214",
               "yearFrom": 2024,
               "yearTo": 2026
+            },
+            {
+              "slug": "edition-1-amg",
+              "name": "Edition 1 AMG",
+              "generationCode": "W214",
+              "yearFrom": 2024,
+              "yearTo": 2024
             },
             {
               "slug": "edition-1-amg-line",
@@ -91104,6 +95231,13 @@
           "yearFrom": 2023,
           "yearTo": 2026,
           "trims": [
+            {
+              "slug": "amg",
+              "name": "AMG",
+              "generationCode": "W214",
+              "yearFrom": 2024,
+              "yearTo": 2024
+            },
             {
               "slug": "amg-line",
               "name": "AMG Line",
@@ -91996,6 +96130,161 @@
     },
     {
       "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "mercedes-benz",
+      "brandName": "Mercedes-Benz",
+      "modelSlug": "e-serisi",
+      "modelName": "E Serisi",
+      "generationCode": "W213",
+      "generationLabel": "W213",
+      "versions": [
+        {
+          "slug": "e-180",
+          "name": "E 180",
+          "yearFrom": 2017,
+          "yearTo": 2018,
+          "trims": [
+            {
+              "slug": "amg",
+              "name": "AMG",
+              "generationCode": "W213",
+              "yearFrom": 2017,
+              "yearTo": 2017
+            },
+            {
+              "slug": "avantgarde",
+              "name": "Avantgarde",
+              "generationCode": "W213",
+              "yearFrom": 2017,
+              "yearTo": 2017
+            },
+            {
+              "slug": "exclusive",
+              "name": "Exclusive",
+              "generationCode": "W213",
+              "yearFrom": 2017,
+              "yearTo": 2017
+            }
+          ]
+        },
+        {
+          "slug": "e-220-d-4matic",
+          "name": "E 220 d 4MATIC",
+          "yearFrom": 2017,
+          "yearTo": 2017,
+          "trims": [
+            {
+              "slug": "amg",
+              "name": "AMG",
+              "generationCode": "W213",
+              "yearFrom": 2017,
+              "yearTo": 2017
+            },
+            {
+              "slug": "avantgarde",
+              "name": "Avantgarde",
+              "generationCode": "W213",
+              "yearFrom": 2017,
+              "yearTo": 2017
+            },
+            {
+              "slug": "exclusive",
+              "name": "Exclusive",
+              "generationCode": "W213",
+              "yearFrom": 2017,
+              "yearTo": 2017
+            }
+          ]
+        },
+        {
+          "slug": "e-300",
+          "name": "E 300",
+          "yearFrom": 2017,
+          "yearTo": 2017,
+          "trims": [
+            {
+              "slug": "amg",
+              "name": "AMG",
+              "generationCode": "W213",
+              "yearFrom": 2017,
+              "yearTo": 2017
+            },
+            {
+              "slug": "avantgarde",
+              "name": "Avantgarde",
+              "generationCode": "W213",
+              "yearFrom": 2017,
+              "yearTo": 2017
+            },
+            {
+              "slug": "exclusive",
+              "name": "Exclusive",
+              "generationCode": "W213",
+              "yearFrom": 2017,
+              "yearTo": 2017
+            }
+          ]
+        },
+        {
+          "slug": "e-350-d",
+          "name": "E 350 d",
+          "yearFrom": 2017,
+          "yearTo": 2017,
+          "trims": [
+            {
+              "slug": "amg",
+              "name": "AMG",
+              "generationCode": "W213",
+              "yearFrom": 2017,
+              "yearTo": 2017
+            },
+            {
+              "slug": "avantgarde",
+              "name": "Avantgarde",
+              "generationCode": "W213",
+              "yearFrom": 2017,
+              "yearTo": 2017
+            },
+            {
+              "slug": "exclusive",
+              "name": "Exclusive",
+              "generationCode": "W213",
+              "yearFrom": 2017,
+              "yearTo": 2017
+            }
+          ]
+        },
+        {
+          "slug": "mercedes-amg-e-63-4matic",
+          "name": "Mercedes-AMG E 63 4MATIC+",
+          "yearFrom": 2017,
+          "yearTo": 2017,
+          "trims": [
+            {
+              "slug": "performance",
+              "name": "Performance",
+              "generationCode": "W213",
+              "yearFrom": 2017,
+              "yearTo": 2017
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2017,
+        2018
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-mercedes-benz-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
         "arac/arazi-suv-pickup"
       ],
       "brandSlug": "mg",
@@ -92282,6 +96571,218 @@
       "categoryPaths": [
         "arac/otomobil"
       ],
+      "brandSlug": "mini",
+      "brandName": "Mini",
+      "modelSlug": "cooper",
+      "modelName": "Cooper",
+      "generationCode": "F56",
+      "generationLabel": "F56",
+      "versions": [
+        {
+          "slug": "cooper-3-kapi-1-5",
+          "name": "Cooper 3 Kapı 1.5",
+          "yearFrom": 2018,
+          "yearTo": 2018,
+          "trims": [
+            {
+              "slug": "chili",
+              "name": "Chili",
+              "generationCode": "F56",
+              "yearFrom": 2018,
+              "yearTo": 2018
+            },
+            {
+              "slug": "pepper",
+              "name": "Pepper",
+              "generationCode": "F56",
+              "yearFrom": 2018,
+              "yearTo": 2018
+            },
+            {
+              "slug": "salt",
+              "name": "Salt",
+              "generationCode": "F56",
+              "yearFrom": 2018,
+              "yearTo": 2018
+            },
+            {
+              "slug": "turkiye-paketi",
+              "name": "Türkiye Paketi",
+              "generationCode": "F56",
+              "yearFrom": 2018,
+              "yearTo": 2018
+            }
+          ]
+        },
+        {
+          "slug": "cooper-5-kapi-1-5",
+          "name": "Cooper 5 Kapı 1.5",
+          "yearFrom": 2018,
+          "yearTo": 2018,
+          "trims": [
+            {
+              "slug": "chili",
+              "name": "Chili",
+              "generationCode": "F56",
+              "yearFrom": 2018,
+              "yearTo": 2018
+            },
+            {
+              "slug": "pepper",
+              "name": "Pepper",
+              "generationCode": "F56",
+              "yearFrom": 2018,
+              "yearTo": 2018
+            },
+            {
+              "slug": "salt",
+              "name": "Salt",
+              "generationCode": "F56",
+              "yearFrom": 2018,
+              "yearTo": 2018
+            },
+            {
+              "slug": "turkiye-paketi",
+              "name": "Türkiye Paketi",
+              "generationCode": "F56",
+              "yearFrom": 2018,
+              "yearTo": 2018
+            }
+          ]
+        },
+        {
+          "slug": "cooper-d-3-kapi-1-5",
+          "name": "Cooper D 3 Kapı 1.5",
+          "yearFrom": 2018,
+          "yearTo": 2018,
+          "trims": [
+            {
+              "slug": "chili",
+              "name": "Chili",
+              "generationCode": "F56",
+              "yearFrom": 2018,
+              "yearTo": 2018
+            },
+            {
+              "slug": "pepper",
+              "name": "Pepper",
+              "generationCode": "F56",
+              "yearFrom": 2018,
+              "yearTo": 2018
+            },
+            {
+              "slug": "salt",
+              "name": "Salt",
+              "generationCode": "F56",
+              "yearFrom": 2018,
+              "yearTo": 2018
+            },
+            {
+              "slug": "turkiye-paketi",
+              "name": "Türkiye Paketi",
+              "generationCode": "F56",
+              "yearFrom": 2018,
+              "yearTo": 2018
+            }
+          ]
+        },
+        {
+          "slug": "cooper-d-5-kapi-1-5",
+          "name": "Cooper D 5 Kapı 1.5",
+          "yearFrom": 2018,
+          "yearTo": 2018,
+          "trims": [
+            {
+              "slug": "chili",
+              "name": "Chili",
+              "generationCode": "F56",
+              "yearFrom": 2018,
+              "yearTo": 2018
+            },
+            {
+              "slug": "pepper",
+              "name": "Pepper",
+              "generationCode": "F56",
+              "yearFrom": 2018,
+              "yearTo": 2018
+            },
+            {
+              "slug": "salt",
+              "name": "Salt",
+              "generationCode": "F56",
+              "yearFrom": 2018,
+              "yearTo": 2018
+            },
+            {
+              "slug": "turkiye-paketi",
+              "name": "Türkiye Paketi",
+              "generationCode": "F56",
+              "yearFrom": 2018,
+              "yearTo": 2018
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2018
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-mini-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "mini",
+      "brandName": "Mini",
+      "modelSlug": "countryman",
+      "modelName": "Countryman",
+      "generationCode": "F60",
+      "generationLabel": "F60",
+      "versions": [
+        {
+          "slug": "cooper-countryman-1-5",
+          "name": "Cooper Countryman 1.5",
+          "yearFrom": 2018,
+          "yearTo": 2018,
+          "trims": [
+            {
+              "slug": "salt",
+              "name": "Salt",
+              "generationCode": "F60",
+              "yearFrom": 2018,
+              "yearTo": 2018
+            },
+            {
+              "slug": "turkiye-paketi",
+              "name": "Türkiye Paketi",
+              "generationCode": "F60",
+              "yearFrom": 2018,
+              "yearTo": 2018
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2018
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-mini-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
       "brandSlug": "mitsubishi",
       "brandName": "Mitsubishi",
       "modelSlug": "space-star",
@@ -92377,6 +96878,202 @@
         2017,
         2018,
         2019
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-mitsubishi-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "mitsubishi",
+      "brandName": "Mitsubishi",
+      "modelSlug": "eclipse-cross",
+      "modelName": "Eclipse Cross",
+      "generationCode": "GK",
+      "generationLabel": "GK",
+      "versions": [
+        {
+          "slug": "1-5-instyle-cvt",
+          "name": "1.5 Instyle CVT",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "instyle",
+              "name": "Instyle",
+              "generationCode": "GK",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        },
+        {
+          "slug": "1-5-intense-cvt",
+          "name": "1.5 Intense CVT",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "intense",
+              "name": "Intense",
+              "generationCode": "GK",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        },
+        {
+          "slug": "1-5-invite-cvt",
+          "name": "1.5 Invite CVT",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "invite",
+              "name": "Invite",
+              "generationCode": "GK",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        },
+        {
+          "slug": "1-5-invite-mt",
+          "name": "1.5 Invite MT",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "invite",
+              "name": "Invite",
+              "generationCode": "GK",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2020
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-mitsubishi-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "mitsubishi",
+      "brandName": "Mitsubishi",
+      "modelSlug": "l200",
+      "modelName": "L200",
+      "generationCode": "KJ",
+      "generationLabel": "KJ",
+      "versions": [
+        {
+          "slug": "4x2-tornado-at",
+          "name": "4x2 Tornado AT",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "tornado",
+              "name": "Tornado",
+              "generationCode": "KJ",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        },
+        {
+          "slug": "4x2-tornado-mt",
+          "name": "4x2 Tornado MT",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "tornado",
+              "name": "Tornado",
+              "generationCode": "KJ",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        },
+        {
+          "slug": "4x4-blizzard-at",
+          "name": "4x4 Blizzard AT",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "blizzard",
+              "name": "Blizzard",
+              "generationCode": "KJ",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        },
+        {
+          "slug": "4x4-premium-at",
+          "name": "4x4 Premium AT",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "premium",
+              "name": "Premium",
+              "generationCode": "KJ",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        },
+        {
+          "slug": "4x4-storm-mt",
+          "name": "4x4 Storm MT",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "storm",
+              "name": "Storm",
+              "generationCode": "KJ",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        },
+        {
+          "slug": "4x4-tornado-mt",
+          "name": "4x4 Tornado MT",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "tornado",
+              "name": "Tornado",
+              "generationCode": "KJ",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2020
       ],
       "fuelTypes": [],
       "transmissions": [],
@@ -92529,6 +97226,57 @@
       "generationLabel": "F16",
       "versions": [
         {
+          "slug": "1-0-dig-t-115",
+          "name": "1.0 DIG-T 115",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "tekna",
+              "name": "Tekna",
+              "generationCode": "F16",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        },
+        {
+          "slug": "1-0-dig-t-115-dct",
+          "name": "1.0 DIG-T 115 DCT",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "platinum",
+              "name": "Platinum",
+              "generationCode": "F16",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "platinum-perso",
+              "name": "Platinum Perso",
+              "generationCode": "F16",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "platinum-premium",
+              "name": "Platinum Premium",
+              "generationCode": "F16",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "tekna",
+              "name": "Tekna",
+              "generationCode": "F16",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        },
+        {
           "slug": "1-0-dig-t-115ps",
           "name": "1.0 DIG-T 115PS",
           "yearFrom": 2020,
@@ -92625,6 +97373,130 @@
     },
     {
       "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "nissan",
+      "brandName": "Nissan",
+      "modelSlug": "qashqai",
+      "modelName": "Qashqai",
+      "generationCode": "J11",
+      "generationLabel": "J11",
+      "versions": [
+        {
+          "slug": "1-3-dig-t-160-dct",
+          "name": "1.3 DIG-T 160 DCT",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "platinum-premium-pack",
+              "name": "Platinum Premium Pack",
+              "generationCode": "J11",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "sky-pack",
+              "name": "Sky Pack",
+              "generationCode": "J11",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "tekna",
+              "name": "Tekna",
+              "generationCode": "J11",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "visia",
+              "name": "Visia",
+              "generationCode": "J11",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-5-dci-115",
+          "name": "1.5 dCi 115",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "sky-pack",
+              "name": "Sky Pack",
+              "generationCode": "J11",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "tekna",
+              "name": "Tekna",
+              "generationCode": "J11",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "visia",
+              "name": "Visia",
+              "generationCode": "J11",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-5-dci-115-dct",
+          "name": "1.5 dCi 115 DCT",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "platinum-premium-pack",
+              "name": "Platinum Premium Pack",
+              "generationCode": "J11",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "sky-pack",
+              "name": "Sky Pack",
+              "generationCode": "J11",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "tekna",
+              "name": "Tekna",
+              "generationCode": "J11",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "visia",
+              "name": "Visia",
+              "generationCode": "J11",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2019
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-nissan-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
         "arac/otomobil"
       ],
       "brandSlug": "opel",
@@ -92637,7 +97509,7 @@
         {
           "slug": "1-2-100-hp",
           "name": "1.2 100 HP",
-          "yearFrom": 2024,
+          "yearFrom": 2020,
           "yearTo": 2026,
           "trims": [
             {
@@ -92646,6 +97518,35 @@
               "generationCode": "F",
               "yearFrom": 2024,
               "yearTo": 2026
+            },
+            {
+              "slug": "elegance",
+              "name": "Elegance",
+              "generationCode": "F",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "ultimate",
+              "name": "Ultimate",
+              "generationCode": "F",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        },
+        {
+          "slug": "1-2-75-hp",
+          "name": "1.2 75 HP",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "essential",
+              "name": "Essential",
+              "generationCode": "F",
+              "yearFrom": 2020,
+              "yearTo": 2020
             }
           ]
         },
@@ -92678,9 +97579,28 @@
               "yearTo": 2026
             }
           ]
+        },
+        {
+          "slug": "1-5-100-hp-dizel",
+          "name": "1.5 100 HP Dizel",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "edition",
+              "name": "Edition",
+              "generationCode": "F",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
         }
       ],
       "modelYears": [
+        2020,
+        2021,
+        2022,
+        2023,
         2024,
         2025,
         2026
@@ -92770,6 +97690,286 @@
       "modelYears": [
         2025,
         2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-opel-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "opel",
+      "brandName": "Opel",
+      "modelSlug": "corsa",
+      "modelName": "Corsa",
+      "generationCode": "E",
+      "generationLabel": "E",
+      "versions": [
+        {
+          "slug": "1-2-70-hp",
+          "name": "1.2 70 HP",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "enjoy",
+              "name": "Enjoy",
+              "generationCode": "E",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "essentia",
+              "name": "Essentia",
+              "generationCode": "E",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-4-90-hp",
+          "name": "1.4 90 HP",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "120-yil-ozel-seri",
+              "name": "120.Yıl Özel Seri",
+              "generationCode": "E",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "design",
+              "name": "Design",
+              "generationCode": "E",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "enjoy",
+              "name": "Enjoy",
+              "generationCode": "E",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "essentia",
+              "name": "Essentia",
+              "generationCode": "E",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2019
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-opel-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "opel",
+      "brandName": "Opel",
+      "modelSlug": "astra",
+      "modelName": "Astra",
+      "generationCode": "K",
+      "generationLabel": "K",
+      "versions": [
+        {
+          "slug": "1-4-150-hp",
+          "name": "1.4 150 HP",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "120-yil-ozel-seri",
+              "name": "120.Yıl Özel Seri",
+              "generationCode": "K",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "dynamic",
+              "name": "Dynamic",
+              "generationCode": "K",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "enjoy",
+              "name": "Enjoy",
+              "generationCode": "K",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "excellence",
+              "name": "Excellence",
+              "generationCode": "K",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-6-dizel-136-hp",
+          "name": "1.6 Dizel 136 HP",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "120-yil-ozel-seri",
+              "name": "120.Yıl Özel Seri",
+              "generationCode": "K",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "dynamic",
+              "name": "Dynamic",
+              "generationCode": "K",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "elite",
+              "name": "Elite",
+              "generationCode": "K",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "excellence",
+              "name": "Excellence",
+              "generationCode": "K",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2019
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-opel-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "opel",
+      "brandName": "Opel",
+      "modelSlug": "crossland",
+      "modelName": "Crossland",
+      "generationCode": "P2UO",
+      "generationLabel": "P2UO",
+      "versions": [
+        {
+          "slug": "1-2-110-hp",
+          "name": "1.2 110 HP",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "120-yil-ozel-seri",
+              "name": "120.Yıl Özel Seri",
+              "generationCode": "P2UO",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "enjoy",
+              "name": "Enjoy",
+              "generationCode": "P2UO",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-2-130-hp",
+          "name": "1.2 130 HP",
+          "yearFrom": 2019,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "120-yil-ozel-seri",
+              "name": "120.Yıl Özel Seri",
+              "generationCode": "P2UO",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "enjoy",
+              "name": "Enjoy",
+              "generationCode": "P2UO",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "essentia",
+              "name": "Essentia",
+              "generationCode": "P2UO",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        },
+        {
+          "slug": "1-5-dizel-120-hp",
+          "name": "1.5 Dizel 120 HP",
+          "yearFrom": 2019,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "120-yil-ozel-seri",
+              "name": "120.Yıl Özel Seri",
+              "generationCode": "P2UO",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "enjoy",
+              "name": "Enjoy",
+              "generationCode": "P2UO",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "excellence",
+              "name": "Excellence",
+              "generationCode": "P2UO",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2019,
+        2020
       ],
       "fuelTypes": [],
       "transmissions": [],
@@ -92944,6 +98144,414 @@
         2024,
         2025,
         2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-peugeot-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "peugeot",
+      "brandName": "Peugeot",
+      "modelSlug": "208",
+      "modelName": "208",
+      "generationCode": "P21",
+      "generationLabel": "P21",
+      "versions": [
+        {
+          "slug": "1-2-puretech-110-hp",
+          "name": "1.2 PureTech 110 hp",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "signature",
+              "name": "Signature",
+              "generationCode": "P21",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-2-puretech-82-hp",
+          "name": "1.2 PureTech 82 hp",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "signature",
+              "name": "Signature",
+              "generationCode": "P21",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2019
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-peugeot-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "peugeot",
+      "brandName": "Peugeot",
+      "modelSlug": "308",
+      "modelName": "308",
+      "generationCode": "T9",
+      "generationLabel": "T9",
+      "versions": [
+        {
+          "slug": "1-2-puretech-130-hp",
+          "name": "1.2 PureTech 130 hp",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "style",
+              "name": "Style",
+              "generationCode": "T9",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-5-bluehdi-130-hp",
+          "name": "1.5 BlueHDi 130 hp",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "style",
+              "name": "Style",
+              "generationCode": "T9",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2019
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-peugeot-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "peugeot",
+      "brandName": "Peugeot",
+      "modelSlug": "3008",
+      "modelName": "3008",
+      "generationCode": "P84",
+      "generationLabel": "P84",
+      "versions": [
+        {
+          "slug": "1-2-puretech-130-hp",
+          "name": "1.2 PureTech 130 hp",
+          "yearFrom": 2019,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "active",
+              "name": "Active",
+              "generationCode": "P84",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "active-prime",
+              "name": "Active Prime",
+              "generationCode": "P84",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        },
+        {
+          "slug": "1-5-bluehdi-130-hp",
+          "name": "1.5 BlueHDi 130 hp",
+          "yearFrom": 2019,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "active",
+              "name": "Active",
+              "generationCode": "P84",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "active-prime",
+              "name": "Active Prime",
+              "generationCode": "P84",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "allure",
+              "name": "Allure",
+              "generationCode": "P84",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "allure-selection",
+              "name": "Allure Selection",
+              "generationCode": "P84",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "gt",
+              "name": "GT",
+              "generationCode": "P84",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "gt-selection",
+              "name": "GT Selection",
+              "generationCode": "P84",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "gt-line",
+              "name": "GT-Line",
+              "generationCode": "P84",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-6-puretech-180-hp",
+          "name": "1.6 PureTech 180 hp",
+          "yearFrom": 2019,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "active",
+              "name": "Active",
+              "generationCode": "P84",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "allure",
+              "name": "Allure",
+              "generationCode": "P84",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "gt",
+              "name": "GT",
+              "generationCode": "P84",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "gt-selection",
+              "name": "GT Selection",
+              "generationCode": "P84",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "gt-line",
+              "name": "GT-Line",
+              "generationCode": "P84",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2019,
+        2020
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-peugeot-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "peugeot",
+      "brandName": "Peugeot",
+      "modelSlug": "2008",
+      "modelName": "2008",
+      "generationCode": "2008-I",
+      "generationLabel": "2008-I",
+      "versions": [
+        {
+          "slug": "1-5-bluehdi-120-hp",
+          "name": "1.5 BlueHDi 120 hp",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "allure",
+              "name": "Allure",
+              "generationCode": "2008-I",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "gt-line",
+              "name": "GT-Line",
+              "generationCode": "2008-I",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2019
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-peugeot-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "peugeot",
+      "brandName": "Peugeot",
+      "modelSlug": "2008",
+      "modelName": "2008",
+      "generationCode": "2008-II",
+      "generationLabel": "2008-II",
+      "versions": [
+        {
+          "slug": "1-2-puretech-130-hp",
+          "name": "1.2 PureTech 130 hp",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "active",
+              "name": "Active",
+              "generationCode": "2008-II",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "allure",
+              "name": "Allure",
+              "generationCode": "2008-II",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "gt-line",
+              "name": "GT-Line",
+              "generationCode": "2008-II",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        },
+        {
+          "slug": "1-2-puretech-155-hp",
+          "name": "1.2 PureTech 155 hp",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "gt",
+              "name": "GT",
+              "generationCode": "2008-II",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        },
+        {
+          "slug": "1-5-bluehdi-100-hp",
+          "name": "1.5 BlueHDi 100 hp",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "active",
+              "name": "Active",
+              "generationCode": "2008-II",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        },
+        {
+          "slug": "1-5-bluehdi-130-hp",
+          "name": "1.5 BlueHDi 130 hp",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "active",
+              "name": "Active",
+              "generationCode": "2008-II",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "allure",
+              "name": "Allure",
+              "generationCode": "2008-II",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "gt-line",
+              "name": "GT-Line",
+              "generationCode": "2008-II",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2020
       ],
       "fuelTypes": [],
       "transmissions": [],
@@ -93565,6 +99173,251 @@
       "categoryPaths": [
         "arac/otomobil"
       ],
+      "brandSlug": "renault",
+      "brandName": "Renault",
+      "modelSlug": "clio",
+      "modelName": "Clio",
+      "generationCode": "Clio-IV",
+      "generationLabel": "Clio-IV",
+      "versions": [
+        {
+          "slug": "0-9-tce",
+          "name": "0.9 TCe",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "joy",
+              "name": "Joy",
+              "generationCode": "Clio-IV",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-2",
+          "name": "1.2",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "joy",
+              "name": "Joy",
+              "generationCode": "Clio-IV",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-2-tce",
+          "name": "1.2 TCe",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "icon",
+              "name": "Icon",
+              "generationCode": "Clio-IV",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "joy",
+              "name": "Joy",
+              "generationCode": "Clio-IV",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "touch",
+              "name": "Touch",
+              "generationCode": "Clio-IV",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-5-dci",
+          "name": "1.5 dCi",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "icon",
+              "name": "Icon",
+              "generationCode": "Clio-IV",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "joy",
+              "name": "Joy",
+              "generationCode": "Clio-IV",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "touch",
+              "name": "Touch",
+              "generationCode": "Clio-IV",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2019
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-renault-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "renault",
+      "brandName": "Renault",
+      "modelSlug": "megane",
+      "modelName": "Megane",
+      "generationCode": "Megane-IV",
+      "generationLabel": "Megane-IV",
+      "versions": [
+        {
+          "slug": "1-2-tce",
+          "name": "1.2 TCe",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "icon",
+              "name": "Icon",
+              "generationCode": "Megane-IV",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "touch",
+              "name": "Touch",
+              "generationCode": "Megane-IV",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-5-dci",
+          "name": "1.5 dCi",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "icon",
+              "name": "Icon",
+              "generationCode": "Megane-IV",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "joy",
+              "name": "Joy",
+              "generationCode": "Megane-IV",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "touch",
+              "name": "Touch",
+              "generationCode": "Megane-IV",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-6-16v",
+          "name": "1.6 16V",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "joy",
+              "name": "Joy",
+              "generationCode": "Megane-IV",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2019
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-renault-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "renault",
+      "brandName": "Renault",
+      "modelSlug": "captur",
+      "modelName": "Captur",
+      "generationCode": "Captur-I",
+      "generationLabel": "Captur-I",
+      "versions": [
+        {
+          "slug": "1-5-dci",
+          "name": "1.5 dCi",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "icon",
+              "name": "Icon",
+              "generationCode": "Captur-I",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "touch",
+              "name": "Touch",
+              "generationCode": "Captur-I",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2019
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-renault-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
       "brandSlug": "seat",
       "brandName": "Seat",
       "modelSlug": "ibiza",
@@ -93572,6 +99425,21 @@
       "generationCode": "KJ",
       "generationLabel": "KJ",
       "versions": [
+        {
+          "slug": "1-0-ecotsi-115-hp",
+          "name": "1.0 EcoTSI 115 HP",
+          "yearFrom": 2019,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "style",
+              "name": "Style",
+              "generationCode": "KJ",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
         {
           "slug": "1-0-tsi-116-ps",
           "name": "1.0 TSI 116 PS",
@@ -93589,6 +99457,12 @@
         }
       ],
       "modelYears": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
         2025,
         2026
       ],
@@ -93730,6 +99604,179 @@
       "categoryPaths": [
         "arac/otomobil"
       ],
+      "brandSlug": "seat",
+      "brandName": "Seat",
+      "modelSlug": "leon",
+      "modelName": "Leon",
+      "generationCode": "5F",
+      "generationLabel": "5F",
+      "versions": [
+        {
+          "slug": "1-0-ecotsi-115-hp",
+          "name": "1.0 EcoTSI 115 HP",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "style",
+              "name": "Style",
+              "generationCode": "5F",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        },
+        {
+          "slug": "1-5-ecotsi-130-hp",
+          "name": "1.5 EcoTSI 130 HP",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "fr",
+              "name": "FR",
+              "generationCode": "5F",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        },
+        {
+          "slug": "1-5-ecotsi-act-150-hp",
+          "name": "1.5 EcoTSI ACT 150 HP",
+          "yearFrom": 2019,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "fr",
+              "name": "FR",
+              "generationCode": "5F",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "style",
+              "name": "Style",
+              "generationCode": "5F",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "xcellence",
+              "name": "Xcellence",
+              "generationCode": "5F",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-6-tdi-115-hp",
+          "name": "1.6 TDI 115 HP",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "fr",
+              "name": "FR",
+              "generationCode": "5F",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "style",
+              "name": "Style",
+              "generationCode": "5F",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "xcellence",
+              "name": "Xcellence",
+              "generationCode": "5F",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2019,
+        2020
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-seat-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "seat",
+      "brandName": "Seat",
+      "modelSlug": "ateca",
+      "modelName": "Ateca",
+      "generationCode": "Ateca",
+      "generationLabel": "Ateca",
+      "versions": [
+        {
+          "slug": "1-5-ecotsi-act-150-hp",
+          "name": "1.5 EcoTSI ACT 150 HP",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "fr",
+              "name": "FR",
+              "generationCode": "Ateca",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "xcellence",
+              "name": "Xcellence",
+              "generationCode": "Ateca",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        },
+        {
+          "slug": "1-6-tdi-115-hp",
+          "name": "1.6 TDI 115 HP",
+          "yearFrom": 2019,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "xcellence",
+              "name": "Xcellence",
+              "generationCode": "Ateca",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2019,
+        2020
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-seat-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
       "brandSlug": "skoda",
       "brandName": "Skoda",
       "modelSlug": "fabia",
@@ -93795,6 +99842,50 @@
       "generationLabel": "NX",
       "versions": [
         {
+          "slug": "1-0-tsi-act-110-ps",
+          "name": "1.0 TSI ACT 110 PS",
+          "yearFrom": 2021,
+          "yearTo": 2021,
+          "trims": [
+            {
+              "slug": "elite",
+              "name": "Elite",
+              "generationCode": "NX",
+              "yearFrom": 2021,
+              "yearTo": 2021
+            },
+            {
+              "slug": "premium",
+              "name": "Premium",
+              "generationCode": "NX",
+              "yearFrom": 2021,
+              "yearTo": 2021
+            }
+          ]
+        },
+        {
+          "slug": "1-5-tsi-act-150-ps",
+          "name": "1.5 TSI ACT 150 PS",
+          "yearFrom": 2021,
+          "yearTo": 2021,
+          "trims": [
+            {
+              "slug": "elite",
+              "name": "Elite",
+              "generationCode": "NX",
+              "yearFrom": 2021,
+              "yearTo": 2021
+            },
+            {
+              "slug": "premium",
+              "name": "Premium",
+              "generationCode": "NX",
+              "yearFrom": 2021,
+              "yearTo": 2021
+            }
+          ]
+        },
+        {
           "slug": "1-5-tsi-mhev-150-ps",
           "name": "1.5 TSI mHEV 150 PS",
           "yearFrom": 2024,
@@ -93847,6 +99938,9 @@
         }
       ],
       "modelYears": [
+        2021,
+        2022,
+        2023,
         2024,
         2025,
         2026
@@ -93951,6 +100045,344 @@
         2024,
         2025,
         2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-skoda-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "skoda",
+      "brandName": "Skoda",
+      "modelSlug": "fabia",
+      "modelName": "Fabia",
+      "generationCode": "NJ3",
+      "generationLabel": "NJ3",
+      "versions": [
+        {
+          "slug": "1-0-75-ps",
+          "name": "1.0 75 PS",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "ambition",
+              "name": "Ambition",
+              "generationCode": "NJ3",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-0-tsi-110-ps",
+          "name": "1.0 TSI 110 PS",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "style",
+              "name": "Style",
+              "generationCode": "NJ3",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-0-tsi-95-ps",
+          "name": "1.0 TSI 95 PS",
+          "yearFrom": 2021,
+          "yearTo": 2021,
+          "trims": [
+            {
+              "slug": "premium",
+              "name": "Premium",
+              "generationCode": "NJ3",
+              "yearFrom": 2021,
+              "yearTo": 2021
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2019,
+        2020,
+        2021
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-skoda-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "skoda",
+      "brandName": "Skoda",
+      "modelSlug": "octavia",
+      "modelName": "Octavia",
+      "generationCode": "5E",
+      "generationLabel": "5E",
+      "versions": [
+        {
+          "slug": "1-0-tsi-115-ps",
+          "name": "1.0 TSI 115 PS",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "ambition",
+              "name": "Ambition",
+              "generationCode": "5E",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "style",
+              "name": "Style",
+              "generationCode": "5E",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-5-tsi-150-ps-act",
+          "name": "1.5 TSI 150 PS ACT",
+          "yearFrom": 2019,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "sport",
+              "name": "Sport",
+              "generationCode": "5E",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "style",
+              "name": "Style",
+              "generationCode": "5E",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        },
+        {
+          "slug": "1-6-tdi-115-ps",
+          "name": "1.6 TDI 115 PS",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "ambition",
+              "name": "Ambition",
+              "generationCode": "5E",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "optimal",
+              "name": "Optimal",
+              "generationCode": "5E",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "style",
+              "name": "Style",
+              "generationCode": "5E",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2019,
+        2020
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-skoda-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "skoda",
+      "brandName": "Skoda",
+      "modelSlug": "superb",
+      "modelName": "Superb",
+      "generationCode": "3V",
+      "generationLabel": "3V",
+      "versions": [
+        {
+          "slug": "1-5-tsi-150-ps-act",
+          "name": "1.5 TSI 150 PS ACT",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "active",
+              "name": "Active",
+              "generationCode": "3V",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "prestige",
+              "name": "Prestige",
+              "generationCode": "3V",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "style",
+              "name": "Style",
+              "generationCode": "3V",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-5-tsi-act-150-ps",
+          "name": "1.5 TSI ACT 150 PS",
+          "yearFrom": 2020,
+          "yearTo": 2021,
+          "trims": [
+            {
+              "slug": "elite",
+              "name": "Elite",
+              "generationCode": "3V",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "premium",
+              "name": "Premium",
+              "generationCode": "3V",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "prestige",
+              "name": "Prestige",
+              "generationCode": "3V",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        },
+        {
+          "slug": "1-6-tdi-120-ps",
+          "name": "1.6 TDI 120 PS",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "comfort",
+              "name": "Comfort",
+              "generationCode": "3V",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "prestige",
+              "name": "Prestige",
+              "generationCode": "3V",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "style",
+              "name": "Style",
+              "generationCode": "3V",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-6-tdi-scr-120-ps",
+          "name": "1.6 TDI SCR 120 PS",
+          "yearFrom": 2020,
+          "yearTo": 2021,
+          "trims": [
+            {
+              "slug": "elite",
+              "name": "Elite",
+              "generationCode": "3V",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "premium",
+              "name": "Premium",
+              "generationCode": "3V",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "prestige",
+              "name": "Prestige",
+              "generationCode": "3V",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        },
+        {
+          "slug": "2-0-tdi-190-ps-4x4",
+          "name": "2.0 TDI 190 PS 4x4",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "l-k",
+              "name": "L&K",
+              "generationCode": "3V",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "2-0-tdi-scr-190-ps-4x4",
+          "name": "2.0 TDI SCR 190 PS 4x4",
+          "yearFrom": 2020,
+          "yearTo": 2021,
+          "trims": [
+            {
+              "slug": "l-k-crystal",
+              "name": "L&K Crystal",
+              "generationCode": "3V",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2019,
+        2020,
+        2021
       ],
       "fuelTypes": [],
       "transmissions": [],
@@ -94092,6 +100524,51 @@
       "categoryPaths": [
         "arac/arazi-suv-pickup"
       ],
+      "brandSlug": "subaru",
+      "brandName": "Subaru",
+      "modelSlug": "xv",
+      "modelName": "XV",
+      "generationCode": "GT",
+      "generationLabel": "GT",
+      "versions": [
+        {
+          "slug": "1-6i-lineartronic",
+          "name": "1.6i Lineartronic",
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "xclusive",
+              "name": "Xclusive",
+              "generationCode": "GT",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            },
+            {
+              "slug": "xtreme",
+              "name": "Xtreme",
+              "generationCode": "GT",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2020
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-subaru-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
       "brandSlug": "suzuki",
       "brandName": "Suzuki",
       "modelSlug": "vitara",
@@ -94204,6 +100681,73 @@
             {
               "slug": "glx",
               "name": "GLX",
+              "yearFrom": 2024,
+              "yearTo": 2024
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2024
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-suzuki-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "suzuki",
+      "brandName": "Suzuki",
+      "modelSlug": "s-cross",
+      "modelName": "S-Cross",
+      "generationCode": "JY",
+      "generationLabel": "JY",
+      "versions": [
+        {
+          "slug": "1-4-mhev-6at",
+          "name": "1.4 MHEV 6AT",
+          "yearFrom": 2024,
+          "yearTo": 2024,
+          "trims": [
+            {
+              "slug": "gl-elegance",
+              "name": "GL Elegance",
+              "generationCode": "JY",
+              "yearFrom": 2024,
+              "yearTo": 2024
+            },
+            {
+              "slug": "glx-premium",
+              "name": "GLX Premium",
+              "generationCode": "JY",
+              "yearFrom": 2024,
+              "yearTo": 2024
+            }
+          ]
+        },
+        {
+          "slug": "1-4-mhev-6at-allgrip",
+          "name": "1.4 MHEV 6AT AllGrip",
+          "yearFrom": 2024,
+          "yearTo": 2024,
+          "trims": [
+            {
+              "slug": "gl-elegance",
+              "name": "GL Elegance",
+              "generationCode": "JY",
+              "yearFrom": 2024,
+              "yearTo": 2024
+            },
+            {
+              "slug": "glx-premium",
+              "name": "GLX Premium",
+              "generationCode": "JY",
               "yearFrom": 2024,
               "yearTo": 2024
             }
@@ -94525,9 +101069,95 @@
           ]
         },
         {
+          "slug": "1-6",
+          "name": "1.6",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "dream",
+              "name": "Dream",
+              "generationCode": "E210",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "flame",
+              "name": "Flame",
+              "generationCode": "E210",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "flame-x-pack",
+              "name": "Flame X-Pack",
+              "generationCode": "E210",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "vision",
+              "name": "Vision",
+              "generationCode": "E210",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-6-multidrive-s",
+          "name": "1.6 Multidrive S",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "dream",
+              "name": "Dream",
+              "generationCode": "E210",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "flame",
+              "name": "Flame",
+              "generationCode": "E210",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "flame-x-pack",
+              "name": "Flame X-Pack",
+              "generationCode": "E210",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "passion",
+              "name": "Passion",
+              "generationCode": "E210",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "passion-x-pack",
+              "name": "Passion X-Pack",
+              "generationCode": "E210",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "vision",
+              "name": "Vision",
+              "generationCode": "E210",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
           "slug": "1-8-hybrid-e-cvt",
           "name": "1.8 Hybrid e-CVT",
-          "yearFrom": 2023,
+          "yearFrom": 2019,
           "yearTo": 2026,
           "trims": [
             {
@@ -94545,16 +101175,48 @@
               "yearTo": 2026
             },
             {
+              "slug": "flame",
+              "name": "Flame",
+              "generationCode": "E210",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
               "slug": "flame-x-pack",
               "name": "Flame X-Pack",
               "generationCode": "E210",
               "yearFrom": 2023,
               "yearTo": 2026
+            },
+            {
+              "slug": "passion",
+              "name": "Passion",
+              "generationCode": "E210",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "passion-x-pack",
+              "name": "Passion X-Pack",
+              "generationCode": "E210",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "vision",
+              "name": "Vision",
+              "generationCode": "E210",
+              "yearFrom": 2019,
+              "yearTo": 2019
             }
           ]
         }
       ],
       "modelYears": [
+        2019,
+        2020,
+        2021,
+        2022,
         2023,
         2024,
         2025,
@@ -94621,6 +101283,155 @@
         2024,
         2025,
         2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-toyota-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "toyota",
+      "brandName": "Toyota",
+      "modelSlug": "c-hr",
+      "modelName": "C-HR",
+      "generationCode": "AX10",
+      "generationLabel": "AX10",
+      "versions": [
+        {
+          "slug": "1-2-turbo",
+          "name": "1.2 Turbo",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "flame",
+              "name": "Flame",
+              "generationCode": "AX10",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-2-turbo-multidrive-s",
+          "name": "1.2 Turbo Multidrive S",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "flame",
+              "name": "Flame",
+              "generationCode": "AX10",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "passion",
+              "name": "Passion",
+              "generationCode": "AX10",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-8-hybrid-e-cvt",
+          "name": "1.8 Hybrid e-CVT",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "flame",
+              "name": "Flame",
+              "generationCode": "AX10",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "passion",
+              "name": "Passion",
+              "generationCode": "AX10",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "passion-x-pack",
+              "name": "Passion X-Pack",
+              "generationCode": "AX10",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2019
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-toyota-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "toyota",
+      "brandName": "Toyota",
+      "modelSlug": "rav4",
+      "modelName": "RAV4",
+      "generationCode": "XA50",
+      "generationLabel": "XA50",
+      "versions": [
+        {
+          "slug": "2-5-hybrid-4x4-e-cvt",
+          "name": "2.5 Hybrid 4x4 e-CVT",
+          "yearFrom": 2019,
+          "yearTo": 2020,
+          "trims": [
+            {
+              "slug": "flame",
+              "name": "Flame",
+              "generationCode": "XA50",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "passion",
+              "name": "Passion",
+              "generationCode": "XA50",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "passion-x-pack",
+              "name": "Passion X-Pack",
+              "generationCode": "XA50",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "passion-x-sport",
+              "name": "Passion X-Sport",
+              "generationCode": "XA50",
+              "yearFrom": 2020,
+              "yearTo": 2020
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2019,
+        2020
       ],
       "fuelTypes": [],
       "transmissions": [],
@@ -95079,6 +101890,132 @@
     },
     {
       "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "volkswagen",
+      "brandName": "Volkswagen",
+      "modelSlug": "golf",
+      "modelName": "Golf",
+      "generationCode": "Mk7",
+      "generationLabel": "Mk7",
+      "versions": [
+        {
+          "slug": "1-0-tsi",
+          "name": "1.0 TSI",
+          "yearFrom": 2018,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "comfortline",
+              "name": "Comfortline",
+              "generationCode": "Mk7",
+              "yearFrom": 2018,
+              "yearTo": 2018
+            },
+            {
+              "slug": "highline",
+              "name": "Highline",
+              "generationCode": "Mk7",
+              "yearFrom": 2018,
+              "yearTo": 2018
+            },
+            {
+              "slug": "midline-plus",
+              "name": "Midline Plus",
+              "generationCode": "Mk7",
+              "yearFrom": 2018,
+              "yearTo": 2018
+            }
+          ]
+        },
+        {
+          "slug": "1-4-tsi",
+          "name": "1.4 TSI",
+          "yearFrom": 2018,
+          "yearTo": 2018,
+          "trims": [
+            {
+              "slug": "comfortline",
+              "name": "Comfortline",
+              "generationCode": "Mk7",
+              "yearFrom": 2018,
+              "yearTo": 2018
+            },
+            {
+              "slug": "highline",
+              "name": "Highline",
+              "generationCode": "Mk7",
+              "yearFrom": 2018,
+              "yearTo": 2018
+            }
+          ]
+        },
+        {
+          "slug": "1-5-tsi",
+          "name": "1.5 TSI",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "comfortline",
+              "name": "Comfortline",
+              "generationCode": "Mk7",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "highline",
+              "name": "Highline",
+              "generationCode": "Mk7",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "1-6-tdi",
+          "name": "1.6 TDI",
+          "yearFrom": 2018,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "comfortline",
+              "name": "Comfortline",
+              "generationCode": "Mk7",
+              "yearFrom": 2018,
+              "yearTo": 2018
+            },
+            {
+              "slug": "highline",
+              "name": "Highline",
+              "generationCode": "Mk7",
+              "yearFrom": 2018,
+              "yearTo": 2018
+            },
+            {
+              "slug": "midline-plus",
+              "name": "Midline Plus",
+              "generationCode": "Mk7",
+              "yearFrom": 2018,
+              "yearTo": 2018
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-volkswagen-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
         "arac/arazi-suv-pickup"
       ],
       "brandSlug": "volvo",
@@ -95205,6 +102142,125 @@
         2024,
         2025,
         2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-volvo-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "volvo",
+      "brandName": "Volvo",
+      "modelSlug": "xc60",
+      "modelName": "XC60",
+      "generationCode": "SPA/XC60",
+      "generationLabel": "SPA/XC60",
+      "versions": [
+        {
+          "slug": "2-0-d4",
+          "name": "2.0 D4",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "inscription",
+              "name": "Inscription",
+              "generationCode": "SPA/XC60",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "momentum",
+              "name": "Momentum",
+              "generationCode": "SPA/XC60",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "r-design",
+              "name": "R-Design",
+              "generationCode": "SPA/XC60",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2019
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-volvo-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/arazi-suv-pickup"
+      ],
+      "brandSlug": "volvo",
+      "brandName": "Volvo",
+      "modelSlug": "xc90",
+      "modelName": "XC90",
+      "generationCode": "SPA/XC90",
+      "generationLabel": "SPA/XC90",
+      "versions": [
+        {
+          "slug": "2-0-d5",
+          "name": "2.0 D5",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "inscription",
+              "name": "Inscription",
+              "generationCode": "SPA/XC90",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "momentum",
+              "name": "Momentum",
+              "generationCode": "SPA/XC90",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            },
+            {
+              "slug": "r-design",
+              "name": "R-Design",
+              "generationCode": "SPA/XC90",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "2-0-t8",
+          "name": "2.0 T8",
+          "yearFrom": 2019,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "momentum",
+              "name": "Momentum",
+              "generationCode": "SPA/XC90",
+              "yearFrom": 2019,
+              "yearTo": 2019
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2019
       ],
       "fuelTypes": [],
       "transmissions": [],

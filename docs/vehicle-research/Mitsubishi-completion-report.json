@@ -1,0 +1,74 @@
+{
+  "at": "2026-08-07T10:15:27.242Z",
+  "brand": "Mitsubishi",
+  "status": "COMPLETED",
+  "gate": {
+    "seriesWithoutResearch": [],
+    "seriesWithoutResearchCount": 0,
+    "pass": true
+  },
+  "selectableSeries": [
+    "ASX",
+    "Eclipse Cross",
+    "L200",
+    "Space Star"
+  ],
+  "researchedSeries": [
+    "ASX",
+    "Eclipse Cross",
+    "L200",
+    "Space Star"
+  ],
+  "verifiedVersions": [
+    "1.2",
+    "1.5 Instyle CVT",
+    "1.5 Intense CVT",
+    "1.5 Invite CVT",
+    "1.5 Invite MT",
+    "1.6",
+    "1.6 D",
+    "4x2 Tornado AT",
+    "4x2 Tornado MT",
+    "4x4 Blizzard AT",
+    "4x4 Premium AT",
+    "4x4 Storm MT",
+    "4x4 Tornado MT"
+  ],
+  "verifiedTrims": [
+    "Blizzard",
+    "Instyle",
+    "Intense",
+    "Invite",
+    "Premium",
+    "Storm",
+    "Tornado"
+  ],
+  "verifiedConfigurations": 15,
+  "officialSources": 0,
+  "multiSources": 15,
+  "reviewRequired": 3,
+  "rejected": 0,
+  "noVerifiedTrimFound": 0,
+  "seriesWithCurrentOnlyCoverage": [
+    "Space Star"
+  ],
+  "historicalCoverageIncompleteSeries": [
+    {
+      "series": "Space Star",
+      "historicalCoverage": "CURRENT_ONLY"
+    }
+  ],
+  "sourceUrls": [
+    "https://arabamyeni.com/sifir/mitsubishi/asx/2019/1-6-intense",
+    "https://otokampanyalar.com/mitsubishi-guncel-kampanyali-fiyat-listesi-m360121.html",
+    "https://otomobilkampanyalar.com/mitsubishi-fiyat-listesi/",
+    "https://www.arabalar.com.tr/mitsubishi/asx",
+    "https://www.arabava.com/mitsubishi-fiyat-listesi-2026-mayis/",
+    "https://www.arabavs.com/mitsubishi-aralik-ayi-guncel-fiyat-listesi-2019.html",
+    "https://www.arabavs.com/mitsubishi-fiyat-listesi-2020-mayis-yayinlandi.html",
+    "https://www.log.com.tr/2020-mitsubishi-l200-fiyati-ve-donanim-secenekleri/",
+    "https://www.milligazete.com.tr/haber/21272110/fiyati-bu-ay-da-degismedi-mitsubishi-space-star-icin-rakam-hala-1-milyon-tlnin-altinda",
+    "https://www.mitsubishi-motors.com.tr/"
+  ],
+  "notes": "Completed means every selectable series was systematically researched. Current-only and incomplete historical gens remain explicitly flagged. Research-only; applyAllowed=false. Not final absolute historical complete."
+}

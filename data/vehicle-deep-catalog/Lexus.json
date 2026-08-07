@@ -1,15 +1,15 @@
 {
   "brand": "Lexus",
   "brandSlug": "lexus",
-  "version": "2026.08-deep-lexus-v1-current-tr",
-  "generatedAt": "2026-08-07T12:05:00.000Z",
+  "version": "2026.08-deep-lexus-v2-premium",
+  "generatedAt": "2026-08-07T10:15:27.202Z",
   "seriesCovered": [
+    "ES",
     "LBX",
+    "LM",
     "NX",
     "RX",
-    "RZ",
-    "ES",
-    "LM"
+    "RZ"
   ],
   "status": "COMPLETED",
   "notes": "LBX Hybrid trims from Aug/Jul 2026 published TR tables citing Lexus list prices.",
@@ -442,23 +442,239 @@
           "role": "secondary"
         }
       ]
+    },
+    {
+      "brand": "Lexus",
+      "series": "RX",
+      "model": "350h AWD",
+      "trim": "Executive",
+      "generation": "RX Hybrid TR MY2026",
+      "generationCode": "AL10",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "2487",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "RX 350h AWD Executive E-CVT — Ağustos/Temmuz 2026 published TR tables.",
+      "sources": [
+        {
+          "url": "https://teknobirinci.com.tr/agustos-2026-lexus-fiyat-listesi-aciklandi-27-milyon-tl-indirim-var/",
+          "title": "Lexus Ağustos 2026 versiyon×trim tablosu",
+          "date": "2026-08-05",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "teknobirinci.com.tr"
+        },
+        {
+          "url": "https://onedio.com/haber/temmuz-2026-lexus-fiyat-listesi-iste-lexus-es-rx-rz-lbx-nx-ve-ls-guncel-fiyatlari-1369820",
+          "title": "Lexus Temmuz 2026 LBX/NX/RX/LM tablosu",
+          "date": "2026-07-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "onedio.com"
+        },
+        {
+          "url": "https://www.lexus.com.tr/",
+          "title": "Lexus Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary",
+          "publisher": "Lexus Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "Lexus",
+      "series": "RX",
+      "model": "350h AWD",
+      "trim": "Exclusive",
+      "generation": "RX Hybrid TR MY2026",
+      "generationCode": "AL10",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "2487",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "RX 350h AWD Exclusive E-CVT — Ağustos/Temmuz 2026 published TR tables.",
+      "sources": [
+        {
+          "url": "https://teknobirinci.com.tr/agustos-2026-lexus-fiyat-listesi-aciklandi-27-milyon-tl-indirim-var/",
+          "title": "Lexus Ağustos 2026 versiyon×trim tablosu",
+          "date": "2026-08-05",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "teknobirinci.com.tr"
+        },
+        {
+          "url": "https://onedio.com/haber/temmuz-2026-lexus-fiyat-listesi-iste-lexus-es-rx-rz-lbx-nx-ve-ls-guncel-fiyatlari-1369820",
+          "title": "Lexus Temmuz 2026 LBX/NX/RX/LM tablosu",
+          "date": "2026-07-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "onedio.com"
+        },
+        {
+          "url": "https://www.lexus.com.tr/",
+          "title": "Lexus Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary",
+          "publisher": "Lexus Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "Lexus",
+      "series": "RX",
+      "model": "500h AWD",
+      "trim": "F Sport",
+      "generation": "RX Performance Hybrid TR MY2025/26",
+      "generationCode": "AL10",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "2393",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "RX 500h AWD F Sport 6AT — Ağustos 2026 Performans Hybrid satırı.",
+      "sources": [
+        {
+          "url": "https://teknobirinci.com.tr/agustos-2026-lexus-fiyat-listesi-aciklandi-27-milyon-tl-indirim-var/",
+          "title": "Lexus Ağustos 2026 versiyon×trim tablosu",
+          "date": "2026-08-05",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "teknobirinci.com.tr"
+        },
+        {
+          "url": "https://onedio.com/haber/temmuz-2026-lexus-fiyat-listesi-iste-lexus-es-rx-rz-lbx-nx-ve-ls-guncel-fiyatlari-1369820",
+          "title": "Lexus Temmuz 2026 LBX/NX/RX/LM tablosu",
+          "date": "2026-07-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "onedio.com"
+        },
+        {
+          "url": "https://www.lexus.com.tr/",
+          "title": "Lexus Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary",
+          "publisher": "Lexus Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "Lexus",
+      "series": "LM",
+      "model": "350h 4 Koltuklu E-CVT",
+      "trim": "4-Seat",
+      "generation": "LM Hybrid TR MY2026",
+      "generationCode": "AW10",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "2487",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Minivan & Panelvan",
+      "notes": "LM 350h 4 Koltuklu E-CVT — Ağustos 2026 published TR tables (seat count as trim).",
+      "sources": [
+        {
+          "url": "https://teknobirinci.com.tr/agustos-2026-lexus-fiyat-listesi-aciklandi-27-milyon-tl-indirim-var/",
+          "title": "Lexus Ağustos 2026 versiyon×trim tablosu",
+          "date": "2026-08-05",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "teknobirinci.com.tr"
+        },
+        {
+          "url": "https://onedio.com/haber/temmuz-2026-lexus-fiyat-listesi-iste-lexus-es-rx-rz-lbx-nx-ve-ls-guncel-fiyatlari-1369820",
+          "title": "Lexus Temmuz 2026 LBX/NX/RX/LM tablosu",
+          "date": "2026-07-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "onedio.com"
+        },
+        {
+          "url": "https://www.lexus.com.tr/",
+          "title": "Lexus Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary",
+          "publisher": "Lexus Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "Lexus",
+      "series": "LM",
+      "model": "350h 7 Koltuklu E-CVT",
+      "trim": "7-Seat",
+      "generation": "LM Hybrid TR MY2026",
+      "generationCode": "AW10",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "2487",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Minivan & Panelvan",
+      "notes": "LM 350h 7 Koltuklu E-CVT — Ağustos 2026 published TR tables (seat count as trim).",
+      "sources": [
+        {
+          "url": "https://teknobirinci.com.tr/agustos-2026-lexus-fiyat-listesi-aciklandi-27-milyon-tl-indirim-var/",
+          "title": "Lexus Ağustos 2026 versiyon×trim tablosu",
+          "date": "2026-08-05",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "teknobirinci.com.tr"
+        },
+        {
+          "url": "https://onedio.com/haber/temmuz-2026-lexus-fiyat-listesi-iste-lexus-es-rx-rz-lbx-nx-ve-ls-guncel-fiyatlari-1369820",
+          "title": "Lexus Temmuz 2026 LBX/NX/RX/LM tablosu",
+          "date": "2026-07-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "onedio.com"
+        },
+        {
+          "url": "https://www.lexus.com.tr/",
+          "title": "Lexus Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary",
+          "publisher": "Lexus Türkiye"
+        }
+      ]
     }
   ],
   "researchNotes": {
-    "researchedSeriesPass": [
+    "noApply": true,
+    "applyAllowed": false,
+    "phase": "research-premium-ev-batch",
+    "seriesWithoutResearch": [],
+    "currentOnlySeries": [
       "LBX",
       "NX",
       "RX",
-      "RZ",
-      "ES",
       "LM"
     ],
-    "reviewRequiredSeries": [
-      "RX",
-      "RZ",
-      "ES",
-      "LM"
-    ]
+    "addedThisPass": 5,
+    "electricOverlayNote": "Do not invent duplicate EV series"
   },
   "completedAt": "2026-08-07T09:13:29.906Z"
 }

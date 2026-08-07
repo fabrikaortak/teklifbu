@@ -1,11 +1,11 @@
 {
   "brand": "Honda",
   "brandSlug": "honda",
-  "version": "2026.08-deep-honda-v1-current-tr",
-  "generatedAt": "2026-08-07T12:00:00.000Z",
+  "version": "2026.08-deep-honda-v2-historical",
+  "generatedAt": "2026-08-07T10:14:37.786Z",
   "seriesCovered": [
-    "HR-V",
-    "Civic"
+    "Civic",
+    "HR-V"
   ],
   "status": "COMPLETED",
   "notes": "HR-V e:HEV official honda.com.tr 2026 MY. Civic current sales stopped — historical REVIEW.",
@@ -153,17 +153,664 @@
           "role": "primary"
         }
       ]
+    },
+    {
+      "brand": "Honda",
+      "series": "HR-V",
+      "model": "1.5 130 PS",
+      "trim": "Executive",
+      "generation": "HR-V II TR MY2019",
+      "generationCode": "RU",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1498",
+      "powerHp": "130",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Eylül 2019 HR-V 1.5L Executive AT — published pair.",
+      "sources": [
+        {
+          "url": "https://caraba.net/honda-eylul-2019-fiyat-listesi-yayinlandi/",
+          "title": "Honda Eylül 2019 Civic/HR-V Elegance/Executive fiyat listesi",
+          "date": "2019-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Honda",
+      "series": "HR-V",
+      "model": "1.5 130 PS",
+      "trim": "Executive",
+      "generation": "HR-V II TR MY2020",
+      "generationCode": "RU",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1498",
+      "powerHp": "130",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Aralık 2020 HR-V ICE — Executive/Sport only as published (pre e:HEV).",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3040227-honda-arac-modelleri-aralik-ayi-fiyatlari-sifir-civic-cr-v-hr-v-fiyat-listesi",
+          "title": "Honda Aralık 2020 Civic/HR-V fiyat listesi",
+          "date": "2020-12-08",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        }
+      ]
+    },
+    {
+      "brand": "Honda",
+      "series": "HR-V",
+      "model": "1.5 VTEC Turbo 182 PS",
+      "trim": "Sport",
+      "generation": "HR-V II TR MY2020",
+      "generationCode": "RU",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1498",
+      "powerHp": "182",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Aralık 2020 HR-V ICE — Executive/Sport only as published (pre e:HEV).",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3040227-honda-arac-modelleri-aralik-ayi-fiyatlari-sifir-civic-cr-v-hr-v-fiyat-listesi",
+          "title": "Honda Aralık 2020 Civic/HR-V fiyat listesi",
+          "date": "2020-12-08",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        }
+      ]
+    },
+    {
+      "brand": "Honda",
+      "series": "HR-V",
+      "model": "1.5 130 PS",
+      "trim": "Executive",
+      "generation": "HR-V II TR MY2021",
+      "generationCode": "RU",
+      "yearFrom": 2021,
+      "yearTo": 2021,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1498",
+      "powerHp": "130",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Mart 2021 HR-V ICE — Executive/Sport only as published (pre e:HEV).",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/honda-mart-ayina-ozel-kampanyalar/",
+          "title": "Honda Mart 2021 Civic/HR-V kampanyalı fiyat listesi",
+          "date": "2021-03-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Honda",
+      "series": "HR-V",
+      "model": "1.5 VTEC Turbo 182 PS",
+      "trim": "Sport",
+      "generation": "HR-V II TR MY2021",
+      "generationCode": "RU",
+      "yearFrom": 2021,
+      "yearTo": 2021,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1498",
+      "powerHp": "182",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Mart 2021 HR-V ICE — Executive/Sport only as published (pre e:HEV).",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/honda-mart-ayina-ozel-kampanyalar/",
+          "title": "Honda Mart 2021 Civic/HR-V kampanyalı fiyat listesi",
+          "date": "2021-03-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Honda",
+      "series": "Civic",
+      "model": "1.5 VTEC Turbo 182 PS",
+      "trim": "Elegance",
+      "generation": "Civic Sedan X TR MY2019",
+      "generationCode": "FC",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1498",
+      "powerHp": "182",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Eylül 2019 Civic Sedan — Elegance/Executive(+)/Dream only as published.",
+      "sources": [
+        {
+          "url": "https://caraba.net/honda-eylul-2019-fiyat-listesi-yayinlandi/",
+          "title": "Honda Eylül 2019 Civic/HR-V Elegance/Executive fiyat listesi",
+          "date": "2019-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Honda",
+      "series": "Civic",
+      "model": "1.5 VTEC Turbo 182 PS",
+      "trim": "Executive+",
+      "generation": "Civic Sedan X TR MY2019",
+      "generationCode": "FC",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1498",
+      "powerHp": "182",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Eylül 2019 Civic Sedan — Elegance/Executive(+)/Dream only as published.",
+      "sources": [
+        {
+          "url": "https://caraba.net/honda-eylul-2019-fiyat-listesi-yayinlandi/",
+          "title": "Honda Eylül 2019 Civic/HR-V Elegance/Executive fiyat listesi",
+          "date": "2019-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Honda",
+      "series": "Civic",
+      "model": "1.6 Dream Eco",
+      "trim": "Dream",
+      "generation": "Civic Sedan X TR MY2019",
+      "generationCode": "FC",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "LPG",
+      "engineVolume": "1597",
+      "powerHp": "125",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Eylül 2019 Civic Sedan — Elegance/Executive(+)/Dream only as published.",
+      "sources": [
+        {
+          "url": "https://caraba.net/honda-eylul-2019-fiyat-listesi-yayinlandi/",
+          "title": "Honda Eylül 2019 Civic/HR-V Elegance/Executive fiyat listesi",
+          "date": "2019-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Honda",
+      "series": "Civic",
+      "model": "1.6 Elegance Eco",
+      "trim": "Elegance",
+      "generation": "Civic Sedan X TR MY2019",
+      "generationCode": "FC",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "LPG",
+      "engineVolume": "1597",
+      "powerHp": "125",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Eylül 2019 Civic Sedan — Elegance/Executive(+)/Dream only as published.",
+      "sources": [
+        {
+          "url": "https://caraba.net/honda-eylul-2019-fiyat-listesi-yayinlandi/",
+          "title": "Honda Eylül 2019 Civic/HR-V Elegance/Executive fiyat listesi",
+          "date": "2019-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Honda",
+      "series": "Civic",
+      "model": "1.6 Executive Eco",
+      "trim": "Executive",
+      "generation": "Civic Sedan X TR MY2019",
+      "generationCode": "FC",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "LPG",
+      "engineVolume": "1597",
+      "powerHp": "125",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Eylül 2019 Civic Sedan — Elegance/Executive(+)/Dream only as published.",
+      "sources": [
+        {
+          "url": "https://caraba.net/honda-eylul-2019-fiyat-listesi-yayinlandi/",
+          "title": "Honda Eylül 2019 Civic/HR-V Elegance/Executive fiyat listesi",
+          "date": "2019-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Honda",
+      "series": "Civic",
+      "model": "1.6 Elegance Dizel",
+      "trim": "Elegance",
+      "generation": "Civic Sedan X TR MY2019",
+      "generationCode": "FC",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1597",
+      "powerHp": "120",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Eylül 2019 Civic Sedan — Elegance/Executive(+)/Dream only as published.",
+      "sources": [
+        {
+          "url": "https://caraba.net/honda-eylul-2019-fiyat-listesi-yayinlandi/",
+          "title": "Honda Eylül 2019 Civic/HR-V Elegance/Executive fiyat listesi",
+          "date": "2019-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Honda",
+      "series": "Civic",
+      "model": "1.6 125 PS",
+      "trim": "Elegance",
+      "generation": "Civic Sedan X TR MY2020",
+      "generationCode": "FC",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1597",
+      "powerHp": "125",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Aralık 2020 Civic Sedan AT — Elegance/Executive(+)/ECO as published.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3040227-honda-arac-modelleri-aralik-ayi-fiyatlari-sifir-civic-cr-v-hr-v-fiyat-listesi",
+          "title": "Honda Aralık 2020 Civic/HR-V fiyat listesi",
+          "date": "2020-12-08",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        }
+      ]
+    },
+    {
+      "brand": "Honda",
+      "series": "Civic",
+      "model": "1.5 VTEC Turbo 182 PS",
+      "trim": "Elegance",
+      "generation": "Civic Sedan X TR MY2020",
+      "generationCode": "FC",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1498",
+      "powerHp": "182",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Aralık 2020 Civic Sedan AT — Elegance/Executive(+)/ECO as published.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3040227-honda-arac-modelleri-aralik-ayi-fiyatlari-sifir-civic-cr-v-hr-v-fiyat-listesi",
+          "title": "Honda Aralık 2020 Civic/HR-V fiyat listesi",
+          "date": "2020-12-08",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        }
+      ]
+    },
+    {
+      "brand": "Honda",
+      "series": "Civic",
+      "model": "1.5 VTEC Turbo 182 PS",
+      "trim": "Executive+",
+      "generation": "Civic Sedan X TR MY2020",
+      "generationCode": "FC",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1498",
+      "powerHp": "182",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Aralık 2020 Civic Sedan AT — Elegance/Executive(+)/ECO as published.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3040227-honda-arac-modelleri-aralik-ayi-fiyatlari-sifir-civic-cr-v-hr-v-fiyat-listesi",
+          "title": "Honda Aralık 2020 Civic/HR-V fiyat listesi",
+          "date": "2020-12-08",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        }
+      ]
+    },
+    {
+      "brand": "Honda",
+      "series": "Civic",
+      "model": "1.6 ECO",
+      "trim": "Elegance",
+      "generation": "Civic Sedan X TR MY2020",
+      "generationCode": "FC",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "LPG",
+      "engineVolume": "1597",
+      "powerHp": "125",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Aralık 2020 Civic Sedan AT — Elegance/Executive(+)/ECO as published.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3040227-honda-arac-modelleri-aralik-ayi-fiyatlari-sifir-civic-cr-v-hr-v-fiyat-listesi",
+          "title": "Honda Aralık 2020 Civic/HR-V fiyat listesi",
+          "date": "2020-12-08",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        }
+      ]
+    },
+    {
+      "brand": "Honda",
+      "series": "Civic",
+      "model": "1.6 ECO",
+      "trim": "Executive",
+      "generation": "Civic Sedan X TR MY2020",
+      "generationCode": "FC",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "LPG",
+      "engineVolume": "1597",
+      "powerHp": "125",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Aralık 2020 Civic Sedan AT — Elegance/Executive(+)/ECO as published.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3040227-honda-arac-modelleri-aralik-ayi-fiyatlari-sifir-civic-cr-v-hr-v-fiyat-listesi",
+          "title": "Honda Aralık 2020 Civic/HR-V fiyat listesi",
+          "date": "2020-12-08",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        }
+      ]
+    },
+    {
+      "brand": "Honda",
+      "series": "Civic",
+      "model": "1.6 125 PS",
+      "trim": "Elegance",
+      "generation": "Civic Sedan X TR MY2021",
+      "generationCode": "FC",
+      "yearFrom": 2021,
+      "yearTo": 2021,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1597",
+      "powerHp": "125",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Mart/Ekim 2021 Civic Sedan — Elegance/Executive+ as published (current zero-km stopped).",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/honda-mart-ayina-ozel-kampanyalar/",
+          "title": "Honda Mart 2021 Civic/HR-V kampanyalı fiyat listesi",
+          "date": "2021-03-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        },
+        {
+          "url": "https://www.arabahabercisi.com/honda-civic-fiyatlari-ekim-2021/",
+          "title": "Honda Civic Sedan Ekim 2021 Elegance/Executive+ matrisi",
+          "date": "2021-10-22",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabahabercisi.com"
+        }
+      ]
+    },
+    {
+      "brand": "Honda",
+      "series": "Civic",
+      "model": "1.6 ECO",
+      "trim": "Elegance",
+      "generation": "Civic Sedan X TR MY2021",
+      "generationCode": "FC",
+      "yearFrom": 2021,
+      "yearTo": 2021,
+      "fuelType": "LPG",
+      "engineVolume": "1597",
+      "powerHp": "125",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Mart/Ekim 2021 Civic Sedan — Elegance/Executive+ as published (current zero-km stopped).",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/honda-mart-ayina-ozel-kampanyalar/",
+          "title": "Honda Mart 2021 Civic/HR-V kampanyalı fiyat listesi",
+          "date": "2021-03-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        },
+        {
+          "url": "https://www.arabahabercisi.com/honda-civic-fiyatlari-ekim-2021/",
+          "title": "Honda Civic Sedan Ekim 2021 Elegance/Executive+ matrisi",
+          "date": "2021-10-22",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabahabercisi.com"
+        }
+      ]
+    },
+    {
+      "brand": "Honda",
+      "series": "Civic",
+      "model": "1.6 ECO",
+      "trim": "Executive",
+      "generation": "Civic Sedan X TR MY2021",
+      "generationCode": "FC",
+      "yearFrom": 2021,
+      "yearTo": 2021,
+      "fuelType": "LPG",
+      "engineVolume": "1597",
+      "powerHp": "125",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Mart/Ekim 2021 Civic Sedan — Elegance/Executive+ as published (current zero-km stopped).",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/honda-mart-ayina-ozel-kampanyalar/",
+          "title": "Honda Mart 2021 Civic/HR-V kampanyalı fiyat listesi",
+          "date": "2021-03-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        },
+        {
+          "url": "https://www.arabahabercisi.com/honda-civic-fiyatlari-ekim-2021/",
+          "title": "Honda Civic Sedan Ekim 2021 Elegance/Executive+ matrisi",
+          "date": "2021-10-22",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabahabercisi.com"
+        }
+      ]
+    },
+    {
+      "brand": "Honda",
+      "series": "Civic",
+      "model": "1.5 VTEC Turbo 182 PS",
+      "trim": "Elegance",
+      "generation": "Civic Sedan X TR MY2021",
+      "generationCode": "FC",
+      "yearFrom": 2021,
+      "yearTo": 2021,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1498",
+      "powerHp": "182",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Mart/Ekim 2021 Civic Sedan — Elegance/Executive+ as published (current zero-km stopped).",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/honda-mart-ayina-ozel-kampanyalar/",
+          "title": "Honda Mart 2021 Civic/HR-V kampanyalı fiyat listesi",
+          "date": "2021-03-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        },
+        {
+          "url": "https://www.arabahabercisi.com/honda-civic-fiyatlari-ekim-2021/",
+          "title": "Honda Civic Sedan Ekim 2021 Elegance/Executive+ matrisi",
+          "date": "2021-10-22",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabahabercisi.com"
+        }
+      ]
+    },
+    {
+      "brand": "Honda",
+      "series": "Civic",
+      "model": "1.5 VTEC Turbo 182 PS",
+      "trim": "Executive+",
+      "generation": "Civic Sedan X TR MY2021",
+      "generationCode": "FC",
+      "yearFrom": 2021,
+      "yearTo": 2021,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1498",
+      "powerHp": "182",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Mart/Ekim 2021 Civic Sedan — Elegance/Executive+ as published (current zero-km stopped).",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/honda-mart-ayina-ozel-kampanyalar/",
+          "title": "Honda Mart 2021 Civic/HR-V kampanyalı fiyat listesi",
+          "date": "2021-03-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        },
+        {
+          "url": "https://www.arabahabercisi.com/honda-civic-fiyatlari-ekim-2021/",
+          "title": "Honda Civic Sedan Ekim 2021 Elegance/Executive+ matrisi",
+          "date": "2021-10-22",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabahabercisi.com"
+        }
+      ]
     }
   ],
   "researchNotes": {
-    "researchedSeriesPass": [
-      "HR-V",
-      "Civic"
-    ],
-    "historicalArchivesIngested": [],
-    "reviewRequiredSeries": [
-      "Civic"
-    ]
+    "noApply": true,
+    "applyAllowed": false,
+    "phase": "research-mass-market-batch",
+    "seriesWithoutResearch": [],
+    "currentOnlySeries": [],
+    "addedThisPass": 21
   },
   "completedAt": "2026-08-07T09:13:29.889Z"
 }

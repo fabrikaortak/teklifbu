@@ -1,0 +1,56 @@
+{
+  "at": "2026-08-07T10:15:27.301Z",
+  "brand": "Tesla",
+  "status": "COMPLETED",
+  "gate": {
+    "seriesWithoutResearch": [],
+    "seriesWithoutResearchCount": 0,
+    "pass": true
+  },
+  "selectableSeries": [
+    "Model Y",
+    "Model 3",
+    "Model S",
+    "Model X"
+  ],
+  "researchedSeries": [
+    "Model Y",
+    "Model 3",
+    "Model S",
+    "Model X"
+  ],
+  "verifiedVersions": [
+    "Arkadan Çekiş",
+    "Long Range AWD",
+    "Long Range Arkadan Çekiş",
+    "Long Range RWD",
+    "Performance AWD",
+    "RWD"
+  ],
+  "verifiedTrims": [
+    "Performance",
+    "Premium",
+    "Standart"
+  ],
+  "verifiedConfigurations": 7,
+  "officialSources": 0,
+  "multiSources": 7,
+  "reviewRequired": 3,
+  "rejected": 0,
+  "noVerifiedTrimFound": 2,
+  "seriesWithCurrentOnlyCoverage": [
+    "Model Y"
+  ],
+  "historicalCoverageIncompleteSeries": [
+    {
+      "series": "Model Y",
+      "historicalCoverage": "CURRENT_ONLY"
+    }
+  ],
+  "sourceUrls": [
+    "https://otonomhaber.com/2026/07/tesla-temmuz-2026-turkiye-model-y-fiyat-listesini-guncelledi/",
+    "https://www.cnbce.com/otomotiv/tesladan-agustos-zammi-model-ynin-uc-versiyonunun-fiyati-artti-iste-yeni-fiyatlar-h34369",
+    "https://www.tesla.com/tr_tr/modely"
+  ],
+  "notes": "Completed means every selectable series was systematically researched. Current-only and incomplete historical gens remain explicitly flagged. Research-only; applyAllowed=false. Not final absolute historical complete."
+}

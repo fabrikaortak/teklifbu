@@ -1,0 +1,63 @@
+{
+  "at": "2026-08-07T10:15:27.233Z",
+  "brand": "Jeep",
+  "status": "COMPLETED",
+  "gate": {
+    "seriesWithoutResearch": [],
+    "seriesWithoutResearchCount": 0,
+    "pass": true
+  },
+  "selectableSeries": [
+    "Avenger",
+    "Compass",
+    "Renegade",
+    "Wrangler"
+  ],
+  "researchedSeries": [
+    "Avenger",
+    "Compass",
+    "Renegade",
+    "Wrangler"
+  ],
+  "verifiedVersions": [
+    "1.2 110 HP E-Hybrid",
+    "1.2 145 HP 4xe",
+    "1.3 150 hp DDCT",
+    "1.3 180 hp AT",
+    "1.4 170 hp 9AT",
+    "1.6 120 hp DDCT",
+    "115 kW Electric",
+    "2.0 272 hp 8AT",
+    "E-Hybrid"
+  ],
+  "verifiedTrims": [
+    "Limited",
+    "Limited Executive",
+    "Longitude",
+    "Overland",
+    "Rubicon",
+    "Summit"
+  ],
+  "verifiedConfigurations": 12,
+  "officialSources": 0,
+  "multiSources": 12,
+  "reviewRequired": 2,
+  "rejected": 0,
+  "noVerifiedTrimFound": 0,
+  "seriesWithCurrentOnlyCoverage": [
+    "Avenger"
+  ],
+  "historicalCoverageIncompleteSeries": [
+    {
+      "series": "Avenger",
+      "historicalCoverage": "CURRENT_ONLY"
+    }
+  ],
+  "sourceUrls": [
+    "https://caraba.net/jeep-haziran-2019-fiyat-listesi-aciklandi/",
+    "https://teknobirinci.com.tr/agustos-2026-jeep-fiyat-listesi-aciklandi-280-bin-tl-indirim/",
+    "https://www.arabavs.com/jeep-nisan-2020-fiyat-listesi-aciklandi.html",
+    "https://www.jeep.com.tr/"
+  ],
+  "notes": "Completed means every selectable series was systematically researched. Current-only and incomplete historical gens remain explicitly flagged. Research-only; applyAllowed=false. Not final absolute historical complete."
+}

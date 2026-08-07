@@ -1,0 +1,75 @@
+{
+  "at": "2026-08-07T10:07:24.270Z",
+  "brand": "Ford",
+  "status": "COMPLETED",
+  "gate": {
+    "seriesWithoutResearch": [],
+    "seriesWithoutResearchCount": 0,
+    "pass": true
+  },
+  "selectableSeries": [
+    "Focus",
+    "Fiesta",
+    "Tourneo Courier",
+    "Tourneo Custom",
+    "Puma",
+    "Kuga",
+    "Focus Hatchback Hybrid"
+  ],
+  "researchedSeries": [
+    "Focus",
+    "Fiesta",
+    "Tourneo Courier",
+    "Tourneo Custom",
+    "Puma",
+    "Kuga",
+    "Focus Hatchback Hybrid"
+  ],
+  "verifiedVersions": [
+    "1.0 EcoBoost 100 PS",
+    "1.0 EcoBoost 125 PS",
+    "1.0 EcoBoost 95 PS",
+    "1.0 EcoBoost mHEV 155 PS",
+    "1.1L 85 PS",
+    "1.5 EcoBlue 115 PS",
+    "1.5 EcoBlue 120 PS",
+    "1.5 EcoBoost 120 PS",
+    "1.5 TDCi 100 PS",
+    "1.5 TDCi 75 PS",
+    "1.5 TDCi 85 PS",
+    "1.5 TDCi 95 PS",
+    "1.5 Ti-VCT 123 PS",
+    "100 kW",
+    "2.0 EcoBlue 130 PS",
+    "2.0 EcoBlue 170 PS",
+    "2.0 EcoBlue Hibrit 185 PS",
+    "2.0 EcoBlue Upgrade 185 PS",
+    "2.5 PHEV 225 PS"
+  ],
+  "verifiedTrims": [
+    "Blackline",
+    "Deluxe",
+    "ST-Line",
+    "Style",
+    "Titanium",
+    "Titanium Plus",
+    "Titanium Stil",
+    "Titanium X",
+    "Trend",
+    "Trend X"
+  ],
+  "verifiedConfigurations": 46,
+  "officialSources": 0,
+  "multiSources": 46,
+  "reviewRequired": 4,
+  "rejected": 0,
+  "noVerifiedTrimFound": 0,
+  "seriesWithCurrentOnlyCoverage": [],
+  "historicalCoverageIncompleteSeries": [
+    {
+      "series": "Focus Hatchback Hybrid",
+      "historicalCoverage": "HISTORICAL_COVERAGE_INCOMPLETE"
+    }
+  ],
+  "notes": "Completed means every selectable series was systematically researched. Current-only and incomplete historical gens remain explicitly flagged. Research-only; applyAllowed=false."
+}

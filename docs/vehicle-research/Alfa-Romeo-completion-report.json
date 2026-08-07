@@ -1,0 +1,65 @@
+{
+  "at": "2026-08-07T10:15:27.170Z",
+  "brand": "Alfa Romeo",
+  "status": "COMPLETED",
+  "gate": {
+    "seriesWithoutResearch": [],
+    "seriesWithoutResearchCount": 0,
+    "pass": true
+  },
+  "selectableSeries": [
+    "Junior",
+    "Tonale",
+    "Giulia",
+    "Stelvio"
+  ],
+  "researchedSeries": [
+    "Junior",
+    "Tonale",
+    "Giulia",
+    "Stelvio"
+  ],
+  "verifiedVersions": [
+    "2.0 200hp AWD AT",
+    "2.0 200hp RWD AT",
+    "2.0 280hp AWD AT",
+    "Diesel DCT",
+    "Elettrica",
+    "Hybrid DCT",
+    "Ibrida"
+  ],
+  "verifiedTrims": [
+    "Speciale",
+    "Speciale+",
+    "Sprint",
+    "Ti",
+    "Veloce"
+  ],
+  "verifiedConfigurations": 8,
+  "officialSources": 0,
+  "multiSources": 8,
+  "reviewRequired": 2,
+  "rejected": 0,
+  "noVerifiedTrimFound": 0,
+  "seriesWithCurrentOnlyCoverage": [
+    "Junior",
+    "Tonale"
+  ],
+  "historicalCoverageIncompleteSeries": [
+    {
+      "series": "Junior",
+      "historicalCoverage": "CURRENT_ONLY"
+    },
+    {
+      "series": "Tonale",
+      "historicalCoverage": "CURRENT_ONLY"
+    }
+  ],
+  "sourceUrls": [
+    "https://teknobirinci.com.tr/temmuz-2026-alfa-romeo-fiyat-listesi-aciklandi/",
+    "https://www.alfaromeo.com.tr/",
+    "https://www.otokokpit.com/alfa-romeo-modelleri-2019-2020-fiyat-karsilastirmasi/",
+    "https://www.otomobilir.com/alfa-romeo-giulia-fiyat/"
+  ],
+  "notes": "Completed means every selectable series was systematically researched. Current-only and incomplete historical gens remain explicitly flagged. Research-only; applyAllowed=false. Not final absolute historical complete."
+}

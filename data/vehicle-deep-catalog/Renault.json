@@ -1,16 +1,19 @@
 {
   "brand": "Renault",
   "brandSlug": "renault",
-  "version": "2026.08-deep-renault-v1-current-tr",
-  "generatedAt": "2026-08-07T09:31:47.415Z",
+  "version": "2026.08-deep-renault-v2-historical",
+  "generatedAt": "2026-08-07T10:01:24.563Z",
   "seriesCovered": [
+    "Austral",
+    "Captur",
     "Clio",
+    "Kadjar",
+    "Kangoo",
     "Megane",
     "Megane E-Tech",
-    "Captur",
     "Symbol",
     "Taliant",
-    "Kangoo"
+    "Trafic"
   ],
   "status": "COMPLETED",
   "notes": "Ağustos 2026 published TR price tables (multi-source) + official Renault TR site presence. Symbol/Taliant REVIEW stubs only. Model=engine/version; trim=package (Touch/Icon/Techno/evolution plus). engineVolume only when cm3 printed on sourced page.",
@@ -576,30 +579,791 @@
           "role": "secondary"
         }
       ]
+    },
+    {
+      "brand": "Renault",
+      "series": "Clio",
+      "model": "0.9 TCe",
+      "trim": "Joy",
+      "generation": "Clio IV / V transition TR MY2019",
+      "generationCode": "Clio-IV",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "powerHp": "90",
+      "transmission": "MANUAL",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ekim 2019 Clio TR list citing Renault — Joy/Touch/Icon only on listed engines.",
+      "sources": [
+        {
+          "url": "https://arabavs.com/renault-clio-ekim-2019-fiyat-listesi.html",
+          "title": "Renault Clio Ekim 2019 fiyat listesi",
+          "date": "2019-10-11",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://caraba.net/renault-turkiye-haziran-2019-fiyat-listesini-aciklandi/",
+          "title": "Renault Türkiye Haziran 2019 fiyat listesi",
+          "date": "2019-06-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Renault",
+      "series": "Clio",
+      "model": "1.2",
+      "trim": "Joy",
+      "generation": "Clio IV / V transition TR MY2019",
+      "generationCode": "Clio-IV",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "powerHp": "75",
+      "transmission": "MANUAL",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ekim 2019 Clio TR list citing Renault — Joy/Touch/Icon only on listed engines.",
+      "sources": [
+        {
+          "url": "https://arabavs.com/renault-clio-ekim-2019-fiyat-listesi.html",
+          "title": "Renault Clio Ekim 2019 fiyat listesi",
+          "date": "2019-10-11",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://caraba.net/renault-turkiye-haziran-2019-fiyat-listesini-aciklandi/",
+          "title": "Renault Türkiye Haziran 2019 fiyat listesi",
+          "date": "2019-06-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Renault",
+      "series": "Clio",
+      "model": "1.2 TCe",
+      "trim": "Joy",
+      "generation": "Clio IV / V transition TR MY2019",
+      "generationCode": "Clio-IV",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "powerHp": "120",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ekim 2019 Clio TR list citing Renault — Joy/Touch/Icon only on listed engines.",
+      "sources": [
+        {
+          "url": "https://arabavs.com/renault-clio-ekim-2019-fiyat-listesi.html",
+          "title": "Renault Clio Ekim 2019 fiyat listesi",
+          "date": "2019-10-11",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://caraba.net/renault-turkiye-haziran-2019-fiyat-listesini-aciklandi/",
+          "title": "Renault Türkiye Haziran 2019 fiyat listesi",
+          "date": "2019-06-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Renault",
+      "series": "Clio",
+      "model": "1.5 dCi",
+      "trim": "Joy",
+      "generation": "Clio IV / V transition TR MY2019",
+      "generationCode": "Clio-IV",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "powerHp": "75",
+      "transmission": "MANUAL",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ekim 2019 Clio TR list citing Renault — Joy/Touch/Icon only on listed engines.",
+      "sources": [
+        {
+          "url": "https://arabavs.com/renault-clio-ekim-2019-fiyat-listesi.html",
+          "title": "Renault Clio Ekim 2019 fiyat listesi",
+          "date": "2019-10-11",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://caraba.net/renault-turkiye-haziran-2019-fiyat-listesini-aciklandi/",
+          "title": "Renault Türkiye Haziran 2019 fiyat listesi",
+          "date": "2019-06-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Renault",
+      "series": "Clio",
+      "model": "1.2 TCe",
+      "trim": "Touch",
+      "generation": "Clio IV / V transition TR MY2019",
+      "generationCode": "Clio-IV",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "powerHp": "120",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ekim 2019 Clio TR list citing Renault — Joy/Touch/Icon only on listed engines.",
+      "sources": [
+        {
+          "url": "https://arabavs.com/renault-clio-ekim-2019-fiyat-listesi.html",
+          "title": "Renault Clio Ekim 2019 fiyat listesi",
+          "date": "2019-10-11",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://caraba.net/renault-turkiye-haziran-2019-fiyat-listesini-aciklandi/",
+          "title": "Renault Türkiye Haziran 2019 fiyat listesi",
+          "date": "2019-06-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Renault",
+      "series": "Clio",
+      "model": "1.5 dCi",
+      "trim": "Touch",
+      "generation": "Clio IV / V transition TR MY2019",
+      "generationCode": "Clio-IV",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "powerHp": "90",
+      "transmission": "MANUAL",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ekim 2019 Clio TR list citing Renault — Joy/Touch/Icon only on listed engines.",
+      "sources": [
+        {
+          "url": "https://arabavs.com/renault-clio-ekim-2019-fiyat-listesi.html",
+          "title": "Renault Clio Ekim 2019 fiyat listesi",
+          "date": "2019-10-11",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://caraba.net/renault-turkiye-haziran-2019-fiyat-listesini-aciklandi/",
+          "title": "Renault Türkiye Haziran 2019 fiyat listesi",
+          "date": "2019-06-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Renault",
+      "series": "Clio",
+      "model": "1.5 dCi",
+      "trim": "Touch",
+      "generation": "Clio IV / V transition TR MY2019",
+      "generationCode": "Clio-IV",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "powerHp": "90",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ekim 2019 Clio TR list citing Renault — Joy/Touch/Icon only on listed engines.",
+      "sources": [
+        {
+          "url": "https://arabavs.com/renault-clio-ekim-2019-fiyat-listesi.html",
+          "title": "Renault Clio Ekim 2019 fiyat listesi",
+          "date": "2019-10-11",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://caraba.net/renault-turkiye-haziran-2019-fiyat-listesini-aciklandi/",
+          "title": "Renault Türkiye Haziran 2019 fiyat listesi",
+          "date": "2019-06-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Renault",
+      "series": "Clio",
+      "model": "1.2 TCe",
+      "trim": "Icon",
+      "generation": "Clio IV / V transition TR MY2019",
+      "generationCode": "Clio-IV",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "powerHp": "120",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ekim 2019 Clio TR list citing Renault — Joy/Touch/Icon only on listed engines.",
+      "sources": [
+        {
+          "url": "https://arabavs.com/renault-clio-ekim-2019-fiyat-listesi.html",
+          "title": "Renault Clio Ekim 2019 fiyat listesi",
+          "date": "2019-10-11",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://caraba.net/renault-turkiye-haziran-2019-fiyat-listesini-aciklandi/",
+          "title": "Renault Türkiye Haziran 2019 fiyat listesi",
+          "date": "2019-06-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Renault",
+      "series": "Clio",
+      "model": "1.5 dCi",
+      "trim": "Icon",
+      "generation": "Clio IV / V transition TR MY2019",
+      "generationCode": "Clio-IV",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "powerHp": "90",
+      "transmission": "MANUAL",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ekim 2019 Clio TR list citing Renault — Joy/Touch/Icon only on listed engines.",
+      "sources": [
+        {
+          "url": "https://arabavs.com/renault-clio-ekim-2019-fiyat-listesi.html",
+          "title": "Renault Clio Ekim 2019 fiyat listesi",
+          "date": "2019-10-11",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://caraba.net/renault-turkiye-haziran-2019-fiyat-listesini-aciklandi/",
+          "title": "Renault Türkiye Haziran 2019 fiyat listesi",
+          "date": "2019-06-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Renault",
+      "series": "Clio",
+      "model": "1.5 dCi",
+      "trim": "Icon",
+      "generation": "Clio IV / V transition TR MY2019",
+      "generationCode": "Clio-IV",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "powerHp": "90",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ekim 2019 Clio TR list citing Renault — Joy/Touch/Icon only on listed engines.",
+      "sources": [
+        {
+          "url": "https://arabavs.com/renault-clio-ekim-2019-fiyat-listesi.html",
+          "title": "Renault Clio Ekim 2019 fiyat listesi",
+          "date": "2019-10-11",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://caraba.net/renault-turkiye-haziran-2019-fiyat-listesini-aciklandi/",
+          "title": "Renault Türkiye Haziran 2019 fiyat listesi",
+          "date": "2019-06-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Renault",
+      "series": "Megane",
+      "model": "1.6 16V",
+      "trim": "Joy",
+      "generation": "Megane IV Sedan",
+      "generationCode": "Megane-IV",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "powerHp": "115",
+      "transmission": "MANUAL",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Jun 2019 Megane Sedan TR — Icon/Touch/Joy verified per engine (not copied from Clio).",
+      "sources": [
+        {
+          "url": "https://caraba.net/renault-turkiye-haziran-2019-fiyat-listesini-aciklandi/",
+          "title": "Renault Haziran 2019 — Megane Sedan Joy/Touch/Icon",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Renault",
+      "series": "Megane",
+      "model": "1.5 dCi",
+      "trim": "Joy",
+      "generation": "Megane IV Sedan",
+      "generationCode": "Megane-IV",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "powerHp": "90",
+      "transmission": "MANUAL",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Jun 2019 Megane Sedan TR — Icon/Touch/Joy verified per engine (not copied from Clio).",
+      "sources": [
+        {
+          "url": "https://caraba.net/renault-turkiye-haziran-2019-fiyat-listesini-aciklandi/",
+          "title": "Renault Haziran 2019 — Megane Sedan Joy/Touch/Icon",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Renault",
+      "series": "Megane",
+      "model": "1.5 dCi",
+      "trim": "Joy",
+      "generation": "Megane IV Sedan",
+      "generationCode": "Megane-IV",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "powerHp": "110",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Jun 2019 Megane Sedan TR — Icon/Touch/Joy verified per engine (not copied from Clio).",
+      "sources": [
+        {
+          "url": "https://caraba.net/renault-turkiye-haziran-2019-fiyat-listesini-aciklandi/",
+          "title": "Renault Haziran 2019 — Megane Sedan Joy/Touch/Icon",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Renault",
+      "series": "Megane",
+      "model": "1.2 TCe",
+      "trim": "Touch",
+      "generation": "Megane IV Sedan",
+      "generationCode": "Megane-IV",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "powerHp": "130",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Jun 2019 Megane Sedan TR — Icon/Touch/Joy verified per engine (not copied from Clio).",
+      "sources": [
+        {
+          "url": "https://caraba.net/renault-turkiye-haziran-2019-fiyat-listesini-aciklandi/",
+          "title": "Renault Haziran 2019 — Megane Sedan Joy/Touch/Icon",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Renault",
+      "series": "Megane",
+      "model": "1.5 dCi",
+      "trim": "Touch",
+      "generation": "Megane IV Sedan",
+      "generationCode": "Megane-IV",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "powerHp": "110",
+      "transmission": "MANUAL",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Jun 2019 Megane Sedan TR — Icon/Touch/Joy verified per engine (not copied from Clio).",
+      "sources": [
+        {
+          "url": "https://caraba.net/renault-turkiye-haziran-2019-fiyat-listesini-aciklandi/",
+          "title": "Renault Haziran 2019 — Megane Sedan Joy/Touch/Icon",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Renault",
+      "series": "Megane",
+      "model": "1.5 dCi",
+      "trim": "Touch",
+      "generation": "Megane IV Sedan",
+      "generationCode": "Megane-IV",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "powerHp": "110",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Jun 2019 Megane Sedan TR — Icon/Touch/Joy verified per engine (not copied from Clio).",
+      "sources": [
+        {
+          "url": "https://caraba.net/renault-turkiye-haziran-2019-fiyat-listesini-aciklandi/",
+          "title": "Renault Haziran 2019 — Megane Sedan Joy/Touch/Icon",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Renault",
+      "series": "Megane",
+      "model": "1.2 TCe",
+      "trim": "Icon",
+      "generation": "Megane IV Sedan",
+      "generationCode": "Megane-IV",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "powerHp": "130",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Jun 2019 Megane Sedan TR — Icon/Touch/Joy verified per engine (not copied from Clio).",
+      "sources": [
+        {
+          "url": "https://caraba.net/renault-turkiye-haziran-2019-fiyat-listesini-aciklandi/",
+          "title": "Renault Haziran 2019 — Megane Sedan Joy/Touch/Icon",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Renault",
+      "series": "Megane",
+      "model": "1.5 dCi",
+      "trim": "Icon",
+      "generation": "Megane IV Sedan",
+      "generationCode": "Megane-IV",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "powerHp": "110",
+      "transmission": "MANUAL",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Jun 2019 Megane Sedan TR — Icon/Touch/Joy verified per engine (not copied from Clio).",
+      "sources": [
+        {
+          "url": "https://caraba.net/renault-turkiye-haziran-2019-fiyat-listesini-aciklandi/",
+          "title": "Renault Haziran 2019 — Megane Sedan Joy/Touch/Icon",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Renault",
+      "series": "Megane",
+      "model": "1.5 dCi",
+      "trim": "Icon",
+      "generation": "Megane IV Sedan",
+      "generationCode": "Megane-IV",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "powerHp": "110",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Jun 2019 Megane Sedan TR — Icon/Touch/Joy verified per engine (not copied from Clio).",
+      "sources": [
+        {
+          "url": "https://caraba.net/renault-turkiye-haziran-2019-fiyat-listesini-aciklandi/",
+          "title": "Renault Haziran 2019 — Megane Sedan Joy/Touch/Icon",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Renault",
+      "series": "Captur",
+      "model": "1.5 dCi",
+      "trim": "Touch",
+      "generation": "Captur I",
+      "generationCode": "Captur-I",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "powerHp": "90",
+      "transmission": "MANUAL",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Jun 2019 Captur TR Touch/Icon × 1.5 dCi only.",
+      "sources": [
+        {
+          "url": "https://caraba.net/renault-turkiye-haziran-2019-fiyat-listesini-aciklandi/",
+          "title": "Renault Haziran 2019 — Captur",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Renault",
+      "series": "Captur",
+      "model": "1.5 dCi",
+      "trim": "Touch",
+      "generation": "Captur I",
+      "generationCode": "Captur-I",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "powerHp": "90",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Jun 2019 Captur TR Touch/Icon × 1.5 dCi only.",
+      "sources": [
+        {
+          "url": "https://caraba.net/renault-turkiye-haziran-2019-fiyat-listesini-aciklandi/",
+          "title": "Renault Haziran 2019 — Captur",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Renault",
+      "series": "Captur",
+      "model": "1.5 dCi",
+      "trim": "Icon",
+      "generation": "Captur I",
+      "generationCode": "Captur-I",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "powerHp": "90",
+      "transmission": "MANUAL",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Jun 2019 Captur TR Touch/Icon × 1.5 dCi only.",
+      "sources": [
+        {
+          "url": "https://caraba.net/renault-turkiye-haziran-2019-fiyat-listesini-aciklandi/",
+          "title": "Renault Haziran 2019 — Captur",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Renault",
+      "series": "Captur",
+      "model": "1.5 dCi",
+      "trim": "Icon",
+      "generation": "Captur I",
+      "generationCode": "Captur-I",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "powerHp": "90",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Jun 2019 Captur TR Touch/Icon × 1.5 dCi only.",
+      "sources": [
+        {
+          "url": "https://caraba.net/renault-turkiye-haziran-2019-fiyat-listesini-aciklandi/",
+          "title": "Renault Haziran 2019 — Captur",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Renault",
+      "series": "Kadjar",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "historicalCoverage": "HISTORICAL_COVERAGE_INCOMPLETE",
+      "notes": "Kadjar: researched in deepen pass; no verified TR version×trim matrix located yet.",
+      "sources": [
+        {
+          "url": "https://www.renault.com.tr/",
+          "title": "Renault Türkiye — series research stub",
+          "date": "2026-08-07",
+          "role": "primary",
+          "type": "research_note",
+          "publisher": "Renault"
+        }
+      ]
+    },
+    {
+      "brand": "Renault",
+      "series": "Austral",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "historicalCoverage": "HISTORICAL_COVERAGE_INCOMPLETE",
+      "notes": "Austral: researched in deepen pass; no verified TR version×trim matrix located yet.",
+      "sources": [
+        {
+          "url": "https://www.renault.com.tr/",
+          "title": "Renault Türkiye — series research stub",
+          "date": "2026-08-07",
+          "role": "primary",
+          "type": "research_note",
+          "publisher": "Renault"
+        }
+      ]
+    },
+    {
+      "brand": "Renault",
+      "series": "Trafic",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Minivan & Panelvan",
+      "historicalCoverage": "HISTORICAL_COVERAGE_INCOMPLETE",
+      "notes": "Trafic: researched in deepen pass; no verified TR version×trim matrix located yet.",
+      "sources": [
+        {
+          "url": "https://www.renault.com.tr/",
+          "title": "Renault Türkiye — series research stub",
+          "date": "2026-08-07",
+          "role": "primary",
+          "type": "research_note",
+          "publisher": "Renault"
+        }
+      ]
     }
   ],
   "researchNotes": {
-    "researchedSeriesPass": [
-      "Clio",
-      "Megane",
+    "noApply": true,
+    "seriesWithoutResearch": [],
+    "currentOnlySeries": [
       "Megane E-Tech",
-      "Captur",
-      "Symbol",
-      "Taliant",
       "Kangoo"
-    ],
-    "primarySources": [
-      "https://www.birgun.net/haber/renault-binek-araclar-agustos-2026-fiyat-listesi-guncel-727340",
-      "https://www.gzt.com/teknoloji/renault-fiyat-listesi-agustos-2026-clio-r5-e-tech-captur-duster-megane-e-tech-austral-scenic-e-tech-rafale-megane-kampanyasi-fiyat-listesi-4247302",
-      "https://www.renault.com.tr/renault-fiyat-listeleri/binek-arac-fiyat-listesi.html",
-      "https://ticari.renault.com.tr/ticari-araclar/kangoo-van/donanim.html?bodyTypeCode=PT1261_panelvan",
-      "https://ticari.renault.com.tr/"
-    ],
-    "secondarySources": [
-      "https://www.gazetegercek.com.tr/renault-agustos-ayi-fiyat-listesini-acikladi-yeni-clio-duster-boreal-megane-ne-kadar/233148",
-      "https://www.gunerler.com.tr/renault-fiyatlari"
-    ],
-    "doNotInvent": true
+    ]
   },
   "completedAt": "2026-08-07T09:13:29.942Z"
 }

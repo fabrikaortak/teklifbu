@@ -1,8 +1,8 @@
 {
   "brand": "Jaguar",
   "brandSlug": "jaguar",
-  "version": "2026.08-deep-jaguar-v2-verified-2024",
-  "generatedAt": "2026-08-07T09:34:56.798Z",
+  "version": "2026.08-deep-jaguar-v2-premium",
+  "generatedAt": "2026-08-07T10:15:27.214Z",
   "seriesCovered": [
     "E-Pace",
     "F-Pace",
@@ -342,18 +342,17 @@
     }
   ],
   "researchNotes": {
-    "researchedSeriesPass": [
-      "F-Pace",
+    "noApply": true,
+    "applyAllowed": false,
+    "phase": "research-premium-ev-batch",
+    "seriesWithoutResearch": [],
+    "currentOnlySeries": [
       "E-Pace",
-      "I-Pace",
-      "XE",
-      "XF"
+      "F-Pace",
+      "I-Pace"
     ],
-    "reviewRequiredSeries": [
-      "XE",
-      "XF"
-    ],
-    "verifiedCount": 7
+    "addedThisPass": 0,
+    "electricOverlayNote": "Do not invent duplicate EV series"
   },
   "completedAt": "2026-08-07T09:34:56.798Z"
 }

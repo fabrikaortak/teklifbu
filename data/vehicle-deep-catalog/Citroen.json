@@ -1,13 +1,13 @@
 {
   "brand": "Citroen",
   "brandSlug": "citroen",
-  "version": "2026.08-deep-citroen-v1-current-tr",
-  "generatedAt": "2026-08-07T12:00:00.000Z",
+  "version": "2026.08-deep-citroen-v2-historical",
+  "generatedAt": "2026-08-07T10:14:37.829Z",
   "seriesCovered": [
     "C3",
-    "C5 Aircross",
+    "C3 (ICE historical)",
     "C3 Aircross",
-    "C3 (ICE historical)"
+    "C5 Aircross"
   ],
   "status": "COMPLETED",
   "notes": "ë-C3 + C5 Aircross Hybrid/EV + C3 Aircross Hybrid from official citroen.com.tr / Aug 2026 tables. ICE C3 historical REVIEW.",
@@ -308,18 +308,740 @@
           "role": "secondary"
         }
       ]
+    },
+    {
+      "brand": "Citroen",
+      "series": "C3",
+      "model": "1.2 PureTech 82 HP",
+      "trim": "Live",
+      "generation": "C3 III TR MY2019",
+      "generationCode": "CC21",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1199",
+      "powerHp": "82",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ekim 2019 C3 ICE — Live/Feel/Shine only as published.",
+      "sources": [
+        {
+          "url": "https://caraba.net/citroen-ekim-2019-fiyat-listesi/",
+          "title": "Citroën Ekim 2019 C3/C3 Aircross Live/Feel/Shine",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Citroen",
+      "series": "C3 (ICE historical)",
+      "model": "1.2 PureTech 82 HP",
+      "trim": "Live",
+      "generation": "C3 III TR MY2019",
+      "generationCode": "CC21",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1199",
+      "powerHp": "82",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ekim 2019 C3 ICE — Live/Feel/Shine only as published.",
+      "sources": [
+        {
+          "url": "https://caraba.net/citroen-ekim-2019-fiyat-listesi/",
+          "title": "Citroën Ekim 2019 C3/C3 Aircross Live/Feel/Shine",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Citroen",
+      "series": "C3",
+      "model": "1.2 PureTech 82 HP",
+      "trim": "Feel",
+      "generation": "C3 III TR MY2019",
+      "generationCode": "CC21",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1199",
+      "powerHp": "82",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ekim 2019 C3 ICE — Live/Feel/Shine only as published.",
+      "sources": [
+        {
+          "url": "https://caraba.net/citroen-ekim-2019-fiyat-listesi/",
+          "title": "Citroën Ekim 2019 C3/C3 Aircross Live/Feel/Shine",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Citroen",
+      "series": "C3 (ICE historical)",
+      "model": "1.2 PureTech 82 HP",
+      "trim": "Feel",
+      "generation": "C3 III TR MY2019",
+      "generationCode": "CC21",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1199",
+      "powerHp": "82",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ekim 2019 C3 ICE — Live/Feel/Shine only as published.",
+      "sources": [
+        {
+          "url": "https://caraba.net/citroen-ekim-2019-fiyat-listesi/",
+          "title": "Citroën Ekim 2019 C3/C3 Aircross Live/Feel/Shine",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Citroen",
+      "series": "C3",
+      "model": "1.2 PureTech 110 HP",
+      "trim": "Live",
+      "generation": "C3 III TR MY2019",
+      "generationCode": "CC21",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1199",
+      "powerHp": "110",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ekim 2019 C3 ICE — Live/Feel/Shine only as published.",
+      "sources": [
+        {
+          "url": "https://caraba.net/citroen-ekim-2019-fiyat-listesi/",
+          "title": "Citroën Ekim 2019 C3/C3 Aircross Live/Feel/Shine",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Citroen",
+      "series": "C3 (ICE historical)",
+      "model": "1.2 PureTech 110 HP",
+      "trim": "Live",
+      "generation": "C3 III TR MY2019",
+      "generationCode": "CC21",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1199",
+      "powerHp": "110",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ekim 2019 C3 ICE — Live/Feel/Shine only as published.",
+      "sources": [
+        {
+          "url": "https://caraba.net/citroen-ekim-2019-fiyat-listesi/",
+          "title": "Citroën Ekim 2019 C3/C3 Aircross Live/Feel/Shine",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Citroen",
+      "series": "C3",
+      "model": "1.2 PureTech 110 HP",
+      "trim": "Feel",
+      "generation": "C3 III TR MY2019",
+      "generationCode": "CC21",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1199",
+      "powerHp": "110",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ekim 2019 C3 ICE — Live/Feel/Shine only as published.",
+      "sources": [
+        {
+          "url": "https://caraba.net/citroen-ekim-2019-fiyat-listesi/",
+          "title": "Citroën Ekim 2019 C3/C3 Aircross Live/Feel/Shine",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Citroen",
+      "series": "C3 (ICE historical)",
+      "model": "1.2 PureTech 110 HP",
+      "trim": "Feel",
+      "generation": "C3 III TR MY2019",
+      "generationCode": "CC21",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1199",
+      "powerHp": "110",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ekim 2019 C3 ICE — Live/Feel/Shine only as published.",
+      "sources": [
+        {
+          "url": "https://caraba.net/citroen-ekim-2019-fiyat-listesi/",
+          "title": "Citroën Ekim 2019 C3/C3 Aircross Live/Feel/Shine",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Citroen",
+      "series": "C3",
+      "model": "1.2 PureTech 110 HP",
+      "trim": "Shine",
+      "generation": "C3 III TR MY2019",
+      "generationCode": "CC21",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1199",
+      "powerHp": "110",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ekim 2019 C3 ICE — Live/Feel/Shine only as published.",
+      "sources": [
+        {
+          "url": "https://caraba.net/citroen-ekim-2019-fiyat-listesi/",
+          "title": "Citroën Ekim 2019 C3/C3 Aircross Live/Feel/Shine",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Citroen",
+      "series": "C3 (ICE historical)",
+      "model": "1.2 PureTech 110 HP",
+      "trim": "Shine",
+      "generation": "C3 III TR MY2019",
+      "generationCode": "CC21",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1199",
+      "powerHp": "110",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ekim 2019 C3 ICE — Live/Feel/Shine only as published.",
+      "sources": [
+        {
+          "url": "https://caraba.net/citroen-ekim-2019-fiyat-listesi/",
+          "title": "Citroën Ekim 2019 C3/C3 Aircross Live/Feel/Shine",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Citroen",
+      "series": "C3",
+      "model": "1.2 PureTech 83 HP",
+      "trim": "Feel",
+      "generation": "C3 III facelift TR MY2020",
+      "generationCode": "CC21",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1199",
+      "powerHp": "83",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Eylül 2020 makyajlı C3 ICE — Feel/Feel Bold/Shine only as published.",
+      "sources": [
+        {
+          "url": "https://www.otomobil.com.tr/yeni-yuzlu-citroen-c3-fiyat-listesi/",
+          "title": "Yeni yüzlü Citroën C3 Eylül 2020 Feel/Feel Bold/Shine",
+          "date": "2020-09-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobil.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Citroen",
+      "series": "C3 (ICE historical)",
+      "model": "1.2 PureTech 83 HP",
+      "trim": "Feel",
+      "generation": "C3 III facelift TR MY2020",
+      "generationCode": "CC21",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1199",
+      "powerHp": "83",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Eylül 2020 makyajlı C3 ICE — Feel/Feel Bold/Shine only as published.",
+      "sources": [
+        {
+          "url": "https://www.otomobil.com.tr/yeni-yuzlu-citroen-c3-fiyat-listesi/",
+          "title": "Yeni yüzlü Citroën C3 Eylül 2020 Feel/Feel Bold/Shine",
+          "date": "2020-09-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobil.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Citroen",
+      "series": "C3",
+      "model": "1.2 PureTech 110 HP",
+      "trim": "Feel Bold",
+      "generation": "C3 III facelift TR MY2020",
+      "generationCode": "CC21",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1199",
+      "powerHp": "110",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Eylül 2020 makyajlı C3 ICE — Feel/Feel Bold/Shine only as published.",
+      "sources": [
+        {
+          "url": "https://www.otomobil.com.tr/yeni-yuzlu-citroen-c3-fiyat-listesi/",
+          "title": "Yeni yüzlü Citroën C3 Eylül 2020 Feel/Feel Bold/Shine",
+          "date": "2020-09-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobil.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Citroen",
+      "series": "C3 (ICE historical)",
+      "model": "1.2 PureTech 110 HP",
+      "trim": "Feel Bold",
+      "generation": "C3 III facelift TR MY2020",
+      "generationCode": "CC21",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1199",
+      "powerHp": "110",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Eylül 2020 makyajlı C3 ICE — Feel/Feel Bold/Shine only as published.",
+      "sources": [
+        {
+          "url": "https://www.otomobil.com.tr/yeni-yuzlu-citroen-c3-fiyat-listesi/",
+          "title": "Yeni yüzlü Citroën C3 Eylül 2020 Feel/Feel Bold/Shine",
+          "date": "2020-09-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobil.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Citroen",
+      "series": "C3",
+      "model": "1.2 PureTech 110 HP",
+      "trim": "Shine",
+      "generation": "C3 III facelift TR MY2020",
+      "generationCode": "CC21",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1199",
+      "powerHp": "110",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Eylül 2020 makyajlı C3 ICE — Feel/Feel Bold/Shine only as published.",
+      "sources": [
+        {
+          "url": "https://www.otomobil.com.tr/yeni-yuzlu-citroen-c3-fiyat-listesi/",
+          "title": "Yeni yüzlü Citroën C3 Eylül 2020 Feel/Feel Bold/Shine",
+          "date": "2020-09-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobil.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Citroen",
+      "series": "C3 (ICE historical)",
+      "model": "1.2 PureTech 110 HP",
+      "trim": "Shine",
+      "generation": "C3 III facelift TR MY2020",
+      "generationCode": "CC21",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1199",
+      "powerHp": "110",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Eylül 2020 makyajlı C3 ICE — Feel/Feel Bold/Shine only as published.",
+      "sources": [
+        {
+          "url": "https://www.otomobil.com.tr/yeni-yuzlu-citroen-c3-fiyat-listesi/",
+          "title": "Yeni yüzlü Citroën C3 Eylül 2020 Feel/Feel Bold/Shine",
+          "date": "2020-09-22",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobil.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Citroen",
+      "series": "C3 Aircross",
+      "model": "1.2 PureTech 110 HP",
+      "trim": "Feel",
+      "generation": "C3 Aircross I TR MY2019",
+      "generationCode": "Aircross I",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1199",
+      "powerHp": "110",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Ekim 2019 C3 Aircross — Feel/Shine EAT6 only as published.",
+      "sources": [
+        {
+          "url": "https://caraba.net/citroen-ekim-2019-fiyat-listesi/",
+          "title": "Citroën Ekim 2019 C3/C3 Aircross Live/Feel/Shine",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Citroen",
+      "series": "C3 Aircross",
+      "model": "1.2 PureTech 110 HP",
+      "trim": "Shine",
+      "generation": "C3 Aircross I TR MY2019",
+      "generationCode": "Aircross I",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1199",
+      "powerHp": "110",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Ekim 2019 C3 Aircross — Feel/Shine EAT6 only as published.",
+      "sources": [
+        {
+          "url": "https://caraba.net/citroen-ekim-2019-fiyat-listesi/",
+          "title": "Citroën Ekim 2019 C3/C3 Aircross Live/Feel/Shine",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Citroen",
+      "series": "C3 Aircross",
+      "model": "1.5 BlueHDi 120 HP",
+      "trim": "Feel",
+      "generation": "C3 Aircross I TR MY2019",
+      "generationCode": "Aircross I",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1499",
+      "powerHp": "120",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Ekim 2019 C3 Aircross — Feel/Shine EAT6 only as published.",
+      "sources": [
+        {
+          "url": "https://caraba.net/citroen-ekim-2019-fiyat-listesi/",
+          "title": "Citroën Ekim 2019 C3/C3 Aircross Live/Feel/Shine",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Citroen",
+      "series": "C3 Aircross",
+      "model": "1.5 BlueHDi 120 HP",
+      "trim": "Shine",
+      "generation": "C3 Aircross I TR MY2019",
+      "generationCode": "Aircross I",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1499",
+      "powerHp": "120",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Ekim 2019 C3 Aircross — Feel/Shine EAT6 only as published.",
+      "sources": [
+        {
+          "url": "https://caraba.net/citroen-ekim-2019-fiyat-listesi/",
+          "title": "Citroën Ekim 2019 C3/C3 Aircross Live/Feel/Shine",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Citroen",
+      "series": "C5 Aircross",
+      "model": "1.6 PureTech 180 HP",
+      "trim": "Shine",
+      "generation": "C5 Aircross I TR MY2020",
+      "generationCode": "C5 Aircross I",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1598",
+      "powerHp": "180",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2020 C5 Aircross — Feel/Shine/Shine Bold only as published (no fan-out).",
+      "sources": [
+        {
+          "url": "https://www.log.com.tr/2020-citroen-c5-aircross-fiyati-ve-guncel-versiyon-secenekleri/",
+          "title": "2020 Citroën C5 Aircross Feel/Shine BlueHDi/PureTech fiyatları",
+          "date": "2020-08-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "log.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Citroen",
+      "series": "C5 Aircross",
+      "model": "1.5 BlueHDi 130 HP",
+      "trim": "Feel",
+      "generation": "C5 Aircross I TR MY2020",
+      "generationCode": "C5 Aircross I",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "engineVolume": "1499",
+      "powerHp": "130",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2020 C5 Aircross — Feel/Shine/Shine Bold only as published (no fan-out).",
+      "sources": [
+        {
+          "url": "https://www.log.com.tr/2020-citroen-c5-aircross-fiyati-ve-guncel-versiyon-secenekleri/",
+          "title": "2020 Citroën C5 Aircross Feel/Shine BlueHDi/PureTech fiyatları",
+          "date": "2020-08-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "log.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Citroen",
+      "series": "C5 Aircross",
+      "model": "1.5 BlueHDi 130 HP",
+      "trim": "Feel Adventure",
+      "generation": "C5 Aircross I TR MY2020",
+      "generationCode": "C5 Aircross I",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "engineVolume": "1499",
+      "powerHp": "130",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2020 C5 Aircross — Feel/Shine/Shine Bold only as published (no fan-out).",
+      "sources": [
+        {
+          "url": "https://www.log.com.tr/2020-citroen-c5-aircross-fiyati-ve-guncel-versiyon-secenekleri/",
+          "title": "2020 Citroën C5 Aircross Feel/Shine BlueHDi/PureTech fiyatları",
+          "date": "2020-08-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "log.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Citroen",
+      "series": "C5 Aircross",
+      "model": "1.5 BlueHDi 130 HP",
+      "trim": "Shine",
+      "generation": "C5 Aircross I TR MY2020",
+      "generationCode": "C5 Aircross I",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "engineVolume": "1499",
+      "powerHp": "130",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2020 C5 Aircross — Feel/Shine/Shine Bold only as published (no fan-out).",
+      "sources": [
+        {
+          "url": "https://www.log.com.tr/2020-citroen-c5-aircross-fiyati-ve-guncel-versiyon-secenekleri/",
+          "title": "2020 Citroën C5 Aircross Feel/Shine BlueHDi/PureTech fiyatları",
+          "date": "2020-08-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "log.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Citroen",
+      "series": "C5 Aircross",
+      "model": "1.5 BlueHDi 130 HP",
+      "trim": "Shine Bold",
+      "generation": "C5 Aircross I TR MY2020",
+      "generationCode": "C5 Aircross I",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "engineVolume": "1499",
+      "powerHp": "130",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2020 C5 Aircross — Feel/Shine/Shine Bold only as published (no fan-out).",
+      "sources": [
+        {
+          "url": "https://www.log.com.tr/2020-citroen-c5-aircross-fiyati-ve-guncel-versiyon-secenekleri/",
+          "title": "2020 Citroën C5 Aircross Feel/Shine BlueHDi/PureTech fiyatları",
+          "date": "2020-08-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "log.com.tr"
+        }
+      ]
     }
   ],
   "researchNotes": {
-    "researchedSeriesPass": [
-      "C3",
-      "C5 Aircross",
-      "C3 Aircross"
-    ],
-    "historicalArchivesIngested": [],
-    "reviewRequiredSeries": [
-      "C3 (ICE historical)"
-    ]
+    "noApply": true,
+    "applyAllowed": false,
+    "phase": "research-mass-market-batch",
+    "seriesWithoutResearch": [],
+    "currentOnlySeries": [],
+    "addedThisPass": 25
   },
   "completedAt": "2026-08-07T09:13:29.877Z"
 }

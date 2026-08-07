@@ -1,0 +1,70 @@
+{
+  "at": "2026-08-07T10:15:27.285Z",
+  "brand": "Mazda",
+  "status": "COMPLETED",
+  "gate": {
+    "seriesWithoutResearch": [],
+    "seriesWithoutResearchCount": 0,
+    "pass": true
+  },
+  "selectableSeries": [
+    "Mazda3",
+    "CX-5",
+    "CX-30",
+    "CX-60",
+    "MX-5",
+    "MX-5 RF"
+  ],
+  "researchedSeries": [
+    "Mazda3",
+    "CX-5",
+    "CX-30",
+    "CX-60",
+    "MX-5",
+    "MX-5 RF"
+  ],
+  "verifiedVersions": [
+    "1.5 SKY-D",
+    "1.5 SKY-G",
+    "2.0 SKY-G",
+    "2.0 SKY-G 4x4 AT",
+    "2.0 SKY-G AT"
+  ],
+  "verifiedTrims": [
+    "Motion",
+    "Power",
+    "Power Sense",
+    "Power Sense Plus",
+    "Power Sense Sport",
+    "Power Sense i-Activesense",
+    "Reflex"
+  ],
+  "verifiedConfigurations": 22,
+  "officialSources": 0,
+  "multiSources": 22,
+  "reviewRequired": 3,
+  "rejected": 0,
+  "noVerifiedTrimFound": 0,
+  "seriesWithCurrentOnlyCoverage": [
+    "MX-5",
+    "MX-5 RF"
+  ],
+  "historicalCoverageIncompleteSeries": [
+    {
+      "series": "MX-5",
+      "historicalCoverage": "CURRENT_ONLY"
+    },
+    {
+      "series": "MX-5 RF",
+      "historicalCoverage": "CURRENT_ONLY"
+    }
+  ],
+  "sourceUrls": [
+    "https://arabavs.com/mazda-fiyat-listesi-nisan-2020.html",
+    "https://media-assets.mazda.eu/raw/upload/mazdatr/globalassets/pdfs/pricelist/mazda-fiyat-listesi-november-2023-website.pdf?rnd=4aa8ab",
+    "https://otokampanyalar.com/mazda-guncel-kampanyali-fiyat-listesi-m597502.html",
+    "https://www.arabavs.com/mazda-fiyat-listesi-2020-temmuz-yayinlandi.html",
+    "https://www.mazda.com.tr/"
+  ],
+  "notes": "Completed means every selectable series was systematically researched. Current-only and incomplete historical gens remain explicitly flagged. Research-only; applyAllowed=false. Not final absolute historical complete."
+}

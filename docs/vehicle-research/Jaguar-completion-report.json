@@ -1,0 +1,65 @@
+{
+  "at": "2026-08-07T10:15:27.213Z",
+  "brand": "Jaguar",
+  "status": "COMPLETED",
+  "gate": {
+    "seriesWithoutResearch": [],
+    "seriesWithoutResearchCount": 0,
+    "pass": true
+  },
+  "selectableSeries": [
+    "E-Pace",
+    "F-Pace",
+    "I-Pace",
+    "XE",
+    "XF"
+  ],
+  "researchedSeries": [
+    "E-Pace",
+    "F-Pace",
+    "I-Pace",
+    "XE",
+    "XF"
+  ],
+  "verifiedVersions": [
+    "2.0 D204",
+    "EV",
+    "P250"
+  ],
+  "verifiedTrims": [
+    "R-Dynamic HSE",
+    "R-Dynamic S",
+    "R-Dynamic SE"
+  ],
+  "verifiedConfigurations": 7,
+  "officialSources": 0,
+  "multiSources": 7,
+  "reviewRequired": 2,
+  "rejected": 0,
+  "noVerifiedTrimFound": 0,
+  "seriesWithCurrentOnlyCoverage": [
+    "E-Pace",
+    "F-Pace",
+    "I-Pace"
+  ],
+  "historicalCoverageIncompleteSeries": [
+    {
+      "series": "E-Pace",
+      "historicalCoverage": "CURRENT_ONLY"
+    },
+    {
+      "series": "F-Pace",
+      "historicalCoverage": "CURRENT_ONLY"
+    },
+    {
+      "series": "I-Pace",
+      "historicalCoverage": "CURRENT_ONLY"
+    }
+  ],
+  "sourceUrls": [
+    "https://teknohaberi.net/jaguar-fiyat-listesi-2024/",
+    "https://www.jaguar.com.tr/",
+    "https://www.tamindir.com/blog/jaguar-fiyat-listesi_81874/"
+  ],
+  "notes": "Completed means every selectable series was systematically researched. Current-only and incomplete historical gens remain explicitly flagged. Research-only; applyAllowed=false. Not final absolute historical complete."
+}

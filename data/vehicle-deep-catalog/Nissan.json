@@ -1,14 +1,14 @@
 {
   "brand": "Nissan",
   "brandSlug": "nissan",
-  "version": "2026.08-deep-nissan-v1-current-tr",
-  "generatedAt": "2026-08-07T12:05:00.000Z",
+  "version": "2026.08-deep-nissan-v2-historical",
+  "generatedAt": "2026-08-07T10:14:22.854Z",
   "seriesCovered": [
+    "Juke",
     "Qashqai",
     "Qashqai e-POWER",
-    "Juke",
-    "X-Trail",
-    "Townstar"
+    "Townstar",
+    "X-Trail"
   ],
   "status": "COMPLETED",
   "notes": "Qashqai/Juke/X-Trail Aug 2026 from nissan.com.tr-cited tables. Townstar stub.",
@@ -597,19 +597,654 @@
           "role": "secondary"
         }
       ]
+    },
+    {
+      "brand": "Nissan",
+      "series": "Qashqai",
+      "model": "1.3 DIG-T 160 DCT",
+      "trim": "Visia",
+      "generation": "Qashqai J11 FL TR MY2019",
+      "generationCode": "J11",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1332",
+      "powerHp": "160",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "06 Aralık 2019 Nissan Qashqai TR — only published version×trim rows (no fan-out).",
+      "sources": [
+        {
+          "url": "https://aracbulten.com/nissan-qashqai-fiyat-listesi-2019/",
+          "title": "Nissan Qashqai 06 Aralık 2019 tavsiye edilen liste — Visia/Tekna/Sky Pack/Platinum Premium Pack",
+          "date": "2019-12-06",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "aracbulten.com"
+        },
+        {
+          "url": "https://arabamyeni.com/sifir/nissan/qashqai/2019",
+          "title": "Nissan Qashqai 2019 model TR fiyat matrisi",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "arabamyeni.com"
+        }
+      ]
+    },
+    {
+      "brand": "Nissan",
+      "series": "Qashqai",
+      "model": "1.3 DIG-T 160 DCT",
+      "trim": "Tekna",
+      "generation": "Qashqai J11 FL TR MY2019",
+      "generationCode": "J11",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1332",
+      "powerHp": "160",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "06 Aralık 2019 Nissan Qashqai TR — only published version×trim rows (no fan-out).",
+      "sources": [
+        {
+          "url": "https://aracbulten.com/nissan-qashqai-fiyat-listesi-2019/",
+          "title": "Nissan Qashqai 06 Aralık 2019 tavsiye edilen liste — Visia/Tekna/Sky Pack/Platinum Premium Pack",
+          "date": "2019-12-06",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "aracbulten.com"
+        },
+        {
+          "url": "https://arabamyeni.com/sifir/nissan/qashqai/2019",
+          "title": "Nissan Qashqai 2019 model TR fiyat matrisi",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "arabamyeni.com"
+        }
+      ]
+    },
+    {
+      "brand": "Nissan",
+      "series": "Qashqai",
+      "model": "1.3 DIG-T 160 DCT",
+      "trim": "Sky Pack",
+      "generation": "Qashqai J11 FL TR MY2019",
+      "generationCode": "J11",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1332",
+      "powerHp": "160",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "06 Aralık 2019 Nissan Qashqai TR — only published version×trim rows (no fan-out).",
+      "sources": [
+        {
+          "url": "https://aracbulten.com/nissan-qashqai-fiyat-listesi-2019/",
+          "title": "Nissan Qashqai 06 Aralık 2019 tavsiye edilen liste — Visia/Tekna/Sky Pack/Platinum Premium Pack",
+          "date": "2019-12-06",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "aracbulten.com"
+        },
+        {
+          "url": "https://arabamyeni.com/sifir/nissan/qashqai/2019",
+          "title": "Nissan Qashqai 2019 model TR fiyat matrisi",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "arabamyeni.com"
+        }
+      ]
+    },
+    {
+      "brand": "Nissan",
+      "series": "Qashqai",
+      "model": "1.3 DIG-T 160 DCT",
+      "trim": "Platinum Premium Pack",
+      "generation": "Qashqai J11 FL TR MY2019",
+      "generationCode": "J11",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1332",
+      "powerHp": "160",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "06 Aralık 2019 Nissan Qashqai TR — only published version×trim rows (no fan-out).",
+      "sources": [
+        {
+          "url": "https://aracbulten.com/nissan-qashqai-fiyat-listesi-2019/",
+          "title": "Nissan Qashqai 06 Aralık 2019 tavsiye edilen liste — Visia/Tekna/Sky Pack/Platinum Premium Pack",
+          "date": "2019-12-06",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "aracbulten.com"
+        },
+        {
+          "url": "https://arabamyeni.com/sifir/nissan/qashqai/2019",
+          "title": "Nissan Qashqai 2019 model TR fiyat matrisi",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "arabamyeni.com"
+        }
+      ]
+    },
+    {
+      "brand": "Nissan",
+      "series": "Qashqai",
+      "model": "1.5 dCi 115",
+      "trim": "Visia",
+      "generation": "Qashqai J11 FL TR MY2019",
+      "generationCode": "J11",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1461",
+      "powerHp": "115",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "06 Aralık 2019 Nissan Qashqai TR — only published version×trim rows (no fan-out).",
+      "sources": [
+        {
+          "url": "https://aracbulten.com/nissan-qashqai-fiyat-listesi-2019/",
+          "title": "Nissan Qashqai 06 Aralık 2019 tavsiye edilen liste — Visia/Tekna/Sky Pack/Platinum Premium Pack",
+          "date": "2019-12-06",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "aracbulten.com"
+        },
+        {
+          "url": "https://arabamyeni.com/sifir/nissan/qashqai/2019",
+          "title": "Nissan Qashqai 2019 model TR fiyat matrisi",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "arabamyeni.com"
+        }
+      ]
+    },
+    {
+      "brand": "Nissan",
+      "series": "Qashqai",
+      "model": "1.5 dCi 115",
+      "trim": "Tekna",
+      "generation": "Qashqai J11 FL TR MY2019",
+      "generationCode": "J11",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1461",
+      "powerHp": "115",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "06 Aralık 2019 Nissan Qashqai TR — only published version×trim rows (no fan-out).",
+      "sources": [
+        {
+          "url": "https://aracbulten.com/nissan-qashqai-fiyat-listesi-2019/",
+          "title": "Nissan Qashqai 06 Aralık 2019 tavsiye edilen liste — Visia/Tekna/Sky Pack/Platinum Premium Pack",
+          "date": "2019-12-06",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "aracbulten.com"
+        },
+        {
+          "url": "https://arabamyeni.com/sifir/nissan/qashqai/2019",
+          "title": "Nissan Qashqai 2019 model TR fiyat matrisi",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "arabamyeni.com"
+        }
+      ]
+    },
+    {
+      "brand": "Nissan",
+      "series": "Qashqai",
+      "model": "1.5 dCi 115",
+      "trim": "Sky Pack",
+      "generation": "Qashqai J11 FL TR MY2019",
+      "generationCode": "J11",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1461",
+      "powerHp": "115",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "06 Aralık 2019 Nissan Qashqai TR — only published version×trim rows (no fan-out).",
+      "sources": [
+        {
+          "url": "https://aracbulten.com/nissan-qashqai-fiyat-listesi-2019/",
+          "title": "Nissan Qashqai 06 Aralık 2019 tavsiye edilen liste — Visia/Tekna/Sky Pack/Platinum Premium Pack",
+          "date": "2019-12-06",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "aracbulten.com"
+        },
+        {
+          "url": "https://arabamyeni.com/sifir/nissan/qashqai/2019",
+          "title": "Nissan Qashqai 2019 model TR fiyat matrisi",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "arabamyeni.com"
+        }
+      ]
+    },
+    {
+      "brand": "Nissan",
+      "series": "Qashqai",
+      "model": "1.5 dCi 115 DCT",
+      "trim": "Visia",
+      "generation": "Qashqai J11 FL TR MY2019",
+      "generationCode": "J11",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1461",
+      "powerHp": "115",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "06 Aralık 2019 Nissan Qashqai TR — only published version×trim rows (no fan-out).",
+      "sources": [
+        {
+          "url": "https://aracbulten.com/nissan-qashqai-fiyat-listesi-2019/",
+          "title": "Nissan Qashqai 06 Aralık 2019 tavsiye edilen liste — Visia/Tekna/Sky Pack/Platinum Premium Pack",
+          "date": "2019-12-06",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "aracbulten.com"
+        },
+        {
+          "url": "https://arabamyeni.com/sifir/nissan/qashqai/2019",
+          "title": "Nissan Qashqai 2019 model TR fiyat matrisi",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "arabamyeni.com"
+        }
+      ]
+    },
+    {
+      "brand": "Nissan",
+      "series": "Qashqai",
+      "model": "1.5 dCi 115 DCT",
+      "trim": "Tekna",
+      "generation": "Qashqai J11 FL TR MY2019",
+      "generationCode": "J11",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1461",
+      "powerHp": "115",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "06 Aralık 2019 Nissan Qashqai TR — only published version×trim rows (no fan-out).",
+      "sources": [
+        {
+          "url": "https://aracbulten.com/nissan-qashqai-fiyat-listesi-2019/",
+          "title": "Nissan Qashqai 06 Aralık 2019 tavsiye edilen liste — Visia/Tekna/Sky Pack/Platinum Premium Pack",
+          "date": "2019-12-06",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "aracbulten.com"
+        },
+        {
+          "url": "https://arabamyeni.com/sifir/nissan/qashqai/2019",
+          "title": "Nissan Qashqai 2019 model TR fiyat matrisi",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "arabamyeni.com"
+        }
+      ]
+    },
+    {
+      "brand": "Nissan",
+      "series": "Qashqai",
+      "model": "1.5 dCi 115 DCT",
+      "trim": "Sky Pack",
+      "generation": "Qashqai J11 FL TR MY2019",
+      "generationCode": "J11",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1461",
+      "powerHp": "115",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "06 Aralık 2019 Nissan Qashqai TR — only published version×trim rows (no fan-out).",
+      "sources": [
+        {
+          "url": "https://aracbulten.com/nissan-qashqai-fiyat-listesi-2019/",
+          "title": "Nissan Qashqai 06 Aralık 2019 tavsiye edilen liste — Visia/Tekna/Sky Pack/Platinum Premium Pack",
+          "date": "2019-12-06",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "aracbulten.com"
+        },
+        {
+          "url": "https://arabamyeni.com/sifir/nissan/qashqai/2019",
+          "title": "Nissan Qashqai 2019 model TR fiyat matrisi",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "arabamyeni.com"
+        }
+      ]
+    },
+    {
+      "brand": "Nissan",
+      "series": "Qashqai",
+      "model": "1.5 dCi 115 DCT",
+      "trim": "Platinum Premium Pack",
+      "generation": "Qashqai J11 FL TR MY2019",
+      "generationCode": "J11",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1461",
+      "powerHp": "115",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "06 Aralık 2019 Nissan Qashqai TR — only published version×trim rows (no fan-out).",
+      "sources": [
+        {
+          "url": "https://aracbulten.com/nissan-qashqai-fiyat-listesi-2019/",
+          "title": "Nissan Qashqai 06 Aralık 2019 tavsiye edilen liste — Visia/Tekna/Sky Pack/Platinum Premium Pack",
+          "date": "2019-12-06",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "aracbulten.com"
+        },
+        {
+          "url": "https://arabamyeni.com/sifir/nissan/qashqai/2019",
+          "title": "Nissan Qashqai 2019 model TR fiyat matrisi",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "arabamyeni.com"
+        }
+      ]
+    },
+    {
+      "brand": "Nissan",
+      "series": "Juke",
+      "model": "1.0 DIG-T 115",
+      "trim": "Tekna",
+      "generation": "Juke F16 TR lansman",
+      "generationCode": "F16",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "999",
+      "powerHp": "115",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Yeni Juke TR lansman — only published 1.0 DIG-T × Tekna/Platinum/Platinum Premium pairs.",
+      "sources": [
+        {
+          "url": "https://www.donanimhaber.com/yeni-nissan-juke-turkiye-de-iste-fiyati-ve-ozellikleri--129391",
+          "title": "Yeni Nissan Juke TR lansman — Tekna/Platinum/Platinum Premium × 1.0 DIG-T 115",
+          "date": "2020-01-15",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "donanimhaber.com"
+        },
+        {
+          "url": "https://arabamyeni.com/sifir/nissan/juke/2018",
+          "title": "Nissan Juke 2018 model TR fiyat matrisi (Visia/Skypack/Special Edition)",
+          "date": "2018-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "arabamyeni.com"
+        }
+      ]
+    },
+    {
+      "brand": "Nissan",
+      "series": "Juke",
+      "model": "1.0 DIG-T 115 DCT",
+      "trim": "Tekna",
+      "generation": "Juke F16 TR lansman",
+      "generationCode": "F16",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "999",
+      "powerHp": "115",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Yeni Juke TR lansman — only published 1.0 DIG-T × Tekna/Platinum/Platinum Premium pairs.",
+      "sources": [
+        {
+          "url": "https://www.donanimhaber.com/yeni-nissan-juke-turkiye-de-iste-fiyati-ve-ozellikleri--129391",
+          "title": "Yeni Nissan Juke TR lansman — Tekna/Platinum/Platinum Premium × 1.0 DIG-T 115",
+          "date": "2020-01-15",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "donanimhaber.com"
+        },
+        {
+          "url": "https://arabamyeni.com/sifir/nissan/juke/2018",
+          "title": "Nissan Juke 2018 model TR fiyat matrisi (Visia/Skypack/Special Edition)",
+          "date": "2018-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "arabamyeni.com"
+        }
+      ]
+    },
+    {
+      "brand": "Nissan",
+      "series": "Juke",
+      "model": "1.0 DIG-T 115 DCT",
+      "trim": "Platinum",
+      "generation": "Juke F16 TR lansman",
+      "generationCode": "F16",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "999",
+      "powerHp": "115",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Yeni Juke TR lansman — only published 1.0 DIG-T × Tekna/Platinum/Platinum Premium pairs.",
+      "sources": [
+        {
+          "url": "https://www.donanimhaber.com/yeni-nissan-juke-turkiye-de-iste-fiyati-ve-ozellikleri--129391",
+          "title": "Yeni Nissan Juke TR lansman — Tekna/Platinum/Platinum Premium × 1.0 DIG-T 115",
+          "date": "2020-01-15",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "donanimhaber.com"
+        },
+        {
+          "url": "https://arabamyeni.com/sifir/nissan/juke/2018",
+          "title": "Nissan Juke 2018 model TR fiyat matrisi (Visia/Skypack/Special Edition)",
+          "date": "2018-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "arabamyeni.com"
+        }
+      ]
+    },
+    {
+      "brand": "Nissan",
+      "series": "Juke",
+      "model": "1.0 DIG-T 115 DCT",
+      "trim": "Platinum Perso",
+      "generation": "Juke F16 TR lansman",
+      "generationCode": "F16",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "999",
+      "powerHp": "115",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Yeni Juke TR lansman — only published 1.0 DIG-T × Tekna/Platinum/Platinum Premium pairs.",
+      "sources": [
+        {
+          "url": "https://www.donanimhaber.com/yeni-nissan-juke-turkiye-de-iste-fiyati-ve-ozellikleri--129391",
+          "title": "Yeni Nissan Juke TR lansman — Tekna/Platinum/Platinum Premium × 1.0 DIG-T 115",
+          "date": "2020-01-15",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "donanimhaber.com"
+        },
+        {
+          "url": "https://arabamyeni.com/sifir/nissan/juke/2018",
+          "title": "Nissan Juke 2018 model TR fiyat matrisi (Visia/Skypack/Special Edition)",
+          "date": "2018-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "arabamyeni.com"
+        }
+      ]
+    },
+    {
+      "brand": "Nissan",
+      "series": "Juke",
+      "model": "1.0 DIG-T 115 DCT",
+      "trim": "Platinum Premium",
+      "generation": "Juke F16 TR lansman",
+      "generationCode": "F16",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "999",
+      "powerHp": "115",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Yeni Juke TR lansman — only published 1.0 DIG-T × Tekna/Platinum/Platinum Premium pairs.",
+      "sources": [
+        {
+          "url": "https://www.donanimhaber.com/yeni-nissan-juke-turkiye-de-iste-fiyati-ve-ozellikleri--129391",
+          "title": "Yeni Nissan Juke TR lansman — Tekna/Platinum/Platinum Premium × 1.0 DIG-T 115",
+          "date": "2020-01-15",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "donanimhaber.com"
+        },
+        {
+          "url": "https://arabamyeni.com/sifir/nissan/juke/2018",
+          "title": "Nissan Juke 2018 model TR fiyat matrisi (Visia/Skypack/Special Edition)",
+          "date": "2018-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "arabamyeni.com"
+        }
+      ]
+    },
+    {
+      "brand": "Nissan",
+      "series": "Qashqai e-POWER",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "historicalCoverage": "HISTORICAL_COVERAGE_INCOMPLETE",
+      "notes": "Qashqai e-POWER: researched; pre-current historical matrix N/A (series recent). Current MY Designpack/Skypack/Platinum already verified.",
+      "sources": [
+        {
+          "url": "https://www.nissan.com.tr/fiyat-listesi/sifir-arac-fiyatlari-2026.html",
+          "title": "Nissan TR — Qashqai e-POWER historical research note",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Nissan",
+      "series": "X-Trail",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "historicalCoverage": "HISTORICAL_COVERAGE_INCOMPLETE",
+      "notes": "X-Trail T33: researched deepen pass; discrete ≤2020 TR version×trim archive incomplete (current Platinum rows verified).",
+      "sources": [
+        {
+          "url": "https://www.nissan.com.tr/fiyat-listesi/sifir-arac-fiyatlari-2026.html",
+          "title": "Nissan TR — X-Trail historical research note",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
     }
   ],
   "researchNotes": {
-    "researchedSeriesPass": [
-      "Qashqai",
-      "Qashqai e-POWER",
-      "Juke",
-      "X-Trail",
-      "Townstar"
-    ],
-    "reviewRequiredSeries": [
-      "Townstar"
-    ]
+    "noApply": true,
+    "applyAllowed": false,
+    "phase": "research-deepen-batch-volvo-nissan-kia-dacia-cupra-mini",
+    "seriesWithoutResearch": [],
+    "currentOnlySeries": [],
+    "addedThisPass": 18,
+    "notFinalComplete": true
   },
   "completedAt": "2026-08-07T09:13:29.926Z"
 }

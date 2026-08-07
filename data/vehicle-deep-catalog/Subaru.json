@@ -1,14 +1,14 @@
 {
   "brand": "Subaru",
   "brandSlug": "subaru",
-  "version": "2026.08-deep-subaru-v1-current-tr",
-  "generatedAt": "2026-08-07T12:05:00.000Z",
+  "version": "2026.08-deep-subaru-v2-premium",
+  "generatedAt": "2026-08-07T10:15:27.265Z",
   "seriesCovered": [
-    "Forester",
     "Crosstrek",
+    "Forester",
+    "Outback",
     "Solterra",
-    "XV",
-    "Outback"
+    "XV"
   ],
   "status": "COMPLETED",
   "notes": "Forester/Crosstrek/Solterra from official subaru.com.tr Aug 2026 price page.",
@@ -201,20 +201,106 @@
           "role": "primary"
         }
       ]
+    },
+    {
+      "brand": "Subaru",
+      "series": "XV",
+      "model": "1.6i Lineartronic",
+      "trim": "Xtreme",
+      "generation": "XV GT facelift TR MY2020",
+      "generationCode": "GT",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1600",
+      "powerHp": "114",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Aralık 2020 XV 1.6i Lineartronic Xtreme — multi press citing TR list prices (predecessor to Crosstrek naming).",
+      "sources": [
+        {
+          "url": "https://otohavadis.com/2020/12/08/subaru-xv-daha-sportif-ve-konforlu-oldu/",
+          "title": "Subaru XV Aralık 2020 Xtreme/Xclusive fiyatları",
+          "date": "2020-12-08",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otohavadis.com"
+        },
+        {
+          "url": "https://www.cnnturk.com/otomobil/yenilenen-subaru-xv-359-9-bin-tlden-geldi-1595764",
+          "title": "Yenilenen Subaru XV TR fiyatları (CNN Türk)",
+          "date": "2020-12-01",
+          "role": "secondary",
+          "publisher": "cnnturk.com"
+        },
+        {
+          "url": "https://subaru.com.tr/fiyat-listesi",
+          "title": "Subaru Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary",
+          "publisher": "Subaru Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "Subaru",
+      "series": "XV",
+      "model": "1.6i Lineartronic",
+      "trim": "Xclusive",
+      "generation": "XV GT facelift TR MY2020",
+      "generationCode": "GT",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1600",
+      "powerHp": "114",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Aralık 2020 XV 1.6i Lineartronic Xclusive — multi press citing TR list prices (predecessor to Crosstrek naming).",
+      "sources": [
+        {
+          "url": "https://otohavadis.com/2020/12/08/subaru-xv-daha-sportif-ve-konforlu-oldu/",
+          "title": "Subaru XV Aralık 2020 Xtreme/Xclusive fiyatları",
+          "date": "2020-12-08",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otohavadis.com"
+        },
+        {
+          "url": "https://www.cnnturk.com/otomobil/yenilenen-subaru-xv-359-9-bin-tlden-geldi-1595764",
+          "title": "Yenilenen Subaru XV TR fiyatları (CNN Türk)",
+          "date": "2020-12-01",
+          "role": "secondary",
+          "publisher": "cnnturk.com"
+        },
+        {
+          "url": "https://subaru.com.tr/fiyat-listesi",
+          "title": "Subaru Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary",
+          "publisher": "Subaru Türkiye"
+        }
+      ]
     }
   ],
   "researchNotes": {
-    "researchedSeriesPass": [
+    "noApply": true,
+    "applyAllowed": false,
+    "phase": "research-premium-ev-batch",
+    "seriesWithoutResearch": [],
+    "currentOnlySeries": [
       "Forester",
       "Crosstrek",
-      "Solterra",
-      "XV",
-      "Outback"
+      "Solterra"
     ],
-    "reviewRequiredSeries": [
-      "XV",
-      "Outback"
-    ]
+    "addedThisPass": 2,
+    "electricOverlayNote": "Do not invent duplicate EV series"
   },
   "completedAt": "2026-08-07T09:13:29.948Z"
 }

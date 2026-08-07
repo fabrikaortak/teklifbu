@@ -1,8 +1,8 @@
 {
   "brand": "Mazda",
   "brandSlug": "mazda",
-  "version": "2026.08-deep-mazda-v2-verified-nov2023",
-  "generatedAt": "2026-08-07T09:34:56.785Z",
+  "version": "2026.08-deep-mazda-v2-premium",
+  "generatedAt": "2026-08-07T10:15:27.287Z",
   "seriesCovered": [
     "CX-30",
     "CX-5",
@@ -446,23 +446,424 @@
           "role": "secondary"
         }
       ]
+    },
+    {
+      "brand": "Mazda",
+      "series": "Mazda3",
+      "model": "1.5 SKY-G",
+      "trim": "Motion",
+      "generation": "Mazda3 BP Hatchback TR MY2020",
+      "generationCode": "BP",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1496",
+      "powerHp": "",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Temmuz 2020 Mazda3 HB 1.5 SKY-G Motion — archive (leather color variants collapsed into trim family).",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/mazda-fiyat-listesi-2020-temmuz-yayinlandi.html",
+          "title": "Mazda Temmuz 2020 3/CX-5 fiyat listesi",
+          "date": "2020-07-13",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://arabavs.com/mazda-fiyat-listesi-nisan-2020.html",
+          "title": "Mazda Nisan 2020 3/CX-5/MX-5 fiyat listesi",
+          "date": "2020-04-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mazda",
+      "series": "Mazda3",
+      "model": "1.5 SKY-G",
+      "trim": "Reflex",
+      "generation": "Mazda3 BP Hatchback TR MY2020",
+      "generationCode": "BP",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1496",
+      "powerHp": "",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Temmuz 2020 Mazda3 HB 1.5 SKY-G Reflex — archive (leather color variants collapsed into trim family).",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/mazda-fiyat-listesi-2020-temmuz-yayinlandi.html",
+          "title": "Mazda Temmuz 2020 3/CX-5 fiyat listesi",
+          "date": "2020-07-13",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://arabavs.com/mazda-fiyat-listesi-nisan-2020.html",
+          "title": "Mazda Nisan 2020 3/CX-5/MX-5 fiyat listesi",
+          "date": "2020-04-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mazda",
+      "series": "Mazda3",
+      "model": "1.5 SKY-G",
+      "trim": "Motion",
+      "generation": "Mazda3 BP Hatchback TR MY2020",
+      "generationCode": "BP",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1496",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Temmuz 2020 Mazda3 HB 1.5 SKY-G Motion — archive (leather color variants collapsed into trim family).",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/mazda-fiyat-listesi-2020-temmuz-yayinlandi.html",
+          "title": "Mazda Temmuz 2020 3/CX-5 fiyat listesi",
+          "date": "2020-07-13",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://arabavs.com/mazda-fiyat-listesi-nisan-2020.html",
+          "title": "Mazda Nisan 2020 3/CX-5/MX-5 fiyat listesi",
+          "date": "2020-04-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mazda",
+      "series": "Mazda3",
+      "model": "1.5 SKY-G",
+      "trim": "Reflex",
+      "generation": "Mazda3 BP Hatchback TR MY2020",
+      "generationCode": "BP",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1496",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Temmuz 2020 Mazda3 HB 1.5 SKY-G Reflex — archive (leather color variants collapsed into trim family).",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/mazda-fiyat-listesi-2020-temmuz-yayinlandi.html",
+          "title": "Mazda Temmuz 2020 3/CX-5 fiyat listesi",
+          "date": "2020-07-13",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://arabavs.com/mazda-fiyat-listesi-nisan-2020.html",
+          "title": "Mazda Nisan 2020 3/CX-5/MX-5 fiyat listesi",
+          "date": "2020-04-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mazda",
+      "series": "Mazda3",
+      "model": "1.5 SKY-G",
+      "trim": "Power",
+      "generation": "Mazda3 BP Hatchback TR MY2020",
+      "generationCode": "BP",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1496",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Temmuz 2020 Mazda3 HB 1.5 SKY-G Power — archive (leather color variants collapsed into trim family).",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/mazda-fiyat-listesi-2020-temmuz-yayinlandi.html",
+          "title": "Mazda Temmuz 2020 3/CX-5 fiyat listesi",
+          "date": "2020-07-13",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://arabavs.com/mazda-fiyat-listesi-nisan-2020.html",
+          "title": "Mazda Nisan 2020 3/CX-5/MX-5 fiyat listesi",
+          "date": "2020-04-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mazda",
+      "series": "Mazda3",
+      "model": "1.5 SKY-G",
+      "trim": "Power Sense",
+      "generation": "Mazda3 BP Hatchback TR MY2020",
+      "generationCode": "BP",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1496",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Temmuz 2020 Mazda3 HB 1.5 SKY-G Power Sense — archive (leather color variants collapsed into trim family).",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/mazda-fiyat-listesi-2020-temmuz-yayinlandi.html",
+          "title": "Mazda Temmuz 2020 3/CX-5 fiyat listesi",
+          "date": "2020-07-13",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://arabavs.com/mazda-fiyat-listesi-nisan-2020.html",
+          "title": "Mazda Nisan 2020 3/CX-5/MX-5 fiyat listesi",
+          "date": "2020-04-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mazda",
+      "series": "Mazda3",
+      "model": "1.5 SKY-D",
+      "trim": "Motion",
+      "generation": "Mazda3 BP Hatchback TR MY2020",
+      "generationCode": "BP",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "engineVolume": "1496",
+      "powerHp": "",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Temmuz 2020 Mazda3 HB 1.5 SKY-D Motion — archive (leather color variants collapsed into trim family).",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/mazda-fiyat-listesi-2020-temmuz-yayinlandi.html",
+          "title": "Mazda Temmuz 2020 3/CX-5 fiyat listesi",
+          "date": "2020-07-13",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://arabavs.com/mazda-fiyat-listesi-nisan-2020.html",
+          "title": "Mazda Nisan 2020 3/CX-5/MX-5 fiyat listesi",
+          "date": "2020-04-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mazda",
+      "series": "Mazda3",
+      "model": "1.5 SKY-D",
+      "trim": "Reflex",
+      "generation": "Mazda3 BP Hatchback TR MY2020",
+      "generationCode": "BP",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "engineVolume": "1496",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Temmuz 2020 Mazda3 HB 1.5 SKY-D Reflex — archive (leather color variants collapsed into trim family).",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/mazda-fiyat-listesi-2020-temmuz-yayinlandi.html",
+          "title": "Mazda Temmuz 2020 3/CX-5 fiyat listesi",
+          "date": "2020-07-13",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://arabavs.com/mazda-fiyat-listesi-nisan-2020.html",
+          "title": "Mazda Nisan 2020 3/CX-5/MX-5 fiyat listesi",
+          "date": "2020-04-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mazda",
+      "series": "Mazda3",
+      "model": "1.5 SKY-D",
+      "trim": "Power Sense",
+      "generation": "Mazda3 BP Hatchback TR MY2020",
+      "generationCode": "BP",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "engineVolume": "1496",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Temmuz 2020 Mazda3 HB 1.5 SKY-D Power Sense — archive (leather color variants collapsed into trim family).",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/mazda-fiyat-listesi-2020-temmuz-yayinlandi.html",
+          "title": "Mazda Temmuz 2020 3/CX-5 fiyat listesi",
+          "date": "2020-07-13",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://arabavs.com/mazda-fiyat-listesi-nisan-2020.html",
+          "title": "Mazda Nisan 2020 3/CX-5/MX-5 fiyat listesi",
+          "date": "2020-04-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mazda",
+      "series": "CX-5",
+      "model": "2.0 SKY-G AT",
+      "trim": "Power Sense",
+      "generation": "CX-5 KF TR MY2020",
+      "generationCode": "KF",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1998",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Temmuz 2020 CX-5 2.0 SKY-G AT Power Sense — historical ICE rows.",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/mazda-fiyat-listesi-2020-temmuz-yayinlandi.html",
+          "title": "Mazda Temmuz 2020 3/CX-5 fiyat listesi",
+          "date": "2020-07-13",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://arabavs.com/mazda-fiyat-listesi-nisan-2020.html",
+          "title": "Mazda Nisan 2020 3/CX-5/MX-5 fiyat listesi",
+          "date": "2020-04-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mazda",
+      "series": "CX-5",
+      "model": "2.0 SKY-G AT",
+      "trim": "Power Sense Plus",
+      "generation": "CX-5 KF TR MY2020",
+      "generationCode": "KF",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1998",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Temmuz 2020 CX-5 2.0 SKY-G AT Power Sense Plus — historical ICE rows.",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/mazda-fiyat-listesi-2020-temmuz-yayinlandi.html",
+          "title": "Mazda Temmuz 2020 3/CX-5 fiyat listesi",
+          "date": "2020-07-13",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://arabavs.com/mazda-fiyat-listesi-nisan-2020.html",
+          "title": "Mazda Nisan 2020 3/CX-5/MX-5 fiyat listesi",
+          "date": "2020-04-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
     }
   ],
   "researchNotes": {
-    "researchedSeriesPass": [
-      "Mazda3",
-      "CX-5",
-      "CX-30",
-      "CX-60",
+    "noApply": true,
+    "applyAllowed": false,
+    "phase": "research-premium-ev-batch",
+    "seriesWithoutResearch": [],
+    "currentOnlySeries": [
       "MX-5",
       "MX-5 RF"
     ],
-    "reviewRequiredSeries": [
-      "Mazda3",
-      "CX-30",
-      "CX-60"
-    ],
-    "note": "Official PDF last known TR list Nov 2023; no inventing post-exit rows"
+    "addedThisPass": 11,
+    "electricOverlayNote": "Do not invent duplicate EV series"
   },
   "completedAt": "2026-08-07T09:34:56.786Z"
 }

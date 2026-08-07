@@ -1,15 +1,15 @@
 {
   "brand": "BYD",
   "brandSlug": "byd",
-  "version": "2026.08-deep-byd-v1-current-tr",
-  "generatedAt": "2026-08-07T12:05:00.000Z",
+  "version": "2026.08-deep-byd-v2-ev",
+  "generatedAt": "2026-08-07T10:15:27.328Z",
   "seriesCovered": [
+    "Atto 3",
+    "Dolphin",
+    "HAN",
     "SEAL",
     "SEALION 7",
-    "HAN",
-    "TANG",
-    "Atto 3",
-    "Dolphin"
+    "TANG"
   ],
   "status": "COMPLETED",
   "notes": "Current official Aug 2026 list is EV-only SEAL/SEALION7/HAN/TANG. Prior Atto/Dolphin historical stubs — no inventing re-listings.",
@@ -211,10 +211,140 @@
           "role": "secondary"
         }
       ]
+    },
+    {
+      "brand": "BYD",
+      "series": "Atto 3",
+      "model": "150 kW",
+      "trim": "Design",
+      "generation": "Atto 3 TR MY2025",
+      "generationCode": "Atto3",
+      "yearFrom": 2023,
+      "yearTo": 2025,
+      "fuelType": "ELECTRIC",
+      "powerHp": "204",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Atto 3 150 kW Design — Kasım/Aralık 2025 published TR tables (historical; absent Aug 2026 4-model official list). EV overlay Atto 3 preserved.",
+      "sources": [
+        {
+          "url": "https://www.gzt.com/foto-galeri/z-raporu/byd-kasim-2025-fiyat-listesi-seal-seal-u-dm-i-tang-han-atto-3-atto2-dolphin-sealion-7-fiyat-listesi-byd-turkiye-fiyati-2051834",
+          "title": "BYD Kasım/Aralık 2025 Atto 3/Dolphin versiyon tablosu",
+          "date": "2025-12-06",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "gzt.com"
+        },
+        {
+          "url": "https://onedio.com/haber/kasim-2025-byd-fiyat-listesi-iste-byd-atto-3-dolphin-han-seal-u-dm-i-tang-ve-seal-u-ev-guncel-fiyatlari-1323129",
+          "title": "BYD Kasım 2025 Atto 3/Dolphin Onedio tablosu",
+          "date": "2025-11-01",
+          "role": "secondary",
+          "publisher": "onedio.com"
+        },
+        {
+          "url": "https://www.bydauto.com.tr/fiyat-listesi",
+          "title": "BYD Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary",
+          "publisher": "BYD Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "BYD",
+      "series": "Dolphin",
+      "model": "150 kW",
+      "trim": "Comfort",
+      "generation": "Dolphin TR MY2025",
+      "generationCode": "Dolphin",
+      "yearFrom": 2024,
+      "yearTo": 2025,
+      "fuelType": "ELECTRIC",
+      "powerHp": "204",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Dolphin 150 kW Comfort — Kasım/Aralık 2025 published TR tables (historical vs Aug 2026 official). EV overlay Dolphin preserved.",
+      "sources": [
+        {
+          "url": "https://www.gzt.com/foto-galeri/z-raporu/byd-kasim-2025-fiyat-listesi-seal-seal-u-dm-i-tang-han-atto-3-atto2-dolphin-sealion-7-fiyat-listesi-byd-turkiye-fiyati-2051834",
+          "title": "BYD Kasım/Aralık 2025 Atto 3/Dolphin versiyon tablosu",
+          "date": "2025-12-06",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "gzt.com"
+        },
+        {
+          "url": "https://onedio.com/haber/kasim-2025-byd-fiyat-listesi-iste-byd-atto-3-dolphin-han-seal-u-dm-i-tang-ve-seal-u-ev-guncel-fiyatlari-1323129",
+          "title": "BYD Kasım 2025 Atto 3/Dolphin Onedio tablosu",
+          "date": "2025-11-01",
+          "role": "secondary",
+          "publisher": "onedio.com"
+        },
+        {
+          "url": "https://www.bydauto.com.tr/fiyat-listesi",
+          "title": "BYD Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary",
+          "publisher": "BYD Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "BYD",
+      "series": "Dolphin",
+      "model": "150 kW",
+      "trim": "Design",
+      "generation": "Dolphin TR MY2025",
+      "generationCode": "Dolphin",
+      "yearFrom": 2024,
+      "yearTo": 2025,
+      "fuelType": "ELECTRIC",
+      "powerHp": "204",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Dolphin 150 kW Design — Kasım/Aralık 2025 published TR tables (historical vs Aug 2026 official). EV overlay Dolphin preserved.",
+      "sources": [
+        {
+          "url": "https://www.gzt.com/foto-galeri/z-raporu/byd-kasim-2025-fiyat-listesi-seal-seal-u-dm-i-tang-han-atto-3-atto2-dolphin-sealion-7-fiyat-listesi-byd-turkiye-fiyati-2051834",
+          "title": "BYD Kasım/Aralık 2025 Atto 3/Dolphin versiyon tablosu",
+          "date": "2025-12-06",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "gzt.com"
+        },
+        {
+          "url": "https://onedio.com/haber/kasim-2025-byd-fiyat-listesi-iste-byd-atto-3-dolphin-han-seal-u-dm-i-tang-ve-seal-u-ev-guncel-fiyatlari-1323129",
+          "title": "BYD Kasım 2025 Atto 3/Dolphin Onedio tablosu",
+          "date": "2025-11-01",
+          "role": "secondary",
+          "publisher": "onedio.com"
+        },
+        {
+          "url": "https://www.bydauto.com.tr/fiyat-listesi",
+          "title": "BYD Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary",
+          "publisher": "BYD Türkiye"
+        }
+      ]
     }
   ],
   "researchNotes": {
-    "researchedSeriesPass": [
+    "noApply": true,
+    "applyAllowed": false,
+    "phase": "research-premium-ev-batch",
+    "seriesWithoutResearch": [],
+    "currentOnlySeries": [
       "SEAL",
       "SEALION 7",
       "HAN",
@@ -222,11 +352,8 @@
       "Atto 3",
       "Dolphin"
     ],
-    "reviewRequiredSeries": [
-      "Atto 3",
-      "Dolphin"
-    ],
-    "electricOverlayNote": "No duplicate EV series invention"
+    "addedThisPass": 3,
+    "electricOverlayNote": "Do not invent duplicate EV series"
   },
   "completedAt": "2026-08-07T09:13:29.875Z"
 }

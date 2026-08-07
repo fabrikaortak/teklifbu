@@ -1,12 +1,12 @@
 {
   "brand": "Hyundai",
   "brandSlug": "hyundai",
-  "version": "2026.08-deep-hyundai-v1-current-tr",
-  "generatedAt": "2026-08-07T12:00:00.000Z",
+  "version": "2026.08-deep-hyundai-v2-historical",
+  "generatedAt": "2026-08-07T10:14:37.771Z",
   "seriesCovered": [
-    "i20",
     "Bayon",
-    "Tucson"
+    "Tucson",
+    "i20"
   ],
   "status": "COMPLETED",
   "notes": "i20/Bayon/Tucson Aug 2026 rows from hyundai.com.tr-cited + dealer tables. GSR2C sub-variants collapsed to base trim.",
@@ -466,16 +466,911 @@
           "role": "secondary"
         }
       ]
+    },
+    {
+      "brand": "Hyundai",
+      "series": "i20",
+      "model": "1.2 MPI 84 PS",
+      "trim": "Jump",
+      "generation": "i20 GB/IB TR MY2019",
+      "generationCode": "GB",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1248",
+      "powerHp": "84",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Haziran 2019 i20 TR — Jump/Style/Elite base packs only (Pan/MMedia option codes not fan-out).",
+      "sources": [
+        {
+          "url": "https://caraba.net/hyundai-haziran-2019-fiyat-listesi-aciklandi/",
+          "title": "Hyundai Haziran 2019 i20 Jump/Style/Elite version×trim",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Hyundai",
+      "series": "i20",
+      "model": "1.2 MPI 84 PS",
+      "trim": "Style",
+      "generation": "i20 GB/IB TR MY2019",
+      "generationCode": "GB",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1248",
+      "powerHp": "84",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Haziran 2019 i20 TR — Jump/Style/Elite base packs only (Pan/MMedia option codes not fan-out).",
+      "sources": [
+        {
+          "url": "https://caraba.net/hyundai-haziran-2019-fiyat-listesi-aciklandi/",
+          "title": "Hyundai Haziran 2019 i20 Jump/Style/Elite version×trim",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Hyundai",
+      "series": "i20",
+      "model": "1.4 MPI 100 PS",
+      "trim": "Jump",
+      "generation": "i20 GB/IB TR MY2019",
+      "generationCode": "GB",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1368",
+      "powerHp": "100",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Haziran 2019 i20 TR — Jump/Style/Elite base packs only (Pan/MMedia option codes not fan-out).",
+      "sources": [
+        {
+          "url": "https://caraba.net/hyundai-haziran-2019-fiyat-listesi-aciklandi/",
+          "title": "Hyundai Haziran 2019 i20 Jump/Style/Elite version×trim",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Hyundai",
+      "series": "i20",
+      "model": "1.4 MPI 100 PS",
+      "trim": "Style",
+      "generation": "i20 GB/IB TR MY2019",
+      "generationCode": "GB",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1368",
+      "powerHp": "100",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Haziran 2019 i20 TR — Jump/Style/Elite base packs only (Pan/MMedia option codes not fan-out).",
+      "sources": [
+        {
+          "url": "https://caraba.net/hyundai-haziran-2019-fiyat-listesi-aciklandi/",
+          "title": "Hyundai Haziran 2019 i20 Jump/Style/Elite version×trim",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Hyundai",
+      "series": "i20",
+      "model": "1.4 MPI 100 PS",
+      "trim": "Elite",
+      "generation": "i20 GB/IB TR MY2019",
+      "generationCode": "GB",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1368",
+      "powerHp": "100",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Haziran 2019 i20 TR — Jump/Style/Elite base packs only (Pan/MMedia option codes not fan-out).",
+      "sources": [
+        {
+          "url": "https://caraba.net/hyundai-haziran-2019-fiyat-listesi-aciklandi/",
+          "title": "Hyundai Haziran 2019 i20 Jump/Style/Elite version×trim",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Hyundai",
+      "series": "i20",
+      "model": "1.0 T-GDI 100 PS",
+      "trim": "Style",
+      "generation": "i20 GB/IB TR MY2019",
+      "generationCode": "GB",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "998",
+      "powerHp": "100",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Haziran 2019 i20 TR — Jump/Style/Elite base packs only (Pan/MMedia option codes not fan-out).",
+      "sources": [
+        {
+          "url": "https://caraba.net/hyundai-haziran-2019-fiyat-listesi-aciklandi/",
+          "title": "Hyundai Haziran 2019 i20 Jump/Style/Elite version×trim",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Hyundai",
+      "series": "i20",
+      "model": "1.0 T-GDI 100 PS",
+      "trim": "Elite",
+      "generation": "i20 GB/IB TR MY2019",
+      "generationCode": "GB",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "998",
+      "powerHp": "100",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Haziran 2019 i20 TR — Jump/Style/Elite base packs only (Pan/MMedia option codes not fan-out).",
+      "sources": [
+        {
+          "url": "https://caraba.net/hyundai-haziran-2019-fiyat-listesi-aciklandi/",
+          "title": "Hyundai Haziran 2019 i20 Jump/Style/Elite version×trim",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Hyundai",
+      "series": "i20",
+      "model": "1.4 CRDi 90 PS",
+      "trim": "Jump",
+      "generation": "i20 GB/IB TR MY2019",
+      "generationCode": "GB",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1368",
+      "powerHp": "90",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Haziran 2019 i20 TR — Jump/Style/Elite base packs only (Pan/MMedia option codes not fan-out).",
+      "sources": [
+        {
+          "url": "https://caraba.net/hyundai-haziran-2019-fiyat-listesi-aciklandi/",
+          "title": "Hyundai Haziran 2019 i20 Jump/Style/Elite version×trim",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Hyundai",
+      "series": "i20",
+      "model": "1.4 CRDi 90 PS",
+      "trim": "Style",
+      "generation": "i20 GB/IB TR MY2019",
+      "generationCode": "GB",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1368",
+      "powerHp": "90",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Haziran 2019 i20 TR — Jump/Style/Elite base packs only (Pan/MMedia option codes not fan-out).",
+      "sources": [
+        {
+          "url": "https://caraba.net/hyundai-haziran-2019-fiyat-listesi-aciklandi/",
+          "title": "Hyundai Haziran 2019 i20 Jump/Style/Elite version×trim",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Hyundai",
+      "series": "i20",
+      "model": "1.4 CRDi 90 PS",
+      "trim": "Elite",
+      "generation": "i20 GB/IB TR MY2019",
+      "generationCode": "GB",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1368",
+      "powerHp": "90",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Haziran 2019 i20 TR — Jump/Style/Elite base packs only (Pan/MMedia option codes not fan-out).",
+      "sources": [
+        {
+          "url": "https://caraba.net/hyundai-haziran-2019-fiyat-listesi-aciklandi/",
+          "title": "Hyundai Haziran 2019 i20 Jump/Style/Elite version×trim",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Hyundai",
+      "series": "i20",
+      "model": "1.4 MPI 100 PS",
+      "trim": "Jump",
+      "generation": "i20 BC3 TR MY2020",
+      "generationCode": "BC3",
+      "yearFrom": 2020,
+      "yearTo": 2021,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1368",
+      "powerHp": "100",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Şubat 2021 listede 2020 MY i20 BC3 — Jump/Style/Elite published pairs only.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/2021-hyundai-fiyat-listesi/",
+          "title": "2021 Hyundai fiyat listesi — i20/Tucson version×trim",
+          "date": "2021-02-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Hyundai",
+      "series": "i20",
+      "model": "1.4 MPI 100 PS",
+      "trim": "Style",
+      "generation": "i20 BC3 TR MY2020",
+      "generationCode": "BC3",
+      "yearFrom": 2020,
+      "yearTo": 2021,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1368",
+      "powerHp": "100",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Şubat 2021 listede 2020 MY i20 BC3 — Jump/Style/Elite published pairs only.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/2021-hyundai-fiyat-listesi/",
+          "title": "2021 Hyundai fiyat listesi — i20/Tucson version×trim",
+          "date": "2021-02-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Hyundai",
+      "series": "i20",
+      "model": "1.4 MPI 100 PS",
+      "trim": "Jump",
+      "generation": "i20 BC3 TR MY2020",
+      "generationCode": "BC3",
+      "yearFrom": 2020,
+      "yearTo": 2021,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1368",
+      "powerHp": "100",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Şubat 2021 listede 2020 MY i20 BC3 — Jump/Style/Elite published pairs only.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/2021-hyundai-fiyat-listesi/",
+          "title": "2021 Hyundai fiyat listesi — i20/Tucson version×trim",
+          "date": "2021-02-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Hyundai",
+      "series": "i20",
+      "model": "1.4 MPI 100 PS",
+      "trim": "Style",
+      "generation": "i20 BC3 TR MY2020",
+      "generationCode": "BC3",
+      "yearFrom": 2020,
+      "yearTo": 2021,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1368",
+      "powerHp": "100",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Şubat 2021 listede 2020 MY i20 BC3 — Jump/Style/Elite published pairs only.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/2021-hyundai-fiyat-listesi/",
+          "title": "2021 Hyundai fiyat listesi — i20/Tucson version×trim",
+          "date": "2021-02-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Hyundai",
+      "series": "i20",
+      "model": "1.4 MPI 100 PS",
+      "trim": "Elite",
+      "generation": "i20 BC3 TR MY2020",
+      "generationCode": "BC3",
+      "yearFrom": 2020,
+      "yearTo": 2021,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1368",
+      "powerHp": "100",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Şubat 2021 listede 2020 MY i20 BC3 — Jump/Style/Elite published pairs only.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/2021-hyundai-fiyat-listesi/",
+          "title": "2021 Hyundai fiyat listesi — i20/Tucson version×trim",
+          "date": "2021-02-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Hyundai",
+      "series": "i20",
+      "model": "1.0 T-GDI 100 PS",
+      "trim": "Style",
+      "generation": "i20 BC3 TR MY2020",
+      "generationCode": "BC3",
+      "yearFrom": 2020,
+      "yearTo": 2021,
+      "fuelType": "GASOLINE",
+      "engineVolume": "998",
+      "powerHp": "100",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Şubat 2021 listede 2020 MY i20 BC3 — Jump/Style/Elite published pairs only.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/2021-hyundai-fiyat-listesi/",
+          "title": "2021 Hyundai fiyat listesi — i20/Tucson version×trim",
+          "date": "2021-02-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Hyundai",
+      "series": "i20",
+      "model": "1.0 T-GDI 100 PS",
+      "trim": "Elite",
+      "generation": "i20 BC3 TR MY2020",
+      "generationCode": "BC3",
+      "yearFrom": 2020,
+      "yearTo": 2021,
+      "fuelType": "GASOLINE",
+      "engineVolume": "998",
+      "powerHp": "100",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Şubat 2021 listede 2020 MY i20 BC3 — Jump/Style/Elite published pairs only.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/2021-hyundai-fiyat-listesi/",
+          "title": "2021 Hyundai fiyat listesi — i20/Tucson version×trim",
+          "date": "2021-02-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Hyundai",
+      "series": "Bayon",
+      "model": "1.4 MPI 100 PS",
+      "trim": "Jump",
+      "generation": "Bayon TR MY2021",
+      "generationCode": "BC3 SUV",
+      "yearFrom": 2021,
+      "yearTo": 2021,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1368",
+      "powerHp": "100",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Eylül 2021 Bayon lansman TR — Jump/Style/Elite only as published. Pre-2021 N/A.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3136769-hyunda-2021-eylul-ayi-fiyat-listesi-belli-oldu-yeni-bayon-i10-i20-elentra-tucson-guncel-fiyati",
+          "title": "Hyundai Eylül 2021 Bayon/i20/Tucson fiyat listesi",
+          "date": "2021-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        }
+      ]
+    },
+    {
+      "brand": "Hyundai",
+      "series": "Bayon",
+      "model": "1.4 MPI 100 PS",
+      "trim": "Style",
+      "generation": "Bayon TR MY2021",
+      "generationCode": "BC3 SUV",
+      "yearFrom": 2021,
+      "yearTo": 2021,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1368",
+      "powerHp": "100",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Eylül 2021 Bayon lansman TR — Jump/Style/Elite only as published. Pre-2021 N/A.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3136769-hyunda-2021-eylul-ayi-fiyat-listesi-belli-oldu-yeni-bayon-i10-i20-elentra-tucson-guncel-fiyati",
+          "title": "Hyundai Eylül 2021 Bayon/i20/Tucson fiyat listesi",
+          "date": "2021-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        }
+      ]
+    },
+    {
+      "brand": "Hyundai",
+      "series": "Bayon",
+      "model": "1.4 MPI 100 PS",
+      "trim": "Elite",
+      "generation": "Bayon TR MY2021",
+      "generationCode": "BC3 SUV",
+      "yearFrom": 2021,
+      "yearTo": 2021,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1368",
+      "powerHp": "100",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Eylül 2021 Bayon lansman TR — Jump/Style/Elite only as published. Pre-2021 N/A.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3136769-hyunda-2021-eylul-ayi-fiyat-listesi-belli-oldu-yeni-bayon-i10-i20-elentra-tucson-guncel-fiyati",
+          "title": "Hyundai Eylül 2021 Bayon/i20/Tucson fiyat listesi",
+          "date": "2021-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        }
+      ]
+    },
+    {
+      "brand": "Hyundai",
+      "series": "Bayon",
+      "model": "1.0 T-GDI 100 PS",
+      "trim": "Style",
+      "generation": "Bayon TR MY2021",
+      "generationCode": "BC3 SUV",
+      "yearFrom": 2021,
+      "yearTo": 2021,
+      "fuelType": "GASOLINE",
+      "engineVolume": "998",
+      "powerHp": "100",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Eylül 2021 Bayon lansman TR — Jump/Style/Elite only as published. Pre-2021 N/A.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3136769-hyunda-2021-eylul-ayi-fiyat-listesi-belli-oldu-yeni-bayon-i10-i20-elentra-tucson-guncel-fiyati",
+          "title": "Hyundai Eylül 2021 Bayon/i20/Tucson fiyat listesi",
+          "date": "2021-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        }
+      ]
+    },
+    {
+      "brand": "Hyundai",
+      "series": "Bayon",
+      "model": "1.0 T-GDI 100 PS",
+      "trim": "Elite",
+      "generation": "Bayon TR MY2021",
+      "generationCode": "BC3 SUV",
+      "yearFrom": 2021,
+      "yearTo": 2021,
+      "fuelType": "GASOLINE",
+      "engineVolume": "998",
+      "powerHp": "100",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Eylül 2021 Bayon lansman TR — Jump/Style/Elite only as published. Pre-2021 N/A.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3136769-hyunda-2021-eylul-ayi-fiyat-listesi-belli-oldu-yeni-bayon-i10-i20-elentra-tucson-guncel-fiyati",
+          "title": "Hyundai Eylül 2021 Bayon/i20/Tucson fiyat listesi",
+          "date": "2021-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        }
+      ]
+    },
+    {
+      "brand": "Hyundai",
+      "series": "Bayon",
+      "model": "",
+      "trim": "",
+      "generation": "pre-launch",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "historicalCoverage": "HISTORICAL_COVERAGE_INCOMPLETE",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "Bayon TR launch 2021 — no 2017–2020 TR price archive; HISTORICAL_COVERAGE_INCOMPLETE for pre-launch gens.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3136769-hyunda-2021-eylul-ayi-fiyat-listesi-belli-oldu-yeni-bayon-i10-i20-elentra-tucson-guncel-fiyati",
+          "title": "Hyundai Eylül 2021 Bayon/i20/Tucson fiyat listesi",
+          "date": "2021-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        }
+      ]
+    },
+    {
+      "brand": "Hyundai",
+      "series": "Tucson",
+      "model": "1.6 T-GDI 177 PS",
+      "trim": "Power Edition",
+      "generation": "Tucson TL TR MY2020",
+      "generationCode": "TL",
+      "yearFrom": 2020,
+      "yearTo": 2021,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1598",
+      "powerHp": "177",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Şubat 2021 Tucson TL (2020 MY) — Power Edition/Smart/Elite/Elite Plus as listed.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/2021-hyundai-fiyat-listesi/",
+          "title": "2021 Hyundai fiyat listesi — i20/Tucson version×trim",
+          "date": "2021-02-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Hyundai",
+      "series": "Tucson",
+      "model": "1.6 CRDi 136 PS",
+      "trim": "Smart",
+      "generation": "Tucson TL TR MY2020",
+      "generationCode": "TL",
+      "yearFrom": 2020,
+      "yearTo": 2021,
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "136",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Şubat 2021 Tucson TL (2020 MY) — Power Edition/Smart/Elite/Elite Plus as listed.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/2021-hyundai-fiyat-listesi/",
+          "title": "2021 Hyundai fiyat listesi — i20/Tucson version×trim",
+          "date": "2021-02-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Hyundai",
+      "series": "Tucson",
+      "model": "1.6 CRDi 136 PS",
+      "trim": "Elite",
+      "generation": "Tucson TL TR MY2020",
+      "generationCode": "TL",
+      "yearFrom": 2020,
+      "yearTo": 2021,
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "136",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Şubat 2021 Tucson TL (2020 MY) — Power Edition/Smart/Elite/Elite Plus as listed.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/2021-hyundai-fiyat-listesi/",
+          "title": "2021 Hyundai fiyat listesi — i20/Tucson version×trim",
+          "date": "2021-02-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Hyundai",
+      "series": "Tucson",
+      "model": "1.6 CRDi 136 PS",
+      "trim": "Elite Plus",
+      "generation": "Tucson TL TR MY2020",
+      "generationCode": "TL",
+      "yearFrom": 2020,
+      "yearTo": 2021,
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "136",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Şubat 2021 Tucson TL (2020 MY) — Power Edition/Smart/Elite/Elite Plus as listed.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/2021-hyundai-fiyat-listesi/",
+          "title": "2021 Hyundai fiyat listesi — i20/Tucson version×trim",
+          "date": "2021-02-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Hyundai",
+      "series": "Tucson",
+      "model": "1.6 T-GDI 180 PS",
+      "trim": "Comfort",
+      "generation": "Tucson NX4 TR MY2021",
+      "generationCode": "NX4",
+      "yearFrom": 2021,
+      "yearTo": 2021,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1598",
+      "powerHp": "180",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Eylül 2021 Yeni Tucson NX4 — Comfort/Prime/Elite/Elite Plus DCT as published.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3136769-hyunda-2021-eylul-ayi-fiyat-listesi-belli-oldu-yeni-bayon-i10-i20-elentra-tucson-guncel-fiyati",
+          "title": "Hyundai Eylül 2021 Bayon/i20/Tucson fiyat listesi",
+          "date": "2021-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        }
+      ]
+    },
+    {
+      "brand": "Hyundai",
+      "series": "Tucson",
+      "model": "1.6 CRDi 136 PS",
+      "trim": "Prime",
+      "generation": "Tucson NX4 TR MY2021",
+      "generationCode": "NX4",
+      "yearFrom": 2021,
+      "yearTo": 2021,
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "136",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Eylül 2021 Yeni Tucson NX4 — Comfort/Prime/Elite/Elite Plus DCT as published.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3136769-hyunda-2021-eylul-ayi-fiyat-listesi-belli-oldu-yeni-bayon-i10-i20-elentra-tucson-guncel-fiyati",
+          "title": "Hyundai Eylül 2021 Bayon/i20/Tucson fiyat listesi",
+          "date": "2021-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        }
+      ]
+    },
+    {
+      "brand": "Hyundai",
+      "series": "Tucson",
+      "model": "1.6 CRDi 136 PS",
+      "trim": "Elite",
+      "generation": "Tucson NX4 TR MY2021",
+      "generationCode": "NX4",
+      "yearFrom": 2021,
+      "yearTo": 2021,
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "136",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Eylül 2021 Yeni Tucson NX4 — Comfort/Prime/Elite/Elite Plus DCT as published.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3136769-hyunda-2021-eylul-ayi-fiyat-listesi-belli-oldu-yeni-bayon-i10-i20-elentra-tucson-guncel-fiyati",
+          "title": "Hyundai Eylül 2021 Bayon/i20/Tucson fiyat listesi",
+          "date": "2021-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        }
+      ]
+    },
+    {
+      "brand": "Hyundai",
+      "series": "Tucson",
+      "model": "1.6 CRDi 136 PS",
+      "trim": "Elite Plus",
+      "generation": "Tucson NX4 TR MY2021",
+      "generationCode": "NX4",
+      "yearFrom": 2021,
+      "yearTo": 2021,
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "136",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Eylül 2021 Yeni Tucson NX4 — Comfort/Prime/Elite/Elite Plus DCT as published.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3136769-hyunda-2021-eylul-ayi-fiyat-listesi-belli-oldu-yeni-bayon-i10-i20-elentra-tucson-guncel-fiyati",
+          "title": "Hyundai Eylül 2021 Bayon/i20/Tucson fiyat listesi",
+          "date": "2021-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        }
+      ]
     }
   ],
   "researchNotes": {
-    "researchedSeriesPass": [
-      "i20",
-      "Bayon",
-      "Tucson"
-    ],
-    "historicalArchivesIngested": [],
-    "reviewRequiredSeries": []
+    "noApply": true,
+    "applyAllowed": false,
+    "phase": "research-mass-market-batch",
+    "seriesWithoutResearch": [],
+    "currentOnlySeries": [],
+    "addedThisPass": 31
   },
   "completedAt": "2026-08-07T09:13:29.896Z"
 }

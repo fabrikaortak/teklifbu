@@ -1,8 +1,8 @@
 {
   "brand": "Mitsubishi",
   "brandSlug": "mitsubishi",
-  "version": "2026.08-deep-mitsubishi-v2-spacestar",
-  "generatedAt": "2026-08-07T09:34:56.788Z",
+  "version": "2026.08-deep-mitsubishi-v2-premium",
+  "generatedAt": "2026-08-07T10:15:27.250Z",
   "seriesCovered": [
     "ASX",
     "Eclipse Cross",
@@ -276,20 +276,382 @@
           "role": "secondary"
         }
       ]
+    },
+    {
+      "brand": "Mitsubishi",
+      "series": "Eclipse Cross",
+      "model": "1.5 Invite MT",
+      "trim": "Invite",
+      "generation": "Eclipse Cross TR MY2020",
+      "generationCode": "GK",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1499",
+      "powerHp": "150",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Mayıs 2020 Eclipse Cross 1.5 Invite MT Invite — archive price list.",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/mitsubishi-fiyat-listesi-2020-mayis-yayinlandi.html",
+          "title": "Mitsubishi Mayıs 2020 Eclipse Cross/L200 fiyat listesi",
+          "date": "2020-05-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://www.arabavs.com/mitsubishi-aralik-ayi-guncel-fiyat-listesi-2019.html",
+          "title": "Mitsubishi Aralık 2019 Eclipse Cross/L200 fiyat listesi",
+          "date": "2019-12-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mitsubishi",
+      "series": "Eclipse Cross",
+      "model": "1.5 Invite CVT",
+      "trim": "Invite",
+      "generation": "Eclipse Cross TR MY2020",
+      "generationCode": "GK",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1499",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Mayıs 2020 Eclipse Cross 1.5 Invite CVT Invite — archive price list.",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/mitsubishi-fiyat-listesi-2020-mayis-yayinlandi.html",
+          "title": "Mitsubishi Mayıs 2020 Eclipse Cross/L200 fiyat listesi",
+          "date": "2020-05-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://www.arabavs.com/mitsubishi-aralik-ayi-guncel-fiyat-listesi-2019.html",
+          "title": "Mitsubishi Aralık 2019 Eclipse Cross/L200 fiyat listesi",
+          "date": "2019-12-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mitsubishi",
+      "series": "Eclipse Cross",
+      "model": "1.5 Intense CVT",
+      "trim": "Intense",
+      "generation": "Eclipse Cross TR MY2020",
+      "generationCode": "GK",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1499",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Mayıs 2020 Eclipse Cross 1.5 Intense CVT Intense — archive price list.",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/mitsubishi-fiyat-listesi-2020-mayis-yayinlandi.html",
+          "title": "Mitsubishi Mayıs 2020 Eclipse Cross/L200 fiyat listesi",
+          "date": "2020-05-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://www.arabavs.com/mitsubishi-aralik-ayi-guncel-fiyat-listesi-2019.html",
+          "title": "Mitsubishi Aralık 2019 Eclipse Cross/L200 fiyat listesi",
+          "date": "2019-12-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mitsubishi",
+      "series": "Eclipse Cross",
+      "model": "1.5 Instyle CVT",
+      "trim": "Instyle",
+      "generation": "Eclipse Cross TR MY2020",
+      "generationCode": "GK",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1499",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Mayıs 2020 Eclipse Cross 1.5 Instyle CVT Instyle — archive price list.",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/mitsubishi-fiyat-listesi-2020-mayis-yayinlandi.html",
+          "title": "Mitsubishi Mayıs 2020 Eclipse Cross/L200 fiyat listesi",
+          "date": "2020-05-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://www.arabavs.com/mitsubishi-aralik-ayi-guncel-fiyat-listesi-2019.html",
+          "title": "Mitsubishi Aralık 2019 Eclipse Cross/L200 fiyat listesi",
+          "date": "2019-12-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mitsubishi",
+      "series": "L200",
+      "model": "4x2 Tornado MT",
+      "trim": "Tornado",
+      "generation": "L200 TR MY2020",
+      "generationCode": "KJ",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "engineVolume": "2268",
+      "powerHp": "150",
+      "transmission": "MANUAL",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Mayıs 2020 L200 4x2 Tornado MT Tornado — archive + LOG resmi kaynaklı.",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/mitsubishi-fiyat-listesi-2020-mayis-yayinlandi.html",
+          "title": "Mitsubishi Mayıs 2020 Eclipse Cross/L200 fiyat listesi",
+          "date": "2020-05-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://www.log.com.tr/2020-mitsubishi-l200-fiyati-ve-donanim-secenekleri/",
+          "title": "2020 Mitsubishi L200 resmi kaynaklı donanım×fiyat",
+          "date": "2020-01-01",
+          "role": "secondary",
+          "publisher": "log.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Mitsubishi",
+      "series": "L200",
+      "model": "4x2 Tornado AT",
+      "trim": "Tornado",
+      "generation": "L200 TR MY2020",
+      "generationCode": "KJ",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "engineVolume": "2268",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Mayıs 2020 L200 4x2 Tornado AT Tornado — archive + LOG resmi kaynaklı.",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/mitsubishi-fiyat-listesi-2020-mayis-yayinlandi.html",
+          "title": "Mitsubishi Mayıs 2020 Eclipse Cross/L200 fiyat listesi",
+          "date": "2020-05-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://www.log.com.tr/2020-mitsubishi-l200-fiyati-ve-donanim-secenekleri/",
+          "title": "2020 Mitsubishi L200 resmi kaynaklı donanım×fiyat",
+          "date": "2020-01-01",
+          "role": "secondary",
+          "publisher": "log.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Mitsubishi",
+      "series": "L200",
+      "model": "4x4 Storm MT",
+      "trim": "Storm",
+      "generation": "L200 TR MY2020",
+      "generationCode": "KJ",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "engineVolume": "2268",
+      "powerHp": "150",
+      "transmission": "MANUAL",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Mayıs 2020 L200 4x4 Storm MT Storm — archive + LOG resmi kaynaklı.",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/mitsubishi-fiyat-listesi-2020-mayis-yayinlandi.html",
+          "title": "Mitsubishi Mayıs 2020 Eclipse Cross/L200 fiyat listesi",
+          "date": "2020-05-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://www.log.com.tr/2020-mitsubishi-l200-fiyati-ve-donanim-secenekleri/",
+          "title": "2020 Mitsubishi L200 resmi kaynaklı donanım×fiyat",
+          "date": "2020-01-01",
+          "role": "secondary",
+          "publisher": "log.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Mitsubishi",
+      "series": "L200",
+      "model": "4x4 Tornado MT",
+      "trim": "Tornado",
+      "generation": "L200 TR MY2020",
+      "generationCode": "KJ",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "engineVolume": "2268",
+      "powerHp": "150",
+      "transmission": "MANUAL",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Mayıs 2020 L200 4x4 Tornado MT Tornado — archive + LOG resmi kaynaklı.",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/mitsubishi-fiyat-listesi-2020-mayis-yayinlandi.html",
+          "title": "Mitsubishi Mayıs 2020 Eclipse Cross/L200 fiyat listesi",
+          "date": "2020-05-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://www.log.com.tr/2020-mitsubishi-l200-fiyati-ve-donanim-secenekleri/",
+          "title": "2020 Mitsubishi L200 resmi kaynaklı donanım×fiyat",
+          "date": "2020-01-01",
+          "role": "secondary",
+          "publisher": "log.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Mitsubishi",
+      "series": "L200",
+      "model": "4x4 Blizzard AT",
+      "trim": "Blizzard",
+      "generation": "L200 TR MY2020",
+      "generationCode": "KJ",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "engineVolume": "2268",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Mayıs 2020 L200 4x4 Blizzard AT Blizzard — archive + LOG resmi kaynaklı.",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/mitsubishi-fiyat-listesi-2020-mayis-yayinlandi.html",
+          "title": "Mitsubishi Mayıs 2020 Eclipse Cross/L200 fiyat listesi",
+          "date": "2020-05-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://www.log.com.tr/2020-mitsubishi-l200-fiyati-ve-donanim-secenekleri/",
+          "title": "2020 Mitsubishi L200 resmi kaynaklı donanım×fiyat",
+          "date": "2020-01-01",
+          "role": "secondary",
+          "publisher": "log.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Mitsubishi",
+      "series": "L200",
+      "model": "4x4 Premium AT",
+      "trim": "Premium",
+      "generation": "L200 TR MY2020",
+      "generationCode": "KJ",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "engineVolume": "2268",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Mayıs 2020 L200 4x4 Premium AT Premium — archive + LOG resmi kaynaklı.",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/mitsubishi-fiyat-listesi-2020-mayis-yayinlandi.html",
+          "title": "Mitsubishi Mayıs 2020 Eclipse Cross/L200 fiyat listesi",
+          "date": "2020-05-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://www.log.com.tr/2020-mitsubishi-l200-fiyati-ve-donanim-secenekleri/",
+          "title": "2020 Mitsubishi L200 resmi kaynaklı donanım×fiyat",
+          "date": "2020-01-01",
+          "role": "secondary",
+          "publisher": "log.com.tr"
+        }
+      ]
     }
   ],
   "researchNotes": {
-    "researchedSeriesPass": [
-      "Space Star",
-      "ASX",
-      "Eclipse Cross",
-      "L200"
+    "noApply": true,
+    "applyAllowed": false,
+    "phase": "research-premium-ev-batch",
+    "seriesWithoutResearch": [],
+    "currentOnlySeries": [
+      "Space Star"
     ],
-    "reviewRequiredSeries": [
-      "ASX",
-      "Eclipse Cross",
-      "L200"
-    ]
+    "addedThisPass": 10,
+    "electricOverlayNote": "Do not invent duplicate EV series"
   },
   "completedAt": "2026-08-07T09:34:56.788Z"
 }

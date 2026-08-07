@@ -1,15 +1,15 @@
 {
   "brand": "Volvo",
   "brandSlug": "volvo",
-  "version": "2026.08-deep-volvo-v1-current-tr",
-  "generatedAt": "2026-08-07T12:05:00.000Z",
+  "version": "2026.08-deep-volvo-v2-historical",
+  "generatedAt": "2026-08-07T10:14:22.841Z",
   "seriesCovered": [
-    "XC60",
+    "EC40",
+    "EX30",
     "EX40",
     "V60",
-    "XC90",
-    "EX30",
-    "EC40"
+    "XC60",
+    "XC90"
   ],
   "status": "COMPLETED",
   "notes": "XC60/EX40 from official Volvo TR MY26 PDF. Bright/Dark are style packs mapped into trim.",
@@ -325,22 +325,308 @@
           "role": "secondary"
         }
       ]
+    },
+    {
+      "brand": "Volvo",
+      "series": "XC60",
+      "model": "2.0 D4",
+      "trim": "Momentum",
+      "generation": "XC60 II TR MY2019",
+      "generationCode": "SPA/XC60",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1969",
+      "powerHp": "190",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2019 XC60 TR — only published D4 × Momentum/R-Design/Inscription pairs (no fan-out).",
+      "sources": [
+        {
+          "url": "https://arabamyeni.com/sifir/volvo/xc60/2019",
+          "title": "Volvo XC60 2019 model TR fiyat matrisi (D4 × Momentum/R-Design/Inscription)",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "arabamyeni.com"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/volvo/xc60/2019-fiyatlari",
+          "title": "2019 Model Volvo XC60 Fiyatları — version×trim",
+          "date": "2019-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Volvo",
+      "series": "XC60",
+      "model": "2.0 D4",
+      "trim": "R-Design",
+      "generation": "XC60 II TR MY2019",
+      "generationCode": "SPA/XC60",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1969",
+      "powerHp": "190",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2019 XC60 TR — only published D4 × Momentum/R-Design/Inscription pairs (no fan-out).",
+      "sources": [
+        {
+          "url": "https://arabamyeni.com/sifir/volvo/xc60/2019",
+          "title": "Volvo XC60 2019 model TR fiyat matrisi (D4 × Momentum/R-Design/Inscription)",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "arabamyeni.com"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/volvo/xc60/2019-fiyatlari",
+          "title": "2019 Model Volvo XC60 Fiyatları — version×trim",
+          "date": "2019-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Volvo",
+      "series": "XC60",
+      "model": "2.0 D4",
+      "trim": "Inscription",
+      "generation": "XC60 II TR MY2019",
+      "generationCode": "SPA/XC60",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1969",
+      "powerHp": "190",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2019 XC60 TR — only published D4 × Momentum/R-Design/Inscription pairs (no fan-out).",
+      "sources": [
+        {
+          "url": "https://arabamyeni.com/sifir/volvo/xc60/2019",
+          "title": "Volvo XC60 2019 model TR fiyat matrisi (D4 × Momentum/R-Design/Inscription)",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "arabamyeni.com"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/volvo/xc60/2019-fiyatlari",
+          "title": "2019 Model Volvo XC60 Fiyatları — version×trim",
+          "date": "2019-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Volvo",
+      "series": "XC90",
+      "model": "2.0 D5",
+      "trim": "Momentum",
+      "generation": "XC90 II TR MY2019",
+      "generationCode": "SPA/XC90",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1969",
+      "powerHp": "225",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2019 XC90 TR — only published version×trim rows.",
+      "sources": [
+        {
+          "url": "https://arabamyeni.com/sifir/volvo/xc90/2019",
+          "title": "Volvo XC90 2019 model TR fiyat matrisi",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "arabamyeni.com"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/volvo/xc90/2019-fiyatlari",
+          "title": "2019 Model Volvo XC90 Fiyatları",
+          "date": "2019-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Volvo",
+      "series": "XC90",
+      "model": "2.0 D5",
+      "trim": "Inscription",
+      "generation": "XC90 II TR MY2019",
+      "generationCode": "SPA/XC90",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1969",
+      "powerHp": "225",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2019 XC90 TR — only published version×trim rows.",
+      "sources": [
+        {
+          "url": "https://arabamyeni.com/sifir/volvo/xc90/2019",
+          "title": "Volvo XC90 2019 model TR fiyat matrisi",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "arabamyeni.com"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/volvo/xc90/2019-fiyatlari",
+          "title": "2019 Model Volvo XC90 Fiyatları",
+          "date": "2019-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Volvo",
+      "series": "XC90",
+      "model": "2.0 D5",
+      "trim": "R-Design",
+      "generation": "XC90 II TR MY2019",
+      "generationCode": "SPA/XC90",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1969",
+      "powerHp": "225",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2019 XC90 TR — only published version×trim rows.",
+      "sources": [
+        {
+          "url": "https://arabamyeni.com/sifir/volvo/xc90/2019",
+          "title": "Volvo XC90 2019 model TR fiyat matrisi",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "arabamyeni.com"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/volvo/xc90/2019-fiyatlari",
+          "title": "2019 Model Volvo XC90 Fiyatları",
+          "date": "2019-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Volvo",
+      "series": "XC90",
+      "model": "2.0 T8",
+      "trim": "Momentum",
+      "generation": "XC90 II TR MY2019",
+      "generationCode": "SPA/XC90",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "HYBRID",
+      "engineVolume": "1969",
+      "powerHp": "320",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2019 XC90 TR — only published version×trim rows.",
+      "sources": [
+        {
+          "url": "https://arabamyeni.com/sifir/volvo/xc90/2019",
+          "title": "Volvo XC90 2019 model TR fiyat matrisi",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "arabamyeni.com"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/volvo/xc90/2019-fiyatlari",
+          "title": "2019 Model Volvo XC90 Fiyatları",
+          "date": "2019-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Volvo",
+      "series": "V60",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "historicalCoverage": "HISTORICAL_COVERAGE_INCOMPLETE",
+      "notes": "V60: researched deepen pass; discrete 2019–2020 TR version×trim archive matrix not located (current MY B4 Plus Dark already verified).",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/volvo/v60/2019-fiyatlari",
+          "title": "Volvo V60 2019 archive search (404)",
+          "date": "2026-08-07",
+          "role": "primary",
+          "type": "research_note",
+          "publisher": "yeniarabafiyatlari.com"
+        },
+        {
+          "url": "https://www.volvocars.com/tr/l/fiyat-listesi/",
+          "title": "Volvo Cars TR resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
     }
   ],
   "researchNotes": {
-    "researchedSeriesPass": [
-      "XC60",
-      "EX40",
-      "V60",
-      "XC90",
-      "EX30",
-      "EC40"
+    "noApply": true,
+    "applyAllowed": false,
+    "phase": "research-deepen-batch-volvo-nissan-kia-dacia-cupra-mini",
+    "seriesWithoutResearch": [],
+    "currentOnlySeries": [
+      "EX40"
     ],
-    "reviewRequiredSeries": [
-      "XC90",
-      "EX30",
-      "EC40"
-    ]
+    "addedThisPass": 8,
+    "notFinalComplete": true
   },
   "completedAt": "2026-08-07T09:13:29.968Z"
 }

@@ -1,0 +1,85 @@
+{
+  "at": "2026-08-07T10:15:27.326Z",
+  "brand": "BYD",
+  "status": "COMPLETED",
+  "gate": {
+    "seriesWithoutResearch": [],
+    "seriesWithoutResearchCount": 0,
+    "pass": true
+  },
+  "selectableSeries": [
+    "SEAL",
+    "SEALION 7",
+    "HAN",
+    "TANG",
+    "Atto 3",
+    "Dolphin"
+  ],
+  "researchedSeries": [
+    "SEAL",
+    "SEALION 7",
+    "HAN",
+    "TANG",
+    "Atto 3",
+    "Dolphin"
+  ],
+  "verifiedVersions": [
+    "150 kW",
+    "380 kW AWD",
+    "390 kW AWD"
+  ],
+  "verifiedTrims": [
+    "Comfort",
+    "Design",
+    "Excellence",
+    "Executive",
+    "Flagship"
+  ],
+  "verifiedConfigurations": 7,
+  "officialSources": 4,
+  "multiSources": 3,
+  "reviewRequired": 2,
+  "rejected": 0,
+  "noVerifiedTrimFound": 0,
+  "seriesWithCurrentOnlyCoverage": [
+    "SEAL",
+    "SEALION 7",
+    "HAN",
+    "TANG",
+    "Atto 3",
+    "Dolphin"
+  ],
+  "historicalCoverageIncompleteSeries": [
+    {
+      "series": "SEAL",
+      "historicalCoverage": "CURRENT_ONLY"
+    },
+    {
+      "series": "SEALION 7",
+      "historicalCoverage": "CURRENT_ONLY"
+    },
+    {
+      "series": "HAN",
+      "historicalCoverage": "CURRENT_ONLY"
+    },
+    {
+      "series": "TANG",
+      "historicalCoverage": "CURRENT_ONLY"
+    },
+    {
+      "series": "Atto 3",
+      "historicalCoverage": "CURRENT_ONLY"
+    },
+    {
+      "series": "Dolphin",
+      "historicalCoverage": "CURRENT_ONLY"
+    }
+  ],
+  "sourceUrls": [
+    "https://onedio.com/haber/kasim-2025-byd-fiyat-listesi-iste-byd-atto-3-dolphin-han-seal-u-dm-i-tang-ve-seal-u-ev-guncel-fiyatlari-1323129",
+    "https://www.bydauto.com.tr/fiyat-listesi",
+    "https://www.gzt.com/foto-galeri/z-raporu/byd-kasim-2025-fiyat-listesi-seal-seal-u-dm-i-tang-han-atto-3-atto2-dolphin-sealion-7-fiyat-listesi-byd-turkiye-fiyati-2051834",
+    "https://www.turkiyegazetesi.com.tr/t-otomobil/seal-sealion-han-tang-byd-agustos-2026-fiyat-listesi-aciklandi-1806628"
+  ],
+  "notes": "Completed means every selectable series was systematically researched. Current-only and incomplete historical gens remain explicitly flagged. Research-only; applyAllowed=false. Not final absolute historical complete."
+}

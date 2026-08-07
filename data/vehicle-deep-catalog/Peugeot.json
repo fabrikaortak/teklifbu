@@ -1,15 +1,16 @@
 {
   "brand": "Peugeot",
   "brandSlug": "peugeot",
-  "version": "2026.08-deep-peugeot-v1-current-tr",
-  "generatedAt": "2026-08-07T12:00:00.000Z",
+  "version": "2026.08-deep-peugeot-v2-historical",
+  "generatedAt": "2026-08-07T10:07:24.305Z",
   "seriesCovered": [
-    "3008",
-    "E-3008",
+    "2008",
     "208",
-    "308",
     "208 (ICE historical)",
-    "308 (ICE historical)"
+    "3008",
+    "308",
+    "308 (ICE historical)",
+    "E-3008"
   ],
   "status": "COMPLETED",
   "notes": "Official kampanya.peugeot.com.tr Aug 2026 rows for 3008/E-3008/E-208/E-308. ICE 208/308 historical REVIEW.",
@@ -289,19 +290,855 @@
           "role": "primary"
         }
       ]
+    },
+    {
+      "brand": "Peugeot",
+      "series": "208",
+      "model": "1.2 PureTech 82 hp",
+      "trim": "Signature",
+      "generation": "208 II TR MY2019",
+      "generationCode": "P21",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1199",
+      "powerHp": "82",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Haziran 2019 208 — Signature PureTech rows only (ICE historical).",
+      "sources": [
+        {
+          "url": "https://caraba.net/peugeot-turkiye-haziran-2019-fiyat-listesini-guncelledi/",
+          "title": "Peugeot Haziran 2019 — 208/308/3008/2008",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Peugeot",
+      "series": "208",
+      "model": "1.2 PureTech 110 hp",
+      "trim": "Signature",
+      "generation": "208 II TR MY2019",
+      "generationCode": "P21",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1199",
+      "powerHp": "110",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Haziran 2019 208 — Signature PureTech rows only (ICE historical).",
+      "sources": [
+        {
+          "url": "https://caraba.net/peugeot-turkiye-haziran-2019-fiyat-listesini-guncelledi/",
+          "title": "Peugeot Haziran 2019 — 208/308/3008/2008",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Peugeot",
+      "series": "308",
+      "model": "1.2 PureTech 130 hp",
+      "trim": "Style",
+      "generation": "308 II TR MY2019",
+      "generationCode": "T9",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "powerHp": "130",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Haziran 2019 308 — Style PureTech/BlueHDi as published (ICE historical).",
+      "sources": [
+        {
+          "url": "https://caraba.net/peugeot-turkiye-haziran-2019-fiyat-listesini-guncelledi/",
+          "title": "Peugeot Haziran 2019 — 208/308/3008/2008",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Peugeot",
+      "series": "308",
+      "model": "1.2 PureTech 130 hp",
+      "trim": "Style",
+      "generation": "308 II TR MY2019",
+      "generationCode": "T9",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "powerHp": "130",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Haziran 2019 308 — Style PureTech/BlueHDi as published (ICE historical).",
+      "sources": [
+        {
+          "url": "https://caraba.net/peugeot-turkiye-haziran-2019-fiyat-listesini-guncelledi/",
+          "title": "Peugeot Haziran 2019 — 208/308/3008/2008",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Peugeot",
+      "series": "308",
+      "model": "1.5 BlueHDi 130 hp",
+      "trim": "Style",
+      "generation": "308 II TR MY2019",
+      "generationCode": "T9",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "powerHp": "130",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Haziran 2019 308 — Style PureTech/BlueHDi as published (ICE historical).",
+      "sources": [
+        {
+          "url": "https://caraba.net/peugeot-turkiye-haziran-2019-fiyat-listesini-guncelledi/",
+          "title": "Peugeot Haziran 2019 — 208/308/3008/2008",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Peugeot",
+      "series": "3008",
+      "model": "1.2 PureTech 130 hp",
+      "trim": "Active",
+      "generation": "3008 II TR MY2019",
+      "generationCode": "P84",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "powerHp": "130",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Haziran 2019 3008 — Active/Allure Selection/GT-Line × listed engines only.",
+      "sources": [
+        {
+          "url": "https://caraba.net/peugeot-turkiye-haziran-2019-fiyat-listesini-guncelledi/",
+          "title": "Peugeot Haziran 2019 — 208/308/3008/2008",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Peugeot",
+      "series": "3008",
+      "model": "1.6 PureTech 180 hp",
+      "trim": "Active",
+      "generation": "3008 II TR MY2019",
+      "generationCode": "P84",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "powerHp": "180",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Haziran 2019 3008 — Active/Allure Selection/GT-Line × listed engines only.",
+      "sources": [
+        {
+          "url": "https://caraba.net/peugeot-turkiye-haziran-2019-fiyat-listesini-guncelledi/",
+          "title": "Peugeot Haziran 2019 — 208/308/3008/2008",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Peugeot",
+      "series": "3008",
+      "model": "1.6 PureTech 180 hp",
+      "trim": "GT-Line",
+      "generation": "3008 II TR MY2019",
+      "generationCode": "P84",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "powerHp": "180",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Haziran 2019 3008 — Active/Allure Selection/GT-Line × listed engines only.",
+      "sources": [
+        {
+          "url": "https://caraba.net/peugeot-turkiye-haziran-2019-fiyat-listesini-guncelledi/",
+          "title": "Peugeot Haziran 2019 — 208/308/3008/2008",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Peugeot",
+      "series": "3008",
+      "model": "1.5 BlueHDi 130 hp",
+      "trim": "Active",
+      "generation": "3008 II TR MY2019",
+      "generationCode": "P84",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "powerHp": "130",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Haziran 2019 3008 — Active/Allure Selection/GT-Line × listed engines only.",
+      "sources": [
+        {
+          "url": "https://caraba.net/peugeot-turkiye-haziran-2019-fiyat-listesini-guncelledi/",
+          "title": "Peugeot Haziran 2019 — 208/308/3008/2008",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Peugeot",
+      "series": "3008",
+      "model": "1.5 BlueHDi 130 hp",
+      "trim": "Allure Selection",
+      "generation": "3008 II TR MY2019",
+      "generationCode": "P84",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "powerHp": "130",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Haziran 2019 3008 — Active/Allure Selection/GT-Line × listed engines only.",
+      "sources": [
+        {
+          "url": "https://caraba.net/peugeot-turkiye-haziran-2019-fiyat-listesini-guncelledi/",
+          "title": "Peugeot Haziran 2019 — 208/308/3008/2008",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Peugeot",
+      "series": "3008",
+      "model": "1.5 BlueHDi 130 hp",
+      "trim": "GT-Line",
+      "generation": "3008 II TR MY2019",
+      "generationCode": "P84",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "powerHp": "130",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Haziran 2019 3008 — Active/Allure Selection/GT-Line × listed engines only.",
+      "sources": [
+        {
+          "url": "https://caraba.net/peugeot-turkiye-haziran-2019-fiyat-listesini-guncelledi/",
+          "title": "Peugeot Haziran 2019 — 208/308/3008/2008",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Peugeot",
+      "series": "2008",
+      "model": "1.5 BlueHDi 120 hp",
+      "trim": "Allure",
+      "generation": "2008 I TR MY2019",
+      "generationCode": "2008-I",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "powerHp": "120",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Haziran 2019 2008 — Allure/GT-Line 1.5 BlueHDi only.",
+      "sources": [
+        {
+          "url": "https://caraba.net/peugeot-turkiye-haziran-2019-fiyat-listesini-guncelledi/",
+          "title": "Peugeot Haziran 2019 — 208/308/3008/2008",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Peugeot",
+      "series": "2008",
+      "model": "1.5 BlueHDi 120 hp",
+      "trim": "GT-Line",
+      "generation": "2008 I TR MY2019",
+      "generationCode": "2008-I",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "powerHp": "120",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Haziran 2019 2008 — Allure/GT-Line 1.5 BlueHDi only.",
+      "sources": [
+        {
+          "url": "https://caraba.net/peugeot-turkiye-haziran-2019-fiyat-listesini-guncelledi/",
+          "title": "Peugeot Haziran 2019 — 208/308/3008/2008",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Peugeot",
+      "series": "2008",
+      "model": "1.2 PureTech 130 hp",
+      "trim": "Active",
+      "generation": "2008 II TR MY2020",
+      "generationCode": "2008-II",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "powerHp": "130",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Mayıs 2020 Yeni 2008 — Active/Allure/GT-Line/GT as published per engine.",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/peugeot-fiyat-listesi-2020-mayis-aciklandi.html",
+          "title": "Peugeot Mayıs 2020 — 2008/3008 fiyat listesi",
+          "date": "2020-05-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Peugeot",
+      "series": "2008",
+      "model": "1.2 PureTech 130 hp",
+      "trim": "Allure",
+      "generation": "2008 II TR MY2020",
+      "generationCode": "2008-II",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "powerHp": "130",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Mayıs 2020 Yeni 2008 — Active/Allure/GT-Line/GT as published per engine.",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/peugeot-fiyat-listesi-2020-mayis-aciklandi.html",
+          "title": "Peugeot Mayıs 2020 — 2008/3008 fiyat listesi",
+          "date": "2020-05-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Peugeot",
+      "series": "2008",
+      "model": "1.2 PureTech 130 hp",
+      "trim": "GT-Line",
+      "generation": "2008 II TR MY2020",
+      "generationCode": "2008-II",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "powerHp": "130",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Mayıs 2020 Yeni 2008 — Active/Allure/GT-Line/GT as published per engine.",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/peugeot-fiyat-listesi-2020-mayis-aciklandi.html",
+          "title": "Peugeot Mayıs 2020 — 2008/3008 fiyat listesi",
+          "date": "2020-05-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Peugeot",
+      "series": "2008",
+      "model": "1.2 PureTech 155 hp",
+      "trim": "GT",
+      "generation": "2008 II TR MY2020",
+      "generationCode": "2008-II",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "powerHp": "155",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Mayıs 2020 Yeni 2008 — Active/Allure/GT-Line/GT as published per engine.",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/peugeot-fiyat-listesi-2020-mayis-aciklandi.html",
+          "title": "Peugeot Mayıs 2020 — 2008/3008 fiyat listesi",
+          "date": "2020-05-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Peugeot",
+      "series": "2008",
+      "model": "1.5 BlueHDi 100 hp",
+      "trim": "Active",
+      "generation": "2008 II TR MY2020",
+      "generationCode": "2008-II",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "powerHp": "100",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Mayıs 2020 Yeni 2008 — Active/Allure/GT-Line/GT as published per engine.",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/peugeot-fiyat-listesi-2020-mayis-aciklandi.html",
+          "title": "Peugeot Mayıs 2020 — 2008/3008 fiyat listesi",
+          "date": "2020-05-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Peugeot",
+      "series": "2008",
+      "model": "1.5 BlueHDi 130 hp",
+      "trim": "Active",
+      "generation": "2008 II TR MY2020",
+      "generationCode": "2008-II",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "powerHp": "130",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Mayıs 2020 Yeni 2008 — Active/Allure/GT-Line/GT as published per engine.",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/peugeot-fiyat-listesi-2020-mayis-aciklandi.html",
+          "title": "Peugeot Mayıs 2020 — 2008/3008 fiyat listesi",
+          "date": "2020-05-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Peugeot",
+      "series": "2008",
+      "model": "1.5 BlueHDi 130 hp",
+      "trim": "Allure",
+      "generation": "2008 II TR MY2020",
+      "generationCode": "2008-II",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "powerHp": "130",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Mayıs 2020 Yeni 2008 — Active/Allure/GT-Line/GT as published per engine.",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/peugeot-fiyat-listesi-2020-mayis-aciklandi.html",
+          "title": "Peugeot Mayıs 2020 — 2008/3008 fiyat listesi",
+          "date": "2020-05-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Peugeot",
+      "series": "2008",
+      "model": "1.5 BlueHDi 130 hp",
+      "trim": "GT-Line",
+      "generation": "2008 II TR MY2020",
+      "generationCode": "2008-II",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "powerHp": "130",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Mayıs 2020 Yeni 2008 — Active/Allure/GT-Line/GT as published per engine.",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/peugeot-fiyat-listesi-2020-mayis-aciklandi.html",
+          "title": "Peugeot Mayıs 2020 — 2008/3008 fiyat listesi",
+          "date": "2020-05-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Peugeot",
+      "series": "3008",
+      "model": "1.2 PureTech 130 hp",
+      "trim": "Active Prime",
+      "generation": "3008 II facelift TR MY2020",
+      "generationCode": "P84",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "powerHp": "130",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Kasım 2020 makyajlı 3008 — Active Prime/Allure/GT Selection/GT × listed engines.",
+      "sources": [
+        {
+          "url": "https://www.donanimhaber.com/makyajli-peugeot-3008-turkiye-de-iste-fiyati--126854",
+          "title": "Makyajlı Peugeot 3008 Kasım 2020 TR fiyatları",
+          "date": "2020-11-15",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "donanimhaber.com"
+        }
+      ]
+    },
+    {
+      "brand": "Peugeot",
+      "series": "3008",
+      "model": "1.6 PureTech 180 hp",
+      "trim": "Allure",
+      "generation": "3008 II facelift TR MY2020",
+      "generationCode": "P84",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "powerHp": "180",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Kasım 2020 makyajlı 3008 — Active Prime/Allure/GT Selection/GT × listed engines.",
+      "sources": [
+        {
+          "url": "https://www.donanimhaber.com/makyajli-peugeot-3008-turkiye-de-iste-fiyati--126854",
+          "title": "Makyajlı Peugeot 3008 Kasım 2020 TR fiyatları",
+          "date": "2020-11-15",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "donanimhaber.com"
+        }
+      ]
+    },
+    {
+      "brand": "Peugeot",
+      "series": "3008",
+      "model": "1.6 PureTech 180 hp",
+      "trim": "GT Selection",
+      "generation": "3008 II facelift TR MY2020",
+      "generationCode": "P84",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "powerHp": "180",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Kasım 2020 makyajlı 3008 — Active Prime/Allure/GT Selection/GT × listed engines.",
+      "sources": [
+        {
+          "url": "https://www.donanimhaber.com/makyajli-peugeot-3008-turkiye-de-iste-fiyati--126854",
+          "title": "Makyajlı Peugeot 3008 Kasım 2020 TR fiyatları",
+          "date": "2020-11-15",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "donanimhaber.com"
+        }
+      ]
+    },
+    {
+      "brand": "Peugeot",
+      "series": "3008",
+      "model": "1.6 PureTech 180 hp",
+      "trim": "GT",
+      "generation": "3008 II facelift TR MY2020",
+      "generationCode": "P84",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "powerHp": "180",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Kasım 2020 makyajlı 3008 — Active Prime/Allure/GT Selection/GT × listed engines.",
+      "sources": [
+        {
+          "url": "https://www.donanimhaber.com/makyajli-peugeot-3008-turkiye-de-iste-fiyati--126854",
+          "title": "Makyajlı Peugeot 3008 Kasım 2020 TR fiyatları",
+          "date": "2020-11-15",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "donanimhaber.com"
+        }
+      ]
+    },
+    {
+      "brand": "Peugeot",
+      "series": "3008",
+      "model": "1.5 BlueHDi 130 hp",
+      "trim": "Active Prime",
+      "generation": "3008 II facelift TR MY2020",
+      "generationCode": "P84",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "powerHp": "130",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Kasım 2020 makyajlı 3008 — Active Prime/Allure/GT Selection/GT × listed engines.",
+      "sources": [
+        {
+          "url": "https://www.donanimhaber.com/makyajli-peugeot-3008-turkiye-de-iste-fiyati--126854",
+          "title": "Makyajlı Peugeot 3008 Kasım 2020 TR fiyatları",
+          "date": "2020-11-15",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "donanimhaber.com"
+        }
+      ]
+    },
+    {
+      "brand": "Peugeot",
+      "series": "3008",
+      "model": "1.5 BlueHDi 130 hp",
+      "trim": "Allure",
+      "generation": "3008 II facelift TR MY2020",
+      "generationCode": "P84",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "powerHp": "130",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Kasım 2020 makyajlı 3008 — Active Prime/Allure/GT Selection/GT × listed engines.",
+      "sources": [
+        {
+          "url": "https://www.donanimhaber.com/makyajli-peugeot-3008-turkiye-de-iste-fiyati--126854",
+          "title": "Makyajlı Peugeot 3008 Kasım 2020 TR fiyatları",
+          "date": "2020-11-15",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "donanimhaber.com"
+        }
+      ]
+    },
+    {
+      "brand": "Peugeot",
+      "series": "3008",
+      "model": "1.5 BlueHDi 130 hp",
+      "trim": "GT Selection",
+      "generation": "3008 II facelift TR MY2020",
+      "generationCode": "P84",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "powerHp": "130",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Kasım 2020 makyajlı 3008 — Active Prime/Allure/GT Selection/GT × listed engines.",
+      "sources": [
+        {
+          "url": "https://www.donanimhaber.com/makyajli-peugeot-3008-turkiye-de-iste-fiyati--126854",
+          "title": "Makyajlı Peugeot 3008 Kasım 2020 TR fiyatları",
+          "date": "2020-11-15",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "donanimhaber.com"
+        }
+      ]
+    },
+    {
+      "brand": "Peugeot",
+      "series": "3008",
+      "model": "1.5 BlueHDi 130 hp",
+      "trim": "GT",
+      "generation": "3008 II facelift TR MY2020",
+      "generationCode": "P84",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "powerHp": "130",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Kasım 2020 makyajlı 3008 — Active Prime/Allure/GT Selection/GT × listed engines.",
+      "sources": [
+        {
+          "url": "https://www.donanimhaber.com/makyajli-peugeot-3008-turkiye-de-iste-fiyati--126854",
+          "title": "Makyajlı Peugeot 3008 Kasım 2020 TR fiyatları",
+          "date": "2020-11-15",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "donanimhaber.com"
+        }
+      ]
+    },
+    {
+      "brand": "Peugeot",
+      "series": "E-3008",
+      "model": "",
+      "trim": "",
+      "generation": "pre-current EV",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "historicalCoverage": "HISTORICAL_COVERAGE_INCOMPLETE",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "E-3008 historical pre-current archive not located; current MY Allure/GT official rows already verified.",
+      "sources": [
+        {
+          "url": "https://kampanya.peugeot.com.tr/fiyat-listesi/",
+          "title": "Peugeot Türkiye resmi fiyat listesi — E-3008 current",
+          "date": "2026-08-07",
+          "role": "primary",
+          "type": "research_note",
+          "publisher": "Peugeot Türkiye"
+        }
+      ]
     }
   ],
   "researchNotes": {
-    "researchedSeriesPass": [
-      "3008",
-      "208",
-      "308"
-    ],
-    "historicalArchivesIngested": [],
-    "reviewRequiredSeries": [
-      "208 (ICE historical)",
-      "308 (ICE historical)"
-    ]
+    "noApply": true,
+    "applyAllowed": false,
+    "phase": "research-mass-market-batch",
+    "seriesWithoutResearch": [],
+    "currentOnlySeries": [],
+    "addedThisPass": 30
   },
   "completedAt": "2026-08-07T09:13:29.937Z"
 }

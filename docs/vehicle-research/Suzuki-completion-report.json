@@ -1,0 +1,72 @@
+{
+  "at": "2026-08-07T10:15:27.274Z",
+  "brand": "Suzuki",
+  "status": "COMPLETED",
+  "gate": {
+    "seriesWithoutResearch": [],
+    "seriesWithoutResearchCount": 0,
+    "pass": true
+  },
+  "selectableSeries": [
+    "Vitara",
+    "Swift",
+    "S-Cross",
+    "Jimny"
+  ],
+  "researchedSeries": [
+    "Vitara",
+    "Swift",
+    "S-Cross",
+    "Jimny"
+  ],
+  "verifiedVersions": [
+    "1.2 MHEV CVT",
+    "1.4 MHEV 6AT",
+    "1.4 MHEV 6AT AllGrip",
+    "1.5 Allgrip 4AT"
+  ],
+  "verifiedTrims": [
+    "GL Elegance",
+    "GL Techno",
+    "GLX",
+    "GLX Premium"
+  ],
+  "verifiedConfigurations": 10,
+  "officialSources": 1,
+  "multiSources": 9,
+  "reviewRequired": 3,
+  "rejected": 0,
+  "noVerifiedTrimFound": 0,
+  "seriesWithCurrentOnlyCoverage": [
+    "Vitara",
+    "Swift",
+    "S-Cross",
+    "Jimny"
+  ],
+  "historicalCoverageIncompleteSeries": [
+    {
+      "series": "Vitara",
+      "historicalCoverage": "CURRENT_ONLY"
+    },
+    {
+      "series": "Swift",
+      "historicalCoverage": "CURRENT_ONLY"
+    },
+    {
+      "series": "S-Cross",
+      "historicalCoverage": "CURRENT_ONLY"
+    },
+    {
+      "series": "Jimny",
+      "historicalCoverage": "CURRENT_ONLY"
+    }
+  ],
+  "sourceUrls": [
+    "https://onedio.com/haber/suzuki-fiyat-listesi-agustos-2024-iste-suzuki-swift-vitara-s-cross-ve-jimny-guncel-fiyatlari-1238324",
+    "https://www.otomotivsayfasi.com/kampanyalar/suzuki-vitara-kampanyasinda-neler-var/26283/",
+    "https://www.suzuki.com.tr/",
+    "https://www.suzuki.com.tr/tr/otomobil/firsat/vitara-4x4-firsati.html",
+    "https://www.suzuki.com.tr/tr/otomobil/fiyat-listesi.html"
+  ],
+  "notes": "Completed means every selectable series was systematically researched. Current-only and incomplete historical gens remain explicitly flagged. Research-only; applyAllowed=false. Not final absolute historical complete."
+}

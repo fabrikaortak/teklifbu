@@ -1,13 +1,13 @@
 {
   "brand": "Cupra",
   "brandSlug": "cupra",
-  "version": "2026.08-deep-cupra-v1-current-tr",
-  "generatedAt": "2026-08-07T12:05:00.000Z",
+  "version": "2026.08-deep-cupra-v2-historical",
+  "generatedAt": "2026-08-07T10:14:22.893Z",
   "seriesCovered": [
+    "Born",
     "Formentor",
     "Leon",
-    "Terramar",
-    "Born"
+    "Terramar"
   ],
   "status": "COMPLETED",
   "notes": "Formentor/Leon/Terramar 1.5 eTSI Impulse/Supreme/VZ-Line from Aug 2026 published TR tables. Born EV stub.",
@@ -275,18 +275,332 @@
           "role": "primary"
         }
       ]
+    },
+    {
+      "brand": "Cupra",
+      "series": "Formentor",
+      "model": "1.5 TSI 150 HP DSG",
+      "trim": "",
+      "generation": "Formentor TR MY2021",
+      "generationCode": "KM7",
+      "yearFrom": 2021,
+      "yearTo": 2021,
+      "fuelType": "GASOLINE",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "2021 Formentor TR archive lists engine/version only — NO_VERIFIED_TRIM_FOUND (no package fan-out).",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/satisa-sunulan-otomobillerin-fiyat-degisimi/",
+          "title": "2021 Cupra Formentor TR fiyat değişimi — version-only rows",
+          "date": "2021-12-29",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Cupra",
+      "series": "Formentor",
+      "model": "2.0 TSI 310 HP DSG 4Drive",
+      "trim": "",
+      "generation": "Formentor TR MY2021",
+      "generationCode": "KM7",
+      "yearFrom": 2021,
+      "yearTo": 2021,
+      "fuelType": "GASOLINE",
+      "powerHp": "310",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "2021 Formentor TR archive lists engine/version only — NO_VERIFIED_TRIM_FOUND (no package fan-out).",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/satisa-sunulan-otomobillerin-fiyat-degisimi/",
+          "title": "2021 Cupra Formentor TR fiyat değişimi — version-only rows",
+          "date": "2021-12-29",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Cupra",
+      "series": "Formentor",
+      "model": "1.4 eHybrid 205 HP DSG",
+      "trim": "",
+      "generation": "Formentor TR MY2021",
+      "generationCode": "KM7",
+      "yearFrom": 2021,
+      "yearTo": 2021,
+      "fuelType": "HYBRID",
+      "powerHp": "205",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "2021 Formentor TR archive lists engine/version only — NO_VERIFIED_TRIM_FOUND (no package fan-out).",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/satisa-sunulan-otomobillerin-fiyat-degisimi/",
+          "title": "2021 Cupra Formentor TR fiyat değişimi — version-only rows",
+          "date": "2021-12-29",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Cupra",
+      "series": "Formentor",
+      "model": "1.4 eHybrid 245 HP DSG",
+      "trim": "",
+      "generation": "Formentor TR MY2021",
+      "generationCode": "KM7",
+      "yearFrom": 2021,
+      "yearTo": 2021,
+      "fuelType": "HYBRID",
+      "powerHp": "245",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "2021 Formentor TR archive lists engine/version only — NO_VERIFIED_TRIM_FOUND (no package fan-out).",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/satisa-sunulan-otomobillerin-fiyat-degisimi/",
+          "title": "2021 Cupra Formentor TR fiyat değişimi — version-only rows",
+          "date": "2021-12-29",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Cupra",
+      "series": "Formentor",
+      "model": "1.5 TSI DSG",
+      "trim": "",
+      "generation": "Formentor TR MY2023",
+      "generationCode": "KM7",
+      "yearFrom": 2023,
+      "yearTo": 2023,
+      "fuelType": "GASOLINE",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "Ekim 2023 Cupra Formentor — version-only rows in archive; NO_VERIFIED_TRIM_FOUND.",
+      "sources": [
+        {
+          "url": "https://aracbulten.com/cupra-fiyat-listesi-2023/",
+          "title": "Cupra Ekim 2023 fiyat listesi — Formentor/Leon version rows",
+          "date": "2023-10-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "aracbulten.com"
+        }
+      ]
+    },
+    {
+      "brand": "Cupra",
+      "series": "Formentor",
+      "model": "2.0 TSI VZ 4Drive DSG",
+      "trim": "",
+      "generation": "Formentor TR MY2023",
+      "generationCode": "KM7",
+      "yearFrom": 2023,
+      "yearTo": 2023,
+      "fuelType": "GASOLINE",
+      "powerHp": "310",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "Ekim 2023 Cupra Formentor — version-only rows in archive; NO_VERIFIED_TRIM_FOUND.",
+      "sources": [
+        {
+          "url": "https://aracbulten.com/cupra-fiyat-listesi-2023/",
+          "title": "Cupra Ekim 2023 fiyat listesi — Formentor/Leon version rows",
+          "date": "2023-10-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "aracbulten.com"
+        }
+      ]
+    },
+    {
+      "brand": "Cupra",
+      "series": "Formentor",
+      "model": "1.4 eHybrid DSG",
+      "trim": "",
+      "generation": "Formentor TR MY2023",
+      "generationCode": "KM7",
+      "yearFrom": 2023,
+      "yearTo": 2023,
+      "fuelType": "HYBRID",
+      "powerHp": "245",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "Ekim 2023 Cupra Formentor — version-only rows in archive; NO_VERIFIED_TRIM_FOUND.",
+      "sources": [
+        {
+          "url": "https://aracbulten.com/cupra-fiyat-listesi-2023/",
+          "title": "Cupra Ekim 2023 fiyat listesi — Formentor/Leon version rows",
+          "date": "2023-10-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "aracbulten.com"
+        }
+      ]
+    },
+    {
+      "brand": "Cupra",
+      "series": "Leon",
+      "model": "1.5 eTSI mHEV DSG",
+      "trim": "",
+      "generation": "Leon TR MY2023",
+      "generationCode": "KL",
+      "yearFrom": 2023,
+      "yearTo": 2023,
+      "fuelType": "HYBRID",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "Ekim 2023 Cupra Leon — version-only archive rows; NO_VERIFIED_TRIM_FOUND.",
+      "sources": [
+        {
+          "url": "https://aracbulten.com/cupra-fiyat-listesi-2023/",
+          "title": "Cupra Ekim 2023 fiyat listesi — Formentor/Leon version rows",
+          "date": "2023-10-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "aracbulten.com"
+        }
+      ]
+    },
+    {
+      "brand": "Cupra",
+      "series": "Leon",
+      "model": "VZ 1.4 eHybrid PHEV DSG",
+      "trim": "",
+      "generation": "Leon TR MY2023",
+      "generationCode": "KL",
+      "yearFrom": 2023,
+      "yearTo": 2023,
+      "fuelType": "HYBRID",
+      "powerHp": "245",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "Ekim 2023 Cupra Leon — version-only archive rows; NO_VERIFIED_TRIM_FOUND.",
+      "sources": [
+        {
+          "url": "https://aracbulten.com/cupra-fiyat-listesi-2023/",
+          "title": "Cupra Ekim 2023 fiyat listesi — Formentor/Leon version rows",
+          "date": "2023-10-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "aracbulten.com"
+        }
+      ]
+    },
+    {
+      "brand": "Cupra",
+      "series": "Leon",
+      "model": "VZ 2.0 TSI 300 HP DSG",
+      "trim": "",
+      "generation": "Leon TR MY2023",
+      "generationCode": "KL",
+      "yearFrom": 2023,
+      "yearTo": 2023,
+      "fuelType": "GASOLINE",
+      "powerHp": "300",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "trimStatus": "NO_VERIFIED_TRIM_FOUND",
+      "notes": "Ekim 2023 Cupra Leon — version-only archive rows; NO_VERIFIED_TRIM_FOUND.",
+      "sources": [
+        {
+          "url": "https://aracbulten.com/cupra-fiyat-listesi-2023/",
+          "title": "Cupra Ekim 2023 fiyat listesi — Formentor/Leon version rows",
+          "date": "2023-10-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "aracbulten.com"
+        }
+      ]
+    },
+    {
+      "brand": "Cupra",
+      "series": "Terramar",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "historicalCoverage": "HISTORICAL_COVERAGE_INCOMPLETE",
+      "notes": "Terramar: researched; series new (~2025) — historical ≤2020 N/A; current Impulse/Supreme/VZ-Line verified.",
+      "sources": [
+        {
+          "url": "https://www.cupra.com/tr",
+          "title": "Cupra TR — Terramar research note",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
     }
   ],
   "researchNotes": {
-    "researchedSeriesPass": [
+    "noApply": true,
+    "applyAllowed": false,
+    "phase": "research-deepen-batch-volvo-nissan-kia-dacia-cupra-mini",
+    "seriesWithoutResearch": [],
+    "currentOnlySeries": [
       "Formentor",
-      "Leon",
-      "Terramar",
-      "Born"
+      "Leon"
     ],
-    "reviewRequiredSeries": [
-      "Born"
-    ]
+    "addedThisPass": 11,
+    "notFinalComplete": true
   },
   "completedAt": "2026-08-07T09:13:29.879Z"
 }

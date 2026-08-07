@@ -1,0 +1,48 @@
+{
+  "at": "2026-08-07T10:01:24.549Z",
+  "brand": "Volkswagen",
+  "status": "COMPLETED",
+  "gate": {
+    "seriesWithoutResearch": [],
+    "pass": true
+  },
+  "selectableSeries": [
+    "Golf",
+    "Polo",
+    "Passat",
+    "Tiguan",
+    "T-Roc",
+    "T-Cross",
+    "Caddy",
+    "Transporter",
+    "ID.3",
+    "ID.4",
+    "ID.7"
+  ],
+  "researchedSeries": [
+    "Golf",
+    "Polo",
+    "Passat",
+    "Tiguan",
+    "T-Roc",
+    "T-Cross",
+    "Caddy",
+    "Transporter",
+    "ID.3",
+    "ID.4",
+    "ID.7"
+  ],
+  "verifiedConfigurations": 48,
+  "officialSources": 4,
+  "multiSources": 44,
+  "reviewRequired": 10,
+  "rejected": 0,
+  "seriesWithCurrentOnlyCoverage": [
+    "Polo",
+    "Passat",
+    "Tiguan",
+    "Caddy",
+    "ID.4",
+    "ID.7"
+  ]
+}

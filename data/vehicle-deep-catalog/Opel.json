@@ -1,11 +1,11 @@
 {
   "brand": "Opel",
   "brandSlug": "opel",
-  "version": "2026.08-deep-opel-v1-current-tr",
-  "generatedAt": "2026-08-07T12:00:00.000Z",
+  "version": "2026.08-deep-opel-v2-historical",
+  "generatedAt": "2026-08-07T10:14:37.756Z",
   "seriesCovered": [
-    "Corsa",
     "Astra",
+    "Corsa",
     "Crossland"
   ],
   "status": "COMPLETED",
@@ -277,20 +277,1079 @@
           "role": "secondary"
         }
       ]
+    },
+    {
+      "brand": "Opel",
+      "series": "Corsa",
+      "model": "1.2 70 HP",
+      "trim": "Essentia",
+      "generation": "Corsa E TR MY2019",
+      "generationCode": "E",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1229",
+      "powerHp": "70",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Temmuz 2019 Corsa E TR — only published version×trim rows (no fan-out).",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/opel-temmuz-2019-fiyat-listesi/",
+          "title": "Opel Temmuz 2019 fiyat listesi — Corsa/Astra/Crossland X version×trim",
+          "date": "2019-07-23",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Opel",
+      "series": "Corsa",
+      "model": "1.2 70 HP",
+      "trim": "Enjoy",
+      "generation": "Corsa E TR MY2019",
+      "generationCode": "E",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1229",
+      "powerHp": "70",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Temmuz 2019 Corsa E TR — only published version×trim rows (no fan-out).",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/opel-temmuz-2019-fiyat-listesi/",
+          "title": "Opel Temmuz 2019 fiyat listesi — Corsa/Astra/Crossland X version×trim",
+          "date": "2019-07-23",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Opel",
+      "series": "Corsa",
+      "model": "1.4 90 HP",
+      "trim": "Essentia",
+      "generation": "Corsa E TR MY2019",
+      "generationCode": "E",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1398",
+      "powerHp": "90",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Temmuz 2019 Corsa E TR — only published version×trim rows (no fan-out).",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/opel-temmuz-2019-fiyat-listesi/",
+          "title": "Opel Temmuz 2019 fiyat listesi — Corsa/Astra/Crossland X version×trim",
+          "date": "2019-07-23",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Opel",
+      "series": "Corsa",
+      "model": "1.4 90 HP",
+      "trim": "Design",
+      "generation": "Corsa E TR MY2019",
+      "generationCode": "E",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1398",
+      "powerHp": "90",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Temmuz 2019 Corsa E TR — only published version×trim rows (no fan-out).",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/opel-temmuz-2019-fiyat-listesi/",
+          "title": "Opel Temmuz 2019 fiyat listesi — Corsa/Astra/Crossland X version×trim",
+          "date": "2019-07-23",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Opel",
+      "series": "Corsa",
+      "model": "1.4 90 HP",
+      "trim": "Enjoy",
+      "generation": "Corsa E TR MY2019",
+      "generationCode": "E",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1398",
+      "powerHp": "90",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Temmuz 2019 Corsa E TR — only published version×trim rows (no fan-out).",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/opel-temmuz-2019-fiyat-listesi/",
+          "title": "Opel Temmuz 2019 fiyat listesi — Corsa/Astra/Crossland X version×trim",
+          "date": "2019-07-23",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Opel",
+      "series": "Corsa",
+      "model": "1.4 90 HP",
+      "trim": "120.Yıl Özel Seri",
+      "generation": "Corsa E TR MY2019",
+      "generationCode": "E",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1398",
+      "powerHp": "90",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Temmuz 2019 Corsa E TR — only published version×trim rows (no fan-out).",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/opel-temmuz-2019-fiyat-listesi/",
+          "title": "Opel Temmuz 2019 fiyat listesi — Corsa/Astra/Crossland X version×trim",
+          "date": "2019-07-23",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Opel",
+      "series": "Corsa",
+      "model": "1.2 75 HP",
+      "trim": "Essential",
+      "generation": "Corsa F TR MY2020",
+      "generationCode": "F",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1199",
+      "powerHp": "75",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ekim 2020 Corsa F TR — Essential/Edition/Elegance/Ultimate as published.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3023619-opel-yeni-zamli-fiyat-listesini-yayinladi-iste-2020-corsa-astra-crossland-x-guncel-fiyati",
+          "title": "Opel Ekim 2020 Corsa F / Crossland X zamlı fiyat listesi",
+          "date": "2020-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        }
+      ]
+    },
+    {
+      "brand": "Opel",
+      "series": "Corsa",
+      "model": "1.2 100 HP",
+      "trim": "Edition",
+      "generation": "Corsa F TR MY2020",
+      "generationCode": "F",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1199",
+      "powerHp": "100",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ekim 2020 Corsa F TR — Essential/Edition/Elegance/Ultimate as published.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3023619-opel-yeni-zamli-fiyat-listesini-yayinladi-iste-2020-corsa-astra-crossland-x-guncel-fiyati",
+          "title": "Opel Ekim 2020 Corsa F / Crossland X zamlı fiyat listesi",
+          "date": "2020-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        }
+      ]
+    },
+    {
+      "brand": "Opel",
+      "series": "Corsa",
+      "model": "1.5 100 HP Dizel",
+      "trim": "Edition",
+      "generation": "Corsa F TR MY2020",
+      "generationCode": "F",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "engineVolume": "1499",
+      "powerHp": "100",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ekim 2020 Corsa F TR — Essential/Edition/Elegance/Ultimate as published.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3023619-opel-yeni-zamli-fiyat-listesini-yayinladi-iste-2020-corsa-astra-crossland-x-guncel-fiyati",
+          "title": "Opel Ekim 2020 Corsa F / Crossland X zamlı fiyat listesi",
+          "date": "2020-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        }
+      ]
+    },
+    {
+      "brand": "Opel",
+      "series": "Corsa",
+      "model": "1.2 100 HP",
+      "trim": "Elegance",
+      "generation": "Corsa F TR MY2020",
+      "generationCode": "F",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1199",
+      "powerHp": "100",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ekim 2020 Corsa F TR — Essential/Edition/Elegance/Ultimate as published.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3023619-opel-yeni-zamli-fiyat-listesini-yayinladi-iste-2020-corsa-astra-crossland-x-guncel-fiyati",
+          "title": "Opel Ekim 2020 Corsa F / Crossland X zamlı fiyat listesi",
+          "date": "2020-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        }
+      ]
+    },
+    {
+      "brand": "Opel",
+      "series": "Corsa",
+      "model": "1.2 100 HP",
+      "trim": "Ultimate",
+      "generation": "Corsa F TR MY2020",
+      "generationCode": "F",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1199",
+      "powerHp": "100",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ekim 2020 Corsa F TR — Essential/Edition/Elegance/Ultimate as published.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3023619-opel-yeni-zamli-fiyat-listesini-yayinladi-iste-2020-corsa-astra-crossland-x-guncel-fiyati",
+          "title": "Opel Ekim 2020 Corsa F / Crossland X zamlı fiyat listesi",
+          "date": "2020-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        }
+      ]
+    },
+    {
+      "brand": "Opel",
+      "series": "Astra",
+      "model": "1.4 150 HP",
+      "trim": "Enjoy",
+      "generation": "Astra K HB TR MY2019",
+      "generationCode": "K",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1399",
+      "powerHp": "150",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Temmuz/Ağustos 2019 Astra HB TR — Enjoy/Dynamic/Excellence/Elite only as listed.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/opel-temmuz-2019-fiyat-listesi/",
+          "title": "Opel Temmuz 2019 fiyat listesi — Corsa/Astra/Crossland X version×trim",
+          "date": "2019-07-23",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        },
+        {
+          "url": "https://www.arabavs.com/opel-astra-2019-agustos-ayi-fiyat-listesi.html",
+          "title": "Opel Astra Ağustos 2019 fiyat listesi (Enjoy/Dynamic/Excellence)",
+          "date": "2019-08-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Opel",
+      "series": "Astra",
+      "model": "1.4 150 HP",
+      "trim": "Dynamic",
+      "generation": "Astra K HB TR MY2019",
+      "generationCode": "K",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1399",
+      "powerHp": "150",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Temmuz/Ağustos 2019 Astra HB TR — Enjoy/Dynamic/Excellence/Elite only as listed.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/opel-temmuz-2019-fiyat-listesi/",
+          "title": "Opel Temmuz 2019 fiyat listesi — Corsa/Astra/Crossland X version×trim",
+          "date": "2019-07-23",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        },
+        {
+          "url": "https://www.arabavs.com/opel-astra-2019-agustos-ayi-fiyat-listesi.html",
+          "title": "Opel Astra Ağustos 2019 fiyat listesi (Enjoy/Dynamic/Excellence)",
+          "date": "2019-08-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Opel",
+      "series": "Astra",
+      "model": "1.4 150 HP",
+      "trim": "120.Yıl Özel Seri",
+      "generation": "Astra K HB TR MY2019",
+      "generationCode": "K",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1399",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Temmuz/Ağustos 2019 Astra HB TR — Enjoy/Dynamic/Excellence/Elite only as listed.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/opel-temmuz-2019-fiyat-listesi/",
+          "title": "Opel Temmuz 2019 fiyat listesi — Corsa/Astra/Crossland X version×trim",
+          "date": "2019-07-23",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        },
+        {
+          "url": "https://www.arabavs.com/opel-astra-2019-agustos-ayi-fiyat-listesi.html",
+          "title": "Opel Astra Ağustos 2019 fiyat listesi (Enjoy/Dynamic/Excellence)",
+          "date": "2019-08-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Opel",
+      "series": "Astra",
+      "model": "1.4 150 HP",
+      "trim": "Dynamic",
+      "generation": "Astra K HB TR MY2019",
+      "generationCode": "K",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1399",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Temmuz/Ağustos 2019 Astra HB TR — Enjoy/Dynamic/Excellence/Elite only as listed.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/opel-temmuz-2019-fiyat-listesi/",
+          "title": "Opel Temmuz 2019 fiyat listesi — Corsa/Astra/Crossland X version×trim",
+          "date": "2019-07-23",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        },
+        {
+          "url": "https://www.arabavs.com/opel-astra-2019-agustos-ayi-fiyat-listesi.html",
+          "title": "Opel Astra Ağustos 2019 fiyat listesi (Enjoy/Dynamic/Excellence)",
+          "date": "2019-08-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Opel",
+      "series": "Astra",
+      "model": "1.4 150 HP",
+      "trim": "Excellence",
+      "generation": "Astra K HB TR MY2019",
+      "generationCode": "K",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1399",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Temmuz/Ağustos 2019 Astra HB TR — Enjoy/Dynamic/Excellence/Elite only as listed.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/opel-temmuz-2019-fiyat-listesi/",
+          "title": "Opel Temmuz 2019 fiyat listesi — Corsa/Astra/Crossland X version×trim",
+          "date": "2019-07-23",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        },
+        {
+          "url": "https://www.arabavs.com/opel-astra-2019-agustos-ayi-fiyat-listesi.html",
+          "title": "Opel Astra Ağustos 2019 fiyat listesi (Enjoy/Dynamic/Excellence)",
+          "date": "2019-08-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Opel",
+      "series": "Astra",
+      "model": "1.6 Dizel 136 HP",
+      "trim": "Dynamic",
+      "generation": "Astra K HB TR MY2019",
+      "generationCode": "K",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "136",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Temmuz/Ağustos 2019 Astra HB TR — Enjoy/Dynamic/Excellence/Elite only as listed.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/opel-temmuz-2019-fiyat-listesi/",
+          "title": "Opel Temmuz 2019 fiyat listesi — Corsa/Astra/Crossland X version×trim",
+          "date": "2019-07-23",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        },
+        {
+          "url": "https://www.arabavs.com/opel-astra-2019-agustos-ayi-fiyat-listesi.html",
+          "title": "Opel Astra Ağustos 2019 fiyat listesi (Enjoy/Dynamic/Excellence)",
+          "date": "2019-08-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Opel",
+      "series": "Astra",
+      "model": "1.6 Dizel 136 HP",
+      "trim": "120.Yıl Özel Seri",
+      "generation": "Astra K HB TR MY2019",
+      "generationCode": "K",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "136",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Temmuz/Ağustos 2019 Astra HB TR — Enjoy/Dynamic/Excellence/Elite only as listed.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/opel-temmuz-2019-fiyat-listesi/",
+          "title": "Opel Temmuz 2019 fiyat listesi — Corsa/Astra/Crossland X version×trim",
+          "date": "2019-07-23",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        },
+        {
+          "url": "https://www.arabavs.com/opel-astra-2019-agustos-ayi-fiyat-listesi.html",
+          "title": "Opel Astra Ağustos 2019 fiyat listesi (Enjoy/Dynamic/Excellence)",
+          "date": "2019-08-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Opel",
+      "series": "Astra",
+      "model": "1.6 Dizel 136 HP",
+      "trim": "Elite",
+      "generation": "Astra K HB TR MY2019",
+      "generationCode": "K",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "136",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Temmuz/Ağustos 2019 Astra HB TR — Enjoy/Dynamic/Excellence/Elite only as listed.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/opel-temmuz-2019-fiyat-listesi/",
+          "title": "Opel Temmuz 2019 fiyat listesi — Corsa/Astra/Crossland X version×trim",
+          "date": "2019-07-23",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        },
+        {
+          "url": "https://www.arabavs.com/opel-astra-2019-agustos-ayi-fiyat-listesi.html",
+          "title": "Opel Astra Ağustos 2019 fiyat listesi (Enjoy/Dynamic/Excellence)",
+          "date": "2019-08-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Opel",
+      "series": "Astra",
+      "model": "1.6 Dizel 136 HP",
+      "trim": "Dynamic",
+      "generation": "Astra K HB TR MY2019",
+      "generationCode": "K",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "136",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Temmuz/Ağustos 2019 Astra HB TR — Enjoy/Dynamic/Excellence/Elite only as listed.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/opel-temmuz-2019-fiyat-listesi/",
+          "title": "Opel Temmuz 2019 fiyat listesi — Corsa/Astra/Crossland X version×trim",
+          "date": "2019-07-23",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        },
+        {
+          "url": "https://www.arabavs.com/opel-astra-2019-agustos-ayi-fiyat-listesi.html",
+          "title": "Opel Astra Ağustos 2019 fiyat listesi (Enjoy/Dynamic/Excellence)",
+          "date": "2019-08-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Opel",
+      "series": "Astra",
+      "model": "1.6 Dizel 136 HP",
+      "trim": "Excellence",
+      "generation": "Astra K HB TR MY2019",
+      "generationCode": "K",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "136",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Temmuz/Ağustos 2019 Astra HB TR — Enjoy/Dynamic/Excellence/Elite only as listed.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/opel-temmuz-2019-fiyat-listesi/",
+          "title": "Opel Temmuz 2019 fiyat listesi — Corsa/Astra/Crossland X version×trim",
+          "date": "2019-07-23",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        },
+        {
+          "url": "https://www.arabavs.com/opel-astra-2019-agustos-ayi-fiyat-listesi.html",
+          "title": "Opel Astra Ağustos 2019 fiyat listesi (Enjoy/Dynamic/Excellence)",
+          "date": "2019-08-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Opel",
+      "series": "Crossland",
+      "model": "1.2 110 HP",
+      "trim": "Enjoy",
+      "generation": "Crossland X TR MY2019",
+      "generationCode": "P2UO",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1199",
+      "powerHp": "110",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Aralık 2019 Crossland X TR — Enjoy/120.Yıl/Excellence only as published AT-6 rows.",
+      "sources": [
+        {
+          "url": "https://aracbulten.com/opel-crossland-x-fiyat-listesi-2019/",
+          "title": "Opel Crossland X Aralık 2019 resmi tavsiye fiyat matrisi",
+          "date": "2019-12-04",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "aracbulten.com"
+        },
+        {
+          "url": "https://www.otomobilir.com/opel-temmuz-2019-fiyat-listesi/",
+          "title": "Opel Temmuz 2019 fiyat listesi — Corsa/Astra/Crossland X version×trim",
+          "date": "2019-07-23",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Opel",
+      "series": "Crossland",
+      "model": "1.2 110 HP",
+      "trim": "120.Yıl Özel Seri",
+      "generation": "Crossland X TR MY2019",
+      "generationCode": "P2UO",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1199",
+      "powerHp": "110",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Aralık 2019 Crossland X TR — Enjoy/120.Yıl/Excellence only as published AT-6 rows.",
+      "sources": [
+        {
+          "url": "https://aracbulten.com/opel-crossland-x-fiyat-listesi-2019/",
+          "title": "Opel Crossland X Aralık 2019 resmi tavsiye fiyat matrisi",
+          "date": "2019-12-04",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "aracbulten.com"
+        },
+        {
+          "url": "https://www.otomobilir.com/opel-temmuz-2019-fiyat-listesi/",
+          "title": "Opel Temmuz 2019 fiyat listesi — Corsa/Astra/Crossland X version×trim",
+          "date": "2019-07-23",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Opel",
+      "series": "Crossland",
+      "model": "1.2 130 HP",
+      "trim": "Enjoy",
+      "generation": "Crossland X TR MY2019",
+      "generationCode": "P2UO",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1199",
+      "powerHp": "130",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Aralık 2019 Crossland X TR — Enjoy/120.Yıl/Excellence only as published AT-6 rows.",
+      "sources": [
+        {
+          "url": "https://aracbulten.com/opel-crossland-x-fiyat-listesi-2019/",
+          "title": "Opel Crossland X Aralık 2019 resmi tavsiye fiyat matrisi",
+          "date": "2019-12-04",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "aracbulten.com"
+        },
+        {
+          "url": "https://www.otomobilir.com/opel-temmuz-2019-fiyat-listesi/",
+          "title": "Opel Temmuz 2019 fiyat listesi — Corsa/Astra/Crossland X version×trim",
+          "date": "2019-07-23",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Opel",
+      "series": "Crossland",
+      "model": "1.2 130 HP",
+      "trim": "120.Yıl Özel Seri",
+      "generation": "Crossland X TR MY2019",
+      "generationCode": "P2UO",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1199",
+      "powerHp": "130",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Aralık 2019 Crossland X TR — Enjoy/120.Yıl/Excellence only as published AT-6 rows.",
+      "sources": [
+        {
+          "url": "https://aracbulten.com/opel-crossland-x-fiyat-listesi-2019/",
+          "title": "Opel Crossland X Aralık 2019 resmi tavsiye fiyat matrisi",
+          "date": "2019-12-04",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "aracbulten.com"
+        },
+        {
+          "url": "https://www.otomobilir.com/opel-temmuz-2019-fiyat-listesi/",
+          "title": "Opel Temmuz 2019 fiyat listesi — Corsa/Astra/Crossland X version×trim",
+          "date": "2019-07-23",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Opel",
+      "series": "Crossland",
+      "model": "1.5 Dizel 120 HP",
+      "trim": "Enjoy",
+      "generation": "Crossland X TR MY2019",
+      "generationCode": "P2UO",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1499",
+      "powerHp": "120",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Aralık 2019 Crossland X TR — Enjoy/120.Yıl/Excellence only as published AT-6 rows.",
+      "sources": [
+        {
+          "url": "https://aracbulten.com/opel-crossland-x-fiyat-listesi-2019/",
+          "title": "Opel Crossland X Aralık 2019 resmi tavsiye fiyat matrisi",
+          "date": "2019-12-04",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "aracbulten.com"
+        },
+        {
+          "url": "https://www.otomobilir.com/opel-temmuz-2019-fiyat-listesi/",
+          "title": "Opel Temmuz 2019 fiyat listesi — Corsa/Astra/Crossland X version×trim",
+          "date": "2019-07-23",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Opel",
+      "series": "Crossland",
+      "model": "1.5 Dizel 120 HP",
+      "trim": "120.Yıl Özel Seri",
+      "generation": "Crossland X TR MY2019",
+      "generationCode": "P2UO",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1499",
+      "powerHp": "120",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Aralık 2019 Crossland X TR — Enjoy/120.Yıl/Excellence only as published AT-6 rows.",
+      "sources": [
+        {
+          "url": "https://aracbulten.com/opel-crossland-x-fiyat-listesi-2019/",
+          "title": "Opel Crossland X Aralık 2019 resmi tavsiye fiyat matrisi",
+          "date": "2019-12-04",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "aracbulten.com"
+        },
+        {
+          "url": "https://www.otomobilir.com/opel-temmuz-2019-fiyat-listesi/",
+          "title": "Opel Temmuz 2019 fiyat listesi — Corsa/Astra/Crossland X version×trim",
+          "date": "2019-07-23",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Opel",
+      "series": "Crossland",
+      "model": "1.5 Dizel 120 HP",
+      "trim": "Excellence",
+      "generation": "Crossland X TR MY2019",
+      "generationCode": "P2UO",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1499",
+      "powerHp": "120",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Aralık 2019 Crossland X TR — Enjoy/120.Yıl/Excellence only as published AT-6 rows.",
+      "sources": [
+        {
+          "url": "https://aracbulten.com/opel-crossland-x-fiyat-listesi-2019/",
+          "title": "Opel Crossland X Aralık 2019 resmi tavsiye fiyat matrisi",
+          "date": "2019-12-04",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "aracbulten.com"
+        },
+        {
+          "url": "https://www.otomobilir.com/opel-temmuz-2019-fiyat-listesi/",
+          "title": "Opel Temmuz 2019 fiyat listesi — Corsa/Astra/Crossland X version×trim",
+          "date": "2019-07-23",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Opel",
+      "series": "Crossland",
+      "model": "1.2 130 HP",
+      "trim": "Essentia",
+      "generation": "Crossland X TR MY2020",
+      "generationCode": "P2UO",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1199",
+      "powerHp": "130",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Ekim 2020 Crossland X TR — Essentia/Enjoy/Excellence as published.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3023619-opel-yeni-zamli-fiyat-listesini-yayinladi-iste-2020-corsa-astra-crossland-x-guncel-fiyati",
+          "title": "Opel Ekim 2020 Corsa F / Crossland X zamlı fiyat listesi",
+          "date": "2020-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        }
+      ]
+    },
+    {
+      "brand": "Opel",
+      "series": "Crossland",
+      "model": "1.2 130 HP",
+      "trim": "Enjoy",
+      "generation": "Crossland X TR MY2020",
+      "generationCode": "P2UO",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1199",
+      "powerHp": "130",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Ekim 2020 Crossland X TR — Essentia/Enjoy/Excellence as published.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3023619-opel-yeni-zamli-fiyat-listesini-yayinladi-iste-2020-corsa-astra-crossland-x-guncel-fiyati",
+          "title": "Opel Ekim 2020 Corsa F / Crossland X zamlı fiyat listesi",
+          "date": "2020-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        }
+      ]
+    },
+    {
+      "brand": "Opel",
+      "series": "Crossland",
+      "model": "1.5 Dizel 120 HP",
+      "trim": "Enjoy",
+      "generation": "Crossland X TR MY2020",
+      "generationCode": "P2UO",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "engineVolume": "1499",
+      "powerHp": "120",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Ekim 2020 Crossland X TR — Essentia/Enjoy/Excellence as published.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3023619-opel-yeni-zamli-fiyat-listesini-yayinladi-iste-2020-corsa-astra-crossland-x-guncel-fiyati",
+          "title": "Opel Ekim 2020 Corsa F / Crossland X zamlı fiyat listesi",
+          "date": "2020-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        }
+      ]
+    },
+    {
+      "brand": "Opel",
+      "series": "Crossland",
+      "model": "1.5 Dizel 120 HP",
+      "trim": "Excellence",
+      "generation": "Crossland X TR MY2020",
+      "generationCode": "P2UO",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "engineVolume": "1499",
+      "powerHp": "120",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Ekim 2020 Crossland X TR — Essentia/Enjoy/Excellence as published.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3023619-opel-yeni-zamli-fiyat-listesini-yayinladi-iste-2020-corsa-astra-crossland-x-guncel-fiyati",
+          "title": "Opel Ekim 2020 Corsa F / Crossland X zamlı fiyat listesi",
+          "date": "2020-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        }
+      ]
     }
   ],
   "researchNotes": {
-    "researchedSeriesPass": [
-      "Corsa",
-      "Astra",
-      "Crossland"
-    ],
-    "historicalArchivesIngested": [
-      "2026-08-07 Opel TR PDF"
-    ],
-    "reviewRequiredSeries": [
-      "Crossland"
-    ]
+    "noApply": true,
+    "applyAllowed": false,
+    "phase": "research-mass-market-batch",
+    "seriesWithoutResearch": [],
+    "currentOnlySeries": [],
+    "addedThisPass": 32
   },
   "completedAt": "2026-08-07T09:13:29.934Z"
 }

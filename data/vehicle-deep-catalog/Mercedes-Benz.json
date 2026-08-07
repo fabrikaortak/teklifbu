@@ -1,35 +1,35 @@
 {
   "brand": "Mercedes-Benz",
   "brandSlug": "mercedes-benz",
-  "version": "2026.08-deep-mercedes-v3-official-plus-archives",
-  "generatedAt": "2026-08-07T09:07:09.641Z",
+  "version": "2026.08-deep-mb-v4-historical",
+  "generatedAt": "2026-08-07T09:58:41.120Z",
   "seriesCovered": [
     "A Serisi",
+    "AMG GT",
     "B Serisi",
     "C Serisi",
     "CLA",
     "CLE",
+    "CLS",
     "E Serisi",
-    "S Serisi",
-    "SL",
-    "AMG GT",
+    "EQA",
+    "EQB",
+    "EQE",
+    "EQE SUV",
+    "EQS",
+    "EQS SUV",
+    "G Serisi",
     "GLA",
     "GLB",
     "GLC",
     "GLE",
     "GLS",
-    "G Serisi",
-    "EQA",
-    "EQE",
-    "EQS",
-    "EQB",
-    "EQE SUV",
-    "EQS SUV",
-    "CLS",
+    "S Serisi",
+    "SL",
     "SLC",
     "SLK",
-    "Vito",
-    "V Serisi"
+    "V Serisi",
+    "Vito"
   ],
   "status": "COMPLETED",
   "notes": "TR official fiyat.mercedes-benz.com.tr MY2026 + Aug 2026 published tables + May/Oct 2024 and Jan 2021 archives. Package 'AMG' normalized to AMG Line. Mercedes-AMG performance models kept as distinct versions. EQB/EQE SUV/EQS SUV/CLS/SLC/SLK/Vito/V-Class remain REVIEW; invented wrong versions REJECTED.",
@@ -2912,61 +2912,1703 @@
         }
       ],
       "verifiedForTurkey": false
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "C Serisi",
+      "model": "C 200",
+      "trim": "Exclusive",
+      "generation": "W205 Sedan facelift",
+      "generationCode": "W205",
+      "yearFrom": 2018,
+      "yearTo": 2018,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1497",
+      "powerHp": "184",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "W205 TR retail: trim AMG = design package. Not Mercedes-AMG C 43 performance model.",
+      "sources": [
+        {
+          "url": "https://www.sekizsilindir.com/2018/07/yeni-mercedes-c-serisi-fiyatlari.html",
+          "title": "Makyajlı C Serisi TR fiyatları (C200/C200d Comfort/Exclusive/AMG)",
+          "date": "2018-07-01",
+          "role": "primary",
+          "type": "automotive_press",
+          "publisher": "sekizsilindir.com"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/mercedes/c-serisi-sedan/2019-fiyatlari",
+          "title": "2019 Mercedes C Serisi Sedan versiyon/donanım fiyatları",
+          "date": "2019-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "C Serisi",
+      "model": "C 200",
+      "trim": "AMG",
+      "generation": "W205 Sedan facelift",
+      "generationCode": "W205",
+      "yearFrom": 2018,
+      "yearTo": 2018,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1497",
+      "powerHp": "184",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "W205 TR retail: trim AMG = design package. Not Mercedes-AMG C 43 performance model.",
+      "sources": [
+        {
+          "url": "https://www.sekizsilindir.com/2018/07/yeni-mercedes-c-serisi-fiyatlari.html",
+          "title": "Makyajlı C Serisi TR fiyatları (C200/C200d Comfort/Exclusive/AMG)",
+          "date": "2018-07-01",
+          "role": "primary",
+          "type": "automotive_press",
+          "publisher": "sekizsilindir.com"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/mercedes/c-serisi-sedan/2019-fiyatlari",
+          "title": "2019 Mercedes C Serisi Sedan versiyon/donanım fiyatları",
+          "date": "2019-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "C Serisi",
+      "model": "C 200 d",
+      "trim": "AMG",
+      "generation": "W205 Sedan facelift",
+      "generationCode": "W205",
+      "yearFrom": 2018,
+      "yearTo": 2018,
+      "fuelType": "DIESEL",
+      "engineVolume": "1597",
+      "powerHp": "160",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "W205 TR retail: trim AMG = design package. Not Mercedes-AMG C 43 performance model.",
+      "sources": [
+        {
+          "url": "https://www.sekizsilindir.com/2018/07/yeni-mercedes-c-serisi-fiyatlari.html",
+          "title": "Makyajlı C Serisi TR fiyatları (C200/C200d Comfort/Exclusive/AMG)",
+          "date": "2018-07-01",
+          "role": "primary",
+          "type": "automotive_press",
+          "publisher": "sekizsilindir.com"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/mercedes/c-serisi-sedan/2019-fiyatlari",
+          "title": "2019 Mercedes C Serisi Sedan versiyon/donanım fiyatları",
+          "date": "2019-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "C Serisi",
+      "model": "C 200 4MATIC",
+      "trim": "Exclusive",
+      "generation": "W205 Sedan",
+      "generationCode": "W205",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1497",
+      "powerHp": "184",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2020 Kasım TR C Serisi listesi — AMG trim is package line.",
+      "sources": [
+        {
+          "url": "https://www.oopscars.com/2020-kasim-mercedes-benz-c-serisi-fiyat-listesi-ne-oldu/",
+          "title": "2020 Kasım Mercedes-Benz C Serisi fiyat listesi",
+          "date": "2020-11-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "oopscars.com"
+        },
+        {
+          "url": "https://www.otomobilir.com/mercedes-benz-arac-fiyat/",
+          "title": "Mercedes-Benz Temmuz 2020 araç fiyat listesi",
+          "date": "2020-07-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "C Serisi",
+      "model": "C 200 4MATIC",
+      "trim": "AMG",
+      "generation": "W205 Sedan",
+      "generationCode": "W205",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1497",
+      "powerHp": "184",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2020 Kasım TR C Serisi listesi — AMG trim is package line.",
+      "sources": [
+        {
+          "url": "https://www.oopscars.com/2020-kasim-mercedes-benz-c-serisi-fiyat-listesi-ne-oldu/",
+          "title": "2020 Kasım Mercedes-Benz C Serisi fiyat listesi",
+          "date": "2020-11-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "oopscars.com"
+        },
+        {
+          "url": "https://www.otomobilir.com/mercedes-benz-arac-fiyat/",
+          "title": "Mercedes-Benz Temmuz 2020 araç fiyat listesi",
+          "date": "2020-07-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "C Serisi",
+      "model": "C 200 d",
+      "trim": "Comfort",
+      "generation": "W205 Sedan",
+      "generationCode": "W205",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "engineVolume": "1597",
+      "powerHp": "160",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2020 Kasım TR C Serisi listesi — AMG trim is package line.",
+      "sources": [
+        {
+          "url": "https://www.oopscars.com/2020-kasim-mercedes-benz-c-serisi-fiyat-listesi-ne-oldu/",
+          "title": "2020 Kasım Mercedes-Benz C Serisi fiyat listesi",
+          "date": "2020-11-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "oopscars.com"
+        },
+        {
+          "url": "https://www.otomobilir.com/mercedes-benz-arac-fiyat/",
+          "title": "Mercedes-Benz Temmuz 2020 araç fiyat listesi",
+          "date": "2020-07-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "C Serisi",
+      "model": "C 200 d",
+      "trim": "Exclusive",
+      "generation": "W205 Sedan",
+      "generationCode": "W205",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "engineVolume": "1597",
+      "powerHp": "160",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2020 Kasım TR C Serisi listesi — AMG trim is package line.",
+      "sources": [
+        {
+          "url": "https://www.oopscars.com/2020-kasim-mercedes-benz-c-serisi-fiyat-listesi-ne-oldu/",
+          "title": "2020 Kasım Mercedes-Benz C Serisi fiyat listesi",
+          "date": "2020-11-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "oopscars.com"
+        },
+        {
+          "url": "https://www.otomobilir.com/mercedes-benz-arac-fiyat/",
+          "title": "Mercedes-Benz Temmuz 2020 araç fiyat listesi",
+          "date": "2020-07-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "C Serisi",
+      "model": "C 200 d",
+      "trim": "AMG",
+      "generation": "W205 Sedan",
+      "generationCode": "W205",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "engineVolume": "1597",
+      "powerHp": "160",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2020 Kasım TR C Serisi listesi — AMG trim is package line.",
+      "sources": [
+        {
+          "url": "https://www.oopscars.com/2020-kasim-mercedes-benz-c-serisi-fiyat-listesi-ne-oldu/",
+          "title": "2020 Kasım Mercedes-Benz C Serisi fiyat listesi",
+          "date": "2020-11-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "oopscars.com"
+        },
+        {
+          "url": "https://www.otomobilir.com/mercedes-benz-arac-fiyat/",
+          "title": "Mercedes-Benz Temmuz 2020 araç fiyat listesi",
+          "date": "2020-07-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "C Serisi",
+      "model": "C 180",
+      "trim": "Comfort",
+      "generation": "W205 Sedan",
+      "generationCode": "W205",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1595",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2019 TR C Sedan version×package matrix",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/mercedes/c-serisi-sedan/2019-fiyatlari",
+          "title": "2019 Mercedes C Serisi Sedan fiyatları",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "C Serisi",
+      "model": "C 200 d",
+      "trim": "Comfort",
+      "generation": "W205 Sedan",
+      "generationCode": "W205",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1597",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2019 TR C Sedan version×package matrix",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/mercedes/c-serisi-sedan/2019-fiyatlari",
+          "title": "2019 Mercedes C Serisi Sedan fiyatları",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "C Serisi",
+      "model": "C 200",
+      "trim": "Exclusive",
+      "generation": "W205 Sedan",
+      "generationCode": "W205",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1497",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2019 TR C Sedan version×package matrix",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/mercedes/c-serisi-sedan/2019-fiyatlari",
+          "title": "2019 Mercedes C Serisi Sedan fiyatları",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "C Serisi",
+      "model": "C 200 d",
+      "trim": "Exclusive",
+      "generation": "W205 Sedan",
+      "generationCode": "W205",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1597",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2019 TR C Sedan version×package matrix",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/mercedes/c-serisi-sedan/2019-fiyatlari",
+          "title": "2019 Mercedes C Serisi Sedan fiyatları",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "C Serisi",
+      "model": "C 200",
+      "trim": "AMG",
+      "generation": "W205 Sedan",
+      "generationCode": "W205",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1497",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2019 TR C Sedan version×package matrix",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/mercedes/c-serisi-sedan/2019-fiyatlari",
+          "title": "2019 Mercedes C Serisi Sedan fiyatları",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "C Serisi",
+      "model": "C 200 d",
+      "trim": "AMG",
+      "generation": "W205 Sedan",
+      "generationCode": "W205",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1597",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2019 TR C Sedan version×package matrix",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/mercedes/c-serisi-sedan/2019-fiyatlari",
+          "title": "2019 Mercedes C Serisi Sedan fiyatları",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "E Serisi",
+      "model": "E 180",
+      "trim": "Avantgarde",
+      "generation": "W213 Sedan",
+      "generationCode": "W213",
+      "yearFrom": 2017,
+      "yearTo": 2017,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1595",
+      "powerHp": "156",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2017 TR E Serisi launch list — AMG = package; Mercedes-AMG E 63 separate.",
+      "sources": [
+        {
+          "url": "https://www.ahaber.com.tr/otomobil/2017/01/29/2017-mercedes-e-180-fiyat-listesi-belli-oldu",
+          "title": "2017 Mercedes E 180/E 300/E 220 d TR fiyat listesi",
+          "date": "2017-01-29",
+          "role": "primary",
+          "type": "press",
+          "publisher": "ahaber.com.tr"
+        },
+        {
+          "url": "https://www.otomobil.com.tr/mercedes-benz-e-180-1-6-lt/",
+          "title": "Mercedes-Benz E 180 1.6 lt TR satış duyurusu",
+          "date": "2017-01-01",
+          "role": "secondary",
+          "type": "press",
+          "publisher": "otomobil.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "E Serisi",
+      "model": "E 180",
+      "trim": "Exclusive",
+      "generation": "W213 Sedan",
+      "generationCode": "W213",
+      "yearFrom": 2017,
+      "yearTo": 2017,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1595",
+      "powerHp": "156",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2017 TR E Serisi launch list — AMG = package; Mercedes-AMG E 63 separate.",
+      "sources": [
+        {
+          "url": "https://www.ahaber.com.tr/otomobil/2017/01/29/2017-mercedes-e-180-fiyat-listesi-belli-oldu",
+          "title": "2017 Mercedes E 180/E 300/E 220 d TR fiyat listesi",
+          "date": "2017-01-29",
+          "role": "primary",
+          "type": "press",
+          "publisher": "ahaber.com.tr"
+        },
+        {
+          "url": "https://www.otomobil.com.tr/mercedes-benz-e-180-1-6-lt/",
+          "title": "Mercedes-Benz E 180 1.6 lt TR satış duyurusu",
+          "date": "2017-01-01",
+          "role": "secondary",
+          "type": "press",
+          "publisher": "otomobil.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "E Serisi",
+      "model": "E 180",
+      "trim": "AMG",
+      "generation": "W213 Sedan",
+      "generationCode": "W213",
+      "yearFrom": 2017,
+      "yearTo": 2017,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1595",
+      "powerHp": "156",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2017 TR E Serisi launch list — AMG = package; Mercedes-AMG E 63 separate.",
+      "sources": [
+        {
+          "url": "https://www.ahaber.com.tr/otomobil/2017/01/29/2017-mercedes-e-180-fiyat-listesi-belli-oldu",
+          "title": "2017 Mercedes E 180/E 300/E 220 d TR fiyat listesi",
+          "date": "2017-01-29",
+          "role": "primary",
+          "type": "press",
+          "publisher": "ahaber.com.tr"
+        },
+        {
+          "url": "https://www.otomobil.com.tr/mercedes-benz-e-180-1-6-lt/",
+          "title": "Mercedes-Benz E 180 1.6 lt TR satış duyurusu",
+          "date": "2017-01-01",
+          "role": "secondary",
+          "type": "press",
+          "publisher": "otomobil.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "E Serisi",
+      "model": "E 300",
+      "trim": "Avantgarde",
+      "generation": "W213 Sedan",
+      "generationCode": "W213",
+      "yearFrom": 2017,
+      "yearTo": 2017,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1991",
+      "powerHp": "245",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2017 TR E Serisi launch list — AMG = package; Mercedes-AMG E 63 separate.",
+      "sources": [
+        {
+          "url": "https://www.ahaber.com.tr/otomobil/2017/01/29/2017-mercedes-e-180-fiyat-listesi-belli-oldu",
+          "title": "2017 Mercedes E 180/E 300/E 220 d TR fiyat listesi",
+          "date": "2017-01-29",
+          "role": "primary",
+          "type": "press",
+          "publisher": "ahaber.com.tr"
+        },
+        {
+          "url": "https://www.otomobil.com.tr/mercedes-benz-e-180-1-6-lt/",
+          "title": "Mercedes-Benz E 180 1.6 lt TR satış duyurusu",
+          "date": "2017-01-01",
+          "role": "secondary",
+          "type": "press",
+          "publisher": "otomobil.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "E Serisi",
+      "model": "E 300",
+      "trim": "Exclusive",
+      "generation": "W213 Sedan",
+      "generationCode": "W213",
+      "yearFrom": 2017,
+      "yearTo": 2017,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1991",
+      "powerHp": "245",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2017 TR E Serisi launch list — AMG = package; Mercedes-AMG E 63 separate.",
+      "sources": [
+        {
+          "url": "https://www.ahaber.com.tr/otomobil/2017/01/29/2017-mercedes-e-180-fiyat-listesi-belli-oldu",
+          "title": "2017 Mercedes E 180/E 300/E 220 d TR fiyat listesi",
+          "date": "2017-01-29",
+          "role": "primary",
+          "type": "press",
+          "publisher": "ahaber.com.tr"
+        },
+        {
+          "url": "https://www.otomobil.com.tr/mercedes-benz-e-180-1-6-lt/",
+          "title": "Mercedes-Benz E 180 1.6 lt TR satış duyurusu",
+          "date": "2017-01-01",
+          "role": "secondary",
+          "type": "press",
+          "publisher": "otomobil.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "E Serisi",
+      "model": "E 300",
+      "trim": "AMG",
+      "generation": "W213 Sedan",
+      "generationCode": "W213",
+      "yearFrom": 2017,
+      "yearTo": 2017,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1991",
+      "powerHp": "245",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2017 TR E Serisi launch list — AMG = package; Mercedes-AMG E 63 separate.",
+      "sources": [
+        {
+          "url": "https://www.ahaber.com.tr/otomobil/2017/01/29/2017-mercedes-e-180-fiyat-listesi-belli-oldu",
+          "title": "2017 Mercedes E 180/E 300/E 220 d TR fiyat listesi",
+          "date": "2017-01-29",
+          "role": "primary",
+          "type": "press",
+          "publisher": "ahaber.com.tr"
+        },
+        {
+          "url": "https://www.otomobil.com.tr/mercedes-benz-e-180-1-6-lt/",
+          "title": "Mercedes-Benz E 180 1.6 lt TR satış duyurusu",
+          "date": "2017-01-01",
+          "role": "secondary",
+          "type": "press",
+          "publisher": "otomobil.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "E Serisi",
+      "model": "E 220 d 4MATIC",
+      "trim": "Avantgarde",
+      "generation": "W213 Sedan",
+      "generationCode": "W213",
+      "yearFrom": 2017,
+      "yearTo": 2017,
+      "fuelType": "DIESEL",
+      "engineVolume": "1950",
+      "powerHp": "194",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2017 TR E Serisi launch list — AMG = package; Mercedes-AMG E 63 separate.",
+      "sources": [
+        {
+          "url": "https://www.ahaber.com.tr/otomobil/2017/01/29/2017-mercedes-e-180-fiyat-listesi-belli-oldu",
+          "title": "2017 Mercedes E 180/E 300/E 220 d TR fiyat listesi",
+          "date": "2017-01-29",
+          "role": "primary",
+          "type": "press",
+          "publisher": "ahaber.com.tr"
+        },
+        {
+          "url": "https://www.otomobil.com.tr/mercedes-benz-e-180-1-6-lt/",
+          "title": "Mercedes-Benz E 180 1.6 lt TR satış duyurusu",
+          "date": "2017-01-01",
+          "role": "secondary",
+          "type": "press",
+          "publisher": "otomobil.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "E Serisi",
+      "model": "E 220 d 4MATIC",
+      "trim": "Exclusive",
+      "generation": "W213 Sedan",
+      "generationCode": "W213",
+      "yearFrom": 2017,
+      "yearTo": 2017,
+      "fuelType": "DIESEL",
+      "engineVolume": "1950",
+      "powerHp": "194",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2017 TR E Serisi launch list — AMG = package; Mercedes-AMG E 63 separate.",
+      "sources": [
+        {
+          "url": "https://www.ahaber.com.tr/otomobil/2017/01/29/2017-mercedes-e-180-fiyat-listesi-belli-oldu",
+          "title": "2017 Mercedes E 180/E 300/E 220 d TR fiyat listesi",
+          "date": "2017-01-29",
+          "role": "primary",
+          "type": "press",
+          "publisher": "ahaber.com.tr"
+        },
+        {
+          "url": "https://www.otomobil.com.tr/mercedes-benz-e-180-1-6-lt/",
+          "title": "Mercedes-Benz E 180 1.6 lt TR satış duyurusu",
+          "date": "2017-01-01",
+          "role": "secondary",
+          "type": "press",
+          "publisher": "otomobil.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "E Serisi",
+      "model": "E 220 d 4MATIC",
+      "trim": "AMG",
+      "generation": "W213 Sedan",
+      "generationCode": "W213",
+      "yearFrom": 2017,
+      "yearTo": 2017,
+      "fuelType": "DIESEL",
+      "engineVolume": "1950",
+      "powerHp": "194",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2017 TR E Serisi launch list — AMG = package; Mercedes-AMG E 63 separate.",
+      "sources": [
+        {
+          "url": "https://www.ahaber.com.tr/otomobil/2017/01/29/2017-mercedes-e-180-fiyat-listesi-belli-oldu",
+          "title": "2017 Mercedes E 180/E 300/E 220 d TR fiyat listesi",
+          "date": "2017-01-29",
+          "role": "primary",
+          "type": "press",
+          "publisher": "ahaber.com.tr"
+        },
+        {
+          "url": "https://www.otomobil.com.tr/mercedes-benz-e-180-1-6-lt/",
+          "title": "Mercedes-Benz E 180 1.6 lt TR satış duyurusu",
+          "date": "2017-01-01",
+          "role": "secondary",
+          "type": "press",
+          "publisher": "otomobil.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "E Serisi",
+      "model": "E 350 d",
+      "trim": "Avantgarde",
+      "generation": "W213 Sedan",
+      "generationCode": "W213",
+      "yearFrom": 2017,
+      "yearTo": 2017,
+      "fuelType": "DIESEL",
+      "engineVolume": "2987",
+      "powerHp": "258",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2017 TR E Serisi launch list — AMG = package; Mercedes-AMG E 63 separate.",
+      "sources": [
+        {
+          "url": "https://www.ahaber.com.tr/otomobil/2017/01/29/2017-mercedes-e-180-fiyat-listesi-belli-oldu",
+          "title": "2017 Mercedes E 180/E 300/E 220 d TR fiyat listesi",
+          "date": "2017-01-29",
+          "role": "primary",
+          "type": "press",
+          "publisher": "ahaber.com.tr"
+        },
+        {
+          "url": "https://www.otomobil.com.tr/mercedes-benz-e-180-1-6-lt/",
+          "title": "Mercedes-Benz E 180 1.6 lt TR satış duyurusu",
+          "date": "2017-01-01",
+          "role": "secondary",
+          "type": "press",
+          "publisher": "otomobil.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "E Serisi",
+      "model": "E 350 d",
+      "trim": "Exclusive",
+      "generation": "W213 Sedan",
+      "generationCode": "W213",
+      "yearFrom": 2017,
+      "yearTo": 2017,
+      "fuelType": "DIESEL",
+      "engineVolume": "2987",
+      "powerHp": "258",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2017 TR E Serisi launch list — AMG = package; Mercedes-AMG E 63 separate.",
+      "sources": [
+        {
+          "url": "https://www.ahaber.com.tr/otomobil/2017/01/29/2017-mercedes-e-180-fiyat-listesi-belli-oldu",
+          "title": "2017 Mercedes E 180/E 300/E 220 d TR fiyat listesi",
+          "date": "2017-01-29",
+          "role": "primary",
+          "type": "press",
+          "publisher": "ahaber.com.tr"
+        },
+        {
+          "url": "https://www.otomobil.com.tr/mercedes-benz-e-180-1-6-lt/",
+          "title": "Mercedes-Benz E 180 1.6 lt TR satış duyurusu",
+          "date": "2017-01-01",
+          "role": "secondary",
+          "type": "press",
+          "publisher": "otomobil.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "E Serisi",
+      "model": "E 350 d",
+      "trim": "AMG",
+      "generation": "W213 Sedan",
+      "generationCode": "W213",
+      "yearFrom": 2017,
+      "yearTo": 2017,
+      "fuelType": "DIESEL",
+      "engineVolume": "2987",
+      "powerHp": "258",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2017 TR E Serisi launch list — AMG = package; Mercedes-AMG E 63 separate.",
+      "sources": [
+        {
+          "url": "https://www.ahaber.com.tr/otomobil/2017/01/29/2017-mercedes-e-180-fiyat-listesi-belli-oldu",
+          "title": "2017 Mercedes E 180/E 300/E 220 d TR fiyat listesi",
+          "date": "2017-01-29",
+          "role": "primary",
+          "type": "press",
+          "publisher": "ahaber.com.tr"
+        },
+        {
+          "url": "https://www.otomobil.com.tr/mercedes-benz-e-180-1-6-lt/",
+          "title": "Mercedes-Benz E 180 1.6 lt TR satış duyurusu",
+          "date": "2017-01-01",
+          "role": "secondary",
+          "type": "press",
+          "publisher": "otomobil.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "E Serisi",
+      "model": "Mercedes-AMG E 63 4MATIC+",
+      "trim": "Performance",
+      "generation": "W213",
+      "generationCode": "W213",
+      "yearFrom": 2017,
+      "yearTo": 2017,
+      "fuelType": "GASOLINE",
+      "engineVolume": "3982",
+      "powerHp": "571",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Performance AMG model (not E 180 AMG package).",
+      "sources": [
+        {
+          "url": "https://www.ahaber.com.tr/otomobil/2017/01/29/2017-mercedes-e-180-fiyat-listesi-belli-oldu",
+          "title": "2017 TR list includes Mercedes-AMG E 63 4MATIC+",
+          "date": "2017-01-29",
+          "role": "primary",
+          "type": "press",
+          "publisher": "ahaber.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "E Serisi",
+      "model": "E 180",
+      "trim": "Avantgarde",
+      "generation": "W213 Sedan",
+      "generationCode": "W213",
+      "yearFrom": 2018,
+      "yearTo": 2018,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1591",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2018 E 180 Avantgarde TR model page",
+      "sources": [
+        {
+          "url": "https://www.arabalar.com.tr/mercedes/e-serisi/2018/e180-1-6-avantgarde",
+          "title": "2018 Mercedes E 180 1.6 Avantgarde",
+          "date": "2018-01-01",
+          "role": "primary",
+          "type": "model_page",
+          "publisher": "arabalar.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "E Serisi",
+      "model": "",
+      "trim": "",
+      "generation": "W212",
+      "generationCode": "W212",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "historicalCoverage": "HISTORICAL_COVERAGE_INCOMPLETE",
+      "notes": "W212 researched; discrete sourced TR version×trim matrix not captured in this pass.",
+      "sources": [
+        {
+          "url": "https://www.mercedes-benz.com.tr/",
+          "title": "Mercedes-Benz Türkiye — W212 archive search",
+          "date": "2026-08-07",
+          "role": "primary",
+          "type": "research_note",
+          "publisher": "Mercedes-Benz Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "A Serisi",
+      "model": "A 180",
+      "trim": "Style",
+      "generation": "W177",
+      "generationCode": "W177",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1332",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2019 TR A Serisi — Style/AMG packages; Mercedes-AMG A 45 is separate performance model.",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/mercedes/a-serisi/2019-fiyatlari",
+          "title": "2019 Mercedes A Serisi fiyat matrisi",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "A Serisi",
+      "model": "A 180 d",
+      "trim": "Style",
+      "generation": "W177",
+      "generationCode": "W177",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1461",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2019 TR A Serisi — Style/AMG packages; Mercedes-AMG A 45 is separate performance model.",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/mercedes/a-serisi/2019-fiyatlari",
+          "title": "2019 Mercedes A Serisi fiyat matrisi",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "A Serisi",
+      "model": "A 200",
+      "trim": "AMG",
+      "generation": "W177",
+      "generationCode": "W177",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1332",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2019 TR A Serisi — Style/AMG packages; Mercedes-AMG A 45 is separate performance model.",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/mercedes/a-serisi/2019-fiyatlari",
+          "title": "2019 Mercedes A Serisi fiyat matrisi",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "A Serisi",
+      "model": "A 180 d",
+      "trim": "AMG",
+      "generation": "W177",
+      "generationCode": "W177",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1461",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2019 TR A Serisi — Style/AMG packages; Mercedes-AMG A 45 is separate performance model.",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/mercedes/a-serisi/2019-fiyatlari",
+          "title": "2019 Mercedes A Serisi fiyat matrisi",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "A Serisi",
+      "model": "A 200 Sedan",
+      "trim": "Style",
+      "generation": "W177",
+      "generationCode": "W177",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1332",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2019 TR A Serisi — Style/AMG packages; Mercedes-AMG A 45 is separate performance model.",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/mercedes/a-serisi/2019-fiyatlari",
+          "title": "2019 Mercedes A Serisi fiyat matrisi",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "A Serisi",
+      "model": "A 180 d Sedan",
+      "trim": "Style",
+      "generation": "W177",
+      "generationCode": "W177",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1461",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2019 TR A Serisi — Style/AMG packages; Mercedes-AMG A 45 is separate performance model.",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/mercedes/a-serisi/2019-fiyatlari",
+          "title": "2019 Mercedes A Serisi fiyat matrisi",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "A Serisi",
+      "model": "A 200 Sedan",
+      "trim": "AMG",
+      "generation": "W177",
+      "generationCode": "W177",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1332",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2019 TR A Serisi — Style/AMG packages; Mercedes-AMG A 45 is separate performance model.",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/mercedes/a-serisi/2019-fiyatlari",
+          "title": "2019 Mercedes A Serisi fiyat matrisi",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "A Serisi",
+      "model": "A 180 d Sedan",
+      "trim": "AMG",
+      "generation": "W177",
+      "generationCode": "W177",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1461",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2019 TR A Serisi — Style/AMG packages; Mercedes-AMG A 45 is separate performance model.",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/mercedes/a-serisi/2019-fiyatlari",
+          "title": "2019 Mercedes A Serisi fiyat matrisi",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "A Serisi",
+      "model": "A 180 Sedan",
+      "trim": "Progressive",
+      "generation": "V177 Sedan",
+      "generationCode": "V177",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1332",
+      "powerHp": "136",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2020 Haziran A Sedan TR list — Progressive/Style/AMG packages.",
+      "sources": [
+        {
+          "url": "https://www.oopscars.com/2020-mercedes-benz-a-serisi-sedan-haziran-fiyatlari-ne-oldu/",
+          "title": "2020 Mercedes-Benz A Serisi Sedan Haziran fiyatları",
+          "date": "2020-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "oopscars.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "A Serisi",
+      "model": "A 180 Sedan",
+      "trim": "Progressive BlackArt Edition",
+      "generation": "V177 Sedan",
+      "generationCode": "V177",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1332",
+      "powerHp": "136",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2020 Haziran A Sedan TR list — Progressive/Style/AMG packages.",
+      "sources": [
+        {
+          "url": "https://www.oopscars.com/2020-mercedes-benz-a-serisi-sedan-haziran-fiyatlari-ne-oldu/",
+          "title": "2020 Mercedes-Benz A Serisi Sedan Haziran fiyatları",
+          "date": "2020-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "oopscars.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "A Serisi",
+      "model": "A 200 Sedan",
+      "trim": "Style",
+      "generation": "V177 Sedan",
+      "generationCode": "V177",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1332",
+      "powerHp": "163",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2020 Haziran A Sedan TR list — Progressive/Style/AMG packages.",
+      "sources": [
+        {
+          "url": "https://www.oopscars.com/2020-mercedes-benz-a-serisi-sedan-haziran-fiyatlari-ne-oldu/",
+          "title": "2020 Mercedes-Benz A Serisi Sedan Haziran fiyatları",
+          "date": "2020-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "oopscars.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "A Serisi",
+      "model": "A 200 Sedan",
+      "trim": "AMG",
+      "generation": "V177 Sedan",
+      "generationCode": "V177",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1332",
+      "powerHp": "163",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2020 Haziran A Sedan TR list — Progressive/Style/AMG packages.",
+      "sources": [
+        {
+          "url": "https://www.oopscars.com/2020-mercedes-benz-a-serisi-sedan-haziran-fiyatlari-ne-oldu/",
+          "title": "2020 Mercedes-Benz A Serisi Sedan Haziran fiyatları",
+          "date": "2020-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "oopscars.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "A Serisi",
+      "model": "A 180 d Sedan",
+      "trim": "Style",
+      "generation": "V177 Sedan",
+      "generationCode": "V177",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "engineVolume": "1461",
+      "powerHp": "116",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2020 Haziran A Sedan TR list — Progressive/Style/AMG packages.",
+      "sources": [
+        {
+          "url": "https://www.oopscars.com/2020-mercedes-benz-a-serisi-sedan-haziran-fiyatlari-ne-oldu/",
+          "title": "2020 Mercedes-Benz A Serisi Sedan Haziran fiyatları",
+          "date": "2020-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "oopscars.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "A Serisi",
+      "model": "A 180 d Sedan",
+      "trim": "AMG",
+      "generation": "V177 Sedan",
+      "generationCode": "V177",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "engineVolume": "1461",
+      "powerHp": "116",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2020 Haziran A Sedan TR list — Progressive/Style/AMG packages.",
+      "sources": [
+        {
+          "url": "https://www.oopscars.com/2020-mercedes-benz-a-serisi-sedan-haziran-fiyatlari-ne-oldu/",
+          "title": "2020 Mercedes-Benz A Serisi Sedan Haziran fiyatları",
+          "date": "2020-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "oopscars.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "C Serisi",
+      "model": "C 200 4MATIC",
+      "trim": "Avantgarde",
+      "generation": "W206 Sedan",
+      "generationCode": "W206",
+      "yearFrom": 2024,
+      "yearTo": 2024,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Mayıs 2024 TR list citing mercedes-benz.com.tr — AMG package vs AMG C 43 model separated.",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/mercedes-fiyat-listesi-mayis-2024-mercedes-a-b-c-ve-yeni-e-serisi-guncel-fiyatlari-1221701",
+          "title": "Mercedes Mayıs 2024 fiyat listesi (kaynak: mercedes-benz.com.tr)",
+          "date": "2024-05-10",
+          "role": "primary",
+          "type": "press_citing_official",
+          "publisher": "onedio.com"
+        },
+        {
+          "url": "https://www.mercedes-benz.com.tr/",
+          "title": "Mercedes-Benz Türkiye",
+          "date": "2024-05-10",
+          "role": "secondary",
+          "type": "official",
+          "publisher": "Mercedes-Benz Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "C Serisi",
+      "model": "C 200 4MATIC",
+      "trim": "AMG",
+      "generation": "W206 Sedan",
+      "generationCode": "W206",
+      "yearFrom": 2024,
+      "yearTo": 2024,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Mayıs 2024 TR list citing mercedes-benz.com.tr — AMG package vs AMG C 43 model separated.",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/mercedes-fiyat-listesi-mayis-2024-mercedes-a-b-c-ve-yeni-e-serisi-guncel-fiyatlari-1221701",
+          "title": "Mercedes Mayıs 2024 fiyat listesi (kaynak: mercedes-benz.com.tr)",
+          "date": "2024-05-10",
+          "role": "primary",
+          "type": "press_citing_official",
+          "publisher": "onedio.com"
+        },
+        {
+          "url": "https://www.mercedes-benz.com.tr/",
+          "title": "Mercedes-Benz Türkiye",
+          "date": "2024-05-10",
+          "role": "secondary",
+          "type": "official",
+          "publisher": "Mercedes-Benz Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "C Serisi",
+      "model": "Mercedes-AMG C 43 4MATIC",
+      "trim": "Performance",
+      "generation": "W206",
+      "generationCode": "W206",
+      "yearFrom": 2024,
+      "yearTo": 2024,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Performance model row (not C 200 AMG package).",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/mercedes-fiyat-listesi-mayis-2024-mercedes-a-b-c-ve-yeni-e-serisi-guncel-fiyatlari-1221701",
+          "title": "Mayıs 2024 — AMG C 43 4MATIC Performance",
+          "date": "2024-05-10",
+          "role": "primary",
+          "type": "press_citing_official",
+          "publisher": "onedio.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "E Serisi",
+      "model": "E 180",
+      "trim": "Exclusive",
+      "generation": "W214 Sedan",
+      "generationCode": "W214",
+      "yearFrom": 2024,
+      "yearTo": 2024,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Mayıs 2024 Yeni E Serisi TR list",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/mercedes-fiyat-listesi-mayis-2024-mercedes-a-b-c-ve-yeni-e-serisi-guncel-fiyatlari-1221701",
+          "title": "Mayıs 2024 Yeni E Serisi fiyatları",
+          "date": "2024-05-10",
+          "role": "primary",
+          "type": "press_citing_official",
+          "publisher": "onedio.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "E Serisi",
+      "model": "E 180",
+      "trim": "AMG",
+      "generation": "W214 Sedan",
+      "generationCode": "W214",
+      "yearFrom": 2024,
+      "yearTo": 2024,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Mayıs 2024 Yeni E Serisi TR list",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/mercedes-fiyat-listesi-mayis-2024-mercedes-a-b-c-ve-yeni-e-serisi-guncel-fiyatlari-1221701",
+          "title": "Mayıs 2024 Yeni E Serisi fiyatları",
+          "date": "2024-05-10",
+          "role": "primary",
+          "type": "press_citing_official",
+          "publisher": "onedio.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "E Serisi",
+      "model": "E 180",
+      "trim": "Edition 1 Exclusive",
+      "generation": "W214 Sedan",
+      "generationCode": "W214",
+      "yearFrom": 2024,
+      "yearTo": 2024,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Mayıs 2024 Yeni E Serisi TR list",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/mercedes-fiyat-listesi-mayis-2024-mercedes-a-b-c-ve-yeni-e-serisi-guncel-fiyatlari-1221701",
+          "title": "Mayıs 2024 Yeni E Serisi fiyatları",
+          "date": "2024-05-10",
+          "role": "primary",
+          "type": "press_citing_official",
+          "publisher": "onedio.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "E Serisi",
+      "model": "E 180",
+      "trim": "Edition 1 AMG",
+      "generation": "W214 Sedan",
+      "generationCode": "W214",
+      "yearFrom": 2024,
+      "yearTo": 2024,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Mayıs 2024 Yeni E Serisi TR list",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/mercedes-fiyat-listesi-mayis-2024-mercedes-a-b-c-ve-yeni-e-serisi-guncel-fiyatlari-1221701",
+          "title": "Mayıs 2024 Yeni E Serisi fiyatları",
+          "date": "2024-05-10",
+          "role": "primary",
+          "type": "press_citing_official",
+          "publisher": "onedio.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "E Serisi",
+      "model": "E 220 d 4MATIC",
+      "trim": "Exclusive",
+      "generation": "W214 Sedan",
+      "generationCode": "W214",
+      "yearFrom": 2024,
+      "yearTo": 2024,
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Mayıs 2024 Yeni E Serisi TR list",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/mercedes-fiyat-listesi-mayis-2024-mercedes-a-b-c-ve-yeni-e-serisi-guncel-fiyatlari-1221701",
+          "title": "Mayıs 2024 Yeni E Serisi fiyatları",
+          "date": "2024-05-10",
+          "role": "primary",
+          "type": "press_citing_official",
+          "publisher": "onedio.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "E Serisi",
+      "model": "E 220 d 4MATIC",
+      "trim": "AMG",
+      "generation": "W214 Sedan",
+      "generationCode": "W214",
+      "yearFrom": 2024,
+      "yearTo": 2024,
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Mayıs 2024 Yeni E Serisi TR list",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/mercedes-fiyat-listesi-mayis-2024-mercedes-a-b-c-ve-yeni-e-serisi-guncel-fiyatlari-1221701",
+          "title": "Mayıs 2024 Yeni E Serisi fiyatları",
+          "date": "2024-05-10",
+          "role": "primary",
+          "type": "press_citing_official",
+          "publisher": "onedio.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "C Serisi",
+      "model": "",
+      "trim": "",
+      "generation": "W204",
+      "generationCode": "W204",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "historicalCoverage": "HISTORICAL_COVERAGE_INCOMPLETE",
+      "notes": "W204 researched; sourced TR version×trim matrix not captured.",
+      "sources": [
+        {
+          "url": "https://www.mercedes-benz.com.tr/",
+          "title": "Mercedes-Benz Türkiye — W204 archive search",
+          "date": "2026-08-07",
+          "role": "primary",
+          "type": "research_note",
+          "publisher": "Mercedes-Benz Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "series": "SLK",
+      "model": "",
+      "trim": "",
+      "generation": "R172",
+      "generationCode": "R172",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "historicalCoverage": "HISTORICAL_COVERAGE_INCOMPLETE",
+      "notes": "SLK TR historical matrix not sourced; no invented rows.",
+      "sources": [
+        {
+          "url": "https://www.mercedes-benz.com.tr/",
+          "title": "Mercedes-Benz Türkiye — SLK archive search",
+          "date": "2026-08-07",
+          "role": "primary",
+          "type": "research_note",
+          "publisher": "Mercedes-Benz Türkiye"
+        }
+      ]
     }
   ],
   "researchNotes": {
-    "researchedSeriesPass": [
-      "A Serisi",
+    "coverageCsv": "docs/vehicle-research/deep-catalog-coverage.csv",
+    "completionReport": "docs/vehicle-research/Mercedes-Benz-completion-report.json",
+    "noApply": true,
+    "seriesWithoutResearch": [],
+    "currentOnlySeries": [
       "B Serisi",
-      "C Serisi",
-      "CLA",
       "CLE",
-      "E Serisi",
       "S Serisi",
       "SL",
       "AMG GT",
-      "GLA",
       "GLB",
       "GLC",
       "GLE",
       "GLS",
-      "G Serisi",
       "EQA",
       "EQE",
-      "EQS",
-      "EQB",
-      "EQE SUV",
-      "EQS SUV",
-      "CLS",
-      "SLC",
-      "SLK",
-      "Vito",
-      "V Serisi"
-    ],
-    "historicalArchivesIngested": [
-      "2021-01 C Serisi W205",
-      "2024-05 MB TR (Onedio)",
-      "2024-10 MB TR (Otomobilir)",
-      "2026-08 WebTekno + DonanımHaber"
-    ],
-    "reviewRequiredSeries": [
-      "EQB",
-      "EQE SUV",
-      "EQS SUV",
-      "CLS",
-      "SLC",
-      "SLK",
-      "Vito",
-      "V Serisi"
-    ],
-    "rejectedNotes": [
-      "GLC GLC 220 d 4MATIC AMG Line",
-      "E Serisi E 200 AMG Line",
-      "CLE CLE 200 AMG Line",
-      "GLS GLS 450 4MATIC AMG Line",
-      "EQE EQE 350+ AMG Line",
-      "GLB GLB 200 AMG Line",
-      "C Serisi C 200 4MATIC AMG"
+      "EQS"
     ]
   },
   "completedAt": "2026-08-07T09:13:29.914Z"

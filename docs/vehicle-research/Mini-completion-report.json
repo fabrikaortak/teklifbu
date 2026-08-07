@@ -1,0 +1,50 @@
+{
+  "at": "2026-08-07T10:14:22.899Z",
+  "brand": "Mini",
+  "status": "COMPLETED",
+  "gate": {
+    "seriesWithoutResearch": [],
+    "seriesWithoutResearchCount": 0,
+    "pass": true
+  },
+  "selectableSeries": [
+    "Countryman",
+    "Cooper",
+    "Cabrio"
+  ],
+  "researchedSeries": [
+    "Countryman",
+    "Cooper",
+    "Cabrio"
+  ],
+  "verifiedVersions": [
+    "Cooper 3 Kapı",
+    "Cooper 3 Kapı 1.5",
+    "Cooper 5 Kapı",
+    "Cooper 5 Kapı 1.5",
+    "Cooper Countryman 1.5",
+    "Cooper D 3 Kapı 1.5",
+    "Cooper D 5 Kapı 1.5",
+    "Cooper S 3 Kapı",
+    "Countryman C",
+    "Countryman E"
+  ],
+  "verifiedTrims": [
+    "Chili",
+    "Favoured",
+    "Favoured Plus",
+    "John Cooper Works",
+    "Pepper",
+    "Salt",
+    "Türkiye Paketi"
+  ],
+  "verifiedConfigurations": 24,
+  "officialSources": 0,
+  "multiSources": 24,
+  "reviewRequired": 1,
+  "rejected": 0,
+  "noVerifiedTrimFound": 0,
+  "seriesWithCurrentOnlyCoverage": [],
+  "historicalCoverageIncompleteSeries": [],
+  "notes": "Deepen pass (not final catalog complete). Completed means every selectable series was systematically researched. Current-only and incomplete historical gens remain flagged. Research-only; applyAllowed=false."
+}

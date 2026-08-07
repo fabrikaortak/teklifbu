@@ -6,21 +6,39 @@ Audi,Q3,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
 Audi,Q5,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
 Audi,Q4 e-tron,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
 Audi,e-tron,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
-BMW,M Serisi,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
-BMW,Z Serisi,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
-BMW,X4,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
-BMW,i3,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
-BMW,i Serisi,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
+Audi,A4,,,B8,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
+Audi,A5,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
+Audi,A7,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
+Audi,A8,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
+Audi,Q2,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
+Audi,Q7,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
+Audi,Q8,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
+Audi,TT,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
+BMW,3 Serisi,,,E36,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
+BMW,3 Serisi,,,E46,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
+BMW,5 Serisi,,,E39,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
+BMW,5 Serisi,,,E60,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
+BMW,7 Serisi,,,E38,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
+BMW,7 Serisi,,,E65,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
+BMW,X3,,,E83,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
+BMW,X5,,,E53,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
+BMW,X5,,,E70,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
 BYD,Atto 3,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
 BYD,Dolphin,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
 Citroen,C3 (ICE historical),,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
 Cupra,Born,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
+Cupra,Terramar,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
+Dacia,Logan,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
+Dacia,Jogger,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
 Fiat,Egea Wagon,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
 Fiat,Egea (historical gasoline),,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
+Fiat,Egea Cross,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
 Ford,Fiesta,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
 Ford,Tourneo Custom,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
 Ford,Focus Hatchback Hybrid,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
+Ford,Focus Hatchback Hybrid,1.0 EcoBoost Hybrid,,C519,2025,2026,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
 Honda,Civic,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
+Hyundai,Bayon,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
 Jaguar,XE,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
 Jaguar,XF,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
 Jeep,Renegade,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
@@ -51,19 +69,28 @@ Mercedes-Benz,SLC,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-app
 Mercedes-Benz,SLK,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
 Mercedes-Benz,Vito,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
 Mercedes-Benz,V Serisi,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
+Mercedes-Benz,E Serisi,,,W212,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
+Mercedes-Benz,C Serisi,,,W204,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
+Mercedes-Benz,SLK,,,R172,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
 Mini,Cabrio,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
 Mitsubishi,ASX,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
 Mitsubishi,Eclipse Cross,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
 Mitsubishi,L200,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
 Nissan,Townstar,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
+Nissan,Qashqai e-POWER,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
+Nissan,X-Trail,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
 Opel,Crossland,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
 Peugeot,208 (ICE historical),,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
 Peugeot,308 (ICE historical),,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
+Peugeot,E-3008,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
 Renault,Megane,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
 Renault,Captur,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
 Renault,Symbol,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
 Renault,Taliant,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
 Renault,Kangoo,,Multix,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
+Renault,Kadjar,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
+Renault,Austral,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
+Renault,Trafic,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
 Skoda,Superb,2.0 TDI 4x4,L&K Crystal,IV,2024,2026,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
 Subaru,XV,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
 Subaru,Outback,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
@@ -80,6 +107,11 @@ Volkswagen,Tiguan,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-app
 Volkswagen,Polo,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
 Volkswagen,Caddy,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
 Volkswagen,ID.3,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
+Volkswagen,Golf,,,Mk5,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
+Volkswagen,T-Roc,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
+Volkswagen,T-Cross,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
+Volkswagen,Transporter,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
 Volvo,XC90,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
 Volvo,EX30,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
 Volvo,EC40,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply
+Volvo,V60,,,,,,REVIEW_REQUIRED,REVIEW_REQUIRED,Not eligible for auto-apply

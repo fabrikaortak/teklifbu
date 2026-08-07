@@ -1,0 +1,60 @@
+{
+  "at": "2026-08-07T10:14:22.862Z",
+  "brand": "Kia",
+  "status": "COMPLETED",
+  "gate": {
+    "seriesWithoutResearch": [],
+    "seriesWithoutResearchCount": 0,
+    "pass": true
+  },
+  "selectableSeries": [
+    "Sportage",
+    "Picanto",
+    "Stonic",
+    "Sorento",
+    "EV3",
+    "EV6",
+    "EV9"
+  ],
+  "researchedSeries": [
+    "Sportage",
+    "Picanto",
+    "Stonic",
+    "Sorento",
+    "EV3",
+    "EV6",
+    "EV9"
+  ],
+  "verifiedVersions": [
+    "1.0L 67 PS",
+    "1.0L T-GDI 120 PS DCT",
+    "1.4L 100 PS",
+    "1.6L 132 PS",
+    "1.6L 150 PS DCT",
+    "1.6L 180 PS 4X4 DCT",
+    "1.6L CRDi 136 PS DCT",
+    "1.6L CRDi 136 PS DCT 4x4",
+    "2.0L Dizel"
+  ],
+  "verifiedTrims": [
+    "Cool",
+    "Elegance",
+    "Elegance Design Pack",
+    "Elegance Sunroof",
+    "Elegance Turbo Sunroof",
+    "GT-Line",
+    "Live",
+    "Prestige",
+    "Prestige Design Pack",
+    "Vision"
+  ],
+  "verifiedConfigurations": 22,
+  "officialSources": 6,
+  "multiSources": 16,
+  "reviewRequired": 6,
+  "rejected": 0,
+  "noVerifiedTrimFound": 0,
+  "seriesWithCurrentOnlyCoverage": [],
+  "historicalCoverageIncompleteSeries": [],
+  "notes": "Deepen pass (not final catalog complete). Completed means every selectable series was systematically researched. Current-only and incomplete historical gens remain flagged. Research-only; applyAllowed=false."
+}

@@ -1,0 +1,53 @@
+{
+  "at": "2026-08-07T10:14:37.822Z",
+  "brand": "Citroen",
+  "status": "COMPLETED",
+  "gate": {
+    "seriesWithoutResearch": [],
+    "seriesWithoutResearchCount": 0,
+    "pass": true
+  },
+  "selectableSeries": [
+    "C3",
+    "C3 Aircross",
+    "C5 Aircross",
+    "C3 (ICE historical)"
+  ],
+  "researchedSeries": [
+    "C3",
+    "C3 Aircross",
+    "C5 Aircross",
+    "C3 (ICE historical)"
+  ],
+  "verifiedVersions": [
+    "1.2 Hybrid 145 eDCS6",
+    "1.2 PureTech 110 HP",
+    "1.2 PureTech 82 HP",
+    "1.2 PureTech 83 HP",
+    "1.5 BlueHDi 120 HP",
+    "1.5 BlueHDi 130 HP",
+    "1.6 PureTech 180 HP",
+    "ë-C3 83 kW",
+    "ë-C5 Aircross 157 kW"
+  ],
+  "verifiedTrims": [
+    "Feel",
+    "Feel Adventure",
+    "Feel Bold",
+    "Live",
+    "Max",
+    "Max - 7 Koltuk",
+    "Plus",
+    "Shine",
+    "Shine Bold"
+  ],
+  "verifiedConfigurations": 33,
+  "officialSources": 5,
+  "multiSources": 28,
+  "reviewRequired": 1,
+  "rejected": 0,
+  "noVerifiedTrimFound": 0,
+  "seriesWithCurrentOnlyCoverage": [],
+  "historicalCoverageIncompleteSeries": [],
+  "notes": "Completed means every selectable series was systematically researched. Current-only and incomplete historical gens remain explicitly flagged. Research-only; applyAllowed=false."
+}

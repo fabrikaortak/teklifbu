@@ -1,8 +1,8 @@
 {
   "brand": "Tesla",
   "brandSlug": "tesla",
-  "version": "2026.08-deep-tesla-v1-current-tr",
-  "generatedAt": "2026-08-07T09:18:08.012Z",
+  "version": "2026.08-deep-tesla-v2-ev",
+  "generatedAt": "2026-08-07T10:15:27.302Z",
   "seriesCovered": [
     "Model 3",
     "Model S",
@@ -380,17 +380,15 @@
     }
   ],
   "researchNotes": {
-    "researchedSeriesPass": [
-      "Model Y",
-      "Model 3",
-      "Model S",
-      "Model X"
+    "noApply": true,
+    "applyAllowed": false,
+    "phase": "research-premium-ev-batch",
+    "seriesWithoutResearch": [],
+    "currentOnlySeries": [
+      "Model Y"
     ],
-    "reviewRequiredSeries": [
-      "Model 3",
-      "Model S",
-      "Model X"
-    ]
+    "addedThisPass": 0,
+    "electricOverlayNote": "Do not invent duplicate EV series"
   },
   "revertedReason": "verifiedConfigs < 3 — insufficient for completedBrands",
   "completedAt": "2026-08-07T09:18:08.172Z"

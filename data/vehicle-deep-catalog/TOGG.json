@@ -1,11 +1,11 @@
 {
   "brand": "TOGG",
   "brandSlug": "togg",
-  "version": "2026.08-deep-togg-v1-current-tr",
-  "generatedAt": "2026-08-07T12:05:00.000Z",
+  "version": "2026.08-deep-togg-v2-ev",
+  "generatedAt": "2026-08-07T10:15:27.317Z",
   "seriesCovered": [
-    "T10X",
-    "T10F"
+    "T10F",
+    "T10X"
   ],
   "status": "COMPLETED",
   "notes": "Pure EV brand — preserve electric overlay series T10X/T10F only; no invented ICE series. Official togg.com.tr price-list.",
@@ -324,12 +324,16 @@
     }
   ],
   "researchNotes": {
-    "researchedSeriesPass": [
+    "noApply": true,
+    "applyAllowed": false,
+    "phase": "research-premium-ev-batch",
+    "seriesWithoutResearch": [],
+    "currentOnlySeries": [
       "T10X",
       "T10F"
     ],
-    "reviewRequiredSeries": [],
-    "electricOverlayNote": "Do not invent duplicate EV series beyond T10X/T10F"
+    "addedThisPass": 0,
+    "electricOverlayNote": "Do not invent duplicate EV series"
   },
   "completedAt": "2026-08-07T09:13:29.954Z"
 }

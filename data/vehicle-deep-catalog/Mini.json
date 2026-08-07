@@ -1,12 +1,12 @@
 {
   "brand": "Mini",
   "brandSlug": "mini",
-  "version": "2026.08-deep-mini-v1-current-tr",
-  "generatedAt": "2026-08-07T12:05:00.000Z",
+  "version": "2026.08-deep-mini-v2-historical",
+  "generatedAt": "2026-08-07T10:14:22.903Z",
   "seriesCovered": [
+    "Cabrio",
     "Cooper",
-    "Countryman",
-    "Cabrio"
+    "Countryman"
   ],
   "status": "COMPLETED",
   "notes": "Cooper/Countryman Aug 2026 published TR list. EV Countryman E preserved as Countryman series (no duplicate EV series invent).",
@@ -241,17 +241,536 @@
           "role": "primary"
         }
       ]
+    },
+    {
+      "brand": "Mini",
+      "series": "Cooper",
+      "model": "Cooper 3 Kapı 1.5",
+      "trim": "Türkiye Paketi",
+      "generation": "Cooper F56/F55 TR MY2018",
+      "generationCode": "F56",
+      "yearFrom": 2018,
+      "yearTo": 2018,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1499",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Kasım 2018 Mini ÖTV listesi — only published Cooper body×package pairs.",
+      "sources": [
+        {
+          "url": "https://tr.motor1.com/news/274397/otv-indirimi-ardindan-fiyatlar-mini/",
+          "title": "Mini ÖTV sonrası Kasım 2018 — Cooper/Countryman × Türkiye Paketi/Salt/Pepper/Chili",
+          "date": "2018-11-02",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "motor1.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mini",
+      "series": "Cooper",
+      "model": "Cooper 3 Kapı 1.5",
+      "trim": "Salt",
+      "generation": "Cooper F56/F55 TR MY2018",
+      "generationCode": "F56",
+      "yearFrom": 2018,
+      "yearTo": 2018,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1499",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Kasım 2018 Mini ÖTV listesi — only published Cooper body×package pairs.",
+      "sources": [
+        {
+          "url": "https://tr.motor1.com/news/274397/otv-indirimi-ardindan-fiyatlar-mini/",
+          "title": "Mini ÖTV sonrası Kasım 2018 — Cooper/Countryman × Türkiye Paketi/Salt/Pepper/Chili",
+          "date": "2018-11-02",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "motor1.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mini",
+      "series": "Cooper",
+      "model": "Cooper 3 Kapı 1.5",
+      "trim": "Pepper",
+      "generation": "Cooper F56/F55 TR MY2018",
+      "generationCode": "F56",
+      "yearFrom": 2018,
+      "yearTo": 2018,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1499",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Kasım 2018 Mini ÖTV listesi — only published Cooper body×package pairs.",
+      "sources": [
+        {
+          "url": "https://tr.motor1.com/news/274397/otv-indirimi-ardindan-fiyatlar-mini/",
+          "title": "Mini ÖTV sonrası Kasım 2018 — Cooper/Countryman × Türkiye Paketi/Salt/Pepper/Chili",
+          "date": "2018-11-02",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "motor1.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mini",
+      "series": "Cooper",
+      "model": "Cooper 3 Kapı 1.5",
+      "trim": "Chili",
+      "generation": "Cooper F56/F55 TR MY2018",
+      "generationCode": "F56",
+      "yearFrom": 2018,
+      "yearTo": 2018,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1499",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Kasım 2018 Mini ÖTV listesi — only published Cooper body×package pairs.",
+      "sources": [
+        {
+          "url": "https://tr.motor1.com/news/274397/otv-indirimi-ardindan-fiyatlar-mini/",
+          "title": "Mini ÖTV sonrası Kasım 2018 — Cooper/Countryman × Türkiye Paketi/Salt/Pepper/Chili",
+          "date": "2018-11-02",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "motor1.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mini",
+      "series": "Cooper",
+      "model": "Cooper D 3 Kapı 1.5",
+      "trim": "Türkiye Paketi",
+      "generation": "Cooper F56/F55 TR MY2018",
+      "generationCode": "F56",
+      "yearFrom": 2018,
+      "yearTo": 2018,
+      "fuelType": "DIESEL",
+      "engineVolume": "1499",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Kasım 2018 Mini ÖTV listesi — only published Cooper body×package pairs.",
+      "sources": [
+        {
+          "url": "https://tr.motor1.com/news/274397/otv-indirimi-ardindan-fiyatlar-mini/",
+          "title": "Mini ÖTV sonrası Kasım 2018 — Cooper/Countryman × Türkiye Paketi/Salt/Pepper/Chili",
+          "date": "2018-11-02",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "motor1.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mini",
+      "series": "Cooper",
+      "model": "Cooper D 3 Kapı 1.5",
+      "trim": "Salt",
+      "generation": "Cooper F56/F55 TR MY2018",
+      "generationCode": "F56",
+      "yearFrom": 2018,
+      "yearTo": 2018,
+      "fuelType": "DIESEL",
+      "engineVolume": "1499",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Kasım 2018 Mini ÖTV listesi — only published Cooper body×package pairs.",
+      "sources": [
+        {
+          "url": "https://tr.motor1.com/news/274397/otv-indirimi-ardindan-fiyatlar-mini/",
+          "title": "Mini ÖTV sonrası Kasım 2018 — Cooper/Countryman × Türkiye Paketi/Salt/Pepper/Chili",
+          "date": "2018-11-02",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "motor1.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mini",
+      "series": "Cooper",
+      "model": "Cooper D 3 Kapı 1.5",
+      "trim": "Pepper",
+      "generation": "Cooper F56/F55 TR MY2018",
+      "generationCode": "F56",
+      "yearFrom": 2018,
+      "yearTo": 2018,
+      "fuelType": "DIESEL",
+      "engineVolume": "1499",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Kasım 2018 Mini ÖTV listesi — only published Cooper body×package pairs.",
+      "sources": [
+        {
+          "url": "https://tr.motor1.com/news/274397/otv-indirimi-ardindan-fiyatlar-mini/",
+          "title": "Mini ÖTV sonrası Kasım 2018 — Cooper/Countryman × Türkiye Paketi/Salt/Pepper/Chili",
+          "date": "2018-11-02",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "motor1.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mini",
+      "series": "Cooper",
+      "model": "Cooper D 3 Kapı 1.5",
+      "trim": "Chili",
+      "generation": "Cooper F56/F55 TR MY2018",
+      "generationCode": "F56",
+      "yearFrom": 2018,
+      "yearTo": 2018,
+      "fuelType": "DIESEL",
+      "engineVolume": "1499",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Kasım 2018 Mini ÖTV listesi — only published Cooper body×package pairs.",
+      "sources": [
+        {
+          "url": "https://tr.motor1.com/news/274397/otv-indirimi-ardindan-fiyatlar-mini/",
+          "title": "Mini ÖTV sonrası Kasım 2018 — Cooper/Countryman × Türkiye Paketi/Salt/Pepper/Chili",
+          "date": "2018-11-02",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "motor1.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mini",
+      "series": "Cooper",
+      "model": "Cooper 5 Kapı 1.5",
+      "trim": "Türkiye Paketi",
+      "generation": "Cooper F56/F55 TR MY2018",
+      "generationCode": "F56",
+      "yearFrom": 2018,
+      "yearTo": 2018,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1499",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Kasım 2018 Mini ÖTV listesi — only published Cooper body×package pairs.",
+      "sources": [
+        {
+          "url": "https://tr.motor1.com/news/274397/otv-indirimi-ardindan-fiyatlar-mini/",
+          "title": "Mini ÖTV sonrası Kasım 2018 — Cooper/Countryman × Türkiye Paketi/Salt/Pepper/Chili",
+          "date": "2018-11-02",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "motor1.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mini",
+      "series": "Cooper",
+      "model": "Cooper 5 Kapı 1.5",
+      "trim": "Salt",
+      "generation": "Cooper F56/F55 TR MY2018",
+      "generationCode": "F56",
+      "yearFrom": 2018,
+      "yearTo": 2018,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1499",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Kasım 2018 Mini ÖTV listesi — only published Cooper body×package pairs.",
+      "sources": [
+        {
+          "url": "https://tr.motor1.com/news/274397/otv-indirimi-ardindan-fiyatlar-mini/",
+          "title": "Mini ÖTV sonrası Kasım 2018 — Cooper/Countryman × Türkiye Paketi/Salt/Pepper/Chili",
+          "date": "2018-11-02",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "motor1.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mini",
+      "series": "Cooper",
+      "model": "Cooper 5 Kapı 1.5",
+      "trim": "Pepper",
+      "generation": "Cooper F56/F55 TR MY2018",
+      "generationCode": "F56",
+      "yearFrom": 2018,
+      "yearTo": 2018,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1499",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Kasım 2018 Mini ÖTV listesi — only published Cooper body×package pairs.",
+      "sources": [
+        {
+          "url": "https://tr.motor1.com/news/274397/otv-indirimi-ardindan-fiyatlar-mini/",
+          "title": "Mini ÖTV sonrası Kasım 2018 — Cooper/Countryman × Türkiye Paketi/Salt/Pepper/Chili",
+          "date": "2018-11-02",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "motor1.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mini",
+      "series": "Cooper",
+      "model": "Cooper 5 Kapı 1.5",
+      "trim": "Chili",
+      "generation": "Cooper F56/F55 TR MY2018",
+      "generationCode": "F56",
+      "yearFrom": 2018,
+      "yearTo": 2018,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1499",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Kasım 2018 Mini ÖTV listesi — only published Cooper body×package pairs.",
+      "sources": [
+        {
+          "url": "https://tr.motor1.com/news/274397/otv-indirimi-ardindan-fiyatlar-mini/",
+          "title": "Mini ÖTV sonrası Kasım 2018 — Cooper/Countryman × Türkiye Paketi/Salt/Pepper/Chili",
+          "date": "2018-11-02",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "motor1.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mini",
+      "series": "Cooper",
+      "model": "Cooper D 5 Kapı 1.5",
+      "trim": "Türkiye Paketi",
+      "generation": "Cooper F56/F55 TR MY2018",
+      "generationCode": "F56",
+      "yearFrom": 2018,
+      "yearTo": 2018,
+      "fuelType": "DIESEL",
+      "engineVolume": "1499",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Kasım 2018 Mini ÖTV listesi — only published Cooper body×package pairs.",
+      "sources": [
+        {
+          "url": "https://tr.motor1.com/news/274397/otv-indirimi-ardindan-fiyatlar-mini/",
+          "title": "Mini ÖTV sonrası Kasım 2018 — Cooper/Countryman × Türkiye Paketi/Salt/Pepper/Chili",
+          "date": "2018-11-02",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "motor1.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mini",
+      "series": "Cooper",
+      "model": "Cooper D 5 Kapı 1.5",
+      "trim": "Salt",
+      "generation": "Cooper F56/F55 TR MY2018",
+      "generationCode": "F56",
+      "yearFrom": 2018,
+      "yearTo": 2018,
+      "fuelType": "DIESEL",
+      "engineVolume": "1499",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Kasım 2018 Mini ÖTV listesi — only published Cooper body×package pairs.",
+      "sources": [
+        {
+          "url": "https://tr.motor1.com/news/274397/otv-indirimi-ardindan-fiyatlar-mini/",
+          "title": "Mini ÖTV sonrası Kasım 2018 — Cooper/Countryman × Türkiye Paketi/Salt/Pepper/Chili",
+          "date": "2018-11-02",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "motor1.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mini",
+      "series": "Cooper",
+      "model": "Cooper D 5 Kapı 1.5",
+      "trim": "Pepper",
+      "generation": "Cooper F56/F55 TR MY2018",
+      "generationCode": "F56",
+      "yearFrom": 2018,
+      "yearTo": 2018,
+      "fuelType": "DIESEL",
+      "engineVolume": "1499",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Kasım 2018 Mini ÖTV listesi — only published Cooper body×package pairs.",
+      "sources": [
+        {
+          "url": "https://tr.motor1.com/news/274397/otv-indirimi-ardindan-fiyatlar-mini/",
+          "title": "Mini ÖTV sonrası Kasım 2018 — Cooper/Countryman × Türkiye Paketi/Salt/Pepper/Chili",
+          "date": "2018-11-02",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "motor1.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mini",
+      "series": "Cooper",
+      "model": "Cooper D 5 Kapı 1.5",
+      "trim": "Chili",
+      "generation": "Cooper F56/F55 TR MY2018",
+      "generationCode": "F56",
+      "yearFrom": 2018,
+      "yearTo": 2018,
+      "fuelType": "DIESEL",
+      "engineVolume": "1499",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Kasım 2018 Mini ÖTV listesi — only published Cooper body×package pairs.",
+      "sources": [
+        {
+          "url": "https://tr.motor1.com/news/274397/otv-indirimi-ardindan-fiyatlar-mini/",
+          "title": "Mini ÖTV sonrası Kasım 2018 — Cooper/Countryman × Türkiye Paketi/Salt/Pepper/Chili",
+          "date": "2018-11-02",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "motor1.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mini",
+      "series": "Countryman",
+      "model": "Cooper Countryman 1.5",
+      "trim": "Türkiye Paketi",
+      "generation": "Countryman F60 TR MY2018",
+      "generationCode": "F60",
+      "yearFrom": 2018,
+      "yearTo": 2018,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1499",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Kasım 2018 Mini Countryman — only published Türkiye Paketi/Salt pairs (list truncated in source).",
+      "sources": [
+        {
+          "url": "https://tr.motor1.com/news/274397/otv-indirimi-ardindan-fiyatlar-mini/",
+          "title": "Mini ÖTV sonrası Kasım 2018 — Cooper/Countryman × Türkiye Paketi/Salt/Pepper/Chili",
+          "date": "2018-11-02",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "motor1.com"
+        },
+        {
+          "url": "https://aracbulten.com/mini-cooper-countryman-sifir-faiz-firsati/",
+          "title": "Mini Cooper Countryman Kasım 2019 sıfır faiz kampanyası — Classic band",
+          "date": "2019-11-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "aracbulten.com"
+        }
+      ]
+    },
+    {
+      "brand": "Mini",
+      "series": "Countryman",
+      "model": "Cooper Countryman 1.5",
+      "trim": "Salt",
+      "generation": "Countryman F60 TR MY2018",
+      "generationCode": "F60",
+      "yearFrom": 2018,
+      "yearTo": 2018,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1499",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Kasım 2018 Mini Countryman — only published Türkiye Paketi/Salt pairs (list truncated in source).",
+      "sources": [
+        {
+          "url": "https://tr.motor1.com/news/274397/otv-indirimi-ardindan-fiyatlar-mini/",
+          "title": "Mini ÖTV sonrası Kasım 2018 — Cooper/Countryman × Türkiye Paketi/Salt/Pepper/Chili",
+          "date": "2018-11-02",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "motor1.com"
+        },
+        {
+          "url": "https://aracbulten.com/mini-cooper-countryman-sifir-faiz-firsati/",
+          "title": "Mini Cooper Countryman Kasım 2019 sıfır faiz kampanyası — Classic band",
+          "date": "2019-11-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "aracbulten.com"
+        }
+      ]
     }
   ],
   "researchNotes": {
-    "researchedSeriesPass": [
-      "Cooper",
-      "Countryman",
-      "Cabrio"
-    ],
-    "reviewRequiredSeries": [
-      "Cabrio"
-    ]
+    "noApply": true,
+    "applyAllowed": false,
+    "phase": "research-deepen-batch-volvo-nissan-kia-dacia-cupra-mini",
+    "seriesWithoutResearch": [],
+    "currentOnlySeries": [],
+    "addedThisPass": 18,
+    "notFinalComplete": true
   },
   "completedAt": "2026-08-07T09:13:29.920Z"
 }

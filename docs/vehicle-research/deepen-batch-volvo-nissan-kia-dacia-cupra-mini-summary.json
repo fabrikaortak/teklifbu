@@ -1,0 +1,105 @@
+{
+  "ok": true,
+  "applyAllowed": false,
+  "checkpointCommit": "347a961",
+  "notFinalComplete": true,
+  "results": [
+    {
+      "brand": "Volvo",
+      "added": 8,
+      "total": 16,
+      "verified": 12,
+      "status": "COMPLETED",
+      "seriesWithoutResearch": [],
+      "currentOnly": [
+        "EX40"
+      ],
+      "noVerifiedTrimFound": 0,
+      "reviewRequired": 4
+    },
+    {
+      "brand": "Nissan",
+      "added": 18,
+      "total": 33,
+      "verified": 30,
+      "status": "COMPLETED",
+      "seriesWithoutResearch": [],
+      "currentOnly": [],
+      "noVerifiedTrimFound": 0,
+      "reviewRequired": 3
+    },
+    {
+      "brand": "Kia",
+      "added": 16,
+      "total": 28,
+      "verified": 22,
+      "status": "COMPLETED",
+      "seriesWithoutResearch": [],
+      "currentOnly": [],
+      "noVerifiedTrimFound": 0,
+      "reviewRequired": 6
+    },
+    {
+      "brand": "Dacia",
+      "added": 24,
+      "total": 39,
+      "verified": 37,
+      "status": "COMPLETED",
+      "seriesWithoutResearch": [],
+      "currentOnly": [],
+      "noVerifiedTrimFound": 0,
+      "reviewRequired": 2
+    },
+    {
+      "brand": "Cupra",
+      "added": 11,
+      "total": 19,
+      "verified": 17,
+      "status": "COMPLETED",
+      "seriesWithoutResearch": [],
+      "currentOnly": [
+        "Formentor",
+        "Leon"
+      ],
+      "noVerifiedTrimFound": 10,
+      "reviewRequired": 2
+    },
+    {
+      "brand": "Mini",
+      "added": 18,
+      "total": 25,
+      "verified": 24,
+      "status": "COMPLETED",
+      "seriesWithoutResearch": [],
+      "currentOnly": [],
+      "noVerifiedTrimFound": 0,
+      "reviewRequired": 1
+    }
+  ],
+  "sourceUrls": [
+    "https://arabamyeni.com/sifir/volvo/xc60/2019",
+    "https://yeniarabafiyatlari.com/volvo/xc60/2019-fiyatlari",
+    "https://arabamyeni.com/sifir/volvo/xc90/2019",
+    "https://yeniarabafiyatlari.com/volvo/xc90/2019-fiyatlari",
+    "https://arabamyeni.com/sifir/nissan/qashqai/2019",
+    "https://aracbulten.com/nissan-qashqai-fiyat-listesi-2019/",
+    "https://www.donanimhaber.com/yeni-nissan-juke-turkiye-de-iste-fiyati-ve-ozellikleri--129391",
+    "https://arabamyeni.com/sifir/nissan/juke/2018",
+    "https://caraba.net/kia-ekim-2019-fiyat-listesi/",
+    "https://yeniarabafiyatlari.com/kia/sportage/2019-fiyatlari",
+    "https://caraba.net/dacia-ekim-2019-fiyat-listesi/",
+    "https://www.arabavs.com/dacia-fiyat-listesi-aralik-ayi-2019.html",
+    "https://www.log.com.tr/2019-dacia-duster-donanim-ozellikleri-ve-fiyati/",
+    "https://www.otomobilir.com/satisa-sunulan-otomobillerin-fiyat-degisimi/",
+    "https://aracbulten.com/cupra-fiyat-listesi-2023/",
+    "https://tr.motor1.com/news/274397/otv-indirimi-ardindan-fiyatlar-mini/",
+    "https://aracbulten.com/mini-cooper-countryman-sifir-faiz-firsati/"
+  ],
+  "totals": {
+    "added": 95,
+    "verified": 142,
+    "total": 160,
+    "reviewRequired": 18,
+    "noVerifiedTrimFound": 10
+  }
+}

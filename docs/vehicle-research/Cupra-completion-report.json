@@ -1,0 +1,65 @@
+{
+  "at": "2026-08-07T10:14:22.891Z",
+  "brand": "Cupra",
+  "status": "COMPLETED",
+  "gate": {
+    "seriesWithoutResearch": [],
+    "seriesWithoutResearchCount": 0,
+    "pass": true
+  },
+  "selectableSeries": [
+    "Formentor",
+    "Leon",
+    "Terramar",
+    "Born"
+  ],
+  "researchedSeries": [
+    "Formentor",
+    "Leon",
+    "Terramar",
+    "Born"
+  ],
+  "verifiedVersions": [
+    "1.4 eHybrid 205 HP DSG",
+    "1.4 eHybrid 245 HP DSG",
+    "1.4 eHybrid DSG",
+    "1.5 TSI 150 HP DSG",
+    "1.5 TSI DSG",
+    "1.5 eTSI ACT 150 PS",
+    "1.5 eTSI mHEV DSG",
+    "2.0 TSI 310 HP DSG 4Drive",
+    "2.0 TSI VZ 4Drive DSG",
+    "VZ 1.4 eHybrid PHEV DSG",
+    "VZ 2.0 TSI 300 HP DSG"
+  ],
+  "verifiedTrims": [
+    "Impulse",
+    "Supreme",
+    "VZ-Line"
+  ],
+  "verifiedConfigurations": 17,
+  "officialSources": 0,
+  "multiSources": 17,
+  "reviewRequired": 2,
+  "rejected": 0,
+  "noVerifiedTrimFound": 10,
+  "seriesWithCurrentOnlyCoverage": [
+    "Formentor",
+    "Leon"
+  ],
+  "historicalCoverageIncompleteSeries": [
+    {
+      "series": "Formentor",
+      "historicalCoverage": "CURRENT_ONLY"
+    },
+    {
+      "series": "Leon",
+      "historicalCoverage": "CURRENT_ONLY"
+    },
+    {
+      "series": "Terramar",
+      "historicalCoverage": "HISTORICAL_COVERAGE_INCOMPLETE"
+    }
+  ],
+  "notes": "Deepen pass (not final catalog complete). Completed means every selectable series was systematically researched. Current-only and incomplete historical gens remain flagged. Research-only; applyAllowed=false."
+}

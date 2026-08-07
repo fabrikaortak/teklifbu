@@ -1,0 +1,77 @@
+{
+  "at": "2026-08-07T10:14:22.872Z",
+  "brand": "Dacia",
+  "status": "COMPLETED",
+  "gate": {
+    "seriesWithoutResearch": [],
+    "seriesWithoutResearchCount": 0,
+    "pass": true
+  },
+  "selectableSeries": [
+    "Sandero",
+    "Sandero Stepway",
+    "Logan",
+    "Jogger",
+    "Duster"
+  ],
+  "researchedSeries": [
+    "Sandero",
+    "Sandero Stepway",
+    "Logan",
+    "Jogger",
+    "Duster"
+  ],
+  "verifiedVersions": [
+    "1.0 SCe 75 bg",
+    "1.3 TCe 130 bg 4x2",
+    "1.3 TCe 150 bg 4x2",
+    "1.5 Blue dCi 115 bg 4x2",
+    "1.5 Blue dCi 115 bg 4x4",
+    "1.5 Blue dCi 75 bg",
+    "1.5 Blue dCi 95 bg",
+    "1.5 Blue dCi 95 bg 4x2",
+    "1.6 16v 115 bg 4x2",
+    "Blue dCi 115 4x4",
+    "ECO-G 100",
+    "ECO-G 115 bg 4x2",
+    "Eco-G 120",
+    "Eco-G 120 7K",
+    "TCe 100",
+    "TCe 110 7K",
+    "TCe 150 4x4",
+    "TCe 150 EDC",
+    "Turbo 90 ECO-G",
+    "Turbo 90 bg",
+    "Turbo 90 bg Easy-R"
+  ],
+  "verifiedTrims": [
+    "Ambiance",
+    "Comfort",
+    "Prestige",
+    "Prestige Plus",
+    "Stepway",
+    "Techroad",
+    "essential",
+    "expression",
+    "extreme",
+    "journey"
+  ],
+  "verifiedConfigurations": 37,
+  "officialSources": 0,
+  "multiSources": 37,
+  "reviewRequired": 2,
+  "rejected": 0,
+  "noVerifiedTrimFound": 0,
+  "seriesWithCurrentOnlyCoverage": [],
+  "historicalCoverageIncompleteSeries": [
+    {
+      "series": "Logan",
+      "historicalCoverage": "HISTORICAL_COVERAGE_INCOMPLETE"
+    },
+    {
+      "series": "Jogger",
+      "historicalCoverage": "HISTORICAL_COVERAGE_INCOMPLETE"
+    }
+  ],
+  "notes": "Deepen pass (not final catalog complete). Completed means every selectable series was systematically researched. Current-only and incomplete historical gens remain flagged. Research-only; applyAllowed=false."
+}

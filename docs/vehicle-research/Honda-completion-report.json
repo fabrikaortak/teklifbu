@@ -1,0 +1,47 @@
+{
+  "at": "2026-08-07T10:14:37.784Z",
+  "brand": "Honda",
+  "status": "COMPLETED",
+  "gate": {
+    "seriesWithoutResearch": [],
+    "seriesWithoutResearchCount": 0,
+    "pass": true
+  },
+  "selectableSeries": [
+    "HR-V",
+    "Civic"
+  ],
+  "researchedSeries": [
+    "HR-V",
+    "Civic"
+  ],
+  "verifiedVersions": [
+    "1.5 130 PS",
+    "1.5 VTEC Turbo 182 PS",
+    "1.5 e:HEV 131 PS",
+    "1.6 125 PS",
+    "1.6 Dream Eco",
+    "1.6 ECO",
+    "1.6 Elegance Dizel",
+    "1.6 Elegance Eco",
+    "1.6 Executive Eco"
+  ],
+  "verifiedTrims": [
+    "Advance",
+    "Dream",
+    "Elegance",
+    "Executive",
+    "Executive+",
+    "Sport",
+    "Style+"
+  ],
+  "verifiedConfigurations": 24,
+  "officialSources": 3,
+  "multiSources": 21,
+  "reviewRequired": 1,
+  "rejected": 0,
+  "noVerifiedTrimFound": 0,
+  "seriesWithCurrentOnlyCoverage": [],
+  "historicalCoverageIncompleteSeries": [],
+  "notes": "Completed means every selectable series was systematically researched. Current-only and incomplete historical gens remain explicitly flagged. Research-only; applyAllowed=false."
+}

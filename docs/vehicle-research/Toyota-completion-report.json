@@ -1,0 +1,50 @@
+{
+  "at": "2026-08-07T10:07:24.285Z",
+  "brand": "Toyota",
+  "status": "COMPLETED",
+  "gate": {
+    "seriesWithoutResearch": [],
+    "seriesWithoutResearchCount": 0,
+    "pass": true
+  },
+  "selectableSeries": [
+    "Corolla",
+    "C-HR",
+    "RAV4"
+  ],
+  "researchedSeries": [
+    "Corolla",
+    "C-HR",
+    "RAV4"
+  ],
+  "verifiedVersions": [
+    "1.2 Turbo",
+    "1.2 Turbo Multidrive S",
+    "1.5 Multidrive S",
+    "1.6",
+    "1.6 Multidrive S",
+    "1.8 Hybrid e-CVT",
+    "2.5 Hybrid 4x4 e-CVT"
+  ],
+  "verifiedTrims": [
+    "Dream",
+    "Dream X-Pack",
+    "Flame",
+    "Flame X-Pack",
+    "GR SPORT",
+    "Passion",
+    "Passion X-Pack",
+    "Passion X-Sport",
+    "Vision",
+    "Vision Plus"
+  ],
+  "verifiedConfigurations": 46,
+  "officialSources": 0,
+  "multiSources": 46,
+  "reviewRequired": 1,
+  "rejected": 0,
+  "noVerifiedTrimFound": 0,
+  "seriesWithCurrentOnlyCoverage": [],
+  "historicalCoverageIncompleteSeries": [],
+  "notes": "Completed means every selectable series was systematically researched. Current-only and incomplete historical gens remain explicitly flagged. Research-only; applyAllowed=false."
+}

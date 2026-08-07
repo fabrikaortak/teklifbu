@@ -1,0 +1,101 @@
+{
+  "at": "2026-08-07T10:15:27.227Z",
+  "brand": "Land Rover",
+  "status": "COMPLETED",
+  "gate": {
+    "seriesWithoutResearch": [],
+    "seriesWithoutResearchCount": 0,
+    "pass": true
+  },
+  "selectableSeries": [
+    "Defender",
+    "Range Rover Evoque",
+    "Discovery Sport",
+    "Range Rover Velar",
+    "Range Rover Sport",
+    "Range Rover"
+  ],
+  "researchedSeries": [
+    "Defender",
+    "Range Rover Evoque",
+    "Discovery Sport",
+    "Range Rover Velar",
+    "Range Rover Sport",
+    "Range Rover"
+  ],
+  "verifiedVersions": [
+    "1.5 MHEV 160 bg",
+    "1.5 PHEV 269 bg",
+    "110 2.0 PHEV 300 bg",
+    "110 3.0D Mild Hybrid 200 bg",
+    "110 4.4 Mild Hybrid 635 bg",
+    "130 3.0D Mild Hybrid 350 bg",
+    "2.0D MHEV 204 bg",
+    "3.0D MHEV 300 bg",
+    "3.0D MHEV 350 bg",
+    "4.4 MHEV 615 bg",
+    "SWB 3.0 PHEV 460 bg",
+    "SWB 3.0D MHEV 300 bg",
+    "SWB 3.0D MHEV 350 bg",
+    "SWB 4.4 MHEV 530 bg"
+  ],
+  "verifiedTrims": [
+    "AUTOBIOGRAPHY",
+    "DYNAMIC HSE",
+    "DYNAMIC S",
+    "DYNAMIC SE",
+    "LANDMARK",
+    "OCTA",
+    "S",
+    "SIGNATURE",
+    "SIGNATURE PLUS",
+    "SV BLACK",
+    "ULTIMATE",
+    "X-DYNAMIC HSE"
+  ],
+  "verifiedConfigurations": 21,
+  "officialSources": 21,
+  "multiSources": 0,
+  "reviewRequired": 5,
+  "rejected": 0,
+  "noVerifiedTrimFound": 0,
+  "seriesWithCurrentOnlyCoverage": [
+    "Range Rover Evoque",
+    "Discovery Sport",
+    "Range Rover Velar",
+    "Range Rover Sport",
+    "Range Rover"
+  ],
+  "historicalCoverageIncompleteSeries": [
+    {
+      "series": "Range Rover Evoque",
+      "historicalCoverage": "CURRENT_ONLY"
+    },
+    {
+      "series": "Discovery Sport",
+      "historicalCoverage": "CURRENT_ONLY"
+    },
+    {
+      "series": "Range Rover Velar",
+      "historicalCoverage": "CURRENT_ONLY"
+    },
+    {
+      "series": "Range Rover Sport",
+      "historicalCoverage": "CURRENT_ONLY"
+    },
+    {
+      "series": "Range Rover",
+      "historicalCoverage": "CURRENT_ONLY"
+    }
+  ],
+  "sourceUrls": [
+    "https://www.landrover.com.tr/",
+    "https://www.landrover.com.tr/build-and-price/defender-fiyat-listesi",
+    "https://www.landrover.com.tr/build-and-price/discovery-sport-fiyat-listesi",
+    "https://www.landrover.com.tr/build-and-price/range-rover-evoque-fiyat-listesi.pdf",
+    "https://www.landrover.com.tr/build-and-price/range-rover-fiyat-listesi",
+    "https://www.landrover.com.tr/build-and-price/range-rover-sport-fiyat-listesi",
+    "https://www.landrover.com.tr/build-and-price/range-rover-velar-fiyat-listesi.pdf"
+  ],
+  "notes": "Completed means every selectable series was systematically researched. Current-only and incomplete historical gens remain explicitly flagged. Research-only; applyAllowed=false. Not final absolute historical complete."
+}

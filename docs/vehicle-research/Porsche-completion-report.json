@@ -1,0 +1,133 @@
+{
+  "at": "2026-08-07T10:15:27.193Z",
+  "brand": "Porsche",
+  "status": "COMPLETED",
+  "gate": {
+    "seriesWithoutResearch": [],
+    "seriesWithoutResearchCount": 0,
+    "pass": true
+  },
+  "selectableSeries": [
+    "911",
+    "Cayenne",
+    "Cayenne Coupe",
+    "Macan",
+    "Panamera",
+    "Taycan",
+    "Taycan Cross Turismo"
+  ],
+  "researchedSeries": [
+    "911",
+    "Cayenne",
+    "Cayenne Coupe",
+    "Macan",
+    "Panamera",
+    "Taycan",
+    "Taycan Cross Turismo"
+  ],
+  "verifiedVersions": [
+    "4",
+    "4 E-Hybrid",
+    "4S",
+    "4S E-Hybrid",
+    "Carrera",
+    "Carrera 4 GTS",
+    "Carrera 4 GTS Cabriolet",
+    "Carrera 4S",
+    "Carrera 4S Cabriolet",
+    "Carrera Cabriolet",
+    "Carrera GTS",
+    "Carrera S",
+    "Carrera S Cabriolet",
+    "Carrera T",
+    "Cayenne",
+    "Coupe",
+    "Coupe E-Hybrid",
+    "Coupe Electric",
+    "E-Hybrid",
+    "Electric",
+    "GT3",
+    "GT3 Touring",
+    "GTS",
+    "GTS Coupe",
+    "Macan",
+    "Macan 4",
+    "Macan 4S",
+    "Macan Turbo",
+    "Panamera",
+    "S",
+    "S Coupe",
+    "S Coupe Electric",
+    "S E-Hybrid",
+    "S E-Hybrid Coupe",
+    "S Electric",
+    "Spirit 70",
+    "Targa 4 GTS",
+    "Targa 4S",
+    "Taycan",
+    "Turbo",
+    "Turbo Coupe Electric",
+    "Turbo E-Hybrid",
+    "Turbo Electric",
+    "Turbo S",
+    "Turbo S Cabriolet",
+    "Turbo S E-Hybrid"
+  ],
+  "verifiedTrims": [
+    "Black Edition",
+    "Executive",
+    "Standart"
+  ],
+  "verifiedConfigurations": 69,
+  "officialSources": 4,
+  "multiSources": 65,
+  "reviewRequired": 0,
+  "rejected": 0,
+  "noVerifiedTrimFound": 55,
+  "seriesWithCurrentOnlyCoverage": [
+    "911",
+    "Cayenne",
+    "Cayenne Coupe",
+    "Macan",
+    "Panamera",
+    "Taycan",
+    "Taycan Cross Turismo"
+  ],
+  "historicalCoverageIncompleteSeries": [
+    {
+      "series": "911",
+      "historicalCoverage": "CURRENT_ONLY"
+    },
+    {
+      "series": "Cayenne",
+      "historicalCoverage": "CURRENT_ONLY"
+    },
+    {
+      "series": "Cayenne Coupe",
+      "historicalCoverage": "CURRENT_ONLY"
+    },
+    {
+      "series": "Macan",
+      "historicalCoverage": "CURRENT_ONLY"
+    },
+    {
+      "series": "Panamera",
+      "historicalCoverage": "CURRENT_ONLY"
+    },
+    {
+      "series": "Taycan",
+      "historicalCoverage": "CURRENT_ONLY"
+    },
+    {
+      "series": "Taycan Cross Turismo",
+      "historicalCoverage": "CURRENT_ONLY"
+    }
+  ],
+  "sourceUrls": [
+    "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+    "https://otoviraj.com/porsche-fiyat-listesi/",
+    "https://www.dogusoto.com.tr/porsche-yeni-macan-4-85dd7",
+    "https://www.porsche.com.tr/fiyat-listesi"
+  ],
+  "notes": "Completed means every selectable series was systematically researched. Current-only and incomplete historical gens remain explicitly flagged. Research-only; applyAllowed=false. Not final absolute historical complete."
+}

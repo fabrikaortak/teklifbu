@@ -1,8 +1,8 @@
 {
   "brand": "Porsche",
   "brandSlug": "porsche",
-  "version": "2026.08-deep-porsche-v2-official-aug2026",
-  "generatedAt": "2026-08-07T09:34:56.791Z",
+  "version": "2026.08-deep-porsche-v3-premium-gate",
+  "generatedAt": "2026-08-07T10:15:27.194Z",
   "seriesCovered": [
     "911",
     "Cayenne",
@@ -2672,18 +2672,21 @@
     }
   ],
   "researchNotes": {
-    "researchedSeriesPass": [
-      "Macan",
+    "noApply": true,
+    "applyAllowed": false,
+    "phase": "research-premium-ev-batch",
+    "seriesWithoutResearch": [],
+    "currentOnlySeries": [
+      "911",
       "Cayenne",
       "Cayenne Coupe",
-      "911",
+      "Macan",
+      "Panamera",
       "Taycan",
-      "Taycan Cross Turismo",
-      "Panamera"
+      "Taycan Cross Turismo"
     ],
-    "reviewRequiredSeries": [],
-    "officialListDate": "2026-08-04",
-    "verifiedCount": 65
+    "addedThisPass": 0,
+    "electricOverlayNote": "Do not invent duplicate EV series"
   },
   "completedAt": "2026-08-07T09:34:56.791Z"
 }

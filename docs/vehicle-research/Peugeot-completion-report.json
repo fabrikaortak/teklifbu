@@ -1,0 +1,63 @@
+{
+  "at": "2026-08-07T10:07:24.301Z",
+  "brand": "Peugeot",
+  "status": "COMPLETED",
+  "gate": {
+    "seriesWithoutResearch": [],
+    "seriesWithoutResearchCount": 0,
+    "pass": true
+  },
+  "selectableSeries": [
+    "3008",
+    "E-3008",
+    "208",
+    "308",
+    "2008"
+  ],
+  "researchedSeries": [
+    "3008",
+    "E-3008",
+    "208",
+    "308",
+    "2008"
+  ],
+  "verifiedVersions": [
+    "1.2 Hybrid 145 hp eDCS6",
+    "1.2 PureTech 110 hp",
+    "1.2 PureTech 130 hp",
+    "1.2 PureTech 155 hp",
+    "1.2 PureTech 82 hp",
+    "1.5 BlueHDi 100 hp",
+    "1.5 BlueHDi 120 hp",
+    "1.5 BlueHDi 130 hp",
+    "1.6 PureTech 180 hp",
+    "157 kW (210 hp)",
+    "E-208 100 kW",
+    "E-308 115 kW"
+  ],
+  "verifiedTrims": [
+    "Active",
+    "Active Prime",
+    "Allure",
+    "Allure Selection",
+    "GT",
+    "GT Selection",
+    "GT-Line",
+    "Signature",
+    "Style"
+  ],
+  "verifiedConfigurations": 35,
+  "officialSources": 6,
+  "multiSources": 29,
+  "reviewRequired": 3,
+  "rejected": 0,
+  "noVerifiedTrimFound": 0,
+  "seriesWithCurrentOnlyCoverage": [],
+  "historicalCoverageIncompleteSeries": [
+    {
+      "series": "E-3008",
+      "historicalCoverage": "HISTORICAL_COVERAGE_INCOMPLETE"
+    }
+  ],
+  "notes": "Completed means every selectable series was systematically researched. Current-only and incomplete historical gens remain explicitly flagged. Research-only; applyAllowed=false."
+}

@@ -1,12 +1,12 @@
 {
   "brand": "Seat",
   "brandSlug": "seat",
-  "version": "2026.08-deep-seat-v1-current-tr",
-  "generatedAt": "2026-08-07T12:00:00.000Z",
+  "version": "2026.08-deep-seat-v2-historical",
+  "generatedAt": "2026-08-07T10:14:37.815Z",
   "seriesCovered": [
+    "Ateca",
     "Ibiza",
-    "Leon",
-    "Ateca"
+    "Leon"
   ],
   "status": "COMPLETED",
   "notes": "Ibiza/Leon/Ateca from SEAT Türkiye-cited Aug/Jul 2026 price tables.",
@@ -181,16 +181,479 @@
           "role": "secondary"
         }
       ]
+    },
+    {
+      "brand": "Seat",
+      "series": "Ibiza",
+      "model": "1.0 EcoTSI 115 HP",
+      "trim": "Style",
+      "generation": "Ibiza VI TR MY2019",
+      "generationCode": "KJ",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "999",
+      "powerHp": "115",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Eylül 2019 Ibiza 1.0 EcoTSI DSG Style — published pair.",
+      "sources": [
+        {
+          "url": "https://caraba.net/seat-eylul-2019-fiyat-listesi/",
+          "title": "SEAT Eylül 2019 Ibiza/Leon/Ateca Style/FR/Xcellence",
+          "date": "2019-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Seat",
+      "series": "Ibiza",
+      "model": "1.0 EcoTSI 115 HP",
+      "trim": "Style",
+      "generation": "Ibiza VI TR MY2020",
+      "generationCode": "KJ",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "999",
+      "powerHp": "115",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Mart 2020 Ibiza 1.0 EcoTSI DSG Style — published pair.",
+      "sources": [
+        {
+          "url": "https://arabavs.com/seat-mart-ayi-fiyat-listesi-2020.html",
+          "title": "SEAT Mart 2020 Ibiza/Leon/Ateca fiyat listesi",
+          "date": "2020-03-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Seat",
+      "series": "Leon",
+      "model": "1.5 EcoTSI ACT 150 HP",
+      "trim": "FR",
+      "generation": "Leon III TR MY2019",
+      "generationCode": "5F",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1498",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Eylül 2019 Leon — Style/FR/Xcellence only as published.",
+      "sources": [
+        {
+          "url": "https://caraba.net/seat-eylul-2019-fiyat-listesi/",
+          "title": "SEAT Eylül 2019 Ibiza/Leon/Ateca Style/FR/Xcellence",
+          "date": "2019-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Seat",
+      "series": "Leon",
+      "model": "1.5 EcoTSI ACT 150 HP",
+      "trim": "Xcellence",
+      "generation": "Leon III TR MY2019",
+      "generationCode": "5F",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1498",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Eylül 2019 Leon — Style/FR/Xcellence only as published.",
+      "sources": [
+        {
+          "url": "https://caraba.net/seat-eylul-2019-fiyat-listesi/",
+          "title": "SEAT Eylül 2019 Ibiza/Leon/Ateca Style/FR/Xcellence",
+          "date": "2019-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Seat",
+      "series": "Leon",
+      "model": "1.6 TDI 115 HP",
+      "trim": "Style",
+      "generation": "Leon III TR MY2019",
+      "generationCode": "5F",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "115",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Eylül 2019 Leon — Style/FR/Xcellence only as published.",
+      "sources": [
+        {
+          "url": "https://caraba.net/seat-eylul-2019-fiyat-listesi/",
+          "title": "SEAT Eylül 2019 Ibiza/Leon/Ateca Style/FR/Xcellence",
+          "date": "2019-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Seat",
+      "series": "Leon",
+      "model": "1.6 TDI 115 HP",
+      "trim": "Xcellence",
+      "generation": "Leon III TR MY2019",
+      "generationCode": "5F",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "115",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Eylül 2019 Leon — Style/FR/Xcellence only as published.",
+      "sources": [
+        {
+          "url": "https://caraba.net/seat-eylul-2019-fiyat-listesi/",
+          "title": "SEAT Eylül 2019 Ibiza/Leon/Ateca Style/FR/Xcellence",
+          "date": "2019-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Seat",
+      "series": "Leon",
+      "model": "1.6 TDI 115 HP",
+      "trim": "FR",
+      "generation": "Leon III TR MY2019",
+      "generationCode": "5F",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "115",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Eylül 2019 Leon — Style/FR/Xcellence only as published.",
+      "sources": [
+        {
+          "url": "https://caraba.net/seat-eylul-2019-fiyat-listesi/",
+          "title": "SEAT Eylül 2019 Ibiza/Leon/Ateca Style/FR/Xcellence",
+          "date": "2019-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Seat",
+      "series": "Leon",
+      "model": "1.0 EcoTSI 115 HP",
+      "trim": "Style",
+      "generation": "Leon III TR MY2020",
+      "generationCode": "5F",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "999",
+      "powerHp": "115",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Mart 2020 Leon — Style/FR/Xcellence only as published.",
+      "sources": [
+        {
+          "url": "https://arabavs.com/seat-mart-ayi-fiyat-listesi-2020.html",
+          "title": "SEAT Mart 2020 Ibiza/Leon/Ateca fiyat listesi",
+          "date": "2020-03-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Seat",
+      "series": "Leon",
+      "model": "1.5 EcoTSI 130 HP",
+      "trim": "FR",
+      "generation": "Leon III TR MY2020",
+      "generationCode": "5F",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1498",
+      "powerHp": "130",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Mart 2020 Leon — Style/FR/Xcellence only as published.",
+      "sources": [
+        {
+          "url": "https://arabavs.com/seat-mart-ayi-fiyat-listesi-2020.html",
+          "title": "SEAT Mart 2020 Ibiza/Leon/Ateca fiyat listesi",
+          "date": "2020-03-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Seat",
+      "series": "Leon",
+      "model": "1.5 EcoTSI ACT 150 HP",
+      "trim": "Style",
+      "generation": "Leon III TR MY2020",
+      "generationCode": "5F",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1498",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Mart 2020 Leon — Style/FR/Xcellence only as published.",
+      "sources": [
+        {
+          "url": "https://arabavs.com/seat-mart-ayi-fiyat-listesi-2020.html",
+          "title": "SEAT Mart 2020 Ibiza/Leon/Ateca fiyat listesi",
+          "date": "2020-03-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Seat",
+      "series": "Leon",
+      "model": "1.5 EcoTSI ACT 150 HP",
+      "trim": "FR",
+      "generation": "Leon III TR MY2020",
+      "generationCode": "5F",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1498",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Mart 2020 Leon — Style/FR/Xcellence only as published.",
+      "sources": [
+        {
+          "url": "https://arabavs.com/seat-mart-ayi-fiyat-listesi-2020.html",
+          "title": "SEAT Mart 2020 Ibiza/Leon/Ateca fiyat listesi",
+          "date": "2020-03-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Seat",
+      "series": "Leon",
+      "model": "1.5 EcoTSI ACT 150 HP",
+      "trim": "Xcellence",
+      "generation": "Leon III TR MY2020",
+      "generationCode": "5F",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1498",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Mart 2020 Leon — Style/FR/Xcellence only as published.",
+      "sources": [
+        {
+          "url": "https://arabavs.com/seat-mart-ayi-fiyat-listesi-2020.html",
+          "title": "SEAT Mart 2020 Ibiza/Leon/Ateca fiyat listesi",
+          "date": "2020-03-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Seat",
+      "series": "Ateca",
+      "model": "1.6 TDI 115 HP",
+      "trim": "Xcellence",
+      "generation": "Ateca TR MY2019",
+      "generationCode": "Ateca",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "115",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Eylül 2019 Ateca 1.6 TDI DSG Xcellence — published pair.",
+      "sources": [
+        {
+          "url": "https://caraba.net/seat-eylul-2019-fiyat-listesi/",
+          "title": "SEAT Eylül 2019 Ibiza/Leon/Ateca Style/FR/Xcellence",
+          "date": "2019-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Seat",
+      "series": "Ateca",
+      "model": "1.5 EcoTSI ACT 150 HP",
+      "trim": "Xcellence",
+      "generation": "Ateca TR MY2020",
+      "generationCode": "Ateca",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1498",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Mart 2020 Ateca — Xcellence/FR only as published.",
+      "sources": [
+        {
+          "url": "https://arabavs.com/seat-mart-ayi-fiyat-listesi-2020.html",
+          "title": "SEAT Mart 2020 Ibiza/Leon/Ateca fiyat listesi",
+          "date": "2020-03-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Seat",
+      "series": "Ateca",
+      "model": "1.5 EcoTSI ACT 150 HP",
+      "trim": "FR",
+      "generation": "Ateca TR MY2020",
+      "generationCode": "Ateca",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1498",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Mart 2020 Ateca — Xcellence/FR only as published.",
+      "sources": [
+        {
+          "url": "https://arabavs.com/seat-mart-ayi-fiyat-listesi-2020.html",
+          "title": "SEAT Mart 2020 Ibiza/Leon/Ateca fiyat listesi",
+          "date": "2020-03-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Seat",
+      "series": "Ateca",
+      "model": "1.6 TDI 115 HP",
+      "trim": "Xcellence",
+      "generation": "Ateca TR MY2020",
+      "generationCode": "Ateca",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "115",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Mart 2020 Ateca — Xcellence/FR only as published.",
+      "sources": [
+        {
+          "url": "https://arabavs.com/seat-mart-ayi-fiyat-listesi-2020.html",
+          "title": "SEAT Mart 2020 Ibiza/Leon/Ateca fiyat listesi",
+          "date": "2020-03-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
     }
   ],
   "researchNotes": {
-    "researchedSeriesPass": [
-      "Ibiza",
-      "Leon",
-      "Ateca"
-    ],
-    "historicalArchivesIngested": [],
-    "reviewRequiredSeries": []
+    "noApply": true,
+    "applyAllowed": false,
+    "phase": "research-mass-market-batch",
+    "seriesWithoutResearch": [],
+    "currentOnlySeries": [],
+    "addedThisPass": 16
   },
   "completedAt": "2026-08-07T09:13:29.945Z"
 }

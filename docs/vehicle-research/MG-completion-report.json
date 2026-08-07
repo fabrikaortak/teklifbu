@@ -1,0 +1,69 @@
+{
+  "at": "2026-08-07T10:15:27.334Z",
+  "brand": "MG",
+  "status": "COMPLETED",
+  "gate": {
+    "seriesWithoutResearch": [],
+    "seriesWithoutResearchCount": 0,
+    "pass": true
+  },
+  "selectableSeries": [
+    "ZS Hybrid+",
+    "HS Hybrid+",
+    "HS",
+    "MG7"
+  ],
+  "researchedSeries": [
+    "ZS Hybrid+",
+    "HS Hybrid+",
+    "HS",
+    "MG7"
+  ],
+  "verifiedVersions": [
+    "Gasoline",
+    "Hybrid+",
+    "Hybrid+ 197 PS"
+  ],
+  "verifiedTrims": [
+    "Excellence",
+    "Excellence Red Edition",
+    "Luxury",
+    "Luxury Cam Tavanlı"
+  ],
+  "verifiedConfigurations": 5,
+  "officialSources": 1,
+  "multiSources": 4,
+  "reviewRequired": 0,
+  "rejected": 0,
+  "noVerifiedTrimFound": 0,
+  "seriesWithCurrentOnlyCoverage": [
+    "ZS Hybrid+",
+    "HS Hybrid+",
+    "HS",
+    "MG7"
+  ],
+  "historicalCoverageIncompleteSeries": [
+    {
+      "series": "ZS Hybrid+",
+      "historicalCoverage": "CURRENT_ONLY"
+    },
+    {
+      "series": "HS Hybrid+",
+      "historicalCoverage": "CURRENT_ONLY"
+    },
+    {
+      "series": "HS",
+      "historicalCoverage": "CURRENT_ONLY"
+    },
+    {
+      "series": "MG7",
+      "historicalCoverage": "CURRENT_ONLY"
+    }
+  ],
+  "sourceUrls": [
+    "https://www.donanimhaber.com/mg-fiyat-listesi-sifir-mg-araba-fiyatlari--158913",
+    "https://www.mg-turkey.com/tr/fiyat-listesi.html",
+    "https://www.webtekno.com/agustos-2026-mg-fiyat-listesi-h221788.html"
+  ],
+  "notes": "Completed means every selectable series was systematically researched. Current-only and incomplete historical gens remain explicitly flagged. Research-only; applyAllowed=false. Not final absolute historical complete."
+}

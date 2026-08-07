@@ -1,17 +1,20 @@
 {
   "brand": "Volkswagen",
   "brandSlug": "volkswagen",
-  "version": "2026.08-deep-vw-v1-current-tr",
-  "generatedAt": "2026-08-07T11:54:00.000Z",
+  "version": "2026.08-deep-vw-v2-historical",
+  "generatedAt": "2026-08-07T10:01:24.551Z",
   "seriesCovered": [
-    "Golf",
-    "Passat",
-    "Tiguan",
-    "Polo",
     "Caddy",
+    "Golf",
+    "ID.3",
     "ID.4",
     "ID.7",
-    "ID.3"
+    "Passat",
+    "Polo",
+    "T-Cross",
+    "T-Roc",
+    "Tiguan",
+    "Transporter"
   ],
   "status": "COMPLETED",
   "notes": "Passenger rows from Temmuz 2026 published TR price tables + Mart 2026 Webtekno (VW-sourced). Caddy from official ticariarac.vw.com.tr (01.08.2026). Model=engine/version; trim=package (Life/Style/R-Line/etc). engineVolume only when cm3 printed on sourced page.",
@@ -1048,30 +1051,847 @@
           "role": "primary"
         }
       ]
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Golf",
+      "model": "1.0 TSI",
+      "trim": "Midline Plus",
+      "generation": "Mk7",
+      "generationCode": "Mk7",
+      "yearFrom": 2018,
+      "yearTo": 2018,
+      "fuelType": "GASOLINE",
+      "engineVolume": "999",
+      "powerHp": null,
+      "transmission": "MANUAL",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2018 TR Golf matrix — only listed version×trim pairs (no fan-out of all VW packages).",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/volkswagen/golf/2018/1-6-tdi-highline-dsg-fiyatlari",
+          "title": "2018 VW Golf 1.6 TDI Highline DSG + sibling matrix",
+          "date": "2018-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/volkswagen/golf/2018/1-6-tdi-comfortline-fiyatlari",
+          "title": "2018 VW Golf 1.6 TDI Comfortline",
+          "date": "2018-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Golf",
+      "model": "1.0 TSI",
+      "trim": "Comfortline",
+      "generation": "Mk7",
+      "generationCode": "Mk7",
+      "yearFrom": 2018,
+      "yearTo": 2018,
+      "fuelType": "GASOLINE",
+      "engineVolume": "999",
+      "powerHp": null,
+      "transmission": "MANUAL",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2018 TR Golf matrix — only listed version×trim pairs (no fan-out of all VW packages).",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/volkswagen/golf/2018/1-6-tdi-highline-dsg-fiyatlari",
+          "title": "2018 VW Golf 1.6 TDI Highline DSG + sibling matrix",
+          "date": "2018-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/volkswagen/golf/2018/1-6-tdi-comfortline-fiyatlari",
+          "title": "2018 VW Golf 1.6 TDI Comfortline",
+          "date": "2018-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Golf",
+      "model": "1.0 TSI",
+      "trim": "Comfortline",
+      "generation": "Mk7",
+      "generationCode": "Mk7",
+      "yearFrom": 2018,
+      "yearTo": 2018,
+      "fuelType": "GASOLINE",
+      "engineVolume": "999",
+      "powerHp": null,
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2018 TR Golf matrix — only listed version×trim pairs (no fan-out of all VW packages).",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/volkswagen/golf/2018/1-6-tdi-highline-dsg-fiyatlari",
+          "title": "2018 VW Golf 1.6 TDI Highline DSG + sibling matrix",
+          "date": "2018-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/volkswagen/golf/2018/1-6-tdi-comfortline-fiyatlari",
+          "title": "2018 VW Golf 1.6 TDI Comfortline",
+          "date": "2018-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Golf",
+      "model": "1.0 TSI",
+      "trim": "Highline",
+      "generation": "Mk7",
+      "generationCode": "Mk7",
+      "yearFrom": 2018,
+      "yearTo": 2018,
+      "fuelType": "GASOLINE",
+      "engineVolume": "999",
+      "powerHp": null,
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2018 TR Golf matrix — only listed version×trim pairs (no fan-out of all VW packages).",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/volkswagen/golf/2018/1-6-tdi-highline-dsg-fiyatlari",
+          "title": "2018 VW Golf 1.6 TDI Highline DSG + sibling matrix",
+          "date": "2018-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/volkswagen/golf/2018/1-6-tdi-comfortline-fiyatlari",
+          "title": "2018 VW Golf 1.6 TDI Comfortline",
+          "date": "2018-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Golf",
+      "model": "1.4 TSI",
+      "trim": "Comfortline",
+      "generation": "Mk7",
+      "generationCode": "Mk7",
+      "yearFrom": 2018,
+      "yearTo": 2018,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1395",
+      "powerHp": null,
+      "transmission": "MANUAL",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2018 TR Golf matrix — only listed version×trim pairs (no fan-out of all VW packages).",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/volkswagen/golf/2018/1-6-tdi-highline-dsg-fiyatlari",
+          "title": "2018 VW Golf 1.6 TDI Highline DSG + sibling matrix",
+          "date": "2018-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/volkswagen/golf/2018/1-6-tdi-comfortline-fiyatlari",
+          "title": "2018 VW Golf 1.6 TDI Comfortline",
+          "date": "2018-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Golf",
+      "model": "1.4 TSI",
+      "trim": "Comfortline",
+      "generation": "Mk7",
+      "generationCode": "Mk7",
+      "yearFrom": 2018,
+      "yearTo": 2018,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1395",
+      "powerHp": null,
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2018 TR Golf matrix — only listed version×trim pairs (no fan-out of all VW packages).",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/volkswagen/golf/2018/1-6-tdi-highline-dsg-fiyatlari",
+          "title": "2018 VW Golf 1.6 TDI Highline DSG + sibling matrix",
+          "date": "2018-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/volkswagen/golf/2018/1-6-tdi-comfortline-fiyatlari",
+          "title": "2018 VW Golf 1.6 TDI Comfortline",
+          "date": "2018-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Golf",
+      "model": "1.4 TSI",
+      "trim": "Highline",
+      "generation": "Mk7",
+      "generationCode": "Mk7",
+      "yearFrom": 2018,
+      "yearTo": 2018,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1395",
+      "powerHp": null,
+      "transmission": "MANUAL",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2018 TR Golf matrix — only listed version×trim pairs (no fan-out of all VW packages).",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/volkswagen/golf/2018/1-6-tdi-highline-dsg-fiyatlari",
+          "title": "2018 VW Golf 1.6 TDI Highline DSG + sibling matrix",
+          "date": "2018-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/volkswagen/golf/2018/1-6-tdi-comfortline-fiyatlari",
+          "title": "2018 VW Golf 1.6 TDI Comfortline",
+          "date": "2018-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Golf",
+      "model": "1.4 TSI",
+      "trim": "Highline",
+      "generation": "Mk7",
+      "generationCode": "Mk7",
+      "yearFrom": 2018,
+      "yearTo": 2018,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1395",
+      "powerHp": null,
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2018 TR Golf matrix — only listed version×trim pairs (no fan-out of all VW packages).",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/volkswagen/golf/2018/1-6-tdi-highline-dsg-fiyatlari",
+          "title": "2018 VW Golf 1.6 TDI Highline DSG + sibling matrix",
+          "date": "2018-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/volkswagen/golf/2018/1-6-tdi-comfortline-fiyatlari",
+          "title": "2018 VW Golf 1.6 TDI Comfortline",
+          "date": "2018-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Golf",
+      "model": "1.6 TDI",
+      "trim": "Midline Plus",
+      "generation": "Mk7",
+      "generationCode": "Mk7",
+      "yearFrom": 2018,
+      "yearTo": 2018,
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "115",
+      "transmission": "MANUAL",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2018 TR Golf matrix — only listed version×trim pairs (no fan-out of all VW packages).",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/volkswagen/golf/2018/1-6-tdi-highline-dsg-fiyatlari",
+          "title": "2018 VW Golf 1.6 TDI Highline DSG + sibling matrix",
+          "date": "2018-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/volkswagen/golf/2018/1-6-tdi-comfortline-fiyatlari",
+          "title": "2018 VW Golf 1.6 TDI Comfortline",
+          "date": "2018-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Golf",
+      "model": "1.6 TDI",
+      "trim": "Comfortline",
+      "generation": "Mk7",
+      "generationCode": "Mk7",
+      "yearFrom": 2018,
+      "yearTo": 2018,
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "115",
+      "transmission": "MANUAL",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2018 TR Golf matrix — only listed version×trim pairs (no fan-out of all VW packages).",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/volkswagen/golf/2018/1-6-tdi-highline-dsg-fiyatlari",
+          "title": "2018 VW Golf 1.6 TDI Highline DSG + sibling matrix",
+          "date": "2018-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/volkswagen/golf/2018/1-6-tdi-comfortline-fiyatlari",
+          "title": "2018 VW Golf 1.6 TDI Comfortline",
+          "date": "2018-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Golf",
+      "model": "1.6 TDI",
+      "trim": "Comfortline",
+      "generation": "Mk7",
+      "generationCode": "Mk7",
+      "yearFrom": 2018,
+      "yearTo": 2018,
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "115",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2018 TR Golf matrix — only listed version×trim pairs (no fan-out of all VW packages).",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/volkswagen/golf/2018/1-6-tdi-highline-dsg-fiyatlari",
+          "title": "2018 VW Golf 1.6 TDI Highline DSG + sibling matrix",
+          "date": "2018-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/volkswagen/golf/2018/1-6-tdi-comfortline-fiyatlari",
+          "title": "2018 VW Golf 1.6 TDI Comfortline",
+          "date": "2018-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Golf",
+      "model": "1.6 TDI",
+      "trim": "Highline",
+      "generation": "Mk7",
+      "generationCode": "Mk7",
+      "yearFrom": 2018,
+      "yearTo": 2018,
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "115",
+      "transmission": "MANUAL",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2018 TR Golf matrix — only listed version×trim pairs (no fan-out of all VW packages).",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/volkswagen/golf/2018/1-6-tdi-highline-dsg-fiyatlari",
+          "title": "2018 VW Golf 1.6 TDI Highline DSG + sibling matrix",
+          "date": "2018-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/volkswagen/golf/2018/1-6-tdi-comfortline-fiyatlari",
+          "title": "2018 VW Golf 1.6 TDI Comfortline",
+          "date": "2018-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Golf",
+      "model": "1.6 TDI",
+      "trim": "Highline",
+      "generation": "Mk7",
+      "generationCode": "Mk7",
+      "yearFrom": 2018,
+      "yearTo": 2018,
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "115",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2018 TR Golf matrix — only listed version×trim pairs (no fan-out of all VW packages).",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/volkswagen/golf/2018/1-6-tdi-highline-dsg-fiyatlari",
+          "title": "2018 VW Golf 1.6 TDI Highline DSG + sibling matrix",
+          "date": "2018-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/volkswagen/golf/2018/1-6-tdi-comfortline-fiyatlari",
+          "title": "2018 VW Golf 1.6 TDI Comfortline",
+          "date": "2018-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Golf",
+      "model": "1.0 TSI",
+      "trim": "Midline Plus",
+      "generation": "Mk7 facelift",
+      "generationCode": "Mk7",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "transmission": "MANUAL",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2019 TR Golf version×trim pairs only.",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/volkswagen/golf/2019-fiyatlari",
+          "title": "2019 Volkswagen Golf fiyat matrisi",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Golf",
+      "model": "1.0 TSI",
+      "trim": "Midline Plus",
+      "generation": "Mk7 facelift",
+      "generationCode": "Mk7",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2019 TR Golf version×trim pairs only.",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/volkswagen/golf/2019-fiyatlari",
+          "title": "2019 Volkswagen Golf fiyat matrisi",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Golf",
+      "model": "1.0 TSI",
+      "trim": "Comfortline",
+      "generation": "Mk7 facelift",
+      "generationCode": "Mk7",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2019 TR Golf version×trim pairs only.",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/volkswagen/golf/2019-fiyatlari",
+          "title": "2019 Volkswagen Golf fiyat matrisi",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Golf",
+      "model": "1.0 TSI",
+      "trim": "Highline",
+      "generation": "Mk7 facelift",
+      "generationCode": "Mk7",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2019 TR Golf version×trim pairs only.",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/volkswagen/golf/2019-fiyatlari",
+          "title": "2019 Volkswagen Golf fiyat matrisi",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Golf",
+      "model": "1.5 TSI",
+      "trim": "Comfortline",
+      "generation": "Mk7 facelift",
+      "generationCode": "Mk7",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2019 TR Golf version×trim pairs only.",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/volkswagen/golf/2019-fiyatlari",
+          "title": "2019 Volkswagen Golf fiyat matrisi",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Golf",
+      "model": "1.5 TSI",
+      "trim": "Highline",
+      "generation": "Mk7 facelift",
+      "generationCode": "Mk7",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2019 TR Golf version×trim pairs only.",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/volkswagen/golf/2019-fiyatlari",
+          "title": "2019 Volkswagen Golf fiyat matrisi",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Golf",
+      "model": "1.6 TDI",
+      "trim": "Comfortline",
+      "generation": "Mk7 facelift",
+      "generationCode": "Mk7",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "transmission": "MANUAL",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2019 TR Golf version×trim pairs only.",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/volkswagen/golf/2019-fiyatlari",
+          "title": "2019 Volkswagen Golf fiyat matrisi",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Golf",
+      "model": "1.6 TDI",
+      "trim": "Comfortline",
+      "generation": "Mk7 facelift",
+      "generationCode": "Mk7",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2019 TR Golf version×trim pairs only.",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/volkswagen/golf/2019-fiyatlari",
+          "title": "2019 Volkswagen Golf fiyat matrisi",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Golf",
+      "model": "1.6 TDI",
+      "trim": "Highline",
+      "generation": "Mk7 facelift",
+      "generationCode": "Mk7",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "transmission": "MANUAL",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2019 TR Golf version×trim pairs only.",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/volkswagen/golf/2019-fiyatlari",
+          "title": "2019 Volkswagen Golf fiyat matrisi",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Golf",
+      "model": "1.6 TDI",
+      "trim": "Highline",
+      "generation": "Mk7 facelift",
+      "generationCode": "Mk7",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2019 TR Golf version×trim pairs only.",
+      "sources": [
+        {
+          "url": "https://yeniarabafiyatlari.com/volkswagen/golf/2019-fiyatlari",
+          "title": "2019 Volkswagen Golf fiyat matrisi",
+          "date": "2019-01-01",
+          "role": "primary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Golf",
+      "model": "",
+      "trim": "",
+      "generation": "Mk5",
+      "generationCode": "Mk5",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "historicalCoverage": "HISTORICAL_COVERAGE_INCOMPLETE",
+      "notes": "Mk5 researched; sourced TR version×trim matrix not captured.",
+      "sources": [
+        {
+          "url": "https://www.vw.com.tr/",
+          "title": "Volkswagen Türkiye — Golf Mk5 archive search",
+          "date": "2026-08-07",
+          "role": "primary",
+          "type": "research_note",
+          "publisher": "Volkswagen Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "T-Roc",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "historicalCoverage": "HISTORICAL_COVERAGE_INCOMPLETE",
+      "notes": "T-Roc: researched in deepen pass; no verified TR version×trim matrix located yet.",
+      "sources": [
+        {
+          "url": "https://www.volkswagen.com.tr/",
+          "title": "Volkswagen Türkiye — series research stub",
+          "date": "2026-08-07",
+          "role": "primary",
+          "type": "research_note",
+          "publisher": "Volkswagen"
+        }
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "T-Cross",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "historicalCoverage": "HISTORICAL_COVERAGE_INCOMPLETE",
+      "notes": "T-Cross: researched in deepen pass; no verified TR version×trim matrix located yet.",
+      "sources": [
+        {
+          "url": "https://www.volkswagen.com.tr/",
+          "title": "Volkswagen Türkiye — series research stub",
+          "date": "2026-08-07",
+          "role": "primary",
+          "type": "research_note",
+          "publisher": "Volkswagen"
+        }
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Transporter",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Minivan & Panelvan",
+      "historicalCoverage": "HISTORICAL_COVERAGE_INCOMPLETE",
+      "notes": "Transporter: researched in deepen pass; no verified TR version×trim matrix located yet.",
+      "sources": [
+        {
+          "url": "https://www.volkswagen.com.tr/",
+          "title": "Volkswagen Türkiye — series research stub",
+          "date": "2026-08-07",
+          "role": "primary",
+          "type": "research_note",
+          "publisher": "Volkswagen"
+        }
+      ]
     }
   ],
   "researchNotes": {
-    "researchedSeriesPass": [
-      "Golf",
+    "noApply": true,
+    "seriesWithoutResearch": [],
+    "currentOnlySeries": [
+      "Polo",
       "Passat",
       "Tiguan",
-      "Polo",
       "Caddy",
       "ID.4",
-      "ID.7",
-      "ID.3"
-    ],
-    "primarySources": [
-      "https://www.gazetegercek.com.tr/volkswagen-temmuz-2026-fiyat-listesi-aciklandi-golf-tiguan-passat-fiyatlari/230085",
-      "https://ticariarac.vw.com.tr/fiyat-listesi",
-      "https://www.webtekno.com/mart-2026-volkswagen-fiyati-listesi-h213223.html",
-      "https://binekarac.vw.com.tr/tr/modeller-fiyatlar.html"
-    ],
-    "secondarySources": [
-      "https://memur365.com/otomobil/volkswagen-2026-temmuz-fiyat-listesi-26980h",
-      "https://teknobirinci.com.tr/temmuz-2026-volkswagen-fiyat-listesi-aciklandi-liste-fiyatiyla-bayii-fiyati-arasinda-yuz-binlerce-tl-fark-var/"
-    ],
-    "doNotInvent": true
+      "ID.7"
+    ]
   },
   "completedAt": "2026-08-07T09:13:29.964Z"
 }

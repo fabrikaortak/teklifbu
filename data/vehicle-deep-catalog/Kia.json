@@ -1,16 +1,16 @@
 {
   "brand": "Kia",
   "brandSlug": "kia",
-  "version": "2026.08-deep-kia-v1-current-tr",
-  "generatedAt": "2026-08-07T12:05:00.000Z",
+  "version": "2026.08-deep-kia-v2-historical",
+  "generatedAt": "2026-08-07T10:14:22.863Z",
   "seriesCovered": [
-    "Sportage",
-    "Picanto",
-    "Stonic",
-    "Sorento",
     "EV3",
     "EV6",
-    "EV9"
+    "EV9",
+    "Picanto",
+    "Sorento",
+    "Sportage",
+    "Stonic"
   ],
   "status": "COMPLETED",
   "notes": "Sportage official kia.com.tr Aug 2026 price rows. Other series researched — stubs pending fuller PDF ingest.",
@@ -410,26 +410,546 @@
           "role": "primary"
         }
       ]
+    },
+    {
+      "brand": "Kia",
+      "series": "Sportage",
+      "model": "1.6L 132 PS",
+      "trim": "Cool",
+      "generation": "Sportage QL/NQ5 TR MY2019",
+      "generationCode": "QL",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1591",
+      "powerHp": "132",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Ekim 2019 Kia Sportage TR — only published Cool/Elegance/Prestige/GT-Line pairs.",
+      "sources": [
+        {
+          "url": "https://caraba.net/kia-ekim-2019-fiyat-listesi/",
+          "title": "Kia Ekim 2019 fiyat listesi — Sportage/Picanto/Stonic/Sorento",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/kia/sportage/2019-fiyatlari",
+          "title": "2019 Model Kia Sportage Fiyatları — Cool/Elegance/Prestige/GT-Line",
+          "date": "2019-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Kia",
+      "series": "Sportage",
+      "model": "1.6L CRDi 136 PS DCT",
+      "trim": "Cool",
+      "generation": "Sportage QL/NQ5 TR MY2019",
+      "generationCode": "QL",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1591",
+      "powerHp": "136",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Ekim 2019 Kia Sportage TR — only published Cool/Elegance/Prestige/GT-Line pairs.",
+      "sources": [
+        {
+          "url": "https://caraba.net/kia-ekim-2019-fiyat-listesi/",
+          "title": "Kia Ekim 2019 fiyat listesi — Sportage/Picanto/Stonic/Sorento",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/kia/sportage/2019-fiyatlari",
+          "title": "2019 Model Kia Sportage Fiyatları — Cool/Elegance/Prestige/GT-Line",
+          "date": "2019-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Kia",
+      "series": "Sportage",
+      "model": "1.6L CRDi 136 PS DCT",
+      "trim": "Elegance",
+      "generation": "Sportage QL/NQ5 TR MY2019",
+      "generationCode": "QL",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1591",
+      "powerHp": "136",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Ekim 2019 Kia Sportage TR — only published Cool/Elegance/Prestige/GT-Line pairs.",
+      "sources": [
+        {
+          "url": "https://caraba.net/kia-ekim-2019-fiyat-listesi/",
+          "title": "Kia Ekim 2019 fiyat listesi — Sportage/Picanto/Stonic/Sorento",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/kia/sportage/2019-fiyatlari",
+          "title": "2019 Model Kia Sportage Fiyatları — Cool/Elegance/Prestige/GT-Line",
+          "date": "2019-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Kia",
+      "series": "Sportage",
+      "model": "1.6L CRDi 136 PS DCT 4x4",
+      "trim": "Elegance",
+      "generation": "Sportage QL/NQ5 TR MY2019",
+      "generationCode": "QL",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1591",
+      "powerHp": "136",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Ekim 2019 Kia Sportage TR — only published Cool/Elegance/Prestige/GT-Line pairs.",
+      "sources": [
+        {
+          "url": "https://caraba.net/kia-ekim-2019-fiyat-listesi/",
+          "title": "Kia Ekim 2019 fiyat listesi — Sportage/Picanto/Stonic/Sorento",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/kia/sportage/2019-fiyatlari",
+          "title": "2019 Model Kia Sportage Fiyatları — Cool/Elegance/Prestige/GT-Line",
+          "date": "2019-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Kia",
+      "series": "Sportage",
+      "model": "1.6L CRDi 136 PS DCT",
+      "trim": "Prestige",
+      "generation": "Sportage QL/NQ5 TR MY2019",
+      "generationCode": "QL",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1591",
+      "powerHp": "136",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Ekim 2019 Kia Sportage TR — only published Cool/Elegance/Prestige/GT-Line pairs.",
+      "sources": [
+        {
+          "url": "https://caraba.net/kia-ekim-2019-fiyat-listesi/",
+          "title": "Kia Ekim 2019 fiyat listesi — Sportage/Picanto/Stonic/Sorento",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/kia/sportage/2019-fiyatlari",
+          "title": "2019 Model Kia Sportage Fiyatları — Cool/Elegance/Prestige/GT-Line",
+          "date": "2019-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Kia",
+      "series": "Sportage",
+      "model": "1.6L CRDi 136 PS DCT 4x4",
+      "trim": "Prestige",
+      "generation": "Sportage QL/NQ5 TR MY2019",
+      "generationCode": "QL",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1591",
+      "powerHp": "136",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Ekim 2019 Kia Sportage TR — only published Cool/Elegance/Prestige/GT-Line pairs.",
+      "sources": [
+        {
+          "url": "https://caraba.net/kia-ekim-2019-fiyat-listesi/",
+          "title": "Kia Ekim 2019 fiyat listesi — Sportage/Picanto/Stonic/Sorento",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/kia/sportage/2019-fiyatlari",
+          "title": "2019 Model Kia Sportage Fiyatları — Cool/Elegance/Prestige/GT-Line",
+          "date": "2019-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Kia",
+      "series": "Sportage",
+      "model": "1.6L CRDi 136 PS DCT",
+      "trim": "Prestige Design Pack",
+      "generation": "Sportage QL/NQ5 TR MY2019",
+      "generationCode": "QL",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1591",
+      "powerHp": "136",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Ekim 2019 Kia Sportage TR — only published Cool/Elegance/Prestige/GT-Line pairs.",
+      "sources": [
+        {
+          "url": "https://caraba.net/kia-ekim-2019-fiyat-listesi/",
+          "title": "Kia Ekim 2019 fiyat listesi — Sportage/Picanto/Stonic/Sorento",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/kia/sportage/2019-fiyatlari",
+          "title": "2019 Model Kia Sportage Fiyatları — Cool/Elegance/Prestige/GT-Line",
+          "date": "2019-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Kia",
+      "series": "Sportage",
+      "model": "1.6L CRDi 136 PS DCT 4x4",
+      "trim": "Prestige Design Pack",
+      "generation": "Sportage QL/NQ5 TR MY2019",
+      "generationCode": "QL",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1591",
+      "powerHp": "136",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Ekim 2019 Kia Sportage TR — only published Cool/Elegance/Prestige/GT-Line pairs.",
+      "sources": [
+        {
+          "url": "https://caraba.net/kia-ekim-2019-fiyat-listesi/",
+          "title": "Kia Ekim 2019 fiyat listesi — Sportage/Picanto/Stonic/Sorento",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/kia/sportage/2019-fiyatlari",
+          "title": "2019 Model Kia Sportage Fiyatları — Cool/Elegance/Prestige/GT-Line",
+          "date": "2019-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Kia",
+      "series": "Sportage",
+      "model": "1.6L CRDi 136 PS DCT 4x4",
+      "trim": "GT-Line",
+      "generation": "Sportage QL/NQ5 TR MY2019",
+      "generationCode": "QL",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1591",
+      "powerHp": "136",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Ekim 2019 Kia Sportage TR — only published Cool/Elegance/Prestige/GT-Line pairs.",
+      "sources": [
+        {
+          "url": "https://caraba.net/kia-ekim-2019-fiyat-listesi/",
+          "title": "Kia Ekim 2019 fiyat listesi — Sportage/Picanto/Stonic/Sorento",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        },
+        {
+          "url": "https://yeniarabafiyatlari.com/kia/sportage/2019-fiyatlari",
+          "title": "2019 Model Kia Sportage Fiyatları — Cool/Elegance/Prestige/GT-Line",
+          "date": "2019-01-01",
+          "role": "secondary",
+          "type": "price_matrix",
+          "publisher": "yeniarabafiyatlari.com"
+        }
+      ]
+    },
+    {
+      "brand": "Kia",
+      "series": "Picanto",
+      "model": "1.0L 67 PS",
+      "trim": "Live",
+      "generation": "Picanto JA TR MY2019",
+      "generationCode": "JA",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "998",
+      "powerHp": "67",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ekim 2019 Kia Picanto Live 1.0L Benzin Otomatik — published pair only.",
+      "sources": [
+        {
+          "url": "https://caraba.net/kia-ekim-2019-fiyat-listesi/",
+          "title": "Kia Ekim 2019 fiyat listesi — Sportage/Picanto/Stonic/Sorento",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Kia",
+      "series": "Stonic",
+      "model": "1.4L 100 PS",
+      "trim": "Elegance Sunroof",
+      "generation": "Stonic YB TR MY2019",
+      "generationCode": "YB",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "powerHp": "100",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Ekim 2019 Kia Stonic TR — only published Elegance pairs.",
+      "sources": [
+        {
+          "url": "https://caraba.net/kia-ekim-2019-fiyat-listesi/",
+          "title": "Kia Ekim 2019 fiyat listesi — Sportage/Picanto/Stonic/Sorento",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Kia",
+      "series": "Stonic",
+      "model": "1.0L T-GDI 120 PS DCT",
+      "trim": "Elegance Turbo Sunroof",
+      "generation": "Stonic YB TR MY2019",
+      "generationCode": "YB",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "powerHp": "120",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Ekim 2019 Kia Stonic TR — only published Elegance pairs.",
+      "sources": [
+        {
+          "url": "https://caraba.net/kia-ekim-2019-fiyat-listesi/",
+          "title": "Kia Ekim 2019 fiyat listesi — Sportage/Picanto/Stonic/Sorento",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Kia",
+      "series": "Stonic",
+      "model": "1.0L T-GDI 120 PS DCT",
+      "trim": "Elegance Design Pack",
+      "generation": "Stonic YB TR MY2019",
+      "generationCode": "YB",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "powerHp": "120",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Ekim 2019 Kia Stonic TR — only published Elegance pairs.",
+      "sources": [
+        {
+          "url": "https://caraba.net/kia-ekim-2019-fiyat-listesi/",
+          "title": "Kia Ekim 2019 fiyat listesi — Sportage/Picanto/Stonic/Sorento",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Kia",
+      "series": "Stonic",
+      "model": "1.4L 100 PS",
+      "trim": "Elegance Design Pack",
+      "generation": "Stonic YB TR MY2019",
+      "generationCode": "YB",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "powerHp": "100",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Ekim 2019 Kia Stonic TR — only published Elegance pairs.",
+      "sources": [
+        {
+          "url": "https://caraba.net/kia-ekim-2019-fiyat-listesi/",
+          "title": "Kia Ekim 2019 fiyat listesi — Sportage/Picanto/Stonic/Sorento",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Kia",
+      "series": "Sorento",
+      "model": "2.0L Dizel",
+      "trim": "Prestige",
+      "generation": "Sorento UM TR MY2019",
+      "generationCode": "UM",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1995",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Ekim 2019 Kia Sorento Prestige/GT-Line 4×4 Dizel — published pairs only.",
+      "sources": [
+        {
+          "url": "https://caraba.net/kia-ekim-2019-fiyat-listesi/",
+          "title": "Kia Ekim 2019 fiyat listesi — Sportage/Picanto/Stonic/Sorento",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Kia",
+      "series": "Sorento",
+      "model": "2.0L Dizel",
+      "trim": "GT-Line",
+      "generation": "Sorento UM TR MY2019",
+      "generationCode": "UM",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1995",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Ekim 2019 Kia Sorento Prestige/GT-Line 4×4 Dizel — published pairs only.",
+      "sources": [
+        {
+          "url": "https://caraba.net/kia-ekim-2019-fiyat-listesi/",
+          "title": "Kia Ekim 2019 fiyat listesi — Sportage/Picanto/Stonic/Sorento",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
     }
   ],
   "researchNotes": {
-    "researchedSeriesPass": [
-      "Sportage",
-      "Picanto",
-      "Stonic",
-      "Sorento",
-      "EV3",
-      "EV6",
-      "EV9"
-    ],
-    "reviewRequiredSeries": [
-      "Picanto",
-      "Stonic",
-      "Sorento",
-      "EV3",
-      "EV6",
-      "EV9"
-    ]
+    "noApply": true,
+    "applyAllowed": false,
+    "phase": "research-deepen-batch-volvo-nissan-kia-dacia-cupra-mini",
+    "seriesWithoutResearch": [],
+    "currentOnlySeries": [],
+    "addedThisPass": 16,
+    "notFinalComplete": true
   },
   "completedAt": "2026-08-07T09:13:29.901Z"
 }

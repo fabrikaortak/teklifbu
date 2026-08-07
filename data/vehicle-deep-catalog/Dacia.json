@@ -1,14 +1,14 @@
 {
   "brand": "Dacia",
   "brandSlug": "dacia",
-  "version": "2026.08-deep-dacia-v2-duster-verified",
-  "generatedAt": "2026-08-07T12:05:00.000Z",
+  "version": "2026.08-deep-dacia-v2-historical",
+  "generatedAt": "2026-08-07T10:14:22.882Z",
   "seriesCovered": [
-    "Sandero",
-    "Sandero Stepway",
-    "Logan",
+    "Duster",
     "Jogger",
-    "Duster"
+    "Logan",
+    "Sandero",
+    "Sandero Stepway"
   ],
   "status": "COMPLETED",
   "notes": "Sandero/Stepway/Logan/Jogger Aug 2026 + Duster Expression/Journey/Extreme Temmuz 2024 TR (Dacia resmi alıntılı).",
@@ -633,18 +633,976 @@
           "role": "secondary"
         }
       ]
+    },
+    {
+      "brand": "Dacia",
+      "series": "Duster",
+      "model": "1.6 16v 115 bg 4x2",
+      "trim": "Comfort",
+      "generation": "Duster II TR MY2019",
+      "generationCode": "HM",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "powerHp": "115",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Ekim 2019 Dacia Duster TR — only published Comfort/Prestige/Prestige Plus/Techroad pairs.",
+      "sources": [
+        {
+          "url": "https://caraba.net/dacia-ekim-2019-fiyat-listesi/",
+          "title": "Dacia Ekim 2019 fiyat listesi — Duster/Sandero/Stepway",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        },
+        {
+          "url": "https://www.arabavs.com/dacia-fiyat-listesi-aralik-ayi-2019.html",
+          "title": "Dacia Aralık 2019 fiyat listesi — Duster/Sandero",
+          "date": "2019-12-03",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://www.log.com.tr/2019-dacia-duster-donanim-ozellikleri-ve-fiyati/",
+          "title": "2019 Dacia Duster donanım×motor fiyat matrisi",
+          "date": "2019-02-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "log.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Dacia",
+      "series": "Duster",
+      "model": "1.3 TCe 130 bg 4x2",
+      "trim": "Comfort",
+      "generation": "Duster II TR MY2019",
+      "generationCode": "HM",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "powerHp": "130",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Ekim 2019 Dacia Duster TR — only published Comfort/Prestige/Prestige Plus/Techroad pairs.",
+      "sources": [
+        {
+          "url": "https://caraba.net/dacia-ekim-2019-fiyat-listesi/",
+          "title": "Dacia Ekim 2019 fiyat listesi — Duster/Sandero/Stepway",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        },
+        {
+          "url": "https://www.arabavs.com/dacia-fiyat-listesi-aralik-ayi-2019.html",
+          "title": "Dacia Aralık 2019 fiyat listesi — Duster/Sandero",
+          "date": "2019-12-03",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://www.log.com.tr/2019-dacia-duster-donanim-ozellikleri-ve-fiyati/",
+          "title": "2019 Dacia Duster donanım×motor fiyat matrisi",
+          "date": "2019-02-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "log.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Dacia",
+      "series": "Duster",
+      "model": "ECO-G 115 bg 4x2",
+      "trim": "Comfort",
+      "generation": "Duster II TR MY2019",
+      "generationCode": "HM",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "LPG",
+      "powerHp": "115",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Ekim 2019 Dacia Duster TR — only published Comfort/Prestige/Prestige Plus/Techroad pairs.",
+      "sources": [
+        {
+          "url": "https://caraba.net/dacia-ekim-2019-fiyat-listesi/",
+          "title": "Dacia Ekim 2019 fiyat listesi — Duster/Sandero/Stepway",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        },
+        {
+          "url": "https://www.arabavs.com/dacia-fiyat-listesi-aralik-ayi-2019.html",
+          "title": "Dacia Aralık 2019 fiyat listesi — Duster/Sandero",
+          "date": "2019-12-03",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://www.log.com.tr/2019-dacia-duster-donanim-ozellikleri-ve-fiyati/",
+          "title": "2019 Dacia Duster donanım×motor fiyat matrisi",
+          "date": "2019-02-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "log.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Dacia",
+      "series": "Duster",
+      "model": "1.5 Blue dCi 95 bg 4x2",
+      "trim": "Comfort",
+      "generation": "Duster II TR MY2019",
+      "generationCode": "HM",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "powerHp": "95",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Ekim 2019 Dacia Duster TR — only published Comfort/Prestige/Prestige Plus/Techroad pairs.",
+      "sources": [
+        {
+          "url": "https://caraba.net/dacia-ekim-2019-fiyat-listesi/",
+          "title": "Dacia Ekim 2019 fiyat listesi — Duster/Sandero/Stepway",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        },
+        {
+          "url": "https://www.arabavs.com/dacia-fiyat-listesi-aralik-ayi-2019.html",
+          "title": "Dacia Aralık 2019 fiyat listesi — Duster/Sandero",
+          "date": "2019-12-03",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://www.log.com.tr/2019-dacia-duster-donanim-ozellikleri-ve-fiyati/",
+          "title": "2019 Dacia Duster donanım×motor fiyat matrisi",
+          "date": "2019-02-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "log.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Dacia",
+      "series": "Duster",
+      "model": "1.5 Blue dCi 115 bg 4x4",
+      "trim": "Comfort",
+      "generation": "Duster II TR MY2019",
+      "generationCode": "HM",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "powerHp": "115",
+      "transmission": "MANUAL",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Ekim 2019 Dacia Duster TR — only published Comfort/Prestige/Prestige Plus/Techroad pairs.",
+      "sources": [
+        {
+          "url": "https://caraba.net/dacia-ekim-2019-fiyat-listesi/",
+          "title": "Dacia Ekim 2019 fiyat listesi — Duster/Sandero/Stepway",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        },
+        {
+          "url": "https://www.arabavs.com/dacia-fiyat-listesi-aralik-ayi-2019.html",
+          "title": "Dacia Aralık 2019 fiyat listesi — Duster/Sandero",
+          "date": "2019-12-03",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://www.log.com.tr/2019-dacia-duster-donanim-ozellikleri-ve-fiyati/",
+          "title": "2019 Dacia Duster donanım×motor fiyat matrisi",
+          "date": "2019-02-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "log.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Dacia",
+      "series": "Duster",
+      "model": "1.3 TCe 130 bg 4x2",
+      "trim": "Prestige",
+      "generation": "Duster II TR MY2019",
+      "generationCode": "HM",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "powerHp": "130",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Ekim 2019 Dacia Duster TR — only published Comfort/Prestige/Prestige Plus/Techroad pairs.",
+      "sources": [
+        {
+          "url": "https://caraba.net/dacia-ekim-2019-fiyat-listesi/",
+          "title": "Dacia Ekim 2019 fiyat listesi — Duster/Sandero/Stepway",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        },
+        {
+          "url": "https://www.arabavs.com/dacia-fiyat-listesi-aralik-ayi-2019.html",
+          "title": "Dacia Aralık 2019 fiyat listesi — Duster/Sandero",
+          "date": "2019-12-03",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://www.log.com.tr/2019-dacia-duster-donanim-ozellikleri-ve-fiyati/",
+          "title": "2019 Dacia Duster donanım×motor fiyat matrisi",
+          "date": "2019-02-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "log.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Dacia",
+      "series": "Duster",
+      "model": "ECO-G 115 bg 4x2",
+      "trim": "Prestige",
+      "generation": "Duster II TR MY2019",
+      "generationCode": "HM",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "LPG",
+      "powerHp": "115",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Ekim 2019 Dacia Duster TR — only published Comfort/Prestige/Prestige Plus/Techroad pairs.",
+      "sources": [
+        {
+          "url": "https://caraba.net/dacia-ekim-2019-fiyat-listesi/",
+          "title": "Dacia Ekim 2019 fiyat listesi — Duster/Sandero/Stepway",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        },
+        {
+          "url": "https://www.arabavs.com/dacia-fiyat-listesi-aralik-ayi-2019.html",
+          "title": "Dacia Aralık 2019 fiyat listesi — Duster/Sandero",
+          "date": "2019-12-03",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://www.log.com.tr/2019-dacia-duster-donanim-ozellikleri-ve-fiyati/",
+          "title": "2019 Dacia Duster donanım×motor fiyat matrisi",
+          "date": "2019-02-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "log.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Dacia",
+      "series": "Duster",
+      "model": "1.5 Blue dCi 115 bg 4x2",
+      "trim": "Prestige",
+      "generation": "Duster II TR MY2019",
+      "generationCode": "HM",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "powerHp": "115",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Ekim 2019 Dacia Duster TR — only published Comfort/Prestige/Prestige Plus/Techroad pairs.",
+      "sources": [
+        {
+          "url": "https://caraba.net/dacia-ekim-2019-fiyat-listesi/",
+          "title": "Dacia Ekim 2019 fiyat listesi — Duster/Sandero/Stepway",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        },
+        {
+          "url": "https://www.arabavs.com/dacia-fiyat-listesi-aralik-ayi-2019.html",
+          "title": "Dacia Aralık 2019 fiyat listesi — Duster/Sandero",
+          "date": "2019-12-03",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://www.log.com.tr/2019-dacia-duster-donanim-ozellikleri-ve-fiyati/",
+          "title": "2019 Dacia Duster donanım×motor fiyat matrisi",
+          "date": "2019-02-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "log.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Dacia",
+      "series": "Duster",
+      "model": "1.5 Blue dCi 115 bg 4x4",
+      "trim": "Prestige",
+      "generation": "Duster II TR MY2019",
+      "generationCode": "HM",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "powerHp": "115",
+      "transmission": "MANUAL",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Ekim 2019 Dacia Duster TR — only published Comfort/Prestige/Prestige Plus/Techroad pairs.",
+      "sources": [
+        {
+          "url": "https://caraba.net/dacia-ekim-2019-fiyat-listesi/",
+          "title": "Dacia Ekim 2019 fiyat listesi — Duster/Sandero/Stepway",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        },
+        {
+          "url": "https://www.arabavs.com/dacia-fiyat-listesi-aralik-ayi-2019.html",
+          "title": "Dacia Aralık 2019 fiyat listesi — Duster/Sandero",
+          "date": "2019-12-03",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://www.log.com.tr/2019-dacia-duster-donanim-ozellikleri-ve-fiyati/",
+          "title": "2019 Dacia Duster donanım×motor fiyat matrisi",
+          "date": "2019-02-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "log.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Dacia",
+      "series": "Duster",
+      "model": "1.3 TCe 130 bg 4x2",
+      "trim": "Prestige Plus",
+      "generation": "Duster II TR MY2019",
+      "generationCode": "HM",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "powerHp": "130",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Ekim 2019 Dacia Duster TR — only published Comfort/Prestige/Prestige Plus/Techroad pairs.",
+      "sources": [
+        {
+          "url": "https://caraba.net/dacia-ekim-2019-fiyat-listesi/",
+          "title": "Dacia Ekim 2019 fiyat listesi — Duster/Sandero/Stepway",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        },
+        {
+          "url": "https://www.arabavs.com/dacia-fiyat-listesi-aralik-ayi-2019.html",
+          "title": "Dacia Aralık 2019 fiyat listesi — Duster/Sandero",
+          "date": "2019-12-03",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://www.log.com.tr/2019-dacia-duster-donanim-ozellikleri-ve-fiyati/",
+          "title": "2019 Dacia Duster donanım×motor fiyat matrisi",
+          "date": "2019-02-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "log.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Dacia",
+      "series": "Duster",
+      "model": "1.5 Blue dCi 115 bg 4x2",
+      "trim": "Prestige Plus",
+      "generation": "Duster II TR MY2019",
+      "generationCode": "HM",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "powerHp": "115",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Ekim 2019 Dacia Duster TR — only published Comfort/Prestige/Prestige Plus/Techroad pairs.",
+      "sources": [
+        {
+          "url": "https://caraba.net/dacia-ekim-2019-fiyat-listesi/",
+          "title": "Dacia Ekim 2019 fiyat listesi — Duster/Sandero/Stepway",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        },
+        {
+          "url": "https://www.arabavs.com/dacia-fiyat-listesi-aralik-ayi-2019.html",
+          "title": "Dacia Aralık 2019 fiyat listesi — Duster/Sandero",
+          "date": "2019-12-03",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://www.log.com.tr/2019-dacia-duster-donanim-ozellikleri-ve-fiyati/",
+          "title": "2019 Dacia Duster donanım×motor fiyat matrisi",
+          "date": "2019-02-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "log.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Dacia",
+      "series": "Duster",
+      "model": "1.5 Blue dCi 115 bg 4x4",
+      "trim": "Prestige Plus",
+      "generation": "Duster II TR MY2019",
+      "generationCode": "HM",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "powerHp": "115",
+      "transmission": "MANUAL",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Ekim 2019 Dacia Duster TR — only published Comfort/Prestige/Prestige Plus/Techroad pairs.",
+      "sources": [
+        {
+          "url": "https://caraba.net/dacia-ekim-2019-fiyat-listesi/",
+          "title": "Dacia Ekim 2019 fiyat listesi — Duster/Sandero/Stepway",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        },
+        {
+          "url": "https://www.arabavs.com/dacia-fiyat-listesi-aralik-ayi-2019.html",
+          "title": "Dacia Aralık 2019 fiyat listesi — Duster/Sandero",
+          "date": "2019-12-03",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://www.log.com.tr/2019-dacia-duster-donanim-ozellikleri-ve-fiyati/",
+          "title": "2019 Dacia Duster donanım×motor fiyat matrisi",
+          "date": "2019-02-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "log.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Dacia",
+      "series": "Duster",
+      "model": "1.3 TCe 150 bg 4x2",
+      "trim": "Techroad",
+      "generation": "Duster II TR MY2019",
+      "generationCode": "HM",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "powerHp": "150",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Ekim 2019 Dacia Duster TR — only published Comfort/Prestige/Prestige Plus/Techroad pairs.",
+      "sources": [
+        {
+          "url": "https://caraba.net/dacia-ekim-2019-fiyat-listesi/",
+          "title": "Dacia Ekim 2019 fiyat listesi — Duster/Sandero/Stepway",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        },
+        {
+          "url": "https://www.arabavs.com/dacia-fiyat-listesi-aralik-ayi-2019.html",
+          "title": "Dacia Aralık 2019 fiyat listesi — Duster/Sandero",
+          "date": "2019-12-03",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://www.log.com.tr/2019-dacia-duster-donanim-ozellikleri-ve-fiyati/",
+          "title": "2019 Dacia Duster donanım×motor fiyat matrisi",
+          "date": "2019-02-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "log.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Dacia",
+      "series": "Duster",
+      "model": "1.5 Blue dCi 115 bg 4x4",
+      "trim": "Techroad",
+      "generation": "Duster II TR MY2019",
+      "generationCode": "HM",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "powerHp": "115",
+      "transmission": "MANUAL",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Ekim 2019 Dacia Duster TR — only published Comfort/Prestige/Prestige Plus/Techroad pairs.",
+      "sources": [
+        {
+          "url": "https://caraba.net/dacia-ekim-2019-fiyat-listesi/",
+          "title": "Dacia Ekim 2019 fiyat listesi — Duster/Sandero/Stepway",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        },
+        {
+          "url": "https://www.arabavs.com/dacia-fiyat-listesi-aralik-ayi-2019.html",
+          "title": "Dacia Aralık 2019 fiyat listesi — Duster/Sandero",
+          "date": "2019-12-03",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        },
+        {
+          "url": "https://www.log.com.tr/2019-dacia-duster-donanim-ozellikleri-ve-fiyati/",
+          "title": "2019 Dacia Duster donanım×motor fiyat matrisi",
+          "date": "2019-02-01",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "log.com.tr"
+        }
+      ]
+    },
+    {
+      "brand": "Dacia",
+      "series": "Sandero",
+      "model": "1.0 SCe 75 bg",
+      "trim": "Ambiance",
+      "generation": "Sandero II TR MY2019",
+      "generationCode": "B52",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "powerHp": "75",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ekim 2019 Dacia Sandero Ambiance — published pairs only.",
+      "sources": [
+        {
+          "url": "https://caraba.net/dacia-ekim-2019-fiyat-listesi/",
+          "title": "Dacia Ekim 2019 fiyat listesi — Duster/Sandero/Stepway",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        },
+        {
+          "url": "https://www.arabavs.com/dacia-fiyat-listesi-aralik-ayi-2019.html",
+          "title": "Dacia Aralık 2019 fiyat listesi — Duster/Sandero",
+          "date": "2019-12-03",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Dacia",
+      "series": "Sandero",
+      "model": "1.5 Blue dCi 75 bg",
+      "trim": "Ambiance",
+      "generation": "Sandero II TR MY2019",
+      "generationCode": "B52",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "powerHp": "75",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ekim 2019 Dacia Sandero Ambiance — published pairs only.",
+      "sources": [
+        {
+          "url": "https://caraba.net/dacia-ekim-2019-fiyat-listesi/",
+          "title": "Dacia Ekim 2019 fiyat listesi — Duster/Sandero/Stepway",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        },
+        {
+          "url": "https://www.arabavs.com/dacia-fiyat-listesi-aralik-ayi-2019.html",
+          "title": "Dacia Aralık 2019 fiyat listesi — Duster/Sandero",
+          "date": "2019-12-03",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Dacia",
+      "series": "Sandero Stepway",
+      "model": "Turbo 90 bg",
+      "trim": "Stepway",
+      "generation": "Sandero Stepway II TR MY2019",
+      "generationCode": "B52-Stepway",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "powerHp": "90",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ekim 2019 Dacia Sandero Stepway — published Stepway/Techroad pairs only.",
+      "sources": [
+        {
+          "url": "https://caraba.net/dacia-ekim-2019-fiyat-listesi/",
+          "title": "Dacia Ekim 2019 fiyat listesi — Duster/Sandero/Stepway",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        },
+        {
+          "url": "https://www.arabavs.com/dacia-fiyat-listesi-aralik-ayi-2019.html",
+          "title": "Dacia Aralık 2019 fiyat listesi — Duster/Sandero",
+          "date": "2019-12-03",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Dacia",
+      "series": "Sandero Stepway",
+      "model": "Turbo 90 bg Easy-R",
+      "trim": "Stepway",
+      "generation": "Sandero Stepway II TR MY2019",
+      "generationCode": "B52-Stepway",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "powerHp": "90",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ekim 2019 Dacia Sandero Stepway — published Stepway/Techroad pairs only.",
+      "sources": [
+        {
+          "url": "https://caraba.net/dacia-ekim-2019-fiyat-listesi/",
+          "title": "Dacia Ekim 2019 fiyat listesi — Duster/Sandero/Stepway",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        },
+        {
+          "url": "https://www.arabavs.com/dacia-fiyat-listesi-aralik-ayi-2019.html",
+          "title": "Dacia Aralık 2019 fiyat listesi — Duster/Sandero",
+          "date": "2019-12-03",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Dacia",
+      "series": "Sandero Stepway",
+      "model": "Turbo 90 ECO-G",
+      "trim": "Stepway",
+      "generation": "Sandero Stepway II TR MY2019",
+      "generationCode": "B52-Stepway",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "LPG",
+      "powerHp": "90",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ekim 2019 Dacia Sandero Stepway — published Stepway/Techroad pairs only.",
+      "sources": [
+        {
+          "url": "https://caraba.net/dacia-ekim-2019-fiyat-listesi/",
+          "title": "Dacia Ekim 2019 fiyat listesi — Duster/Sandero/Stepway",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        },
+        {
+          "url": "https://www.arabavs.com/dacia-fiyat-listesi-aralik-ayi-2019.html",
+          "title": "Dacia Aralık 2019 fiyat listesi — Duster/Sandero",
+          "date": "2019-12-03",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Dacia",
+      "series": "Sandero Stepway",
+      "model": "1.5 Blue dCi 95 bg",
+      "trim": "Stepway",
+      "generation": "Sandero Stepway II TR MY2019",
+      "generationCode": "B52-Stepway",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "powerHp": "95",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ekim 2019 Dacia Sandero Stepway — published Stepway/Techroad pairs only.",
+      "sources": [
+        {
+          "url": "https://caraba.net/dacia-ekim-2019-fiyat-listesi/",
+          "title": "Dacia Ekim 2019 fiyat listesi — Duster/Sandero/Stepway",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        },
+        {
+          "url": "https://www.arabavs.com/dacia-fiyat-listesi-aralik-ayi-2019.html",
+          "title": "Dacia Aralık 2019 fiyat listesi — Duster/Sandero",
+          "date": "2019-12-03",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Dacia",
+      "series": "Sandero Stepway",
+      "model": "Turbo 90 bg",
+      "trim": "Techroad",
+      "generation": "Sandero Stepway II TR MY2019",
+      "generationCode": "B52-Stepway",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "powerHp": "90",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ekim 2019 Dacia Sandero Stepway — published Stepway/Techroad pairs only.",
+      "sources": [
+        {
+          "url": "https://caraba.net/dacia-ekim-2019-fiyat-listesi/",
+          "title": "Dacia Ekim 2019 fiyat listesi — Duster/Sandero/Stepway",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        },
+        {
+          "url": "https://www.arabavs.com/dacia-fiyat-listesi-aralik-ayi-2019.html",
+          "title": "Dacia Aralık 2019 fiyat listesi — Duster/Sandero",
+          "date": "2019-12-03",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Dacia",
+      "series": "Sandero Stepway",
+      "model": "Turbo 90 bg Easy-R",
+      "trim": "Techroad",
+      "generation": "Sandero Stepway II TR MY2019",
+      "generationCode": "B52-Stepway",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "powerHp": "90",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ekim 2019 Dacia Sandero Stepway — published Stepway/Techroad pairs only.",
+      "sources": [
+        {
+          "url": "https://caraba.net/dacia-ekim-2019-fiyat-listesi/",
+          "title": "Dacia Ekim 2019 fiyat listesi — Duster/Sandero/Stepway",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        },
+        {
+          "url": "https://www.arabavs.com/dacia-fiyat-listesi-aralik-ayi-2019.html",
+          "title": "Dacia Aralık 2019 fiyat listesi — Duster/Sandero",
+          "date": "2019-12-03",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Dacia",
+      "series": "Logan",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "historicalCoverage": "HISTORICAL_COVERAGE_INCOMPLETE",
+      "notes": "Logan III: researched; ≤2020 discrete version×trim incomplete (current MY TCe/Eco-G rows verified). Logan MCV 2019 Ambiance noted in archives but not III sedan matrix.",
+      "sources": [
+        {
+          "url": "https://caraba.net/dacia-ekim-2019-fiyat-listesi/",
+          "title": "Dacia Ekim 2019 fiyat listesi — Duster/Sandero/Stepway",
+          "date": "2019-10-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        },
+        {
+          "url": "https://www.arabavs.com/dacia-fiyat-listesi-aralik-ayi-2019.html",
+          "title": "Dacia Aralık 2019 fiyat listesi — Duster/Sandero",
+          "date": "2019-12-03",
+          "role": "secondary",
+          "type": "price_list_archive",
+          "publisher": "arabavs.com"
+        }
+      ]
+    },
+    {
+      "brand": "Dacia",
+      "series": "Jogger",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "historicalCoverage": "HISTORICAL_COVERAGE_INCOMPLETE",
+      "notes": "Jogger: researched; series launched ~2022 — historical ≤2020 N/A; current MY extreme rows verified.",
+      "sources": [
+        {
+          "url": "https://www.dacia.com.tr/",
+          "title": "Dacia TR — Jogger historical research note",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
     }
   ],
   "researchNotes": {
-    "researchedSeriesPass": [
-      "Sandero",
-      "Sandero Stepway",
-      "Logan",
-      "Jogger",
-      "Duster"
-    ],
-    "reviewRequiredSeries": [],
-    "verifiedDusterRows": 6
+    "noApply": true,
+    "applyAllowed": false,
+    "phase": "research-deepen-batch-volvo-nissan-kia-dacia-cupra-mini",
+    "seriesWithoutResearch": [],
+    "currentOnlySeries": [],
+    "addedThisPass": 24,
+    "notFinalComplete": true
   },
   "completedAt": "2026-08-07T09:13:29.880Z"
 }

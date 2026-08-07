@@ -1,0 +1,59 @@
+{
+  "at": "2026-08-07T10:14:37.751Z",
+  "brand": "Opel",
+  "status": "COMPLETED",
+  "gate": {
+    "seriesWithoutResearch": [],
+    "seriesWithoutResearchCount": 0,
+    "pass": true
+  },
+  "selectableSeries": [
+    "Corsa",
+    "Astra",
+    "Crossland"
+  ],
+  "researchedSeries": [
+    "Corsa",
+    "Astra",
+    "Crossland"
+  ],
+  "verifiedVersions": [
+    "1.2 100 HP",
+    "1.2 110 HP",
+    "1.2 130 HP",
+    "1.2 70 HP",
+    "1.2 75 HP",
+    "1.2 Hybrid 110 (100 HP)",
+    "1.2 Hybrid 145 (136 HP)",
+    "1.4 150 HP",
+    "1.4 90 HP",
+    "1.5 100 HP Dizel",
+    "1.5 130 HP Dizel",
+    "1.5 Dizel 120 HP",
+    "1.6 Dizel 136 HP",
+    "100 kW"
+  ],
+  "verifiedTrims": [
+    "120.Yıl Özel Seri",
+    "Design",
+    "Dynamic",
+    "Edition",
+    "Elegance",
+    "Elite",
+    "Enjoy",
+    "Essentia",
+    "Essential",
+    "Excellence",
+    "GS",
+    "Ultimate"
+  ],
+  "verifiedConfigurations": 38,
+  "officialSources": 6,
+  "multiSources": 32,
+  "reviewRequired": 1,
+  "rejected": 0,
+  "noVerifiedTrimFound": 0,
+  "seriesWithCurrentOnlyCoverage": [],
+  "historicalCoverageIncompleteSeries": [],
+  "notes": "Completed means every selectable series was systematically researched. Current-only and incomplete historical gens remain explicitly flagged. Research-only; applyAllowed=false."
+}

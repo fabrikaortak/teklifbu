@@ -1,0 +1,63 @@
+{
+  "at": "2026-08-07T10:14:22.837Z",
+  "brand": "Volvo",
+  "status": "COMPLETED",
+  "gate": {
+    "seriesWithoutResearch": [],
+    "seriesWithoutResearchCount": 0,
+    "pass": true
+  },
+  "selectableSeries": [
+    "XC60",
+    "XC90",
+    "V60",
+    "EX40",
+    "EX30",
+    "EC40"
+  ],
+  "researchedSeries": [
+    "XC60",
+    "XC90",
+    "V60",
+    "EX40",
+    "EX30",
+    "EC40"
+  ],
+  "verifiedVersions": [
+    "2.0 D4",
+    "2.0 D5",
+    "2.0 T8",
+    "B4 FWD Mild hybrid",
+    "B5 AWD Mild hybrid",
+    "Single Motor Extended Range 150kW",
+    "T8 AWD Plug-in hybrid"
+  ],
+  "verifiedTrims": [
+    "Inscription",
+    "Momentum",
+    "Plus Bright",
+    "Plus Dark",
+    "R-Design",
+    "Ultra"
+  ],
+  "verifiedConfigurations": 12,
+  "officialSources": 5,
+  "multiSources": 7,
+  "reviewRequired": 4,
+  "rejected": 0,
+  "noVerifiedTrimFound": 0,
+  "seriesWithCurrentOnlyCoverage": [
+    "EX40"
+  ],
+  "historicalCoverageIncompleteSeries": [
+    {
+      "series": "V60",
+      "historicalCoverage": "HISTORICAL_COVERAGE_INCOMPLETE"
+    },
+    {
+      "series": "EX40",
+      "historicalCoverage": "CURRENT_ONLY"
+    }
+  ],
+  "notes": "Deepen pass (not final catalog complete). Completed means every selectable series was systematically researched. Current-only and incomplete historical gens remain flagged. Research-only; applyAllowed=false."
+}

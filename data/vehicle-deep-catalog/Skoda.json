@@ -1,8 +1,8 @@
 {
   "brand": "Skoda",
   "brandSlug": "skoda",
-  "version": "2026.08-deep-skoda-v1-current-tr",
-  "generatedAt": "2026-08-07T12:00:00.000Z",
+  "version": "2026.08-deep-skoda-v2-historical",
+  "generatedAt": "2026-08-07T10:14:37.797Z",
   "seriesCovered": [
     "Fabia",
     "Octavia",
@@ -511,18 +511,1117 @@
           "role": "secondary"
         }
       ]
+    },
+    {
+      "brand": "Skoda",
+      "series": "Fabia",
+      "model": "1.0 75 PS",
+      "trim": "Ambition",
+      "generation": "Fabia III TR MY2019",
+      "generationCode": "NJ3",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "999",
+      "powerHp": "75",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Haziran 2019 Fabia — Ambition/Style only as published.",
+      "sources": [
+        {
+          "url": "https://caraba.net/skoda-haziran-2019-fiyat-listesi-aciklandi/",
+          "title": "Skoda Haziran 2019 Fabia/Octavia/Superb Ambition/Style/Prestige",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Skoda",
+      "series": "Fabia",
+      "model": "1.0 TSI 110 PS",
+      "trim": "Style",
+      "generation": "Fabia III TR MY2019",
+      "generationCode": "NJ3",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "999",
+      "powerHp": "110",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Haziran 2019 Fabia — Ambition/Style only as published.",
+      "sources": [
+        {
+          "url": "https://caraba.net/skoda-haziran-2019-fiyat-listesi-aciklandi/",
+          "title": "Skoda Haziran 2019 Fabia/Octavia/Superb Ambition/Style/Prestige",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Skoda",
+      "series": "Fabia",
+      "model": "1.0 TSI 95 PS",
+      "trim": "Premium",
+      "generation": "Fabia III TR MY2021",
+      "generationCode": "NJ3",
+      "yearFrom": 2021,
+      "yearTo": 2021,
+      "fuelType": "GASOLINE",
+      "engineVolume": "999",
+      "powerHp": "95",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ocak 2021 Fabia Premium 1.0 TSI 95 PS DSG — published pair.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/2021-skoda-fiyat-listesi-kampanyali-fiyati-ne-kadar/",
+          "title": "2021 Skoda Ocak Fabia/Octavia/Superb Premium/Elite/Prestige",
+          "date": "2021-01-07",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Skoda",
+      "series": "Octavia",
+      "model": "1.0 TSI 115 PS",
+      "trim": "Ambition",
+      "generation": "Octavia III TR MY2019",
+      "generationCode": "5E",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "999",
+      "powerHp": "115",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Haziran 2019 Octavia — Ambition/Style/Sport/Optimal only as published.",
+      "sources": [
+        {
+          "url": "https://caraba.net/skoda-haziran-2019-fiyat-listesi-aciklandi/",
+          "title": "Skoda Haziran 2019 Fabia/Octavia/Superb Ambition/Style/Prestige",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Skoda",
+      "series": "Octavia",
+      "model": "1.0 TSI 115 PS",
+      "trim": "Style",
+      "generation": "Octavia III TR MY2019",
+      "generationCode": "5E",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "999",
+      "powerHp": "115",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Haziran 2019 Octavia — Ambition/Style/Sport/Optimal only as published.",
+      "sources": [
+        {
+          "url": "https://caraba.net/skoda-haziran-2019-fiyat-listesi-aciklandi/",
+          "title": "Skoda Haziran 2019 Fabia/Octavia/Superb Ambition/Style/Prestige",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Skoda",
+      "series": "Octavia",
+      "model": "1.5 TSI 150 PS ACT",
+      "trim": "Sport",
+      "generation": "Octavia III TR MY2019",
+      "generationCode": "5E",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1498",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Haziran 2019 Octavia — Ambition/Style/Sport/Optimal only as published.",
+      "sources": [
+        {
+          "url": "https://caraba.net/skoda-haziran-2019-fiyat-listesi-aciklandi/",
+          "title": "Skoda Haziran 2019 Fabia/Octavia/Superb Ambition/Style/Prestige",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Skoda",
+      "series": "Octavia",
+      "model": "1.6 TDI 115 PS",
+      "trim": "Ambition",
+      "generation": "Octavia III TR MY2019",
+      "generationCode": "5E",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "115",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Haziran 2019 Octavia — Ambition/Style/Sport/Optimal only as published.",
+      "sources": [
+        {
+          "url": "https://caraba.net/skoda-haziran-2019-fiyat-listesi-aciklandi/",
+          "title": "Skoda Haziran 2019 Fabia/Octavia/Superb Ambition/Style/Prestige",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Skoda",
+      "series": "Octavia",
+      "model": "1.6 TDI 115 PS",
+      "trim": "Style",
+      "generation": "Octavia III TR MY2019",
+      "generationCode": "5E",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "115",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Haziran 2019 Octavia — Ambition/Style/Sport/Optimal only as published.",
+      "sources": [
+        {
+          "url": "https://caraba.net/skoda-haziran-2019-fiyat-listesi-aciklandi/",
+          "title": "Skoda Haziran 2019 Fabia/Octavia/Superb Ambition/Style/Prestige",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Skoda",
+      "series": "Octavia",
+      "model": "1.6 TDI 115 PS",
+      "trim": "Ambition",
+      "generation": "Octavia III TR MY2019",
+      "generationCode": "5E",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "115",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Haziran 2019 Octavia — Ambition/Style/Sport/Optimal only as published.",
+      "sources": [
+        {
+          "url": "https://caraba.net/skoda-haziran-2019-fiyat-listesi-aciklandi/",
+          "title": "Skoda Haziran 2019 Fabia/Octavia/Superb Ambition/Style/Prestige",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Skoda",
+      "series": "Octavia",
+      "model": "1.6 TDI 115 PS",
+      "trim": "Optimal",
+      "generation": "Octavia III TR MY2019",
+      "generationCode": "5E",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "115",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Haziran 2019 Octavia — Ambition/Style/Sport/Optimal only as published.",
+      "sources": [
+        {
+          "url": "https://caraba.net/skoda-haziran-2019-fiyat-listesi-aciklandi/",
+          "title": "Skoda Haziran 2019 Fabia/Octavia/Superb Ambition/Style/Prestige",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Skoda",
+      "series": "Octavia",
+      "model": "1.6 TDI 115 PS",
+      "trim": "Style",
+      "generation": "Octavia III TR MY2019",
+      "generationCode": "5E",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "115",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Haziran 2019 Octavia — Ambition/Style/Sport/Optimal only as published.",
+      "sources": [
+        {
+          "url": "https://caraba.net/skoda-haziran-2019-fiyat-listesi-aciklandi/",
+          "title": "Skoda Haziran 2019 Fabia/Octavia/Superb Ambition/Style/Prestige",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Skoda",
+      "series": "Octavia",
+      "model": "1.5 TSI 150 PS ACT",
+      "trim": "Style",
+      "generation": "Octavia III TR MY2020",
+      "generationCode": "5E",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1498",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ocak 2020 Octavia — Style/Sport DSG as published.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/skoda-fiyat-listesi-ocak-2020/",
+          "title": "Skoda Ocak 2020 Octavia/Superb Elite/Premium/Prestige",
+          "date": "2020-01-03",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Skoda",
+      "series": "Octavia",
+      "model": "1.5 TSI 150 PS ACT",
+      "trim": "Sport",
+      "generation": "Octavia III TR MY2020",
+      "generationCode": "5E",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1498",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ocak 2020 Octavia — Style/Sport DSG as published.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/skoda-fiyat-listesi-ocak-2020/",
+          "title": "Skoda Ocak 2020 Octavia/Superb Elite/Premium/Prestige",
+          "date": "2020-01-03",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Skoda",
+      "series": "Octavia",
+      "model": "1.0 TSI ACT 110 PS",
+      "trim": "Elite",
+      "generation": "Octavia IV TR MY2021",
+      "generationCode": "NX",
+      "yearFrom": 2021,
+      "yearTo": 2021,
+      "fuelType": "GASOLINE",
+      "engineVolume": "999",
+      "powerHp": "110",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ocak 2021 Yeni Octavia IV — Elite/Premium DSG as published.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/2021-skoda-fiyat-listesi-kampanyali-fiyati-ne-kadar/",
+          "title": "2021 Skoda Ocak Fabia/Octavia/Superb Premium/Elite/Prestige",
+          "date": "2021-01-07",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Skoda",
+      "series": "Octavia",
+      "model": "1.5 TSI ACT 150 PS",
+      "trim": "Elite",
+      "generation": "Octavia IV TR MY2021",
+      "generationCode": "NX",
+      "yearFrom": 2021,
+      "yearTo": 2021,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1498",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ocak 2021 Yeni Octavia IV — Elite/Premium DSG as published.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/2021-skoda-fiyat-listesi-kampanyali-fiyati-ne-kadar/",
+          "title": "2021 Skoda Ocak Fabia/Octavia/Superb Premium/Elite/Prestige",
+          "date": "2021-01-07",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Skoda",
+      "series": "Octavia",
+      "model": "1.0 TSI ACT 110 PS",
+      "trim": "Premium",
+      "generation": "Octavia IV TR MY2021",
+      "generationCode": "NX",
+      "yearFrom": 2021,
+      "yearTo": 2021,
+      "fuelType": "GASOLINE",
+      "engineVolume": "999",
+      "powerHp": "110",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ocak 2021 Yeni Octavia IV — Elite/Premium DSG as published.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/2021-skoda-fiyat-listesi-kampanyali-fiyati-ne-kadar/",
+          "title": "2021 Skoda Ocak Fabia/Octavia/Superb Premium/Elite/Prestige",
+          "date": "2021-01-07",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Skoda",
+      "series": "Octavia",
+      "model": "1.5 TSI ACT 150 PS",
+      "trim": "Premium",
+      "generation": "Octavia IV TR MY2021",
+      "generationCode": "NX",
+      "yearFrom": 2021,
+      "yearTo": 2021,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1498",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ocak 2021 Yeni Octavia IV — Elite/Premium DSG as published.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/2021-skoda-fiyat-listesi-kampanyali-fiyati-ne-kadar/",
+          "title": "2021 Skoda Ocak Fabia/Octavia/Superb Premium/Elite/Prestige",
+          "date": "2021-01-07",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Skoda",
+      "series": "Superb",
+      "model": "1.5 TSI 150 PS ACT",
+      "trim": "Active",
+      "generation": "Superb III TR MY2019",
+      "generationCode": "3V",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1498",
+      "powerHp": "150",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Haziran 2019 Superb — Active/Style/Prestige/Comfort/L&K as published.",
+      "sources": [
+        {
+          "url": "https://caraba.net/skoda-haziran-2019-fiyat-listesi-aciklandi/",
+          "title": "Skoda Haziran 2019 Fabia/Octavia/Superb Ambition/Style/Prestige",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Skoda",
+      "series": "Superb",
+      "model": "1.5 TSI 150 PS ACT",
+      "trim": "Style",
+      "generation": "Superb III TR MY2019",
+      "generationCode": "3V",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1498",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Haziran 2019 Superb — Active/Style/Prestige/Comfort/L&K as published.",
+      "sources": [
+        {
+          "url": "https://caraba.net/skoda-haziran-2019-fiyat-listesi-aciklandi/",
+          "title": "Skoda Haziran 2019 Fabia/Octavia/Superb Ambition/Style/Prestige",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Skoda",
+      "series": "Superb",
+      "model": "1.5 TSI 150 PS ACT",
+      "trim": "Prestige",
+      "generation": "Superb III TR MY2019",
+      "generationCode": "3V",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1498",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Haziran 2019 Superb — Active/Style/Prestige/Comfort/L&K as published.",
+      "sources": [
+        {
+          "url": "https://caraba.net/skoda-haziran-2019-fiyat-listesi-aciklandi/",
+          "title": "Skoda Haziran 2019 Fabia/Octavia/Superb Ambition/Style/Prestige",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Skoda",
+      "series": "Superb",
+      "model": "1.6 TDI 120 PS",
+      "trim": "Comfort",
+      "generation": "Superb III TR MY2019",
+      "generationCode": "3V",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "120",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Haziran 2019 Superb — Active/Style/Prestige/Comfort/L&K as published.",
+      "sources": [
+        {
+          "url": "https://caraba.net/skoda-haziran-2019-fiyat-listesi-aciklandi/",
+          "title": "Skoda Haziran 2019 Fabia/Octavia/Superb Ambition/Style/Prestige",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Skoda",
+      "series": "Superb",
+      "model": "1.6 TDI 120 PS",
+      "trim": "Style",
+      "generation": "Superb III TR MY2019",
+      "generationCode": "3V",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "120",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Haziran 2019 Superb — Active/Style/Prestige/Comfort/L&K as published.",
+      "sources": [
+        {
+          "url": "https://caraba.net/skoda-haziran-2019-fiyat-listesi-aciklandi/",
+          "title": "Skoda Haziran 2019 Fabia/Octavia/Superb Ambition/Style/Prestige",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Skoda",
+      "series": "Superb",
+      "model": "1.6 TDI 120 PS",
+      "trim": "Prestige",
+      "generation": "Superb III TR MY2019",
+      "generationCode": "3V",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "120",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Haziran 2019 Superb — Active/Style/Prestige/Comfort/L&K as published.",
+      "sources": [
+        {
+          "url": "https://caraba.net/skoda-haziran-2019-fiyat-listesi-aciklandi/",
+          "title": "Skoda Haziran 2019 Fabia/Octavia/Superb Ambition/Style/Prestige",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Skoda",
+      "series": "Superb",
+      "model": "2.0 TDI 190 PS 4x4",
+      "trim": "L&K",
+      "generation": "Superb III TR MY2019",
+      "generationCode": "3V",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1968",
+      "powerHp": "190",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Haziran 2019 Superb — Active/Style/Prestige/Comfort/L&K as published.",
+      "sources": [
+        {
+          "url": "https://caraba.net/skoda-haziran-2019-fiyat-listesi-aciklandi/",
+          "title": "Skoda Haziran 2019 Fabia/Octavia/Superb Ambition/Style/Prestige",
+          "date": "2019-06-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "caraba.net"
+        }
+      ]
+    },
+    {
+      "brand": "Skoda",
+      "series": "Superb",
+      "model": "1.5 TSI ACT 150 PS",
+      "trim": "Elite",
+      "generation": "Superb III TR MY2020",
+      "generationCode": "3V",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1498",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ocak 2020 Superb — Elite/Premium/Prestige/L&K Crystal as published.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/skoda-fiyat-listesi-ocak-2020/",
+          "title": "Skoda Ocak 2020 Octavia/Superb Elite/Premium/Prestige",
+          "date": "2020-01-03",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Skoda",
+      "series": "Superb",
+      "model": "1.5 TSI ACT 150 PS",
+      "trim": "Premium",
+      "generation": "Superb III TR MY2020",
+      "generationCode": "3V",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1498",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ocak 2020 Superb — Elite/Premium/Prestige/L&K Crystal as published.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/skoda-fiyat-listesi-ocak-2020/",
+          "title": "Skoda Ocak 2020 Octavia/Superb Elite/Premium/Prestige",
+          "date": "2020-01-03",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Skoda",
+      "series": "Superb",
+      "model": "1.5 TSI ACT 150 PS",
+      "trim": "Prestige",
+      "generation": "Superb III TR MY2020",
+      "generationCode": "3V",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1498",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ocak 2020 Superb — Elite/Premium/Prestige/L&K Crystal as published.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/skoda-fiyat-listesi-ocak-2020/",
+          "title": "Skoda Ocak 2020 Octavia/Superb Elite/Premium/Prestige",
+          "date": "2020-01-03",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Skoda",
+      "series": "Superb",
+      "model": "1.6 TDI SCR 120 PS",
+      "trim": "Elite",
+      "generation": "Superb III TR MY2020",
+      "generationCode": "3V",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "120",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ocak 2020 Superb — Elite/Premium/Prestige/L&K Crystal as published.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/skoda-fiyat-listesi-ocak-2020/",
+          "title": "Skoda Ocak 2020 Octavia/Superb Elite/Premium/Prestige",
+          "date": "2020-01-03",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Skoda",
+      "series": "Superb",
+      "model": "1.6 TDI SCR 120 PS",
+      "trim": "Premium",
+      "generation": "Superb III TR MY2020",
+      "generationCode": "3V",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "120",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ocak 2020 Superb — Elite/Premium/Prestige/L&K Crystal as published.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/skoda-fiyat-listesi-ocak-2020/",
+          "title": "Skoda Ocak 2020 Octavia/Superb Elite/Premium/Prestige",
+          "date": "2020-01-03",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Skoda",
+      "series": "Superb",
+      "model": "1.6 TDI SCR 120 PS",
+      "trim": "Prestige",
+      "generation": "Superb III TR MY2020",
+      "generationCode": "3V",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "120",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ocak 2020 Superb — Elite/Premium/Prestige/L&K Crystal as published.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/skoda-fiyat-listesi-ocak-2020/",
+          "title": "Skoda Ocak 2020 Octavia/Superb Elite/Premium/Prestige",
+          "date": "2020-01-03",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Skoda",
+      "series": "Superb",
+      "model": "2.0 TDI SCR 190 PS 4x4",
+      "trim": "L&K Crystal",
+      "generation": "Superb III TR MY2020",
+      "generationCode": "3V",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "engineVolume": "1968",
+      "powerHp": "190",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ocak 2020 Superb — Elite/Premium/Prestige/L&K Crystal as published.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/skoda-fiyat-listesi-ocak-2020/",
+          "title": "Skoda Ocak 2020 Octavia/Superb Elite/Premium/Prestige",
+          "date": "2020-01-03",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Skoda",
+      "series": "Superb",
+      "model": "1.5 TSI ACT 150 PS",
+      "trim": "Elite",
+      "generation": "Superb III TR MY2021",
+      "generationCode": "3V",
+      "yearFrom": 2021,
+      "yearTo": 2021,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1498",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ocak 2021 Superb — Elite/Premium/Prestige/L&K Crystal as published.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/2021-skoda-fiyat-listesi-kampanyali-fiyati-ne-kadar/",
+          "title": "2021 Skoda Ocak Fabia/Octavia/Superb Premium/Elite/Prestige",
+          "date": "2021-01-07",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Skoda",
+      "series": "Superb",
+      "model": "1.5 TSI ACT 150 PS",
+      "trim": "Premium",
+      "generation": "Superb III TR MY2021",
+      "generationCode": "3V",
+      "yearFrom": 2021,
+      "yearTo": 2021,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1498",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ocak 2021 Superb — Elite/Premium/Prestige/L&K Crystal as published.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/2021-skoda-fiyat-listesi-kampanyali-fiyati-ne-kadar/",
+          "title": "2021 Skoda Ocak Fabia/Octavia/Superb Premium/Elite/Prestige",
+          "date": "2021-01-07",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Skoda",
+      "series": "Superb",
+      "model": "1.5 TSI ACT 150 PS",
+      "trim": "Prestige",
+      "generation": "Superb III TR MY2021",
+      "generationCode": "3V",
+      "yearFrom": 2021,
+      "yearTo": 2021,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1498",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ocak 2021 Superb — Elite/Premium/Prestige/L&K Crystal as published.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/2021-skoda-fiyat-listesi-kampanyali-fiyati-ne-kadar/",
+          "title": "2021 Skoda Ocak Fabia/Octavia/Superb Premium/Elite/Prestige",
+          "date": "2021-01-07",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Skoda",
+      "series": "Superb",
+      "model": "1.6 TDI SCR 120 PS",
+      "trim": "Elite",
+      "generation": "Superb III TR MY2021",
+      "generationCode": "3V",
+      "yearFrom": 2021,
+      "yearTo": 2021,
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "120",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ocak 2021 Superb — Elite/Premium/Prestige/L&K Crystal as published.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/2021-skoda-fiyat-listesi-kampanyali-fiyati-ne-kadar/",
+          "title": "2021 Skoda Ocak Fabia/Octavia/Superb Premium/Elite/Prestige",
+          "date": "2021-01-07",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Skoda",
+      "series": "Superb",
+      "model": "1.6 TDI SCR 120 PS",
+      "trim": "Premium",
+      "generation": "Superb III TR MY2021",
+      "generationCode": "3V",
+      "yearFrom": 2021,
+      "yearTo": 2021,
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "120",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ocak 2021 Superb — Elite/Premium/Prestige/L&K Crystal as published.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/2021-skoda-fiyat-listesi-kampanyali-fiyati-ne-kadar/",
+          "title": "2021 Skoda Ocak Fabia/Octavia/Superb Premium/Elite/Prestige",
+          "date": "2021-01-07",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Skoda",
+      "series": "Superb",
+      "model": "1.6 TDI SCR 120 PS",
+      "trim": "Prestige",
+      "generation": "Superb III TR MY2021",
+      "generationCode": "3V",
+      "yearFrom": 2021,
+      "yearTo": 2021,
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "120",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ocak 2021 Superb — Elite/Premium/Prestige/L&K Crystal as published.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/2021-skoda-fiyat-listesi-kampanyali-fiyati-ne-kadar/",
+          "title": "2021 Skoda Ocak Fabia/Octavia/Superb Premium/Elite/Prestige",
+          "date": "2021-01-07",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Skoda",
+      "series": "Superb",
+      "model": "2.0 TDI SCR 190 PS 4x4",
+      "trim": "L&K Crystal",
+      "generation": "Superb III TR MY2021",
+      "generationCode": "3V",
+      "yearFrom": 2021,
+      "yearTo": 2021,
+      "fuelType": "DIESEL",
+      "engineVolume": "1968",
+      "powerHp": "190",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ocak 2021 Superb — Elite/Premium/Prestige/L&K Crystal as published.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/2021-skoda-fiyat-listesi-kampanyali-fiyati-ne-kadar/",
+          "title": "2021 Skoda Ocak Fabia/Octavia/Superb Premium/Elite/Prestige",
+          "date": "2021-01-07",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
     }
   ],
   "researchNotes": {
-    "researchedSeriesPass": [
-      "Fabia",
-      "Octavia",
-      "Superb"
-    ],
-    "historicalArchivesIngested": [],
-    "reviewRequiredSeries": [
-      "Superb TDI power conflict"
-    ]
+    "noApply": true,
+    "applyAllowed": false,
+    "phase": "research-mass-market-batch",
+    "seriesWithoutResearch": [],
+    "currentOnlySeries": [],
+    "addedThisPass": 38
   },
   "completedAt": "2026-08-07T09:13:29.947Z"
 }

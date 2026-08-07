@@ -1,15 +1,15 @@
 {
   "brand": "Land Rover",
   "brandSlug": "land-rover",
-  "version": "2026.08-deep-land-rover-v1-current-tr",
-  "generatedAt": "2026-08-07T12:05:00.000Z",
+  "version": "2026.08-deep-land-rover-v2-premium",
+  "generatedAt": "2026-08-07T10:15:27.228Z",
   "seriesCovered": [
     "Defender",
-    "Range Rover Evoque",
     "Discovery Sport",
-    "Range Rover Velar",
+    "Range Rover",
+    "Range Rover Evoque",
     "Range Rover Sport",
-    "Range Rover"
+    "Range Rover Velar"
   ],
   "status": "COMPLETED",
   "notes": "Defender 110/130 official landrover.com.tr price rows. Other Range Rover family stubs.",
@@ -310,24 +310,515 @@
           "role": "secondary"
         }
       ]
+    },
+    {
+      "brand": "Land Rover",
+      "series": "Range Rover Evoque",
+      "model": "1.5 MHEV 160 bg",
+      "trim": "S",
+      "generation": "Evoque L551 TR MY2026",
+      "generationCode": "L551",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "1498",
+      "powerHp": "160",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Evoque 1.5 MHEV 160 bg S — resmi landrover.com.tr fiyat listesi.",
+      "sources": [
+        {
+          "url": "https://www.landrover.com.tr/build-and-price/range-rover-evoque-fiyat-listesi.pdf",
+          "title": "Range Rover Evoque resmi fiyat PDF",
+          "date": "2026-08-07",
+          "role": "primary",
+          "type": "official_price_list",
+          "publisher": "Land Rover Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "Land Rover",
+      "series": "Range Rover Evoque",
+      "model": "1.5 MHEV 160 bg",
+      "trim": "DYNAMIC SE",
+      "generation": "Evoque L551 TR MY2026",
+      "generationCode": "L551",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "1498",
+      "powerHp": "160",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Evoque 1.5 MHEV 160 bg DYNAMIC SE — resmi landrover.com.tr fiyat listesi.",
+      "sources": [
+        {
+          "url": "https://www.landrover.com.tr/build-and-price/range-rover-evoque-fiyat-listesi.pdf",
+          "title": "Range Rover Evoque resmi fiyat PDF",
+          "date": "2026-08-07",
+          "role": "primary",
+          "type": "official_price_list",
+          "publisher": "Land Rover Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "Land Rover",
+      "series": "Range Rover Evoque",
+      "model": "1.5 PHEV 269 bg",
+      "trim": "S",
+      "generation": "Evoque L551 TR MY2026",
+      "generationCode": "L551",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "PLUGIN_HYBRID",
+      "engineVolume": "1498",
+      "powerHp": "269",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Evoque 1.5 PHEV 269 bg S — resmi landrover.com.tr fiyat listesi.",
+      "sources": [
+        {
+          "url": "https://www.landrover.com.tr/build-and-price/range-rover-evoque-fiyat-listesi.pdf",
+          "title": "Range Rover Evoque resmi fiyat PDF",
+          "date": "2026-08-07",
+          "role": "primary",
+          "type": "official_price_list",
+          "publisher": "Land Rover Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "Land Rover",
+      "series": "Range Rover Evoque",
+      "model": "1.5 PHEV 269 bg",
+      "trim": "DYNAMIC SE",
+      "generation": "Evoque L551 TR MY2026",
+      "generationCode": "L551",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "PLUGIN_HYBRID",
+      "engineVolume": "1498",
+      "powerHp": "269",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Evoque 1.5 PHEV 269 bg DYNAMIC SE — resmi landrover.com.tr fiyat listesi.",
+      "sources": [
+        {
+          "url": "https://www.landrover.com.tr/build-and-price/range-rover-evoque-fiyat-listesi.pdf",
+          "title": "Range Rover Evoque resmi fiyat PDF",
+          "date": "2026-08-07",
+          "role": "primary",
+          "type": "official_price_list",
+          "publisher": "Land Rover Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "Land Rover",
+      "series": "Range Rover Velar",
+      "model": "2.0D MHEV 204 bg",
+      "trim": "S",
+      "generation": "Velar L560 TR MY2026",
+      "generationCode": "L560",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "1997",
+      "powerHp": "204",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Velar 2.0D MHEV 204 bg S — resmi fiyat PDF.",
+      "sources": [
+        {
+          "url": "https://www.landrover.com.tr/build-and-price/range-rover-velar-fiyat-listesi.pdf",
+          "title": "Range Rover Velar resmi fiyat PDF",
+          "date": "2026-08-07",
+          "role": "primary",
+          "type": "official_price_list",
+          "publisher": "Land Rover Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "Land Rover",
+      "series": "Range Rover Velar",
+      "model": "2.0D MHEV 204 bg",
+      "trim": "DYNAMIC SE",
+      "generation": "Velar L560 TR MY2026",
+      "generationCode": "L560",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "1997",
+      "powerHp": "204",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Velar 2.0D MHEV 204 bg DYNAMIC SE — resmi fiyat PDF.",
+      "sources": [
+        {
+          "url": "https://www.landrover.com.tr/build-and-price/range-rover-velar-fiyat-listesi.pdf",
+          "title": "Range Rover Velar resmi fiyat PDF",
+          "date": "2026-08-07",
+          "role": "primary",
+          "type": "official_price_list",
+          "publisher": "Land Rover Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "Land Rover",
+      "series": "Discovery Sport",
+      "model": "1.5 PHEV 269 bg",
+      "trim": "DYNAMIC S",
+      "generation": "Discovery Sport L550 TR MY2026",
+      "generationCode": "L550",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "PLUGIN_HYBRID",
+      "engineVolume": "1498",
+      "powerHp": "269",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Discovery Sport 1.5 PHEV 269 bg DYNAMIC S — resmi fiyat listesi.",
+      "sources": [
+        {
+          "url": "https://www.landrover.com.tr/build-and-price/discovery-sport-fiyat-listesi",
+          "title": "Discovery Sport resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary",
+          "type": "official_price_list",
+          "publisher": "Land Rover Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "Land Rover",
+      "series": "Discovery Sport",
+      "model": "1.5 PHEV 269 bg",
+      "trim": "LANDMARK",
+      "generation": "Discovery Sport L550 TR MY2026",
+      "generationCode": "L550",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "PLUGIN_HYBRID",
+      "engineVolume": "1498",
+      "powerHp": "269",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Discovery Sport 1.5 PHEV 269 bg LANDMARK — resmi fiyat listesi.",
+      "sources": [
+        {
+          "url": "https://www.landrover.com.tr/build-and-price/discovery-sport-fiyat-listesi",
+          "title": "Discovery Sport resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary",
+          "type": "official_price_list",
+          "publisher": "Land Rover Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "Land Rover",
+      "series": "Range Rover Sport",
+      "model": "3.0D MHEV 300 bg",
+      "trim": "DYNAMIC SE",
+      "generation": "Range Rover Sport L461 TR MY2026",
+      "generationCode": "L461",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "2997",
+      "powerHp": "300",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "RR Sport 3.0D MHEV 300 bg DYNAMIC SE — resmi fiyat listesi.",
+      "sources": [
+        {
+          "url": "https://www.landrover.com.tr/build-and-price/range-rover-sport-fiyat-listesi",
+          "title": "Range Rover Sport resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary",
+          "type": "official_price_list",
+          "publisher": "Land Rover Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "Land Rover",
+      "series": "Range Rover Sport",
+      "model": "3.0D MHEV 300 bg",
+      "trim": "DYNAMIC HSE",
+      "generation": "Range Rover Sport L461 TR MY2026",
+      "generationCode": "L461",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "2997",
+      "powerHp": "300",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "RR Sport 3.0D MHEV 300 bg DYNAMIC HSE — resmi fiyat listesi.",
+      "sources": [
+        {
+          "url": "https://www.landrover.com.tr/build-and-price/range-rover-sport-fiyat-listesi",
+          "title": "Range Rover Sport resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary",
+          "type": "official_price_list",
+          "publisher": "Land Rover Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "Land Rover",
+      "series": "Range Rover Sport",
+      "model": "3.0D MHEV 350 bg",
+      "trim": "AUTOBIOGRAPHY",
+      "generation": "Range Rover Sport L461 TR MY2026",
+      "generationCode": "L461",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "2997",
+      "powerHp": "350",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "RR Sport 3.0D MHEV 350 bg AUTOBIOGRAPHY — resmi fiyat listesi.",
+      "sources": [
+        {
+          "url": "https://www.landrover.com.tr/build-and-price/range-rover-sport-fiyat-listesi",
+          "title": "Range Rover Sport resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary",
+          "type": "official_price_list",
+          "publisher": "Land Rover Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "Land Rover",
+      "series": "Range Rover Sport",
+      "model": "4.4 MHEV 615 bg",
+      "trim": "SV BLACK",
+      "generation": "Range Rover Sport L461 TR MY2026",
+      "generationCode": "L461",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "4395",
+      "powerHp": "615",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "RR Sport 4.4 MHEV 615 bg SV BLACK — resmi fiyat listesi.",
+      "sources": [
+        {
+          "url": "https://www.landrover.com.tr/build-and-price/range-rover-sport-fiyat-listesi",
+          "title": "Range Rover Sport resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary",
+          "type": "official_price_list",
+          "publisher": "Land Rover Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "Land Rover",
+      "series": "Range Rover",
+      "model": "SWB 3.0D MHEV 300 bg",
+      "trim": "SIGNATURE",
+      "generation": "Range Rover L460 TR MY2026",
+      "generationCode": "L460",
+      "yearFrom": 2022,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "2997",
+      "powerHp": "300",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Range Rover SWB 3.0D MHEV 300 bg SIGNATURE — resmi SWB fiyat listesi (sampled rows).",
+      "sources": [
+        {
+          "url": "https://www.landrover.com.tr/build-and-price/range-rover-fiyat-listesi",
+          "title": "Range Rover resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary",
+          "type": "official_price_list",
+          "publisher": "Land Rover Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "Land Rover",
+      "series": "Range Rover",
+      "model": "SWB 3.0D MHEV 300 bg",
+      "trim": "SIGNATURE PLUS",
+      "generation": "Range Rover L460 TR MY2026",
+      "generationCode": "L460",
+      "yearFrom": 2022,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "2997",
+      "powerHp": "300",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Range Rover SWB 3.0D MHEV 300 bg SIGNATURE PLUS — resmi SWB fiyat listesi (sampled rows).",
+      "sources": [
+        {
+          "url": "https://www.landrover.com.tr/build-and-price/range-rover-fiyat-listesi",
+          "title": "Range Rover resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary",
+          "type": "official_price_list",
+          "publisher": "Land Rover Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "Land Rover",
+      "series": "Range Rover",
+      "model": "SWB 3.0D MHEV 350 bg",
+      "trim": "AUTOBIOGRAPHY",
+      "generation": "Range Rover L460 TR MY2026",
+      "generationCode": "L460",
+      "yearFrom": 2022,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "2997",
+      "powerHp": "350",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Range Rover SWB 3.0D MHEV 350 bg AUTOBIOGRAPHY — resmi SWB fiyat listesi (sampled rows).",
+      "sources": [
+        {
+          "url": "https://www.landrover.com.tr/build-and-price/range-rover-fiyat-listesi",
+          "title": "Range Rover resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary",
+          "type": "official_price_list",
+          "publisher": "Land Rover Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "Land Rover",
+      "series": "Range Rover",
+      "model": "SWB 3.0 PHEV 460 bg",
+      "trim": "AUTOBIOGRAPHY",
+      "generation": "Range Rover L460 TR MY2026",
+      "generationCode": "L460",
+      "yearFrom": 2022,
+      "yearTo": 2026,
+      "fuelType": "PLUGIN_HYBRID",
+      "engineVolume": "2996",
+      "powerHp": "460",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Range Rover SWB 3.0 PHEV 460 bg AUTOBIOGRAPHY — resmi SWB fiyat listesi (sampled rows).",
+      "sources": [
+        {
+          "url": "https://www.landrover.com.tr/build-and-price/range-rover-fiyat-listesi",
+          "title": "Range Rover resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary",
+          "type": "official_price_list",
+          "publisher": "Land Rover Türkiye"
+        }
+      ]
+    },
+    {
+      "brand": "Land Rover",
+      "series": "Range Rover",
+      "model": "SWB 4.4 MHEV 530 bg",
+      "trim": "AUTOBIOGRAPHY",
+      "generation": "Range Rover L460 TR MY2026",
+      "generationCode": "L460",
+      "yearFrom": 2022,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "4395",
+      "powerHp": "530",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Range Rover SWB 4.4 MHEV 530 bg AUTOBIOGRAPHY — resmi SWB fiyat listesi (sampled rows).",
+      "sources": [
+        {
+          "url": "https://www.landrover.com.tr/build-and-price/range-rover-fiyat-listesi",
+          "title": "Range Rover resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary",
+          "type": "official_price_list",
+          "publisher": "Land Rover Türkiye"
+        }
+      ]
     }
   ],
   "researchNotes": {
-    "researchedSeriesPass": [
-      "Defender",
+    "noApply": true,
+    "applyAllowed": false,
+    "phase": "research-premium-ev-batch",
+    "seriesWithoutResearch": [],
+    "currentOnlySeries": [
       "Range Rover Evoque",
       "Discovery Sport",
       "Range Rover Velar",
       "Range Rover Sport",
       "Range Rover"
     ],
-    "reviewRequiredSeries": [
-      "Range Rover Evoque",
-      "Discovery Sport",
-      "Range Rover Velar",
-      "Range Rover Sport",
-      "Range Rover"
-    ]
+    "addedThisPass": 17,
+    "electricOverlayNote": "Do not invent duplicate EV series"
   },
   "completedAt": "2026-08-07T09:13:29.902Z"
 }

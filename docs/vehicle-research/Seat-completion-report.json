@@ -1,0 +1,46 @@
+{
+  "at": "2026-08-07T10:14:37.813Z",
+  "brand": "Seat",
+  "status": "COMPLETED",
+  "gate": {
+    "seriesWithoutResearch": [],
+    "seriesWithoutResearchCount": 0,
+    "pass": true
+  },
+  "selectableSeries": [
+    "Ibiza",
+    "Leon",
+    "Ateca"
+  ],
+  "researchedSeries": [
+    "Ibiza",
+    "Leon",
+    "Ateca"
+  ],
+  "verifiedVersions": [
+    "1.0 EcoTSI 115 HP",
+    "1.0 TSI 116 PS",
+    "1.5 EcoTSI 130 HP",
+    "1.5 EcoTSI ACT 150 HP",
+    "1.5 EcoTSI ACT 150 PS",
+    "1.5 eHybrid 204 PS",
+    "1.5 eTSI 116 PS mHEV",
+    "1.6 TDI 115 HP"
+  ],
+  "verifiedTrims": [
+    "FR",
+    "FR Dark Edition",
+    "Style",
+    "Style Plus",
+    "Xcellence"
+  ],
+  "verifiedConfigurations": 21,
+  "officialSources": 0,
+  "multiSources": 21,
+  "reviewRequired": 0,
+  "rejected": 0,
+  "noVerifiedTrimFound": 0,
+  "seriesWithCurrentOnlyCoverage": [],
+  "historicalCoverageIncompleteSeries": [],
+  "notes": "Completed means every selectable series was systematically researched. Current-only and incomplete historical gens remain explicitly flagged. Research-only; applyAllowed=false."
+}

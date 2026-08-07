@@ -1,0 +1,62 @@
+{
+  "at": "2026-08-07T10:14:37.795Z",
+  "brand": "Skoda",
+  "status": "COMPLETED",
+  "gate": {
+    "seriesWithoutResearch": [],
+    "seriesWithoutResearchCount": 0,
+    "pass": true
+  },
+  "selectableSeries": [
+    "Fabia",
+    "Octavia",
+    "Superb"
+  ],
+  "researchedSeries": [
+    "Fabia",
+    "Octavia",
+    "Superb"
+  ],
+  "verifiedVersions": [
+    "1.0 75 PS",
+    "1.0 TSI 110 PS",
+    "1.0 TSI 115 PS",
+    "1.0 TSI 95 PS",
+    "1.0 TSI ACT 110 PS",
+    "1.5 TSI 150 PS",
+    "1.5 TSI 150 PS ACT",
+    "1.5 TSI ACT 150 PS",
+    "1.5 TSI mHEV 150 PS",
+    "1.6 TDI 115 PS",
+    "1.6 TDI 120 PS",
+    "1.6 TDI SCR 120 PS",
+    "2.0 TDI 190 PS 4x4",
+    "2.0 TDI SCR 190 PS 4x4",
+    "2.0 TSI 265 PS"
+  ],
+  "verifiedTrims": [
+    "Active",
+    "Ambition",
+    "Comfort",
+    "Elite",
+    "L&K",
+    "L&K Crystal",
+    "Monte Carlo",
+    "Optimal",
+    "Premium",
+    "Prestige",
+    "RS",
+    "Sport",
+    "Sportline",
+    "Style"
+  ],
+  "verifiedConfigurations": 50,
+  "officialSources": 0,
+  "multiSources": 50,
+  "reviewRequired": 1,
+  "rejected": 0,
+  "noVerifiedTrimFound": 0,
+  "seriesWithCurrentOnlyCoverage": [],
+  "historicalCoverageIncompleteSeries": [],
+  "notes": "Completed means every selectable series was systematically researched. Current-only and incomplete historical gens remain explicitly flagged. Research-only; applyAllowed=false."
+}

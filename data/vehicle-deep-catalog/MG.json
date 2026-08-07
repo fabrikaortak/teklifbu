@@ -1,13 +1,13 @@
 {
   "brand": "MG",
   "brandSlug": "mg",
-  "version": "2026.08-deep-mg-v1-current-tr",
-  "generatedAt": "2026-08-07T12:05:00.000Z",
+  "version": "2026.08-deep-mg-v2-premium",
+  "generatedAt": "2026-08-07T10:15:27.335Z",
   "seriesCovered": [
-    "ZS Hybrid+",
-    "HS Hybrid+",
     "HS",
-    "MG7"
+    "HS Hybrid+",
+    "MG7",
+    "ZS Hybrid+"
   ],
   "status": "COMPLETED",
   "notes": "ZS Hybrid+ Luxury from official mg-turkey.com notes + Aug 2026 published tables.",
@@ -209,13 +209,18 @@
     }
   ],
   "researchNotes": {
-    "researchedSeriesPass": [
+    "noApply": true,
+    "applyAllowed": false,
+    "phase": "research-premium-ev-batch",
+    "seriesWithoutResearch": [],
+    "currentOnlySeries": [
       "ZS Hybrid+",
       "HS Hybrid+",
       "HS",
       "MG7"
     ],
-    "reviewRequiredSeries": []
+    "addedThisPass": 0,
+    "electricOverlayNote": "Do not invent duplicate EV series"
   },
   "completedAt": "2026-08-07T09:13:29.917Z"
 }

@@ -1,11 +1,11 @@
 {
   "brand": "Toyota",
   "brandSlug": "toyota",
-  "version": "2026.08-deep-toyota-v1-current-tr",
-  "generatedAt": "2026-08-07T12:00:00.000Z",
+  "version": "2026.08-deep-toyota-v2-historical",
+  "generatedAt": "2026-08-07T10:07:24.288Z",
   "seriesCovered": [
-    "Corolla",
     "C-HR",
+    "Corolla",
     "RAV4"
   ],
   "status": "COMPLETED",
@@ -517,18 +517,967 @@
           "role": "primary"
         }
       ]
+    },
+    {
+      "brand": "Toyota",
+      "series": "Corolla",
+      "model": "1.6",
+      "trim": "Vision",
+      "generation": "Corolla Sedan E210 TR MY2019",
+      "generationCode": "E210",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1598",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Aralık 2019 Corolla Sedan — packages only on listed transmissions.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/toyota-fiyat-listesi-aralik-2019/",
+          "title": "Toyota Aralık 2019 Corolla/C-HR/RAV4 fiyat listesi",
+          "date": "2019-12-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "series": "Corolla",
+      "model": "1.6 Multidrive S",
+      "trim": "Vision",
+      "generation": "Corolla Sedan E210 TR MY2019",
+      "generationCode": "E210",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1598",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Aralık 2019 Corolla Sedan — packages only on listed transmissions.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/toyota-fiyat-listesi-aralik-2019/",
+          "title": "Toyota Aralık 2019 Corolla/C-HR/RAV4 fiyat listesi",
+          "date": "2019-12-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "series": "Corolla",
+      "model": "1.6",
+      "trim": "Dream",
+      "generation": "Corolla Sedan E210 TR MY2019",
+      "generationCode": "E210",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1598",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Aralık 2019 Corolla Sedan — packages only on listed transmissions.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/toyota-fiyat-listesi-aralik-2019/",
+          "title": "Toyota Aralık 2019 Corolla/C-HR/RAV4 fiyat listesi",
+          "date": "2019-12-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "series": "Corolla",
+      "model": "1.6 Multidrive S",
+      "trim": "Dream",
+      "generation": "Corolla Sedan E210 TR MY2019",
+      "generationCode": "E210",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1598",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Aralık 2019 Corolla Sedan — packages only on listed transmissions.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/toyota-fiyat-listesi-aralik-2019/",
+          "title": "Toyota Aralık 2019 Corolla/C-HR/RAV4 fiyat listesi",
+          "date": "2019-12-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "series": "Corolla",
+      "model": "1.6",
+      "trim": "Flame",
+      "generation": "Corolla Sedan E210 TR MY2019",
+      "generationCode": "E210",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1598",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Aralık 2019 Corolla Sedan — packages only on listed transmissions.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/toyota-fiyat-listesi-aralik-2019/",
+          "title": "Toyota Aralık 2019 Corolla/C-HR/RAV4 fiyat listesi",
+          "date": "2019-12-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "series": "Corolla",
+      "model": "1.6 Multidrive S",
+      "trim": "Flame",
+      "generation": "Corolla Sedan E210 TR MY2019",
+      "generationCode": "E210",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1598",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Aralık 2019 Corolla Sedan — packages only on listed transmissions.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/toyota-fiyat-listesi-aralik-2019/",
+          "title": "Toyota Aralık 2019 Corolla/C-HR/RAV4 fiyat listesi",
+          "date": "2019-12-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "series": "Corolla",
+      "model": "1.6",
+      "trim": "Flame X-Pack",
+      "generation": "Corolla Sedan E210 TR MY2019",
+      "generationCode": "E210",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1598",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Aralık 2019 Corolla Sedan — packages only on listed transmissions.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/toyota-fiyat-listesi-aralik-2019/",
+          "title": "Toyota Aralık 2019 Corolla/C-HR/RAV4 fiyat listesi",
+          "date": "2019-12-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "series": "Corolla",
+      "model": "1.6 Multidrive S",
+      "trim": "Flame X-Pack",
+      "generation": "Corolla Sedan E210 TR MY2019",
+      "generationCode": "E210",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1598",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Aralık 2019 Corolla Sedan — packages only on listed transmissions.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/toyota-fiyat-listesi-aralik-2019/",
+          "title": "Toyota Aralık 2019 Corolla/C-HR/RAV4 fiyat listesi",
+          "date": "2019-12-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "series": "Corolla",
+      "model": "1.6 Multidrive S",
+      "trim": "Passion",
+      "generation": "Corolla Sedan E210 TR MY2019",
+      "generationCode": "E210",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1598",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Aralık 2019 Corolla Sedan — packages only on listed transmissions.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/toyota-fiyat-listesi-aralik-2019/",
+          "title": "Toyota Aralık 2019 Corolla/C-HR/RAV4 fiyat listesi",
+          "date": "2019-12-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "series": "Corolla",
+      "model": "1.6 Multidrive S",
+      "trim": "Passion X-Pack",
+      "generation": "Corolla Sedan E210 TR MY2019",
+      "generationCode": "E210",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1598",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Aralık 2019 Corolla Sedan — packages only on listed transmissions.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/toyota-fiyat-listesi-aralik-2019/",
+          "title": "Toyota Aralık 2019 Corolla/C-HR/RAV4 fiyat listesi",
+          "date": "2019-12-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "series": "Corolla",
+      "model": "1.8 Hybrid e-CVT",
+      "trim": "Vision",
+      "generation": "Corolla Sedan Hybrid E210 TR MY2019",
+      "generationCode": "E210",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "HYBRID",
+      "engineVolume": "1798",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Aralık 2019 Corolla Hybrid — Vision→Passion X-Pack as published.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/toyota-fiyat-listesi-aralik-2019/",
+          "title": "Toyota Aralık 2019 Corolla/C-HR/RAV4 fiyat listesi",
+          "date": "2019-12-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "series": "Corolla",
+      "model": "1.8 Hybrid e-CVT",
+      "trim": "Dream",
+      "generation": "Corolla Sedan Hybrid E210 TR MY2019",
+      "generationCode": "E210",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "HYBRID",
+      "engineVolume": "1798",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Aralık 2019 Corolla Hybrid — Vision→Passion X-Pack as published.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/toyota-fiyat-listesi-aralik-2019/",
+          "title": "Toyota Aralık 2019 Corolla/C-HR/RAV4 fiyat listesi",
+          "date": "2019-12-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "series": "Corolla",
+      "model": "1.8 Hybrid e-CVT",
+      "trim": "Flame",
+      "generation": "Corolla Sedan Hybrid E210 TR MY2019",
+      "generationCode": "E210",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "HYBRID",
+      "engineVolume": "1798",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Aralık 2019 Corolla Hybrid — Vision→Passion X-Pack as published.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/toyota-fiyat-listesi-aralik-2019/",
+          "title": "Toyota Aralık 2019 Corolla/C-HR/RAV4 fiyat listesi",
+          "date": "2019-12-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "series": "Corolla",
+      "model": "1.8 Hybrid e-CVT",
+      "trim": "Flame X-Pack",
+      "generation": "Corolla Sedan Hybrid E210 TR MY2019",
+      "generationCode": "E210",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "HYBRID",
+      "engineVolume": "1798",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Aralık 2019 Corolla Hybrid — Vision→Passion X-Pack as published.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/toyota-fiyat-listesi-aralik-2019/",
+          "title": "Toyota Aralık 2019 Corolla/C-HR/RAV4 fiyat listesi",
+          "date": "2019-12-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "series": "Corolla",
+      "model": "1.8 Hybrid e-CVT",
+      "trim": "Passion",
+      "generation": "Corolla Sedan Hybrid E210 TR MY2019",
+      "generationCode": "E210",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "HYBRID",
+      "engineVolume": "1798",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Aralık 2019 Corolla Hybrid — Vision→Passion X-Pack as published.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/toyota-fiyat-listesi-aralik-2019/",
+          "title": "Toyota Aralık 2019 Corolla/C-HR/RAV4 fiyat listesi",
+          "date": "2019-12-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "series": "Corolla",
+      "model": "1.8 Hybrid e-CVT",
+      "trim": "Passion X-Pack",
+      "generation": "Corolla Sedan Hybrid E210 TR MY2019",
+      "generationCode": "E210",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "HYBRID",
+      "engineVolume": "1798",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Aralık 2019 Corolla Hybrid — Vision→Passion X-Pack as published.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/toyota-fiyat-listesi-aralik-2019/",
+          "title": "Toyota Aralık 2019 Corolla/C-HR/RAV4 fiyat listesi",
+          "date": "2019-12-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "series": "C-HR",
+      "model": "1.8 Hybrid e-CVT",
+      "trim": "Flame",
+      "generation": "C-HR I TR MY2019",
+      "generationCode": "AX10",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "HYBRID",
+      "engineVolume": "1798",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2019 C-HR Hybrid 4x2 — Flame/Passion/Passion X-Pack only.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/toyota-fiyat-listesi-aralik-2019/",
+          "title": "Toyota Aralık 2019 Corolla/C-HR/RAV4 fiyat listesi",
+          "date": "2019-12-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "series": "C-HR",
+      "model": "1.8 Hybrid e-CVT",
+      "trim": "Passion",
+      "generation": "C-HR I TR MY2019",
+      "generationCode": "AX10",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "HYBRID",
+      "engineVolume": "1798",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2019 C-HR Hybrid 4x2 — Flame/Passion/Passion X-Pack only.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/toyota-fiyat-listesi-aralik-2019/",
+          "title": "Toyota Aralık 2019 Corolla/C-HR/RAV4 fiyat listesi",
+          "date": "2019-12-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "series": "C-HR",
+      "model": "1.8 Hybrid e-CVT",
+      "trim": "Passion X-Pack",
+      "generation": "C-HR I TR MY2019",
+      "generationCode": "AX10",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "HYBRID",
+      "engineVolume": "1798",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2019 C-HR Hybrid 4x2 — Flame/Passion/Passion X-Pack only.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/toyota-fiyat-listesi-aralik-2019/",
+          "title": "Toyota Aralık 2019 Corolla/C-HR/RAV4 fiyat listesi",
+          "date": "2019-12-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "series": "C-HR",
+      "model": "1.2 Turbo",
+      "trim": "Flame",
+      "generation": "C-HR I TR MY2019",
+      "generationCode": "AX10",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1197",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2019 C-HR 1.2 Turbo — Flame/Passion as published (no Passion manual invent).",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/toyota-fiyat-listesi-aralik-2019/",
+          "title": "Toyota Aralık 2019 Corolla/C-HR/RAV4 fiyat listesi",
+          "date": "2019-12-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "series": "C-HR",
+      "model": "1.2 Turbo Multidrive S",
+      "trim": "Flame",
+      "generation": "C-HR I TR MY2019",
+      "generationCode": "AX10",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1197",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2019 C-HR 1.2 Turbo — Flame/Passion as published (no Passion manual invent).",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/toyota-fiyat-listesi-aralik-2019/",
+          "title": "Toyota Aralık 2019 Corolla/C-HR/RAV4 fiyat listesi",
+          "date": "2019-12-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "series": "C-HR",
+      "model": "1.2 Turbo Multidrive S",
+      "trim": "Passion",
+      "generation": "C-HR I TR MY2019",
+      "generationCode": "AX10",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1197",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2019 C-HR 1.2 Turbo — Flame/Passion as published (no Passion manual invent).",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/toyota-fiyat-listesi-aralik-2019/",
+          "title": "Toyota Aralık 2019 Corolla/C-HR/RAV4 fiyat listesi",
+          "date": "2019-12-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "series": "RAV4",
+      "model": "2.5 Hybrid 4x4 e-CVT",
+      "trim": "Flame",
+      "generation": "RAV4 XA50 TR MY2019",
+      "generationCode": "XA50",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "HYBRID",
+      "engineVolume": "2487",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Aralık 2019 Yeni RAV4 Hybrid — Flame/Passion/Passion X-Pack.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/toyota-fiyat-listesi-aralik-2019/",
+          "title": "Toyota Aralık 2019 Corolla/C-HR/RAV4 fiyat listesi",
+          "date": "2019-12-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "series": "RAV4",
+      "model": "2.5 Hybrid 4x4 e-CVT",
+      "trim": "Passion",
+      "generation": "RAV4 XA50 TR MY2019",
+      "generationCode": "XA50",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "HYBRID",
+      "engineVolume": "2487",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Aralık 2019 Yeni RAV4 Hybrid — Flame/Passion/Passion X-Pack.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/toyota-fiyat-listesi-aralik-2019/",
+          "title": "Toyota Aralık 2019 Corolla/C-HR/RAV4 fiyat listesi",
+          "date": "2019-12-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "series": "RAV4",
+      "model": "2.5 Hybrid 4x4 e-CVT",
+      "trim": "Passion X-Pack",
+      "generation": "RAV4 XA50 TR MY2019",
+      "generationCode": "XA50",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "HYBRID",
+      "engineVolume": "2487",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Aralık 2019 Yeni RAV4 Hybrid — Flame/Passion/Passion X-Pack.",
+      "sources": [
+        {
+          "url": "https://www.otomobilir.com/toyota-fiyat-listesi-aralik-2019/",
+          "title": "Toyota Aralık 2019 Corolla/C-HR/RAV4 fiyat listesi",
+          "date": "2019-12-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "otomobilir.com"
+        }
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "series": "RAV4",
+      "model": "2.5 Hybrid 4x4 e-CVT",
+      "trim": "Flame",
+      "generation": "RAV4 XA50 TR MY2020",
+      "generationCode": "XA50",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "HYBRID",
+      "engineVolume": "2487",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2020 ÖTV sonrası RAV4 Hybrid — includes Passion X-Sport as published.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3009429-toyota-2020-fiyat-listesini-acikladi-otv-sonrasi-2020-corolla-rav4-c-hr-hybrid-fiyatlari",
+          "title": "Toyota 2020 ÖTV sonrası Corolla/C-HR/RAV4 fiyatları",
+          "date": "2020-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        }
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "series": "RAV4",
+      "model": "2.5 Hybrid 4x4 e-CVT",
+      "trim": "Passion",
+      "generation": "RAV4 XA50 TR MY2020",
+      "generationCode": "XA50",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "HYBRID",
+      "engineVolume": "2487",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2020 ÖTV sonrası RAV4 Hybrid — includes Passion X-Sport as published.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3009429-toyota-2020-fiyat-listesini-acikladi-otv-sonrasi-2020-corolla-rav4-c-hr-hybrid-fiyatlari",
+          "title": "Toyota 2020 ÖTV sonrası Corolla/C-HR/RAV4 fiyatları",
+          "date": "2020-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        }
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "series": "RAV4",
+      "model": "2.5 Hybrid 4x4 e-CVT",
+      "trim": "Passion X-Pack",
+      "generation": "RAV4 XA50 TR MY2020",
+      "generationCode": "XA50",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "HYBRID",
+      "engineVolume": "2487",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2020 ÖTV sonrası RAV4 Hybrid — includes Passion X-Sport as published.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3009429-toyota-2020-fiyat-listesini-acikladi-otv-sonrasi-2020-corolla-rav4-c-hr-hybrid-fiyatlari",
+          "title": "Toyota 2020 ÖTV sonrası Corolla/C-HR/RAV4 fiyatları",
+          "date": "2020-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        }
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "series": "RAV4",
+      "model": "2.5 Hybrid 4x4 e-CVT",
+      "trim": "Passion X-Sport",
+      "generation": "RAV4 XA50 TR MY2020",
+      "generationCode": "XA50",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "HYBRID",
+      "engineVolume": "2487",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "2020 ÖTV sonrası RAV4 Hybrid — includes Passion X-Sport as published.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3009429-toyota-2020-fiyat-listesini-acikladi-otv-sonrasi-2020-corolla-rav4-c-hr-hybrid-fiyatlari",
+          "title": "Toyota 2020 ÖTV sonrası Corolla/C-HR/RAV4 fiyatları",
+          "date": "2020-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        }
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "series": "Corolla",
+      "model": "1.8 Hybrid e-CVT",
+      "trim": "Dream",
+      "generation": "Corolla Sedan Hybrid E210 TR MY2020",
+      "generationCode": "E210",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "HYBRID",
+      "engineVolume": "1798",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2020 ÖTV sonrası Corolla Hybrid Sedan packages.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3009429-toyota-2020-fiyat-listesini-acikladi-otv-sonrasi-2020-corolla-rav4-c-hr-hybrid-fiyatlari",
+          "title": "Toyota 2020 ÖTV sonrası Corolla/C-HR/RAV4 fiyatları",
+          "date": "2020-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        }
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "series": "Corolla",
+      "model": "1.8 Hybrid e-CVT",
+      "trim": "Flame",
+      "generation": "Corolla Sedan Hybrid E210 TR MY2020",
+      "generationCode": "E210",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "HYBRID",
+      "engineVolume": "1798",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2020 ÖTV sonrası Corolla Hybrid Sedan packages.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3009429-toyota-2020-fiyat-listesini-acikladi-otv-sonrasi-2020-corolla-rav4-c-hr-hybrid-fiyatlari",
+          "title": "Toyota 2020 ÖTV sonrası Corolla/C-HR/RAV4 fiyatları",
+          "date": "2020-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        }
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "series": "Corolla",
+      "model": "1.8 Hybrid e-CVT",
+      "trim": "Flame X-Pack",
+      "generation": "Corolla Sedan Hybrid E210 TR MY2020",
+      "generationCode": "E210",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "HYBRID",
+      "engineVolume": "1798",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2020 ÖTV sonrası Corolla Hybrid Sedan packages.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3009429-toyota-2020-fiyat-listesini-acikladi-otv-sonrasi-2020-corolla-rav4-c-hr-hybrid-fiyatlari",
+          "title": "Toyota 2020 ÖTV sonrası Corolla/C-HR/RAV4 fiyatları",
+          "date": "2020-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        }
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "series": "Corolla",
+      "model": "1.8 Hybrid e-CVT",
+      "trim": "Passion",
+      "generation": "Corolla Sedan Hybrid E210 TR MY2020",
+      "generationCode": "E210",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "HYBRID",
+      "engineVolume": "1798",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2020 ÖTV sonrası Corolla Hybrid Sedan packages.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3009429-toyota-2020-fiyat-listesini-acikladi-otv-sonrasi-2020-corolla-rav4-c-hr-hybrid-fiyatlari",
+          "title": "Toyota 2020 ÖTV sonrası Corolla/C-HR/RAV4 fiyatları",
+          "date": "2020-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        }
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "series": "Corolla",
+      "model": "1.8 Hybrid e-CVT",
+      "trim": "Passion X-Pack",
+      "generation": "Corolla Sedan Hybrid E210 TR MY2020",
+      "generationCode": "E210",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "HYBRID",
+      "engineVolume": "1798",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "2020 ÖTV sonrası Corolla Hybrid Sedan packages.",
+      "sources": [
+        {
+          "url": "https://otomobil.haber7.com/otomobil/haber/3009429-toyota-2020-fiyat-listesini-acikladi-otv-sonrasi-2020-corolla-rav4-c-hr-hybrid-fiyatlari",
+          "title": "Toyota 2020 ÖTV sonrası Corolla/C-HR/RAV4 fiyatları",
+          "date": "2020-09-01",
+          "role": "primary",
+          "type": "price_list_archive",
+          "publisher": "haber7.com"
+        }
+      ]
     }
   ],
   "researchNotes": {
-    "researchedSeriesPass": [
-      "Corolla",
-      "C-HR",
-      "RAV4"
-    ],
-    "historicalArchivesIngested": [],
-    "reviewRequiredSeries": [
-      "RAV4"
-    ]
+    "noApply": true,
+    "applyAllowed": false,
+    "phase": "research-mass-market-batch",
+    "seriesWithoutResearch": [],
+    "currentOnlySeries": [],
+    "addedThisPass": 34
   },
   "completedAt": "2026-08-07T09:13:29.958Z"
 }

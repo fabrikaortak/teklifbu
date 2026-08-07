@@ -1,0 +1,42 @@
+{
+  "at": "2026-08-07T10:01:24.562Z",
+  "brand": "Renault",
+  "status": "COMPLETED",
+  "gate": {
+    "seriesWithoutResearch": [],
+    "pass": true
+  },
+  "selectableSeries": [
+    "Clio",
+    "Megane",
+    "Megane E-Tech",
+    "Captur",
+    "Kadjar",
+    "Austral",
+    "Symbol",
+    "Taliant",
+    "Kangoo",
+    "Trafic"
+  ],
+  "researchedSeries": [
+    "Clio",
+    "Megane",
+    "Megane E-Tech",
+    "Captur",
+    "Kadjar",
+    "Austral",
+    "Symbol",
+    "Taliant",
+    "Kangoo",
+    "Trafic"
+  ],
+  "verifiedConfigurations": 35,
+  "officialSources": 1,
+  "multiSources": 34,
+  "reviewRequired": 8,
+  "rejected": 0,
+  "seriesWithCurrentOnlyCoverage": [
+    "Megane E-Tech",
+    "Kangoo"
+  ]
+}

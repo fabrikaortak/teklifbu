@@ -1,0 +1,55 @@
+{
+  "at": "2026-08-07T10:14:37.768Z",
+  "brand": "Hyundai",
+  "status": "COMPLETED",
+  "gate": {
+    "seriesWithoutResearch": [],
+    "seriesWithoutResearchCount": 0,
+    "pass": true
+  },
+  "selectableSeries": [
+    "i20",
+    "Bayon",
+    "Tucson"
+  ],
+  "researchedSeries": [
+    "i20",
+    "Bayon",
+    "Tucson"
+  ],
+  "verifiedVersions": [
+    "1.0 T-GDI 100 PS",
+    "1.0 T-GDI 90 PS",
+    "1.2 MPI 84 PS",
+    "1.4 CRDi 90 PS",
+    "1.4 MPI 100 PS",
+    "1.6 CRDi 136 PS",
+    "1.6 T-GDI 177 PS",
+    "1.6 T-GDI 180 PS",
+    "1.6 T-GDI 215 PS HEV"
+  ],
+  "verifiedTrims": [
+    "Comfort",
+    "Elite",
+    "Elite Plus",
+    "Jump",
+    "Power Edition",
+    "Prime",
+    "Smart",
+    "Style"
+  ],
+  "verifiedConfigurations": 42,
+  "officialSources": 0,
+  "multiSources": 42,
+  "reviewRequired": 1,
+  "rejected": 0,
+  "noVerifiedTrimFound": 0,
+  "seriesWithCurrentOnlyCoverage": [],
+  "historicalCoverageIncompleteSeries": [
+    {
+      "series": "Bayon",
+      "historicalCoverage": "HISTORICAL_COVERAGE_INCOMPLETE"
+    }
+  ],
+  "notes": "Completed means every selectable series was systematically researched. Current-only and incomplete historical gens remain explicitly flagged. Research-only; applyAllowed=false."
+}
