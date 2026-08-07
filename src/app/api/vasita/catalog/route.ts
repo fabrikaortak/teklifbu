@@ -1,13 +1,20 @@
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/db";
+import {
+  filterTrimsForVersion,
+  mergeVersionsForCascade,
+  type CatalogVersion,
+} from "@/lib/vasitaCatalogNormalize";
 
 /**
- * Vasıta catalog cascade (Marka → Model → Nesil/Versiyon → Model yılı).
+ * Vasıta catalog cascade (Marka → Seri → Version/Motor → Trim/Paket).
  *
  * Standard:
  *   GET /api/vasita/catalog?action=brands&subtype=otomobil
  *   GET /api/vasita/catalog?action=models&subtype=otomobil&brand=bmw
- *   GET /api/vasita/catalog?action=generations&subtype=otomobil&brand=bmw&model=3-serisi
+ *   GET /api/vasita/catalog?action=generations&subtype=otomobil&brand=bmw&model=5-serisi
+ *   GET /api/vasita/catalog?action=generations&subtype=otomobil&brand=bmw&model=5-serisi&generation=G30&year=2019
+ *   GET /api/vasita/catalog?action=trims&subtype=otomobil&brand=bmw&model=5-serisi&version=520i&year=2019
  *
  * Electric overlay:
  *   GET /api/vasita/catalog?action=types&subtype=elektrikli-araclar
@@ -22,7 +29,15 @@ type CatalogPackEntry = {
   modelSlug: string;
   generationCode: string;
   generationLabel: string;
-  versions: Array<{ slug: string; name: string; fuelTypes?: string[] }>;
+  versions: Array<{
+    slug: string;
+    name: string;
+    fuelTypes?: string[];
+    trims?: Array<{ slug: string; name: string; generationCode?: string; yearFrom?: number; yearTo?: number }>;
+    yearFrom?: number;
+    yearTo?: number;
+    generationCode?: string;
+  }>;
   modelYears: number[];
   fuelTypes?: string[];
   verified: boolean;
@@ -101,6 +116,10 @@ export async function GET(req: Request) {
   const subtype = String(sp.get("subtype") || "").trim();
   const brandSlug = String(sp.get("brand") || "").trim();
   const modelSlug = String(sp.get("model") || "").trim();
+  const versionSlug = String(sp.get("version") || "").trim();
+  const generationFilter = String(sp.get("generation") || "").trim();
+  const yearRaw = String(sp.get("year") || "").trim();
+  const yearFilter = yearRaw && Number.isFinite(Number(yearRaw)) ? Number(yearRaw) : null;
 
   if (!subtype) {
     return NextResponse.json({ ok: false, error: "subtype_required" }, { status: 400 });
@@ -168,13 +187,36 @@ export async function GET(req: Request) {
           return NextResponse.json({ ok: false, error: "brand_and_model_required" }, { status: 400 });
         }
         const matches = typed.filter((e) => e.brandSlug === brandSlug && e.modelSlug === modelSlug);
-        const versions: Array<{ slug: string; name: string }> = [];
-        for (const m of matches) {
-          for (const v of m.versions || []) {
-            if (!versions.find((x) => x.slug === v.slug)) versions.push(v);
-          }
+        const versions = mergeVersionsForCascade(
+          matches.map((m) => ({
+            generationCode: "",
+            versions: m.versions || [],
+            modelYears: [2026, 2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018],
+          })),
+          { generationCode: generationFilter, year: yearFilter }
+        );
+        return NextResponse.json({
+          ok: true,
+          generations: [],
+          versions,
+          years: [2026, 2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018],
+        });
+      }
+
+      if (action === "trims") {
+        if (!brandSlug || !modelSlug || !versionSlug) {
+          return NextResponse.json({ ok: false, error: "brand_model_version_required" }, { status: 400 });
         }
-        return NextResponse.json({ ok: true, generations: [], versions, years: [2026, 2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018] });
+        const matches = typed.filter((e) => e.brandSlug === brandSlug && e.modelSlug === modelSlug);
+        const versions = mergeVersionsForCascade(
+          matches.map((m) => ({ versions: m.versions || [] })),
+          { generationCode: generationFilter, year: yearFilter }
+        );
+        const trims = filterTrimsForVersion(versions, versionSlug, {
+          generationCode: generationFilter,
+          year: yearFilter,
+        });
+        return NextResponse.json({ ok: true, trims });
       }
 
       return NextResponse.json({ ok: false, error: "unknown_action" }, { status: 400 });
@@ -247,7 +289,7 @@ export async function GET(req: Request) {
       return NextResponse.json({ ok: true, models });
     }
 
-    if (action === "generations") {
+    if (action === "generations" || action === "trims") {
       if (!brandSlug || !modelSlug) {
         return NextResponse.json({ ok: false, error: "brand_and_model_required" }, { status: 400 });
       }
@@ -262,7 +304,6 @@ export async function GET(req: Request) {
           e.categoryPaths.includes(categoryPath)
       );
       const generationsMap = new Map<string, string>();
-      const versions: Array<{ slug: string; name: string }> = [];
       const yearsSet = new Set<number>();
       for (const m of matches) {
         const code = (m.generationCode || "").trim();
@@ -273,13 +314,27 @@ export async function GET(req: Request) {
           FAKE_GENERATION_VALUES.has(code.toLowerCase()) ||
           FAKE_GENERATION_VALUES.has(label.toLowerCase());
         if (!isFake) generationsMap.set(code, label);
-        for (const v of m.versions || []) {
-          if (!versions.find((x) => x.slug === v.slug)) versions.push(v);
-        }
         for (const y of m.modelYears || []) yearsSet.add(y);
       }
       const generations = [...generationsMap.entries()].map(([code, label]) => ({ code, label }));
       const years = [...yearsSet].sort((a, b) => b - a);
+
+      const versions: CatalogVersion[] = mergeVersionsForCascade(matches, {
+        generationCode: generationFilter,
+        year: yearFilter,
+      });
+
+      if (action === "trims") {
+        if (!versionSlug) {
+          return NextResponse.json({ ok: false, error: "version_required" }, { status: 400 });
+        }
+        const trims = filterTrimsForVersion(versions, versionSlug, {
+          generationCode: generationFilter,
+          year: yearFilter,
+        });
+        return NextResponse.json({ ok: true, trims });
+      }
+
       return NextResponse.json({ ok: true, generations, versions, years });
     }
 

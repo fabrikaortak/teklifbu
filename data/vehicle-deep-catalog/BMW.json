@@ -1,0 +1,2242 @@
+{
+  "brand": "BMW",
+  "brandSlug": "bmw",
+  "version": "2026.08-deep-bmw-v2-current-plus-5series-history",
+  "generatedAt": "2026-08-07T08:24:33.035Z",
+  "seriesCovered": [
+    "1 Serisi",
+    "2 Serisi",
+    "2 Serisi Active Tourer",
+    "3 Serisi",
+    "4 Serisi",
+    "5 Serisi",
+    "7 Serisi",
+    "X1",
+    "X2",
+    "X3",
+    "X5",
+    "X6",
+    "X7",
+    "i4",
+    "i5",
+    "i7",
+    "iX",
+    "iX1",
+    "iX2",
+    "iX3"
+  ],
+  "status": "IN_PROGRESS",
+  "configurations": [
+    {
+      "brand": "BMW",
+      "series": "5 Serisi",
+      "model": "520i",
+      "trim": "M Sport",
+      "generation": "G60 Sedan",
+      "generationCode": "G60",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1597",
+      "powerHp": "190+11",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "G60 TR resmi fiyat satiri: BMW 520i Sedan + M Sport",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "BMW yetkili satici perakende azami fiyat listesi (5 Serisi Sedan)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "BMW yetkili satici perakende azami fiyat listesi (5 Serisi Sedan)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "5 Serisi",
+      "model": "520i",
+      "trim": "Edition M Sport",
+      "generation": "G60 Sedan",
+      "generationCode": "G60",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1597",
+      "powerHp": "190+11",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "G60 TR resmi fiyat satiri: BMW 520i Sedan + Edition M Sport",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "BMW yetkili satici perakende azami fiyat listesi (5 Serisi Sedan)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "BMW yetkili satici perakende azami fiyat listesi (5 Serisi Sedan)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "5 Serisi",
+      "model": "520d xDrive",
+      "trim": "M Sport",
+      "generation": "G60 Sedan",
+      "generationCode": "G60",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "fuelType": "DIESEL",
+      "engineVolume": "1995",
+      "powerHp": "197+11",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "G60 TR: 520d xDrive + M Sport; duz 520d RWD G60 TR listesinde yok",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "BMW yetkili satici perakende azami fiyat listesi (5 Serisi Sedan)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "BMW yetkili satici perakende azami fiyat listesi (5 Serisi Sedan)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "5 Serisi",
+      "model": "520d xDrive",
+      "trim": "Edition M Sport",
+      "generation": "G60 Sedan",
+      "generationCode": "G60",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "fuelType": "DIESEL",
+      "engineVolume": "1995",
+      "powerHp": "197+11",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "G60 TR: 520d xDrive + Edition M Sport",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "BMW yetkili satici perakende azami fiyat listesi (5 Serisi Sedan)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "BMW yetkili satici perakende azami fiyat listesi (5 Serisi Sedan)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "5 Serisi",
+      "model": "520i",
+      "trim": "Sport Line",
+      "generation": "G30 Sedan",
+      "generationCode": "G30",
+      "yearFrom": 2017,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1597",
+      "powerHp": "170",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "G30 erken donem TR fiyat yayinlarinda 520i Sport Line",
+      "sources": [
+        {
+          "url": "https://www.bmwblog.com/2016/10/14/lines-packages-new-bmw-5-series/",
+          "title": "G30 Line lansmani + TR 2019 fiyat yayini",
+          "date": "2019-09-01",
+          "role": "primary"
+        },
+        {
+          "url": "https://arabavs.com/bmw-eylul-2019-fiyat-listesi.html",
+          "title": "G30 Line lansmani + TR 2019 fiyat yayini",
+          "date": "2019-09-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "5 Serisi",
+      "model": "520i",
+      "trim": "Luxury Line",
+      "generation": "G30 Sedan",
+      "generationCode": "G30",
+      "yearFrom": 2017,
+      "yearTo": 2023,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1597",
+      "powerHp": "170",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "G30/LCI TR: 520i Luxury Line",
+      "sources": [
+        {
+          "url": "https://www.otomobil.com.tr/2020-bmw-5-serisi-fiyat-listesi/",
+          "title": "2020 makyaj TR fiyat listesi + 2019 TR fiyat yayini",
+          "date": "2020-08-08",
+          "role": "primary"
+        },
+        {
+          "url": "https://arabavs.com/bmw-eylul-2019-fiyat-listesi.html",
+          "title": "2020 makyaj TR fiyat listesi + 2019 TR fiyat yayini",
+          "date": "2020-08-08",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "5 Serisi",
+      "model": "520i",
+      "trim": "M Sport",
+      "generation": "G30 Sedan",
+      "generationCode": "G30",
+      "yearFrom": 2017,
+      "yearTo": 2023,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1597",
+      "powerHp": "170",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "G30/LCI TR: 520i M Sport",
+      "sources": [
+        {
+          "url": "https://www.otomobil.com.tr/2020-bmw-5-serisi-fiyat-listesi/",
+          "title": "2020 makyaj TR fiyat listesi + 2019 TR fiyat yayini",
+          "date": "2020-08-08",
+          "role": "primary"
+        },
+        {
+          "url": "https://arabavs.com/bmw-eylul-2019-fiyat-listesi.html",
+          "title": "2020 makyaj TR fiyat listesi + 2019 TR fiyat yayini",
+          "date": "2020-08-08",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "5 Serisi",
+      "model": "520i",
+      "trim": "Special Edition Luxury Line",
+      "generation": "G30 LCI Sedan",
+      "generationCode": "G30",
+      "yearFrom": 2019,
+      "yearTo": 2023,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1597",
+      "powerHp": "170",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "TR Special Edition Luxury Line",
+      "sources": [
+        {
+          "url": "https://www.otomobil.com.tr/2020-bmw-5-serisi-fiyat-listesi/",
+          "title": "2020 TR fiyat listesi + Ekim 2019 TR fiyat listesi",
+          "date": "2020-08-08",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.arabavs.com/bmw-5-serisi-ekim-2019-fiyat-listesi.html",
+          "title": "2020 TR fiyat listesi + Ekim 2019 TR fiyat listesi",
+          "date": "2020-08-08",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "5 Serisi",
+      "model": "520i",
+      "trim": "Special Edition M Sport",
+      "generation": "G30 LCI Sedan",
+      "generationCode": "G30",
+      "yearFrom": 2019,
+      "yearTo": 2023,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1597",
+      "powerHp": "170",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "TR Special Edition M Sport",
+      "sources": [
+        {
+          "url": "https://www.otomobil.com.tr/2020-bmw-5-serisi-fiyat-listesi/",
+          "title": "2020 TR fiyat listesi + Ekim 2019 TR fiyat listesi",
+          "date": "2020-08-08",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.arabavs.com/bmw-5-serisi-ekim-2019-fiyat-listesi.html",
+          "title": "2020 TR fiyat listesi + Ekim 2019 TR fiyat listesi",
+          "date": "2020-08-08",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "5 Serisi",
+      "model": "520i",
+      "trim": "Ultimate Luxury",
+      "generation": "G30 Sedan",
+      "generationCode": "G30",
+      "yearFrom": 2017,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1597",
+      "powerHp": "170",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "G30 TR ozel Ultimate Luxury",
+      "sources": [
+        {
+          "url": "http://bmwuzmani.blogspot.com/2018/02/bmw-yenilenen-donanm-paketleri-ve.html",
+          "title": "G30 TR Ultimate Luxury paket anlatimi + 2019/1C fiyat ozeti",
+          "date": "2019-01-01",
+          "role": "primary"
+        },
+        {
+          "url": "https://caraba.net/2019-yili-1-ceyrekte-bmw-arac-fiyatlari/",
+          "title": "G30 TR Ultimate Luxury paket anlatimi + 2019/1C fiyat ozeti",
+          "date": "2019-01-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "5 Serisi",
+      "model": "520d",
+      "trim": "Sport Line",
+      "generation": "G30 Sedan",
+      "generationCode": "G30",
+      "yearFrom": 2017,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1995",
+      "powerHp": "190",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "G30 TR: 520d RWD Sport Line",
+      "sources": [
+        {
+          "url": "https://www.bmwblog.com/2016/10/14/lines-packages-new-bmw-5-series/",
+          "title": "G30 Line lansmani + 2019/1C TR fiyat ozeti",
+          "date": "2019-01-01",
+          "role": "primary"
+        },
+        {
+          "url": "https://caraba.net/2019-yili-1-ceyrekte-bmw-arac-fiyatlari/",
+          "title": "G30 Line lansmani + 2019/1C TR fiyat ozeti",
+          "date": "2019-01-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "5 Serisi",
+      "model": "520d",
+      "trim": "Luxury Line",
+      "generation": "G30 Sedan",
+      "generationCode": "G30",
+      "yearFrom": 2017,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1995",
+      "powerHp": "190",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "G30 TR: 520d RWD Luxury Line",
+      "sources": [
+        {
+          "url": "https://www.bmwblog.com/2016/10/14/lines-packages-new-bmw-5-series/",
+          "title": "G30 Line lansmani + 2019/1C TR fiyat ozeti",
+          "date": "2019-01-01",
+          "role": "primary"
+        },
+        {
+          "url": "https://caraba.net/2019-yili-1-ceyrekte-bmw-arac-fiyatlari/",
+          "title": "G30 Line lansmani + 2019/1C TR fiyat ozeti",
+          "date": "2019-01-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "5 Serisi",
+      "model": "520d",
+      "trim": "M Sport",
+      "generation": "G30 Sedan",
+      "generationCode": "G30",
+      "yearFrom": 2017,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1995",
+      "powerHp": "190",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "G30 TR: 520d RWD M Sport",
+      "sources": [
+        {
+          "url": "https://www.bmwblog.com/2016/10/14/lines-packages-new-bmw-5-series/",
+          "title": "G30 Line lansmani + 2019/1C TR fiyat ozeti",
+          "date": "2019-01-01",
+          "role": "primary"
+        },
+        {
+          "url": "https://caraba.net/2019-yili-1-ceyrekte-bmw-arac-fiyatlari/",
+          "title": "G30 Line lansmani + 2019/1C TR fiyat ozeti",
+          "date": "2019-01-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "5 Serisi",
+      "model": "520d xDrive",
+      "trim": "Sport Line",
+      "generation": "G30 Sedan",
+      "generationCode": "G30",
+      "yearFrom": 2017,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1995",
+      "powerHp": "190",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "G30 TR: 520d xDrive Sport Line",
+      "sources": [
+        {
+          "url": "https://caraba.net/2019-yili-1-ceyrekte-bmw-arac-fiyatlari/",
+          "title": "2019/1C TR fiyat ozeti + G30 Line lansmani",
+          "date": "2019-01-01",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmwblog.com/2016/10/14/lines-packages-new-bmw-5-series/",
+          "title": "2019/1C TR fiyat ozeti + G30 Line lansmani",
+          "date": "2019-01-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "5 Serisi",
+      "model": "520d xDrive",
+      "trim": "Luxury Line",
+      "generation": "G30 Sedan",
+      "generationCode": "G30",
+      "yearFrom": 2017,
+      "yearTo": 2023,
+      "fuelType": "DIESEL",
+      "engineVolume": "1995",
+      "powerHp": "190",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "G30 TR: 520d xDrive Luxury Line",
+      "sources": [
+        {
+          "url": "https://www.otomobil.com.tr/2020-bmw-5-serisi-fiyat-listesi/",
+          "title": "2020 + 2019 TR fiyat listeleri",
+          "date": "2020-08-08",
+          "role": "primary"
+        },
+        {
+          "url": "https://arabavs.com/bmw-eylul-2019-fiyat-listesi.html",
+          "title": "2020 + 2019 TR fiyat listeleri",
+          "date": "2020-08-08",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "5 Serisi",
+      "model": "520d xDrive",
+      "trim": "M Sport",
+      "generation": "G30 Sedan",
+      "generationCode": "G30",
+      "yearFrom": 2017,
+      "yearTo": 2023,
+      "fuelType": "DIESEL",
+      "engineVolume": "1995",
+      "powerHp": "190",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "G30 TR: 520d xDrive M Sport",
+      "sources": [
+        {
+          "url": "https://www.otomobil.com.tr/2020-bmw-5-serisi-fiyat-listesi/",
+          "title": "2020 + 2019 TR fiyat listeleri",
+          "date": "2020-08-08",
+          "role": "primary"
+        },
+        {
+          "url": "https://arabavs.com/bmw-eylul-2019-fiyat-listesi.html",
+          "title": "2020 + 2019 TR fiyat listeleri",
+          "date": "2020-08-08",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "5 Serisi",
+      "model": "520d xDrive",
+      "trim": "Special Edition Luxury Line",
+      "generation": "G30 LCI Sedan",
+      "generationCode": "G30",
+      "yearFrom": 2020,
+      "yearTo": 2023,
+      "fuelType": "DIESEL",
+      "engineVolume": "1995",
+      "powerHp": "190",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Otomotiv yayini Borusan/BMW TR fiyat tablosunu aktariyor",
+      "sources": [
+        {
+          "url": "https://www.otomobil.com.tr/2020-bmw-5-serisi-fiyat-listesi/",
+          "title": "2020 makyaj TR fiyat listesi",
+          "date": "2020-08-08",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.otomobil.com.tr/2020-bmw-5-serisi-fiyat-listesi/",
+          "title": "2020 makyaj TR fiyat listesi",
+          "date": "2020-08-08",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "5 Serisi",
+      "model": "520d xDrive",
+      "trim": "Special Edition M Sport",
+      "generation": "G30 LCI Sedan",
+      "generationCode": "G30",
+      "yearFrom": 2020,
+      "yearTo": 2023,
+      "fuelType": "DIESEL",
+      "engineVolume": "1995",
+      "powerHp": "190",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Otomotiv yayini Borusan/BMW TR fiyat tablosunu aktariyor",
+      "sources": [
+        {
+          "url": "https://www.otomobil.com.tr/2020-bmw-5-serisi-fiyat-listesi/",
+          "title": "2020 makyaj TR fiyat listesi",
+          "date": "2020-08-08",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.otomobil.com.tr/2020-bmw-5-serisi-fiyat-listesi/",
+          "title": "2020 makyaj TR fiyat listesi",
+          "date": "2020-08-08",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "5 Serisi",
+      "model": "520d xDrive",
+      "trim": "Ultimate Luxury",
+      "generation": "G30 Sedan",
+      "generationCode": "G30",
+      "yearFrom": 2017,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1995",
+      "powerHp": "190",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "G30 TR Ultimate Luxury 520d xDrive",
+      "sources": [
+        {
+          "url": "http://bmwuzmani.blogspot.com/2018/02/bmw-yenilenen-donanm-paketleri-ve.html",
+          "title": "Ultimate Luxury paket anlatimi + 2019/1C fiyat ozeti",
+          "date": "2019-01-01",
+          "role": "primary"
+        },
+        {
+          "url": "https://caraba.net/2019-yili-1-ceyrekte-bmw-arac-fiyatlari/",
+          "title": "Ultimate Luxury paket anlatimi + 2019/1C fiyat ozeti",
+          "date": "2019-01-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "5 Serisi",
+      "model": "530i xDrive",
+      "trim": "Special Edition Luxury Line",
+      "generation": "G30 LCI Sedan",
+      "generationCode": "G30",
+      "yearFrom": 2020,
+      "yearTo": 2023,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1998",
+      "powerHp": "252",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "G30 LCI TR: 530i xDrive Special Edition Luxury Line",
+      "sources": [
+        {
+          "url": "https://www.otomobil.com.tr/2020-bmw-5-serisi-fiyat-listesi/",
+          "title": "2020 TR fiyat listesi + 2019 listeler",
+          "date": "2020-08-08",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.arabavs.com/bmw-5-serisi-ekim-2019-fiyat-listesi.html",
+          "title": "2020 TR fiyat listesi + 2019 listeler",
+          "date": "2020-08-08",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "5 Serisi",
+      "model": "530i xDrive",
+      "trim": "Special Edition M Sport",
+      "generation": "G30 LCI Sedan",
+      "generationCode": "G30",
+      "yearFrom": 2019,
+      "yearTo": 2023,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1998",
+      "powerHp": "252",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "G30 LCI TR: 530i xDrive Special Edition M Sport",
+      "sources": [
+        {
+          "url": "https://www.otomobil.com.tr/2020-bmw-5-serisi-fiyat-listesi/",
+          "title": "2020 TR fiyat listesi + 2019 listeler",
+          "date": "2020-08-08",
+          "role": "primary"
+        },
+        {
+          "url": "https://arabavs.com/bmw-eylul-2019-fiyat-listesi.html",
+          "title": "2020 TR fiyat listesi + 2019 listeler",
+          "date": "2020-08-08",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "1 Serisi",
+      "model": "120",
+      "trim": "Sport Line",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1499",
+      "powerHp": "156+20",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "1 Serisi",
+      "model": "120",
+      "trim": "M Sport",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1499",
+      "powerHp": "156+20",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "2 Serisi",
+      "model": "220 Gran Coupe",
+      "trim": "Sport Line",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1499",
+      "powerHp": "156+20",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "2 Serisi",
+      "model": "220 Gran Coupe",
+      "trim": "M Sport",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1499",
+      "powerHp": "156+20",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "2 Serisi Active Tourer",
+      "model": "220i Active Tourer",
+      "trim": "Luxury Line",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1499",
+      "powerHp": "156+20",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "2 Serisi Active Tourer",
+      "model": "220i Active Tourer",
+      "trim": "M Sport",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1499",
+      "powerHp": "156+20",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "2 Serisi Active Tourer",
+      "model": "230e xDrive Active Tourer",
+      "trim": "Luxury Line",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "PLUGIN_HYBRID",
+      "engineVolume": "1499",
+      "powerHp": "150+177",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "2 Serisi Active Tourer",
+      "model": "230e xDrive Active Tourer",
+      "trim": "M Sport",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "PLUGIN_HYBRID",
+      "engineVolume": "1499",
+      "powerHp": "150+177",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "3 Serisi",
+      "model": "320i",
+      "trim": "Sport Line",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1597",
+      "powerHp": "170",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "3 Serisi",
+      "model": "320i",
+      "trim": "M Sport",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1597",
+      "powerHp": "170",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "4 Serisi",
+      "model": "420i Coupé",
+      "trim": "M Sport",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1597",
+      "powerHp": "170",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "4 Serisi",
+      "model": "420i Coupé",
+      "trim": "Edition M Sport",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1597",
+      "powerHp": "170",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "4 Serisi",
+      "model": "430i xDrive Cabrio",
+      "trim": "M Sport",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1998",
+      "powerHp": "245",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "4 Serisi",
+      "model": "420i Gran Coupé",
+      "trim": "M Sport",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1597",
+      "powerHp": "170",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "4 Serisi",
+      "model": "420i Gran Coupé",
+      "trim": "Edition M Sport",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1597",
+      "powerHp": "170",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "5 Serisi",
+      "model": "520i",
+      "trim": "M Sport",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1597",
+      "powerHp": "190+11",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "5 Serisi",
+      "model": "520i",
+      "trim": "Edition M Sport",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1597",
+      "powerHp": "190+11",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "5 Serisi",
+      "model": "520d xDrive",
+      "trim": "M Sport",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "DIESEL",
+      "engineVolume": "1995",
+      "powerHp": "197+11",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "5 Serisi",
+      "model": "520d xDrive",
+      "trim": "Edition M Sport",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "DIESEL",
+      "engineVolume": "1995",
+      "powerHp": "197+11",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "7 Serisi",
+      "model": "740d xDrive",
+      "trim": "Pure Excellence",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "DIESEL",
+      "engineVolume": "2993",
+      "powerHp": "286+18",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "7 Serisi",
+      "model": "740d xDrive",
+      "trim": "M Excellence",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "DIESEL",
+      "engineVolume": "2993",
+      "powerHp": "286+18",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X1",
+      "model": "X1 xDrive25e",
+      "trim": "X-Line",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "PLUGIN_HYBRID",
+      "engineVolume": "1499",
+      "powerHp": "136+109",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X1",
+      "model": "X1 xDrive25e",
+      "trim": "M Sport",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "PLUGIN_HYBRID",
+      "engineVolume": "1499",
+      "powerHp": "136+109",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X1",
+      "model": "X1 xDrive20i",
+      "trim": "X-Line",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1499",
+      "powerHp": "156+20",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X1",
+      "model": "X1 xDrive20i",
+      "trim": "M Sport",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1499",
+      "powerHp": "156+20",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X2",
+      "model": "X2 sDrive20i",
+      "trim": "M Sport",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1499",
+      "powerHp": "156+20",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X3",
+      "model": "X3 20",
+      "trim": "X-Line",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1597",
+      "powerHp": "190+11",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X3",
+      "model": "X3 20",
+      "trim": "M Sport",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1597",
+      "powerHp": "190+11",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X5",
+      "model": "X5 xDrive40d",
+      "trim": "M Sport",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "DIESEL",
+      "engineVolume": "2993",
+      "powerHp": "340+12",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X6",
+      "model": "X6 xDrive40d",
+      "trim": "M Sport",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "DIESEL",
+      "engineVolume": "2993",
+      "powerHp": "340+12",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X7",
+      "model": "X7 xDrive40d",
+      "trim": "M Excellence",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "DIESEL",
+      "engineVolume": "2993",
+      "powerHp": "340+12",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "i4",
+      "model": "i4 eDrive40",
+      "trim": "Sport Line",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": null,
+      "powerHp": "218",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "i4",
+      "model": "i4 eDrive40",
+      "trim": "M Sport",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": null,
+      "powerHp": "218",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "i4",
+      "model": "i4 eDrive40",
+      "trim": "Edition M Sport",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": null,
+      "powerHp": "218",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "i5",
+      "model": "i5 eDrive40",
+      "trim": "M Sport",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": null,
+      "powerHp": "218",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "i5",
+      "model": "i5 eDrive40",
+      "trim": "Edition M Sport",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": null,
+      "powerHp": "218",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "i5",
+      "model": "i5 xDrive40 Touring",
+      "trim": "M Sport",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": null,
+      "powerHp": "394",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "i5",
+      "model": "i5 xDrive40 Touring",
+      "trim": "Edition M Sport",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": null,
+      "powerHp": "394",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "i7",
+      "model": "i7 xDrive60",
+      "trim": "Pure Excellence",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": null,
+      "powerHp": "544",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "i7",
+      "model": "i7 xDrive60",
+      "trim": "M Excellence",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": null,
+      "powerHp": "544",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "iX1",
+      "model": "iX1 Drive20",
+      "trim": "Sport Line",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": null,
+      "powerHp": "204",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "iX1",
+      "model": "iX1 Drive20",
+      "trim": "X-Line",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": null,
+      "powerHp": "204",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "iX1",
+      "model": "iX1 Drive20",
+      "trim": "M Sport",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": null,
+      "powerHp": "204",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "iX2",
+      "model": "iX2 eDrive20",
+      "trim": "M Sport",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": null,
+      "powerHp": "204",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "iX3",
+      "model": "iX3 50 xDrive",
+      "trim": "M Sport",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": null,
+      "powerHp": "218",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "iX",
+      "model": "iX xDrive60",
+      "trim": "M Sport",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": null,
+      "powerHp": "544",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Current TR official dealer price-list row (Model + Tasarim Paketi)",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto BMW yetkili satici perakende azami fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ozgorkey.bmw.com.tr/fiyat-listesi-2024",
+          "title": "Ozgorkey BMW yetkili satici fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    }
+  ]
+}

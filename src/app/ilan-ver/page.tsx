@@ -92,6 +92,8 @@ const emptyAttrs: Attrs = {
   condition: "",
   warranty: "",
   trim: "",
+  version: "",
+  generation: "",
   m2: "",
   netM2: "",
   rooms: "",
@@ -662,10 +664,11 @@ function CreateListingInner() {
     if (slug === "arac" && attrs.brand) {
       labels.push(brandLabel(attrs.brand));
       if (attrs.model) labels.push(modelLabel(attrs.model));
+      if (attrs.version) labels.push(trimLabel(attrs.version));
       if (attrs.trim) labels.push(trimLabel(attrs.trim));
     }
     return labels.join(" › ");
-  }, [form.categorySlug, form.dealType, attrs.subtype, attrs.rentalPeriod, attrs.brand, attrs.model, attrs.trim, categories, slug]);
+  }, [form.categorySlug, form.dealType, attrs.subtype, attrs.rentalPeriod, attrs.brand, attrs.model, attrs.version, attrs.trim, categories, slug]);
   const categoryName = categoryPathLabel;
 
   useEffect(() => {
@@ -802,7 +805,7 @@ function CreateListingInner() {
       }
     }
     if (attrs.rentalPeriod?.trim()) out.rentalPeriod = attrs.rentalPeriod.trim();
-    for (const key of ["brand", "model", "trim", "condition", "warranty"] as const) {
+    for (const key of ["brand", "model", "version", "trim", "condition", "warranty"] as const) {
       const v = attrs[key]?.trim();
       if (v) out[key] = v;
     }
@@ -2049,7 +2052,11 @@ function CreateListingInner() {
                   rentalPeriod: attrs.rentalPeriod,
                   brand: attrs.brand,
                   model: attrs.model,
-                  trim: attrs.trim,
+                  // Legacy: attributes.trim held engine code when version was absent.
+                  version: attrs.version || (!attrs.version && attrs.trim ? attrs.trim : ""),
+                  trim: attrs.version ? attrs.trim : "",
+                  generation: attrs.generation,
+                  modelYear: attrs.year,
                 }}
                 onChange={(next) => {
                   setForm((f) => ({
@@ -2069,9 +2076,9 @@ function CreateListingInner() {
                     rentalPeriod: next.rentalPeriod || next.extraAttrs?.rentalPeriod || "",
                     brand: next.brand,
                     model: next.model,
+                    version: next.version || "",
                     trim: next.trim,
-                    // Ladder'ın "Model yılı" seçimi (DB katalog cascade) → serbest "Model Yılı" alanına
-                    // öneri olarak yazılır; kullanıcı yine de değiştirebilir (input aynı kalır).
+                    generation: next.generation || "",
                     ...(next.modelYear ? { year: next.modelYear } : {}),
                     ...(next.extraAttrs || {}),
                   }));

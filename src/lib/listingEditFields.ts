@@ -1,6 +1,6 @@
 /** Teklif sonrası admin izinli düzenlenebilir alanlar */
 
-import { brandName, modelName, trimName } from "@/data/vehicleCatalog";
+import { brandLabel, modelLabel, trimLabel } from "@/lib/vasitaLabels";
 import { subtypesForCategory } from "@/data/categoryBrowseTree";
 import { buildingAgeLabel } from "@/data/housingMatch";
 import { accountTypeLabelTr as accountTypeLabelFromLib } from "@/lib/accountTypes";
@@ -22,6 +22,7 @@ export const ATTR_FIELD_META: Array<{ key: string; label: string; aliases?: stri
   { key: "rentalPeriod", label: "Kiralama süresi", aliases: ["rental"] },
   { key: "brand", label: "Marka" },
   { key: "model", label: "Model" },
+  { key: "version", label: "Model / Motor" },
   { key: "trim", label: "Paket / Donanım" },
   { key: "m2", label: "Brüt / Alan", aliases: ["brut", "alan"], suffix: " m²" },
   { key: "netM2", label: "Net Alan", aliases: ["net"], suffix: " m²" },
@@ -218,9 +219,10 @@ export function formatListingAttributeRows(
     let value = empty ? EMPTY_ATTR_LABEL : String(raw);
     if (!empty) {
       if (key === "subtype") value = subtypeName || value;
-      if (key === "brand" && subtype) value = brandName(subtype, value);
-      if (key === "model" && subtype && brand) value = modelName(subtype, brand, value);
-      if (key === "trim" && subtype && brand && model) value = trimName(subtype, brand, model, value);
+      if (key === "brand" && subtype) value = brandLabel(value);
+      if (key === "model" && subtype && brand) value = modelLabel(value);
+      if (key === "version" && subtype && brand && model) value = trimLabel(value);
+      if (key === "trim" && subtype && brand && model) value = trimLabel(value);
       if (key === "buildingAge") value = buildingAgeLabel(value) || value;
       if (suffix && value !== EMPTY_ATTR_LABEL && !value.toLowerCase().includes(suffix.trim().toLowerCase())) {
         value = `${value}${suffix}`;

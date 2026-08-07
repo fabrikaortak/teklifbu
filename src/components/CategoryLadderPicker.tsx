@@ -7,14 +7,6 @@ import {
   findBrowseNode,
   matchBrowsePath,
 } from "@/data/categoryBrowseTree";
-// ⚠️ EMERGENCY FALLBACK ONLY — used when /api/vasita/catalog has no data for a subtype/brand
-// (e.g. DB down, or brand/model not yet in the curated Stage1 pack). Primary path is the API.
-import {
-  brandsForSubtype,
-  modelRequiresTrim,
-  modelsForBrand,
-  trimsForModel,
-} from "@/data/vehicleCatalog";
 import { readBrowseExtraAttrs } from "@/lib/vasitaBrowseFromTarget";
 
 export type CategoryLadderValue = {
@@ -25,9 +17,9 @@ export type CategoryLadderValue = {
   brand: string;
   model: string;
   trim: string;
-  /** Nesil / kasa kodu (Stage1: genellikle "default"). */
+  /** Nesil / kasa kodu (metadata; UI basamağı opsiyonel). */
   generation?: string;
-  /** Versiyon/paket — legacy attributes.trim ile senkron tutulur. */
+  /** Model / motor versiyonu (örn. 520i). */
   version?: string;
   /** Model yılı (opsiyonel; formda ayrıca serbest "Model Yılı" alanı da vardır). */
   modelYear?: string;
@@ -37,6 +29,7 @@ export type CategoryLadderValue = {
 
 type CatalogOption = { slug: string; name: string };
 type GenerationOption = { code: string; label: string };
+type VersionOption = CatalogOption & { trims?: CatalogOption[] };
 
 type VasitaCatalogState = {
   brands: CatalogOption[];
@@ -44,7 +37,7 @@ type VasitaCatalogState = {
   models: CatalogOption[];
   modelsLoaded: boolean;
   generations: GenerationOption[];
-  versions: CatalogOption[];
+  versions: VersionOption[];
   years: number[];
   generationsLoaded: boolean;
 };
@@ -60,8 +53,14 @@ const EMPTY_CATALOG_STATE: VasitaCatalogState = {
   generationsLoaded: false,
 };
 
-/** /api/vasita/catalog cascade — DB source of truth. Empty result → caller falls back to vehicleCatalog.ts. */
-function useVasitaCatalogCascade(subtype: string, brand: string, model: string): VasitaCatalogState {
+/** /api/vasita/catalog cascade — DB source of truth. */
+function useVasitaCatalogCascade(
+  subtype: string,
+  brand: string,
+  model: string,
+  generation: string,
+  modelYear: string
+): VasitaCatalogState {
   const [state, setState] = useState<VasitaCatalogState>(EMPTY_CATALOG_STATE);
 
   useEffect(() => {
@@ -114,17 +113,29 @@ function useVasitaCatalogCascade(subtype: string, brand: string, model: string):
       return;
     }
     let cancelled = false;
-    fetch(
-      `/api/vasita/catalog?action=generations&subtype=${encodeURIComponent(subtype)}&brand=${encodeURIComponent(brand)}&model=${encodeURIComponent(model)}`,
-      { cache: "no-store" }
-    )
+    const qs = new URLSearchParams({
+      action: "generations",
+      subtype,
+      brand,
+      model,
+    });
+    if (generation) qs.set("generation", generation);
+    if (modelYear) qs.set("year", modelYear);
+    fetch(`/api/vasita/catalog?${qs.toString()}`, { cache: "no-store" })
       .then((r) => r.json())
       .then((data) => {
         if (cancelled) return;
+        const versions: VersionOption[] = Array.isArray(data?.versions)
+          ? data.versions.map((v: VersionOption & { trims?: CatalogOption[] }) => ({
+              slug: v.slug,
+              name: v.name,
+              trims: Array.isArray(v.trims) ? v.trims : [],
+            }))
+          : [];
         setState((s) => ({
           ...s,
           generations: Array.isArray(data?.generations) ? data.generations : [],
-          versions: Array.isArray(data?.versions) ? data.versions : [],
+          versions,
           years: Array.isArray(data?.years) ? data.years : [],
           generationsLoaded: true,
         }));
@@ -135,7 +146,7 @@ function useVasitaCatalogCascade(subtype: string, brand: string, model: string):
     return () => {
       cancelled = true;
     };
-  }, [subtype, brand, model]);
+  }, [subtype, brand, model, generation, modelYear]);
 
   return state;
 }
@@ -182,10 +193,9 @@ function applyNodeFilter(node: BrowseNode, prev: CategoryLadderValue): CategoryL
 function isBrowseComplete(node: BrowseNode | null, value: CategoryLadderValue) {
   if (!node || node.children?.length) return false;
   if (value.categorySlug === "arac") {
-    const brands = brandsForSubtype(value.subtype);
-    if (!brands.length) return Boolean(value.subtype);
+    // Stage1: subtype + brand + model required; version/trim optional when DB has none.
+    if (!value.subtype) return false;
     if (!value.brand || !value.model) return false;
-    if (modelRequiresTrim(value.subtype, value.brand, value.model) && !value.trim) return false;
     return true;
   }
   return true;
@@ -262,29 +272,31 @@ export function CategoryLadderPicker({
   const last = path[path.length - 1] || null;
   const isVehicle = value.categorySlug === "arac" && Boolean(value.subtype);
 
-  // Primary path: /api/vasita/catalog (DB). Empty/failed → vehicleCatalog.ts fallback.
-  const cascade = useVasitaCatalogCascade(isVehicle ? value.subtype : "", value.brand, value.model);
-  const fallbackBrandOptions = isVehicle ? brandsForSubtype(value.subtype) : [];
-  const usingDbBrands = cascade.brandsLoaded && cascade.brands.length > 0;
-  const brandOptions = usingDbBrands ? cascade.brands : fallbackBrandOptions;
-
-  const fallbackModelOptions = isVehicle && value.brand ? modelsForBrand(value.subtype, value.brand) : [];
-  const usingDbModels = usingDbBrands && cascade.modelsLoaded && cascade.models.length > 0;
-  const modelOptions = usingDbModels ? cascade.models : fallbackModelOptions;
-
-  const fallbackTrimOptions =
-    isVehicle && value.brand && value.model ? trimsForModel(value.subtype, value.brand, value.model) : [];
-  // When DB brand/model cascade is live, do NOT flash static vehicleCatalog trims while
-  // generations/versions are still loading — that mixed SoT breaks required trim selection.
-  const usingDbVersions = usingDbModels && cascade.generationsLoaded && cascade.versions.length > 0;
-  const versionOptions = usingDbModels
-    ? cascade.generationsLoaded
-      ? cascade.versions
-      : []
-    : fallbackTrimOptions;
+  // Primary path: /api/vasita/catalog (DB only — no vehicleCatalog.ts).
+  const cascade = useVasitaCatalogCascade(
+    isVehicle ? value.subtype : "",
+    value.brand,
+    value.model,
+    value.generation || "",
+    value.modelYear || ""
+  );
+  const brandOptions = cascade.brandsLoaded ? cascade.brands : [];
+  const modelOptions =
+    cascade.brandsLoaded && cascade.modelsLoaded ? cascade.models : [];
+  const versionOptions =
+    cascade.modelsLoaded && cascade.generationsLoaded ? cascade.versions : [];
   const generationOptions =
-    usingDbModels && cascade.generationsLoaded ? cascade.generations : [];
-  const yearOptions = usingDbModels && cascade.generationsLoaded ? cascade.years : [];
+    cascade.modelsLoaded && cascade.generationsLoaded ? cascade.generations : [];
+  const yearOptions = cascade.modelsLoaded && cascade.generationsLoaded ? cascade.years : [];
+  const usingDbModels = cascade.modelsLoaded && cascade.models.length > 0;
+  const usingDbVersions = cascade.generationsLoaded && cascade.versions.length > 0;
+  const selectedVersion =
+    versionOptions.find((x) => x.slug === value.version) ||
+    versionOptions.find((x) => x.slug === value.version || x.name === value.version);
+  const trimOptions: CatalogOption[] = selectedVersion?.trims?.length
+    ? selectedVersion.trims
+    : [];
+  const usingNestedTrims = trimOptions.length > 0;
 
   const complete = isBrowseComplete(last, value);
   const breadcrumbParts = path.map((n) => n.name);
@@ -296,8 +308,12 @@ export function CategoryLadderPicker({
     const m = modelOptions.find((x) => x.slug === value.model);
     breadcrumbParts.push(m?.name || value.model);
   }
+  if (value.version) {
+    const v = versionOptions.find((x) => x.slug === value.version);
+    breadcrumbParts.push(v?.name || value.version);
+  }
   if (value.trim) {
-    const t = versionOptions.find((x) => x.slug === value.trim);
+    const t = trimOptions.find((x) => x.slug === value.trim);
     breadcrumbParts.push(t?.name || value.trim);
   }
   const breadcrumb = breadcrumbParts.join(" › ");
@@ -402,7 +418,7 @@ export function CategoryLadderPicker({
           {value.brand && (
             <div>
               <label style={{ display: "block", fontSize: 12, fontWeight: 700, marginBottom: 6, color: "#475569" }}>
-                Model *
+                Seri *
               </label>
               <select
                 className="select"
@@ -420,7 +436,7 @@ export function CategoryLadderPicker({
                 }
                 style={{ width: "100%" }}
               >
-                <option value="">Model seçin</option>
+                <option value="">Seri seçin</option>
                 {modelOptions.map((m) => (
                   <option key={m.slug} value={m.slug}>
                     {m.name}
@@ -444,7 +460,6 @@ export function CategoryLadderPicker({
                     generation: e.target.value,
                     version: "",
                     trim: "",
-                    modelYear: "",
                   })
                 }
                 style={{ width: "100%" }}
@@ -461,24 +476,44 @@ export function CategoryLadderPicker({
           {value.model && versionOptions.length > 0 && (
             <div>
               <label style={{ display: "block", fontSize: 12, fontWeight: 700, marginBottom: 6, color: "#475569" }}>
-                {usingDbVersions ? "Versiyon" : "Paket / motor *"}
+                {usingDbVersions ? "Model / Motor" : "Paket / motor"}
               </label>
               <select
                 className="select"
                 disabled={disabled}
-                value={value.version || value.trim}
+                value={value.version || ""}
                 onChange={(e) =>
                   onChange({
                     ...value,
                     version: e.target.value,
-                    trim: e.target.value,
-                    modelYear: "",
+                    trim: "",
                   })
                 }
                 style={{ width: "100%" }}
               >
-                <option value="">{usingDbVersions ? "Versiyon seçin" : "Paket seçin"}</option>
+                <option value="">Model / motor seçin</option>
                 {versionOptions.map((t) => (
+                  <option key={t.slug} value={t.slug}>
+                    {t.name}
+                  </option>
+                ))}
+              </select>
+            </div>
+          )}
+          {value.version && usingNestedTrims && (
+            <div>
+              <label style={{ display: "block", fontSize: 12, fontWeight: 700, marginBottom: 6, color: "#475569" }}>
+                Paket / Donanım
+              </label>
+              <select
+                className="select"
+                disabled={disabled}
+                value={value.trim || ""}
+                onChange={(e) => onChange({ ...value, trim: e.target.value })}
+                style={{ width: "100%" }}
+              >
+                <option value="">Donanım belirtilmemiş</option>
+                {trimOptions.map((t) => (
                   <option key={t.slug} value={t.slug}>
                     {t.name}
                   </option>
@@ -495,7 +530,14 @@ export function CategoryLadderPicker({
                 className="select"
                 disabled={disabled}
                 value={value.modelYear || ""}
-                onChange={(e) => onChange({ ...value, modelYear: e.target.value })}
+                onChange={(e) =>
+                  onChange({
+                    ...value,
+                    modelYear: e.target.value,
+                    // Year change may invalidate trim; clear if options will refresh
+                    trim: "",
+                  })
+                }
                 style={{ width: "100%" }}
               >
                 <option value="">Seçin…</option>
@@ -527,7 +569,7 @@ export function CategoryLadderPicker({
       ) : path.length > 0 ? (
         <div style={{ fontSize: 12.5, color: "#b45309", fontWeight: 600 }}>
           {isVehicle
-            ? "Seçimi tamamlayın — marka / model / paket seçilmeden ilan yayınlanamaz."
+            ? "Seçimi tamamlayın — marka / model seçilmeden ilan yayınlanamaz."
             : "Seçimi tamamlayın — tüm alt kategorileri sırayla seçin."}
         </div>
       ) : null}

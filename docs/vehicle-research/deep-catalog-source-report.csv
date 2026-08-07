@@ -1,0 +1,68 @@
+brand,series,model,trim,generationCode,yearFrom,yearTo,confidence,decision,notes
+BMW,5 Serisi,520i,M Sport,G60,2023,2026,VERIFIED_OFFICIAL,CREATE_TRIM,Engine already present as pack version leaf; trim layer missing in runtime
+BMW,5 Serisi,520i,Edition M Sport,G60,2023,2026,VERIFIED_OFFICIAL,CREATE_TRIM,Engine already present as pack version leaf; trim layer missing in runtime
+BMW,5 Serisi,520d xDrive,M Sport,G60,2023,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,5 Serisi,520d xDrive,Edition M Sport,G60,2023,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,5 Serisi,520i,Sport Line,G30,2017,2020,VERIFIED_MULTI_SOURCE,CREATE_TRIM,Engine already present as pack version leaf; trim layer missing in runtime
+BMW,5 Serisi,520i,Luxury Line,G30,2017,2023,VERIFIED_MULTI_SOURCE,CREATE_TRIM,Engine already present as pack version leaf; trim layer missing in runtime
+BMW,5 Serisi,520i,M Sport,G30,2017,2023,VERIFIED_MULTI_SOURCE,CREATE_TRIM,Engine already present as pack version leaf; trim layer missing in runtime
+BMW,5 Serisi,520i,Special Edition Luxury Line,G30,2019,2023,VERIFIED_MULTI_SOURCE,CREATE_TRIM,Engine already present as pack version leaf; trim layer missing in runtime
+BMW,5 Serisi,520i,Special Edition M Sport,G30,2019,2023,VERIFIED_MULTI_SOURCE,CREATE_TRIM,Engine already present as pack version leaf; trim layer missing in runtime
+BMW,5 Serisi,520i,Ultimate Luxury,G30,2017,2019,VERIFIED_MULTI_SOURCE,CREATE_TRIM,Engine already present as pack version leaf; trim layer missing in runtime
+BMW,5 Serisi,520d,Sport Line,G30,2017,2019,VERIFIED_MULTI_SOURCE,CREATE_TRIM,Engine already present as pack version leaf; trim layer missing in runtime
+BMW,5 Serisi,520d,Luxury Line,G30,2017,2019,VERIFIED_MULTI_SOURCE,CREATE_TRIM,Engine already present as pack version leaf; trim layer missing in runtime
+BMW,5 Serisi,520d,M Sport,G30,2017,2019,VERIFIED_MULTI_SOURCE,CREATE_TRIM,Engine already present as pack version leaf; trim layer missing in runtime
+BMW,5 Serisi,520d xDrive,Sport Line,G30,2017,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,5 Serisi,520d xDrive,Luxury Line,G30,2017,2023,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,5 Serisi,520d xDrive,M Sport,G30,2017,2023,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,5 Serisi,520d xDrive,Special Edition Luxury Line,G30,2020,2023,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,5 Serisi,520d xDrive,Special Edition M Sport,G30,2020,2023,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,5 Serisi,520d xDrive,Ultimate Luxury,G30,2017,2019,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,5 Serisi,530i xDrive,Special Edition Luxury Line,G30,2020,2023,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,5 Serisi,530i xDrive,Special Edition M Sport,G30,2019,2023,VERIFIED_MULTI_SOURCE,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,1 Serisi,120,Sport Line,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,1 Serisi,120,M Sport,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,2 Serisi,220 Gran Coupe,Sport Line,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,2 Serisi,220 Gran Coupe,M Sport,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,2 Serisi Active Tourer,220i Active Tourer,Luxury Line,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,2 Serisi Active Tourer,220i Active Tourer,M Sport,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,2 Serisi Active Tourer,230e xDrive Active Tourer,Luxury Line,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,2 Serisi Active Tourer,230e xDrive Active Tourer,M Sport,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,3 Serisi,320i,Sport Line,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,3 Serisi,320i,M Sport,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,4 Serisi,420i Coupé,M Sport,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,4 Serisi,420i Coupé,Edition M Sport,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,4 Serisi,430i xDrive Cabrio,M Sport,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,4 Serisi,420i Gran Coupé,M Sport,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,4 Serisi,420i Gran Coupé,Edition M Sport,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,5 Serisi,520i,M Sport,,2025,2026,VERIFIED_OFFICIAL,CREATE_TRIM,Engine already present as pack version leaf; trim layer missing in runtime
+BMW,5 Serisi,520i,Edition M Sport,,2025,2026,VERIFIED_OFFICIAL,CREATE_TRIM,Engine already present as pack version leaf; trim layer missing in runtime
+BMW,5 Serisi,520d xDrive,M Sport,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,5 Serisi,520d xDrive,Edition M Sport,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,7 Serisi,740d xDrive,Pure Excellence,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,7 Serisi,740d xDrive,M Excellence,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,X1,X1 xDrive25e,X-Line,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,X1,X1 xDrive25e,M Sport,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,X1,X1 xDrive20i,X-Line,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,X1,X1 xDrive20i,M Sport,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,X2,X2 sDrive20i,M Sport,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,X3,X3 20,X-Line,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,X3,X3 20,M Sport,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,X5,X5 xDrive40d,M Sport,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,X6,X6 xDrive40d,M Sport,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,X7,X7 xDrive40d,M Excellence,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,i4,i4 eDrive40,Sport Line,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,i4,i4 eDrive40,M Sport,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,i4,i4 eDrive40,Edition M Sport,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,i5,i5 eDrive40,M Sport,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,i5,i5 eDrive40,Edition M Sport,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,i5,i5 xDrive40 Touring,M Sport,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,i5,i5 xDrive40 Touring,Edition M Sport,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,i7,i7 xDrive60,Pure Excellence,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,i7,i7 xDrive60,M Excellence,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,iX1,iX1 Drive20,Sport Line,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,iX1,iX1 Drive20,X-Line,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,iX1,iX1 Drive20,M Sport,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,iX2,iX2 eDrive20,M Sport,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,iX3,iX3 50 xDrive,M Sport,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth
+BMW,iX,iX xDrive60,M Sport,,2025,2026,VERIFIED_OFFICIAL,CREATE_MODEL,Engine not present as distinct pack version; needs model+trim depth

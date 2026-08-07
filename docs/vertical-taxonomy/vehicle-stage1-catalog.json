@@ -1,7 +1,7 @@
 {
-  "version": "vehicle-stage1-catalog-v5-hidden-brands",
+  "version": "vehicle-stage1-catalog-v6-version-trim",
   "generatedAt": "2026-08-07",
-  "source": "hidden-brands-complete-2026.08",
+  "source": "version-trim-runtime-bmw-5-2026.08",
   "notes": [
     "Built by validate-and-plan-catalog-import.ts — only CREATE/UPDATE/MOVE/KEEP safe series.",
     "Elektrikli hub skipped; Tesla Model Y/Cybertruck promoted to Arazi when missing.",
@@ -10,7 +10,8 @@
     "v4 complete: empty brands filled/hidden, manual series finalized, electric overlay + fuelTypes ELECTRIC on pure EV series.",
     "v4 complete: empty brands filled/hidden, manual series finalized, electric overlay + fuelTypes ELECTRIC on pure EV series.",
     "v5: completed verified series trees for previously hidden motorcycle brands.",
-    "v5: completed verified series trees for previously hidden motorcycle brands."
+    "v5: completed verified series trees for previously hidden motorcycle brands.",
+    "v6: versions may nest trims[]; BMW 5 Series seeded from verified deep research."
   ],
   "entries": [
     {
@@ -414,84 +415,6 @@
         2020,
         2021,
         2022,
-        2023,
-        2024,
-        2025
-      ],
-      "fuelTypes": [],
-      "transmissions": [],
-      "bodyTypes": [],
-      "source": "tr-market-oem-model-2024",
-      "verified": true,
-      "market": "TR",
-      "active": true
-    },
-    {
-      "categoryPaths": [
-        "arac/otomobil"
-      ],
-      "brandSlug": "bmw",
-      "brandName": "BMW",
-      "modelSlug": "5-serisi",
-      "modelName": "5 Serisi",
-      "generationCode": "G30",
-      "generationLabel": "G30",
-      "versions": [
-        {
-          "slug": "520i-g30",
-          "name": "520i"
-        },
-        {
-          "slug": "520d-g30",
-          "name": "520d"
-        },
-        {
-          "slug": "530i-g30",
-          "name": "530i"
-        }
-      ],
-      "modelYears": [
-        2017,
-        2018,
-        2019,
-        2020,
-        2021,
-        2022,
-        2023
-      ],
-      "fuelTypes": [],
-      "transmissions": [],
-      "bodyTypes": [],
-      "source": "tr-market-oem-model-2024",
-      "verified": true,
-      "market": "TR",
-      "active": true
-    },
-    {
-      "categoryPaths": [
-        "arac/otomobil"
-      ],
-      "brandSlug": "bmw",
-      "brandName": "BMW",
-      "modelSlug": "5-serisi",
-      "modelName": "5 Serisi",
-      "generationCode": "G60",
-      "generationLabel": "G60",
-      "versions": [
-        {
-          "slug": "520i-g60",
-          "name": "520i"
-        },
-        {
-          "slug": "520d-g60",
-          "name": "520d"
-        },
-        {
-          "slug": "530e-g60",
-          "name": "530e"
-        }
-      ],
-      "modelYears": [
         2023,
         2024,
         2025
@@ -86068,6 +85991,256 @@
       "transmissions": [],
       "bodyTypes": [],
       "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "bmw",
+      "brandName": "BMW",
+      "modelSlug": "5-serisi",
+      "modelName": "5 Serisi",
+      "generationCode": "G60",
+      "generationLabel": "G60",
+      "versions": [
+        {
+          "slug": "520d-xdrive",
+          "name": "520d xDrive",
+          "yearFrom": 2023,
+          "yearTo": 2026,
+          "trims": [
+            {
+              "slug": "edition-m-sport",
+              "name": "Edition M Sport",
+              "generationCode": "G60",
+              "yearFrom": 2023,
+              "yearTo": 2026
+            },
+            {
+              "slug": "m-sport",
+              "name": "M Sport",
+              "generationCode": "G60",
+              "yearFrom": 2023,
+              "yearTo": 2026
+            }
+          ]
+        },
+        {
+          "slug": "520i",
+          "name": "520i",
+          "yearFrom": 2023,
+          "yearTo": 2026,
+          "trims": [
+            {
+              "slug": "edition-m-sport",
+              "name": "Edition M Sport",
+              "generationCode": "G60",
+              "yearFrom": 2023,
+              "yearTo": 2026
+            },
+            {
+              "slug": "m-sport",
+              "name": "M Sport",
+              "generationCode": "G60",
+              "yearFrom": 2023,
+              "yearTo": 2026
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-bmw-5-series-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/otomobil"
+      ],
+      "brandSlug": "bmw",
+      "brandName": "BMW",
+      "modelSlug": "5-serisi",
+      "modelName": "5 Serisi",
+      "generationCode": "G30",
+      "generationLabel": "G30",
+      "versions": [
+        {
+          "slug": "520d",
+          "name": "520d",
+          "yearFrom": 2017,
+          "yearTo": 2019,
+          "trims": [
+            {
+              "slug": "luxury-line",
+              "name": "Luxury Line",
+              "generationCode": "G30",
+              "yearFrom": 2017,
+              "yearTo": 2019
+            },
+            {
+              "slug": "m-sport",
+              "name": "M Sport",
+              "generationCode": "G30",
+              "yearFrom": 2017,
+              "yearTo": 2019
+            },
+            {
+              "slug": "sport-line",
+              "name": "Sport Line",
+              "generationCode": "G30",
+              "yearFrom": 2017,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "520d-xdrive",
+          "name": "520d xDrive",
+          "yearFrom": 2017,
+          "yearTo": 2023,
+          "trims": [
+            {
+              "slug": "luxury-line",
+              "name": "Luxury Line",
+              "generationCode": "G30",
+              "yearFrom": 2017,
+              "yearTo": 2023
+            },
+            {
+              "slug": "m-sport",
+              "name": "M Sport",
+              "generationCode": "G30",
+              "yearFrom": 2017,
+              "yearTo": 2023
+            },
+            {
+              "slug": "special-edition-luxury-line",
+              "name": "Special Edition Luxury Line",
+              "generationCode": "G30",
+              "yearFrom": 2020,
+              "yearTo": 2023
+            },
+            {
+              "slug": "special-edition-m-sport",
+              "name": "Special Edition M Sport",
+              "generationCode": "G30",
+              "yearFrom": 2020,
+              "yearTo": 2023
+            },
+            {
+              "slug": "sport-line",
+              "name": "Sport Line",
+              "generationCode": "G30",
+              "yearFrom": 2017,
+              "yearTo": 2019
+            },
+            {
+              "slug": "ultimate-luxury",
+              "name": "Ultimate Luxury",
+              "generationCode": "G30",
+              "yearFrom": 2017,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "520i",
+          "name": "520i",
+          "yearFrom": 2017,
+          "yearTo": 2023,
+          "trims": [
+            {
+              "slug": "luxury-line",
+              "name": "Luxury Line",
+              "generationCode": "G30",
+              "yearFrom": 2017,
+              "yearTo": 2023
+            },
+            {
+              "slug": "m-sport",
+              "name": "M Sport",
+              "generationCode": "G30",
+              "yearFrom": 2017,
+              "yearTo": 2023
+            },
+            {
+              "slug": "special-edition-luxury-line",
+              "name": "Special Edition Luxury Line",
+              "generationCode": "G30",
+              "yearFrom": 2019,
+              "yearTo": 2023
+            },
+            {
+              "slug": "special-edition-m-sport",
+              "name": "Special Edition M Sport",
+              "generationCode": "G30",
+              "yearFrom": 2019,
+              "yearTo": 2023
+            },
+            {
+              "slug": "sport-line",
+              "name": "Sport Line",
+              "generationCode": "G30",
+              "yearFrom": 2017,
+              "yearTo": 2020
+            },
+            {
+              "slug": "ultimate-luxury",
+              "name": "Ultimate Luxury",
+              "generationCode": "G30",
+              "yearFrom": 2017,
+              "yearTo": 2019
+            }
+          ]
+        },
+        {
+          "slug": "530i-xdrive",
+          "name": "530i xDrive",
+          "yearFrom": 2019,
+          "yearTo": 2023,
+          "trims": [
+            {
+              "slug": "special-edition-luxury-line",
+              "name": "Special Edition Luxury Line",
+              "generationCode": "G30",
+              "yearFrom": 2020,
+              "yearTo": 2023
+            },
+            {
+              "slug": "special-edition-m-sport",
+              "name": "Special Edition M Sport",
+              "generationCode": "G30",
+              "yearFrom": 2019,
+              "yearTo": 2023
+            }
+          ]
+        }
+      ],
+      "modelYears": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "deep-catalog-bmw-5-series-2026.08",
       "verified": true,
       "market": "TR",
       "active": true

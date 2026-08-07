@@ -1,0 +1,45 @@
+{
+  "bmw5Series": {
+    "totalRows": 40,
+    "verifiedOfficial": 4,
+    "verifiedMultiSource": 18,
+    "reviewRequired": 11,
+    "rejected": 7,
+    "distinctModelsWithVerifiedTrim": 4,
+    "models": [
+      "520i",
+      "520d xDrive",
+      "520d",
+      "530i xDrive"
+    ],
+    "distinctTrims520i": [
+      "M Sport",
+      "Edition M Sport",
+      "Sport Line",
+      "Luxury Line",
+      "Special Edition Luxury Line",
+      "Special Edition M Sport",
+      "Ultimate Luxury"
+    ],
+    "distinctTrims520dFamily": [
+      "M Sport",
+      "Edition M Sport",
+      "Sport Line",
+      "Luxury Line",
+      "Special Edition Luxury Line",
+      "Special Edition M Sport",
+      "Ultimate Luxury"
+    ],
+    "generationCodes": [
+      "G60",
+      "G30"
+    ],
+    "uniqueVerifiedConfigs": 21,
+    "gate": {
+      "has520iWithTrims": true,
+      "has520dFamilyWithTrims": true,
+      "mSportIsTrimNotModel": true,
+      "pass": true
+    }
+  }
+}
