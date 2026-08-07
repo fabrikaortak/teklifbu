@@ -45,14 +45,22 @@ async function main() {
   }
   record("3 Visible otomobil brands have ≥1 series", emptyVisible === 0, `empty=${emptyVisible}`);
 
-  const hidden = await prisma.brand.count({ where: { slug: { in: ["abush", "cheeta", "fosti"] }, isActive: false } });
-  record("8 Hidden empty brands inactive", hidden >= 3, `inactiveSample=${hidden}`);
+  const stillHidden = await prisma.brand.count({
+    where: { slug: { in: ["cheeta", "fosti", "better", "bianchi"] }, isActive: false },
+  });
+  record("8 Unverified/invalid brands stay inactive", stillHidden >= 3, `inactiveSample=${stillHidden}`);
 
   const jawa = await prisma.brand.findUnique({ where: { slug: "jawa" } });
   const jawaModels = jawa
     ? await prisma.productModel.count({ where: { brandId: jawa.id, isActive: true } })
     : 0;
   record("Empty brand FILL Jawa has series", jawaModels >= 1, `models=${jawaModels}`);
+
+  const abush = await prisma.brand.findUnique({ where: { slug: "abush" } });
+  const abushModels = abush
+    ? await prisma.productModel.count({ where: { brandId: abush.id, isActive: true } })
+    : 0;
+  record("Hidden brand FILL Abush active with series", !!abush?.isActive && abushModels >= 1, `active=${abush?.isActive} models=${abushModels}`);
 
   // Special paths
   async function has(path: string, brand: string, model: string) {

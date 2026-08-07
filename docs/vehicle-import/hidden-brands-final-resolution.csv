@@ -1,0 +1,23 @@
+originalBrand,normalizedBrand,category,decision,verifiedSeriesCount,verifiedVariantCount,officialSource,secondarySource,confidence,currentlyHidden,finalSelectable,notes
+Abush,Abush,Motosiklet,FILL_VERIFIED,9,10,https://www.abush.com.tr/tr/fiyat-listesi,https://abush.com.tr/tr/blog/abush-motor-modelleri-karsilastirmasi-hangi-model-size-uygun,high,false,true,Official TR OEM price list; CG 50 Plus tel/çelik jant kept as variants of one series
+Ariic,Ariic,Motosiklet,FILL_VERIFIED,5,5,http://en.ariic-scooter.com/product/default-7.htm,https://www.ariic.my/product/318GT/,high,false,true,OEM Ariic (Jinlang) scooter lineup verified from manufacturer/distributor product pages
+Barossa,Barossa,Motosiklet,FILL_VERIFIED,3,3,https://www.barossamotor.com/,https://www.barossamotor.com/,high,false,true,"Official TR Barossa site lists JEDI, ADV 125, GV 650 road motorcycle models"
+Belderia,Belderia,Motosiklet,REMOVE_INVALID_SOURCE,0,0,https://belderia.com/,,high,true,false,Bicycle manufacturer; not a motorcycle OEM for Vasıta Motosiklet
+Better,Better,Motosiklet,KEEP_HIDDEN_NO_VERIFIABLE_DATA,0,0,,,high,true,false,No verifiable motorcycle OEM model tree for TR market found
+Bianchi,Bianchi,Motosiklet,REMOVE_INVALID_SOURCE,0,0,https://www.bianchi.com/,,high,true,false,Primarily bicycle brand; not applicable to motorcycle catalog
+Boom,Boom,Motosiklet,KEEP_HIDDEN_NO_VERIFIABLE_DATA,0,0,,,high,true,false,No verified TR motorcycle OEM series tree; Boom Trikes EU brand not confirmed as this catalog entry
+Borelli Ledow,Borelli Ledow,Motosiklet,KEEP_HIDDEN_NO_VERIFIABLE_DATA,0,0,,,high,true,false,No verifiable public OEM series/model tree found
+BuMoto/Jinling,BuMoto/Jinling,Motosiklet,FILL_VERIFIED,15,15,https://www.motodeks.com/bumoto-jingling/,https://www.motodeks.com/bumoto-jingling/,high,false,true,TR trade name for Jinling; single combined brand kept (not two separate catalogs). Motodeks lists verifiable series names.
+Cheeta,Cheeta,Motosiklet,KEEP_HIDDEN_NO_VERIFIABLE_DATA,0,0,,,high,true,false,No verifiable OEM site or stable model tree found
+Cosmopolitan,Cosmopolitan,Motosiklet,KEEP_HIDDEN_NO_VERIFIABLE_DATA,0,0,,https://www.motosiklet.net/forum/konu/cosmopolitan-trike-scooter.79028/,medium,true,false,Appears historically as trike scooter listing name; no stable OEM brand catalog tree verified
+CRN,CRN,Motosiklet,KEEP_HIDDEN_NO_VERIFIABLE_DATA,0,0,,,high,true,false,No verifiable public series/model tree found
+CSN Motor,CSN Motor,Motosiklet,FILL_VERIFIED,26,27,https://csnmotor.com.tr/fiyat-listesi/,https://csnmotor.com.tr/,high,false,true,Official CSN Motor TR retail price list (ICE + e-motion models sold as motorcycles/scooters)
+Çelik Motor,Çelik Motor,Motosiklet,REMOVE_INVALID_SOURCE,0,0,https://www.celikmotor.com/,,high,true,false,"Anadolu Group automotive distributor (Kia etc.), not a motorcycle OEM brand"
+Delta Motorcycle,Delta Motorcycle,Motosiklet,REMOVE_INVALID_SOURCE,0,0,,,high,true,false,No TR motorcycle OEM catalog found; name matches unrelated dealers/parts entities abroad
+Dofern,Dofern,Motosiklet,FILL_VERIFIED,3,3,https://dofern-tr.com/modeller/,https://dofern-tr.com/dofern-s1-125-motosiklet/,high,false,true,Official TR Dofern distributor model pages
+Dorado,Dorado,Motosiklet,FILL_VERIFIED,3,3,https://dorado.com.tr/,https://www.dorado.com.tr/magaza/motorsiklet,high,false,true,Official Dorado Motor TR site; distinct from Keeway Dorado model name
+Enbest,Enbest,Motosiklet,FILL_VERIFIED,2,2,https://enbest.com.tr/,https://www.pazarama.com/enbest/cross-motosiklet-k-K12708,high,false,true,Official Enbest Motor TR site + retail listings for A01/A02 mini cross models
+FCM,FCM,Motosiklet,KEEP_HIDDEN_NO_VERIFIABLE_DATA,0,0,,,high,true,false,No verifiable public series/model tree found
+Fosti,Fosti,Motosiklet,KEEP_HIDDEN_NO_VERIFIABLE_DATA,0,0,,,medium,true,false,Historical used-market mentions exist but no OEM catalog tree reliable enough to invent series names
+Meka,Meka,Motosiklet,FILL_VERIFIED,9,9,https://www.mekamotor.com.tr/,https://www.mekamotor.com.tr/resman/uploads/MEKA-Motor-Urun-Katologu.pdf,high,false,true,Official MEKA Motor TR site + product catalog PDF
+Skyjet,Skyjet,Motosiklet,KEEP_HIDDEN_NO_VERIFIABLE_DATA,0,0,https://skyjet.com.tr/,,medium,true,false,TR site focuses on e-bikes; no verified ICE motorcycle series tree for Motosiklet category

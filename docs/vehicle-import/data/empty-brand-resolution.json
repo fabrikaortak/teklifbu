@@ -1,5 +1,5 @@
 {
-  "version": "2026.08-complete-v1",
+  "version": "2026.08-hidden-brands-complete-v1",
   "brands": [
     {
       "category": "Arazi, SUV & Pickup",
@@ -12,12 +12,22 @@
         {
           "name": "Musso",
           "slug": "musso",
-          "versions": [{ "slug": "musso", "name": "Musso" }]
+          "versions": [
+            {
+              "slug": "musso",
+              "name": "Musso"
+            }
+          ]
         },
         {
           "name": "Korando",
           "slug": "korando",
-          "versions": [{ "slug": "korando", "name": "Korando" }]
+          "versions": [
+            {
+              "slug": "korando",
+              "name": "Korando"
+            }
+          ]
         }
       ],
       "source": "historical-public-market",
@@ -35,12 +45,22 @@
         {
           "name": "Anibal",
           "slug": "anibal",
-          "versions": [{ "slug": "anibal", "name": "Anibal" }]
+          "versions": [
+            {
+              "slug": "anibal",
+              "name": "Anibal"
+            }
+          ]
         },
         {
           "name": "PS-10",
           "slug": "ps-10",
-          "versions": [{ "slug": "ps-10", "name": "PS-10" }]
+          "versions": [
+            {
+              "slug": "ps-10",
+              "name": "PS-10"
+            }
+          ]
         }
       ],
       "source": "historical-public-market",
@@ -52,12 +72,107 @@
       "categoryPath": "arac/motosiklet",
       "brandName": "Abush",
       "brandSlug": "abush",
-      "action": "HIDE",
-      "isSelectable": false,
-      "series": [],
-      "source": "none",
+      "action": "FILL",
+      "isSelectable": true,
+      "series": [
+        {
+          "name": "Aybar A-180",
+          "slug": "aybar-a-180",
+          "versions": [
+            {
+              "slug": "aybar-a-180",
+              "name": "Aybar A-180"
+            }
+          ]
+        },
+        {
+          "name": "Benice A-150",
+          "slug": "benice-a-150",
+          "versions": [
+            {
+              "slug": "benice-a-150",
+              "name": "Benice A-150"
+            }
+          ]
+        },
+        {
+          "name": "Speedy 125i",
+          "slug": "speedy-125i",
+          "versions": [
+            {
+              "slug": "speedy-125i",
+              "name": "Speedy 125i"
+            }
+          ]
+        },
+        {
+          "name": "Speedy 110i",
+          "slug": "speedy-110i",
+          "versions": [
+            {
+              "slug": "speedy-110i",
+              "name": "Speedy 110i"
+            }
+          ]
+        },
+        {
+          "name": "Speedy 100i",
+          "slug": "speedy-100i",
+          "versions": [
+            {
+              "slug": "speedy-100i",
+              "name": "Speedy 100i"
+            }
+          ]
+        },
+        {
+          "name": "Asutay 125",
+          "slug": "asutay-125",
+          "versions": [
+            {
+              "slug": "asutay-125",
+              "name": "Asutay 125"
+            }
+          ]
+        },
+        {
+          "name": "Yelken XA-2",
+          "slug": "yelken-xa-2",
+          "versions": [
+            {
+              "slug": "yelken-xa-2",
+              "name": "Yelken XA-2"
+            }
+          ]
+        },
+        {
+          "name": "Yelken XA-1",
+          "slug": "yelken-xa-1",
+          "versions": [
+            {
+              "slug": "yelken-xa-1",
+              "name": "Yelken XA-1"
+            }
+          ]
+        },
+        {
+          "name": "CG 50 Plus",
+          "slug": "cg-50-plus",
+          "versions": [
+            {
+              "slug": "cg-50-plus-tel-jant",
+              "name": "CG 50 Plus Tel Jant"
+            },
+            {
+              "slug": "cg-50-plus-celik-jant",
+              "name": "CG 50 Plus Çelik Jant"
+            }
+          ]
+        }
+      ],
+      "source": "https://www.abush.com.tr/tr/fiyat-listesi",
       "confidence": "high",
-      "reason": "No verified public series/model tree; hide from cascade until curated"
+      "reason": "Official TR OEM price list; CG 50 Plus tel/çelik jant kept as variants of one series"
     },
     {
       "category": "Motosiklet",
@@ -70,17 +185,32 @@
         {
           "name": "Cobra 320",
           "slug": "cobra-320",
-          "versions": [{ "slug": "cobra-320", "name": "Cobra 320" }]
+          "versions": [
+            {
+              "slug": "cobra-320",
+              "name": "Cobra 320"
+            }
+          ]
         },
         {
           "name": "3D 350",
           "slug": "3d-350",
-          "versions": [{ "slug": "3d-350", "name": "3D 350" }]
+          "versions": [
+            {
+              "slug": "3d-350",
+              "name": "3D 350"
+            }
+          ]
         },
         {
           "name": "Elite 350i",
           "slug": "elite-350i",
-          "versions": [{ "slug": "elite-350i", "name": "Elite 350i" }]
+          "versions": [
+            {
+              "slug": "elite-350i",
+              "name": "Elite 350i"
+            }
+          ]
         }
       ],
       "source": "oem-public",
@@ -92,24 +222,106 @@
       "categoryPath": "arac/motosiklet",
       "brandName": "Ariic",
       "brandSlug": "ariic",
-      "action": "HIDE",
-      "isSelectable": false,
-      "series": [],
-      "source": "none",
+      "action": "FILL",
+      "isSelectable": true,
+      "series": [
+        {
+          "name": "Julio",
+          "slug": "julio",
+          "versions": [
+            {
+              "slug": "julio",
+              "name": "Julio"
+            }
+          ]
+        },
+        {
+          "name": "Gemma",
+          "slug": "gemma",
+          "versions": [
+            {
+              "slug": "gemma",
+              "name": "Gemma"
+            }
+          ]
+        },
+        {
+          "name": "Gobi 250",
+          "slug": "gobi-250",
+          "versions": [
+            {
+              "slug": "gobi-250",
+              "name": "Gobi 250"
+            }
+          ]
+        },
+        {
+          "name": "Touch 250",
+          "slug": "touch-250",
+          "versions": [
+            {
+              "slug": "touch-250",
+              "name": "Touch 250"
+            }
+          ]
+        },
+        {
+          "name": "318GT",
+          "slug": "318gt",
+          "versions": [
+            {
+              "slug": "318gt",
+              "name": "318GT"
+            }
+          ]
+        }
+      ],
+      "source": "http://en.ariic-scooter.com/product/default-7.htm",
       "confidence": "high",
-      "reason": "No verified public series/model tree; hide from cascade until curated"
+      "reason": "OEM Ariic (Jinlang) scooter lineup verified from manufacturer/distributor product pages"
     },
     {
       "category": "Motosiklet",
       "categoryPath": "arac/motosiklet",
       "brandName": "Barossa",
       "brandSlug": "barossa",
-      "action": "HIDE",
-      "isSelectable": false,
-      "series": [],
-      "source": "none",
+      "action": "FILL",
+      "isSelectable": true,
+      "series": [
+        {
+          "name": "JEDI",
+          "slug": "jedi",
+          "versions": [
+            {
+              "slug": "jedi",
+              "name": "JEDI"
+            }
+          ]
+        },
+        {
+          "name": "ADV 125",
+          "slug": "adv-125",
+          "versions": [
+            {
+              "slug": "adv-125",
+              "name": "ADV 125"
+            }
+          ]
+        },
+        {
+          "name": "GV 650",
+          "slug": "gv-650",
+          "versions": [
+            {
+              "slug": "gv-650",
+              "name": "GV 650"
+            }
+          ]
+        }
+      ],
+      "source": "https://www.barossamotor.com/",
       "confidence": "high",
-      "reason": "Primarily ATV/off-road; no verified road motorcycle series for catalog"
+      "reason": "Official TR Barossa site lists JEDI, ADV 125, GV 650 road motorcycle models"
     },
     {
       "category": "Motosiklet",
@@ -119,9 +331,9 @@
       "action": "HIDE",
       "isSelectable": false,
       "series": [],
-      "source": "none",
+      "source": "https://belderia.com/",
       "confidence": "high",
-      "reason": "No verified public series/model tree; hide from cascade until curated"
+      "reason": "Bicycle manufacturer; not a motorcycle OEM for Vasıta Motosiklet"
     },
     {
       "category": "Motosiklet",
@@ -133,7 +345,7 @@
       "series": [],
       "source": "none",
       "confidence": "high",
-      "reason": "Not clearly established as motorcycle brand on TR market; hide until curated"
+      "reason": "No verifiable motorcycle OEM model tree for TR market found"
     },
     {
       "category": "Motosiklet",
@@ -143,7 +355,7 @@
       "action": "HIDE",
       "isSelectable": false,
       "series": [],
-      "source": "none",
+      "source": "https://www.bianchi.com/",
       "confidence": "high",
       "reason": "Primarily bicycle brand; not applicable to motorcycle catalog"
     },
@@ -157,7 +369,7 @@
       "series": [],
       "source": "none",
       "confidence": "high",
-      "reason": "No verified public series/model tree; hide from cascade until curated"
+      "reason": "No verified TR motorcycle OEM series tree; Boom Trikes EU brand not confirmed as this catalog entry"
     },
     {
       "category": "Motosiklet",
@@ -169,7 +381,7 @@
       "series": [],
       "source": "none",
       "confidence": "high",
-      "reason": "No verified public series/model tree; hide from cascade until curated"
+      "reason": "No verifiable public OEM series/model tree found"
     },
     {
       "category": "Motosiklet",
@@ -182,7 +394,12 @@
         {
           "name": "Gold Star 650",
           "slug": "gold-star-650",
-          "versions": [{ "slug": "gold-star-650", "name": "Gold Star 650" }]
+          "versions": [
+            {
+              "slug": "gold-star-650",
+              "name": "Gold Star 650"
+            }
+          ]
         }
       ],
       "source": "oem-public",
@@ -194,12 +411,163 @@
       "categoryPath": "arac/motosiklet",
       "brandName": "BuMoto/Jinling",
       "brandSlug": "bumoto-jinling",
-      "action": "HIDE",
-      "isSelectable": false,
-      "series": [],
-      "source": "none",
+      "action": "FILL",
+      "isSelectable": true,
+      "series": [
+        {
+          "name": "Ardour",
+          "slug": "ardour",
+          "versions": [
+            {
+              "slug": "ardour",
+              "name": "Ardour"
+            }
+          ]
+        },
+        {
+          "name": "Boss",
+          "slug": "boss",
+          "versions": [
+            {
+              "slug": "boss",
+              "name": "Boss"
+            }
+          ]
+        },
+        {
+          "name": "Calibre",
+          "slug": "calibre",
+          "versions": [
+            {
+              "slug": "calibre",
+              "name": "Calibre"
+            }
+          ]
+        },
+        {
+          "name": "Eagle XR",
+          "slug": "eagle-xr",
+          "versions": [
+            {
+              "slug": "eagle-xr",
+              "name": "Eagle XR"
+            }
+          ]
+        },
+        {
+          "name": "Forever",
+          "slug": "forever",
+          "versions": [
+            {
+              "slug": "forever",
+              "name": "Forever"
+            }
+          ]
+        },
+        {
+          "name": "Forever GT",
+          "slug": "forever-gt",
+          "versions": [
+            {
+              "slug": "forever-gt",
+              "name": "Forever GT"
+            }
+          ]
+        },
+        {
+          "name": "Gallardo",
+          "slug": "gallardo",
+          "versions": [
+            {
+              "slug": "gallardo",
+              "name": "Gallardo"
+            }
+          ]
+        },
+        {
+          "name": "Lucatti",
+          "slug": "lucatti",
+          "versions": [
+            {
+              "slug": "lucatti",
+              "name": "Lucatti"
+            }
+          ]
+        },
+        {
+          "name": "Monetti",
+          "slug": "monetti",
+          "versions": [
+            {
+              "slug": "monetti",
+              "name": "Monetti"
+            }
+          ]
+        },
+        {
+          "name": "Nova",
+          "slug": "nova",
+          "versions": [
+            {
+              "slug": "nova",
+              "name": "Nova"
+            }
+          ]
+        },
+        {
+          "name": "Ranger",
+          "slug": "ranger",
+          "versions": [
+            {
+              "slug": "ranger",
+              "name": "Ranger"
+            }
+          ]
+        },
+        {
+          "name": "Regnum",
+          "slug": "regnum",
+          "versions": [
+            {
+              "slug": "regnum",
+              "name": "Regnum"
+            }
+          ]
+        },
+        {
+          "name": "Safir",
+          "slug": "safir",
+          "versions": [
+            {
+              "slug": "safir",
+              "name": "Safir"
+            }
+          ]
+        },
+        {
+          "name": "Terra",
+          "slug": "terra",
+          "versions": [
+            {
+              "slug": "terra",
+              "name": "Terra"
+            }
+          ]
+        },
+        {
+          "name": "Ventura",
+          "slug": "ventura",
+          "versions": [
+            {
+              "slug": "ventura",
+              "name": "Ventura"
+            }
+          ]
+        }
+      ],
+      "source": "https://www.motodeks.com/bumoto-jingling/",
       "confidence": "high",
-      "reason": "No verified public series/model tree; hide from cascade until curated"
+      "reason": "TR trade name for Jinling; single combined brand kept (not two separate catalogs). Motodeks lists verifiable series names."
     },
     {
       "category": "Motosiklet",
@@ -211,7 +579,7 @@
       "series": [],
       "source": "none",
       "confidence": "high",
-      "reason": "No verified public series/model tree; hide from cascade until curated"
+      "reason": "No verifiable OEM site or stable model tree found"
     },
     {
       "category": "Motosiklet",
@@ -222,8 +590,8 @@
       "isSelectable": false,
       "series": [],
       "source": "none",
-      "confidence": "high",
-      "reason": "No verified public series/model tree; hide from cascade until curated"
+      "confidence": "medium",
+      "reason": "Appears historically as trike scooter listing name; no stable OEM brand catalog tree verified"
     },
     {
       "category": "Motosiklet",
@@ -235,19 +603,284 @@
       "series": [],
       "source": "none",
       "confidence": "high",
-      "reason": "No verified public series/model tree; hide from cascade until curated"
+      "reason": "No verifiable public series/model tree found"
     },
     {
       "category": "Motosiklet",
       "categoryPath": "arac/motosiklet",
       "brandName": "CSN Motor",
       "brandSlug": "csn-motor",
-      "action": "HIDE",
-      "isSelectable": false,
-      "series": [],
-      "source": "none",
+      "action": "FILL",
+      "isSelectable": true,
+      "series": [
+        {
+          "name": "Arrebol",
+          "slug": "arrebol",
+          "versions": [
+            {
+              "slug": "arrebol",
+              "name": "Arrebol"
+            }
+          ]
+        },
+        {
+          "name": "Beauty 125",
+          "slug": "beauty-125",
+          "versions": [
+            {
+              "slug": "beauty-125",
+              "name": "Beauty 125"
+            }
+          ]
+        },
+        {
+          "name": "Elegance",
+          "slug": "elegance",
+          "versions": [
+            {
+              "slug": "elegance",
+              "name": "Elegance"
+            }
+          ]
+        },
+        {
+          "name": "Blaze",
+          "slug": "blaze",
+          "versions": [
+            {
+              "slug": "blaze",
+              "name": "Blaze"
+            }
+          ]
+        },
+        {
+          "name": "Dakar 150",
+          "slug": "dakar-150",
+          "versions": [
+            {
+              "slug": "dakar-150",
+              "name": "Dakar 150"
+            }
+          ]
+        },
+        {
+          "name": "Kano 50",
+          "slug": "kano-50",
+          "versions": [
+            {
+              "slug": "kano-50",
+              "name": "Kano 50"
+            }
+          ]
+        },
+        {
+          "name": "Felicity",
+          "slug": "felicity",
+          "versions": [
+            {
+              "slug": "felicity",
+              "name": "Felicity"
+            }
+          ]
+        },
+        {
+          "name": "Smash",
+          "slug": "smash",
+          "versions": [
+            {
+              "slug": "smash",
+              "name": "Smash"
+            }
+          ]
+        },
+        {
+          "name": "Pluton",
+          "slug": "pluton",
+          "versions": [
+            {
+              "slug": "pluton",
+              "name": "Pluton"
+            }
+          ]
+        },
+        {
+          "name": "CSN Pro",
+          "slug": "csn-pro",
+          "versions": [
+            {
+              "slug": "csn-pro-tel-jant",
+              "name": "CSN Pro Tel Jant"
+            },
+            {
+              "slug": "csn-pro-celik-jant",
+              "name": "CSN Pro Çelik Jant"
+            }
+          ]
+        },
+        {
+          "name": "Snake 125X",
+          "slug": "snake-125x",
+          "versions": [
+            {
+              "slug": "snake-125x",
+              "name": "Snake 125X"
+            }
+          ]
+        },
+        {
+          "name": "Confident Pro",
+          "slug": "confident-pro",
+          "versions": [
+            {
+              "slug": "confident-pro",
+              "name": "Confident Pro"
+            }
+          ]
+        },
+        {
+          "name": "Smart",
+          "slug": "smart",
+          "versions": [
+            {
+              "slug": "smart",
+              "name": "Smart"
+            }
+          ]
+        },
+        {
+          "name": "Fayton",
+          "slug": "fayton",
+          "versions": [
+            {
+              "slug": "fayton",
+              "name": "Fayton"
+            }
+          ]
+        },
+        {
+          "name": "Portofino",
+          "slug": "portofino",
+          "versions": [
+            {
+              "slug": "portofino",
+              "name": "Portofino"
+            }
+          ]
+        },
+        {
+          "name": "T08",
+          "slug": "t08",
+          "versions": [
+            {
+              "slug": "t08",
+              "name": "T08"
+            }
+          ]
+        },
+        {
+          "name": "Atlas",
+          "slug": "atlas",
+          "versions": [
+            {
+              "slug": "atlas",
+              "name": "Atlas"
+            }
+          ]
+        },
+        {
+          "name": "Mini Carrier",
+          "slug": "mini-carrier",
+          "versions": [
+            {
+              "slug": "mini-carrier",
+              "name": "Mini Carrier"
+            }
+          ]
+        },
+        {
+          "name": "Tank",
+          "slug": "tank",
+          "versions": [
+            {
+              "slug": "tank",
+              "name": "Tank"
+            }
+          ]
+        },
+        {
+          "name": "Slender",
+          "slug": "slender",
+          "versions": [
+            {
+              "slug": "slender",
+              "name": "Slender"
+            }
+          ]
+        },
+        {
+          "name": "Leopar",
+          "slug": "leopar",
+          "versions": [
+            {
+              "slug": "leopar",
+              "name": "Leopar"
+            }
+          ]
+        },
+        {
+          "name": "Tornado",
+          "slug": "tornado",
+          "versions": [
+            {
+              "slug": "tornado",
+              "name": "Tornado"
+            }
+          ]
+        },
+        {
+          "name": "Danilo",
+          "slug": "danilo",
+          "versions": [
+            {
+              "slug": "danilo",
+              "name": "Danilo"
+            }
+          ]
+        },
+        {
+          "name": "Cosy",
+          "slug": "cosy",
+          "versions": [
+            {
+              "slug": "cosy",
+              "name": "Cosy"
+            }
+          ]
+        },
+        {
+          "name": "Comfort",
+          "slug": "comfort",
+          "versions": [
+            {
+              "slug": "comfort",
+              "name": "Comfort"
+            }
+          ]
+        },
+        {
+          "name": "Pigeon",
+          "slug": "pigeon",
+          "versions": [
+            {
+              "slug": "pigeon",
+              "name": "Pigeon"
+            }
+          ]
+        }
+      ],
+      "source": "https://csnmotor.com.tr/fiyat-listesi/",
       "confidence": "high",
-      "reason": "No verified public series/model tree; hide from cascade until curated"
+      "reason": "Official CSN Motor TR retail price list (ICE + e-motion models sold as motorcycles/scooters)"
     },
     {
       "category": "Motosiklet",
@@ -257,9 +890,9 @@
       "action": "HIDE",
       "isSelectable": false,
       "series": [],
-      "source": "none",
+      "source": "https://www.celikmotor.com/",
       "confidence": "high",
-      "reason": "No verified public series/model tree; hide from cascade until curated"
+      "reason": "Anadolu Group automotive distributor (Kia etc.), not a motorcycle OEM brand"
     },
     {
       "category": "Motosiklet",
@@ -272,12 +905,22 @@
         {
           "name": "DY125",
           "slug": "dy125",
-          "versions": [{ "slug": "dy125", "name": "DY125" }]
+          "versions": [
+            {
+              "slug": "dy125",
+              "name": "DY125"
+            }
+          ]
         },
         {
           "name": "DY150",
           "slug": "dy150",
-          "versions": [{ "slug": "dy150", "name": "DY150" }]
+          "versions": [
+            {
+              "slug": "dy150",
+              "name": "DY150"
+            }
+          ]
         }
       ],
       "source": "export-naming",
@@ -292,45 +935,128 @@
       "action": "HIDE",
       "isSelectable": false,
       "series": [],
-      "source": "none",
+      "source": "invalid-source",
       "confidence": "high",
-      "reason": "No verified public series/model tree; hide from cascade until curated"
+      "reason": "No TR motorcycle OEM catalog found; name matches unrelated dealers/parts entities abroad"
     },
     {
       "category": "Motosiklet",
       "categoryPath": "arac/motosiklet",
       "brandName": "Dofern",
       "brandSlug": "dofern",
-      "action": "HIDE",
-      "isSelectable": false,
-      "series": [],
-      "source": "none",
+      "action": "FILL",
+      "isSelectable": true,
+      "series": [
+        {
+          "name": "S1-125",
+          "slug": "s1-125",
+          "versions": [
+            {
+              "slug": "s1-125",
+              "name": "S1-125"
+            }
+          ]
+        },
+        {
+          "name": "Skymax 125",
+          "slug": "skymax-125",
+          "versions": [
+            {
+              "slug": "skymax-125",
+              "name": "Skymax 125"
+            }
+          ]
+        },
+        {
+          "name": "D2 250",
+          "slug": "d2-250",
+          "versions": [
+            {
+              "slug": "d2-250",
+              "name": "D2 250"
+            }
+          ]
+        }
+      ],
+      "source": "https://dofern-tr.com/modeller/",
       "confidence": "high",
-      "reason": "No verified public series/model tree; hide from cascade until curated"
+      "reason": "Official TR Dofern distributor model pages"
     },
     {
       "category": "Motosiklet",
       "categoryPath": "arac/motosiklet",
       "brandName": "Dorado",
       "brandSlug": "dorado",
-      "action": "HIDE",
-      "isSelectable": false,
-      "series": [],
-      "source": "none",
+      "action": "FILL",
+      "isSelectable": true,
+      "series": [
+        {
+          "name": "Corvus",
+          "slug": "corvus",
+          "versions": [
+            {
+              "slug": "corvus",
+              "name": "Corvus"
+            }
+          ]
+        },
+        {
+          "name": "Poseidon",
+          "slug": "poseidon",
+          "versions": [
+            {
+              "slug": "poseidon",
+              "name": "Poseidon"
+            }
+          ]
+        },
+        {
+          "name": "Arcon",
+          "slug": "arcon",
+          "versions": [
+            {
+              "slug": "arcon",
+              "name": "Arcon"
+            }
+          ]
+        }
+      ],
+      "source": "https://dorado.com.tr/",
       "confidence": "high",
-      "reason": "No verified public series/model tree; hide from cascade until curated"
+      "reason": "Official Dorado Motor TR site; distinct from Keeway Dorado model name"
     },
     {
       "category": "Motosiklet",
       "categoryPath": "arac/motosiklet",
       "brandName": "Enbest",
       "brandSlug": "enbest",
-      "action": "HIDE",
-      "isSelectable": false,
-      "series": [],
-      "source": "none",
+      "action": "FILL",
+      "isSelectable": true,
+      "series": [
+        {
+          "name": "A01 Cross",
+          "slug": "a01-cross",
+          "versions": [
+            {
+              "slug": "a01-cross",
+              "name": "A01 Cross"
+            }
+          ]
+        },
+        {
+          "name": "A02 Dirt Bike",
+          "slug": "a02-dirt-bike",
+          "versions": [
+            {
+              "slug": "a02-dirt-bike",
+              "name": "A02 Dirt Bike"
+            }
+          ]
+        }
+      ],
+      "source": "https://enbest.com.tr/",
       "confidence": "high",
-      "reason": "No verified public series/model tree; hide from cascade until curated"
+      "reason": "Official Enbest Motor TR site + retail listings for A01/A02 mini cross models"
     },
     {
       "category": "Motosiklet",
@@ -342,7 +1068,7 @@
       "series": [],
       "source": "none",
       "confidence": "high",
-      "reason": "No verified public series/model tree; hide from cascade until curated"
+      "reason": "No verifiable public series/model tree found"
     },
     {
       "category": "Motosiklet",
@@ -353,8 +1079,8 @@
       "isSelectable": false,
       "series": [],
       "source": "none",
-      "confidence": "high",
-      "reason": "No verified public series/model tree; hide from cascade until curated"
+      "confidence": "medium",
+      "reason": "Historical used-market mentions exist but no OEM catalog tree reliable enough to invent series names"
     },
     {
       "category": "Motosiklet",
@@ -367,12 +1093,22 @@
         {
           "name": "Dragster 125",
           "slug": "dragster-125",
-          "versions": [{ "slug": "dragster-125", "name": "Dragster 125" }]
+          "versions": [
+            {
+              "slug": "dragster-125",
+              "name": "Dragster 125"
+            }
+          ]
         },
         {
           "name": "Dragster 200",
           "slug": "dragster-200",
-          "versions": [{ "slug": "dragster-200", "name": "Dragster 200" }]
+          "versions": [
+            {
+              "slug": "dragster-200",
+              "name": "Dragster 200"
+            }
+          ]
         }
       ],
       "source": "oem-public",
@@ -390,17 +1126,32 @@
         {
           "name": "42",
           "slug": "42",
-          "versions": [{ "slug": "42", "name": "42" }]
+          "versions": [
+            {
+              "slug": "42",
+              "name": "42"
+            }
+          ]
         },
         {
           "name": "42 Bobber",
           "slug": "42-bobber",
-          "versions": [{ "slug": "42-bobber", "name": "42 Bobber" }]
+          "versions": [
+            {
+              "slug": "42-bobber",
+              "name": "42 Bobber"
+            }
+          ]
         },
         {
           "name": "350",
           "slug": "350",
-          "versions": [{ "slug": "350", "name": "350" }]
+          "versions": [
+            {
+              "slug": "350",
+              "name": "350"
+            }
+          ]
         }
       ],
       "source": "oem-public",
@@ -418,12 +1169,22 @@
         {
           "name": "JH125",
           "slug": "jh125",
-          "versions": [{ "slug": "jh125", "name": "JH125" }]
+          "versions": [
+            {
+              "slug": "jh125",
+              "name": "JH125"
+            }
+          ]
         },
         {
           "name": "JH150",
           "slug": "jh150",
-          "versions": [{ "slug": "jh150", "name": "JH150" }]
+          "versions": [
+            {
+              "slug": "jh150",
+              "name": "JH150"
+            }
+          ]
         }
       ],
       "source": "export-naming",
@@ -441,17 +1202,32 @@
         {
           "name": "Seventy Five 125",
           "slug": "seventy-five-125",
-          "versions": [{ "slug": "seventy-five-125", "name": "Seventy Five 125" }]
+          "versions": [
+            {
+              "slug": "seventy-five-125",
+              "name": "Seventy Five 125"
+            }
+          ]
         },
         {
           "name": "Cafe Racer 125",
           "slug": "cafe-racer-125",
-          "versions": [{ "slug": "cafe-racer-125", "name": "Cafe Racer 125" }]
+          "versions": [
+            {
+              "slug": "cafe-racer-125",
+              "name": "Cafe Racer 125"
+            }
+          ]
         },
         {
           "name": "Dirt Track 650",
           "slug": "dirt-track-650",
-          "versions": [{ "slug": "dirt-track-650", "name": "Dirt Track 650" }]
+          "versions": [
+            {
+              "slug": "dirt-track-650",
+              "name": "Dirt Track 650"
+            }
+          ]
         }
       ],
       "source": "oem-public",
@@ -463,12 +1239,103 @@
       "categoryPath": "arac/motosiklet",
       "brandName": "Meka",
       "brandSlug": "meka",
-      "action": "HIDE",
-      "isSelectable": false,
-      "series": [],
-      "source": "none",
+      "action": "FILL",
+      "isSelectable": true,
+      "series": [
+        {
+          "name": "Bus",
+          "slug": "bus",
+          "versions": [
+            {
+              "slug": "bus",
+              "name": "Bus"
+            }
+          ]
+        },
+        {
+          "name": "Bus Pro",
+          "slug": "bus-pro",
+          "versions": [
+            {
+              "slug": "bus-pro",
+              "name": "Bus Pro"
+            }
+          ]
+        },
+        {
+          "name": "Chef",
+          "slug": "chef",
+          "versions": [
+            {
+              "slug": "chef",
+              "name": "Chef"
+            }
+          ]
+        },
+        {
+          "name": "Tiger",
+          "slug": "tiger",
+          "versions": [
+            {
+              "slug": "tiger",
+              "name": "Tiger"
+            }
+          ]
+        },
+        {
+          "name": "Mylasa",
+          "slug": "mylasa",
+          "versions": [
+            {
+              "slug": "mylasa",
+              "name": "Mylasa"
+            }
+          ]
+        },
+        {
+          "name": "Leon",
+          "slug": "leon",
+          "versions": [
+            {
+              "slug": "leon",
+              "name": "Leon"
+            }
+          ]
+        },
+        {
+          "name": "Legend",
+          "slug": "legend",
+          "versions": [
+            {
+              "slug": "legend",
+              "name": "Legend"
+            }
+          ]
+        },
+        {
+          "name": "ALP-125",
+          "slug": "alp-125",
+          "versions": [
+            {
+              "slug": "alp-125",
+              "name": "ALP-125"
+            }
+          ]
+        },
+        {
+          "name": "Freeless",
+          "slug": "freeless",
+          "versions": [
+            {
+              "slug": "freeless",
+              "name": "Freeless"
+            }
+          ]
+        }
+      ],
+      "source": "https://www.mekamotor.com.tr/",
       "confidence": "high",
-      "reason": "No verified public series/model tree; hide from cascade until curated"
+      "reason": "Official MEKA Motor TR site + product catalog PDF"
     },
     {
       "category": "Motosiklet",
@@ -481,17 +1348,32 @@
         {
           "name": "Arena 50",
           "slug": "arena-50",
-          "versions": [{ "slug": "arena-50", "name": "Arena 50" }]
+          "versions": [
+            {
+              "slug": "arena-50",
+              "name": "Arena 50"
+            }
+          ]
         },
         {
           "name": "Contender 125",
           "slug": "contender-125",
-          "versions": [{ "slug": "contender-125", "name": "Contender 125" }]
+          "versions": [
+            {
+              "slug": "contender-125",
+              "name": "Contender 125"
+            }
+          ]
         },
         {
           "name": "X-Force 125",
           "slug": "x-force-125",
-          "versions": [{ "slug": "x-force-125", "name": "X-Force 125" }]
+          "versions": [
+            {
+              "slug": "x-force-125",
+              "name": "X-Force 125"
+            }
+          ]
         }
       ],
       "source": "oem-public",
@@ -509,12 +1391,22 @@
         {
           "name": "RT 125",
           "slug": "rt-125",
-          "versions": [{ "slug": "rt-125", "name": "RT 125" }]
+          "versions": [
+            {
+              "slug": "rt-125",
+              "name": "RT 125"
+            }
+          ]
         },
         {
           "name": "1000 S",
           "slug": "1000-s",
-          "versions": [{ "slug": "1000-s", "name": "1000 S" }]
+          "versions": [
+            {
+              "slug": "1000-s",
+              "name": "1000 S"
+            }
+          ]
         }
       ],
       "source": "oem-public",
@@ -529,9 +1421,9 @@
       "action": "HIDE",
       "isSelectable": false,
       "series": [],
-      "source": "none",
-      "confidence": "high",
-      "reason": "No verified public series/model tree; hide from cascade until curated"
+      "source": "https://skyjet.com.tr/",
+      "confidence": "medium",
+      "reason": "TR site focuses on e-bikes; no verified ICE motorcycle series tree for Motosiklet category"
     }
   ]
 }

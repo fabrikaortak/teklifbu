@@ -1,14 +1,16 @@
 {
-  "version": "vehicle-stage1-catalog-v4-complete",
-  "generatedAt": "2026-08-06",
-  "source": "complete-vehicle-catalog-2026.08",
+  "version": "vehicle-stage1-catalog-v5-hidden-brands",
+  "generatedAt": "2026-08-07",
+  "source": "hidden-brands-complete-2026.08",
   "notes": [
     "Built by validate-and-plan-catalog-import.ts — only CREATE/UPDATE/MOVE/KEEP safe series.",
     "Elektrikli hub skipped; Tesla Model Y/Cybertruck promoted to Arazi when missing.",
     "Real generation codes from prior Stage1 pack preserved.",
     "Never emits generationCode default / generationLabel Standart.",
     "v4 complete: empty brands filled/hidden, manual series finalized, electric overlay + fuelTypes ELECTRIC on pure EV series.",
-    "v4 complete: empty brands filled/hidden, manual series finalized, electric overlay + fuelTypes ELECTRIC on pure EV series."
+    "v4 complete: empty brands filled/hidden, manual series finalized, electric overlay + fuelTypes ELECTRIC on pure EV series.",
+    "v5: completed verified series trees for previously hidden motorcycle brands.",
+    "v5: completed verified series trees for previously hidden motorcycle brands."
   ],
   "entries": [
     {
@@ -83433,6 +83435,2639 @@
       "transmissions": [],
       "bodyTypes": [],
       "source": "electric-canonical-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "abush",
+      "brandName": "Abush",
+      "modelSlug": "aybar-a-180",
+      "modelName": "Aybar A-180",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "aybar-a-180",
+          "name": "Aybar A-180"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "abush",
+      "brandName": "Abush",
+      "modelSlug": "benice-a-150",
+      "modelName": "Benice A-150",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "benice-a-150",
+          "name": "Benice A-150"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "abush",
+      "brandName": "Abush",
+      "modelSlug": "speedy-125i",
+      "modelName": "Speedy 125i",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "speedy-125i",
+          "name": "Speedy 125i"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "abush",
+      "brandName": "Abush",
+      "modelSlug": "speedy-110i",
+      "modelName": "Speedy 110i",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "speedy-110i",
+          "name": "Speedy 110i"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "abush",
+      "brandName": "Abush",
+      "modelSlug": "speedy-100i",
+      "modelName": "Speedy 100i",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "speedy-100i",
+          "name": "Speedy 100i"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "abush",
+      "brandName": "Abush",
+      "modelSlug": "asutay-125",
+      "modelName": "Asutay 125",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "asutay-125",
+          "name": "Asutay 125"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "abush",
+      "brandName": "Abush",
+      "modelSlug": "yelken-xa-2",
+      "modelName": "Yelken XA-2",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "yelken-xa-2",
+          "name": "Yelken XA-2"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "abush",
+      "brandName": "Abush",
+      "modelSlug": "yelken-xa-1",
+      "modelName": "Yelken XA-1",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "yelken-xa-1",
+          "name": "Yelken XA-1"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "abush",
+      "brandName": "Abush",
+      "modelSlug": "cg-50-plus",
+      "modelName": "CG 50 Plus",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "cg-50-plus-tel-jant",
+          "name": "CG 50 Plus Tel Jant"
+        },
+        {
+          "slug": "cg-50-plus-celik-jant",
+          "name": "CG 50 Plus Çelik Jant"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "ariic",
+      "brandName": "Ariic",
+      "modelSlug": "julio",
+      "modelName": "Julio",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "julio",
+          "name": "Julio"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "ariic",
+      "brandName": "Ariic",
+      "modelSlug": "gemma",
+      "modelName": "Gemma",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "gemma",
+          "name": "Gemma"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "ariic",
+      "brandName": "Ariic",
+      "modelSlug": "gobi-250",
+      "modelName": "Gobi 250",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "gobi-250",
+          "name": "Gobi 250"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "ariic",
+      "brandName": "Ariic",
+      "modelSlug": "touch-250",
+      "modelName": "Touch 250",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "touch-250",
+          "name": "Touch 250"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "ariic",
+      "brandName": "Ariic",
+      "modelSlug": "318gt",
+      "modelName": "318GT",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "318gt",
+          "name": "318GT"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "barossa",
+      "brandName": "Barossa",
+      "modelSlug": "jedi",
+      "modelName": "JEDI",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "jedi",
+          "name": "JEDI"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "barossa",
+      "brandName": "Barossa",
+      "modelSlug": "adv-125",
+      "modelName": "ADV 125",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "adv-125",
+          "name": "ADV 125"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "barossa",
+      "brandName": "Barossa",
+      "modelSlug": "gv-650",
+      "modelName": "GV 650",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "gv-650",
+          "name": "GV 650"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "bumoto-jinling",
+      "brandName": "BuMoto/Jinling",
+      "modelSlug": "ardour",
+      "modelName": "Ardour",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "ardour",
+          "name": "Ardour"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "bumoto-jinling",
+      "brandName": "BuMoto/Jinling",
+      "modelSlug": "boss",
+      "modelName": "Boss",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "boss",
+          "name": "Boss"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "bumoto-jinling",
+      "brandName": "BuMoto/Jinling",
+      "modelSlug": "calibre",
+      "modelName": "Calibre",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "calibre",
+          "name": "Calibre"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "bumoto-jinling",
+      "brandName": "BuMoto/Jinling",
+      "modelSlug": "eagle-xr",
+      "modelName": "Eagle XR",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "eagle-xr",
+          "name": "Eagle XR"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "bumoto-jinling",
+      "brandName": "BuMoto/Jinling",
+      "modelSlug": "forever",
+      "modelName": "Forever",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "forever",
+          "name": "Forever"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "bumoto-jinling",
+      "brandName": "BuMoto/Jinling",
+      "modelSlug": "forever-gt",
+      "modelName": "Forever GT",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "forever-gt",
+          "name": "Forever GT"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "bumoto-jinling",
+      "brandName": "BuMoto/Jinling",
+      "modelSlug": "gallardo",
+      "modelName": "Gallardo",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "gallardo",
+          "name": "Gallardo"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "bumoto-jinling",
+      "brandName": "BuMoto/Jinling",
+      "modelSlug": "lucatti",
+      "modelName": "Lucatti",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "lucatti",
+          "name": "Lucatti"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "bumoto-jinling",
+      "brandName": "BuMoto/Jinling",
+      "modelSlug": "monetti",
+      "modelName": "Monetti",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "monetti",
+          "name": "Monetti"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "bumoto-jinling",
+      "brandName": "BuMoto/Jinling",
+      "modelSlug": "nova",
+      "modelName": "Nova",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "nova",
+          "name": "Nova"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "bumoto-jinling",
+      "brandName": "BuMoto/Jinling",
+      "modelSlug": "ranger",
+      "modelName": "Ranger",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "ranger",
+          "name": "Ranger"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "bumoto-jinling",
+      "brandName": "BuMoto/Jinling",
+      "modelSlug": "regnum",
+      "modelName": "Regnum",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "regnum",
+          "name": "Regnum"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "bumoto-jinling",
+      "brandName": "BuMoto/Jinling",
+      "modelSlug": "safir",
+      "modelName": "Safir",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "safir",
+          "name": "Safir"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "bumoto-jinling",
+      "brandName": "BuMoto/Jinling",
+      "modelSlug": "terra",
+      "modelName": "Terra",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "terra",
+          "name": "Terra"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "bumoto-jinling",
+      "brandName": "BuMoto/Jinling",
+      "modelSlug": "ventura",
+      "modelName": "Ventura",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "ventura",
+          "name": "Ventura"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "csn-motor",
+      "brandName": "CSN Motor",
+      "modelSlug": "arrebol",
+      "modelName": "Arrebol",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "arrebol",
+          "name": "Arrebol"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "csn-motor",
+      "brandName": "CSN Motor",
+      "modelSlug": "beauty-125",
+      "modelName": "Beauty 125",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "beauty-125",
+          "name": "Beauty 125"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "csn-motor",
+      "brandName": "CSN Motor",
+      "modelSlug": "elegance",
+      "modelName": "Elegance",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "elegance",
+          "name": "Elegance"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "csn-motor",
+      "brandName": "CSN Motor",
+      "modelSlug": "blaze",
+      "modelName": "Blaze",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "blaze",
+          "name": "Blaze"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "csn-motor",
+      "brandName": "CSN Motor",
+      "modelSlug": "dakar-150",
+      "modelName": "Dakar 150",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "dakar-150",
+          "name": "Dakar 150"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "csn-motor",
+      "brandName": "CSN Motor",
+      "modelSlug": "kano-50",
+      "modelName": "Kano 50",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "kano-50",
+          "name": "Kano 50"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "csn-motor",
+      "brandName": "CSN Motor",
+      "modelSlug": "felicity",
+      "modelName": "Felicity",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "felicity",
+          "name": "Felicity"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "csn-motor",
+      "brandName": "CSN Motor",
+      "modelSlug": "smash",
+      "modelName": "Smash",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "smash",
+          "name": "Smash"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "csn-motor",
+      "brandName": "CSN Motor",
+      "modelSlug": "pluton",
+      "modelName": "Pluton",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "pluton",
+          "name": "Pluton"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "csn-motor",
+      "brandName": "CSN Motor",
+      "modelSlug": "csn-pro",
+      "modelName": "CSN Pro",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "csn-pro-tel-jant",
+          "name": "CSN Pro Tel Jant"
+        },
+        {
+          "slug": "csn-pro-celik-jant",
+          "name": "CSN Pro Çelik Jant"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "csn-motor",
+      "brandName": "CSN Motor",
+      "modelSlug": "snake-125x",
+      "modelName": "Snake 125X",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "snake-125x",
+          "name": "Snake 125X"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "csn-motor",
+      "brandName": "CSN Motor",
+      "modelSlug": "confident-pro",
+      "modelName": "Confident Pro",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "confident-pro",
+          "name": "Confident Pro"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "csn-motor",
+      "brandName": "CSN Motor",
+      "modelSlug": "smart",
+      "modelName": "Smart",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "smart",
+          "name": "Smart"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "csn-motor",
+      "brandName": "CSN Motor",
+      "modelSlug": "fayton",
+      "modelName": "Fayton",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "fayton",
+          "name": "Fayton"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "csn-motor",
+      "brandName": "CSN Motor",
+      "modelSlug": "portofino",
+      "modelName": "Portofino",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "portofino",
+          "name": "Portofino"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "csn-motor",
+      "brandName": "CSN Motor",
+      "modelSlug": "t08",
+      "modelName": "T08",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "t08",
+          "name": "T08"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "csn-motor",
+      "brandName": "CSN Motor",
+      "modelSlug": "atlas",
+      "modelName": "Atlas",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "atlas",
+          "name": "Atlas"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "csn-motor",
+      "brandName": "CSN Motor",
+      "modelSlug": "mini-carrier",
+      "modelName": "Mini Carrier",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "mini-carrier",
+          "name": "Mini Carrier"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "csn-motor",
+      "brandName": "CSN Motor",
+      "modelSlug": "tank",
+      "modelName": "Tank",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "tank",
+          "name": "Tank"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "csn-motor",
+      "brandName": "CSN Motor",
+      "modelSlug": "slender",
+      "modelName": "Slender",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "slender",
+          "name": "Slender"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "csn-motor",
+      "brandName": "CSN Motor",
+      "modelSlug": "leopar",
+      "modelName": "Leopar",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "leopar",
+          "name": "Leopar"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "csn-motor",
+      "brandName": "CSN Motor",
+      "modelSlug": "tornado",
+      "modelName": "Tornado",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "tornado",
+          "name": "Tornado"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "csn-motor",
+      "brandName": "CSN Motor",
+      "modelSlug": "danilo",
+      "modelName": "Danilo",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "danilo",
+          "name": "Danilo"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "csn-motor",
+      "brandName": "CSN Motor",
+      "modelSlug": "cosy",
+      "modelName": "Cosy",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "cosy",
+          "name": "Cosy"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "csn-motor",
+      "brandName": "CSN Motor",
+      "modelSlug": "comfort",
+      "modelName": "Comfort",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "comfort",
+          "name": "Comfort"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "csn-motor",
+      "brandName": "CSN Motor",
+      "modelSlug": "pigeon",
+      "modelName": "Pigeon",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "pigeon",
+          "name": "Pigeon"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "dofern",
+      "brandName": "Dofern",
+      "modelSlug": "s1-125",
+      "modelName": "S1-125",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "s1-125",
+          "name": "S1-125"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "dofern",
+      "brandName": "Dofern",
+      "modelSlug": "skymax-125",
+      "modelName": "Skymax 125",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "skymax-125",
+          "name": "Skymax 125"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "dofern",
+      "brandName": "Dofern",
+      "modelSlug": "d2-250",
+      "modelName": "D2 250",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "d2-250",
+          "name": "D2 250"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "dorado",
+      "brandName": "Dorado",
+      "modelSlug": "corvus",
+      "modelName": "Corvus",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "corvus",
+          "name": "Corvus"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "dorado",
+      "brandName": "Dorado",
+      "modelSlug": "poseidon",
+      "modelName": "Poseidon",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "poseidon",
+          "name": "Poseidon"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "dorado",
+      "brandName": "Dorado",
+      "modelSlug": "arcon",
+      "modelName": "Arcon",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "arcon",
+          "name": "Arcon"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "enbest",
+      "brandName": "Enbest",
+      "modelSlug": "a01-cross",
+      "modelName": "A01 Cross",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "a01-cross",
+          "name": "A01 Cross"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "enbest",
+      "brandName": "Enbest",
+      "modelSlug": "a02-dirt-bike",
+      "modelName": "A02 Dirt Bike",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "a02-dirt-bike",
+          "name": "A02 Dirt Bike"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "meka",
+      "brandName": "Meka",
+      "modelSlug": "bus",
+      "modelName": "Bus",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "bus",
+          "name": "Bus"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "meka",
+      "brandName": "Meka",
+      "modelSlug": "bus-pro",
+      "modelName": "Bus Pro",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "bus-pro",
+          "name": "Bus Pro"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "meka",
+      "brandName": "Meka",
+      "modelSlug": "chef",
+      "modelName": "Chef",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "chef",
+          "name": "Chef"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "meka",
+      "brandName": "Meka",
+      "modelSlug": "tiger",
+      "modelName": "Tiger",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "tiger",
+          "name": "Tiger"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "meka",
+      "brandName": "Meka",
+      "modelSlug": "mylasa",
+      "modelName": "Mylasa",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "mylasa",
+          "name": "Mylasa"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "meka",
+      "brandName": "Meka",
+      "modelSlug": "leon",
+      "modelName": "Leon",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "leon",
+          "name": "Leon"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "meka",
+      "brandName": "Meka",
+      "modelSlug": "legend",
+      "modelName": "Legend",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "legend",
+          "name": "Legend"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "meka",
+      "brandName": "Meka",
+      "modelSlug": "alp-125",
+      "modelName": "ALP-125",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "alp-125",
+          "name": "ALP-125"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
+      "verified": true,
+      "market": "TR",
+      "active": true
+    },
+    {
+      "categoryPaths": [
+        "arac/motosiklet"
+      ],
+      "brandSlug": "meka",
+      "brandName": "Meka",
+      "modelSlug": "freeless",
+      "modelName": "Freeless",
+      "generationCode": "",
+      "generationLabel": "",
+      "versions": [
+        {
+          "slug": "freeless",
+          "name": "Freeless"
+        }
+      ],
+      "modelYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "fuelTypes": [],
+      "transmissions": [],
+      "bodyTypes": [],
+      "source": "hidden-brand-complete-2026.08",
       "verified": true,
       "market": "TR",
       "active": true

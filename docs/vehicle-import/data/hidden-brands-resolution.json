@@ -1,0 +1,347 @@
+{
+  "version": "2026.08-hidden-brands-v1",
+  "category": "Motosiklet",
+  "categoryPath": "arac/motosiklet",
+  "brands": [
+    {
+      "originalBrand": "Abush",
+      "normalizedBrand": "Abush",
+      "brandSlug": "abush",
+      "decision": "FILL_VERIFIED",
+      "confidence": "high",
+      "officialSource": "https://www.abush.com.tr/tr/fiyat-listesi",
+      "secondarySource": "https://abush.com.tr/tr/blog/abush-motor-modelleri-karsilastirmasi-hangi-model-size-uygun",
+      "notes": "Official TR OEM price list; CG 50 Plus tel/çelik jant kept as variants of one series",
+      "series": [
+        { "name": "Aybar A-180", "slug": "aybar-a-180" },
+        { "name": "Benice A-150", "slug": "benice-a-150" },
+        { "name": "Speedy 125i", "slug": "speedy-125i" },
+        { "name": "Speedy 110i", "slug": "speedy-110i" },
+        { "name": "Speedy 100i", "slug": "speedy-100i" },
+        { "name": "Asutay 125", "slug": "asutay-125" },
+        { "name": "Yelken XA-2", "slug": "yelken-xa-2" },
+        { "name": "Yelken XA-1", "slug": "yelken-xa-1" },
+        {
+          "name": "CG 50 Plus",
+          "slug": "cg-50-plus",
+          "versions": [
+            { "slug": "cg-50-plus-tel-jant", "name": "CG 50 Plus Tel Jant" },
+            { "slug": "cg-50-plus-celik-jant", "name": "CG 50 Plus Çelik Jant" }
+          ]
+        }
+      ]
+    },
+    {
+      "originalBrand": "Ariic",
+      "normalizedBrand": "Ariic",
+      "brandSlug": "ariic",
+      "decision": "FILL_VERIFIED",
+      "confidence": "high",
+      "officialSource": "http://en.ariic-scooter.com/product/default-7.htm",
+      "secondarySource": "https://www.ariic.my/product/318GT/",
+      "notes": "OEM Ariic (Jinlang) scooter lineup verified from manufacturer/distributor product pages",
+      "series": [
+        { "name": "Julio", "slug": "julio" },
+        { "name": "Gemma", "slug": "gemma" },
+        { "name": "Gobi 250", "slug": "gobi-250" },
+        { "name": "Touch 250", "slug": "touch-250" },
+        { "name": "318GT", "slug": "318gt" }
+      ]
+    },
+    {
+      "originalBrand": "Barossa",
+      "normalizedBrand": "Barossa",
+      "brandSlug": "barossa",
+      "decision": "FILL_VERIFIED",
+      "confidence": "high",
+      "officialSource": "https://www.barossamotor.com/",
+      "secondarySource": "https://www.barossamotor.com/",
+      "notes": "Official TR Barossa site lists JEDI, ADV 125, GV 650 road motorcycle models",
+      "series": [
+        { "name": "JEDI", "slug": "jedi" },
+        { "name": "ADV 125", "slug": "adv-125" },
+        { "name": "GV 650", "slug": "gv-650" }
+      ]
+    },
+    {
+      "originalBrand": "Belderia",
+      "normalizedBrand": "Belderia",
+      "brandSlug": "belderia",
+      "decision": "REMOVE_INVALID_SOURCE",
+      "confidence": "high",
+      "officialSource": "https://belderia.com/",
+      "secondarySource": "",
+      "notes": "Bicycle manufacturer; not a motorcycle OEM for Vasıta Motosiklet",
+      "series": []
+    },
+    {
+      "originalBrand": "Better",
+      "normalizedBrand": "Better",
+      "brandSlug": "better",
+      "decision": "KEEP_HIDDEN_NO_VERIFIABLE_DATA",
+      "confidence": "high",
+      "officialSource": "",
+      "secondarySource": "",
+      "notes": "No verifiable motorcycle OEM model tree for TR market found",
+      "series": []
+    },
+    {
+      "originalBrand": "Bianchi",
+      "normalizedBrand": "Bianchi",
+      "brandSlug": "bianchi",
+      "decision": "REMOVE_INVALID_SOURCE",
+      "confidence": "high",
+      "officialSource": "https://www.bianchi.com/",
+      "secondarySource": "",
+      "notes": "Primarily bicycle brand; not applicable to motorcycle catalog",
+      "series": []
+    },
+    {
+      "originalBrand": "Boom",
+      "normalizedBrand": "Boom",
+      "brandSlug": "boom",
+      "decision": "KEEP_HIDDEN_NO_VERIFIABLE_DATA",
+      "confidence": "high",
+      "officialSource": "",
+      "secondarySource": "",
+      "notes": "No verified TR motorcycle OEM series tree; Boom Trikes EU brand not confirmed as this catalog entry",
+      "series": []
+    },
+    {
+      "originalBrand": "Borelli Ledow",
+      "normalizedBrand": "Borelli Ledow",
+      "brandSlug": "borelli-ledow",
+      "decision": "KEEP_HIDDEN_NO_VERIFIABLE_DATA",
+      "confidence": "high",
+      "officialSource": "",
+      "secondarySource": "",
+      "notes": "No verifiable public OEM series/model tree found",
+      "series": []
+    },
+    {
+      "originalBrand": "BuMoto/Jinling",
+      "normalizedBrand": "BuMoto/Jinling",
+      "brandSlug": "bumoto-jinling",
+      "decision": "FILL_VERIFIED",
+      "confidence": "high",
+      "officialSource": "https://www.motodeks.com/bumoto-jingling/",
+      "secondarySource": "https://www.motodeks.com/bumoto-jingling/",
+      "notes": "TR trade name for Jinling; single combined brand kept (not two separate catalogs). Motodeks lists verifiable series names.",
+      "series": [
+        { "name": "Ardour", "slug": "ardour" },
+        { "name": "Boss", "slug": "boss" },
+        { "name": "Calibre", "slug": "calibre" },
+        { "name": "Eagle XR", "slug": "eagle-xr" },
+        { "name": "Forever", "slug": "forever" },
+        { "name": "Forever GT", "slug": "forever-gt" },
+        { "name": "Gallardo", "slug": "gallardo" },
+        { "name": "Lucatti", "slug": "lucatti" },
+        { "name": "Monetti", "slug": "monetti" },
+        { "name": "Nova", "slug": "nova" },
+        { "name": "Ranger", "slug": "ranger" },
+        { "name": "Regnum", "slug": "regnum" },
+        { "name": "Safir", "slug": "safir" },
+        { "name": "Terra", "slug": "terra" },
+        { "name": "Ventura", "slug": "ventura" }
+      ]
+    },
+    {
+      "originalBrand": "Cheeta",
+      "normalizedBrand": "Cheeta",
+      "brandSlug": "cheeta",
+      "decision": "KEEP_HIDDEN_NO_VERIFIABLE_DATA",
+      "confidence": "high",
+      "officialSource": "",
+      "secondarySource": "",
+      "notes": "No verifiable OEM site or stable model tree found",
+      "series": []
+    },
+    {
+      "originalBrand": "Cosmopolitan",
+      "normalizedBrand": "Cosmopolitan",
+      "brandSlug": "cosmopolitan",
+      "decision": "KEEP_HIDDEN_NO_VERIFIABLE_DATA",
+      "confidence": "medium",
+      "officialSource": "",
+      "secondarySource": "https://www.motosiklet.net/forum/konu/cosmopolitan-trike-scooter.79028/",
+      "notes": "Appears historically as trike scooter listing name; no stable OEM brand catalog tree verified",
+      "series": []
+    },
+    {
+      "originalBrand": "CRN",
+      "normalizedBrand": "CRN",
+      "brandSlug": "crn",
+      "decision": "KEEP_HIDDEN_NO_VERIFIABLE_DATA",
+      "confidence": "high",
+      "officialSource": "",
+      "secondarySource": "",
+      "notes": "No verifiable public series/model tree found",
+      "series": []
+    },
+    {
+      "originalBrand": "CSN Motor",
+      "normalizedBrand": "CSN Motor",
+      "brandSlug": "csn-motor",
+      "decision": "FILL_VERIFIED",
+      "confidence": "high",
+      "officialSource": "https://csnmotor.com.tr/fiyat-listesi/",
+      "secondarySource": "https://csnmotor.com.tr/",
+      "notes": "Official CSN Motor TR retail price list (ICE + e-motion models sold as motorcycles/scooters)",
+      "series": [
+        { "name": "Arrebol", "slug": "arrebol" },
+        { "name": "Beauty 125", "slug": "beauty-125" },
+        { "name": "Elegance", "slug": "elegance" },
+        { "name": "Blaze", "slug": "blaze" },
+        { "name": "Dakar 150", "slug": "dakar-150" },
+        { "name": "Kano 50", "slug": "kano-50" },
+        { "name": "Felicity", "slug": "felicity" },
+        { "name": "Smash", "slug": "smash" },
+        { "name": "Pluton", "slug": "pluton" },
+        {
+          "name": "CSN Pro",
+          "slug": "csn-pro",
+          "versions": [
+            { "slug": "csn-pro-tel-jant", "name": "CSN Pro Tel Jant" },
+            { "slug": "csn-pro-celik-jant", "name": "CSN Pro Çelik Jant" }
+          ]
+        },
+        { "name": "Snake 125X", "slug": "snake-125x" },
+        { "name": "Confident Pro", "slug": "confident-pro" },
+        { "name": "Smart", "slug": "smart" },
+        { "name": "Fayton", "slug": "fayton" },
+        { "name": "Portofino", "slug": "portofino" },
+        { "name": "T08", "slug": "t08" },
+        { "name": "Atlas", "slug": "atlas" },
+        { "name": "Mini Carrier", "slug": "mini-carrier" },
+        { "name": "Tank", "slug": "tank" },
+        { "name": "Slender", "slug": "slender" },
+        { "name": "Leopar", "slug": "leopar" },
+        { "name": "Tornado", "slug": "tornado" },
+        { "name": "Danilo", "slug": "danilo" },
+        { "name": "Cosy", "slug": "cosy" },
+        { "name": "Comfort", "slug": "comfort" },
+        { "name": "Pigeon", "slug": "pigeon" }
+      ]
+    },
+    {
+      "originalBrand": "Çelik Motor",
+      "normalizedBrand": "Çelik Motor",
+      "brandSlug": "celik-motor",
+      "decision": "REMOVE_INVALID_SOURCE",
+      "confidence": "high",
+      "officialSource": "https://www.celikmotor.com/",
+      "secondarySource": "",
+      "notes": "Anadolu Group automotive distributor (Kia etc.), not a motorcycle OEM brand",
+      "series": []
+    },
+    {
+      "originalBrand": "Delta Motorcycle",
+      "normalizedBrand": "Delta Motorcycle",
+      "brandSlug": "delta-motorcycle",
+      "decision": "REMOVE_INVALID_SOURCE",
+      "confidence": "high",
+      "officialSource": "",
+      "secondarySource": "",
+      "notes": "No TR motorcycle OEM catalog found; name matches unrelated dealers/parts entities abroad",
+      "series": []
+    },
+    {
+      "originalBrand": "Dofern",
+      "normalizedBrand": "Dofern",
+      "brandSlug": "dofern",
+      "decision": "FILL_VERIFIED",
+      "confidence": "high",
+      "officialSource": "https://dofern-tr.com/modeller/",
+      "secondarySource": "https://dofern-tr.com/dofern-s1-125-motosiklet/",
+      "notes": "Official TR Dofern distributor model pages",
+      "series": [
+        { "name": "S1-125", "slug": "s1-125" },
+        { "name": "Skymax 125", "slug": "skymax-125" },
+        { "name": "D2 250", "slug": "d2-250" }
+      ]
+    },
+    {
+      "originalBrand": "Dorado",
+      "normalizedBrand": "Dorado",
+      "brandSlug": "dorado",
+      "decision": "FILL_VERIFIED",
+      "confidence": "high",
+      "officialSource": "https://dorado.com.tr/",
+      "secondarySource": "https://www.dorado.com.tr/magaza/motorsiklet",
+      "notes": "Official Dorado Motor TR site; distinct from Keeway Dorado model name",
+      "series": [
+        { "name": "Corvus", "slug": "corvus" },
+        { "name": "Poseidon", "slug": "poseidon" },
+        { "name": "Arcon", "slug": "arcon" }
+      ]
+    },
+    {
+      "originalBrand": "Enbest",
+      "normalizedBrand": "Enbest",
+      "brandSlug": "enbest",
+      "decision": "FILL_VERIFIED",
+      "confidence": "high",
+      "officialSource": "https://enbest.com.tr/",
+      "secondarySource": "https://www.pazarama.com/enbest/cross-motosiklet-k-K12708",
+      "notes": "Official Enbest Motor TR site + retail listings for A01/A02 mini cross models",
+      "series": [
+        { "name": "A01 Cross", "slug": "a01-cross" },
+        { "name": "A02 Dirt Bike", "slug": "a02-dirt-bike" }
+      ]
+    },
+    {
+      "originalBrand": "FCM",
+      "normalizedBrand": "FCM",
+      "brandSlug": "fcm",
+      "decision": "KEEP_HIDDEN_NO_VERIFIABLE_DATA",
+      "confidence": "high",
+      "officialSource": "",
+      "secondarySource": "",
+      "notes": "No verifiable public series/model tree found",
+      "series": []
+    },
+    {
+      "originalBrand": "Fosti",
+      "normalizedBrand": "Fosti",
+      "brandSlug": "fosti",
+      "decision": "KEEP_HIDDEN_NO_VERIFIABLE_DATA",
+      "confidence": "medium",
+      "officialSource": "",
+      "secondarySource": "",
+      "notes": "Historical used-market mentions exist but no OEM catalog tree reliable enough to invent series names",
+      "series": []
+    },
+    {
+      "originalBrand": "Meka",
+      "normalizedBrand": "Meka",
+      "brandSlug": "meka",
+      "decision": "FILL_VERIFIED",
+      "confidence": "high",
+      "officialSource": "https://www.mekamotor.com.tr/",
+      "secondarySource": "https://www.mekamotor.com.tr/resman/uploads/MEKA-Motor-Urun-Katologu.pdf",
+      "notes": "Official MEKA Motor TR site + product catalog PDF",
+      "series": [
+        { "name": "Bus", "slug": "bus" },
+        { "name": "Bus Pro", "slug": "bus-pro" },
+        { "name": "Chef", "slug": "chef" },
+        { "name": "Tiger", "slug": "tiger" },
+        { "name": "Mylasa", "slug": "mylasa" },
+        { "name": "Leon", "slug": "leon" },
+        { "name": "Legend", "slug": "legend" },
+        { "name": "ALP-125", "slug": "alp-125" },
+        { "name": "Freeless", "slug": "freeless" }
+      ]
+    },
+    {
+      "originalBrand": "Skyjet",
+      "normalizedBrand": "Skyjet",
+      "brandSlug": "skyjet",
+      "decision": "KEEP_HIDDEN_NO_VERIFIABLE_DATA",
+      "confidence": "medium",
+      "officialSource": "https://skyjet.com.tr/",
+      "secondarySource": "",
+      "notes": "TR site focuses on e-bikes; no verified ICE motorcycle series tree for Motosiklet category",
+      "series": []
+    }
+  ]
+}
