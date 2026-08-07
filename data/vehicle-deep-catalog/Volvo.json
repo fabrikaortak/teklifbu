@@ -1,0 +1,346 @@
+{
+  "brand": "Volvo",
+  "brandSlug": "volvo",
+  "version": "2026.08-deep-volvo-v1-current-tr",
+  "generatedAt": "2026-08-07T12:05:00.000Z",
+  "seriesCovered": [
+    "XC60",
+    "EX40",
+    "V60",
+    "XC90",
+    "EX30",
+    "EC40"
+  ],
+  "status": "COMPLETED",
+  "notes": "XC60/EX40 from official Volvo TR MY26 PDF. Bright/Dark are style packs mapped into trim.",
+  "configurations": [
+    {
+      "brand": "Volvo",
+      "series": "XC60",
+      "model": "B5 AWD Mild hybrid",
+      "trim": "Plus Dark",
+      "generation": "SPA MY2026",
+      "generationCode": "",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "1969",
+      "powerHp": "250",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "XC60 B5 AWD MHEV Plus Dark — resmi MY26 PDF",
+      "sources": [
+        {
+          "url": "https://www.volvocars.com/tr/l/fiyat-listesi/",
+          "title": "Volvo Cars TR resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://azure-eu-assets.contentstack.com/v3/assets/blt84e01a6904dbd2e8/bltbbdb4e75b36d9a02/69f97729a2c428b3f125cc16/Tu%CC%88rkiye_Tavsiye_Edilen_Anahtar_Teslim_Fiyat_Listesi_MY26-04.05.26.pdf",
+          "title": "Volvo TR MY26 resmi PDF fiyat listesi",
+          "date": "2026-05-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.webtekno.com/haziran-2026-volvo-fiyat-listesi-h217906.html",
+          "title": "Volvo Haziran 2026 yayınlanan tablo",
+          "date": "2026-06-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Volvo",
+      "series": "XC60",
+      "model": "B5 AWD Mild hybrid",
+      "trim": "Plus Bright",
+      "generation": "SPA MY2026",
+      "generationCode": "",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "1969",
+      "powerHp": "250",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "XC60 B5 AWD MHEV Plus Bright — resmi MY26 PDF",
+      "sources": [
+        {
+          "url": "https://www.volvocars.com/tr/l/fiyat-listesi/",
+          "title": "Volvo Cars TR resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://azure-eu-assets.contentstack.com/v3/assets/blt84e01a6904dbd2e8/bltbbdb4e75b36d9a02/69f97729a2c428b3f125cc16/Tu%CC%88rkiye_Tavsiye_Edilen_Anahtar_Teslim_Fiyat_Listesi_MY26-04.05.26.pdf",
+          "title": "Volvo TR MY26 resmi PDF fiyat listesi",
+          "date": "2026-05-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.webtekno.com/haziran-2026-volvo-fiyat-listesi-h217906.html",
+          "title": "Volvo Haziran 2026 yayınlanan tablo",
+          "date": "2026-06-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Volvo",
+      "series": "XC60",
+      "model": "T8 AWD Plug-in hybrid",
+      "trim": "Plus Dark",
+      "generation": "SPA MY2026",
+      "generationCode": "",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "PLUGIN_HYBRID",
+      "engineVolume": "1969",
+      "powerHp": "310+145",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "XC60 T8 AWD PHEV Plus Dark — resmi MY26 PDF",
+      "sources": [
+        {
+          "url": "https://www.volvocars.com/tr/l/fiyat-listesi/",
+          "title": "Volvo Cars TR resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://azure-eu-assets.contentstack.com/v3/assets/blt84e01a6904dbd2e8/bltbbdb4e75b36d9a02/69f97729a2c428b3f125cc16/Tu%CC%88rkiye_Tavsiye_Edilen_Anahtar_Teslim_Fiyat_Listesi_MY26-04.05.26.pdf",
+          "title": "Volvo TR MY26 resmi PDF fiyat listesi",
+          "date": "2026-05-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.webtekno.com/haziran-2026-volvo-fiyat-listesi-h217906.html",
+          "title": "Volvo Haziran 2026 yayınlanan tablo",
+          "date": "2026-06-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Volvo",
+      "series": "EX40",
+      "model": "Single Motor Extended Range 150kW",
+      "trim": "Ultra",
+      "generation": "EX40 TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "204",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "EX40 Single Motor Ext Range Ultra — resmi; EV overlay EX40 (no duplicate XC40 Recharge invent)",
+      "sources": [
+        {
+          "url": "https://www.volvocars.com/tr/l/fiyat-listesi/",
+          "title": "Volvo Cars TR resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://azure-eu-assets.contentstack.com/v3/assets/blt84e01a6904dbd2e8/bltbbdb4e75b36d9a02/69f97729a2c428b3f125cc16/Tu%CC%88rkiye_Tavsiye_Edilen_Anahtar_Teslim_Fiyat_Listesi_MY26-04.05.26.pdf",
+          "title": "Volvo TR MY26 resmi PDF fiyat listesi",
+          "date": "2026-05-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.webtekno.com/haziran-2026-volvo-fiyat-listesi-h217906.html",
+          "title": "Volvo Haziran 2026 yayınlanan tablo",
+          "date": "2026-06-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Volvo",
+      "series": "V60",
+      "model": "B4 FWD Mild hybrid",
+      "trim": "Plus Dark",
+      "generation": "SPA MY2026",
+      "generationCode": "",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "1969",
+      "powerHp": "197",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "V60 B4 FWD MHEV Plus Dark — resmi MY26 PDF",
+      "sources": [
+        {
+          "url": "https://www.volvocars.com/tr/l/fiyat-listesi/",
+          "title": "Volvo Cars TR resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://azure-eu-assets.contentstack.com/v3/assets/blt84e01a6904dbd2e8/bltbbdb4e75b36d9a02/69f97729a2c428b3f125cc16/Tu%CC%88rkiye_Tavsiye_Edilen_Anahtar_Teslim_Fiyat_Listesi_MY26-04.05.26.pdf",
+          "title": "Volvo TR MY26 resmi PDF fiyat listesi",
+          "date": "2026-05-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.webtekno.com/haziran-2026-volvo-fiyat-listesi-h217906.html",
+          "title": "Volvo Haziran 2026 yayınlanan tablo",
+          "date": "2026-06-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Volvo",
+      "series": "XC90",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "fuelType": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "",
+      "driveType": "",
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "XC90 on Volvo TR price pages / build — discrete MY26 version+trim rows pending fuller PDF parse.",
+      "sources": [
+        {
+          "url": "https://www.volvocars.com/tr/l/fiyat-listesi/",
+          "title": "Volvo Cars TR resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://azure-eu-assets.contentstack.com/v3/assets/blt84e01a6904dbd2e8/bltbbdb4e75b36d9a02/69f97729a2c428b3f125cc16/Tu%CC%88rkiye_Tavsiye_Edilen_Anahtar_Teslim_Fiyat_Listesi_MY26-04.05.26.pdf",
+          "title": "Volvo TR MY26 resmi PDF fiyat listesi",
+          "date": "2026-05-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.webtekno.com/haziran-2026-volvo-fiyat-listesi-h217906.html",
+          "title": "Volvo Haziran 2026 yayınlanan tablo",
+          "date": "2026-06-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Volvo",
+      "series": "EX30",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "fuelType": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "",
+      "driveType": "",
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "EX30 listed in Jun 2026 published tables — official PDF row pairing pending.",
+      "sources": [
+        {
+          "url": "https://www.volvocars.com/tr/l/fiyat-listesi/",
+          "title": "Volvo Cars TR resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://azure-eu-assets.contentstack.com/v3/assets/blt84e01a6904dbd2e8/bltbbdb4e75b36d9a02/69f97729a2c428b3f125cc16/Tu%CC%88rkiye_Tavsiye_Edilen_Anahtar_Teslim_Fiyat_Listesi_MY26-04.05.26.pdf",
+          "title": "Volvo TR MY26 resmi PDF fiyat listesi",
+          "date": "2026-05-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.webtekno.com/haziran-2026-volvo-fiyat-listesi-h217906.html",
+          "title": "Volvo Haziran 2026 yayınlanan tablo",
+          "date": "2026-06-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Volvo",
+      "series": "EC40",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "fuelType": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "",
+      "driveType": "",
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "notes": "EC40 on official price list — discrete configs pending.",
+      "sources": [
+        {
+          "url": "https://www.volvocars.com/tr/l/fiyat-listesi/",
+          "title": "Volvo Cars TR resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://azure-eu-assets.contentstack.com/v3/assets/blt84e01a6904dbd2e8/bltbbdb4e75b36d9a02/69f97729a2c428b3f125cc16/Tu%CC%88rkiye_Tavsiye_Edilen_Anahtar_Teslim_Fiyat_Listesi_MY26-04.05.26.pdf",
+          "title": "Volvo TR MY26 resmi PDF fiyat listesi",
+          "date": "2026-05-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.webtekno.com/haziran-2026-volvo-fiyat-listesi-h217906.html",
+          "title": "Volvo Haziran 2026 yayınlanan tablo",
+          "date": "2026-06-01",
+          "role": "secondary"
+        }
+      ]
+    }
+  ],
+  "researchNotes": {
+    "researchedSeriesPass": [
+      "XC60",
+      "EX40",
+      "V60",
+      "XC90",
+      "EX30",
+      "EC40"
+    ],
+    "reviewRequiredSeries": [
+      "XC90",
+      "EX30",
+      "EC40"
+    ]
+  },
+  "completedAt": "2026-08-07T09:13:29.968Z"
+}

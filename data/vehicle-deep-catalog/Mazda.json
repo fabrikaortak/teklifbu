@@ -1,0 +1,468 @@
+{
+  "brand": "Mazda",
+  "brandSlug": "mazda",
+  "version": "2026.08-deep-mazda-v2-verified-nov2023",
+  "generatedAt": "2026-08-07T09:34:56.785Z",
+  "seriesCovered": [
+    "CX-30",
+    "CX-5",
+    "CX-60",
+    "MX-5",
+    "MX-5 RF",
+    "Mazda3"
+  ],
+  "status": "COMPLETED",
+  "notes": "Verified CX-5/MX-5/MX-5 RF from Mazda Motor Türkiye Nov 2023 official PDF (exports stopped Jan 2024). Mazda3/CX-30/CX-60 remain REVIEW_REQUIRED.",
+  "configurations": [
+    {
+      "brand": "Mazda",
+      "series": "Mazda3",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "fuelType": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "",
+      "driveType": "",
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "notes": "Mazda TR sıfır ihracat Ocak 2024’te durdu; Mazda3 discrete official version+trim bu pass’te yok.",
+      "sources": [
+        {
+          "url": "https://www.mazda.com.tr/",
+          "title": "Mazda Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Mazda",
+      "series": "CX-5",
+      "model": "2.0 SKY-G",
+      "trim": "Power Sense",
+      "generation": "KF TR MY2023",
+      "generationCode": "",
+      "yearFrom": 2023,
+      "yearTo": 2023,
+      "fuelType": "GASOLINE",
+      "engineVolume": "2000",
+      "powerHp": "165",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "CX-5 2.0 SKY-G 4x4 AT Power Sense — resmi Kasım 2023 PDF",
+      "sources": [
+        {
+          "url": "https://media-assets.mazda.eu/raw/upload/mazdatr/globalassets/pdfs/pricelist/mazda-fiyat-listesi-november-2023-website.pdf?rnd=4aa8ab",
+          "title": "Mazda Motor Türkiye tavsiye edilen fiyat listesi (2.11.2023)",
+          "date": "2023-11-02",
+          "role": "primary"
+        },
+        {
+          "url": "https://otokampanyalar.com/mazda-guncel-kampanyali-fiyat-listesi-m597502.html",
+          "title": "Mazda CX-5/MX-5 Kasım 2023MY TR fiyat derlemesi (ihracat durdurma notu)",
+          "date": "2024-01-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Mazda",
+      "series": "CX-5",
+      "model": "2.0 SKY-G",
+      "trim": "Power Sense Sport",
+      "generation": "KF TR MY2023",
+      "generationCode": "",
+      "yearFrom": 2023,
+      "yearTo": 2023,
+      "fuelType": "GASOLINE",
+      "engineVolume": "2000",
+      "powerHp": "165",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "CX-5 2.0 SKY-G 4x4 AT Power Sense Sport — resmi Kasım 2023 PDF",
+      "sources": [
+        {
+          "url": "https://media-assets.mazda.eu/raw/upload/mazdatr/globalassets/pdfs/pricelist/mazda-fiyat-listesi-november-2023-website.pdf?rnd=4aa8ab",
+          "title": "Mazda Motor Türkiye tavsiye edilen fiyat listesi (2.11.2023)",
+          "date": "2023-11-02",
+          "role": "primary"
+        },
+        {
+          "url": "https://otokampanyalar.com/mazda-guncel-kampanyali-fiyat-listesi-m597502.html",
+          "title": "Mazda CX-5/MX-5 Kasım 2023MY TR fiyat derlemesi (ihracat durdurma notu)",
+          "date": "2024-01-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Mazda",
+      "series": "CX-5",
+      "model": "2.0 SKY-G",
+      "trim": "Power Sense Plus",
+      "generation": "KF TR MY2023",
+      "generationCode": "",
+      "yearFrom": 2023,
+      "yearTo": 2023,
+      "fuelType": "GASOLINE",
+      "engineVolume": "2000",
+      "powerHp": "165",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "CX-5 2.0 SKY-G 4x4 AT Power Sense Plus — resmi Kasım 2023 PDF",
+      "sources": [
+        {
+          "url": "https://media-assets.mazda.eu/raw/upload/mazdatr/globalassets/pdfs/pricelist/mazda-fiyat-listesi-november-2023-website.pdf?rnd=4aa8ab",
+          "title": "Mazda Motor Türkiye tavsiye edilen fiyat listesi (2.11.2023)",
+          "date": "2023-11-02",
+          "role": "primary"
+        },
+        {
+          "url": "https://otokampanyalar.com/mazda-guncel-kampanyali-fiyat-listesi-m597502.html",
+          "title": "Mazda CX-5/MX-5 Kasım 2023MY TR fiyat derlemesi (ihracat durdurma notu)",
+          "date": "2024-01-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Mazda",
+      "series": "CX-30",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "fuelType": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "",
+      "driveType": "",
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "CX-30 TR — official current engine+trim not on Nov 2023 PDF (only CX-5/MX-5).",
+      "sources": [
+        {
+          "url": "https://www.mazda.com.tr/",
+          "title": "Mazda Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Mazda",
+      "series": "CX-60",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "fuelType": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "",
+      "driveType": "",
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "CX-60 TR — no official TR price PDF row found this pass.",
+      "sources": [
+        {
+          "url": "https://www.mazda.com.tr/",
+          "title": "Mazda Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Mazda",
+      "series": "MX-5",
+      "model": "1.5 SKY-G",
+      "trim": "Power Sense",
+      "generation": "ND TR MY2023",
+      "generationCode": "",
+      "yearFrom": 2023,
+      "yearTo": 2023,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1500",
+      "powerHp": "132",
+      "transmission": "MANUAL",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "MX-5 1.5 SKY-G Power Sense — resmi Kasım 2023 PDF",
+      "sources": [
+        {
+          "url": "https://media-assets.mazda.eu/raw/upload/mazdatr/globalassets/pdfs/pricelist/mazda-fiyat-listesi-november-2023-website.pdf?rnd=4aa8ab",
+          "title": "Mazda Motor Türkiye tavsiye edilen fiyat listesi (2.11.2023)",
+          "date": "2023-11-02",
+          "role": "primary"
+        },
+        {
+          "url": "https://otokampanyalar.com/mazda-guncel-kampanyali-fiyat-listesi-m597502.html",
+          "title": "Mazda CX-5/MX-5 Kasım 2023MY TR fiyat derlemesi (ihracat durdurma notu)",
+          "date": "2024-01-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Mazda",
+      "series": "MX-5",
+      "model": "1.5 SKY-G",
+      "trim": "Power Sense i-Activesense",
+      "generation": "ND TR MY2023",
+      "generationCode": "",
+      "yearFrom": 2023,
+      "yearTo": 2023,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1500",
+      "powerHp": "132",
+      "transmission": "MANUAL",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "MX-5 1.5 SKY-G Power Sense i-Activesense — resmi Kasım 2023 PDF",
+      "sources": [
+        {
+          "url": "https://media-assets.mazda.eu/raw/upload/mazdatr/globalassets/pdfs/pricelist/mazda-fiyat-listesi-november-2023-website.pdf?rnd=4aa8ab",
+          "title": "Mazda Motor Türkiye tavsiye edilen fiyat listesi (2.11.2023)",
+          "date": "2023-11-02",
+          "role": "primary"
+        },
+        {
+          "url": "https://otokampanyalar.com/mazda-guncel-kampanyali-fiyat-listesi-m597502.html",
+          "title": "Mazda CX-5/MX-5 Kasım 2023MY TR fiyat derlemesi (ihracat durdurma notu)",
+          "date": "2024-01-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Mazda",
+      "series": "MX-5 RF",
+      "model": "1.5 SKY-G",
+      "trim": "Power Sense",
+      "generation": "ND RF TR MY2023",
+      "generationCode": "",
+      "yearFrom": 2023,
+      "yearTo": 2023,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1500",
+      "powerHp": "132",
+      "transmission": "MANUAL",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "MX-5 RF 1.5 SKY-G Power Sense — resmi Kasım 2023 PDF",
+      "sources": [
+        {
+          "url": "https://media-assets.mazda.eu/raw/upload/mazdatr/globalassets/pdfs/pricelist/mazda-fiyat-listesi-november-2023-website.pdf?rnd=4aa8ab",
+          "title": "Mazda Motor Türkiye tavsiye edilen fiyat listesi (2.11.2023)",
+          "date": "2023-11-02",
+          "role": "primary"
+        },
+        {
+          "url": "https://otokampanyalar.com/mazda-guncel-kampanyali-fiyat-listesi-m597502.html",
+          "title": "Mazda CX-5/MX-5 Kasım 2023MY TR fiyat derlemesi (ihracat durdurma notu)",
+          "date": "2024-01-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Mazda",
+      "series": "MX-5 RF",
+      "model": "1.5 SKY-G",
+      "trim": "Power Sense i-Activesense",
+      "generation": "ND RF TR MY2023",
+      "generationCode": "",
+      "yearFrom": 2023,
+      "yearTo": 2023,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1500",
+      "powerHp": "132",
+      "transmission": "MANUAL",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "MX-5 RF 1.5 SKY-G Power Sense i-Activesense — resmi Kasım 2023 PDF",
+      "sources": [
+        {
+          "url": "https://media-assets.mazda.eu/raw/upload/mazdatr/globalassets/pdfs/pricelist/mazda-fiyat-listesi-november-2023-website.pdf?rnd=4aa8ab",
+          "title": "Mazda Motor Türkiye tavsiye edilen fiyat listesi (2.11.2023)",
+          "date": "2023-11-02",
+          "role": "primary"
+        },
+        {
+          "url": "https://otokampanyalar.com/mazda-guncel-kampanyali-fiyat-listesi-m597502.html",
+          "title": "Mazda CX-5/MX-5 Kasım 2023MY TR fiyat derlemesi (ihracat durdurma notu)",
+          "date": "2024-01-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Mazda",
+      "series": "CX-5",
+      "model": "2.0 SKY-G 4x4 AT",
+      "trim": "Power Sense",
+      "generation": "KF MY2023",
+      "generationCode": "KF",
+      "yearFrom": 2023,
+      "yearTo": 2023,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1998",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Kasım 2023 TR listesi; Mazda 2024'te TR sıfır ihracatını durdurdu — ikinci el için tarihsel satır",
+      "sources": [
+        {
+          "url": "https://otokampanyalar.com/mazda-guncel-kampanyali-fiyat-listesi-m597502.html",
+          "title": "Mazda TR Kasım 2023 MY fiyat listesi arşivi (ihracat durdurulmadan önce)",
+          "date": "2023-11-01",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.mazda.com.tr/",
+          "title": "Mazda Türkiye",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Mazda",
+      "series": "CX-5",
+      "model": "2.0 SKY-G 4x4 AT",
+      "trim": "Power Sense Sport",
+      "generation": "KF MY2023",
+      "generationCode": "KF",
+      "yearFrom": 2023,
+      "yearTo": 2023,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "sources": [
+        {
+          "url": "https://otokampanyalar.com/mazda-guncel-kampanyali-fiyat-listesi-m597502.html",
+          "title": "Mazda TR Kasım 2023 MY fiyat listesi arşivi (ihracat durdurulmadan önce)",
+          "date": "2023-11-01",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.mazda.com.tr/",
+          "title": "Mazda Türkiye",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Mazda",
+      "series": "CX-5",
+      "model": "2.0 SKY-G 4x4 AT",
+      "trim": "Power Sense Plus",
+      "generation": "KF MY2023",
+      "generationCode": "KF",
+      "yearFrom": 2023,
+      "yearTo": 2023,
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "sources": [
+        {
+          "url": "https://otokampanyalar.com/mazda-guncel-kampanyali-fiyat-listesi-m597502.html",
+          "title": "Mazda TR Kasım 2023 MY fiyat listesi arşivi (ihracat durdurulmadan önce)",
+          "date": "2023-11-01",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.mazda.com.tr/",
+          "title": "Mazda Türkiye",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Mazda",
+      "series": "MX-5",
+      "model": "1.5 SKY-G",
+      "trim": "Power Sense",
+      "generation": "ND MY2023",
+      "generationCode": "ND",
+      "yearFrom": 2023,
+      "yearTo": 2023,
+      "fuelType": "GASOLINE",
+      "transmission": "MANUAL",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "sources": [
+        {
+          "url": "https://otokampanyalar.com/mazda-guncel-kampanyali-fiyat-listesi-m597502.html",
+          "title": "Mazda TR Kasım 2023 MY fiyat listesi arşivi (ihracat durdurulmadan önce)",
+          "date": "2023-11-01",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.mazda.com.tr/",
+          "title": "Mazda Türkiye",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    }
+  ],
+  "researchNotes": {
+    "researchedSeriesPass": [
+      "Mazda3",
+      "CX-5",
+      "CX-30",
+      "CX-60",
+      "MX-5",
+      "MX-5 RF"
+    ],
+    "reviewRequiredSeries": [
+      "Mazda3",
+      "CX-30",
+      "CX-60"
+    ],
+    "note": "Official PDF last known TR list Nov 2023; no inventing post-exit rows"
+  },
+  "completedAt": "2026-08-07T09:34:56.786Z"
+}

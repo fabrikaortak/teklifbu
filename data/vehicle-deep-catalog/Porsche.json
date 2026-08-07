@@ -1,0 +1,2689 @@
+{
+  "brand": "Porsche",
+  "brandSlug": "porsche",
+  "version": "2026.08-deep-porsche-v2-official-aug2026",
+  "generatedAt": "2026-08-07T09:34:56.791Z",
+  "seriesCovered": [
+    "911",
+    "Cayenne",
+    "Cayenne Coupe",
+    "Macan",
+    "Panamera",
+    "Taycan",
+    "Taycan Cross Turismo"
+  ],
+  "status": "COMPLETED",
+  "notes": "Verified from porsche.com.tr resmi fiyat listesi (04.08.2026) + Onedio/otoviraj TR mirrors. model=version, trim=Black Edition/Executive when listed.",
+  "configurations": [
+    {
+      "brand": "Porsche",
+      "series": "Macan",
+      "model": "Macan",
+      "trim": "",
+      "generation": "Macan Electric TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Macan (entry EV) — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Macan",
+      "model": "4",
+      "trim": "",
+      "generation": "Macan Electric TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Macan 4 — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Macan",
+      "model": "4S",
+      "trim": "",
+      "generation": "Macan Electric TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Macan 4S — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Macan",
+      "model": "GTS",
+      "trim": "",
+      "generation": "Macan Electric TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Macan GTS — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Macan",
+      "model": "Turbo",
+      "trim": "",
+      "generation": "Macan Electric TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Macan Turbo — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Taycan",
+      "model": "Taycan",
+      "trim": "",
+      "generation": "Taycan TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Taycan — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Taycan",
+      "model": "Taycan",
+      "trim": "Black Edition",
+      "generation": "Taycan TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Taycan Black Edition — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Taycan",
+      "model": "4",
+      "trim": "",
+      "generation": "Taycan TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Taycan 4 — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Taycan",
+      "model": "4",
+      "trim": "Black Edition",
+      "generation": "Taycan TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Taycan 4 Black Edition — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Taycan",
+      "model": "4S",
+      "trim": "",
+      "generation": "Taycan TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Taycan 4S — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Taycan",
+      "model": "4S",
+      "trim": "Black Edition",
+      "generation": "Taycan TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Taycan 4S Black Edition — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Taycan",
+      "model": "GTS",
+      "trim": "",
+      "generation": "Taycan TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Taycan GTS — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Taycan",
+      "model": "Turbo",
+      "trim": "",
+      "generation": "Taycan TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Taycan Turbo — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Taycan",
+      "model": "Turbo S",
+      "trim": "",
+      "generation": "Taycan TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Taycan Turbo S — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Taycan Cross Turismo",
+      "model": "4",
+      "trim": "",
+      "generation": "Taycan Cross Turismo TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Taycan 4 Cross Turismo — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Taycan Cross Turismo",
+      "model": "4S",
+      "trim": "",
+      "generation": "Taycan Cross Turismo TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Taycan 4S Cross Turismo — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Taycan Cross Turismo",
+      "model": "Turbo",
+      "trim": "",
+      "generation": "Taycan Cross Turismo TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Taycan Turbo Cross Turismo — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Taycan Cross Turismo",
+      "model": "Turbo S",
+      "trim": "",
+      "generation": "Taycan Cross Turismo TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Taycan Turbo S Cross Turismo — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Cayenne",
+      "model": "Cayenne",
+      "trim": "",
+      "generation": "Cayenne III TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Cayenne Cayenne — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Cayenne",
+      "model": "Cayenne",
+      "trim": "Black Edition",
+      "generation": "Cayenne III TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Cayenne Cayenne Black Edition — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Cayenne",
+      "model": "E-Hybrid",
+      "trim": "",
+      "generation": "Cayenne III TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "PLUGIN_HYBRID",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Cayenne E-Hybrid — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Cayenne",
+      "model": "E-Hybrid",
+      "trim": "Black Edition",
+      "generation": "Cayenne III TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "PLUGIN_HYBRID",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Cayenne E-Hybrid Black Edition — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Cayenne",
+      "model": "S",
+      "trim": "",
+      "generation": "Cayenne III TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Cayenne S — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Cayenne",
+      "model": "S E-Hybrid",
+      "trim": "",
+      "generation": "Cayenne III TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "PLUGIN_HYBRID",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Cayenne S E-Hybrid — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Cayenne",
+      "model": "GTS",
+      "trim": "",
+      "generation": "Cayenne III TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Cayenne GTS — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Cayenne",
+      "model": "Turbo E-Hybrid",
+      "trim": "",
+      "generation": "Cayenne III TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "PLUGIN_HYBRID",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Cayenne Turbo E-Hybrid — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Cayenne Coupe",
+      "model": "Coupe",
+      "trim": "",
+      "generation": "Cayenne Coupe III TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Cayenne Coupe — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Cayenne Coupe",
+      "model": "Coupe",
+      "trim": "Black Edition",
+      "generation": "Cayenne Coupe III TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Cayenne Coupe Black Edition — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Cayenne Coupe",
+      "model": "Coupe E-Hybrid",
+      "trim": "",
+      "generation": "Cayenne Coupe III TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "PLUGIN_HYBRID",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Cayenne Coupe E-Hybrid — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Cayenne Coupe",
+      "model": "Coupe E-Hybrid",
+      "trim": "Black Edition",
+      "generation": "Cayenne Coupe III TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "PLUGIN_HYBRID",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Cayenne Coupe E-Hybrid Black Edition — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Cayenne Coupe",
+      "model": "S Coupe",
+      "trim": "",
+      "generation": "Cayenne Coupe III TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Cayenne S Coupe — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Cayenne Coupe",
+      "model": "S E-Hybrid Coupe",
+      "trim": "Black Edition",
+      "generation": "Cayenne Coupe III TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "PLUGIN_HYBRID",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Cayenne S E-Hybrid Coupe Black Edition — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Cayenne Coupe",
+      "model": "GTS Coupe",
+      "trim": "",
+      "generation": "Cayenne Coupe III TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Cayenne GTS Coupe — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Cayenne",
+      "model": "Electric",
+      "trim": "",
+      "generation": "Cayenne Electric TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Cayenne Electric — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Cayenne",
+      "model": "S Electric",
+      "trim": "",
+      "generation": "Cayenne Electric TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Cayenne S Electric — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Cayenne",
+      "model": "Turbo Electric",
+      "trim": "",
+      "generation": "Cayenne Electric TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Cayenne Turbo Electric — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Cayenne Coupe",
+      "model": "Coupe Electric",
+      "trim": "",
+      "generation": "Cayenne Coupe Electric TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Cayenne Coupe Electric — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Cayenne Coupe",
+      "model": "S Coupe Electric",
+      "trim": "",
+      "generation": "Cayenne Coupe Electric TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Cayenne S Coupe Electric — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Cayenne Coupe",
+      "model": "Turbo Coupe Electric",
+      "trim": "",
+      "generation": "Cayenne Coupe Electric TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Cayenne Turbo Coupe Electric — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Panamera",
+      "model": "Panamera",
+      "trim": "",
+      "generation": "Panamera III TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Panamera Panamera — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Panamera",
+      "model": "4",
+      "trim": "",
+      "generation": "Panamera III TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Panamera 4 — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Panamera",
+      "model": "4 E-Hybrid",
+      "trim": "",
+      "generation": "Panamera III TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "PLUGIN_HYBRID",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Panamera 4 E-Hybrid — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Panamera",
+      "model": "4S E-Hybrid",
+      "trim": "",
+      "generation": "Panamera III TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "PLUGIN_HYBRID",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Panamera 4S E-Hybrid — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Panamera",
+      "model": "GTS",
+      "trim": "",
+      "generation": "Panamera III TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Panamera GTS — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Panamera",
+      "model": "Turbo E-Hybrid",
+      "trim": "",
+      "generation": "Panamera III TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "PLUGIN_HYBRID",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Panamera Turbo E-Hybrid — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Panamera",
+      "model": "Turbo S E-Hybrid",
+      "trim": "",
+      "generation": "Panamera III TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "PLUGIN_HYBRID",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Panamera Turbo S E-Hybrid — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Panamera",
+      "model": "4 E-Hybrid",
+      "trim": "Executive",
+      "generation": "Panamera III TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "PLUGIN_HYBRID",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Panamera 4 E-Hybrid Executive — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Panamera",
+      "model": "Turbo S",
+      "trim": "Executive",
+      "generation": "Panamera III TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "PLUGIN_HYBRID",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Panamera Turbo S Executive — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "911",
+      "model": "Carrera",
+      "trim": "",
+      "generation": "911 992 TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "911 Carrera — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "911",
+      "model": "Carrera Cabriolet",
+      "trim": "",
+      "generation": "911 992 TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "911 Carrera Cabriolet — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "911",
+      "model": "Carrera T",
+      "trim": "",
+      "generation": "911 992 TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "911 Carrera T — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "911",
+      "model": "Carrera S",
+      "trim": "",
+      "generation": "911 992 TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "911 Carrera S — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "911",
+      "model": "Carrera S Cabriolet",
+      "trim": "",
+      "generation": "911 992 TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "911 Carrera S Cabriolet — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "911",
+      "model": "Carrera 4S",
+      "trim": "",
+      "generation": "911 992 TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "911 Carrera 4S — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "911",
+      "model": "Carrera 4S Cabriolet",
+      "trim": "",
+      "generation": "911 992 TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "911 Carrera 4S Cabriolet — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "911",
+      "model": "Targa 4S",
+      "trim": "",
+      "generation": "911 992 TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "911 Targa 4S — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "911",
+      "model": "Carrera GTS",
+      "trim": "",
+      "generation": "911 992 TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "911 Carrera GTS — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "911",
+      "model": "Carrera 4 GTS",
+      "trim": "",
+      "generation": "911 992 TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "911 Carrera 4 GTS — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "911",
+      "model": "Carrera 4 GTS Cabriolet",
+      "trim": "",
+      "generation": "911 992 TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "911 Carrera 4 GTS Cabriolet — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "911",
+      "model": "Targa 4 GTS",
+      "trim": "",
+      "generation": "911 992 TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "911 Targa 4 GTS — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "911",
+      "model": "GT3",
+      "trim": "",
+      "generation": "911 992 TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "911 GT3 — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "911",
+      "model": "GT3 Touring",
+      "trim": "",
+      "generation": "911 992 TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "911 GT3 Touring — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "911",
+      "model": "Spirit 70",
+      "trim": "",
+      "generation": "911 992 TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "911 Spirit 70 — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "911",
+      "model": "Turbo S",
+      "trim": "",
+      "generation": "911 992 TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "911 Turbo S — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "911",
+      "model": "Turbo S Cabriolet",
+      "trim": "",
+      "generation": "911 992 TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "911 Turbo S Cabriolet — resmi Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi (04.08.2026)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/ocak-2026-porsche-fiyat-listesi-iste-porsche-taycan-macan-cayenne-panamera-ve-911-guncel-fiyatlari-1336959",
+          "title": "Onedio Ocak 2026 Porsche listesi (porsche.com.tr kaynaklı)",
+          "date": "2026-01-13",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otoviraj.com/porsche-fiyat-listesi/",
+          "title": "Porsche TR fiyat derlemesi (Doğuş Oto bağlamı)",
+          "date": "2026-01-09",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Macan",
+      "model": "Macan",
+      "trim": "Standart",
+      "generation": "Electric Macan TR",
+      "generationCode": "XAB",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Porsche TR resmi fiyat: Macan başlangıç (standart donanım) — EV Macan; overlay preserve",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.dogusoto.com.tr/porsche-yeni-macan-4-85dd7",
+          "title": "Doğuş Oto Porsche Macan 4 TR",
+          "date": "2026-01-29",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Macan",
+      "model": "Macan 4",
+      "trim": "Standart",
+      "generation": "Electric Macan TR",
+      "generationCode": "XAB",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.dogusoto.com.tr/porsche-yeni-macan-4-85dd7",
+          "title": "Doğuş Oto Porsche Macan 4 TR",
+          "date": "2026-01-29",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Macan",
+      "model": "Macan 4S",
+      "trim": "Standart",
+      "generation": "Electric Macan TR",
+      "generationCode": "XAB",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.dogusoto.com.tr/porsche-yeni-macan-4-85dd7",
+          "title": "Doğuş Oto Porsche Macan 4 TR",
+          "date": "2026-01-29",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "series": "Macan",
+      "model": "Macan Turbo",
+      "trim": "Standart",
+      "generation": "Electric Macan TR",
+      "generationCode": "XAB",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "sources": [
+        {
+          "url": "https://www.porsche.com.tr/fiyat-listesi",
+          "title": "Porsche Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.dogusoto.com.tr/porsche-yeni-macan-4-85dd7",
+          "title": "Doğuş Oto Porsche Macan 4 TR",
+          "date": "2026-01-29",
+          "role": "secondary"
+        }
+      ]
+    }
+  ],
+  "researchNotes": {
+    "researchedSeriesPass": [
+      "Macan",
+      "Cayenne",
+      "Cayenne Coupe",
+      "911",
+      "Taycan",
+      "Taycan Cross Turismo",
+      "Panamera"
+    ],
+    "reviewRequiredSeries": [],
+    "officialListDate": "2026-08-04",
+    "verifiedCount": 65
+  },
+  "completedAt": "2026-08-07T09:34:56.791Z"
+}

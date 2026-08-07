@@ -1,0 +1,435 @@
+{
+  "brand": "Kia",
+  "brandSlug": "kia",
+  "version": "2026.08-deep-kia-v1-current-tr",
+  "generatedAt": "2026-08-07T12:05:00.000Z",
+  "seriesCovered": [
+    "Sportage",
+    "Picanto",
+    "Stonic",
+    "Sorento",
+    "EV3",
+    "EV6",
+    "EV9"
+  ],
+  "status": "COMPLETED",
+  "notes": "Sportage official kia.com.tr Aug 2026 price rows. Other series researched — stubs pending fuller PDF ingest.",
+  "configurations": [
+    {
+      "brand": "Kia",
+      "series": "Sportage",
+      "model": "1.6L 150 PS DCT",
+      "trim": "Live",
+      "generation": "NQ5 PE TR MY2026",
+      "generationCode": "NQ5",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1598",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Sportage 1.6L 150 PS DCT Live — resmi kia.com.tr fiyat 01/08/2026",
+      "sources": [
+        {
+          "url": "https://www.kia.com/tr/modeller/sportage-nq5-pe/fiyat-listesi.html",
+          "title": "Kia Sportage resmi fiyat listesi (2026)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.kia.com/tr/satis-merkezi/fiyat-listesi.html",
+          "title": "Kia Türkiye fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.cnbce.com/otomotiv/kia-agustos-fiyatlarini-acikladi-en-ucuz-modele-zam-elektrikliler-indirimde-h34560",
+          "title": "Kia Ağustos 2026 fiyat özeti",
+          "date": "2026-08-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Kia",
+      "series": "Sportage",
+      "model": "1.6L 150 PS DCT",
+      "trim": "Vision",
+      "generation": "NQ5 PE TR MY2026",
+      "generationCode": "NQ5",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1598",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Sportage 1.6L 150 PS DCT Vision — resmi kia.com.tr fiyat 01/08/2026",
+      "sources": [
+        {
+          "url": "https://www.kia.com/tr/modeller/sportage-nq5-pe/fiyat-listesi.html",
+          "title": "Kia Sportage resmi fiyat listesi (2026)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.kia.com/tr/satis-merkezi/fiyat-listesi.html",
+          "title": "Kia Türkiye fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.cnbce.com/otomotiv/kia-agustos-fiyatlarini-acikladi-en-ucuz-modele-zam-elektrikliler-indirimde-h34560",
+          "title": "Kia Ağustos 2026 fiyat özeti",
+          "date": "2026-08-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Kia",
+      "series": "Sportage",
+      "model": "1.6L 150 PS DCT",
+      "trim": "Cool",
+      "generation": "NQ5 PE TR MY2026",
+      "generationCode": "NQ5",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1598",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Sportage 1.6L 150 PS DCT Cool — resmi kia.com.tr fiyat 01/08/2026",
+      "sources": [
+        {
+          "url": "https://www.kia.com/tr/modeller/sportage-nq5-pe/fiyat-listesi.html",
+          "title": "Kia Sportage resmi fiyat listesi (2026)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.kia.com/tr/satis-merkezi/fiyat-listesi.html",
+          "title": "Kia Türkiye fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.cnbce.com/otomotiv/kia-agustos-fiyatlarini-acikladi-en-ucuz-modele-zam-elektrikliler-indirimde-h34560",
+          "title": "Kia Ağustos 2026 fiyat özeti",
+          "date": "2026-08-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Kia",
+      "series": "Sportage",
+      "model": "1.6L 150 PS DCT",
+      "trim": "Elegance",
+      "generation": "NQ5 PE TR MY2026",
+      "generationCode": "NQ5",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1598",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Sportage 1.6L 150 PS DCT Elegance — resmi kia.com.tr fiyat 01/08/2026",
+      "sources": [
+        {
+          "url": "https://www.kia.com/tr/modeller/sportage-nq5-pe/fiyat-listesi.html",
+          "title": "Kia Sportage resmi fiyat listesi (2026)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.kia.com/tr/satis-merkezi/fiyat-listesi.html",
+          "title": "Kia Türkiye fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.cnbce.com/otomotiv/kia-agustos-fiyatlarini-acikladi-en-ucuz-modele-zam-elektrikliler-indirimde-h34560",
+          "title": "Kia Ağustos 2026 fiyat özeti",
+          "date": "2026-08-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Kia",
+      "series": "Sportage",
+      "model": "1.6L 150 PS DCT",
+      "trim": "Prestige",
+      "generation": "NQ5 PE TR MY2026",
+      "generationCode": "NQ5",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1598",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Sportage 1.6L 150 PS DCT Prestige — resmi kia.com.tr fiyat 01/08/2026",
+      "sources": [
+        {
+          "url": "https://www.kia.com/tr/modeller/sportage-nq5-pe/fiyat-listesi.html",
+          "title": "Kia Sportage resmi fiyat listesi (2026)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.kia.com/tr/satis-merkezi/fiyat-listesi.html",
+          "title": "Kia Türkiye fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.cnbce.com/otomotiv/kia-agustos-fiyatlarini-acikladi-en-ucuz-modele-zam-elektrikliler-indirimde-h34560",
+          "title": "Kia Ağustos 2026 fiyat özeti",
+          "date": "2026-08-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Kia",
+      "series": "Sportage",
+      "model": "1.6L 180 PS 4X4 DCT",
+      "trim": "GT-Line",
+      "generation": "NQ5 PE TR MY2026",
+      "generationCode": "NQ5",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1598",
+      "powerHp": "180",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Sportage 1.6L 180 PS 4X4 DCT GT-Line — resmi kia.com.tr fiyat 01/08/2026",
+      "sources": [
+        {
+          "url": "https://www.kia.com/tr/modeller/sportage-nq5-pe/fiyat-listesi.html",
+          "title": "Kia Sportage resmi fiyat listesi (2026)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.kia.com/tr/satis-merkezi/fiyat-listesi.html",
+          "title": "Kia Türkiye fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.cnbce.com/otomotiv/kia-agustos-fiyatlarini-acikladi-en-ucuz-modele-zam-elektrikliler-indirimde-h34560",
+          "title": "Kia Ağustos 2026 fiyat özeti",
+          "date": "2026-08-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Kia",
+      "series": "Picanto",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "fuelType": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "",
+      "driveType": "",
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "notes": "Picanto Feel/Cool listed in Aug 2026 media citing Kia TR; discrete engine+trim PDF rows need full official table ingest.",
+      "sources": [
+        {
+          "url": "https://www.kia.com/tr/satis-merkezi/fiyat-listesi.html",
+          "title": "Kia Türkiye fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Kia",
+      "series": "Stonic",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "fuelType": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "",
+      "driveType": "",
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "notes": "Stonic Cool listed Aug 2026 aggregators; engine/trim pairing needs official row confirmation.",
+      "sources": [
+        {
+          "url": "https://www.kia.com/tr/satis-merkezi/fiyat-listesi.html",
+          "title": "Kia Türkiye fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Kia",
+      "series": "Sorento",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "fuelType": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "",
+      "driveType": "",
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Sorento hybrid Prestige Smart rows in dealer tables; official discrete version+trim pending.",
+      "sources": [
+        {
+          "url": "https://www.kia.com/tr/satis-merkezi/fiyat-listesi.html",
+          "title": "Kia Türkiye fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Kia",
+      "series": "EV3",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "fuelType": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "",
+      "driveType": "",
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "EV overlay: EV3 on official TR list — version/trim rows pending full official ingest (no inventing).",
+      "sources": [
+        {
+          "url": "https://www.kia.com/tr/satis-merkezi/fiyat-listesi.html",
+          "title": "Kia Türkiye fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Kia",
+      "series": "EV6",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "fuelType": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "",
+      "driveType": "",
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "EV overlay series present TR — discrete configs REVIEW.",
+      "sources": [
+        {
+          "url": "https://www.kia.com/tr/satis-merkezi/fiyat-listesi.html",
+          "title": "Kia Türkiye fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Kia",
+      "series": "EV9",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "fuelType": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "",
+      "driveType": "",
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "EV overlay series present TR — discrete configs REVIEW.",
+      "sources": [
+        {
+          "url": "https://www.kia.com/tr/satis-merkezi/fiyat-listesi.html",
+          "title": "Kia Türkiye fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
+    }
+  ],
+  "researchNotes": {
+    "researchedSeriesPass": [
+      "Sportage",
+      "Picanto",
+      "Stonic",
+      "Sorento",
+      "EV3",
+      "EV6",
+      "EV9"
+    ],
+    "reviewRequiredSeries": [
+      "Picanto",
+      "Stonic",
+      "Sorento",
+      "EV3",
+      "EV6",
+      "EV9"
+    ]
+  },
+  "completedAt": "2026-08-07T09:13:29.901Z"
+}

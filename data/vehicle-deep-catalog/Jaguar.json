@@ -1,0 +1,359 @@
+{
+  "brand": "Jaguar",
+  "brandSlug": "jaguar",
+  "version": "2026.08-deep-jaguar-v2-verified-2024",
+  "generatedAt": "2026-08-07T09:34:56.798Z",
+  "seriesCovered": [
+    "E-Pace",
+    "F-Pace",
+    "I-Pace",
+    "XE",
+    "XF"
+  ],
+  "status": "COMPLETED",
+  "notes": "E-Pace/F-Pace/I-Pace verified from dual 2024 TR published lists (teknohaberi + tamindir). XE/XF remain REVIEW_REQUIRED. Official jaguar.com.tr PDF still absent.",
+  "configurations": [
+    {
+      "brand": "Jaguar",
+      "series": "E-Pace",
+      "model": "P250",
+      "trim": "R-Dynamic S",
+      "generation": "X540 MY2024",
+      "generationCode": "X540",
+      "yearFrom": 2024,
+      "yearTo": 2024,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1997",
+      "powerHp": "250",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "E-Pace P250 R-Dynamic S — 2024 TR yayınları (2.0L 250 bg)",
+      "sources": [
+        {
+          "url": "https://teknohaberi.net/jaguar-fiyat-listesi-2024/",
+          "title": "Jaguar 2024 TR fiyat listesi yayını",
+          "date": "2024-05-31",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.tamindir.com/blog/jaguar-fiyat-listesi_81874/",
+          "title": "Jaguar fiyat listesi 2024 (ikinci yayın)",
+          "date": "2024-01-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.jaguar.com.tr/",
+          "title": "Jaguar Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Jaguar",
+      "series": "E-Pace",
+      "model": "P250",
+      "trim": "R-Dynamic SE",
+      "generation": "X540 MY2024",
+      "generationCode": "X540",
+      "yearFrom": 2024,
+      "yearTo": 2024,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1997",
+      "powerHp": "250",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "E-Pace P250 R-Dynamic SE — 2024 TR yayınları",
+      "sources": [
+        {
+          "url": "https://teknohaberi.net/jaguar-fiyat-listesi-2024/",
+          "title": "Jaguar 2024 TR fiyat listesi yayını",
+          "date": "2024-05-31",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.tamindir.com/blog/jaguar-fiyat-listesi_81874/",
+          "title": "Jaguar fiyat listesi 2024 (ikinci yayın)",
+          "date": "2024-01-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.jaguar.com.tr/",
+          "title": "Jaguar Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Jaguar",
+      "series": "E-Pace",
+      "model": "P250",
+      "trim": "R-Dynamic HSE",
+      "generation": "X540 MY2024",
+      "generationCode": "X540",
+      "yearFrom": 2024,
+      "yearTo": 2024,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1997",
+      "powerHp": "250",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "E-Pace P250 R-Dynamic HSE — 2024 TR yayınları",
+      "sources": [
+        {
+          "url": "https://teknohaberi.net/jaguar-fiyat-listesi-2024/",
+          "title": "Jaguar 2024 TR fiyat listesi yayını",
+          "date": "2024-05-31",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.tamindir.com/blog/jaguar-fiyat-listesi_81874/",
+          "title": "Jaguar fiyat listesi 2024 (ikinci yayın)",
+          "date": "2024-01-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.jaguar.com.tr/",
+          "title": "Jaguar Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Jaguar",
+      "series": "F-Pace",
+      "model": "2.0 D204",
+      "trim": "R-Dynamic SE",
+      "generation": "X761 MY2024",
+      "generationCode": "X761",
+      "yearFrom": 2024,
+      "yearTo": 2024,
+      "fuelType": "DIESEL",
+      "engineVolume": "1997",
+      "powerHp": "204",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "F-Pace 2.0 D204 R-Dynamic SE — 2024 TR yayınları",
+      "sources": [
+        {
+          "url": "https://teknohaberi.net/jaguar-fiyat-listesi-2024/",
+          "title": "Jaguar 2024 TR fiyat listesi yayını",
+          "date": "2024-05-31",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.tamindir.com/blog/jaguar-fiyat-listesi_81874/",
+          "title": "Jaguar fiyat listesi 2024 (ikinci yayın)",
+          "date": "2024-01-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.jaguar.com.tr/",
+          "title": "Jaguar Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Jaguar",
+      "series": "F-Pace",
+      "model": "2.0 D204",
+      "trim": "R-Dynamic HSE",
+      "generation": "X761 MY2024",
+      "generationCode": "X761",
+      "yearFrom": 2024,
+      "yearTo": 2024,
+      "fuelType": "DIESEL",
+      "engineVolume": "1997",
+      "powerHp": "204",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "F-Pace 2.0 D204 R-Dynamic HSE — 2024 TR yayınları",
+      "sources": [
+        {
+          "url": "https://teknohaberi.net/jaguar-fiyat-listesi-2024/",
+          "title": "Jaguar 2024 TR fiyat listesi yayını",
+          "date": "2024-05-31",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.tamindir.com/blog/jaguar-fiyat-listesi_81874/",
+          "title": "Jaguar fiyat listesi 2024 (ikinci yayın)",
+          "date": "2024-01-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.jaguar.com.tr/",
+          "title": "Jaguar Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Jaguar",
+      "series": "I-Pace",
+      "model": "EV",
+      "trim": "R-Dynamic SE",
+      "generation": "X590 MY2024",
+      "generationCode": "X590",
+      "yearFrom": 2024,
+      "yearTo": 2024,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "I-Pace R-Dynamic SE — 2024 TR yayınları",
+      "sources": [
+        {
+          "url": "https://teknohaberi.net/jaguar-fiyat-listesi-2024/",
+          "title": "Jaguar 2024 TR fiyat listesi yayını",
+          "date": "2024-05-31",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.tamindir.com/blog/jaguar-fiyat-listesi_81874/",
+          "title": "Jaguar fiyat listesi 2024 (ikinci yayın)",
+          "date": "2024-01-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.jaguar.com.tr/",
+          "title": "Jaguar Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Jaguar",
+      "series": "I-Pace",
+      "model": "EV",
+      "trim": "R-Dynamic HSE",
+      "generation": "X590 MY2024",
+      "generationCode": "X590",
+      "yearFrom": 2024,
+      "yearTo": 2024,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "I-Pace R-Dynamic HSE — 2024 TR yayınları",
+      "sources": [
+        {
+          "url": "https://teknohaberi.net/jaguar-fiyat-listesi-2024/",
+          "title": "Jaguar 2024 TR fiyat listesi yayını",
+          "date": "2024-05-31",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.tamindir.com/blog/jaguar-fiyat-listesi_81874/",
+          "title": "Jaguar fiyat listesi 2024 (ikinci yayın)",
+          "date": "2024-01-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.jaguar.com.tr/",
+          "title": "Jaguar Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Jaguar",
+      "series": "XE",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "fuelType": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "",
+      "driveType": "",
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "notes": "XE R-Dynamic S/HSE appear on 2024 TR aggregator tables without clear engine code — REVIEW_REQUIRED.",
+      "sources": [
+        {
+          "url": "https://www.jaguar.com.tr/",
+          "title": "Jaguar Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Jaguar",
+      "series": "XF",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "fuelType": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "",
+      "driveType": "",
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "notes": "XF R-Dynamic HSE on 2024 TR aggregators; discrete engine+trim not fully sourced — REVIEW_REQUIRED.",
+      "sources": [
+        {
+          "url": "https://www.jaguar.com.tr/",
+          "title": "Jaguar Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
+    }
+  ],
+  "researchNotes": {
+    "researchedSeriesPass": [
+      "F-Pace",
+      "E-Pace",
+      "I-Pace",
+      "XE",
+      "XF"
+    ],
+    "reviewRequiredSeries": [
+      "XE",
+      "XF"
+    ],
+    "verifiedCount": 7
+  },
+  "completedAt": "2026-08-07T09:34:56.798Z"
+}

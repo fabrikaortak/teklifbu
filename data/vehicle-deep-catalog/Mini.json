@@ -1,0 +1,257 @@
+{
+  "brand": "Mini",
+  "brandSlug": "mini",
+  "version": "2026.08-deep-mini-v1-current-tr",
+  "generatedAt": "2026-08-07T12:05:00.000Z",
+  "seriesCovered": [
+    "Cooper",
+    "Countryman",
+    "Cabrio"
+  ],
+  "status": "COMPLETED",
+  "notes": "Cooper/Countryman Aug 2026 published TR list. EV Countryman E preserved as Countryman series (no duplicate EV series invent).",
+  "configurations": [
+    {
+      "brand": "Mini",
+      "series": "Countryman",
+      "model": "Countryman E",
+      "trim": "Favoured Plus",
+      "generation": "Countryman U25 EV TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "MINI Countryman E Favoured Plus — Ağustos 2026 TR; EV under Countryman series",
+      "sources": [
+        {
+          "url": "https://www.mini.com.tr/",
+          "title": "MINI Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.turkiyegazetesi.com.tr/t-otomobil/fiyati-14-milyon-tl-birden-yukseldi-iste-mini-agustos-2026-fiyat-listesi-1807060",
+          "title": "MINI Ağustos 2026 fiyat listesi",
+          "date": "2026-08-01",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Mini",
+      "series": "Countryman",
+      "model": "Countryman C",
+      "trim": "Favoured",
+      "generation": "Countryman U25 TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Countryman C Favoured — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.mini.com.tr/",
+          "title": "MINI Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.turkiyegazetesi.com.tr/t-otomobil/fiyati-14-milyon-tl-birden-yukseldi-iste-mini-agustos-2026-fiyat-listesi-1807060",
+          "title": "MINI Ağustos 2026 fiyat listesi",
+          "date": "2026-08-01",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Mini",
+      "series": "Countryman",
+      "model": "Countryman C",
+      "trim": "John Cooper Works",
+      "generation": "Countryman U25 TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Countryman C JCW — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.mini.com.tr/",
+          "title": "MINI Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.turkiyegazetesi.com.tr/t-otomobil/fiyati-14-milyon-tl-birden-yukseldi-iste-mini-agustos-2026-fiyat-listesi-1807060",
+          "title": "MINI Ağustos 2026 fiyat listesi",
+          "date": "2026-08-01",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Mini",
+      "series": "Cooper",
+      "model": "Cooper 3 Kapı",
+      "trim": "Favoured",
+      "generation": "Cooper J01 TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Cooper 3 Kapı Favoured — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.mini.com.tr/",
+          "title": "MINI Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.turkiyegazetesi.com.tr/t-otomobil/fiyati-14-milyon-tl-birden-yukseldi-iste-mini-agustos-2026-fiyat-listesi-1807060",
+          "title": "MINI Ağustos 2026 fiyat listesi",
+          "date": "2026-08-01",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Mini",
+      "series": "Cooper",
+      "model": "Cooper S 3 Kapı",
+      "trim": "Favoured",
+      "generation": "Cooper J01 TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Cooper S 3 Kapı Favoured — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.mini.com.tr/",
+          "title": "MINI Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.turkiyegazetesi.com.tr/t-otomobil/fiyati-14-milyon-tl-birden-yukseldi-iste-mini-agustos-2026-fiyat-listesi-1807060",
+          "title": "MINI Ağustos 2026 fiyat listesi",
+          "date": "2026-08-01",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Mini",
+      "series": "Cooper",
+      "model": "Cooper 5 Kapı",
+      "trim": "Favoured",
+      "generation": "Cooper J01 TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Cooper 5 Kapı Favoured — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.mini.com.tr/",
+          "title": "MINI Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.turkiyegazetesi.com.tr/t-otomobil/fiyati-14-milyon-tl-birden-yukseldi-iste-mini-agustos-2026-fiyat-listesi-1807060",
+          "title": "MINI Ağustos 2026 fiyat listesi",
+          "date": "2026-08-01",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Mini",
+      "series": "Cabrio",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "fuelType": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "",
+      "driveType": "",
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "notes": "Cabrio rows in Aug list — fuller engine+trim pairing pending dedicated ingest.",
+      "sources": [
+        {
+          "url": "https://www.mini.com.tr/",
+          "title": "MINI Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.turkiyegazetesi.com.tr/t-otomobil/fiyati-14-milyon-tl-birden-yukseldi-iste-mini-agustos-2026-fiyat-listesi-1807060",
+          "title": "MINI Ağustos 2026 fiyat listesi",
+          "date": "2026-08-01",
+          "role": "primary"
+        }
+      ]
+    }
+  ],
+  "researchNotes": {
+    "researchedSeriesPass": [
+      "Cooper",
+      "Countryman",
+      "Cabrio"
+    ],
+    "reviewRequiredSeries": [
+      "Cabrio"
+    ]
+  },
+  "completedAt": "2026-08-07T09:13:29.920Z"
+}

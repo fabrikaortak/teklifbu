@@ -1,0 +1,260 @@
+{
+  "brand": "Jeep",
+  "brandSlug": "jeep",
+  "version": "2026.08-deep-jeep-v1-current-tr",
+  "generatedAt": "2026-08-07T12:05:00.000Z",
+  "seriesCovered": [
+    "Compass",
+    "Avenger",
+    "Renegade",
+    "Wrangler"
+  ],
+  "status": "COMPLETED",
+  "notes": "Compass E-Hybrid + Avenger family from Aug 2026 published TR tables.",
+  "configurations": [
+    {
+      "brand": "Jeep",
+      "series": "Compass",
+      "model": "E-Hybrid",
+      "trim": "Limited",
+      "generation": "New Compass TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Yeni Compass E-Hybrid Limited Auto 4x2 — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.jeep.com.tr/",
+          "title": "Jeep Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://teknobirinci.com.tr/agustos-2026-jeep-fiyat-listesi-aciklandi-280-bin-tl-indirim/",
+          "title": "Jeep Ağustos 2026 versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Jeep",
+      "series": "Compass",
+      "model": "E-Hybrid",
+      "trim": "Summit",
+      "generation": "New Compass TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Yeni Compass E-Hybrid Summit Auto 4x2 — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.jeep.com.tr/",
+          "title": "Jeep Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://teknobirinci.com.tr/agustos-2026-jeep-fiyat-listesi-aciklandi-280-bin-tl-indirim/",
+          "title": "Jeep Ağustos 2026 versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Jeep",
+      "series": "Avenger",
+      "model": "1.2 110 HP E-Hybrid",
+      "trim": "Summit",
+      "generation": "Avenger TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "1199",
+      "powerHp": "110",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Avenger E-Hybrid 1.2 110 HP Summit DCT — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.jeep.com.tr/",
+          "title": "Jeep Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://teknobirinci.com.tr/agustos-2026-jeep-fiyat-listesi-aciklandi-280-bin-tl-indirim/",
+          "title": "Jeep Ağustos 2026 versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Jeep",
+      "series": "Avenger",
+      "model": "1.2 145 HP 4xe",
+      "trim": "Overland",
+      "generation": "Avenger TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "PLUGIN_HYBRID",
+      "engineVolume": "1199",
+      "powerHp": "145",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Avenger 4xe 1.2 145 HP Overland — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.jeep.com.tr/",
+          "title": "Jeep Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://teknobirinci.com.tr/agustos-2026-jeep-fiyat-listesi-aciklandi-280-bin-tl-indirim/",
+          "title": "Jeep Ağustos 2026 versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Jeep",
+      "series": "Avenger",
+      "model": "115 kW Electric",
+      "trim": "Summit",
+      "generation": "Avenger EV TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "156",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Avenger %100 Elektrikli 115 kW Summit — EV overlay Avenger; Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.jeep.com.tr/",
+          "title": "Jeep Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://teknobirinci.com.tr/agustos-2026-jeep-fiyat-listesi-aciklandi-280-bin-tl-indirim/",
+          "title": "Jeep Ağustos 2026 versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Jeep",
+      "series": "Renegade",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "fuelType": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "",
+      "driveType": "",
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Renegade historical TR volume; not in Aug 2026 Avenger/Compass published focus — archive needed.",
+      "sources": [
+        {
+          "url": "https://www.jeep.com.tr/",
+          "title": "Jeep Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://teknobirinci.com.tr/agustos-2026-jeep-fiyat-listesi-aciklandi-280-bin-tl-indirim/",
+          "title": "Jeep Ağustos 2026 versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Jeep",
+      "series": "Wrangler",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "fuelType": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "",
+      "driveType": "",
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Wrangler TR specialty — discrete official rows pending.",
+      "sources": [
+        {
+          "url": "https://www.jeep.com.tr/",
+          "title": "Jeep Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://teknobirinci.com.tr/agustos-2026-jeep-fiyat-listesi-aciklandi-280-bin-tl-indirim/",
+          "title": "Jeep Ağustos 2026 versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "primary"
+        }
+      ]
+    }
+  ],
+  "researchNotes": {
+    "researchedSeriesPass": [
+      "Compass",
+      "Avenger",
+      "Renegade",
+      "Wrangler"
+    ],
+    "reviewRequiredSeries": [
+      "Renegade",
+      "Wrangler"
+    ]
+  },
+  "completedAt": "2026-08-07T09:13:29.898Z"
+}

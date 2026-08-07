@@ -1,0 +1,1077 @@
+{
+  "brand": "Volkswagen",
+  "brandSlug": "volkswagen",
+  "version": "2026.08-deep-vw-v1-current-tr",
+  "generatedAt": "2026-08-07T11:54:00.000Z",
+  "seriesCovered": [
+    "Golf",
+    "Passat",
+    "Tiguan",
+    "Polo",
+    "Caddy",
+    "ID.4",
+    "ID.7",
+    "ID.3"
+  ],
+  "status": "COMPLETED",
+  "notes": "Passenger rows from Temmuz 2026 published TR price tables + Mart 2026 Webtekno (VW-sourced). Caddy from official ticariarac.vw.com.tr (01.08.2026). Model=engine/version; trim=package (Life/Style/R-Line/etc). engineVolume only when cm3 printed on sourced page.",
+  "configurations": [
+    {
+      "brand": "Volkswagen",
+      "series": "Golf",
+      "model": "1.5 TSI 116 PS",
+      "trim": "Impression",
+      "generation": "Mk8 Current TR MY",
+      "generationCode": "CD",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Temmuz 2026 TR published list: Golf 1.5 TSI 116 PS Manuel Impression",
+      "sources": [
+        {
+          "url": "https://www.gazetegercek.com.tr/volkswagen-temmuz-2026-fiyat-listesi-aciklandi-golf-tiguan-passat-fiyatlari/230085",
+          "title": "Volkswagen Temmuz 2026 fiyat listesi (Golf)",
+          "date": "2026-07-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://memur365.com/otomobil/volkswagen-2026-temmuz-fiyat-listesi-26980h",
+          "title": "Volkswagen Temmuz 2026 fiyat listesi (Golf)",
+          "date": "2026-07-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://binekarac.vw.com.tr/tr/modeller-fiyatlar.html",
+          "title": "VW Binek Araç modeller ve fiyatlar",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "GASOLINE",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "powerHp": "116"
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Golf",
+      "model": "1.5 eTSI 116 PS",
+      "trim": "Life",
+      "generation": "Mk8 Current TR MY",
+      "generationCode": "CD",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Temmuz 2026 TR: Golf 1.5 eTSI 116 PS DSG Life",
+      "sources": [
+        {
+          "url": "https://www.gazetegercek.com.tr/volkswagen-temmuz-2026-fiyat-listesi-aciklandi-golf-tiguan-passat-fiyatlari/230085",
+          "title": "Volkswagen Temmuz 2026 fiyat listesi (Golf)",
+          "date": "2026-07-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://memur365.com/otomobil/volkswagen-2026-temmuz-fiyat-listesi-26980h",
+          "title": "Volkswagen Temmuz 2026 fiyat listesi (Golf)",
+          "date": "2026-07-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://binekarac.vw.com.tr/tr/modeller-fiyatlar.html",
+          "title": "VW Binek Araç modeller ve fiyatlar",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "powerHp": "116"
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Golf",
+      "model": "1.5 eTSI 116 PS",
+      "trim": "Style",
+      "generation": "Mk8 Current TR MY",
+      "generationCode": "CD",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Temmuz 2026 TR: Golf 1.5 eTSI 116 PS DSG Style",
+      "sources": [
+        {
+          "url": "https://www.gazetegercek.com.tr/volkswagen-temmuz-2026-fiyat-listesi-aciklandi-golf-tiguan-passat-fiyatlari/230085",
+          "title": "Volkswagen Temmuz 2026 fiyat listesi (Golf)",
+          "date": "2026-07-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://memur365.com/otomobil/volkswagen-2026-temmuz-fiyat-listesi-26980h",
+          "title": "Volkswagen Temmuz 2026 fiyat listesi (Golf)",
+          "date": "2026-07-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://binekarac.vw.com.tr/tr/modeller-fiyatlar.html",
+          "title": "VW Binek Araç modeller ve fiyatlar",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "powerHp": "116"
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Golf",
+      "model": "1.5 eTSI 150 PS",
+      "trim": "Style",
+      "generation": "Mk8 Current TR MY",
+      "generationCode": "CD",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Temmuz 2026 TR: Golf 1.5 eTSI 150 PS DSG Style",
+      "sources": [
+        {
+          "url": "https://www.gazetegercek.com.tr/volkswagen-temmuz-2026-fiyat-listesi-aciklandi-golf-tiguan-passat-fiyatlari/230085",
+          "title": "Volkswagen Temmuz 2026 fiyat listesi (Golf)",
+          "date": "2026-07-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://memur365.com/otomobil/volkswagen-2026-temmuz-fiyat-listesi-26980h",
+          "title": "Volkswagen Temmuz 2026 fiyat listesi (Golf)",
+          "date": "2026-07-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://binekarac.vw.com.tr/tr/modeller-fiyatlar.html",
+          "title": "VW Binek Araç modeller ve fiyatlar",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "powerHp": "150"
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Golf",
+      "model": "1.5 eTSI 150 PS",
+      "trim": "R-Line",
+      "generation": "Mk8 Current TR MY",
+      "generationCode": "CD",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Temmuz 2026 TR: Golf 1.5 eTSI 150 PS DSG R-Line",
+      "sources": [
+        {
+          "url": "https://www.gazetegercek.com.tr/volkswagen-temmuz-2026-fiyat-listesi-aciklandi-golf-tiguan-passat-fiyatlari/230085",
+          "title": "Volkswagen Temmuz 2026 fiyat listesi (Golf)",
+          "date": "2026-07-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://memur365.com/otomobil/volkswagen-2026-temmuz-fiyat-listesi-26980h",
+          "title": "Volkswagen Temmuz 2026 fiyat listesi (Golf)",
+          "date": "2026-07-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://binekarac.vw.com.tr/tr/modeller-fiyatlar.html",
+          "title": "VW Binek Araç modeller ve fiyatlar",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "powerHp": "150"
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Golf",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "notes": "Golf GTI/R and prior Mk7/Mk7.5 TR historical TSI/TDI rows need dedicated archive ingest — not inventing from global catalogs.",
+      "sources": [
+        {
+          "url": "https://binekarac.vw.com.tr/tr/modeller-fiyatlar.html",
+          "title": "VW Binek Araç",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Passat",
+      "model": "1.5 eTSI 150 PS",
+      "trim": "Impression",
+      "generation": "B9 Variant Current TR MY",
+      "generationCode": "B9",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Temmuz 2026 TR published list: Passat 1.5 eTSI 150 PS DSG Impression",
+      "sources": [
+        {
+          "url": "https://www.gazetegercek.com.tr/volkswagen-temmuz-2026-fiyat-listesi-aciklandi-golf-tiguan-passat-fiyatlari/230085",
+          "title": "Volkswagen Temmuz 2026 fiyat listesi (Passat)",
+          "date": "2026-07-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://memur365.com/otomobil/volkswagen-2026-temmuz-fiyat-listesi-26980h",
+          "title": "Volkswagen Temmuz 2026 fiyat listesi (Passat)",
+          "date": "2026-07-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://binekarac.vw.com.tr/tr/modeller-fiyatlar.html",
+          "title": "VW Binek Araç modeller ve fiyatlar",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "powerHp": "150"
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Passat",
+      "model": "1.5 eTSI 150 PS",
+      "trim": "Business",
+      "generation": "B9 Variant Current TR MY",
+      "generationCode": "B9",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Temmuz 2026 TR published list: Passat 1.5 eTSI 150 PS DSG Business",
+      "sources": [
+        {
+          "url": "https://www.gazetegercek.com.tr/volkswagen-temmuz-2026-fiyat-listesi-aciklandi-golf-tiguan-passat-fiyatlari/230085",
+          "title": "Volkswagen Temmuz 2026 fiyat listesi (Passat)",
+          "date": "2026-07-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://memur365.com/otomobil/volkswagen-2026-temmuz-fiyat-listesi-26980h",
+          "title": "Volkswagen Temmuz 2026 fiyat listesi (Passat)",
+          "date": "2026-07-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://binekarac.vw.com.tr/tr/modeller-fiyatlar.html",
+          "title": "VW Binek Araç modeller ve fiyatlar",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "powerHp": "150"
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Passat",
+      "model": "1.5 eTSI 150 PS",
+      "trim": "Elegance",
+      "generation": "B9 Variant Current TR MY",
+      "generationCode": "B9",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Temmuz 2026 TR published list: Passat 1.5 eTSI 150 PS DSG Elegance",
+      "sources": [
+        {
+          "url": "https://www.gazetegercek.com.tr/volkswagen-temmuz-2026-fiyat-listesi-aciklandi-golf-tiguan-passat-fiyatlari/230085",
+          "title": "Volkswagen Temmuz 2026 fiyat listesi (Passat)",
+          "date": "2026-07-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://memur365.com/otomobil/volkswagen-2026-temmuz-fiyat-listesi-26980h",
+          "title": "Volkswagen Temmuz 2026 fiyat listesi (Passat)",
+          "date": "2026-07-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://binekarac.vw.com.tr/tr/modeller-fiyatlar.html",
+          "title": "VW Binek Araç modeller ve fiyatlar",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "powerHp": "150"
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Passat",
+      "model": "1.5 eTSI 150 PS",
+      "trim": "R-Line",
+      "generation": "B9 Variant Current TR MY",
+      "generationCode": "B9",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Temmuz 2026 TR published list: Passat 1.5 eTSI 150 PS DSG R-Line",
+      "sources": [
+        {
+          "url": "https://www.gazetegercek.com.tr/volkswagen-temmuz-2026-fiyat-listesi-aciklandi-golf-tiguan-passat-fiyatlari/230085",
+          "title": "Volkswagen Temmuz 2026 fiyat listesi (Passat)",
+          "date": "2026-07-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://memur365.com/otomobil/volkswagen-2026-temmuz-fiyat-listesi-26980h",
+          "title": "Volkswagen Temmuz 2026 fiyat listesi (Passat)",
+          "date": "2026-07-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://binekarac.vw.com.tr/tr/modeller-fiyatlar.html",
+          "title": "VW Binek Araç modeller ve fiyatlar",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "powerHp": "150"
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Passat",
+      "model": "2.0 TDI SCR 193 PS 4MOTION",
+      "trim": "Elegance",
+      "generation": "B9 Variant Current TR MY",
+      "generationCode": "B9",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Temmuz 2026 TR published list: Passat 2.0 TDI SCR 193 PS 4MOTION DSG Elegance",
+      "sources": [
+        {
+          "url": "https://www.gazetegercek.com.tr/volkswagen-temmuz-2026-fiyat-listesi-aciklandi-golf-tiguan-passat-fiyatlari/230085",
+          "title": "Volkswagen Temmuz 2026 fiyat listesi (Passat)",
+          "date": "2026-07-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://memur365.com/otomobil/volkswagen-2026-temmuz-fiyat-listesi-26980h",
+          "title": "Volkswagen Temmuz 2026 fiyat listesi (Passat)",
+          "date": "2026-07-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://binekarac.vw.com.tr/tr/modeller-fiyatlar.html",
+          "title": "VW Binek Araç modeller ve fiyatlar",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "powerHp": "193"
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Passat",
+      "model": "2.0 TSI 265 PS 4MOTION",
+      "trim": "R-Line",
+      "generation": "B9 Variant Current TR MY",
+      "generationCode": "B9",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Temmuz 2026 TR published list: Passat 2.0 TSI 265 PS 4MOTION DSG R-Line",
+      "sources": [
+        {
+          "url": "https://www.gazetegercek.com.tr/volkswagen-temmuz-2026-fiyat-listesi-aciklandi-golf-tiguan-passat-fiyatlari/230085",
+          "title": "Volkswagen Temmuz 2026 fiyat listesi (Passat)",
+          "date": "2026-07-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://memur365.com/otomobil/volkswagen-2026-temmuz-fiyat-listesi-26980h",
+          "title": "Volkswagen Temmuz 2026 fiyat listesi (Passat)",
+          "date": "2026-07-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://binekarac.vw.com.tr/tr/modeller-fiyatlar.html",
+          "title": "VW Binek Araç modeller ve fiyatlar",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "powerHp": "265"
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Passat",
+      "model": "2.0 TDI SCR 193 PS 4MOTION",
+      "trim": "R-Line",
+      "generation": "B9 Variant Current TR MY",
+      "generationCode": "B9",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Temmuz 2026 TR published list: Passat 2.0 TDI SCR 193 PS 4MOTION DSG R-Line",
+      "sources": [
+        {
+          "url": "https://www.gazetegercek.com.tr/volkswagen-temmuz-2026-fiyat-listesi-aciklandi-golf-tiguan-passat-fiyatlari/230085",
+          "title": "Volkswagen Temmuz 2026 fiyat listesi (Passat)",
+          "date": "2026-07-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://memur365.com/otomobil/volkswagen-2026-temmuz-fiyat-listesi-26980h",
+          "title": "Volkswagen Temmuz 2026 fiyat listesi (Passat)",
+          "date": "2026-07-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://binekarac.vw.com.tr/tr/modeller-fiyatlar.html",
+          "title": "VW Binek Araç modeller ve fiyatlar",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "powerHp": "193"
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Passat",
+      "model": "1.5 eHybrid 204 PS",
+      "trim": "Impression",
+      "generation": "B9 Variant",
+      "generationCode": "B9",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Mart 2026 Webtekno TR price table (prices from VW): Passat 1.5 eHybrid 204 PS Impression; not in Gazete Gerçek Temmuz excerpt",
+      "sources": [
+        {
+          "url": "https://www.webtekno.com/mart-2026-volkswagen-fiyati-listesi-h213223.html",
+          "title": "Mart 2026 Volkswagen fiyat listesi (Passat eHybrid)",
+          "date": "2026-03-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://binekarac.vw.com.tr/tr/modeller-fiyatlar.html",
+          "title": "VW Binek Araç",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "HYBRID",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "powerHp": "204"
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Passat",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "notes": "Prior Passat B8 Sedan/Variant TR TDI/TSI historical rows need archive ingest.",
+      "sources": [
+        {
+          "url": "https://binekarac.vw.com.tr/tr/modeller-fiyatlar.html",
+          "title": "VW Binek Araç",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Tiguan",
+      "model": "1.5 eTSI ACT 150 PS",
+      "trim": "Life",
+      "generation": "Mk3 Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Temmuz 2026 TR: Tiguan 1.5 eTSI ACT 150 PS DSG Life",
+      "sources": [
+        {
+          "url": "https://www.gazetegercek.com.tr/volkswagen-temmuz-2026-fiyat-listesi-aciklandi-golf-tiguan-passat-fiyatlari/230085",
+          "title": "Volkswagen Temmuz 2026 fiyat listesi (Tiguan)",
+          "date": "2026-07-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://memur365.com/otomobil/volkswagen-2026-temmuz-fiyat-listesi-26980h",
+          "title": "Volkswagen Temmuz 2026 fiyat listesi (Tiguan)",
+          "date": "2026-07-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://binekarac.vw.com.tr/tr/modeller-fiyatlar.html",
+          "title": "VW Binek Araç",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "powerHp": "150"
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Tiguan",
+      "model": "1.5 eTSI ACT 150 PS",
+      "trim": "Elegance",
+      "generation": "Mk3 Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Temmuz 2026 TR: Tiguan 1.5 eTSI ACT 150 PS DSG Elegance",
+      "sources": [
+        {
+          "url": "https://www.gazetegercek.com.tr/volkswagen-temmuz-2026-fiyat-listesi-aciklandi-golf-tiguan-passat-fiyatlari/230085",
+          "title": "Volkswagen Temmuz 2026 fiyat listesi (Tiguan)",
+          "date": "2026-07-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://memur365.com/otomobil/volkswagen-2026-temmuz-fiyat-listesi-26980h",
+          "title": "Volkswagen Temmuz 2026 fiyat listesi (Tiguan)",
+          "date": "2026-07-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://binekarac.vw.com.tr/tr/modeller-fiyatlar.html",
+          "title": "VW Binek Araç",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "powerHp": "150"
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Tiguan",
+      "model": "1.5 eTSI ACT 150 PS",
+      "trim": "R-Line",
+      "generation": "Mk3 Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Temmuz 2026 TR: Tiguan 1.5 eTSI ACT 150 PS DSG R-Line",
+      "sources": [
+        {
+          "url": "https://www.gazetegercek.com.tr/volkswagen-temmuz-2026-fiyat-listesi-aciklandi-golf-tiguan-passat-fiyatlari/230085",
+          "title": "Volkswagen Temmuz 2026 fiyat listesi (Tiguan)",
+          "date": "2026-07-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://memur365.com/otomobil/volkswagen-2026-temmuz-fiyat-listesi-26980h",
+          "title": "Volkswagen Temmuz 2026 fiyat listesi (Tiguan)",
+          "date": "2026-07-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://binekarac.vw.com.tr/tr/modeller-fiyatlar.html",
+          "title": "VW Binek Araç",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "powerHp": "150"
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Tiguan",
+      "model": "2.0 TDI SCR 193 PS 4MOTION",
+      "trim": "Elegance",
+      "generation": "Mk3 Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Temmuz 2026 TR: Tiguan 2.0 TDI SCR 193 PS 4MOTION DSG Elegance",
+      "sources": [
+        {
+          "url": "https://www.gazetegercek.com.tr/volkswagen-temmuz-2026-fiyat-listesi-aciklandi-golf-tiguan-passat-fiyatlari/230085",
+          "title": "Volkswagen Temmuz 2026 fiyat listesi (Tiguan)",
+          "date": "2026-07-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://memur365.com/otomobil/volkswagen-2026-temmuz-fiyat-listesi-26980h",
+          "title": "Volkswagen Temmuz 2026 fiyat listesi (Tiguan)",
+          "date": "2026-07-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://binekarac.vw.com.tr/tr/modeller-fiyatlar.html",
+          "title": "VW Binek Araç",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "powerHp": "193"
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Tiguan",
+      "model": "2.0 TDI SCR 193 PS 4MOTION",
+      "trim": "R-Line",
+      "generation": "Mk3 Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Temmuz 2026 TR: Tiguan 2.0 TDI SCR 193 PS 4MOTION DSG R-Line",
+      "sources": [
+        {
+          "url": "https://www.gazetegercek.com.tr/volkswagen-temmuz-2026-fiyat-listesi-aciklandi-golf-tiguan-passat-fiyatlari/230085",
+          "title": "Volkswagen Temmuz 2026 fiyat listesi (Tiguan)",
+          "date": "2026-07-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://memur365.com/otomobil/volkswagen-2026-temmuz-fiyat-listesi-26980h",
+          "title": "Volkswagen Temmuz 2026 fiyat listesi (Tiguan)",
+          "date": "2026-07-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://binekarac.vw.com.tr/tr/modeller-fiyatlar.html",
+          "title": "VW Binek Araç",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "powerHp": "193"
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Tiguan",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Prior Tiguan Mk2 TR historical rows need archive ingest.",
+      "sources": [
+        {
+          "url": "https://binekarac.vw.com.tr/tr/modeller-fiyatlar.html",
+          "title": "VW Binek Araç",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Polo",
+      "model": "1.0 TSI 95 PS",
+      "trim": "Life",
+      "generation": "AW Current TR MY",
+      "generationCode": "AW",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Mart 2026 Webtekno TR price table (prices from VW): Polo 1.0 TSI 95 PS Life Otomatik; not listed in Gazete Gerçek Temmuz 2026 excerpt",
+      "sources": [
+        {
+          "url": "https://www.webtekno.com/mart-2026-volkswagen-fiyati-listesi-h213223.html",
+          "title": "Mart 2026 Volkswagen fiyat listesi (Polo)",
+          "date": "2026-03-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://binekarac.vw.com.tr/tr/modeller-fiyatlar.html",
+          "title": "VW Binek Araç",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "powerHp": "95"
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Polo",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "notes": "Additional Polo Impression/Style/Manuel and historical AW rows need official PDF / fuller Temmuz list confirmation — aggregators disagree; not inventing.",
+      "sources": [
+        {
+          "url": "https://binekarac.vw.com.tr/tr/modeller-fiyatlar.html",
+          "title": "VW Binek Araç",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Caddy",
+      "model": "2.0 TDI 122 PS",
+      "trim": "Style",
+      "generation": "SB Current TR MY",
+      "generationCode": "SB",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Minivan & Panelvan",
+      "notes": "Official VW Ticari Aug 2026 (from 01.08.2026): Caddy 2.0 TDI 122 PS Style DSG",
+      "sources": [
+        {
+          "url": "https://ticariarac.vw.com.tr/fiyat-listesi",
+          "title": "Volkswagen Ticari Araç resmi fiyat listesi (Caddy)",
+          "date": "2026-08-01",
+          "role": "primary"
+        },
+        {
+          "url": "https://binekarac.vw.com.tr/tr/modeller-fiyatlar.html",
+          "title": "VW Binek/Ticari ekosistem",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "powerHp": "122"
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Caddy",
+      "model": "2.0 TDI 122 PS",
+      "trim": "Life",
+      "generation": "SB Current TR MY",
+      "generationCode": "SB",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Minivan & Panelvan",
+      "notes": "Official VW Ticari Aug 2026: Caddy 2.0 TDI 122 PS Life DSG",
+      "sources": [
+        {
+          "url": "https://ticariarac.vw.com.tr/fiyat-listesi",
+          "title": "Volkswagen Ticari Araç resmi fiyat listesi (Caddy)",
+          "date": "2026-08-01",
+          "role": "primary"
+        },
+        {
+          "url": "https://binekarac.vw.com.tr/tr/modeller-fiyatlar.html",
+          "title": "VW Binek/Ticari ekosistem",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "powerHp": "122"
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Caddy",
+      "model": "2.0 TDI 122 PS",
+      "trim": "Cargo",
+      "generation": "SB Current TR MY",
+      "generationCode": "SB",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Minivan & Panelvan",
+      "notes": "Official VW Ticari: Caddy Cargo 2.0 TDI 122 PS DSG (panel van)",
+      "sources": [
+        {
+          "url": "https://ticariarac.vw.com.tr/fiyat-listesi",
+          "title": "Volkswagen Ticari Araç resmi fiyat listesi (Caddy Cargo)",
+          "date": "2026-08-01",
+          "role": "primary"
+        }
+      ],
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "powerHp": "122"
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Caddy",
+      "model": "2.0 TDI 122 PS",
+      "trim": "Cargo Maxi",
+      "generation": "SB Current TR MY",
+      "generationCode": "SB",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Minivan & Panelvan",
+      "notes": "Official VW Ticari: Caddy Cargo Maxi 2.0 TDI 122 PS DSG",
+      "sources": [
+        {
+          "url": "https://ticariarac.vw.com.tr/fiyat-listesi",
+          "title": "Volkswagen Ticari Araç resmi fiyat listesi (Caddy Cargo)",
+          "date": "2026-08-01",
+          "role": "primary"
+        }
+      ],
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "powerHp": "122"
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "Caddy",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Minivan & Panelvan",
+      "notes": "Prior Caddy generations / Impression passenger rows need historical archive ingest.",
+      "sources": [
+        {
+          "url": "https://ticariarac.vw.com.tr/fiyat-listesi",
+          "title": "VW Ticari Araç",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "ID.4",
+      "model": "125 kW 170 PS",
+      "trim": "Pure",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Mart 2026 Webtekno + Temmuz 2026 published TR tables: ID.4 Pure 125 kW 170 PS",
+      "sources": [
+        {
+          "url": "https://www.webtekno.com/mart-2026-volkswagen-fiyati-listesi-h213223.html",
+          "title": "Mart 2026 Volkswagen fiyat listesi (ID.4)",
+          "date": "2026-03-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://teknobirinci.com.tr/temmuz-2026-volkswagen-fiyat-listesi-aciklandi-liste-fiyatiyla-bayii-fiyati-arasinda-yuz-binlerce-tl-fark-var/",
+          "title": "Temmuz 2026 Volkswagen fiyat listesi (ID.4)",
+          "date": "2026-07-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://binekarac.vw.com.tr/tr/modeller-fiyatlar.html",
+          "title": "VW Binek Araç",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "ELECTRIC",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "powerHp": "170"
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "ID.7",
+      "model": "210 kW 286 PS",
+      "trim": "Pro S",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Mart 2026 Webtekno + Temmuz 2026 published TR tables: ID.7 Pro S 210 kW 286 PS",
+      "sources": [
+        {
+          "url": "https://www.webtekno.com/mart-2026-volkswagen-fiyati-listesi-h213223.html",
+          "title": "Mart 2026 Volkswagen fiyat listesi (ID.7)",
+          "date": "2026-03-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://teknobirinci.com.tr/temmuz-2026-volkswagen-fiyat-listesi-aciklandi-liste-fiyatiyla-bayii-fiyati-arasinda-yuz-binlerce-tl-fark-var/",
+          "title": "Temmuz 2026 Volkswagen fiyat listesi (ID.7)",
+          "date": "2026-07-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://binekarac.vw.com.tr/tr/modeller-fiyatlar.html",
+          "title": "VW Binek Araç",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "ELECTRIC",
+      "transmission": "AUTOMATIC",
+      "powerHp": "286"
+    },
+    {
+      "brand": "Volkswagen",
+      "series": "ID.3",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "notes": "ID.3 TR availability not confirmed in Temmuz/Mart 2026 published binek lists reviewed this pass.",
+      "sources": [
+        {
+          "url": "https://binekarac.vw.com.tr/tr/modeller-fiyatlar.html",
+          "title": "VW Binek Araç",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
+    }
+  ],
+  "researchNotes": {
+    "researchedSeriesPass": [
+      "Golf",
+      "Passat",
+      "Tiguan",
+      "Polo",
+      "Caddy",
+      "ID.4",
+      "ID.7",
+      "ID.3"
+    ],
+    "primarySources": [
+      "https://www.gazetegercek.com.tr/volkswagen-temmuz-2026-fiyat-listesi-aciklandi-golf-tiguan-passat-fiyatlari/230085",
+      "https://ticariarac.vw.com.tr/fiyat-listesi",
+      "https://www.webtekno.com/mart-2026-volkswagen-fiyati-listesi-h213223.html",
+      "https://binekarac.vw.com.tr/tr/modeller-fiyatlar.html"
+    ],
+    "secondarySources": [
+      "https://memur365.com/otomobil/volkswagen-2026-temmuz-fiyat-listesi-26980h",
+      "https://teknobirinci.com.tr/temmuz-2026-volkswagen-fiyat-listesi-aciklandi-liste-fiyatiyla-bayii-fiyati-arasinda-yuz-binlerce-tl-fark-var/"
+    ],
+    "doNotInvent": true
+  },
+  "completedAt": "2026-08-07T09:13:29.964Z"
+}

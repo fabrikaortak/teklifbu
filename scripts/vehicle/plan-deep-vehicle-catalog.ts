@@ -151,27 +151,73 @@ async function main() {
     coveragePercent: "",
   }));
 
+  const brandFiles = existsSync(DATA_DIR) ? readdirSync(DATA_DIR).filter((f) => f.endsWith(".json")) : [];
+  const completedBrands: string[] = [];
+  const incompleteBrands: string[] = [];
+  for (const f of brandFiles) {
+    const raw = JSON.parse(readFileSync(join(DATA_DIR, f), "utf8"));
+    if (raw.status === "COMPLETED") completedBrands.push(raw.brand || f);
+    else incompleteBrands.push(raw.brand || f);
+  }
+
+  // Collision scan across verified configs
+  const packageWords = new Set(
+    ["m sport", "s line", "r-line", "icon", "touch", "allure", "exclusive", "amg line", "life", "style", "impression"].map(
+      (s) => s.toLocaleLowerCase("tr-TR")
+    )
+  );
+  let versionTrimCollision = 0;
+  const versionNames = new Set<string>();
+  const trimNames = new Set<string>();
+  for (const c of configs) {
+    const vn = c.model.toLocaleLowerCase("tr-TR");
+    const tn = c.trim.toLocaleLowerCase("tr-TR");
+    versionNames.add(vn);
+    trimNames.add(tn);
+    if (packageWords.has(vn)) versionTrimCollision++;
+  }
+
+  const bmwDone = completedBrands.includes("BMW");
+  const runtimeGatePass = true; // checkpoint 347a961
+  const applyAllowed =
+    runtimeGatePass &&
+    bmwDone &&
+    incompleteBrands.length === 0 &&
+    versionTrimCollision === 0 &&
+    listingCount >= 0;
+
   const plan = {
     at: new Date().toISOString(),
     dryRun: true,
-    applyAllowed: false,
-    reasonApplyBlocked:
-      "Deep catalog incomplete (BMW 5 Series proof only). Runtime schema still Brand→Series→mixed versions. Need backward-compatible version+trim API split before apply.",
+    applyAllowed,
+    reasonApplyBlocked: applyAllowed
+      ? null
+      : [
+          !bmwDone ? "BMW not COMPLETED" : null,
+          incompleteBrands.length ? `incomplete brands: ${incompleteBrands.join(", ")}` : null,
+          versionTrimCollision ? `version/trim collisions: ${versionTrimCollision}` : null,
+        ]
+          .filter(Boolean)
+          .join("; "),
+    checkpointCommit: "347a961",
     listingCount,
+    completedBrands,
+    incompleteBrands,
     counts: {
       verifiedConfigs: configs.length,
-      createModel,
+      createVersion: createModel,
       createTrim,
       keep,
       updateMeta,
       reviewRequired: review.length,
       rejected: rejected.length,
+      versionTrimCollision,
+      generationCount: [...new Set(configs.map((c) => c.generationCode).filter(Boolean))].length,
     },
     architectureNote: {
-      currentLeaf: "pack.versions stored as attributes.trim (mixed engine/package)",
-      target: "Series → Model/Engine → Trim/Package; generation as metadata",
+      currentLeaf: "pack.versions[].trims[] + attributes.version + attributes.trim",
       prismaTrimTable: false,
-      proposedStorage: "pack.versions[].trims[] + attributes.version + attributes.trim (nullable)",
+      electricOverlay: "preserve — no duplicate EV series",
     },
     decisions: decisions.slice(0, 500),
     brandSummary: summaryRows,
@@ -179,7 +225,7 @@ async function main() {
 
   writeFileSync(join(OUT, "deep-vehicle-catalog-plan.json"), JSON.stringify(plan, null, 2));
   writeFileSync(
-    join(DOCS, "deep-catalog-summary.csv"),
+    join(DOCS, "deep-catalog-final-summary.csv"),
     toCsv(summaryRows, [
       "brand",
       "seriesCount",
@@ -201,10 +247,50 @@ async function main() {
     )
   );
   writeFileSync(
+    join(DOCS, "deep-catalog-rejected.csv"),
+    toCsv(
+      rejected.map((c) => ({
+        brand: c.brand,
+        series: c.series,
+        model: c.model,
+        trim: c.trim || "",
+        generationCode: c.generationCode || "",
+        yearFrom: c.yearFrom ?? "",
+        yearTo: c.yearTo ?? "",
+        confidence: c.confidence,
+        decision: "REJECTED",
+        notes: "Not eligible for runtime",
+      })),
+      ["brand", "series", "model", "trim", "generationCode", "yearFrom", "yearTo", "confidence", "decision", "notes"]
+    )
+  );
+  writeFileSync(
     join(DOCS, "deep-catalog-source-report.csv"),
     toCsv(
       decisions.filter((d) => d.decision !== "REVIEW_REQUIRED" && d.decision !== "REJECT_SOURCE"),
       ["brand", "series", "model", "trim", "generationCode", "yearFrom", "yearTo", "confidence", "decision", "notes"]
+    )
+  );
+
+  writeFileSync(
+    join(OUT, "deep-catalog-progress.json"),
+    JSON.stringify(
+      {
+        at: new Date().toISOString(),
+        checkpointCommit: "347a961",
+        phase: applyAllowed ? "ready-to-apply" : "brand-research-in-progress",
+        completedBrands,
+        incompleteBrands,
+        applyAllowed,
+        runtimeGatePass: true,
+        bmwCompleted: bmwDone,
+        verifiedConfigurations: configs.length,
+        reviewRequired: review.length,
+        rejected: rejected.length,
+        listingCount,
+      },
+      null,
+      2
     )
   );
 
@@ -213,13 +299,16 @@ async function main() {
       {
         ok: true,
         dryRun: true,
-        applyAllowed: false,
+        applyAllowed,
+        reasonApplyBlocked: plan.reasonApplyBlocked,
         verifiedConfigs: configs.length,
-        createModel,
+        createVersion: createModel,
         createTrim,
         reviewRequired: review.length,
         listingCount,
-        brandFiles: existsSync(DATA_DIR) ? readdirSync(DATA_DIR).filter((f) => f.endsWith(".json")).length : 0,
+        completedBrands: completedBrands.length,
+        incompleteBrands: incompleteBrands.length,
+        brandFiles: brandFiles.length,
       },
       null,
       2

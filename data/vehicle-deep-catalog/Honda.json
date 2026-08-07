@@ -1,0 +1,169 @@
+{
+  "brand": "Honda",
+  "brandSlug": "honda",
+  "version": "2026.08-deep-honda-v1-current-tr",
+  "generatedAt": "2026-08-07T12:00:00.000Z",
+  "seriesCovered": [
+    "HR-V",
+    "Civic"
+  ],
+  "status": "COMPLETED",
+  "notes": "HR-V e:HEV official honda.com.tr 2026 MY. Civic current sales stopped — historical REVIEW.",
+  "configurations": [
+    {
+      "generation": "HR-V III e:HEV TR MY2026",
+      "generationCode": "RV",
+      "yearFrom": 2022,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Honda",
+      "series": "HR-V",
+      "model": "1.5 e:HEV 131 PS",
+      "trim": "Elegance",
+      "fuelType": "HYBRID",
+      "engineVolume": "1498",
+      "powerHp": "131",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_OFFICIAL",
+      "notes": "HR-V 1.5 e:HEV Elegance — resmi honda.com.tr 2026 MY",
+      "sources": [
+        {
+          "url": "https://www.honda.com.tr/otomobil/otomobil-fiyat-listesi-2026",
+          "title": "Honda Türkiye resmi 2026 model yılı fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.honda.com.tr/otomobil/otomobil-fiyat-listesi-2026/honda-hr-v-hibrit-2026-fiyat-listesi",
+          "title": "Honda HR-V e:HEV 2026 resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://honda.inallar.com.tr/fiyat-listesi",
+          "title": "Honda yetkili satıcı fiyat listesi (Inallar)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "HR-V III e:HEV TR MY2026",
+      "generationCode": "RV",
+      "yearFrom": 2022,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Honda",
+      "series": "HR-V",
+      "model": "1.5 e:HEV 131 PS",
+      "trim": "Advance",
+      "fuelType": "HYBRID",
+      "engineVolume": "1498",
+      "powerHp": "131",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_OFFICIAL",
+      "notes": "HR-V 1.5 e:HEV Advance — resmi honda.com.tr 2026 MY",
+      "sources": [
+        {
+          "url": "https://www.honda.com.tr/otomobil/otomobil-fiyat-listesi-2026",
+          "title": "Honda Türkiye resmi 2026 model yılı fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.honda.com.tr/otomobil/otomobil-fiyat-listesi-2026/honda-hr-v-hibrit-2026-fiyat-listesi",
+          "title": "Honda HR-V e:HEV 2026 resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://honda.inallar.com.tr/fiyat-listesi",
+          "title": "Honda yetkili satıcı fiyat listesi (Inallar)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "HR-V III e:HEV TR MY2026",
+      "generationCode": "RV",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Honda",
+      "series": "HR-V",
+      "model": "1.5 e:HEV 131 PS",
+      "trim": "Style+",
+      "fuelType": "HYBRID",
+      "engineVolume": "1498",
+      "powerHp": "131",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_OFFICIAL",
+      "notes": "HR-V 1.5 e:HEV Style+ — resmi listede; satışlar Ekim 2026 notu ile",
+      "sources": [
+        {
+          "url": "https://www.honda.com.tr/otomobil/otomobil-fiyat-listesi-2026",
+          "title": "Honda Türkiye resmi 2026 model yılı fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.honda.com.tr/otomobil/otomobil-fiyat-listesi-2026/honda-hr-v-hibrit-2026-fiyat-listesi",
+          "title": "Honda HR-V e:HEV 2026 resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "driveType": "",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "brand": "Honda",
+      "series": "Civic",
+      "model": "",
+      "trim": "",
+      "fuelType": "",
+      "transmission": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "confidence": "REVIEW_REQUIRED",
+      "notes": "Civic zero-km TR sales stopped as of Jan 2026 Honda price list. Historical Civic e:HEV/Sport/Executive archive rows pending.",
+      "sources": [
+        {
+          "url": "https://www.webtekno.com/ocak-2026-honda-fiyat-listesi-h210003.html",
+          "title": "Honda Civic TR satış durdurma (Ocak 2026 listesi)",
+          "date": "2026-01-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.honda.com.tr/otomobil/otomobil-fiyat-listesi-2026",
+          "title": "Honda Türkiye resmi 2026 model yılı fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
+    }
+  ],
+  "researchNotes": {
+    "researchedSeriesPass": [
+      "HR-V",
+      "Civic"
+    ],
+    "historicalArchivesIngested": [],
+    "reviewRequiredSeries": [
+      "Civic"
+    ]
+  },
+  "completedAt": "2026-08-07T09:13:29.889Z"
+}

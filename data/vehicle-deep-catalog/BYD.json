@@ -1,0 +1,232 @@
+{
+  "brand": "BYD",
+  "brandSlug": "byd",
+  "version": "2026.08-deep-byd-v1-current-tr",
+  "generatedAt": "2026-08-07T12:05:00.000Z",
+  "seriesCovered": [
+    "SEAL",
+    "SEALION 7",
+    "HAN",
+    "TANG",
+    "Atto 3",
+    "Dolphin"
+  ],
+  "status": "COMPLETED",
+  "notes": "Current official Aug 2026 list is EV-only SEAL/SEALION7/HAN/TANG. Prior Atto/Dolphin historical stubs — no inventing re-listings.",
+  "configurations": [
+    {
+      "brand": "BYD",
+      "series": "SEAL",
+      "model": "390 kW AWD",
+      "trim": "Excellence",
+      "generation": "SEAL TR MY2025",
+      "generationCode": "",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "530",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "SEAL 390 kW AWD Excellence — resmi bydauto.com.tr (7.8.2026)",
+      "sources": [
+        {
+          "url": "https://www.bydauto.com.tr/fiyat-listesi",
+          "title": "BYD Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.turkiyegazetesi.com.tr/t-otomobil/seal-sealion-han-tang-byd-agustos-2026-fiyat-listesi-aciklandi-1806628",
+          "title": "BYD Ağustos 2026 özet",
+          "date": "2026-08-02",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BYD",
+      "series": "SEALION 7",
+      "model": "390 kW AWD",
+      "trim": "Excellence",
+      "generation": "SEALION 7 TR MY2025",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "530",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "SEALION 7 390 kW AWD Excellence — resmi",
+      "sources": [
+        {
+          "url": "https://www.bydauto.com.tr/fiyat-listesi",
+          "title": "BYD Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.turkiyegazetesi.com.tr/t-otomobil/seal-sealion-han-tang-byd-agustos-2026-fiyat-listesi-aciklandi-1806628",
+          "title": "BYD Ağustos 2026 özet",
+          "date": "2026-08-02",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BYD",
+      "series": "HAN",
+      "model": "380 kW AWD",
+      "trim": "Executive",
+      "generation": "HAN TR MY2025",
+      "generationCode": "",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "517",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "HAN 380 kW AWD Executive — resmi",
+      "sources": [
+        {
+          "url": "https://www.bydauto.com.tr/fiyat-listesi",
+          "title": "BYD Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.turkiyegazetesi.com.tr/t-otomobil/seal-sealion-han-tang-byd-agustos-2026-fiyat-listesi-aciklandi-1806628",
+          "title": "BYD Ağustos 2026 özet",
+          "date": "2026-08-02",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BYD",
+      "series": "TANG",
+      "model": "380 kW AWD",
+      "trim": "Flagship",
+      "generation": "TANG TR MY2025",
+      "generationCode": "",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "517",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "TANG 380 kW AWD Flagship — resmi",
+      "sources": [
+        {
+          "url": "https://www.bydauto.com.tr/fiyat-listesi",
+          "title": "BYD Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.turkiyegazetesi.com.tr/t-otomobil/seal-sealion-han-tang-byd-agustos-2026-fiyat-listesi-aciklandi-1806628",
+          "title": "BYD Ağustos 2026 özet",
+          "date": "2026-08-02",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BYD",
+      "series": "Atto 3",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "fuelType": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "",
+      "driveType": "",
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Atto 3 previously sold TR; absent from Aug 2026 official 4-model EV list — historical archive ingest required (EV overlay series preserved).",
+      "sources": [
+        {
+          "url": "https://www.bydauto.com.tr/fiyat-listesi",
+          "title": "BYD Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.turkiyegazetesi.com.tr/t-otomobil/seal-sealion-han-tang-byd-agustos-2026-fiyat-listesi-aciklandi-1806628",
+          "title": "BYD Ağustos 2026 özet",
+          "date": "2026-08-02",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BYD",
+      "series": "Dolphin",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "fuelType": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "",
+      "driveType": "",
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "notes": "Dolphin previously marketed TR; absent Aug 2026 official list — archive rows required.",
+      "sources": [
+        {
+          "url": "https://www.bydauto.com.tr/fiyat-listesi",
+          "title": "BYD Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.turkiyegazetesi.com.tr/t-otomobil/seal-sealion-han-tang-byd-agustos-2026-fiyat-listesi-aciklandi-1806628",
+          "title": "BYD Ağustos 2026 özet",
+          "date": "2026-08-02",
+          "role": "secondary"
+        }
+      ]
+    }
+  ],
+  "researchNotes": {
+    "researchedSeriesPass": [
+      "SEAL",
+      "SEALION 7",
+      "HAN",
+      "TANG",
+      "Atto 3",
+      "Dolphin"
+    ],
+    "reviewRequiredSeries": [
+      "Atto 3",
+      "Dolphin"
+    ],
+    "electricOverlayNote": "No duplicate EV series invention"
+  },
+  "completedAt": "2026-08-07T09:13:29.875Z"
+}

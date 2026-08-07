@@ -1,0 +1,295 @@
+{
+  "brand": "Mitsubishi",
+  "brandSlug": "mitsubishi",
+  "version": "2026.08-deep-mitsubishi-v2-spacestar",
+  "generatedAt": "2026-08-07T09:34:56.788Z",
+  "seriesCovered": [
+    "ASX",
+    "Eclipse Cross",
+    "L200",
+    "Space Star"
+  ],
+  "status": "COMPLETED",
+  "notes": "Space Star 1.2 Intense CVT verified from Temsa-cited TR lists. ASX/Eclipse Cross/L200 remain REVIEW_REQUIRED (no inventing).",
+  "configurations": [
+    {
+      "brand": "Mitsubishi",
+      "series": "Space Star",
+      "model": "1.2",
+      "trim": "Intense",
+      "generation": "II TR MY2022 stock",
+      "generationCode": "",
+      "yearFrom": 2022,
+      "yearTo": 2024,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1200",
+      "powerHp": "71",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Space Star 1.2 Intense CVT 2022 MY — Temsa/TR kampanya listeleri 2024",
+      "sources": [
+        {
+          "url": "https://otomobilkampanyalar.com/mitsubishi-fiyat-listesi/",
+          "title": "Mitsubishi Space Star 1.2 INTENSE CVT — Temsa kampanya listesi (Ara 2024)",
+          "date": "2024-12-01",
+          "role": "primary"
+        },
+        {
+          "url": "https://otokampanyalar.com/mitsubishi-guncel-kampanyali-fiyat-listesi-m360121.html",
+          "title": "Mitsubishi Space Star 1.2 Intense CVT Eylül 2024",
+          "date": "2024-09-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.milligazete.com.tr/haber/21272110/fiyati-bu-ay-da-degismedi-mitsubishi-space-star-icin-rakam-hala-1-milyon-tlnin-altinda",
+          "title": "Space Star 1.2 INTENSE CVT Ağustos 2024 TR haber",
+          "date": "2024-08-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.mitsubishi-motors.com.tr/",
+          "title": "Mitsubishi Motors Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Mitsubishi",
+      "series": "ASX",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "fuelType": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "",
+      "driveType": "",
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "ASX TR current official version+trim pending (May 2026 aggregator unset).",
+      "sources": [
+        {
+          "url": "https://www.mitsubishi-motors.com.tr/",
+          "title": "Mitsubishi Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.arabava.com/mitsubishi-fiyat-listesi-2026-mayis/",
+          "title": "Mitsubishi Mayıs 2026 derleme (fiyatlar belirlenmedi)",
+          "date": "2026-05-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Mitsubishi",
+      "series": "Eclipse Cross",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "fuelType": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "",
+      "driveType": "",
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Eclipse Cross TR — official discrete rows pending.",
+      "sources": [
+        {
+          "url": "https://www.mitsubishi-motors.com.tr/",
+          "title": "Mitsubishi Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.arabava.com/mitsubishi-fiyat-listesi-2026-mayis/",
+          "title": "Mitsubishi Mayıs 2026 derleme (fiyatlar belirlenmedi)",
+          "date": "2026-05-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Mitsubishi",
+      "series": "L200",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "fuelType": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "",
+      "driveType": "",
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "L200 Storm/Tornado/Blizzard names appear on dealer aggregators but firm official PDF price rows not dual-sourced this pass.",
+      "sources": [
+        {
+          "url": "https://www.mitsubishi-motors.com.tr/",
+          "title": "Mitsubishi Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.arabava.com/mitsubishi-fiyat-listesi-2026-mayis/",
+          "title": "Mitsubishi Mayıs 2026 derleme (fiyatlar belirlenmedi)",
+          "date": "2026-05-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Mitsubishi",
+      "series": "ASX",
+      "model": "1.6",
+      "trim": "Intense",
+      "generation": "GA0 MY2019",
+      "generationCode": "GA0",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1590",
+      "powerHp": "117",
+      "transmission": "MANUAL",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Tarihsel TR ASX 1.6 Intense — ikinci el kataloğu için",
+      "sources": [
+        {
+          "url": "https://www.arabalar.com.tr/mitsubishi/asx",
+          "title": "Mitsubishi ASX TR donanım/versiyon arşivi",
+          "date": "2019-12-01",
+          "role": "primary"
+        },
+        {
+          "url": "https://arabamyeni.com/sifir/mitsubishi/asx/2019/1-6-intense",
+          "title": "Mitsubishi ASX 1.6 Intense 2019 TR",
+          "date": "2019-12-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Mitsubishi",
+      "series": "ASX",
+      "model": "1.6",
+      "trim": "Invite",
+      "generation": "GA0 MY2017",
+      "generationCode": "GA0",
+      "yearFrom": 2017,
+      "yearTo": 2017,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1590",
+      "transmission": "MANUAL",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "sources": [
+        {
+          "url": "https://www.arabalar.com.tr/mitsubishi/asx",
+          "title": "Mitsubishi ASX TR donanım/versiyon arşivi",
+          "date": "2019-12-01",
+          "role": "primary"
+        },
+        {
+          "url": "https://arabamyeni.com/sifir/mitsubishi/asx/2019/1-6-intense",
+          "title": "Mitsubishi ASX 1.6 Intense 2019 TR",
+          "date": "2019-12-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Mitsubishi",
+      "series": "ASX",
+      "model": "1.6 D",
+      "trim": "Intense",
+      "generation": "GA0 MY2017",
+      "generationCode": "GA0",
+      "yearFrom": 2017,
+      "yearTo": 2017,
+      "fuelType": "DIESEL",
+      "engineVolume": "1590",
+      "transmission": "MANUAL",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "sources": [
+        {
+          "url": "https://www.arabalar.com.tr/mitsubishi/asx",
+          "title": "Mitsubishi ASX TR donanım/versiyon arşivi",
+          "date": "2019-12-01",
+          "role": "primary"
+        },
+        {
+          "url": "https://arabamyeni.com/sifir/mitsubishi/asx/2019/1-6-intense",
+          "title": "Mitsubishi ASX 1.6 Intense 2019 TR",
+          "date": "2019-12-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Mitsubishi",
+      "series": "ASX",
+      "model": "1.6 D",
+      "trim": "Instyle",
+      "generation": "GA0 MY2017",
+      "generationCode": "GA0",
+      "yearFrom": 2017,
+      "yearTo": 2017,
+      "fuelType": "DIESEL",
+      "transmission": "MANUAL",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "sources": [
+        {
+          "url": "https://www.arabalar.com.tr/mitsubishi/asx",
+          "title": "Mitsubishi ASX TR donanım/versiyon arşivi",
+          "date": "2019-12-01",
+          "role": "primary"
+        },
+        {
+          "url": "https://arabamyeni.com/sifir/mitsubishi/asx/2019/1-6-intense",
+          "title": "Mitsubishi ASX 1.6 Intense 2019 TR",
+          "date": "2019-12-01",
+          "role": "secondary"
+        }
+      ]
+    }
+  ],
+  "researchNotes": {
+    "researchedSeriesPass": [
+      "Space Star",
+      "ASX",
+      "Eclipse Cross",
+      "L200"
+    ],
+    "reviewRequiredSeries": [
+      "ASX",
+      "Eclipse Cross",
+      "L200"
+    ]
+  },
+  "completedAt": "2026-08-07T09:34:56.788Z"
+}

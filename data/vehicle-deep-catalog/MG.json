@@ -1,0 +1,221 @@
+{
+  "brand": "MG",
+  "brandSlug": "mg",
+  "version": "2026.08-deep-mg-v1-current-tr",
+  "generatedAt": "2026-08-07T12:05:00.000Z",
+  "seriesCovered": [
+    "ZS Hybrid+",
+    "HS Hybrid+",
+    "HS",
+    "MG7"
+  ],
+  "status": "COMPLETED",
+  "notes": "ZS Hybrid+ Luxury from official mg-turkey.com notes + Aug 2026 published tables.",
+  "configurations": [
+    {
+      "brand": "MG",
+      "series": "ZS Hybrid+",
+      "model": "Hybrid+ 197 PS",
+      "trim": "Luxury Cam Tavanlı",
+      "generation": "ZS Hybrid+ TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "",
+      "powerHp": "197",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "ZS Hybrid+ Luxury Cam Tavanlı MY2026 — resmi fiyat listesi notları + Aug tables",
+      "sources": [
+        {
+          "url": "https://www.mg-turkey.com/tr/fiyat-listesi.html",
+          "title": "MG Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.webtekno.com/agustos-2026-mg-fiyat-listesi-h221788.html",
+          "title": "MG Ağustos 2026 versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.donanimhaber.com/mg-fiyat-listesi-sifir-mg-araba-fiyatlari--158913",
+          "title": "MG Ağustos 2026 DonanımHaber",
+          "date": "2026-08-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "MG",
+      "series": "HS Hybrid+",
+      "model": "Hybrid+",
+      "trim": "Luxury",
+      "generation": "HS Hybrid+ TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "HS Hybrid+ Luxury — Ağustos 2026 TR published tables",
+      "sources": [
+        {
+          "url": "https://www.mg-turkey.com/tr/fiyat-listesi.html",
+          "title": "MG Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.webtekno.com/agustos-2026-mg-fiyat-listesi-h221788.html",
+          "title": "MG Ağustos 2026 versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.donanimhaber.com/mg-fiyat-listesi-sifir-mg-araba-fiyatlari--158913",
+          "title": "MG Ağustos 2026 DonanımHaber",
+          "date": "2026-08-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "MG",
+      "series": "HS",
+      "model": "Gasoline",
+      "trim": "Luxury",
+      "generation": "HS TR MY2025/26",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "HS Luxury benzin — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.mg-turkey.com/tr/fiyat-listesi.html",
+          "title": "MG Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.webtekno.com/agustos-2026-mg-fiyat-listesi-h221788.html",
+          "title": "MG Ağustos 2026 versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.donanimhaber.com/mg-fiyat-listesi-sifir-mg-araba-fiyatlari--158913",
+          "title": "MG Ağustos 2026 DonanımHaber",
+          "date": "2026-08-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "MG",
+      "series": "MG7",
+      "model": "Gasoline",
+      "trim": "Excellence",
+      "generation": "MG7 TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "MG7 Excellence MY2026 — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.mg-turkey.com/tr/fiyat-listesi.html",
+          "title": "MG Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.webtekno.com/agustos-2026-mg-fiyat-listesi-h221788.html",
+          "title": "MG Ağustos 2026 versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.donanimhaber.com/mg-fiyat-listesi-sifir-mg-araba-fiyatlari--158913",
+          "title": "MG Ağustos 2026 DonanımHaber",
+          "date": "2026-08-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "MG",
+      "series": "MG7",
+      "model": "Gasoline",
+      "trim": "Excellence Red Edition",
+      "generation": "MG7 TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "MG7 Excellence Red Edition MY2026 — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.mg-turkey.com/tr/fiyat-listesi.html",
+          "title": "MG Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.webtekno.com/agustos-2026-mg-fiyat-listesi-h221788.html",
+          "title": "MG Ağustos 2026 versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.donanimhaber.com/mg-fiyat-listesi-sifir-mg-araba-fiyatlari--158913",
+          "title": "MG Ağustos 2026 DonanımHaber",
+          "date": "2026-08-01",
+          "role": "secondary"
+        }
+      ]
+    }
+  ],
+  "researchNotes": {
+    "researchedSeriesPass": [
+      "ZS Hybrid+",
+      "HS Hybrid+",
+      "HS",
+      "MG7"
+    ],
+    "reviewRequiredSeries": []
+  },
+  "completedAt": "2026-08-07T09:13:29.917Z"
+}

@@ -1,0 +1,320 @@
+{
+  "brand": "Ford",
+  "brandSlug": "ford",
+  "version": "2026.08-deep-ford-v1-current-tr",
+  "generatedAt": "2026-08-07T12:00:00.000Z",
+  "seriesCovered": [
+    "Focus",
+    "Tourneo Courier",
+    "Fiesta",
+    "Tourneo Custom",
+    "Focus Hatchback Hybrid"
+  ],
+  "status": "COMPLETED",
+  "notes": "Focus Sedan EcoBlue + Journey/Tourneo Courier rows from Jul 2026 ford.com.tr-cited tables. Fiesta/Custom historical pending.",
+  "configurations": [
+    {
+      "generation": "Focus Sedan TR MY2025",
+      "generationCode": "C519",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Ford",
+      "series": "Focus",
+      "model": "1.5 EcoBlue 115 PS",
+      "trim": "Titanium Stil",
+      "fuelType": "DIESEL",
+      "engineVolume": "1499",
+      "powerHp": "115",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Focus Sedan 1.5 EcoBlue 115 PS 8AT Titanium Stil — Temmuz 2026 TR (MY2025)",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/temmuz-2026-ford-fiyat-listesi-iste-ford-focus-puma-kuga-journey-courier-edge-ve-ranger-guncel-fiyatlari-1369315",
+          "title": "Ford Temmuz 2026 fiyat listesi (ford.com.tr kaynaklı)",
+          "date": "2026-07-10",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.ford.com.tr/fiyat-listesi",
+          "title": "Ford Türkiye fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://teknodiot.com/ford-fiyat-listesi",
+          "title": "Ford Temmuz 2026 fiyat derlemesi",
+          "date": "2026-07-10",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Focus Sedan TR MY2025",
+      "generationCode": "C519",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Ford",
+      "series": "Focus",
+      "model": "1.5 EcoBlue 115 PS",
+      "trim": "Titanium X",
+      "fuelType": "DIESEL",
+      "engineVolume": "1499",
+      "powerHp": "115",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Focus Sedan 1.5 EcoBlue 115 PS 8AT Titanium X — Temmuz 2026 TR (MY2025)",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/temmuz-2026-ford-fiyat-listesi-iste-ford-focus-puma-kuga-journey-courier-edge-ve-ranger-guncel-fiyatlari-1369315",
+          "title": "Ford Temmuz 2026 fiyat listesi (ford.com.tr kaynaklı)",
+          "date": "2026-07-10",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.ford.com.tr/fiyat-listesi",
+          "title": "Ford Türkiye fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://teknodiot.com/ford-fiyat-listesi",
+          "title": "Ford Temmuz 2026 fiyat derlemesi",
+          "date": "2026-07-10",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Journey Courier TR MY2026",
+      "generationCode": "Tourneo Courier / Journey",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Ticari",
+      "brand": "Ford",
+      "series": "Tourneo Courier",
+      "model": "1.0 EcoBoost 125 PS",
+      "trim": "Deluxe",
+      "fuelType": "GASOLINE",
+      "engineVolume": "999",
+      "powerHp": "125",
+      "transmission": "MANUAL",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Yeni Journey Courier Kombi 1.0 EcoBoost 125 PS MT Deluxe — Temmuz 2026 TR (Tourneo Courier successor naming)",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/temmuz-2026-ford-fiyat-listesi-iste-ford-focus-puma-kuga-journey-courier-edge-ve-ranger-guncel-fiyatlari-1369315",
+          "title": "Ford Temmuz 2026 fiyat listesi (ford.com.tr kaynaklı)",
+          "date": "2026-07-10",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.ford.com.tr/fiyat-listesi",
+          "title": "Ford Türkiye fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.ford.com.tr/fiyat-listesi/ticari/ford-tourneo-connect",
+          "title": "Ford Türkiye ticari fiyat listesi hub",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Journey Courier TR MY2026",
+      "generationCode": "Tourneo Courier / Journey",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Ticari",
+      "brand": "Ford",
+      "series": "Tourneo Courier",
+      "model": "1.0 EcoBoost 125 PS",
+      "trim": "Titanium",
+      "fuelType": "GASOLINE",
+      "engineVolume": "999",
+      "powerHp": "125",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Yeni Journey Courier Kombi 1.0 EcoBoost 125 PS 7AT Titanium — Temmuz 2026 TR",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/temmuz-2026-ford-fiyat-listesi-iste-ford-focus-puma-kuga-journey-courier-edge-ve-ranger-guncel-fiyatlari-1369315",
+          "title": "Ford Temmuz 2026 fiyat listesi (ford.com.tr kaynaklı)",
+          "date": "2026-07-10",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.ford.com.tr/fiyat-listesi",
+          "title": "Ford Türkiye fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.ford.com.tr/fiyat-listesi/ticari/ford-tourneo-connect",
+          "title": "Ford Türkiye ticari fiyat listesi hub",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Journey Courier BEV TR MY2026",
+      "generationCode": "Tourneo Courier BEV",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Ticari",
+      "brand": "Ford",
+      "series": "Tourneo Courier",
+      "model": "100 kW",
+      "trim": "Titanium",
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "136",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Journey Courier BEV Titanium Kombi 100 kW — Temmuz 2026 TR",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/temmuz-2026-ford-fiyat-listesi-iste-ford-focus-puma-kuga-journey-courier-edge-ve-ranger-guncel-fiyatlari-1369315",
+          "title": "Ford Temmuz 2026 fiyat listesi (ford.com.tr kaynaklı)",
+          "date": "2026-07-10",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.ford.com.tr/fiyat-listesi",
+          "title": "Ford Türkiye fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "driveType": "",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "brand": "Ford",
+      "series": "Fiesta",
+      "model": "",
+      "trim": "",
+      "fuelType": "",
+      "transmission": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "confidence": "REVIEW_REQUIRED",
+      "notes": "Fiesta production ended 2023; TR historical used-car trims need dedicated archive. No zero-km list.",
+      "sources": [
+        {
+          "url": "https://borusannext.com/blog/ford-fiyat-listesi",
+          "title": "Ford Fiesta üretimi 2023 durduruldu notu",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.ford.com.tr/fiyat-listesi",
+          "title": "Ford Türkiye fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "driveType": "",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "brand": "Ford",
+      "series": "Tourneo Custom",
+      "model": "",
+      "trim": "",
+      "fuelType": "",
+      "transmission": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "confidence": "REVIEW_REQUIRED",
+      "notes": "Tourneo Custom / E-Tourneo Custom TR commercial PDF rows not fully ingested this pass; hub confirms listing exists.",
+      "sources": [
+        {
+          "url": "https://www.ford.com.tr/fiyat-listesi/ticari/ford-tourneo-connect",
+          "title": "Ford Türkiye ticari fiyat listesi hub",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.ford.com.tr/fiyat-listesi",
+          "title": "Ford Türkiye fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "driveType": "",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "brand": "Ford",
+      "series": "Focus Hatchback Hybrid",
+      "model": "",
+      "trim": "",
+      "fuelType": "",
+      "transmission": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "confidence": "REVIEW_REQUIRED",
+      "notes": "Focus Hatchback 1.0 EcoBoost Hybrid Active Stil reported in secondary Jul 2026 roundups; needs official row confirmation.",
+      "sources": [
+        {
+          "url": "https://teknodiot.com/ford-fiyat-listesi",
+          "title": "Ford Temmuz 2026 fiyat derlemesi",
+          "date": "2026-07-10",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.ford.com.tr/fiyat-listesi",
+          "title": "Ford Türkiye fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    }
+  ],
+  "researchNotes": {
+    "researchedSeriesPass": [
+      "Focus",
+      "Tourneo Courier",
+      "Fiesta",
+      "Tourneo Custom"
+    ],
+    "historicalArchivesIngested": [],
+    "reviewRequiredSeries": [
+      "Fiesta",
+      "Tourneo Custom",
+      "Focus Hatchback Hybrid"
+    ]
+  },
+  "completedAt": "2026-08-07T09:13:29.886Z"
+}

@@ -1,0 +1,8 @@
+brand,series,model,trim,generationCode,yearFrom,yearTo,confidence,decision,notes
+Mercedes-Benz,GLC,GLC 220 d 4MATIC,AMG Line,X254,,,REJECTED,REJECTED,Not eligible for runtime
+Mercedes-Benz,E Serisi,E 200,AMG Line,W214,,,REJECTED,REJECTED,Not eligible for runtime
+Mercedes-Benz,CLE,CLE 200,AMG Line,C236,,,REJECTED,REJECTED,Not eligible for runtime
+Mercedes-Benz,GLS,GLS 450 4MATIC,AMG Line,X167,,,REJECTED,REJECTED,Not eligible for runtime
+Mercedes-Benz,EQE,EQE 350+,AMG Line,V295,,,REJECTED,REJECTED,Not eligible for runtime
+Mercedes-Benz,GLB,GLB 200,AMG Line,X247,,,REJECTED,REJECTED,Not eligible for runtime
+Mercedes-Benz,C Serisi,C 200 4MATIC,AMG,W206,,,REJECTED,REJECTED,Not eligible for runtime

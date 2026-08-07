@@ -1,0 +1,325 @@
+{
+  "brand": "Citroen",
+  "brandSlug": "citroen",
+  "version": "2026.08-deep-citroen-v1-current-tr",
+  "generatedAt": "2026-08-07T12:00:00.000Z",
+  "seriesCovered": [
+    "C3",
+    "C5 Aircross",
+    "C3 Aircross",
+    "C3 (ICE historical)"
+  ],
+  "status": "COMPLETED",
+  "notes": "ë-C3 + C5 Aircross Hybrid/EV + C3 Aircross Hybrid from official citroen.com.tr / Aug 2026 tables. ICE C3 historical REVIEW.",
+  "configurations": [
+    {
+      "generation": "ë-C3 TR MY2026",
+      "generationCode": "CC21 EV",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Citroen",
+      "series": "C3",
+      "model": "ë-C3 83 kW",
+      "trim": "Plus",
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "113",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Elektrikli ë-C3 83 kW Plus — Ağustos 2026 TR (current C3 range is EV-led)",
+      "sources": [
+        {
+          "url": "https://www.webtekno.com/agustos-2026-citroen-fiyat-listesi-h221654.html",
+          "title": "Citroën Ağustos 2026 fiyat listesi",
+          "date": "2026-08-05",
+          "role": "primary"
+        },
+        {
+          "url": "https://talep.citroen.com.tr/fiyat-listesi",
+          "title": "Citroën Türkiye resmi fiyat listesi hub",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "ë-C3 TR MY2026",
+      "generationCode": "CC21 EV",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Citroen",
+      "series": "C3",
+      "model": "ë-C3 83 kW",
+      "trim": "Max",
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "113",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Elektrikli ë-C3 83 kW Max — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.webtekno.com/agustos-2026-citroen-fiyat-listesi-h221654.html",
+          "title": "Citroën Ağustos 2026 fiyat listesi",
+          "date": "2026-08-05",
+          "role": "primary"
+        },
+        {
+          "url": "https://talep.citroen.com.tr/fiyat-listesi",
+          "title": "Citroën Türkiye resmi fiyat listesi hub",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Yeni C5 Aircross Hybrid TR MY2026",
+      "generationCode": "C5 Aircross III",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Citroen",
+      "series": "C5 Aircross",
+      "model": "1.2 Hybrid 145 eDCS6",
+      "trim": "Plus",
+      "fuelType": "HYBRID",
+      "engineVolume": "1199",
+      "powerHp": "145",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_OFFICIAL",
+      "notes": "Yeni C5 Aircross Hybrid 145 Plus — resmi talep.citroen.com.tr + Ağustos 2026 tablo",
+      "sources": [
+        {
+          "url": "https://talep.citroen.com.tr/fiyat-listesi/arac/yeni-c5-aircross-hibrit",
+          "title": "Citroën Yeni C5 Aircross Hybrid resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.webtekno.com/agustos-2026-citroen-fiyat-listesi-h221654.html",
+          "title": "Citroën Ağustos 2026 fiyat listesi",
+          "date": "2026-08-05",
+          "role": "primary"
+        },
+        {
+          "url": "https://talep.citroen.com.tr/fiyat-listesi",
+          "title": "Citroën Türkiye resmi fiyat listesi hub",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Yeni C5 Aircross Hybrid TR MY2026",
+      "generationCode": "C5 Aircross III",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Citroen",
+      "series": "C5 Aircross",
+      "model": "1.2 Hybrid 145 eDCS6",
+      "trim": "Max",
+      "fuelType": "HYBRID",
+      "engineVolume": "1199",
+      "powerHp": "145",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_OFFICIAL",
+      "notes": "Yeni C5 Aircross Hybrid 145 Max — resmi talep.citroen.com.tr",
+      "sources": [
+        {
+          "url": "https://talep.citroen.com.tr/fiyat-listesi/arac/yeni-c5-aircross-hibrit",
+          "title": "Citroën Yeni C5 Aircross Hybrid resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.webtekno.com/agustos-2026-citroen-fiyat-listesi-h221654.html",
+          "title": "Citroën Ağustos 2026 fiyat listesi",
+          "date": "2026-08-05",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "generation": "Yeni ë-C5 Aircross TR MY2026",
+      "generationCode": "C5 Aircross III EV",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Citroen",
+      "series": "C5 Aircross",
+      "model": "ë-C5 Aircross 157 kW",
+      "trim": "Plus",
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "210",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Yeni ë-C5 Aircross 157 kW Plus — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.webtekno.com/agustos-2026-citroen-fiyat-listesi-h221654.html",
+          "title": "Citroën Ağustos 2026 fiyat listesi",
+          "date": "2026-08-05",
+          "role": "primary"
+        },
+        {
+          "url": "https://talep.citroen.com.tr/fiyat-listesi",
+          "title": "Citroën Türkiye resmi fiyat listesi hub",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "C3 Aircross Hybrid TR MY2026",
+      "generationCode": "C3 Aircross II",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Citroen",
+      "series": "C3 Aircross",
+      "model": "1.2 Hybrid 145 eDCS6",
+      "trim": "Plus",
+      "fuelType": "HYBRID",
+      "engineVolume": "1199",
+      "powerHp": "145",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_OFFICIAL",
+      "notes": "C3 Aircross Hybrid 145 Plus — resmi TR fiyat satırı",
+      "sources": [
+        {
+          "url": "https://talep.citroen.com.tr/fiyat-listesi/arac/yeni-c3-aircross-suv?showcontent=true",
+          "title": "Citroën C3 Aircross Hybrid resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.webtekno.com/agustos-2026-citroen-fiyat-listesi-h221654.html",
+          "title": "Citroën Ağustos 2026 fiyat listesi",
+          "date": "2026-08-05",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "generation": "C3 Aircross Hybrid TR MY2026",
+      "generationCode": "C3 Aircross II",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Citroen",
+      "series": "C3 Aircross",
+      "model": "1.2 Hybrid 145 eDCS6",
+      "trim": "Max",
+      "fuelType": "HYBRID",
+      "engineVolume": "1199",
+      "powerHp": "145",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_OFFICIAL",
+      "notes": "C3 Aircross Hybrid 145 Max — resmi TR fiyat satırı",
+      "sources": [
+        {
+          "url": "https://talep.citroen.com.tr/fiyat-listesi/arac/yeni-c3-aircross-suv?showcontent=true",
+          "title": "Citroën C3 Aircross Hybrid resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.webtekno.com/agustos-2026-citroen-fiyat-listesi-h221654.html",
+          "title": "Citroën Ağustos 2026 fiyat listesi",
+          "date": "2026-08-05",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "generation": "C3 Aircross Hybrid TR MY2026",
+      "generationCode": "C3 Aircross II",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Citroen",
+      "series": "C3 Aircross",
+      "model": "1.2 Hybrid 145 eDCS6",
+      "trim": "Max - 7 Koltuk",
+      "fuelType": "HYBRID",
+      "engineVolume": "1199",
+      "powerHp": "145",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_OFFICIAL",
+      "notes": "C3 Aircross Hybrid 145 Max 7 Koltuk — resmi TR fiyat satırı",
+      "sources": [
+        {
+          "url": "https://talep.citroen.com.tr/fiyat-listesi/arac/yeni-c3-aircross-suv?showcontent=true",
+          "title": "Citroën C3 Aircross Hybrid resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.webtekno.com/agustos-2026-citroen-fiyat-listesi-h221654.html",
+          "title": "Citroën Ağustos 2026 fiyat listesi",
+          "date": "2026-08-05",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "driveType": "",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "brand": "Citroen",
+      "series": "C3 (ICE historical)",
+      "model": "",
+      "trim": "",
+      "fuelType": "",
+      "transmission": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "confidence": "REVIEW_REQUIRED",
+      "notes": "ICE C3 PureTech Feel/Shine historical TR archives pending; current list is ë-C3 EV.",
+      "sources": [
+        {
+          "url": "https://talep.citroen.com.tr/fiyat-listesi",
+          "title": "Citroën Türkiye resmi fiyat listesi hub",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    }
+  ],
+  "researchNotes": {
+    "researchedSeriesPass": [
+      "C3",
+      "C5 Aircross",
+      "C3 Aircross"
+    ],
+    "historicalArchivesIngested": [],
+    "reviewRequiredSeries": [
+      "C3 (ICE historical)"
+    ]
+  },
+  "completedAt": "2026-08-07T09:13:29.877Z"
+}

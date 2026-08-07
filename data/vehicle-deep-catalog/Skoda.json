@@ -1,0 +1,528 @@
+{
+  "brand": "Skoda",
+  "brandSlug": "skoda",
+  "version": "2026.08-deep-skoda-v1-current-tr",
+  "generatedAt": "2026-08-07T12:00:00.000Z",
+  "seriesCovered": [
+    "Fabia",
+    "Octavia",
+    "Superb"
+  ],
+  "status": "COMPLETED",
+  "notes": "Fabia/Octavia/Superb Aug 2026 skoda.com.tr-cited tables. Superb TDI PS conflict flagged REVIEW.",
+  "configurations": [
+    {
+      "generation": "Fabia IV TR MY2026",
+      "generationCode": "NJ",
+      "yearFrom": 2022,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Skoda",
+      "series": "Fabia",
+      "model": "1.0 TSI 115 PS",
+      "trim": "Premium",
+      "fuelType": "GASOLINE",
+      "engineVolume": "999",
+      "powerHp": "115",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Fabia Premium 1.0 TSI 115 PS DSG — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/agustos-2026-skoda-fiyat-listesi-octavia-superb-elroq-scala-kamiq-karoq-fabia-ve-kodiaq-guncel-fiyatlar-1374164",
+          "title": "Skoda Ağustos 2026 fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.skoda.com.tr/fiyat-listesi",
+          "title": "Škoda Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.cnbce.com/otomotiv/skodadan-dev-agustos-kampanyasi-en-cok-satan-modelde-ndirimler-884-bin-tlye-ulasti-g34559",
+          "title": "Skoda Ağustos 2026 kampanya/liste tablosu",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Fabia IV TR MY2026",
+      "generationCode": "NJ",
+      "yearFrom": 2022,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Skoda",
+      "series": "Fabia",
+      "model": "1.5 TSI 150 PS",
+      "trim": "Monte Carlo",
+      "fuelType": "GASOLINE",
+      "engineVolume": "1498",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Fabia Monte Carlo 1.5 TSI 150 PS DSG — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/agustos-2026-skoda-fiyat-listesi-octavia-superb-elroq-scala-kamiq-karoq-fabia-ve-kodiaq-guncel-fiyatlar-1374164",
+          "title": "Skoda Ağustos 2026 fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.skoda.com.tr/fiyat-listesi",
+          "title": "Škoda Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.cnbce.com/otomotiv/skodadan-dev-agustos-kampanyasi-en-cok-satan-modelde-ndirimler-884-bin-tlye-ulasti-g34559",
+          "title": "Skoda Ağustos 2026 kampanya/liste tablosu",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Octavia IV facelift TR MY2026",
+      "generationCode": "NX",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Skoda",
+      "series": "Octavia",
+      "model": "1.5 TSI mHEV 150 PS",
+      "trim": "Elite",
+      "fuelType": "HYBRID",
+      "engineVolume": "1498",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Octavia Elite 1.5 TSI mHEV 150 PS DSG — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/agustos-2026-skoda-fiyat-listesi-octavia-superb-elroq-scala-kamiq-karoq-fabia-ve-kodiaq-guncel-fiyatlar-1374164",
+          "title": "Skoda Ağustos 2026 fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.skoda.com.tr/fiyat-listesi",
+          "title": "Škoda Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.cnbce.com/otomotiv/skodadan-dev-agustos-kampanyasi-en-cok-satan-modelde-ndirimler-884-bin-tlye-ulasti-g34559",
+          "title": "Skoda Ağustos 2026 kampanya/liste tablosu",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Octavia IV facelift TR MY2026",
+      "generationCode": "NX",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Skoda",
+      "series": "Octavia",
+      "model": "1.5 TSI mHEV 150 PS",
+      "trim": "Premium",
+      "fuelType": "HYBRID",
+      "engineVolume": "1498",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Octavia Premium 1.5 TSI mHEV 150 PS DSG — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/agustos-2026-skoda-fiyat-listesi-octavia-superb-elroq-scala-kamiq-karoq-fabia-ve-kodiaq-guncel-fiyatlar-1374164",
+          "title": "Skoda Ağustos 2026 fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.skoda.com.tr/fiyat-listesi",
+          "title": "Škoda Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.cnbce.com/otomotiv/skodadan-dev-agustos-kampanyasi-en-cok-satan-modelde-ndirimler-884-bin-tlye-ulasti-g34559",
+          "title": "Skoda Ağustos 2026 kampanya/liste tablosu",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Octavia IV facelift TR MY2026",
+      "generationCode": "NX",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Skoda",
+      "series": "Octavia",
+      "model": "1.5 TSI mHEV 150 PS",
+      "trim": "Prestige",
+      "fuelType": "HYBRID",
+      "engineVolume": "1498",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Octavia Prestige 1.5 TSI mHEV 150 PS DSG — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/agustos-2026-skoda-fiyat-listesi-octavia-superb-elroq-scala-kamiq-karoq-fabia-ve-kodiaq-guncel-fiyatlar-1374164",
+          "title": "Skoda Ağustos 2026 fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.skoda.com.tr/fiyat-listesi",
+          "title": "Škoda Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.cnbce.com/otomotiv/skodadan-dev-agustos-kampanyasi-en-cok-satan-modelde-ndirimler-884-bin-tlye-ulasti-g34559",
+          "title": "Skoda Ağustos 2026 kampanya/liste tablosu",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Octavia IV facelift TR MY2026",
+      "generationCode": "NX",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Skoda",
+      "series": "Octavia",
+      "model": "1.5 TSI mHEV 150 PS",
+      "trim": "Sportline",
+      "fuelType": "HYBRID",
+      "engineVolume": "1498",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Octavia Sportline 1.5 TSI mHEV 150 PS DSG — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/agustos-2026-skoda-fiyat-listesi-octavia-superb-elroq-scala-kamiq-karoq-fabia-ve-kodiaq-guncel-fiyatlar-1374164",
+          "title": "Skoda Ağustos 2026 fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.skoda.com.tr/fiyat-listesi",
+          "title": "Škoda Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.cnbce.com/otomotiv/skodadan-dev-agustos-kampanyasi-en-cok-satan-modelde-ndirimler-884-bin-tlye-ulasti-g34559",
+          "title": "Skoda Ağustos 2026 kampanya/liste tablosu",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Octavia IV facelift TR MY2026",
+      "generationCode": "NX",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Skoda",
+      "series": "Octavia",
+      "model": "2.0 TSI 265 PS",
+      "trim": "RS",
+      "fuelType": "GASOLINE",
+      "engineVolume": "1984",
+      "powerHp": "265",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Octavia RS 2.0 TSI 265 PS DSG — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/agustos-2026-skoda-fiyat-listesi-octavia-superb-elroq-scala-kamiq-karoq-fabia-ve-kodiaq-guncel-fiyatlar-1374164",
+          "title": "Skoda Ağustos 2026 fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.skoda.com.tr/fiyat-listesi",
+          "title": "Škoda Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.cnbce.com/otomotiv/skodadan-dev-agustos-kampanyasi-en-cok-satan-modelde-ndirimler-884-bin-tlye-ulasti-g34559",
+          "title": "Skoda Ağustos 2026 kampanya/liste tablosu",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Octavia Combi IV facelift TR MY2026",
+      "generationCode": "NX Combi",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Skoda",
+      "series": "Octavia",
+      "model": "1.5 TSI mHEV 150 PS",
+      "trim": "Sportline",
+      "fuelType": "HYBRID",
+      "engineVolume": "1498",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Octavia Combi Sportline 1.5 TSI mHEV 150 PS DSG — Ağustos 2026 TR (Combi body)",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/agustos-2026-skoda-fiyat-listesi-octavia-superb-elroq-scala-kamiq-karoq-fabia-ve-kodiaq-guncel-fiyatlar-1374164",
+          "title": "Skoda Ağustos 2026 fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://skodacakiroglu.com/skoda-fiyat-listesi/",
+          "title": "Skoda yetkili satıcı fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Superb IV TR MY2026",
+      "generationCode": "IV",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Skoda",
+      "series": "Superb",
+      "model": "1.5 TSI mHEV 150 PS",
+      "trim": "Premium",
+      "fuelType": "HYBRID",
+      "engineVolume": "1498",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Superb Premium 1.5 TSI mHEV 150 PS DSG — Ağustos 2026 TR (TDI PS from dealer archive where Onedio said 265)",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/agustos-2026-skoda-fiyat-listesi-octavia-superb-elroq-scala-kamiq-karoq-fabia-ve-kodiaq-guncel-fiyatlar-1374164",
+          "title": "Skoda Ağustos 2026 fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.skoda.com.tr/fiyat-listesi",
+          "title": "Škoda Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://skodacakiroglu.com/skoda-fiyat-listesi/",
+          "title": "Skoda yetkili satıcı fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Superb IV TR MY2026",
+      "generationCode": "IV",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Skoda",
+      "series": "Superb",
+      "model": "1.5 TSI mHEV 150 PS",
+      "trim": "Prestige",
+      "fuelType": "HYBRID",
+      "engineVolume": "1498",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Superb Prestige 1.5 TSI mHEV 150 PS DSG — Ağustos 2026 TR (TDI PS from dealer archive where Onedio said 265)",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/agustos-2026-skoda-fiyat-listesi-octavia-superb-elroq-scala-kamiq-karoq-fabia-ve-kodiaq-guncel-fiyatlar-1374164",
+          "title": "Skoda Ağustos 2026 fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.skoda.com.tr/fiyat-listesi",
+          "title": "Škoda Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://skodacakiroglu.com/skoda-fiyat-listesi/",
+          "title": "Skoda yetkili satıcı fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Superb IV TR MY2026",
+      "generationCode": "IV",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Skoda",
+      "series": "Superb",
+      "model": "1.5 TSI mHEV 150 PS",
+      "trim": "Sportline",
+      "fuelType": "HYBRID",
+      "engineVolume": "1498",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Superb Sportline 1.5 TSI mHEV 150 PS DSG — Ağustos 2026 TR (TDI PS from dealer archive where Onedio said 265)",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/agustos-2026-skoda-fiyat-listesi-octavia-superb-elroq-scala-kamiq-karoq-fabia-ve-kodiaq-guncel-fiyatlar-1374164",
+          "title": "Skoda Ağustos 2026 fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.skoda.com.tr/fiyat-listesi",
+          "title": "Škoda Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://skodacakiroglu.com/skoda-fiyat-listesi/",
+          "title": "Skoda yetkili satıcı fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Superb IV TR MY2026",
+      "generationCode": "IV",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Skoda",
+      "series": "Superb",
+      "model": "1.5 TSI mHEV 150 PS",
+      "trim": "L&K Crystal",
+      "fuelType": "HYBRID",
+      "engineVolume": "1498",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Superb L&K Crystal 1.5 TSI mHEV 150 PS DSG — Ağustos 2026 TR (TDI PS from dealer archive where Onedio said 265)",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/agustos-2026-skoda-fiyat-listesi-octavia-superb-elroq-scala-kamiq-karoq-fabia-ve-kodiaq-guncel-fiyatlar-1374164",
+          "title": "Skoda Ağustos 2026 fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.skoda.com.tr/fiyat-listesi",
+          "title": "Škoda Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://skodacakiroglu.com/skoda-fiyat-listesi/",
+          "title": "Skoda yetkili satıcı fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Superb IV TR MY2026",
+      "generationCode": "IV",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "AWD",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "brand": "Skoda",
+      "series": "Superb",
+      "model": "2.0 TDI 4x4",
+      "trim": "L&K Crystal",
+      "fuelType": "DIESEL",
+      "engineVolume": "1968",
+      "powerHp": "193",
+      "transmission": "AUTOMATIC",
+      "confidence": "REVIEW_REQUIRED",
+      "notes": "Superb L&K Crystal 2.0 TDI 4x4 listed Aug 2026 but published PS conflict (265 vs 193) — needs official PDF confirm.",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/agustos-2026-skoda-fiyat-listesi-octavia-superb-elroq-scala-kamiq-karoq-fabia-ve-kodiaq-guncel-fiyatlar-1374164",
+          "title": "Skoda Ağustos 2026 fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.skoda.com.tr/fiyat-listesi",
+          "title": "Škoda Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://skodacakiroglu.com/skoda-fiyat-listesi/",
+          "title": "Skoda yetkili satıcı fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    }
+  ],
+  "researchNotes": {
+    "researchedSeriesPass": [
+      "Fabia",
+      "Octavia",
+      "Superb"
+    ],
+    "historicalArchivesIngested": [],
+    "reviewRequiredSeries": [
+      "Superb TDI power conflict"
+    ]
+  },
+  "completedAt": "2026-08-07T09:13:29.947Z"
+}

@@ -1,0 +1,481 @@
+{
+  "brand": "Hyundai",
+  "brandSlug": "hyundai",
+  "version": "2026.08-deep-hyundai-v1-current-tr",
+  "generatedAt": "2026-08-07T12:00:00.000Z",
+  "seriesCovered": [
+    "i20",
+    "Bayon",
+    "Tucson"
+  ],
+  "status": "COMPLETED",
+  "notes": "i20/Bayon/Tucson Aug 2026 rows from hyundai.com.tr-cited + dealer tables. GSR2C sub-variants collapsed to base trim.",
+  "configurations": [
+    {
+      "generation": "i20 BC3 TR MY2026",
+      "generationCode": "BC3",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Hyundai",
+      "series": "i20",
+      "model": "1.0 T-GDI 90 PS",
+      "trim": "Jump",
+      "fuelType": "GASOLINE",
+      "engineVolume": "998",
+      "powerHp": "90",
+      "transmission": "MANUAL",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "i20 1.0 T-GDI 90 PS Jump Manuel — Ağustos 2026 TR (GSR2C varyantları ayrı satır; base trim mapped)",
+      "sources": [
+        {
+          "url": "https://www.webtekno.com/agustos-2026-hyundai-fiyat-listesi-h221782.html",
+          "title": "Hyundai Ağustos 2026 fiyat listesi (detaylı versiyon tablosu)",
+          "date": "2026-08-05",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.hyundai.com/tr/tr/satis/fiyat-listesi.html",
+          "title": "Hyundai Motor Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://hyundai.inallar.com.tr/fiyat-listesi",
+          "title": "Hyundai yetkili satıcı fiyat listesi (Inallar)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "i20 BC3 TR MY2026",
+      "generationCode": "BC3",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Hyundai",
+      "series": "i20",
+      "model": "1.0 T-GDI 90 PS",
+      "trim": "Style",
+      "fuelType": "GASOLINE",
+      "engineVolume": "998",
+      "powerHp": "90",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "i20 1.0 T-GDI 90 PS Style DCT — Ağustos 2026 TR (GSR2C varyantları ayrı satır; base trim mapped)",
+      "sources": [
+        {
+          "url": "https://www.webtekno.com/agustos-2026-hyundai-fiyat-listesi-h221782.html",
+          "title": "Hyundai Ağustos 2026 fiyat listesi (detaylı versiyon tablosu)",
+          "date": "2026-08-05",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.hyundai.com/tr/tr/satis/fiyat-listesi.html",
+          "title": "Hyundai Motor Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://hyundai.inallar.com.tr/fiyat-listesi",
+          "title": "Hyundai yetkili satıcı fiyat listesi (Inallar)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "i20 BC3 TR MY2026",
+      "generationCode": "BC3",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Hyundai",
+      "series": "i20",
+      "model": "1.0 T-GDI 90 PS",
+      "trim": "Elite",
+      "fuelType": "GASOLINE",
+      "engineVolume": "998",
+      "powerHp": "90",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "i20 1.0 T-GDI 90 PS Elite DCT — Ağustos 2026 TR (GSR2C varyantları ayrı satır; base trim mapped)",
+      "sources": [
+        {
+          "url": "https://www.webtekno.com/agustos-2026-hyundai-fiyat-listesi-h221782.html",
+          "title": "Hyundai Ağustos 2026 fiyat listesi (detaylı versiyon tablosu)",
+          "date": "2026-08-05",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.hyundai.com/tr/tr/satis/fiyat-listesi.html",
+          "title": "Hyundai Motor Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://hyundai.inallar.com.tr/fiyat-listesi",
+          "title": "Hyundai yetkili satıcı fiyat listesi (Inallar)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Bayon TR MY2026",
+      "generationCode": "BC3 SUV",
+      "yearFrom": 2021,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Hyundai",
+      "series": "Bayon",
+      "model": "1.0 T-GDI 90 PS",
+      "trim": "Jump",
+      "fuelType": "GASOLINE",
+      "engineVolume": "998",
+      "powerHp": "90",
+      "transmission": "MANUAL",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Bayon 1.0 T-GDI 90 PS Jump Manuel — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.webtekno.com/agustos-2026-hyundai-fiyat-listesi-h221782.html",
+          "title": "Hyundai Ağustos 2026 fiyat listesi (detaylı versiyon tablosu)",
+          "date": "2026-08-05",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.hyundai.com/tr/tr/satis/fiyat-listesi.html",
+          "title": "Hyundai Motor Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://hyundai.inallar.com.tr/fiyat-listesi",
+          "title": "Hyundai yetkili satıcı fiyat listesi (Inallar)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Bayon TR MY2026",
+      "generationCode": "BC3 SUV",
+      "yearFrom": 2021,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Hyundai",
+      "series": "Bayon",
+      "model": "1.0 T-GDI 90 PS",
+      "trim": "Style",
+      "fuelType": "GASOLINE",
+      "engineVolume": "998",
+      "powerHp": "90",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Bayon 1.0 T-GDI 90 PS Style DCT — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.webtekno.com/agustos-2026-hyundai-fiyat-listesi-h221782.html",
+          "title": "Hyundai Ağustos 2026 fiyat listesi (detaylı versiyon tablosu)",
+          "date": "2026-08-05",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.hyundai.com/tr/tr/satis/fiyat-listesi.html",
+          "title": "Hyundai Motor Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://hyundai.inallar.com.tr/fiyat-listesi",
+          "title": "Hyundai yetkili satıcı fiyat listesi (Inallar)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Bayon TR MY2026",
+      "generationCode": "BC3 SUV",
+      "yearFrom": 2021,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Hyundai",
+      "series": "Bayon",
+      "model": "1.0 T-GDI 90 PS",
+      "trim": "Elite",
+      "fuelType": "GASOLINE",
+      "engineVolume": "998",
+      "powerHp": "90",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Bayon 1.0 T-GDI 90 PS Elite DCT — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.webtekno.com/agustos-2026-hyundai-fiyat-listesi-h221782.html",
+          "title": "Hyundai Ağustos 2026 fiyat listesi (detaylı versiyon tablosu)",
+          "date": "2026-08-05",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.hyundai.com/tr/tr/satis/fiyat-listesi.html",
+          "title": "Hyundai Motor Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://hyundai.inallar.com.tr/fiyat-listesi",
+          "title": "Hyundai yetkili satıcı fiyat listesi (Inallar)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Tucson NX4 TR MY2026",
+      "generationCode": "NX4",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Hyundai",
+      "series": "Tucson",
+      "model": "1.6 T-GDI 180 PS",
+      "trim": "Comfort",
+      "fuelType": "GASOLINE",
+      "engineVolume": "1598",
+      "powerHp": "180",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Tucson 1.6 T-GDI 180 PS 4x2 Comfort DCT — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.webtekno.com/agustos-2026-hyundai-fiyat-listesi-h221782.html",
+          "title": "Hyundai Ağustos 2026 fiyat listesi (detaylı versiyon tablosu)",
+          "date": "2026-08-05",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.hyundai.com/tr/tr/satis/fiyat-listesi.html",
+          "title": "Hyundai Motor Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://hyundai.inallar.com.tr/fiyat-listesi",
+          "title": "Hyundai yetkili satıcı fiyat listesi (Inallar)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Tucson NX4 TR MY2026",
+      "generationCode": "NX4",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Hyundai",
+      "series": "Tucson",
+      "model": "1.6 T-GDI 180 PS",
+      "trim": "Prime",
+      "fuelType": "GASOLINE",
+      "engineVolume": "1598",
+      "powerHp": "180",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Tucson 1.6 T-GDI 180 PS 4x2 Prime DCT — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.webtekno.com/agustos-2026-hyundai-fiyat-listesi-h221782.html",
+          "title": "Hyundai Ağustos 2026 fiyat listesi (detaylı versiyon tablosu)",
+          "date": "2026-08-05",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.hyundai.com/tr/tr/satis/fiyat-listesi.html",
+          "title": "Hyundai Motor Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://hyundai.inallar.com.tr/fiyat-listesi",
+          "title": "Hyundai yetkili satıcı fiyat listesi (Inallar)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Tucson NX4 TR MY2026",
+      "generationCode": "NX4",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Hyundai",
+      "series": "Tucson",
+      "model": "1.6 T-GDI 180 PS",
+      "trim": "Elite",
+      "fuelType": "GASOLINE",
+      "engineVolume": "1598",
+      "powerHp": "180",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Tucson 1.6 T-GDI 180 PS 4x2 Elite DCT — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.webtekno.com/agustos-2026-hyundai-fiyat-listesi-h221782.html",
+          "title": "Hyundai Ağustos 2026 fiyat listesi (detaylı versiyon tablosu)",
+          "date": "2026-08-05",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.hyundai.com/tr/tr/satis/fiyat-listesi.html",
+          "title": "Hyundai Motor Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://hyundai.inallar.com.tr/fiyat-listesi",
+          "title": "Hyundai yetkili satıcı fiyat listesi (Inallar)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Tucson NX4 TR MY2026",
+      "generationCode": "NX4",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "AWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Hyundai",
+      "series": "Tucson",
+      "model": "1.6 T-GDI 180 PS",
+      "trim": "Elite Plus",
+      "fuelType": "GASOLINE",
+      "engineVolume": "1598",
+      "powerHp": "180",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Tucson 1.6 T-GDI 180 PS 4x4 Elite Plus DCT — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.webtekno.com/agustos-2026-hyundai-fiyat-listesi-h221782.html",
+          "title": "Hyundai Ağustos 2026 fiyat listesi (detaylı versiyon tablosu)",
+          "date": "2026-08-05",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.hyundai.com/tr/tr/satis/fiyat-listesi.html",
+          "title": "Hyundai Motor Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://hyundai.inallar.com.tr/fiyat-listesi",
+          "title": "Hyundai yetkili satıcı fiyat listesi (Inallar)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Tucson NX4 TR MY2026",
+      "generationCode": "NX4",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "AWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Hyundai",
+      "series": "Tucson",
+      "model": "1.6 CRDi 136 PS",
+      "trim": "Comfort",
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "136",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Tucson 1.6 CRDi 136 PS 4x4 Comfort Sunroof DCT — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.webtekno.com/agustos-2026-hyundai-fiyat-listesi-h221782.html",
+          "title": "Hyundai Ağustos 2026 fiyat listesi (detaylı versiyon tablosu)",
+          "date": "2026-08-05",
+          "role": "primary"
+        },
+        {
+          "url": "https://hyundai.inallar.com.tr/fiyat-listesi",
+          "title": "Hyundai yetkili satıcı fiyat listesi (Inallar)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Tucson Hybrid NX4 TR MY2025",
+      "generationCode": "NX4 HEV",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Hyundai",
+      "series": "Tucson",
+      "model": "1.6 T-GDI 215 PS HEV",
+      "trim": "Elite",
+      "fuelType": "HYBRID",
+      "engineVolume": "1598",
+      "powerHp": "215",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Tucson Hibrit 1.6 T-GDI 215 PS HEV 4x2 Elite — Ağustos 2026 TR (2025 MY)",
+      "sources": [
+        {
+          "url": "https://www.webtekno.com/agustos-2026-hyundai-fiyat-listesi-h221782.html",
+          "title": "Hyundai Ağustos 2026 fiyat listesi (detaylı versiyon tablosu)",
+          "date": "2026-08-05",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.hyundai.com/tr/tr/satis/fiyat-listesi.html",
+          "title": "Hyundai Motor Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    }
+  ],
+  "researchNotes": {
+    "researchedSeriesPass": [
+      "i20",
+      "Bayon",
+      "Tucson"
+    ],
+    "historicalArchivesIngested": [],
+    "reviewRequiredSeries": []
+  },
+  "completedAt": "2026-08-07T09:13:29.896Z"
+}

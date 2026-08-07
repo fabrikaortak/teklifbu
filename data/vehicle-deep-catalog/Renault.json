@@ -1,0 +1,605 @@
+{
+  "brand": "Renault",
+  "brandSlug": "renault",
+  "version": "2026.08-deep-renault-v1-current-tr",
+  "generatedAt": "2026-08-07T09:31:47.415Z",
+  "seriesCovered": [
+    "Clio",
+    "Megane",
+    "Megane E-Tech",
+    "Captur",
+    "Symbol",
+    "Taliant",
+    "Kangoo"
+  ],
+  "status": "COMPLETED",
+  "notes": "Ağustos 2026 published TR price tables (multi-source) + official Renault TR site presence. Symbol/Taliant REVIEW stubs only. Model=engine/version; trim=package (Touch/Icon/Techno/evolution plus). engineVolume only when cm3 printed on sourced page.",
+  "configurations": [
+    {
+      "brand": "Renault",
+      "series": "Clio",
+      "model": "TCe 115",
+      "trim": "evolution plus",
+      "generation": "V Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ağustos 2026 TR published: Yeni Clio evolution plus TCe EDC 115 hp",
+      "sources": [
+        {
+          "url": "https://www.birgun.net/haber/renault-binek-araclar-agustos-2026-fiyat-listesi-guncel-727340",
+          "title": "Renault Ağustos 2026 binek fiyat listesi (Clio)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.gzt.com/teknoloji/renault-fiyat-listesi-agustos-2026-clio-r5-e-tech-captur-duster-megane-e-tech-austral-scenic-e-tech-rafale-megane-kampanyasi-fiyat-listesi-4247302",
+          "title": "Renault Ağustos 2026 fiyat listesi (Clio)",
+          "date": "2026-08-02",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.renault.com.tr/renault-fiyat-listeleri/binek-arac-fiyat-listesi.html",
+          "title": "Renault TR resmi binek fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "powerHp": "115"
+    },
+    {
+      "brand": "Renault",
+      "series": "Clio",
+      "model": "TCe 115",
+      "trim": "esprit alpine",
+      "generation": "V Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ağustos 2026 TR published: Yeni Clio esprit alpine TCe EDC 115 hp",
+      "sources": [
+        {
+          "url": "https://www.birgun.net/haber/renault-binek-araclar-agustos-2026-fiyat-listesi-guncel-727340",
+          "title": "Renault Ağustos 2026 binek fiyat listesi (Clio)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.gzt.com/teknoloji/renault-fiyat-listesi-agustos-2026-clio-r5-e-tech-captur-duster-megane-e-tech-austral-scenic-e-tech-rafale-megane-kampanyasi-fiyat-listesi-4247302",
+          "title": "Renault Ağustos 2026 fiyat listesi (Clio)",
+          "date": "2026-08-02",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.renault.com.tr/renault-fiyat-listeleri/binek-arac-fiyat-listesi.html",
+          "title": "Renault TR resmi binek fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "powerHp": "115"
+    },
+    {
+      "brand": "Renault",
+      "series": "Megane",
+      "model": "1.3 TCe 140",
+      "trim": "Touch",
+      "generation": "Sedan Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ağustos 2026 TR: Megane Sedan Touch 1.3 TCe 140 bg (manuel)",
+      "sources": [
+        {
+          "url": "https://www.birgun.net/haber/renault-binek-araclar-agustos-2026-fiyat-listesi-guncel-727340",
+          "title": "Renault Ağustos 2026 binek fiyat listesi (Megane Sedan)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.gzt.com/teknoloji/renault-fiyat-listesi-agustos-2026-clio-r5-e-tech-captur-duster-megane-e-tech-austral-scenic-e-tech-rafale-megane-kampanyasi-fiyat-listesi-4247302",
+          "title": "Renault Ağustos 2026 fiyat listesi (Megane Sedan)",
+          "date": "2026-08-02",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.renault.com.tr/renault-fiyat-listeleri/binek-arac-fiyat-listesi.html",
+          "title": "Renault TR resmi binek fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "GASOLINE",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "powerHp": "140"
+    },
+    {
+      "brand": "Renault",
+      "series": "Megane",
+      "model": "1.3 TCe 140",
+      "trim": "Icon",
+      "generation": "Sedan Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ağustos 2026 TR: Megane Sedan Icon 1.3 TCe EDC 140 bg",
+      "sources": [
+        {
+          "url": "https://www.birgun.net/haber/renault-binek-araclar-agustos-2026-fiyat-listesi-guncel-727340",
+          "title": "Renault Ağustos 2026 binek fiyat listesi (Megane Sedan)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.gzt.com/teknoloji/renault-fiyat-listesi-agustos-2026-clio-r5-e-tech-captur-duster-megane-e-tech-austral-scenic-e-tech-rafale-megane-kampanyasi-fiyat-listesi-4247302",
+          "title": "Renault Ağustos 2026 fiyat listesi (Megane Sedan)",
+          "date": "2026-08-02",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.renault.com.tr/renault-fiyat-listeleri/binek-arac-fiyat-listesi.html",
+          "title": "Renault TR resmi binek fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "powerHp": "140"
+    },
+    {
+      "brand": "Renault",
+      "series": "Megane",
+      "model": "1.5 Blue dCi 115",
+      "trim": "Icon",
+      "generation": "Sedan Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ağustos 2026 TR: Megane Sedan Icon 1.5 Blue dCi EDC 115 bg",
+      "sources": [
+        {
+          "url": "https://www.birgun.net/haber/renault-binek-araclar-agustos-2026-fiyat-listesi-guncel-727340",
+          "title": "Renault Ağustos 2026 binek fiyat listesi (Megane Sedan)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.gzt.com/teknoloji/renault-fiyat-listesi-agustos-2026-clio-r5-e-tech-captur-duster-megane-e-tech-austral-scenic-e-tech-rafale-megane-kampanyasi-fiyat-listesi-4247302",
+          "title": "Renault Ağustos 2026 fiyat listesi (Megane Sedan)",
+          "date": "2026-08-02",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.renault.com.tr/renault-fiyat-listeleri/binek-arac-fiyat-listesi.html",
+          "title": "Renault TR resmi binek fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "powerHp": "115"
+    },
+    {
+      "brand": "Renault",
+      "series": "Megane E-Tech",
+      "model": "EV60 220",
+      "trim": "Techno",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ağustos 2026 TR: Megane E-Tech Techno EV60 220 hp",
+      "sources": [
+        {
+          "url": "https://www.birgun.net/haber/renault-binek-araclar-agustos-2026-fiyat-listesi-guncel-727340",
+          "title": "Renault Ağustos 2026 (Megane E-Tech)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.gzt.com/teknoloji/renault-fiyat-listesi-agustos-2026-clio-r5-e-tech-captur-duster-megane-e-tech-austral-scenic-e-tech-rafale-megane-kampanyasi-fiyat-listesi-4247302",
+          "title": "Renault Ağustos 2026 (Megane E-Tech)",
+          "date": "2026-08-02",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.renault.com.tr/renault-fiyat-listeleri/binek-arac-fiyat-listesi.html",
+          "title": "Renault TR resmi binek fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "ELECTRIC",
+      "transmission": "AUTOMATIC",
+      "powerHp": "220"
+    },
+    {
+      "brand": "Renault",
+      "series": "Megane E-Tech",
+      "model": "EV60 220",
+      "trim": "Esprit Alpine",
+      "generation": "Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Ağustos 2026 TR: Megane E-Tech Esprit Alpine EV60 220 hp",
+      "sources": [
+        {
+          "url": "https://www.birgun.net/haber/renault-binek-araclar-agustos-2026-fiyat-listesi-guncel-727340",
+          "title": "Renault Ağustos 2026 (Megane E-Tech)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.gzt.com/teknoloji/renault-fiyat-listesi-agustos-2026-clio-r5-e-tech-captur-duster-megane-e-tech-austral-scenic-e-tech-rafale-megane-kampanyasi-fiyat-listesi-4247302",
+          "title": "Renault Ağustos 2026 (Megane E-Tech)",
+          "date": "2026-08-02",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.renault.com.tr/renault-fiyat-listeleri/binek-arac-fiyat-listesi.html",
+          "title": "Renault TR resmi binek fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "ELECTRIC",
+      "transmission": "AUTOMATIC",
+      "powerHp": "220"
+    },
+    {
+      "brand": "Renault",
+      "series": "Megane",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "notes": "Prior Megane hatch/Sport Tourer historical TR rows need archive ingest.",
+      "sources": [
+        {
+          "url": "https://www.renault.com.tr/renault-fiyat-listeleri/binek-arac-fiyat-listesi.html",
+          "title": "Renault Türkiye",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Renault",
+      "series": "Captur",
+      "model": "Mild Hybrid 140",
+      "trim": "Techno",
+      "generation": "II Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Ağustos 2026 TR: Captur techno mild hybrid EDC 140 hp",
+      "sources": [
+        {
+          "url": "https://www.birgun.net/haber/renault-binek-araclar-agustos-2026-fiyat-listesi-guncel-727340",
+          "title": "Renault Ağustos 2026 (Captur)",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.gzt.com/teknoloji/renault-fiyat-listesi-agustos-2026-clio-r5-e-tech-captur-duster-megane-e-tech-austral-scenic-e-tech-rafale-megane-kampanyasi-fiyat-listesi-4247302",
+          "title": "Renault Ağustos 2026 (Captur)",
+          "date": "2026-08-02",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.renault.com.tr/renault-fiyat-listeleri/binek-arac-fiyat-listesi.html",
+          "title": "Renault TR resmi binek fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "HYBRID",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "powerHp": "140"
+    },
+    {
+      "brand": "Renault",
+      "series": "Captur",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Prior Captur TCe/Icon Joy historical TR rows need archive ingest.",
+      "sources": [
+        {
+          "url": "https://www.renault.com.tr/renault-fiyat-listeleri/binek-arac-fiyat-listesi.html",
+          "title": "Renault Türkiye",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Renault",
+      "series": "Symbol",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "notes": "Symbol historically high-volume TR used market; not in Ağustos 2026 official/published binek lists reviewed — discrete archive rows required, not inventing.",
+      "sources": [
+        {
+          "url": "https://www.renault.com.tr/renault-fiyat-listeleri/binek-arac-fiyat-listesi.html",
+          "title": "Renault TR binek fiyat listesi (Symbol absent Aug 2026)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.birgun.net/haber/renault-binek-araclar-agustos-2026-fiyat-listesi-guncel-727340",
+          "title": "Renault Ağustos 2026 listesi (Symbol yok)",
+          "date": "2026-08-04",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Renault",
+      "series": "Taliant",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "notes": "Taliant TR successor to Symbol researched; not in Ağustos 2026 published binek lists — need official archive PDF rows before adding versions.",
+      "sources": [
+        {
+          "url": "https://www.renault.com.tr/renault-fiyat-listeleri/binek-arac-fiyat-listesi.html",
+          "title": "Renault TR binek fiyat listesi (Taliant absent Aug 2026)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.gazetegercek.com.tr/renault-agustos-ayi-fiyat-listesini-acikladi-yeni-clio-duster-boreal-megane-ne-kadar/233148",
+          "title": "Renault Ağustos 2026 duyurusu",
+          "date": "2026-08-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Renault",
+      "series": "Kangoo",
+      "model": "1.5 115",
+      "trim": "Van",
+      "generation": "III Current TR MY",
+      "generationCode": "",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Minivan & Panelvan",
+      "notes": "Official TR Kangoo Van donanım page: 1.461 cc / 115 bg / 6-speed manual; Blue dCi marketing designation not printed on this page — model kept as sourced 1.5 115",
+      "sources": [
+        {
+          "url": "https://ticari.renault.com.tr/ticari-araclar/kangoo-van/donanim.html?bodyTypeCode=PT1261_panelvan",
+          "title": "Renault Ticari Kangoo Van donanımlar (115 bg / 1461 cc)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://ticari.renault.com.tr/",
+          "title": "Renault Ticari (Kangoo Van başlangıç fiyatı listeleniyor)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.gunerler.com.tr/renault-fiyatlari",
+          "title": "Yetkili satıcı Kangoo Van/Multix başlangıç fiyatları",
+          "date": "2026-01-01",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "DIESEL",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "engineVolume": "1461",
+      "powerHp": "115"
+    },
+    {
+      "brand": "Renault",
+      "series": "Kangoo",
+      "model": "",
+      "trim": "Multix",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": true,
+      "category": "Minivan & Panelvan",
+      "notes": "Kangoo Multix listed on official TR ticari site and dealer price pages; discrete engine/trim price-list rows not captured with full version naming this pass.",
+      "sources": [
+        {
+          "url": "https://ticari.renault.com.tr/",
+          "title": "Renault Ticari (Kangoo Multix)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.gunerler.com.tr/renault-fiyatlari",
+          "title": "Yetkili satıcı Kangoo Multix",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Renault",
+      "series": "Clio",
+      "model": "1.0 TCe X-Tronic 90 bg",
+      "trim": "Icon",
+      "generation": "Clio V",
+      "generationCode": "BV",
+      "yearFrom": 2023,
+      "yearTo": 2023,
+      "fuelType": "GASOLINE",
+      "engineVolume": "999",
+      "powerHp": "90",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Mart/Eylül 2023 Renault TR: Icon 1.0 TCe X-Tronic 90 bg",
+      "sources": [
+        {
+          "url": "https://www.arabahabercisi.com/renault-clio-fiyat-listesi-mart-2023/",
+          "title": "Renault Clio Mart 2023 (Renault Türkiye)",
+          "date": "2023-03-12",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.arabahabercisi.com/renault-clio-fiyat-listesi-eylul-2023/",
+          "title": "Renault Clio Eylül 2023 (Renault Türkiye)",
+          "date": "2023-09-15",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Renault",
+      "series": "Clio",
+      "model": "1.0 TCe X-Tronic 90 bg",
+      "trim": "Touch",
+      "generation": "Clio V",
+      "generationCode": "BV",
+      "yearFrom": 2023,
+      "yearTo": 2023,
+      "fuelType": "GASOLINE",
+      "engineVolume": "999",
+      "powerHp": "90",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "sources": [
+        {
+          "url": "https://www.arabahabercisi.com/renault-clio-fiyat-listesi-mart-2023/",
+          "title": "Renault Clio Mart 2023 (Renault Türkiye)",
+          "date": "2023-03-12",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.arabahabercisi.com/renault-clio-fiyat-listesi-eylul-2023/",
+          "title": "Renault Clio Eylül 2023 (Renault Türkiye)",
+          "date": "2023-09-15",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Renault",
+      "series": "Clio",
+      "model": "1.0 TCe 90 bg",
+      "trim": "Touch",
+      "generation": "Clio V",
+      "generationCode": "BV",
+      "yearFrom": 2023,
+      "yearTo": 2023,
+      "fuelType": "GASOLINE",
+      "powerHp": "90",
+      "transmission": "MANUAL",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "sources": [
+        {
+          "url": "https://www.arabahabercisi.com/renault-clio-fiyat-listesi-mart-2023/",
+          "title": "Renault Clio Mart 2023 (Renault Türkiye)",
+          "date": "2023-03-12",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.arabahabercisi.com/renault-clio-fiyat-listesi-eylul-2023/",
+          "title": "Renault Clio Eylül 2023 (Renault Türkiye)",
+          "date": "2023-09-15",
+          "role": "secondary"
+        }
+      ]
+    }
+  ],
+  "researchNotes": {
+    "researchedSeriesPass": [
+      "Clio",
+      "Megane",
+      "Megane E-Tech",
+      "Captur",
+      "Symbol",
+      "Taliant",
+      "Kangoo"
+    ],
+    "primarySources": [
+      "https://www.birgun.net/haber/renault-binek-araclar-agustos-2026-fiyat-listesi-guncel-727340",
+      "https://www.gzt.com/teknoloji/renault-fiyat-listesi-agustos-2026-clio-r5-e-tech-captur-duster-megane-e-tech-austral-scenic-e-tech-rafale-megane-kampanyasi-fiyat-listesi-4247302",
+      "https://www.renault.com.tr/renault-fiyat-listeleri/binek-arac-fiyat-listesi.html",
+      "https://ticari.renault.com.tr/ticari-araclar/kangoo-van/donanim.html?bodyTypeCode=PT1261_panelvan",
+      "https://ticari.renault.com.tr/"
+    ],
+    "secondarySources": [
+      "https://www.gazetegercek.com.tr/renault-agustos-ayi-fiyat-listesini-acikladi-yeni-clio-duster-boreal-megane-ne-kadar/233148",
+      "https://www.gunerler.com.tr/renault-fiyatlari"
+    ],
+    "doNotInvent": true
+  },
+  "completedAt": "2026-08-07T09:13:29.942Z"
+}

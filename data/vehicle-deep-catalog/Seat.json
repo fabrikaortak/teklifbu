@@ -1,0 +1,196 @@
+{
+  "brand": "Seat",
+  "brandSlug": "seat",
+  "version": "2026.08-deep-seat-v1-current-tr",
+  "generatedAt": "2026-08-07T12:00:00.000Z",
+  "seriesCovered": [
+    "Ibiza",
+    "Leon",
+    "Ateca"
+  ],
+  "status": "COMPLETED",
+  "notes": "Ibiza/Leon/Ateca from SEAT Türkiye-cited Aug/Jul 2026 price tables.",
+  "configurations": [
+    {
+      "generation": "Ibiza VI TR MY2026",
+      "generationCode": "KJ",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Seat",
+      "series": "Ibiza",
+      "model": "1.0 TSI 116 PS",
+      "trim": "Style Plus",
+      "fuelType": "GASOLINE",
+      "engineVolume": "999",
+      "powerHp": "116",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Yeni Ibiza 1.0 TSI 116 PS Style Plus DSG — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.webtekno.com/agustos-2026-seat-fiyat-listesi-h221710.html",
+          "title": "SEAT Ağustos 2026 fiyat listesi (SEAT Türkiye kaynaklı)",
+          "date": "2026-08-05",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/temmuz-2026-seat-fiyat-listesi-iste-seat-ibiza-leon-arona-ve-ateca-guncel-fiyatlari-1369727",
+          "title": "SEAT Temmuz 2026 fiyat listesi",
+          "date": "2026-07-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Leon IV TR MY2026",
+      "generationCode": "KL",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Seat",
+      "series": "Leon",
+      "model": "1.5 eTSI 116 PS mHEV",
+      "trim": "Style",
+      "fuelType": "HYBRID",
+      "engineVolume": "1498",
+      "powerHp": "116",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Leon 1.5 eTSI 116 PS mHEV Style DSG — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.webtekno.com/agustos-2026-seat-fiyat-listesi-h221710.html",
+          "title": "SEAT Ağustos 2026 fiyat listesi (SEAT Türkiye kaynaklı)",
+          "date": "2026-08-05",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/temmuz-2026-seat-fiyat-listesi-iste-seat-ibiza-leon-arona-ve-ateca-guncel-fiyatlari-1369727",
+          "title": "SEAT Temmuz 2026 fiyat listesi",
+          "date": "2026-07-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Leon IV eHybrid TR MY2025",
+      "generationCode": "KL PHEV",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Seat",
+      "series": "Leon",
+      "model": "1.5 eHybrid 204 PS",
+      "trim": "FR",
+      "fuelType": "PLUGIN_HYBRID",
+      "engineVolume": "1498",
+      "powerHp": "204",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Leon 1.5 eHybrid 204 PS FR DSG — Temmuz 2026 TR (2025 MY)",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/temmuz-2026-seat-fiyat-listesi-iste-seat-ibiza-leon-arona-ve-ateca-guncel-fiyatlari-1369727",
+          "title": "SEAT Temmuz 2026 fiyat listesi",
+          "date": "2026-07-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.webtekno.com/agustos-2026-seat-fiyat-listesi-h221710.html",
+          "title": "SEAT Ağustos 2026 fiyat listesi (SEAT Türkiye kaynaklı)",
+          "date": "2026-08-05",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "generation": "Ateca TR MY2026",
+      "generationCode": "Ateca",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Seat",
+      "series": "Ateca",
+      "model": "1.5 EcoTSI ACT 150 PS",
+      "trim": "Style Plus",
+      "fuelType": "GASOLINE",
+      "engineVolume": "1498",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Ateca 1.5 EcoTSI ACT 150 PS Style Plus DSG — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.webtekno.com/agustos-2026-seat-fiyat-listesi-h221710.html",
+          "title": "SEAT Ağustos 2026 fiyat listesi (SEAT Türkiye kaynaklı)",
+          "date": "2026-08-05",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/temmuz-2026-seat-fiyat-listesi-iste-seat-ibiza-leon-arona-ve-ateca-guncel-fiyatlari-1369727",
+          "title": "SEAT Temmuz 2026 fiyat listesi",
+          "date": "2026-07-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.webtekno.com/haziran-2026-seat-fiyat-listesi-h217944.html",
+          "title": "SEAT Haziran 2026 fiyat listesi (FR Dark Edition satırları)",
+          "date": "2026-06-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Ateca TR MY2025",
+      "generationCode": "Ateca",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Seat",
+      "series": "Ateca",
+      "model": "1.5 EcoTSI ACT 150 PS",
+      "trim": "FR Dark Edition",
+      "fuelType": "GASOLINE",
+      "engineVolume": "1498",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Ateca 1.5 EcoTSI ACT 150 PS FR Dark Edition DSG — Haziran/Temmuz 2026 TR (2025 MY)",
+      "sources": [
+        {
+          "url": "https://www.webtekno.com/haziran-2026-seat-fiyat-listesi-h217944.html",
+          "title": "SEAT Haziran 2026 fiyat listesi (FR Dark Edition satırları)",
+          "date": "2026-06-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://onedio.com/haber/temmuz-2026-seat-fiyat-listesi-iste-seat-ibiza-leon-arona-ve-ateca-guncel-fiyatlari-1369727",
+          "title": "SEAT Temmuz 2026 fiyat listesi",
+          "date": "2026-07-01",
+          "role": "secondary"
+        }
+      ]
+    }
+  ],
+  "researchNotes": {
+    "researchedSeriesPass": [
+      "Ibiza",
+      "Leon",
+      "Ateca"
+    ],
+    "historicalArchivesIngested": [],
+    "reviewRequiredSeries": []
+  },
+  "completedAt": "2026-08-07T09:13:29.945Z"
+}

@@ -1,0 +1,296 @@
+{
+  "brand": "Opel",
+  "brandSlug": "opel",
+  "version": "2026.08-deep-opel-v1-current-tr",
+  "generatedAt": "2026-08-07T12:00:00.000Z",
+  "seriesCovered": [
+    "Corsa",
+    "Astra",
+    "Crossland"
+  ],
+  "status": "COMPLETED",
+  "notes": "Official Opel TR PDF 7.8.2026 for Corsa/Astra. Crossland discontinued from current list — historical REVIEW.",
+  "configurations": [
+    {
+      "generation": "Corsa F TR MY2026",
+      "generationCode": "F",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Opel",
+      "series": "Corsa",
+      "model": "1.2 100 HP",
+      "trim": "Edition",
+      "fuelType": "GASOLINE",
+      "engineVolume": "1199",
+      "powerHp": "100",
+      "transmission": "MANUAL",
+      "confidence": "VERIFIED_OFFICIAL",
+      "notes": "Corsa 1.2 100 HP MT6 Edition — resmi PDF 7.8.2026",
+      "sources": [
+        {
+          "url": "https://fiyatlisteleri.opel.com.tr/Assets/files/Opel_Tum_Modeller_Fiyat_Listesi7.8.2026.pdf",
+          "title": "Opel resmi Ağustos 2026 tüm modeller fiyat PDF (7.8.2026)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://fiyatlisteleri.opel.com.tr/arac/corsa",
+          "title": "Opel Corsa resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://fiyatlisteleri.opel.com.tr/tum-araclar",
+          "title": "Opel resmi fiyat listeleri (tüm araçlar)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Corsa F Hybrid TR MY2026",
+      "generationCode": "F",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Opel",
+      "series": "Corsa",
+      "model": "1.2 Hybrid 110 (100 HP)",
+      "trim": "Edition",
+      "fuelType": "HYBRID",
+      "engineVolume": "1199",
+      "powerHp": "110",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_OFFICIAL",
+      "notes": "Corsa Hybrid 1.2 110 e-DCT6 Edition — resmi PDF (ICE 100 + e-motor 21)",
+      "sources": [
+        {
+          "url": "https://fiyatlisteleri.opel.com.tr/Assets/files/Opel_Tum_Modeller_Fiyat_Listesi7.8.2026.pdf",
+          "title": "Opel resmi Ağustos 2026 tüm modeller fiyat PDF (7.8.2026)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://fiyatlisteleri.opel.com.tr/arac/corsa",
+          "title": "Opel Corsa resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://fiyatlisteleri.opel.com.tr/tum-araclar",
+          "title": "Opel resmi fiyat listeleri (tüm araçlar)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Corsa F Hybrid TR MY2026",
+      "generationCode": "F",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Opel",
+      "series": "Corsa",
+      "model": "1.2 Hybrid 145 (136 HP)",
+      "trim": "GS",
+      "fuelType": "HYBRID",
+      "engineVolume": "1199",
+      "powerHp": "145",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_OFFICIAL",
+      "notes": "Corsa Hybrid 1.2 145 e-DCT6 GS — resmi PDF (ICE 136 + e-motor 21)",
+      "sources": [
+        {
+          "url": "https://fiyatlisteleri.opel.com.tr/Assets/files/Opel_Tum_Modeller_Fiyat_Listesi7.8.2026.pdf",
+          "title": "Opel resmi Ağustos 2026 tüm modeller fiyat PDF (7.8.2026)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://fiyatlisteleri.opel.com.tr/arac/corsa",
+          "title": "Opel Corsa resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://fiyatlisteleri.opel.com.tr/tum-araclar",
+          "title": "Opel resmi fiyat listeleri (tüm araçlar)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Corsa-e TR MY2026",
+      "generationCode": "F EV",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Opel",
+      "series": "Corsa",
+      "model": "100 kW",
+      "trim": "GS",
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "136",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_OFFICIAL",
+      "notes": "Corsa Elektrik 100 kW GS — resmi PDF 7.8.2026",
+      "sources": [
+        {
+          "url": "https://fiyatlisteleri.opel.com.tr/Assets/files/Opel_Tum_Modeller_Fiyat_Listesi7.8.2026.pdf",
+          "title": "Opel resmi Ağustos 2026 tüm modeller fiyat PDF (7.8.2026)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://fiyatlisteleri.opel.com.tr/tum-araclar",
+          "title": "Opel resmi fiyat listeleri (tüm araçlar)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.isinolsa.com/opel-agustos-2026-fiyat-listesi-corsada-145-bin-fronterada-350-bin-indirim/",
+          "title": "Opel Ağustos 2026 fiyat tablosu özeti",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Astra L TR MY2026",
+      "generationCode": "L",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Opel",
+      "series": "Astra",
+      "model": "1.5 130 HP Dizel",
+      "trim": "Edition",
+      "fuelType": "DIESEL",
+      "engineVolume": "1499",
+      "powerHp": "130",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_OFFICIAL",
+      "notes": "Yeni Astra 1.5 130 HP Dizel AT8 Edition — resmi PDF 7.8.2026",
+      "sources": [
+        {
+          "url": "https://fiyatlisteleri.opel.com.tr/Assets/files/Opel_Tum_Modeller_Fiyat_Listesi7.8.2026.pdf",
+          "title": "Opel resmi Ağustos 2026 tüm modeller fiyat PDF (7.8.2026)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://fiyatlisteleri.opel.com.tr/tum-araclar",
+          "title": "Opel resmi fiyat listeleri (tüm araçlar)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.isinolsa.com/opel-agustos-2026-fiyat-listesi-corsada-145-bin-fronterada-350-bin-indirim/",
+          "title": "Opel Ağustos 2026 fiyat tablosu özeti",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Astra L TR MY2026",
+      "generationCode": "L",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Opel",
+      "series": "Astra",
+      "model": "1.5 130 HP Dizel",
+      "trim": "GS",
+      "fuelType": "DIESEL",
+      "engineVolume": "1499",
+      "powerHp": "130",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_OFFICIAL",
+      "notes": "Yeni Astra 1.5 130 HP Dizel AT8 GS — resmi PDF 7.8.2026",
+      "sources": [
+        {
+          "url": "https://fiyatlisteleri.opel.com.tr/Assets/files/Opel_Tum_Modeller_Fiyat_Listesi7.8.2026.pdf",
+          "title": "Opel resmi Ağustos 2026 tüm modeller fiyat PDF (7.8.2026)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://fiyatlisteleri.opel.com.tr/tum-araclar",
+          "title": "Opel resmi fiyat listeleri (tüm araçlar)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.isinolsa.com/opel-agustos-2026-fiyat-listesi-corsada-145-bin-fronterada-350-bin-indirim/",
+          "title": "Opel Ağustos 2026 fiyat tablosu özeti",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "driveType": "",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "brand": "Opel",
+      "series": "Crossland",
+      "model": "",
+      "trim": "",
+      "fuelType": "",
+      "transmission": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "confidence": "REVIEW_REQUIRED",
+      "notes": "Crossland not on Aug 2026 official Opel TR price list (replaced by Frontera). Historical Crossland TR archives pending.",
+      "sources": [
+        {
+          "url": "https://fiyatlisteleri.opel.com.tr/Assets/files/Opel_Tum_Modeller_Fiyat_Listesi7.8.2026.pdf",
+          "title": "Opel resmi Ağustos 2026 tüm modeller fiyat PDF (7.8.2026)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://fiyatlisteleri.opel.com.tr/tum-araclar",
+          "title": "Opel resmi fiyat listeleri (tüm araçlar)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    }
+  ],
+  "researchNotes": {
+    "researchedSeriesPass": [
+      "Corsa",
+      "Astra",
+      "Crossland"
+    ],
+    "historicalArchivesIngested": [
+      "2026-08-07 Opel TR PDF"
+    ],
+    "reviewRequiredSeries": [
+      "Crossland"
+    ]
+  },
+  "completedAt": "2026-08-07T09:13:29.934Z"
+}

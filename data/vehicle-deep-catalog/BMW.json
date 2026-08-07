@@ -1,8 +1,8 @@
 {
   "brand": "BMW",
   "brandSlug": "bmw",
-  "version": "2026.08-deep-bmw-v2-current-plus-5series-history",
-  "generatedAt": "2026-08-07T08:24:33.035Z",
+  "version": "2026.08-deep-bmw-v3b",
+  "generatedAt": "2026-08-07T08:55:12.451Z",
   "seriesCovered": [
     "1 Serisi",
     "2 Serisi",
@@ -10,13 +10,20 @@
     "3 Serisi",
     "4 Serisi",
     "5 Serisi",
+    "6 Serisi",
     "7 Serisi",
+    "8 Serisi",
+    "M Serisi",
     "X1",
     "X2",
     "X3",
+    "X4",
     "X5",
     "X6",
     "X7",
+    "Z Serisi",
+    "i Serisi",
+    "i3",
     "i4",
     "i5",
     "i7",
@@ -25,7 +32,7 @@
     "iX2",
     "iX3"
   ],
-  "status": "IN_PROGRESS",
+  "status": "COMPLETED",
   "configurations": [
     {
       "brand": "BMW",
@@ -2237,6 +2244,1835 @@
           "role": "secondary"
         }
       ]
+    },
+    {
+      "brand": "BMW",
+      "series": "1 Serisi",
+      "model": "118i",
+      "trim": "Sport Line",
+      "generation": "F40 First Edition",
+      "generationCode": "F40",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1499",
+      "powerHp": "140",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/bmw-fiyat-listesi-kasim-2019.html",
+          "title": "BMW Türkiye Kasım 2019 perakende fiyat listesi (arşiv)",
+          "date": "2019-11-06",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2019-11-06",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "1 Serisi",
+      "model": "118i",
+      "trim": "M Sport",
+      "generation": "F40 First Edition",
+      "generationCode": "F40",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1499",
+      "powerHp": "140",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/bmw-fiyat-listesi-kasim-2019.html",
+          "title": "BMW Türkiye Kasım 2019 perakende fiyat listesi (arşiv)",
+          "date": "2019-11-06",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2019-11-06",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "1 Serisi",
+      "model": "116d",
+      "trim": "Sport Line",
+      "generation": "F40 First Edition",
+      "generationCode": "F40",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1496",
+      "powerHp": "116",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/bmw-fiyat-listesi-kasim-2019.html",
+          "title": "BMW Türkiye Kasım 2019 perakende fiyat listesi (arşiv)",
+          "date": "2019-11-06",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2019-11-06",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "1 Serisi",
+      "model": "116d",
+      "trim": "M Sport",
+      "generation": "F40 First Edition",
+      "generationCode": "F40",
+      "yearFrom": 2019,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "engineVolume": "1496",
+      "powerHp": "116",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/bmw-fiyat-listesi-kasim-2019.html",
+          "title": "BMW Türkiye Kasım 2019 perakende fiyat listesi (arşiv)",
+          "date": "2019-11-06",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2019-11-06",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "3 Serisi",
+      "model": "320i",
+      "trim": "Sport Line",
+      "generation": "G20 First Edition",
+      "generationCode": "G20",
+      "yearFrom": 2019,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1598",
+      "powerHp": "170",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/yeni-bmw-3-serisi-g20-fiyat-listesi-2019.html",
+          "title": "BMW 3 Serisi G20 TR fiyat listesi 2019",
+          "date": "2019-08-01",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2019-08-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "3 Serisi",
+      "model": "320i",
+      "trim": "Luxury Line",
+      "generation": "G20 First Edition",
+      "generationCode": "G20",
+      "yearFrom": 2019,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1598",
+      "powerHp": "170",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/yeni-bmw-3-serisi-g20-fiyat-listesi-2019.html",
+          "title": "BMW 3 Serisi G20 TR fiyat listesi 2019",
+          "date": "2019-08-01",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2019-08-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "3 Serisi",
+      "model": "320i",
+      "trim": "M Sport",
+      "generation": "G20 First Edition",
+      "generationCode": "G20",
+      "yearFrom": 2019,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1598",
+      "powerHp": "170",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/yeni-bmw-3-serisi-g20-fiyat-listesi-2019.html",
+          "title": "BMW 3 Serisi G20 TR fiyat listesi 2019",
+          "date": "2019-08-01",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2019-08-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "6 Serisi",
+      "model": "620d xDrive Gran Turismo",
+      "trim": "Luxury Line",
+      "generation": "G32",
+      "generationCode": "G32",
+      "yearFrom": 2018,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "engineVolume": "1995",
+      "powerHp": "190",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/bmw-fiyat-listesi-kasim-2019.html",
+          "title": "BMW Türkiye Kasım 2019 perakende fiyat listesi (arşiv)",
+          "date": "2019-11-06",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2019-11-06",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "6 Serisi",
+      "model": "620d xDrive Gran Turismo",
+      "trim": "M Sport",
+      "generation": "G32",
+      "generationCode": "G32",
+      "yearFrom": 2018,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "engineVolume": "1995",
+      "powerHp": "190",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/bmw-fiyat-listesi-kasim-2019.html",
+          "title": "BMW Türkiye Kasım 2019 perakende fiyat listesi (arşiv)",
+          "date": "2019-11-06",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2019-11-06",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "6 Serisi",
+      "model": "630i Gran Turismo",
+      "trim": "M Sport",
+      "generation": "G32",
+      "generationCode": "G32",
+      "yearFrom": 2018,
+      "yearTo": 2019,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1998",
+      "powerHp": "258",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/bmw-fiyat-listesi-kasim-2019.html",
+          "title": "BMW Türkiye Kasım 2019 perakende fiyat listesi (arşiv)",
+          "date": "2019-11-06",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2019-11-06",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "8 Serisi",
+      "model": "840i xDrive Coupé",
+      "trim": "M Sport",
+      "generation": "G15",
+      "generationCode": "G15",
+      "yearFrom": 2019,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "2998",
+      "powerHp": "340",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/bmw-fiyat-listesi-kasim-2019.html",
+          "title": "BMW Türkiye Kasım 2019 perakende fiyat listesi (arşiv)",
+          "date": "2019-11-06",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2019-11-06",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "8 Serisi",
+      "model": "840i xDrive Coupé",
+      "trim": "M Technic",
+      "generation": "G15",
+      "generationCode": "G15",
+      "yearFrom": 2019,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "2998",
+      "powerHp": "340",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/bmw-fiyat-listesi-kasim-2019.html",
+          "title": "BMW Türkiye Kasım 2019 perakende fiyat listesi (arşiv)",
+          "date": "2019-11-06",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2019-11-06",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "8 Serisi",
+      "model": "840i xDrive Cabrio",
+      "trim": "M Sport",
+      "generation": "G14",
+      "generationCode": "G14",
+      "yearFrom": 2019,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "2998",
+      "powerHp": "340",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/bmw-fiyat-listesi-kasim-2019.html",
+          "title": "BMW Türkiye Kasım 2019 perakende fiyat listesi (arşiv)",
+          "date": "2019-11-06",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2019-11-06",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "8 Serisi",
+      "model": "840i xDrive Cabrio",
+      "trim": "M Technic",
+      "generation": "G14",
+      "generationCode": "G14",
+      "yearFrom": 2019,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": "2998",
+      "powerHp": "340",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/bmw-fiyat-listesi-kasim-2019.html",
+          "title": "BMW Türkiye Kasım 2019 perakende fiyat listesi (arşiv)",
+          "date": "2019-11-06",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2019-11-06",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "8 Serisi",
+      "model": "840d xDrive Gran Coupé",
+      "trim": "M Sport",
+      "generation": "G16",
+      "generationCode": "G16",
+      "yearFrom": 2019,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "engineVolume": "2993",
+      "powerHp": "320",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Arşiv satırında 340 HP yazılmış; BMW 840d xDrive resmi 320 HP — REVIEW notu",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/bmw-fiyat-listesi-kasim-2019.html",
+          "title": "BMW Türkiye Kasım 2019 perakende fiyat listesi (arşiv)",
+          "date": "2019-11-06",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2019-11-06",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "8 Serisi",
+      "model": "840d xDrive Gran Coupé",
+      "trim": "M Technic",
+      "generation": "G16",
+      "generationCode": "G16",
+      "yearFrom": 2019,
+      "yearTo": 2020,
+      "fuelType": "DIESEL",
+      "engineVolume": "2993",
+      "powerHp": "320",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/bmw-fiyat-listesi-kasim-2019.html",
+          "title": "BMW Türkiye Kasım 2019 perakende fiyat listesi (arşiv)",
+          "date": "2019-11-06",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2019-11-06",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "1 Serisi",
+      "model": "118i",
+      "trim": "Sport Line",
+      "generation": "F40",
+      "generationCode": "F40",
+      "yearFrom": 2020,
+      "yearTo": 2021,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1499",
+      "powerHp": "140",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://arabavs.com/bmw-nisan-2020-guncel-fiyat-listesini-yayinladi.html",
+          "title": "BMW Türkiye Nisan 2020 perakende fiyat listesi (arşiv)",
+          "date": "2020-04-03",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2020-04-03",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "1 Serisi",
+      "model": "118i",
+      "trim": "M Sport",
+      "generation": "F40",
+      "generationCode": "F40",
+      "yearFrom": 2020,
+      "yearTo": 2021,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1499",
+      "powerHp": "140",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://arabavs.com/bmw-nisan-2020-guncel-fiyat-listesini-yayinladi.html",
+          "title": "BMW Türkiye Nisan 2020 perakende fiyat listesi (arşiv)",
+          "date": "2020-04-03",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2020-04-03",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "1 Serisi",
+      "model": "116d",
+      "trim": "Sport Line",
+      "generation": "F40",
+      "generationCode": "F40",
+      "yearFrom": 2020,
+      "yearTo": 2021,
+      "fuelType": "DIESEL",
+      "engineVolume": "1496",
+      "powerHp": "116",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://arabavs.com/bmw-nisan-2020-guncel-fiyat-listesini-yayinladi.html",
+          "title": "BMW Türkiye Nisan 2020 perakende fiyat listesi (arşiv)",
+          "date": "2020-04-03",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2020-04-03",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "1 Serisi",
+      "model": "116d",
+      "trim": "M Sport",
+      "generation": "F40",
+      "generationCode": "F40",
+      "yearFrom": 2020,
+      "yearTo": 2021,
+      "fuelType": "DIESEL",
+      "engineVolume": "1496",
+      "powerHp": "116",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://arabavs.com/bmw-nisan-2020-guncel-fiyat-listesini-yayinladi.html",
+          "title": "BMW Türkiye Nisan 2020 perakende fiyat listesi (arşiv)",
+          "date": "2020-04-03",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2020-04-03",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "2 Serisi",
+      "model": "218i Gran Coupe",
+      "trim": "Sport Line",
+      "generation": "F44",
+      "generationCode": "F44",
+      "yearFrom": 2020,
+      "yearTo": 2023,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1499",
+      "powerHp": "140",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://arabavs.com/bmw-nisan-2020-guncel-fiyat-listesini-yayinladi.html",
+          "title": "BMW Türkiye Nisan 2020 perakende fiyat listesi (arşiv)",
+          "date": "2020-04-03",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2020-04-03",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "2 Serisi",
+      "model": "218i Gran Coupe",
+      "trim": "Luxury Line",
+      "generation": "F44",
+      "generationCode": "F44",
+      "yearFrom": 2020,
+      "yearTo": 2023,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1499",
+      "powerHp": "140",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://arabavs.com/bmw-nisan-2020-guncel-fiyat-listesini-yayinladi.html",
+          "title": "BMW Türkiye Nisan 2020 perakende fiyat listesi (arşiv)",
+          "date": "2020-04-03",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2020-04-03",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "2 Serisi",
+      "model": "218i Gran Coupe",
+      "trim": "M Sport",
+      "generation": "F44",
+      "generationCode": "F44",
+      "yearFrom": 2020,
+      "yearTo": 2023,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1499",
+      "powerHp": "140",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://arabavs.com/bmw-nisan-2020-guncel-fiyat-listesini-yayinladi.html",
+          "title": "BMW Türkiye Nisan 2020 perakende fiyat listesi (arşiv)",
+          "date": "2020-04-03",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2020-04-03",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "2 Serisi",
+      "model": "216d Gran Coupe",
+      "trim": "Sport Line",
+      "generation": "F44",
+      "generationCode": "F44",
+      "yearFrom": 2020,
+      "yearTo": 2023,
+      "fuelType": "DIESEL",
+      "engineVolume": "1496",
+      "powerHp": "116",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://arabavs.com/bmw-nisan-2020-guncel-fiyat-listesini-yayinladi.html",
+          "title": "BMW Türkiye Nisan 2020 perakende fiyat listesi (arşiv)",
+          "date": "2020-04-03",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2020-04-03",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "2 Serisi",
+      "model": "216d Gran Coupe",
+      "trim": "Luxury Line",
+      "generation": "F44",
+      "generationCode": "F44",
+      "yearFrom": 2020,
+      "yearTo": 2023,
+      "fuelType": "DIESEL",
+      "engineVolume": "1496",
+      "powerHp": "116",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://arabavs.com/bmw-nisan-2020-guncel-fiyat-listesini-yayinladi.html",
+          "title": "BMW Türkiye Nisan 2020 perakende fiyat listesi (arşiv)",
+          "date": "2020-04-03",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2020-04-03",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "2 Serisi",
+      "model": "216d Gran Coupe",
+      "trim": "M Sport",
+      "generation": "F44",
+      "generationCode": "F44",
+      "yearFrom": 2020,
+      "yearTo": 2023,
+      "fuelType": "DIESEL",
+      "engineVolume": "1496",
+      "powerHp": "116",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://arabavs.com/bmw-nisan-2020-guncel-fiyat-listesini-yayinladi.html",
+          "title": "BMW Türkiye Nisan 2020 perakende fiyat listesi (arşiv)",
+          "date": "2020-04-03",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2020-04-03",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "7 Serisi",
+      "model": "730Li",
+      "trim": "Pure Excellence",
+      "generation": "G12 LCI",
+      "generationCode": "G12",
+      "yearFrom": 2020,
+      "yearTo": 2022,
+      "fuelType": "GASOLINE",
+      "engineVolume": null,
+      "powerHp": "265",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://arabavs.com/bmw-nisan-2020-guncel-fiyat-listesini-yayinladi.html",
+          "title": "BMW Türkiye Nisan 2020 perakende fiyat listesi (arşiv)",
+          "date": "2020-04-03",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2020-04-03",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "7 Serisi",
+      "model": "730Li",
+      "trim": "M Excellence",
+      "generation": "G12 LCI",
+      "generationCode": "G12",
+      "yearFrom": 2020,
+      "yearTo": 2022,
+      "fuelType": "GASOLINE",
+      "engineVolume": null,
+      "powerHp": "265",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://arabavs.com/bmw-nisan-2020-guncel-fiyat-listesini-yayinladi.html",
+          "title": "BMW Türkiye Nisan 2020 perakende fiyat listesi (arşiv)",
+          "date": "2020-04-03",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2020-04-03",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "7 Serisi",
+      "model": "740Ld xDrive",
+      "trim": "Pure Excellence",
+      "generation": "G12 LCI",
+      "generationCode": "G12",
+      "yearFrom": 2020,
+      "yearTo": 2022,
+      "fuelType": "DIESEL",
+      "engineVolume": null,
+      "powerHp": "320",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://arabavs.com/bmw-nisan-2020-guncel-fiyat-listesini-yayinladi.html",
+          "title": "BMW Türkiye Nisan 2020 perakende fiyat listesi (arşiv)",
+          "date": "2020-04-03",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2020-04-03",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "7 Serisi",
+      "model": "740Ld xDrive",
+      "trim": "M Excellence",
+      "generation": "G12 LCI",
+      "generationCode": "G12",
+      "yearFrom": 2020,
+      "yearTo": 2022,
+      "fuelType": "DIESEL",
+      "engineVolume": null,
+      "powerHp": "320",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://arabavs.com/bmw-nisan-2020-guncel-fiyat-listesini-yayinladi.html",
+          "title": "BMW Türkiye Nisan 2020 perakende fiyat listesi (arşiv)",
+          "date": "2020-04-03",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2020-04-03",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X1",
+      "model": "sDrive18i",
+      "trim": "Premium Line",
+      "generation": "F48",
+      "generationCode": "F48",
+      "yearFrom": 2020,
+      "yearTo": 2022,
+      "fuelType": "GASOLINE",
+      "engineVolume": null,
+      "powerHp": "140",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://arabavs.com/bmw-nisan-2020-guncel-fiyat-listesini-yayinladi.html",
+          "title": "BMW Türkiye Nisan 2020 perakende fiyat listesi (arşiv)",
+          "date": "2020-04-03",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2020-04-03",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X1",
+      "model": "sDrive18i",
+      "trim": "xLine",
+      "generation": "F48",
+      "generationCode": "F48",
+      "yearFrom": 2020,
+      "yearTo": 2022,
+      "fuelType": "GASOLINE",
+      "engineVolume": null,
+      "powerHp": "140",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://arabavs.com/bmw-nisan-2020-guncel-fiyat-listesini-yayinladi.html",
+          "title": "BMW Türkiye Nisan 2020 perakende fiyat listesi (arşiv)",
+          "date": "2020-04-03",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2020-04-03",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X1",
+      "model": "sDrive18i",
+      "trim": "M Sport",
+      "generation": "F48",
+      "generationCode": "F48",
+      "yearFrom": 2020,
+      "yearTo": 2022,
+      "fuelType": "GASOLINE",
+      "engineVolume": null,
+      "powerHp": "140",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://arabavs.com/bmw-nisan-2020-guncel-fiyat-listesini-yayinladi.html",
+          "title": "BMW Türkiye Nisan 2020 perakende fiyat listesi (arşiv)",
+          "date": "2020-04-03",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2020-04-03",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X1",
+      "model": "sDrive16d",
+      "trim": "Premium Line",
+      "generation": "F48",
+      "generationCode": "F48",
+      "yearFrom": 2020,
+      "yearTo": 2022,
+      "fuelType": "DIESEL",
+      "engineVolume": null,
+      "powerHp": "116",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://arabavs.com/bmw-nisan-2020-guncel-fiyat-listesini-yayinladi.html",
+          "title": "BMW Türkiye Nisan 2020 perakende fiyat listesi (arşiv)",
+          "date": "2020-04-03",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2020-04-03",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X1",
+      "model": "sDrive16d",
+      "trim": "xLine",
+      "generation": "F48",
+      "generationCode": "F48",
+      "yearFrom": 2020,
+      "yearTo": 2022,
+      "fuelType": "DIESEL",
+      "engineVolume": null,
+      "powerHp": "116",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://arabavs.com/bmw-nisan-2020-guncel-fiyat-listesini-yayinladi.html",
+          "title": "BMW Türkiye Nisan 2020 perakende fiyat listesi (arşiv)",
+          "date": "2020-04-03",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2020-04-03",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X1",
+      "model": "sDrive16d",
+      "trim": "M Sport",
+      "generation": "F48",
+      "generationCode": "F48",
+      "yearFrom": 2020,
+      "yearTo": 2022,
+      "fuelType": "DIESEL",
+      "engineVolume": null,
+      "powerHp": "116",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://arabavs.com/bmw-nisan-2020-guncel-fiyat-listesini-yayinladi.html",
+          "title": "BMW Türkiye Nisan 2020 perakende fiyat listesi (arşiv)",
+          "date": "2020-04-03",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2020-04-03",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X2",
+      "model": "sDrive16d",
+      "trim": "M Sport",
+      "generation": "F39",
+      "generationCode": "F39",
+      "yearFrom": 2020,
+      "yearTo": 2022,
+      "fuelType": "DIESEL",
+      "engineVolume": null,
+      "powerHp": "116",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://arabavs.com/bmw-nisan-2020-guncel-fiyat-listesini-yayinladi.html",
+          "title": "BMW Türkiye Nisan 2020 perakende fiyat listesi (arşiv)",
+          "date": "2020-04-03",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2020-04-03",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X2",
+      "model": "sDrive16d",
+      "trim": "M SportX",
+      "generation": "F39",
+      "generationCode": "F39",
+      "yearFrom": 2020,
+      "yearTo": 2022,
+      "fuelType": "DIESEL",
+      "engineVolume": null,
+      "powerHp": "116",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://arabavs.com/bmw-nisan-2020-guncel-fiyat-listesini-yayinladi.html",
+          "title": "BMW Türkiye Nisan 2020 perakende fiyat listesi (arşiv)",
+          "date": "2020-04-03",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2020-04-03",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X3",
+      "model": "sDrive20i",
+      "trim": "xLine",
+      "generation": "G01",
+      "generationCode": "G01",
+      "yearFrom": 2020,
+      "yearTo": 2023,
+      "fuelType": "GASOLINE",
+      "engineVolume": null,
+      "powerHp": "170",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://arabavs.com/bmw-nisan-2020-guncel-fiyat-listesini-yayinladi.html",
+          "title": "BMW Türkiye Nisan 2020 perakende fiyat listesi (arşiv)",
+          "date": "2020-04-03",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2020-04-03",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X3",
+      "model": "sDrive20i",
+      "trim": "Luxury Line",
+      "generation": "G01",
+      "generationCode": "G01",
+      "yearFrom": 2020,
+      "yearTo": 2023,
+      "fuelType": "GASOLINE",
+      "engineVolume": null,
+      "powerHp": "170",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://arabavs.com/bmw-nisan-2020-guncel-fiyat-listesini-yayinladi.html",
+          "title": "BMW Türkiye Nisan 2020 perakende fiyat listesi (arşiv)",
+          "date": "2020-04-03",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2020-04-03",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X3",
+      "model": "sDrive20i",
+      "trim": "M Sport",
+      "generation": "G01",
+      "generationCode": "G01",
+      "yearFrom": 2020,
+      "yearTo": 2023,
+      "fuelType": "GASOLINE",
+      "engineVolume": null,
+      "powerHp": "170",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://arabavs.com/bmw-nisan-2020-guncel-fiyat-listesini-yayinladi.html",
+          "title": "BMW Türkiye Nisan 2020 perakende fiyat listesi (arşiv)",
+          "date": "2020-04-03",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2020-04-03",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X3",
+      "model": "xDrive20d",
+      "trim": "xLine",
+      "generation": "G01",
+      "generationCode": "G01",
+      "yearFrom": 2020,
+      "yearTo": 2023,
+      "fuelType": "DIESEL",
+      "engineVolume": null,
+      "powerHp": "190",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://arabavs.com/bmw-nisan-2020-guncel-fiyat-listesini-yayinladi.html",
+          "title": "BMW Türkiye Nisan 2020 perakende fiyat listesi (arşiv)",
+          "date": "2020-04-03",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2020-04-03",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X3",
+      "model": "xDrive20d",
+      "trim": "Luxury Line",
+      "generation": "G01",
+      "generationCode": "G01",
+      "yearFrom": 2020,
+      "yearTo": 2023,
+      "fuelType": "DIESEL",
+      "engineVolume": null,
+      "powerHp": "190",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://arabavs.com/bmw-nisan-2020-guncel-fiyat-listesini-yayinladi.html",
+          "title": "BMW Türkiye Nisan 2020 perakende fiyat listesi (arşiv)",
+          "date": "2020-04-03",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2020-04-03",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X3",
+      "model": "xDrive20d",
+      "trim": "M Sport",
+      "generation": "G01",
+      "generationCode": "G01",
+      "yearFrom": 2020,
+      "yearTo": 2023,
+      "fuelType": "DIESEL",
+      "engineVolume": null,
+      "powerHp": "190",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://arabavs.com/bmw-nisan-2020-guncel-fiyat-listesini-yayinladi.html",
+          "title": "BMW Türkiye Nisan 2020 perakende fiyat listesi (arşiv)",
+          "date": "2020-04-03",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2020-04-03",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "5 Serisi",
+      "model": "520i",
+      "trim": "Luxury Line",
+      "generation": "G30",
+      "generationCode": "G30",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": null,
+      "powerHp": "170",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://arabavs.com/bmw-nisan-2020-guncel-fiyat-listesini-yayinladi.html",
+          "title": "BMW Türkiye Nisan 2020 perakende fiyat listesi (arşiv)",
+          "date": "2020-04-03",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2020-04-03",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "5 Serisi",
+      "model": "520i",
+      "trim": "M Sport",
+      "generation": "G30",
+      "generationCode": "G30",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": null,
+      "powerHp": "170",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://arabavs.com/bmw-nisan-2020-guncel-fiyat-listesini-yayinladi.html",
+          "title": "BMW Türkiye Nisan 2020 perakende fiyat listesi (arşiv)",
+          "date": "2020-04-03",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2020-04-03",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "5 Serisi",
+      "model": "520i",
+      "trim": "Special Edition Luxury Line",
+      "generation": "G30",
+      "generationCode": "G30",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": null,
+      "powerHp": "170",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://arabavs.com/bmw-nisan-2020-guncel-fiyat-listesini-yayinladi.html",
+          "title": "BMW Türkiye Nisan 2020 perakende fiyat listesi (arşiv)",
+          "date": "2020-04-03",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2020-04-03",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "5 Serisi",
+      "model": "520i",
+      "trim": "Special Edition M Sport",
+      "generation": "G30",
+      "generationCode": "G30",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": null,
+      "powerHp": "170",
+      "transmission": "AUTOMATIC",
+      "driveType": null,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://arabavs.com/bmw-nisan-2020-guncel-fiyat-listesini-yayinladi.html",
+          "title": "BMW Türkiye Nisan 2020 perakende fiyat listesi (arşiv)",
+          "date": "2020-04-03",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2020-04-03",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "5 Serisi",
+      "model": "530i xDrive",
+      "trim": "Special Edition M Sport",
+      "generation": "G30",
+      "generationCode": "G30",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "fuelType": "GASOLINE",
+      "engineVolume": null,
+      "powerHp": "252",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Historical TR retail price-list row (BMW Türkiye via published archive)",
+      "sources": [
+        {
+          "url": "https://arabavs.com/bmw-nisan-2020-guncel-fiyat-listesini-yayinladi.html",
+          "title": "BMW Türkiye Nisan 2020 perakende fiyat listesi (arşiv)",
+          "date": "2020-04-03",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye resmi site (liste kaynağı referansı)",
+          "date": "2020-04-03",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "M Serisi",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "notes": "Selectable M Serisi tree researched; discrete M performance models (M2/M3/M4/M5/X3 M/X5 M) need per-model official TR price rows — not inventing from global catalogs.",
+      "sources": [
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye Modeller / M Serisi",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "Z Serisi",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "notes": "Z4 TR historical availability needs dedicated official archive rows; no unverified versions added.",
+      "sources": [
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X4",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "X4 TR historical/current price-list rows not yet captured in this ingest pass.",
+      "sources": [
+        {
+          "url": "https://teknikoto.bmw.com.tr/fiyat-listesi",
+          "title": "Teknik Oto fiyat listesi (X4 absent in Aug 2026 MY extract)",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X5",
+      "model": "xDrive25d",
+      "trim": "M Sport",
+      "generation": "G05",
+      "generationCode": "G05",
+      "yearFrom": 2018,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Aralık 2019 BMW Türkiye listesi: X5 xDrive25d M Sport",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/bmw-yil-sonu-fiyat-listesi-aralik-2019.html",
+          "title": "BMW Türkiye Aralık 2019 fiyat listesi (arşiv)",
+          "date": "2019-12-02",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye",
+          "date": "2019-12-02",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "X5",
+      "model": "xDrive25d",
+      "trim": "M Excellence",
+      "generation": "G05",
+      "generationCode": "G05",
+      "yearFrom": 2018,
+      "yearTo": 2019,
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Aralık 2019 BMW Türkiye listesi: X5 xDrive25d M Excellence",
+      "sources": [
+        {
+          "url": "https://www.arabavs.com/bmw-yil-sonu-fiyat-listesi-aralik-2019.html",
+          "title": "BMW Türkiye Aralık 2019 fiyat listesi (arşiv)",
+          "date": "2019-12-02",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye",
+          "date": "2019-12-02",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "i3",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "notes": "i3 TR historical rows need dedicated official archive; not inventing from global catalog.",
+      "sources": [
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "BMW",
+      "series": "i Serisi",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "notes": "Umbrella i Serisi node in catalog; concrete EV depth lives under i3/i4/i5/i7/iX* — avoid duplicate EV series.",
+      "sources": [
+        {
+          "url": "https://www.bmw.com.tr/tr/index.html",
+          "title": "BMW Türkiye elektrikli modeller",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
     }
-  ]
+  ],
+  "researchNotes": {
+    "researchedSeriesPass": [
+      "1 Serisi",
+      "2 Serisi",
+      "2 Serisi Active Tourer",
+      "3 Serisi",
+      "4 Serisi",
+      "5 Serisi",
+      "6 Serisi",
+      "7 Serisi",
+      "8 Serisi",
+      "M Serisi",
+      "X1",
+      "X2",
+      "X3",
+      "X4",
+      "X5",
+      "X6",
+      "X7",
+      "Z Serisi",
+      "i4",
+      "i5",
+      "i7",
+      "iX",
+      "iX1",
+      "iX2",
+      "iX3"
+    ],
+    "historicalArchivesIngested": [
+      "2019-11 BMW TR",
+      "2020-04 BMW TR"
+    ],
+    "reviewRequiredSeries": [
+      "M Serisi",
+      "Z Serisi",
+      "X4"
+    ]
+  },
+  "completedAt": "2026-08-07T09:05:59.034Z",
+  "completionNotes": "All selectable otomobil/SUV series researched. Verified Teknik Oto MY + historical BMW TR archives. REVIEW_REQUIRED for M/Z/X4/i3/i Serisi without invention."
 }

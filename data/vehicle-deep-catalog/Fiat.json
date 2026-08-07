@@ -1,0 +1,362 @@
+{
+  "brand": "Fiat",
+  "brandSlug": "fiat",
+  "version": "2026.08-deep-fiat-v1-current-tr",
+  "generatedAt": "2026-08-07T12:00:00.000Z",
+  "seriesCovered": [
+    "Egea",
+    "Egea Cross",
+    "Egea Wagon",
+    "Egea (historical gasoline)"
+  ],
+  "status": "COMPLETED",
+  "notes": "Current TR Egea Sedan/Cross Multijet rows from Aug 2026 published price tables citing fiat.com.tr. Historical gasoline/Wagon still REVIEW.",
+  "configurations": [
+    {
+      "generation": "Egea Sedan TR MY2026",
+      "generationCode": "Tipo/Egea",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Fiat",
+      "series": "Egea",
+      "model": "1.6 Multijet 130 HP",
+      "trim": "Easy",
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "130",
+      "transmission": "MANUAL",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Egea Sedan Easy 1.6 Multijet 130 HP Manuel — Ağustos 2026 TR fiyat satırı",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/agustos-2026-fiat-fiyat-listesi-iste-egea-sedan-cross-wagon-panda-ve-fiat-600-guncel-fiyatlari-1374040",
+          "title": "Fiat Ağustos 2026 fiyat listesi (resmi site satırları)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.fiat.com.tr/",
+          "title": "Fiat Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otozellik.com/fiat-egea-2026-teknik-ozellikleri-ve-fiyatlari/",
+          "title": "Fiat Egea 2026 teknik/donanım özeti",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Egea Sedan TR MY2026",
+      "generationCode": "Tipo/Egea",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Fiat",
+      "series": "Egea",
+      "model": "1.6 Multijet 130 HP",
+      "trim": "Urban",
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "130",
+      "transmission": "MANUAL",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Egea Sedan Urban 1.6 Multijet 130 HP Manuel — Ağustos 2026 TR fiyat satırı",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/agustos-2026-fiat-fiyat-listesi-iste-egea-sedan-cross-wagon-panda-ve-fiat-600-guncel-fiyatlari-1374040",
+          "title": "Fiat Ağustos 2026 fiyat listesi (resmi site satırları)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.fiat.com.tr/",
+          "title": "Fiat Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otozellik.com/fiat-egea-2026-teknik-ozellikleri-ve-fiyatlari/",
+          "title": "Fiat Egea 2026 teknik/donanım özeti",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Egea Sedan TR MY2026",
+      "generationCode": "Tipo/Egea",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Fiat",
+      "series": "Egea",
+      "model": "1.6 Multijet 130 HP",
+      "trim": "Lounge",
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "130",
+      "transmission": "MANUAL",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Egea Sedan Lounge 1.6 Multijet 130 HP Manuel — Ağustos 2026 TR fiyat satırı",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/agustos-2026-fiat-fiyat-listesi-iste-egea-sedan-cross-wagon-panda-ve-fiat-600-guncel-fiyatlari-1374040",
+          "title": "Fiat Ağustos 2026 fiyat listesi (resmi site satırları)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.fiat.com.tr/",
+          "title": "Fiat Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otozellik.com/fiat-egea-2026-teknik-ozellikleri-ve-fiyatlari/",
+          "title": "Fiat Egea 2026 teknik/donanım özeti",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Egea Cross TR MY2026",
+      "generationCode": "Tipo/Egea Cross",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Fiat",
+      "series": "Egea Cross",
+      "model": "1.6 Multijet 130 HP Traction+",
+      "trim": "Street",
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "130",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Egea Cross Street DCT Traction+ — Ağustos 2026 TR fiyat satırı",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/agustos-2026-fiat-fiyat-listesi-iste-egea-sedan-cross-wagon-panda-ve-fiat-600-guncel-fiyatlari-1374040",
+          "title": "Fiat Ağustos 2026 fiyat listesi (resmi site satırları)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.fiat.com.tr/",
+          "title": "Fiat Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otozellik.com/fiat-egea-2026-teknik-ozellikleri-ve-fiyatlari/",
+          "title": "Fiat Egea 2026 teknik/donanım özeti",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Egea Cross TR MY2026",
+      "generationCode": "Tipo/Egea Cross",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Fiat",
+      "series": "Egea Cross",
+      "model": "1.6 Multijet 130 HP Traction+",
+      "trim": "Urban",
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "130",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Egea Cross Urban DCT Traction+ — Ağustos 2026 TR fiyat satırı",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/agustos-2026-fiat-fiyat-listesi-iste-egea-sedan-cross-wagon-panda-ve-fiat-600-guncel-fiyatlari-1374040",
+          "title": "Fiat Ağustos 2026 fiyat listesi (resmi site satırları)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.fiat.com.tr/",
+          "title": "Fiat Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otozellik.com/fiat-egea-2026-teknik-ozellikleri-ve-fiyatlari/",
+          "title": "Fiat Egea 2026 teknik/donanım özeti",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Egea Cross TR MY2026",
+      "generationCode": "Tipo/Egea Cross",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Fiat",
+      "series": "Egea Cross",
+      "model": "1.6 Multijet 130 HP Traction+",
+      "trim": "Lounge",
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "130",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Egea Cross Lounge DCT Traction+ — Ağustos 2026 TR fiyat satırı",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/agustos-2026-fiat-fiyat-listesi-iste-egea-sedan-cross-wagon-panda-ve-fiat-600-guncel-fiyatlari-1374040",
+          "title": "Fiat Ağustos 2026 fiyat listesi (resmi site satırları)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.fiat.com.tr/",
+          "title": "Fiat Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otozellik.com/fiat-egea-2026-teknik-ozellikleri-ve-fiyatlari/",
+          "title": "Fiat Egea 2026 teknik/donanım özeti",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Egea Cross TR MY2026",
+      "generationCode": "Tipo/Egea Cross",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Fiat",
+      "series": "Egea Cross",
+      "model": "1.6 Multijet 130 HP Traction+",
+      "trim": "Limited",
+      "fuelType": "DIESEL",
+      "engineVolume": "1598",
+      "powerHp": "130",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Egea Cross Limited DCT Traction+ — Ağustos 2026 TR fiyat satırı",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/agustos-2026-fiat-fiyat-listesi-iste-egea-sedan-cross-wagon-panda-ve-fiat-600-guncel-fiyatlari-1374040",
+          "title": "Fiat Ağustos 2026 fiyat listesi (resmi site satırları)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.fiat.com.tr/",
+          "title": "Fiat Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otozellik.com/fiat-egea-2026-teknik-ozellikleri-ve-fiyatlari/",
+          "title": "Fiat Egea 2026 teknik/donanım özeti",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "driveType": "",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "brand": "Fiat",
+      "series": "Egea Wagon",
+      "model": "",
+      "trim": "",
+      "fuelType": "",
+      "transmission": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "confidence": "REVIEW_REQUIRED",
+      "notes": "Egea Station Wagon historical TR rows need dedicated official archive; not inventing from global Tipo SW.",
+      "sources": [
+        {
+          "url": "https://www.fiat.com.tr/",
+          "title": "Fiat Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://onedio.com/haber/agustos-2026-fiat-fiyat-listesi-iste-egea-sedan-cross-wagon-panda-ve-fiat-600-guncel-fiyatlari-1374040",
+          "title": "Fiat Ağustos 2026 fiyat listesi (resmi site satırları)",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "driveType": "",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "brand": "Fiat",
+      "series": "Egea (historical gasoline)",
+      "model": "",
+      "trim": "",
+      "fuelType": "",
+      "transmission": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "confidence": "REVIEW_REQUIRED",
+      "notes": "Pre-2024 gasoline 1.4/1.6 FireFly TR archive rows pending official PDF ingest.",
+      "sources": [
+        {
+          "url": "https://www.fiat.com.tr/",
+          "title": "Fiat Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    }
+  ],
+  "researchNotes": {
+    "researchedSeriesPass": [
+      "Egea",
+      "Egea Cross",
+      "Egea Wagon"
+    ],
+    "historicalArchivesIngested": [],
+    "reviewRequiredSeries": [
+      "Egea Wagon",
+      "Egea (historical gasoline)"
+    ]
+  },
+  "completedAt": "2026-08-07T09:13:29.882Z"
+}

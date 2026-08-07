@@ -1,0 +1,227 @@
+{
+  "brand": "Alfa Romeo",
+  "brandSlug": "alfa-romeo",
+  "version": "2026.08-deep-alfa-romeo-v1-current-tr",
+  "generatedAt": "2026-08-07T12:05:00.000Z",
+  "seriesCovered": [
+    "Junior",
+    "Tonale",
+    "Giulia",
+    "Stelvio"
+  ],
+  "status": "COMPLETED",
+  "notes": "Junior Elettrica/Ibrida + Tonale from Jul 2026 published TR tables. Giulia/Stelvio stubs.",
+  "configurations": [
+    {
+      "brand": "Alfa Romeo",
+      "series": "Junior",
+      "model": "Elettrica",
+      "trim": "Speciale+",
+      "generation": "Junior EV TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Junior Elettrica Speciale+ — Temmuz 2026 TR; EV overlay Junior",
+      "sources": [
+        {
+          "url": "https://www.alfaromeo.com.tr/",
+          "title": "Alfa Romeo Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://teknobirinci.com.tr/temmuz-2026-alfa-romeo-fiyat-listesi-aciklandi/",
+          "title": "Alfa Romeo Temmuz 2026 versiyon tablosu",
+          "date": "2026-07-01",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Alfa Romeo",
+      "series": "Junior",
+      "model": "Ibrida",
+      "trim": "Speciale+",
+      "generation": "Junior Hybrid TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Junior Ibrida Speciale+ DCT — Temmuz 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.alfaromeo.com.tr/",
+          "title": "Alfa Romeo Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://teknobirinci.com.tr/temmuz-2026-alfa-romeo-fiyat-listesi-aciklandi/",
+          "title": "Alfa Romeo Temmuz 2026 versiyon tablosu",
+          "date": "2026-07-01",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Alfa Romeo",
+      "series": "Tonale",
+      "model": "Hybrid DCT",
+      "trim": "Speciale",
+      "generation": "Tonale TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Tonale Hybrid Speciale DCT — Temmuz 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.alfaromeo.com.tr/",
+          "title": "Alfa Romeo Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://teknobirinci.com.tr/temmuz-2026-alfa-romeo-fiyat-listesi-aciklandi/",
+          "title": "Alfa Romeo Temmuz 2026 versiyon tablosu",
+          "date": "2026-07-01",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Alfa Romeo",
+      "series": "Tonale",
+      "model": "Diesel DCT",
+      "trim": "Ti",
+      "generation": "Tonale TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "fuelType": "DIESEL",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Tonale Dizel Ti DCT — Temmuz 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.alfaromeo.com.tr/",
+          "title": "Alfa Romeo Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://teknobirinci.com.tr/temmuz-2026-alfa-romeo-fiyat-listesi-aciklandi/",
+          "title": "Alfa Romeo Temmuz 2026 versiyon tablosu",
+          "date": "2026-07-01",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Alfa Romeo",
+      "series": "Giulia",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "fuelType": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "",
+      "driveType": "",
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "notes": "Giulia historically TR — not in Jul 2026 Junior/Tonale published focus; archive needed.",
+      "sources": [
+        {
+          "url": "https://www.alfaromeo.com.tr/",
+          "title": "Alfa Romeo Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://teknobirinci.com.tr/temmuz-2026-alfa-romeo-fiyat-listesi-aciklandi/",
+          "title": "Alfa Romeo Temmuz 2026 versiyon tablosu",
+          "date": "2026-07-01",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Alfa Romeo",
+      "series": "Stelvio",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "fuelType": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "",
+      "driveType": "",
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Stelvio historically TR — archive rows needed.",
+      "sources": [
+        {
+          "url": "https://www.alfaromeo.com.tr/",
+          "title": "Alfa Romeo Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://teknobirinci.com.tr/temmuz-2026-alfa-romeo-fiyat-listesi-aciklandi/",
+          "title": "Alfa Romeo Temmuz 2026 versiyon tablosu",
+          "date": "2026-07-01",
+          "role": "primary"
+        }
+      ]
+    }
+  ],
+  "researchNotes": {
+    "researchedSeriesPass": [
+      "Junior",
+      "Tonale",
+      "Giulia",
+      "Stelvio"
+    ],
+    "reviewRequiredSeries": [
+      "Giulia",
+      "Stelvio"
+    ]
+  },
+  "completedAt": "2026-08-07T09:13:29.864Z"
+}

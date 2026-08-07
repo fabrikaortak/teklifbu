@@ -1,0 +1,335 @@
+{
+  "brand": "TOGG",
+  "brandSlug": "togg",
+  "version": "2026.08-deep-togg-v1-current-tr",
+  "generatedAt": "2026-08-07T12:05:00.000Z",
+  "seriesCovered": [
+    "T10X",
+    "T10F"
+  ],
+  "status": "COMPLETED",
+  "notes": "Pure EV brand — preserve electric overlay series T10X/T10F only; no invented ICE series. Official togg.com.tr price-list.",
+  "configurations": [
+    {
+      "brand": "TOGG",
+      "series": "T10X",
+      "model": "RWD Standart Menzil",
+      "trim": "V1",
+      "generation": "T10X C-SUV TR",
+      "generationCode": "T10X",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "160 kW",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "T10X V1 RWD Standart Menzil — resmi togg.com.tr (15/06/2026+); EV overlay series T10X",
+      "sources": [
+        {
+          "url": "https://www.togg.com.tr/price-list",
+          "title": "Togg resmi fiyat listesi (T10X)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.gzt.com/gundem/togg-agustos-2026-fiyat-listesi-t10x-t10f-kampanyasi-4248755",
+          "title": "Togg Ağustos 2026 T10X/T10F",
+          "date": "2026-08-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.webtekno.com/temmuz-2026-togg-fiyat-listesi-h219591.html",
+          "title": "Togg Temmuz 2026 detay tablo",
+          "date": "2026-07-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "TOGG",
+      "series": "T10X",
+      "model": "RWD Uzun Menzil",
+      "trim": "V1",
+      "generation": "T10X C-SUV TR",
+      "generationCode": "T10X",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "160 kW",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "T10X V1 RWD Uzun Menzil — resmi togg.com.tr (15/06/2026+); EV overlay series T10X",
+      "sources": [
+        {
+          "url": "https://www.togg.com.tr/price-list",
+          "title": "Togg resmi fiyat listesi (T10X)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.gzt.com/gundem/togg-agustos-2026-fiyat-listesi-t10x-t10f-kampanyasi-4248755",
+          "title": "Togg Ağustos 2026 T10X/T10F",
+          "date": "2026-08-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.webtekno.com/temmuz-2026-togg-fiyat-listesi-h219591.html",
+          "title": "Togg Temmuz 2026 detay tablo",
+          "date": "2026-07-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "TOGG",
+      "series": "T10X",
+      "model": "RWD Uzun Menzil",
+      "trim": "V2",
+      "generation": "T10X C-SUV TR",
+      "generationCode": "T10X",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "160 kW",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "T10X V2 RWD Uzun Menzil — resmi togg.com.tr (15/06/2026+); EV overlay series T10X",
+      "sources": [
+        {
+          "url": "https://www.togg.com.tr/price-list",
+          "title": "Togg resmi fiyat listesi (T10X)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.gzt.com/gundem/togg-agustos-2026-fiyat-listesi-t10x-t10f-kampanyasi-4248755",
+          "title": "Togg Ağustos 2026 T10X/T10F",
+          "date": "2026-08-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.webtekno.com/temmuz-2026-togg-fiyat-listesi-h219591.html",
+          "title": "Togg Temmuz 2026 detay tablo",
+          "date": "2026-07-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "TOGG",
+      "series": "T10X",
+      "model": "4More AWD",
+      "trim": "V2 Obsidiyen",
+      "generation": "T10X C-SUV TR",
+      "generationCode": "T10X",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "320 kW",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "T10X V2 Obsidiyen 4More AWD — resmi togg.com.tr (15/06/2026+); EV overlay series T10X",
+      "sources": [
+        {
+          "url": "https://www.togg.com.tr/price-list",
+          "title": "Togg resmi fiyat listesi (T10X)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.gzt.com/gundem/togg-agustos-2026-fiyat-listesi-t10x-t10f-kampanyasi-4248755",
+          "title": "Togg Ağustos 2026 T10X/T10F",
+          "date": "2026-08-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.webtekno.com/temmuz-2026-togg-fiyat-listesi-h219591.html",
+          "title": "Togg Temmuz 2026 detay tablo",
+          "date": "2026-07-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "TOGG",
+      "series": "T10F",
+      "model": "RWD Standart Menzil",
+      "trim": "V1",
+      "generation": "T10F Fastback TR",
+      "generationCode": "T10F",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "160 kW",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "T10F V1 RWD Standart Menzil — Aug 2026 published TR tables + togg.com.tr; EV overlay series T10F",
+      "sources": [
+        {
+          "url": "https://www.togg.com.tr/price-list",
+          "title": "Togg resmi fiyat listesi (T10X)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.gzt.com/gundem/togg-agustos-2026-fiyat-listesi-t10x-t10f-kampanyasi-4248755",
+          "title": "Togg Ağustos 2026 T10X/T10F",
+          "date": "2026-08-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.webtekno.com/temmuz-2026-togg-fiyat-listesi-h219591.html",
+          "title": "Togg Temmuz 2026 detay tablo",
+          "date": "2026-07-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "TOGG",
+      "series": "T10F",
+      "model": "RWD Uzun Menzil",
+      "trim": "V1",
+      "generation": "T10F Fastback TR",
+      "generationCode": "T10F",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "160 kW",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "T10F V1 RWD Uzun Menzil — Aug 2026 published TR tables + togg.com.tr; EV overlay series T10F",
+      "sources": [
+        {
+          "url": "https://www.togg.com.tr/price-list",
+          "title": "Togg resmi fiyat listesi (T10X)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.gzt.com/gundem/togg-agustos-2026-fiyat-listesi-t10x-t10f-kampanyasi-4248755",
+          "title": "Togg Ağustos 2026 T10X/T10F",
+          "date": "2026-08-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.webtekno.com/temmuz-2026-togg-fiyat-listesi-h219591.html",
+          "title": "Togg Temmuz 2026 detay tablo",
+          "date": "2026-07-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "TOGG",
+      "series": "T10F",
+      "model": "RWD Uzun Menzil",
+      "trim": "V2",
+      "generation": "T10F Fastback TR",
+      "generationCode": "T10F",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "160 kW",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "T10F V2 RWD Uzun Menzil — Aug 2026 published TR tables + togg.com.tr; EV overlay series T10F",
+      "sources": [
+        {
+          "url": "https://www.togg.com.tr/price-list",
+          "title": "Togg resmi fiyat listesi (T10X)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.gzt.com/gundem/togg-agustos-2026-fiyat-listesi-t10x-t10f-kampanyasi-4248755",
+          "title": "Togg Ağustos 2026 T10X/T10F",
+          "date": "2026-08-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.webtekno.com/temmuz-2026-togg-fiyat-listesi-h219591.html",
+          "title": "Togg Temmuz 2026 detay tablo",
+          "date": "2026-07-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "TOGG",
+      "series": "T10F",
+      "model": "4More AWD",
+      "trim": "V2",
+      "generation": "T10F Fastback TR",
+      "generationCode": "T10F",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "320 kW",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "T10F V2 4More AWD — Aug 2026 published TR tables + togg.com.tr; EV overlay series T10F",
+      "sources": [
+        {
+          "url": "https://www.togg.com.tr/price-list",
+          "title": "Togg resmi fiyat listesi (T10X)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.gzt.com/gundem/togg-agustos-2026-fiyat-listesi-t10x-t10f-kampanyasi-4248755",
+          "title": "Togg Ağustos 2026 T10X/T10F",
+          "date": "2026-08-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.webtekno.com/temmuz-2026-togg-fiyat-listesi-h219591.html",
+          "title": "Togg Temmuz 2026 detay tablo",
+          "date": "2026-07-01",
+          "role": "secondary"
+        }
+      ]
+    }
+  ],
+  "researchNotes": {
+    "researchedSeriesPass": [
+      "T10X",
+      "T10F"
+    ],
+    "reviewRequiredSeries": [],
+    "electricOverlayNote": "Do not invent duplicate EV series beyond T10X/T10F"
+  },
+  "completedAt": "2026-08-07T09:13:29.954Z"
+}

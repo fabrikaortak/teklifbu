@@ -1,0 +1,397 @@
+{
+  "brand": "Tesla",
+  "brandSlug": "tesla",
+  "version": "2026.08-deep-tesla-v1-current-tr",
+  "generatedAt": "2026-08-07T09:18:08.012Z",
+  "seriesCovered": [
+    "Model 3",
+    "Model S",
+    "Model X",
+    "Model Y"
+  ],
+  "status": "COMPLETED",
+  "notes": "Pure EV brand — Model Y verified Aug 2026. Model 3/S/X TR availability REVIEW (no inventing). Preserve electric overlay series names.",
+  "configurations": [
+    {
+      "brand": "Tesla",
+      "series": "Model Y",
+      "model": "RWD",
+      "trim": "",
+      "generation": "Juniper / New Model Y TR",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Model Y Arkadan Çekiş — Ağustos 2026 TR (tesla.com + multi press)",
+      "sources": [
+        {
+          "url": "https://www.tesla.com/tr_tr/modely",
+          "title": "Tesla Türkiye Model Y resmi sayfa",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.cnbce.com/otomotiv/tesladan-agustos-zammi-model-ynin-uc-versiyonunun-fiyati-artti-iste-yeni-fiyatlar-h34369",
+          "title": "Tesla Model Y Ağustos 2026 fiyatları",
+          "date": "2026-08-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otonomhaber.com/2026/07/tesla-temmuz-2026-turkiye-model-y-fiyat-listesini-guncelledi/",
+          "title": "Tesla Temmuz 2026 Model Y tablo",
+          "date": "2026-07-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Tesla",
+      "series": "Model Y",
+      "model": "Long Range RWD",
+      "trim": "Premium",
+      "generation": "Juniper / New Model Y TR",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Model Y Premium Long Range RWD — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.tesla.com/tr_tr/modely",
+          "title": "Tesla Türkiye Model Y resmi sayfa",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.cnbce.com/otomotiv/tesladan-agustos-zammi-model-ynin-uc-versiyonunun-fiyati-artti-iste-yeni-fiyatlar-h34369",
+          "title": "Tesla Model Y Ağustos 2026 fiyatları",
+          "date": "2026-08-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otonomhaber.com/2026/07/tesla-temmuz-2026-turkiye-model-y-fiyat-listesini-guncelledi/",
+          "title": "Tesla Temmuz 2026 Model Y tablo",
+          "date": "2026-07-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Tesla",
+      "series": "Model Y",
+      "model": "Long Range AWD",
+      "trim": "Premium",
+      "generation": "Juniper / New Model Y TR",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Model Y Premium Long Range 4 Çeker — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.tesla.com/tr_tr/modely",
+          "title": "Tesla Türkiye Model Y resmi sayfa",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.cnbce.com/otomotiv/tesladan-agustos-zammi-model-ynin-uc-versiyonunun-fiyati-artti-iste-yeni-fiyatlar-h34369",
+          "title": "Tesla Model Y Ağustos 2026 fiyatları",
+          "date": "2026-08-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otonomhaber.com/2026/07/tesla-temmuz-2026-turkiye-model-y-fiyat-listesini-guncelledi/",
+          "title": "Tesla Temmuz 2026 Model Y tablo",
+          "date": "2026-07-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Tesla",
+      "series": "Model Y",
+      "model": "Performance AWD",
+      "trim": "",
+      "generation": "Juniper / New Model Y TR",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Model Y Performance 4 Çeker — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.tesla.com/tr_tr/modely",
+          "title": "Tesla Türkiye Model Y resmi sayfa",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.cnbce.com/otomotiv/tesladan-agustos-zammi-model-ynin-uc-versiyonunun-fiyati-artti-iste-yeni-fiyatlar-h34369",
+          "title": "Tesla Model Y Ağustos 2026 fiyatları",
+          "date": "2026-08-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otonomhaber.com/2026/07/tesla-temmuz-2026-turkiye-model-y-fiyat-listesini-guncelledi/",
+          "title": "Tesla Temmuz 2026 Model Y tablo",
+          "date": "2026-07-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Tesla",
+      "series": "Model 3",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "fuelType": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "",
+      "driveType": "",
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "notes": "Model 3 historically sold TR; current Aug 2026 consumer price focus is Model Y — discrete Model 3 rows need fresh official confirm (EV overlay preserved).",
+      "sources": [
+        {
+          "url": "https://www.tesla.com/tr_tr/modely",
+          "title": "Tesla Türkiye Model Y resmi sayfa",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.cnbce.com/otomotiv/tesladan-agustos-zammi-model-ynin-uc-versiyonunun-fiyati-artti-iste-yeni-fiyatlar-h34369",
+          "title": "Tesla Model Y Ağustos 2026 fiyatları",
+          "date": "2026-08-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otonomhaber.com/2026/07/tesla-temmuz-2026-turkiye-model-y-fiyat-listesini-guncelledi/",
+          "title": "Tesla Temmuz 2026 Model Y tablo",
+          "date": "2026-07-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Tesla",
+      "series": "Model S",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "fuelType": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "",
+      "driveType": "",
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "notes": "Model S TR retail presence not confirmed in Aug 2026 sources reviewed.",
+      "sources": [
+        {
+          "url": "https://www.tesla.com/tr_tr/modely",
+          "title": "Tesla Türkiye Model Y resmi sayfa",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.cnbce.com/otomotiv/tesladan-agustos-zammi-model-ynin-uc-versiyonunun-fiyati-artti-iste-yeni-fiyatlar-h34369",
+          "title": "Tesla Model Y Ağustos 2026 fiyatları",
+          "date": "2026-08-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otonomhaber.com/2026/07/tesla-temmuz-2026-turkiye-model-y-fiyat-listesini-guncelledi/",
+          "title": "Tesla Temmuz 2026 Model Y tablo",
+          "date": "2026-07-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Tesla",
+      "series": "Model X",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "fuelType": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "",
+      "driveType": "",
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Model X TR retail presence not confirmed in Aug 2026 sources reviewed.",
+      "sources": [
+        {
+          "url": "https://www.tesla.com/tr_tr/modely",
+          "title": "Tesla Türkiye Model Y resmi sayfa",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.cnbce.com/otomotiv/tesladan-agustos-zammi-model-ynin-uc-versiyonunun-fiyati-artti-iste-yeni-fiyatlar-h34369",
+          "title": "Tesla Model Y Ağustos 2026 fiyatları",
+          "date": "2026-08-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://otonomhaber.com/2026/07/tesla-temmuz-2026-turkiye-model-y-fiyat-listesini-guncelledi/",
+          "title": "Tesla Temmuz 2026 Model Y tablo",
+          "date": "2026-07-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Tesla",
+      "series": "Model Y",
+      "model": "Arkadan Çekiş",
+      "trim": "Standart",
+      "generation": "Juniper/Highland TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Tesla TR Ağustos 2026: Model Y Arkadan Çekiş — EV overlay preserve Model Y series",
+      "sources": [
+        {
+          "url": "https://www.cnbce.com/otomotiv/tesladan-agustos-zammi-model-ynin-uc-versiyonunun-fiyati-artti-iste-yeni-fiyatlar-h34369",
+          "title": "Tesla Model Y Ağustos 2026 TR fiyat listesi",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.tesla.com/tr_tr/modely",
+          "title": "Tesla Model Y Türkiye resmi sayfa",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Tesla",
+      "series": "Model Y",
+      "model": "Long Range Arkadan Çekiş",
+      "trim": "Premium",
+      "generation": "Juniper/Highland TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "transmission": "AUTOMATIC",
+      "driveType": "RWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Tesla TR: Premium Long Range Arkadan Çekiş",
+      "sources": [
+        {
+          "url": "https://www.cnbce.com/otomotiv/tesladan-agustos-zammi-model-ynin-uc-versiyonunun-fiyati-artti-iste-yeni-fiyatlar-h34369",
+          "title": "Tesla Model Y Ağustos 2026 TR fiyat listesi",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.tesla.com/tr_tr/modely",
+          "title": "Tesla Model Y Türkiye resmi sayfa",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Tesla",
+      "series": "Model Y",
+      "model": "Performance AWD",
+      "trim": "Performance",
+      "generation": "Juniper/Highland TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Tesla TR: Performance 4 Çeker — Performance is model variant; trim mirrors official line name",
+      "sources": [
+        {
+          "url": "https://www.cnbce.com/otomotiv/tesladan-agustos-zammi-model-ynin-uc-versiyonunun-fiyati-artti-iste-yeni-fiyatlar-h34369",
+          "title": "Tesla Model Y Ağustos 2026 TR fiyat listesi",
+          "date": "2026-08-04",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.tesla.com/tr_tr/modely",
+          "title": "Tesla Model Y Türkiye resmi sayfa",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    }
+  ],
+  "researchNotes": {
+    "researchedSeriesPass": [
+      "Model Y",
+      "Model 3",
+      "Model S",
+      "Model X"
+    ],
+    "reviewRequiredSeries": [
+      "Model 3",
+      "Model S",
+      "Model X"
+    ]
+  },
+  "revertedReason": "verifiedConfigs < 3 — insufficient for completedBrands",
+  "completedAt": "2026-08-07T09:18:08.172Z"
+}

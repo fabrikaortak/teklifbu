@@ -1,0 +1,220 @@
+{
+  "brand": "Subaru",
+  "brandSlug": "subaru",
+  "version": "2026.08-deep-subaru-v1-current-tr",
+  "generatedAt": "2026-08-07T12:05:00.000Z",
+  "seriesCovered": [
+    "Forester",
+    "Crosstrek",
+    "Solterra",
+    "XV",
+    "Outback"
+  ],
+  "status": "COMPLETED",
+  "notes": "Forester/Crosstrek/Solterra from official subaru.com.tr Aug 2026 price page.",
+  "configurations": [
+    {
+      "brand": "Subaru",
+      "series": "Forester",
+      "model": "2.0i e-BOXER",
+      "trim": "Style",
+      "generation": "Forester e-BOXER TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "1995",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Yeni Forester e-BOXER 2.0i Style MY2026 — resmi subaru.com.tr (1.8.2026)",
+      "sources": [
+        {
+          "url": "https://subaru.com.tr/fiyat-listesi",
+          "title": "Subaru Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Subaru",
+      "series": "Forester",
+      "model": "2.0i e-BOXER",
+      "trim": "Fun",
+      "generation": "Forester e-BOXER TR MY2025",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2025,
+      "fuelType": "HYBRID",
+      "engineVolume": "1995",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Forester e-BOXER 2.0i Fun MY2025 — resmi",
+      "sources": [
+        {
+          "url": "https://subaru.com.tr/fiyat-listesi",
+          "title": "Subaru Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Subaru",
+      "series": "Crosstrek",
+      "model": "2.0i e-BOXER",
+      "trim": "Xclusive",
+      "generation": "Crosstrek e-BOXER TR MY2025",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "1995",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Crosstrek e-BOXER 2.0i Xclusive MY2025 — resmi",
+      "sources": [
+        {
+          "url": "https://subaru.com.tr/fiyat-listesi",
+          "title": "Subaru Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Subaru",
+      "series": "Solterra",
+      "model": "Electric",
+      "trim": "e-Xcellent",
+      "generation": "Solterra TR MY2023",
+      "generationCode": "",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Solterra e-Xcellent — resmi; EV overlay Solterra",
+      "sources": [
+        {
+          "url": "https://subaru.com.tr/fiyat-listesi",
+          "title": "Subaru Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Subaru",
+      "series": "Solterra",
+      "model": "Electric",
+      "trim": "e-Xtreme",
+      "generation": "Solterra TR MY2023",
+      "generationCode": "",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Solterra e-Xtreme — resmi",
+      "sources": [
+        {
+          "url": "https://subaru.com.tr/fiyat-listesi",
+          "title": "Subaru Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Subaru",
+      "series": "XV",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "fuelType": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "",
+      "driveType": "",
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "XV predecessor naming vs Crosstrek — historical TR archive pending.",
+      "sources": [
+        {
+          "url": "https://subaru.com.tr/fiyat-listesi",
+          "title": "Subaru Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Subaru",
+      "series": "Outback",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "fuelType": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "",
+      "driveType": "",
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Outback TR current listing not on Aug 2026 official price page excerpt — pending.",
+      "sources": [
+        {
+          "url": "https://subaru.com.tr/fiyat-listesi",
+          "title": "Subaru Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
+    }
+  ],
+  "researchNotes": {
+    "researchedSeriesPass": [
+      "Forester",
+      "Crosstrek",
+      "Solterra",
+      "XV",
+      "Outback"
+    ],
+    "reviewRequiredSeries": [
+      "XV",
+      "Outback"
+    ]
+  },
+  "completedAt": "2026-08-07T09:13:29.948Z"
+}

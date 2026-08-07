@@ -1,0 +1,809 @@
+{
+  "brand": "Audi",
+  "brandSlug": "audi",
+  "version": "2026.08-deep-audi-v1-current-plus-historical-a4",
+  "generatedAt": "2026-08-07T11:54:00.000Z",
+  "seriesCovered": [
+    "A3",
+    "A4",
+    "A6",
+    "A6 e-tron",
+    "Q3",
+    "Q5",
+    "Q4 e-tron",
+    "e-tron"
+  ],
+  "status": "COMPLETED",
+  "notes": "Current TR MY from fiyatlistesi.audi.com.tr (valid from 7.8.2026). A4 from published 2023–2024 TR tables (no longer on Aug 2026 official portal). Model=engine/version; trim=package (Advanced/S line). powerHp converted from kW where official uses kW (110 kW→150, 150 kW→204). engineVolume only when cm3 printed on sourced page.",
+  "configurations": [
+    {
+      "brand": "Audi",
+      "series": "A3",
+      "model": "TFSI 110 kW",
+      "trim": "Advanced",
+      "generation": "8Y Sportback",
+      "generationCode": "8Y",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Official Aug 2026 TR: A3 Sportback TFSI 110 kW Advanced S tronic; 1498 cm3 (Sportback)",
+      "sources": [
+        {
+          "url": "https://fiyatlistesi.audi.com.tr/2026/8Y",
+          "title": "Audi TR resmi fiyat listesi – A3 (8Y)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://teknodiot.com/audi-fiyat-listesi",
+          "title": "Audi fiyat listesi derlemesi (A3)",
+          "date": "2026-07-01",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "engineVolume": "1498",
+      "powerHp": "150"
+    },
+    {
+      "brand": "Audi",
+      "series": "A3",
+      "model": "TFSI 110 kW",
+      "trim": "S line",
+      "generation": "8Y Sportback",
+      "generationCode": "8Y",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Official Aug 2026 TR list names A3 Sportback TFSI 110 kW S line S tronic (Sportback)",
+      "sources": [
+        {
+          "url": "https://fiyatlistesi.audi.com.tr/2026/8Y",
+          "title": "Audi TR resmi fiyat listesi – A3 (8Y)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://teknodiot.com/audi-fiyat-listesi",
+          "title": "Audi fiyat listesi derlemesi (A3)",
+          "date": "2026-07-01",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "engineVolume": "1498",
+      "powerHp": "150"
+    },
+    {
+      "brand": "Audi",
+      "series": "A3",
+      "model": "TFSI 110 kW",
+      "trim": "",
+      "generation": "8Y allstreet",
+      "generationCode": "8Y",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Official Aug 2026 TR: A3 allstreet TFSI 110 kW S tronic; footnote WC4 Premium Paket included (not a trim name in model field)",
+      "sources": [
+        {
+          "url": "https://fiyatlistesi.audi.com.tr/2026/8Y",
+          "title": "Audi TR resmi fiyat listesi – A3 allstreet",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/agustos-2026-audi-fiyat-listesi-iste-audi-a3-a4-a5-a6-a7-a8-ve-q-serisi-guncel-fiyatlari-1374037",
+          "title": "Ağustos 2026 Audi fiyat listesi (A3 allstreet)",
+          "date": "2026-08-05",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "engineVolume": "1498",
+      "powerHp": "150"
+    },
+    {
+      "brand": "Audi",
+      "series": "A4",
+      "model": "40 TDI quattro",
+      "trim": "Advanced",
+      "generation": "B9 Sedan",
+      "generationCode": "B9",
+      "yearFrom": 2022,
+      "yearTo": 2024,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Dec 2024 published TR price table: A4 Sedan 40 TDI quattro 204 hp Advanced S tronic PI; absent from Aug 2026 official fiyatlistesi.audi.com.tr (replaced by Yeni A5 in current gamut)",
+      "sources": [
+        {
+          "url": "https://shiftdelete.net/audi-a4-fiyat-listesi-aralik-2024",
+          "title": "Audi A4 Aralık 2024 fiyat listesi",
+          "date": "2024-12-14",
+          "role": "primary"
+        },
+        {
+          "url": "https://blog.r10.net/otomobil/2023-subat-audi-guncel-fiyat-listesi",
+          "title": "Şubat 2023 Audi güncel fiyat listesi (A4)",
+          "date": "2023-02-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.sifiraracal.com/audi-haberleri/audi-a-serisi-2023-guncel-fiyat-listesi/15720",
+          "title": "Audi A Serisi 2023 fiyat listesi (A4)",
+          "date": "2023-01-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://fiyatlistesi.audi.com.tr/",
+          "title": "Audi TR fiyat listesi portalı (A4 yok – Aug 2026)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "powerHp": "204"
+    },
+    {
+      "brand": "Audi",
+      "series": "A4",
+      "model": "45 Turbo FSI quattro",
+      "trim": "S line",
+      "generation": "B9 Sedan",
+      "generationCode": "B9",
+      "yearFrom": 2022,
+      "yearTo": 2024,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Dec 2024 published TR price table: A4 Sedan 45 Turbo FSI quattro 265 hp S line S tronic PI; absent from Aug 2026 official fiyatlistesi.audi.com.tr (replaced by Yeni A5 in current gamut)",
+      "sources": [
+        {
+          "url": "https://shiftdelete.net/audi-a4-fiyat-listesi-aralik-2024",
+          "title": "Audi A4 Aralık 2024 fiyat listesi",
+          "date": "2024-12-14",
+          "role": "primary"
+        },
+        {
+          "url": "https://blog.r10.net/otomobil/2023-subat-audi-guncel-fiyat-listesi",
+          "title": "Şubat 2023 Audi güncel fiyat listesi (A4)",
+          "date": "2023-02-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.sifiraracal.com/audi-haberleri/audi-a-serisi-2023-guncel-fiyat-listesi/15720",
+          "title": "Audi A Serisi 2023 fiyat listesi (A4)",
+          "date": "2023-01-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://fiyatlistesi.audi.com.tr/",
+          "title": "Audi TR fiyat listesi portalı (A4 yok – Aug 2026)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "powerHp": "265"
+    },
+    {
+      "brand": "Audi",
+      "series": "A4",
+      "model": "40 TDI",
+      "trim": "Advanced",
+      "generation": "B9 Sedan",
+      "generationCode": "B9",
+      "yearFrom": 2022,
+      "yearTo": 2023,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Feb 2023 published TR price table: A4 Sedan 40 TDI 204 hp Advanced S tronic PI; absent from Aug 2026 official fiyatlistesi.audi.com.tr (replaced by Yeni A5 in current gamut)",
+      "sources": [
+        {
+          "url": "https://shiftdelete.net/audi-a4-fiyat-listesi-aralik-2024",
+          "title": "Audi A4 Aralık 2024 fiyat listesi",
+          "date": "2024-12-14",
+          "role": "primary"
+        },
+        {
+          "url": "https://blog.r10.net/otomobil/2023-subat-audi-guncel-fiyat-listesi",
+          "title": "Şubat 2023 Audi güncel fiyat listesi (A4)",
+          "date": "2023-02-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.sifiraracal.com/audi-haberleri/audi-a-serisi-2023-guncel-fiyat-listesi/15720",
+          "title": "Audi A Serisi 2023 fiyat listesi (A4)",
+          "date": "2023-01-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://fiyatlistesi.audi.com.tr/",
+          "title": "Audi TR fiyat listesi portalı (A4 yok – Aug 2026)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "powerHp": "204"
+    },
+    {
+      "brand": "Audi",
+      "series": "A4",
+      "model": "40 TDI quattro",
+      "trim": "S line",
+      "generation": "B9 Sedan",
+      "generationCode": "B9",
+      "yearFrom": 2022,
+      "yearTo": 2023,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Feb 2023 / 2023 published TR tables: A4 Sedan 40 TDI quattro S line; absent from Aug 2026 official fiyatlistesi.audi.com.tr (replaced by Yeni A5 in current gamut)",
+      "sources": [
+        {
+          "url": "https://shiftdelete.net/audi-a4-fiyat-listesi-aralik-2024",
+          "title": "Audi A4 Aralık 2024 fiyat listesi",
+          "date": "2024-12-14",
+          "role": "primary"
+        },
+        {
+          "url": "https://blog.r10.net/otomobil/2023-subat-audi-guncel-fiyat-listesi",
+          "title": "Şubat 2023 Audi güncel fiyat listesi (A4)",
+          "date": "2023-02-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.sifiraracal.com/audi-haberleri/audi-a-serisi-2023-guncel-fiyat-listesi/15720",
+          "title": "Audi A Serisi 2023 fiyat listesi (A4)",
+          "date": "2023-01-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://fiyatlistesi.audi.com.tr/",
+          "title": "Audi TR fiyat listesi portalı (A4 yok – Aug 2026)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "powerHp": "204"
+    },
+    {
+      "brand": "Audi",
+      "series": "A4",
+      "model": "45 Turbo FSI quattro",
+      "trim": "Advanced",
+      "generation": "B9 Sedan",
+      "generationCode": "B9",
+      "yearFrom": 2022,
+      "yearTo": 2023,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Feb 2023 published TR: A4 Sedan 45 Turbo FSI quattro Advanced; absent from Aug 2026 official fiyatlistesi.audi.com.tr (replaced by Yeni A5 in current gamut)",
+      "sources": [
+        {
+          "url": "https://shiftdelete.net/audi-a4-fiyat-listesi-aralik-2024",
+          "title": "Audi A4 Aralık 2024 fiyat listesi",
+          "date": "2024-12-14",
+          "role": "primary"
+        },
+        {
+          "url": "https://blog.r10.net/otomobil/2023-subat-audi-guncel-fiyat-listesi",
+          "title": "Şubat 2023 Audi güncel fiyat listesi (A4)",
+          "date": "2023-02-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.sifiraracal.com/audi-haberleri/audi-a-serisi-2023-guncel-fiyat-listesi/15720",
+          "title": "Audi A Serisi 2023 fiyat listesi (A4)",
+          "date": "2023-01-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://fiyatlistesi.audi.com.tr/",
+          "title": "Audi TR fiyat listesi portalı (A4 yok – Aug 2026)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "powerHp": "265"
+    },
+    {
+      "brand": "Audi",
+      "series": "A4",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "notes": "Earlier A4 generations (B8/B7) and Avant/allroad TR historical discrete rows need dedicated official/archive PDF ingest — not inventing.",
+      "sources": [
+        {
+          "url": "https://www.audi.com.tr/",
+          "title": "Audi Türkiye",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Audi",
+      "series": "A6",
+      "model": "e-hybrid quattro 270 kW",
+      "trim": "Advanced",
+      "generation": "C9 Sedan",
+      "generationCode": "C9",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Official Aug 2026: A6 Sedan e-hybrid quattro 270 kW; 1984 cm3; footnote PQ2/WA4 Advanced Paket for Yeni A6",
+      "sources": [
+        {
+          "url": "https://fiyatlistesi.audi.com.tr/2026/FN",
+          "title": "Audi TR resmi fiyat listesi – Yeni A6 (FN)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/agustos-2026-audi-fiyat-listesi-iste-audi-a3-a4-a5-a6-a7-a8-ve-q-serisi-guncel-fiyatlari-1374037",
+          "title": "Ağustos 2026 Audi fiyat listesi (A6)",
+          "date": "2026-08-05",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "HYBRID",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "engineVolume": "1984",
+      "powerHp": "367"
+    },
+    {
+      "brand": "Audi",
+      "series": "A6",
+      "model": "TDI 150 kW quattro",
+      "trim": "Advanced",
+      "generation": "C9 Sedan",
+      "generationCode": "C9",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Official Aug 2026 list names A6 Sedan TDI 150 kW quattro; footnote PQ2/WA4 Advanced Paket for Yeni A6",
+      "sources": [
+        {
+          "url": "https://fiyatlistesi.audi.com.tr/2026/FN",
+          "title": "Audi TR resmi fiyat listesi – Yeni A6 (FN)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/agustos-2026-audi-fiyat-listesi-iste-audi-a3-a4-a5-a6-a7-a8-ve-q-serisi-guncel-fiyatlari-1374037",
+          "title": "Ağustos 2026 Audi fiyat listesi (A6)",
+          "date": "2026-08-05",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "powerHp": "204"
+    },
+    {
+      "brand": "Audi",
+      "series": "A6",
+      "model": "TDI 220 kW quattro",
+      "trim": "Advanced",
+      "generation": "C9 Sedan",
+      "generationCode": "C9",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Official Aug 2026 list names A6 Sedan TDI 220 kW quattro; footnote PQ2/WA4 Advanced Paket for Yeni A6",
+      "sources": [
+        {
+          "url": "https://fiyatlistesi.audi.com.tr/2026/FN",
+          "title": "Audi TR resmi fiyat listesi – Yeni A6 (FN)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/agustos-2026-audi-fiyat-listesi-iste-audi-a3-a4-a5-a6-a7-a8-ve-q-serisi-guncel-fiyatlari-1374037",
+          "title": "Ağustos 2026 Audi fiyat listesi (A6)",
+          "date": "2026-08-05",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "powerHp": "299"
+    },
+    {
+      "brand": "Audi",
+      "series": "A6",
+      "model": "TFSI 200 kW quattro",
+      "trim": "Advanced",
+      "generation": "C9 Sedan",
+      "generationCode": "C9",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Official Aug 2026 list names A6 Sedan TFSI 200 kW quattro; footnote PQ2/WA4 Advanced Paket for Yeni A6",
+      "sources": [
+        {
+          "url": "https://fiyatlistesi.audi.com.tr/2026/FN",
+          "title": "Audi TR resmi fiyat listesi – Yeni A6 (FN)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/agustos-2026-audi-fiyat-listesi-iste-audi-a3-a4-a5-a6-a7-a8-ve-q-serisi-guncel-fiyatlari-1374037",
+          "title": "Ağustos 2026 Audi fiyat listesi (A6)",
+          "date": "2026-08-05",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "powerHp": "272"
+    },
+    {
+      "brand": "Audi",
+      "series": "A6",
+      "model": "TDI quattro 150 kW",
+      "trim": "Advanced",
+      "generation": "C9 Avant",
+      "generationCode": "C9",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Official Aug 2026: A6 Avant TDI quattro 150 kW; footnote PQ2/WA4 Advanced Paket for Yeni A6",
+      "sources": [
+        {
+          "url": "https://fiyatlistesi.audi.com.tr/2026/FN",
+          "title": "Audi TR resmi fiyat listesi – Yeni A6 (FN)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/agustos-2026-audi-fiyat-listesi-iste-audi-a3-a4-a5-a6-a7-a8-ve-q-serisi-guncel-fiyatlari-1374037",
+          "title": "Ağustos 2026 Audi fiyat listesi (A6)",
+          "date": "2026-08-05",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "powerHp": "204"
+    },
+    {
+      "brand": "Audi",
+      "series": "A6 e-tron",
+      "model": "e-tron",
+      "trim": "Premium",
+      "generation": "Current TR MY Sportback",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Aug 2026 TR published tables + official portal model family: A6 Sportback e-tron; footnote Premium Paket",
+      "sources": [
+        {
+          "url": "https://fiyatlistesi.audi.com.tr/",
+          "title": "Audi TR fiyat listesi – A6 e-tron family",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/agustos-2026-audi-fiyat-listesi-iste-audi-a3-a4-a5-a6-a7-a8-ve-q-serisi-guncel-fiyatlari-1374037",
+          "title": "Ağustos 2026 Audi fiyat listesi (A6 e-tron)",
+          "date": "2026-08-05",
+          "role": "secondary"
+        },
+        {
+          "url": "https://teknodiot.com/audi-fiyat-listesi",
+          "title": "Audi fiyat listesi (A6 e-tron)",
+          "date": "2026-07-01",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "ELECTRIC",
+      "transmission": "AUTOMATIC"
+    },
+    {
+      "brand": "Audi",
+      "series": "Q3",
+      "model": "TFSI 110 kW",
+      "trim": "Advanced",
+      "generation": "Current TR MY SUV",
+      "generationCode": "FJ",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Official Aug 2026: Q3 SUV TFSI 110 kW S tronic; 1498 cm3; footnote Advanced Paket",
+      "sources": [
+        {
+          "url": "https://fiyatlistesi.audi.com.tr/2026/FJ",
+          "title": "Audi TR resmi fiyat listesi – Yeni Q3 (FJ)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/agustos-2026-audi-fiyat-listesi-iste-audi-a3-a4-a5-a6-a7-a8-ve-q-serisi-guncel-fiyatlari-1374037",
+          "title": "Ağustos 2026 Audi fiyat listesi (Q3)",
+          "date": "2026-08-05",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "engineVolume": "1498",
+      "powerHp": "150"
+    },
+    {
+      "brand": "Audi",
+      "series": "Q3",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Prior Q3 F3 TR rows (35 TFSI / TDI / S line) need dedicated historical archive ingest — researched as high-volume used series, not inventing.",
+      "sources": [
+        {
+          "url": "https://www.audi.com.tr/",
+          "title": "Audi Türkiye",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Audi",
+      "series": "Q5",
+      "model": "TDI quattro 150 kW",
+      "trim": "Advanced",
+      "generation": "Current TR MY SUV",
+      "generationCode": "GU",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Official Aug 2026: Q5 SUV TDI quattro 150 kW S tronic; footnote Advanced Paket; 1968 cm3",
+      "sources": [
+        {
+          "url": "https://fiyatlistesi.audi.com.tr/2026/GU",
+          "title": "Audi TR resmi fiyat listesi – Yeni Q5 (GU)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://fiyatlistesi.audi.com.tr/",
+          "title": "Audi TR fiyat listesi portalı",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "engineVolume": "1968",
+      "powerHp": "204"
+    },
+    {
+      "brand": "Audi",
+      "series": "Q5",
+      "model": "TFSI quattro 150 kW",
+      "trim": "Advanced",
+      "generation": "Current TR MY SUV",
+      "generationCode": "GU",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Official Aug 2026: Q5 SUV TFSI quattro 150 kW S tronic; footnote Advanced Paket",
+      "sources": [
+        {
+          "url": "https://fiyatlistesi.audi.com.tr/2026/GU",
+          "title": "Audi TR resmi fiyat listesi – Yeni Q5 (GU)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://fiyatlistesi.audi.com.tr/",
+          "title": "Audi TR fiyat listesi portalı",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "powerHp": "204"
+    },
+    {
+      "brand": "Audi",
+      "series": "Q5",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Prior Q5 FY/FYB TR historical 40 TDI / S line rows need archive PDF ingest — high-volume used market, not inventing.",
+      "sources": [
+        {
+          "url": "https://www.audi.com.tr/",
+          "title": "Audi Türkiye",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Audi",
+      "series": "Q4 e-tron",
+      "model": "40 e-tron",
+      "trim": "Premium",
+      "generation": "Current TR MY SUV",
+      "generationCode": "",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Aug 2026 published TR tables: Q4 SUV 40 e-tron; official portal lists Q4 e-tron family; footnote Premium Paket",
+      "sources": [
+        {
+          "url": "https://fiyatlistesi.audi.com.tr/",
+          "title": "Audi TR fiyat listesi – Q4 e-tron",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/agustos-2026-audi-fiyat-listesi-iste-audi-a3-a4-a5-a6-a7-a8-ve-q-serisi-guncel-fiyatlari-1374037",
+          "title": "Ağustos 2026 Audi fiyat listesi (Q4 e-tron)",
+          "date": "2026-08-05",
+          "role": "secondary"
+        },
+        {
+          "url": "https://teknodiot.com/audi-fiyat-listesi",
+          "title": "Audi fiyat listesi (Q4 e-tron)",
+          "date": "2026-07-01",
+          "role": "secondary"
+        }
+      ],
+      "fuelType": "ELECTRIC",
+      "transmission": "AUTOMATIC"
+    },
+    {
+      "brand": "Audi",
+      "series": "Q4 e-tron",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Q4 45/55 e-tron quattro variants named in official footnotes — discrete price rows not captured in this pass.",
+      "sources": [
+        {
+          "url": "https://fiyatlistesi.audi.com.tr/",
+          "title": "Audi TR fiyat listesi footnotes (Q4 45/55)",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Audi",
+      "series": "e-tron",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "First-gen e-tron / Q8 e-tron TR historical availability researched; discrete official archive rows not ingested this pass.",
+      "sources": [
+        {
+          "url": "https://www.audi.com.tr/",
+          "title": "Audi Türkiye",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
+    }
+  ],
+  "researchNotes": {
+    "researchedSeriesPass": [
+      "A3",
+      "A4",
+      "A6",
+      "A6 e-tron",
+      "Q3",
+      "Q5",
+      "Q4 e-tron",
+      "e-tron"
+    ],
+    "primarySources": [
+      "https://fiyatlistesi.audi.com.tr/",
+      "https://fiyatlistesi.audi.com.tr/2026/8Y",
+      "https://fiyatlistesi.audi.com.tr/2026/FJ",
+      "https://fiyatlistesi.audi.com.tr/2026/GU",
+      "https://fiyatlistesi.audi.com.tr/2026/FN",
+      "https://www.audi.com.tr/"
+    ],
+    "secondarySources": [
+      "https://onedio.com/haber/agustos-2026-audi-fiyat-listesi-iste-audi-a3-a4-a5-a6-a7-a8-ve-q-serisi-guncel-fiyatlari-1374037",
+      "https://teknodiot.com/audi-fiyat-listesi",
+      "https://shiftdelete.net/audi-a4-fiyat-listesi-aralik-2024",
+      "https://blog.r10.net/otomobil/2023-subat-audi-guncel-fiyat-listesi",
+      "https://www.sifiraracal.com/audi-haberleri/audi-a-serisi-2023-guncel-fiyat-listesi/15720"
+    ],
+    "doNotInvent": true
+  },
+  "completedAt": "2026-08-07T09:13:29.868Z"
+}

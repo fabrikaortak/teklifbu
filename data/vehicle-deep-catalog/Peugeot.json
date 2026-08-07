@@ -1,0 +1,307 @@
+{
+  "brand": "Peugeot",
+  "brandSlug": "peugeot",
+  "version": "2026.08-deep-peugeot-v1-current-tr",
+  "generatedAt": "2026-08-07T12:00:00.000Z",
+  "seriesCovered": [
+    "3008",
+    "E-3008",
+    "208",
+    "308",
+    "208 (ICE historical)",
+    "308 (ICE historical)"
+  ],
+  "status": "COMPLETED",
+  "notes": "Official kampanya.peugeot.com.tr Aug 2026 rows for 3008/E-3008/E-208/E-308. ICE 208/308 historical REVIEW.",
+  "configurations": [
+    {
+      "generation": "3008 III TR MY2026",
+      "generationCode": "P84/STLA Medium",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Peugeot",
+      "series": "3008",
+      "model": "1.2 Hybrid 145 hp eDCS6",
+      "trim": "Allure",
+      "fuelType": "HYBRID",
+      "engineVolume": "1199",
+      "powerHp": "145",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_OFFICIAL",
+      "notes": "3008 Allure 1.2 Hybrid 145hp eDCS6 — resmi TR fiyat satırı (ICE 136 + e-motor 21 bileşik)",
+      "sources": [
+        {
+          "url": "https://kampanya.peugeot.com.tr/fiyat-listesi/print.html",
+          "title": "Peugeot Türkiye resmi fiyat listesi (print)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://kampanya.peugeot.com.tr/fiyat-listesi/",
+          "title": "Peugeot Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.cnbce.com/otomotiv/peugeot-agustos-2026-fiyat-listesi-aciklandi-bu-ay-yine-zam-yok-iste-model-model-kampanyalar-g34557",
+          "title": "Peugeot Ağustos 2026 fiyat listesi özeti",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "3008 III TR MY2026",
+      "generationCode": "P84/STLA Medium",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Peugeot",
+      "series": "3008",
+      "model": "1.2 Hybrid 145 hp eDCS6",
+      "trim": "GT",
+      "fuelType": "HYBRID",
+      "engineVolume": "1199",
+      "powerHp": "145",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_OFFICIAL",
+      "notes": "3008 GT 1.2 Hybrid 145hp eDCS6 — resmi TR fiyat satırı",
+      "sources": [
+        {
+          "url": "https://kampanya.peugeot.com.tr/fiyat-listesi/print.html",
+          "title": "Peugeot Türkiye resmi fiyat listesi (print)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://kampanya.peugeot.com.tr/fiyat-listesi/",
+          "title": "Peugeot Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.cnbce.com/otomotiv/peugeot-agustos-2026-fiyat-listesi-aciklandi-bu-ay-yine-zam-yok-iste-model-model-kampanyalar-g34557",
+          "title": "Peugeot Ağustos 2026 fiyat listesi özeti",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "E-3008 TR MY2026",
+      "generationCode": "STLA Medium EV",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Peugeot",
+      "series": "E-3008",
+      "model": "157 kW (210 hp)",
+      "trim": "Allure",
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "210",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_OFFICIAL",
+      "notes": "E-3008 Allure 157kW — resmi TR fiyat satırı",
+      "sources": [
+        {
+          "url": "https://kampanya.peugeot.com.tr/fiyat-listesi/print.html",
+          "title": "Peugeot Türkiye resmi fiyat listesi (print)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://kampanya.peugeot.com.tr/fiyat-listesi/",
+          "title": "Peugeot Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "E-3008 TR MY2026",
+      "generationCode": "STLA Medium EV",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Peugeot",
+      "series": "E-3008",
+      "model": "157 kW (210 hp)",
+      "trim": "GT",
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "210",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_OFFICIAL",
+      "notes": "E-3008 GT 157kW — resmi TR fiyat satırı",
+      "sources": [
+        {
+          "url": "https://kampanya.peugeot.com.tr/fiyat-listesi/print.html",
+          "title": "Peugeot Türkiye resmi fiyat listesi (print)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://kampanya.peugeot.com.tr/fiyat-listesi/",
+          "title": "Peugeot Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "E-208 TR MY2026",
+      "generationCode": "P21 EV",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Peugeot",
+      "series": "208",
+      "model": "E-208 100 kW",
+      "trim": "GT",
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "136",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_OFFICIAL",
+      "notes": "E-208 GT 100kW — resmi TR fiyat satırı (current 208 range is EV-only in Aug 2026 list)",
+      "sources": [
+        {
+          "url": "https://kampanya.peugeot.com.tr/fiyat-listesi/print.html",
+          "title": "Peugeot Türkiye resmi fiyat listesi (print)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://kampanya.peugeot.com.tr/fiyat-listesi/",
+          "title": "Peugeot Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.cnbce.com/otomotiv/peugeot-agustos-2026-fiyat-listesi-aciklandi-bu-ay-yine-zam-yok-iste-model-model-kampanyalar-g34557",
+          "title": "Peugeot Ağustos 2026 fiyat listesi özeti",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "E-308 TR MY2025",
+      "generationCode": "P51 EV",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Peugeot",
+      "series": "308",
+      "model": "E-308 115 kW",
+      "trim": "GT",
+      "fuelType": "ELECTRIC",
+      "engineVolume": "",
+      "powerHp": "156",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_OFFICIAL",
+      "notes": "E-308 GT 115kW — resmi TR kampanyalı satır (2025 MY)",
+      "sources": [
+        {
+          "url": "https://kampanya.peugeot.com.tr/fiyat-listesi/print.html",
+          "title": "Peugeot Türkiye resmi fiyat listesi (print)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://kampanya.peugeot.com.tr/fiyat-listesi/",
+          "title": "Peugeot Türkiye resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.cnbce.com/otomotiv/peugeot-agustos-2026-fiyat-listesi-aciklandi-bu-ay-yine-zam-yok-iste-model-model-kampanyalar-g34557",
+          "title": "Peugeot Ağustos 2026 fiyat listesi özeti",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "driveType": "",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "brand": "Peugeot",
+      "series": "208 (ICE historical)",
+      "model": "",
+      "trim": "",
+      "fuelType": "",
+      "transmission": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "confidence": "REVIEW_REQUIRED",
+      "notes": "ICE 208 PureTech/Active-Allure historical TR archives pending; current official list is E-208 only.",
+      "sources": [
+        {
+          "url": "https://kampanya.peugeot.com.tr/fiyat-listesi/print.html",
+          "title": "Peugeot Türkiye resmi fiyat listesi (print)",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "driveType": "",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "brand": "Peugeot",
+      "series": "308 (ICE historical)",
+      "model": "",
+      "trim": "",
+      "fuelType": "",
+      "transmission": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "confidence": "REVIEW_REQUIRED",
+      "notes": "ICE 308 PureTech/BlueHDi historical TR archives pending; current official list is E-308 only.",
+      "sources": [
+        {
+          "url": "https://kampanya.peugeot.com.tr/fiyat-listesi/print.html",
+          "title": "Peugeot Türkiye resmi fiyat listesi (print)",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
+    }
+  ],
+  "researchNotes": {
+    "researchedSeriesPass": [
+      "3008",
+      "208",
+      "308"
+    ],
+    "historicalArchivesIngested": [],
+    "reviewRequiredSeries": [
+      "208 (ICE historical)",
+      "308 (ICE historical)"
+    ]
+  },
+  "completedAt": "2026-08-07T09:13:29.937Z"
+}

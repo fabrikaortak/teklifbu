@@ -1,0 +1,292 @@
+{
+  "brand": "Cupra",
+  "brandSlug": "cupra",
+  "version": "2026.08-deep-cupra-v1-current-tr",
+  "generatedAt": "2026-08-07T12:05:00.000Z",
+  "seriesCovered": [
+    "Formentor",
+    "Leon",
+    "Terramar",
+    "Born"
+  ],
+  "status": "COMPLETED",
+  "notes": "Formentor/Leon/Terramar 1.5 eTSI Impulse/Supreme/VZ-Line from Aug 2026 published TR tables. Born EV stub.",
+  "configurations": [
+    {
+      "brand": "Cupra",
+      "series": "Formentor",
+      "model": "1.5 eTSI ACT 150 PS",
+      "trim": "Impulse",
+      "generation": "Formentor TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "1498",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Formentor 1.5 eTSI ACT 150 PS DSG Impulse — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.cupra.com/tr",
+          "title": "Cupra Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://teknobirinci.com.tr/agustos-2026-cupra-fiyat-listesi-aciklandi/",
+          "title": "Cupra Ağustos 2026 versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Cupra",
+      "series": "Formentor",
+      "model": "1.5 eTSI ACT 150 PS",
+      "trim": "Supreme",
+      "generation": "Formentor TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "1498",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Formentor 1.5 eTSI ACT 150 PS DSG Supreme — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.cupra.com/tr",
+          "title": "Cupra Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://teknobirinci.com.tr/agustos-2026-cupra-fiyat-listesi-aciklandi/",
+          "title": "Cupra Ağustos 2026 versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Cupra",
+      "series": "Formentor",
+      "model": "1.5 eTSI ACT 150 PS",
+      "trim": "VZ-Line",
+      "generation": "Formentor TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "1498",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Formentor 1.5 eTSI ACT 150 PS DSG VZ-Line — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.cupra.com/tr",
+          "title": "Cupra Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://teknobirinci.com.tr/agustos-2026-cupra-fiyat-listesi-aciklandi/",
+          "title": "Cupra Ağustos 2026 versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Cupra",
+      "series": "Leon",
+      "model": "1.5 eTSI ACT 150 PS",
+      "trim": "Impulse",
+      "generation": "Leon TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "1498",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Leon 1.5 eTSI ACT 150 PS DSG Impulse — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.cupra.com/tr",
+          "title": "Cupra Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://teknobirinci.com.tr/agustos-2026-cupra-fiyat-listesi-aciklandi/",
+          "title": "Cupra Ağustos 2026 versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Cupra",
+      "series": "Terramar",
+      "model": "1.5 eTSI ACT 150 PS",
+      "trim": "Impulse",
+      "generation": "Terramar TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "1498",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Terramar 1.5 eTSI ACT 150 PS DSG Impulse — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.cupra.com/tr",
+          "title": "Cupra Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://teknobirinci.com.tr/agustos-2026-cupra-fiyat-listesi-aciklandi/",
+          "title": "Cupra Ağustos 2026 versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Cupra",
+      "series": "Terramar",
+      "model": "1.5 eTSI ACT 150 PS",
+      "trim": "Supreme",
+      "generation": "Terramar TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "1498",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Terramar 1.5 eTSI ACT 150 PS DSG Supreme — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.cupra.com/tr",
+          "title": "Cupra Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://teknobirinci.com.tr/agustos-2026-cupra-fiyat-listesi-aciklandi/",
+          "title": "Cupra Ağustos 2026 versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Cupra",
+      "series": "Terramar",
+      "model": "1.5 eTSI ACT 150 PS",
+      "trim": "VZ-Line",
+      "generation": "Terramar TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "1498",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Terramar 1.5 eTSI ACT 150 PS DSG VZ-Line — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.cupra.com/tr",
+          "title": "Cupra Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://teknobirinci.com.tr/agustos-2026-cupra-fiyat-listesi-aciklandi/",
+          "title": "Cupra Ağustos 2026 versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "brand": "Cupra",
+      "series": "Born",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "fuelType": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "",
+      "driveType": "",
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "notes": "Cupra Born EV TR availability/config rows not confirmed in Aug 2026 Formentor/Leon/Terramar tables — EV overlay preserve if listed later.",
+      "sources": [
+        {
+          "url": "https://www.cupra.com/tr",
+          "title": "Cupra Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://teknobirinci.com.tr/agustos-2026-cupra-fiyat-listesi-aciklandi/",
+          "title": "Cupra Ağustos 2026 versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "primary"
+        }
+      ]
+    }
+  ],
+  "researchNotes": {
+    "researchedSeriesPass": [
+      "Formentor",
+      "Leon",
+      "Terramar",
+      "Born"
+    ],
+    "reviewRequiredSeries": [
+      "Born"
+    ]
+  },
+  "completedAt": "2026-08-07T09:13:29.879Z"
+}

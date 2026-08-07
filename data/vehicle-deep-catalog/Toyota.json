@@ -1,0 +1,534 @@
+{
+  "brand": "Toyota",
+  "brandSlug": "toyota",
+  "version": "2026.08-deep-toyota-v1-current-tr",
+  "generatedAt": "2026-08-07T12:00:00.000Z",
+  "seriesCovered": [
+    "Corolla",
+    "C-HR",
+    "RAV4"
+  ],
+  "status": "COMPLETED",
+  "notes": "Corolla gasoline/hybrid + C-HR Hybrid from Aug 2026 toyota.com.tr-cited tables. RAV4 pricing incomplete in published campaign tables.",
+  "configurations": [
+    {
+      "generation": "Corolla Sedan E210 TR",
+      "generationCode": "E210",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Toyota",
+      "series": "Corolla",
+      "model": "1.5 Multidrive S",
+      "trim": "Vision Plus",
+      "fuelType": "GASOLINE",
+      "engineVolume": "1490",
+      "powerHp": "125",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Corolla Sedan 1.5 Vision Plus Multidrive S — Ağustos 2026 TR kampanyalı satır; resmi fiyat listesi sayfası doğrulandı",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/agustos-2026-toyota-fiyat-listesi-toyota-corolla-yaris-cross-camry-ch-r-rav4-ve-hilux-guncel-fiyatlari-1373750",
+          "title": "Toyota Ağustos 2026 fiyat listesi (kampanyalı satırlar)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://turkiye.toyota.com.tr/middle/fiyat-listesi/",
+          "title": "Toyota Türkiye resmi fiyat listesi (1 Ağustos 2026)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.donanimhaber.com/toyota-fiyat-listesi-sifir-toyota-araba-fiyatlari--158860",
+          "title": "Toyota Temmuz 2026 fiyat tablosu (liste+kampanya)",
+          "date": "2026-07-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Corolla Sedan E210 TR",
+      "generationCode": "E210",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Toyota",
+      "series": "Corolla",
+      "model": "1.5 Multidrive S",
+      "trim": "Dream",
+      "fuelType": "GASOLINE",
+      "engineVolume": "1490",
+      "powerHp": "125",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Corolla Sedan 1.5 Dream Multidrive S — Ağustos 2026 TR kampanyalı satır; resmi fiyat listesi sayfası doğrulandı",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/agustos-2026-toyota-fiyat-listesi-toyota-corolla-yaris-cross-camry-ch-r-rav4-ve-hilux-guncel-fiyatlari-1373750",
+          "title": "Toyota Ağustos 2026 fiyat listesi (kampanyalı satırlar)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://turkiye.toyota.com.tr/middle/fiyat-listesi/",
+          "title": "Toyota Türkiye resmi fiyat listesi (1 Ağustos 2026)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.donanimhaber.com/toyota-fiyat-listesi-sifir-toyota-araba-fiyatlari--158860",
+          "title": "Toyota Temmuz 2026 fiyat tablosu (liste+kampanya)",
+          "date": "2026-07-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Corolla Sedan E210 TR",
+      "generationCode": "E210",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Toyota",
+      "series": "Corolla",
+      "model": "1.5 Multidrive S",
+      "trim": "Dream X-Pack",
+      "fuelType": "GASOLINE",
+      "engineVolume": "1490",
+      "powerHp": "125",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Corolla Sedan 1.5 Dream X-Pack Multidrive S — Ağustos 2026 TR kampanyalı satır; resmi fiyat listesi sayfası doğrulandı",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/agustos-2026-toyota-fiyat-listesi-toyota-corolla-yaris-cross-camry-ch-r-rav4-ve-hilux-guncel-fiyatlari-1373750",
+          "title": "Toyota Ağustos 2026 fiyat listesi (kampanyalı satırlar)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://turkiye.toyota.com.tr/middle/fiyat-listesi/",
+          "title": "Toyota Türkiye resmi fiyat listesi (1 Ağustos 2026)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.donanimhaber.com/toyota-fiyat-listesi-sifir-toyota-araba-fiyatlari--158860",
+          "title": "Toyota Temmuz 2026 fiyat tablosu (liste+kampanya)",
+          "date": "2026-07-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Corolla Sedan E210 TR",
+      "generationCode": "E210",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Toyota",
+      "series": "Corolla",
+      "model": "1.5 Multidrive S",
+      "trim": "Flame X-Pack",
+      "fuelType": "GASOLINE",
+      "engineVolume": "1490",
+      "powerHp": "125",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Corolla Sedan 1.5 Flame X-Pack Multidrive S — Ağustos 2026 TR kampanyalı satır; resmi fiyat listesi sayfası doğrulandı",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/agustos-2026-toyota-fiyat-listesi-toyota-corolla-yaris-cross-camry-ch-r-rav4-ve-hilux-guncel-fiyatlari-1373750",
+          "title": "Toyota Ağustos 2026 fiyat listesi (kampanyalı satırlar)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://turkiye.toyota.com.tr/middle/fiyat-listesi/",
+          "title": "Toyota Türkiye resmi fiyat listesi (1 Ağustos 2026)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.donanimhaber.com/toyota-fiyat-listesi-sifir-toyota-araba-fiyatlari--158860",
+          "title": "Toyota Temmuz 2026 fiyat tablosu (liste+kampanya)",
+          "date": "2026-07-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Corolla Sedan E210 TR",
+      "generationCode": "E210",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Toyota",
+      "series": "Corolla",
+      "model": "1.5 Multidrive S",
+      "trim": "Passion X-Pack",
+      "fuelType": "GASOLINE",
+      "engineVolume": "1490",
+      "powerHp": "125",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Corolla Sedan 1.5 Passion X-Pack Multidrive S — Ağustos 2026 TR kampanyalı satır; resmi fiyat listesi sayfası doğrulandı",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/agustos-2026-toyota-fiyat-listesi-toyota-corolla-yaris-cross-camry-ch-r-rav4-ve-hilux-guncel-fiyatlari-1373750",
+          "title": "Toyota Ağustos 2026 fiyat listesi (kampanyalı satırlar)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://turkiye.toyota.com.tr/middle/fiyat-listesi/",
+          "title": "Toyota Türkiye resmi fiyat listesi (1 Ağustos 2026)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.donanimhaber.com/toyota-fiyat-listesi-sifir-toyota-araba-fiyatlari--158860",
+          "title": "Toyota Temmuz 2026 fiyat tablosu (liste+kampanya)",
+          "date": "2026-07-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Corolla Sedan Hybrid E210 TR",
+      "generationCode": "E210",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Toyota",
+      "series": "Corolla",
+      "model": "1.8 Hybrid e-CVT",
+      "trim": "Dream",
+      "fuelType": "HYBRID",
+      "engineVolume": "1798",
+      "powerHp": "140",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Corolla Sedan 1.8 Hybrid Dream e-CVT — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/agustos-2026-toyota-fiyat-listesi-toyota-corolla-yaris-cross-camry-ch-r-rav4-ve-hilux-guncel-fiyatlari-1373750",
+          "title": "Toyota Ağustos 2026 fiyat listesi (kampanyalı satırlar)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://turkiye.toyota.com.tr/middle/fiyat-listesi/",
+          "title": "Toyota Türkiye resmi fiyat listesi (1 Ağustos 2026)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.donanimhaber.com/toyota-fiyat-listesi-sifir-toyota-araba-fiyatlari--158860",
+          "title": "Toyota Temmuz 2026 fiyat tablosu (liste+kampanya)",
+          "date": "2026-07-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Corolla Sedan Hybrid E210 TR",
+      "generationCode": "E210",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Toyota",
+      "series": "Corolla",
+      "model": "1.8 Hybrid e-CVT",
+      "trim": "Dream X-Pack",
+      "fuelType": "HYBRID",
+      "engineVolume": "1798",
+      "powerHp": "140",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Corolla Sedan 1.8 Hybrid Dream X-Pack e-CVT — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/agustos-2026-toyota-fiyat-listesi-toyota-corolla-yaris-cross-camry-ch-r-rav4-ve-hilux-guncel-fiyatlari-1373750",
+          "title": "Toyota Ağustos 2026 fiyat listesi (kampanyalı satırlar)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://turkiye.toyota.com.tr/middle/fiyat-listesi/",
+          "title": "Toyota Türkiye resmi fiyat listesi (1 Ağustos 2026)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.donanimhaber.com/toyota-fiyat-listesi-sifir-toyota-araba-fiyatlari--158860",
+          "title": "Toyota Temmuz 2026 fiyat tablosu (liste+kampanya)",
+          "date": "2026-07-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "Corolla Sedan Hybrid E210 TR",
+      "generationCode": "E210",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Toyota",
+      "series": "Corolla",
+      "model": "1.8 Hybrid e-CVT",
+      "trim": "Flame X-Pack",
+      "fuelType": "HYBRID",
+      "engineVolume": "1798",
+      "powerHp": "140",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Corolla Sedan 1.8 Hybrid Flame X-Pack e-CVT — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/agustos-2026-toyota-fiyat-listesi-toyota-corolla-yaris-cross-camry-ch-r-rav4-ve-hilux-guncel-fiyatlari-1373750",
+          "title": "Toyota Ağustos 2026 fiyat listesi (kampanyalı satırlar)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://turkiye.toyota.com.tr/middle/fiyat-listesi/",
+          "title": "Toyota Türkiye resmi fiyat listesi (1 Ağustos 2026)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.donanimhaber.com/toyota-fiyat-listesi-sifir-toyota-araba-fiyatlari--158860",
+          "title": "Toyota Temmuz 2026 fiyat tablosu (liste+kampanya)",
+          "date": "2026-07-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "C-HR II TR MY2024+",
+      "generationCode": "AX20",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Toyota",
+      "series": "C-HR",
+      "model": "1.8 Hybrid e-CVT",
+      "trim": "Flame",
+      "fuelType": "HYBRID",
+      "engineVolume": "1798",
+      "powerHp": "140",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Yeni C-HR 1.8 Hybrid Flame e-CVT — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/agustos-2026-toyota-fiyat-listesi-toyota-corolla-yaris-cross-camry-ch-r-rav4-ve-hilux-guncel-fiyatlari-1373750",
+          "title": "Toyota Ağustos 2026 fiyat listesi (kampanyalı satırlar)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://turkiye.toyota.com.tr/middle/fiyat-listesi/",
+          "title": "Toyota Türkiye resmi fiyat listesi (1 Ağustos 2026)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.arabalar.com.tr/toyota/c-hr",
+          "title": "Toyota C-HR donanım paket sıralaması (Flame/Passion/GR Sport)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "C-HR II TR MY2024+",
+      "generationCode": "AX20",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Toyota",
+      "series": "C-HR",
+      "model": "1.8 Hybrid e-CVT",
+      "trim": "Passion",
+      "fuelType": "HYBRID",
+      "engineVolume": "1798",
+      "powerHp": "140",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Yeni C-HR 1.8 Hybrid Passion e-CVT — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/agustos-2026-toyota-fiyat-listesi-toyota-corolla-yaris-cross-camry-ch-r-rav4-ve-hilux-guncel-fiyatlari-1373750",
+          "title": "Toyota Ağustos 2026 fiyat listesi (kampanyalı satırlar)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://turkiye.toyota.com.tr/middle/fiyat-listesi/",
+          "title": "Toyota Türkiye resmi fiyat listesi (1 Ağustos 2026)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.arabalar.com.tr/toyota/c-hr",
+          "title": "Toyota C-HR donanım paket sıralaması (Flame/Passion/GR Sport)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "C-HR II TR MY2024+",
+      "generationCode": "AX20",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Toyota",
+      "series": "C-HR",
+      "model": "1.8 Hybrid e-CVT",
+      "trim": "Passion X-Sport",
+      "fuelType": "HYBRID",
+      "engineVolume": "1798",
+      "powerHp": "140",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Yeni C-HR 1.8 Hybrid Passion X-Sport e-CVT — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/agustos-2026-toyota-fiyat-listesi-toyota-corolla-yaris-cross-camry-ch-r-rav4-ve-hilux-guncel-fiyatlari-1373750",
+          "title": "Toyota Ağustos 2026 fiyat listesi (kampanyalı satırlar)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://turkiye.toyota.com.tr/middle/fiyat-listesi/",
+          "title": "Toyota Türkiye resmi fiyat listesi (1 Ağustos 2026)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.arabalar.com.tr/toyota/c-hr",
+          "title": "Toyota C-HR donanım paket sıralaması (Flame/Passion/GR Sport)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "C-HR II TR MY2024+",
+      "generationCode": "AX20",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "driveType": "FWD",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "brand": "Toyota",
+      "series": "C-HR",
+      "model": "1.8 Hybrid e-CVT",
+      "trim": "GR SPORT",
+      "fuelType": "HYBRID",
+      "engineVolume": "1798",
+      "powerHp": "140",
+      "transmission": "AUTOMATIC",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "notes": "Yeni C-HR 1.8 Hybrid GR SPORT e-CVT — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://onedio.com/haber/agustos-2026-toyota-fiyat-listesi-toyota-corolla-yaris-cross-camry-ch-r-rav4-ve-hilux-guncel-fiyatlari-1373750",
+          "title": "Toyota Ağustos 2026 fiyat listesi (kampanyalı satırlar)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://turkiye.toyota.com.tr/middle/fiyat-listesi/",
+          "title": "Toyota Türkiye resmi fiyat listesi (1 Ağustos 2026)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.arabalar.com.tr/toyota/c-hr",
+          "title": "Toyota C-HR donanım paket sıralaması (Flame/Passion/GR Sport)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "driveType": "",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "brand": "Toyota",
+      "series": "RAV4",
+      "model": "",
+      "trim": "",
+      "fuelType": "",
+      "transmission": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "confidence": "REVIEW_REQUIRED",
+      "notes": "RAV4 Hybrid 2.5 4x4 Passion X-Pack / GR SPORT listed on TR sites but Aug 2026 campaign prices blank in published tables — archive ingest pending.",
+      "sources": [
+        {
+          "url": "https://turkiye.toyota.com.tr/middle/fiyat-listesi/",
+          "title": "Toyota Türkiye resmi fiyat listesi (1 Ağustos 2026)",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.donanimhaber.com/toyota-fiyat-listesi-sifir-toyota-araba-fiyatlari--158860",
+          "title": "Toyota Temmuz 2026 fiyat tablosu (liste+kampanya)",
+          "date": "2026-07-01",
+          "role": "secondary"
+        },
+        {
+          "url": "https://onedio.com/haber/agustos-2026-toyota-fiyat-listesi-toyota-corolla-yaris-cross-camry-ch-r-rav4-ve-hilux-guncel-fiyatlari-1373750",
+          "title": "Toyota Ağustos 2026 fiyat listesi (kampanyalı satırlar)",
+          "date": "2026-08-07",
+          "role": "primary"
+        }
+      ]
+    }
+  ],
+  "researchNotes": {
+    "researchedSeriesPass": [
+      "Corolla",
+      "C-HR",
+      "RAV4"
+    ],
+    "historicalArchivesIngested": [],
+    "reviewRequiredSeries": [
+      "RAV4"
+    ]
+  },
+  "completedAt": "2026-08-07T09:13:29.958Z"
+}

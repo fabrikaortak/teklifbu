@@ -1,0 +1,464 @@
+{
+  "brand": "Lexus",
+  "brandSlug": "lexus",
+  "version": "2026.08-deep-lexus-v1-current-tr",
+  "generatedAt": "2026-08-07T12:05:00.000Z",
+  "seriesCovered": [
+    "LBX",
+    "NX",
+    "RX",
+    "RZ",
+    "ES",
+    "LM"
+  ],
+  "status": "COMPLETED",
+  "notes": "LBX Hybrid trims from Aug/Jul 2026 published TR tables citing Lexus list prices.",
+  "configurations": [
+    {
+      "brand": "Lexus",
+      "series": "LBX",
+      "model": "1.5 Hybrid E-CVT",
+      "trim": "Base",
+      "generation": "LBX Hybrid TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "1490",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "LBX  E-CVT 1490 cc Hybrid MY2026 — Ağustos/Temmuz 2026 TR tables",
+      "sources": [
+        {
+          "url": "https://www.lexus.com.tr/",
+          "title": "Lexus Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://teknobirinci.com.tr/agustos-2026-lexus-fiyat-listesi-aciklandi-27-milyon-tl-indirim-var/",
+          "title": "Lexus Ağustos 2026 versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/temmuz-2026-lexus-fiyat-listesi-iste-lexus-es-rx-rz-lbx-nx-ve-ls-guncel-fiyatlari-1369820",
+          "title": "Lexus Temmuz 2026 LBX tablosu",
+          "date": "2026-07-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Lexus",
+      "series": "LBX",
+      "model": "1.5 Hybrid E-CVT",
+      "trim": "Elegant",
+      "generation": "LBX Hybrid TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "1490",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "LBX Elegant E-CVT 1490 cc Hybrid MY2026 — Ağustos/Temmuz 2026 TR tables",
+      "sources": [
+        {
+          "url": "https://www.lexus.com.tr/",
+          "title": "Lexus Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://teknobirinci.com.tr/agustos-2026-lexus-fiyat-listesi-aciklandi-27-milyon-tl-indirim-var/",
+          "title": "Lexus Ağustos 2026 versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/temmuz-2026-lexus-fiyat-listesi-iste-lexus-es-rx-rz-lbx-nx-ve-ls-guncel-fiyatlari-1369820",
+          "title": "Lexus Temmuz 2026 LBX tablosu",
+          "date": "2026-07-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Lexus",
+      "series": "LBX",
+      "model": "1.5 Hybrid E-CVT",
+      "trim": "Emotion",
+      "generation": "LBX Hybrid TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "1490",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "LBX Emotion E-CVT 1490 cc Hybrid MY2026 — Ağustos/Temmuz 2026 TR tables",
+      "sources": [
+        {
+          "url": "https://www.lexus.com.tr/",
+          "title": "Lexus Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://teknobirinci.com.tr/agustos-2026-lexus-fiyat-listesi-aciklandi-27-milyon-tl-indirim-var/",
+          "title": "Lexus Ağustos 2026 versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/temmuz-2026-lexus-fiyat-listesi-iste-lexus-es-rx-rz-lbx-nx-ve-ls-guncel-fiyatlari-1369820",
+          "title": "Lexus Temmuz 2026 LBX tablosu",
+          "date": "2026-07-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Lexus",
+      "series": "LBX",
+      "model": "1.5 Hybrid E-CVT",
+      "trim": "Relax",
+      "generation": "LBX Hybrid TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "1490",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "LBX Relax E-CVT 1490 cc Hybrid MY2026 — Ağustos/Temmuz 2026 TR tables",
+      "sources": [
+        {
+          "url": "https://www.lexus.com.tr/",
+          "title": "Lexus Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://teknobirinci.com.tr/agustos-2026-lexus-fiyat-listesi-aciklandi-27-milyon-tl-indirim-var/",
+          "title": "Lexus Ağustos 2026 versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/temmuz-2026-lexus-fiyat-listesi-iste-lexus-es-rx-rz-lbx-nx-ve-ls-guncel-fiyatlari-1369820",
+          "title": "Lexus Temmuz 2026 LBX tablosu",
+          "date": "2026-07-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Lexus",
+      "series": "LBX",
+      "model": "1.5 Hybrid E-CVT",
+      "trim": "Cool",
+      "generation": "LBX Hybrid TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "1490",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "LBX Cool E-CVT 1490 cc Hybrid MY2026 — Ağustos/Temmuz 2026 TR tables",
+      "sources": [
+        {
+          "url": "https://www.lexus.com.tr/",
+          "title": "Lexus Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://teknobirinci.com.tr/agustos-2026-lexus-fiyat-listesi-aciklandi-27-milyon-tl-indirim-var/",
+          "title": "Lexus Ağustos 2026 versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/temmuz-2026-lexus-fiyat-listesi-iste-lexus-es-rx-rz-lbx-nx-ve-ls-guncel-fiyatlari-1369820",
+          "title": "Lexus Temmuz 2026 LBX tablosu",
+          "date": "2026-07-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Lexus",
+      "series": "NX",
+      "model": "350h AWD",
+      "trim": "Business Plus",
+      "generation": "NX Hybrid TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2022,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "2487",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "NX 350h 4x4 Business Plus E-CVT — published TR 2026 lists",
+      "sources": [
+        {
+          "url": "https://www.lexus.com.tr/",
+          "title": "Lexus Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://teknobirinci.com.tr/agustos-2026-lexus-fiyat-listesi-aciklandi-27-milyon-tl-indirim-var/",
+          "title": "Lexus Ağustos 2026 versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/temmuz-2026-lexus-fiyat-listesi-iste-lexus-es-rx-rz-lbx-nx-ve-ls-guncel-fiyatlari-1369820",
+          "title": "Lexus Temmuz 2026 LBX tablosu",
+          "date": "2026-07-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Lexus",
+      "series": "NX",
+      "model": "350h AWD",
+      "trim": "Executive",
+      "generation": "NX Hybrid TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2022,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "2487",
+      "powerHp": "",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "NX 350h 4x4 Executive — published TR 2026 lists",
+      "sources": [
+        {
+          "url": "https://www.lexus.com.tr/",
+          "title": "Lexus Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://teknobirinci.com.tr/agustos-2026-lexus-fiyat-listesi-aciklandi-27-milyon-tl-indirim-var/",
+          "title": "Lexus Ağustos 2026 versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/temmuz-2026-lexus-fiyat-listesi-iste-lexus-es-rx-rz-lbx-nx-ve-ls-guncel-fiyatlari-1369820",
+          "title": "Lexus Temmuz 2026 LBX tablosu",
+          "date": "2026-07-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Lexus",
+      "series": "RX",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "fuelType": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "",
+      "driveType": "",
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "RX Hybrid / RX 500h on Aug lists — fuller version+trim ingest pending.",
+      "sources": [
+        {
+          "url": "https://www.lexus.com.tr/",
+          "title": "Lexus Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://teknobirinci.com.tr/agustos-2026-lexus-fiyat-listesi-aciklandi-27-milyon-tl-indirim-var/",
+          "title": "Lexus Ağustos 2026 versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/temmuz-2026-lexus-fiyat-listesi-iste-lexus-es-rx-rz-lbx-nx-ve-ls-guncel-fiyatlari-1369820",
+          "title": "Lexus Temmuz 2026 LBX tablosu",
+          "date": "2026-07-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Lexus",
+      "series": "RZ",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "fuelType": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "",
+      "driveType": "",
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "RZ EV overlay series — discrete TR configs pending.",
+      "sources": [
+        {
+          "url": "https://www.lexus.com.tr/",
+          "title": "Lexus Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://teknobirinci.com.tr/agustos-2026-lexus-fiyat-listesi-aciklandi-27-milyon-tl-indirim-var/",
+          "title": "Lexus Ağustos 2026 versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/temmuz-2026-lexus-fiyat-listesi-iste-lexus-es-rx-rz-lbx-nx-ve-ls-guncel-fiyatlari-1369820",
+          "title": "Lexus Temmuz 2026 LBX tablosu",
+          "date": "2026-07-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Lexus",
+      "series": "ES",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "fuelType": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "",
+      "driveType": "",
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Otomobil",
+      "notes": "ES hybrid TR presence needs fresh official confirmation.",
+      "sources": [
+        {
+          "url": "https://www.lexus.com.tr/",
+          "title": "Lexus Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://teknobirinci.com.tr/agustos-2026-lexus-fiyat-listesi-aciklandi-27-milyon-tl-indirim-var/",
+          "title": "Lexus Ağustos 2026 versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/temmuz-2026-lexus-fiyat-listesi-iste-lexus-es-rx-rz-lbx-nx-ve-ls-guncel-fiyatlari-1369820",
+          "title": "Lexus Temmuz 2026 LBX tablosu",
+          "date": "2026-07-01",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Lexus",
+      "series": "LM",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "fuelType": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "",
+      "driveType": "",
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Minivan & Panelvan",
+      "notes": "LM Hybrid listed Aug 2026 aggregators — official row pairing pending.",
+      "sources": [
+        {
+          "url": "https://www.lexus.com.tr/",
+          "title": "Lexus Türkiye resmi site",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://teknobirinci.com.tr/agustos-2026-lexus-fiyat-listesi-aciklandi-27-milyon-tl-indirim-var/",
+          "title": "Lexus Ağustos 2026 versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/temmuz-2026-lexus-fiyat-listesi-iste-lexus-es-rx-rz-lbx-nx-ve-ls-guncel-fiyatlari-1369820",
+          "title": "Lexus Temmuz 2026 LBX tablosu",
+          "date": "2026-07-01",
+          "role": "secondary"
+        }
+      ]
+    }
+  ],
+  "researchNotes": {
+    "researchedSeriesPass": [
+      "LBX",
+      "NX",
+      "RX",
+      "RZ",
+      "ES",
+      "LM"
+    ],
+    "reviewRequiredSeries": [
+      "RX",
+      "RZ",
+      "ES",
+      "LM"
+    ]
+  },
+  "completedAt": "2026-08-07T09:13:29.906Z"
+}

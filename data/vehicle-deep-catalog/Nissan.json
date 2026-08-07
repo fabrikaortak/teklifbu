@@ -1,0 +1,615 @@
+{
+  "brand": "Nissan",
+  "brandSlug": "nissan",
+  "version": "2026.08-deep-nissan-v1-current-tr",
+  "generatedAt": "2026-08-07T12:05:00.000Z",
+  "seriesCovered": [
+    "Qashqai",
+    "Qashqai e-POWER",
+    "Juke",
+    "X-Trail",
+    "Townstar"
+  ],
+  "status": "COMPLETED",
+  "notes": "Qashqai/Juke/X-Trail Aug 2026 from nissan.com.tr-cited tables. Townstar stub.",
+  "configurations": [
+    {
+      "brand": "Nissan",
+      "series": "Qashqai",
+      "model": "1.3 DIG-T Mild Hybrid 158PS",
+      "trim": "Designpack",
+      "generation": "J12 TR MY2026",
+      "generationCode": "J12",
+      "yearFrom": 2022,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "1332",
+      "powerHp": "158",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Qashqai 1.3 DIG-T Mild Hybrid 158PS Auto Designpack — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.nissan.com.tr/fiyat-listesi/sifir-arac-fiyatlari-2026.html",
+          "title": "Nissan Türkiye sıfır araç fiyatları 2026",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.webtekno.com/agustos-2026-nissan-fiyat-listesi-h221662.html",
+          "title": "Nissan Ağustos 2026 detaylı versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "secondary"
+        },
+        {
+          "url": "https://onedio.com/haber/agustos-2026-nissan-fiyat-listesi-iste-nissan-qashqai-juke-qashqai-e-power-ve-x-trail-guncel-fiyatlari-1373751",
+          "title": "Nissan Ağustos 2026 Onedio tablosu",
+          "date": "2026-08-05",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Nissan",
+      "series": "Qashqai",
+      "model": "1.3 DIG-T Mild Hybrid 158PS",
+      "trim": "Skypack",
+      "generation": "J12 TR MY2026",
+      "generationCode": "J12",
+      "yearFrom": 2022,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "1332",
+      "powerHp": "158",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Qashqai 1.3 DIG-T Mild Hybrid 158PS Auto Skypack — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.nissan.com.tr/fiyat-listesi/sifir-arac-fiyatlari-2026.html",
+          "title": "Nissan Türkiye sıfır araç fiyatları 2026",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.webtekno.com/agustos-2026-nissan-fiyat-listesi-h221662.html",
+          "title": "Nissan Ağustos 2026 detaylı versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "secondary"
+        },
+        {
+          "url": "https://onedio.com/haber/agustos-2026-nissan-fiyat-listesi-iste-nissan-qashqai-juke-qashqai-e-power-ve-x-trail-guncel-fiyatlari-1373751",
+          "title": "Nissan Ağustos 2026 Onedio tablosu",
+          "date": "2026-08-05",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Nissan",
+      "series": "Qashqai",
+      "model": "1.3 DIG-T Mild Hybrid 158PS",
+      "trim": "Skypack 4x4",
+      "generation": "J12 TR MY2026",
+      "generationCode": "J12",
+      "yearFrom": 2022,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "1332",
+      "powerHp": "158",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Qashqai 1.3 DIG-T Mild Hybrid 158PS Auto Skypack 4x4 — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.nissan.com.tr/fiyat-listesi/sifir-arac-fiyatlari-2026.html",
+          "title": "Nissan Türkiye sıfır araç fiyatları 2026",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.webtekno.com/agustos-2026-nissan-fiyat-listesi-h221662.html",
+          "title": "Nissan Ağustos 2026 detaylı versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "secondary"
+        },
+        {
+          "url": "https://onedio.com/haber/agustos-2026-nissan-fiyat-listesi-iste-nissan-qashqai-juke-qashqai-e-power-ve-x-trail-guncel-fiyatlari-1373751",
+          "title": "Nissan Ağustos 2026 Onedio tablosu",
+          "date": "2026-08-05",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Nissan",
+      "series": "Qashqai",
+      "model": "1.3 DIG-T Mild Hybrid 158PS",
+      "trim": "N-Design",
+      "generation": "J12 TR MY2026",
+      "generationCode": "J12",
+      "yearFrom": 2022,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "1332",
+      "powerHp": "158",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Qashqai 1.3 DIG-T Mild Hybrid 158PS Auto N-Design — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.nissan.com.tr/fiyat-listesi/sifir-arac-fiyatlari-2026.html",
+          "title": "Nissan Türkiye sıfır araç fiyatları 2026",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.webtekno.com/agustos-2026-nissan-fiyat-listesi-h221662.html",
+          "title": "Nissan Ağustos 2026 detaylı versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "secondary"
+        },
+        {
+          "url": "https://onedio.com/haber/agustos-2026-nissan-fiyat-listesi-iste-nissan-qashqai-juke-qashqai-e-power-ve-x-trail-guncel-fiyatlari-1373751",
+          "title": "Nissan Ağustos 2026 Onedio tablosu",
+          "date": "2026-08-05",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Nissan",
+      "series": "Qashqai",
+      "model": "1.3 DIG-T Mild Hybrid 158PS",
+      "trim": "Platinum",
+      "generation": "J12 TR MY2026",
+      "generationCode": "J12",
+      "yearFrom": 2022,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "1332",
+      "powerHp": "158",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Qashqai 1.3 DIG-T Mild Hybrid 158PS Auto Platinum — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.nissan.com.tr/fiyat-listesi/sifir-arac-fiyatlari-2026.html",
+          "title": "Nissan Türkiye sıfır araç fiyatları 2026",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.webtekno.com/agustos-2026-nissan-fiyat-listesi-h221662.html",
+          "title": "Nissan Ağustos 2026 detaylı versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "secondary"
+        },
+        {
+          "url": "https://onedio.com/haber/agustos-2026-nissan-fiyat-listesi-iste-nissan-qashqai-juke-qashqai-e-power-ve-x-trail-guncel-fiyatlari-1373751",
+          "title": "Nissan Ağustos 2026 Onedio tablosu",
+          "date": "2026-08-05",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Nissan",
+      "series": "Qashqai",
+      "model": "1.3 DIG-T Mild Hybrid 158PS",
+      "trim": "Platinum Premium",
+      "generation": "J12 TR MY2026",
+      "generationCode": "J12",
+      "yearFrom": 2022,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "1332",
+      "powerHp": "158",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Qashqai 1.3 DIG-T Mild Hybrid 158PS Auto Platinum Premium — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.nissan.com.tr/fiyat-listesi/sifir-arac-fiyatlari-2026.html",
+          "title": "Nissan Türkiye sıfır araç fiyatları 2026",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.webtekno.com/agustos-2026-nissan-fiyat-listesi-h221662.html",
+          "title": "Nissan Ağustos 2026 detaylı versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "secondary"
+        },
+        {
+          "url": "https://onedio.com/haber/agustos-2026-nissan-fiyat-listesi-iste-nissan-qashqai-juke-qashqai-e-power-ve-x-trail-guncel-fiyatlari-1373751",
+          "title": "Nissan Ağustos 2026 Onedio tablosu",
+          "date": "2026-08-05",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Nissan",
+      "series": "Qashqai e-POWER",
+      "model": "e-POWER 190PS",
+      "trim": "Designpack",
+      "generation": "J12 e-POWER TR MY2026",
+      "generationCode": "J12",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "",
+      "powerHp": "190",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Qashqai e-POWER e-POWER 190PS Designpack — Ağustos 2026 TR (series kept separate from ICE mild-hybrid Qashqai)",
+      "sources": [
+        {
+          "url": "https://www.nissan.com.tr/fiyat-listesi/sifir-arac-fiyatlari-2026.html",
+          "title": "Nissan Türkiye sıfır araç fiyatları 2026",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.webtekno.com/agustos-2026-nissan-fiyat-listesi-h221662.html",
+          "title": "Nissan Ağustos 2026 detaylı versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "secondary"
+        },
+        {
+          "url": "https://onedio.com/haber/agustos-2026-nissan-fiyat-listesi-iste-nissan-qashqai-juke-qashqai-e-power-ve-x-trail-guncel-fiyatlari-1373751",
+          "title": "Nissan Ağustos 2026 Onedio tablosu",
+          "date": "2026-08-05",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Nissan",
+      "series": "Qashqai e-POWER",
+      "model": "e-POWER 190PS",
+      "trim": "Skypack",
+      "generation": "J12 e-POWER TR MY2026",
+      "generationCode": "J12",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "",
+      "powerHp": "190",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Qashqai e-POWER e-POWER 190PS Skypack — Ağustos 2026 TR (series kept separate from ICE mild-hybrid Qashqai)",
+      "sources": [
+        {
+          "url": "https://www.nissan.com.tr/fiyat-listesi/sifir-arac-fiyatlari-2026.html",
+          "title": "Nissan Türkiye sıfır araç fiyatları 2026",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.webtekno.com/agustos-2026-nissan-fiyat-listesi-h221662.html",
+          "title": "Nissan Ağustos 2026 detaylı versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "secondary"
+        },
+        {
+          "url": "https://onedio.com/haber/agustos-2026-nissan-fiyat-listesi-iste-nissan-qashqai-juke-qashqai-e-power-ve-x-trail-guncel-fiyatlari-1373751",
+          "title": "Nissan Ağustos 2026 Onedio tablosu",
+          "date": "2026-08-05",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Nissan",
+      "series": "Qashqai e-POWER",
+      "model": "e-POWER 190PS",
+      "trim": "Platinum",
+      "generation": "J12 e-POWER TR MY2026",
+      "generationCode": "J12",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "",
+      "powerHp": "190",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Qashqai e-POWER e-POWER 190PS Platinum — Ağustos 2026 TR (series kept separate from ICE mild-hybrid Qashqai)",
+      "sources": [
+        {
+          "url": "https://www.nissan.com.tr/fiyat-listesi/sifir-arac-fiyatlari-2026.html",
+          "title": "Nissan Türkiye sıfır araç fiyatları 2026",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.webtekno.com/agustos-2026-nissan-fiyat-listesi-h221662.html",
+          "title": "Nissan Ağustos 2026 detaylı versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "secondary"
+        },
+        {
+          "url": "https://onedio.com/haber/agustos-2026-nissan-fiyat-listesi-iste-nissan-qashqai-juke-qashqai-e-power-ve-x-trail-guncel-fiyatlari-1373751",
+          "title": "Nissan Ağustos 2026 Onedio tablosu",
+          "date": "2026-08-05",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Nissan",
+      "series": "Juke",
+      "model": "1.0 DIG-T 115PS",
+      "trim": "Tekna Plus",
+      "generation": "F16 TR MY2026",
+      "generationCode": "F16",
+      "yearFrom": 2020,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "999",
+      "powerHp": "115",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Juke 1.0 DIG-T 115PS DCT Tekna Plus — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.nissan.com.tr/fiyat-listesi/sifir-arac-fiyatlari-2026.html",
+          "title": "Nissan Türkiye sıfır araç fiyatları 2026",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.webtekno.com/agustos-2026-nissan-fiyat-listesi-h221662.html",
+          "title": "Nissan Ağustos 2026 detaylı versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "secondary"
+        },
+        {
+          "url": "https://onedio.com/haber/agustos-2026-nissan-fiyat-listesi-iste-nissan-qashqai-juke-qashqai-e-power-ve-x-trail-guncel-fiyatlari-1373751",
+          "title": "Nissan Ağustos 2026 Onedio tablosu",
+          "date": "2026-08-05",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Nissan",
+      "series": "Juke",
+      "model": "1.0 DIG-T 115PS",
+      "trim": "Platinum",
+      "generation": "F16 TR MY2026",
+      "generationCode": "F16",
+      "yearFrom": 2020,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "999",
+      "powerHp": "115",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Juke 1.0 DIG-T 115PS DCT Platinum — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.nissan.com.tr/fiyat-listesi/sifir-arac-fiyatlari-2026.html",
+          "title": "Nissan Türkiye sıfır araç fiyatları 2026",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.webtekno.com/agustos-2026-nissan-fiyat-listesi-h221662.html",
+          "title": "Nissan Ağustos 2026 detaylı versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "secondary"
+        },
+        {
+          "url": "https://onedio.com/haber/agustos-2026-nissan-fiyat-listesi-iste-nissan-qashqai-juke-qashqai-e-power-ve-x-trail-guncel-fiyatlari-1373751",
+          "title": "Nissan Ağustos 2026 Onedio tablosu",
+          "date": "2026-08-05",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Nissan",
+      "series": "Juke",
+      "model": "1.0 DIG-T 115PS",
+      "trim": "Platinum Premium",
+      "generation": "F16 TR MY2026",
+      "generationCode": "F16",
+      "yearFrom": 2020,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "999",
+      "powerHp": "115",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Juke 1.0 DIG-T 115PS DCT Platinum Premium — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.nissan.com.tr/fiyat-listesi/sifir-arac-fiyatlari-2026.html",
+          "title": "Nissan Türkiye sıfır araç fiyatları 2026",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.webtekno.com/agustos-2026-nissan-fiyat-listesi-h221662.html",
+          "title": "Nissan Ağustos 2026 detaylı versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "secondary"
+        },
+        {
+          "url": "https://onedio.com/haber/agustos-2026-nissan-fiyat-listesi-iste-nissan-qashqai-juke-qashqai-e-power-ve-x-trail-guncel-fiyatlari-1373751",
+          "title": "Nissan Ağustos 2026 Onedio tablosu",
+          "date": "2026-08-05",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Nissan",
+      "series": "X-Trail",
+      "model": "1.5 VC-T Mild Hybrid 163PS",
+      "trim": "Platinum",
+      "generation": "T33 TR MY2025",
+      "generationCode": "T33",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "1497",
+      "powerHp": "163",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "X-Trail 1.5 VC-T MHEV Auto Platinum — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.nissan.com.tr/fiyat-listesi/sifir-arac-fiyatlari-2026.html",
+          "title": "Nissan Türkiye sıfır araç fiyatları 2026",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.webtekno.com/agustos-2026-nissan-fiyat-listesi-h221662.html",
+          "title": "Nissan Ağustos 2026 detaylı versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "secondary"
+        },
+        {
+          "url": "https://onedio.com/haber/agustos-2026-nissan-fiyat-listesi-iste-nissan-qashqai-juke-qashqai-e-power-ve-x-trail-guncel-fiyatlari-1373751",
+          "title": "Nissan Ağustos 2026 Onedio tablosu",
+          "date": "2026-08-05",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Nissan",
+      "series": "X-Trail",
+      "model": "1.5 VC-T Mild Hybrid 163PS",
+      "trim": "Platinum Premium",
+      "generation": "T33 TR MY2025",
+      "generationCode": "T33",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "1497",
+      "powerHp": "163",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "X-Trail 1.5 VC-T MHEV Auto Platinum Premium — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.nissan.com.tr/fiyat-listesi/sifir-arac-fiyatlari-2026.html",
+          "title": "Nissan Türkiye sıfır araç fiyatları 2026",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.webtekno.com/agustos-2026-nissan-fiyat-listesi-h221662.html",
+          "title": "Nissan Ağustos 2026 detaylı versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "secondary"
+        },
+        {
+          "url": "https://onedio.com/haber/agustos-2026-nissan-fiyat-listesi-iste-nissan-qashqai-juke-qashqai-e-power-ve-x-trail-guncel-fiyatlari-1373751",
+          "title": "Nissan Ağustos 2026 Onedio tablosu",
+          "date": "2026-08-05",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Nissan",
+      "series": "Townstar",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "fuelType": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "",
+      "driveType": "",
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Minivan & Panelvan",
+      "notes": "Townstar Van / Combi EV on Nissan TR price pages — discrete engine+trim rows pending.",
+      "sources": [
+        {
+          "url": "https://www.nissan.com.tr/fiyat-listesi/sifir-arac-fiyatlari-2026.html",
+          "title": "Nissan Türkiye sıfır araç fiyatları 2026",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.webtekno.com/agustos-2026-nissan-fiyat-listesi-h221662.html",
+          "title": "Nissan Ağustos 2026 detaylı versiyon tablosu",
+          "date": "2026-08-05",
+          "role": "secondary"
+        },
+        {
+          "url": "https://onedio.com/haber/agustos-2026-nissan-fiyat-listesi-iste-nissan-qashqai-juke-qashqai-e-power-ve-x-trail-guncel-fiyatlari-1373751",
+          "title": "Nissan Ağustos 2026 Onedio tablosu",
+          "date": "2026-08-05",
+          "role": "secondary"
+        }
+      ]
+    }
+  ],
+  "researchNotes": {
+    "researchedSeriesPass": [
+      "Qashqai",
+      "Qashqai e-POWER",
+      "Juke",
+      "X-Trail",
+      "Townstar"
+    ],
+    "reviewRequiredSeries": [
+      "Townstar"
+    ]
+  },
+  "completedAt": "2026-08-07T09:13:29.926Z"
+}

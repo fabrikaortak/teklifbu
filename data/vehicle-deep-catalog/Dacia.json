@@ -1,0 +1,650 @@
+{
+  "brand": "Dacia",
+  "brandSlug": "dacia",
+  "version": "2026.08-deep-dacia-v2-duster-verified",
+  "generatedAt": "2026-08-07T12:05:00.000Z",
+  "seriesCovered": [
+    "Sandero",
+    "Sandero Stepway",
+    "Logan",
+    "Jogger",
+    "Duster"
+  ],
+  "status": "COMPLETED",
+  "notes": "Sandero/Stepway/Logan/Jogger Aug 2026 + Duster Expression/Journey/Extreme Temmuz 2024 TR (Dacia resmi alıntılı).",
+  "configurations": [
+    {
+      "brand": "Dacia",
+      "series": "Sandero",
+      "model": "TCe 100",
+      "trim": "essential",
+      "generation": "III TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "999",
+      "powerHp": "100",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Sandero essential TCe 100 MY2026 — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.dacia.com.tr/",
+          "title": "Dacia Türkiye resmi site (başlangıç fiyatları)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.dacia.com.tr/dacia-fiyat-listesi.html",
+          "title": "Dacia resmi fiyat listesi sayfası",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.turkiyegazetesi.com.tr/t-otomobil/sandero-stepway-logan-jogger-dacia-agustos-2026-fiyatlarini-acikladi-1806663",
+          "title": "Dacia Ağustos 2026 versiyon tablosu",
+          "date": "2026-08-02",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Dacia",
+      "series": "Sandero",
+      "model": "TCe 100",
+      "trim": "expression",
+      "generation": "III TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "999",
+      "powerHp": "100",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Sandero expression TCe 100 MY2026 — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.dacia.com.tr/",
+          "title": "Dacia Türkiye resmi site (başlangıç fiyatları)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.dacia.com.tr/dacia-fiyat-listesi.html",
+          "title": "Dacia resmi fiyat listesi sayfası",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.turkiyegazetesi.com.tr/t-otomobil/sandero-stepway-logan-jogger-dacia-agustos-2026-fiyatlarini-acikladi-1806663",
+          "title": "Dacia Ağustos 2026 versiyon tablosu",
+          "date": "2026-08-02",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Dacia",
+      "series": "Sandero Stepway",
+      "model": "Eco-G 120",
+      "trim": "expression",
+      "generation": "Stepway TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "LPG",
+      "engineVolume": "999",
+      "powerHp": "120",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Stepway expression Eco-G 120 auto — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.dacia.com.tr/",
+          "title": "Dacia Türkiye resmi site (başlangıç fiyatları)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.dacia.com.tr/dacia-fiyat-listesi.html",
+          "title": "Dacia resmi fiyat listesi sayfası",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.turkiyegazetesi.com.tr/t-otomobil/sandero-stepway-logan-jogger-dacia-agustos-2026-fiyatlarini-acikladi-1806663",
+          "title": "Dacia Ağustos 2026 versiyon tablosu",
+          "date": "2026-08-02",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Dacia",
+      "series": "Sandero Stepway",
+      "model": "Eco-G 120",
+      "trim": "extreme",
+      "generation": "Stepway TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2024,
+      "yearTo": 2026,
+      "fuelType": "LPG",
+      "engineVolume": "999",
+      "powerHp": "120",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Stepway extreme Eco-G 120 auto — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.dacia.com.tr/",
+          "title": "Dacia Türkiye resmi site (başlangıç fiyatları)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.dacia.com.tr/dacia-fiyat-listesi.html",
+          "title": "Dacia resmi fiyat listesi sayfası",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.turkiyegazetesi.com.tr/t-otomobil/sandero-stepway-logan-jogger-dacia-agustos-2026-fiyatlarini-acikladi-1806663",
+          "title": "Dacia Ağustos 2026 versiyon tablosu",
+          "date": "2026-08-02",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Dacia",
+      "series": "Logan",
+      "model": "TCe 100",
+      "trim": "essential",
+      "generation": "III TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2026,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "999",
+      "powerHp": "100",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Logan essential TCe 100 — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.dacia.com.tr/",
+          "title": "Dacia Türkiye resmi site (başlangıç fiyatları)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.dacia.com.tr/dacia-fiyat-listesi.html",
+          "title": "Dacia resmi fiyat listesi sayfası",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.turkiyegazetesi.com.tr/t-otomobil/sandero-stepway-logan-jogger-dacia-agustos-2026-fiyatlarini-acikladi-1806663",
+          "title": "Dacia Ağustos 2026 versiyon tablosu",
+          "date": "2026-08-02",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Dacia",
+      "series": "Logan",
+      "model": "Eco-G 120",
+      "trim": "expression",
+      "generation": "III TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2026,
+      "yearTo": 2026,
+      "fuelType": "LPG",
+      "engineVolume": "999",
+      "powerHp": "120",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Logan expression Eco-G 120 auto — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.dacia.com.tr/",
+          "title": "Dacia Türkiye resmi site (başlangıç fiyatları)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.dacia.com.tr/dacia-fiyat-listesi.html",
+          "title": "Dacia resmi fiyat listesi sayfası",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.turkiyegazetesi.com.tr/t-otomobil/sandero-stepway-logan-jogger-dacia-agustos-2026-fiyatlarini-acikladi-1806663",
+          "title": "Dacia Ağustos 2026 versiyon tablosu",
+          "date": "2026-08-02",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Dacia",
+      "series": "Logan",
+      "model": "Eco-G 120",
+      "trim": "journey",
+      "generation": "III TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2026,
+      "yearTo": 2026,
+      "fuelType": "LPG",
+      "engineVolume": "999",
+      "powerHp": "120",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Otomobil",
+      "notes": "Logan journey Eco-G 120 auto — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.dacia.com.tr/",
+          "title": "Dacia Türkiye resmi site (başlangıç fiyatları)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.dacia.com.tr/dacia-fiyat-listesi.html",
+          "title": "Dacia resmi fiyat listesi sayfası",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.turkiyegazetesi.com.tr/t-otomobil/sandero-stepway-logan-jogger-dacia-agustos-2026-fiyatlarini-acikladi-1806663",
+          "title": "Dacia Ağustos 2026 versiyon tablosu",
+          "date": "2026-08-02",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Dacia",
+      "series": "Jogger",
+      "model": "TCe 110 7K",
+      "trim": "extreme",
+      "generation": "Jogger TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "fuelType": "GASOLINE",
+      "engineVolume": "999",
+      "powerHp": "110",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Minivan & Panelvan",
+      "notes": "Jogger extreme TCe 110 7 koltuk — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.dacia.com.tr/",
+          "title": "Dacia Türkiye resmi site (başlangıç fiyatları)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.dacia.com.tr/dacia-fiyat-listesi.html",
+          "title": "Dacia resmi fiyat listesi sayfası",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.turkiyegazetesi.com.tr/t-otomobil/sandero-stepway-logan-jogger-dacia-agustos-2026-fiyatlarini-acikladi-1806663",
+          "title": "Dacia Ağustos 2026 versiyon tablosu",
+          "date": "2026-08-02",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Dacia",
+      "series": "Jogger",
+      "model": "Eco-G 120 7K",
+      "trim": "extreme",
+      "generation": "Jogger TR MY2026",
+      "generationCode": "",
+      "yearFrom": 2023,
+      "yearTo": 2026,
+      "fuelType": "LPG",
+      "engineVolume": "999",
+      "powerHp": "120",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Minivan & Panelvan",
+      "notes": "Jogger extreme Eco-G 120 auto 7K — Ağustos 2026 TR",
+      "sources": [
+        {
+          "url": "https://www.dacia.com.tr/",
+          "title": "Dacia Türkiye resmi site (başlangıç fiyatları)",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.dacia.com.tr/dacia-fiyat-listesi.html",
+          "title": "Dacia resmi fiyat listesi sayfası",
+          "date": "2026-08-07",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.turkiyegazetesi.com.tr/t-otomobil/sandero-stepway-logan-jogger-dacia-agustos-2026-fiyatlarini-acikladi-1806663",
+          "title": "Dacia Ağustos 2026 versiyon tablosu",
+          "date": "2026-08-02",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Dacia",
+      "series": "Duster",
+      "model": "ECO-G 100",
+      "trim": "expression",
+      "generation": "II facelift TR MY2024",
+      "generationCode": "",
+      "yearFrom": 2022,
+      "yearTo": 2024,
+      "fuelType": "LPG",
+      "engineVolume": "999",
+      "powerHp": "100",
+      "transmission": "MANUAL",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Duster expression ECO-G 100 — Temmuz 2024 TR (Dacia resmi site alıntılı listeler)",
+      "sources": [
+        {
+          "url": "https://www.dacia.com.tr/",
+          "title": "Dacia Türkiye resmi site",
+          "date": "2024-07-05",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.karamaninsesi.com/dacia-duster-2024-temmuz-guncel-fiyat-listesi-h46828.html",
+          "title": "Dacia Duster Temmuz 2024 fiyat listesi (Dacia resmi site alıntısı)",
+          "date": "2024-07-05",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/dacia-fiyat-listesi-temmuz-2024-iste-dacia-duster-sandero-stepway-jogger-ve-spring-guncel-fiyatlari-1232529",
+          "title": "Dacia Temmuz 2024 versiyon tablosu (Duster)",
+          "date": "2024-07-05",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.arabahabercisi.com/dacia-duster-fiyat-listesi-subat-2024/",
+          "title": "Dacia Duster Şubat 2024 (dacia.com.tr alıntısı) — aynı versiyon+trim isimleri",
+          "date": "2024-02-16",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Dacia",
+      "series": "Duster",
+      "model": "TCe 150 EDC",
+      "trim": "expression",
+      "generation": "II facelift TR MY2024",
+      "generationCode": "",
+      "yearFrom": 2022,
+      "yearTo": 2024,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1332",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Duster expression TCe 150 EDC — Temmuz 2024 TR",
+      "sources": [
+        {
+          "url": "https://www.dacia.com.tr/",
+          "title": "Dacia Türkiye resmi site",
+          "date": "2024-07-05",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.karamaninsesi.com/dacia-duster-2024-temmuz-guncel-fiyat-listesi-h46828.html",
+          "title": "Dacia Duster Temmuz 2024 fiyat listesi (Dacia resmi site alıntısı)",
+          "date": "2024-07-05",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/dacia-fiyat-listesi-temmuz-2024-iste-dacia-duster-sandero-stepway-jogger-ve-spring-guncel-fiyatlari-1232529",
+          "title": "Dacia Temmuz 2024 versiyon tablosu (Duster)",
+          "date": "2024-07-05",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.arabahabercisi.com/dacia-duster-fiyat-listesi-subat-2024/",
+          "title": "Dacia Duster Şubat 2024 (dacia.com.tr alıntısı) — aynı versiyon+trim isimleri",
+          "date": "2024-02-16",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Dacia",
+      "series": "Duster",
+      "model": "TCe 150 4x4",
+      "trim": "expression",
+      "generation": "II facelift TR MY2024",
+      "generationCode": "",
+      "yearFrom": 2022,
+      "yearTo": 2024,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1332",
+      "powerHp": "150",
+      "transmission": "MANUAL",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Duster expression TCe 150 4x4 — Temmuz 2024 TR",
+      "sources": [
+        {
+          "url": "https://www.dacia.com.tr/",
+          "title": "Dacia Türkiye resmi site",
+          "date": "2024-07-05",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.karamaninsesi.com/dacia-duster-2024-temmuz-guncel-fiyat-listesi-h46828.html",
+          "title": "Dacia Duster Temmuz 2024 fiyat listesi (Dacia resmi site alıntısı)",
+          "date": "2024-07-05",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/dacia-fiyat-listesi-temmuz-2024-iste-dacia-duster-sandero-stepway-jogger-ve-spring-guncel-fiyatlari-1232529",
+          "title": "Dacia Temmuz 2024 versiyon tablosu (Duster)",
+          "date": "2024-07-05",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.arabahabercisi.com/dacia-duster-fiyat-listesi-subat-2024/",
+          "title": "Dacia Duster Şubat 2024 (dacia.com.tr alıntısı) — aynı versiyon+trim isimleri",
+          "date": "2024-02-16",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Dacia",
+      "series": "Duster",
+      "model": "TCe 150 EDC",
+      "trim": "journey",
+      "generation": "II facelift TR MY2024",
+      "generationCode": "",
+      "yearFrom": 2022,
+      "yearTo": 2024,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1332",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Duster journey TCe 150 EDC — Temmuz 2024 TR",
+      "sources": [
+        {
+          "url": "https://www.dacia.com.tr/",
+          "title": "Dacia Türkiye resmi site",
+          "date": "2024-07-05",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.karamaninsesi.com/dacia-duster-2024-temmuz-guncel-fiyat-listesi-h46828.html",
+          "title": "Dacia Duster Temmuz 2024 fiyat listesi (Dacia resmi site alıntısı)",
+          "date": "2024-07-05",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/dacia-fiyat-listesi-temmuz-2024-iste-dacia-duster-sandero-stepway-jogger-ve-spring-guncel-fiyatlari-1232529",
+          "title": "Dacia Temmuz 2024 versiyon tablosu (Duster)",
+          "date": "2024-07-05",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.arabahabercisi.com/dacia-duster-fiyat-listesi-subat-2024/",
+          "title": "Dacia Duster Şubat 2024 (dacia.com.tr alıntısı) — aynı versiyon+trim isimleri",
+          "date": "2024-02-16",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Dacia",
+      "series": "Duster",
+      "model": "TCe 150 EDC",
+      "trim": "extreme",
+      "generation": "II facelift TR MY2024",
+      "generationCode": "",
+      "yearFrom": 2022,
+      "yearTo": 2024,
+      "fuelType": "GASOLINE",
+      "engineVolume": "1332",
+      "powerHp": "150",
+      "transmission": "AUTOMATIC",
+      "driveType": "FWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Duster extreme TCe 150 EDC — Temmuz 2024 TR",
+      "sources": [
+        {
+          "url": "https://www.dacia.com.tr/",
+          "title": "Dacia Türkiye resmi site",
+          "date": "2024-07-05",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.karamaninsesi.com/dacia-duster-2024-temmuz-guncel-fiyat-listesi-h46828.html",
+          "title": "Dacia Duster Temmuz 2024 fiyat listesi (Dacia resmi site alıntısı)",
+          "date": "2024-07-05",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/dacia-fiyat-listesi-temmuz-2024-iste-dacia-duster-sandero-stepway-jogger-ve-spring-guncel-fiyatlari-1232529",
+          "title": "Dacia Temmuz 2024 versiyon tablosu (Duster)",
+          "date": "2024-07-05",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.arabahabercisi.com/dacia-duster-fiyat-listesi-subat-2024/",
+          "title": "Dacia Duster Şubat 2024 (dacia.com.tr alıntısı) — aynı versiyon+trim isimleri",
+          "date": "2024-02-16",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Dacia",
+      "series": "Duster",
+      "model": "Blue dCi 115 4x4",
+      "trim": "journey",
+      "generation": "II facelift TR MY2024",
+      "generationCode": "",
+      "yearFrom": 2022,
+      "yearTo": 2024,
+      "fuelType": "DIESEL",
+      "engineVolume": "1461",
+      "powerHp": "115",
+      "transmission": "MANUAL",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_MULTI_SOURCE",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Duster journey Blue dCi 115 4x4 — Temmuz 2024 TR",
+      "sources": [
+        {
+          "url": "https://www.dacia.com.tr/",
+          "title": "Dacia Türkiye resmi site",
+          "date": "2024-07-05",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.karamaninsesi.com/dacia-duster-2024-temmuz-guncel-fiyat-listesi-h46828.html",
+          "title": "Dacia Duster Temmuz 2024 fiyat listesi (Dacia resmi site alıntısı)",
+          "date": "2024-07-05",
+          "role": "primary"
+        },
+        {
+          "url": "https://onedio.com/haber/dacia-fiyat-listesi-temmuz-2024-iste-dacia-duster-sandero-stepway-jogger-ve-spring-guncel-fiyatlari-1232529",
+          "title": "Dacia Temmuz 2024 versiyon tablosu (Duster)",
+          "date": "2024-07-05",
+          "role": "secondary"
+        },
+        {
+          "url": "https://www.arabahabercisi.com/dacia-duster-fiyat-listesi-subat-2024/",
+          "title": "Dacia Duster Şubat 2024 (dacia.com.tr alıntısı) — aynı versiyon+trim isimleri",
+          "date": "2024-02-16",
+          "role": "secondary"
+        }
+      ]
+    }
+  ],
+  "researchNotes": {
+    "researchedSeriesPass": [
+      "Sandero",
+      "Sandero Stepway",
+      "Logan",
+      "Jogger",
+      "Duster"
+    ],
+    "reviewRequiredSeries": [],
+    "verifiedDusterRows": 6
+  },
+  "completedAt": "2026-08-07T09:13:29.880Z"
+}

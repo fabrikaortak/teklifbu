@@ -1,0 +1,333 @@
+{
+  "brand": "Land Rover",
+  "brandSlug": "land-rover",
+  "version": "2026.08-deep-land-rover-v1-current-tr",
+  "generatedAt": "2026-08-07T12:05:00.000Z",
+  "seriesCovered": [
+    "Defender",
+    "Range Rover Evoque",
+    "Discovery Sport",
+    "Range Rover Velar",
+    "Range Rover Sport",
+    "Range Rover"
+  ],
+  "status": "COMPLETED",
+  "notes": "Defender 110/130 official landrover.com.tr price rows. Other Range Rover family stubs.",
+  "configurations": [
+    {
+      "brand": "Land Rover",
+      "series": "Defender",
+      "model": "110 3.0D Mild Hybrid 200 bg",
+      "trim": "ULTIMATE",
+      "generation": "L663 Defender 110",
+      "generationCode": "L663",
+      "yearFrom": 2020,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "2997",
+      "powerHp": "200",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Defender 110 Dizel MHEV ULTIMATE 2.997cc 200 bg — resmi",
+      "sources": [
+        {
+          "url": "https://www.landrover.com.tr/build-and-price/defender-fiyat-listesi",
+          "title": "Land Rover Defender resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.landrover.com.tr/",
+          "title": "Land Rover Türkiye",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Land Rover",
+      "series": "Defender",
+      "model": "110 2.0 PHEV 300 bg",
+      "trim": "X-DYNAMIC HSE",
+      "generation": "L663 Defender 110",
+      "generationCode": "L663",
+      "yearFrom": 2020,
+      "yearTo": 2026,
+      "fuelType": "PLUGIN_HYBRID",
+      "engineVolume": "1997",
+      "powerHp": "300",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Defender 110 PHEV X-DYNAMIC HSE — resmi",
+      "sources": [
+        {
+          "url": "https://www.landrover.com.tr/build-and-price/defender-fiyat-listesi",
+          "title": "Land Rover Defender resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.landrover.com.tr/",
+          "title": "Land Rover Türkiye",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Land Rover",
+      "series": "Defender",
+      "model": "110 4.4 Mild Hybrid 635 bg",
+      "trim": "OCTA",
+      "generation": "L663 Defender 110",
+      "generationCode": "L663",
+      "yearFrom": 2025,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "4395",
+      "powerHp": "635",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Defender 110 OCTA — resmi",
+      "sources": [
+        {
+          "url": "https://www.landrover.com.tr/build-and-price/defender-fiyat-listesi",
+          "title": "Land Rover Defender resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.landrover.com.tr/",
+          "title": "Land Rover Türkiye",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Land Rover",
+      "series": "Defender",
+      "model": "130 3.0D Mild Hybrid 350 bg",
+      "trim": "X-DYNAMIC HSE",
+      "generation": "L663 Defender 130",
+      "generationCode": "L663",
+      "yearFrom": 2022,
+      "yearTo": 2026,
+      "fuelType": "HYBRID",
+      "engineVolume": "2997",
+      "powerHp": "350",
+      "transmission": "AUTOMATIC",
+      "driveType": "AWD",
+      "confidence": "VERIFIED_OFFICIAL",
+      "verifiedForTurkey": true,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Defender 130 Dizel MHEV X-DYNAMIC HSE — resmi",
+      "sources": [
+        {
+          "url": "https://www.landrover.com.tr/build-and-price/defender-fiyat-listesi",
+          "title": "Land Rover Defender resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.landrover.com.tr/",
+          "title": "Land Rover Türkiye",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Land Rover",
+      "series": "Range Rover Evoque",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "fuelType": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "",
+      "driveType": "",
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Evoque on official LR TR price hub — discrete version+trim ingest pending.",
+      "sources": [
+        {
+          "url": "https://www.landrover.com.tr/build-and-price/defender-fiyat-listesi",
+          "title": "Land Rover Defender resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.landrover.com.tr/",
+          "title": "Land Rover Türkiye",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Land Rover",
+      "series": "Discovery Sport",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "fuelType": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "",
+      "driveType": "",
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Discovery Sport on official price hub — rows pending.",
+      "sources": [
+        {
+          "url": "https://www.landrover.com.tr/build-and-price/defender-fiyat-listesi",
+          "title": "Land Rover Defender resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.landrover.com.tr/",
+          "title": "Land Rover Türkiye",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Land Rover",
+      "series": "Range Rover Velar",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "fuelType": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "",
+      "driveType": "",
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Velar on official price hub — rows pending.",
+      "sources": [
+        {
+          "url": "https://www.landrover.com.tr/build-and-price/defender-fiyat-listesi",
+          "title": "Land Rover Defender resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.landrover.com.tr/",
+          "title": "Land Rover Türkiye",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Land Rover",
+      "series": "Range Rover Sport",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "fuelType": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "",
+      "driveType": "",
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "RR Sport on official price hub — rows pending.",
+      "sources": [
+        {
+          "url": "https://www.landrover.com.tr/build-and-price/defender-fiyat-listesi",
+          "title": "Land Rover Defender resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.landrover.com.tr/",
+          "title": "Land Rover Türkiye",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    },
+    {
+      "brand": "Land Rover",
+      "series": "Range Rover",
+      "model": "",
+      "trim": "",
+      "generation": "",
+      "generationCode": "",
+      "yearFrom": null,
+      "yearTo": null,
+      "fuelType": "",
+      "engineVolume": "",
+      "powerHp": "",
+      "transmission": "",
+      "driveType": "",
+      "confidence": "REVIEW_REQUIRED",
+      "verifiedForTurkey": false,
+      "category": "Arazi, SUV & Pickup",
+      "notes": "Range Rover on official price hub — rows pending.",
+      "sources": [
+        {
+          "url": "https://www.landrover.com.tr/build-and-price/defender-fiyat-listesi",
+          "title": "Land Rover Defender resmi fiyat listesi",
+          "date": "2026-08-07",
+          "role": "primary"
+        },
+        {
+          "url": "https://www.landrover.com.tr/",
+          "title": "Land Rover Türkiye",
+          "date": "2026-08-07",
+          "role": "secondary"
+        }
+      ]
+    }
+  ],
+  "researchNotes": {
+    "researchedSeriesPass": [
+      "Defender",
+      "Range Rover Evoque",
+      "Discovery Sport",
+      "Range Rover Velar",
+      "Range Rover Sport",
+      "Range Rover"
+    ],
+    "reviewRequiredSeries": [
+      "Range Rover Evoque",
+      "Discovery Sport",
+      "Range Rover Velar",
+      "Range Rover Sport",
+      "Range Rover"
+    ]
+  },
+  "completedAt": "2026-08-07T09:13:29.902Z"
+}
