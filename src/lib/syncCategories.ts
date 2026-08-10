@@ -1,6 +1,6 @@
 import type { PrismaClient } from "@prisma/client";
-import { SHOP_ROOTS, SHOP_SUBCATEGORIES, childSlug } from "@/data/shopCategories";
-import { PREMIUM_CATEGORY_SEEDS, childPremiumSlug } from "@/data/premiumCategories";
+import { SHOP_ROOTS, SHOP_SUBCATEGORIES, childSlug } from "../data/shopCategories";
+import { PREMIUM_CATEGORY_SEEDS, childPremiumSlug } from "../data/premiumCategories";
 
 /** Emlak kökleri + İkinci El / Sıfır Ürün + Premium dikeyleri senkronize eder. */
 export async function syncCategories(client: PrismaClient) {

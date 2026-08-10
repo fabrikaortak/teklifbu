@@ -39,6 +39,7 @@ COPY --from=builder /app/public ./public
 COPY --from=builder /app/prisma ./prisma
 COPY --from=builder /app/src ./src
 COPY --from=builder /app/next.config.ts ./
+COPY --from=builder /app/tsconfig.json ./
 COPY --from=builder /app/scripts/docker-entrypoint.sh /docker-entrypoint.sh
 RUN sed -i 's/\r$//' /docker-entrypoint.sh && chmod +x /docker-entrypoint.sh \
   && mkdir -p /app/public/uploads

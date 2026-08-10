@@ -33,8 +33,11 @@ services:
       NEXT_PUBLIC_APP_URL: ${NEXT_PUBLIC_APP_URL:-https://teklifbu.com.tr}
     volumes:
       - teklifbu_uploads:/app/public/uploads
-      # Boot script host'tan — düzeltme için 20dk image rebuild gerekmez
+      # Boot/seed hotfix — image rebuild olmadan host dosyaları kullanılır
       - ./scripts/docker-entrypoint.sh:/docker-entrypoint.sh:ro
+      - ./src:/app/src:ro
+      - ./tsconfig.json:/app/tsconfig.json:ro
+      - ./prisma:/app/prisma:ro
     entrypoint: ["/bin/sh", "/docker-entrypoint.sh"]
     depends_on:
       db:
