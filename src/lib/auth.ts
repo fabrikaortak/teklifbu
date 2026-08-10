@@ -8,6 +8,17 @@ function secret() {
   return new TextEncoder().encode(process.env.AUTH_SECRET || "teklifbu-dev-secret");
 }
 
+/** HTTPS yokken (IP:3010) Secure cookie oturumu düşürür */
+function cookieSecure() {
+  const flag = String(process.env.COOKIE_SECURE || "").toLowerCase();
+  if (flag === "0" || flag === "false") return false;
+  if (flag === "1" || flag === "true") return true;
+  const appUrl = String(process.env.NEXT_PUBLIC_APP_URL || "");
+  if (appUrl.startsWith("http://")) return false;
+  if (appUrl.startsWith("https://")) return true;
+  return process.env.NODE_ENV === "production";
+}
+
 export type SessionUser = {
   id: string;
   phone: string;
@@ -31,7 +42,7 @@ export async function setSessionCookie(token: string) {
   jar.set(COOKIE, token, {
     httpOnly: true,
     sameSite: "lax",
-    secure: process.env.NODE_ENV === "production",
+    secure: cookieSecure(),
     path: "/",
     maxAge: 60 * 60 * 24 * 30,
   });

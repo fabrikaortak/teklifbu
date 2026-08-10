@@ -30,7 +30,9 @@ services:
       OTP_PROVIDER: ${OTP_PROVIDER:-dev}
       SEED_ON_BOOT: ${SEED_ON_BOOT:-auto}
       SKIP_DB: "0"
-      NEXT_PUBLIC_APP_URL: ${NEXT_PUBLIC_APP_URL:-https://teklifbu.com.tr}
+      # HTTP ile IP:3010 erişiminde oturum için Secure cookie kapalı (SSL sonrası 1 yapın)
+      COOKIE_SECURE: ${COOKIE_SECURE:-0}
+      NEXT_PUBLIC_APP_URL: ${NEXT_PUBLIC_APP_URL:-http://185.22.185.164:3010}
     volumes:
       - teklifbu_uploads:/app/public/uploads
       # Boot/seed hotfix — image rebuild olmadan host dosyaları kullanılır
