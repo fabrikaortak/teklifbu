@@ -65,6 +65,7 @@ export function PremiumHome() {
     logistics: true,
     rideshare: true,
   });
+  const [premiumMasterOpen, setPremiumMasterOpen] = useState(true);
   const [buckets, setBuckets] = useState(emptyPremiumBuckets);
   const { view, changeView } = useListingView("teklifbu:premium-home-view", "grid");
   const [sort, setSort] = useState("new");
@@ -128,6 +129,7 @@ export function PremiumHome() {
         const nextEn = d?.premiumVerticals || enabled;
         setLimits(nextLimits);
         setEnabled(nextEn);
+        setPremiumMasterOpen(d?.premiumEnabled !== false);
         loadVitrin(nextLimits, nextEn);
       })
       .catch(() => loadVitrin(DEFAULT_LIMITS, enabled));
@@ -231,6 +233,18 @@ export function PremiumHome() {
 
   return (
     <div className="v2-home v2-home--premium">
+      {!premiumMasterOpen ? (
+        <div className="page-shell" style={{ maxWidth: 640, margin: "48px auto", padding: 24, textAlign: "center" }}>
+          <h1 style={{ margin: 0, fontSize: 24, fontWeight: 900 }}>Premium geçici olarak kapalı</h1>
+          <p style={{ margin: "12px 0 20px", color: "#64748b", lineHeight: 1.5 }}>
+            Bu dikey yönetici tarafından kapatıldı. Ana sayfaya dönebilirsiniz.
+          </p>
+          <button type="button" className="btn-orange" style={{ padding: "12px 18px" }} onClick={() => router.push("/")}>
+            Ana sayfa
+          </button>
+        </div>
+      ) : (
+      <>
       <aside className="v2-left v2-side-card">
         <PremiumBrowseSection filters={browse} onSelect={onPremiumSelect} facets={facets} />
 
@@ -372,6 +386,8 @@ export function PremiumHome() {
           </div>
         )}
       </section>
+      </>
+      )}
     </div>
   );
 }

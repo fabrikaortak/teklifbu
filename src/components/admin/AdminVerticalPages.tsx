@@ -447,7 +447,8 @@ export function VerticalSettingsPage({ vertical }: { vertical: AdminVertical }) 
           description="Dikey aç/kapa, vitrin kartı adetleri ve premium özellik jeton fiyatları."
         />
         <div style={{ display: "grid", gap: 20 }}>
-          <AdminSettingsPanel onlyGroups={["premium"]} />
+          <AdminSettingsPanel onlyKeys={["premium_vertical_enabled", "premium_verticals_enabled"]} />
+          <AdminSettingsPanel onlyGroups={["premium"]} excludeKeys={["premium_vertical_enabled", "premium_verticals_enabled"]} />
           <AdminSettingsPanel
             onlyKeys={[
               "premium_pay_with_tokens_enabled",
@@ -479,6 +480,7 @@ export function VerticalSettingsPage({ vertical }: { vertical: AdminVertical }) 
         <div style={{ display: "grid", gap: 20 }}>
           <AdminSettingsPanel
             onlyKeys={[
+              "alisveris_vertical_enabled",
               "shop_package_buy_popup_bireysel",
               "shop_package_buy_popup_ticari",
               "shop_package_pay_with_tokens_enabled",

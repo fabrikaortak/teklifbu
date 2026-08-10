@@ -30,6 +30,10 @@ export async function GET() {
   const premiumDetailLayoutRaw = String(
     (await getSetting<string>("listing_detail_layout_premium", "premium")) || "premium"
   );
+  const premiumMasterEnabled =
+    (await getSetting<boolean>("premium_vertical_enabled", true)) !== false;
+  const alisverisEnabled =
+    (await getSetting<boolean>("alisveris_vertical_enabled", true)) !== false;
   const premiumVerticalsRaw =
     (await getSetting<Record<string, boolean>>("premium_verticals_enabled", {
       hotel: true,
@@ -99,10 +103,12 @@ export async function GET() {
       premiumDetailLayoutRaw === "sahibinden" || premiumDetailLayoutRaw === "classic"
         ? premiumDetailLayoutRaw
         : "premium",
+    premiumEnabled: premiumMasterEnabled,
+    alisverisEnabled,
     premiumVerticals: {
-      hotel: premiumVerticalsRaw.hotel !== false,
-      logistics: premiumVerticalsRaw.logistics !== false,
-      rideshare: premiumVerticalsRaw.rideshare !== false,
+      hotel: premiumMasterEnabled && premiumVerticalsRaw.hotel !== false,
+      logistics: premiumMasterEnabled && premiumVerticalsRaw.logistics !== false,
+      rideshare: premiumMasterEnabled && premiumVerticalsRaw.rideshare !== false,
     },
     premiumHomeLimits: {
       hotel: Math.min(12, Math.max(1, Number((await getSetting<number>("premium_home_limit_hotel", 4)) || 4))),

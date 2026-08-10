@@ -1216,16 +1216,32 @@ export const DEFAULT_SETTINGS: Record<string, SettingMeta> = {
       logistics: true,
       rideshare: true,
     },
-    label: "Premium dikeyler (kapasite)",
+    label: "Premium alt dikeyler",
     group: "premium",
     description:
-      "Otel, lojistik ve yolculuk paylaşımı. Kapalı dikey sidebar ve vitrinde görünmez. Açıkken premium kategoriye tıklanınca yalnızca o dünyanın ilanları listelenir.",
+      "Otel, lojistik ve yolculuk. Üstteki «Premium dikeyi (tümü)» kapalıysa bunlar da gizlenir. Açıkken yalnızca işaretli alt dikeyler görünür.",
     control: "flagMap",
     options: [
       { value: "hotel", label: "Otel Konaklama" },
       { value: "logistics", label: "Lojistik Taşıma" },
       { value: "rideshare", label: "Yolculuk Paylaşımı" },
     ],
+  },
+  premium_vertical_enabled: {
+    value: true,
+    label: "Premium dikeyi (tümü)",
+    group: "premium",
+    description:
+      "Tek tıkla tüm premium dünyasını kapatır/açar. Kapalıysa menü, /premium ve ilan seçiminde premium görünmez.",
+    control: "toggle",
+  },
+  alisveris_vertical_enabled: {
+    value: true,
+    label: "Alışveriş dikeyi (tümü)",
+    group: "commercial",
+    description:
+      "Tek tıkla tüm alışveriş dünyasını kapatır/açar. Kapalıysa menü, /alisveris ve ilan seçiminde alışveriş görünmez.",
+    control: "toggle",
   },
   listing_detail_layout_premium: {
     value: "premium",

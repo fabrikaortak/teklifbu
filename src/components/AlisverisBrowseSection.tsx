@@ -35,6 +35,16 @@ export function AlisverisBrowseSection({ filters, onSelect, alwaysShowClassicBac
   const { tree } = useAlisverisBrowseTree();
   const [openIds, setOpenIds] = useState<Set<string>>(() => new Set());
   const [userCollapsed, setUserCollapsed] = useState<Set<string>>(() => new Set());
+  const [verticalEnabled, setVerticalEnabled] = useState(true);
+
+  useEffect(() => {
+    fetch("/api/theme")
+      .then((r) => r.json())
+      .then((d) => {
+        if (typeof d?.alisverisEnabled === "boolean") setVerticalEnabled(d.alisverisEnabled);
+      })
+      .catch(() => {});
+  }, []);
 
   useEffect(() => {
     if (!filters.category || !isAlisverisCategorySlug(filters.category)) return;
@@ -85,6 +95,8 @@ export function AlisverisBrowseSection({ filters, onSelect, alwaysShowClassicBac
 
   const shopActive = isAlisverisCategorySlug(filters.category);
   const showClassicBack = alwaysShowClassicBack || shopActive;
+
+  if (!verticalEnabled) return null;
 
   return (
     <div className="v2-filter-block v2-alisveris-block" style={{ marginTop: 4 }}>

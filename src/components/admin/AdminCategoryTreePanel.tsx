@@ -3,7 +3,7 @@
 import { Fragment, useCallback, useEffect, useMemo, useState, type ReactNode } from "react";
 import { ChevronDown, ChevronRight } from "lucide-react";
 import type { AdminVertical } from "@/lib/adminVertical";
-import { ARAC_TYPES, KONUT_TYPES } from "@/data/categoryBrowseTree";
+import { ARAC_TYPES, KONUT_TYPES, type BrowseNode } from "@/data/categoryBrowseTree";
 import {
   ALISVERIS_GROUP_IDS,
   CLASSIC_SHOP_GROUPS,
@@ -34,6 +34,88 @@ type CatRow = {
   parentId?: string | null;
   listingCount: number;
 };
+
+function slugsFromFilter(category?: string | null) {
+  return String(category || "")
+    .split(",")
+    .map((s) => s.trim())
+    .filter(Boolean);
+}
+
+function catsForBrowseNode(node: BrowseNode, catBySlug: Map<string, CatRow>): CatRow[] {
+  const out: CatRow[] = [];
+  const seen = new Set<string>();
+  function walk(n: BrowseNode) {
+    for (const s of slugsFromFilter(n.filter?.category)) {
+      const c = catBySlug.get(s);
+      if (c && !seen.has(c.id)) {
+        seen.add(c.id);
+        out.push(c);
+      }
+    }
+    for (const ch of n.children || []) walk(ch);
+  }
+  walk(node);
+  return out;
+}
+
+function VerticalMasterCard({
+  title,
+  description,
+  enabled,
+  busy,
+  onChange,
+}: {
+  title: string;
+  description: string;
+  enabled: boolean;
+  busy: boolean;
+  onChange: (next: boolean) => void;
+}) {
+  return (
+    <div
+      className="adm-card"
+      style={{
+        padding: 16,
+        display: "flex",
+        gap: 14,
+        alignItems: "center",
+        flexWrap: "wrap",
+        border: enabled ? "1px solid #bbf7d0" : "1px solid #fecaca",
+        background: enabled ? "#f0fdf4" : "#fef2f2",
+      }}
+    >
+      <div style={{ flex: 1, minWidth: 220 }}>
+        <div style={{ fontWeight: 800, fontSize: 15 }}>{title}</div>
+        <div style={{ fontSize: 13, color: "#64748b", marginTop: 4, lineHeight: 1.45 }}>
+          {description}
+        </div>
+      </div>
+      <label
+        style={{
+          display: "inline-flex",
+          alignItems: "center",
+          gap: 10,
+          fontWeight: 800,
+          fontSize: 14,
+          cursor: busy ? "wait" : "pointer",
+          padding: "10px 14px",
+          borderRadius: 10,
+          background: "#fff",
+          border: "1px solid #e2e8f0",
+        }}
+      >
+        <input
+          type="checkbox"
+          checked={enabled}
+          disabled={busy}
+          onChange={(e) => onChange(e.target.checked)}
+        />
+        {enabled ? "Açık" : "Kapalı"}
+      </label>
+    </div>
+  );
+}
 
 type EditTarget = {
   nodeKey: string;
@@ -349,6 +431,9 @@ export function AdminCategoryTreePanel({ vertical }: { vertical: AdminVertical }
   const [config, setConfig] = useState<BrowseNavConfig | null>(null);
   const [facets, setFacets] = useState<FacetCounts | null>(null);
   const [categories, setCategories] = useState<CatRow[]>([]);
+  const [alisverisTree, setAlisverisTree] = useState<BrowseNode[]>([]);
+  const [alisverisMaster, setAlisverisMaster] = useState(true);
+  const [premiumMaster, setPremiumMaster] = useState(true);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [openIds, setOpenIds] = useState<Set<string>>(() => new Set());
@@ -361,21 +446,38 @@ export function AdminCategoryTreePanel({ vertical }: { vertical: AdminVertical }
     setLoading(true);
     setError(null);
     try {
-      const res = await fetch("/api/admin?view=category-nav");
-      if (!res.ok) {
-        const j = await res.json().catch(() => ({}));
+      const [navRes, browseRes, themeRes] = await Promise.all([
+        fetch("/api/admin?view=category-nav"),
+        vertical === "alisveris"
+          ? fetch("/api/catalog/tree?format=browse", { cache: "no-store" })
+          : Promise.resolve(null),
+        vertical === "alisveris" || vertical === "premium"
+          ? fetch("/api/theme", { cache: "no-store" })
+          : Promise.resolve(null),
+      ]);
+      if (!navRes.ok) {
+        const j = await navRes.json().catch(() => ({}));
         throw new Error(j.error || "Yüklenemedi");
       }
-      const data = await res.json();
+      const data = await navRes.json();
       setConfig(normalizeBrowseNavConfig(data.config));
       setFacets(data.facets || null);
       setCategories(Array.isArray(data.categories) ? data.categories : []);
+      if (browseRes) {
+        const b = await browseRes.json().catch(() => ({}));
+        setAlisverisTree(Array.isArray(b.browseTree) ? b.browseTree : []);
+      }
+      if (themeRes) {
+        const t = await themeRes.json().catch(() => ({}));
+        if (typeof t.alisverisEnabled === "boolean") setAlisverisMaster(t.alisverisEnabled);
+        if (typeof t.premiumEnabled === "boolean") setPremiumMaster(t.premiumEnabled);
+      }
     } catch (e) {
       setError(e instanceof Error ? e.message : "Yüklenemedi");
     } finally {
       setLoading(false);
     }
-  }, []);
+  }, [vertical]);
 
   useEffect(() => {
     load();
@@ -469,6 +571,25 @@ export function AdminCategoryTreePanel({ vertical }: { vertical: AdminVertical }
       setCategories((list) => list.map((x) => (x.id === c.id ? { ...x, isActive } : x)));
     } catch (e) {
       setError(e instanceof Error ? e.message : "Güncellenemedi");
+    } finally {
+      setBusyKey(null);
+    }
+  }
+
+  async function saveVerticalMaster(key: "alisveris_vertical_enabled" | "premium_vertical_enabled", next: boolean) {
+    setBusyKey(key);
+    try {
+      const res = await fetch("/api/admin", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ action: "save-settings", settings: { [key]: next } }),
+      });
+      const j = await res.json().catch(() => ({}));
+      if (!res.ok) throw new Error(j.error || "Kayıt başarısız");
+      if (key === "alisveris_vertical_enabled") setAlisverisMaster(next);
+      else setPremiumMaster(next);
+    } catch (e) {
+      setError(e instanceof Error ? e.message : "Kayıt başarısız");
     } finally {
       setBusyKey(null);
     }
@@ -663,83 +784,184 @@ export function AdminCategoryTreePanel({ vertical }: { vertical: AdminVertical }
       )}
 
       {vertical === "alisveris" && (
-        <SectionTable title="Alışveriş kategorileri">
-          {ALISVERIS_GROUP_IDS.map((gid, gi) => {
-            const groupKey = `shop/${gid}`;
-            const open = openIds.has(groupKey);
-            const subSlugs = CLASSIC_SHOP_GROUPS[gid] || [];
-            const groupCats = subSlugs.flatMap((sub) =>
-              (["ikinci-el", "sifir-urun"] as const).map((root) => catBySlug.get(childSlug(root, sub))).filter(Boolean)
-            ) as CatRow[];
-            const groupCount = groupCats.reduce((s, c) => s + (c.listingCount || 0), 0);
-            const groupActive = groupCats.length ? groupCats.some((c) => c.isActive) : true;
-            const groupSort = sortOrderFor(config, groupKey, gi);
-            const groupName = GROUP_LABELS[gid] || gid;
-            return (
-              <AlisverisGroupBranch
-                key={gid}
-                groupId={gid}
-                name={displayNameFor(config, groupKey, groupName)}
-                catalogName={groupName}
-                count={groupCount}
-                open={open}
-                openIds={openIds}
-                subSlugs={subSlugs}
-                catBySlug={catBySlug}
-                facets={facets}
-                config={config}
-                sort={groupSort}
-                active={groupActive}
-                busyKey={busyKey}
-                onToggle={() => toggleOpen(groupKey)}
-                onToggleChild={toggleOpen}
-                onToggleCategory={toggleDbCategory}
-                onPatch={patchConfig}
-                onEdit={openEdit}
-              />
-            );
-          })}
-        </SectionTable>
+        <>
+          <VerticalMasterCard
+            title="Alışveriş dikeyi (tümü)"
+            description="Kapalıysa sitede alışveriş menüsü, /alisveris ve ilan türü seçiminde alışveriş gizlenir. Alt kategoriler saklanır."
+            enabled={alisverisMaster}
+            busy={busyKey === "alisveris_vertical_enabled"}
+            onChange={(v) => void saveVerticalMaster("alisveris_vertical_enabled", v)}
+          />
+          <SectionTable title={`Alışveriş kategorileri (DB · ${alisverisTree.length} ana)`}>
+            {alisverisTree.length === 0 ? (
+              <div style={{ padding: 16, color: "#64748b", fontSize: 13 }}>
+                Katalog ağacı boş. Seed / taxonomy uygulandıktan sonra burada görünür.
+              </div>
+            ) : (
+              alisverisTree.map((node, i) => (
+                <AlisverisDbBranch
+                  key={node.id}
+                  node={node}
+                  depth={0}
+                  index={i}
+                  openIds={openIds}
+                  catBySlug={catBySlug}
+                  facets={facets}
+                  config={config}
+                  busyKey={busyKey}
+                  onToggle={toggleOpen}
+                  onToggleCategory={toggleDbCategory}
+                  onPatch={patchConfig}
+                  onEdit={openEdit}
+                />
+              ))
+            )}
+          </SectionTable>
+        </>
       )}
 
       {vertical === "premium" && (
-        <SectionTable title="Premium kategorileri">
-          {PREMIUM_CATEGORY_SEEDS.map((root, ri) => {
-            const key = premiumNodeKey(root.vertical);
-            const open = openIds.has(key);
-            const rootCat = catBySlug.get(root.slug);
-            const childCounts = root.children.map((c) => {
-              const slug = childPremiumSlug(root.slug, c.slug);
-              return catBySlug.get(slug)?.listingCount || facets?.categories[slug] || 0;
-            });
-            const count =
-              rootCat?.listingCount ||
-              facets?.categories[root.slug] ||
-              childCounts.reduce((a, b) => a + b, 0);
-            return (
-              <PremiumBranch
-                key={key}
-                root={root}
-                count={count}
-                open={open}
-                openIds={openIds}
-                config={config}
-                catBySlug={catBySlug}
-                facets={facets}
-                busyKey={busyKey}
-                sort={sortOrderFor(config, key, ri)}
-                active={isNodeActive(config, key)}
-                onToggle={() => toggleOpen(key)}
-                onToggleChild={toggleOpen}
-                onPatch={patchConfig}
-                onToggleCategory={toggleDbCategory}
-                onEdit={openEdit}
-              />
-            );
-          })}
-        </SectionTable>
+        <>
+          <VerticalMasterCard
+            title="Premium dikeyi (tümü)"
+            description="Kapalıysa otel / lojistik / yolculuk tamamen gizlenir. Açıkken aşağıdaki alt dikeyleri ayrı yönetin."
+            enabled={premiumMaster}
+            busy={busyKey === "premium_vertical_enabled"}
+            onChange={(v) => void saveVerticalMaster("premium_vertical_enabled", v)}
+          />
+          <SectionTable title="Premium kategorileri">
+            {PREMIUM_CATEGORY_SEEDS.map((root, ri) => {
+              const key = premiumNodeKey(root.vertical);
+              const open = openIds.has(key);
+              const rootCat = catBySlug.get(root.slug);
+              const childCounts = root.children.map((c) => {
+                const slug = childPremiumSlug(root.slug, c.slug);
+                return catBySlug.get(slug)?.listingCount || facets?.categories[slug] || 0;
+              });
+              const count =
+                rootCat?.listingCount ||
+                facets?.categories[root.slug] ||
+                childCounts.reduce((a, b) => a + b, 0);
+              return (
+                <PremiumBranch
+                  key={key}
+                  root={root}
+                  count={count}
+                  open={open}
+                  openIds={openIds}
+                  config={config}
+                  catBySlug={catBySlug}
+                  facets={facets}
+                  busyKey={busyKey}
+                  sort={sortOrderFor(config, key, ri)}
+                  active={isNodeActive(config, key)}
+                  onToggle={() => toggleOpen(key)}
+                  onToggleChild={toggleOpen}
+                  onPatch={patchConfig}
+                  onToggleCategory={toggleDbCategory}
+                  onEdit={openEdit}
+                />
+              );
+            })}
+          </SectionTable>
+        </>
       )}
     </div>
+  );
+}
+
+function AlisverisDbBranch({
+  node,
+  depth,
+  index,
+  openIds,
+  catBySlug,
+  facets,
+  config,
+  busyKey,
+  onToggle,
+  onToggleCategory,
+  onPatch,
+  onEdit,
+}: {
+  node: BrowseNode;
+  depth: number;
+  index: number;
+  openIds: Set<string>;
+  catBySlug: Map<string, CatRow>;
+  facets: FacetCounts | null;
+  config: BrowseNavConfig;
+  busyKey: string | null;
+  onToggle: (id: string) => void;
+  onToggleCategory: (c: CatRow, isActive: boolean) => void;
+  onPatch: (body: Record<string, unknown>) => void;
+  onEdit: (t: EditTarget) => void;
+}) {
+  const nodeKey = `shop/db/${node.id}`;
+  const open = openIds.has(nodeKey);
+  const kids = node.children || [];
+  const allCats = catsForBrowseNode(node, catBySlug);
+  const directCats = slugsFromFilter(node.filter?.category)
+    .map((s) => catBySlug.get(s))
+    .filter(Boolean) as CatRow[];
+  const count =
+    allCats.reduce((s, c) => s + (c.listingCount || 0), 0) ||
+    directCats.reduce((s, c) => s + (facets?.categories[c.slug] || 0), 0);
+  const active = allCats.length
+    ? allCats.some((c) => c.isActive)
+    : isNodeActive(config, nodeKey);
+  const sort = sortOrderFor(config, nodeKey, index);
+  const expandable = kids.length > 0;
+
+  return (
+    <>
+      <TreeRow
+        name={displayNameFor(config, nodeKey, node.name)}
+        count={count}
+        depth={depth}
+        expandable={expandable}
+        open={open}
+        onToggle={() => onToggle(nodeKey)}
+        sortValue={sort}
+        onSortBlur={(v) => onPatch({ nodeKey, sortOrder: v })}
+        active={active}
+        onActiveChange={(v) => {
+          const targets = allCats.length ? allCats : directCats;
+          for (const c of targets) onToggleCategory(c, v);
+          onPatch({ nodeKey, active: v });
+        }}
+        saving={busyKey === nodeKey || allCats.some((c) => busyKey === c.id)}
+        onEdit={() =>
+          onEdit({
+            nodeKey,
+            defaultName: node.name,
+            sortValue: sort,
+            active,
+            categoryId: directCats[0]?.id,
+            categorySlug: directCats[0]?.slug,
+            categoryIcon: directCats[0]?.icon,
+          })
+        }
+      />
+      {open &&
+        kids.map((ch, i) => (
+          <AlisverisDbBranch
+            key={ch.id}
+            node={ch}
+            depth={depth + 1}
+            index={i}
+            openIds={openIds}
+            catBySlug={catBySlug}
+            facets={facets}
+            config={config}
+            busyKey={busyKey}
+            onToggle={onToggle}
+            onToggleCategory={onToggleCategory}
+            onPatch={onPatch}
+            onEdit={onEdit}
+          />
+        ))}
+    </>
   );
 }
 

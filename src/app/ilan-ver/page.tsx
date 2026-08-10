@@ -246,6 +246,7 @@ function CreateListingInner() {
   /** Auth/taslak hızlıysa boş geç; yavaşsa spinner (metin flash yok) */
   const [showBootSpinner, setShowBootSpinner] = useState(false);
   const [anyPremiumOpen, setAnyPremiumOpen] = useState(true);
+  const [alisverisVerticalOpen, setAlisverisVerticalOpen] = useState(true);
   const [premium, setPremium] = useState({
     titleBold: false,
     titleLarge: false,
@@ -449,8 +450,13 @@ function CreateListingInner() {
       .then((d) => {
         const open = anyPremiumVerticalEnabled(d?.premiumVerticals);
         setAnyPremiumOpen(open);
+        const shopOpen = d?.alisverisEnabled !== false;
+        setAlisverisVerticalOpen(shopOpen);
         setPremiumVerticalsReady(true);
         if (!open && listingKind === "premium" && !editId) {
+          router.replace("/ilan-ver?kind=genel");
+        }
+        if (!shopOpen && listingKind === "alisveris" && !editId) {
           router.replace("/ilan-ver?kind=genel");
         }
         setEscrowUiEnabled(Boolean(d?.escrow?.enabled));
@@ -459,12 +465,13 @@ function CreateListingInner() {
         const normalized =
           formTpl === "ecommerce_v1" || formTpl === "modern_v1" ? formTpl : "classic";
         setShoppingFormTemplate(normalized as "classic" | "ecommerce_v1" | "modern_v1");
-        if (normalized === "modern_v1" && listingKind === "alisveris" && !editId) {
+        if (normalized === "modern_v1" && listingKind === "alisveris" && !editId && shopOpen) {
           router.replace("/hesabim?s=ilan-ekle");
         }
       })
       .catch(() => {
         setAnyPremiumOpen(true);
+        setAlisverisVerticalOpen(true);
         setPremiumVerticalsReady(true);
       });
   }, [router, editId, listingKind]);
@@ -1290,7 +1297,13 @@ function CreateListingInner() {
     accountType &&
     needsListingKindChoice(accountType)
   ) {
-    return <ListingKindChooser showPremium={anyPremiumOpen} user={authUser} />;
+    return (
+      <ListingKindChooser
+        showPremium={anyPremiumOpen}
+        showAlisveris={alisverisVerticalOpen}
+        user={authUser}
+      />
+    );
   }
 
   if (mode === "done") {

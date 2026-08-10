@@ -114,6 +114,8 @@ export function PremiumBrowseSection({ filters, onSelect, facets }: Props) {
 
   const premiumActive = isPremiumCategorySlug(filters.category);
 
+  if (!tree.length) return null;
+
   return (
     <div className="v2-filter-block v2-premium-block" style={{ marginTop: 4 }}>
       <div className="v2-filter-label" style={{ display: "flex", alignItems: "center", gap: 8 }}>

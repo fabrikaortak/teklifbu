@@ -167,6 +167,22 @@ export function AlisverisHome() {
   const searchParams = useSearchParams();
   const { offersEnabled } = useTheme();
   const { tree: alisverisTree, loading: alisverisTreeLoading } = useAlisverisBrowseTree();
+  const [verticalOpen, setVerticalOpen] = useState(true);
+  const [verticalReady, setVerticalReady] = useState(false);
+
+  useEffect(() => {
+    fetch("/api/theme")
+      .then((r) => r.json())
+      .then((d) => {
+        setVerticalOpen(d?.alisverisEnabled !== false);
+        setVerticalReady(true);
+      })
+      .catch(() => {
+        setVerticalOpen(true);
+        setVerticalReady(true);
+      });
+  }, []);
+
   const allShopParam = useMemo(
     () => (alisverisTreeLoading ? "ikinci-el,sifir-urun" : allParamFromTree(alisverisTree)),
     [alisverisTree, alisverisTreeLoading]
@@ -531,6 +547,20 @@ export function AlisverisHome() {
     m: Math.floor((remainMs % 3600000) / 60000),
     s: Math.floor((remainMs % 60000) / 1000),
   };
+
+  if (verticalReady && !verticalOpen) {
+    return (
+      <div className="page-shell" style={{ maxWidth: 640, margin: "48px auto", padding: 24, textAlign: "center" }}>
+        <h1 style={{ margin: 0, fontSize: 24, fontWeight: 900 }}>Alışveriş geçici olarak kapalı</h1>
+        <p style={{ margin: "12px 0 20px", color: "#64748b", lineHeight: 1.5 }}>
+          Bu dikey yönetici tarafından kapatıldı. Ana sayfaya dönebilirsiniz.
+        </p>
+        <Link href="/" className="btn-orange" style={{ padding: "12px 18px", textDecoration: "none" }}>
+          Ana sayfa
+        </Link>
+      </div>
+    );
+  }
 
   if (showingFeatured) {
     return (

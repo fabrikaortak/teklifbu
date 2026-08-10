@@ -17,6 +17,8 @@ type Props = {
   premiumHref?: string;
   /** Premium dikeylerden en az biri açıksa true (tema ayarı) */
   showPremium?: boolean;
+  /** Alışveriş dikeyi açıksa true */
+  showAlisveris?: boolean;
   /** Kullanıcı dikey yetkisi — yoksa tüm kartlar (backend yine engeller) */
   user?: {
     accountType?: string | null;
@@ -31,6 +33,7 @@ export function ListingKindChooser({
   alisverisHref = "/ilan-ver/alisveris",
   premiumHref = "/ilan-ver/premium",
   showPremium = true,
+  showAlisveris = true,
   user = null,
 }: Props) {
   const [publishMap, setPublishMap] = useState<CommercialPublishMap>(defaultCommercialPublishMap());
@@ -71,10 +74,10 @@ export function ListingKindChooser({
   }, [user, publishMap, genelHref, alisverisHref, premiumHref]);
 
   const showGenel = kinds.genel;
-  const showAlisveris = kinds.alisveris;
+  const showAlisverisCard = showAlisveris && kinds.alisveris;
   const showPremiumCard = showPremium && kinds.premium;
 
-  if (!showGenel && !showAlisveris && !showPremiumCard) {
+  if (!showGenel && !showAlisverisCard && !showPremiumCard) {
     return (
       <div className="page-shell" style={{ maxWidth: 820, margin: "32px auto 64px", padding: "0 16px" }}>
         <h1 style={{ margin: 0, fontSize: 28, fontWeight: 900 }}>İlan ekle</h1>
@@ -134,7 +137,7 @@ export function ListingKindChooser({
           </Link>
         ) : null}
 
-        {showAlisveris ? (
+        {showAlisverisCard ? (
           <Link href={hrefs.alisveris} className="card" style={cardStyle}>
             <span
               style={{
