@@ -503,37 +503,65 @@ export function VerticalSettingsPage({ vertical }: { vertical: AdminVertical }) 
     <div>
       <Head
         title={`${meta.label} — Ayarlar`}
-        description="İlan süreleri ve yaşam döngüsü (platform geneli ilan kuralları)."
+        description="Kart favorisi, ilan süreleri ve yaşam döngüsü."
       />
-      <AdminSettingsPanel
-        onlyGroups={["listing"]}
-        excludeKeys={[
-          "listing_fee_mode",
-          "listing_free_quota",
-          "listing_free_quota_by_account_type",
-          "listing_fee_tl",
-          "listing_fee_by_account_type",
-          "listing_fee_vat_percent",
-          "listing_fee_prices_include_vat",
-          "premium_pay_with_tokens_enabled",
-          "premium_title_bold_tl",
-          "premium_title_large_tl",
-          "premium_colored_tl",
-          "premium_feature_3d_tl",
-          "premium_feature_7d_tl",
-          "premium_title_bold_tokens",
-          "premium_title_large_tokens",
-          "premium_colored_tokens",
-          "premium_feature_3d_tokens",
-          "premium_feature_7d_tokens",
-          "premium_badge_rule",
-          "browse_nav_config",
-        ]}
-      />
-      <div className="adm-card" style={{ padding: 14, marginTop: 12, lineHeight: 1.5, fontSize: 13, color: "#64748b" }}>
-        İlan hakkı / ücretsiz kota / üyelik tipine göre ücretler Platform →{" "}
-        <strong>Kullanıcı ayarları</strong> içindedir. Süre dolunca ayarları{" "}
-        <strong>Sistem ayarları</strong> içindedir.
+      <div style={{ display: "grid", gap: 20 }}>
+        <div className="adm-card" style={{ padding: 16 }}>
+          <h2 style={{ margin: "0 0 6px", fontSize: 15, fontWeight: 800 }}>Vitrin & liste</h2>
+          <p style={{ margin: "0 0 14px", fontSize: 13, color: "#64748b", lineHeight: 1.45 }}>
+            Ana sayfa / vitrin / ilan listesi kartlarındaki kalp butonu. Kapalıysa favori yalnızca ilan
+            detayındaki «Favorilere Ekle» ile yapılır.
+          </p>
+          <AdminSettingsPanel onlyKeys={["listing_card_favorites_enabled"]} />
+        </div>
+        <div className="adm-card" style={{ padding: 16 }}>
+          <h2 style={{ margin: "0 0 6px", fontSize: 15, fontWeight: 800 }}>Yeniden yayınlama</h2>
+          <p style={{ margin: "0 0 14px", fontSize: 13, color: "#64748b", lineHeight: 1.45 }}>
+            Metni yarın/öbür gün buradan değiştirebilirsiniz. İlan adı yazmaya gerek yok.
+            Yer tutucu: {"{{reason}}"}.
+          </p>
+          <AdminSettingsPanel
+            onlyKeys={[
+              "listing_republish_reasons",
+              "listing_republish_winner_notify_title",
+              "listing_republish_winner_notify_body",
+            ]}
+          />
+        </div>
+        <AdminSettingsPanel
+          onlyGroups={["listing"]}
+          excludeKeys={[
+            "listing_card_favorites_enabled",
+            "listing_republish_reasons",
+            "listing_republish_winner_notify_title",
+            "listing_republish_winner_notify_body",
+            "listing_fee_mode",
+            "listing_free_quota",
+            "listing_free_quota_by_account_type",
+            "listing_fee_tl",
+            "listing_fee_by_account_type",
+            "listing_fee_vat_percent",
+            "listing_fee_prices_include_vat",
+            "premium_pay_with_tokens_enabled",
+            "premium_title_bold_tl",
+            "premium_title_large_tl",
+            "premium_colored_tl",
+            "premium_feature_3d_tl",
+            "premium_feature_7d_tl",
+            "premium_title_bold_tokens",
+            "premium_title_large_tokens",
+            "premium_colored_tokens",
+            "premium_feature_3d_tokens",
+            "premium_feature_7d_tokens",
+            "premium_badge_rule",
+            "browse_nav_config",
+          ]}
+        />
+        <div className="adm-card" style={{ padding: 14, lineHeight: 1.5, fontSize: 13, color: "#64748b" }}>
+          İlan hakkı / ücretsiz kota / üyelik tipine göre ücretler Platform →{" "}
+          <strong>Kullanıcı ayarları</strong> içindedir. Süre dolunca ayarları{" "}
+          <strong>Sistem ayarları</strong> içindedir.
+        </div>
       </div>
     </div>
   );

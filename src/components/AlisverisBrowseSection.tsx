@@ -99,6 +99,7 @@ export function AlisverisBrowseSection({ filters, onSelect, alwaysShowClassicBac
               rental: "",
               brand: "",
               model: "",
+              version: "",
               trim: "",
             })
           }
@@ -127,6 +128,7 @@ export function AlisverisBrowseSection({ filters, onSelect, alwaysShowClassicBac
                 rental: "",
                 brand: "",
                 model: "",
+                version: "",
                 trim: "",
               })
             }

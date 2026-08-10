@@ -11,53 +11,77 @@ type State = {
   loading: boolean;
 };
 
+/** Aynı sayfada Home/Nav/Strip üç kez çağırsa tek fetch */
+let inflight: Promise<State> | null = null;
+let sharedCache: State | null = null;
+
+async function fetchBrowseTree(): Promise<State> {
+  if (sharedCache && !sharedCache.loading && sharedCache.meta.source === "db") {
+    return sharedCache;
+  }
+  if (inflight) return inflight;
+
+  inflight = (async () => {
+    try {
+      const res = await fetch("/api/catalog/tree?format=browse");
+      const data = await res.json();
+      if (data.ok && Array.isArray(data.browseTree) && data.browseTree.length) {
+        const next: State = {
+          tree: data.browseTree,
+          meta: data.meta || { source: "db" },
+          loading: false,
+        };
+        if (data.meta?.source === "fallback-ts" || data.degraded) {
+          console.warn("[useAlisverisBrowseTree] degraded/fallback", data.meta);
+        }
+        sharedCache = next;
+        return next;
+      }
+      console.warn("[useAlisverisBrowseTree] empty/invalid API → TS fallback");
+      const fallback: State = {
+        tree: ALISVERIS_BROWSE_TREE,
+        meta: { source: "fallback-ts", warning: "api_empty" },
+        loading: false,
+      };
+      sharedCache = fallback;
+      return fallback;
+    } catch (e) {
+      console.warn("[useAlisverisBrowseTree] fetch failed → TS fallback", e);
+      const fallback: State = {
+        tree: ALISVERIS_BROWSE_TREE,
+        meta: { source: "fallback-ts", warning: String(e) },
+        loading: false,
+      };
+      sharedCache = fallback;
+      return fallback;
+    } finally {
+      inflight = null;
+    }
+  })();
+
+  return inflight;
+}
+
 /**
  * Alışveriş browse ağacı — /api/catalog/tree?format=browse
  * Hata/boş → TS emergency fallback (boş menü yok).
  */
 export function useAlisverisBrowseTree() {
-  const [state, setState] = useState<State>({
-    tree: ALISVERIS_BROWSE_TREE,
-    meta: { source: "fallback-ts", warning: "loading" },
-    loading: true,
-  });
+  const [state, setState] = useState<State>(() =>
+    sharedCache && !sharedCache.loading
+      ? sharedCache
+      : {
+          tree: ALISVERIS_BROWSE_TREE,
+          meta: { source: "fallback-ts", warning: "loading" },
+          loading: true,
+        }
+  );
 
   useEffect(() => {
     let cancelled = false;
-    async function load() {
-      try {
-        const res = await fetch("/api/catalog/tree?format=browse", { cache: "no-store" });
-        const data = await res.json();
-        if (cancelled) return;
-        if (data.ok && Array.isArray(data.browseTree) && data.browseTree.length) {
-          setState({
-            tree: data.browseTree,
-            meta: data.meta || { source: "db" },
-            loading: false,
-          });
-          if (data.meta?.source === "fallback-ts" || data.degraded) {
-            console.warn("[useAlisverisBrowseTree] degraded/fallback", data.meta);
-          }
-          return;
-        }
-        console.warn("[useAlisverisBrowseTree] empty/invalid API → TS fallback");
-        setState({
-          tree: ALISVERIS_BROWSE_TREE,
-          meta: { source: "fallback-ts", warning: "api_empty" },
-          loading: false,
-        });
-      } catch (e) {
-        console.warn("[useAlisverisBrowseTree] fetch failed → TS fallback", e);
-        if (!cancelled) {
-          setState({
-            tree: ALISVERIS_BROWSE_TREE,
-            meta: { source: "fallback-ts", warning: String(e) },
-            loading: false,
-          });
-        }
-      }
-    }
-    void load();
+    void fetchBrowseTree().then((next) => {
+      if (!cancelled) setState(next);
+    });
     return () => {
       cancelled = true;
     };

@@ -1,0 +1,484 @@
+{
+  "packSource": "SystemSetting:vasita_stage1_catalog",
+  "packEntryCount": 2632,
+  "A_otomobilSelectable": 98,
+  "B_suvSelectable": 78,
+  "C_minivanSelectable": 36,
+  "D_uniqueSelectable": 124,
+  "E_DEEP_COMPLETE": 2,
+  "F_DEEP_PARTIAL": 33,
+  "G_NOT_RESEARCHED": 89,
+  "H_NO_DEEP_DATA_AVAILABLE": 0,
+  "INVALID_OR_HIDDEN": 0,
+  "sumEFGH": 124,
+  "researchBatchSize35": 35,
+  "researchBatchCoversAllRuntimeUniverse": false,
+  "notResearchedBrandCount_X": 89,
+  "brandsWithAtLeastOneUnresearchedSeries_Y": 122,
+  "bmw": {
+    "runtimeSeries": 27,
+    "researchedSeries": 27,
+    "seriesWithoutResearch": 0,
+    "versions": 83,
+    "trims": 27,
+    "generations": 46,
+    "path520iMSport": "PASS",
+    "classification": "DEEP_COMPLETE",
+    "unresearchedSeries": []
+  },
+  "majorStats": {
+    "audi": {
+      "brand": "Audi",
+      "runtimeSeries": 42,
+      "researchedSeries": 14,
+      "notResearchedSeries": 28,
+      "verifiedVersions": 16,
+      "verifiedTrims": 6,
+      "classification": "DEEP_PARTIAL"
+    },
+    "bmw": {
+      "brand": "BMW",
+      "runtimeSeries": 27,
+      "researchedSeries": 27,
+      "notResearchedSeries": 0,
+      "verifiedVersions": 83,
+      "verifiedTrims": 27,
+      "classification": "DEEP_COMPLETE"
+    },
+    "citroen": {
+      "brand": "Citroen",
+      "runtimeSeries": 32,
+      "researchedSeries": 4,
+      "notResearchedSeries": 28,
+      "verifiedVersions": 9,
+      "verifiedTrims": 9,
+      "classification": "DEEP_PARTIAL"
+    },
+    "dacia": {
+      "brand": "Dacia",
+      "runtimeSeries": 10,
+      "researchedSeries": 5,
+      "notResearchedSeries": 5,
+      "verifiedVersions": 21,
+      "verifiedTrims": 10,
+      "classification": "DEEP_PARTIAL"
+    },
+    "fiat": {
+      "brand": "Fiat",
+      "runtimeSeries": 43,
+      "researchedSeries": 5,
+      "notResearchedSeries": 38,
+      "verifiedVersions": 6,
+      "verifiedTrims": 10,
+      "classification": "DEEP_PARTIAL"
+    },
+    "ford": {
+      "brand": "Ford",
+      "runtimeSeries": 37,
+      "researchedSeries": 6,
+      "notResearchedSeries": 31,
+      "verifiedVersions": 19,
+      "verifiedTrims": 10,
+      "classification": "DEEP_PARTIAL"
+    },
+    "honda": {
+      "brand": "Honda",
+      "runtimeSeries": 20,
+      "researchedSeries": 2,
+      "notResearchedSeries": 18,
+      "verifiedVersions": 9,
+      "verifiedTrims": 7,
+      "classification": "DEEP_PARTIAL"
+    },
+    "hyundai": {
+      "brand": "Hyundai",
+      "runtimeSeries": 29,
+      "researchedSeries": 3,
+      "notResearchedSeries": 26,
+      "verifiedVersions": 9,
+      "verifiedTrims": 8,
+      "classification": "DEEP_PARTIAL"
+    },
+    "kia": {
+      "brand": "Kia",
+      "runtimeSeries": 27,
+      "researchedSeries": 7,
+      "notResearchedSeries": 20,
+      "verifiedVersions": 9,
+      "verifiedTrims": 10,
+      "classification": "DEEP_PARTIAL"
+    },
+    "mercedes-benz": {
+      "brand": "Mercedes-Benz",
+      "runtimeSeries": 52,
+      "researchedSeries": 25,
+      "notResearchedSeries": 27,
+      "verifiedVersions": 62,
+      "verifiedTrims": 18,
+      "classification": "DEEP_PARTIAL"
+    },
+    "nissan": {
+      "brand": "Nissan",
+      "runtimeSeries": 34,
+      "researchedSeries": 5,
+      "notResearchedSeries": 29,
+      "verifiedVersions": 9,
+      "verifiedTrims": 12,
+      "classification": "DEEP_PARTIAL"
+    },
+    "opel": {
+      "brand": "Opel",
+      "runtimeSeries": 33,
+      "researchedSeries": 3,
+      "notResearchedSeries": 30,
+      "verifiedVersions": 14,
+      "verifiedTrims": 12,
+      "classification": "DEEP_PARTIAL"
+    },
+    "peugeot": {
+      "brand": "Peugeot",
+      "runtimeSeries": 36,
+      "researchedSeries": 5,
+      "notResearchedSeries": 31,
+      "verifiedVersions": 12,
+      "verifiedTrims": 9,
+      "classification": "DEEP_PARTIAL"
+    },
+    "renault": {
+      "brand": "Renault",
+      "runtimeSeries": 32,
+      "researchedSeries": 10,
+      "notResearchedSeries": 22,
+      "verifiedVersions": 13,
+      "verifiedTrims": 8,
+      "classification": "DEEP_PARTIAL"
+    },
+    "seat": {
+      "brand": "Seat",
+      "runtimeSeries": 12,
+      "researchedSeries": 3,
+      "notResearchedSeries": 9,
+      "verifiedVersions": 8,
+      "verifiedTrims": 5,
+      "classification": "DEEP_PARTIAL"
+    },
+    "skoda": {
+      "brand": "Skoda",
+      "runtimeSeries": 15,
+      "researchedSeries": 3,
+      "notResearchedSeries": 12,
+      "verifiedVersions": 15,
+      "verifiedTrims": 14,
+      "classification": "DEEP_PARTIAL"
+    },
+    "toyota": {
+      "brand": "Toyota",
+      "runtimeSeries": 26,
+      "researchedSeries": 3,
+      "notResearchedSeries": 23,
+      "verifiedVersions": 7,
+      "verifiedTrims": 10,
+      "classification": "DEEP_PARTIAL"
+    },
+    "volkswagen": {
+      "brand": "Volkswagen",
+      "runtimeSeries": 28,
+      "researchedSeries": 11,
+      "notResearchedSeries": 17,
+      "verifiedVersions": 15,
+      "verifiedTrims": 13,
+      "classification": "DEEP_PARTIAL"
+    },
+    "volvo": {
+      "brand": "Volvo",
+      "runtimeSeries": 19,
+      "researchedSeries": 5,
+      "notResearchedSeries": 14,
+      "verifiedVersions": 7,
+      "verifiedTrims": 6,
+      "classification": "DEEP_PARTIAL"
+    }
+  },
+  "sampleNotResearched": [
+    "Abarth",
+    "Acura",
+    "Aion",
+    "Alpine",
+    "Anadol",
+    "ARO",
+    "Arora",
+    "Askam",
+    "Aston Martin",
+    "Bajaj",
+    "Bentley",
+    "BMC",
+    "Buick",
+    "Cadillac",
+    "Chery",
+    "Chevrolet",
+    "Chrysler",
+    "Daewoo",
+    "Daihatsu",
+    "DFM",
+    "DFSK",
+    "Dodge",
+    "DS Automobiles",
+    "DS Automobiles",
+    "Ferrari",
+    "Foton",
+    "GAZ",
+    "Geely",
+    "GMC",
+    "Hongqi",
+    "Hummer",
+    "Ikco",
+    "Infiniti",
+    "Isuzu",
+    "Iveco",
+    "Jaecoo",
+    "Jiayuan",
+    "Joyce",
+    "KGM",
+    "KGM SsangYong",
+    "Kuba",
+    "Lada",
+    "Lamborghini",
+    "Lancia",
+    "Leapmotor",
+    "Lincoln",
+    "Lotus",
+    "Luqi",
+    "Lynk & Co",
+    "Mahindra",
+    "MAN",
+    "Marcos",
+    "Maserati",
+    "Maxus",
+    "McLaren",
+    "Micro",
+    "Morgan",
+    "Motolux",
+    "Nieve",
+    "Omoda",
+    "Ortimobil",
+    "Plymouth",
+    "Polestar",
+    "Pontiac",
+    "Proton",
+    "Rainwoll",
+    "Reeder",
+    "Regal Raptor",
+    "Relive",
+    "RKS",
+    "Roewe",
+    "Rolls-Royce",
+    "Rover",
+    "Saab",
+    "Santana",
+    "Seres",
+    "Skywell",
+    "Smart",
+    "SWM",
+    "Tata"
+  ],
+  "samplePartial": [
+    {
+      "brand": "Alfa Romeo",
+      "runtime": 20,
+      "researched": 4,
+      "missing": 16
+    },
+    {
+      "brand": "Audi",
+      "runtime": 42,
+      "researched": 14,
+      "missing": 28
+    },
+    {
+      "brand": "BYD",
+      "runtime": 8,
+      "researched": 6,
+      "missing": 2
+    },
+    {
+      "brand": "Citroen",
+      "runtime": 32,
+      "researched": 4,
+      "missing": 28
+    },
+    {
+      "brand": "Cupra",
+      "runtime": 6,
+      "researched": 4,
+      "missing": 2
+    },
+    {
+      "brand": "Dacia",
+      "runtime": 10,
+      "researched": 5,
+      "missing": 5
+    },
+    {
+      "brand": "Fiat",
+      "runtime": 43,
+      "researched": 5,
+      "missing": 38
+    },
+    {
+      "brand": "Ford",
+      "runtime": 37,
+      "researched": 6,
+      "missing": 31
+    },
+    {
+      "brand": "Honda",
+      "runtime": 20,
+      "researched": 2,
+      "missing": 18
+    },
+    {
+      "brand": "Hyundai",
+      "runtime": 29,
+      "researched": 3,
+      "missing": 26
+    },
+    {
+      "brand": "Jaguar",
+      "runtime": 11,
+      "researched": 5,
+      "missing": 6
+    },
+    {
+      "brand": "Jeep",
+      "runtime": 8,
+      "researched": 4,
+      "missing": 4
+    },
+    {
+      "brand": "Kia",
+      "runtime": 27,
+      "researched": 7,
+      "missing": 20
+    },
+    {
+      "brand": "Land Rover",
+      "runtime": 8,
+      "researched": 6,
+      "missing": 2
+    },
+    {
+      "brand": "Lexus",
+      "runtime": 17,
+      "researched": 6,
+      "missing": 11
+    },
+    {
+      "brand": "Mazda",
+      "runtime": 27,
+      "researched": 6,
+      "missing": 21
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "runtime": 52,
+      "researched": 25,
+      "missing": 27
+    },
+    {
+      "brand": "MG",
+      "runtime": 12,
+      "researched": 4,
+      "missing": 8
+    },
+    {
+      "brand": "Mini",
+      "runtime": 10,
+      "researched": 2,
+      "missing": 8
+    },
+    {
+      "brand": "Mitsubishi",
+      "runtime": 15,
+      "researched": 4,
+      "missing": 11
+    },
+    {
+      "brand": "Nissan",
+      "runtime": 34,
+      "researched": 5,
+      "missing": 29
+    },
+    {
+      "brand": "Opel",
+      "runtime": 33,
+      "researched": 3,
+      "missing": 30
+    },
+    {
+      "brand": "Peugeot",
+      "runtime": 36,
+      "researched": 5,
+      "missing": 31
+    },
+    {
+      "brand": "Porsche",
+      "runtime": 10,
+      "researched": 6,
+      "missing": 4
+    },
+    {
+      "brand": "Renault",
+      "runtime": 32,
+      "researched": 10,
+      "missing": 22
+    },
+    {
+      "brand": "Seat",
+      "runtime": 12,
+      "researched": 3,
+      "missing": 9
+    },
+    {
+      "brand": "Skoda",
+      "runtime": 15,
+      "researched": 3,
+      "missing": 12
+    },
+    {
+      "brand": "Subaru",
+      "runtime": 12,
+      "researched": 5,
+      "missing": 7
+    },
+    {
+      "brand": "Suzuki",
+      "runtime": 16,
+      "researched": 4,
+      "missing": 12
+    },
+    {
+      "brand": "Tesla",
+      "runtime": 5,
+      "researched": 4,
+      "missing": 1
+    },
+    {
+      "brand": "Toyota",
+      "runtime": 26,
+      "researched": 3,
+      "missing": 23
+    },
+    {
+      "brand": "Volkswagen",
+      "runtime": 28,
+      "researched": 11,
+      "missing": 17
+    },
+    {
+      "brand": "Volvo",
+      "runtime": 19,
+      "researched": 5,
+      "missing": 14
+    }
+  ]
+}

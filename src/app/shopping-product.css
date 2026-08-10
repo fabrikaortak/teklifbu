@@ -1164,6 +1164,45 @@
   justify-content: space-between;
   gap: 10px;
 }
+.shop-pdp__side-others-pick {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  margin: 0;
+  padding: 8px;
+  border: 1px solid var(--shop-line);
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+}
+.shop-pdp__side-others-pick:hover {
+  border-color: #cbd5e1;
+  background: #f8fafc;
+}
+.shop-pdp__variant {
+  display: grid;
+  gap: 6px;
+  margin: 4px 0 2px;
+}
+.shop-pdp__variant-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--shop-navy);
+}
+.shop-pdp__variant select {
+  width: 100%;
+  max-width: 360px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  background: #fff;
+  font: inherit;
+}
 .shop-pdp__side-others-who {
   display: flex;
   align-items: center;

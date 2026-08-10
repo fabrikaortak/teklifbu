@@ -3,10 +3,11 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Clock, Heart, MapPin } from "lucide-react";
-import { formatTl, remainingLabel, remainingLabelCompact } from "@/lib/format";
+import { formatListingDate, formatTl, remainingLabel, remainingLabelCompact } from "@/lib/format";
 import { formatListingNo } from "@/lib/listingNo";
 import { dealTypeLabel } from "@/lib/dealType";
 import { EidsBadge } from "@/components/EidsBadge";
+import { ListingThumbImg } from "@/components/ListingThumbImg";
 import { formatPremiumTitle, isFeaturedHomepageActive, shouldShowPremiumBadge } from "@/lib/listingPremiumDisplay";
 import { useTheme } from "@/components/ThemeProvider";
 
@@ -44,7 +45,27 @@ export type ListingCardData = {
   showPremiumBadge?: boolean;
   category?: { name: string; slug: string };
   eidsBadge?: string | null;
+  attributes?: Record<string, unknown> | null;
 };
+
+function listingAttrLine(attributes?: Record<string, unknown> | null) {
+  if (!attributes || typeof attributes !== "object") return "";
+  const year = attributes.year ?? attributes.modelYear;
+  const km = attributes.km ?? attributes.mileage;
+  const fuel = attributes.fuel ?? attributes.fuelType;
+  const gear = attributes.transmission ?? attributes.gear ?? attributes.vites;
+  const color = attributes.color ?? attributes.renk;
+  const parts: string[] = [];
+  if (year != null && String(year).trim()) parts.push(String(year).trim());
+  if (km != null && String(km).trim()) {
+    const n = Number(String(km).replace(/\D/g, ""));
+    parts.push(Number.isFinite(n) && n > 0 ? `${n.toLocaleString("tr-TR")} km` : `${String(km).trim()} km`);
+  }
+  if (fuel != null && String(fuel).trim()) parts.push(String(fuel).trim());
+  if (gear != null && String(gear).trim()) parts.push(String(gear).trim());
+  if (color != null && String(color).trim()) parts.push(String(color).trim());
+  return parts.join(" · ");
+}
 
 function FavHeart({ filled }: { filled: boolean }) {
   return (
@@ -79,6 +100,8 @@ export function ListingCard({
   /** Sıralama rozeti (en çok teklif / kazanç) */
   rank,
   onFavoriteChange,
+  /** true/false zorla; verilmezse admin ayarı (listing_card_favorites_enabled) */
+  showFavorite,
 }: {
   listing: ListingCardData;
   variant?: "grid" | "row";
@@ -86,10 +109,12 @@ export function ListingCard({
   featuredSection?: boolean;
   rank?: number;
   onFavoriteChange?: (listingId: string, favorited: boolean) => void;
+  showFavorite?: boolean;
 }) {
-  const { featuredCardTitlePriceOnly, offersEnabled } = useTheme();
+  const { featuredCardTitlePriceOnly, offersEnabled, listingCardFavoritesEnabled } = useTheme();
   const titlePriceOnly = featuredSection && featuredCardTitlePriceOnly;
   const classified = !offersEnabled;
+  const favOnCard = showFavorite ?? listingCardFavoritesEnabled;
   const [favorited, setFavorited] = useState(Boolean(listing.isFavorited));
 
   useEffect(() => {
@@ -161,79 +186,40 @@ export function ListingCard({
   const hideTimers = classified || titlePriceOnly;
 
   if (variant === "row") {
+    const attrsLine = listingAttrLine(listing.attributes);
+    const locShort = [listing.district, listing.city].filter(Boolean).join(" / ") || listing.city || "";
+    const listDate = formatListingDate(isSold ? listing.soldAt || listing.createdAt : listing.createdAt);
+    const mainPrice = formatTl(isSold && salePrice ? salePrice : listing.askPrice);
+
     return (
       <article
         className={[
           "card",
           "listing-row",
-          homeMode ? "listing-card-clickable listing-card-home" : "",
+          "listing-card-clickable",
+          homeMode ? "listing-card-home" : "",
           titlePriceOnly ? "listing-card--title-price" : "",
+          listing.isColored ? "is-colored" : "",
+          featuredActive ? "is-featured" : "",
           rank ? "has-rank" : "",
         ]
           .filter(Boolean)
           .join(" ")}
-        style={{ position: homeMode || rank ? "relative" : undefined }}
+        style={{ position: "relative" }}
       >
-        {homeMode ? (
-          <Link
-            href={`/ilan/${listing.id}`}
-            className="listing-card-hit"
-            aria-label={listing.title || "İlanı görüntüle"}
-          />
-        ) : null}
-        {homeMode ? (
-          <div className="listing-row-media">
-            {listing.coverImage && (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img src={listing.coverImage} alt="" loading="lazy" />
-            )}
-            {!hideTimers ? (
-              <span className="badge-time listing-row-time">
-                {isSold ? "Sonuçlandı" : remainingLabel(listing.endsAt)}
-              </span>
-            ) : null}
-          </div>
-        ) : (
-          <Link href={`/ilan/${listing.id}`} className="listing-row-media">
-            {listing.coverImage && (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img src={listing.coverImage} alt={listing.title} loading="lazy" />
-            )}
-            {!hideTimers ? (
-              <span className="badge-time listing-row-time">
-                {isSold ? "Sonuçlandı" : remainingLabel(listing.endsAt)}
-              </span>
-            ) : null}
-          </Link>
-        )}
-
-        <div className="listing-row-body">
-          <div className="listing-row-top">
-            <div style={{ minWidth: 0, flex: 1 }}>
-              {!titlePriceOnly ? (
-                <div className="listing-row-cat">
-                  {listing.category?.name || "İlan"} / {dealTypeLabel(listing.dealType)}
-                  {isSold ? " · Sonuçlandı" : ""}
-                  {listing.listingNo ? ` · No: ${formatListingNo(listing.listingNo)}` : ""}
-                </div>
-              ) : null}
-              {homeMode ? (
-                <div className={rowTitleClass}>{displayTitle}</div>
-              ) : (
-                <Link href={`/ilan/${listing.id}`} className={rowTitleClass}>
-                  {displayTitle}
-                </Link>
-              )}
-              {!titlePriceOnly ? (
-                <>
-                  <div className="listing-row-loc">
-                    <MapPin size={14} />
-                    {[listing.neighborhood, listing.district, listing.city].filter(Boolean).join(", ")}
-                  </div>
-                  <EidsBadge text={listing.eidsBadge} />
-                </>
-              ) : null}
-            </div>
+        <Link
+          href={`/ilan/${listing.id}`}
+          className="listing-card-hit"
+          aria-label={listing.title || "İlanı görüntüle"}
+        />
+        <div className="listing-row-media">
+          <ListingThumbImg src={listing.coverImage} alt="" />
+          {!hideTimers ? (
+            <span className="badge-time listing-row-time">
+              {isSold ? "Sonuçlandı" : remainingLabelCompact(listing.endsAt)}
+            </span>
+          ) : null}
+          {favOnCard ? (
             <button
               type="button"
               className={`listing-fav-btn listing-row-fav${favorited ? " is-fav" : ""}`}
@@ -243,59 +229,35 @@ export function ListingCard({
             >
               <FavHeart filled={favorited} />
             </button>
+          ) : null}
+        </div>
+
+        <div className="listing-row-body">
+          <div className="listing-row-main">
+            <div className={rowTitleClass}>{displayTitle}</div>
+            {!titlePriceOnly && attrsLine ? <div className="listing-row-attrs">{attrsLine}</div> : null}
+            {!titlePriceOnly ? (
+              <div className="listing-row-loc">
+                <MapPin size={13} aria-hidden />
+                <span>{locShort || "—"}</span>
+                {!classified ? (
+                  <span className="listing-row-loc-meta">
+                    {listing.bidCount > 0 ? ` · ${formatTlBids(listing.bidCount)}` : ""}
+                  </span>
+                ) : null}
+              </div>
+            ) : null}
           </div>
 
-          <div className="listing-row-bottom">
-            {titlePriceOnly ? (
-              <div className="listing-row-prices">
-                <div>
-                  <strong className="price-ask">{formatTl(isSold && salePrice ? salePrice : listing.askPrice)}</strong>
-                </div>
-              </div>
-            ) : (
-              <div className="listing-row-prices">
-                <div>
-                  <span className="listing-row-label">İlan Fiyatı</span>
-                  <strong className="price-ask">{formatTl(listing.askPrice)}</strong>
-                </div>
-                {!classified ? (
-                <div>
-                  <span className="listing-row-label">{isSold ? "Satış Fiyatı" : "Piyasa Fiyatı"}</span>
-                  <strong className={isSold ? "price-final" : "price-bid"}>
-                    {isSold
-                      ? salePrice
-                        ? formatTl(salePrice)
-                        : "—"
-                      : listing.highestBid
-                        ? formatTl(listing.highestBid)
-                        : "—"}
-                  </strong>
-                </div>
-                ) : null}
-                {!classified && listing.profit != null && listing.profit > 0 ? (
-                  <div>
-                    <span className="listing-row-label">Kazanç</span>
-                    <strong className="price-final">+{formatTl(listing.profit)}</strong>
-                  </div>
-                ) : !classified ? (
-                  <div>
-                    <span className="listing-row-label">Teklif</span>
-                    <strong style={{ color: "#0f172a" }}>{listing.bidCount}</strong>
-                  </div>
-                ) : null}
-              </div>
-            )}
-            {!homeMode && !titlePriceOnly && !classified ? (
-              isSold ? (
-                <span className="btn-sonuclandi listing-row-cta" aria-label="Sonuçlandı">
-                  Sonuçlandı
-                </span>
-              ) : (
-                <Link href={`/ilan/${listing.id}`} className="btn-teklifbu listing-row-cta">
-                  TeklifBu
-                </Link>
-              )
+          <div className="listing-row-side">
+            <strong className={`listing-row-price price-ask${isSold ? " price-final" : ""}`}>{mainPrice}</strong>
+            {!classified && !titlePriceOnly && !isSold && listing.highestBid ? (
+              <span className="listing-row-subprice">{formatTl(listing.highestBid)}</span>
             ) : null}
+            {!classified && !titlePriceOnly && listing.profit != null && listing.profit > 0 ? (
+              <span className="listing-row-subprice is-profit">+{formatTl(listing.profit)}</span>
+            ) : null}
+            {listDate ? <span className="listing-row-date">{listDate}</span> : null}
           </div>
           {rank ? <span className="listing-rank-badge">{rank}</span> : null}
         </div>
@@ -331,10 +293,7 @@ export function ListingCard({
         />
       ) : null}
       <div className="listing-card-media">
-        {listing.coverImage && (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img src={listing.coverImage} alt={homeMode ? "" : listing.title} loading="lazy" />
-        )}
+        <ListingThumbImg src={listing.coverImage} alt={homeMode ? "" : listing.title} />
         {!titlePriceOnly && showPremiumBadge ? <span className="v2-only badge-premium">Premium</span> : null}
         {!hideTimers ? (
           <>
@@ -347,15 +306,17 @@ export function ListingCard({
             </div>
           </>
         ) : null}
-        <button
-          type="button"
-          onClick={toggleFavorite}
-          className={`listing-fav-btn${favorited ? " is-fav" : ""}`}
-          aria-label={favorited ? "Favorilerden çıkar" : "Favorilere ekle"}
-          aria-pressed={favorited}
-        >
-          <FavHeart filled={favorited} />
-        </button>
+        {favOnCard ? (
+          <button
+            type="button"
+            onClick={toggleFavorite}
+            className={`listing-fav-btn${favorited ? " is-fav" : ""}`}
+            aria-label={favorited ? "Favorilerden çıkar" : "Favorilere ekle"}
+            aria-pressed={favorited}
+          >
+            <FavHeart filled={favorited} />
+          </button>
+        ) : null}
       </div>
       <div className="listing-card-body">
         {titlePriceOnly ? (

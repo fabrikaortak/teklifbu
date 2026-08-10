@@ -20,8 +20,9 @@ import { findBrowseNode, matchBrowsePath } from "@/data/categoryBrowseTree";
 import { isAlisverisCategorySlug } from "@/data/classicBrowseTree";
 import { isPremiumCategorySlug } from "@/data/premiumCategories";
 import type { FacetCounts } from "@/lib/facetHelpers";
-import { brandName, modelName, trimName } from "@/data/vehicleCatalog";
+import { brandLabel, modelLabel, trimLabel } from "@/lib/vasitaLabels";
 import { RecentSalesStrip } from "@/components/RecentSalesStrip";
+import { ListingThumbImg } from "@/components/ListingThumbImg";
 import { formatTl } from "@/lib/format";
 import { useTheme } from "@/components/ThemeProvider";
 import { V2CategoryStrip } from "@/components/home/V2CategoryStrip";
@@ -172,13 +173,16 @@ function ListingsInner() {
     if (path.length) {
       const labels = path.map((id) => findBrowseNode(id)?.name).filter(Boolean) as string[];
       if (filters.brand && filters.subtype) {
-        labels.push(brandName(filters.subtype, filters.brand));
+        labels.push(brandLabel(filters.brand));
       }
       if (filters.model && filters.brand && filters.subtype) {
-        labels.push(modelName(filters.subtype, filters.brand, filters.model));
+        labels.push(modelLabel(filters.model));
+      }
+      if (filters.version && filters.model && filters.brand && filters.subtype) {
+        labels.push(trimLabel(filters.version));
       }
       if (filters.trim && filters.model && filters.brand && filters.subtype) {
-        labels.push(trimName(filters.subtype, filters.brand, filters.model, filters.trim));
+        labels.push(trimLabel(filters.trim));
       }
       if (labels.length) parts.push(labels.join(" › "));
     } else if (filters.category) {
@@ -208,6 +212,7 @@ function ListingsInner() {
       next.rental === filters.rental &&
       next.brand === filters.brand &&
       next.model === filters.model &&
+      next.version === filters.version &&
       next.trim === filters.trim &&
       next.city === filters.city &&
       next.district === filters.district &&
@@ -225,6 +230,7 @@ function ListingsInner() {
     rental: string;
     brand: string;
     model: string;
+    version: string;
     trim: string;
   }) {
     if (isPremiumCategorySlug(patch.category)) {
@@ -248,6 +254,7 @@ function ListingsInner() {
       rental: patch.rental,
       brand: patch.brand,
       model: patch.model,
+      version: patch.version,
       trim: patch.trim,
     });
   }
@@ -256,156 +263,156 @@ function ListingsInner() {
     ? `${liveItems.length} teklif`
     : `${listings.length} ilan`;
 
-  const title = modeTitle(mode, search.get("sellerId"));
+  const title = (() => {
+    if (modeTitle(mode, search.get("sellerId")) !== "İlanlar") {
+      return modeTitle(mode, search.get("sellerId"));
+    }
+    if (filters.brand && filters.subtype) {
+      const brand = brandLabel(filters.brand);
+      const series = filters.model ? ` ${modelLabel(filters.model)}` : "";
+      return `${brand}${series} Fiyatları & Modelleri`;
+    }
+    if (filters.subtype) {
+      const sub =
+        findBrowseNode(`arac/${filters.subtype}`)?.name ||
+        findBrowseNode(filters.subtype)?.name ||
+        filters.subtype;
+      return `${sub} İlanları`;
+    }
+    return modeTitle(mode, search.get("sellerId"));
+  })();
 
   return (
     <>
       <V2CategoryStrip filters={filters} onSelect={onBrowseSelect} />
 
-      <div className="page-shell listings-page" style={{ marginTop: 16, paddingBottom: 40 }}>
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "252px minmax(0, 1fr)",
-            gap: 18,
-            alignItems: "start",
-          }}
-          className="listings-layout"
-        >
-          {/* Anasayfa ile aynı sol navigasyon ölçüleri (252px + v2-side-card) */}
-          <aside
-            className="v2-side-card listings-side-nav"
+      {/* Ana sayfa ile aynı max-width/gutter — sol menü yatayda kaymasın */}
+      <div className="v2-home v2-home--listings listings-page">
+        <aside className="v2-left v2-side-card listings-side-nav">
+          {classicCats ? (
+            <CategoryBrowseNav
+              embedded
+              variant="classic"
+              filters={filters}
+              facets={facets}
+              onSelect={onBrowseSelect}
+            />
+          ) : (
+            <CategoryBrowseNav
+              embedded
+              filters={filters}
+              facets={facets}
+              onSelect={onBrowseSelect}
+            />
+          )}
+          <AlisverisBrowseSection filters={filters} onSelect={onBrowseSelect} />
+          <PremiumBrowseSection filters={filters} onSelect={onBrowseSelect} facets={facets} />
+          <div style={{ height: 1, background: "var(--line)", margin: "10px 0 14px" }} />
+          <h2 className="v2-side-title" style={{ margin: "0 0 12px" }}>
+            Filtrele
+          </h2>
+          <SearchPanel value={filters} onChange={onFiltersChange} categories={categories} variant="page" />
+        </aside>
+
+        <div className="v2-main listings-main">
+          <div
             style={{
-              position: "sticky",
-              top: "calc(var(--v2-header-h, 60px) + var(--v2-cat-h, 44px) + 12px)",
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "end",
+              gap: 12,
+              marginBottom: 14,
+              flexWrap: "wrap",
             }}
           >
-            {classicCats ? (
-              <CategoryBrowseNav
-                embedded
-                variant="classic"
-                filters={filters}
-                facets={facets}
-                onSelect={onBrowseSelect}
-              />
-            ) : (
-              <CategoryBrowseNav
-                embedded
-                filters={filters}
-                facets={facets}
-                onSelect={onBrowseSelect}
-              />
-            )}
-            <AlisverisBrowseSection filters={filters} onSelect={onBrowseSelect} />
-            <PremiumBrowseSection filters={filters} onSelect={onBrowseSelect} facets={facets} />
-            <div style={{ height: 1, background: "var(--line)", margin: "10px 0 14px" }} />
-            <h2 className="v2-side-title" style={{ margin: "0 0 12px" }}>
-              Filtrele
-            </h2>
-            <SearchPanel value={filters} onChange={onFiltersChange} categories={categories} variant="page" />
-          </aside>
-
-          <div>
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "end",
-                gap: 12,
-                marginBottom: 14,
-                flexWrap: "wrap",
-              }}
-            >
-              <div>
-                <h1 style={{ margin: 0, fontWeight: 800, fontSize: 20, letterSpacing: "-0.02em" }}>{title}</h1>
-                {activeLabels.length > 0 && (
-                  <p style={{ margin: "6px 0 0", color: "var(--muted)", fontSize: 14 }}>
-                    {activeLabels.join(" · ")}
-                  </p>
-                )}
-                {isInsightMode && mode !== "live" && (
-                  <p style={{ margin: "6px 0 0", color: "var(--muted)", fontSize: 13 }}>
-                    {mode === "ending" && "Süresi 48 saat içinde dolacak aktif ilanlar"}
-                    {mode === "mostBids" && "Bugün en çok teklif alan aktif ilanlar"}
-                    {mode === "profit" && "İlan fiyatının üzerinde sonuçlanan satışlar"}
-                    {mode === "sold" && "Onaylanarak sonuçlanan satışlar"}
-                    {mode === "forYou" && "Öne çıkan ve güncel ilan önerileri"}
-                  </p>
-                )}
-              </div>
-              <div style={{ display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
-                <div style={{ color: "var(--muted)", fontSize: 14, fontWeight: 600 }}>
-                  {loading ? "Yükleniyor…" : countLabel}
-                </div>
-                {!isLive ? <ListingViewToggle view={view} onChange={changeView} /> : null}
-              </div>
+            <div>
+              <h1 style={{ margin: 0, fontWeight: 800, fontSize: 20, letterSpacing: "-0.02em" }}>{title}</h1>
+              {activeLabels.length > 0 && (
+                <p style={{ margin: "6px 0 0", color: "var(--muted)", fontSize: 14 }}>
+                  {activeLabels.join(" · ")}
+                </p>
+              )}
+              {isInsightMode && mode !== "live" && (
+                <p style={{ margin: "6px 0 0", color: "var(--muted)", fontSize: 13 }}>
+                  {mode === "ending" && "Süresi 48 saat içinde dolacak aktif ilanlar"}
+                  {mode === "mostBids" && "Bugün en çok teklif alan aktif ilanlar"}
+                  {mode === "profit" && "İlan fiyatının üzerinde sonuçlanan satışlar"}
+                  {mode === "sold" && "Onaylanarak sonuçlanan satışlar"}
+                  {mode === "forYou" && "Öne çıkan ve güncel ilan önerileri"}
+                </p>
+              )}
             </div>
-
-            {isLive ? (
-              <div className="live-feed-list">
-                {liveItems.map((item) => {
-                  const prev = item.previousAmount != null ? Number(item.previousAmount) : null;
-                  return (
-                    <Link key={item.id} href={`/ilan/${item.listing.id}`} className="live-feed-row">
-                      <div className="live-feed-row__img">
-                        {item.listing.coverImage ? (
-                          // eslint-disable-next-line @next/next/no-img-element
-                          <img src={item.listing.coverImage} alt="" />
-                        ) : (
-                          <div className="live-feed-row__ph" />
-                        )}
-                      </div>
-                      <div className="live-feed-row__body">
-                        <div className="live-feed-row__title">{item.listing.title}</div>
-                        <div className="live-feed-row__loc">
-                          {[item.listing.district, item.listing.city].filter(Boolean).join(", ")}
-                        </div>
-                        <div className="live-feed-row__ask">
-                          İlan fiyatı: <strong>{formatTl(item.listing.askPrice)}</strong>
-                        </div>
-                      </div>
-                      <div className="live-feed-row__right">
-                        <div className="live-feed-row__bid-label">Yeni teklif</div>
-                        <span className="live-feed-row__amt is-up">
-                          {formatTl(item.amount)}
-                          <TrendingUp size={15} strokeWidth={2.5} aria-hidden />
-                        </span>
-                        {prev != null && prev > 0 ? (
-                          <span className="live-feed-row__prev">{formatTl(prev)}</span>
-                        ) : null}
-                        <span className="live-feed-row__ago">{timeAgo(item.createdAt)}</span>
-                      </div>
-                      <ChevronRight size={16} className="live-feed-row__chev" />
-                    </Link>
-                  );
-                })}
+            <div style={{ display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
+              <div style={{ color: "var(--muted)", fontSize: 14, fontWeight: 600 }}>
+                {loading ? "Yükleniyor…" : countLabel}
               </div>
-            ) : (
-              <div
-                className={view === "grid" ? "listings-grid-4" : "listings-stack"}
-                style={view === "grid" ? undefined : { display: "grid", gap: 10 }}
-              >
-                {listings.map((l, i) => (
-                  <ListingCard
-                    key={l.id}
-                    listing={l}
-                    variant={view === "list" ? "row" : "grid"}
-                    rank={mode === "mostBids" || mode === "profit" ? i + 1 : undefined}
-                  />
-                ))}
-              </div>
-            )}
-
-            {!loading && (isLive ? !liveItems.length : !listings.length) && (
-              <div className="card" style={{ padding: 24, marginTop: 8 }}>
-                {modeEmptyMessage(mode)}
-              </div>
-            )}
+              {!isLive ? <ListingViewToggle view={view} onChange={changeView} /> : null}
+            </div>
           </div>
+
+          {isLive ? (
+            <div className="live-feed-list">
+              {liveItems.map((item) => {
+                const prev = item.previousAmount != null ? Number(item.previousAmount) : null;
+                return (
+                  <Link key={item.id} href={`/ilan/${item.listing.id}`} className="live-feed-row">
+                    <div className="live-feed-row__img">
+                      {item.listing.coverImage ? (
+                        <ListingThumbImg src={item.listing.coverImage} />
+                      ) : (
+                        <div className="live-feed-row__ph" />
+                      )}
+                    </div>
+                    <div className="live-feed-row__body">
+                      <div className="live-feed-row__title">{item.listing.title}</div>
+                      <div className="live-feed-row__loc">
+                        {[item.listing.district, item.listing.city].filter(Boolean).join(", ")}
+                      </div>
+                      <div className="live-feed-row__ask">
+                        İlan fiyatı: <strong>{formatTl(item.listing.askPrice)}</strong>
+                      </div>
+                    </div>
+                    <div className="live-feed-row__right">
+                      <div className="live-feed-row__bid-label">Yeni teklif</div>
+                      <span className="live-feed-row__amt is-up">
+                        {formatTl(item.amount)}
+                        <TrendingUp size={15} strokeWidth={2.5} aria-hidden />
+                      </span>
+                      {prev != null && prev > 0 ? (
+                        <span className="live-feed-row__prev">{formatTl(prev)}</span>
+                      ) : null}
+                      <span className="live-feed-row__ago">{timeAgo(item.createdAt)}</span>
+                    </div>
+                    <ChevronRight size={16} className="live-feed-row__chev" />
+                  </Link>
+                );
+              })}
+            </div>
+          ) : (
+            <div
+              className={view === "grid" ? "listings-grid-4" : "listings-stack"}
+              style={view === "grid" ? undefined : { display: "grid", gap: 6 }}
+            >
+              {listings.map((l, i) => (
+                <ListingCard
+                  key={l.id}
+                  listing={l}
+                  variant={view === "list" ? "row" : "grid"}
+                  rank={mode === "mostBids" || mode === "profit" ? i + 1 : undefined}
+                />
+              ))}
+            </div>
+          )}
+
+          {!loading && (isLive ? !liveItems.length : !listings.length) && (
+            <div className="card" style={{ padding: 24, marginTop: 8 }}>
+              {modeEmptyMessage(mode)}
+            </div>
+          )}
         </div>
       </div>
       {mode === "default" ? (
-        <RecentSalesStrip placement="ilanlar" shellClassName="page-shell" className="recent-sales--compact" />
+        <RecentSalesStrip placement="ilanlar" shellClassName="page-shell-wide" className="recent-sales--compact" />
       ) : null}
     </>
   );

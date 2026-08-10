@@ -156,7 +156,7 @@ export function SiteHeader() {
       { href: "/hesabim?s=ayarlar", label: "Ayarlarım", icon: <Settings size={15} /> },
       { href: "/hesabim?s=guvenlik", label: "Güvenlik", icon: <Shield size={15} /> }
     );
-    if (user.role === "ADMIN") {
+    if (user.role === "ADMIN" || user.role === "STAFF") {
       items.unshift({ href: "/admin", label: "Yönetim Paneli", icon: <Shield size={15} /> });
     }
     return items;
@@ -269,7 +269,7 @@ export function SiteHeader() {
       <>
         <header className="v2-header">
           <div className="v2-header-inner">
-            <Link href="/" className="v2-logo">
+            <Link href="/" className="v2-logo" prefetch aria-label="Anasayfa">
               <BrandLogo />
             </Link>
 
@@ -289,7 +289,7 @@ export function SiteHeader() {
             <div className="v2-header-actions">
               {user ? (
                 <button type="button" onClick={openFavorites} aria-label="Favorilerim" title="Favorilerim">
-                  <Heart size={17} strokeWidth={1.75} /> <span className="hide-mobile">Favorilerim</span>
+                  <Heart size={17} strokeWidth={1.75} />
                 </button>
               ) : null}
               {user ? (
@@ -498,7 +498,7 @@ export function SiteHeader() {
                   fontWeight: 600,
                 }}
               >
-                <Heart size={16} /> <span className="hide-mobile">Favorilerim</span>
+                <Heart size={16} />
               </button>
             ) : null}
             {user ? (

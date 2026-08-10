@@ -1,0 +1,1112 @@
+categoryPath,name,depth,siblingCount,duplicatePaths,issues,recommendAction
+Elektronik › Telefon ve Aksesuar › Cep Telefonu › Akıllı Telefon,Akıllı Telefon,3,4,,ok,KEEP
+Elektronik › Telefon ve Aksesuar › Cep Telefonu › Tuşlu Telefon,Tuşlu Telefon,3,4,,ok,KEEP
+Elektronik › Telefon ve Aksesuar › Cep Telefonu › Katlanabilir Telefon,Katlanabilir Telefon,3,4,,ok,KEEP
+Elektronik › Telefon ve Aksesuar › Cep Telefonu › Outdoor Telefon,Outdoor Telefon,3,4,,ok,KEEP
+Elektronik › Telefon ve Aksesuar › Telefon Aksesuarları › Telefon Kılıfı,Telefon Kılıfı,3,12,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Telefon ve Aksesuar › Telefon Aksesuarları › Ekran Koruyucu,Ekran Koruyucu,3,12,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Telefon ve Aksesuar › Telefon Aksesuarları › Şarj Adaptörü,Şarj Adaptörü,3,12,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Telefon ve Aksesuar › Telefon Aksesuarları › Şarj Kablosu,Şarj Kablosu,3,12,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Telefon ve Aksesuar › Telefon Aksesuarları › Kablosuz Şarj Cihazı,Kablosuz Şarj Cihazı,3,12,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Telefon ve Aksesuar › Telefon Aksesuarları › Powerbank,Powerbank,3,12,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Telefon ve Aksesuar › Telefon Aksesuarları › Araç İçi Telefon Tutucu,Araç İçi Telefon Tutucu,3,12,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Telefon ve Aksesuar › Telefon Aksesuarları › Masaüstü Telefon Standı,Masaüstü Telefon Standı,3,12,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Telefon ve Aksesuar › Telefon Aksesuarları › Selfie Çubuğu,Selfie Çubuğu,3,12,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Telefon ve Aksesuar › Telefon Aksesuarları › Bluetooth Kulaklık,Bluetooth Kulaklık,3,12,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Telefon ve Aksesuar › Telefon Aksesuarları › Kablolu Kulaklık,Kablolu Kulaklık,3,12,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Telefon ve Aksesuar › Telefon Aksesuarları › Telefon Yedek Parça,Telefon Yedek Parça,3,12,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Telefon ve Aksesuar › Giyilebilir Teknoloji › Akıllı Saat,Akıllı Saat,3,5,,ok,KEEP
+Elektronik › Telefon ve Aksesuar › Giyilebilir Teknoloji › Akıllı Bileklik,Akıllı Bileklik,3,5,,ok,KEEP
+Elektronik › Telefon ve Aksesuar › Giyilebilir Teknoloji › Çocuk Akıllı Saati,Çocuk Akıllı Saati,3,5,,ok,KEEP
+Elektronik › Telefon ve Aksesuar › Giyilebilir Teknoloji › Akıllı Yüzük,Akıllı Yüzük,3,5,,ok,KEEP
+Elektronik › Telefon ve Aksesuar › Giyilebilir Teknoloji › GPS Takip Cihazı,GPS Takip Cihazı,3,5,,ok,KEEP
+Elektronik › Telefon ve Aksesuar › İletişim Cihazları › Telsiz,Telsiz,3,5,"Anne, Bebek ve Çocuk › Bakım ve Güvenlik › Güvenlik › Telsiz",same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Elektronik › Telefon ve Aksesuar › İletişim Cihazları › Sabit Telefon,Sabit Telefon,3,5,,ok,KEEP
+Elektronik › Telefon ve Aksesuar › İletişim Cihazları › IP Telefon,IP Telefon,3,5,,ok,KEEP
+Elektronik › Telefon ve Aksesuar › İletişim Cihazları › Uydu Telefonu,Uydu Telefonu,3,5,,ok,KEEP
+Elektronik › Telefon ve Aksesuar › İletişim Cihazları › Çağrı Cihazı,Çağrı Cihazı,3,5,,ok,KEEP
+Elektronik › Bilgisayar ve Tablet › Bilgisayar › Dizüstü Bilgisayar,Dizüstü Bilgisayar,3,6,,ok,KEEP
+Elektronik › Bilgisayar ve Tablet › Bilgisayar › Masaüstü Bilgisayar,Masaüstü Bilgisayar,3,6,,ok,KEEP
+Elektronik › Bilgisayar ve Tablet › Bilgisayar › Mini PC,Mini PC,3,6,,ok,KEEP
+Elektronik › Bilgisayar ve Tablet › Bilgisayar › All-in-One Bilgisayar,All-in-One Bilgisayar,3,6,,ok,KEEP
+Elektronik › Bilgisayar ve Tablet › Bilgisayar › İş İstasyonu,İş İstasyonu,3,6,,ok,KEEP
+Elektronik › Bilgisayar ve Tablet › Bilgisayar › Oyuncu Bilgisayarı,Oyuncu Bilgisayarı,3,6,,ok,KEEP
+Elektronik › Bilgisayar ve Tablet › Tablet ve E-Kitap › Tablet,Tablet,3,4,,ok,KEEP
+Elektronik › Bilgisayar ve Tablet › Tablet ve E-Kitap › Grafik Tablet,Grafik Tablet,3,4,,ok,KEEP
+Elektronik › Bilgisayar ve Tablet › Tablet ve E-Kitap › E-Kitap Okuyucu,E-Kitap Okuyucu,3,4,,ok,KEEP
+Elektronik › Bilgisayar ve Tablet › Tablet ve E-Kitap › Çocuk Tableti,Çocuk Tableti,3,4,,ok,KEEP
+Elektronik › Bilgisayar ve Tablet › Bilgisayar Bileşenleri › İşlemci,İşlemci,3,12,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Bilgisayar ve Tablet › Bilgisayar Bileşenleri › Anakart,Anakart,3,12,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Bilgisayar ve Tablet › Bilgisayar Bileşenleri › Ekran Kartı,Ekran Kartı,3,12,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Bilgisayar ve Tablet › Bilgisayar Bileşenleri › RAM,RAM,3,12,,micro_dense_sibling|very_short_name,MICRO_REVIEW
+Elektronik › Bilgisayar ve Tablet › Bilgisayar Bileşenleri › SSD,SSD,3,12,,micro_dense_sibling|very_short_name,MICRO_REVIEW
+Elektronik › Bilgisayar ve Tablet › Bilgisayar Bileşenleri › Hard Disk,Hard Disk,3,12,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Bilgisayar ve Tablet › Bilgisayar Bileşenleri › Bilgisayar Kasası,Bilgisayar Kasası,3,12,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Bilgisayar ve Tablet › Bilgisayar Bileşenleri › Güç Kaynağı,Güç Kaynağı,3,12,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Bilgisayar ve Tablet › Bilgisayar Bileşenleri › İşlemci Soğutucu,İşlemci Soğutucu,3,12,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Bilgisayar ve Tablet › Bilgisayar Bileşenleri › Kasa Fanı,Kasa Fanı,3,12,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Bilgisayar ve Tablet › Bilgisayar Bileşenleri › Optik Sürücü,Optik Sürücü,3,12,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Bilgisayar ve Tablet › Bilgisayar Bileşenleri › Capture Card,Capture Card,3,12,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Bilgisayar ve Tablet › Bilgisayar Çevre Birimleri › Monitör,Monitör,3,11,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Bilgisayar ve Tablet › Bilgisayar Çevre Birimleri › Klavye,Klavye,3,11,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Bilgisayar ve Tablet › Bilgisayar Çevre Birimleri › Mouse,Mouse,3,11,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Bilgisayar ve Tablet › Bilgisayar Çevre Birimleri › Klavye-Mouse Seti,Klavye-Mouse Seti,3,11,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Bilgisayar ve Tablet › Bilgisayar Çevre Birimleri › Webcam,Webcam,3,11,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Bilgisayar ve Tablet › Bilgisayar Çevre Birimleri › Mikrofon,Mikrofon,3,11,Hobi ve Oyun › Müzik Aletleri › Müzik Aksesuarları › Mikrofon,same_sense_duplicate_leaf|micro_dense_sibling,MANUAL_REVIEW_DEDUP
+Elektronik › Bilgisayar ve Tablet › Bilgisayar Çevre Birimleri › Hoparlör,Hoparlör,3,11,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Bilgisayar ve Tablet › Bilgisayar Çevre Birimleri › Kulaklık,Kulaklık,3,11,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Bilgisayar ve Tablet › Bilgisayar Çevre Birimleri › Yazıcı,Yazıcı,3,11,"Kitap, Kırtasiye ve Ofis › Ofis › Ofis Makineleri › Yazıcı",same_sense_duplicate_leaf|micro_dense_sibling,MANUAL_REVIEW_DEDUP
+Elektronik › Bilgisayar ve Tablet › Bilgisayar Çevre Birimleri › Tarayıcı,Tarayıcı,3,11,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Bilgisayar ve Tablet › Bilgisayar Çevre Birimleri › Projeksiyon Cihazı,Projeksiyon Cihazı,3,11,"Elektronik › Televizyon, Görüntü ve Ses › Projeksiyon ve Sunum › Projeksiyon Cihazı",same_sense_duplicate_leaf|micro_dense_sibling,MANUAL_REVIEW_DEDUP
+Elektronik › Bilgisayar ve Tablet › Ağ ve İnternet › Modem,Modem,3,10,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Bilgisayar ve Tablet › Ağ ve İnternet › Router,Router,3,10,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Bilgisayar ve Tablet › Ağ ve İnternet › Access Point,Access Point,3,10,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Bilgisayar ve Tablet › Ağ ve İnternet › Mesh Wi-Fi Sistemi,Mesh Wi-Fi Sistemi,3,10,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Bilgisayar ve Tablet › Ağ ve İnternet › Switch,Switch,3,10,Endüstriyel ve Ticari Ürünler › Ofis ve Ticari Teknoloji › Kurumsal Donanım › Switch,same_sense_duplicate_leaf|micro_dense_sibling,MANUAL_REVIEW_DEDUP
+Elektronik › Bilgisayar ve Tablet › Ağ ve İnternet › Range Extender,Range Extender,3,10,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Bilgisayar ve Tablet › Ağ ve İnternet › Powerline Adaptör,Powerline Adaptör,3,10,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Bilgisayar ve Tablet › Ağ ve İnternet › Ağ Kartı,Ağ Kartı,3,10,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Bilgisayar ve Tablet › Ağ ve İnternet › Anten,Anten,3,10,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Bilgisayar ve Tablet › Ağ ve İnternet › Ethernet Kablosu,Ethernet Kablosu,3,10,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Bilgisayar ve Tablet › Depolama ve Bellek › USB Bellek,USB Bellek,3,6,,ok,KEEP
+Elektronik › Bilgisayar ve Tablet › Depolama ve Bellek › Hafıza Kartı,Hafıza Kartı,3,6,,ok,KEEP
+Elektronik › Bilgisayar ve Tablet › Depolama ve Bellek › Harici SSD,Harici SSD,3,6,,ok,KEEP
+Elektronik › Bilgisayar ve Tablet › Depolama ve Bellek › Harici Hard Disk,Harici Hard Disk,3,6,,ok,KEEP
+Elektronik › Bilgisayar ve Tablet › Depolama ve Bellek › NAS,NAS,3,6,,very_short_name,KEEP
+Elektronik › Bilgisayar ve Tablet › Depolama ve Bellek › Kart Okuyucu,Kart Okuyucu,3,6,,ok,KEEP
+Elektronik › Bilgisayar ve Tablet › Bilgisayar Aksesuarları › Laptop Çantası,Laptop Çantası,3,10,Moda › Çanta ve Aksesuar › Çanta › Laptop Çantası,same_sense_duplicate_leaf|micro_dense_sibling,MANUAL_REVIEW_DEDUP
+Elektronik › Bilgisayar ve Tablet › Bilgisayar Aksesuarları › Laptop Standı,Laptop Standı,3,10,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Bilgisayar ve Tablet › Bilgisayar Aksesuarları › Soğutucu,Soğutucu,3,10,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Bilgisayar ve Tablet › Bilgisayar Aksesuarları › Docking Station,Docking Station,3,10,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Bilgisayar ve Tablet › Bilgisayar Aksesuarları › USB Hub,USB Hub,3,10,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Bilgisayar ve Tablet › Bilgisayar Aksesuarları › Adaptör,Adaptör,3,10,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Bilgisayar ve Tablet › Bilgisayar Aksesuarları › Kablo ve Dönüştürücü,Kablo ve Dönüştürücü,3,10,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Bilgisayar ve Tablet › Bilgisayar Aksesuarları › Mouse Pad,Mouse Pad,3,10,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Bilgisayar ve Tablet › Bilgisayar Aksesuarları › Monitör Kolu,Monitör Kolu,3,10,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Bilgisayar ve Tablet › Bilgisayar Aksesuarları › KVM Switch,KVM Switch,3,10,,micro_dense_sibling,MICRO_REVIEW
+"Elektronik › Televizyon, Görüntü ve Ses › Televizyon › LED Televizyon",LED Televizyon,3,5,,ok,KEEP
+"Elektronik › Televizyon, Görüntü ve Ses › Televizyon › QLED Televizyon",QLED Televizyon,3,5,,ok,KEEP
+"Elektronik › Televizyon, Görüntü ve Ses › Televizyon › OLED Televizyon",OLED Televizyon,3,5,,ok,KEEP
+"Elektronik › Televizyon, Görüntü ve Ses › Televizyon › Mini LED Televizyon",Mini LED Televizyon,3,5,,ok,KEEP
+"Elektronik › Televizyon, Görüntü ve Ses › Televizyon › Taşınabilir Televizyon",Taşınabilir Televizyon,3,5,,ok,KEEP
+"Elektronik › Televizyon, Görüntü ve Ses › TV Aksesuarları › TV Askı Aparatı",TV Askı Aparatı,3,7,,ok,KEEP
+"Elektronik › Televizyon, Görüntü ve Ses › TV Aksesuarları › TV Kumandası",TV Kumandası,3,7,,ok,KEEP
+"Elektronik › Televizyon, Görüntü ve Ses › TV Aksesuarları › Uydu Alıcısı",Uydu Alıcısı,3,7,,ok,KEEP
+"Elektronik › Televizyon, Görüntü ve Ses › TV Aksesuarları › Android TV Box",Android TV Box,3,7,,ok,KEEP
+"Elektronik › Televizyon, Görüntü ve Ses › TV Aksesuarları › Apple TV ve Medya Oynatıcı",Apple TV ve Medya Oynatıcı,3,7,,ok,KEEP
+"Elektronik › Televizyon, Görüntü ve Ses › TV Aksesuarları › HDMI Kablo",HDMI Kablo,3,7,,ok,KEEP
+"Elektronik › Televizyon, Görüntü ve Ses › TV Aksesuarları › TV Anteni",TV Anteni,3,7,,ok,KEEP
+"Elektronik › Televizyon, Görüntü ve Ses › Ses Sistemleri › Soundbar",Soundbar,3,8,,ok,KEEP
+"Elektronik › Televizyon, Görüntü ve Ses › Ses Sistemleri › Ev Sinema Sistemi",Ev Sinema Sistemi,3,8,,ok,KEEP
+"Elektronik › Televizyon, Görüntü ve Ses › Ses Sistemleri › Hi-Fi Sistem",Hi-Fi Sistem,3,8,,ok,KEEP
+"Elektronik › Televizyon, Görüntü ve Ses › Ses Sistemleri › Bluetooth Hoparlör",Bluetooth Hoparlör,3,8,,ok,KEEP
+"Elektronik › Televizyon, Görüntü ve Ses › Ses Sistemleri › Taşınabilir Hoparlör",Taşınabilir Hoparlör,3,8,,ok,KEEP
+"Elektronik › Televizyon, Görüntü ve Ses › Ses Sistemleri › Amfi",Amfi,3,8,Hobi ve Oyun › Müzik Aletleri › Müzik Aksesuarları › Amfi,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+"Elektronik › Televizyon, Görüntü ve Ses › Ses Sistemleri › Subwoofer",Subwoofer,3,8,,ok,KEEP
+"Elektronik › Televizyon, Görüntü ve Ses › Ses Sistemleri › Hoparlör Seti",Hoparlör Seti,3,8,,ok,KEEP
+"Elektronik › Televizyon, Görüntü ve Ses › Kulaklık › TWS Kulaklık",TWS Kulaklık,3,5,,ok,KEEP
+"Elektronik › Televizyon, Görüntü ve Ses › Kulaklık › Kulak Üstü Kulaklık",Kulak Üstü Kulaklık,3,5,,ok,KEEP
+"Elektronik › Televizyon, Görüntü ve Ses › Kulaklık › Oyuncu Kulaklığı",Oyuncu Kulaklığı,3,5,,ok,KEEP
+"Elektronik › Televizyon, Görüntü ve Ses › Kulaklık › Stüdyo Kulaklığı",Stüdyo Kulaklığı,3,5,,ok,KEEP
+"Elektronik › Televizyon, Görüntü ve Ses › Kulaklık › Spor Kulaklığı",Spor Kulaklığı,3,5,,ok,KEEP
+"Elektronik › Televizyon, Görüntü ve Ses › Projeksiyon ve Sunum › Projeksiyon Cihazı",Projeksiyon Cihazı,3,4,Elektronik › Bilgisayar ve Tablet › Bilgisayar Çevre Birimleri › Projeksiyon Cihazı,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+"Elektronik › Televizyon, Görüntü ve Ses › Projeksiyon ve Sunum › Projeksiyon Perdesi",Projeksiyon Perdesi,3,4,,ok,KEEP
+"Elektronik › Televizyon, Görüntü ve Ses › Projeksiyon ve Sunum › Sunum Kumandası",Sunum Kumandası,3,4,,ok,KEEP
+"Elektronik › Televizyon, Görüntü ve Ses › Projeksiyon ve Sunum › Projeksiyon Askı Aparatı",Projeksiyon Askı Aparatı,3,4,,ok,KEEP
+"Elektronik › Televizyon, Görüntü ve Ses › Fotoğraf ve Video › Dijital Fotoğraf Makinesi",Dijital Fotoğraf Makinesi,3,11,,micro_dense_sibling,MICRO_REVIEW
+"Elektronik › Televizyon, Görüntü ve Ses › Fotoğraf ve Video › Aksiyon Kamerası",Aksiyon Kamerası,3,11,,micro_dense_sibling,MICRO_REVIEW
+"Elektronik › Televizyon, Görüntü ve Ses › Fotoğraf ve Video › Video Kamera",Video Kamera,3,11,,micro_dense_sibling,MICRO_REVIEW
+"Elektronik › Televizyon, Görüntü ve Ses › Fotoğraf ve Video › Drone",Drone,3,11,,micro_dense_sibling,MICRO_REVIEW
+"Elektronik › Televizyon, Görüntü ve Ses › Fotoğraf ve Video › Lens",Lens,3,11,,micro_dense_sibling,MICRO_REVIEW
+"Elektronik › Televizyon, Görüntü ve Ses › Fotoğraf ve Video › Tripod",Tripod,3,11,,micro_dense_sibling,MICRO_REVIEW
+"Elektronik › Televizyon, Görüntü ve Ses › Fotoğraf ve Video › Gimbal",Gimbal,3,11,,micro_dense_sibling,MICRO_REVIEW
+"Elektronik › Televizyon, Görüntü ve Ses › Fotoğraf ve Video › Fotoğraf Çantası",Fotoğraf Çantası,3,11,,micro_dense_sibling,MICRO_REVIEW
+"Elektronik › Televizyon, Görüntü ve Ses › Fotoğraf ve Video › Flaş",Flaş,3,11,,micro_dense_sibling,MICRO_REVIEW
+"Elektronik › Televizyon, Görüntü ve Ses › Fotoğraf ve Video › Işık ve Softbox",Işık ve Softbox,3,11,,micro_dense_sibling,MICRO_REVIEW
+"Elektronik › Televizyon, Görüntü ve Ses › Fotoğraf ve Video › Kamera Aksesuarı",Kamera Aksesuarı,3,11,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Oyun ve Konsol › Oyun Konsolu › PlayStation,PlayStation,3,5,,ok,KEEP
+Elektronik › Oyun ve Konsol › Oyun Konsolu › Xbox,Xbox,3,5,,ok,KEEP
+Elektronik › Oyun ve Konsol › Oyun Konsolu › Nintendo Switch,Nintendo Switch,3,5,,ok,KEEP
+Elektronik › Oyun ve Konsol › Oyun Konsolu › El Konsolu,El Konsolu,3,5,,ok,KEEP
+Elektronik › Oyun ve Konsol › Oyun Konsolu › Retro Oyun Konsolu,Retro Oyun Konsolu,3,5,,ok,KEEP
+Elektronik › Oyun ve Konsol › Konsol Aksesuarları › Gamepad,Gamepad,3,6,,ok,KEEP
+Elektronik › Oyun ve Konsol › Konsol Aksesuarları › Direksiyon Seti,Direksiyon Seti,3,6,,ok,KEEP
+Elektronik › Oyun ve Konsol › Konsol Aksesuarları › VR Gözlük,VR Gözlük,3,6,,ok,KEEP
+Elektronik › Oyun ve Konsol › Konsol Aksesuarları › Şarj İstasyonu,Şarj İstasyonu,3,6,,ok,KEEP
+Elektronik › Oyun ve Konsol › Konsol Aksesuarları › Konsol Kulaklığı,Konsol Kulaklığı,3,6,,ok,KEEP
+Elektronik › Oyun ve Konsol › Konsol Aksesuarları › Taşıma Çantası,Taşıma Çantası,3,6,Pet Shop › Kedi › Aksesuar › Taşıma Çantası | Pet Shop › Köpek › Aksesuar › Taşıma Çantası,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Elektronik › Oyun ve Konsol › Oyunlar › PlayStation Oyunları,PlayStation Oyunları,3,4,,ok,KEEP
+Elektronik › Oyun ve Konsol › Oyunlar › Xbox Oyunları,Xbox Oyunları,3,4,,ok,KEEP
+Elektronik › Oyun ve Konsol › Oyunlar › Nintendo Oyunları,Nintendo Oyunları,3,4,,ok,KEEP
+Elektronik › Oyun ve Konsol › Oyunlar › PC Oyunları,PC Oyunları,3,4,,ok,KEEP
+Elektronik › Oyun ve Konsol › Oyuncu Ekipmanları › Oyuncu Klavyesi,Oyuncu Klavyesi,3,6,,ok,KEEP
+Elektronik › Oyun ve Konsol › Oyuncu Ekipmanları › Oyuncu Mouse,Oyuncu Mouse,3,6,,ok,KEEP
+Elektronik › Oyun ve Konsol › Oyuncu Ekipmanları › Oyuncu Monitörü,Oyuncu Monitörü,3,6,,ok,KEEP
+Elektronik › Oyun ve Konsol › Oyuncu Ekipmanları › Oyuncu Koltuğu,Oyuncu Koltuğu,3,6,,ok,KEEP
+Elektronik › Oyun ve Konsol › Oyuncu Ekipmanları › Oyuncu Masası,Oyuncu Masası,3,6,,ok,KEEP
+Elektronik › Oyun ve Konsol › Oyuncu Ekipmanları › Yayıncı Ekipmanı,Yayıncı Ekipmanı,3,6,,ok,KEEP
+Elektronik › Akıllı Ev ve Güvenlik › Akıllı Ev › Akıllı Priz,Akıllı Priz,3,6,,ok,KEEP
+Elektronik › Akıllı Ev ve Güvenlik › Akıllı Ev › Akıllı Ampul,Akıllı Ampul,3,6,Ev ve Yaşam › Aydınlatma › Ampul ve Ekipman › Akıllı Ampul,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Elektronik › Akıllı Ev ve Güvenlik › Akıllı Ev › Akıllı Anahtar,Akıllı Anahtar,3,6,,ok,KEEP
+Elektronik › Akıllı Ev ve Güvenlik › Akıllı Ev › Akıllı Termostat,Akıllı Termostat,3,6,,ok,KEEP
+Elektronik › Akıllı Ev ve Güvenlik › Akıllı Ev › Akıllı Perde Motoru,Akıllı Perde Motoru,3,6,,ok,KEEP
+Elektronik › Akıllı Ev ve Güvenlik › Akıllı Ev › Akıllı Ev Hub,Akıllı Ev Hub,3,6,,ok,KEEP
+Elektronik › Akıllı Ev ve Güvenlik › Güvenlik Sistemleri › IP Kamera,IP Kamera,3,9,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Akıllı Ev ve Güvenlik › Güvenlik Sistemleri › Analog Kamera,Analog Kamera,3,9,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Akıllı Ev ve Güvenlik › Güvenlik Sistemleri › Kamera Kayıt Cihazı,Kamera Kayıt Cihazı,3,9,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Akıllı Ev ve Güvenlik › Güvenlik Sistemleri › Alarm Sistemi,Alarm Sistemi,3,9,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Akıllı Ev ve Güvenlik › Güvenlik Sistemleri › Hareket Sensörü,Hareket Sensörü,3,9,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Akıllı Ev ve Güvenlik › Güvenlik Sistemleri › Kapı-Pencere Sensörü,Kapı-Pencere Sensörü,3,9,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Akıllı Ev ve Güvenlik › Güvenlik Sistemleri › Görüntülü Diafon,Görüntülü Diafon,3,9,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Akıllı Ev ve Güvenlik › Güvenlik Sistemleri › Akıllı Kilit,Akıllı Kilit,3,9,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Akıllı Ev ve Güvenlik › Güvenlik Sistemleri › Duman Dedektörü,Duman Dedektörü,3,9,,micro_dense_sibling,MICRO_REVIEW
+Elektronik › Akıllı Ev ve Güvenlik › Enerji ve Güç › UPS,UPS,3,5,Endüstriyel ve Ticari Ürünler › Ofis ve Ticari Teknoloji › Kurumsal Donanım › UPS,same_sense_duplicate_leaf|very_short_name,MANUAL_REVIEW_DEDUP
+Elektronik › Akıllı Ev ve Güvenlik › Enerji ve Güç › Voltaj Regülatörü,Voltaj Regülatörü,3,5,,ok,KEEP
+Elektronik › Akıllı Ev ve Güvenlik › Enerji ve Güç › Akım Korumalı Priz,Akım Korumalı Priz,3,5,,ok,KEEP
+Elektronik › Akıllı Ev ve Güvenlik › Enerji ve Güç › Solar Şarj Cihazı,Solar Şarj Cihazı,3,5,,ok,KEEP
+Elektronik › Akıllı Ev ve Güvenlik › Enerji ve Güç › Taşınabilir Güç İstasyonu,Taşınabilir Güç İstasyonu,3,5,,ok,KEEP
+Ev Aletleri › Beyaz Eşya › Soğutma › Buzdolabı,Buzdolabı,3,4,,ok,KEEP
+Ev Aletleri › Beyaz Eşya › Soğutma › Mini Buzdolabı,Mini Buzdolabı,3,4,,ok,KEEP
+Ev Aletleri › Beyaz Eşya › Soğutma › Derin Dondurucu,Derin Dondurucu,3,4,,ok,KEEP
+Ev Aletleri › Beyaz Eşya › Soğutma › Şarap Dolabı,Şarap Dolabı,3,4,,ok,KEEP
+Ev Aletleri › Beyaz Eşya › Çamaşır Bakımı › Çamaşır Makinesi,Çamaşır Makinesi,3,3,,ok,KEEP
+Ev Aletleri › Beyaz Eşya › Çamaşır Bakımı › Kurutma Makinesi,Kurutma Makinesi,3,3,,ok,KEEP
+Ev Aletleri › Beyaz Eşya › Çamaşır Bakımı › Kurutmalı Çamaşır Makinesi,Kurutmalı Çamaşır Makinesi,3,3,,ok,KEEP
+Ev Aletleri › Beyaz Eşya › Bulaşık ve Mutfak › Bulaşık Makinesi,Bulaşık Makinesi,3,2,,ok,KEEP
+Ev Aletleri › Beyaz Eşya › Bulaşık ve Mutfak › Ankastre Bulaşık Makinesi,Ankastre Bulaşık Makinesi,3,2,,ok,KEEP
+Ev Aletleri › Beyaz Eşya › Pişirme › Fırın,Fırın,3,6,,ok,KEEP
+Ev Aletleri › Beyaz Eşya › Pişirme › Ocak,Ocak,3,6,,ok,KEEP
+Ev Aletleri › Beyaz Eşya › Pişirme › Davlumbaz,Davlumbaz,3,6,Endüstriyel ve Ticari Ürünler › Restoran ve Otel › Mutfak Ekipmanları › Davlumbaz,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Ev Aletleri › Beyaz Eşya › Pişirme › Aspiratör,Aspiratör,3,6,,ok,KEEP
+Ev Aletleri › Beyaz Eşya › Pişirme › Ankastre Set,Ankastre Set,3,6,,ok,KEEP
+Ev Aletleri › Beyaz Eşya › Pişirme › Mikrodalga Fırın,Mikrodalga Fırın,3,6,,ok,KEEP
+Ev Aletleri › Beyaz Eşya › İklimlendirme › Klima,Klima,3,8,,ok,KEEP
+Ev Aletleri › Beyaz Eşya › İklimlendirme › Portatif Klima,Portatif Klima,3,8,,ok,KEEP
+Ev Aletleri › Beyaz Eşya › İklimlendirme › Vantilatör,Vantilatör,3,8,,ok,KEEP
+Ev Aletleri › Beyaz Eşya › İklimlendirme › Hava Soğutucu,Hava Soğutucu,3,8,,ok,KEEP
+Ev Aletleri › Beyaz Eşya › İklimlendirme › Isıtıcı,Isıtıcı,3,8,Pet Shop › Akvaryum › Akvaryum Ürünleri › Isıtıcı,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Ev Aletleri › Beyaz Eşya › İklimlendirme › Kombi,Kombi,3,8,,ok,KEEP
+Ev Aletleri › Beyaz Eşya › İklimlendirme › Şofben,Şofben,3,8,,ok,KEEP
+Ev Aletleri › Beyaz Eşya › İklimlendirme › Termosifon,Termosifon,3,8,,ok,KEEP
+Ev Aletleri › Küçük Ev Aletleri › Temizlik › Robot Süpürge,Robot Süpürge,3,8,,ok,KEEP
+Ev Aletleri › Küçük Ev Aletleri › Temizlik › Dikey Süpürge,Dikey Süpürge,3,8,,ok,KEEP
+Ev Aletleri › Küçük Ev Aletleri › Temizlik › Toz Torbalı Süpürge,Toz Torbalı Süpürge,3,8,,ok,KEEP
+Ev Aletleri › Küçük Ev Aletleri › Temizlik › Toz Torbasız Süpürge,Toz Torbasız Süpürge,3,8,,ok,KEEP
+Ev Aletleri › Küçük Ev Aletleri › Temizlik › Islak-Kuru Süpürge,Islak-Kuru Süpürge,3,8,,ok,KEEP
+Ev Aletleri › Küçük Ev Aletleri › Temizlik › Buharlı Temizleyici,Buharlı Temizleyici,3,8,,ok,KEEP
+Ev Aletleri › Küçük Ev Aletleri › Temizlik › Halı Yıkama Makinesi,Halı Yıkama Makinesi,3,8,,ok,KEEP
+Ev Aletleri › Küçük Ev Aletleri › Temizlik › Cam Temizleme Robotu,Cam Temizleme Robotu,3,8,,ok,KEEP
+Ev Aletleri › Küçük Ev Aletleri › Ütü ve Dikiş › Buharlı Ütü,Buharlı Ütü,3,6,,ok,KEEP
+Ev Aletleri › Küçük Ev Aletleri › Ütü ve Dikiş › Kazanlı Ütü,Kazanlı Ütü,3,6,,ok,KEEP
+Ev Aletleri › Küçük Ev Aletleri › Ütü ve Dikiş › Dikey Ütü,Dikey Ütü,3,6,,ok,KEEP
+Ev Aletleri › Küçük Ev Aletleri › Ütü ve Dikiş › Ütü Masası,Ütü Masası,3,6,,ok,KEEP
+Ev Aletleri › Küçük Ev Aletleri › Ütü ve Dikiş › Dikiş Makinesi,Dikiş Makinesi,3,6,,ok,KEEP
+Ev Aletleri › Küçük Ev Aletleri › Ütü ve Dikiş › Overlok Makinesi,Overlok Makinesi,3,6,,ok,KEEP
+Ev Aletleri › Küçük Ev Aletleri › Hava Kalitesi › Hava Temizleyici,Hava Temizleyici,3,4,,ok,KEEP
+Ev Aletleri › Küçük Ev Aletleri › Hava Kalitesi › Nem Alma Cihazı,Nem Alma Cihazı,3,4,,ok,KEEP
+Ev Aletleri › Küçük Ev Aletleri › Hava Kalitesi › Nemlendirici,Nemlendirici,3,4,Kozmetik ve Kişisel Bakım › Cilt Bakımı › Yüz Bakımı › Nemlendirici,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Ev Aletleri › Küçük Ev Aletleri › Hava Kalitesi › Ozon Cihazı,Ozon Cihazı,3,4,,ok,KEEP
+Ev Aletleri › Küçük Ev Aletleri › Kişisel Konfor › Elektrikli Battaniye,Elektrikli Battaniye,3,4,,ok,KEEP
+Ev Aletleri › Küçük Ev Aletleri › Kişisel Konfor › Ayak Isıtıcı,Ayak Isıtıcı,3,4,,ok,KEEP
+Ev Aletleri › Küçük Ev Aletleri › Kişisel Konfor › Elektrikli Soba,Elektrikli Soba,3,4,,ok,KEEP
+Ev Aletleri › Küçük Ev Aletleri › Kişisel Konfor › Sinekkapan Cihazı,Sinekkapan Cihazı,3,4,,ok,KEEP
+Mutfak ve Sofra › Pişirme › Elektrikli Pişirme › Airfryer,Airfryer,3,8,,ok,KEEP
+Mutfak ve Sofra › Pişirme › Elektrikli Pişirme › Mini Fırın,Mini Fırın,3,8,,ok,KEEP
+Mutfak ve Sofra › Pişirme › Elektrikli Pişirme › Elektrikli Izgara,Elektrikli Izgara,3,8,,ok,KEEP
+Mutfak ve Sofra › Pişirme › Elektrikli Pişirme › Tost Makinesi,Tost Makinesi,3,8,,ok,KEEP
+Mutfak ve Sofra › Pişirme › Elektrikli Pişirme › Waffle Makinesi,Waffle Makinesi,3,8,,ok,KEEP
+Mutfak ve Sofra › Pişirme › Elektrikli Pişirme › Krep Makinesi,Krep Makinesi,3,8,,ok,KEEP
+Mutfak ve Sofra › Pişirme › Elektrikli Pişirme › Ekmek Yapma Makinesi,Ekmek Yapma Makinesi,3,8,,ok,KEEP
+Mutfak ve Sofra › Pişirme › Elektrikli Pişirme › Yoğurt Makinesi,Yoğurt Makinesi,3,8,,ok,KEEP
+Mutfak ve Sofra › Pişirme › Tencere ve Tavalar › Tencere,Tencere,3,8,,ok,KEEP
+Mutfak ve Sofra › Pişirme › Tencere ve Tavalar › Tencere Seti,Tencere Seti,3,8,,ok,KEEP
+Mutfak ve Sofra › Pişirme › Tencere ve Tavalar › Tava,Tava,3,8,,ok,KEEP
+Mutfak ve Sofra › Pişirme › Tencere ve Tavalar › Döküm Tencere,Döküm Tencere,3,8,,ok,KEEP
+Mutfak ve Sofra › Pişirme › Tencere ve Tavalar › Döküm Tava,Döküm Tava,3,8,,ok,KEEP
+Mutfak ve Sofra › Pişirme › Tencere ve Tavalar › Düdüklü Tencere,Düdüklü Tencere,3,8,,ok,KEEP
+Mutfak ve Sofra › Pişirme › Tencere ve Tavalar › Sahan,Sahan,3,8,,ok,KEEP
+Mutfak ve Sofra › Pişirme › Tencere ve Tavalar › Wok Tava,Wok Tava,3,8,,ok,KEEP
+Mutfak ve Sofra › Pişirme › Fırın Gereçleri › Fırın Tepsisi,Fırın Tepsisi,3,5,,ok,KEEP
+Mutfak ve Sofra › Pişirme › Fırın Gereçleri › Kek Kalıbı,Kek Kalıbı,3,5,,ok,KEEP
+Mutfak ve Sofra › Pişirme › Fırın Gereçleri › Borcam ve Fırın Kabı,Borcam ve Fırın Kabı,3,5,,ok,KEEP
+Mutfak ve Sofra › Pişirme › Fırın Gereçleri › Silikon Kalıp,Silikon Kalıp,3,5,,ok,KEEP
+Mutfak ve Sofra › Pişirme › Fırın Gereçleri › Pişirme Kağıdı ve Mat,Pişirme Kağıdı ve Mat,3,5,,ok,KEEP
+Mutfak ve Sofra › Hazırlık › Mutfak Robotları › Mutfak Robotu,Mutfak Robotu,3,7,,ok,KEEP
+Mutfak ve Sofra › Hazırlık › Mutfak Robotları › Blender,Blender,3,7,,ok,KEEP
+Mutfak ve Sofra › Hazırlık › Mutfak Robotları › El Blenderı,El Blenderı,3,7,,ok,KEEP
+Mutfak ve Sofra › Hazırlık › Mutfak Robotları › Mikser,Mikser,3,7,,ok,KEEP
+Mutfak ve Sofra › Hazırlık › Mutfak Robotları › Doğrayıcı,Doğrayıcı,3,7,,ok,KEEP
+Mutfak ve Sofra › Hazırlık › Mutfak Robotları › Rondo,Rondo,3,7,,ok,KEEP
+Mutfak ve Sofra › Hazırlık › Mutfak Robotları › Hamur Yoğurma Makinesi,Hamur Yoğurma Makinesi,3,7,,ok,KEEP
+Mutfak ve Sofra › Hazırlık › Kesme ve Doğrama › Bıçak,Bıçak,3,7,,ok,KEEP
+Mutfak ve Sofra › Hazırlık › Kesme ve Doğrama › Bıçak Seti,Bıçak Seti,3,7,,ok,KEEP
+Mutfak ve Sofra › Hazırlık › Kesme ve Doğrama › Kesme Tahtası,Kesme Tahtası,3,7,,ok,KEEP
+Mutfak ve Sofra › Hazırlık › Kesme ve Doğrama › Rende,Rende,3,7,,ok,KEEP
+Mutfak ve Sofra › Hazırlık › Kesme ve Doğrama › Soyacak,Soyacak,3,7,,ok,KEEP
+Mutfak ve Sofra › Hazırlık › Kesme ve Doğrama › Mutfak Makası,Mutfak Makası,3,7,,ok,KEEP
+Mutfak ve Sofra › Hazırlık › Kesme ve Doğrama › Bileme Aleti,Bileme Aleti,3,7,,ok,KEEP
+Mutfak ve Sofra › Hazırlık › Ölçme ve Yardımcılar › Mutfak Tartısı,Mutfak Tartısı,3,9,,micro_dense_sibling,MICRO_REVIEW
+Mutfak ve Sofra › Hazırlık › Ölçme ve Yardımcılar › Ölçü Kabı,Ölçü Kabı,3,9,,micro_dense_sibling,MICRO_REVIEW
+Mutfak ve Sofra › Hazırlık › Ölçme ve Yardımcılar › Termometre,Termometre,3,9,,micro_dense_sibling,MICRO_REVIEW
+Mutfak ve Sofra › Hazırlık › Ölçme ve Yardımcılar › Süzgeç,Süzgeç,3,9,,micro_dense_sibling,MICRO_REVIEW
+Mutfak ve Sofra › Hazırlık › Ölçme ve Yardımcılar › Kevgir,Kevgir,3,9,,micro_dense_sibling,MICRO_REVIEW
+Mutfak ve Sofra › Hazırlık › Ölçme ve Yardımcılar › Huni,Huni,3,9,,micro_dense_sibling,MICRO_REVIEW
+Mutfak ve Sofra › Hazırlık › Ölçme ve Yardımcılar › Spatula,Spatula,3,9,,micro_dense_sibling,MICRO_REVIEW
+Mutfak ve Sofra › Hazırlık › Ölçme ve Yardımcılar › Maşa,Maşa,3,9,,micro_dense_sibling,MICRO_REVIEW
+Mutfak ve Sofra › Hazırlık › Ölçme ve Yardımcılar › Çırpıcı,Çırpıcı,3,9,,micro_dense_sibling,MICRO_REVIEW
+Mutfak ve Sofra › İçecek Hazırlama › Kahve › Türk Kahvesi Makinesi,Türk Kahvesi Makinesi,3,8,,ok,KEEP
+Mutfak ve Sofra › İçecek Hazırlama › Kahve › Filtre Kahve Makinesi,Filtre Kahve Makinesi,3,8,,ok,KEEP
+Mutfak ve Sofra › İçecek Hazırlama › Kahve › Espresso Makinesi,Espresso Makinesi,3,8,,ok,KEEP
+Mutfak ve Sofra › İçecek Hazırlama › Kahve › Kapsül Kahve Makinesi,Kapsül Kahve Makinesi,3,8,,ok,KEEP
+Mutfak ve Sofra › İçecek Hazırlama › Kahve › Kahve Öğütücü,Kahve Öğütücü,3,8,,ok,KEEP
+Mutfak ve Sofra › İçecek Hazırlama › Kahve › French Press,French Press,3,8,,ok,KEEP
+Mutfak ve Sofra › İçecek Hazırlama › Kahve › Moka Pot,Moka Pot,3,8,,ok,KEEP
+Mutfak ve Sofra › İçecek Hazırlama › Kahve › Kahve Demleme Ekipmanı,Kahve Demleme Ekipmanı,3,8,,ok,KEEP
+Mutfak ve Sofra › İçecek Hazırlama › Çay ve Sıcak İçecek › Çay Makinesi,Çay Makinesi,3,5,,ok,KEEP
+Mutfak ve Sofra › İçecek Hazırlama › Çay ve Sıcak İçecek › Su Isıtıcısı,Su Isıtıcısı,3,5,,ok,KEEP
+Mutfak ve Sofra › İçecek Hazırlama › Çay ve Sıcak İçecek › Semaver,Semaver,3,5,,ok,KEEP
+Mutfak ve Sofra › İçecek Hazırlama › Çay ve Sıcak İçecek › Termos,Termos,3,5,,ok,KEEP
+Mutfak ve Sofra › İçecek Hazırlama › Çay ve Sıcak İçecek › Mug ve Termos Bardak,Mug ve Termos Bardak,3,5,,ok,KEEP
+Mutfak ve Sofra › İçecek Hazırlama › Soğuk İçecek › Katı Meyve Sıkacağı,Katı Meyve Sıkacağı,3,5,,ok,KEEP
+Mutfak ve Sofra › İçecek Hazırlama › Soğuk İçecek › Narenciye Sıkacağı,Narenciye Sıkacağı,3,5,,ok,KEEP
+Mutfak ve Sofra › İçecek Hazırlama › Soğuk İçecek › Smoothie Blender,Smoothie Blender,3,5,,ok,KEEP
+Mutfak ve Sofra › İçecek Hazırlama › Soğuk İçecek › Soda Makinesi,Soda Makinesi,3,5,,ok,KEEP
+Mutfak ve Sofra › İçecek Hazırlama › Soğuk İçecek › Buz Makinesi,Buz Makinesi,3,5,Endüstriyel ve Ticari Ürünler › Restoran ve Otel › Servis Ekipmanları › Buz Makinesi,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Mutfak ve Sofra › Sofra ve Servis › Yemek Takımları › Yemek Takımı,Yemek Takımı,3,5,,ok,KEEP
+Mutfak ve Sofra › Sofra ve Servis › Yemek Takımları › Kahvaltı Takımı,Kahvaltı Takımı,3,5,,ok,KEEP
+Mutfak ve Sofra › Sofra ve Servis › Yemek Takımları › Çatal-Kaşık-Bıçak Seti,Çatal-Kaşık-Bıçak Seti,3,5,,ok,KEEP
+Mutfak ve Sofra › Sofra ve Servis › Yemek Takımları › Servis Tabağı,Servis Tabağı,3,5,,ok,KEEP
+Mutfak ve Sofra › Sofra ve Servis › Yemek Takımları › Salata Kasesi,Salata Kasesi,3,5,,ok,KEEP
+Mutfak ve Sofra › Sofra ve Servis › Bardak ve Fincan › Su Bardağı,Su Bardağı,3,6,,ok,KEEP
+Mutfak ve Sofra › Sofra ve Servis › Bardak ve Fincan › Çay Bardağı,Çay Bardağı,3,6,,ok,KEEP
+Mutfak ve Sofra › Sofra ve Servis › Bardak ve Fincan › Kahve Fincanı,Kahve Fincanı,3,6,,ok,KEEP
+Mutfak ve Sofra › Sofra ve Servis › Bardak ve Fincan › Kupa,Kupa,3,6,,ok,KEEP
+Mutfak ve Sofra › Sofra ve Servis › Bardak ve Fincan › Kadeh,Kadeh,3,6,,ok,KEEP
+Mutfak ve Sofra › Sofra ve Servis › Bardak ve Fincan › Sürahi ve Karaf,Sürahi ve Karaf,3,6,,ok,KEEP
+Mutfak ve Sofra › Sofra ve Servis › Servis Gereçleri › Tepsi,Tepsi,3,6,,ok,KEEP
+Mutfak ve Sofra › Sofra ve Servis › Servis Gereçleri › Sunum Tahtası,Sunum Tahtası,3,6,,ok,KEEP
+Mutfak ve Sofra › Sofra ve Servis › Servis Gereçleri › Servis Kaşığı,Servis Kaşığı,3,6,,ok,KEEP
+Mutfak ve Sofra › Sofra ve Servis › Servis Gereçleri › Şekerlik,Şekerlik,3,6,,ok,KEEP
+Mutfak ve Sofra › Sofra ve Servis › Servis Gereçleri › Yağlık-Sirkelik,Yağlık-Sirkelik,3,6,,ok,KEEP
+Mutfak ve Sofra › Sofra ve Servis › Servis Gereçleri › Tuzluk-Biberlik,Tuzluk-Biberlik,3,6,,ok,KEEP
+Mutfak ve Sofra › Saklama ve Düzenleme › Gıda Saklama › Saklama Kabı,Saklama Kabı,3,6,,ok,KEEP
+Mutfak ve Sofra › Saklama ve Düzenleme › Gıda Saklama › Vakumlu Saklama Kabı,Vakumlu Saklama Kabı,3,6,,ok,KEEP
+Mutfak ve Sofra › Saklama ve Düzenleme › Gıda Saklama › Kavanoz,Kavanoz,3,6,,ok,KEEP
+Mutfak ve Sofra › Saklama ve Düzenleme › Gıda Saklama › Baharatlık,Baharatlık,3,6,,ok,KEEP
+Mutfak ve Sofra › Saklama ve Düzenleme › Gıda Saklama › Ekmek Kutusu,Ekmek Kutusu,3,6,,ok,KEEP
+Mutfak ve Sofra › Saklama ve Düzenleme › Gıda Saklama › Buzdolabı Düzenleyici,Buzdolabı Düzenleyici,3,6,,ok,KEEP
+Mutfak ve Sofra › Saklama ve Düzenleme › Mutfak Düzenleme › Kaşıklık,Kaşıklık,3,6,,ok,KEEP
+Mutfak ve Sofra › Saklama ve Düzenleme › Mutfak Düzenleme › Bulaşıklık,Bulaşıklık,3,6,,ok,KEEP
+Mutfak ve Sofra › Saklama ve Düzenleme › Mutfak Düzenleme › Raf Düzenleyici,Raf Düzenleyici,3,6,,ok,KEEP
+Mutfak ve Sofra › Saklama ve Düzenleme › Mutfak Düzenleme › Dolap İçi Düzenleyici,Dolap İçi Düzenleyici,3,6,,ok,KEEP
+Mutfak ve Sofra › Saklama ve Düzenleme › Mutfak Düzenleme › Poşetlik,Poşetlik,3,6,,ok,KEEP
+Mutfak ve Sofra › Saklama ve Düzenleme › Mutfak Düzenleme › Çöp Kovası,Çöp Kovası,3,6,,ok,KEEP
+Mutfak ve Sofra › Su Arıtma › Su Arıtma Ürünleri › Filtreli Sürahi,Filtreli Sürahi,3,6,,ok,KEEP
+Mutfak ve Sofra › Su Arıtma › Su Arıtma Ürünleri › Su Arıtma Cihazı,Su Arıtma Cihazı,3,6,,ok,KEEP
+Mutfak ve Sofra › Su Arıtma › Su Arıtma Ürünleri › Musluk Filtresi,Musluk Filtresi,3,6,,ok,KEEP
+Mutfak ve Sofra › Su Arıtma › Su Arıtma Ürünleri › Yedek Filtre,Yedek Filtre,3,6,,ok,KEEP
+Mutfak ve Sofra › Su Arıtma › Su Arıtma Ürünleri › Su Sebili,Su Sebili,3,6,,ok,KEEP
+Mutfak ve Sofra › Su Arıtma › Su Arıtma Ürünleri › Tezgah Üstü Su Arıtıcı,Tezgah Üstü Su Arıtıcı,3,6,,ok,KEEP
+Ev ve Yaşam › Mobilya › Salon › Koltuk Takımı,Koltuk Takımı,3,9,,micro_dense_sibling,MICRO_REVIEW
+Ev ve Yaşam › Mobilya › Salon › Kanepe,Kanepe,3,9,,micro_dense_sibling,MICRO_REVIEW
+Ev ve Yaşam › Mobilya › Salon › Berjer,Berjer,3,9,,micro_dense_sibling,MICRO_REVIEW
+Ev ve Yaşam › Mobilya › Salon › TV Ünitesi,TV Ünitesi,3,9,,micro_dense_sibling,MICRO_REVIEW
+Ev ve Yaşam › Mobilya › Salon › Orta Sehpa,Orta Sehpa,3,9,,micro_dense_sibling,MICRO_REVIEW
+Ev ve Yaşam › Mobilya › Salon › Yan Sehpa,Yan Sehpa,3,9,,micro_dense_sibling,MICRO_REVIEW
+Ev ve Yaşam › Mobilya › Salon › Kitaplık,Kitaplık,3,9,,micro_dense_sibling,MICRO_REVIEW
+Ev ve Yaşam › Mobilya › Salon › Konsol,Konsol,3,9,,micro_dense_sibling,MICRO_REVIEW
+Ev ve Yaşam › Mobilya › Salon › Vitrin,Vitrin,3,9,Endüstriyel ve Ticari Ürünler › Mağaza ve Market › Mağaza Ekipmanları › Vitrin,same_sense_duplicate_leaf|micro_dense_sibling,MANUAL_REVIEW_DEDUP
+Ev ve Yaşam › Mobilya › Yatak Odası › Yatak Odası Takımı,Yatak Odası Takımı,3,8,,ok,KEEP
+Ev ve Yaşam › Mobilya › Yatak Odası › Yatak,Yatak,3,8,,ok,KEEP
+Ev ve Yaşam › Mobilya › Yatak Odası › Baza,Baza,3,8,,ok,KEEP
+Ev ve Yaşam › Mobilya › Yatak Odası › Başlık,Başlık,3,8,,ok,KEEP
+Ev ve Yaşam › Mobilya › Yatak Odası › Gardırop,Gardırop,3,8,,ok,KEEP
+Ev ve Yaşam › Mobilya › Yatak Odası › Şifonyer,Şifonyer,3,8,,ok,KEEP
+Ev ve Yaşam › Mobilya › Yatak Odası › Komodin,Komodin,3,8,,ok,KEEP
+Ev ve Yaşam › Mobilya › Yatak Odası › Makyaj Masası,Makyaj Masası,3,8,,ok,KEEP
+Ev ve Yaşam › Mobilya › Yemek Odası › Yemek Masası,Yemek Masası,3,6,,ok,KEEP
+Ev ve Yaşam › Mobilya › Yemek Odası › Sandalye,Sandalye,3,6,,ok,KEEP
+Ev ve Yaşam › Mobilya › Yemek Odası › Yemek Odası Takımı,Yemek Odası Takımı,3,6,,ok,KEEP
+Ev ve Yaşam › Mobilya › Yemek Odası › Bank,Bank,3,6,,ok,KEEP
+Ev ve Yaşam › Mobilya › Yemek Odası › Bar Masası,Bar Masası,3,6,,ok,KEEP
+Ev ve Yaşam › Mobilya › Yemek Odası › Bar Sandalyesi,Bar Sandalyesi,3,6,,ok,KEEP
+Ev ve Yaşam › Mobilya › Çalışma Odası › Çalışma Masası,Çalışma Masası,3,6,Ev ve Yaşam › Mobilya › Çocuk ve Genç Odası › Çalışma Masası,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Ev ve Yaşam › Mobilya › Çalışma Odası › Ofis Koltuğu,Ofis Koltuğu,3,6,"Kitap, Kırtasiye ve Ofis › Ofis › Ofis Mobilyası › Ofis Koltuğu",same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Ev ve Yaşam › Mobilya › Çalışma Odası › Çalışma Koltuğu,Çalışma Koltuğu,3,6,,ok,KEEP
+Ev ve Yaşam › Mobilya › Çalışma Odası › Dosya Dolabı,Dosya Dolabı,3,6,"Kitap, Kırtasiye ve Ofis › Ofis › Ofis Mobilyası › Dosya Dolabı",same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Ev ve Yaşam › Mobilya › Çalışma Odası › Raf,Raf,3,6,,very_short_name,KEEP
+Ev ve Yaşam › Mobilya › Çalışma Odası › Toplantı Masası,Toplantı Masası,3,6,"Kitap, Kırtasiye ve Ofis › Ofis › Ofis Mobilyası › Toplantı Masası",same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Ev ve Yaşam › Mobilya › Çocuk ve Genç Odası › Çocuk Odası Takımı,Çocuk Odası Takımı,3,6,,ok,KEEP
+Ev ve Yaşam › Mobilya › Çocuk ve Genç Odası › Genç Odası Takımı,Genç Odası Takımı,3,6,,ok,KEEP
+Ev ve Yaşam › Mobilya › Çocuk ve Genç Odası › Çocuk Yatağı,Çocuk Yatağı,3,6,,ok,KEEP
+Ev ve Yaşam › Mobilya › Çocuk ve Genç Odası › Ranza,Ranza,3,6,,ok,KEEP
+Ev ve Yaşam › Mobilya › Çocuk ve Genç Odası › Çalışma Masası,Çalışma Masası,3,6,Ev ve Yaşam › Mobilya › Çalışma Odası › Çalışma Masası,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Ev ve Yaşam › Mobilya › Çocuk ve Genç Odası › Oyuncak Dolabı,Oyuncak Dolabı,3,6,,ok,KEEP
+Ev ve Yaşam › Mobilya › Antre ve Balkon › Portmanto,Portmanto,3,5,,ok,KEEP
+Ev ve Yaşam › Mobilya › Antre ve Balkon › Ayakkabılık,Ayakkabılık,3,5,,ok,KEEP
+Ev ve Yaşam › Mobilya › Antre ve Balkon › Dresuar,Dresuar,3,5,,ok,KEEP
+Ev ve Yaşam › Mobilya › Antre ve Balkon › Balkon Mobilyası,Balkon Mobilyası,3,5,,ok,KEEP
+Ev ve Yaşam › Mobilya › Antre ve Balkon › Bahçe Mobilyası,Bahçe Mobilyası,3,5,,ok,KEEP
+Ev ve Yaşam › Ev Tekstili › Yatak Tekstili › Nevresim Takımı,Nevresim Takımı,3,7,,ok,KEEP
+Ev ve Yaşam › Ev Tekstili › Yatak Tekstili › Çarşaf,Çarşaf,3,7,,ok,KEEP
+Ev ve Yaşam › Ev Tekstili › Yatak Tekstili › Yastık,Yastık,3,7,,ok,KEEP
+Ev ve Yaşam › Ev Tekstili › Yatak Tekstili › Yorgan,Yorgan,3,7,,ok,KEEP
+Ev ve Yaşam › Ev Tekstili › Yatak Tekstili › Battaniye,Battaniye,3,7,,ok,KEEP
+Ev ve Yaşam › Ev Tekstili › Yatak Tekstili › Alez,Alez,3,7,,ok,KEEP
+Ev ve Yaşam › Ev Tekstili › Yatak Tekstili › Yatak Örtüsü,Yatak Örtüsü,3,7,,ok,KEEP
+Ev ve Yaşam › Ev Tekstili › Banyo Tekstili › Havlu,Havlu,3,4,,ok,KEEP
+Ev ve Yaşam › Ev Tekstili › Banyo Tekstili › Bornoz,Bornoz,3,4,,ok,KEEP
+Ev ve Yaşam › Ev Tekstili › Banyo Tekstili › Banyo Paspası,Banyo Paspası,3,4,,ok,KEEP
+Ev ve Yaşam › Ev Tekstili › Banyo Tekstili › Duş Perdesi,Duş Perdesi,3,4,,ok,KEEP
+Ev ve Yaşam › Ev Tekstili › Salon Tekstili › Perde,Perde,3,7,,ok,KEEP
+Ev ve Yaşam › Ev Tekstili › Salon Tekstili › Tül Perde,Tül Perde,3,7,,ok,KEEP
+Ev ve Yaşam › Ev Tekstili › Salon Tekstili › Fon Perde,Fon Perde,3,7,,ok,KEEP
+Ev ve Yaşam › Ev Tekstili › Salon Tekstili › Stor Perde,Stor Perde,3,7,,ok,KEEP
+Ev ve Yaşam › Ev Tekstili › Salon Tekstili › Kırlent,Kırlent,3,7,,ok,KEEP
+Ev ve Yaşam › Ev Tekstili › Salon Tekstili › Kırlent Kılıfı,Kırlent Kılıfı,3,7,,ok,KEEP
+Ev ve Yaşam › Ev Tekstili › Salon Tekstili › Koltuk Örtüsü,Koltuk Örtüsü,3,7,,ok,KEEP
+Ev ve Yaşam › Ev Tekstili › Mutfak Tekstili › Masa Örtüsü,Masa Örtüsü,3,6,,ok,KEEP
+Ev ve Yaşam › Ev Tekstili › Mutfak Tekstili › Runner,Runner,3,6,,ok,KEEP
+Ev ve Yaşam › Ev Tekstili › Mutfak Tekstili › Peçete,Peçete,3,6,,ok,KEEP
+Ev ve Yaşam › Ev Tekstili › Mutfak Tekstili › Mutfak Havlusu,Mutfak Havlusu,3,6,,ok,KEEP
+Ev ve Yaşam › Ev Tekstili › Mutfak Tekstili › Önlük,Önlük,3,6,,ok,KEEP
+Ev ve Yaşam › Ev Tekstili › Mutfak Tekstili › Eldiven ve Tutacak,Eldiven ve Tutacak,3,6,,ok,KEEP
+Ev ve Yaşam › Dekorasyon › Duvar Dekorasyonu › Tablo,Tablo,3,6,,ok,KEEP
+Ev ve Yaşam › Dekorasyon › Duvar Dekorasyonu › Poster,Poster,3,6,,ok,KEEP
+Ev ve Yaşam › Dekorasyon › Duvar Dekorasyonu › Duvar Saati,Duvar Saati,3,6,,ok,KEEP
+Ev ve Yaşam › Dekorasyon › Duvar Dekorasyonu › Ayna,Ayna,3,6,Otomotiv Aksesuar › Motosiklet Aksesuar › Motosiklet Parça › Ayna,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Ev ve Yaşam › Dekorasyon › Duvar Dekorasyonu › Duvar Rafı,Duvar Rafı,3,6,,ok,KEEP
+Ev ve Yaşam › Dekorasyon › Duvar Dekorasyonu › Duvar Sticker,Duvar Sticker,3,6,,ok,KEEP
+Ev ve Yaşam › Dekorasyon › Masaüstü Dekor › Vazo,Vazo,3,6,,ok,KEEP
+Ev ve Yaşam › Dekorasyon › Masaüstü Dekor › Biblo,Biblo,3,6,,ok,KEEP
+Ev ve Yaşam › Dekorasyon › Masaüstü Dekor › Mum,Mum,3,6,,very_short_name,KEEP
+Ev ve Yaşam › Dekorasyon › Masaüstü Dekor › Mumluk,Mumluk,3,6,,ok,KEEP
+Ev ve Yaşam › Dekorasyon › Masaüstü Dekor › Dekoratif Kutu,Dekoratif Kutu,3,6,,ok,KEEP
+Ev ve Yaşam › Dekorasyon › Masaüstü Dekor › Fotoğraf Çerçevesi,Fotoğraf Çerçevesi,3,6,,ok,KEEP
+Ev ve Yaşam › Dekorasyon › Halı ve Zemin › Halı,Halı,3,6,,ok,KEEP
+Ev ve Yaşam › Dekorasyon › Halı ve Zemin › Yolluk,Yolluk,3,6,,ok,KEEP
+Ev ve Yaşam › Dekorasyon › Halı ve Zemin › Kilim,Kilim,3,6,,ok,KEEP
+Ev ve Yaşam › Dekorasyon › Halı ve Zemin › Paspas,Paspas,3,6,Otomotiv Aksesuar › Araç İçi › Konfor › Paspas,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Ev ve Yaşam › Dekorasyon › Halı ve Zemin › PVC Zemin,PVC Zemin,3,6,,ok,KEEP
+Ev ve Yaşam › Dekorasyon › Halı ve Zemin › Yer Minderi,Yer Minderi,3,6,,ok,KEEP
+Ev ve Yaşam › Aydınlatma › İç Mekan › Avize,Avize,3,8,,ok,KEEP
+Ev ve Yaşam › Aydınlatma › İç Mekan › Sarkıt,Sarkıt,3,8,,ok,KEEP
+Ev ve Yaşam › Aydınlatma › İç Mekan › Plafonyer,Plafonyer,3,8,,ok,KEEP
+Ev ve Yaşam › Aydınlatma › İç Mekan › Aplik,Aplik,3,8,,ok,KEEP
+Ev ve Yaşam › Aydınlatma › İç Mekan › Lambader,Lambader,3,8,,ok,KEEP
+Ev ve Yaşam › Aydınlatma › İç Mekan › Abajur,Abajur,3,8,,ok,KEEP
+Ev ve Yaşam › Aydınlatma › İç Mekan › Masa Lambası,Masa Lambası,3,8,,ok,KEEP
+Ev ve Yaşam › Aydınlatma › İç Mekan › Gece Lambası,Gece Lambası,3,8,,ok,KEEP
+Ev ve Yaşam › Aydınlatma › Dış Mekan › Bahçe Aydınlatması,Bahçe Aydınlatması,3,4,,ok,KEEP
+Ev ve Yaşam › Aydınlatma › Dış Mekan › Solar Aydınlatma,Solar Aydınlatma,3,4,,ok,KEEP
+Ev ve Yaşam › Aydınlatma › Dış Mekan › Projektör,Projektör,3,4,,ok,KEEP
+Ev ve Yaşam › Aydınlatma › Dış Mekan › Sensörlü Aydınlatma,Sensörlü Aydınlatma,3,4,,ok,KEEP
+Ev ve Yaşam › Aydınlatma › Ampul ve Ekipman › LED Ampul,LED Ampul,3,6,,ok,KEEP
+Ev ve Yaşam › Aydınlatma › Ampul ve Ekipman › Akıllı Ampul,Akıllı Ampul,3,6,Elektronik › Akıllı Ev ve Güvenlik › Akıllı Ev › Akıllı Ampul,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Ev ve Yaşam › Aydınlatma › Ampul ve Ekipman › Floresan,Floresan,3,6,,ok,KEEP
+Ev ve Yaşam › Aydınlatma › Ampul ve Ekipman › Şerit LED,Şerit LED,3,6,,ok,KEEP
+Ev ve Yaşam › Aydınlatma › Ampul ve Ekipman › LED Profil,LED Profil,3,6,,ok,KEEP
+Ev ve Yaşam › Aydınlatma › Ampul ve Ekipman › Duy ve Soket,Duy ve Soket,3,6,,ok,KEEP
+Ev ve Yaşam › Temizlik ve Düzen › Temizlik Ürünleri › Mop,Mop,3,7,,very_short_name,KEEP
+Ev ve Yaşam › Temizlik ve Düzen › Temizlik Ürünleri › Kova,Kova,3,7,,ok,KEEP
+Ev ve Yaşam › Temizlik ve Düzen › Temizlik Ürünleri › Faraş ve Süpürge,Faraş ve Süpürge,3,7,,ok,KEEP
+Ev ve Yaşam › Temizlik ve Düzen › Temizlik Ürünleri › Cam Sileceği,Cam Sileceği,3,7,,ok,KEEP
+Ev ve Yaşam › Temizlik ve Düzen › Temizlik Ürünleri › Temizlik Bezi,Temizlik Bezi,3,7,,ok,KEEP
+Ev ve Yaşam › Temizlik ve Düzen › Temizlik Ürünleri › Fırça,Fırça,3,7,Hobi ve Oyun › Hobi Malzemeleri › Resim › Fırça,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Ev ve Yaşam › Temizlik ve Düzen › Temizlik Ürünleri › Çamaşır Sepeti,Çamaşır Sepeti,3,7,,ok,KEEP
+Ev ve Yaşam › Temizlik ve Düzen › Düzenleyiciler › Hurç,Hurç,3,6,,ok,KEEP
+Ev ve Yaşam › Temizlik ve Düzen › Düzenleyiciler › Vakumlu Poşet,Vakumlu Poşet,3,6,,ok,KEEP
+Ev ve Yaşam › Temizlik ve Düzen › Düzenleyiciler › Askı,Askı,3,6,,ok,KEEP
+Ev ve Yaşam › Temizlik ve Düzen › Düzenleyiciler › Ayakkabı Organizeri,Ayakkabı Organizeri,3,6,,ok,KEEP
+Ev ve Yaşam › Temizlik ve Düzen › Düzenleyiciler › Çekmece Düzenleyici,Çekmece Düzenleyici,3,6,,ok,KEEP
+Ev ve Yaşam › Temizlik ve Düzen › Düzenleyiciler › Kutu ve Sepet,Kutu ve Sepet,3,6,,ok,KEEP
+Moda › Kadın › Üst Giyim › Tişört,Tişört,3,8,"Moda › Erkek › Üst Giyim › Tişört | Anne, Bebek ve Çocuk › Çocuk Giyim › Kız Çocuk › Tişört | Anne, Bebek ve Çocuk › Çocuk Giyim › Erkek Çocuk › Tişört",same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Kadın › Üst Giyim › Gömlek,Gömlek,3,8,"Moda › Erkek › Üst Giyim › Gömlek | Anne, Bebek ve Çocuk › Çocuk Giyim › Erkek Çocuk › Gömlek",same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Kadın › Üst Giyim › Bluz,Bluz,3,8,,ok,KEEP
+Moda › Kadın › Üst Giyim › Sweatshirt,Sweatshirt,3,8,Moda › Erkek › Üst Giyim › Sweatshirt,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Kadın › Üst Giyim › Kazak,Kazak,3,8,Moda › Erkek › Üst Giyim › Kazak,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Kadın › Üst Giyim › Hırka,Hırka,3,8,Moda › Erkek › Üst Giyim › Hırka,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Kadın › Üst Giyim › Tunik,Tunik,3,8,,ok,KEEP
+Moda › Kadın › Üst Giyim › Crop Top,Crop Top,3,8,,ok,KEEP
+Moda › Kadın › Alt Giyim › Pantolon,Pantolon,3,5,"Moda › Erkek › Alt Giyim › Pantolon | Anne, Bebek ve Çocuk › Çocuk Giyim › Kız Çocuk › Pantolon | Anne, Bebek ve Çocuk › Çocuk Giyim › Erkek Çocuk › Pantolon",same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Kadın › Alt Giyim › Jean,Jean,3,5,Moda › Erkek › Alt Giyim › Jean,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Kadın › Alt Giyim › Etek,Etek,3,5,"Anne, Bebek ve Çocuk › Çocuk Giyim › Kız Çocuk › Etek",same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Kadın › Alt Giyim › Şort,Şort,3,5,"Moda › Erkek › Alt Giyim › Şort | Anne, Bebek ve Çocuk › Çocuk Giyim › Erkek Çocuk › Şort",same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Kadın › Alt Giyim › Tayt,Tayt,3,5,,ok,KEEP
+Moda › Kadın › Elbise ve Tulum › Günlük Elbise,Günlük Elbise,3,4,,ok,KEEP
+Moda › Kadın › Elbise ve Tulum › Abiye Elbise,Abiye Elbise,3,4,,ok,KEEP
+Moda › Kadın › Elbise ve Tulum › Tulum,Tulum,3,4,"Anne, Bebek ve Çocuk › Çocuk Giyim › Bebek Giyim › Tulum",same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Kadın › Elbise ve Tulum › Salopet,Salopet,3,4,,ok,KEEP
+Moda › Kadın › Dış Giyim › Mont,Mont,3,6,"Moda › Erkek › Takım ve Dış Giyim › Mont | Anne, Bebek ve Çocuk › Çocuk Giyim › Kız Çocuk › Mont | Anne, Bebek ve Çocuk › Çocuk Giyim › Erkek Çocuk › Mont",same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Kadın › Dış Giyim › Kaban,Kaban,3,6,Moda › Erkek › Takım ve Dış Giyim › Kaban,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Kadın › Dış Giyim › Trençkot,Trençkot,3,6,,ok,KEEP
+Moda › Kadın › Dış Giyim › Ceket,Ceket,3,6,Moda › Erkek › Takım ve Dış Giyim › Ceket,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Kadın › Dış Giyim › Yelek,Yelek,3,6,Moda › Erkek › Takım ve Dış Giyim › Yelek,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Kadın › Dış Giyim › Yağmurluk,Yağmurluk,3,6,Moda › Erkek › Takım ve Dış Giyim › Yağmurluk | Spor ve Outdoor › Outdoor ve Kamp › Outdoor Giyim › Yağmurluk | Otomotiv Aksesuar › Motosiklet Aksesuar › Sürüş Ekipmanı › Yağmurluk,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Kadın › İç Giyim › Sütyen,Sütyen,3,7,,ok,KEEP
+Moda › Kadın › İç Giyim › Külot,Külot,3,7,,ok,KEEP
+Moda › Kadın › İç Giyim › Atlet,Atlet,3,7,Moda › Erkek › İç Giyim › Atlet,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Kadın › İç Giyim › Body,Body,3,7,"Anne, Bebek ve Çocuk › Çocuk Giyim › Bebek Giyim › Body",same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Kadın › İç Giyim › Gecelik,Gecelik,3,7,,ok,KEEP
+Moda › Kadın › İç Giyim › Pijama,Pijama,3,7,"Moda › Erkek › İç Giyim › Pijama | Anne, Bebek ve Çocuk › Çocuk Giyim › Kız Çocuk › Pijama | Anne, Bebek ve Çocuk › Çocuk Giyim › Erkek Çocuk › Pijama",same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Kadın › İç Giyim › Sabahlık,Sabahlık,3,7,,ok,KEEP
+Moda › Kadın › Tesettür › Ferace,Ferace,3,5,,ok,KEEP
+Moda › Kadın › Tesettür › Kap,Kap,3,5,,very_short_name,KEEP
+Moda › Kadın › Tesettür › Tesettür Elbise,Tesettür Elbise,3,5,,ok,KEEP
+Moda › Kadın › Tesettür › Şal,Şal,3,5,,very_short_name,KEEP
+Moda › Kadın › Tesettür › Eşarp,Eşarp,3,5,,ok,KEEP
+Moda › Erkek › Üst Giyim › Tişört,Tişört,3,6,"Moda › Kadın › Üst Giyim › Tişört | Anne, Bebek ve Çocuk › Çocuk Giyim › Kız Çocuk › Tişört | Anne, Bebek ve Çocuk › Çocuk Giyim › Erkek Çocuk › Tişört",same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Erkek › Üst Giyim › Polo Yaka Tişört,Polo Yaka Tişört,3,6,,ok,KEEP
+Moda › Erkek › Üst Giyim › Gömlek,Gömlek,3,6,"Moda › Kadın › Üst Giyim › Gömlek | Anne, Bebek ve Çocuk › Çocuk Giyim › Erkek Çocuk › Gömlek",same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Erkek › Üst Giyim › Sweatshirt,Sweatshirt,3,6,Moda › Kadın › Üst Giyim › Sweatshirt,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Erkek › Üst Giyim › Kazak,Kazak,3,6,Moda › Kadın › Üst Giyim › Kazak,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Erkek › Üst Giyim › Hırka,Hırka,3,6,Moda › Kadın › Üst Giyim › Hırka,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Erkek › Alt Giyim › Pantolon,Pantolon,3,4,"Moda › Kadın › Alt Giyim › Pantolon | Anne, Bebek ve Çocuk › Çocuk Giyim › Kız Çocuk › Pantolon | Anne, Bebek ve Çocuk › Çocuk Giyim › Erkek Çocuk › Pantolon",same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Erkek › Alt Giyim › Jean,Jean,3,4,Moda › Kadın › Alt Giyim › Jean,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Erkek › Alt Giyim › Şort,Şort,3,4,"Moda › Kadın › Alt Giyim › Şort | Anne, Bebek ve Çocuk › Çocuk Giyim › Erkek Çocuk › Şort",same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Erkek › Alt Giyim › Eşofman Altı,Eşofman Altı,3,4,,ok,KEEP
+Moda › Erkek › Takım ve Dış Giyim › Takım Elbise,Takım Elbise,3,6,,ok,KEEP
+Moda › Erkek › Takım ve Dış Giyim › Ceket,Ceket,3,6,Moda › Kadın › Dış Giyim › Ceket,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Erkek › Takım ve Dış Giyim › Mont,Mont,3,6,"Moda › Kadın › Dış Giyim › Mont | Anne, Bebek ve Çocuk › Çocuk Giyim › Kız Çocuk › Mont | Anne, Bebek ve Çocuk › Çocuk Giyim › Erkek Çocuk › Mont",same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Erkek › Takım ve Dış Giyim › Kaban,Kaban,3,6,Moda › Kadın › Dış Giyim › Kaban,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Erkek › Takım ve Dış Giyim › Yelek,Yelek,3,6,Moda › Kadın › Dış Giyim › Yelek,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Erkek › Takım ve Dış Giyim › Yağmurluk,Yağmurluk,3,6,Moda › Kadın › Dış Giyim › Yağmurluk | Spor ve Outdoor › Outdoor ve Kamp › Outdoor Giyim › Yağmurluk | Otomotiv Aksesuar › Motosiklet Aksesuar › Sürüş Ekipmanı › Yağmurluk,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Erkek › İç Giyim › Boxer,Boxer,3,5,,ok,KEEP
+Moda › Erkek › İç Giyim › Atlet,Atlet,3,5,Moda › Kadın › İç Giyim › Atlet,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Erkek › İç Giyim › Fanila,Fanila,3,5,,ok,KEEP
+Moda › Erkek › İç Giyim › Pijama,Pijama,3,5,"Moda › Kadın › İç Giyim › Pijama | Anne, Bebek ve Çocuk › Çocuk Giyim › Kız Çocuk › Pijama | Anne, Bebek ve Çocuk › Çocuk Giyim › Erkek Çocuk › Pijama",same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Erkek › İç Giyim › Çorap,Çorap,3,5,,ok,KEEP
+Moda › Ayakkabı › Kadın Ayakkabı › Sneaker,Sneaker,3,7,Moda › Ayakkabı › Erkek Ayakkabı › Sneaker,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Ayakkabı › Kadın Ayakkabı › Topuklu Ayakkabı,Topuklu Ayakkabı,3,7,,ok,KEEP
+Moda › Ayakkabı › Kadın Ayakkabı › Babet,Babet,3,7,,ok,KEEP
+Moda › Ayakkabı › Kadın Ayakkabı › Sandalet,Sandalet,3,7,Moda › Ayakkabı › Erkek Ayakkabı › Sandalet,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Ayakkabı › Kadın Ayakkabı › Bot,Bot,3,7,Moda › Ayakkabı › Erkek Ayakkabı › Bot | Otomotiv Aksesuar › Motosiklet Aksesuar › Sürüş Ekipmanı › Bot,same_sense_duplicate_leaf|very_short_name,MANUAL_REVIEW_DEDUP
+Moda › Ayakkabı › Kadın Ayakkabı › Çizme,Çizme,3,7,,ok,KEEP
+Moda › Ayakkabı › Kadın Ayakkabı › Terlik,Terlik,3,7,Moda › Ayakkabı › Erkek Ayakkabı › Terlik,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Ayakkabı › Erkek Ayakkabı › Sneaker,Sneaker,3,6,Moda › Ayakkabı › Kadın Ayakkabı › Sneaker,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Ayakkabı › Erkek Ayakkabı › Klasik Ayakkabı,Klasik Ayakkabı,3,6,,ok,KEEP
+Moda › Ayakkabı › Erkek Ayakkabı › Loafer,Loafer,3,6,,ok,KEEP
+Moda › Ayakkabı › Erkek Ayakkabı › Bot,Bot,3,6,Moda › Ayakkabı › Kadın Ayakkabı › Bot | Otomotiv Aksesuar › Motosiklet Aksesuar › Sürüş Ekipmanı › Bot,same_sense_duplicate_leaf|very_short_name,MANUAL_REVIEW_DEDUP
+Moda › Ayakkabı › Erkek Ayakkabı › Sandalet,Sandalet,3,6,Moda › Ayakkabı › Kadın Ayakkabı › Sandalet,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Ayakkabı › Erkek Ayakkabı › Terlik,Terlik,3,6,Moda › Ayakkabı › Kadın Ayakkabı › Terlik,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Ayakkabı › Spor Ayakkabı › Koşu Ayakkabısı,Koşu Ayakkabısı,3,5,,ok,KEEP
+Moda › Ayakkabı › Spor Ayakkabı › Yürüyüş Ayakkabısı,Yürüyüş Ayakkabısı,3,5,,ok,KEEP
+Moda › Ayakkabı › Spor Ayakkabı › Basketbol Ayakkabısı,Basketbol Ayakkabısı,3,5,Spor ve Outdoor › Takım Sporları › Basketbol › Basketbol Ayakkabısı,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Ayakkabı › Spor Ayakkabı › Futbol Ayakkabısı,Futbol Ayakkabısı,3,5,,ok,KEEP
+Moda › Ayakkabı › Spor Ayakkabı › Outdoor Ayakkabı,Outdoor Ayakkabı,3,5,,ok,KEEP
+Moda › Çanta ve Aksesuar › Çanta › Omuz Çantası,Omuz Çantası,3,8,,ok,KEEP
+Moda › Çanta ve Aksesuar › Çanta › El Çantası,El Çantası,3,8,,ok,KEEP
+Moda › Çanta ve Aksesuar › Çanta › Sırt Çantası,Sırt Çantası,3,8,,ok,KEEP
+Moda › Çanta ve Aksesuar › Çanta › Bel Çantası,Bel Çantası,3,8,,ok,KEEP
+Moda › Çanta ve Aksesuar › Çanta › Laptop Çantası,Laptop Çantası,3,8,Elektronik › Bilgisayar ve Tablet › Bilgisayar Aksesuarları › Laptop Çantası,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Çanta ve Aksesuar › Çanta › Valiz,Valiz,3,8,,ok,KEEP
+Moda › Çanta ve Aksesuar › Çanta › Cüzdan,Cüzdan,3,8,,ok,KEEP
+Moda › Çanta ve Aksesuar › Çanta › Kartlık,Kartlık,3,8,,ok,KEEP
+Moda › Çanta ve Aksesuar › Aksesuar › Kemer,Kemer,3,7,,ok,KEEP
+Moda › Çanta ve Aksesuar › Aksesuar › Şapka,Şapka,3,7,,ok,KEEP
+Moda › Çanta ve Aksesuar › Aksesuar › Bere,Bere,3,7,,ok,KEEP
+Moda › Çanta ve Aksesuar › Aksesuar › Atkı,Atkı,3,7,,ok,KEEP
+Moda › Çanta ve Aksesuar › Aksesuar › Eldiven,Eldiven,3,7,Otomotiv Aksesuar › Motosiklet Aksesuar › Sürüş Ekipmanı › Eldiven,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Çanta ve Aksesuar › Aksesuar › Güneş Gözlüğü,Güneş Gözlüğü,3,7,,ok,KEEP
+Moda › Çanta ve Aksesuar › Aksesuar › Şemsiye,Şemsiye,3,7,Bahçe ve Yapı › Bahçe › Bahçe Mobilyası › Şemsiye,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Moda › Çanta ve Aksesuar › Takı › Kolye,Kolye,3,6,,ok,KEEP
+Moda › Çanta ve Aksesuar › Takı › Bileklik,Bileklik,3,6,,ok,KEEP
+Moda › Çanta ve Aksesuar › Takı › Küpe,Küpe,3,6,,ok,KEEP
+Moda › Çanta ve Aksesuar › Takı › Yüzük,Yüzük,3,6,,ok,KEEP
+Moda › Çanta ve Aksesuar › Takı › Halhal,Halhal,3,6,,ok,KEEP
+Moda › Çanta ve Aksesuar › Takı › Broş,Broş,3,6,,ok,KEEP
+"Anne, Bebek ve Çocuk › Bebek Arabası ve Taşıma › Bebek Arabası › Travel Sistem Bebek Arabası",Travel Sistem Bebek Arabası,3,4,,ok,KEEP
+"Anne, Bebek ve Çocuk › Bebek Arabası ve Taşıma › Bebek Arabası › Baston Bebek Arabası",Baston Bebek Arabası,3,4,,ok,KEEP
+"Anne, Bebek ve Çocuk › Bebek Arabası ve Taşıma › Bebek Arabası › İkiz Bebek Arabası",İkiz Bebek Arabası,3,4,,ok,KEEP
+"Anne, Bebek ve Çocuk › Bebek Arabası ve Taşıma › Bebek Arabası › Jogger Bebek Arabası",Jogger Bebek Arabası,3,4,,ok,KEEP
+"Anne, Bebek ve Çocuk › Bebek Arabası ve Taşıma › Taşıma › Ana Kucağı",Ana Kucağı,3,5,,ok,KEEP
+"Anne, Bebek ve Çocuk › Bebek Arabası ve Taşıma › Taşıma › Puset",Puset,3,5,,ok,KEEP
+"Anne, Bebek ve Çocuk › Bebek Arabası ve Taşıma › Taşıma › Kanguru",Kanguru,3,5,,ok,KEEP
+"Anne, Bebek ve Çocuk › Bebek Arabası ve Taşıma › Taşıma › Sling",Sling,3,5,,ok,KEEP
+"Anne, Bebek ve Çocuk › Bebek Arabası ve Taşıma › Taşıma › Portbebe",Portbebe,3,5,,ok,KEEP
+"Anne, Bebek ve Çocuk › Bebek Odası › Mobilya › Bebek Beşiği",Bebek Beşiği,3,5,,ok,KEEP
+"Anne, Bebek ve Çocuk › Bebek Odası › Mobilya › Bebek Karyolası",Bebek Karyolası,3,5,,ok,KEEP
+"Anne, Bebek ve Çocuk › Bebek Odası › Mobilya › Bebek Yatağı",Bebek Yatağı,3,5,,ok,KEEP
+"Anne, Bebek ve Çocuk › Bebek Odası › Mobilya › Alt Açma Ünitesi",Alt Açma Ünitesi,3,5,,ok,KEEP
+"Anne, Bebek ve Çocuk › Bebek Odası › Mobilya › Bebek Dolabı",Bebek Dolabı,3,5,,ok,KEEP
+"Anne, Bebek ve Çocuk › Bebek Odası › Tekstil › Bebek Nevresimi",Bebek Nevresimi,3,5,,ok,KEEP
+"Anne, Bebek ve Çocuk › Bebek Odası › Tekstil › Uyku Tulumu",Uyku Tulumu,3,5,Spor ve Outdoor › Outdoor ve Kamp › Kamp › Uyku Tulumu,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+"Anne, Bebek ve Çocuk › Bebek Odası › Tekstil › Bebek Battaniyesi",Bebek Battaniyesi,3,5,,ok,KEEP
+"Anne, Bebek ve Çocuk › Bebek Odası › Tekstil › Bebek Yastığı",Bebek Yastığı,3,5,,ok,KEEP
+"Anne, Bebek ve Çocuk › Bebek Odası › Tekstil › Cibinlik",Cibinlik,3,5,,ok,KEEP
+"Anne, Bebek ve Çocuk › Beslenme › Emzirme › Göğüs Pompası",Göğüs Pompası,3,4,,ok,KEEP
+"Anne, Bebek ve Çocuk › Beslenme › Emzirme › Emzirme Yastığı",Emzirme Yastığı,3,4,,ok,KEEP
+"Anne, Bebek ve Çocuk › Beslenme › Emzirme › Süt Saklama Poşeti",Süt Saklama Poşeti,3,4,,ok,KEEP
+"Anne, Bebek ve Çocuk › Beslenme › Emzirme › Göğüs Pedi",Göğüs Pedi,3,4,,ok,KEEP
+"Anne, Bebek ve Çocuk › Beslenme › Biberon ve Mama › Biberon",Biberon,3,6,,ok,KEEP
+"Anne, Bebek ve Çocuk › Beslenme › Biberon ve Mama › Emzik",Emzik,3,6,,ok,KEEP
+"Anne, Bebek ve Çocuk › Beslenme › Biberon ve Mama › Biberon Isıtıcı",Biberon Isıtıcı,3,6,,ok,KEEP
+"Anne, Bebek ve Çocuk › Beslenme › Biberon ve Mama › Sterilizatör",Sterilizatör,3,6,,ok,KEEP
+"Anne, Bebek ve Çocuk › Beslenme › Biberon ve Mama › Mama Sandalyesi",Mama Sandalyesi,3,6,,ok,KEEP
+"Anne, Bebek ve Çocuk › Beslenme › Biberon ve Mama › Mama Seti",Mama Seti,3,6,,ok,KEEP
+"Anne, Bebek ve Çocuk › Bakım ve Güvenlik › Bakım › Bebek Bezi",Bebek Bezi,3,6,,ok,KEEP
+"Anne, Bebek ve Çocuk › Bakım ve Güvenlik › Bakım › Islak Mendil",Islak Mendil,3,6,,ok,KEEP
+"Anne, Bebek ve Çocuk › Bakım ve Güvenlik › Bakım › Bebek Şampuanı",Bebek Şampuanı,3,6,,ok,KEEP
+"Anne, Bebek ve Çocuk › Bakım ve Güvenlik › Bakım › Bebek Yağı",Bebek Yağı,3,6,,ok,KEEP
+"Anne, Bebek ve Çocuk › Bakım ve Güvenlik › Bakım › Pişik Kremi",Pişik Kremi,3,6,,ok,KEEP
+"Anne, Bebek ve Çocuk › Bakım ve Güvenlik › Bakım › Bebek Küveti",Bebek Küveti,3,6,,ok,KEEP
+"Anne, Bebek ve Çocuk › Bakım ve Güvenlik › Güvenlik › Bebek Kamerası",Bebek Kamerası,3,5,,ok,KEEP
+"Anne, Bebek ve Çocuk › Bakım ve Güvenlik › Güvenlik › Telsiz",Telsiz,3,5,Elektronik › Telefon ve Aksesuar › İletişim Cihazları › Telsiz,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+"Anne, Bebek ve Çocuk › Bakım ve Güvenlik › Güvenlik › Güvenlik Kapısı",Güvenlik Kapısı,3,5,,ok,KEEP
+"Anne, Bebek ve Çocuk › Bakım ve Güvenlik › Güvenlik › Priz Koruyucu",Priz Koruyucu,3,5,,ok,KEEP
+"Anne, Bebek ve Çocuk › Bakım ve Güvenlik › Güvenlik › Köşe Koruyucu",Köşe Koruyucu,3,5,,ok,KEEP
+"Anne, Bebek ve Çocuk › Çocuk Giyim › Kız Çocuk › Tişört",Tişört,3,7,"Moda › Kadın › Üst Giyim › Tişört | Moda › Erkek › Üst Giyim › Tişört | Anne, Bebek ve Çocuk › Çocuk Giyim › Erkek Çocuk › Tişört",same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+"Anne, Bebek ve Çocuk › Çocuk Giyim › Kız Çocuk › Elbise",Elbise,3,7,,ok,KEEP
+"Anne, Bebek ve Çocuk › Çocuk Giyim › Kız Çocuk › Pantolon",Pantolon,3,7,"Moda › Kadın › Alt Giyim › Pantolon | Moda › Erkek › Alt Giyim › Pantolon | Anne, Bebek ve Çocuk › Çocuk Giyim › Erkek Çocuk › Pantolon",same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+"Anne, Bebek ve Çocuk › Çocuk Giyim › Kız Çocuk › Etek",Etek,3,7,Moda › Kadın › Alt Giyim › Etek,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+"Anne, Bebek ve Çocuk › Çocuk Giyim › Kız Çocuk › Mont",Mont,3,7,"Moda › Kadın › Dış Giyim › Mont | Moda › Erkek › Takım ve Dış Giyim › Mont | Anne, Bebek ve Çocuk › Çocuk Giyim › Erkek Çocuk › Mont",same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+"Anne, Bebek ve Çocuk › Çocuk Giyim › Kız Çocuk › Pijama",Pijama,3,7,"Moda › Kadın › İç Giyim › Pijama | Moda › Erkek › İç Giyim › Pijama | Anne, Bebek ve Çocuk › Çocuk Giyim › Erkek Çocuk › Pijama",same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+"Anne, Bebek ve Çocuk › Çocuk Giyim › Kız Çocuk › İç Giyim",İç Giyim,3,7,"Anne, Bebek ve Çocuk › Çocuk Giyim › Erkek Çocuk › İç Giyim",same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+"Anne, Bebek ve Çocuk › Çocuk Giyim › Erkek Çocuk › Tişört",Tişört,3,7,"Moda › Kadın › Üst Giyim › Tişört | Moda › Erkek › Üst Giyim › Tişört | Anne, Bebek ve Çocuk › Çocuk Giyim › Kız Çocuk › Tişört",same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+"Anne, Bebek ve Çocuk › Çocuk Giyim › Erkek Çocuk › Gömlek",Gömlek,3,7,Moda › Kadın › Üst Giyim › Gömlek | Moda › Erkek › Üst Giyim › Gömlek,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+"Anne, Bebek ve Çocuk › Çocuk Giyim › Erkek Çocuk › Pantolon",Pantolon,3,7,"Moda › Kadın › Alt Giyim › Pantolon | Moda › Erkek › Alt Giyim › Pantolon | Anne, Bebek ve Çocuk › Çocuk Giyim › Kız Çocuk › Pantolon",same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+"Anne, Bebek ve Çocuk › Çocuk Giyim › Erkek Çocuk › Şort",Şort,3,7,Moda › Kadın › Alt Giyim › Şort | Moda › Erkek › Alt Giyim › Şort,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+"Anne, Bebek ve Çocuk › Çocuk Giyim › Erkek Çocuk › Mont",Mont,3,7,"Moda › Kadın › Dış Giyim › Mont | Moda › Erkek › Takım ve Dış Giyim › Mont | Anne, Bebek ve Çocuk › Çocuk Giyim › Kız Çocuk › Mont",same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+"Anne, Bebek ve Çocuk › Çocuk Giyim › Erkek Çocuk › Pijama",Pijama,3,7,"Moda › Kadın › İç Giyim › Pijama | Moda › Erkek › İç Giyim › Pijama | Anne, Bebek ve Çocuk › Çocuk Giyim › Kız Çocuk › Pijama",same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+"Anne, Bebek ve Çocuk › Çocuk Giyim › Erkek Çocuk › İç Giyim",İç Giyim,3,7,"Anne, Bebek ve Çocuk › Çocuk Giyim › Kız Çocuk › İç Giyim",same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+"Anne, Bebek ve Çocuk › Çocuk Giyim › Bebek Giyim › Body",Body,3,6,Moda › Kadın › İç Giyim › Body,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+"Anne, Bebek ve Çocuk › Çocuk Giyim › Bebek Giyim › Zıbın",Zıbın,3,6,,ok,KEEP
+"Anne, Bebek ve Çocuk › Çocuk Giyim › Bebek Giyim › Tulum",Tulum,3,6,Moda › Kadın › Elbise ve Tulum › Tulum,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+"Anne, Bebek ve Çocuk › Çocuk Giyim › Bebek Giyim › Hastane Çıkışı",Hastane Çıkışı,3,6,,ok,KEEP
+"Anne, Bebek ve Çocuk › Çocuk Giyim › Bebek Giyim › Bebek Takımı",Bebek Takımı,3,6,,ok,KEEP
+"Anne, Bebek ve Çocuk › Çocuk Giyim › Bebek Giyim › Bebek Çorabı",Bebek Çorabı,3,6,,ok,KEEP
+"Anne, Bebek ve Çocuk › Oyuncak › Eğitici Oyuncak › Ahşap Oyuncak",Ahşap Oyuncak,3,4,,ok,KEEP
+"Anne, Bebek ve Çocuk › Oyuncak › Eğitici Oyuncak › STEM Oyuncak",STEM Oyuncak,3,4,,ok,KEEP
+"Anne, Bebek ve Çocuk › Oyuncak › Eğitici Oyuncak › Aktivite Oyuncağı",Aktivite Oyuncağı,3,4,,ok,KEEP
+"Anne, Bebek ve Çocuk › Oyuncak › Eğitici Oyuncak › Montessori Oyuncak",Montessori Oyuncak,3,4,,ok,KEEP
+"Anne, Bebek ve Çocuk › Oyuncak › Rol Oyunları › Oyuncak Mutfak",Oyuncak Mutfak,3,4,,ok,KEEP
+"Anne, Bebek ve Çocuk › Oyuncak › Rol Oyunları › Doktor Seti",Doktor Seti,3,4,,ok,KEEP
+"Anne, Bebek ve Çocuk › Oyuncak › Rol Oyunları › Tamir Seti",Tamir Seti,3,4,,ok,KEEP
+"Anne, Bebek ve Çocuk › Oyuncak › Rol Oyunları › Bebek ve Aksesuarı",Bebek ve Aksesuarı,3,4,,ok,KEEP
+"Anne, Bebek ve Çocuk › Oyuncak › Araç ve Figür › Oyuncak Araba",Oyuncak Araba,3,4,,ok,KEEP
+"Anne, Bebek ve Çocuk › Oyuncak › Araç ve Figür › Uzaktan Kumandalı Araç",Uzaktan Kumandalı Araç,3,4,,ok,KEEP
+"Anne, Bebek ve Çocuk › Oyuncak › Araç ve Figür › Aksiyon Figürü",Aksiyon Figürü,3,4,,ok,KEEP
+"Anne, Bebek ve Çocuk › Oyuncak › Araç ve Figür › Oyun Seti",Oyun Seti,3,4,,ok,KEEP
+"Anne, Bebek ve Çocuk › Oyuncak › Açık Hava › Scooter",Scooter,3,5,,ok,KEEP
+"Anne, Bebek ve Çocuk › Oyuncak › Açık Hava › Akülü Araba",Akülü Araba,3,5,,ok,KEEP
+"Anne, Bebek ve Çocuk › Oyuncak › Açık Hava › Çocuk Bisikleti",Çocuk Bisikleti,3,5,Spor ve Outdoor › Bisiklet › Bisiklet Türleri › Çocuk Bisikleti,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+"Anne, Bebek ve Çocuk › Oyuncak › Açık Hava › Trambolin",Trambolin,3,5,,ok,KEEP
+"Anne, Bebek ve Çocuk › Oyuncak › Açık Hava › Şişme Havuz",Şişme Havuz,3,5,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Cilt Bakımı › Yüz Bakımı › Yüz Temizleme Jeli,Yüz Temizleme Jeli,3,8,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Cilt Bakımı › Yüz Bakımı › Tonik,Tonik,3,8,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Cilt Bakımı › Yüz Bakımı › Serum,Serum,3,8,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Cilt Bakımı › Yüz Bakımı › Nemlendirici,Nemlendirici,3,8,Ev Aletleri › Küçük Ev Aletleri › Hava Kalitesi › Nemlendirici,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Kozmetik ve Kişisel Bakım › Cilt Bakımı › Yüz Bakımı › Göz Kremi,Göz Kremi,3,8,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Cilt Bakımı › Yüz Bakımı › Peeling,Peeling,3,8,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Cilt Bakımı › Yüz Bakımı › Yüz Maskesi,Yüz Maskesi,3,8,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Cilt Bakımı › Yüz Bakımı › Güneş Kremi,Güneş Kremi,3,8,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Cilt Bakımı › Vücut Bakımı › Vücut Losyonu,Vücut Losyonu,3,5,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Cilt Bakımı › Vücut Bakımı › Vücut Peelingi,Vücut Peelingi,3,5,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Cilt Bakımı › Vücut Bakımı › El Kremi,El Kremi,3,5,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Cilt Bakımı › Vücut Bakımı › Ayak Bakımı,Ayak Bakımı,3,5,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Cilt Bakımı › Vücut Bakımı › Selülit Ürünü,Selülit Ürünü,3,5,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Saç Bakımı › Saç Ürünleri › Şampuan,Şampuan,3,7,Pet Shop › Kedi › Bakım › Şampuan | Pet Shop › Köpek › Bakım › Şampuan,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Kozmetik ve Kişisel Bakım › Saç Bakımı › Saç Ürünleri › Saç Kremi,Saç Kremi,3,7,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Saç Bakımı › Saç Ürünleri › Saç Maskesi,Saç Maskesi,3,7,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Saç Bakımı › Saç Ürünleri › Saç Serumu,Saç Serumu,3,7,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Saç Bakımı › Saç Ürünleri › Saç Yağı,Saç Yağı,3,7,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Saç Bakımı › Saç Ürünleri › Saç Boyası,Saç Boyası,3,7,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Saç Bakımı › Saç Ürünleri › Şekillendirici,Şekillendirici,3,7,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Saç Bakımı › Saç Şekillendirme Cihazları › Saç Kurutma Makinesi,Saç Kurutma Makinesi,3,5,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Saç Bakımı › Saç Şekillendirme Cihazları › Saç Düzleştirici,Saç Düzleştirici,3,5,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Saç Bakımı › Saç Şekillendirme Cihazları › Saç Maşası,Saç Maşası,3,5,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Saç Bakımı › Saç Şekillendirme Cihazları › Saç Şekillendirme Seti,Saç Şekillendirme Seti,3,5,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Saç Bakımı › Saç Şekillendirme Cihazları › Elektrikli Saç Fırçası,Elektrikli Saç Fırçası,3,5,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Makyaj › Ten Makyajı › Fondöten,Fondöten,3,7,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Makyaj › Ten Makyajı › BB-CC Krem,BB-CC Krem,3,7,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Makyaj › Ten Makyajı › Kapatıcı,Kapatıcı,3,7,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Makyaj › Ten Makyajı › Pudra,Pudra,3,7,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Makyaj › Ten Makyajı › Allık,Allık,3,7,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Makyaj › Ten Makyajı › Bronzer,Bronzer,3,7,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Makyaj › Ten Makyajı › Aydınlatıcı,Aydınlatıcı,3,7,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Makyaj › Göz Makyajı › Maskara,Maskara,3,6,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Makyaj › Göz Makyajı › Eyeliner,Eyeliner,3,6,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Makyaj › Göz Makyajı › Göz Kalemi,Göz Kalemi,3,6,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Makyaj › Göz Makyajı › Far,Far,3,6,,very_short_name,KEEP
+Kozmetik ve Kişisel Bakım › Makyaj › Göz Makyajı › Kaş Ürünü,Kaş Ürünü,3,6,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Makyaj › Göz Makyajı › Takma Kirpik,Takma Kirpik,3,6,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Makyaj › Dudak › Ruj,Ruj,3,4,,very_short_name,KEEP
+Kozmetik ve Kişisel Bakım › Makyaj › Dudak › Dudak Parlatıcısı,Dudak Parlatıcısı,3,4,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Makyaj › Dudak › Dudak Kalemi,Dudak Kalemi,3,4,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Makyaj › Dudak › Dudak Balmı,Dudak Balmı,3,4,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Makyaj › Makyaj Aksesuarı › Makyaj Fırçası,Makyaj Fırçası,3,4,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Makyaj › Makyaj Aksesuarı › Makyaj Süngeri,Makyaj Süngeri,3,4,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Makyaj › Makyaj Aksesuarı › Makyaj Aynası,Makyaj Aynası,3,4,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Makyaj › Makyaj Aksesuarı › Makyaj Çantası,Makyaj Çantası,3,4,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Parfüm ve Deodorant › Parfüm › Kadın Parfümü,Kadın Parfümü,3,5,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Parfüm ve Deodorant › Parfüm › Erkek Parfümü,Erkek Parfümü,3,5,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Parfüm ve Deodorant › Parfüm › Unisex Parfüm,Unisex Parfüm,3,5,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Parfüm ve Deodorant › Parfüm › Çocuk Parfümü,Çocuk Parfümü,3,5,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Parfüm ve Deodorant › Parfüm › Vücut Spreyi,Vücut Spreyi,3,5,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Parfüm ve Deodorant › Deodorant › Roll-On,Roll-On,3,3,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Parfüm ve Deodorant › Deodorant › Sprey Deodorant,Sprey Deodorant,3,3,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Parfüm ve Deodorant › Deodorant › Stick Deodorant,Stick Deodorant,3,3,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Kişisel Bakım Cihazları › Tıraş › Tıraş Makinesi,Tıraş Makinesi,3,4,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Kişisel Bakım Cihazları › Tıraş › Sakal Şekillendirici,Sakal Şekillendirici,3,4,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Kişisel Bakım Cihazları › Tıraş › Burun-Kulak Kılı Kesici,Burun-Kulak Kılı Kesici,3,4,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Kişisel Bakım Cihazları › Tıraş › Tıraş Bıçağı,Tıraş Bıçağı,3,4,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Kişisel Bakım Cihazları › Ağız Bakımı › Elektrikli Diş Fırçası,Elektrikli Diş Fırçası,3,3,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Kişisel Bakım Cihazları › Ağız Bakımı › Ağız Duşu,Ağız Duşu,3,3,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Kişisel Bakım Cihazları › Ağız Bakımı › Diş Beyazlatma Cihazı,Diş Beyazlatma Cihazı,3,3,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Kişisel Bakım Cihazları › Epilasyon › Epilatör,Epilatör,3,3,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Kişisel Bakım Cihazları › Epilasyon › IPL Lazer Epilasyon,IPL Lazer Epilasyon,3,3,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Kişisel Bakım Cihazları › Epilasyon › Kadın Tıraş Makinesi,Kadın Tıraş Makinesi,3,3,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Kişisel Bakım Cihazları › Masaj ve Sağlık › Masaj Aleti,Masaj Aleti,3,5,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Kişisel Bakım Cihazları › Masaj ve Sağlık › Tartı,Tartı,3,5,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Kişisel Bakım Cihazları › Masaj ve Sağlık › Tansiyon Aleti,Tansiyon Aleti,3,5,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Kişisel Bakım Cihazları › Masaj ve Sağlık › Ateş Ölçer,Ateş Ölçer,3,5,,ok,KEEP
+Kozmetik ve Kişisel Bakım › Kişisel Bakım Cihazları › Masaj ve Sağlık › Nebulizatör,Nebulizatör,3,5,,ok,KEEP
+Spor ve Outdoor › Fitness › Kardiyo › Koşu Bandı,Koşu Bandı,3,5,,ok,KEEP
+Spor ve Outdoor › Fitness › Kardiyo › Eliptik Bisiklet,Eliptik Bisiklet,3,5,,ok,KEEP
+Spor ve Outdoor › Fitness › Kardiyo › Kondisyon Bisikleti,Kondisyon Bisikleti,3,5,,ok,KEEP
+Spor ve Outdoor › Fitness › Kardiyo › Kürek Aleti,Kürek Aleti,3,5,,ok,KEEP
+Spor ve Outdoor › Fitness › Kardiyo › Stepper,Stepper,3,5,,ok,KEEP
+Spor ve Outdoor › Fitness › Ağırlık › Dambıl,Dambıl,3,6,,ok,KEEP
+Spor ve Outdoor › Fitness › Ağırlık › Halter,Halter,3,6,,ok,KEEP
+Spor ve Outdoor › Fitness › Ağırlık › Ağırlık Seti,Ağırlık Seti,3,6,,ok,KEEP
+Spor ve Outdoor › Fitness › Ağırlık › Bench Sehpası,Bench Sehpası,3,6,,ok,KEEP
+Spor ve Outdoor › Fitness › Ağırlık › Kettlebell,Kettlebell,3,6,,ok,KEEP
+Spor ve Outdoor › Fitness › Ağırlık › Direnç Lastiği,Direnç Lastiği,3,6,,ok,KEEP
+Spor ve Outdoor › Fitness › Yoga ve Pilates › Yoga Matı,Yoga Matı,3,5,,ok,KEEP
+Spor ve Outdoor › Fitness › Yoga ve Pilates › Pilates Topu,Pilates Topu,3,5,,ok,KEEP
+Spor ve Outdoor › Fitness › Yoga ve Pilates › Pilates Çemberi,Pilates Çemberi,3,5,,ok,KEEP
+Spor ve Outdoor › Fitness › Yoga ve Pilates › Yoga Bloğu,Yoga Bloğu,3,5,,ok,KEEP
+Spor ve Outdoor › Fitness › Yoga ve Pilates › Foam Roller,Foam Roller,3,5,,ok,KEEP
+Spor ve Outdoor › Takım Sporları › Futbol › Futbol Topu,Futbol Topu,3,5,,ok,KEEP
+Spor ve Outdoor › Takım Sporları › Futbol › Krampon,Krampon,3,5,,ok,KEEP
+Spor ve Outdoor › Takım Sporları › Futbol › Kaleci Eldiveni,Kaleci Eldiveni,3,5,,ok,KEEP
+Spor ve Outdoor › Takım Sporları › Futbol › Futbol Kalesi,Futbol Kalesi,3,5,,ok,KEEP
+Spor ve Outdoor › Takım Sporları › Futbol › Antrenman Ekipmanı,Antrenman Ekipmanı,3,5,,ok,KEEP
+Spor ve Outdoor › Takım Sporları › Basketbol › Basketbol Topu,Basketbol Topu,3,3,,ok,KEEP
+Spor ve Outdoor › Takım Sporları › Basketbol › Basketbol Potası,Basketbol Potası,3,3,,ok,KEEP
+Spor ve Outdoor › Takım Sporları › Basketbol › Basketbol Ayakkabısı,Basketbol Ayakkabısı,3,3,Moda › Ayakkabı › Spor Ayakkabı › Basketbol Ayakkabısı,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Spor ve Outdoor › Takım Sporları › Voleybol › Voleybol Topu,Voleybol Topu,3,3,,ok,KEEP
+Spor ve Outdoor › Takım Sporları › Voleybol › Voleybol Filesi,Voleybol Filesi,3,3,,ok,KEEP
+Spor ve Outdoor › Takım Sporları › Voleybol › Dizlik,Dizlik,3,3,Otomotiv Aksesuar › Motosiklet Aksesuar › Sürüş Ekipmanı › Dizlik,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Spor ve Outdoor › Takım Sporları › Raket Sporları › Tenis Raketi,Tenis Raketi,3,5,,ok,KEEP
+Spor ve Outdoor › Takım Sporları › Raket Sporları › Tenis Topu,Tenis Topu,3,5,,ok,KEEP
+Spor ve Outdoor › Takım Sporları › Raket Sporları › Masa Tenisi Raketi,Masa Tenisi Raketi,3,5,,ok,KEEP
+Spor ve Outdoor › Takım Sporları › Raket Sporları › Badminton Raketi,Badminton Raketi,3,5,,ok,KEEP
+Spor ve Outdoor › Takım Sporları › Raket Sporları › Padel Raketi,Padel Raketi,3,5,,ok,KEEP
+Spor ve Outdoor › Outdoor ve Kamp › Kamp › Çadır,Çadır,3,7,,ok,KEEP
+Spor ve Outdoor › Outdoor ve Kamp › Kamp › Uyku Tulumu,Uyku Tulumu,3,7,"Anne, Bebek ve Çocuk › Bebek Odası › Tekstil › Uyku Tulumu",same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Spor ve Outdoor › Outdoor ve Kamp › Kamp › Kamp Matı,Kamp Matı,3,7,,ok,KEEP
+Spor ve Outdoor › Outdoor ve Kamp › Kamp › Kamp Sandalyesi,Kamp Sandalyesi,3,7,,ok,KEEP
+Spor ve Outdoor › Outdoor ve Kamp › Kamp › Kamp Masası,Kamp Masası,3,7,,ok,KEEP
+Spor ve Outdoor › Outdoor ve Kamp › Kamp › Kamp Ocağı,Kamp Ocağı,3,7,,ok,KEEP
+Spor ve Outdoor › Outdoor ve Kamp › Kamp › Kamp Lambası,Kamp Lambası,3,7,,ok,KEEP
+Spor ve Outdoor › Outdoor ve Kamp › Dağcılık › Dağcılık Çantası,Dağcılık Çantası,3,6,,ok,KEEP
+Spor ve Outdoor › Outdoor ve Kamp › Dağcılık › Trekking Baton,Trekking Baton,3,6,,ok,KEEP
+Spor ve Outdoor › Outdoor ve Kamp › Dağcılık › Kask,Kask,3,6,,ok,KEEP
+Spor ve Outdoor › Outdoor ve Kamp › Dağcılık › Karabina,Karabina,3,6,,ok,KEEP
+Spor ve Outdoor › Outdoor ve Kamp › Dağcılık › Tırmanış İpi,Tırmanış İpi,3,6,,ok,KEEP
+Spor ve Outdoor › Outdoor ve Kamp › Dağcılık › Emniyet Kemeri,Emniyet Kemeri,3,6,Endüstriyel ve Ticari Ürünler › İş Güvenliği › Kişisel Koruyucu › Emniyet Kemeri,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Spor ve Outdoor › Outdoor ve Kamp › Outdoor Giyim › Outdoor Mont,Outdoor Mont,3,5,,ok,KEEP
+Spor ve Outdoor › Outdoor ve Kamp › Outdoor Giyim › Termal İçlik,Termal İçlik,3,5,,ok,KEEP
+Spor ve Outdoor › Outdoor ve Kamp › Outdoor Giyim › Yağmurluk,Yağmurluk,3,5,Moda › Kadın › Dış Giyim › Yağmurluk | Moda › Erkek › Takım ve Dış Giyim › Yağmurluk | Otomotiv Aksesuar › Motosiklet Aksesuar › Sürüş Ekipmanı › Yağmurluk,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Spor ve Outdoor › Outdoor ve Kamp › Outdoor Giyim › Outdoor Pantolon,Outdoor Pantolon,3,5,,ok,KEEP
+Spor ve Outdoor › Outdoor ve Kamp › Outdoor Giyim › Trekking Ayakkabısı,Trekking Ayakkabısı,3,5,,ok,KEEP
+Spor ve Outdoor › Outdoor ve Kamp › Su Sporları › Şişme Bot,Şişme Bot,3,6,,ok,KEEP
+Spor ve Outdoor › Outdoor ve Kamp › Su Sporları › Kano,Kano,3,6,,ok,KEEP
+Spor ve Outdoor › Outdoor ve Kamp › Su Sporları › SUP Board,SUP Board,3,6,,ok,KEEP
+Spor ve Outdoor › Outdoor ve Kamp › Su Sporları › Dalış Maskesi,Dalış Maskesi,3,6,,ok,KEEP
+Spor ve Outdoor › Outdoor ve Kamp › Su Sporları › Palet,Palet,3,6,Endüstriyel ve Ticari Ürünler › Depo ve Lojistik › Depolama › Palet,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Spor ve Outdoor › Outdoor ve Kamp › Su Sporları › Can Yeleği,Can Yeleği,3,6,,ok,KEEP
+Spor ve Outdoor › Bisiklet › Bisiklet Türleri › Dağ Bisikleti,Dağ Bisikleti,3,7,,ok,KEEP
+Spor ve Outdoor › Bisiklet › Bisiklet Türleri › Şehir Bisikleti,Şehir Bisikleti,3,7,,ok,KEEP
+Spor ve Outdoor › Bisiklet › Bisiklet Türleri › Yol Bisikleti,Yol Bisikleti,3,7,,ok,KEEP
+Spor ve Outdoor › Bisiklet › Bisiklet Türleri › Elektrikli Bisiklet,Elektrikli Bisiklet,3,7,,ok,KEEP
+Spor ve Outdoor › Bisiklet › Bisiklet Türleri › Katlanır Bisiklet,Katlanır Bisiklet,3,7,,ok,KEEP
+Spor ve Outdoor › Bisiklet › Bisiklet Türleri › BMX,BMX,3,7,,very_short_name,KEEP
+Spor ve Outdoor › Bisiklet › Bisiklet Türleri › Çocuk Bisikleti,Çocuk Bisikleti,3,7,"Anne, Bebek ve Çocuk › Oyuncak › Açık Hava › Çocuk Bisikleti",same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Spor ve Outdoor › Bisiklet › Bisiklet Parça ve Aksesuar › Bisiklet Kaskı,Bisiklet Kaskı,3,10,,micro_dense_sibling,MICRO_REVIEW
+Spor ve Outdoor › Bisiklet › Bisiklet Parça ve Aksesuar › Bisiklet Kilidi,Bisiklet Kilidi,3,10,,micro_dense_sibling,MICRO_REVIEW
+Spor ve Outdoor › Bisiklet › Bisiklet Parça ve Aksesuar › Aydınlatma,Aydınlatma,3,10,Pet Shop › Akvaryum › Akvaryum Ürünleri › Aydınlatma,same_sense_duplicate_leaf|micro_dense_sibling,MANUAL_REVIEW_DEDUP
+Spor ve Outdoor › Bisiklet › Bisiklet Parça ve Aksesuar › Pompa,Pompa,3,10,,micro_dense_sibling,MICRO_REVIEW
+Spor ve Outdoor › Bisiklet › Bisiklet Parça ve Aksesuar › Sele,Sele,3,10,,micro_dense_sibling,MICRO_REVIEW
+Spor ve Outdoor › Bisiklet › Bisiklet Parça ve Aksesuar › Pedal,Pedal,3,10,,micro_dense_sibling,MICRO_REVIEW
+Spor ve Outdoor › Bisiklet › Bisiklet Parça ve Aksesuar › Lastik,Lastik,3,10,,micro_dense_sibling,MICRO_REVIEW
+Spor ve Outdoor › Bisiklet › Bisiklet Parça ve Aksesuar › İç Lastik,İç Lastik,3,10,,micro_dense_sibling,MICRO_REVIEW
+Spor ve Outdoor › Bisiklet › Bisiklet Parça ve Aksesuar › Çanta ve Heybe,Çanta ve Heybe,3,10,,micro_dense_sibling,MICRO_REVIEW
+Spor ve Outdoor › Bisiklet › Bisiklet Parça ve Aksesuar › Bisiklet Bilgisayarı,Bisiklet Bilgisayarı,3,10,,micro_dense_sibling,MICRO_REVIEW
+Hobi ve Oyun › Müzik Aletleri › Telli Çalgılar › Gitar,Gitar,3,6,,ok,KEEP
+Hobi ve Oyun › Müzik Aletleri › Telli Çalgılar › Elektro Gitar,Elektro Gitar,3,6,,ok,KEEP
+Hobi ve Oyun › Müzik Aletleri › Telli Çalgılar › Bas Gitar,Bas Gitar,3,6,,ok,KEEP
+Hobi ve Oyun › Müzik Aletleri › Telli Çalgılar › Ukulele,Ukulele,3,6,,ok,KEEP
+Hobi ve Oyun › Müzik Aletleri › Telli Çalgılar › Bağlama,Bağlama,3,6,,ok,KEEP
+Hobi ve Oyun › Müzik Aletleri › Telli Çalgılar › Keman,Keman,3,6,,ok,KEEP
+Hobi ve Oyun › Müzik Aletleri › Tuşlu Çalgılar › Dijital Piyano,Dijital Piyano,3,3,,ok,KEEP
+Hobi ve Oyun › Müzik Aletleri › Tuşlu Çalgılar › Org,Org,3,3,,very_short_name,KEEP
+Hobi ve Oyun › Müzik Aletleri › Tuşlu Çalgılar › MIDI Klavye,MIDI Klavye,3,3,,ok,KEEP
+Hobi ve Oyun › Müzik Aletleri › Vurmalı Çalgılar › Davul,Davul,3,4,,ok,KEEP
+Hobi ve Oyun › Müzik Aletleri › Vurmalı Çalgılar › Elektronik Davul,Elektronik Davul,3,4,,ok,KEEP
+Hobi ve Oyun › Müzik Aletleri › Vurmalı Çalgılar › Darbuka,Darbuka,3,4,,ok,KEEP
+Hobi ve Oyun › Müzik Aletleri › Vurmalı Çalgılar › Cajon,Cajon,3,4,,ok,KEEP
+Hobi ve Oyun › Müzik Aletleri › Nefesli Çalgılar › Flüt,Flüt,3,4,,ok,KEEP
+Hobi ve Oyun › Müzik Aletleri › Nefesli Çalgılar › Klarnet,Klarnet,3,4,,ok,KEEP
+Hobi ve Oyun › Müzik Aletleri › Nefesli Çalgılar › Saksafon,Saksafon,3,4,,ok,KEEP
+Hobi ve Oyun › Müzik Aletleri › Nefesli Çalgılar › Trompet,Trompet,3,4,,ok,KEEP
+Hobi ve Oyun › Müzik Aletleri › Müzik Aksesuarları › Amfi,Amfi,3,5,"Elektronik › Televizyon, Görüntü ve Ses › Ses Sistemleri › Amfi",same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Hobi ve Oyun › Müzik Aletleri › Müzik Aksesuarları › Mikrofon,Mikrofon,3,5,Elektronik › Bilgisayar ve Tablet › Bilgisayar Çevre Birimleri › Mikrofon,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Hobi ve Oyun › Müzik Aletleri › Müzik Aksesuarları › Nota Sehpası,Nota Sehpası,3,5,,ok,KEEP
+Hobi ve Oyun › Müzik Aletleri › Müzik Aksesuarları › Kılıf,Kılıf,3,5,,ok,KEEP
+Hobi ve Oyun › Müzik Aletleri › Müzik Aksesuarları › Tel ve Pena,Tel ve Pena,3,5,,ok,KEEP
+Hobi ve Oyun › Hobi Malzemeleri › Resim › Tuval,Tuval,3,6,,ok,KEEP
+Hobi ve Oyun › Hobi Malzemeleri › Resim › Akrilik Boya,Akrilik Boya,3,6,,ok,KEEP
+Hobi ve Oyun › Hobi Malzemeleri › Resim › Yağlı Boya,Yağlı Boya,3,6,,ok,KEEP
+Hobi ve Oyun › Hobi Malzemeleri › Resim › Suluboya,Suluboya,3,6,,ok,KEEP
+Hobi ve Oyun › Hobi Malzemeleri › Resim › Fırça,Fırça,3,6,Ev ve Yaşam › Temizlik ve Düzen › Temizlik Ürünleri › Fırça,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Hobi ve Oyun › Hobi Malzemeleri › Resim › Şövale,Şövale,3,6,,ok,KEEP
+Hobi ve Oyun › Hobi Malzemeleri › El İşi › Örgü İpi,Örgü İpi,3,6,,ok,KEEP
+Hobi ve Oyun › Hobi Malzemeleri › El İşi › Şiş ve Tığ,Şiş ve Tığ,3,6,,ok,KEEP
+Hobi ve Oyun › Hobi Malzemeleri › El İşi › Dikiş Malzemesi,Dikiş Malzemesi,3,6,,ok,KEEP
+Hobi ve Oyun › Hobi Malzemeleri › El İşi › Keçe,Keçe,3,6,,ok,KEEP
+Hobi ve Oyun › Hobi Malzemeleri › El İşi › Boncuk,Boncuk,3,6,,ok,KEEP
+Hobi ve Oyun › Hobi Malzemeleri › El İşi › Takı Yapım Malzemesi,Takı Yapım Malzemesi,3,6,,ok,KEEP
+Hobi ve Oyun › Hobi Malzemeleri › Maket ve Model › Maket Seti,Maket Seti,3,5,,ok,KEEP
+Hobi ve Oyun › Hobi Malzemeleri › Maket ve Model › Model Araba,Model Araba,3,5,,ok,KEEP
+Hobi ve Oyun › Hobi Malzemeleri › Maket ve Model › Model Uçak,Model Uçak,3,5,,ok,KEEP
+Hobi ve Oyun › Hobi Malzemeleri › Maket ve Model › Diorama Malzemesi,Diorama Malzemesi,3,5,,ok,KEEP
+Hobi ve Oyun › Hobi Malzemeleri › Maket ve Model › 3D Puzzle,3D Puzzle,3,5,,ok,KEEP
+Hobi ve Oyun › Oyun ve Eğlence › Kutu Oyunları › Strateji Oyunu,Strateji Oyunu,3,6,,ok,KEEP
+Hobi ve Oyun › Oyun ve Eğlence › Kutu Oyunları › Aile Oyunu,Aile Oyunu,3,6,,ok,KEEP
+Hobi ve Oyun › Oyun ve Eğlence › Kutu Oyunları › Parti Oyunu,Parti Oyunu,3,6,,ok,KEEP
+Hobi ve Oyun › Oyun ve Eğlence › Kutu Oyunları › Kart Oyunu,Kart Oyunu,3,6,,ok,KEEP
+Hobi ve Oyun › Oyun ve Eğlence › Kutu Oyunları › Satranç,Satranç,3,6,,ok,KEEP
+Hobi ve Oyun › Oyun ve Eğlence › Kutu Oyunları › Puzzle,Puzzle,3,6,,ok,KEEP
+Hobi ve Oyun › Oyun ve Eğlence › Koleksiyon › Figür,Figür,3,5,,ok,KEEP
+Hobi ve Oyun › Oyun ve Eğlence › Koleksiyon › Trading Card,Trading Card,3,5,,ok,KEEP
+Hobi ve Oyun › Oyun ve Eğlence › Koleksiyon › Madeni Para,Madeni Para,3,5,,ok,KEEP
+Hobi ve Oyun › Oyun ve Eğlence › Koleksiyon › Pul,Pul,3,5,,very_short_name,KEEP
+Hobi ve Oyun › Oyun ve Eğlence › Koleksiyon › Koleksiyon Kutusu,Koleksiyon Kutusu,3,5,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Kitap › Edebiyat › Roman",Roman,3,5,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Kitap › Edebiyat › Öykü",Öykü,3,5,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Kitap › Edebiyat › Şiir",Şiir,3,5,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Kitap › Edebiyat › Deneme",Deneme,3,5,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Kitap › Edebiyat › Biyografi",Biyografi,3,5,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Kitap › Çocuk Kitapları › Resimli Kitap",Resimli Kitap,3,4,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Kitap › Çocuk Kitapları › Masal",Masal,3,4,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Kitap › Çocuk Kitapları › Etkinlik Kitabı",Etkinlik Kitabı,3,4,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Kitap › Çocuk Kitapları › Gençlik Romanı",Gençlik Romanı,3,4,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Kitap › Eğitim › Sınav Hazırlık",Sınav Hazırlık,3,4,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Kitap › Eğitim › Ders Kitabı",Ders Kitabı,3,4,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Kitap › Eğitim › Yabancı Dil",Yabancı Dil,3,4,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Kitap › Eğitim › Akademik Kitap",Akademik Kitap,3,4,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Kitap › Hobi ve Yaşam › Yemek Kitabı",Yemek Kitabı,3,5,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Kitap › Hobi ve Yaşam › Kişisel Gelişim",Kişisel Gelişim,3,5,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Kitap › Hobi ve Yaşam › Sanat",Sanat,3,5,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Kitap › Hobi ve Yaşam › Seyahat",Seyahat,3,5,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Kitap › Hobi ve Yaşam › Sağlık",Sağlık,3,5,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Kırtasiye › Yazı Gereçleri › Tükenmez Kalem",Tükenmez Kalem,3,6,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Kırtasiye › Yazı Gereçleri › Dolma Kalem",Dolma Kalem,3,6,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Kırtasiye › Yazı Gereçleri › Kurşun Kalem",Kurşun Kalem,3,6,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Kırtasiye › Yazı Gereçleri › Keçeli Kalem",Keçeli Kalem,3,6,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Kırtasiye › Yazı Gereçleri › Marker",Marker,3,6,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Kırtasiye › Yazı Gereçleri › Silgi",Silgi,3,6,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Kırtasiye › Defter ve Kağıt › Defter",Defter,3,6,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Kırtasiye › Defter ve Kağıt › Ajanda",Ajanda,3,6,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Kırtasiye › Defter ve Kağıt › Fotokopi Kağıdı",Fotokopi Kağıdı,3,6,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Kırtasiye › Defter ve Kağıt › Not Kağıdı",Not Kağıdı,3,6,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Kırtasiye › Defter ve Kağıt › Etiket",Etiket,3,6,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Kırtasiye › Defter ve Kağıt › Zarf",Zarf,3,6,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Kırtasiye › Okul Gereçleri › Kalem Kutusu",Kalem Kutusu,3,6,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Kırtasiye › Okul Gereçleri › Okul Çantası",Okul Çantası,3,6,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Kırtasiye › Okul Gereçleri › Boya Seti",Boya Seti,3,6,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Kırtasiye › Okul Gereçleri › Cetvel Seti",Cetvel Seti,3,6,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Kırtasiye › Okul Gereçleri › Makas",Makas,3,6,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Kırtasiye › Okul Gereçleri › Yapıştırıcı",Yapıştırıcı,3,6,Bahçe ve Yapı › Yapı Market › Boya ve Kimyasal › Yapıştırıcı,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+"Kitap, Kırtasiye ve Ofis › Ofis › Ofis Makineleri › Yazıcı",Yazıcı,3,5,Elektronik › Bilgisayar ve Tablet › Bilgisayar Çevre Birimleri › Yazıcı,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+"Kitap, Kırtasiye ve Ofis › Ofis › Ofis Makineleri › Fotokopi Makinesi",Fotokopi Makinesi,3,5,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Ofis › Ofis Makineleri › Para Sayma Makinesi",Para Sayma Makinesi,3,5,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Ofis › Ofis Makineleri › Laminasyon Makinesi",Laminasyon Makinesi,3,5,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Ofis › Ofis Makineleri › Evrak İmha Makinesi",Evrak İmha Makinesi,3,5,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Ofis › Ofis Sarf › Toner",Toner,3,6,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Ofis › Ofis Sarf › Kartuş",Kartuş,3,6,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Ofis › Ofis Sarf › Zımba",Zımba,3,6,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Ofis › Ofis Sarf › Delgeç",Delgeç,3,6,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Ofis › Ofis Sarf › Dosya",Dosya,3,6,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Ofis › Ofis Sarf › Klasör",Klasör,3,6,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Ofis › Ofis Mobilyası › Ofis Masası",Ofis Masası,3,5,,ok,KEEP
+"Kitap, Kırtasiye ve Ofis › Ofis › Ofis Mobilyası › Ofis Koltuğu",Ofis Koltuğu,3,5,Ev ve Yaşam › Mobilya › Çalışma Odası › Ofis Koltuğu,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+"Kitap, Kırtasiye ve Ofis › Ofis › Ofis Mobilyası › Dosya Dolabı",Dosya Dolabı,3,5,Ev ve Yaşam › Mobilya › Çalışma Odası › Dosya Dolabı,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+"Kitap, Kırtasiye ve Ofis › Ofis › Ofis Mobilyası › Toplantı Masası",Toplantı Masası,3,5,Ev ve Yaşam › Mobilya › Çalışma Odası › Toplantı Masası,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+"Kitap, Kırtasiye ve Ofis › Ofis › Ofis Mobilyası › Resepsiyon Bankosu",Resepsiyon Bankosu,3,5,,ok,KEEP
+Pet Shop › Kedi › Beslenme › Kedi Maması,Kedi Maması,3,5,,ok,KEEP
+Pet Shop › Kedi › Beslenme › Yaş Mama,Yaş Mama,3,5,Pet Shop › Köpek › Beslenme › Yaş Mama,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Pet Shop › Kedi › Beslenme › Ödül Maması,Ödül Maması,3,5,Pet Shop › Köpek › Beslenme › Ödül Maması,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Pet Shop › Kedi › Beslenme › Mama Kabı,Mama Kabı,3,5,Pet Shop › Köpek › Beslenme › Mama Kabı,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Pet Shop › Kedi › Beslenme › Su Pınarı,Su Pınarı,3,5,,ok,KEEP
+Pet Shop › Kedi › Bakım › Kedi Kumu,Kedi Kumu,3,5,,ok,KEEP
+Pet Shop › Kedi › Bakım › Kum Kabı,Kum Kabı,3,5,,ok,KEEP
+Pet Shop › Kedi › Bakım › Tırmalama Tahtası,Tırmalama Tahtası,3,5,,ok,KEEP
+Pet Shop › Kedi › Bakım › Tarak,Tarak,3,5,Pet Shop › Köpek › Bakım › Tarak,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Pet Shop › Kedi › Bakım › Şampuan,Şampuan,3,5,Kozmetik ve Kişisel Bakım › Saç Bakımı › Saç Ürünleri › Şampuan | Pet Shop › Köpek › Bakım › Şampuan,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Pet Shop › Kedi › Aksesuar › Kedi Yatağı,Kedi Yatağı,3,5,,ok,KEEP
+Pet Shop › Kedi › Aksesuar › Taşıma Çantası,Taşıma Çantası,3,5,Elektronik › Oyun ve Konsol › Konsol Aksesuarları › Taşıma Çantası | Pet Shop › Köpek › Aksesuar › Taşıma Çantası,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Pet Shop › Kedi › Aksesuar › Tasma,Tasma,3,5,Pet Shop › Köpek › Aksesuar › Tasma,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Pet Shop › Kedi › Aksesuar › Oyuncak,Oyuncak,3,5,Pet Shop › Köpek › Aksesuar › Oyuncak | Pet Shop › Kuş ve Kemirgen › Kuş › Oyuncak | Pet Shop › Kuş ve Kemirgen › Kemirgen › Oyuncak,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Pet Shop › Kedi › Aksesuar › Kedi Evi,Kedi Evi,3,5,,ok,KEEP
+Pet Shop › Köpek › Beslenme › Köpek Maması,Köpek Maması,3,5,,ok,KEEP
+Pet Shop › Köpek › Beslenme › Yaş Mama,Yaş Mama,3,5,Pet Shop › Kedi › Beslenme › Yaş Mama,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Pet Shop › Köpek › Beslenme › Ödül Maması,Ödül Maması,3,5,Pet Shop › Kedi › Beslenme › Ödül Maması,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Pet Shop › Köpek › Beslenme › Mama Kabı,Mama Kabı,3,5,Pet Shop › Kedi › Beslenme › Mama Kabı,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Pet Shop › Köpek › Beslenme › Su Kabı,Su Kabı,3,5,,ok,KEEP
+Pet Shop › Köpek › Bakım › Şampuan,Şampuan,3,5,Kozmetik ve Kişisel Bakım › Saç Bakımı › Saç Ürünleri › Şampuan | Pet Shop › Kedi › Bakım › Şampuan,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Pet Shop › Köpek › Bakım › Tarak,Tarak,3,5,Pet Shop › Kedi › Bakım › Tarak,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Pet Shop › Köpek › Bakım › Tırnak Makası,Tırnak Makası,3,5,,ok,KEEP
+Pet Shop › Köpek › Bakım › Ped,Ped,3,5,,very_short_name,KEEP
+Pet Shop › Köpek › Bakım › Ağız Bakımı,Ağız Bakımı,3,5,,ok,KEEP
+Pet Shop › Köpek › Aksesuar › Tasma,Tasma,3,7,Pet Shop › Kedi › Aksesuar › Tasma,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Pet Shop › Köpek › Aksesuar › Gezdirme Kayışı,Gezdirme Kayışı,3,7,,ok,KEEP
+Pet Shop › Köpek › Aksesuar › Göğüs Tasması,Göğüs Tasması,3,7,,ok,KEEP
+Pet Shop › Köpek › Aksesuar › Köpek Yatağı,Köpek Yatağı,3,7,,ok,KEEP
+Pet Shop › Köpek › Aksesuar › Taşıma Çantası,Taşıma Çantası,3,7,Elektronik › Oyun ve Konsol › Konsol Aksesuarları › Taşıma Çantası | Pet Shop › Kedi › Aksesuar › Taşıma Çantası,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Pet Shop › Köpek › Aksesuar › Oyuncak,Oyuncak,3,7,Pet Shop › Kedi › Aksesuar › Oyuncak | Pet Shop › Kuş ve Kemirgen › Kuş › Oyuncak | Pet Shop › Kuş ve Kemirgen › Kemirgen › Oyuncak,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Pet Shop › Köpek › Aksesuar › Köpek Kulübesi,Köpek Kulübesi,3,7,,ok,KEEP
+Pet Shop › Kuş ve Kemirgen › Kuş › Kuş Yemi,Kuş Yemi,3,5,,ok,KEEP
+Pet Shop › Kuş ve Kemirgen › Kuş › Kafes,Kafes,3,5,Pet Shop › Kuş ve Kemirgen › Kemirgen › Kafes,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Pet Shop › Kuş ve Kemirgen › Kuş › Tünek,Tünek,3,5,,ok,KEEP
+Pet Shop › Kuş ve Kemirgen › Kuş › Suluk,Suluk,3,5,Pet Shop › Kuş ve Kemirgen › Kemirgen › Suluk,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Pet Shop › Kuş ve Kemirgen › Kuş › Oyuncak,Oyuncak,3,5,Pet Shop › Kedi › Aksesuar › Oyuncak | Pet Shop › Köpek › Aksesuar › Oyuncak | Pet Shop › Kuş ve Kemirgen › Kemirgen › Oyuncak,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Pet Shop › Kuş ve Kemirgen › Kemirgen › Kemirgen Yemi,Kemirgen Yemi,3,5,,ok,KEEP
+Pet Shop › Kuş ve Kemirgen › Kemirgen › Kafes,Kafes,3,5,Pet Shop › Kuş ve Kemirgen › Kuş › Kafes,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Pet Shop › Kuş ve Kemirgen › Kemirgen › Talaş,Talaş,3,5,,ok,KEEP
+Pet Shop › Kuş ve Kemirgen › Kemirgen › Suluk,Suluk,3,5,Pet Shop › Kuş ve Kemirgen › Kuş › Suluk,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Pet Shop › Kuş ve Kemirgen › Kemirgen › Oyuncak,Oyuncak,3,5,Pet Shop › Kedi › Aksesuar › Oyuncak | Pet Shop › Köpek › Aksesuar › Oyuncak | Pet Shop › Kuş ve Kemirgen › Kuş › Oyuncak,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Pet Shop › Akvaryum › Akvaryum Ürünleri › Akvaryum,Akvaryum,3,7,,ok,KEEP
+Pet Shop › Akvaryum › Akvaryum Ürünleri › Filtre,Filtre,3,7,Otomotiv Aksesuar › Yedek Parça ve Ekipman › Temel Parça › Filtre,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Pet Shop › Akvaryum › Akvaryum Ürünleri › Isıtıcı,Isıtıcı,3,7,Ev Aletleri › Beyaz Eşya › İklimlendirme › Isıtıcı,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Pet Shop › Akvaryum › Akvaryum Ürünleri › Hava Motoru,Hava Motoru,3,7,,ok,KEEP
+Pet Shop › Akvaryum › Akvaryum Ürünleri › Aydınlatma,Aydınlatma,3,7,Spor ve Outdoor › Bisiklet › Bisiklet Parça ve Aksesuar › Aydınlatma,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Pet Shop › Akvaryum › Akvaryum Ürünleri › Balık Yemi,Balık Yemi,3,7,,ok,KEEP
+Pet Shop › Akvaryum › Akvaryum Ürünleri › Dekor,Dekor,3,7,,ok,KEEP
+Otomotiv Aksesuar › Araç İçi › Konfor › Koltuk Kılıfı,Koltuk Kılıfı,3,6,,ok,KEEP
+Otomotiv Aksesuar › Araç İçi › Konfor › Paspas,Paspas,3,6,Ev ve Yaşam › Dekorasyon › Halı ve Zemin › Paspas,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Otomotiv Aksesuar › Araç İçi › Konfor › Direksiyon Kılıfı,Direksiyon Kılıfı,3,6,,ok,KEEP
+Otomotiv Aksesuar › Araç İçi › Konfor › Güneşlik,Güneşlik,3,6,,ok,KEEP
+Otomotiv Aksesuar › Araç İçi › Konfor › Organizer,Organizer,3,6,,ok,KEEP
+Otomotiv Aksesuar › Araç İçi › Konfor › Araç İçi Buzdolabı,Araç İçi Buzdolabı,3,6,,ok,KEEP
+Otomotiv Aksesuar › Araç İçi › Elektronik › Araç Kamerası,Araç Kamerası,3,7,,ok,KEEP
+Otomotiv Aksesuar › Araç İçi › Elektronik › Multimedya Sistemi,Multimedya Sistemi,3,7,,ok,KEEP
+Otomotiv Aksesuar › Araç İçi › Elektronik › Navigasyon,Navigasyon,3,7,,ok,KEEP
+Otomotiv Aksesuar › Araç İçi › Elektronik › FM Transmitter,FM Transmitter,3,7,,ok,KEEP
+Otomotiv Aksesuar › Araç İçi › Elektronik › Araç Şarj Cihazı,Araç Şarj Cihazı,3,7,,ok,KEEP
+Otomotiv Aksesuar › Araç İçi › Elektronik › Park Sensörü,Park Sensörü,3,7,,ok,KEEP
+Otomotiv Aksesuar › Araç İçi › Elektronik › Geri Görüş Kamerası,Geri Görüş Kamerası,3,7,,ok,KEEP
+Otomotiv Aksesuar › Araç Dışı › Koruma ve Görünüm › Araç Brandası,Araç Brandası,3,6,,ok,KEEP
+Otomotiv Aksesuar › Araç Dışı › Koruma ve Görünüm › Kapı Koruyucu,Kapı Koruyucu,3,6,,ok,KEEP
+Otomotiv Aksesuar › Araç Dışı › Koruma ve Görünüm › Çamurluk,Çamurluk,3,6,,ok,KEEP
+Otomotiv Aksesuar › Araç Dışı › Koruma ve Görünüm › Spoiler,Spoiler,3,6,,ok,KEEP
+Otomotiv Aksesuar › Araç Dışı › Koruma ve Görünüm › Rüzgarlık,Rüzgarlık,3,6,,ok,KEEP
+Otomotiv Aksesuar › Araç Dışı › Koruma ve Görünüm › Sticker ve Folyo,Sticker ve Folyo,3,6,,ok,KEEP
+Otomotiv Aksesuar › Araç Dışı › Taşıma › Tavan Barı,Tavan Barı,3,4,,ok,KEEP
+Otomotiv Aksesuar › Araç Dışı › Taşıma › Port Bagaj,Port Bagaj,3,4,,ok,KEEP
+Otomotiv Aksesuar › Araç Dışı › Taşıma › Bisiklet Taşıyıcı,Bisiklet Taşıyıcı,3,4,,ok,KEEP
+Otomotiv Aksesuar › Araç Dışı › Taşıma › Çeki Demiri,Çeki Demiri,3,4,,ok,KEEP
+Otomotiv Aksesuar › Bakım ve Temizlik › Temizlik › Oto Şampuanı,Oto Şampuanı,3,6,,ok,KEEP
+Otomotiv Aksesuar › Bakım ve Temizlik › Temizlik › Cila,Cila,3,6,,ok,KEEP
+Otomotiv Aksesuar › Bakım ve Temizlik › Temizlik › Seramik Kaplama,Seramik Kaplama,3,6,,ok,KEEP
+Otomotiv Aksesuar › Bakım ve Temizlik › Temizlik › Jant Temizleyici,Jant Temizleyici,3,6,,ok,KEEP
+Otomotiv Aksesuar › Bakım ve Temizlik › Temizlik › Mikrofiber Bez,Mikrofiber Bez,3,6,,ok,KEEP
+Otomotiv Aksesuar › Bakım ve Temizlik › Temizlik › Araç Süpürgesi,Araç Süpürgesi,3,6,,ok,KEEP
+Otomotiv Aksesuar › Bakım ve Temizlik › Bakım › Motor Yağı,Motor Yağı,3,5,,ok,KEEP
+Otomotiv Aksesuar › Bakım ve Temizlik › Bakım › Antifriz,Antifriz,3,5,,ok,KEEP
+Otomotiv Aksesuar › Bakım ve Temizlik › Bakım › Cam Suyu,Cam Suyu,3,5,,ok,KEEP
+Otomotiv Aksesuar › Bakım ve Temizlik › Bakım › Katkı Ürünleri,Katkı Ürünleri,3,5,,ok,KEEP
+Otomotiv Aksesuar › Bakım ve Temizlik › Bakım › Akü Şarj Cihazı,Akü Şarj Cihazı,3,5,,ok,KEEP
+Otomotiv Aksesuar › Yedek Parça ve Ekipman › Temel Parça › Akü,Akü,3,7,,very_short_name,KEEP
+Otomotiv Aksesuar › Yedek Parça ve Ekipman › Temel Parça › Silecek,Silecek,3,7,,ok,KEEP
+Otomotiv Aksesuar › Yedek Parça ve Ekipman › Temel Parça › Ampul,Ampul,3,7,,ok,KEEP
+Otomotiv Aksesuar › Yedek Parça ve Ekipman › Temel Parça › Filtre,Filtre,3,7,Pet Shop › Akvaryum › Akvaryum Ürünleri › Filtre,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Otomotiv Aksesuar › Yedek Parça ve Ekipman › Temel Parça › Buji,Buji,3,7,,ok,KEEP
+Otomotiv Aksesuar › Yedek Parça ve Ekipman › Temel Parça › Fren Balatası,Fren Balatası,3,7,,ok,KEEP
+Otomotiv Aksesuar › Yedek Parça ve Ekipman › Temel Parça › Debriyaj Seti,Debriyaj Seti,3,7,,ok,KEEP
+Otomotiv Aksesuar › Yedek Parça ve Ekipman › Lastik ve Jant › Otomobil Lastiği,Otomobil Lastiği,3,6,,ok,KEEP
+Otomotiv Aksesuar › Yedek Parça ve Ekipman › Lastik ve Jant › SUV Lastiği,SUV Lastiği,3,6,,ok,KEEP
+Otomotiv Aksesuar › Yedek Parça ve Ekipman › Lastik ve Jant › Motosiklet Lastiği,Motosiklet Lastiği,3,6,,ok,KEEP
+Otomotiv Aksesuar › Yedek Parça ve Ekipman › Lastik ve Jant › Jant,Jant,3,6,,ok,KEEP
+Otomotiv Aksesuar › Yedek Parça ve Ekipman › Lastik ve Jant › Jant Kapağı,Jant Kapağı,3,6,,ok,KEEP
+Otomotiv Aksesuar › Yedek Parça ve Ekipman › Lastik ve Jant › Kar Zinciri,Kar Zinciri,3,6,,ok,KEEP
+Otomotiv Aksesuar › Yedek Parça ve Ekipman › Acil Durum › İlk Yardım Seti,İlk Yardım Seti,3,6,,ok,KEEP
+Otomotiv Aksesuar › Yedek Parça ve Ekipman › Acil Durum › Yangın Söndürücü,Yangın Söndürücü,3,6,Endüstriyel ve Ticari Ürünler › İş Güvenliği › İşyeri Güvenliği › Yangın Söndürücü,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Otomotiv Aksesuar › Yedek Parça ve Ekipman › Acil Durum › Reflektör,Reflektör,3,6,,ok,KEEP
+Otomotiv Aksesuar › Yedek Parça ve Ekipman › Acil Durum › Takviye Kablosu,Takviye Kablosu,3,6,,ok,KEEP
+Otomotiv Aksesuar › Yedek Parça ve Ekipman › Acil Durum › Kriko,Kriko,3,6,,ok,KEEP
+Otomotiv Aksesuar › Yedek Parça ve Ekipman › Acil Durum › Çekme Halatı,Çekme Halatı,3,6,,ok,KEEP
+Otomotiv Aksesuar › Motosiklet Aksesuar › Sürüş Ekipmanı › Motosiklet Kaskı,Motosiklet Kaskı,3,6,,ok,KEEP
+Otomotiv Aksesuar › Motosiklet Aksesuar › Sürüş Ekipmanı › Motosiklet Montu,Motosiklet Montu,3,6,,ok,KEEP
+Otomotiv Aksesuar › Motosiklet Aksesuar › Sürüş Ekipmanı › Eldiven,Eldiven,3,6,Moda › Çanta ve Aksesuar › Aksesuar › Eldiven,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Otomotiv Aksesuar › Motosiklet Aksesuar › Sürüş Ekipmanı › Dizlik,Dizlik,3,6,Spor ve Outdoor › Takım Sporları › Voleybol › Dizlik,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Otomotiv Aksesuar › Motosiklet Aksesuar › Sürüş Ekipmanı › Bot,Bot,3,6,Moda › Ayakkabı › Kadın Ayakkabı › Bot | Moda › Ayakkabı › Erkek Ayakkabı › Bot,same_sense_duplicate_leaf|very_short_name,MANUAL_REVIEW_DEDUP
+Otomotiv Aksesuar › Motosiklet Aksesuar › Sürüş Ekipmanı › Yağmurluk,Yağmurluk,3,6,Moda › Kadın › Dış Giyim › Yağmurluk | Moda › Erkek › Takım ve Dış Giyim › Yağmurluk | Spor ve Outdoor › Outdoor ve Kamp › Outdoor Giyim › Yağmurluk,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Otomotiv Aksesuar › Motosiklet Aksesuar › Motosiklet Parça › Motosiklet Çantası,Motosiklet Çantası,3,6,,ok,KEEP
+Otomotiv Aksesuar › Motosiklet Aksesuar › Motosiklet Parça › Telefon Tutucu,Telefon Tutucu,3,6,,ok,KEEP
+Otomotiv Aksesuar › Motosiklet Aksesuar › Motosiklet Parça › Branda,Branda,3,6,,ok,KEEP
+Otomotiv Aksesuar › Motosiklet Aksesuar › Motosiklet Parça › Egzoz,Egzoz,3,6,,ok,KEEP
+Otomotiv Aksesuar › Motosiklet Aksesuar › Motosiklet Parça › Ayna,Ayna,3,6,Ev ve Yaşam › Dekorasyon › Duvar Dekorasyonu › Ayna,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Otomotiv Aksesuar › Motosiklet Aksesuar › Motosiklet Parça › Zincir ve Dişli,Zincir ve Dişli,3,6,,ok,KEEP
+Bahçe ve Yapı › Bahçe › Bahçe Mobilyası › Bahçe Masa Takımı,Bahçe Masa Takımı,3,6,,ok,KEEP
+Bahçe ve Yapı › Bahçe › Bahçe Mobilyası › Şezlong,Şezlong,3,6,,ok,KEEP
+Bahçe ve Yapı › Bahçe › Bahçe Mobilyası › Salıncak,Salıncak,3,6,,ok,KEEP
+Bahçe ve Yapı › Bahçe › Bahçe Mobilyası › Hamak,Hamak,3,6,,ok,KEEP
+Bahçe ve Yapı › Bahçe › Bahçe Mobilyası › Gölgelik,Gölgelik,3,6,,ok,KEEP
+Bahçe ve Yapı › Bahçe › Bahçe Mobilyası › Şemsiye,Şemsiye,3,6,Moda › Çanta ve Aksesuar › Aksesuar › Şemsiye,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Bahçe ve Yapı › Bahçe › Bahçe Bakımı › Çim Biçme Makinesi,Çim Biçme Makinesi,3,6,,ok,KEEP
+Bahçe ve Yapı › Bahçe › Bahçe Bakımı › Tırpan,Tırpan,3,6,,ok,KEEP
+Bahçe ve Yapı › Bahçe › Bahçe Bakımı › Çit Budama,Çit Budama,3,6,,ok,KEEP
+Bahçe ve Yapı › Bahçe › Bahçe Bakımı › Yaprak Üfleme,Yaprak Üfleme,3,6,,ok,KEEP
+Bahçe ve Yapı › Bahçe › Bahçe Bakımı › Testere,Testere,3,6,Bahçe ve Yapı › Yapı Market › El Aletleri › Testere,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Bahçe ve Yapı › Bahçe › Bahçe Bakımı › Bahçe El Aleti,Bahçe El Aleti,3,6,,ok,KEEP
+Bahçe ve Yapı › Bahçe › Sulama › Bahçe Hortumu,Bahçe Hortumu,3,6,,ok,KEEP
+Bahçe ve Yapı › Bahçe › Sulama › Hortum Makarası,Hortum Makarası,3,6,,ok,KEEP
+Bahçe ve Yapı › Bahçe › Sulama › Sulama Tabancası,Sulama Tabancası,3,6,,ok,KEEP
+Bahçe ve Yapı › Bahçe › Sulama › Damla Sulama,Damla Sulama,3,6,,ok,KEEP
+Bahçe ve Yapı › Bahçe › Sulama › Su Pompası,Su Pompası,3,6,,ok,KEEP
+Bahçe ve Yapı › Bahçe › Sulama › Hidrofor,Hidrofor,3,6,,ok,KEEP
+Bahçe ve Yapı › Bahçe › Bitki ve Saksı › Saksı,Saksı,3,6,,ok,KEEP
+Bahçe ve Yapı › Bahçe › Bitki ve Saksı › Toprak,Toprak,3,6,,ok,KEEP
+Bahçe ve Yapı › Bahçe › Bitki ve Saksı › Gübre,Gübre,3,6,,ok,KEEP
+Bahçe ve Yapı › Bahçe › Bitki ve Saksı › Tohum,Tohum,3,6,,ok,KEEP
+Bahçe ve Yapı › Bahçe › Bitki ve Saksı › Fide,Fide,3,6,,ok,KEEP
+Bahçe ve Yapı › Bahçe › Bitki ve Saksı › Bitki Destek Ürünleri,Bitki Destek Ürünleri,3,6,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › El Aletleri › Tornavida,Tornavida,3,7,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › El Aletleri › Pense,Pense,3,7,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › El Aletleri › Anahtar Takımı,Anahtar Takımı,3,7,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › El Aletleri › Çekiç,Çekiç,3,7,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › El Aletleri › Testere,Testere,3,7,Bahçe ve Yapı › Bahçe › Bahçe Bakımı › Testere,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Bahçe ve Yapı › Yapı Market › El Aletleri › Maket Bıçağı,Maket Bıçağı,3,7,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › El Aletleri › Ölçüm Aleti,Ölçüm Aleti,3,7,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › Elektrikli El Aletleri › Matkap,Matkap,3,8,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › Elektrikli El Aletleri › Vidalama,Vidalama,3,8,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › Elektrikli El Aletleri › Taşlama,Taşlama,3,8,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › Elektrikli El Aletleri › Dekupaj,Dekupaj,3,8,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › Elektrikli El Aletleri › Daire Testere,Daire Testere,3,8,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › Elektrikli El Aletleri › Kırıcı-Delici,Kırıcı-Delici,3,8,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › Elektrikli El Aletleri › Zımpara,Zımpara,3,8,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › Elektrikli El Aletleri › Kaynak Makinesi,Kaynak Makinesi,3,8,Endüstriyel ve Ticari Ürünler › Endüstriyel Makineler › Atölye Ekipmanları › Kaynak Makinesi,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Bahçe ve Yapı › Yapı Market › Boya ve Kimyasal › İç Cephe Boyası,İç Cephe Boyası,3,8,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › Boya ve Kimyasal › Dış Cephe Boyası,Dış Cephe Boyası,3,8,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › Boya ve Kimyasal › Ahşap Boyası,Ahşap Boyası,3,8,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › Boya ve Kimyasal › Sprey Boya,Sprey Boya,3,8,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › Boya ve Kimyasal › Vernik,Vernik,3,8,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › Boya ve Kimyasal › Silikon,Silikon,3,8,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › Boya ve Kimyasal › Yapıştırıcı,Yapıştırıcı,3,8,"Kitap, Kırtasiye ve Ofis › Kırtasiye › Okul Gereçleri › Yapıştırıcı",same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Bahçe ve Yapı › Yapı Market › Boya ve Kimyasal › Derz Dolgu,Derz Dolgu,3,8,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › Hırdavat › Vida,Vida,3,8,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › Hırdavat › Dübel,Dübel,3,8,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › Hırdavat › Çivi,Çivi,3,8,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › Hırdavat › Somun,Somun,3,8,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › Hırdavat › Cıvata,Cıvata,3,8,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › Hırdavat › Menteşe,Menteşe,3,8,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › Hırdavat › Kilit,Kilit,3,8,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › Hırdavat › Tekerlek,Tekerlek,3,8,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › Elektrik › Priz,Priz,3,7,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › Elektrik › Anahtar,Anahtar,3,7,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › Elektrik › Sigorta,Sigorta,3,7,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › Elektrik › Kablo,Kablo,3,7,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › Elektrik › Uzatma Kablosu,Uzatma Kablosu,3,7,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › Elektrik › Pano,Pano,3,7,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › Elektrik › Sensör,Sensör,3,7,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › Tesisat › Musluk,Musluk,3,7,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › Tesisat › Batarya,Batarya,3,7,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › Tesisat › Duş Seti,Duş Seti,3,7,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › Tesisat › Vana,Vana,3,7,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › Tesisat › Boru,Boru,3,7,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › Tesisat › Sifon,Sifon,3,7,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › Tesisat › Armatür,Armatür,3,7,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › İzolasyon › Isı Yalıtımı,Isı Yalıtımı,3,5,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › İzolasyon › Su Yalıtımı,Su Yalıtımı,3,5,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › İzolasyon › Ses Yalıtımı,Ses Yalıtımı,3,5,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › İzolasyon › Çatı Kaplama,Çatı Kaplama,3,5,,ok,KEEP
+Bahçe ve Yapı › Yapı Market › İzolasyon › Yalıtım Bandı,Yalıtım Bandı,3,5,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Endüstriyel Makineler › Üretim Makineleri › CNC Makinesi,CNC Makinesi,3,8,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Endüstriyel Makineler › Üretim Makineleri › Torna,Torna,3,8,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Endüstriyel Makineler › Üretim Makineleri › Freze,Freze,3,8,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Endüstriyel Makineler › Üretim Makineleri › Pres,Pres,3,8,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Endüstriyel Makineler › Üretim Makineleri › Lazer Kesim,Lazer Kesim,3,8,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Endüstriyel Makineler › Üretim Makineleri › Plazma Kesim,Plazma Kesim,3,8,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Endüstriyel Makineler › Üretim Makineleri › Şerit Testere,Şerit Testere,3,8,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Endüstriyel Makineler › Üretim Makineleri › Paketleme Makinesi,Paketleme Makinesi,3,8,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Endüstriyel Makineler › Atölye Ekipmanları › Kompresör,Kompresör,3,6,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Endüstriyel Makineler › Atölye Ekipmanları › Jeneratör,Jeneratör,3,6,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Endüstriyel Makineler › Atölye Ekipmanları › Kaynak Makinesi,Kaynak Makinesi,3,6,Bahçe ve Yapı › Yapı Market › Elektrikli El Aletleri › Kaynak Makinesi,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Endüstriyel ve Ticari Ürünler › Endüstriyel Makineler › Atölye Ekipmanları › Hava Tabancası,Hava Tabancası,3,6,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Endüstriyel Makineler › Atölye Ekipmanları › Takım Arabası,Takım Arabası,3,6,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Endüstriyel Makineler › Atölye Ekipmanları › Mengene,Mengene,3,6,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Endüstriyel Makineler › Gıda Makineleri › Hamur Yoğurma,Hamur Yoğurma,3,6,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Endüstriyel Makineler › Gıda Makineleri › Dilimleme Makinesi,Dilimleme Makinesi,3,6,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Endüstriyel Makineler › Gıda Makineleri › Et Kıyma Makinesi,Et Kıyma Makinesi,3,6,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Endüstriyel Makineler › Gıda Makineleri › Vakum Makinesi,Vakum Makinesi,3,6,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Endüstriyel Makineler › Gıda Makineleri › Endüstriyel Mikser,Endüstriyel Mikser,3,6,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Endüstriyel Makineler › Gıda Makineleri › Fritöz,Fritöz,3,6,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Depo ve Lojistik › Depolama › Depo Rafı,Depo Rafı,3,6,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Depo ve Lojistik › Depolama › Çelik Raf,Çelik Raf,3,6,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Depo ve Lojistik › Depolama › Plastik Kasa,Plastik Kasa,3,6,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Depo ve Lojistik › Depolama › Palet,Palet,3,6,Spor ve Outdoor › Outdoor ve Kamp › Su Sporları › Palet,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Endüstriyel ve Ticari Ürünler › Depo ve Lojistik › Depolama › İstif Kutusu,İstif Kutusu,3,6,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Depo ve Lojistik › Depolama › Dolap,Dolap,3,6,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Depo ve Lojistik › Taşıma › Transpalet,Transpalet,3,6,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Depo ve Lojistik › Taşıma › İstif Makinesi,İstif Makinesi,3,6,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Depo ve Lojistik › Taşıma › Platform Arabası,Platform Arabası,3,6,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Depo ve Lojistik › Taşıma › El Arabası,El Arabası,3,6,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Depo ve Lojistik › Taşıma › Konveyör,Konveyör,3,6,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Depo ve Lojistik › Taşıma › Forklift Ataşmanı,Forklift Ataşmanı,3,6,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Mağaza ve Market › Mağaza Ekipmanları › Raf Sistemi,Raf Sistemi,3,6,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Mağaza ve Market › Mağaza Ekipmanları › Vitrin,Vitrin,3,6,Ev ve Yaşam › Mobilya › Salon › Vitrin,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Endüstriyel ve Ticari Ürünler › Mağaza ve Market › Mağaza Ekipmanları › Askılık,Askılık,3,6,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Mağaza ve Market › Mağaza Ekipmanları › Manken,Manken,3,6,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Mağaza ve Market › Mağaza Ekipmanları › Kasa Bankosu,Kasa Bankosu,3,6,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Mağaza ve Market › Mağaza Ekipmanları › Fiyat Etiketi,Fiyat Etiketi,3,6,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Mağaza ve Market › Ödeme ve Otomasyon › Yazar Kasa,Yazar Kasa,3,6,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Mağaza ve Market › Ödeme ve Otomasyon › POS Terminali,POS Terminali,3,6,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Mağaza ve Market › Ödeme ve Otomasyon › Barkod Okuyucu,Barkod Okuyucu,3,6,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Mağaza ve Market › Ödeme ve Otomasyon › Etiket Yazıcı,Etiket Yazıcı,3,6,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Mağaza ve Market › Ödeme ve Otomasyon › Para Çekmecesi,Para Çekmecesi,3,6,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Mağaza ve Market › Ödeme ve Otomasyon › Terazi,Terazi,3,6,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Mağaza ve Market › Soğutma › Market Dolabı,Market Dolabı,3,4,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Mağaza ve Market › Soğutma › Şarküteri Dolabı,Şarküteri Dolabı,3,4,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Mağaza ve Market › Soğutma › Dondurma Reyonu,Dondurma Reyonu,3,4,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Mağaza ve Market › Soğutma › Soğuk Oda Ekipmanı,Soğuk Oda Ekipmanı,3,4,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Restoran ve Otel › Mutfak Ekipmanları › Endüstriyel Fırın,Endüstriyel Fırın,3,5,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Restoran ve Otel › Mutfak Ekipmanları › Endüstriyel Ocak,Endüstriyel Ocak,3,5,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Restoran ve Otel › Mutfak Ekipmanları › Endüstriyel Bulaşık,Endüstriyel Bulaşık,3,5,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Restoran ve Otel › Mutfak Ekipmanları › Davlumbaz,Davlumbaz,3,5,Ev Aletleri › Beyaz Eşya › Pişirme › Davlumbaz,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Endüstriyel ve Ticari Ürünler › Restoran ve Otel › Mutfak Ekipmanları › Hazırlık Tezgahı,Hazırlık Tezgahı,3,5,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Restoran ve Otel › Servis Ekipmanları › Servis Arabası,Servis Arabası,3,5,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Restoran ve Otel › Servis Ekipmanları › Benmari,Benmari,3,5,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Restoran ve Otel › Servis Ekipmanları › Çay Kazanı,Çay Kazanı,3,5,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Restoran ve Otel › Servis Ekipmanları › Kahve Makinesi,Kahve Makinesi,3,5,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Restoran ve Otel › Servis Ekipmanları › Buz Makinesi,Buz Makinesi,3,5,Mutfak ve Sofra › İçecek Hazırlama › Soğuk İçecek › Buz Makinesi,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Endüstriyel ve Ticari Ürünler › Restoran ve Otel › Otel Ekipmanları › Mini Bar,Mini Bar,3,5,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Restoran ve Otel › Otel Ekipmanları › Otel Tipi Kasa,Otel Tipi Kasa,3,5,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Restoran ve Otel › Otel Ekipmanları › Bagaj Arabası,Bagaj Arabası,3,5,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Restoran ve Otel › Otel Ekipmanları › Kat Arabası,Kat Arabası,3,5,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Restoran ve Otel › Otel Ekipmanları › Otel Tekstili,Otel Tekstili,3,5,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › İş Güvenliği › Kişisel Koruyucu › Baret,Baret,3,7,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › İş Güvenliği › Kişisel Koruyucu › İş Ayakkabısı,İş Ayakkabısı,3,7,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › İş Güvenliği › Kişisel Koruyucu › İş Eldiveni,İş Eldiveni,3,7,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › İş Güvenliği › Kişisel Koruyucu › Koruyucu Gözlük,Koruyucu Gözlük,3,7,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › İş Güvenliği › Kişisel Koruyucu › Maske,Maske,3,7,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › İş Güvenliği › Kişisel Koruyucu › Reflektörlü Yelek,Reflektörlü Yelek,3,7,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › İş Güvenliği › Kişisel Koruyucu › Emniyet Kemeri,Emniyet Kemeri,3,7,Spor ve Outdoor › Outdoor ve Kamp › Dağcılık › Emniyet Kemeri,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Endüstriyel ve Ticari Ürünler › İş Güvenliği › İşyeri Güvenliği › Yangın Söndürücü,Yangın Söndürücü,3,5,Otomotiv Aksesuar › Yedek Parça ve Ekipman › Acil Durum › Yangın Söndürücü,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Endüstriyel ve Ticari Ürünler › İş Güvenliği › İşyeri Güvenliği › Uyarı Levhası,Uyarı Levhası,3,5,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › İş Güvenliği › İşyeri Güvenliği › Bariyer,Bariyer,3,5,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › İş Güvenliği › İşyeri Güvenliği › İlk Yardım Dolabı,İlk Yardım Dolabı,3,5,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › İş Güvenliği › İşyeri Güvenliği › Acil Aydınlatma,Acil Aydınlatma,3,5,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Ofis ve Ticari Teknoloji › Kurumsal Donanım › Sunucu,Sunucu,3,6,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Ofis ve Ticari Teknoloji › Kurumsal Donanım › Rack Kabin,Rack Kabin,3,6,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Ofis ve Ticari Teknoloji › Kurumsal Donanım › UPS,UPS,3,6,Elektronik › Akıllı Ev ve Güvenlik › Enerji ve Güç › UPS,same_sense_duplicate_leaf|very_short_name,MANUAL_REVIEW_DEDUP
+Endüstriyel ve Ticari Ürünler › Ofis ve Ticari Teknoloji › Kurumsal Donanım › Switch,Switch,3,6,Elektronik › Bilgisayar ve Tablet › Ağ ve İnternet › Switch,same_sense_duplicate_leaf,MANUAL_REVIEW_DEDUP
+Endüstriyel ve Ticari Ürünler › Ofis ve Ticari Teknoloji › Kurumsal Donanım › Kurumsal Yazıcı,Kurumsal Yazıcı,3,6,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Ofis ve Ticari Teknoloji › Kurumsal Donanım › Video Konferans Sistemi,Video Konferans Sistemi,3,6,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Ofis ve Ticari Teknoloji › Güvenlik ve Geçiş › Turnike,Turnike,3,5,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Ofis ve Ticari Teknoloji › Güvenlik ve Geçiş › Kartlı Geçiş,Kartlı Geçiş,3,5,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Ofis ve Ticari Teknoloji › Güvenlik ve Geçiş › Parmak İzi Cihazı,Parmak İzi Cihazı,3,5,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Ofis ve Ticari Teknoloji › Güvenlik ve Geçiş › X-Ray Cihazı,X-Ray Cihazı,3,5,,ok,KEEP
+Endüstriyel ve Ticari Ürünler › Ofis ve Ticari Teknoloji › Güvenlik ve Geçiş › Metal Dedektörü,Metal Dedektörü,3,5,,ok,KEEP

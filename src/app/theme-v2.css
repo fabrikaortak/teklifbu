@@ -26,6 +26,19 @@ html[data-theme="v2"] {
   --v2-logo-color: #ffffff;
 }
 
+/* Kuşak rengi attribute ile ilk boyamada gelsin (JS/API beklemeden) */
+html[data-theme="v2"][data-v2-belt="white"] {
+  --v2-header-bg: #ffffff;
+  --v2-header-fg: #0f172a;
+  --v2-logo-color: #0f172a;
+}
+
+html[data-theme="v2"][data-v2-belt="navy"] {
+  --v2-header-bg: var(--navy);
+  --v2-header-fg: #ffffff;
+  --v2-logo-color: #ffffff;
+}
+
 html[data-theme="v2"] body {
   background: var(--bg);
   color: var(--text);
@@ -487,6 +500,43 @@ button.v2-user-link.hdr-user-trigger {
   height: var(--v2-cat-h);
 }
 
+.v2-cat-strip--mega {
+  height: var(--v2-cat-h);
+  min-height: var(--v2-cat-h);
+  overflow: visible;
+}
+
+.tb-shop .v2-cat-strip--mega,
+.tb-shop .v2-cat-strip {
+  top: auto;
+}
+
+.v2-cat-strip--mega .v2-cat-strip-inner {
+  height: 100%;
+}
+
+.v2-cat-item.is-mega-open {
+  color: #ff6a00;
+  border-bottom-color: #ff6a00;
+}
+
+.v2-cat-item--kesfet .v2-cat-label {
+  font-size: 13.5px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.v2-cat-item--kesfet .v2-cat-ico--kesfet {
+  width: 20px;
+  height: 20px;
+  display: grid;
+  place-items: center;
+}
+
+.v2-cat-item--kesfet .v2-cat-ico--kesfet svg {
+  display: block;
+}
+
 .v2-cat-strip-inner {
   max-width: var(--page-max);
   margin: 0 auto;
@@ -496,8 +546,7 @@ button.v2-user-link.hdr-user-trigger {
   align-items: stretch;
   justify-content: flex-start;
   gap: 0;
-  overflow-x: auto;
-  scrollbar-width: thin;
+  overflow: hidden;
 }
 
 .v2-cat-strip-inner--with-cart {
@@ -511,7 +560,49 @@ button.v2-user-link.hdr-user-trigger {
   flex: 1;
   min-width: 0;
   overflow-x: auto;
-  scrollbar-width: thin;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scroll-behavior: smooth;
+}
+
+.v2-cat-strip-scroll::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.v2-cat-strip-arrows {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding-left: 8px;
+  margin-left: 4px;
+  align-self: center;
+}
+
+.v2-cat-strip-arrow {
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  color: #0f172a;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, opacity 0.15s ease;
+}
+
+.v2-cat-strip-arrow:hover:not(:disabled) {
+  background: #fff7ed;
+  border-color: #fdba74;
+}
+
+.v2-cat-strip-arrow:disabled {
+  opacity: 0.35;
+  cursor: default;
 }
 
 .v2-cat-strip-cart {
@@ -522,6 +613,286 @@ button.v2-user-link.hdr-user-trigger {
   margin-left: 4px;
   border-left: 1px solid #e8eaed;
   height: 100%;
+}
+
+/* ---------- Mega menü (Hepsiburada tarzı) ---------- */
+.tb-mega {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: 120;
+  padding: 0 var(--page-gutter);
+  /* Kuşak → panel geçişinde hover kopmasın */
+  pointer-events: auto;
+}
+
+.tb-mega-shell {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 220px 260px minmax(0, 1fr);
+  min-height: 420px;
+  max-height: min(72vh, 560px);
+  background: #fff;
+  border: 1px solid #e8eaed;
+  border-top: none;
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.14);
+  overflow: hidden;
+  max-width: var(--page-max, 1480px);
+}
+
+.tb-mega-mains {
+  background: #f8fafc;
+  border-right: 1px solid #eef2f7;
+  overflow-y: auto;
+  padding: 8px 0;
+}
+
+.tb-mega-main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 11px 14px;
+  border: none;
+  background: transparent;
+  color: #334155;
+  font-size: 13.5px;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  border-left: 3px solid transparent;
+}
+
+.tb-mega-main:hover,
+.tb-mega-main.is-active {
+  background: #fff;
+  color: #ff6a00;
+  border-left-color: #ff6a00;
+}
+
+.tb-mega-l2 {
+  border-right: 1px solid #eef2f7;
+  overflow-y: auto;
+  padding: 8px 0;
+  background: #fff;
+}
+
+.tb-mega-l2-all {
+  width: calc(100% - 16px);
+  margin: 4px 8px 10px;
+  padding: 9px 12px;
+  border-radius: 10px;
+  border: 1px dashed #fdba74;
+  background: #fff7ed;
+  color: #c2410c;
+  font-size: 12.5px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: left;
+}
+
+.tb-mega-l2-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px 14px;
+  border: none;
+  background: transparent;
+  color: #1e293b;
+  font-size: 13.5px;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+  border-left: 3px solid transparent;
+}
+
+.tb-mega-l2-item:hover,
+.tb-mega-l2-item.is-active {
+  background: #fff7ed;
+  color: #ff6a00;
+  border-left-color: #ff6a00;
+}
+
+.tb-mega-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  gap: 0;
+  min-width: 0;
+  background: #fff;
+  overflow: hidden;
+}
+
+.tb-mega-panel:not(.is-open) {
+  grid-template-columns: 1fr;
+}
+
+.tb-mega-panel-hint {
+  display: grid;
+  place-items: center;
+  padding: 32px;
+  color: #94a3b8;
+  font-size: 14px;
+  text-align: center;
+}
+
+.tb-mega-cols {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 8px 20px;
+  padding: 18px 20px;
+  overflow-y: auto;
+  align-content: start;
+}
+
+.tb-mega-col-title {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0 0 8px;
+  color: #ff6a00;
+  font-size: 13.5px;
+  font-weight: 800;
+  cursor: pointer;
+  text-align: left;
+}
+
+.tb-mega-col-title:hover {
+  text-decoration: underline;
+}
+
+.tb-mega-col-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 5px;
+}
+
+.tb-mega-col-links button {
+  border: none;
+  background: none;
+  padding: 0;
+  color: #475569;
+  font-size: 12.5px;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: left;
+  line-height: 1.35;
+}
+
+.tb-mega-col-links button:hover {
+  color: #ff6a00;
+}
+
+.tb-mega-promos {
+  border-left: 1px solid #eef2f7;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #fafbfc;
+  overflow-y: auto;
+}
+
+.tb-mega-promo-grid {
+  display: grid;
+  gap: 8px;
+}
+
+.tb-mega-promo-tile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #e8eaed;
+  background: #fff;
+  cursor: pointer;
+  text-align: left;
+  min-height: 52px;
+}
+
+.tb-mega-promo-tile:hover {
+  border-color: #fdba74;
+}
+
+.tb-mega-promo-label {
+  font-size: 11px;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  line-height: 1.25;
+}
+
+.tb-mega-promo-tile img,
+.tb-mega-promo-ph {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, #ffedd5, #fed7aa);
+}
+
+.tb-mega-promo-banner {
+  margin-top: auto;
+  border-radius: 12px;
+  padding: 16px 14px;
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 45%, #ff6a00 140%);
+  color: #fff;
+  display: grid;
+  gap: 4px;
+}
+
+.tb-mega-promo-banner strong {
+  font-size: 14px;
+}
+
+.tb-mega-promo-banner span {
+  font-size: 12px;
+  opacity: 0.88;
+}
+
+.tb-mega-empty {
+  margin: 12px 14px;
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+@media (max-width: 1100px) {
+  .tb-mega-shell {
+    grid-template-columns: 200px minmax(0, 1fr);
+  }
+  .tb-mega-panel {
+    grid-template-columns: 1fr;
+  }
+  .tb-mega-promos {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .tb-mega-shell {
+    grid-template-columns: 1fr;
+    max-height: min(78vh, 640px);
+  }
+  .tb-mega-mains {
+    max-height: 160px;
+    border-right: none;
+    border-bottom: 1px solid #eef2f7;
+  }
+  .tb-mega-l2 {
+    border-right: none;
+    border-bottom: 1px solid #eef2f7;
+    max-height: 200px;
+  }
 }
 
 .v2-cart-link--strip {
@@ -813,6 +1184,58 @@ button.v2-user-link.hdr-user-trigger {
   grid-template-columns: 252px minmax(0, 1fr);
 }
 
+/* /ilanlar: ana sayfa ile aynı max-width + sol kolon — menü sağa kaymasın */
+.v2-home--listings {
+  grid-template-columns: 252px minmax(0, 1fr);
+  padding-bottom: 40px;
+}
+
+.v2-home--listings .listings-main {
+  min-width: 0;
+}
+
+/* Sahibinden tarzı kompakt yatay ilan satırları */
+html[data-theme="v2"] .listings-stack .listing-row,
+html[data-theme="v2"] .listing-row {
+  border-radius: 8px;
+  border-color: #e8ecf1;
+  box-shadow: none;
+  background: #fff;
+}
+
+html[data-theme="v2"] .listing-row:hover {
+  border-color: #fdba74;
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.05);
+}
+
+html[data-theme="v2"] .listing-row.is-colored {
+  background: #ecfdf5;
+  border-color: #86efac;
+}
+
+html[data-theme="v2"] .listing-row.is-colored:hover {
+  border-color: #4ade80;
+  box-shadow: 0 2px 10px rgba(22, 163, 74, 0.1);
+}
+
+html[data-theme="v2"] .listing-row-title {
+  color: #0c4a6e;
+  font-weight: 700;
+}
+
+html[data-theme="v2"] .listing-row-price {
+  color: #0f172a;
+  font-variant-numeric: tabular-nums;
+}
+
+html[data-theme="v2"] .listing-row-media {
+  border-radius: 6px;
+}
+
+html[data-theme="v2"] .listings-stack {
+  gap: 6px;
+}
+
 .premium-vitrin {
   display: grid;
   gap: 14px;
@@ -892,11 +1315,43 @@ button.v2-user-link.hdr-user-trigger {
   overflow: visible;
 }
 
-/* Sol kategori menüsü: hiçbir sayfada kendi içinde scroll olmaz */
-.listings-side-nav,
-.v2-browse-tree {
+/* Sol kategori: accordion tam açılsın; Sahibinden drill listesi kendi içinde scroll */
+.listings-side-nav .v2-browse-tree:not(:has(.v2-browse-drill)),
+.v2-browse-tree:not(:has(.v2-browse-drill)) {
   max-height: none;
   overflow: visible;
+}
+
+.v2-browse-drill {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-height: min(62vh, 520px);
+  min-height: 120px;
+}
+
+.v2-browse-drill-trail {
+  flex-shrink: 0;
+  border-bottom: 1px solid #eef2f7;
+  padding-bottom: 2px;
+  margin-bottom: 2px;
+}
+
+.v2-browse-drill-list {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
+  padding-right: 2px;
+}
+
+.v2-browse-drill-list::-webkit-scrollbar {
+  width: 6px;
+}
+.v2-browse-drill-list::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 6px;
 }
 
 .v2-left-nav-label {
@@ -1469,8 +1924,9 @@ html[data-theme="v2"] .listing-card {
 }
 
 html[data-theme="v2"] .listing-card.is-colored {
-  border-color: #ffb380;
-  box-shadow: 0 0 0 2px rgba(255, 102, 0, 0.18), var(--v2-shadow);
+  background: #ecfdf5;
+  border-color: #86efac;
+  box-shadow: 0 0 0 1px rgba(22, 163, 74, 0.12), var(--v2-shadow);
 }
 
 html[data-theme="v2"] .listing-card-title.is-title-bold {
@@ -1484,8 +1940,9 @@ html[data-theme="v2"] .listing-card-title.is-title-large {
 }
 
 .listing-card.is-colored {
-  border-color: #ffb380;
-  box-shadow: 0 0 0 2px rgba(255, 106, 0, 0.15);
+  background: #ecfdf5;
+  border-color: #86efac;
+  box-shadow: 0 0 0 1px rgba(22, 163, 74, 0.12);
 }
 
 .listing-card-title.is-title-bold {
@@ -1495,6 +1952,13 @@ html[data-theme="v2"] .listing-card-title.is-title-large {
 .listing-card-title.is-title-large {
   font-size: 1.05em;
   letter-spacing: 0.01em;
+}
+
+html[data-theme="v2"] .listing-row.is-colored,
+.listing-row.is-colored {
+  background: #ecfdf5;
+  border-color: #86efac;
+  box-shadow: 0 0 0 1px rgba(22, 163, 74, 0.12);
 }
 
 .listing-card.is-featured {

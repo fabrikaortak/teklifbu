@@ -1,0 +1,1253 @@
+brand,brandSlug,series,seriesSlug,categories,runtimeVersionCount,runtimeTrimBearingVersions,seriesResearchStatus,researchedVerifiedVersions,researchedVerifiedTrims,researchedGenerations,reviewRequiredConfigs,noVerifiedTrimConfigs
+"Abarth","abarth","595","595","arac/otomobil",6,0,"NOT_RESEARCHED",0,0,0,0,0
+"Abarth","abarth","500","500","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Abarth","abarth","500C","500c","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Abarth","abarth","695","695","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Abarth","abarth","Grande Punto","grande-punto","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Acura","acura","CL","cl","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Acura","acura","CSX","csx","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Acura","acura","ILX","ilx","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Acura","acura","Integra","integra","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Acura","acura","Legend","legend","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Acura","acura","MDX","mdx","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Acura","acura","NSX","nsx","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Acura","acura","RDX","rdx","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Acura","acura","RL","rl","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Acura","acura","RSX","rsx","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Acura","acura","TL","tl","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Acura","acura","TLX","tlx","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Acura","acura","TSX","tsx","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Acura","acura","ZDX","zdx","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Aion","aion","ES","es","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Aion","aion","Hyper GT","hyper-gt","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Aion","aion","S","s","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Aion","aion","S Plus","s-plus","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Aion","aion","Y","y","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Aion","aion","Y Plus","y-plus","arac/otomobil|arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Alfa Romeo","alfa-romeo","Giulia","giulia","arac/otomobil",8,2,"RESEARCHED_WITH_VERIFIED_DATA",2,2,1,1,0
+"Alfa Romeo","alfa-romeo","145","145","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Alfa Romeo","alfa-romeo","146","146","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Alfa Romeo","alfa-romeo","147","147","arac/otomobil",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Alfa Romeo","alfa-romeo","155","155","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Alfa Romeo","alfa-romeo","156","156","arac/otomobil",5,0,"NOT_RESEARCHED",0,0,0,0,0
+"Alfa Romeo","alfa-romeo","159","159","arac/otomobil",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Alfa Romeo","alfa-romeo","164","164","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Alfa Romeo","alfa-romeo","166","166","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Alfa Romeo","alfa-romeo","33","33","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Alfa Romeo","alfa-romeo","75","75","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Alfa Romeo","alfa-romeo","Brera","brera","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Alfa Romeo","alfa-romeo","Giulietta","giulietta","arac/otomobil",4,0,"NOT_RESEARCHED",0,0,0,0,0
+"Alfa Romeo","alfa-romeo","GT","gt","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Alfa Romeo","alfa-romeo","GTV","gtv","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Alfa Romeo","alfa-romeo","MiTo","mito","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Alfa Romeo","alfa-romeo","Spider","spider","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Alfa Romeo","alfa-romeo","Junior","junior","arac/arazi-suv-pickup",2,2,"RESEARCHED_WITH_VERIFIED_DATA",2,1,0,0,0
+"Alfa Romeo","alfa-romeo","Stelvio","stelvio","arac/arazi-suv-pickup",5,2,"RESEARCHED_WITH_VERIFIED_DATA",2,2,1,1,0
+"Alfa Romeo","alfa-romeo","Tonale","tonale","arac/arazi-suv-pickup",5,2,"RESEARCHED_WITH_VERIFIED_DATA",2,2,0,0,0
+"Alpine","alpine","A110","a110","arac/otomobil",5,0,"NOT_RESEARCHED",0,0,0,0,0
+"Alpine","alpine","A290","a290","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Anadol","anadol","A1","a1","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Anadol","anadol","A2","a2","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Anadol","anadol","Böcek","bocek","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Anadol","anadol","P2","p2","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Anadol","anadol","STC-16","stc-16","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Anadol","anadol","SV-1600","sv-1600","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"ARO","aro","10","10","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"ARO","aro","24","24","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"ARO","aro","Spartana","spartana","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Arora","arora","S1","s1","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Arora","arora","S1 Max","s1-max","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Arora","arora","ZR1","zr1","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Askam","askam","Fargo","fargo","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Aston Martin","aston-martin","Cygnet","cygnet","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Aston Martin","aston-martin","DB11","db11","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Aston Martin","aston-martin","DB12","db12","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Aston Martin","aston-martin","DB7","db7","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Aston Martin","aston-martin","DB9","db9","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Aston Martin","aston-martin","DBS","dbs","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Aston Martin","aston-martin","Lagonda","lagonda","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Aston Martin","aston-martin","Rapide","rapide","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Aston Martin","aston-martin","Vanquish","vanquish","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Aston Martin","aston-martin","Vantage","vantage","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Aston Martin","aston-martin","Virage","virage","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Aston Martin","aston-martin","DBX","dbx","arac/arazi-suv-pickup",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Audi","audi","A3","a3","arac/otomobil",11,1,"RESEARCHED_WITH_VERIFIED_DATA",1,2,1,0,1
+"Audi","audi","A4","a4","arac/otomobil",15,7,"RESEARCHED_WITH_VERIFIED_DATA",7,5,2,2,0
+"Audi","audi","A6","a6","arac/otomobil",14,5,"RESEARCHED_WITH_VERIFIED_DATA",5,1,1,0,0
+"Audi","audi","Q2","q2","arac/arazi-suv-pickup",4,0,"RESEARCHED_REVIEW_ONLY",0,0,0,1,0
+"Audi","audi","Q3","q3","arac/arazi-suv-pickup",6,1,"RESEARCHED_WITH_VERIFIED_DATA",1,1,1,1,0
+"Audi","audi","Q5","q5","arac/arazi-suv-pickup",6,2,"RESEARCHED_WITH_VERIFIED_DATA",2,1,1,1,0
+"Audi","audi","100","100","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Audi","audi","200","200","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Audi","audi","80","80","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Audi","audi","90","90","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Audi","audi","A1","a1","arac/otomobil",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Audi","audi","A2","a2","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Audi","audi","A5","a5","arac/otomobil",5,0,"RESEARCHED_REVIEW_ONLY",0,0,0,1,0
+"Audi","audi","A7","a7","arac/otomobil",4,0,"RESEARCHED_REVIEW_ONLY",0,0,0,1,0
+"Audi","audi","A8","a8","arac/otomobil",4,0,"RESEARCHED_REVIEW_ONLY",0,0,0,1,0
+"Audi","audi","Cabrio","cabrio","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Audi","audi","e-tron GT","e-tron-gt","arac/otomobil",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Audi","audi","R8","r8","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Audi","audi","RS3","rs3","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Audi","audi","RS4","rs4","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Audi","audi","RS5","rs5","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Audi","audi","RS6","rs6","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Audi","audi","RS7","rs7","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Audi","audi","S1","s1","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Audi","audi","S3","s3","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Audi","audi","S4","s4","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Audi","audi","S5","s5","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Audi","audi","S6","s6","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Audi","audi","S7","s7","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Audi","audi","S8","s8","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Audi","audi","TT","tt","arac/otomobil",4,0,"RESEARCHED_REVIEW_ONLY",0,0,0,1,0
+"Audi","audi","Q4 e-tron","q4-e-tron","arac/arazi-suv-pickup",5,1,"RESEARCHED_WITH_VERIFIED_DATA",1,1,0,1,0
+"Audi","audi","Q6 e-tron","q6-e-tron","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Audi","audi","Q7","q7","arac/arazi-suv-pickup",3,0,"RESEARCHED_REVIEW_ONLY",0,0,0,1,0
+"Audi","audi","Q8","q8","arac/arazi-suv-pickup",3,0,"RESEARCHED_REVIEW_ONLY",0,0,0,1,0
+"Audi","audi","Q8 e-tron","q8-e-tron","arac/arazi-suv-pickup",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Audi","audi","RS Q3","rs-q3","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Audi","audi","RS Q8","rs-q8","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Audi","audi","SQ5","sq5","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Audi","audi","SQ7","sq7","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Audi","audi","SQ8","sq8","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Audi","audi","A6 e-tron","a6-e-tron","arac/otomobil",3,1,"RESEARCHED_WITH_VERIFIED_DATA",1,1,0,0,0
+"Bajaj","bajaj","Qute","qute","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Bentley","bentley","Arnage","arnage","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Bentley","bentley","Azure","azure","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Bentley","bentley","Bentayga","bentayga","arac/otomobil|arac/arazi-suv-pickup",5,0,"NOT_RESEARCHED",0,0,0,0,0
+"Bentley","bentley","Brooklands","brooklands","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Bentley","bentley","Continental Flying Spur","continental-flying-spur","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Bentley","bentley","Continental GT","continental-gt","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Bentley","bentley","Flying Spur","flying-spur","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Bentley","bentley","Mulsanne","mulsanne","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Bentley","bentley","Turbo R","turbo-r","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"BMC","bmc","Levend","levend","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"BMC","bmc","Megastar","megastar","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"BMW","bmw","3 Serisi","3-serisi","arac/otomobil",12,5,"RESEARCHED_WITH_VERIFIED_DATA",6,10,5,2,7
+"BMW","bmw","1 Serisi","1-serisi","arac/otomobil",9,3,"RESEARCHED_WITH_VERIFIED_DATA",5,2,2,0,4
+"BMW","bmw","X1","x1","arac/otomobil|arac/arazi-suv-pickup",12,7,"RESEARCHED_WITH_VERIFIED_DATA",9,8,2,0,4
+"BMW","bmw","X3","x3","arac/arazi-suv-pickup",11,3,"RESEARCHED_WITH_VERIFIED_DATA",3,4,3,1,2
+"BMW","bmw","X5","x5","arac/arazi-suv-pickup",10,2,"RESEARCHED_WITH_VERIFIED_DATA",3,5,4,2,2
+"BMW","bmw","2 Serisi","2-serisi","arac/otomobil",11,3,"RESEARCHED_WITH_VERIFIED_DATA",6,3,3,0,3
+"BMW","bmw","4 Serisi","4-serisi","arac/otomobil",11,3,"RESEARCHED_WITH_VERIFIED_DATA",8,2,2,0,5
+"BMW","bmw","6 Serisi","6-serisi","arac/otomobil",9,2,"RESEARCHED_WITH_VERIFIED_DATA",4,2,3,0,2
+"BMW","bmw","7 Serisi","7-serisi","arac/otomobil",14,3,"RESEARCHED_WITH_VERIFIED_DATA",5,2,5,2,4
+"BMW","bmw","8 Serisi","8-serisi","arac/otomobil",6,3,"RESEARCHED_WITH_VERIFIED_DATA",3,2,3,0,0
+"BMW","bmw","i Serisi","i-serisi","arac/otomobil",8,0,"RESEARCHED_NO_VERIFIED_TRIM",1,0,1,0,1
+"BMW","bmw","M Serisi","m-serisi","arac/otomobil",7,0,"RESEARCHED_NO_VERIFIED_TRIM",7,0,7,0,7
+"BMW","bmw","Z Serisi","z-serisi","arac/otomobil",4,0,"RESEARCHED_NO_VERIFIED_TRIM",2,0,1,0,2
+"BMW","bmw","iX","ix","arac/arazi-suv-pickup",5,1,"RESEARCHED_WITH_VERIFIED_DATA",1,1,0,0,0
+"BMW","bmw","iX1","ix1","arac/arazi-suv-pickup",4,1,"RESEARCHED_WITH_VERIFIED_DATA",1,3,0,0,0
+"BMW","bmw","iX2","ix2","arac/arazi-suv-pickup",4,1,"RESEARCHED_WITH_VERIFIED_DATA",1,1,0,0,0
+"BMW","bmw","iX3","ix3","arac/arazi-suv-pickup",4,1,"RESEARCHED_WITH_VERIFIED_DATA",1,1,0,0,0
+"BMW","bmw","X2","x2","arac/arazi-suv-pickup",6,2,"RESEARCHED_WITH_VERIFIED_DATA",2,2,1,0,0
+"BMW","bmw","X4","x4","arac/arazi-suv-pickup",4,0,"RESEARCHED_NO_VERIFIED_TRIM",1,0,1,0,1
+"BMW","bmw","X6","x6","arac/arazi-suv-pickup",5,1,"RESEARCHED_WITH_VERIFIED_DATA",2,1,1,0,1
+"BMW","bmw","X7","x7","arac/arazi-suv-pickup",5,1,"RESEARCHED_WITH_VERIFIED_DATA",1,1,0,0,0
+"BMW","bmw","i3","i3","arac/otomobil",1,0,"RESEARCHED_NO_VERIFIED_TRIM",1,0,1,0,1
+"BMW","bmw","i4","i4","arac/otomobil",4,1,"RESEARCHED_WITH_VERIFIED_DATA",1,3,0,0,0
+"BMW","bmw","i5","i5","arac/otomobil",3,2,"RESEARCHED_WITH_VERIFIED_DATA",2,2,0,0,0
+"BMW","bmw","i7","i7","arac/otomobil",2,1,"RESEARCHED_WITH_VERIFIED_DATA",1,2,0,0,0
+"BMW","bmw","5 Serisi","5-serisi","arac/otomobil",4,4,"RESEARCHED_WITH_VERIFIED_DATA",6,12,5,2,4
+"BMW","bmw","2 Serisi Active Tourer","2-serisi-active-tourer","arac/otomobil",2,2,"RESEARCHED_WITH_VERIFIED_DATA",4,2,1,0,2
+"Buick","buick","Century","century","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Buick","buick","Electra","electra","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Buick","buick","Enclave","enclave","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Buick","buick","Encore","encore","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Buick","buick","Envision","envision","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Buick","buick","LaCrosse","lacrosse","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Buick","buick","LeSabre","lesabre","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Buick","buick","Park Avenue","park-avenue","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Buick","buick","Regal","regal","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Buick","buick","Riviera","riviera","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Buick","buick","Roadmaster","roadmaster","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Buick","buick","Skylark","skylark","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"BYD","byd","Seal","seal","arac/otomobil",4,1,"RESEARCHED_WITH_VERIFIED_DATA",1,1,0,0,0
+"BYD","byd","Dolphin","dolphin","arac/otomobil",4,1,"RESEARCHED_WITH_VERIFIED_DATA",1,2,1,1,0
+"BYD","byd","Atto 3","atto-3","arac/otomobil|arac/arazi-suv-pickup",3,1,"RESEARCHED_WITH_VERIFIED_DATA",1,1,1,1,0
+"BYD","byd","Han","han","arac/otomobil",3,1,"RESEARCHED_WITH_VERIFIED_DATA",1,1,0,0,0
+"BYD","byd","Qin","qin","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"BYD","byd","Seal U","seal-u","arac/otomobil|arac/arazi-suv-pickup",6,0,"NOT_RESEARCHED",0,0,0,0,0
+"BYD","byd","Tang","tang","arac/otomobil|arac/arazi-suv-pickup",3,1,"RESEARCHED_WITH_VERIFIED_DATA",1,1,0,0,0
+"BYD","byd","SEALION 7","sealion-7","arac/arazi-suv-pickup",1,1,"RESEARCHED_WITH_VERIFIED_DATA",1,1,0,0,0
+"Cadillac","cadillac","ATS","ats","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Cadillac","cadillac","BLS","bls","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Cadillac","cadillac","CT4","ct4","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Cadillac","cadillac","CT5","ct5","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Cadillac","cadillac","CT6","ct6","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Cadillac","cadillac","CTS","cts","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Cadillac","cadillac","DeVille","deville","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Cadillac","cadillac","Eldorado","eldorado","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Cadillac","cadillac","Fleetwood","fleetwood","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Cadillac","cadillac","Seville","seville","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Cadillac","cadillac","STS","sts","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Cadillac","cadillac","XLR","xlr","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Cadillac","cadillac","Escalade","escalade","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Cadillac","cadillac","SRX","srx","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Cadillac","cadillac","XT4","xt4","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Cadillac","cadillac","XT5","xt5","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Cadillac","cadillac","XT6","xt6","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chery","chery","Tiggo 7 Pro","tiggo-7-pro","arac/arazi-suv-pickup",4,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chery","chery","Tiggo 8 Pro","tiggo-8-pro","arac/arazi-suv-pickup",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chery","chery","Alia","alia","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chery","chery","Chance","chance","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chery","chery","Kimo","kimo","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chery","chery","Niche","niche","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chery","chery","Omoda 5","omoda-5","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chery","chery","Tiggo 3","tiggo-3","arac/otomobil|arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chery","chery","Tiggo 7","tiggo-7","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chery","chery","Tiggo 8","tiggo-8","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chery","chery","Tiggo 4 Pro","tiggo-4-pro","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chery","chery","Tiggo 8 Pro Max","tiggo-8-pro-max","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chery","chery","Taxim","taxim","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chevrolet","chevrolet","Aveo","aveo","arac/otomobil",5,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chevrolet","chevrolet","Captiva","captiva","arac/arazi-suv-pickup",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chevrolet","chevrolet","Camaro","camaro","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chevrolet","chevrolet","Caprice","caprice","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chevrolet","chevrolet","Corvette","corvette","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chevrolet","chevrolet","Cruze","cruze","arac/otomobil",4,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chevrolet","chevrolet","Epica","epica","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chevrolet","chevrolet","Evanda","evanda","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chevrolet","chevrolet","Kalos","kalos","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chevrolet","chevrolet","Lacetti","lacetti","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chevrolet","chevrolet","Malibu","malibu","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chevrolet","chevrolet","Optra","optra","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chevrolet","chevrolet","Rezzo","rezzo","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chevrolet","chevrolet","Spark","spark","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chevrolet","chevrolet","Blazer","blazer","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chevrolet","chevrolet","Equinox","equinox","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chevrolet","chevrolet","Suburban","suburban","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chevrolet","chevrolet","Tahoe","tahoe","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chevrolet","chevrolet","Tracker","tracker","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chevrolet","chevrolet","Trailblazer","trailblazer","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chevrolet","chevrolet","Astro","astro","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chevrolet","chevrolet","Express","express","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chrysler","chrysler","300 C","300-c","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chrysler","chrysler","300 M","300-m","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chrysler","chrysler","Concorde","concorde","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chrysler","chrysler","Crossfire","crossfire","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chrysler","chrysler","LeBaron","lebaron","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chrysler","chrysler","Neon","neon","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chrysler","chrysler","PT Cruiser","pt-cruiser","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chrysler","chrysler","Sebring","sebring","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chrysler","chrysler","Stratus","stratus","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chrysler","chrysler","Vision","vision","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chrysler","chrysler","Aspen","aspen","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chrysler","chrysler","Pacifica","pacifica","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chrysler","chrysler","Grand Voyager","grand-voyager","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Chrysler","chrysler","Voyager","voyager","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Citroen","citroen","C3","c3","arac/otomobil",10,4,"RESEARCHED_WITH_VERIFIED_DATA",4,6,2,0,0
+"Citroen","citroen","C4","c4","arac/otomobil",5,0,"NOT_RESEARCHED",0,0,0,0,0
+"Citroen","citroen","C-Elysée","c-elysee","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Citroen","citroen","C5 Aircross","c5-aircross","arac/arazi-suv-pickup|arac/otomobil",8,4,"RESEARCHED_WITH_VERIFIED_DATA",4,6,3,0,0
+"Citroen","citroen","AX","ax","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Citroen","citroen","BX","bx","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Citroen","citroen","C1","c1","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Citroen","citroen","C2","c2","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Citroen","citroen","C4 X","c4-x","arac/otomobil",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Citroen","citroen","C5","c5","arac/otomobil",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Citroen","citroen","C6","c6","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Citroen","citroen","C8","c8","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Citroen","citroen","DS3","ds3","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Citroen","citroen","DS4","ds4","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Citroen","citroen","DS5","ds5","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Citroen","citroen","Saxo","saxo","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Citroen","citroen","Xantia","xantia","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Citroen","citroen","Xsara","xsara","arac/otomobil",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Citroen","citroen","Xsara Picasso","xsara-picasso","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Citroen","citroen","ZX","zx","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Citroen","citroen","C3 Aircross","c3-aircross","arac/arazi-suv-pickup|arac/otomobil",5,3,"RESEARCHED_WITH_VERIFIED_DATA",3,5,2,0,0
+"Citroen","citroen","C4 Cactus","c4-cactus","arac/arazi-suv-pickup",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Citroen","citroen","Berlingo","berlingo","arac/minivan-panelvan",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Citroen","citroen","Jumper","jumper","arac/minivan-panelvan",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Citroen","citroen","Jumpy","jumpy","arac/minivan-panelvan",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Citroen","citroen","Nemo","nemo","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Citroen","citroen","Ami","ami","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Citroen","citroen","e-Berlingo","e-berlingo","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Citroen","citroen","e-C3","e-c3","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Citroen","citroen","e-C4","e-c4","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Citroen","citroen","e-C4 X","e-c4-x","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Citroen","citroen","C3 (ICE historical)","c3-ice-historical","arac/otomobil",3,3,"RESEARCHED_WITH_VERIFIED_DATA",3,4,1,1,0
+"Cupra","cupra","Leon","leon","arac/otomobil",5,1,"RESEARCHED_WITH_VERIFIED_DATA",4,1,1,0,3
+"Cupra","cupra","Formentor","formentor","arac/arazi-suv-pickup",6,1,"RESEARCHED_WITH_VERIFIED_DATA",8,3,1,0,7
+"Cupra","cupra","Born","born","arac/otomobil",2,0,"RESEARCHED_REVIEW_ONLY",0,0,0,1,0
+"Cupra","cupra","Ateca","ateca","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Cupra","cupra","Tavascan","tavascan","arac/arazi-suv-pickup",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Cupra","cupra","Terramar","terramar","arac/arazi-suv-pickup",1,1,"RESEARCHED_WITH_VERIFIED_DATA",1,3,0,1,0
+"Dacia","dacia","Sandero","sandero","arac/otomobil",8,3,"RESEARCHED_WITH_VERIFIED_DATA",3,3,1,0,0
+"Dacia","dacia","Logan","logan","arac/otomobil",7,2,"RESEARCHED_WITH_VERIFIED_DATA",2,3,0,1,0
+"Dacia","dacia","Duster","duster","arac/arazi-suv-pickup",16,11,"RESEARCHED_WITH_VERIFIED_DATA",11,7,1,0,0
+"Dacia","dacia","Spring","spring","arac/arazi-suv-pickup",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Dacia","dacia","Dokker","dokker","arac/otomobil|arac/minivan-panelvan",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Dacia","dacia","Lodgy","lodgy","arac/otomobil|arac/minivan-panelvan",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Dacia","dacia","Solenza","solenza","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Dacia","dacia","Bigster","bigster","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Dacia","dacia","Sandero Stepway","sandero-stepway","arac/arazi-suv-pickup|arac/otomobil",5,5,"RESEARCHED_WITH_VERIFIED_DATA",5,4,1,0,0
+"Dacia","dacia","Jogger","jogger","arac/minivan-panelvan",2,2,"RESEARCHED_WITH_VERIFIED_DATA",2,1,0,1,0
+"Daewoo","daewoo","Espero","espero","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Daewoo","daewoo","Lanos","lanos","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Daewoo","daewoo","Leganza","leganza","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Daewoo","daewoo","Matiz","matiz","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Daewoo","daewoo","Nexia","nexia","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Daewoo","daewoo","Nubira","nubira","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Daewoo","daewoo","Racer","racer","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Daewoo","daewoo","Tacuma","tacuma","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Daewoo","daewoo","Tico","tico","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Daewoo","daewoo","Musso","musso","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Daewoo","daewoo","Korando","korando","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Daihatsu","daihatsu","Applause","applause","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Daihatsu","daihatsu","Charade","charade","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Daihatsu","daihatsu","Copen","copen","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Daihatsu","daihatsu","Cuore","cuore","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Daihatsu","daihatsu","Materia","materia","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Daihatsu","daihatsu","Mira","mira","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Daihatsu","daihatsu","Sirion","sirion","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Daihatsu","daihatsu","YRV","yrv","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Daihatsu","daihatsu","Feroza","feroza","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Daihatsu","daihatsu","Rocky","rocky","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Daihatsu","daihatsu","Terios","terios","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"DFM","dfm","Rich","rich","arac/arazi-suv-pickup|arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"DFM","dfm","Succe","succe","arac/arazi-suv-pickup|arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"DFSK","dfsk","Fengon 5","fengon-5","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"DFSK","dfsk","Fengon 500","fengon-500","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"DFSK","dfsk","Fengon 580","fengon-580","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"DFSK","dfsk","Glory 330","glory-330","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"DFSK","dfsk","Glory 500","glory-500","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"DFSK","dfsk","Seres 3","seres-3","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"DFSK","dfsk","C31","c31","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"DFSK","dfsk","C32","c32","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"DFSK","dfsk","C35","c35","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Dodge","dodge","Avenger","avenger","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Dodge","dodge","Caliber","caliber","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Dodge","dodge","Challenger","challenger","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Dodge","dodge","Charger","charger","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Dodge","dodge","Dart","dart","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Dodge","dodge","Magnum","magnum","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Dodge","dodge","Neon","neon","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Dodge","dodge","Stealth","stealth","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Dodge","dodge","Viper","viper","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Dodge","dodge","Durango","durango","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Dodge","dodge","Journey","journey","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Dodge","dodge","Nitro","nitro","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Dodge","dodge","Ram","ram","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Dodge","dodge","Ram Van","ram-van","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"DS Automobiles","ds","DS 4","ds4","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"DS Automobiles","ds","DS 3","ds3","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"DS Automobiles","ds","DS 7","ds7","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"DS Automobiles","ds-automobiles","DS 3","ds-3","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"DS Automobiles","ds-automobiles","DS 4","ds-4","arac/otomobil",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"DS Automobiles","ds-automobiles","DS 5","ds-5","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"DS Automobiles","ds-automobiles","DS 9","ds-9","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"DS Automobiles","ds-automobiles","DS 3 Crossback","ds-3-crossback","arac/arazi-suv-pickup",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"DS Automobiles","ds-automobiles","DS 7","ds-7","arac/arazi-suv-pickup",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"DS Automobiles","ds-automobiles","DS 7 Crossback","ds-7-crossback","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"DS Automobiles","ds-automobiles","DS 3 E-Tense","ds-3-e-tense","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"DS Automobiles","ds-automobiles","DS 4 E-Tense","ds-4-e-tense","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ferrari","ferrari","296 GTB","296-gtb","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ferrari","ferrari","348","348","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ferrari","ferrari","360","360","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ferrari","ferrari","458 Italia","458-italia","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ferrari","ferrari","488 GTB","488-gtb","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ferrari","ferrari","550 Maranello","550-maranello","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ferrari","ferrari","575M","575m","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ferrari","ferrari","599 GTB","599-gtb","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ferrari","ferrari","612 Scaglietti","612-scaglietti","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ferrari","ferrari","812 Superfast","812-superfast","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ferrari","ferrari","California","california","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ferrari","ferrari","F12 Berlinetta","f12-berlinetta","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ferrari","ferrari","F355","f355","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ferrari","ferrari","F430","f430","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ferrari","ferrari","FF","ff","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ferrari","ferrari","GTC4Lusso","gtc4lusso","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ferrari","ferrari","Portofino","portofino","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ferrari","ferrari","Roma","roma","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ferrari","ferrari","SF90 Stradale","sf90-stradale","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ferrari","ferrari","Purosangue","purosangue","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Fiat","fiat","Egea","egea","arac/otomobil",7,5,"RESEARCHED_WITH_VERIFIED_DATA",5,6,1,0,0
+"Fiat","fiat","Tipo","tipo","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Fiat","fiat","500","500","arac/otomobil",4,0,"NOT_RESEARCHED",0,0,0,0,0
+"Fiat","fiat","Doblo","doblo","arac/minivan-panelvan",2,1,"RESEARCHED_WITH_VERIFIED_DATA",1,2,1,0,0
+"Fiat","fiat","Ducato","ducato","arac/minivan-panelvan",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Fiat","fiat","Fiorino","fiorino","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Fiat","fiat","124 Spider","124-spider","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Fiat","fiat","126 Bis","126-bis","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Fiat","fiat","500C","500c","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Fiat","fiat","500L","500l","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Fiat","fiat","500X","500x","arac/otomobil|arac/arazi-suv-pickup",4,0,"NOT_RESEARCHED",0,0,0,0,0
+"Fiat","fiat","Albea","albea","arac/otomobil",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Fiat","fiat","Brava","brava","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Fiat","fiat","Bravo","bravo","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Fiat","fiat","Egea Cross","egea-cross","arac/otomobil",5,1,"RESEARCHED_WITH_VERIFIED_DATA",1,4,1,1,0
+"Fiat","fiat","Egea Hatchback","egea-hatchback","arac/otomobil",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Fiat","fiat","Egea Sedan","egea-sedan","arac/otomobil",5,0,"NOT_RESEARCHED",0,0,0,0,0
+"Fiat","fiat","Linea","linea","arac/otomobil",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Fiat","fiat","Marea","marea","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Fiat","fiat","Palio","palio","arac/otomobil",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Fiat","fiat","Panda","panda","arac/otomobil",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Fiat","fiat","Punto","punto","arac/otomobil",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Fiat","fiat","Punto Evo","punto-evo","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Fiat","fiat","Siena","siena","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Fiat","fiat","Stilo","stilo","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Fiat","fiat","Tempra","tempra","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Fiat","fiat","Uno","uno","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Fiat","fiat","Freemont","freemont","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Fiat","fiat","Fullback","fullback","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Fiat","fiat","Panda 4x4","panda-4x4","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Fiat","fiat","Sedici","sedici","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Fiat","fiat","Toro","toro","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Fiat","fiat","Doblo Cargo","doblo-cargo","arac/minivan-panelvan",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Fiat","fiat","Doblo Combi","doblo-combi","arac/minivan-panelvan",5,3,"RESEARCHED_WITH_VERIFIED_DATA",3,3,1,0,0
+"Fiat","fiat","Fiorino Cargo","fiorino-cargo","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Fiat","fiat","Fiorino Panorama","fiorino-panorama","arac/minivan-panelvan",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Fiat","fiat","Scudo","scudo","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Fiat","fiat","Talento","talento","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Fiat","fiat","500e","500e","arac/otomobil",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Fiat","fiat","600e","600e","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Fiat","fiat","E-Doblo","e-doblo","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Fiat","fiat","Topolino","topolino","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Fiat","fiat","Egea Wagon","egea-wagon","arac/otomobil",3,3,"RESEARCHED_WITH_VERIFIED_DATA",3,2,1,1,0
+"Ford","ford","Focus","focus","arac/otomobil",7,4,"RESEARCHED_WITH_VERIFIED_DATA",4,5,1,0,0
+"Ford","ford","Fiesta","fiesta","arac/otomobil",10,3,"RESEARCHED_WITH_VERIFIED_DATA",3,2,1,1,0
+"Ford","ford","Puma","puma","arac/arazi-suv-pickup",7,3,"RESEARCHED_WITH_VERIFIED_DATA",3,2,1,0,0
+"Ford","ford","Kuga","kuga","arac/arazi-suv-pickup",7,3,"RESEARCHED_WITH_VERIFIED_DATA",3,3,1,0,0
+"Ford","ford","Ranger","ranger","arac/arazi-suv-pickup",5,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ford","ford","Transit","transit","arac/minivan-panelvan",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ford","ford","Transit Custom","transit-custom","arac/minivan-panelvan",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ford","ford","Tourneo","tourneo","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ford","ford","B-Max","b-max","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ford","ford","C-Max","c-max","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ford","ford","Cougar","cougar","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ford","ford","Escort","escort","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ford","ford","Fusion","fusion","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ford","ford","Galaxy","galaxy","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ford","ford","Ka","ka","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ford","ford","Mondeo","mondeo","arac/otomobil",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ford","ford","Mustang","mustang","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ford","ford","Probe","probe","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ford","ford","Scorpio","scorpio","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ford","ford","Sierra","sierra","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ford","ford","StreetKa","streetka","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ford","ford","Taurus","taurus","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ford","ford","Tourneo Connect","tourneo-connect","arac/otomobil|arac/minivan-panelvan",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ford","ford","Tourneo Courier","tourneo-courier","arac/otomobil|arac/minivan-panelvan",8,5,"RESEARCHED_WITH_VERIFIED_DATA",5,5,3,0,0
+"Ford","ford","Bronco","bronco","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ford","ford","Edge","edge","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ford","ford","Escape","escape","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ford","ford","Everest","everest","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ford","ford","Explorer","explorer","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ford","ford","Maverick","maverick","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ford","ford","Tourneo Custom","tourneo-custom","arac/minivan-panelvan",5,4,"RESEARCHED_WITH_VERIFIED_DATA",4,3,1,1,0
+"Ford","ford","Transit Connect","transit-connect","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ford","ford","Transit Courier","transit-courier","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ford","ford","Capri EV","capri-ev","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ford","ford","E-Transit Courier","e-transit-courier","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ford","ford","Explorer EV","explorer-ev","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ford","ford","Mustang Mach-E","mustang-mach-e","arac/arazi-suv-pickup",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Foton","foton","Sauvana","sauvana","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Foton","foton","Tunland","tunland","arac/arazi-suv-pickup",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"GAZ","gaz","Gazelle","gazelle","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"GAZ","gaz","Sobol","sobol","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Geely","geely","CK","ck","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Geely","geely","Echo","echo","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Geely","geely","Emgrand EC7","emgrand-ec7","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Geely","geely","Emgrand GT","emgrand-gt","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Geely","geely","FC","fc","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Geely","geely","MK","mk","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Geely","geely","Otaka","otaka","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"GMC","gmc","Acadia","acadia","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"GMC","gmc","Canyon","canyon","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"GMC","gmc","Envoy","envoy","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"GMC","gmc","Hummer EV","hummer-ev","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"GMC","gmc","Sierra","sierra","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"GMC","gmc","Terrain","terrain","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"GMC","gmc","Yukon","yukon","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"GMC","gmc","Savana","savana","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Honda","honda","Civic","civic","arac/otomobil",9,7,"RESEARCHED_WITH_VERIFIED_DATA",7,4,1,1,0
+"Honda","honda","City","city","arac/otomobil",4,0,"NOT_RESEARCHED",0,0,0,0,0
+"Honda","honda","CR-V","cr-v","arac/arazi-suv-pickup",4,0,"NOT_RESEARCHED",0,0,0,0,0
+"Honda","honda","HR-V","hr-v","arac/arazi-suv-pickup|arac/otomobil",6,3,"RESEARCHED_WITH_VERIFIED_DATA",3,5,2,0,0
+"Honda","honda","Accord","accord","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Honda","honda","CR-Z","cr-z","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Honda","honda","CRX","crx","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Honda","honda","E","e","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Honda","honda","Insight","insight","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Honda","honda","Integra","integra","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Honda","honda","Jazz","jazz","arac/otomobil",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Honda","honda","Legend","legend","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Honda","honda","NSX","nsx","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Honda","honda","Prelude","prelude","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Honda","honda","S2000","s2000","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Honda","honda","Stream","stream","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Honda","honda","Pilot","pilot","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Honda","honda","ZR-V","zr-v","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Honda","honda","e:Ny1","e-ny1","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Honda","honda","Honda e","honda-e","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Hongqi","hongqi","E-HS9","e-hs9","arac/arazi-suv-pickup",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Hongqi","hongqi","HS5","hs5","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Hongqi","hongqi","HS7","hs7","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Hummer","hummer","H1","h1","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Hummer","hummer","H2","h2","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Hummer","hummer","H3","h3","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Hyundai","hyundai","i20","i20","arac/otomobil",9,5,"RESEARCHED_WITH_VERIFIED_DATA",5,3,2,0,0
+"Hyundai","hyundai","i30","i30","arac/otomobil",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Hyundai","hyundai","Elantra","elantra","arac/otomobil",4,0,"NOT_RESEARCHED",0,0,0,0,0
+"Hyundai","hyundai","Accent","accent","arac/otomobil",4,0,"NOT_RESEARCHED",0,0,0,0,0
+"Hyundai","hyundai","Tucson","tucson","arac/arazi-suv-pickup|arac/otomobil",8,4,"RESEARCHED_WITH_VERIFIED_DATA",4,6,3,0,0
+"Hyundai","hyundai","Bayon","bayon","arac/arazi-suv-pickup|arac/otomobil",6,3,"RESEARCHED_WITH_VERIFIED_DATA",3,3,1,1,0
+"Hyundai","hyundai","Accent Blue","accent-blue","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Hyundai","hyundai","Atos","atos","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Hyundai","hyundai","Coupe","coupe","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Hyundai","hyundai","Excel","excel","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Hyundai","hyundai","Genesis","genesis","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Hyundai","hyundai","Getz","getz","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Hyundai","hyundai","i10","i10","arac/otomobil",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Hyundai","hyundai","Ioniq","ioniq","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Hyundai","hyundai","Matrix","matrix","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Hyundai","hyundai","Pony","pony","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Hyundai","hyundai","Sonata","sonata","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Hyundai","hyundai","Veloster","veloster","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Hyundai","hyundai","Ioniq 5","ioniq-5","arac/arazi-suv-pickup",5,0,"NOT_RESEARCHED",0,0,0,0,0
+"Hyundai","hyundai","Ioniq 9","ioniq-9","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Hyundai","hyundai","ix35","ix35","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Hyundai","hyundai","Kona","kona","arac/arazi-suv-pickup",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Hyundai","hyundai","Santa Fe","santa-fe","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Hyundai","hyundai","Terracan","terracan","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Hyundai","hyundai","H-1","h-1","arac/minivan-panelvan",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Hyundai","hyundai","H100","h100","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Hyundai","hyundai","Inster","inster","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Hyundai","hyundai","Ioniq 6","ioniq-6","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Hyundai","hyundai","Kona Electric","kona-electric","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ikco","ikco","Dena","dena","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ikco","ikco","Runna","runna","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ikco","ikco","Samand","samand","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Infiniti","infiniti","G","g","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Infiniti","infiniti","I30","i30","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Infiniti","infiniti","M","m","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Infiniti","infiniti","Q30","q30","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Infiniti","infiniti","Q40","q40","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Infiniti","infiniti","Q50","q50","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Infiniti","infiniti","Q60","q60","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Infiniti","infiniti","Q70","q70","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Infiniti","infiniti","EX","ex","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Infiniti","infiniti","FX","fx","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Infiniti","infiniti","JX","jx","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Infiniti","infiniti","QX30","qx30","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Infiniti","infiniti","QX50","qx50","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Infiniti","infiniti","QX55","qx55","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Infiniti","infiniti","QX60","qx60","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Infiniti","infiniti","QX70","qx70","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Infiniti","infiniti","QX80","qx80","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Isuzu","isuzu","D-Max","d-max","arac/arazi-suv-pickup",4,0,"NOT_RESEARCHED",0,0,0,0,0
+"Isuzu","isuzu","Gemini","gemini","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Isuzu","isuzu","Stylus","stylus","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Isuzu","isuzu","Trooper","trooper","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Isuzu","isuzu","VehiCross","vehicross","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Iveco","iveco","Daily","daily","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Jaecoo","jaecoo","J7","j7","arac/arazi-suv-pickup",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Jaecoo","jaecoo","J8","j8","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Jaguar","jaguar","XE","xe","arac/otomobil",3,0,"RESEARCHED_REVIEW_ONLY",0,0,0,1,0
+"Jaguar","jaguar","XF","xf","arac/otomobil",3,0,"RESEARCHED_REVIEW_ONLY",0,0,0,1,0
+"Jaguar","jaguar","F-Pace","f-pace","arac/arazi-suv-pickup",4,1,"RESEARCHED_WITH_VERIFIED_DATA",1,2,1,0,0
+"Jaguar","jaguar","Daimler","daimler","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Jaguar","jaguar","F-Type","f-type","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Jaguar","jaguar","S-Type","s-type","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Jaguar","jaguar","X-Type","x-type","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Jaguar","jaguar","XJ","xj","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Jaguar","jaguar","XK","xk","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Jaguar","jaguar","E-Pace","e-pace","arac/arazi-suv-pickup",3,1,"RESEARCHED_WITH_VERIFIED_DATA",1,3,1,0,0
+"Jaguar","jaguar","I-Pace","i-pace","arac/arazi-suv-pickup",3,1,"RESEARCHED_WITH_VERIFIED_DATA",1,2,1,0,0
+"Jeep","jeep","Renegade","renegade","arac/arazi-suv-pickup",7,3,"RESEARCHED_WITH_VERIFIED_DATA",3,2,1,1,0
+"Jeep","jeep","Compass","compass","arac/arazi-suv-pickup",6,2,"RESEARCHED_WITH_VERIFIED_DATA",2,3,1,0,0
+"Jeep","jeep","Avenger","avenger","arac/arazi-suv-pickup",7,3,"RESEARCHED_WITH_VERIFIED_DATA",3,2,0,0,0
+"Jeep","jeep","Cherokee","cherokee","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Jeep","jeep","Commander","commander","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Jeep","jeep","Grand Cherokee","grand-cherokee","arac/arazi-suv-pickup",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Jeep","jeep","Wrangler","wrangler","arac/arazi-suv-pickup",4,1,"RESEARCHED_WITH_VERIFIED_DATA",1,1,1,1,0
+"Jeep","jeep","Avenger Electric","avenger-electric","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Jiayuan","jiayuan","City Spirit","city-spirit","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Jiayuan","jiayuan","Komı","komi","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Jiayuan","jiayuan","Lingzu","lingzu","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Jiayuan","jiayuan","M2","m2","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Joyce","joyce","One","one","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"KGM","kgm","Torres","torres","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"KGM","kgm","Korando","korando","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"KGM","kgm","Tivoli","tivoli","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"KGM","kgm","Musso","musso","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"KGM SsangYong","kgm-ssangyong","Actyon","actyon","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"KGM SsangYong","kgm-ssangyong","Korando","korando","arac/arazi-suv-pickup",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"KGM SsangYong","kgm-ssangyong","Kyron","kyron","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"KGM SsangYong","kgm-ssangyong","Musso Grand","musso-grand","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"KGM SsangYong","kgm-ssangyong","Rexton","rexton","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"KGM SsangYong","kgm-ssangyong","Tivoli","tivoli","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"KGM SsangYong","kgm-ssangyong","Torres","torres","arac/arazi-suv-pickup",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Kia","kia","Ceed","ceed","arac/otomobil",4,0,"NOT_RESEARCHED",0,0,0,0,0
+"Kia","kia","Picanto","picanto","arac/otomobil",4,1,"RESEARCHED_WITH_VERIFIED_DATA",1,1,1,1,0
+"Kia","kia","Sportage","sportage","arac/arazi-suv-pickup",9,5,"RESEARCHED_WITH_VERIFIED_DATA",5,7,2,0,0
+"Kia","kia","Stonic","stonic","arac/arazi-suv-pickup",5,2,"RESEARCHED_WITH_VERIFIED_DATA",2,3,1,1,0
+"Kia","kia","Carens","carens","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Kia","kia","Carnival","carnival","arac/otomobil|arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Kia","kia","Cerato","cerato","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Kia","kia","Clarus","clarus","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Kia","kia","Magentis","magentis","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Kia","kia","Opirus","opirus","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Kia","kia","Optima","optima","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Kia","kia","Pride","pride","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Kia","kia","ProCeed","proceed","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Kia","kia","Rio","rio","arac/otomobil",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Kia","kia","Sephia","sephia","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Kia","kia","Shuma","shuma","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Kia","kia","Stinger","stinger","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Kia","kia","EV3","ev3","arac/arazi-suv-pickup",3,0,"RESEARCHED_REVIEW_ONLY",0,0,0,1,0
+"Kia","kia","EV6","ev6","arac/arazi-suv-pickup",5,0,"RESEARCHED_REVIEW_ONLY",0,0,0,1,0
+"Kia","kia","EV9","ev9","arac/arazi-suv-pickup",2,0,"RESEARCHED_REVIEW_ONLY",0,0,0,1,0
+"Kia","kia","Niro","niro","arac/arazi-suv-pickup",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Kia","kia","Sorento","sorento","arac/arazi-suv-pickup",2,1,"RESEARCHED_WITH_VERIFIED_DATA",1,2,1,1,0
+"Kia","kia","Soul","soul","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Kia","kia","Besta","besta","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Kia","kia","Pregio","pregio","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Kia","kia","EV5","ev5","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Kia","kia","Niro EV","niro-ev","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Kuba","kuba","City","city","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Kuba","kuba","Eco","eco","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Kuba","kuba","Mini","mini","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lada","lada","110","110","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lada","lada","111","111","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lada","lada","112","112","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lada","lada","Kalina","kalina","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lada","lada","Niva","niva","arac/otomobil|arac/arazi-suv-pickup",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lada","lada","Priora","priora","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lada","lada","Samara","samara","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lada","lada","Vaz","vaz","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lada","lada","Vesta","vesta","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lamborghini","lamborghini","Aventador","aventador","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lamborghini","lamborghini","Countach","countach","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lamborghini","lamborghini","Diablo","diablo","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lamborghini","lamborghini","Gallardo","gallardo","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lamborghini","lamborghini","Huracan","huracan","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lamborghini","lamborghini","Murcielago","murcielago","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lamborghini","lamborghini","Revuelto","revuelto","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lamborghini","lamborghini","Urus","urus","arac/arazi-suv-pickup",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lancia","lancia","Dedra","dedra","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lancia","lancia","Delta","delta","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lancia","lancia","Kappa","kappa","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lancia","lancia","Lybra","lybra","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lancia","lancia","Musa","musa","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lancia","lancia","Thema","thema","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lancia","lancia","Thesis","thesis","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lancia","lancia","Ypsilon","ypsilon","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lancia","lancia","Phedra","phedra","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lancia","lancia","Voyager","voyager","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Land Rover","land-rover","Range Rover Evoque","range-rover-evoque","arac/arazi-suv-pickup",6,2,"RESEARCHED_WITH_VERIFIED_DATA",2,2,1,1,0
+"Land Rover","land-rover","Discovery Sport","discovery-sport","arac/arazi-suv-pickup",2,1,"RESEARCHED_WITH_VERIFIED_DATA",1,2,1,1,0
+"Land Rover","land-rover","Defender","defender","arac/arazi-suv-pickup",8,4,"RESEARCHED_WITH_VERIFIED_DATA",4,3,1,0,0
+"Land Rover","land-rover","Discovery","discovery","arac/arazi-suv-pickup",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Land Rover","land-rover","Freelander","freelander","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Land Rover","land-rover","Range Rover","range-rover","arac/arazi-suv-pickup",7,4,"RESEARCHED_WITH_VERIFIED_DATA",4,3,1,1,0
+"Land Rover","land-rover","Range Rover Sport","range-rover-sport","arac/arazi-suv-pickup",6,3,"RESEARCHED_WITH_VERIFIED_DATA",3,4,1,1,0
+"Land Rover","land-rover","Range Rover Velar","range-rover-velar","arac/arazi-suv-pickup",3,1,"RESEARCHED_WITH_VERIFIED_DATA",1,2,1,1,0
+"Leapmotor","leapmotor","C01","c01","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Leapmotor","leapmotor","C10","c10","arac/otomobil|arac/arazi-suv-pickup",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Leapmotor","leapmotor","C11","c11","arac/otomobil|arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Leapmotor","leapmotor","T03","t03","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lexus","lexus","ES","es","arac/otomobil",3,0,"RESEARCHED_REVIEW_ONLY",0,0,0,1,0
+"Lexus","lexus","NX","nx","arac/arazi-suv-pickup",5,1,"RESEARCHED_WITH_VERIFIED_DATA",1,2,0,0,0
+"Lexus","lexus","RX","rx","arac/arazi-suv-pickup",7,2,"RESEARCHED_WITH_VERIFIED_DATA",2,3,1,1,0
+"Lexus","lexus","CT","ct","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lexus","lexus","GS","gs","arac/otomobil",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lexus","lexus","IS","is","arac/otomobil",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lexus","lexus","LC","lc","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lexus","lexus","LS","ls","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lexus","lexus","RC","rc","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lexus","lexus","SC","sc","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lexus","lexus","GX","gx","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lexus","lexus","LBX","lbx","arac/arazi-suv-pickup",3,1,"RESEARCHED_WITH_VERIFIED_DATA",1,5,0,0,0
+"Lexus","lexus","LX","lx","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lexus","lexus","UX","ux","arac/arazi-suv-pickup",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lexus","lexus","RZ","rz","arac/arazi-suv-pickup",1,0,"RESEARCHED_REVIEW_ONLY",0,0,0,1,0
+"Lexus","lexus","UX 300e","ux-300e","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lexus","lexus","LM","lm","arac/minivan-panelvan",2,2,"RESEARCHED_WITH_VERIFIED_DATA",2,2,1,1,0
+"Lincoln","lincoln","Continental","continental","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lincoln","lincoln","LS","ls","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lincoln","lincoln","Mark","mark","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lincoln","lincoln","MKZ","mkz","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lincoln","lincoln","Town Car","town-car","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lincoln","lincoln","Zephyr","zephyr","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lincoln","lincoln","Aviator","aviator","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lincoln","lincoln","Corsair","corsair","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lincoln","lincoln","MKC","mkc","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lincoln","lincoln","Navigator","navigator","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lotus","lotus","Elan","elan","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lotus","lotus","Elise","elise","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lotus","lotus","Emira","emira","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lotus","lotus","Esprit","esprit","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lotus","lotus","Evora","evora","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lotus","lotus","Exige","exige","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lotus","lotus","Eletre","eletre","arac/arazi-suv-pickup",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Luqi","luqi","EV3","ev3","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lynk & Co","lynk-co","01","01","arac/arazi-suv-pickup",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lynk & Co","lynk-co","02","02","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lynk & Co","lynk-co","05","05","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Lynk & Co","lynk-co","08","08","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mahindra","mahindra","Bolero","bolero","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mahindra","mahindra","Goa","goa","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mahindra","mahindra","KUV100","kuv100","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mahindra","mahindra","Scorpio","scorpio","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mahindra","mahindra","XUV500","xuv500","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"MAN","man","TGE","tge","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Marcos","marcos","GT","gt","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Marcos","marcos","Mantis","mantis","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Marcos","marcos","Mantula","mantula","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Maserati","maserati","3200 GT","3200-gt","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Maserati","maserati","Ghibli","ghibli","arac/otomobil",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Maserati","maserati","GranCabrio","grancabrio","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Maserati","maserati","GranTurismo","granturismo","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Maserati","maserati","MC20","mc20","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Maserati","maserati","Quattroporte","quattroporte","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Maserati","maserati","Grecale","grecale","arac/arazi-suv-pickup",4,0,"NOT_RESEARCHED",0,0,0,0,0
+"Maserati","maserati","Levante","levante","arac/arazi-suv-pickup",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Maxus","maxus","Deliver 3","deliver-3","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Maxus","maxus","Deliver 7","deliver-7","arac/minivan-panelvan",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Maxus","maxus","Deliver 9","deliver-9","arac/minivan-panelvan",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Maxus","maxus","eDeliver 5","edeliver-5","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Maxus","maxus","eDeliver 9","edeliver-9","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mazda","mazda","3","3","arac/otomobil",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mazda","mazda","CX-5","cx-5","arac/arazi-suv-pickup",6,3,"RESEARCHED_WITH_VERIFIED_DATA",3,3,1,0,0
+"Mazda","mazda","CX-30","cx-30","arac/arazi-suv-pickup",2,0,"RESEARCHED_REVIEW_ONLY",0,0,0,1,0
+"Mazda","mazda","121","121","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mazda","mazda","2","2","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mazda","mazda","323","323","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mazda","mazda","5","5","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mazda","mazda","6","6","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mazda","mazda","626","626","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mazda","mazda","929","929","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mazda","mazda","Lantis","lantis","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mazda","mazda","Millenia","millenia","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mazda","mazda","MX-3","mx-3","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mazda","mazda","MX-5","mx-5","arac/otomobil",2,1,"RESEARCHED_WITH_VERIFIED_DATA",1,2,1,0,0
+"Mazda","mazda","MX-6","mx-6","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mazda","mazda","RX-7","rx-7","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mazda","mazda","RX-8","rx-8","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mazda","mazda","Xedos","xedos","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mazda","mazda","CX-3","cx-3","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mazda","mazda","CX-60","cx-60","arac/arazi-suv-pickup",2,0,"RESEARCHED_REVIEW_ONLY",0,0,0,1,0
+"Mazda","mazda","CX-7","cx-7","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mazda","mazda","CX-9","cx-9","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mazda","mazda","MX-30","mx-30","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mazda","mazda","E2000","e2000","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mazda","mazda","E2200","e2200","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mazda","mazda","MX-5 RF","mx-5-rf","arac/otomobil",1,1,"RESEARCHED_WITH_VERIFIED_DATA",1,2,0,0,0
+"Mazda","mazda","Mazda3","mazda3","arac/otomobil",2,2,"RESEARCHED_WITH_VERIFIED_DATA",2,4,1,1,0
+"McLaren","mclaren","540C","540c","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"McLaren","mclaren","570S","570s","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"McLaren","mclaren","600LT","600lt","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"McLaren","mclaren","650S","650s","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"McLaren","mclaren","675LT","675lt","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"McLaren","mclaren","720S","720s","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"McLaren","mclaren","750S","750s","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"McLaren","mclaren","Artura","artura","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"McLaren","mclaren","GT","gt","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"McLaren","mclaren","MP4-12C","mp4-12c","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"McLaren","mclaren","P1","p1","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"McLaren","mclaren","Senna","senna","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mercedes-Benz","mercedes-benz","C Serisi","c-serisi","arac/otomobil",11,5,"RESEARCHED_WITH_VERIFIED_DATA",8,7,4,1,4
+"Mercedes-Benz","mercedes-benz","E Serisi","e-serisi","arac/otomobil",22,6,"RESEARCHED_WITH_VERIFIED_DATA",6,8,3,1,0
+"Mercedes-Benz","mercedes-benz","A Serisi","a-serisi","arac/otomobil",18,7,"RESEARCHED_WITH_VERIFIED_DATA",7,6,2,0,0
+"Mercedes-Benz","mercedes-benz","CLA","cla","arac/otomobil",11,4,"RESEARCHED_WITH_VERIFIED_DATA",5,2,3,0,0
+"Mercedes-Benz","mercedes-benz","GLC","glc","arac/arazi-suv-pickup",13,6,"RESEARCHED_WITH_VERIFIED_DATA",8,3,2,0,2
+"Mercedes-Benz","mercedes-benz","GLE","gle","arac/arazi-suv-pickup",9,2,"RESEARCHED_WITH_VERIFIED_DATA",2,1,2,0,0
+"Mercedes-Benz","mercedes-benz","G-Class","g-class","arac/arazi-suv-pickup",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mercedes-Benz","mercedes-benz","Sprinter","sprinter","arac/minivan-panelvan",7,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mercedes-Benz","mercedes-benz","Vito","vito","arac/minivan-panelvan",4,0,"RESEARCHED_REVIEW_ONLY",0,0,0,1,0
+"Mercedes-Benz","mercedes-benz","V Class","v-class","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mercedes-Benz","mercedes-benz","190","190","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mercedes-Benz","mercedes-benz","200","200","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mercedes-Benz","mercedes-benz","230","230","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mercedes-Benz","mercedes-benz","240","240","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mercedes-Benz","mercedes-benz","250","250","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mercedes-Benz","mercedes-benz","260","260","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mercedes-Benz","mercedes-benz","280","280","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mercedes-Benz","mercedes-benz","300","300","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mercedes-Benz","mercedes-benz","320","320","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mercedes-Benz","mercedes-benz","380","380","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mercedes-Benz","mercedes-benz","400","400","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mercedes-Benz","mercedes-benz","420","420","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mercedes-Benz","mercedes-benz","500","500","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mercedes-Benz","mercedes-benz","560","560","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mercedes-Benz","mercedes-benz","AMG GT","amg-gt","arac/otomobil",5,2,"RESEARCHED_WITH_VERIFIED_DATA",3,1,1,0,1
+"Mercedes-Benz","mercedes-benz","B Serisi","b-serisi","arac/otomobil",6,1,"RESEARCHED_WITH_VERIFIED_DATA",1,1,1,0,0
+"Mercedes-Benz","mercedes-benz","CLE","cle","arac/otomobil",6,3,"RESEARCHED_WITH_VERIFIED_DATA",3,2,2,0,0
+"Mercedes-Benz","mercedes-benz","CLK","clk","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mercedes-Benz","mercedes-benz","CLS","cls","arac/otomobil",7,0,"RESEARCHED_REVIEW_ONLY",0,0,0,1,0
+"Mercedes-Benz","mercedes-benz","EQE","eqe","arac/otomobil",7,2,"RESEARCHED_WITH_VERIFIED_DATA",2,1,1,0,0
+"Mercedes-Benz","mercedes-benz","EQS","eqs","arac/otomobil",7,2,"RESEARCHED_WITH_VERIFIED_DATA",2,2,1,0,0
+"Mercedes-Benz","mercedes-benz","S Serisi","s-serisi","arac/otomobil",11,2,"RESEARCHED_WITH_VERIFIED_DATA",3,1,1,0,1
+"Mercedes-Benz","mercedes-benz","SL","sl","arac/otomobil",3,2,"RESEARCHED_WITH_VERIFIED_DATA",2,1,1,0,0
+"Mercedes-Benz","mercedes-benz","SLC","slc","arac/otomobil",1,0,"RESEARCHED_REVIEW_ONLY",0,0,0,1,0
+"Mercedes-Benz","mercedes-benz","SLK","slk","arac/otomobil",1,0,"RESEARCHED_REVIEW_ONLY",0,0,1,2,0
+"Mercedes-Benz","mercedes-benz","SLS AMG","sls-amg","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mercedes-Benz","mercedes-benz","EQA","eqa","arac/arazi-suv-pickup",3,1,"RESEARCHED_WITH_VERIFIED_DATA",1,1,1,0,0
+"Mercedes-Benz","mercedes-benz","EQB","eqb","arac/arazi-suv-pickup",3,0,"RESEARCHED_REVIEW_ONLY",0,0,0,1,0
+"Mercedes-Benz","mercedes-benz","EQC","eqc","arac/arazi-suv-pickup",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mercedes-Benz","mercedes-benz","EQE SUV","eqe-suv","arac/arazi-suv-pickup",4,0,"RESEARCHED_REVIEW_ONLY",0,0,0,1,0
+"Mercedes-Benz","mercedes-benz","EQS SUV","eqs-suv","arac/arazi-suv-pickup",3,0,"RESEARCHED_REVIEW_ONLY",0,0,0,1,0
+"Mercedes-Benz","mercedes-benz","G Serisi","g-serisi","arac/arazi-suv-pickup",7,5,"RESEARCHED_WITH_VERIFIED_DATA",5,3,2,0,0
+"Mercedes-Benz","mercedes-benz","GLA","gla","arac/arazi-suv-pickup",5,1,"RESEARCHED_WITH_VERIFIED_DATA",1,1,1,0,0
+"Mercedes-Benz","mercedes-benz","GLB","glb","arac/arazi-suv-pickup",5,2,"RESEARCHED_WITH_VERIFIED_DATA",2,1,1,0,0
+"Mercedes-Benz","mercedes-benz","GLK","glk","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mercedes-Benz","mercedes-benz","GLS","gls","arac/arazi-suv-pickup",6,1,"RESEARCHED_WITH_VERIFIED_DATA",1,1,1,0,0
+"Mercedes-Benz","mercedes-benz","Maybach GLS","maybach-gls","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mercedes-Benz","mercedes-benz","ML","ml","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mercedes-Benz","mercedes-benz","Citan","citan","arac/minivan-panelvan",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mercedes-Benz","mercedes-benz","Vaneo","vaneo","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mercedes-Benz","mercedes-benz","Viano","viano","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mercedes-Benz","mercedes-benz","G 580 EQ","g-580-eq","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"MG","mg","MG5","mg5","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"MG","mg","ZS","zs","arac/arazi-suv-pickup",4,0,"NOT_RESEARCHED",0,0,0,0,0
+"MG","mg","HS","hs","arac/arazi-suv-pickup",5,1,"RESEARCHED_WITH_VERIFIED_DATA",1,1,0,0,0
+"MG","mg","MG3","mg3","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"MG","mg","MG4","mg4","arac/otomobil",4,0,"NOT_RESEARCHED",0,0,0,0,0
+"MG","mg","MG6","mg6","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"MG","mg","MG7","mg7","arac/otomobil",2,1,"RESEARCHED_WITH_VERIFIED_DATA",1,2,0,0,0
+"MG","mg","Marvel R","marvel-r","arac/arazi-suv-pickup",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"MG","mg","MG5 Electric","mg5-electric","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"MG","mg","ZS EV","zs-ev","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"MG","mg","ZS Hybrid+","zs-hybrid","arac/arazi-suv-pickup",1,1,"RESEARCHED_WITH_VERIFIED_DATA",1,1,0,0,0
+"MG","mg","HS Hybrid+","hs-hybrid","arac/arazi-suv-pickup",1,1,"RESEARCHED_WITH_VERIFIED_DATA",1,1,0,0,0
+"Micro","micro","Microlino","microlino","arac/otomobil",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mini","mini","Cooper","cooper","arac/otomobil",11,7,"RESEARCHED_WITH_VERIFIED_DATA",7,5,1,0,0
+"Mini","mini","Countryman","countryman","arac/arazi-suv-pickup",8,3,"RESEARCHED_WITH_VERIFIED_DATA",3,5,1,0,0
+"Mini","mini","Cooper Clubman","cooper-clubman","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mini","mini","Cooper Countryman","cooper-countryman","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mini","mini","Cooper Coupe","cooper-coupe","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mini","mini","Cooper Paceman","cooper-paceman","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mini","mini","Cooper Roadster","cooper-roadster","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mini","mini","Aceman","aceman","arac/arazi-suv-pickup",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mini","mini","Cooper Electric","cooper-electric","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mini","mini","Countryman Electric","countryman-electric","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mitsubishi","mitsubishi","Outlander","outlander","arac/arazi-suv-pickup",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mitsubishi","mitsubishi","ASX","asx","arac/arazi-suv-pickup",5,2,"RESEARCHED_WITH_VERIFIED_DATA",2,3,1,1,0
+"Mitsubishi","mitsubishi","L200","l200","arac/arazi-suv-pickup",9,6,"RESEARCHED_WITH_VERIFIED_DATA",6,4,1,1,0
+"Mitsubishi","mitsubishi","Carisma","carisma","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mitsubishi","mitsubishi","Colt","colt","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mitsubishi","mitsubishi","Eclipse","eclipse","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mitsubishi","mitsubishi","Galant","galant","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mitsubishi","mitsubishi","Grandis","grandis","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mitsubishi","mitsubishi","Lancer","lancer","arac/otomobil",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mitsubishi","mitsubishi","Mirage","mirage","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mitsubishi","mitsubishi","Space Star","space-star","arac/otomobil",2,1,"RESEARCHED_WITH_VERIFIED_DATA",1,1,0,0,0
+"Mitsubishi","mitsubishi","Eclipse Cross","eclipse-cross","arac/arazi-suv-pickup",6,4,"RESEARCHED_WITH_VERIFIED_DATA",4,3,1,1,0
+"Mitsubishi","mitsubishi","Pajero","pajero","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mitsubishi","mitsubishi","L300","l300","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Mitsubishi","mitsubishi","L400","l400","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Morgan","morgan","3 Wheeler","3-wheeler","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Morgan","morgan","4/4","4-4","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Morgan","morgan","Aero 8","aero-8","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Morgan","morgan","Plus 4","plus-4","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Morgan","morgan","Plus 6","plus-6","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Morgan","morgan","Roadster","roadster","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Motolux","motolux","E-Dream","e-dream","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Motolux","motolux","F5","f5","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Motolux","motolux","M5","m5","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Nieve","nieve","Niev 1","niev-1","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Nieve","nieve","Niev 2","niev-2","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Nissan","nissan","Qashqai","qashqai","arac/arazi-suv-pickup",8,4,"RESEARCHED_WITH_VERIFIED_DATA",4,10,2,0,0
+"Nissan","nissan","X-Trail","x-trail","arac/arazi-suv-pickup",4,1,"RESEARCHED_WITH_VERIFIED_DATA",1,2,1,1,0
+"Nissan","nissan","Juke","juke","arac/arazi-suv-pickup",6,3,"RESEARCHED_WITH_VERIFIED_DATA",3,5,1,0,0
+"Nissan","nissan","200 SX","200-sx","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Nissan","nissan","300 ZX","300-zx","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Nissan","nissan","Almera","almera","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Nissan","nissan","Altima","altima","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Nissan","nissan","Bluebird","bluebird","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Nissan","nissan","Cube","cube","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Nissan","nissan","GT-R","gt-r","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Nissan","nissan","Laurel","laurel","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Nissan","nissan","Leaf","leaf","arac/otomobil",4,0,"NOT_RESEARCHED",0,0,0,0,0
+"Nissan","nissan","Maxima","maxima","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Nissan","nissan","Micra","micra","arac/otomobil",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Nissan","nissan","Note","note","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Nissan","nissan","Primera","primera","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Nissan","nissan","Pulsar","pulsar","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Nissan","nissan","Silvia","silvia","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Nissan","nissan","Skyline","skyline","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Nissan","nissan","Sunny","sunny","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Nissan","nissan","Tiida","tiida","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Nissan","nissan","Ariya","ariya","arac/arazi-suv-pickup",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Nissan","nissan","Murano","murano","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Nissan","nissan","Navara","navara","arac/arazi-suv-pickup",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Nissan","nissan","Pathfinder","pathfinder","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Nissan","nissan","Terrano","terrano","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Nissan","nissan","NV200","nv200","arac/minivan-panelvan",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Nissan","nissan","NV300","nv300","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Nissan","nissan","NV400","nv400","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Nissan","nissan","Primastar","primastar","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Nissan","nissan","Townstar","townstar","arac/minivan-panelvan",1,0,"RESEARCHED_REVIEW_ONLY",0,0,0,1,0
+"Nissan","nissan","Vanette","vanette","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Nissan","nissan","Townstar EV","townstar-ev","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Nissan","nissan","Qashqai e-POWER","qashqai-e-power","arac/arazi-suv-pickup",1,1,"RESEARCHED_WITH_VERIFIED_DATA",1,3,1,1,0
+"Omoda","omoda","Omoda 5","omoda-5","arac/arazi-suv-pickup",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Opel","opel","Astra","astra","arac/otomobil",11,3,"RESEARCHED_WITH_VERIFIED_DATA",3,7,2,0,0
+"Opel","opel","Corsa","corsa","arac/otomobil",22,8,"RESEARCHED_WITH_VERIFIED_DATA",8,9,3,0,0
+"Opel","opel","Mokka","mokka","arac/arazi-suv-pickup",4,0,"NOT_RESEARCHED",0,0,0,0,0
+"Opel","opel","Adam","adam","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Opel","opel","Agila","agila","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Opel","opel","Ampera","ampera","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Opel","opel","Ascona","ascona","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Opel","opel","Calibra","calibra","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Opel","opel","Cascada","cascada","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Opel","opel","Insignia","insignia","arac/otomobil",4,0,"NOT_RESEARCHED",0,0,0,0,0
+"Opel","opel","Kadett","kadett","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Opel","opel","Meriva","meriva","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Opel","opel","Omega","omega","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Opel","opel","Rekord","rekord","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Opel","opel","Senator","senator","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Opel","opel","Signum","signum","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Opel","opel","Tigra","tigra","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Opel","opel","Vectra","vectra","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Opel","opel","Zafira","zafira","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Opel","opel","Antara","antara","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Opel","opel","Crossland","crossland","arac/arazi-suv-pickup",5,3,"RESEARCHED_WITH_VERIFIED_DATA",3,4,1,1,0
+"Opel","opel","Frontera","frontera","arac/arazi-suv-pickup",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Opel","opel","Grandland","grandland","arac/arazi-suv-pickup",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Opel","opel","Mokka X","mokka-x","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Opel","opel","Combo","combo","arac/minivan-panelvan",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Opel","opel","Movano","movano","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Opel","opel","Vivaro","vivaro","arac/minivan-panelvan",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Opel","opel","Astra Electric","astra-electric","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Opel","opel","Combo Electric","combo-electric","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Opel","opel","Corsa Electric","corsa-electric","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Opel","opel","Frontera Electric","frontera-electric","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Opel","opel","Mokka Electric","mokka-electric","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Opel","opel","Vivaro Electric","vivaro-electric","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ortimobil","ortimobil","O2","o2","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Ortimobil","ortimobil","O4","o4","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Peugeot","peugeot","208","208","arac/otomobil",6,3,"RESEARCHED_WITH_VERIFIED_DATA",3,2,2,0,0
+"Peugeot","peugeot","308","308","arac/otomobil",8,3,"RESEARCHED_WITH_VERIFIED_DATA",3,2,2,0,0
+"Peugeot","peugeot","2008","2008","arac/arazi-suv-pickup",10,5,"RESEARCHED_WITH_VERIFIED_DATA",5,4,2,0,0
+"Peugeot","peugeot","3008","3008","arac/arazi-suv-pickup|arac/otomobil",8,4,"RESEARCHED_WITH_VERIFIED_DATA",4,7,2,0,0
+"Peugeot","peugeot","106","106","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Peugeot","peugeot","107","107","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Peugeot","peugeot","108","108","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Peugeot","peugeot","205","205","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Peugeot","peugeot","206","206","arac/otomobil",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Peugeot","peugeot","207","207","arac/otomobil",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Peugeot","peugeot","301","301","arac/otomobil",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Peugeot","peugeot","305","305","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Peugeot","peugeot","306","306","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Peugeot","peugeot","307","307","arac/otomobil",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Peugeot","peugeot","405","405","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Peugeot","peugeot","406","406","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Peugeot","peugeot","407","407","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Peugeot","peugeot","508","508","arac/otomobil",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Peugeot","peugeot","605","605","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Peugeot","peugeot","607","607","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Peugeot","peugeot","RCZ","rcz","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Peugeot","peugeot","4007","4007","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Peugeot","peugeot","4008","4008","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Peugeot","peugeot","5008","5008","arac/arazi-suv-pickup",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Peugeot","peugeot","Bipper","bipper","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Peugeot","peugeot","Boxer","boxer","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Peugeot","peugeot","Expert","expert","arac/minivan-panelvan",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Peugeot","peugeot","Partner","partner","arac/minivan-panelvan",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Peugeot","peugeot","Rifter","rifter","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Peugeot","peugeot","e-2008","e-2008","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Peugeot","peugeot","e-208","e-208","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Peugeot","peugeot","e-3008","e-3008","arac/arazi-suv-pickup|arac/otomobil",2,1,"RESEARCHED_WITH_VERIFIED_DATA",1,2,1,1,0
+"Peugeot","peugeot","e-5008","e-5008","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Peugeot","peugeot","e-Expert","e-expert","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Peugeot","peugeot","e-Partner","e-partner","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Peugeot","peugeot","e-Rifter","e-rifter","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Plymouth","plymouth","Barracuda","barracuda","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Plymouth","plymouth","Belvedere","belvedere","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Plymouth","plymouth","Fury","fury","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Plymouth","plymouth","Neon","neon","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Plymouth","plymouth","Prowler","prowler","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Plymouth","plymouth","Road Runner","road-runner","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Plymouth","plymouth","Satellite","satellite","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Plymouth","plymouth","Voyager","voyager","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Polestar","polestar","1","1","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Polestar","polestar","2","2","arac/otomobil",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Polestar","polestar","3","3","arac/otomobil|arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Polestar","polestar","4","4","arac/otomobil|arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Pontiac","pontiac","Bonneville","bonneville","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Pontiac","pontiac","Firebird","firebird","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Pontiac","pontiac","G5","g5","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Pontiac","pontiac","G6","g6","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Pontiac","pontiac","Grand Am","grand-am","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Pontiac","pontiac","Grand Prix","grand-prix","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Pontiac","pontiac","GTO","gto","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Pontiac","pontiac","Solstice","solstice","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Pontiac","pontiac","Sunfire","sunfire","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Pontiac","pontiac","Trans Am","trans-am","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Pontiac","pontiac","Montana","montana","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Pontiac","pontiac","Trans Sport","trans-sport","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Porsche","porsche","Panamera","panamera","arac/otomobil",5,2,"RESEARCHED_WITH_VERIFIED_DATA",8,1,0,0,7
+"Porsche","porsche","911","911","arac/otomobil",8,0,"RESEARCHED_NO_VERIFIED_TRIM",17,0,0,0,17
+"Porsche","porsche","Macan","macan","arac/arazi-suv-pickup",10,4,"RESEARCHED_WITH_VERIFIED_DATA",8,1,1,0,5
+"Porsche","porsche","Cayenne","cayenne","arac/arazi-suv-pickup",6,2,"RESEARCHED_WITH_VERIFIED_DATA",9,1,0,0,9
+"Porsche","porsche","718","718","arac/otomobil",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Porsche","porsche","Boxster","boxster","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Porsche","porsche","Cayman","cayman","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Porsche","porsche","Taycan","taycan","arac/otomobil",6,3,"RESEARCHED_WITH_VERIFIED_DATA",6,1,0,0,6
+"Porsche","porsche","Macan Electric","macan-electric","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Porsche","porsche","Cayenne Coupe","cayenne-coupe","arac/arazi-suv-pickup",3,3,"RESEARCHED_WITH_VERIFIED_DATA",8,1,0,0,7
+"Proton","proton","315","315","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Proton","proton","316","316","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Proton","proton","Persona","persona","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Proton","proton","Saga","saga","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Proton","proton","Satria","satria","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Proton","proton","Savvy","savvy","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Proton","proton","Waja","waja","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Proton","proton","Wira","wira","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Rainwoll","rainwoll","RW10","rw10","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Rainwoll","rainwoll","RW20","rw20","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Reeder","reeder","ReeV Fancy","reev-fancy","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Reeder","reeder","ReeV Max","reev-max","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Regal Raptor","regal-raptor","K5","k5","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Regal Raptor","regal-raptor","Pilder","pilder","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Relive","relive","N1","n1","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Renault","renault","Clio","clio","arac/otomobil",10,7,"RESEARCHED_WITH_VERIFIED_DATA",7,5,2,0,0
+"Renault","renault","Megane","megane","arac/otomobil",13,5,"RESEARCHED_WITH_VERIFIED_DATA",5,3,1,1,0
+"Renault","renault","Talisman","talisman","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Renault","renault","Symbol","symbol","arac/otomobil",4,0,"RESEARCHED_REVIEW_ONLY",0,0,0,1,0
+"Renault","renault","Captur","captur","arac/arazi-suv-pickup",6,2,"RESEARCHED_WITH_VERIFIED_DATA",2,3,1,1,0
+"Renault","renault","Austral","austral","arac/arazi-suv-pickup",3,0,"RESEARCHED_REVIEW_ONLY",0,0,0,1,0
+"Renault","renault","Trafic","trafic","arac/minivan-panelvan",3,0,"RESEARCHED_REVIEW_ONLY",0,0,0,1,0
+"Renault","renault","Master","master","arac/minivan-panelvan",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Renault","renault","Kangoo","kangoo","arac/minivan-panelvan",4,1,"RESEARCHED_WITH_VERIFIED_DATA",1,1,0,1,0
+"Renault","renault","Fluence","fluence","arac/otomobil",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Renault","renault","Laguna","laguna","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Renault","renault","Latitude","latitude","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Renault","renault","R11","r11","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Renault","renault","R19","r19","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Renault","renault","R21","r21","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Renault","renault","R25","r25","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Renault","renault","R9","r9","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Renault","renault","Safrane","safrane","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Renault","renault","Scenic","scenic","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Renault","renault","Taliant","taliant","arac/otomobil",2,0,"RESEARCHED_REVIEW_ONLY",0,0,0,1,0
+"Renault","renault","Twingo","twingo","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Renault","renault","Vel Satis","vel-satis","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Renault","renault","Zoe","zoe","arac/otomobil",4,0,"NOT_RESEARCHED",0,0,0,0,0
+"Renault","renault","Arkana","arkana","arac/arazi-suv-pickup",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Renault","renault","Kadjar","kadjar","arac/arazi-suv-pickup",2,0,"RESEARCHED_REVIEW_ONLY",0,0,0,1,0
+"Renault","renault","Koleos","koleos","arac/arazi-suv-pickup",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Renault","renault","Rafale","rafale","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Renault","renault","Scenic E-Tech","scenic-e-tech","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Renault","renault","Symbioz","symbioz","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Renault","renault","Express Van","express-van","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Renault","renault","Kangoo E-Tech","kangoo-e-tech","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Renault","renault","Megane E-Tech","megane-e-tech","arac/otomobil",2,1,"RESEARCHED_WITH_VERIFIED_DATA",1,2,0,0,0
+"RKS","rks","A1","a1","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"RKS","rks","D2","d2","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"RKS","rks","M5","m5","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Roewe","roewe","Ei5","ei5","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Roewe","roewe","i5","i5","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Roewe","roewe","i6","i6","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Rolls-Royce","rolls-royce","Corniche","corniche","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Rolls-Royce","rolls-royce","Cullinan","cullinan","arac/otomobil|arac/arazi-suv-pickup",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Rolls-Royce","rolls-royce","Dawn","dawn","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Rolls-Royce","rolls-royce","Ghost","ghost","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Rolls-Royce","rolls-royce","Phantom","phantom","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Rolls-Royce","rolls-royce","Silver Cloud","silver-cloud","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Rolls-Royce","rolls-royce","Silver Seraph","silver-seraph","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Rolls-Royce","rolls-royce","Silver Shadow","silver-shadow","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Rolls-Royce","rolls-royce","Spectre","spectre","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Rolls-Royce","rolls-royce","Wraith","wraith","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Rover","rover","200","200","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Rover","rover","25","25","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Rover","rover","400","400","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Rover","rover","45","45","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Rover","rover","600","600","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Rover","rover","75","75","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Rover","rover","800","800","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Rover","rover","Mini","mini","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Saab","saab","9-3","9-3","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Saab","saab","9-5","9-5","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Saab","saab","900","900","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Saab","saab","9000","9000","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Saab","saab","96","96","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Saab","saab","99","99","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Santana","santana","Anibal","anibal","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Santana","santana","PS-10","ps-10","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Seat","seat","Leon","leon","arac/otomobil",11,6,"RESEARCHED_WITH_VERIFIED_DATA",6,3,3,0,0
+"Seat","seat","Ibiza","ibiza","arac/otomobil",6,2,"RESEARCHED_WITH_VERIFIED_DATA",2,2,1,0,0
+"Seat","seat","Ateca","ateca","arac/arazi-suv-pickup|arac/otomobil",6,3,"RESEARCHED_WITH_VERIFIED_DATA",3,4,1,0,0
+"Seat","seat","Alhambra","alhambra","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Seat","seat","Altea","altea","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Seat","seat","Arosa","arosa","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Seat","seat","Cordoba","cordoba","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Seat","seat","Exeo","exeo","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Seat","seat","Toledo","toledo","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Seat","seat","Arona","arona","arac/arazi-suv-pickup",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Seat","seat","Tarraco","tarraco","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Seat","seat","Inca","inca","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Seres","seres","Seres 3","seres-3","arac/arazi-suv-pickup",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Seres","seres","Seres 5","seres-5","arac/arazi-suv-pickup",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Skoda","skoda","Octavia","octavia","arac/otomobil",13,7,"RESEARCHED_WITH_VERIFIED_DATA",7,9,3,0,0
+"Skoda","skoda","Fabia","fabia","arac/otomobil",9,5,"RESEARCHED_WITH_VERIFIED_DATA",5,4,2,0,0
+"Skoda","skoda","Kodiaq","kodiaq","arac/arazi-suv-pickup",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Skoda","skoda","Karoq","karoq","arac/arazi-suv-pickup",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Skoda","skoda","Citigo","citigo","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Skoda","skoda","Favorit","favorit","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Skoda","skoda","Felicia","felicia","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Skoda","skoda","Rapid","rapid","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Skoda","skoda","Scala","scala","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Skoda","skoda","Superb","superb","arac/otomobil",10,7,"RESEARCHED_WITH_VERIFIED_DATA",7,9,2,1,0
+"Skoda","skoda","Elroq","elroq","arac/arazi-suv-pickup",4,0,"NOT_RESEARCHED",0,0,0,0,0
+"Skoda","skoda","Enyaq","enyaq","arac/arazi-suv-pickup",5,0,"NOT_RESEARCHED",0,0,0,0,0
+"Skoda","skoda","Kamiq","kamiq","arac/arazi-suv-pickup",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Skoda","skoda","Praktik","praktik","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Skoda","skoda","Citigo-e","citigo-e","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Skywell","skywell","ET5","et5","arac/arazi-suv-pickup",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Skywell","skywell","HT-i","ht-i","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Smart","smart","Fortwo","fortwo","arac/otomobil",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Smart","smart","Forfour","forfour","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Smart","smart","#1","1","arac/otomobil|arac/arazi-suv-pickup",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Smart","smart","#3","3","arac/otomobil|arac/arazi-suv-pickup",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Smart","smart","Roadster","roadster","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Subaru","subaru","Forester","forester","arac/arazi-suv-pickup",3,1,"RESEARCHED_WITH_VERIFIED_DATA",1,2,0,0,0
+"Subaru","subaru","XV","xv","arac/arazi-suv-pickup",4,1,"RESEARCHED_WITH_VERIFIED_DATA",1,2,1,1,0
+"Subaru","subaru","Outback","outback","arac/arazi-suv-pickup",2,0,"RESEARCHED_REVIEW_ONLY",0,0,0,1,0
+"Subaru","subaru","BRZ","brz","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Subaru","subaru","Impreza","impreza","arac/otomobil",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Subaru","subaru","Justy","justy","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Subaru","subaru","Legacy","legacy","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Subaru","subaru","Levorg","levorg","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Subaru","subaru","SVX","svx","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Subaru","subaru","Crosstrek","crosstrek","arac/arazi-suv-pickup",2,1,"RESEARCHED_WITH_VERIFIED_DATA",1,1,0,0,0
+"Subaru","subaru","Solterra","solterra","arac/arazi-suv-pickup",3,1,"RESEARCHED_WITH_VERIFIED_DATA",1,2,0,0,0
+"Subaru","subaru","Tribeca","tribeca","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Suzuki","suzuki","Swift","swift","arac/otomobil",5,1,"RESEARCHED_WITH_VERIFIED_DATA",1,2,0,1,0
+"Suzuki","suzuki","Vitara","vitara","arac/arazi-suv-pickup",5,2,"RESEARCHED_WITH_VERIFIED_DATA",2,2,0,0,0
+"Suzuki","suzuki","S-Cross","s-cross","arac/arazi-suv-pickup",5,2,"RESEARCHED_WITH_VERIFIED_DATA",2,2,1,1,0
+"Suzuki","suzuki","Alto","alto","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Suzuki","suzuki","Baleno","baleno","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Suzuki","suzuki","Celerio","celerio","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Suzuki","suzuki","Ignis","ignis","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Suzuki","suzuki","Kizashi","kizashi","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Suzuki","suzuki","Liana","liana","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Suzuki","suzuki","Maruti","maruti","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Suzuki","suzuki","Splash","splash","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Suzuki","suzuki","Wagon R","wagon-r","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Suzuki","suzuki","Across","across","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Suzuki","suzuki","Jimny","jimny","arac/arazi-suv-pickup",2,1,"RESEARCHED_WITH_VERIFIED_DATA",1,1,0,1,0
+"Suzuki","suzuki","Carry","carry","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Suzuki","suzuki","Super Carry","super-carry","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"SWM","swm","G01","g01","arac/arazi-suv-pickup",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"SWM","swm","G01F","g01f","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"SWM","swm","G03F","g03f","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"SWM","swm","G05","g05","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Tata","tata","Indica","indica","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Tata","tata","Indigo","indigo","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Tata","tata","Manza","manza","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Tata","tata","Nano","nano","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Tata","tata","Vista","vista","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Tata","tata","Safari","safari","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Tata","tata","Telcoline","telcoline","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Tata","tata","Xenon","xenon","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Tenax","tenax","V1","v1","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Tesla","tesla","Model 3","model-3","arac/otomobil",6,0,"RESEARCHED_REVIEW_ONLY",0,0,0,1,0
+"Tesla","tesla","Model S","model-s","arac/otomobil",3,0,"RESEARCHED_REVIEW_ONLY",0,0,0,1,0
+"Tesla","tesla","Model Y","model-y","arac/arazi-suv-pickup",9,5,"RESEARCHED_WITH_VERIFIED_DATA",6,3,0,0,2
+"Tesla","tesla","Model X","model-x","arac/otomobil|arac/arazi-suv-pickup",3,0,"RESEARCHED_REVIEW_ONLY",0,0,0,1,0
+"Tesla","tesla","Cybertruck","cybertruck","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"The London Taxi","the-london-taxi","TX Electric","tx-electric","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"The London Taxi","the-london-taxi","TX1","tx1","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"The London Taxi","the-london-taxi","TX2","tx2","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"The London Taxi","the-london-taxi","TX4","tx4","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Tofaş","tofas","Doğan","dogan","arac/otomobil",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Tofaş","tofas","Kartal","kartal","arac/otomobil",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Tofaş","tofas","Murat 124","murat-124","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Tofaş","tofas","Murat 131","murat-131","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Tofaş","tofas","Serçe","serce","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Tofaş","tofas","Şahin","sahin","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"TOGG","togg","T10X","t10x","arac/arazi-suv-pickup",9,3,"RESEARCHED_WITH_VERIFIED_DATA",3,3,1,0,0
+"TOGG","togg","T10F","t10f","arac/otomobil",7,3,"RESEARCHED_WITH_VERIFIED_DATA",3,2,1,0,0
+"Toyota","toyota","Corolla","corolla","arac/otomobil",6,4,"RESEARCHED_WITH_VERIFIED_DATA",4,8,1,0,0
+"Toyota","toyota","Yaris","yaris","arac/otomobil",6,0,"NOT_RESEARCHED",0,0,0,0,0
+"Toyota","toyota","Camry","camry","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Toyota","toyota","Auris","auris","arac/otomobil",5,0,"NOT_RESEARCHED",0,0,0,0,0
+"Toyota","toyota","RAV4","rav4","arac/arazi-suv-pickup",4,1,"RESEARCHED_WITH_VERIFIED_DATA",1,4,1,1,0
+"Toyota","toyota","C-HR","c-hr","arac/arazi-suv-pickup|arac/otomobil",7,3,"RESEARCHED_WITH_VERIFIED_DATA",3,5,2,0,0
+"Toyota","toyota","Hilux","hilux","arac/arazi-suv-pickup",4,0,"NOT_RESEARCHED",0,0,0,0,0
+"Toyota","toyota","Land Cruiser","land-cruiser","arac/arazi-suv-pickup",4,0,"NOT_RESEARCHED",0,0,0,0,0
+"Toyota","toyota","Avensis","avensis","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Toyota","toyota","Carina","carina","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Toyota","toyota","Celica","celica","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Toyota","toyota","Corona","corona","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Toyota","toyota","GT86","gt86","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Toyota","toyota","MR2","mr2","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Toyota","toyota","Prius","prius","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Toyota","toyota","Starlet","starlet","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Toyota","toyota","Supra","supra","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Toyota","toyota","Urban Cruiser","urban-cruiser","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Toyota","toyota","Highlander","highlander","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Toyota","toyota","Yaris Cross","yaris-cross","arac/arazi-suv-pickup",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Toyota","toyota","Hiace","hiace","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Toyota","toyota","Proace","proace","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Toyota","toyota","Proace City","proace-city","arac/minivan-panelvan",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Toyota","toyota","bZ4X","bz4x","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Toyota","toyota","Proace City Electric","proace-city-electric","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Toyota","toyota","Proace Electric","proace-electric","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Vanderhall","vanderhall","Carmel","carmel","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Vanderhall","vanderhall","Venice","venice","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Volkswagen","volkswagen","Golf","golf","arac/otomobil",13,7,"RESEARCHED_WITH_VERIFIED_DATA",7,7,3,2,0
+"Volkswagen","volkswagen","Passat","passat","arac/otomobil",10,4,"RESEARCHED_WITH_VERIFIED_DATA",4,4,1,1,0
+"Volkswagen","volkswagen","Polo","polo","arac/otomobil",8,1,"RESEARCHED_WITH_VERIFIED_DATA",1,1,1,1,0
+"Volkswagen","volkswagen","Jetta","jetta","arac/otomobil",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Volkswagen","volkswagen","Tiguan","tiguan","arac/arazi-suv-pickup",5,2,"RESEARCHED_WITH_VERIFIED_DATA",2,3,0,1,0
+"Volkswagen","volkswagen","T-Roc","t-roc","arac/arazi-suv-pickup",3,0,"RESEARCHED_REVIEW_ONLY",0,0,0,1,0
+"Volkswagen","volkswagen","Touareg","touareg","arac/arazi-suv-pickup",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Volkswagen","volkswagen","Amarok","amarok","arac/arazi-suv-pickup",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Volkswagen","volkswagen","Transporter","transporter","arac/minivan-panelvan",4,0,"RESEARCHED_REVIEW_ONLY",0,0,0,1,0
+"Volkswagen","volkswagen","Caddy","caddy","arac/minivan-panelvan",5,1,"RESEARCHED_WITH_VERIFIED_DATA",1,4,1,1,0
+"Volkswagen","volkswagen","Multivan","multivan","arac/minivan-panelvan",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Volkswagen","volkswagen","Arteon","arteon","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Volkswagen","volkswagen","Beetle","beetle","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Volkswagen","volkswagen","Bora","bora","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Volkswagen","volkswagen","CC","cc","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Volkswagen","volkswagen","Eos","eos","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Volkswagen","volkswagen","ID.3","id-3","arac/otomobil",3,0,"RESEARCHED_REVIEW_ONLY",0,0,0,1,0
+"Volkswagen","volkswagen","Lupo","lupo","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Volkswagen","volkswagen","Phaeton","phaeton","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Volkswagen","volkswagen","Scirocco","scirocco","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Volkswagen","volkswagen","Vento","vento","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Volkswagen","volkswagen","ID.4","id-4","arac/arazi-suv-pickup",4,1,"RESEARCHED_WITH_VERIFIED_DATA",1,1,0,0,0
+"Volkswagen","volkswagen","ID.5","id-5","arac/arazi-suv-pickup",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Volkswagen","volkswagen","T-Cross","t-cross","arac/arazi-suv-pickup",2,0,"RESEARCHED_REVIEW_ONLY",0,0,0,1,0
+"Volkswagen","volkswagen","Taigo","taigo","arac/arazi-suv-pickup",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Volkswagen","volkswagen","Crafter","crafter","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Volkswagen","volkswagen","ID. Buzz","id-buzz","arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Volkswagen","volkswagen","ID.7","id-7","arac/otomobil",2,1,"RESEARCHED_WITH_VERIFIED_DATA",1,1,0,0,0
+"Volta","volta","EV1","ev1","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Volta","volta","EV2","ev2","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Volta","volta","EV4","ev4","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Volvo","volvo","S60","s60","arac/otomobil",5,0,"NOT_RESEARCHED",0,0,0,0,0
+"Volvo","volvo","S90","s90","arac/otomobil",4,0,"NOT_RESEARCHED",0,0,0,0,0
+"Volvo","volvo","V40","v40","arac/otomobil",4,0,"NOT_RESEARCHED",0,0,0,0,0
+"Volvo","volvo","XC60","xc60","arac/arazi-suv-pickup",7,3,"RESEARCHED_WITH_VERIFIED_DATA",3,5,1,0,0
+"Volvo","volvo","XC40","xc40","arac/arazi-suv-pickup",4,0,"NOT_RESEARCHED",0,0,0,0,0
+"Volvo","volvo","C30","c30","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Volvo","volvo","C70","c70","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Volvo","volvo","S40","s40","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Volvo","volvo","S70","s70","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Volvo","volvo","S80","s80","arac/otomobil",2,0,"NOT_RESEARCHED",0,0,0,0,0
+"Volvo","volvo","V50","v50","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Volvo","volvo","V60","v60","arac/otomobil",2,1,"RESEARCHED_WITH_VERIFIED_DATA",1,1,0,1,0
+"Volvo","volvo","V70","v70","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Volvo","volvo","V90","v90","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Volvo","volvo","C40 Recharge","c40-recharge","arac/arazi-suv-pickup",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Volvo","volvo","EX30","ex30","arac/arazi-suv-pickup",3,0,"RESEARCHED_REVIEW_ONLY",0,0,0,1,0
+"Volvo","volvo","EX40","ex40","arac/arazi-suv-pickup",2,1,"RESEARCHED_WITH_VERIFIED_DATA",1,1,0,0,0
+"Volvo","volvo","EX90","ex90","arac/arazi-suv-pickup",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Volvo","volvo","XC90","xc90","arac/arazi-suv-pickup",5,2,"RESEARCHED_WITH_VERIFIED_DATA",2,3,1,1,0
+"Voyah","voyah","Dream","dream","arac/arazi-suv-pickup|arac/minivan-panelvan",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Voyah","voyah","Free","free","arac/arazi-suv-pickup",3,0,"NOT_RESEARCHED",0,0,0,0,0
+"Voyah","voyah","Passion","passion","arac/arazi-suv-pickup|arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"XEV","xev","Yoyo","yoyo","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Yuki","yuki","Amy","amy","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Yuki","yuki","Tria","tria","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Zlin Motors","zlin-motors","Z2","z2","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0
+"Zlin Motors","zlin-motors","Z3","z3","arac/otomobil",1,0,"NOT_RESEARCHED",0,0,0,0,0

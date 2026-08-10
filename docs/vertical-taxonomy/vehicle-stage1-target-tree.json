@@ -7,6 +7,7 @@
     "Canonical vehicle identity (brand/model/generation/version) is never duplicated per browse segment.",
     "MARKET_SEGMENT / TRANSACTION_MODE / CONDITION_SEGMENT / SPECIAL_SEGMENT nodes apply filters/policies; they do not own separate Brand/Model rows.",
     "bodyType (Sedan, Hatchback, …) is attribute — not Category leaf under Otomobil.",
+    "bodySubtype (SUV, Crossover, Arazi Aracı, Pickup) is attribute — not Category leaf under Arazi, SUV ve Pickup.",
     "User writes listing title freely."
   ],
   "browseRoles": [
@@ -107,15 +108,11 @@
       "formEntryEnabled": true,
       "sortOrder": 20,
       "nodeType": "MAIN",
-      "isLeaf": false,
+      "isLeaf": true,
       "persistsAsCategory": true,
       "legacySubtypeSlugs": ["arazi-suv-pickup"],
-      "children": [
-        { "name": "SUV", "slug": "suv", "path": "arac/arazi-suv-pickup/suv", "browseRole": "VEHICLE_TYPE", "catalogScope": "SUV_PICKUP", "attributeTemplate": "SUV_PICKUP", "isLeaf": true, "persistsAsCategory": true, "sortOrder": 1, "mapsToAttribute": { "bodySubtype": "SUV" } },
-        { "name": "Crossover", "slug": "crossover", "path": "arac/arazi-suv-pickup/crossover", "browseRole": "VEHICLE_TYPE", "catalogScope": "SUV_PICKUP", "attributeTemplate": "SUV_PICKUP", "isLeaf": true, "persistsAsCategory": true, "sortOrder": 2, "mapsToAttribute": { "bodySubtype": "CROSSOVER" } },
-        { "name": "Arazi Aracı", "slug": "arazi-araci", "path": "arac/arazi-suv-pickup/arazi-araci", "browseRole": "VEHICLE_TYPE", "catalogScope": "SUV_PICKUP", "attributeTemplate": "SUV_PICKUP", "isLeaf": true, "persistsAsCategory": true, "sortOrder": 3, "mapsToAttribute": { "bodySubtype": "OFF_ROAD" } },
-        { "name": "Pickup", "slug": "pickup", "path": "arac/arazi-suv-pickup/pickup", "browseRole": "VEHICLE_TYPE", "catalogScope": "SUV_PICKUP", "attributeTemplate": "SUV_PICKUP", "isLeaf": true, "persistsAsCategory": true, "sortOrder": 4, "mapsToAttribute": { "bodySubtype": "PICKUP" } }
-      ]
+      "notes": "SUV / Crossover / Arazi Aracı / Pickup are bodySubtype attributes on the form — not browse children. Nav goes straight to brands.",
+      "children": []
     },
     {
       "name": "Elektrikli Araçlar",

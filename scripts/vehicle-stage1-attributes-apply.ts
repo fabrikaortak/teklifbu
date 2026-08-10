@@ -308,6 +308,24 @@ async function main() {
       }
     }
     if (linkedAny) report.categoriesTouched.push(cat.slug);
+
+    // Soft-hide CategoryAttribute rows no longer in the template (e.g. removed bodyType on SUV_PICKUP).
+    const keepAttrIds = new Set(
+      templateRows.map((r) => attributeIdByFieldKey.get(r.field_key)).filter(Boolean) as string[]
+    );
+    const stale = await prisma.categoryAttribute.findMany({
+      where: { categoryId: cat.id, formVisible: true },
+      select: { categoryId: true, attributeId: true },
+    });
+    for (const row of stale) {
+      if (keepAttrIds.has(row.attributeId)) continue;
+      await prisma.categoryAttribute.update({
+        where: {
+          categoryId_attributeId: { categoryId: row.categoryId, attributeId: row.attributeId },
+        },
+        data: { formVisible: false, filterable: false },
+      });
+    }
   }
 
   // 3) Also attach ELECTRIC_OVERLAY / DAMAGE_OVERLAY / CLASSIC_OVERLAY / DISABLED_PLATE_OVERLAY

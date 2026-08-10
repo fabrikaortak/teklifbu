@@ -1,0 +1,123 @@
+categoryPath,action,attributeSlug,attributeName,type,required,filterable,searchable,comparisonVisible,isVariant,optionValues,unit,reason
+Ev Aletleri › Beyaz Eşya › Çamaşır Bakımı › Çamaşır Makinesi,UPSERT,yikama-kapasitesi,Yıkama Kapasitesi,SINGLE_SELECT,true,true,true,true,false,5 kg;6 kg;7 kg;8 kg;9 kg;10 kg;12 kg,kg,critical override for Çamaşır Makinesi
+Ev Aletleri › Beyaz Eşya › Çamaşır Bakımı › Çamaşır Makinesi,UPSERT,devir,Devir,SINGLE_SELECT,false,true,true,true,false,1000;1200;1400;1600,,critical override for Çamaşır Makinesi
+Ev Aletleri › Beyaz Eşya › Çamaşır Bakımı › Çamaşır Makinesi,UPSERT,kurutmali,Kurutmalı,BOOLEAN,false,true,true,true,false,,,critical override for Çamaşır Makinesi
+Ev Aletleri › Beyaz Eşya › Çamaşır Bakımı › Çamaşır Makinesi,UPSERT,ses-seviyesi,Ses Seviyesi,NUMBER,false,false,true,true,false,,dB,critical override for Çamaşır Makinesi
+Ev Aletleri › Beyaz Eşya › Çamaşır Bakımı › Çamaşır Makinesi,REMOVE,hacim,,,false,false,false,false,false,,,fridge attr wrongly on washer
+Ev Aletleri › Beyaz Eşya › Çamaşır Bakımı › Çamaşır Makinesi,REMOVE,kapi-tipi,,,false,false,false,false,false,,,fridge attr wrongly on washer
+Ev Aletleri › Beyaz Eşya › Çamaşır Bakımı › Çamaşır Makinesi,REMOVE,no-frost,,,false,false,false,false,false,,,fridge attr wrongly on washer
+Ev Aletleri › Beyaz Eşya › Çamaşır Bakımı › Kurutmalı Çamaşır Makinesi,UPSERT,yikama-kapasitesi,Yıkama Kapasitesi,SINGLE_SELECT,true,true,true,true,false,5 kg;6 kg;7 kg;8 kg;9 kg;10 kg;12 kg,kg,critical override for Çamaşır Makinesi
+Ev Aletleri › Beyaz Eşya › Çamaşır Bakımı › Kurutmalı Çamaşır Makinesi,UPSERT,devir,Devir,SINGLE_SELECT,false,true,true,true,false,1000;1200;1400;1600,,critical override for Çamaşır Makinesi
+Ev Aletleri › Beyaz Eşya › Çamaşır Bakımı › Kurutmalı Çamaşır Makinesi,UPSERT,kurutmali,Kurutmalı,BOOLEAN,false,true,true,true,false,,,critical override for Çamaşır Makinesi
+Ev Aletleri › Beyaz Eşya › Çamaşır Bakımı › Kurutmalı Çamaşır Makinesi,UPSERT,ses-seviyesi,Ses Seviyesi,NUMBER,false,false,true,true,false,,dB,critical override for Çamaşır Makinesi
+Ev Aletleri › Beyaz Eşya › Çamaşır Bakımı › Kurutmalı Çamaşır Makinesi,REMOVE,hacim,,,false,false,false,false,false,,,fridge attr wrongly on washer
+Ev Aletleri › Beyaz Eşya › Çamaşır Bakımı › Kurutmalı Çamaşır Makinesi,REMOVE,kapi-tipi,,,false,false,false,false,false,,,fridge attr wrongly on washer
+Ev Aletleri › Beyaz Eşya › Çamaşır Bakımı › Kurutmalı Çamaşır Makinesi,REMOVE,no-frost,,,false,false,false,false,false,,,fridge attr wrongly on washer
+Ev Aletleri › Beyaz Eşya › Soğutma › Buzdolabı,UPSERT,hacim,Hacim,SINGLE_SELECT,true,true,true,true,false,200 L;250 L;300 L;350 L;400 L;500 L+,L,critical override for Buzdolabı
+Ev Aletleri › Beyaz Eşya › Soğutma › Buzdolabı,UPSERT,kapi-tipi,Kapı Tipi,SINGLE_SELECT,true,true,true,true,false,Tek Kapı;Çift Kapı;French Door;Side by Side,,critical override for Buzdolabı
+Ev Aletleri › Beyaz Eşya › Soğutma › Buzdolabı,UPSERT,no-frost,No-Frost,BOOLEAN,false,true,true,true,false,,,critical override for Buzdolabı
+Ev Aletleri › Beyaz Eşya › Soğutma › Buzdolabı,UPSERT,derin-dondurucu,Derin Dondurucu,BOOLEAN,false,true,true,true,false,,,critical override for Buzdolabı
+Ev Aletleri › Beyaz Eşya › Soğutma › Mini Buzdolabı,UPSERT,hacim,Hacim,SINGLE_SELECT,true,true,true,true,false,200 L;250 L;300 L;350 L;400 L;500 L+,L,critical override for Buzdolabı
+Ev Aletleri › Beyaz Eşya › Soğutma › Mini Buzdolabı,UPSERT,kapi-tipi,Kapı Tipi,SINGLE_SELECT,true,true,true,true,false,Tek Kapı;Çift Kapı;French Door;Side by Side,,critical override for Buzdolabı
+Ev Aletleri › Beyaz Eşya › Soğutma › Mini Buzdolabı,UPSERT,no-frost,No-Frost,BOOLEAN,false,true,true,true,false,,,critical override for Buzdolabı
+Ev Aletleri › Beyaz Eşya › Soğutma › Mini Buzdolabı,UPSERT,derin-dondurucu,Derin Dondurucu,BOOLEAN,false,true,true,true,false,,,critical override for Buzdolabı
+Mutfak ve Sofra › Saklama ve Düzenleme › Gıda Saklama › Buzdolabı Düzenleyici,UPSERT,hacim,Hacim,SINGLE_SELECT,true,true,true,true,false,200 L;250 L;300 L;350 L;400 L;500 L+,L,critical override for Buzdolabı
+Mutfak ve Sofra › Saklama ve Düzenleme › Gıda Saklama › Buzdolabı Düzenleyici,UPSERT,kapi-tipi,Kapı Tipi,SINGLE_SELECT,true,true,true,true,false,Tek Kapı;Çift Kapı;French Door;Side by Side,,critical override for Buzdolabı
+Mutfak ve Sofra › Saklama ve Düzenleme › Gıda Saklama › Buzdolabı Düzenleyici,UPSERT,no-frost,No-Frost,BOOLEAN,false,true,true,true,false,,,critical override for Buzdolabı
+Mutfak ve Sofra › Saklama ve Düzenleme › Gıda Saklama › Buzdolabı Düzenleyici,UPSERT,derin-dondurucu,Derin Dondurucu,BOOLEAN,false,true,true,true,false,,,critical override for Buzdolabı
+Otomotiv Aksesuar › Araç İçi › Konfor › Araç İçi Buzdolabı,UPSERT,hacim,Hacim,SINGLE_SELECT,true,true,true,true,false,200 L;250 L;300 L;350 L;400 L;500 L+,L,critical override for Buzdolabı
+Otomotiv Aksesuar › Araç İçi › Konfor › Araç İçi Buzdolabı,UPSERT,kapi-tipi,Kapı Tipi,SINGLE_SELECT,true,true,true,true,false,Tek Kapı;Çift Kapı;French Door;Side by Side,,critical override for Buzdolabı
+Otomotiv Aksesuar › Araç İçi › Konfor › Araç İçi Buzdolabı,UPSERT,no-frost,No-Frost,BOOLEAN,false,true,true,true,false,,,critical override for Buzdolabı
+Otomotiv Aksesuar › Araç İçi › Konfor › Araç İçi Buzdolabı,UPSERT,derin-dondurucu,Derin Dondurucu,BOOLEAN,false,true,true,true,false,,,critical override for Buzdolabı
+Ev Aletleri › Beyaz Eşya › Bulaşık ve Mutfak › Bulaşık Makinesi,UPSERT,kapasite-kisilik,Kapasite,SINGLE_SELECT,true,true,true,true,false,8;10;12;13;14;16,kişilik,critical override for Bulaşık Makinesi
+Ev Aletleri › Beyaz Eşya › Bulaşık ve Mutfak › Bulaşık Makinesi,UPSERT,ankastre,Ankastre,BOOLEAN,false,true,true,true,false,,,critical override for Bulaşık Makinesi
+Ev Aletleri › Beyaz Eşya › Bulaşık ve Mutfak › Bulaşık Makinesi,UPSERT,ses-seviyesi,Ses Seviyesi,NUMBER,false,false,true,true,false,,dB,critical override for Bulaşık Makinesi
+Ev Aletleri › Beyaz Eşya › Bulaşık ve Mutfak › Ankastre Bulaşık Makinesi,UPSERT,kapasite-kisilik,Kapasite,SINGLE_SELECT,true,true,true,true,false,8;10;12;13;14;16,kişilik,critical override for Bulaşık Makinesi
+Ev Aletleri › Beyaz Eşya › Bulaşık ve Mutfak › Ankastre Bulaşık Makinesi,UPSERT,ankastre,Ankastre,BOOLEAN,false,true,true,true,false,,,critical override for Bulaşık Makinesi
+Ev Aletleri › Beyaz Eşya › Bulaşık ve Mutfak › Ankastre Bulaşık Makinesi,UPSERT,ses-seviyesi,Ses Seviyesi,NUMBER,false,false,true,true,false,,dB,critical override for Bulaşık Makinesi
+Ev Aletleri › Beyaz Eşya › Çamaşır Bakımı › Kurutma Makinesi,UPSERT,kurutma-kapasitesi,Kapasite,SINGLE_SELECT,true,true,true,true,false,7 kg;8 kg;9 kg;10 kg,kg,critical override for Kurutma Makinesi
+Ev Aletleri › Beyaz Eşya › Çamaşır Bakımı › Kurutma Makinesi,UPSERT,kurutma-tipi,Kurutma Tipi,SINGLE_SELECT,false,true,true,true,false,Egzoz;Yoğuşmalı;Isı Pompalı,,critical override for Kurutma Makinesi
+Kozmetik ve Kişisel Bakım › Saç Bakımı › Saç Şekillendirme Cihazları › Saç Kurutma Makinesi,UPSERT,kurutma-kapasitesi,Kapasite,SINGLE_SELECT,true,true,true,true,false,7 kg;8 kg;9 kg;10 kg,kg,critical override for Kurutma Makinesi
+Kozmetik ve Kişisel Bakım › Saç Bakımı › Saç Şekillendirme Cihazları › Saç Kurutma Makinesi,UPSERT,kurutma-tipi,Kurutma Tipi,SINGLE_SELECT,false,true,true,true,false,Egzoz;Yoğuşmalı;Isı Pompalı,,critical override for Kurutma Makinesi
+"Anne, Bebek ve Çocuk › Oyuncak › Açık Hava › Çocuk Bisikleti",UPSERT,bisiklet-tipi,Bisiklet Tipi,SINGLE_SELECT,true,true,true,true,false,Dağ;Şehir;Yol;Katlanır;Çocuk;Elektrikli,,critical override for Bisiklet
+"Anne, Bebek ve Çocuk › Oyuncak › Açık Hava › Çocuk Bisikleti",UPSERT,jant-capi,Jant Çapı,SINGLE_SELECT,false,true,true,true,false,20;24;26;27.5;28;29,inç,critical override for Bisiklet
+"Anne, Bebek ve Çocuk › Oyuncak › Açık Hava › Çocuk Bisikleti",UPSERT,vites-sayisi,Vites Sayısı,SINGLE_SELECT,false,true,true,true,false,Tek;3;7;18;21;24;27,,critical override for Bisiklet
+"Anne, Bebek ve Çocuk › Oyuncak › Açık Hava › Çocuk Bisikleti",UPSERT,fren-tipi,Fren Tipi,SINGLE_SELECT,false,true,true,true,false,V-Brake;Disk;Hidrolik Disk,,critical override for Bisiklet
+"Anne, Bebek ve Çocuk › Oyuncak › Açık Hava › Çocuk Bisikleti",UPSERT,kadro-malzemesi,Kadro Malzemesi,SINGLE_SELECT,false,true,true,true,false,Alüminyum;Çelik;Karbon;Diğer,,critical override for Bisiklet
+"Anne, Bebek ve Çocuk › Oyuncak › Açık Hava › Çocuk Bisikleti",UPSERT,elektrikli,Elektrikli,BOOLEAN,false,true,true,true,false,,,critical override for Bisiklet
+Spor ve Outdoor › Fitness › Kardiyo › Eliptik Bisiklet,UPSERT,bisiklet-tipi,Bisiklet Tipi,SINGLE_SELECT,true,true,true,true,false,Dağ;Şehir;Yol;Katlanır;Çocuk;Elektrikli,,critical override for Bisiklet
+Spor ve Outdoor › Fitness › Kardiyo › Eliptik Bisiklet,UPSERT,jant-capi,Jant Çapı,SINGLE_SELECT,false,true,true,true,false,20;24;26;27.5;28;29,inç,critical override for Bisiklet
+Spor ve Outdoor › Fitness › Kardiyo › Eliptik Bisiklet,UPSERT,vites-sayisi,Vites Sayısı,SINGLE_SELECT,false,true,true,true,false,Tek;3;7;18;21;24;27,,critical override for Bisiklet
+Spor ve Outdoor › Fitness › Kardiyo › Eliptik Bisiklet,UPSERT,fren-tipi,Fren Tipi,SINGLE_SELECT,false,true,true,true,false,V-Brake;Disk;Hidrolik Disk,,critical override for Bisiklet
+Spor ve Outdoor › Fitness › Kardiyo › Eliptik Bisiklet,UPSERT,kadro-malzemesi,Kadro Malzemesi,SINGLE_SELECT,false,true,true,true,false,Alüminyum;Çelik;Karbon;Diğer,,critical override for Bisiklet
+Spor ve Outdoor › Fitness › Kardiyo › Eliptik Bisiklet,UPSERT,elektrikli,Elektrikli,BOOLEAN,false,true,true,true,false,,,critical override for Bisiklet
+Spor ve Outdoor › Fitness › Kardiyo › Kondisyon Bisikleti,UPSERT,bisiklet-tipi,Bisiklet Tipi,SINGLE_SELECT,true,true,true,true,false,Dağ;Şehir;Yol;Katlanır;Çocuk;Elektrikli,,critical override for Bisiklet
+Spor ve Outdoor › Fitness › Kardiyo › Kondisyon Bisikleti,UPSERT,jant-capi,Jant Çapı,SINGLE_SELECT,false,true,true,true,false,20;24;26;27.5;28;29,inç,critical override for Bisiklet
+Spor ve Outdoor › Fitness › Kardiyo › Kondisyon Bisikleti,UPSERT,vites-sayisi,Vites Sayısı,SINGLE_SELECT,false,true,true,true,false,Tek;3;7;18;21;24;27,,critical override for Bisiklet
+Spor ve Outdoor › Fitness › Kardiyo › Kondisyon Bisikleti,UPSERT,fren-tipi,Fren Tipi,SINGLE_SELECT,false,true,true,true,false,V-Brake;Disk;Hidrolik Disk,,critical override for Bisiklet
+Spor ve Outdoor › Fitness › Kardiyo › Kondisyon Bisikleti,UPSERT,kadro-malzemesi,Kadro Malzemesi,SINGLE_SELECT,false,true,true,true,false,Alüminyum;Çelik;Karbon;Diğer,,critical override for Bisiklet
+Spor ve Outdoor › Fitness › Kardiyo › Kondisyon Bisikleti,UPSERT,elektrikli,Elektrikli,BOOLEAN,false,true,true,true,false,,,critical override for Bisiklet
+Spor ve Outdoor › Bisiklet › Bisiklet Türleri › Dağ Bisikleti,UPSERT,bisiklet-tipi,Bisiklet Tipi,SINGLE_SELECT,true,true,true,true,false,Dağ;Şehir;Yol;Katlanır;Çocuk;Elektrikli,,critical override for Bisiklet
+Spor ve Outdoor › Bisiklet › Bisiklet Türleri › Dağ Bisikleti,UPSERT,jant-capi,Jant Çapı,SINGLE_SELECT,false,true,true,true,false,20;24;26;27.5;28;29,inç,critical override for Bisiklet
+Spor ve Outdoor › Bisiklet › Bisiklet Türleri › Dağ Bisikleti,UPSERT,vites-sayisi,Vites Sayısı,SINGLE_SELECT,false,true,true,true,false,Tek;3;7;18;21;24;27,,critical override for Bisiklet
+Spor ve Outdoor › Bisiklet › Bisiklet Türleri › Dağ Bisikleti,UPSERT,fren-tipi,Fren Tipi,SINGLE_SELECT,false,true,true,true,false,V-Brake;Disk;Hidrolik Disk,,critical override for Bisiklet
+Spor ve Outdoor › Bisiklet › Bisiklet Türleri › Dağ Bisikleti,UPSERT,kadro-malzemesi,Kadro Malzemesi,SINGLE_SELECT,false,true,true,true,false,Alüminyum;Çelik;Karbon;Diğer,,critical override for Bisiklet
+Spor ve Outdoor › Bisiklet › Bisiklet Türleri › Dağ Bisikleti,UPSERT,elektrikli,Elektrikli,BOOLEAN,false,true,true,true,false,,,critical override for Bisiklet
+Spor ve Outdoor › Bisiklet › Bisiklet Türleri › Şehir Bisikleti,UPSERT,bisiklet-tipi,Bisiklet Tipi,SINGLE_SELECT,true,true,true,true,false,Dağ;Şehir;Yol;Katlanır;Çocuk;Elektrikli,,critical override for Bisiklet
+Spor ve Outdoor › Bisiklet › Bisiklet Türleri › Şehir Bisikleti,UPSERT,jant-capi,Jant Çapı,SINGLE_SELECT,false,true,true,true,false,20;24;26;27.5;28;29,inç,critical override for Bisiklet
+Spor ve Outdoor › Bisiklet › Bisiklet Türleri › Şehir Bisikleti,UPSERT,vites-sayisi,Vites Sayısı,SINGLE_SELECT,false,true,true,true,false,Tek;3;7;18;21;24;27,,critical override for Bisiklet
+Spor ve Outdoor › Bisiklet › Bisiklet Türleri › Şehir Bisikleti,UPSERT,fren-tipi,Fren Tipi,SINGLE_SELECT,false,true,true,true,false,V-Brake;Disk;Hidrolik Disk,,critical override for Bisiklet
+Spor ve Outdoor › Bisiklet › Bisiklet Türleri › Şehir Bisikleti,UPSERT,kadro-malzemesi,Kadro Malzemesi,SINGLE_SELECT,false,true,true,true,false,Alüminyum;Çelik;Karbon;Diğer,,critical override for Bisiklet
+Spor ve Outdoor › Bisiklet › Bisiklet Türleri › Şehir Bisikleti,UPSERT,elektrikli,Elektrikli,BOOLEAN,false,true,true,true,false,,,critical override for Bisiklet
+Spor ve Outdoor › Bisiklet › Bisiklet Türleri › Yol Bisikleti,UPSERT,bisiklet-tipi,Bisiklet Tipi,SINGLE_SELECT,true,true,true,true,false,Dağ;Şehir;Yol;Katlanır;Çocuk;Elektrikli,,critical override for Bisiklet
+Spor ve Outdoor › Bisiklet › Bisiklet Türleri › Yol Bisikleti,UPSERT,jant-capi,Jant Çapı,SINGLE_SELECT,false,true,true,true,false,20;24;26;27.5;28;29,inç,critical override for Bisiklet
+Spor ve Outdoor › Bisiklet › Bisiklet Türleri › Yol Bisikleti,UPSERT,vites-sayisi,Vites Sayısı,SINGLE_SELECT,false,true,true,true,false,Tek;3;7;18;21;24;27,,critical override for Bisiklet
+Spor ve Outdoor › Bisiklet › Bisiklet Türleri › Yol Bisikleti,UPSERT,fren-tipi,Fren Tipi,SINGLE_SELECT,false,true,true,true,false,V-Brake;Disk;Hidrolik Disk,,critical override for Bisiklet
+Spor ve Outdoor › Bisiklet › Bisiklet Türleri › Yol Bisikleti,UPSERT,kadro-malzemesi,Kadro Malzemesi,SINGLE_SELECT,false,true,true,true,false,Alüminyum;Çelik;Karbon;Diğer,,critical override for Bisiklet
+Spor ve Outdoor › Bisiklet › Bisiklet Türleri › Yol Bisikleti,UPSERT,elektrikli,Elektrikli,BOOLEAN,false,true,true,true,false,,,critical override for Bisiklet
+Spor ve Outdoor › Bisiklet › Bisiklet Türleri › Elektrikli Bisiklet,UPSERT,bisiklet-tipi,Bisiklet Tipi,SINGLE_SELECT,true,true,true,true,false,Dağ;Şehir;Yol;Katlanır;Çocuk;Elektrikli,,critical override for Bisiklet
+Spor ve Outdoor › Bisiklet › Bisiklet Türleri › Elektrikli Bisiklet,UPSERT,jant-capi,Jant Çapı,SINGLE_SELECT,false,true,true,true,false,20;24;26;27.5;28;29,inç,critical override for Bisiklet
+Spor ve Outdoor › Bisiklet › Bisiklet Türleri › Elektrikli Bisiklet,UPSERT,vites-sayisi,Vites Sayısı,SINGLE_SELECT,false,true,true,true,false,Tek;3;7;18;21;24;27,,critical override for Bisiklet
+Spor ve Outdoor › Bisiklet › Bisiklet Türleri › Elektrikli Bisiklet,UPSERT,fren-tipi,Fren Tipi,SINGLE_SELECT,false,true,true,true,false,V-Brake;Disk;Hidrolik Disk,,critical override for Bisiklet
+Spor ve Outdoor › Bisiklet › Bisiklet Türleri › Elektrikli Bisiklet,UPSERT,kadro-malzemesi,Kadro Malzemesi,SINGLE_SELECT,false,true,true,true,false,Alüminyum;Çelik;Karbon;Diğer,,critical override for Bisiklet
+Spor ve Outdoor › Bisiklet › Bisiklet Türleri › Elektrikli Bisiklet,UPSERT,elektrikli,Elektrikli,BOOLEAN,false,true,true,true,false,,,critical override for Bisiklet
+Spor ve Outdoor › Bisiklet › Bisiklet Türleri › Katlanır Bisiklet,UPSERT,bisiklet-tipi,Bisiklet Tipi,SINGLE_SELECT,true,true,true,true,false,Dağ;Şehir;Yol;Katlanır;Çocuk;Elektrikli,,critical override for Bisiklet
+Spor ve Outdoor › Bisiklet › Bisiklet Türleri › Katlanır Bisiklet,UPSERT,jant-capi,Jant Çapı,SINGLE_SELECT,false,true,true,true,false,20;24;26;27.5;28;29,inç,critical override for Bisiklet
+Spor ve Outdoor › Bisiklet › Bisiklet Türleri › Katlanır Bisiklet,UPSERT,vites-sayisi,Vites Sayısı,SINGLE_SELECT,false,true,true,true,false,Tek;3;7;18;21;24;27,,critical override for Bisiklet
+Spor ve Outdoor › Bisiklet › Bisiklet Türleri › Katlanır Bisiklet,UPSERT,fren-tipi,Fren Tipi,SINGLE_SELECT,false,true,true,true,false,V-Brake;Disk;Hidrolik Disk,,critical override for Bisiklet
+Spor ve Outdoor › Bisiklet › Bisiklet Türleri › Katlanır Bisiklet,UPSERT,kadro-malzemesi,Kadro Malzemesi,SINGLE_SELECT,false,true,true,true,false,Alüminyum;Çelik;Karbon;Diğer,,critical override for Bisiklet
+Spor ve Outdoor › Bisiklet › Bisiklet Türleri › Katlanır Bisiklet,UPSERT,elektrikli,Elektrikli,BOOLEAN,false,true,true,true,false,,,critical override for Bisiklet
+Elektronik › Bilgisayar ve Tablet › Bilgisayar Aksesuarları › Laptop Çantası,UPSERT,ekran-karti,Ekran Kartı,SINGLE_SELECT,false,true,true,true,false,Paylaşımlı;GTX;RTX;Radeon;Diğer,,critical override for Laptop
+Elektronik › Bilgisayar ve Tablet › Bilgisayar Aksesuarları › Laptop Standı,UPSERT,ekran-karti,Ekran Kartı,SINGLE_SELECT,false,true,true,true,false,Paylaşımlı;GTX;RTX;Radeon;Diğer,,critical override for Laptop
+Moda › Çanta ve Aksesuar › Çanta › Laptop Çantası,UPSERT,ekran-karti,Ekran Kartı,SINGLE_SELECT,false,true,true,true,false,Paylaşımlı;GTX;RTX;Radeon;Diğer,,critical override for Laptop
+Moda › Kadın › Üst Giyim › Tişört,UPSERT,yaka-tipi,Yaka,SINGLE_SELECT,false,true,true,true,false,Bisiklet Yaka;V Yaka;Gömlek Yaka,,critical override for Tişört
+Moda › Kadın › Üst Giyim › Tişört,UPSERT,kol-tipi,Kol Tipi,SINGLE_SELECT,false,true,true,true,false,Kısa Kol;Uzun Kol;Kolsuz,,critical override for Tişört
+Moda › Erkek › Üst Giyim › Tişört,UPSERT,yaka-tipi,Yaka,SINGLE_SELECT,false,true,true,true,false,Bisiklet Yaka;V Yaka;Gömlek Yaka,,critical override for Tişört
+Moda › Erkek › Üst Giyim › Tişört,UPSERT,kol-tipi,Kol Tipi,SINGLE_SELECT,false,true,true,true,false,Kısa Kol;Uzun Kol;Kolsuz,,critical override for Tişört
+Moda › Erkek › Üst Giyim › Polo Yaka Tişört,UPSERT,yaka-tipi,Yaka,SINGLE_SELECT,false,true,true,true,false,Bisiklet Yaka;V Yaka;Gömlek Yaka,,critical override for Tişört
+Moda › Erkek › Üst Giyim › Polo Yaka Tişört,UPSERT,kol-tipi,Kol Tipi,SINGLE_SELECT,false,true,true,true,false,Kısa Kol;Uzun Kol;Kolsuz,,critical override for Tişört
+"Anne, Bebek ve Çocuk › Çocuk Giyim › Kız Çocuk › Tişört",UPSERT,yaka-tipi,Yaka,SINGLE_SELECT,false,true,true,true,false,Bisiklet Yaka;V Yaka;Gömlek Yaka,,critical override for Tişört
+"Anne, Bebek ve Çocuk › Çocuk Giyim › Kız Çocuk › Tişört",UPSERT,kol-tipi,Kol Tipi,SINGLE_SELECT,false,true,true,true,false,Kısa Kol;Uzun Kol;Kolsuz,,critical override for Tişört
+"Anne, Bebek ve Çocuk › Çocuk Giyim › Erkek Çocuk › Tişört",UPSERT,yaka-tipi,Yaka,SINGLE_SELECT,false,true,true,true,false,Bisiklet Yaka;V Yaka;Gömlek Yaka,,critical override for Tişört
+"Anne, Bebek ve Çocuk › Çocuk Giyim › Erkek Çocuk › Tişört",UPSERT,kol-tipi,Kol Tipi,SINGLE_SELECT,false,true,true,true,false,Kısa Kol;Uzun Kol;Kolsuz,,critical override for Tişört
+Mutfak ve Sofra › Su Arıtma › Su Arıtma Ürünleri › Filtreli Sürahi,UPSERT,kapasite,Kapasite,SINGLE_SELECT,true,true,true,true,true,1.5 L;2 L;2.5 L;3 L,,critical override for Filtreli Sürahi
+Mutfak ve Sofra › Su Arıtma › Su Arıtma Ürünleri › Filtreli Sürahi,UPSERT,filtre-tipi,Filtre Tipi,SINGLE_SELECT,false,true,true,true,false,Standart;MAXTRA+;Aktif Karbon,,critical override for Filtreli Sürahi
+Mutfak ve Sofra › Su Arıtma › Su Arıtma Ürünleri › Filtreli Sürahi,UPSERT,filtre-adedi,Filtre Adedi,SINGLE_SELECT,false,true,true,true,true,1;2;3;4;6,,critical override for Filtreli Sürahi
+Mutfak ve Sofra › Su Arıtma › Su Arıtma Ürünleri › Filtreli Sürahi,UPSERT,filtre-degisim-gostergesi,Filtre Değişim Göstergesi,BOOLEAN,false,true,true,true,false,,,critical override for Filtreli Sürahi
+Ev Aletleri › Küçük Ev Aletleri › Temizlik › Robot Süpürge,UPSERT,emme-gucu,Emme Gücü,NUMBER,false,true,true,true,false,,Pa,critical override for Robot Süpürge
+Ev Aletleri › Küçük Ev Aletleri › Temizlik › Robot Süpürge,UPSERT,haritalama,Haritalama,BOOLEAN,false,true,true,true,false,,,critical override for Robot Süpürge
+Ev Aletleri › Küçük Ev Aletleri › Temizlik › Robot Süpürge,UPSERT,islak-silme,Islak Silme,BOOLEAN,false,true,true,true,false,,,critical override for Robot Süpürge
+Ev Aletleri › Küçük Ev Aletleri › Temizlik › Robot Süpürge,UPSERT,toz-haznesi,Toz Haznesi,SINGLE_SELECT,false,true,true,true,false,0.3 L;0.5 L;0.6 L;0.8 L,,critical override for Robot Süpürge
+Ev Aletleri › Küçük Ev Aletleri › Temizlik › Robot Süpürge,UPSERT,calisma-suresi,Çalışma Süresi,NUMBER,false,true,true,true,false,,dk,critical override for Robot Süpürge
+Mutfak ve Sofra › İçecek Hazırlama › Kahve › Filtre Kahve Makinesi,UPSERT,kahve-tipi,Kahve Tipi,SINGLE_SELECT,true,true,true,true,false,Espresso;Filtre;Kapsül;Türk;Otomatik,,critical override for Kahve Makinesi
+Mutfak ve Sofra › İçecek Hazırlama › Kahve › Filtre Kahve Makinesi,UPSERT,basinc,Basınç,NUMBER,false,true,true,true,false,,bar,critical override for Kahve Makinesi
+Mutfak ve Sofra › İçecek Hazırlama › Kahve › Filtre Kahve Makinesi,UPSERT,su-haznesi,Su Haznesi,SINGLE_SELECT,false,true,true,true,false,1 L;1.5 L;1.8 L;2 L,,critical override for Kahve Makinesi
+Mutfak ve Sofra › İçecek Hazırlama › Kahve › Filtre Kahve Makinesi,UPSERT,sut-kopurtucu,Süt Köpürtücü,BOOLEAN,false,true,true,true,false,,,critical override for Kahve Makinesi
+Mutfak ve Sofra › İçecek Hazırlama › Kahve › Kapsül Kahve Makinesi,UPSERT,kahve-tipi,Kahve Tipi,SINGLE_SELECT,true,true,true,true,false,Espresso;Filtre;Kapsül;Türk;Otomatik,,critical override for Kahve Makinesi
+Mutfak ve Sofra › İçecek Hazırlama › Kahve › Kapsül Kahve Makinesi,UPSERT,basinc,Basınç,NUMBER,false,true,true,true,false,,bar,critical override for Kahve Makinesi
+Mutfak ve Sofra › İçecek Hazırlama › Kahve › Kapsül Kahve Makinesi,UPSERT,su-haznesi,Su Haznesi,SINGLE_SELECT,false,true,true,true,false,1 L;1.5 L;1.8 L;2 L,,critical override for Kahve Makinesi
+Mutfak ve Sofra › İçecek Hazırlama › Kahve › Kapsül Kahve Makinesi,UPSERT,sut-kopurtucu,Süt Köpürtücü,BOOLEAN,false,true,true,true,false,,,critical override for Kahve Makinesi
+Endüstriyel ve Ticari Ürünler › Restoran ve Otel › Servis Ekipmanları › Kahve Makinesi,UPSERT,kahve-tipi,Kahve Tipi,SINGLE_SELECT,true,true,true,true,false,Espresso;Filtre;Kapsül;Türk;Otomatik,,critical override for Kahve Makinesi
+Endüstriyel ve Ticari Ürünler › Restoran ve Otel › Servis Ekipmanları › Kahve Makinesi,UPSERT,basinc,Basınç,NUMBER,false,true,true,true,false,,bar,critical override for Kahve Makinesi
+Endüstriyel ve Ticari Ürünler › Restoran ve Otel › Servis Ekipmanları › Kahve Makinesi,UPSERT,su-haznesi,Su Haznesi,SINGLE_SELECT,false,true,true,true,false,1 L;1.5 L;1.8 L;2 L,,critical override for Kahve Makinesi
+Endüstriyel ve Ticari Ürünler › Restoran ve Otel › Servis Ekipmanları › Kahve Makinesi,UPSERT,sut-kopurtucu,Süt Köpürtücü,BOOLEAN,false,true,true,true,false,,,critical override for Kahve Makinesi

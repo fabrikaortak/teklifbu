@@ -78,6 +78,14 @@ type Crumb = { label: string; href: string };
 
 type Spec = { label: string; value: string };
 
+export type ShoppingPdpOtherSeller = {
+  id: string;
+  name: string;
+  price: number;
+  freeShip?: boolean;
+  score?: string;
+};
+
 type Props = {
   listing: ShoppingPdpListing;
   crumbs: Crumb[];
@@ -97,7 +105,14 @@ type Props = {
   offerLabel?: string;
   cartLabel?: string;
   statusBanner?: ReactNode;
+  /** Varyant seçici vb. — fiyat kutusu ile aksiyonlar arası */
+  aboveActions?: ReactNode;
   afterActions?: ReactNode;
+  /** false: Soru&Cevap sekmesi bilgi mesajı (katalog ürününde listing Q&A yok) */
+  questionsEnabled?: boolean;
+  /** Verilirse demo satıcılar yerine gerçek teklif listesi */
+  otherSellersList?: ShoppingPdpOtherSeller[];
+  onSelectOtherSeller?: (id: string) => void;
 };
 
 const DEMO_BUYERS = [
@@ -131,7 +146,11 @@ export function ShoppingProductDetail({
   offerLabel = "Teklif Ver",
   cartLabel = "Sepete Ekle",
   statusBanner,
+  aboveActions,
   afterActions,
+  questionsEnabled = true,
+  otherSellersList,
+  onSelectOtherSeller,
 }: Props) {
   useRegisterShoppingSurface(true);
   const { addItem } = useCart();
@@ -291,13 +310,22 @@ export function ShoppingProductDetail({
   }, [installmentPlans, installmentNote, salePrice]);
 
   const otherSellers = useMemo(() => {
+    if (otherSellersList) {
+      return otherSellersList.map((s) => ({
+        id: s.id,
+        name: s.name,
+        score: s.score || "9,0",
+        price: s.price,
+        freeShip: Boolean(s.freeShip),
+      }));
+    }
     const base = salePrice;
     return [
-      { name: "BRITA Türkiye", score: "9,5", price: Math.round(base * 1.13), freeShip: true },
-      { name: "Evimizden", score: "9,1", price: Math.round(base * 1.08), freeShip: true },
-      { name: "Su Market", score: "8,7", price: Math.round(base * 1.05), freeShip: false },
+      { id: "demo-1", name: "BRITA Türkiye", score: "9,5", price: Math.round(base * 1.13), freeShip: true },
+      { id: "demo-2", name: "Evimizden", score: "9,1", price: Math.round(base * 1.08), freeShip: true },
+      { id: "demo-3", name: "Su Market", score: "8,7", price: Math.round(base * 1.05), freeShip: false },
     ];
-  }, [salePrice]);
+  }, [otherSellersList, salePrice]);
 
   const premiumDiscountTl =
     premiumPrice != null && premiumPrice > 0 && premiumPrice < salePrice
@@ -547,6 +575,8 @@ export function ShoppingProductDetail({
               </div>
             </div>
           )}
+
+          {aboveActions}
 
           {!isSeller && !offerFormOpen && (
             <div className="shop-pdp__actions-wrap">
@@ -846,6 +876,7 @@ export function ShoppingProductDetail({
             </p>
           </div>
 
+          {otherSellers.length > 0 ? (
           <div className="shop-pdp__side-others">
             <button type="button" className="shop-pdp__side-others-toggle">
               <h3>Diğer Satıcılar ({otherSellers.length})</h3>
@@ -853,24 +884,52 @@ export function ShoppingProductDetail({
             </button>
             <ul className="shop-pdp__side-others-list">
               {otherSellers.map((s) => (
-                <li key={s.name}>
-                  <div className="shop-pdp__side-others-who">
-                    <span className="shop-pdp__side-others-avatar">{s.name[0]}</span>
-                    <div>
-                      <div className="shop-pdp__side-others-name">
-                        {s.name}
-                        <span className="shop-pdp__side-score shop-pdp__side-score--sm">{s.score}</span>
+                <li key={s.id}>
+                  {onSelectOtherSeller ? (
+                    <button
+                      type="button"
+                      className="shop-pdp__side-others-pick"
+                      onClick={() => onSelectOtherSeller(s.id)}
+                    >
+                      <div className="shop-pdp__side-others-who">
+                        <span className="shop-pdp__side-others-avatar">{s.name[0]}</span>
+                        <div>
+                          <div className="shop-pdp__side-others-name">
+                            {s.name}
+                            <span className="shop-pdp__side-score shop-pdp__side-score--sm">{s.score}</span>
+                          </div>
+                          {s.freeShip ? (
+                            <span className="shop-pdp__side-others-ship">Ücretsiz Kargo</span>
+                          ) : (
+                            <span className="shop-pdp__side-others-ship shop-pdp__side-others-ship--muted">
+                              Kargo alıcıya
+                            </span>
+                          )}
+                        </div>
                       </div>
-                      {s.freeShip ? (
-                        <span className="shop-pdp__side-others-ship">Ücretsiz Kargo</span>
-                      ) : (
-                        <span className="shop-pdp__side-others-ship shop-pdp__side-others-ship--muted">
-                          Kargo alıcıya
-                        </span>
-                      )}
-                    </div>
-                  </div>
-                  <strong className="shop-pdp__side-others-price">{formatTl(s.price)}</strong>
+                      <strong className="shop-pdp__side-others-price">{formatTl(s.price)}</strong>
+                    </button>
+                  ) : (
+                    <>
+                      <div className="shop-pdp__side-others-who">
+                        <span className="shop-pdp__side-others-avatar">{s.name[0]}</span>
+                        <div>
+                          <div className="shop-pdp__side-others-name">
+                            {s.name}
+                            <span className="shop-pdp__side-score shop-pdp__side-score--sm">{s.score}</span>
+                          </div>
+                          {s.freeShip ? (
+                            <span className="shop-pdp__side-others-ship">Ücretsiz Kargo</span>
+                          ) : (
+                            <span className="shop-pdp__side-others-ship shop-pdp__side-others-ship--muted">
+                              Kargo alıcıya
+                            </span>
+                          )}
+                        </div>
+                      </div>
+                      <strong className="shop-pdp__side-others-price">{formatTl(s.price)}</strong>
+                    </>
+                  )}
                 </li>
               ))}
             </ul>
@@ -878,6 +937,7 @@ export function ShoppingProductDetail({
               Tüm {otherSellers.length} satıcıyı gör
             </Link>
           </div>
+          ) : null}
         </aside>
       </div>
 
@@ -956,7 +1016,13 @@ export function ShoppingProductDetail({
             )
           ) : null}
 
-          {detailTab === "qa" ? <ListingQuestionsBlock listingId={listing.id} /> : null}
+          {detailTab === "qa" ? (
+            questionsEnabled ? (
+              <ListingQuestionsBlock listingId={listing.id} />
+            ) : (
+              <p className="shop-pdp__tab-empty">Bu ürün için soru-cevap yakında eklenecek.</p>
+            )
+          ) : null}
 
           {detailTab === "reviews" ? (
             <div className="shop-pdp__reviews">

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Trash2 } from "lucide-react";
 import { useCart, useRegisterShoppingSurface } from "@/components/cart/CartProvider";
+import { cartItemHref } from "@/lib/cartItemHref";
 import { formatTl } from "@/lib/format";
 
 export default function SepetPage() {
@@ -51,14 +52,14 @@ export default function SepetPage() {
                   background: "#fff",
                 }}
               >
-                <Link href={`/ilan/${item.listingId}`} style={{ width: 72, height: 72, borderRadius: 10, overflow: "hidden", background: "#f1f5f9" }}>
+                <Link href={cartItemHref(item.listingId)} style={{ width: 72, height: 72, borderRadius: 10, overflow: "hidden", background: "#f1f5f9" }}>
                   {item.image ? (
                     // eslint-disable-next-line @next/next/no-img-element
                     <img src={item.image} alt="" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                   ) : null}
                 </Link>
                 <div style={{ minWidth: 0 }}>
-                  <Link href={`/ilan/${item.listingId}`} style={{ fontWeight: 700, fontSize: 14, color: "#0f172a" }}>
+                  <Link href={cartItemHref(item.listingId)} style={{ fontWeight: 700, fontSize: 14, color: "#0f172a" }}>
                     {item.title}
                   </Link>
                   <div style={{ marginTop: 6, fontWeight: 800, color: "#0b1f3a" }}>{formatTl(item.price, { fractionDigits: 2 })}</div>

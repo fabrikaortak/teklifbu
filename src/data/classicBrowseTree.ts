@@ -67,15 +67,15 @@ function shopGroupNode(id: string, name: string, subSlugs: string[]): BrowseNode
 }
 
 const emlak = CATEGORY_BROWSE_TREE.find((n) => n.id === "emlak")!;
-const vasita = CATEGORY_BROWSE_TREE.find((n) => n.id === "arac")!;
 
 /**
- * Ana sayfa sol menü: yalnızca Emlak + Vasıta.
- * Alışveriş → /alisveris (ayrı anasayfa).
+ * Ana sayfa sol menü: yalnızca Emlak + Vasıta kökü.
+ * Vasıta çocukları runtime'da DB'den (useVasitaBrowseTree) enjekte edilir —
+ * burada statik JSON/vehicleCatalog çocukları yok.
  */
 export const CLASSIC_BROWSE_TREE: BrowseNode[] = [
   { ...emlak, name: "Emlak" },
-  { ...vasita, name: "Vasıta" },
+  { id: "arac", name: "Vasıta", filter: { category: "arac" } },
 ];
 
 /**

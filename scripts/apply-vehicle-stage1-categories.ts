@@ -266,10 +266,38 @@ async function main() {
     }
   }
 
+  // Soft-delete Category rows under arac that are no longer in the target tree
+  // (e.g. eski SUV / Crossover / Arazi Aracı / Pickup bodySubtype dalları).
+  const plannedSlugs = new Set(plan.map((p) => p.slug));
+  const reportExtra = { deactivated: [] as string[] };
+  if (!DRY) {
+    const aracRows = await prisma.category.findMany({
+      where: {
+        isActive: true,
+        managedBySeed: true,
+        OR: [{ path: "arac" }, { path: { startsWith: "arac/" } }],
+      },
+      select: { id: true, slug: true, path: true },
+    });
+    for (const row of aracRows) {
+      if (plannedSlugs.has(row.slug)) continue;
+      await prisma.category.update({
+        where: { id: row.id },
+        data: { isActive: false },
+      });
+      reportExtra.deactivated.push(row.slug);
+    }
+  }
+
   mkdirSync(join(process.cwd(), "scripts/output"), { recursive: true });
   const out = join(process.cwd(), "scripts/output/vehicle-stage1-category-seed-report.json");
-  writeFileSync(out, JSON.stringify({ ...report, planned: plan.length, at: new Date().toISOString() }, null, 2));
-  console.log(JSON.stringify({ ok: report.errors.length === 0, out, ...report, planned: plan.length }, null, 2));
+  writeFileSync(
+    out,
+    JSON.stringify({ ...report, ...reportExtra, planned: plan.length, at: new Date().toISOString() }, null, 2)
+  );
+  console.log(
+    JSON.stringify({ ok: report.errors.length === 0, out, ...report, ...reportExtra, planned: plan.length }, null, 2)
+  );
 }
 
 main()

@@ -24,7 +24,7 @@ import {
   findBrowseNode,
   matchBrowsePath,
 } from "@/data/categoryBrowseTree";
-import { brandName, modelName, trimName } from "@/data/vehicleCatalog";
+import { brandLabel, modelLabel, trimLabel } from "@/lib/vasitaLabels";
 import { buildSearchHref, EMPTY_SEARCH_FILTERS } from "@/components/SearchPanel";
 import { CountdownBadge } from "@/components/CountdownBadge";
 import { useDialog } from "@/components/ui/ConfirmDialog";
@@ -131,6 +131,7 @@ type Listing = {
   canEdit?: boolean;
   isFavorited?: boolean;
   approvedBidId?: string | null;
+  approvedBid?: { id: string; bidderId: string; amount: number; status: string } | null;
   isFeatured?: boolean;
   titleBold?: boolean;
   titleLarge?: boolean;
@@ -278,7 +279,7 @@ function listingCategoryCrumbs(listing: Listing): Array<{ label: string; href: s
 
   // Vasıta: marka › model › paket
   if (slug === "arac" && brand) {
-    const bLabel = brandName(subtype, brand) || brand;
+    const bLabel = brandLabel(brand) || brand;
     push(
       bLabel,
       buildSearchHref({
@@ -289,7 +290,7 @@ function listingCategoryCrumbs(listing: Listing): Array<{ label: string; href: s
       })
     );
     if (model) {
-      const mLabel = modelName(subtype, brand, model) || model;
+      const mLabel = modelLabel(model) || model;
       push(
         mLabel,
         buildSearchHref({
@@ -301,7 +302,7 @@ function listingCategoryCrumbs(listing: Listing): Array<{ label: string; href: s
         })
       );
       if (trim) {
-        const tLabel = trimName(subtype, brand, model, trim) || trim;
+        const tLabel = trimLabel(trim) || trim;
         push(
           tLabel,
           buildSearchHref({
@@ -335,7 +336,8 @@ export default function ListingDetailInner() {
   const params = useParams<{ id: string }>();
   const search = useSearchParams();
   const router = useRouter();
-  const { offersEnabled } = useTheme();
+  const { offersEnabled, classifiedDetailCountdownEnabled } = useTheme();
+  const showDetailCountdown = offersEnabled || classifiedDetailCountdownEnabled;
   const [listing, setListing] = useState<Listing | null>(null);
   const [bids, setBids] = useState<Bid[]>([]);
   const [tab, setTab] = useState(
@@ -787,6 +789,9 @@ export default function ListingDetailInner() {
 
   const isSeller = Boolean(me?.id && me.id === listing.seller.id);
   const isCompleted = listing.status === "APPROVED";
+  const isWinningBuyer = Boolean(
+    me?.id && listing.approvedBid?.bidderId && me.id === listing.approvedBid.bidderId
+  );
   const canPlaceBid = listing.status === "ACTIVE" && !isSeller;
   const reviseOpen = isBidderReviseOpen(listing.bidderReviseUntil);
   const myActiveBid = me
@@ -907,13 +912,18 @@ export default function ListingDetailInner() {
             padding: "12px 14px",
             borderRadius: 12,
             background: "#ecfdf5",
-            border: "1px solid #a7f3d0",
+            border: `1px solid ${isWinningBuyer ? "#6ee7b7" : "#a7f3d0"}`,
             color: "#065f46",
-            fontSize: 14,
-            fontWeight: 700,
+            fontSize: isWinningBuyer ? 15 : 14,
+            fontWeight: isWinningBuyer ? 900 : 700,
+            letterSpacing: isWinningBuyer ? "0.02em" : undefined,
+            textTransform: isWinningBuyer ? "uppercase" : undefined,
+            lineHeight: 1.45,
           }}
         >
-          Sonuçlandı — Bu ürün ilanı artık satılmıyor.
+          {isWinningBuyer
+            ? "Satıcı teklifinizi kabul etti"
+            : "Sonuçlandı — Bu ürün ilanı artık satılmıyor."}
         </div>
       );
     }
@@ -1292,15 +1302,20 @@ export default function ListingDetailInner() {
             padding: "12px 14px",
             borderRadius: 12,
             background: "#ecfdf5",
-            border: "1px solid #a7f3d0",
+            border: `1px solid ${isWinningBuyer ? "#6ee7b7" : "#a7f3d0"}`,
             color: "#065f46",
-            fontSize: 14,
-            fontWeight: 700,
+            fontSize: isWinningBuyer ? 15 : 14,
+            fontWeight: isWinningBuyer ? 900 : 700,
+            letterSpacing: isWinningBuyer ? "0.02em" : undefined,
+            textTransform: isWinningBuyer ? "uppercase" : undefined,
+            lineHeight: 1.45,
           }}
         >
-          {offersEnabled
-            ? "Sonuçlandı — Bu ilanda teklif süreci tamamlandı. Yeni teklif kabul edilmiyor."
-            : "Sonuçlandı — Bu ilan artık yayında değil."}
+          {isWinningBuyer
+            ? "Satıcı teklifinizi kabul etti"
+            : offersEnabled
+              ? "Sonuçlandı — Bu ilanda teklif süreci tamamlandı. Yeni teklif kabul edilmiyor."
+              : "Sonuçlandı — Bu ilan artık yayında değil."}
         </div>
       )}
 
@@ -1506,9 +1521,9 @@ export default function ListingDetailInner() {
                     <span className="cd-panel__done-msg">Sonuçlandı</span>
                   </div>
                 </div>
-              ) : (
+              ) : showDetailCountdown ? (
                 <CountdownBadge endsAt={listing.endsAt} variant="panel" />
-              )
+              ) : null
             ) : (
               <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", gap: 12 }}>
                 <div style={{ flex: 1, minWidth: 0 }}>
@@ -1548,9 +1563,9 @@ export default function ListingDetailInner() {
                   >
                     Sonuçlandı
                   </div>
-                ) : (
+                ) : showDetailCountdown ? (
                   <CountdownBadge endsAt={listing.endsAt} />
-                )}
+                ) : null}
               </div>
             )}
             {isSahibindenLayout && <EidsBadge text={listing.eidsBadge} />}
@@ -1677,14 +1692,20 @@ export default function ListingDetailInner() {
                   padding: 14,
                   borderRadius: 12,
                   background: "#ecfdf5",
-                  border: "1px solid #a7f3d0",
+                  border: `1px solid ${isWinningBuyer ? "#6ee7b7" : "#a7f3d0"}`,
                   color: "#065f46",
-                  fontSize: 13,
+                  fontSize: isWinningBuyer ? 14 : 13,
                   lineHeight: 1.5,
-                  fontWeight: 600,
+                  fontWeight: isWinningBuyer ? 900 : 600,
+                  letterSpacing: isWinningBuyer ? "0.02em" : undefined,
+                  textTransform: isWinningBuyer ? "uppercase" : undefined,
                 }}
               >
-                {offersEnabled ? "Bu ilan sonuçlandı. Yeni teklif verilemez." : "Bu ilan sonuçlandı."}
+                {isWinningBuyer
+                  ? "Satıcı teklifinizi kabul etti"
+                  : offersEnabled
+                    ? "Bu ilan sonuçlandı. Yeni teklif verilemez."
+                    : "Bu ilan sonuçlandı."}
               </div>
             ) : isSeller ? (
               <div style={{ marginTop: 18, fontSize: 13, color: "#64748b", lineHeight: 1.5 }}>

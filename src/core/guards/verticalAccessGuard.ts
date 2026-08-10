@@ -93,6 +93,21 @@ export async function assertUserMayPostVertical(opts: {
     return;
   }
 
+  if (
+    user.id &&
+    (action === "CREATE_LISTING" ||
+      action === "PUBLISH_DRAFT" ||
+      action === "REPUBLISH" ||
+      action === "UPDATE_LISTING_CATEGORY")
+  ) {
+    const { assertTrustAllowsListing } = await import("@/core/services/trustScoreService");
+    const trust = await assertTrustAllowsListing(user.id);
+    if (!trust.ok) {
+      await logDenied(opts, trust.code, trust.error);
+      throw new VerticalAccessError(trust.code, trust.error, { status: 403 });
+    }
+  }
+
   if (vertical === "unknown") {
     await logDenied(opts, "VERTICAL_UNKNOWN", "Kategori dikeyi belirlenemedi");
     throw new VerticalAccessError("VERTICAL_UNKNOWN", "Kategori dikeyi belirlenemedi", {
@@ -102,6 +117,9 @@ export async function assertUserMayPostVertical(opts: {
   }
 
   // SellerOffer / ProductRequest: alışveriş + mağaza
+  const { getCommercialPublishMap } = await import("@/core/services/commercialPublishMapService");
+  const publishMap = await getCommercialPublishMap();
+
   if (action === "CREATE_SELLER_OFFER" || action === "CREATE_PRODUCT_REQUEST") {
     if (shop && shop.isActive === false) {
       await logDenied(opts, "SHOP_INACTIVE", "Mağaza pasif");
@@ -131,7 +149,7 @@ export async function assertUserMayPostVertical(opts: {
         { vertical, requiredSubtype: "MAGAZA" }
       );
     }
-    if (!userHasAlisverisCommerceAccess(user)) {
+    if (!userHasAlisverisCommerceAccess(user, publishMap)) {
       await logDenied(opts, "VERTICAL_ACCESS_DENIED", "MAGAZA yetkisi yok");
       throw new VerticalAccessError("VERTICAL_ACCESS_DENIED", "Alışveriş mağazası yetkiniz yok", {
         vertical: "alisveris",
@@ -142,7 +160,7 @@ export async function assertUserMayPostVertical(opts: {
   }
 
   // Listing create / category update / publish / republish
-  const allowed = allowedVerticalsForUser(user);
+  const allowed = allowedVerticalsForUser(user, publishMap);
 
   if (isCorporateAccount(user.accountType) && allowed.size === 0) {
     await logDenied(opts, "VERTICAL_ACCESS_DENIED", "Subtype/shopFocus yok — deny");

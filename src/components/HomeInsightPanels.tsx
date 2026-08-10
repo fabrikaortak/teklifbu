@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ChevronLeft, ChevronRight, Gavel } from "lucide-react";
 import { MODE_HREF } from "@/lib/listingBrowseMode";
 import { formatCompact, formatTl } from "@/lib/format";
+import { ListingThumbImg } from "@/components/ListingThumbImg";
 
 type ListingRow = {
   id: string;
@@ -69,8 +70,7 @@ function volumeLabel(n: number) {
 
 function Thumb({ src }: { src?: string | null }) {
   if (src) {
-    // eslint-disable-next-line @next/next/no-img-element
-    return <img src={src} alt="" className="hi-thumb" />;
+    return <ListingThumbImg src={src} className="hi-thumb" />;
   }
   return <div className="hi-thumb hi-thumb--ph" />;
 }
@@ -354,8 +354,7 @@ export function HomeInsightPanels() {
                     <span className="hi-foryou-badge">{l.badge}</span>
                     <div className="hi-foryou-img">
                       {l.coverImage ? (
-                        // eslint-disable-next-line @next/next/no-img-element
-                        <img src={l.coverImage} alt="" />
+                        <ListingThumbImg src={l.coverImage} />
                       ) : (
                         <div className="hi-thumb--ph" style={{ width: "100%", height: "100%" }} />
                       )}

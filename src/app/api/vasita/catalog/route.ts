@@ -231,13 +231,14 @@ export async function GET(req: Request) {
         orderBy: [{ sortOrder: "asc" }],
         include: { brand: { select: { id: true, slug: true, name: true } } },
       });
-      const modelRows = await prisma.categoryModel.findMany({
+      // Marka listesi only — seriler `action=models` ile lazy
+      const modelBrandIds = await prisma.categoryModel.findMany({
         where: { categoryId: category.id, model: { isActive: true, deletedAt: null } },
         select: { model: { select: { brandId: true } } },
       });
-      const brandIdsWithModels = new Set(modelRows.map((r) => r.model.brandId));
+      const withModels = new Set(modelBrandIds.map((r) => r.model.brandId));
       const brands = rows
-        .filter((r) => brandIdsWithModels.has(r.brand.id))
+        .filter((r) => withModels.has(r.brand.id))
         .map((r) => ({ slug: r.brand.slug, name: r.brand.name }))
         .sort((a, b) => a.name.localeCompare(b.name, "tr"));
       return NextResponse.json({ ok: true, brands });
@@ -246,6 +247,7 @@ export async function GET(req: Request) {
     if (action === "nav") {
       const category = await resolveCategoryBySubtype(subtype);
       if (!category) return NextResponse.json({ ok: true, brands: [] });
+      const deep = String(sp.get("deep") || "").trim() === "1";
       const brandRows = await prisma.categoryBrand.findMany({
         where: { categoryId: category.id, brand: { isActive: true, deletedAt: null } },
         orderBy: [{ sortOrder: "asc" }],
@@ -256,10 +258,53 @@ export async function GET(req: Request) {
         orderBy: [{ sortOrder: "asc" }],
         include: { model: { select: { slug: true, name: true, brandId: true } } },
       });
-      const modelsByBrandId = new Map<string, Array<{ slug: string; name: string }>>();
+
+      // Pack index: shallow nav only needs hasVersions; deep=1 embeds full version/trim tree.
+      const packEntries = await getPackEntries();
+      const categoryPath = `arac/${subtype}`;
+      const packByBrandModel = new Map<string, CatalogPackEntry[]>();
+      for (const e of packEntries) {
+        if (e.verified !== true || e.active === false) continue;
+        if (!e.categoryPaths.includes(categoryPath)) continue;
+        const key = `${e.brandSlug}\0${e.modelSlug}`;
+        const list = packByBrandModel.get(key) || [];
+        list.push(e);
+        packByBrandModel.set(key, list);
+      }
+      function versionsFor(brandSlug: string, modelSlug: string) {
+        const matches = packByBrandModel.get(`${brandSlug}\0${modelSlug}`) || [];
+        if (!matches.length) return [];
+        return mergeVersionsForCascade(matches, {}).map((v) => ({
+          slug: v.slug,
+          name: v.name,
+          trims: (v.trims || []).map((t) => ({ slug: t.slug, name: t.name })),
+        }));
+      }
+      function hasVersions(brandSlug: string, modelSlug: string) {
+        const matches = packByBrandModel.get(`${brandSlug}\0${modelSlug}`) || [];
+        return matches.some((e) => Array.isArray(e.versions) && e.versions.length > 0);
+      }
+
+      const modelsByBrandId = new Map<
+        string,
+        Array<{
+          slug: string;
+          name: string;
+          hasVersions: boolean;
+          versions?: Array<{ slug: string; name: string; trims: Array<{ slug: string; name: string }> }>;
+        }>
+      >();
+      const brandIdToSlug = new Map(brandRows.map((r) => [r.brand.id, r.brand.slug]));
       for (const r of modelRows) {
+        const brandSlug = brandIdToSlug.get(r.model.brandId) || "";
         const list = modelsByBrandId.get(r.model.brandId) || [];
-        list.push({ slug: r.model.slug, name: r.model.name });
+        const hv = brandSlug ? hasVersions(brandSlug, r.model.slug) : false;
+        list.push({
+          slug: r.model.slug,
+          name: r.model.name,
+          hasVersions: hv,
+          ...(deep && brandSlug ? { versions: versionsFor(brandSlug, r.model.slug) } : {}),
+        });
         modelsByBrandId.set(r.model.brandId, list);
       }
       const brands = brandRows
@@ -270,7 +315,7 @@ export async function GET(req: Request) {
         }))
         .filter((b) => b.models.length > 0)
         .sort((a, b) => a.name.localeCompare(b.name, "tr"));
-      return NextResponse.json({ ok: true, brands });
+      return NextResponse.json({ ok: true, brands, deep });
     }
 
     if (action === "models") {

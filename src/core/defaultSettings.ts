@@ -48,6 +48,8 @@ export const SETTING_GROUP_LABELS: Record<string, string> = {
   account: "Kullanıcı / Hesap",
   escrow: "Güvenli Öde (Escrow)",
   seller_panel: "Satıcı Paneli",
+  performance: "Performans / Cache",
+  trust: "Puanlama Motoru",
 };
 
 const CAT_COST_KEYS = [
@@ -107,6 +109,69 @@ export const DEFAULT_SETTINGS: Record<string, SettingMeta> = {
     label: "2. teklif birinciden yüksek olmalı",
     group: "bid",
     control: "toggle",
+  },
+  offers_feed_cache_enabled: {
+    value: false,
+    label: "Teklif bölümlerinde cache",
+    group: "bid",
+    description:
+      "Açıkken canlı teklif akışı ve ilan teklif listesi kısa süre önbellekten gelir (gecikmeli güncelleme). Kapalıyken her istek anlık DB’den okunur. Yalnızca teklif bölümleri; ilan listesi/galeri etkilenmez.",
+    control: "toggle",
+  },
+  offers_feed_cache_ttl_sec: {
+    value: 10,
+    label: "Teklif cache süresi",
+    group: "bid",
+    description: "Cache açıkken teklif verilerinin yenilenme aralığı (saniye). 1–60 arası.",
+    control: "number",
+    min: 1,
+    max: 60,
+    unit: "sn",
+  },
+  listings_list_cache_enabled: {
+    value: false,
+    label: "İlan listesi cache",
+    group: "performance",
+    description:
+      "Açıkken ana sayfa /ilanlar liste sonuçları kısa süre önbellekten gelir. Kapalıyken (varsayılan) her istek anlık. Lokal Docker’da kazanç az; canlıda yoğunlukta açın. Favori kalpleri kullanıcıya göre ayrıca işlenir.",
+    control: "toggle",
+  },
+  listings_list_cache_ttl_sec: {
+    value: 30,
+    label: "İlan listesi cache süresi",
+    group: "performance",
+    description: "Liste cache açıkken yenilenme aralığı (saniye). 5–120.",
+    control: "number",
+    min: 5,
+    max: 120,
+    unit: "sn",
+  },
+  api_rate_limit_enabled: {
+    value: false,
+    label: "API rate limit",
+    group: "performance",
+    description:
+      "Açıkken teklif, giriş ve foto yükleme için istek sınırı uygulanır (aşımda 429). Kapalıyken sınır yok. Canlıda bot/spam için açın.",
+    control: "toggle",
+  },
+  api_rate_limit_window_sec: {
+    value: 60,
+    label: "Rate limit penceresi",
+    group: "performance",
+    description: "Sayımın sıfırlandığı süre (saniye).",
+    control: "number",
+    min: 10,
+    max: 600,
+    unit: "sn",
+  },
+  api_rate_limit_max: {
+    value: 40,
+    label: "Rate limit max istek",
+    group: "performance",
+    description: "Pencere içinde aynı kullanıcı/IP için max istek (teklif, login, upload ayrı kovalar).",
+    control: "number",
+    min: 5,
+    max: 300,
   },
   bid_duration_options_days: {
     value: [1, 3, 7],
@@ -225,6 +290,22 @@ export const DEFAULT_SETTINGS: Record<string, SettingMeta> = {
     group: "listing",
     description:
       "Kapalıysa sol kategori ağacında (Emlak/Vasıta/alışveriş) ilanı 0 olan dallar gizlenir. Marka/model için üstteki Vasıta ayarları geçerlidir.",
+    control: "toggle",
+  },
+  browse_nav_show_root_counts: {
+    value: false,
+    label: "Kök kategorilerde ilan sayısı (Emlak / Vasıta)",
+    group: "listing",
+    description:
+      "Kapalıysa (varsayılan) sol menüde Emlak ve Vasıta yanında sayı gösterilmez; menü sade kalır. Alt kategoriler açıldıkça sayılar görünür. Açıkysa eski sistem: kökte de (18) (12) gibi sayılar çıkar.",
+    control: "toggle",
+  },
+  listing_card_favorites_enabled: {
+    value: true,
+    label: "Liste / vitrin kartlarında favori",
+    group: "listing",
+    description:
+      "Açıkken ana sayfa, vitrin ve ilan listesi kartlarında kalp (favori) butonu görünür. Kapalıysa kartlarda gizlenir; favoriye ekleme yalnızca ilan detayındaki «Favorilere Ekle» ile yapılır. Hesabım → Favorilerim’de kaldırma butonu her zaman kalır.",
     control: "toggle",
   },
   browse_nav_config: {
@@ -486,6 +567,52 @@ export const DEFAULT_SETTINGS: Record<string, SettingMeta> = {
       { value: "new_copy", label: "Yeni kopya oluştur" },
     ],
   },
+  listing_republish_reasons: {
+    value: [
+      { id: "no_deal", label: "Alıcı ile anlaşılamadı" },
+      { id: "buyer_backed_out", label: "Alıcı caydı" },
+      { id: "seller_cancelled", label: "Vazgeçtim" },
+      { id: "other", label: "Diğer", requiresNote: true },
+    ],
+    label: "Yeniden yayınlama sebepleri",
+    group: "listing",
+    description:
+      "Sonuçlanan ilanda «Yeniden Yayınla» menüsünde görünen seçenekler. Etiketleri buradan değiştirebilirsiniz. «Diğer» seçilince satıcıdan açıklama istenir.",
+    control: "republishReasons",
+  },
+  listing_republish_winner_notify_title: {
+    value: "Yeniden yayın gerekçesini doğrulayın",
+    label: "Yeniden yayın — alıcı bildirim başlığı",
+    group: "listing",
+    description: "Kazanan teklif sahibine giden bildirim başlığı. İstediğiniz zaman değiştirebilirsiniz.",
+    control: "text",
+  },
+  listing_republish_winner_notify_body: {
+    value:
+      "Satıcı «{{reason}}» gerekçesiyle ilanı yeniden yayınlamak istiyor. Bu gerekçeyi doğruluyor musunuz? Doğrulamazsanız satıcının puanı düşürülebilir ve yeniden yayınlama süresi uzatılabilir.",
+    label: "Yeniden yayın — alıcı bildirim metni",
+    group: "listing",
+    description:
+      "İlan adı yazmanıza gerek yok; detay kartında görünür. Yer tutucu: {{reason}} (isteğe bağlı {{listingNo}}).",
+    control: "textarea",
+  },
+  trust_score_engine: {
+    value: {
+      enabled: true,
+      startingScore: 100,
+      minScore: 0,
+      maxScore: 200,
+      blockListingBelow: 40,
+      blockBidBelow: 0,
+      republishDelayHoursOnDispute: 48,
+      events: [],
+    },
+    label: "Puanlama motoru (olay → puan)",
+    group: "trust",
+    description:
+      "Vasıta & Emlak → Puanlama motoru sayfasından yönetilir. Olay listesi boşsa sistem varsayılan olay setini kullanır.",
+    control: "json",
+  },
   on_approve_reject_others: {
     value: true,
     label: "Onayda diğer teklifleri reddet",
@@ -583,6 +710,14 @@ export const DEFAULT_SETTINGS: Record<string, SettingMeta> = {
     description:
       "Üye olurken seçilen faaliyet alanları (Emlak Ofisi, Galeri vb.). Yeni tip eklenince kayıt formu ve Kullanıcılar → Kurumsal sekmelerine yansır. Anahtar (key) sonradan değiştirilmez.",
     control: "businessTypes",
+  },
+  commercial_publish_map: {
+    value: { rows: [] },
+    label: "Faaliyet → ilan formu eşlemesi",
+    group: "commercial",
+    description:
+      "Hangi faaliyet hangi mağaza kategorisi / ilan formuna gider. Müşteri kayıtta kategori seçmez; buradan yönetilir. Boş satırlar sistem varsayılanıyla doldurulur.",
+    control: "json",
   },
   commercial_register_demo_fill_enabled: {
     value: true,
@@ -798,6 +933,7 @@ export const DEFAULT_SETTINGS: Record<string, SettingMeta> = {
       listing_extension_rejected: true,
       listing_edit_approved: true,
       listing_edit_rejected: true,
+      listing_republish_winner_verify: true,
       favorite_listing_edited: true,
       favorite_price_dropped: true,
       favorite_price_rose: true,
@@ -824,6 +960,7 @@ export const DEFAULT_SETTINGS: Record<string, SettingMeta> = {
       { value: "listing_extension_rejected", label: "Süre uzatma red" },
       { value: "listing_edit_approved", label: "Düzenleme onay" },
       { value: "listing_edit_rejected", label: "Düzenleme red" },
+      { value: "listing_republish_winner_verify", label: "Yeniden yayın doğrulama (alıcı)" },
       { value: "favorite_listing_edited", label: "Favori ilan düzenlendi" },
       { value: "favorite_price_dropped", label: "Favori fiyat düştü" },
       { value: "favorite_price_rose", label: "Favori fiyat arttı" },
@@ -884,12 +1021,36 @@ export const DEFAULT_SETTINGS: Record<string, SettingMeta> = {
     label: "Ürün modu (Teklif / Sahibinden)",
     group: "v2",
     description:
-      "TeklifBu: teklif butonu, teklif akışı, teklif istatistikleri açık. Sahibinden Teklifsiz: teklif UX kapanır; iletişim/mesaj açılır; ana sayfa ilan odaklı olur. Kod silinmez — geri alınca teklifli sistem döner.",
+      "TeklifBu: teklif butonu, teklif akışı, teklif istatistikleri açık. Sahibinden Teklifsiz: teklif UX kapanır; iletişim/mesaj açılır; ana sayfa ilan odaklı olur. Kod silinmez — geri alınca teklifli sistem döner. Mod değiştirirken onay penceresi açılır.",
     control: "select",
     options: [
       { value: "bidding", label: "TeklifBu — teklifli sistem" },
       { value: "classified", label: "Sahibinden Teklifsiz — ilan platformu" },
     ],
+  },
+  classified_detail_countdown_enabled: {
+    value: true,
+    label: "Teklifsiz: ilan detayında kalan süre sayacı",
+    group: "v2",
+    description:
+      "Yalnızca ürün modu «Sahibinden Teklifsiz» iken geçerlidir. Açıkken ilan detayında kalan süre sayacı görünür; kapalıysa gizlenir. Teklifli modda sayaç her zaman açıktır.",
+    control: "toggle",
+  },
+  classified_messaging_everyone: {
+    value: true,
+    label: "Teklifsiz: tüm üyeler mesaj gönderebilir",
+    group: "v2",
+    description:
+      "Teklifsiz modda giriş yapan her üye, isteyen kullanıcıya uygulama içi mesaj gönderebilir. Kapalıysa teklifli moddaki kategori / onay kuralları uygulanır.",
+    control: "toggle",
+  },
+  classified_membership_public: {
+    value: true,
+    label: "Teklifsiz: üyelik bilgileri herkese açık",
+    group: "v2",
+    description:
+      "Teklifsiz modda ilan sahibi kimlik / iletişim bilgileri giriş yapan üyelere açılır. Kapalıysa kategori bazlı görünürlük kuralları geçerlidir.",
+    control: "toggle",
   },
   ui_theme: {
     value: "v1",
@@ -904,14 +1065,26 @@ export const DEFAULT_SETTINGS: Record<string, SettingMeta> = {
   },
   ui_categories_theme: {
     value: "v2",
-    label: "Kategoriler teması",
+    label: "Kategoriler temasi",
     group: "v2",
     description:
-      "Site teması v2 iken. v2: ilk mockup. Ağaç: Emlak/Vasıta alt alta.",
+      "Site temasi v2 iken sol menu + ust serit. v2: Sahibinden tarzi tek dal (kardesler gizlenir) + seritte Alisveris. Agac: Emlak/Vasita accordion (alt alta acilir), seritte yalnizca Emlak+Vasita.",
     control: "select",
     options: [
-      { value: "v2", label: "v2 — İlk tema (mockup)" },
-      { value: "tree", label: "Ağaç — İlanlar gibi (alt alta)" },
+      { value: "v2", label: "v2 - Drill menu + Alisveris seridi" },
+      { value: "tree", label: "Agac - Accordion (Emlak/Vasita alt alta)" },
+    ],
+  },
+  ui_menu_theme: {
+    value: "mega",
+    label: "Menü teması",
+    group: "v2",
+    description:
+      "Alışveriş üst kategori kuşağı. Klasik: düz şerit. Mega: Tümü’ne tıklanınca Hepsiburada tarzı sol menü + hover’da kolon navigasyon.",
+    control: "select",
+    options: [
+      { value: "strip", label: "Klasik şerit" },
+      { value: "mega", label: "Mega menü (Tümü → panel)" },
     ],
   },
   v2_home_grid_cols: {

@@ -3,14 +3,12 @@
 import { useCallback, useEffect, useMemo, useState, type FormEvent } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
-import { Plus, Home, TrendingUp, Briefcase, Tag, ArrowUpRight, ArrowDownRight, ChevronRight } from "lucide-react";
-import { ListingCard, type ListingCardData } from "@/components/ListingCard";
+import { Plus, ArrowUpRight, ShieldCheck, Store, RefreshCw, History, Eye } from "lucide-react";
 import { formatCompact, formatTl } from "@/lib/format";
 import { V2CategoryStrip } from "@/components/home/V2CategoryStrip";
 import { CITY_NAMES, getDistricts } from "@/data/turkey-locations";
 import { ListingViewToggle, useListingView } from "@/components/ListingViewToggle";
 import { CategoryBrowseNav } from "@/components/CategoryBrowseNav";
-import { PremiumBrowseSection } from "@/components/PremiumBrowseSection";
 import {
   allAlisverisCategoryParam,
   isAlisverisCategorySlug,
@@ -23,22 +21,17 @@ import {
 import type { FacetCounts } from "@/lib/facetHelpers";
 import { isPremiumCategorySlug } from "@/data/premiumCategories";
 import { useTheme } from "@/components/ThemeProvider";
-import { MODE_HREF } from "@/lib/listingBrowseMode";
 import type { MarketplaceHomeStats } from "@/core/services/marketplaceStatsService";
-import { HomeVisibilitySlider } from "@/components/home/HomeVisibilitySlider";
-import { RecentSalesStrip } from "@/components/RecentSalesStrip";
-import { HomeInsightPanels } from "@/components/HomeInsightPanels";
-import { HomePromoSlider } from "@/components/home/HomePromoSlider";
-import { SiteMidBeltBanner } from "@/components/SiteBeltBanner";
-import type { HomeVisibilitySlide } from "@/lib/homeBanners";
-import type { HomePromoSlide } from "@/lib/homePromos";
-import {
-  AlisverisGroupCards,
-  emptyAlisverisBuckets,
-} from "@/components/home/AlisverisGroupCards";
 import { useRegisterShoppingSurface } from "@/components/cart/CartProvider";
 import { useAlisverisBrowseTree } from "@/hooks/useAlisverisBrowseTree";
 import type { BrowseNode } from "@/data/categoryBrowseTree";
+import type { ListingCardData } from "@/components/ListingCard";
+import {
+  AlisverisCategoryMosaic,
+  AlisverisFeaturedOfferCard,
+  AlisverisLiveOffersPanel,
+  AlisverisOfferProductCard,
+} from "@/components/home/alisveris/AlisverisOfferCards";
 
 function formatChangePct(n: number) {
   const abs = Math.abs(n);
@@ -112,37 +105,72 @@ function allParamFromTree(tree: BrowseNode[]): string {
 }
 
 function findCatLabel(tree: BrowseNode[], category: string): string | null {
-  for (const root of tree) {
-    if (category === root.filter.category || category === root.id) return root.name;
-    for (const ch of root.children || []) {
-      if (category === ch.filter.category || category === ch.id) {
-        return `${root.name} › ${ch.name}`;
-      }
-      for (const leaf of ch.children || []) {
-        if (category === leaf.filter.category || category === leaf.id) {
-          return `${root.name} › ${ch.name} › ${leaf.name}`;
-        }
-        for (const deep of leaf.children || []) {
-          if (category === deep.filter.category || category === deep.id) {
-            return `${root.name} › ${ch.name} › ${leaf.name} › ${deep.name}`;
-          }
-        }
+  if (!category) return null;
+
+  function walk(nodes: BrowseNode[], trail: string[]): string | null {
+    for (const n of nodes) {
+      const next = [...trail, n.name];
+      if (category === n.filter.category || category === n.id) return next.join(" › ");
+      if (n.children?.length) {
+        const hit = walk(n.children, next);
+        if (hit) return hit;
       }
     }
+    return null;
+  }
+
+  const exact = walk(tree, []);
+  if (exact) return exact;
+
+  // Eski/şişkin URL: virgüllü slug listesi → en uzun (en derin) slug ile isim bul
+  const parts = category
+    .split(",")
+    .map((s) => s.trim())
+    .filter(Boolean);
+  if (parts.length <= 1) return null;
+
+  function findSlug(nodes: BrowseNode[], trail: string[], slug: string): string | null {
+    for (const n of nodes) {
+      const next = [...trail, n.name];
+      if (n.id === slug || n.filter.category === slug) return next.join(" › ");
+      if (n.children?.length) {
+        const hit = findSlug(n.children, next, slug);
+        if (hit) return hit;
+      }
+    }
+    return null;
+  }
+
+  const sorted = [...parts].sort((a, b) => b.length - a.length);
+  for (const slug of sorted) {
+    const hit = findSlug(tree, [], slug);
+    if (hit) return hit;
   }
   return null;
 }
 
-const VITRIN_LIMIT = 4;
+/** Ham slug yığınını asla başlıkta gösterme */
+function safeCatDisplayName(tree: BrowseNode[], category: string, treeLoading: boolean): string | null {
+  if (!category) return null;
+  const label = findCatLabel(tree, category);
+  if (label) return label;
+  if (treeLoading) return null;
+  if (category.includes(",") || category.length > 72 || category.includes("__")) {
+    return null;
+  }
+  return category;
+}
 
 export function AlisverisHome() {
   useRegisterShoppingSurface(true);
   const router = useRouter();
   const searchParams = useSearchParams();
-  const { categoriesTheme, offersEnabled } = useTheme();
-  const classicCats = categoriesTheme === "v2";
-  const { tree: alisverisTree } = useAlisverisBrowseTree();
-  const allShopParam = useMemo(() => allParamFromTree(alisverisTree), [alisverisTree]);
+  const { offersEnabled } = useTheme();
+  const { tree: alisverisTree, loading: alisverisTreeLoading } = useAlisverisBrowseTree();
+  const allShopParam = useMemo(
+    () => (alisverisTreeLoading ? "ikinci-el,sifir-urun" : allParamFromTree(alisverisTree)),
+    [alisverisTree, alisverisTreeLoading]
+  );
 
   const initialCat = searchParams.get("category") || "";
   const [browse, setBrowse] = useState<SearchFilters>({
@@ -164,6 +192,7 @@ export function AlisverisHome() {
     stats: MarketplaceHomeStats;
     facets?: FacetCounts | null;
   } | null>(null);
+  const [listingsLoading, setListingsLoading] = useState(true);
   const [facets, setFacets] = useState<FacetCounts | null>(null);
   const [live, setLive] = useState<
     Array<{
@@ -184,13 +213,6 @@ export function AlisverisHome() {
   >([]);
   const [tokenPackages, setTokenPackages] = useState<TokenPkg[]>([]);
   const [tokenPackagesStatus, setTokenPackagesStatus] = useState<"loading" | "ready" | "error">("loading");
-  const [visSlides, setVisSlides] = useState<HomeVisibilitySlide[]>([]);
-  const [promoSlides, setPromoSlides] = useState<HomePromoSlide[]>([]);
-  const [adSettings, setAdSettings] = useState({
-    promo: { heightPx: 168, slideSeconds: 5 },
-    sidebar: { heightPx: 148, slideSeconds: 5 },
-  });
-  const [buckets, setBuckets] = useState(() => emptyAlisverisBuckets());
   const { view, changeView } = useListingView("teklifbu:alisveris-home-view", "grid");
   const [sort, setSort] = useState("market-desc");
   const [page, setPage] = useState(1);
@@ -203,10 +225,10 @@ export function AlisverisHome() {
 
   const districts = city ? getDistricts(city) : [];
 
-  const activeCatName = useMemo(() => {
-    if (!browse.category) return null;
-    return findCatLabel(alisverisTree, browse.category) || browse.category;
-  }, [browse.category, alisverisTree]);
+  const activeCatName = useMemo(
+    () => safeCatDisplayName(alisverisTree, browse.category, alisverisTreeLoading),
+    [browse.category, alisverisTree, alisverisTreeLoading]
+  );
 
   const loadListings = useCallback(
     (filters: SearchFilters, pageNum = 1, cond = condition) => {
@@ -214,6 +236,7 @@ export function AlisverisHome() {
       const qs = listingQuery({ ...filters, category: categoryParam });
       const pageQ = `page=${Math.max(1, pageNum)}`;
       const url = qs ? `/api/listings?home=1&${pageQ}&${qs}` : `/api/listings?home=1&${pageQ}`;
+      setListingsLoading(true);
       fetch(url)
         .then((r) => r.json())
         .then((d) => {
@@ -221,32 +244,14 @@ export function AlisverisHome() {
           setData(d);
           setPagination(d.pagination || null);
           if (d.facets) setFacets(d.facets);
-        });
+        })
+        .catch(() => {
+          setData((prev) => prev ?? { listings: [], stats: {} as MarketplaceHomeStats });
+        })
+        .finally(() => setListingsLoading(false));
     },
     [condition, allShopParam]
   );
-
-  const loadVitrin = useCallback(() => {
-    const roots = alisverisTree;
-    if (!roots.length) {
-      setBuckets(emptyAlisverisBuckets());
-      return;
-    }
-    Promise.all(
-      roots.map(async (n) => {
-        const cat = n.filter.category || n.id;
-        const d = await fetch(
-          `/api/listings?category=${encodeURIComponent(cat)}&limit=${VITRIN_LIMIT}`
-        ).then((res) => res.json());
-        return {
-          id: n.id,
-          name: n.name,
-          category: cat,
-          listings: (d.listings || []) as ListingCardData[],
-        };
-      })
-    ).then((rows) => setBuckets(rows));
-  }, [alisverisTree]);
 
   function goToPage(nextPage: number) {
     const totalPages = pagination?.totalPages || 1;
@@ -267,35 +272,6 @@ export function AlisverisHome() {
   }
 
   useEffect(() => {
-    function loadAdAssets() {
-      fetch("/api/home-banners")
-        .then((r) => r.json())
-        .then((d) => setVisSlides(d.slides || []))
-        .catch(() => {});
-      fetch("/api/home-promos")
-        .then((r) => r.json())
-        .then((d) => setPromoSlides(d.slides || []))
-        .catch(() => {});
-      fetch("/api/home-ad-settings")
-        .then((r) => r.json())
-        .then((d) => {
-          if (d?.promo && d?.sidebar) {
-            setAdSettings({
-              promo: {
-                heightPx: Number(d.promo.heightPx) || 168,
-                slideSeconds: Number(d.promo.slideSeconds) || 5,
-              },
-              sidebar: {
-                heightPx: Number(d.sidebar.heightPx) || 148,
-                slideSeconds: Number(d.sidebar.slideSeconds) || 5,
-              },
-            });
-          }
-        })
-        .catch(() => {});
-    }
-
-    loadVitrin();
     const sideUrl = offersEnabled ? "/api/listings?live=1" : "/api/listings?limit=8";
     fetch(sideUrl)
       .then((r) => r.json())
@@ -332,14 +308,7 @@ export function AlisverisHome() {
         setTokenPackages([]);
         setTokenPackagesStatus("error");
       });
-    loadAdAssets();
-
-    function onVisible() {
-      if (document.visibilityState === "visible") loadAdAssets();
-    }
-    document.addEventListener("visibilitychange", onVisible);
-    return () => document.removeEventListener("visibilitychange", onVisible);
-  }, [loadVitrin, offersEnabled]);
+  }, [offersEnabled]);
 
   useEffect(() => {
     const cat = searchParams.get("category") || "";
@@ -493,69 +462,306 @@ export function AlisverisHome() {
     );
   }
 
-  const rangePct = (() => {
-    const min = Number(minPrice) || 0;
-    const max = Number(maxPrice) || 0;
-    if (!max && !min) return 50;
-    if (max <= min) return 100;
-    return Math.min(100, Math.round((min / max) * 100));
-  })();
+  const surfaceReady = !alisverisTreeLoading && !listingsLoading && data !== null;
 
-  return (
-    <>
-      <V2CategoryStrip filters={browse} onSelect={onShopSelect} mode="alisveris" />
-
-      <SiteMidBeltBanner />
-
-      <div className="v2-home">
-        <aside className="v2-left v2-side-card">
-          <div
-            className="v2-filter-block"
-            style={{ marginTop: 0, marginBottom: 4, paddingBottom: 0 }}
+  if (!surfaceReady) {
+    return (
+      <div
+        className="alisveris-redirect-gate"
+        role="status"
+        aria-busy="true"
+        aria-live="polite"
+        style={{
+          minHeight: "calc(100vh - 140px)",
+          display: "grid",
+          placeItems: "center",
+          padding: "48px 24px",
+          background: "var(--bg, #f8fafc)",
+        }}
+      >
+        <div style={{ display: "grid", gap: 18, justifyItems: "center", textAlign: "center" }}>
+          <span
+            aria-hidden
+            style={{
+              width: 44,
+              height: 44,
+              borderRadius: "50%",
+              border: "3px solid #e2e8f0",
+              borderTopColor: "var(--orange, #ea580c)",
+              animation: "alisveris-gate-spin 0.75s linear infinite",
+            }}
+          />
+          <p
+            style={{
+              margin: 0,
+              fontSize: 15,
+              fontWeight: 800,
+              letterSpacing: "0.04em",
+              color: "var(--ink, #0f172a)",
+              textTransform: "uppercase",
+            }}
           >
-            <div className="v2-filter-label" style={{ display: "flex", alignItems: "center", gap: 8 }}>
-              Alışveriş
-              <button
-                type="button"
-                className="v2-browse-all"
-                style={{ marginLeft: "auto", fontSize: 11 }}
-                onClick={() => router.push("/")}
-              >
-                Klasik vitrine dön
-              </button>
+            Alışverişe yönlendiriliyorsunuz
+          </p>
+          <style>{`@keyframes alisveris-gate-spin { to { transform: rotate(360deg); } }`}</style>
+        </div>
+      </div>
+    );
+  }
+
+  const categoryMosaic = alisverisTree.map((n) => ({
+    id: n.id,
+    name: n.name,
+    category: n.filter.category || n.id,
+  }));
+
+  const s = data?.stats;
+  const featured = listings[0] || null;
+  const endingSoon = [...listings]
+    .filter((l) => l.endsAt)
+    .sort((a, b) => new Date(a.endsAt!).getTime() - new Date(b.endsAt!).getTime())[0];
+
+  const countdownTarget = endingSoon?.endsAt
+    ? new Date(endingSoon.endsAt).getTime()
+    : Date.now() + 3 * 86400000 + 20 * 3600000;
+  const remainMs = Math.max(0, countdownTarget - Date.now());
+  const cd = {
+    d: Math.floor(remainMs / 86400000),
+    h: Math.floor((remainMs % 86400000) / 3600000),
+    m: Math.floor((remainMs % 3600000) / 60000),
+    s: Math.floor((remainMs % 60000) / 1000),
+  };
+
+  if (showingFeatured) {
+    return (
+      <div className="tb-shop">
+        <div className="tb-shop-strip">
+          <V2CategoryStrip filters={browse} onSelect={onShopSelect} mode="alisveris" />
+        </div>
+
+        <section className="tb-hero-board">
+          <div className="tb-hero-grid">
+            <div className="tb-hero-copy">
+              <div className="tb-hero-eyebrow">Teklif odaklı alışveriş</div>
+              <h1>
+                Fiyatı sen belirle, <span>en iyi teklifi sen kap.</span>
+              </h1>
+              <p>
+                Pazarlık yok, mesaj trafiği yok. Satıcı fiyatını koyar; sen istersen hemen alır,
+                istersen teklif verirsin. Satıcı istediği teklifi — birini veya birkaçını —
+                kabul eder. Açık artırma değil; şeffaf, hızlı ve güvenli teklif sistemi.
+              </p>
+              <div className="tb-hero-actions">
+                <Link href="/ilan-ver" className="tb-btn tb-btn-orange">
+                  Hemen teklif ver
+                </Link>
+                <a href="#nasil" className="tb-btn tb-btn-glass">
+                  Nasıl çalışır?
+                </a>
+              </div>
+            </div>
+
+            <AlisverisFeaturedOfferCard listing={featured} />
+            <AlisverisLiveOffersPanel items={live} timeAgo={timeAgo} />
+          </div>
+        </section>
+
+        <div className="tb-stats-row">
+          {[
+            {
+              l: "Bugün verilen teklif",
+              v: formatCompact(s?.bidsToday ?? 0),
+              d: formatChangePct(s?.bidsTodayChangePct ?? 0),
+            },
+            {
+              l: "Kabul edilen teklif",
+              v: formatCompact(s?.acceptedToday ?? 0),
+              d: formatChangePct(s?.acceptedTodayChangePct ?? 0),
+            },
+            {
+              l: "Son 24 saatte satılan",
+              v: formatCompact(s?.soldLast24h ?? 0),
+              d: formatChangePct(s?.soldLast24hChangePct ?? 0),
+            },
+            {
+              l: "Aktif ürün",
+              v: formatCompact(s?.activeListings ?? totalCount),
+              d: formatChangePct(0),
+            },
+          ].map((c) => (
+            <div key={c.l} className="tb-stat-card">
+              <div className="l">{c.l}</div>
+              <div className="v">{c.v}</div>
+              <div className="d">
+                <ArrowUpRight size={12} />
+                {c.d.text}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <AlisverisCategoryMosaic categories={categoryMosaic} onSelect={setShopCategory} />
+
+        <section className="tb-sec" id="kesfet">
+          <div className="tb-sec-head">
+            <h2>Sizin için öne çıkanlar</h2>
+            <button
+              type="button"
+              onClick={() => setShopCategory(alisverisTree[0]?.filter.category || "")}
+              style={{
+                border: "none",
+                background: "transparent",
+                color: "var(--tb-orange-deep)",
+                fontWeight: 750,
+                cursor: "pointer",
+              }}
+            >
+              Tümünü gör
+            </button>
+          </div>
+          <div className="tb-deals-row">
+            <div className="tb-timer-card">
+              <div>
+                <h3>Süreli fırsatlar</h3>
+                <p>Teklif süresi dolmadan kararını ver.</p>
+                <div className="tb-countdown">
+                  <div>
+                    <strong>{String(cd.d).padStart(2, "0")}</strong>
+                    <span>Gün</span>
+                  </div>
+                  <div>
+                    <strong>{String(cd.h).padStart(2, "0")}</strong>
+                    <span>Saat</span>
+                  </div>
+                  <div>
+                    <strong>{String(cd.m).padStart(2, "0")}</strong>
+                    <span>Dk</span>
+                  </div>
+                  <div>
+                    <strong>{String(cd.s).padStart(2, "0")}</strong>
+                    <span>Sn</span>
+                  </div>
+                </div>
+              </div>
+              {endingSoon ? (
+                <Link href={`/ilan/${endingSoon.id}`}>İlanı gör</Link>
+              ) : (
+                <Link href="/alisveris">Keşfet</Link>
+              )}
+            </div>
+            <div className="tb-product-row">
+              {listings.slice(0, 4).map((l, i) => (
+                <AlisverisOfferProductCard key={l.id} listing={l} index={i} />
+              ))}
+              {!listings.length && (
+                <div className="tb-empty" style={{ gridColumn: "1 / -1" }}>
+                  Henüz öne çıkan ürün yok.
+                </div>
+              )}
             </div>
           </div>
+        </section>
 
+        <section className="tb-sec" id="nasil">
+          <div className="tb-sec-head">
+            <h2>TeklifBu nasıl çalışır?</h2>
+          </div>
+          <div className="tb-how">
+            {[
+              ["1", "Ürünü seç", "Satıcı fiyatını ve detayları incele."],
+              ["2", "Teklif ver veya hemen al", "Kendi teklifini ilet ya da satıcı fiyatından al."],
+              ["3", "Satıcı değerlendirir", "Bir veya birden fazla teklifi kabul edebilir."],
+              ["4", "Güvenli alışveriş", "Kabul sonrası ödeme TeklifBu güvencesinde."],
+            ].map(([n, t, d]) => (
+              <div key={n} className="tb-how-item">
+                <div className="tb-how-ico">{n}</div>
+                <h3>{t}</h3>
+                <p>{d}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="tb-sec">
+          <div className="tb-trust">
+            {[
+              { Icon: ShieldCheck, t: "Güvenli ödeme" },
+              { Icon: Store, t: "Doğrulanmış mağaza" },
+              { Icon: RefreshCw, t: "İade koruması" },
+              { Icon: History, t: "Teklif geçmişi" },
+              { Icon: Eye, t: "Şeffaf işlem" },
+            ].map(({ Icon, t }) => (
+              <span key={t}>
+                <Icon size={16} color="var(--tb-orange-deep)" />
+                {t}
+              </span>
+            ))}
+          </div>
+        </section>
+
+        <section className="tb-sec">
+          <div className="tb-promo">
+            <Link href="/premium" className="tb-promo-card tb-promo-a">
+              <div>
+                <h3>Premium üyelik</h3>
+                <p>Daha fazla görünürlük, öncelikli vitrin ve güçlü mağaza araçları.</p>
+              </div>
+              <span className="go">Keşfet →</span>
+            </Link>
+            <Link href="/jeton" className="tb-promo-card tb-promo-b">
+              <div>
+                <h3>Jeton paketleri</h3>
+                <p>Teklif vermek ve öne çıkmak için jetonunu hazırla.</p>
+              </div>
+              <span className="go">
+                {tokenPackages[0]
+                  ? `${tokenPackages[0].tokenAmount} jeton · ${formatPackagePrice(tokenPackages[0].priceTl)}`
+                  : "Jeton al →"}
+              </span>
+            </Link>
+            <Link href="/hesabim" className="tb-promo-card tb-promo-c">
+              <div>
+                <h3>Arkadaşını davet et</h3>
+                <p>Birlikte büyüyen teklif ağı — davetini gönder.</p>
+              </div>
+              <span className="go">Davet et →</span>
+            </Link>
+          </div>
+        </section>
+
+        <Link href="/ilan-ver" className="v2-fab" aria-label="İlan Ver">
+          <Plus size={22} strokeWidth={2.75} />
+          <span>İlan Ver</span>
+        </Link>
+      </div>
+    );
+  }
+
+  return (
+    <div className="tb-shop">
+      <div className="tb-shop-strip">
+        <V2CategoryStrip filters={browse} onSelect={onShopSelect} mode="alisveris" />
+      </div>
+
+      <div className="tb-browse">
+        <aside className="tb-browse-aside">
+          <div className="v2-filter-label" style={{ display: "flex", alignItems: "center", gap: 8 }}>
+            Alışveriş
+            <button type="button" className="tb-back" onClick={() => setShopCategory("")}>
+              Ana sayfa
+            </button>
+          </div>
           <CategoryBrowseNav
             embedded
             variant="alisveris"
             hideHeader
+            browseTree={alisverisTree}
+            treeLoading={alisverisTreeLoading}
             filters={browse}
             facets={facets}
             onSelect={onShopSelect}
           />
-
-          <div style={{ height: 1, background: "var(--line)", margin: "10px 0 12px" }} />
-
-          {classicCats ? (
-            <CategoryBrowseNav
-              embedded
-              variant="classic"
-              filters={EMPTY_SEARCH_FILTERS}
-              facets={facets}
-              onSelect={onClassicSelect}
-            />
-          ) : (
-            <CategoryBrowseNav
-              embedded
-              filters={EMPTY_SEARCH_FILTERS}
-              facets={facets}
-              onSelect={onClassicSelect}
-            />
-          )}
-
-          <PremiumBrowseSection filters={EMPTY_SEARCH_FILTERS} onSelect={onClassicSelect} facets={facets} />
-
+          <div style={{ height: 1, background: "var(--tb-line)", margin: "12px 0" }} />
           <div className="v2-filter-block">
             <div className="v2-filter-label">Durumu</div>
             {[
@@ -574,40 +780,23 @@ export function AlisverisHome() {
               </label>
             ))}
           </div>
-
           <div className="v2-filter-block">
-            <div className="v2-filter-label">Fiyat Aralığı</div>
+            <div className="v2-filter-label">Fiyat</div>
             <div className="v2-price-row">
               <input
                 inputMode="numeric"
-                placeholder="Min TL"
+                placeholder="Min"
                 value={minPrice}
                 onChange={(e) => setMinPrice(e.target.value.replace(/\D/g, ""))}
               />
               <input
                 inputMode="numeric"
-                placeholder="Max TL"
+                placeholder="Max"
                 value={maxPrice}
                 onChange={(e) => setMaxPrice(e.target.value.replace(/\D/g, ""))}
               />
             </div>
-            <div className="v2-range-track">
-              <input
-                className="v2-range"
-                type="range"
-                min={0}
-                max={100}
-                value={rangePct}
-                onChange={(e) => {
-                  const pct = Number(e.target.value);
-                  const base = Number(maxPrice) || 100000;
-                  setMinPrice(String(Math.round((pct / 100) * base)));
-                }}
-                aria-label="Fiyat aralığı"
-              />
-            </div>
           </div>
-
           <div className="v2-filter-block">
             <div className="v2-filter-label">Konum</div>
             <select
@@ -617,7 +806,7 @@ export function AlisverisHome() {
                 setDistrict("");
               }}
             >
-              <option value="">İl Seçin</option>
+              <option value="">İl</option>
               {CITY_NAMES.map((c) => (
                 <option key={c} value={c}>
                   {c}
@@ -625,7 +814,7 @@ export function AlisverisHome() {
               ))}
             </select>
             <select value={district} onChange={(e) => setDistrict(e.target.value)} disabled={!city}>
-              <option value="">İlçe Seçin</option>
+              <option value="">İlçe</option>
               {districts.map((d) => (
                 <option key={d} value={d}>
                   {d}
@@ -633,295 +822,65 @@ export function AlisverisHome() {
               ))}
             </select>
           </div>
-
           <button type="button" className="v2-ara-btn" onClick={() => applySearch()}>
             Ara
           </button>
         </aside>
 
-        <section className="v2-center">
-          {offersEnabled ? (
-            <div className="v2-stats-row">
-              <div className="v2-stats-bar">
-                {(() => {
-                  const s = data?.stats;
-                  const cards = [
-                    {
-                      key: "bidsToday",
-                      icon: <Home size={16} strokeWidth={2.25} />,
-                      label: "Bugün Verilen Teklif",
-                      value: formatCompact(s?.bidsToday ?? 0),
-                      change: formatChangePct(s?.bidsTodayChangePct ?? 0),
-                      tone: "orange",
-                    },
-                    {
-                      key: "acceptedToday",
-                      icon: <TrendingUp size={16} strokeWidth={2.25} />,
-                      label: "Bugün Kabul Edilen Teklif",
-                      value: formatCompact(s?.acceptedToday ?? 0),
-                      change: formatChangePct(s?.acceptedTodayChangePct ?? 0),
-                      tone: "green",
-                    },
-                    {
-                      key: "volume",
-                      icon: <Briefcase size={16} strokeWidth={2.25} />,
-                      label: "Toplam Teklif Hacmi",
-                      value: formatTl(s?.totalBidVolumeTl ?? 0),
-                      change: formatChangePct(s?.totalBidVolumeChangePct ?? 0),
-                      tone: "blue",
-                    },
-                    {
-                      key: "sold24h",
-                      icon: <Tag size={16} strokeWidth={2.25} />,
-                      label: "Son 24 Saatte Satılan İlan",
-                      value: formatCompact(s?.soldLast24h ?? 0),
-                      change: formatChangePct(s?.soldLast24hChangePct ?? 0),
-                      tone: "rose",
-                    },
-                  ] as const;
-                  return cards.map((c) => (
-                    <div key={c.key} className={`v2-stat tone-${c.tone}`}>
-                      <div className="v2-stat-ico">{c.icon}</div>
-                      <div className="v2-stat-body">
-                        <span className="v2-stat-label">{c.label}</span>
-                        <strong className="v2-stat-value">{c.value}</strong>
-                        <span className={`v2-stat-change ${c.change.up ? "is-up" : "is-down"}`}>
-                          {c.change.up ? (
-                            <ArrowUpRight size={12} strokeWidth={2.5} />
-                          ) : (
-                            <ArrowDownRight size={12} strokeWidth={2.5} />
-                          )}
-                          {c.change.text}
-                        </span>
-                      </div>
-                    </div>
-                  ));
-                })()}
-              </div>
-              <HomePromoSlider
-                slides={promoSlides}
-                heightPx={adSettings.promo.heightPx}
-                slideSeconds={adSettings.promo.slideSeconds}
-              />
-            </div>
-          ) : (
-            <div className="v2-stats-row">
-              <HomePromoSlider
-                slides={promoSlides}
-                heightPx={adSettings.promo.heightPx}
-                slideSeconds={adSettings.promo.slideSeconds}
-              />
-            </div>
-          )}
-
-          {showingFeatured ? (
-            <AlisverisGroupCards
-              buckets={buckets}
-              limit={VITRIN_LIMIT}
-              activeCategory={browse.category}
-              onSelectGroup={setShopCategory}
-            />
-          ) : null}
-
-          <div className="v2-toolbar" style={{ marginTop: showingFeatured ? 18 : 0 }}>
-            <h1 className={showingFeatured ? "v2-featured-title" : undefined}>
-              {showingFeatured ? (
-                <>Alışveriş — Öne Çıkan İlanlar</>
-              ) : activeCatName ? (
-                <>
-                  Alışveriş · &quot;{activeCatName}&quot; — <em>{formatCompact(totalCount)}</em> ilan
-                </>
-              ) : (
-                <>
-                  Alışveriş — <em>{formatCompact(totalCount)}</em> ilan
-                </>
-              )}
+        <section className="tb-browse-main">
+          <div className="tb-toolbar">
+            <h1>
+              {activeCatName || "Alışveriş"} <em>{formatCompact(totalCount)} ürün</em>
             </h1>
             <div className="v2-toolbar-meta">
               <label className="v2-sort-wrap">
-                <span>Sıralama:</span>
-                <select
-                  className="v2-sort"
-                  value={sort}
-                  onChange={(e) => setSort(e.target.value)}
-                  aria-label="Sıralama"
-                >
-                  <option value="market-desc">Piyasa Fiyatı (Yüksekten Düşüğe)</option>
-                  <option value="market-asc">Piyasa Fiyatı (Düşükten Yükseğe)</option>
-                  <option value="ask-desc">İlan Fiyatı (Yüksekten Düşüğe)</option>
-                  <option value="ask-asc">İlan Fiyatı (Düşükten Yükseğe)</option>
-                  <option value="new">En Yeni</option>
-                  <option value="ending">Süresi Yakınlaşan</option>
+                <span>Sıralama</span>
+                <select className="v2-sort" value={sort} onChange={(e) => setSort(e.target.value)}>
+                  <option value="new">En yeni</option>
+                  <option value="ask-desc">Fiyat yüksek</option>
+                  <option value="ask-asc">Fiyat düşük</option>
+                  <option value="ending">Süresi yakın</option>
+                  <option value="market-desc">En çok teklif</option>
                 </select>
               </label>
               <ListingViewToggle view={view} onChange={changeView} compact />
             </div>
           </div>
 
-          <div
-            className={`${view === "grid" ? "listings-grid-4" : "listings-stack"}${showingFeatured ? " featured-vitrin" : ""}`}
-            style={view === "list" ? { display: "grid", gap: 10 } : undefined}
-          >
-            {listings.map((l) => (
-              <ListingCard
-                key={l.id}
-                listing={l}
-                variant={view === "list" ? "row" : "grid"}
-                homeMode
-                featuredSection={showingFeatured}
-              />
+          <div className="tb-product-row" style={{ gridTemplateColumns: "repeat(3, minmax(0,1fr))" }}>
+            {listings.map((l, i) => (
+              <AlisverisOfferProductCard key={l.id} listing={l} index={i} />
             ))}
           </div>
-          {!listings.length && (
-            <div className="v2-side-card" style={{ marginTop: 8, textAlign: "center", color: "var(--muted)" }}>
-              Bu kategoride henüz ilan yok.
-            </div>
-          )}
+          {!listings.length && <div className="tb-empty">Bu kategoride henüz ürün yok.</div>}
+
           {totalPages > 1 && (
             <nav className="v2-pager" aria-label="Sayfalama">
               <button type="button" disabled={page <= 1} onClick={() => goToPage(page - 1)}>
                 Önceki
               </button>
-              {pagerPages.map((n, i) => {
-                const prev = pagerPages[i - 1];
-                const showGap = prev != null && n - prev > 1;
-                return (
-                  <span key={n} style={{ display: "contents" }}>
-                    {showGap && <span aria-hidden>…</span>}
-                    <button
-                      type="button"
-                      className={n === page ? "active" : undefined}
-                      aria-current={n === page ? "page" : undefined}
-                      onClick={() => goToPage(n)}
-                    >
-                      {n}
-                    </button>
-                  </span>
-                );
-              })}
-              <button
-                type="button"
-                disabled={page >= totalPages}
-                onClick={() => goToPage(page + 1)}
-              >
+              {pagerPages.map((n) => (
+                <button
+                  key={n}
+                  type="button"
+                  className={n === page ? "active" : undefined}
+                  onClick={() => goToPage(n)}
+                >
+                  {n}
+                </button>
+              ))}
+              <button type="button" disabled={page >= totalPages} onClick={() => goToPage(page + 1)}>
                 Sonraki
               </button>
             </nav>
           )}
         </section>
-
-        <aside className="v2-right">
-          <div className="v2-side-card">
-            <div className="v2-side-head">
-              <h2 className="v2-side-title">
-                {offersEnabled ? "Canlı Teklif Akışı" : "Son Eklenen İlanlar"}
-              </h2>
-              <Link href={offersEnabled ? MODE_HREF.live : "/ilanlar"} className="v2-side-more">
-                Tümünü Gör <ChevronRight size={14} strokeWidth={2.5} />
-              </Link>
-            </div>
-            {live.length === 0 && (
-              <div style={{ fontSize: 13, color: "var(--muted)" }}>
-                {offersEnabled ? "Henüz canlı teklif yok." : "Henüz ilan yok."}
-              </div>
-            )}
-            {live.slice(0, 5).map((item) => {
-              const prev = item.previousAmount != null ? Number(item.previousAmount) : null;
-              return (
-                <Link key={item.id} href={`/ilan/${item.listing.id}`} className="v2-live-item">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={item.listing.coverImage || ""} alt="" />
-                  <div className="v2-live-body">
-                    <div className="v2-live-top">
-                      <div className="v2-live-text">
-                        <div className="t">{item.listing.title}</div>
-                        <div className="loc">
-                          {[item.listing.district, item.listing.city].filter(Boolean).join(", ")}
-                        </div>
-                        <div className="ask">
-                          İlan fiyatı: <strong>{formatTl(Number(item.listing.askPrice || 0))}</strong>
-                        </div>
-                      </div>
-                      <ChevronRight size={16} className="v2-live-chevron" strokeWidth={2} />
-                    </div>
-                    {offersEnabled ? (
-                      <div className="v2-live-bottom">
-                        <div className="v2-live-bids">
-                          <span className="p is-up">
-                            {formatTl(item.amount)}
-                            <TrendingUp size={13} strokeWidth={2.5} aria-hidden />
-                          </span>
-                          {prev != null && prev > 0 ? (
-                            <span className="prev">{formatTl(prev)}</span>
-                          ) : null}
-                        </div>
-                        <span className="ago">{timeAgo(item.createdAt)}</span>
-                      </div>
-                    ) : (
-                      <div className="v2-live-bottom">
-                        <span className="ago">{timeAgo(item.createdAt)}</span>
-                      </div>
-                    )}
-                  </div>
-                </Link>
-              );
-            })}
-          </div>
-
-          <div className="v2-side-card v2-packages-card">
-            <div className="v2-side-head">
-              <h2 className="v2-side-title">Jeton Paketleri</h2>
-              <Link href="/jeton" className="v2-side-more">
-                Tümünü Gör <ChevronRight size={14} strokeWidth={2.5} />
-              </Link>
-            </div>
-            <div className="v2-pkg-grid">
-              {tokenPackages.slice(0, 3).map((pkg) => (
-                <Link key={pkg.id} href="/jeton" className="v2-pkg">
-                  {Number(pkg.discountPercent) > 0 && (
-                    <span className="v2-pkg-badge">%{pkg.discountPercent} avantaj</span>
-                  )}
-                  <strong>{pkg.tokenAmount}</strong>
-                  <span className="v2-pkg-label">Jeton</span>
-                  <span className="v2-pkg-price">{formatPackagePrice(pkg.priceTl)}</span>
-                </Link>
-              ))}
-              {tokenPackagesStatus === "loading" && !tokenPackages.length && (
-                <div style={{ gridColumn: "1 / -1", fontSize: 12, color: "var(--muted)" }}>
-                  Paketler yükleniyor…
-                </div>
-              )}
-              {tokenPackagesStatus === "error" && !tokenPackages.length && (
-                <div style={{ gridColumn: "1 / -1", fontSize: 12, color: "var(--muted)" }}>
-                  Paketler yüklenemedi.{" "}
-                  <Link href="/jeton" style={{ color: "var(--orange)", fontWeight: 700 }}>
-                    Jeton sayfasına git
-                  </Link>
-                </div>
-              )}
-              {tokenPackagesStatus === "ready" && !tokenPackages.length && (
-                <div style={{ gridColumn: "1 / -1", fontSize: 12, color: "var(--muted)" }}>
-                  Henüz aktif jeton paketi yok.
-                </div>
-              )}
-            </div>
-          </div>
-
-          <HomeVisibilitySlider
-            slides={visSlides}
-            heightPx={adSettings.sidebar.heightPx}
-            slideSeconds={adSettings.sidebar.slideSeconds}
-          />
-        </aside>
       </div>
-
-      {offersEnabled ? <RecentSalesStrip placement="home" /> : null}
-      <HomeInsightPanels />
 
       <Link href="/ilan-ver" className="v2-fab" aria-label="İlan Ver">
         <Plus size={22} strokeWidth={2.75} />
         <span>İlan Ver</span>
       </Link>
-    </>
+    </div>
   );
 }

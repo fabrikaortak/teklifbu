@@ -219,6 +219,13 @@ export function AdminSettingsPanel({
   const [msg, setMsg] = useState("");
   const [loadError, setLoadError] = useState("");
   const clearMsg = useCallback(() => setMsg(""), []);
+  const [modeSwitch, setModeSwitch] = useState<null | {
+    from: string;
+    to: string;
+    countdown: boolean;
+    messaging: boolean;
+    membership: boolean;
+  }>(null);
 
   const load = useCallback(async (force = false) => {
     setLoadError("");
@@ -273,8 +280,8 @@ export function AdminSettingsPanel({
     return true;
   });
 
-  async function saveSettings() {
-    const payload = { ...draft };
+  async function saveSettings(override?: Record<string, unknown>) {
+    const payload = { ...(override || draft) };
     const expiry = normalizeListingExpiryRules(payload.listing_expiry_rules);
     payload.listing_expiry_rules = expiry;
     payload.post_end_selection_minutes = expiry.bidding.selectionMinutes;
@@ -292,6 +299,51 @@ export function AdminSettingsPanel({
     }
     setMsg("Ayarlar kaydedildi");
     await load(true);
+    // Açık ana sayfa / diğer sekmeler ThemeProvider’ı yenilesin
+    try {
+      window.dispatchEvent(new Event("teklifbu:theme-changed"));
+    } catch {
+      /* ignore */
+    }
+  }
+
+  function requestMarketplaceModeChange(nextMode: string) {
+    const current = String(draft.marketplace_mode || data?.settings?.marketplace_mode || "bidding");
+    const normalizedNext =
+      nextMode === "classified" || nextMode === "teklifsiz" || nextMode === "sahibinden"
+        ? "classified"
+        : "bidding";
+    const normalizedCur =
+      current === "classified" || current === "teklifsiz" || current === "sahibinden"
+        ? "classified"
+        : "bidding";
+    if (normalizedNext === normalizedCur) {
+      setDraft((d) => ({ ...d, marketplace_mode: normalizedNext }));
+      return;
+    }
+    setModeSwitch({
+      from: normalizedCur,
+      to: normalizedNext,
+      countdown: draft.classified_detail_countdown_enabled !== false,
+      messaging: draft.classified_messaging_everyone !== false,
+      membership: draft.classified_membership_public !== false,
+    });
+  }
+
+  function confirmMarketplaceModeSwitch() {
+    if (!modeSwitch) return;
+    const next: Record<string, unknown> = {
+      ...draft,
+      marketplace_mode: modeSwitch.to,
+    };
+    if (modeSwitch.to === "classified") {
+      next.classified_detail_countdown_enabled = modeSwitch.countdown;
+      next.classified_messaging_everyone = modeSwitch.messaging;
+      next.classified_membership_public = modeSwitch.membership;
+    }
+    setDraft(next);
+    setModeSwitch(null);
+    void saveSettings(next);
   }
 
   const groupLabel: Record<string, string> = {
@@ -338,9 +390,10 @@ export function AdminSettingsPanel({
         <div className="adm-card" style={{ background: "#fff7ed", borderColor: "#fed7aa" }}>
           <h2 style={{ marginTop: 0, fontSize: 14 }}>Tema ayarları</h2>
           <p style={{ margin: 0, fontSize: 13, color: "var(--adm-muted)", lineHeight: 1.5 }}>
-            Site teması, kategori ağacı, üst / alt kuşak rengi, satırdaki ilan (4 / 5 / 6), vitrin satır sayısı ve ilan
-            detay düzeni (klasik / Sahibinden) buradan seçilir. Sayfa boyutu = satır × kolon (örn. 3×4=12). Kayıttan
-            sonra ana siteyi bir kez yenileyin.
+            Site teması, kategoriler teması (sol menü drill vs ağaç), menü teması (klasik şerit / mega menü), üst /
+            alt kuşak rengi, satırdaki ilan (4 / 5 / 6), vitrin satır sayısı ve ilan detay düzeni buradan seçilir.
+            Sayfa boyutu = satır × kolon (örn. 3×4=12). Kayıt sonrası açık sekmeler otomatik yenilenir; görmezseniz
+            ana sayfayı bir kez yenileyin.
           </p>
         </div>
       )}
@@ -381,16 +434,181 @@ export function AdminSettingsPanel({
                     settingKey={key}
                     meta={meta}
                     value={draft[key]}
-                    onChange={(v) => setDraft((d) => ({ ...d, [key]: v }))}
+                    onChange={(v) => {
+                      if (key === "marketplace_mode") {
+                        requestMarketplaceModeChange(String(v));
+                        return;
+                      }
+                      setDraft((d) => ({ ...d, [key]: v }));
+                    }}
                   />
                 </div>
               ))}
           </div>
         </div>
       ))}
-      <button className="btn-orange" style={{ padding: 14, width: 220 }} onClick={saveSettings}>
+      <button className="btn-orange" style={{ padding: 14, width: 220 }} onClick={() => void saveSettings()}>
         {isTemaOnly ? "Tema Ayarlarını Kaydet" : isCompact ? "Kaydet" : "Tüm Ayarları Kaydet"}
       </button>
+
+      {modeSwitch ? (
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="mode-switch-title"
+          style={{
+            position: "fixed",
+            inset: 0,
+            zIndex: 80,
+            background: "rgba(15,23,42,.45)",
+            display: "grid",
+            placeItems: "center",
+            padding: 16,
+          }}
+          onClick={() => setModeSwitch(null)}
+        >
+          <div
+            className="adm-card"
+            style={{
+              width: "min(580px, 100%)",
+              maxHeight: "min(90vh, 720px)",
+              overflow: "auto",
+              padding: 20,
+              display: "grid",
+              gap: 14,
+              boxShadow: "0 24px 60px rgba(15,23,42,.25)",
+            }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div>
+              <h2 id="mode-switch-title" style={{ margin: 0, fontSize: 17, fontWeight: 900 }}>
+                Ürün modu değişiyor
+              </h2>
+              <p style={{ margin: "8px 0 0", fontSize: 13.5, color: "#64748b", lineHeight: 1.5 }}>
+                {modeSwitch.to === "classified"
+                  ? "Teklifsiz (Sahibinden) moda geçiyorsunuz. Vasıta & Emlak tarafında aşağıdakiler uygulanır:"
+                  : "Teklifli moda geçiyorsunuz. Vasıta & Emlak teklif özellikleri yeniden açılır."}
+              </p>
+            </div>
+
+            {modeSwitch.to === "classified" ? (
+              <div style={{ display: "grid", gap: 12 }}>
+                <div
+                  style={{
+                    fontSize: 12.5,
+                    color: "#334155",
+                    padding: "10px 12px",
+                    borderRadius: 12,
+                    background: "#fef2f2",
+                    border: "1px solid #fecaca",
+                    lineHeight: 1.55,
+                  }}
+                >
+                  <strong style={{ display: "block", marginBottom: 6, color: "#991b1b" }}>
+                    Vasıta & Emlak — otomatik kapanır / değişir
+                  </strong>
+                  <ul style={{ margin: 0, paddingLeft: 18 }}>
+                    <li>
+                      <strong>Canlı Teklif Akışı</strong> modülü kalkar (yan panelde «Son Eklenen İlanlar»
+                      görünür)
+                    </li>
+                    <li>Teklif ver / teklif listesi / teklif jetonu akışı kapanır</li>
+                    <li>Ana sayfa: bitmek üzere, en çok teklif, en çok kazanç panelleri kapanır</li>
+                    <li>Canlı teklif istatistikleri kapanır</li>
+                    <li>Son satışlar şeridi (öne çıkan altı) kapanır</li>
+                    <li>İlan kartlarında teklif sayısı / süre rozeti gizlenir</li>
+                    <li>İlan detay düzeni Sahibinden kolonlu görünüme geçer</li>
+                    <li>Hesabım menüsünde «Tekliflerim» yerine iletişim odaklı öğeler öne çıkar</li>
+                  </ul>
+                </div>
+
+                <strong style={{ fontSize: 13, color: "#0f172a" }}>İsteğe bağlı (tikleyin)</strong>
+                {(
+                  [
+                    {
+                      key: "countdown" as const,
+                      label: "Kalan süre sayacı",
+                      hint: "İlan detayında kalan süre sayacı açık kalsın",
+                    },
+                    {
+                      key: "messaging" as const,
+                      label: "Tüm üyeler isteyen kullanıcıya mesaj gönderebilir",
+                      hint: "Giriş yapan herkes uygulama içi mesaj atabilir",
+                    },
+                    {
+                      key: "membership" as const,
+                      label: "Üyelik bilgileri herkese açık",
+                      hint: "İlan sahibi kimlik / iletişim giriş yapanlara görünür",
+                    },
+                  ] as const
+                ).map((row) => (
+                  <label
+                    key={row.key}
+                    style={{
+                      display: "flex",
+                      gap: 10,
+                      alignItems: "flex-start",
+                      padding: "10px 12px",
+                      borderRadius: 12,
+                      border: "1px solid #e2e8f0",
+                      background: modeSwitch[row.key] ? "#ecfdf5" : "#f8fafc",
+                      cursor: "pointer",
+                    }}
+                  >
+                    <input
+                      type="checkbox"
+                      checked={modeSwitch[row.key]}
+                      onChange={(e) =>
+                        setModeSwitch((s) => (s ? { ...s, [row.key]: e.target.checked } : s))
+                      }
+                      style={{ marginTop: 3 }}
+                    />
+                    <span>
+                      <strong style={{ display: "block", fontSize: 13.5 }}>{row.label}</strong>
+                      <span style={{ fontSize: 12, color: "#64748b", lineHeight: 1.4 }}>{row.hint}</span>
+                    </span>
+                  </label>
+                ))}
+              </div>
+            ) : (
+              <div
+                style={{
+                  fontSize: 13,
+                  color: "#334155",
+                  padding: "10px 12px",
+                  borderRadius: 12,
+                  background: "#ecfdf5",
+                  border: "1px solid #a7f3d0",
+                  lineHeight: 1.55,
+                }}
+              >
+                <strong style={{ display: "block", marginBottom: 6, color: "#065f46" }}>
+                  Vasıta & Emlak — yeniden açılır
+                </strong>
+                <ul style={{ margin: 0, paddingLeft: 18 }}>
+                  <li>
+                    <strong>Canlı Teklif Akışı</strong> yan paneli geri gelir
+                  </li>
+                  <li>Teklif butonu, teklif listesi ve teklif istatistikleri açılır</li>
+                  <li>Ana sayfa teklif panelleri (bitmek üzere, en çok teklif, kazanç, canlı istatistik)</li>
+                  <li>Son satışlar şeridi tekrar görünebilir</li>
+                  <li>Kalan süre sayacı her zaman görünür</li>
+                  <li>Mesajlaşma ve üyelik görünürlüğü kategori kurallarına döner</li>
+                </ul>
+              </div>
+            )}
+
+            <div style={{ display: "flex", gap: 10, justifyContent: "flex-end", marginTop: 4 }}>
+              <button type="button" className="btn-outline" style={{ padding: "10px 14px" }} onClick={() => setModeSwitch(null)}>
+                Vazgeç
+              </button>
+              <button type="button" className="btn-orange" style={{ padding: "10px 14px" }} onClick={confirmMarketplaceModeSwitch}>
+                Onayla ve kaydet
+              </button>
+            </div>
+          </div>
+        </div>
+      ) : null}
     </div>
   );
 }
@@ -3372,6 +3590,52 @@ function SettingInput({
 
   if (control === "businessTypes") {
     return <BusinessTypesEditor value={value} onChange={onChange} />;
+  }
+
+  if (control === "republishReasons") {
+    const list = Array.isArray(value)
+      ? (value as Array<{ id?: string; label?: string; requiresNote?: boolean }>)
+      : [];
+    return (
+      <div style={{ display: "grid", gap: 10, maxWidth: 520 }}>
+        {list.map((row, i) => (
+          <div
+            key={row.id || i}
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr auto",
+              gap: 8,
+              alignItems: "center",
+              padding: "8px 10px",
+              borderRadius: 10,
+              border: "1px solid #e2e8f0",
+              background: "#fff",
+            }}
+          >
+            <div style={{ display: "grid", gap: 4 }}>
+              <span style={{ fontSize: 11, color: "#94a3b8", fontWeight: 700 }}>{row.id}</span>
+              <input
+                className="input"
+                value={String(row.label || "")}
+                onChange={(e) => {
+                  const next = list.map((x, idx) =>
+                    idx === i ? { ...x, label: e.target.value } : x
+                  );
+                  onChange(next);
+                }}
+                placeholder="Sebep etiketi"
+              />
+            </div>
+            {row.requiresNote || row.id === "other" ? (
+              <span style={{ fontSize: 11, fontWeight: 700, color: "#b45309" }}>Açıklama zorunlu</span>
+            ) : null}
+          </div>
+        ))}
+        <p style={{ margin: 0, fontSize: 12, color: "#64748b", lineHeight: 1.4 }}>
+          Sıra ve kimlikler sabittir; yalnızca görünen isimleri değiştirin.
+        </p>
+      </div>
+    );
   }
 
   if (control === "flagMap") {

@@ -20,6 +20,7 @@ function normalizeGridCols(raw: unknown): "4" | "5" | "6" {
 export async function GET() {
   const theme = String((await getSetting<string>("ui_theme", "v1")) || "v1");
   const categoriesTheme = String((await getSetting<string>("ui_categories_theme", "v2")) || "v2");
+  const menuThemeRaw = String((await getSetting<string>("ui_menu_theme", "mega")) || "mega");
   const homeGridCols = normalizeGridCols(await getSetting<string>("v2_home_grid_cols", "4"));
   const brandPrimary = String((await getSetting<string>("brand_primary", "#FF6A00")) || "#FF6A00");
   const brandNavy = String((await getSetting<string>("brand_navy", "#0B1F3A")) || "#0B1F3A");
@@ -80,6 +81,7 @@ export async function GET() {
   return NextResponse.json({
     theme: theme === "v2" ? "v2" : "v1",
     categoriesTheme: categoriesTheme === "v2" ? "v2" : "tree",
+    menuTheme: menuThemeRaw === "strip" ? "strip" : "mega",
     marketplaceMode,
     offersEnabled,
     homeGridCols,
@@ -137,6 +139,13 @@ export async function GET() {
     featuredCardHoverLift: Boolean(
       await getSetting<boolean>("featured_card_hover_lift", true)
     ),
+    listingCardFavoritesEnabled: Boolean(
+      await getSetting<boolean>("listing_card_favorites_enabled", true)
+    ),
+    classifiedDetailCountdownEnabled:
+      marketplaceMode === "classified"
+        ? (await getSetting<boolean>("classified_detail_countdown_enabled", true)) !== false
+        : true,
     escrow: {
       enabled: escrowEnabledForUi,
       buttonLabel: escrowSettings.buttonLabel,

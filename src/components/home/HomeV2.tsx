@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Plus, Home, TrendingUp, Briefcase, Tag, ArrowUpRight, ArrowDownRight, ChevronRight } from "lucide-react";
 import { ListingCard, type ListingCardData } from "@/components/ListingCard";
+import { ListingThumbImg } from "@/components/ListingThumbImg";
 import { formatCompact, formatTl } from "@/lib/format";
 import {
   V2_NAV_CATS,
@@ -37,7 +38,7 @@ import { HomeInsightPanels } from "@/components/HomeInsightPanels";
 import { HomePromoSlider } from "@/components/home/HomePromoSlider";
 import { SiteMidBeltBanner } from "@/components/SiteBeltBanner";
 import type { HomeVisibilitySlide } from "@/lib/homeBanners";
-import type { HomePromoSlide } from "@/lib/homePromos";
+import { brandLabel, modelLabel } from "@/lib/vasitaLabels";
 
 function formatChangePct(n: number) {
   const abs = Math.abs(n);
@@ -75,6 +76,7 @@ function listingQuery(filters: SearchFilters) {
   if (filters.rental) params.set("rental", filters.rental);
   if (filters.brand) params.set("brand", filters.brand);
   if (filters.model) params.set("model", filters.model);
+  if (filters.version) params.set("version", filters.version);
   if (filters.trim) params.set("trim", filters.trim);
   if (filters.city) params.set("city", filters.city);
   if (filters.district) params.set("district", filters.district);
@@ -143,7 +145,7 @@ export function HomeV2() {
   const loadListings = useCallback((filters: SearchFilters, pageNum = 1) => {
     const qs = listingQuery(filters);
     const pageQ = `page=${Math.max(1, pageNum)}`;
-    /** Ana vitrin: tüm aktif ilanlar (API öne çıkanları üste alır), sayfa boyutu admin satır×kolon */
+    /** Ana vitrin: Emlak + Vasıta (Alışveriş /alisveris’te) */
     const url = qs ? `/api/listings?home=1&${pageQ}&${qs}` : `/api/listings?home=1&${pageQ}`;
     fetch(url)
       .then((r) => r.json())
@@ -276,11 +278,21 @@ export function HomeV2() {
     }
   }, [data?.listings, sort]);
 
-  const showingFeatured = !browse.category && !browse.dealType && !browse.subtype && !browse.rental && !browse.brand && !browse.model && !browse.trim && !browse.city && !browse.district && !browse.minPrice && !browse.maxPrice && !city && !district && !minPrice && !maxPrice;
+  const showingFeatured = !browse.category && !browse.dealType && !browse.subtype && !browse.rental && !browse.brand && !browse.model && !browse.version && !browse.trim && !browse.city && !browse.district && !browse.minPrice && !browse.maxPrice && !city && !district && !minPrice && !maxPrice;
   const districts = city ? getDistricts(city) : [];
 
   const activeCatName = useMemo(() => {
     const cfg = facets?.browseNavConfig;
+    if (browse.brand && browse.subtype) {
+      const brand = brandLabel(browse.brand);
+      if (browse.model) return `${brand} › ${modelLabel(browse.model)}`;
+      return brand;
+    }
+    if (browse.subtype && browse.category === "arac") {
+      const n = findBrowseNode(`arac/${browse.subtype}`);
+      if (n) return displayNameFor(cfg, resolveBrowseNodeKey(n.id, n.filter || {}), n.name);
+      return browse.subtype;
+    }
     if (!browse.category) return null;
     for (const root of PREMIUM_CATEGORY_SEEDS) {
       if (browse.category === root.slug) {
@@ -352,6 +364,7 @@ export function HomeV2() {
     rental: string;
     brand: string;
     model: string;
+    version: string;
     trim: string;
   }) {
     if (isPremiumCategorySlug(patch.category)) {
@@ -375,19 +388,24 @@ export function HomeV2() {
       rental: patch.rental,
       brand: patch.brand,
       model: patch.model,
+      version: patch.version,
       trim: patch.trim,
+      city,
+      district,
+      minPrice,
+      maxPrice,
     };
+    /**
+     * Marka / seri / motor → /ilanlar (filtre + liste/kart).
+     * Sol menü yeni sayfada da aynı yatay hizada kalır (v2-home grid).
+     * Yalnızca alt tip → ana sayfada kal.
+     */
+    if (patch.category === "arac" && (patch.brand || patch.model || patch.version || patch.trim)) {
+      router.push(buildSearchHref(next));
+      return;
+    }
     setBrowse(next);
-    loadListings(
-      {
-        ...next,
-        city,
-        district,
-        minPrice,
-        maxPrice,
-      },
-      1
-    );
+    loadListings(next, 1);
   }
 
   function applySearch(e?: FormEvent) {
@@ -403,11 +421,19 @@ export function HomeV2() {
       next.category = "ikinci-el";
       next.dealType = "";
       next.subtype = "";
+      next.brand = "";
+      next.model = "";
+      next.version = "";
+      next.trim = "";
     }
     if (condition === "sifir") {
       next.category = "sifir-urun";
       next.dealType = "";
       next.subtype = "";
+      next.brand = "";
+      next.model = "";
+      next.version = "";
+      next.trim = "";
     }
     router.push(buildSearchHref(next));
   }
@@ -713,8 +739,7 @@ export function HomeV2() {
               const prev = item.previousAmount != null ? Number(item.previousAmount) : null;
               return (
                 <Link key={item.id} href={`/ilan/${item.listing.id}`} className="v2-live-item">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={item.listing.coverImage || ""} alt="" />
+                  <ListingThumbImg src={item.listing.coverImage} />
                   <div className="v2-live-body">
                     <div className="v2-live-top">
                       <div className="v2-live-text">

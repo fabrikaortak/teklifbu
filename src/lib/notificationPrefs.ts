@@ -45,6 +45,11 @@ export const NOTIFICATION_EVENT_OPTIONS = [
     desc: "Düzenleme reddedilirse ilan eski haliyle yayında kalır",
   },
   {
+    key: "listing_republish_winner_verify",
+    label: "Kabul edilen teklifimde yeniden yayın doğrulaması istendiğinde",
+    desc: "Satıcı sonuçlanan ilanı yeniden yayınlamak istediğinde doğrulama isteği",
+  },
+  {
     key: "seller_edit_fields_granted",
     label: "Düzenleme izni verildiğinde",
     desc: "Yönetici teklifli ilanda belirli alanları düzenlemenize izin verdiğinde",

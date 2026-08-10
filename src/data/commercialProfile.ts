@@ -248,7 +248,10 @@ export function applyShopFocusToCommercial(
   };
 }
 
-export function validateCommercialProfile(p: CommercialProfile): string | null {
+export function validateCommercialProfile(
+  p: CommercialProfile,
+  opts?: { requireShopFocus?: boolean }
+): string | null {
   for (const key of COMMERCIAL_REQUIRED_KEYS) {
     if (!String(p[key] || "").trim()) {
       return `${COMMERCIAL_FIELD_LABELS[key]} zorunludur`;
@@ -258,8 +261,10 @@ export function validateCommercialProfile(p: CommercialProfile): string | null {
   if (tax.length < 10 || tax.length > 11) {
     return "Vergi numarası 10 veya 11 hane olmalıdır";
   }
-  const focusErr = validateShopFocus(commercialToShopFocus(p));
-  if (focusErr) return focusErr;
+  if (opts?.requireShopFocus) {
+    const focusErr = validateShopFocus(commercialToShopFocus(p));
+    if (focusErr) return focusErr;
+  }
   return null;
 }
 

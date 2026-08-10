@@ -38,6 +38,12 @@ export async function guardPlaceBid(params: {
     return { allowed: false, reason: "Kendi ilanınıza teklif veremezsiniz" };
   }
 
+  const { assertTrustAllowsBid } = await import("@/core/services/trustScoreService");
+  const trust = await assertTrustAllowsBid(params.bidderId);
+  if (!trust.ok) {
+    return { allowed: false, reason: trust.error, code: trust.code };
+  }
+
   const stepByCat = (settings.bid_step_by_category as Record<string, number>) || {};
   const step = Number(stepByCat[listing.category.slug] ?? settings.bid_step_tl ?? 10000);
   if (params.amount <= 0 || params.amount % step !== 0) {

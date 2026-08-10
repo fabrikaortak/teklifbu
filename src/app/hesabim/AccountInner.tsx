@@ -648,9 +648,25 @@ function NotificationsPanel({
   }>;
 }) {
   const search = useSearchParams();
+  const router = useRouter();
   const grantId = search.get("grant");
+  const republishVerifyId = search.get("republishVerify");
   const [grantOpen, setGrantOpen] = useState(Boolean(grantId));
   const [editModalId, setEditModalId] = useState<string | null>(null);
+  const [verifyListingId, setVerifyListingId] = useState<string | null>(null);
+  const [verifyData, setVerifyData] = useState<{
+    title: string;
+    coverImage?: string | null;
+    reasonLabel?: string | null;
+    reasonNote?: string | null;
+    canRespond: boolean;
+    response?: string | null;
+  } | null>(null);
+  const [verifyLoading, setVerifyLoading] = useState(false);
+  const [verifyBusy, setVerifyBusy] = useState(false);
+  const [disputeMode, setDisputeMode] = useState(false);
+  const [disputeNote, setDisputeNote] = useState("");
+  const [verifyMsg, setVerifyMsg] = useState("");
   const { alert } = useDialog();
   const grantNotif = items.find(
     (n) =>
@@ -672,9 +688,100 @@ function NotificationsPanel({
     if (grantId) setGrantOpen(true);
   }, [grantId]);
 
+  // Yalnızca bildirim linkindeki ?republishVerify= ile aç; her girişte zorla açma
+  useEffect(() => {
+    if (republishVerifyId) setVerifyListingId(republishVerifyId);
+  }, [republishVerifyId]);
+
+  useEffect(() => {
+    if (!verifyListingId) return;
+    let cancelled = false;
+    setVerifyLoading(true);
+    setVerifyMsg("");
+    setDisputeMode(false);
+    setDisputeNote("");
+    fetch(`/api/listings/${verifyListingId}`, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ action: "get-republish-winner-verify" }),
+    })
+      .then(async (res) => {
+        const d = await res.json().catch(() => ({}));
+        if (cancelled) return;
+        if (!res.ok || !d.ok) {
+          setVerifyMsg(d.error || "Doğrulama kaydı bulunamadı");
+          setVerifyData(null);
+          return;
+        }
+        setVerifyData({
+          title: d.listing.title,
+          coverImage: d.listing.coverImage || null,
+          reasonLabel: d.listing.reasonLabel,
+          reasonNote: d.listing.reasonNote,
+          canRespond: Boolean(d.listing.canRespond),
+          response: d.listing.response,
+        });
+      })
+      .finally(() => {
+        if (!cancelled) setVerifyLoading(false);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [verifyListingId]);
+
+  function closeVerifyModal() {
+    setVerifyListingId(null);
+    setVerifyData(null);
+    setVerifyMsg("");
+    setDisputeMode(false);
+    setDisputeNote("");
+    if (search.get("republishVerify")) {
+      const params = new URLSearchParams(search.toString());
+      params.delete("republishVerify");
+      const q = params.toString();
+      router.replace(q ? `/hesabim?${q}` : "/hesabim?s=bildirimler");
+    }
+  }
+
   function openEdit(id: string) {
     setGrantOpen(false);
     setEditModalId(id);
+  }
+
+  async function submitVerify(confirmed: boolean) {
+    if (!verifyListingId) return;
+    if (!confirmed && disputeNote.trim().length < 5) {
+      setVerifyMsg("Onaylamıyorsanız en az 5 karakter sebep yazın.");
+      return;
+    }
+    setVerifyBusy(true);
+    setVerifyMsg("");
+    const res = await fetch(`/api/listings/${verifyListingId}`, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        action: "republish-winner-verify",
+        confirmed,
+        note: confirmed ? "" : disputeNote,
+      }),
+    });
+    const d = await res.json().catch(() => ({}));
+    setVerifyBusy(false);
+    if (!res.ok || !d.ok) {
+      setVerifyMsg(d.error || "Yanıt kaydedilemedi");
+      return;
+    }
+    setVerifyData((prev) =>
+      prev
+        ? {
+            ...prev,
+            canRespond: false,
+            response: confirmed ? "CONFIRMED" : "DISPUTED",
+          }
+        : prev
+    );
+    setDisputeMode(false);
   }
 
   return (
@@ -694,6 +801,10 @@ function NotificationsPanel({
           const isGrant =
             n.eventKey === "seller_edit_fields_granted" || (n.link || "").includes("grant=");
           const gId = n.link?.match(/grant=([^&]+)/)?.[1];
+          const isRepublishVerify =
+            n.eventKey === "listing_republish_winner_verify" ||
+            (n.link || "").includes("republishVerify=");
+          const rvId = n.link?.match(/republishVerify=([^&]+)/)?.[1];
           return (
             <div
               key={n.id}
@@ -734,6 +845,21 @@ function NotificationsPanel({
                     }}
                   >
                     Düzenle
+                  </button>
+                ) : isRepublishVerify && rvId ? (
+                  <button
+                    type="button"
+                    onClick={() => setVerifyListingId(rvId)}
+                    style={{
+                      fontWeight: 800,
+                      color: "var(--orange)",
+                      background: "none",
+                      border: "none",
+                      cursor: "pointer",
+                      padding: 0,
+                    }}
+                  >
+                    Yanıtla
                   </button>
                 ) : n.link ? (
                   <Link href={n.link} style={{ fontWeight: 700, color: "var(--orange)" }}>
@@ -788,6 +914,210 @@ function NotificationsPanel({
                 Düzenle
               </button>
             </div>
+          </div>
+        </div>
+      )}
+
+      {verifyListingId && (
+        <div
+          className="tb-dialog-backdrop"
+          role="dialog"
+          aria-modal="true"
+          onClick={() => (!verifyBusy ? closeVerifyModal() : null)}
+        >
+          <div
+            className="tb-dialog"
+            style={{ textAlign: "left", width: "min(480px, 100%)" }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              type="button"
+              className="tb-dialog-close"
+              aria-label="Kapat"
+              disabled={verifyBusy}
+              onClick={() => closeVerifyModal()}
+            >
+              ×
+            </button>
+            <h3 className="tb-dialog-title">Yeniden yayın doğrulama</h3>
+            {verifyLoading ? (
+              <p className="tb-dialog-message">Yükleniyor…</p>
+            ) : (
+              <>
+                <p className="tb-dialog-message" style={{ textAlign: "left", marginBottom: 12 }}>
+                  Satıcı bu ilanı yeniden yayınlamak istiyor. Aşağıdaki gerekçeyi doğruluyor
+                  musunuz? Doğrulamazsanız satıcının puanı düşürülebilir ve yeniden yayınlama
+                  süresi uzatılabilir.
+                </p>
+                {verifyData ? (
+                  <div
+                    style={{
+                      display: "flex",
+                      gap: 12,
+                      alignItems: "flex-start",
+                      fontSize: 13,
+                      background: "#f8fafc",
+                      border: "1px solid #e2e8f0",
+                      borderRadius: 10,
+                      padding: "10px 12px",
+                      marginBottom: 12,
+                      lineHeight: 1.45,
+                    }}
+                  >
+                    {verifyData.coverImage ? (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img
+                        src={verifyData.coverImage}
+                        alt=""
+                        width={72}
+                        height={72}
+                        style={{
+                          width: 72,
+                          height: 72,
+                          objectFit: "cover",
+                          borderRadius: 8,
+                          flexShrink: 0,
+                          background: "#e2e8f0",
+                        }}
+                      />
+                    ) : (
+                      <div
+                        style={{
+                          width: 72,
+                          height: 72,
+                          borderRadius: 8,
+                          background: "#e2e8f0",
+                          flexShrink: 0,
+                        }}
+                      />
+                    )}
+                    <div style={{ minWidth: 0 }}>
+                      <div style={{ fontWeight: 800, fontSize: 14, lineHeight: 1.35 }}>
+                        {verifyData.title}
+                      </div>
+                      {verifyData.reasonLabel ? (
+                        <div style={{ marginTop: 6, color: "#475569" }}>
+                          <strong>Satıcı sebebi:</strong> {verifyData.reasonLabel}
+                          {verifyData.reasonNote ? ` — ${verifyData.reasonNote}` : ""}
+                        </div>
+                      ) : null}
+                      {!verifyData.canRespond && verifyData.response ? (
+                        <div style={{ marginTop: 6, fontWeight: 700 }}>
+                          Yanıtınız:{" "}
+                          {verifyData.response === "CONFIRMED" ? "Onaylıyorum" : "Onaylamıyorum"}
+                        </div>
+                      ) : null}
+                    </div>
+                  </div>
+                ) : null}
+                {disputeMode && verifyData?.canRespond ? (
+                  <div style={{ marginBottom: 12 }}>
+                    <label style={{ display: "block", fontSize: 13, fontWeight: 700, marginBottom: 6 }}>
+                      Onaylamama sebebiniz
+                    </label>
+                    <textarea
+                      className="input"
+                      style={{ minHeight: 90, width: "100%" }}
+                      value={disputeNote}
+                      onChange={(e) => setDisputeNote(e.target.value)}
+                      placeholder="En az 5 karakter…"
+                      disabled={verifyBusy}
+                    />
+                  </div>
+                ) : null}
+                {verifyMsg ? (
+                  <div style={{ color: "#b91c1c", fontSize: 13, marginBottom: 8 }}>{verifyMsg}</div>
+                ) : null}
+                {verifyData?.canRespond ? (
+                  <div
+                    className="tb-dialog-actions"
+                    style={{ justifyContent: "stretch", gap: 8, flexWrap: "wrap" }}
+                  >
+                    {!disputeMode ? (
+                      <>
+                        <button
+                          type="button"
+                          disabled={verifyBusy}
+                          onClick={() => setDisputeMode(true)}
+                          style={{
+                            flex: 1,
+                            minWidth: 140,
+                            padding: "12px 14px",
+                            borderRadius: 10,
+                            border: "none",
+                            background: "#dc2626",
+                            color: "#fff",
+                            fontWeight: 800,
+                            cursor: "pointer",
+                          }}
+                        >
+                          Onaylamıyorum
+                        </button>
+                        <button
+                          type="button"
+                          disabled={verifyBusy}
+                          onClick={() => submitVerify(true)}
+                          style={{
+                            flex: 1,
+                            minWidth: 140,
+                            padding: "12px 14px",
+                            borderRadius: 10,
+                            border: "none",
+                            background: "#16a34a",
+                            color: "#fff",
+                            fontWeight: 800,
+                            cursor: "pointer",
+                          }}
+                        >
+                          Onaylıyorum
+                        </button>
+                      </>
+                    ) : (
+                      <>
+                        <button
+                          type="button"
+                          className="tb-dialog-btn tb-dialog-btn-ghost"
+                          disabled={verifyBusy}
+                          onClick={() => {
+                            setDisputeMode(false);
+                            setDisputeNote("");
+                            setVerifyMsg("");
+                          }}
+                        >
+                          Geri
+                        </button>
+                        <button
+                          type="button"
+                          disabled={verifyBusy}
+                          onClick={() => submitVerify(false)}
+                          style={{
+                            padding: "12px 14px",
+                            borderRadius: 10,
+                            border: "none",
+                            background: "#dc2626",
+                            color: "#fff",
+                            fontWeight: 800,
+                            cursor: "pointer",
+                          }}
+                        >
+                          Gönder
+                        </button>
+                      </>
+                    )}
+                  </div>
+                ) : (
+                  <div className="tb-dialog-actions" style={{ justifyContent: "flex-end" }}>
+                    <button
+                      type="button"
+                      className="tb-dialog-btn tb-dialog-btn-primary"
+                      onClick={() => closeVerifyModal()}
+                    >
+                      Kapat
+                    </button>
+                  </div>
+                )}
+              </>
+            )}
           </div>
         </div>
       )}
@@ -999,7 +1329,15 @@ function MyListingsPanel({
   const [contactMsg, setContactMsg] = useState("");
   const [contactBusy, setContactBusy] = useState(false);
   const [contactFeedback, setContactFeedback] = useState("");
+  const [republishFor, setRepublishFor] = useState<MyListing | null>(null);
+  const [republishReasons, setRepublishReasons] = useState<
+    Array<{ id: string; label: string; requiresNote?: boolean }>
+  >([]);
+  const [republishCode, setRepublishCode] = useState("");
+  const [republishNote, setRepublishNote] = useState("");
+  const [republishMsg, setRepublishMsg] = useState("");
   const { confirm, alert } = useDialog();
+  const router = useRouter();
 
   useEffect(() => {
     setListings(initial);
@@ -1008,6 +1346,59 @@ function MyListingsPanel({
   const live = useMemo(() => listings.filter((l) => isLiveListingStatus(l.status)), [listings]);
   const offline = useMemo(() => listings.filter((l) => !isLiveListingStatus(l.status)), [listings]);
   const items = tab === "live" ? live : offline;
+
+  async function openRepublish(listing: MyListing) {
+    setRepublishMsg("");
+    setRepublishNote("");
+    setRepublishCode("");
+    setRepublishFor(listing);
+    if (!republishReasons.length) {
+      const res = await fetch("/api/republish-reasons");
+      const d = await res.json().catch(() => ({}));
+      if (res.ok && Array.isArray(d.reasons)) {
+        setRepublishReasons(d.reasons);
+        if (d.reasons[0]?.id) setRepublishCode(d.reasons[0].id);
+      }
+    } else if (republishReasons[0]?.id) {
+      setRepublishCode(republishReasons[0].id);
+    }
+  }
+
+  async function confirmRepublish() {
+    if (!republishFor) return;
+    const selected = republishReasons.find((r) => r.id === republishCode);
+    if (!selected) {
+      setRepublishMsg("Sebep seçin");
+      return;
+    }
+    if (selected.requiresNote && republishNote.trim().length < 5) {
+      setRepublishMsg("«Diğer» için en az 5 karakter açıklama yazın");
+      return;
+    }
+    setBusyId(republishFor.id);
+    setRepublishMsg("");
+    const res = await fetch(`/api/listings/${republishFor.id}`, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        action: "start-republish",
+        reasonCode: republishCode,
+        reasonNote: republishNote,
+      }),
+    });
+    const data = await res.json().catch(() => ({}));
+    setBusyId(null);
+    if (!res.ok) {
+      setRepublishMsg(data.error || "Yeniden yayın başlatılamadı");
+      return;
+    }
+    setRepublishFor(null);
+    setListings((prev) =>
+      prev.map((l) => (l.id === republishFor.id ? { ...l, status: "DRAFT" } : l))
+    );
+    setTab("offline");
+    router.push(data.editUrl || `/ilan-ver?edit=${republishFor.id}&republish=1`);
+  }
 
   async function unpublish(id: string) {
     const ok = await confirm({
@@ -1246,7 +1637,17 @@ function MyListingsPanel({
                   {l.pendingExtension ? ` · +${l.pendingExtension.days}g onay bekliyor` : ""}
                   {l.pendingEdit ? " · Düzenleme onayı bekliyor" : ""}
                 </div>
-                {canSellerEditListing(l.status, { allowLiveEdit }) ? (
+                {l.status === "APPROVED" ? (
+                  <button
+                    type="button"
+                    className="btn-outline my-listing-btn"
+                    disabled={busyId === l.id}
+                    onClick={() => void openRepublish(l)}
+                    title="Sonuçlanan ilanı sebep seçerek yeniden yayınla"
+                  >
+                    Yeniden Yayınla
+                  </button>
+                ) : canSellerEditListing(l.status, { allowLiveEdit }) ? (
                   listingHasBids(l) ? (
                     <button
                       type="button"
@@ -1342,6 +1743,100 @@ function MyListingsPanel({
       </div>
         </>
       ) : null}
+
+      {republishFor && (
+        <div
+          className="tb-dialog-backdrop"
+          role="dialog"
+          aria-modal="true"
+          onClick={() => (busyId === republishFor.id ? null : setRepublishFor(null))}
+        >
+          <div
+            className="tb-dialog"
+            style={{ textAlign: "left", width: "min(460px, 100%)" }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              type="button"
+              className="tb-dialog-close"
+              aria-label="Kapat"
+              disabled={busyId === republishFor.id}
+              onClick={() => setRepublishFor(null)}
+            >
+              ×
+            </button>
+            <h3 className="tb-dialog-title" style={{ textAlign: "left", paddingRight: 28 }}>
+              Yeniden yayınla
+            </h3>
+            <p className="tb-dialog-message" style={{ textAlign: "left" }}>
+              <strong>{republishFor.title}</strong> için sebep seçin. Süre sıfırlanır; düzenleyip
+              gönderince yönetici onayına düşer.
+            </p>
+            <div style={{ display: "grid", gap: 8, marginBottom: 14 }}>
+              {republishReasons.map((r) => (
+                <label
+                  key={r.id}
+                  style={{
+                    display: "flex",
+                    gap: 10,
+                    alignItems: "flex-start",
+                    padding: "10px 12px",
+                    borderRadius: 12,
+                    border: `1px solid ${republishCode === r.id ? "#86efac" : "#e2e8f0"}`,
+                    background: republishCode === r.id ? "#ecfdf5" : "#f8fafc",
+                    cursor: "pointer",
+                    fontWeight: 700,
+                    fontSize: 13.5,
+                  }}
+                >
+                  <input
+                    type="radio"
+                    name="republish-reason"
+                    checked={republishCode === r.id}
+                    onChange={() => setRepublishCode(r.id)}
+                    style={{ marginTop: 2 }}
+                  />
+                  <span>{r.label}</span>
+                </label>
+              ))}
+            </div>
+            {(republishReasons.find((r) => r.id === republishCode)?.requiresNote ||
+              republishCode === "other") && (
+              <textarea
+                className="input"
+                placeholder="Açıklama yazın…"
+                value={republishNote}
+                onChange={(e) => setRepublishNote(e.target.value)}
+                rows={3}
+                style={{ width: "100%", marginBottom: 12 }}
+              />
+            )}
+            {republishMsg && (
+              <div style={{ color: "#dc2626", fontWeight: 600, fontSize: 13, marginBottom: 12 }}>
+                {republishMsg}
+              </div>
+            )}
+            <div className="tb-dialog-actions" style={{ justifyContent: "flex-end" }}>
+              <button
+                type="button"
+                className="tb-dialog-btn tb-dialog-btn-ghost"
+                disabled={busyId === republishFor.id}
+                onClick={() => setRepublishFor(null)}
+              >
+                Vazgeç
+              </button>
+              <button
+                type="button"
+                className="tb-dialog-btn tb-dialog-btn-primary"
+                disabled={busyId === republishFor.id || !republishCode}
+                onClick={() => void confirmRepublish()}
+              >
+                Devam et ve düzenle
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {extendFor && (
         <div
@@ -1565,6 +2060,7 @@ function FavoritesPanel() {
             key={l.id}
             listing={l}
             variant={view === "list" ? "row" : "grid"}
+            showFavorite
             onFavoriteChange={(id, favorited) => {
               if (!favorited) setItems((prev) => prev.filter((x) => x.id !== id));
             }}

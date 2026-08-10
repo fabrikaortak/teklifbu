@@ -24,8 +24,10 @@ type Props = {
   /** Yatay 2 sütun düzeni (kayıt adım 2) */
   wide?: boolean;
   hideIntro?: boolean;
-  /** Kategori eksikse kırmızı uyarı */
+  /** Kategori eksikse kırmızı uyarı (yalnız admin / showShopFocus) */
   showFocusError?: boolean;
+  /** Admin: mağaza kategori seçimini göster (müşteri kayıtta kapalı) */
+  showShopFocus?: boolean;
 };
 
 export function CommercialBusinessForm({
@@ -38,6 +40,7 @@ export function CommercialBusinessForm({
   wide = false,
   hideIntro = false,
   showFocusError = false,
+  showShopFocus = false,
 }: Props) {
   const districts = value.businessCity ? getDistricts(value.businessCity) : [];
   const gap = compact || wide ? 8 : 10;
@@ -73,12 +76,14 @@ export function CommercialBusinessForm({
           </>
         ) : null}
 
-        <ShopFocusPicker
-          value={commercialToShopFocus(value)}
-          onChange={(focus) => onChange(applyShopFocusToCommercial(value, focus))}
-          disabled={disabled}
-          showError={showFocusError}
-        />
+        {showShopFocus ? (
+          <ShopFocusPicker
+            value={commercialToShopFocus(value)}
+            onChange={(focus) => onChange(applyShopFocusToCommercial(value, focus))}
+            disabled={disabled}
+            showError={showFocusError}
+          />
+        ) : null}
 
         <div style={{ display: "grid", gridTemplateColumns: "1.2fr 1fr", gap }}>
           <label style={{ display: "grid", gap: 4 }}>
@@ -266,12 +271,14 @@ export function CommercialBusinessForm({
         </>
       ) : null}
 
-      <ShopFocusPicker
-        value={commercialToShopFocus(value)}
-        onChange={(focus) => onChange(applyShopFocusToCommercial(value, focus))}
-        disabled={disabled}
-        showError={showFocusError}
-      />
+      {showShopFocus ? (
+        <ShopFocusPicker
+          value={commercialToShopFocus(value)}
+          onChange={(focus) => onChange(applyShopFocusToCommercial(value, focus))}
+          disabled={disabled}
+          showError={showFocusError}
+        />
+      ) : null}
 
       <label style={{ display: "grid", gap: 4 }}>
         {label(COMMERCIAL_FIELD_LABELS.commercialTitle, true)}

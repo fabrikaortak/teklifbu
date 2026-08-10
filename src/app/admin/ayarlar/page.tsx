@@ -2,8 +2,8 @@
 
 import { AdminSettingsPanel } from "@/components/admin/AdminPanels";
 
-/** Platform geneli: teklif, PWA, süre dolunca / yaşam döngüsü */
-const SYSTEM_GROUPS = ["bid", "pwa", "lifecycle"];
+/** Platform geneli: teklif, PWA, süre dolunca / yaşam döngüsü, performans */
+const SYSTEM_GROUPS = ["bid", "pwa", "lifecycle", "performance"];
 
 export default function AdminSettingsPage() {
   return (
@@ -12,8 +12,8 @@ export default function AdminSettingsPage() {
         <div>
           <h1>Sistem Ayarları</h1>
           <p>
-            Teklif kuralları, PWA ve ilan süresi dolunca davranışları. Satıcı / mağaza paneli için menüde{" "}
-            <strong>Satıcı paneli</strong> bölümüne gidin.
+            Teklif kuralları, PWA, ilan süresi dolunca davranışlar ve performans (rate limit / cache).
+            Satıcı / mağaza paneli için menüde <strong>Satıcı paneli</strong> bölümüne gidin.
           </p>
         </div>
       </div>

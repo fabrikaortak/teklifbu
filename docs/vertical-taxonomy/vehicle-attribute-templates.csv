@@ -28,7 +28,6 @@ SUV_PICKUP,mileage,Kilometre,NUMBER,true,true,true,true,km,km,none,20
 SUV_PICKUP,fuelType,Yakıt,SINGLE_SELECT,true,true,true,true,,fuel,FUEL_TYPES,30
 SUV_PICKUP,transmission,Vites,SINGLE_SELECT,true,true,true,true,,gear,TRANSMISSIONS,40
 SUV_PICKUP,bodySubtype,Alt Tip,SINGLE_SELECT,false,true,true,true,,bodySubtype,SUV_PICKUP_SUBTYPES,45
-SUV_PICKUP,bodyType,Kasa Tipi,SINGLE_SELECT,false,true,true,true,,bodyType,BODY_TYPES_CAR,50
 SUV_PICKUP,engineDisplacement,Motor Hacmi,NUMBER,false,true,true,true,cc,engineSize,none,60
 SUV_PICKUP,enginePower,Motor Gücü,NUMBER,false,true,true,true,HP,enginePower,none,70
 SUV_PICKUP,driveType,Çekiş,SINGLE_SELECT,false,true,true,true,,drive,DRIVE_TYPES,80

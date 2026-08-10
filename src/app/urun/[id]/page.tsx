@@ -1,9 +1,14 @@
 "use client";
 
-import { Suspense, use, useEffect, useMemo, useState } from "react";
+import { Suspense, use, useCallback, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import { formatMoneyTr } from "@/lib/format";
-import { CatalogCheckoutButton } from "@/components/catalog/CatalogCheckoutButton";
+import { useRouter } from "next/navigation";
+import {
+  ShoppingProductDetail,
+  type ShoppingPdpListing,
+} from "@/components/shopping/ShoppingProductDetail";
+import { catalogCartListingId } from "@/lib/cartItemHref";
+import { useCart } from "@/components/cart/CartProvider";
 
 type Offer = {
   id: string;
@@ -39,17 +44,83 @@ type Product = {
   name: string;
   description: string | null;
   mainImage: string | null;
+  barcode?: string | null;
   brand?: { name: string } | null;
   model?: { name: string } | null;
   categoryPath?: Array<{ id: string; name: string; slug: string }>;
   variants?: Variant[];
 };
 
+function buildPdpListing(product: Product, offer: Offer | null): ShoppingPdpListing {
+  const askPrice = offer?.effectivePrice ?? 0;
+  const listPrice =
+    offer && offer.discountedPrice != null && offer.discountedPrice < offer.price
+      ? offer.price
+      : undefined;
+  const shipDays = offer?.shippingTimeDays;
+  const freeShip = offer?.shippingPrice === 0 || offer?.shippingPrice == null;
+  const warranty =
+    offer?.warrantyType ||
+    (offer?.warrantyMonths != null ? `${offer.warrantyMonths} ay` : "");
+
+  return {
+    id: product.id,
+    title: product.name,
+    description: product.description || "",
+    askPrice,
+    coverImage: product.mainImage,
+    images: product.mainImage ? [product.mainImage] : [],
+    attributes: {
+      brand: product.brand?.name || "",
+      model: product.model?.name || "",
+      condition: offer?.condition || "",
+      warranty,
+      sku: offer?.variant?.sku || "",
+      barcode: product.barcode || "",
+      listPrice: listPrice != null ? listPrice : "",
+      stockQty: offer?.stockQty ?? 0,
+      shippingFree: freeShip ? "Evet" : "Hayır",
+      shippingLabel:
+        shipDays != null
+          ? shipDays <= 1
+            ? "Aynı / ertesi gün kargo"
+            : `${shipDays} gün içinde kargo`
+          : "Hızlı kargo",
+      sameDayShipping: shipDays != null && shipDays <= 1 ? "Evet" : "Hayır",
+      returnDays: 14,
+      highlights: [
+        product.brand?.name ? `Marka: ${product.brand.name}` : "",
+        offer?.condition ? `Durum: ${offer.condition}` : "",
+        warranty ? `Garanti: ${warranty}` : "",
+        offer?.invoiceAvailable ? "Fatura kesilir" : "",
+      ].filter(Boolean),
+    },
+    seller: {
+      id: offer?.seller?.id || offer?.shop?.id || "catalog",
+      name: offer?.seller?.name || null,
+      shopId: offer?.shop?.id || null,
+      shopName: offer?.shop?.name || null,
+      isCommercial: Boolean(offer?.shop),
+      avgRating: 4.8,
+      reviewCount: 0,
+      isPremiumSeller: false,
+    },
+    escrowAvailable: Boolean(offer),
+    escrowSettings: { buttonLabel: "Hemen Al" },
+  };
+}
+
 function ProductDetailInner({ id }: { id: string }) {
+  const router = useRouter();
+  const { addItem } = useCart();
   const [product, setProduct] = useState<Product | null>(null);
   const [variantId, setVariantId] = useState("");
   const [offers, setOffers] = useState<Offer[]>([]);
+  const [selectedOfferId, setSelectedOfferId] = useState<string | null>(null);
   const [err, setErr] = useState("");
+  const [buyBusy, setBuyBusy] = useState(false);
+  const [buyError, setBuyError] = useState("");
+  const [favorited, setFavorited] = useState(false);
 
   useEffect(() => {
     let cancelled = false;
@@ -76,24 +147,139 @@ function ProductDetailInner({ id }: { id: string }) {
   useEffect(() => {
     if (!id || !variantId) {
       setOffers([]);
+      setSelectedOfferId(null);
       return;
     }
     let cancelled = false;
     fetch(`/api/products/${id}/offers?variantId=${encodeURIComponent(variantId)}`)
       .then((r) => r.json())
       .then((d) => {
-        if (!cancelled) setOffers(d.offers || []);
+        if (cancelled) return;
+        const list: Offer[] = d.offers || [];
+        setOffers(list);
+        setSelectedOfferId(list[0]?.id || null);
       })
       .catch(() => {
-        if (!cancelled) setOffers([]);
+        if (!cancelled) {
+          setOffers([]);
+          setSelectedOfferId(null);
+        }
       });
     return () => {
       cancelled = true;
     };
   }, [id, variantId]);
 
-  const best = useMemo(() => offers[0] || null, [offers]);
-  const crumbs = product?.categoryPath || [];
+  const selected = useMemo(
+    () => offers.find((o) => o.id === selectedOfferId) || offers[0] || null,
+    [offers, selectedOfferId]
+  );
+
+  const listing = useMemo(
+    () => (product ? buildPdpListing(product, selected) : null),
+    [product, selected]
+  );
+
+  const crumbs = useMemo(() => {
+    const path = product?.categoryPath || [];
+    return [
+      { label: "Alışveriş", href: "/alisveris" },
+      ...path.map((c) => ({ label: c.name, href: `/alisveris?cat=${encodeURIComponent(c.slug)}` })),
+    ];
+  }, [product]);
+
+  const specs = useMemo(() => {
+    if (!product) return [];
+    const rows: Array<{ label: string; value: string }> = [];
+    if (product.brand?.name) rows.push({ label: "Marka", value: product.brand.name });
+    if (product.model?.name) rows.push({ label: "Model", value: product.model.name });
+    const v = (product.variants || []).find((x) => x.id === variantId);
+    if (v) {
+      rows.push({ label: "Varyant", value: v.title });
+      for (const val of v.values || []) {
+        const label = val.attribute?.name;
+        const value = val.option?.label || val.textValue || "";
+        if (label && value) rows.push({ label, value });
+      }
+      if (v.sku) rows.push({ label: "SKU", value: v.sku });
+    }
+    if (product.barcode) rows.push({ label: "Barkod", value: product.barcode });
+    if (selected?.condition) rows.push({ label: "Durum", value: selected.condition });
+    if (selected?.warrantyType || selected?.warrantyMonths != null) {
+      rows.push({
+        label: "Garanti",
+        value:
+          selected.warrantyType ||
+          (selected.warrantyMonths != null ? `${selected.warrantyMonths} ay` : ""),
+      });
+    }
+    if (selected?.invoiceAvailable) rows.push({ label: "Fatura", value: "Kesilir" });
+    return rows;
+  }, [product, variantId, selected]);
+
+  const otherSellers = useMemo(
+    () =>
+      offers
+        .filter((o) => o.id !== selected?.id)
+        .map((o) => ({
+          id: o.id,
+          name: o.shop?.name || o.seller?.name || "Satıcı",
+          price: o.effectivePrice,
+          freeShip: o.shippingPrice === 0 || o.shippingPrice == null,
+          score: "9,0",
+        })),
+    [offers, selected?.id]
+  );
+
+  const handleBuy = useCallback(async () => {
+    if (!selected) return;
+    setBuyBusy(true);
+    setBuyError("");
+    try {
+      const res = await fetch("/api/catalog/checkout", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          sellerOfferId: selected.id,
+          quantity: 1,
+          shipDays: selected.shippingTimeDays || 7,
+          expectedPriceTl: selected.effectivePrice,
+          idempotencyKey: `urun-${selected.id}-${Date.now()}`,
+        }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (res.status === 401) {
+        router.push(`/giris?next=${encodeURIComponent(`/urun/${id}`)}`);
+        return;
+      }
+      if (!res.ok) {
+        setBuyError(data.error || data.code || "Checkout başarısız");
+        return;
+      }
+      if (data.payUrl) {
+        window.location.assign(data.payUrl);
+        return;
+      }
+      setBuyError("Ödeme bağlantısı alınamadı");
+    } catch (e) {
+      setBuyError(e instanceof Error ? e.message : "Hata");
+    } finally {
+      setBuyBusy(false);
+    }
+  }, [selected, router, id]);
+
+  const handleShare = useCallback(async () => {
+    const url = typeof window !== "undefined" ? window.location.href : `/urun/${id}`;
+    try {
+      if (navigator.share) {
+        await navigator.share({ title: product?.name || "Ürün", url });
+        return;
+      }
+      await navigator.clipboard.writeText(url);
+    } catch {
+      /* ignore */
+    }
+  }, [id, product?.name]);
 
   if (err) {
     return (
@@ -104,61 +290,48 @@ function ProductDetailInner({ id }: { id: string }) {
     );
   }
 
-  if (!product) {
+  if (!product || !listing) {
     return <div style={{ padding: 40 }}>Yükleniyor…</div>;
   }
 
+  const noOffer = !selected;
+
   return (
-    <div style={{ maxWidth: 1100, margin: "24px auto", padding: "0 16px", display: "grid", gap: 20 }}>
-      <nav style={{ fontSize: 13, color: "#64748b", display: "flex", flexWrap: "wrap", gap: 6 }}>
-        <Link href="/alisveris">Alışveriş</Link>
-        {crumbs.map((c) => (
-          <span key={c.id}>
-            › {c.name}
-          </span>
-        ))}
-      </nav>
-
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "minmax(240px, 420px) 1fr",
-          gap: 24,
-          alignItems: "start",
-        }}
-      >
-        <div
-          style={{
-            aspectRatio: "1",
-            borderRadius: 16,
-            background: "#f1f5f9",
-            overflow: "hidden",
-            border: "1px solid #e2e8f0",
-          }}
-        >
-          {product.mainImage ? (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img src={product.mainImage} alt={product.name} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-          ) : (
-            <div style={{ display: "grid", placeItems: "center", height: "100%", color: "#94a3b8" }}>Görsel yok</div>
-          )}
-        </div>
-
-        <div style={{ display: "grid", gap: 14 }}>
-          <div>
-            <h1 style={{ margin: "0 0 6px", fontSize: 26, lineHeight: 1.25 }}>{product.name}</h1>
-            <p style={{ margin: 0, color: "#64748b", fontSize: 14 }}>
-              {[product.brand?.name, product.model?.name].filter(Boolean).join(" · ") || "Katalog ürünü"}
-            </p>
-          </div>
-
-          <label style={{ display: "grid", gap: 6, maxWidth: 360 }}>
-            <span style={{ fontSize: 13, fontWeight: 600 }}>Varyant</span>
+    <ShoppingProductDetail
+      listing={listing}
+      crumbs={crumbs}
+      specs={specs}
+      favorited={favorited}
+      isSeller={false}
+      onFavorite={() => setFavorited((f) => !f)}
+      onShare={handleShare}
+      onBuy={handleBuy}
+      buyDisabled={noOffer || buyBusy || (selected?.stockQty ?? 0) <= 0}
+      offerDisabled
+      buyLabel={buyBusy ? "Ödemeye yönlendiriliyor…" : noOffer ? "Teklif yok" : "Hemen Al"}
+      questionsEnabled={false}
+      otherSellersList={otherSellers}
+      onSelectOtherSeller={(offerId) => setSelectedOfferId(offerId)}
+      onAddCart={() => {
+        if (!selected) return;
+        addItem({
+          listingId: catalogCartListingId(product.id),
+          title: product.name,
+          price: selected.effectivePrice,
+          image: product.mainImage || null,
+        });
+      }}
+      aboveActions={
+        (product.variants || []).length > 1 ? (
+          <div className="shop-pdp__variant">
+            <label className="shop-pdp__variant-label" htmlFor="catalog-variant">
+              Varyant
+            </label>
             <select
+              id="catalog-variant"
               className="msf-select"
               value={variantId}
               onChange={(e) => setVariantId(e.target.value)}
-              style={{ padding: "10px 12px", borderRadius: 10, border: "1px solid #cbd5e1" }}
             >
               {(product.variants || []).map((v) => (
                 <option key={v.id} value={v.id}>
@@ -166,115 +339,19 @@ function ProductDetailInner({ id }: { id: string }) {
                 </option>
               ))}
             </select>
-          </label>
-
-          <div
-            style={{
-              padding: 16,
-              borderRadius: 14,
-              border: "1px solid #e2e8f0",
-              background: "#fff",
-              display: "grid",
-              gap: 8,
-            }}
-          >
-            {best ? (
-              <>
-                <div style={{ display: "flex", alignItems: "baseline", gap: 10, flexWrap: "wrap" }}>
-                  <strong style={{ fontSize: 28 }}>{formatMoneyTr(best.effectivePrice)} TL</strong>
-                  {best.discountedPrice != null && best.discountedPrice < best.price ? (
-                    <span style={{ textDecoration: "line-through", color: "#94a3b8" }}>
-                      {formatMoneyTr(best.price)} TL
-                    </span>
-                  ) : null}
-                </div>
-                <p style={{ margin: 0, fontSize: 13, color: "#64748b" }}>
-                  En iyi teklif · {best.shop?.name || best.seller?.name || "Satıcı"}
-                  {best.stockQty > 0 ? ` · Stok: ${best.stockQty}` : ""}
-                </p>
-                {best ? (
-                  <CatalogCheckoutButton
-                    sellerOfferId={best.id}
-                    expectedPriceTl={best.effectivePrice}
-                    label="Hemen Al"
-                  />
-                ) : null}
-                {best?.listingId ? (
-                  <Link href={`/ilan/${best.listingId}`} style={{ fontSize: 13, color: "#ea580c", marginTop: 4 }}>
-                    Satıcı vitrinine git
-                  </Link>
-                ) : null}
-              </>
-            ) : (
-              <p style={{ margin: 0, color: "#64748b" }}>
-                Bu varyant için aktif ve stoklu satıcı teklifi yok (satın alınamaz).
-              </p>
-            )}
           </div>
-
-          {product.description ? (
-            <div>
-              <h2 style={{ fontSize: 16, margin: "8px 0" }}>Ürün açıklaması</h2>
-              <p style={{ margin: 0, whiteSpace: "pre-wrap", color: "#334155", fontSize: 14 }}>{product.description}</p>
-            </div>
-          ) : null}
-        </div>
-      </div>
-
-      <section style={{ display: "grid", gap: 10 }}>
-        <h2 style={{ margin: 0, fontSize: 18 }}>Satıcı teklifleri</h2>
-        {!offers.length ? (
-          <p style={{ color: "#64748b", margin: 0 }}>Listelenecek teklif yok.</p>
-        ) : (
-          <div style={{ display: "grid", gap: 8 }}>
-            {offers.map((o) => (
-              <div
-                key={o.id}
-                style={{
-                  display: "grid",
-                  gridTemplateColumns: "1fr auto",
-                  gap: 12,
-                  padding: 14,
-                  border: "1px solid #e2e8f0",
-                  borderRadius: 12,
-                  background: "#fff",
-                  alignItems: "center",
-                }}
-              >
-                <div>
-                  <strong>{o.shop?.name || o.seller?.name || "Satıcı"}</strong>
-                  <div style={{ fontSize: 13, color: "#64748b", marginTop: 4 }}>
-                    {[
-                      o.condition,
-                      o.shippingTimeDays != null ? `${o.shippingTimeDays} gün kargo` : null,
-                      o.shippingPrice != null ? `Kargo ${formatMoneyTr(o.shippingPrice)} TL` : null,
-                      o.warrantyType,
-                      o.invoiceAvailable ? "Fatura" : null,
-                      `Stok ${o.stockQty}`,
-                    ]
-                      .filter(Boolean)
-                      .join(" · ")}
-                  </div>
-                </div>
-                <div style={{ textAlign: "right", display: "grid", gap: 6 }}>
-                  <strong>{formatMoneyTr(o.effectivePrice)} TL</strong>
-                  <CatalogCheckoutButton
-                    sellerOfferId={o.id}
-                    expectedPriceTl={o.effectivePrice}
-                    label="Al"
-                  />
-                  {o.listingId ? (
-                    <Link href={`/ilan/${o.listingId}`} style={{ fontSize: 13, color: "#ea580c" }}>
-                      Vitrin
-                    </Link>
-                  ) : null}
-                </div>
-              </div>
-            ))}
+        ) : null
+      }
+      afterActions={
+        buyError ? (
+          <div style={{ fontSize: 13, color: "#dc2626", marginTop: 8 }}>{buyError}</div>
+        ) : noOffer ? (
+          <div style={{ fontSize: 13, color: "#64748b", marginTop: 8 }}>
+            Bu varyant için aktif ve stoklu satıcı teklifi yok.
           </div>
-        )}
-      </section>
-    </div>
+        ) : null
+      }
+    />
   );
 }
 

@@ -1,8 +1,15 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect, useMemo, useState } from "react";
 import { Building2, Hotel, ShoppingBag } from "lucide-react";
 import { allowedListingKindsForUser } from "@/lib/verticalAccessPolicy";
+import {
+  defaultCommercialPublishMap,
+  entryPathsForSubtypes,
+  type CommercialPublishMap,
+} from "@/lib/commercialPublishMap";
+import { parseCommercialSubtypes } from "@/lib/accountTypes";
 
 type Props = {
   genelHref?: string;
@@ -26,9 +33,42 @@ export function ListingKindChooser({
   showPremium = true,
   user = null,
 }: Props) {
+  const [publishMap, setPublishMap] = useState<CommercialPublishMap>(defaultCommercialPublishMap());
+
+  useEffect(() => {
+    fetch("/api/commercial-publish-map")
+      .then((r) => r.json())
+      .then((d) => {
+        if (d?.map) setPublishMap(d.map);
+      })
+      .catch(() => {});
+  }, []);
+
   const kinds = user
-    ? allowedListingKindsForUser(user)
+    ? allowedListingKindsForUser(user, publishMap)
     : { genel: true, alisveris: true, premium: true };
+
+  const hrefs = useMemo(() => {
+    const subs = parseCommercialSubtypes(user?.commercialSubtypes || [], null, true);
+    const paths = entryPathsForSubtypes(subs, publishMap);
+    let genel = genelHref;
+    let alisveris = alisverisHref;
+    let premium = premiumHref;
+    for (const p of paths) {
+      if (p.includes("kind=genel") || (p.includes("/ilan-ver") && !p.includes("alisveris") && !p.includes("premium") && !p.includes("ilan-ekle"))) {
+        genel = p;
+      }
+      if (p.includes("alisveris") || p.includes("ilan-ekle")) alisveris = p;
+      if (p.includes("premium")) premium = p;
+    }
+    // Haritadan form kind’e göre de bak
+    for (const row of publishMap.rows.filter((r) => r.enabled && subs.map((s) => s.toUpperCase()).includes(r.subtypeKey))) {
+      if (row.listingForm === "genel") genel = row.entryPath || genel;
+      if (row.listingForm === "alisveris") alisveris = row.entryPath || alisveris;
+      if (row.listingForm === "premium") premium = row.entryPath || premium;
+    }
+    return { genel, alisveris, premium };
+  }, [user, publishMap, genelHref, alisverisHref, premiumHref]);
 
   const showGenel = kinds.genel;
   const showAlisveris = kinds.alisveris;
@@ -68,7 +108,7 @@ export function ListingKindChooser({
 
       <div style={{ display: "grid", gap: 14 }}>
         {showGenel ? (
-          <Link href={genelHref} className="card" style={cardStyle}>
+          <Link href={hrefs.genel} className="card" style={cardStyle}>
             <span
               style={{
                 width: 44,
@@ -95,7 +135,7 @@ export function ListingKindChooser({
         ) : null}
 
         {showAlisveris ? (
-          <Link href={alisverisHref} className="card" style={cardStyle}>
+          <Link href={hrefs.alisveris} className="card" style={cardStyle}>
             <span
               style={{
                 width: 44,
@@ -122,7 +162,7 @@ export function ListingKindChooser({
         ) : null}
 
         {showPremiumCard ? (
-          <Link href={premiumHref} className="card" style={cardStyle}>
+          <Link href={hrefs.premium} className="card" style={cardStyle}>
             <span
               style={{
                 width: 44,

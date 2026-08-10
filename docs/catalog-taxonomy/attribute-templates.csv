@@ -1,0 +1,81 @@
+templateId,attributeName,attributeSlug,type,required,filterable,searchable,comparisonVisible,isVariant,optionValues,unit,sortOrder
+PHONE,Depolama,depolama,SINGLE_SELECT,true,true,true,true,true,64 GB;128 GB;256 GB;512 GB;1 TB,,1
+PHONE,RAM,ram,SINGLE_SELECT,false,true,true,true,true,4 GB;6 GB;8 GB;12 GB;16 GB,,2
+PHONE,Renk,renk,COLOR,false,true,true,true,true,Siyah;Beyaz;Gri;Mavi;Altın;Mor;Diğer,,3
+PHONE,Ekran Boyutu,ekran-boyutu,SINGLE_SELECT,false,true,true,true,false,5.5;6.1;6.5;6.7;6.8;7.0,inç,4
+PHONE,İşletim Sistemi,isletim-sistemi,SINGLE_SELECT,false,true,true,true,false,iOS;Android;HarmonyOS;Diğer,,5
+PHONE,SIM Tipi,sim-tipi,SINGLE_SELECT,false,true,true,true,false,Tek SIM;Çift SIM;eSIM;Çift SIM + eSIM,,6
+PHONE,5G,5g,BOOLEAN,false,true,true,true,false,,,7
+PHONE,Garanti,garanti,SINGLE_SELECT,false,false,false,false,false,Yok;6 Ay;12 Ay;24 Ay,,8
+COMPUTER,İşlemci,islemci,SINGLE_SELECT,true,true,true,true,false,Intel i3;Intel i5;Intel i7;Intel i9;AMD Ryzen 5;AMD Ryzen 7;Apple M;Diğer,,1
+COMPUTER,RAM,ram,SINGLE_SELECT,true,true,true,true,true,8 GB;16 GB;32 GB;64 GB,,2
+COMPUTER,Depolama,depolama,SINGLE_SELECT,true,true,true,true,true,256 GB;512 GB;1 TB;2 TB,,3
+COMPUTER,Ekran Boyutu,ekran-boyutu,SINGLE_SELECT,false,true,true,true,false,13;14;15.6;16;17,inç,4
+COMPUTER,İşletim Sistemi,isletim-sistemi,SINGLE_SELECT,false,true,true,true,false,Windows;macOS;ChromeOS;Linux;FreeDOS,,5
+COMPUTER,Renk,renk,COLOR,false,true,true,true,true,Siyah;Gri;Gümüş;Beyaz;Diğer,,6
+COMPUTER,Garanti,garanti,SINGLE_SELECT,false,false,false,false,false,12 Ay;24 Ay;36 Ay,,7
+TV,Ekran Boyutu,ekran-boyutu,SINGLE_SELECT,true,true,true,true,true,32;40;43;50;55;65;75;85,inç,1
+TV,Çözünürlük,cozunurluk,SINGLE_SELECT,true,true,true,true,false,HD;Full HD;4K;8K,,2
+TV,Panel Tipi,panel-tipi,SINGLE_SELECT,false,true,true,true,false,LED;QLED;OLED;Mini-LED;Diğer,,3
+TV,Smart TV,smart-tv,BOOLEAN,false,true,true,true,false,,,4
+TV,HDR,hdr,SINGLE_SELECT,false,true,true,true,false,Yok;HDR10;HDR10+;Dolby Vision,,5
+TV,Yenileme Hızı,yenileme-hizi,SINGLE_SELECT,false,true,true,true,false,60 Hz;120 Hz;144 Hz,,6
+TV,Garanti,garanti,SINGLE_SELECT,false,false,false,false,false,12 Ay;24 Ay;36 Ay,,7
+WHITE_GOODS,Enerji Sınıfı,enerji-sinifi,SINGLE_SELECT,true,true,true,true,false,A;B;C;D;E;F;G,,1
+WHITE_GOODS,Renk,renk,COLOR,false,true,true,true,false,Beyaz;Gri;Siyah;Inox;Diğer,,2
+WHITE_GOODS,Ölçüler,olculer,TEXT,false,false,false,false,false,,,3
+WHITE_GOODS,Garanti,garanti,SINGLE_SELECT,false,false,false,false,false,12 Ay;24 Ay;36 Ay,,4
+SMALL_APPLIANCE,Güç,guc,NUMBER,false,true,true,true,false,,W,1
+SMALL_APPLIANCE,Kapasite,kapasite,TEXT,false,true,true,true,false,,,2
+SMALL_APPLIANCE,Renk,renk,COLOR,false,true,true,true,true,Siyah;Beyaz;Gri;Kırmızı;Diğer,,3
+SMALL_APPLIANCE,Malzeme,malzeme,SINGLE_SELECT,false,true,true,true,false,Plastik;Paslanmaz Çelik;Cam;Diğer,,4
+SMALL_APPLIANCE,Garanti,garanti,SINGLE_SELECT,false,false,false,false,false,Yok;12 Ay;24 Ay,,5
+APPAREL,Cinsiyet,cinsiyet,SINGLE_SELECT,true,true,true,true,false,Kadın;Erkek;Unisex;Çocuk,,1
+APPAREL,Beden,beden,SINGLE_SELECT,true,true,true,true,true,XXS;XS;S;M;L;XL;XXL;3XL,,2
+APPAREL,Renk,renk,COLOR,true,true,true,true,true,Siyah;Beyaz;Gri;Mavi;Kırmızı;Yeşil;Diğer,,3
+APPAREL,Kumaş,kumas,SINGLE_SELECT,false,true,true,true,false,Pamuk;Polyester;Keten;Yün;Diğer,,4
+APPAREL,Kalıp,kalip,SINGLE_SELECT,false,true,true,true,false,Regular;Slim;Oversized;Relaxed,,5
+FOOTWEAR,Cinsiyet,cinsiyet,SINGLE_SELECT,true,true,true,true,false,Kadın;Erkek;Unisex;Çocuk,,1
+FOOTWEAR,Numara,numara,SINGLE_SELECT,true,true,true,true,true,35;36;37;38;39;40;41;42;43;44;45;46,,2
+FOOTWEAR,Renk,renk,COLOR,true,true,true,true,true,Siyah;Beyaz;Kahverengi;Gri;Diğer,,3
+FOOTWEAR,Malzeme,malzeme,SINGLE_SELECT,false,true,true,true,false,Deri;Süet;Tekstil;Sentetik;Diğer,,4
+FOOTWEAR,Taban Tipi,taban-tipi,SINGLE_SELECT,false,true,true,true,false,Düz;Spor;Topuklu;Diğer,,5
+FURNITURE,Malzeme,malzeme,SINGLE_SELECT,true,true,true,true,false,Ahşap;MDF;Metal;Cam;Kumaş;Diğer,,1
+FURNITURE,Renk,renk,COLOR,false,true,true,true,true,Beyaz;Meşe;Ceviz;Siyah;Gri;Diğer,,2
+FURNITURE,Ölçüler,olculer,TEXT,false,false,true,true,false,,,3
+FURNITURE,Montaj Gerekli,montaj-gerekli,BOOLEAN,false,true,true,true,false,,,4
+KITCHENWARE,Malzeme,malzeme,SINGLE_SELECT,true,true,true,true,false,Çelik;Cam;Seramik;Plastik;Silikon;Diğer,,1
+KITCHENWARE,Kapasite,kapasite,TEXT,false,true,true,true,false,,,2
+KITCHENWARE,Renk,renk,COLOR,false,true,true,true,true,Siyah;Beyaz;Gri;Kırmızı;Diğer,,3
+KITCHENWARE,Bulaşık Makinesinde Yıkanabilir,bm-yikanabilir,BOOLEAN,false,true,true,true,false,,,4
+SPORTS_EQUIPMENT,Spor Dalı,spor-dali,SINGLE_SELECT,false,true,true,true,false,Fitness;Futbol;Basketbol;Koşu;Outdoor;Diğer,,1
+SPORTS_EQUIPMENT,Beden/Boyut,beden-boyut,TEXT,false,true,true,true,true,,,2
+SPORTS_EQUIPMENT,Renk,renk,COLOR,false,true,true,true,true,Siyah;Beyaz;Kırmızı;Mavi;Diğer,,3
+SPORTS_EQUIPMENT,Malzeme,malzeme,SINGLE_SELECT,false,true,true,true,false,Metal;Plastik;Kumaş;Karbon;Diğer,,4
+PET_PRODUCT,Hayvan Türü,hayvan-turu,SINGLE_SELECT,true,true,true,true,false,Köpek;Kedi;Kuş;Balık;Kemirgen;Diğer,,1
+PET_PRODUCT,Yaş Grubu,yas-grubu,SINGLE_SELECT,false,true,true,true,false,Yavru;Yetişkin;Yaşlı;Tüm Yaşlar,,2
+PET_PRODUCT,Ağırlık/Boyut,agirlik-boyut,TEXT,false,true,true,true,false,,,3
+PET_PRODUCT,İçerik/Malzeme,icerik-malzeme,TEXT,false,false,true,true,false,,,4
+AUTOMOTIVE_PART,Uyumlu Marka,uyumlu-marka,TEXT,true,true,true,true,false,,,1
+AUTOMOTIVE_PART,Uyumlu Model,uyumlu-model,TEXT,false,true,true,true,false,,,2
+AUTOMOTIVE_PART,Parça Tipi,parca-tipi,SINGLE_SELECT,false,true,true,true,false,Filtre;Balata;Ampul;Aksesuar;Diğer,,3
+AUTOMOTIVE_PART,OEM No,oem-no,TEXT,false,false,true,true,false,,,4
+INDUSTRIAL_MACHINE,Güç,guc,NUMBER,true,true,true,true,false,,kW,1
+INDUSTRIAL_MACHINE,Voltaj,voltaj,SINGLE_SELECT,true,true,true,true,false,220V;380V;Diğer,,2
+INDUSTRIAL_MACHINE,Kapasite,kapasite,TEXT,false,true,true,true,false,,,3
+INDUSTRIAL_MACHINE,Çalışma Ağırlığı,calisma-agirligi,NUMBER,false,false,true,true,false,,kg,4
+INDUSTRIAL_MACHINE,Garanti,garanti,SINGLE_SELECT,false,false,false,false,false,12 Ay;24 Ay;36 Ay,,5
+COSMETICS,Cilt Tipi,cilt-tipi,SINGLE_SELECT,false,true,true,true,false,Kuru;Yağlı;Karma;Hassas;Tüm Ciltler,,1
+COSMETICS,Hacim,hacim,SINGLE_SELECT,false,true,true,true,true,30 ml;50 ml;100 ml;200 ml;250 ml;500 ml,,2
+COSMETICS,İçerik Notu,icerik-notu,TEXT,false,false,true,false,false,,,3
+COSMETICS,Son Kullanma,skt,TEXT,false,false,false,false,false,,,4
+BOOK_STATIONERY,Dil,dil,SINGLE_SELECT,false,true,true,true,false,Türkçe;İngilizce;Diğer,,1
+BOOK_STATIONERY,Sayfa/Adet,sayfa-adet,TEXT,false,true,true,true,false,,,2
+BOOK_STATIONERY,Boyut,boyut,SINGLE_SELECT,false,true,true,true,false,A4;A5;A6;Diğer,,3
+BOOK_STATIONERY,Kapak Tipi,kapak-tipi,SINGLE_SELECT,false,true,true,true,false,Karton;Ciltli;Spiral;Diğer,,4
+BABY_PRODUCT,Yaş Aralığı,yas-araligi,SINGLE_SELECT,true,true,true,true,false,0-6 ay;6-12 ay;1-2 yaş;2-4 yaş;4+ yaş,,1
+BABY_PRODUCT,Cinsiyet,cinsiyet,SINGLE_SELECT,false,true,true,true,false,Kız;Erkek;Unisex,,2
+BABY_PRODUCT,Malzeme,malzeme,SINGLE_SELECT,false,true,true,true,false,Pamuk;Plastik;Ahşap;Diğer,,3
+BABY_PRODUCT,Renk,renk,COLOR,false,true,true,true,true,Pembe;Mavi;Beyaz;Sarı;Diğer,,4
+GENERIC,Renk,renk,COLOR,false,true,true,true,true,Siyah;Beyaz;Gri;Mavi;Kırmızı;Diğer,,1
+GENERIC,Garanti,garanti,SINGLE_SELECT,false,false,false,false,false,Yok;6 Ay;12 Ay;24 Ay,,2

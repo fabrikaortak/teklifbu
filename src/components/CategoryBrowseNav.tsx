@@ -34,6 +34,7 @@ import {
   type BrowseNavConfig,
 } from "@/lib/browseNavConfig";
 import { useAlisverisBrowseTree } from "@/hooks/useAlisverisBrowseTree";
+import { useVasitaBrowseTree } from "@/hooks/useVasitaBrowseTree";
 
 /** Kök satır ikonları — klasik v2 ile aynı */
 const ROOT_LUCIDE: Record<string, LucideIcon> = {
@@ -74,6 +75,8 @@ type Props = {
   variant?: "default" | "classic" | "alisveris";
   /** Alışveriş DB ağacı (yoksa API’den yüklenir / TS fallback) */
   browseTree?: BrowseNode[] | null;
+  /** true iken sol menüde yükleniyor iskeleti */
+  treeLoading?: boolean;
 };
 
 type NavNode = {
@@ -83,6 +86,8 @@ type NavNode = {
   count: number;
   children?: NavNode[];
   kind?: "section";
+  /** Shallow catalog: children henüz yok ama açılabilir (lazy version yükle) */
+  expandable?: boolean;
 };
 
 function splitCats(cat?: string): string[] {
@@ -99,13 +104,31 @@ function isCategoryActive(facets: FacetCounts | null, filter: BrowseFilter): boo
   if (cats.length > 1) return cats.some((c) => active.has(c) || active.has(c.split("-")[0]));
   const c = cats[0];
   if (active.has(c)) return true;
-  // kök (ikinci-el) — çocuklar aktifse kök de aktif sayılır
-  if (facets.activeCategorySlugs.some((s) => s === c || s.startsWith(`${c}-`))) return true;
+  // kök (ikinci-el) — çocuklar aktifse kök de aktif sayılır (__ ve - path)
+  if (
+    facets.activeCategorySlugs.some(
+      (s) => s === c || s.startsWith(`${c}-`) || s.startsWith(`${c}__`)
+    )
+  ) {
+    return true;
+  }
   return false;
 }
 
 function browseConfig(facets: FacetCounts | null): BrowseNavConfig {
   return facets?.browseNavConfig || DEFAULT_BROWSE_NAV_CONFIG;
+}
+
+/** Aynı id iki kez gelmesin (React key + yanlış çocuk bağlama) */
+function dedupeNavById(nodes: NavNode[]): NavNode[] {
+  const seen = new Set<string>();
+  const out: NavNode[] = [];
+  for (const n of nodes) {
+    if (seen.has(n.id)) continue;
+    seen.add(n.id);
+    out.push(n);
+  }
+  return out;
 }
 
 function isBrowseNodeVisible(facets: FacetCounts | null, id: string, filter: BrowseFilter): boolean {
@@ -116,12 +139,9 @@ function isBrowseNodeVisible(facets: FacetCounts | null, id: string, filter: Bro
 }
 
 function pruneNavTree(nodes: NavNode[], facets: FacetCounts | null): NavNode[] {
-  // facets henüz yokken boş dalları GÖSTERME (admin varsayılanı hideEmptyUntilListing=true).
-  // Aksi halde API gelene kadar tüm (0) menüler flaşlanır.
-  const showEmpty =
-    facets == null
-      ? !DEFAULT_BROWSE_NAV_CONFIG.hideEmptyUntilListing
-      : facets.showEmptyCategories !== false;
+  // facets henüz yokken: menü iskeletini hemen göster (Emlak/Vasıta gecikmesin).
+  // hideEmptyUntilListing facet geldikten sonra uygulanır.
+  const showEmpty = facets == null ? true : facets.showEmptyCategories !== false;
   const cfg = browseConfig(facets);
   return nodes
     .map((n) => {
@@ -148,7 +168,29 @@ function pruneNavTree(nodes: NavNode[], facets: FacetCounts | null): NavNode[] {
     .map(({ n }) => n);
 }
 
-function toNavTree(source: BrowseNode[], facets: FacetCounts | null): NavNode[] {
+function toNavTree(
+  source: BrowseNode[],
+  facets: FacetCounts | null,
+  vasitaCatalogBrands?: Record<
+    string,
+    Array<{
+      slug: string;
+      name: string;
+      modelsLoaded?: boolean;
+      models?: Array<{
+        slug: string;
+        name: string;
+        hasVersions?: boolean;
+        versions?: Array<{
+          slug: string;
+          name: string;
+          trims?: Array<{ slug: string; name: string }>;
+        }>;
+        trims?: Array<{ slug: string; name: string }>;
+      }>;
+    }>
+  > | null
+): NavNode[] {
   const cfg = browseConfig(facets);
   function mapNode(node: BrowseNode): NavNode {
     if (node.kind === "section") {
@@ -159,41 +201,98 @@ function toNavTree(source: BrowseNode[], facets: FacetCounts | null): NavNode[] 
     const key = resolveBrowseNodeKey(node.id, node.filter);
     const name = displayNameFor(cfg, key, node.name);
 
-    // Vasıta: alt tip → marka → model → paket (mevcut çocuklar korunur — örn. İş Makineleri)
-    if (node.filter.category === "arac" && node.filter.subtype && facets) {
-      const brands = buildVehicleBrandNodes(node.filter.subtype, facets);
-      const brandNodes: NavNode[] = brands.map((b) => ({
-        id: `arac/${node.filter.subtype}/${b.slug}`,
-        name: b.name,
-        filter: { category: "arac", subtype: node.filter.subtype, brand: b.slug },
-        count: b.count,
-        children: b.models.map((m) => ({
-          id: `arac/${node.filter.subtype}/${b.slug}/${m.slug}`,
-          name: m.name,
-          filter: {
-            category: "arac",
-            subtype: node.filter.subtype,
-            brand: b.slug,
-            model: m.slug,
-          },
-          count: m.count,
-          children: m.trims.length
-            ? m.trims.map((t) => ({
-                id: `arac/${node.filter.subtype}/${b.slug}/${m.slug}/${t.slug}`,
-                name: t.name,
+    // Vasıta: alt tip → marka → model → version (her seviye lazy)
+    if (node.filter.category === "arac" && node.filter.subtype) {
+      const subtype = String(node.filter.subtype);
+      const catalog = vasitaCatalogBrands?.[subtype];
+      // Alt tip henüz açılmadı — markaları çekme (ağır nav yok)
+      if (catalog === undefined) {
+        return { id: node.id, name, filter: node.filter, count, children, expandable: true };
+      }
+      // Facets gecikse bile açılan dalı göster (count=0); empty-show bayrakları açık
+      const facetForNav: FacetCounts =
+        facets ||
+        ({
+          categories: {},
+          dealTypes: {},
+          subtypes: {},
+          brands: {},
+          models: {},
+          versions: {},
+          trims: {},
+          rentals: {},
+          showEmptyBrands: true,
+          showEmptyModels: true,
+          showEmptyTrims: true,
+          showEmptyCategories: true,
+          showRootCounts: false,
+          activeCategorySlugs: [],
+          browseNavConfig: { hideEmptyUntilListing: false, sahibindenTreeExpand: true, nodes: {} },
+        } satisfies FacetCounts);
+      const brands = buildVehicleBrandNodes(subtype, facetForNav, catalog);
+      const brandNodes: NavNode[] = brands.map((b) => {
+        const catalogBrand = catalog.find((x) => x.slug === b.slug);
+        const modelsLoaded = Boolean(catalogBrand?.modelsLoaded);
+        const modelNodes = b.models.map((m) => {
+          const versionChildren = m.versions.length
+            ? m.versions.map((v) => ({
+                id: `arac/${subtype}/${b.slug}/${m.slug}/${v.slug}`,
+                name: v.name,
                 filter: {
                   category: "arac",
-                  subtype: node.filter.subtype,
+                  subtype,
                   brand: b.slug,
                   model: m.slug,
-                  trim: t.slug,
+                  version: v.slug,
                 },
-                count: t.count,
+                count: v.count,
+                children: v.trims.length
+                  ? v.trims.map((t) => ({
+                      id: `arac/${subtype}/${b.slug}/${m.slug}/${v.slug}/${t.slug}`,
+                      name: t.name,
+                      filter: {
+                        category: "arac",
+                        subtype,
+                        brand: b.slug,
+                        model: m.slug,
+                        version: v.slug,
+                        trim: t.slug,
+                      },
+                      count: t.count,
+                    }))
+                  : undefined,
               }))
-            : undefined,
-        })),
-      }));
-      children = [...(children || []), ...brandNodes];
+            : undefined;
+          return {
+            id: `arac/${subtype}/${b.slug}/${m.slug}`,
+            name: m.name,
+            filter: { category: "arac", subtype, brand: b.slug, model: m.slug },
+            count: m.count,
+            children: versionChildren,
+            expandable: Boolean(m.hasVersions) && !versionChildren?.length,
+          };
+        });
+        return {
+          id: `arac/${subtype}/${b.slug}`,
+          name: b.name,
+          filter: { category: "arac", subtype, brand: b.slug },
+          count: b.count,
+          children: modelsLoaded ? modelNodes : undefined,
+          expandable: !modelsLoaded,
+        };
+      });
+      /**
+       * Hub (Elektrikli Araçlar vb.): DB alt tipleri kalsın — marka ekleme.
+       *   Aksi halde aynı id iki kez gelir (örn. elektrikli-otomobil) → React key çakışması,
+       *   yanlış marka modelleri başka markanın altında görünür.
+       * Yaprak (Otomobil / Arazi): yalnızca marka listesi.
+       */
+      const structural = children || [];
+      if (structural.length > 0) {
+        children = dedupeNavById(structural);
+      } else {
+        children = brandNodes;
+      }
     }
 
     return { id: node.id, name, filter: node.filter, count, children };
@@ -216,6 +315,7 @@ function NodeRow({
   activeId,
   onToggle,
   onPick,
+  showRootCounts,
 }: {
   node: NavNode;
   depth: number;
@@ -223,6 +323,7 @@ function NodeRow({
   activeId: string | null;
   onToggle: (id: string) => void;
   onPick: (node: NavNode) => void;
+  showRootCounts: boolean;
 }) {
   if (node.kind === "section") {
     return (
@@ -251,7 +352,7 @@ function NodeRow({
     );
   }
 
-  const hasChildren = Boolean(node.children?.length);
+  const hasChildren = Boolean(node.children?.length) || Boolean(node.expandable);
   const open = openIds.has(node.id);
   const active = activeId === node.id;
 
@@ -322,22 +423,38 @@ function NodeRow({
           <span style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap", flex: 1 }}>
             {node.name}
           </span>
-          <span style={{ color: "#94a3b8", fontWeight: 700, fontSize: 12, flexShrink: 0 }}>({node.count})</span>
+          {showRootCounts || depth > 0 ? (
+            <span style={{ color: "#94a3b8", fontWeight: 700, fontSize: 12, flexShrink: 0 }}>({node.count})</span>
+          ) : null}
         </button>
       </div>
       {hasChildren && open && (
         <div>
-          {node.children!.map((ch) => (
-            <NodeRow
-              key={ch.id}
-              node={ch}
-              depth={depth + 1}
-              openIds={openIds}
-              activeId={activeId}
-              onToggle={onToggle}
-              onPick={onPick}
-            />
-          ))}
+          {node.children?.length ? (
+            node.children.map((ch) => (
+              <NodeRow
+                key={ch.id}
+                node={ch}
+                depth={depth + 1}
+                openIds={openIds}
+                activeId={activeId}
+                onToggle={onToggle}
+                onPick={onPick}
+                showRootCounts={showRootCounts}
+              />
+            ))
+          ) : (
+            <div
+              style={{
+                paddingLeft: 8 + (depth + 1) * 12,
+                paddingBlock: 6,
+                fontSize: 12,
+                color: "#94a3b8",
+              }}
+            >
+              Yükleniyor…
+            </div>
+          )}
         </div>
       )}
     </div>
@@ -371,11 +488,13 @@ function matchNavPath(filters: SearchFilters, tree: NavNode[]): string[] {
     if (f.rental && f.rental === filters.rental) s += 2;
     if (f.brand && f.brand === filters.brand) s += 5;
     if (f.model && f.model === filters.model) s += 6;
-    if (f.trim && f.trim === filters.trim) s += 7;
+    if (f.version && f.version === filters.version) s += 7;
+    if (f.trim && f.trim === filters.trim) s += 8;
     if (f.dealType && !filters.dealType) return -1;
     if (f.subtype && !filters.subtype) return -1;
     if (f.brand && !filters.brand) return -1;
     if (f.model && !filters.model) return -1;
+    if (f.version && !filters.version) return -1;
     if (f.trim && !filters.trim) return -1;
     if (f.rental && !filters.rental) return -1;
     return s;
@@ -431,7 +550,7 @@ function drillPathFromMatch(matchedPath: string[], tree: NavNode[]): string[] {
 
 function getDrillView(tree: NavNode[], path: string[]): { trail: NavNode[]; list: NavNode[] } {
   if (!path.length) {
-    return { trail: [], list: tree.filter((n) => n.kind !== "section" || true) };
+    return { trail: [], list: dedupeNavById(tree.filter((n) => n.kind !== "section")) };
   }
   let nodes = tree;
   const trail: NavNode[] = [];
@@ -441,8 +560,8 @@ function getDrillView(tree: NavNode[], path: string[]): { trail: NavNode[]; list
     trail.push(found);
     nodes = found.children || [];
   }
-  // Yalnızca mevcut seviyenin çocukları — kardeş dallar yok
-  return { trail, list: nodes.filter((n) => n.kind !== "section") };
+  // Yalnızca mevcut seviyenin çocukları — kardeş dallar yok; id tek olsun
+  return { trail, list: dedupeNavById(nodes.filter((n) => n.kind !== "section")) };
 }
 
 function DrillRow({
@@ -451,12 +570,14 @@ function DrillRow({
   active,
   isTrail,
   onClick,
+  showRootCounts,
 }: {
   node: NavNode;
   depth: number;
   active: boolean;
   isTrail: boolean;
   onClick: () => void;
+  showRootCounts: boolean;
 }) {
   /** Sahibinden: iz ve seçimler mavi link */
   const linkColor = isTrail || active || depth > 0 ? "#184e9e" : "#5f6368";
@@ -496,9 +617,11 @@ function DrillRow({
       <span style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap", flex: 1 }}>
         {node.name}
       </span>
-      <span style={{ color: "#94a3b8", fontWeight: 700, fontSize: 12, flexShrink: 0 }}>
-        ({node.count})
-      </span>
+      {showRootCounts || depth > 0 ? (
+        <span style={{ color: "#94a3b8", fontWeight: 700, fontSize: 12, flexShrink: 0 }}>
+          ({node.count})
+        </span>
+      ) : null}
     </button>
   );
 }
@@ -512,13 +635,19 @@ export function CategoryBrowseNav({
   hideHeader = false,
   variant = "default",
   browseTree = null,
+  treeLoading = false,
 }: Props) {
-  /** classic/alisveris: Sahibinden drill (ayara göre); tree/default: klasik accordion */
-  const sahibindenMode =
-    (variant === "classic" || variant === "alisveris") &&
-    browseConfig(facets || null).sahibindenTreeExpand !== false;
+  /**
+   * Sahibinden drill: kardeş dallar gizlenir.
+   * Kategoriler teması «v2» → variant classic → her zaman drill.
+   * «Ağaç» → variant default → accordion (sahibindenTreeExpand bayrağına bakılmaz).
+   * Alışveriş menüsü de drill kullanır.
+   */
+  const sahibindenMode = variant === "classic" || variant === "alisveris";
 
   const dbAlisveris = useAlisverisBrowseTree();
+  const dbVasita = useVasitaBrowseTree();
+  const alisverisLoading = treeLoading || (variant === "alisveris" && !browseTree?.length && dbAlisveris.loading);
   const alisverisSource =
     variant === "alisveris"
       ? browseTree && browseTree.length
@@ -526,18 +655,158 @@ export function CategoryBrowseNav({
         : dbAlisveris.tree
       : null;
 
+  /** Lazy: alt tip açılınca markalar; marka açılınca seriler; seri açılınca motorlar. */
+  const [vasitaCatalogBrands, setVasitaCatalogBrands] = useState<
+    Record<
+      string,
+      Array<{
+        slug: string;
+        name: string;
+        modelsLoaded?: boolean;
+        models?: Array<{
+          slug: string;
+          name: string;
+          hasVersions?: boolean;
+          versionsLoaded?: boolean;
+          versions?: Array<{
+            slug: string;
+            name: string;
+            trims?: Array<{ slug: string; name: string }>;
+          }>;
+        }>;
+      }>
+    >
+  >({});
+  const deepLoadingRef = useRef(new Set<string>());
+  const loadedKeysRef = useRef(new Set<string>());
+
+  async function loadSubtypeBrands(subtype: string) {
+    const key = `subtype|${subtype}`;
+    if (loadedKeysRef.current.has(key) || deepLoadingRef.current.has(key)) return;
+    deepLoadingRef.current.add(key);
+    try {
+      const res = await fetch(`/api/vasita/catalog?action=brands&subtype=${encodeURIComponent(subtype)}`);
+      const data = await res.json();
+      if (!res.ok || data?.ok === false) return;
+      const brands = (Array.isArray(data?.brands) ? data.brands : []).map(
+        (b: { slug: string; name: string }) => ({
+          slug: b.slug,
+          name: b.name,
+          modelsLoaded: false,
+          models: [] as Array<{ slug: string; name: string }>,
+        })
+      );
+      loadedKeysRef.current.add(key);
+      setVasitaCatalogBrands((prev) => ({ ...prev, [subtype]: brands }));
+    } catch {
+      /* yeniden denenebilsin — loadedKeys ekleme */
+    } finally {
+      deepLoadingRef.current.delete(key);
+    }
+  }
+
+  async function loadBrandModels(subtype: string, brand: string) {
+    const key = `models|${subtype}|${brand}`;
+    if (loadedKeysRef.current.has(key) || deepLoadingRef.current.has(key)) return;
+    deepLoadingRef.current.add(key);
+    try {
+      const qs = new URLSearchParams({ action: "models", subtype, brand });
+      const res = await fetch(`/api/vasita/catalog?${qs}`);
+      const data = await res.json();
+      if (!res.ok || data?.ok === false) return;
+      // Yanlış markaya yazmayı engelle (eski istek geç gelirse)
+      const models = (Array.isArray(data?.models) ? data.models : []).map(
+        (m: { slug: string; name: string }) => ({
+          slug: m.slug,
+          name: m.name,
+          hasVersions: true,
+          versionsLoaded: false,
+          versions: [] as Array<{ slug: string; name: string; trims?: Array<{ slug: string; name: string }> }>,
+        })
+      );
+      loadedKeysRef.current.add(key);
+      setVasitaCatalogBrands((prev) => {
+        const list = prev[subtype] || [];
+        const hasBrand = list.some((b) => b.slug === brand);
+        const nextList = hasBrand
+          ? list.map((b) => (b.slug !== brand ? b : { ...b, modelsLoaded: true, models }))
+          : [...list, { slug: brand, name: brand, modelsLoaded: true, models }];
+        return { ...prev, [subtype]: nextList };
+      });
+    } catch {
+      /* retry ok */
+    } finally {
+      deepLoadingRef.current.delete(key);
+    }
+  }
+
+  async function loadModelVersions(subtype: string, brand: string, model: string) {
+    const key = `ver|${subtype}|${brand}|${model}`;
+    if (loadedKeysRef.current.has(key) || deepLoadingRef.current.has(key)) return;
+    deepLoadingRef.current.add(key);
+    try {
+      const qs = new URLSearchParams({ action: "generations", subtype, brand, model });
+      const res = await fetch(`/api/vasita/catalog?${qs}`);
+      const data = await res.json();
+      if (!res.ok || data?.ok === false) return;
+      const versions = Array.isArray(data?.versions)
+        ? data.versions.map((v: { slug: string; name: string; trims?: Array<{ slug: string; name: string }> }) => ({
+            slug: v.slug,
+            name: v.name,
+            trims: Array.isArray(v.trims) ? v.trims : [],
+          }))
+        : [];
+      loadedKeysRef.current.add(key);
+      setVasitaCatalogBrands((prev) => {
+        if (!prev[subtype]) return prev;
+        return {
+          ...prev,
+          [subtype]: prev[subtype].map((b) =>
+            b.slug !== brand
+              ? b
+              : {
+                  ...b,
+                  modelsLoaded: true,
+                  models: (b.models || []).map((m) =>
+                    m.slug !== model
+                      ? m
+                      : { ...m, versions, versionsLoaded: true, hasVersions: versions.length > 0 }
+                  ),
+                }
+          ),
+        };
+      });
+    } catch {
+      /* leave expandable */
+    } finally {
+      deepLoadingRef.current.delete(key);
+    }
+  }
+
   const tree = useMemo(() => {
+    // Classic (ana sayfa / ilanlar): Emlak statik + Vasıta DB SoT (İlan Ver ile aynı ağaç).
+    const classicSource: BrowseNode[] =
+      variant === "classic"
+        ? [
+            CLASSIC_BROWSE_TREE.find((n) => n.id === "emlak") || CATEGORY_BROWSE_TREE[0],
+            { ...dbVasita.root, name: "Vasıta" },
+          ]
+        : CLASSIC_BROWSE_TREE;
     const source =
       variant === "classic"
-        ? CLASSIC_BROWSE_TREE
+        ? classicSource
         : variant === "alisveris"
           ? alisverisSource || ALISVERIS_BROWSE_TREE
-          : CATEGORY_BROWSE_TREE;
-    const full = toNavTree(source, facets || null);
+          : [
+              CATEGORY_BROWSE_TREE.find((n) => n.id === "emlak") || CATEGORY_BROWSE_TREE[0],
+              { ...dbVasita.root, name: "Vasıta" },
+              ...CATEGORY_BROWSE_TREE.filter((n) => n.id !== "emlak" && n.id !== "arac"),
+            ];
+    const full = toNavTree(source, facets || null, vasitaCatalogBrands);
     if (!rootsOnly?.length) return full;
     const allow = new Set(rootsOnly);
     return full.filter((n) => allow.has(n.id));
-  }, [facets, rootsOnly?.join("|"), variant, alisverisSource]);
+  }, [facets, rootsOnly?.join("|"), variant, alisverisSource, dbVasita.root, vasitaCatalogBrands]);
 
   const matchedPath = useMemo(() => matchNavPath(filters, tree), [filters, tree]);
   const [openIds, setOpenIds] = useState<Set<string>>(() => new Set(matchedPath));
@@ -560,7 +829,8 @@ export function CategoryBrowseNav({
       matchedPath.forEach((id) => next.add(id));
       return next;
     });
-  }, [matchedPath.join("|"), sahibindenMode, tree]);
+    // tree değişince (lazy marka/seri) yolu sıfırlama — yalnızca filtre eşleşmesi değişince senkronize et
+  }, [matchedPath.join("|"), sahibindenMode]);
 
   const activeId = matchedPath[matchedPath.length - 1] || null;
   const hasFilter = Boolean(
@@ -570,14 +840,23 @@ export function CategoryBrowseNav({
       filters.rental ||
       filters.brand ||
       filters.model ||
+      filters.version ||
       filters.trim
   );
 
   function toggle(id: string) {
     setOpenIds((prev) => {
       const next = new Set(prev);
+      const opening = !next.has(id);
       if (next.has(id)) next.delete(id);
       else next.add(id);
+      if (opening && id.startsWith("arac/")) {
+        const parts = id.split("/");
+        // 3-kademe lazy: tip → markalar, marka → seriler, seri → motorlar
+        if (parts.length === 2) void loadSubtypeBrands(parts[1]);
+        else if (parts.length === 3) void loadBrandModels(parts[1], parts[2]);
+        else if (parts.length === 4) void loadModelVersions(parts[1], parts[2], parts[3]);
+      }
       return next;
     });
   }
@@ -597,6 +876,7 @@ export function CategoryBrowseNav({
       rental: "",
       brand: "",
       model: "",
+      version: "",
       trim: "",
     });
   }
@@ -617,6 +897,7 @@ export function CategoryBrowseNav({
         rental: "",
         brand: "",
         model: "",
+        version: "",
         trim: "",
       });
       return;
@@ -628,8 +909,14 @@ export function CategoryBrowseNav({
   function onDrillPick(node: NavNode) {
     if (node.kind === "section") return;
     applyFilter(browseFilterToSearchPatch(node.filter));
-    if (node.children?.length) {
+    if (node.children?.length || node.expandable) {
       setDrillPath([...drillPath, node.id]);
+      if (node.id.startsWith("arac/")) {
+        const parts = node.id.split("/");
+        if (parts.length === 2) void loadSubtypeBrands(parts[1]);
+        else if (parts.length === 3) void loadBrandModels(parts[1], parts[2]);
+        else if (parts.length === 4) void loadModelVersions(parts[1], parts[2], parts[3]);
+      }
     }
   }
 
@@ -637,6 +924,15 @@ export function CategoryBrowseNav({
     () => (sahibindenMode ? getDrillView(tree, drillPath) : null),
     [sahibindenMode, tree, drillPath.join("|")]
   );
+
+  const drillListRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (!sahibindenMode) return;
+    const el = drillListRef.current;
+    if (el) el.scrollTop = 0;
+  }, [sahibindenMode, drillPath.join("|")]);
+
+  const showRootCounts = facets?.showRootCounts === true;
 
   const treeBox = (
     <div
@@ -652,30 +948,48 @@ export function CategoryBrowseNav({
             }
       }
     >
-      {sahibindenMode && drill ? (
-        <div style={{ display: "grid", gap: 0 }}>
-          {/* Üst iz: Vasıta → Otomobil → Mercedes — kardeş yok */}
-          {drill.trail.map((node, i) => (
-            <DrillRow
-              key={`trail-${node.id}`}
-              node={node}
-              depth={i}
-              active={false}
-              isTrail
-              onClick={() => onTrailClick(i)}
-            />
-          ))}
-          {/* Yalnızca açık dalın çocukları (Audi/BMW gizlenir) */}
-          {drill.list.map((node) => (
-            <DrillRow
-              key={node.id}
-              node={node}
-              depth={drill.trail.length}
-              active={activeId === node.id}
-              isTrail={false}
-              onClick={() => onDrillPick(node)}
-            />
-          ))}
+      {alisverisLoading ? (
+        <div
+          style={{
+            padding: "10px 8px",
+            color: "var(--muted)",
+            fontSize: 13,
+            fontWeight: 600,
+          }}
+          aria-busy="true"
+        >
+          Kategoriler yükleniyor…
+        </div>
+      ) : sahibindenMode && drill ? (
+        <div className="v2-browse-drill">
+          {/* Üst iz sabit — kardeş yok */}
+          <div className="v2-browse-drill-trail">
+            {drill.trail.map((node, i) => (
+              <DrillRow
+                key={`trail-${node.id}`}
+                node={node}
+                depth={i}
+                active={false}
+                isTrail
+                onClick={() => onTrailClick(i)}
+                showRootCounts={showRootCounts}
+              />
+            ))}
+          </div>
+          {/* Açık seviyenin çocukları scroll (markalar / seriler / motorlar) */}
+          <div className="v2-browse-drill-list" ref={drillListRef}>
+            {drill.list.map((node) => (
+              <DrillRow
+                key={node.id}
+                node={node}
+                depth={drill.trail.length}
+                active={activeId === node.id}
+                isTrail={false}
+                onClick={() => onDrillPick(node)}
+                showRootCounts={showRootCounts}
+              />
+            ))}
+          </div>
         </div>
       ) : (
         tree.map((node) => (
@@ -687,6 +1001,7 @@ export function CategoryBrowseNav({
             activeId={activeId}
             onToggle={toggle}
             onPick={(n) => onSelect(browseFilterToSearchPatch(n.filter))}
+            showRootCounts={showRootCounts}
           />
         ))
       )}

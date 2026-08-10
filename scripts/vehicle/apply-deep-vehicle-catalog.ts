@@ -2,7 +2,8 @@
  * Apply verified deep vehicle catalog (all brands under data/vehicle-deep-catalog/)
  * into stage1 pack + SystemSetting. Idempotent upsert; preserves listing categoryIds.
  *
- * Only VERIFIED_OFFICIAL / VERIFIED_MULTI_SOURCE with both model+trim.
+ * VERIFIED_OFFICIAL / VERIFIED_MULTI_SOURCE with model (version).
+ * Trim optional: empty trim creates version with trims:[].
  *
  * npx tsx scripts/vehicle/apply-deep-vehicle-catalog.ts
  * npx tsx scripts/vehicle/apply-deep-vehicle-catalog.ts --dry-run
@@ -84,11 +85,10 @@ function loadConfigs(): DeepConfig[] {
     for (const c of raw.configurations || []) {
       if (
         c.model &&
-        c.trim &&
-        c.trim !== "-" &&
+        String(c.model).trim() &&
         (c.confidence === "VERIFIED_OFFICIAL" || c.confidence === "VERIFIED_MULTI_SOURCE")
       ) {
-        all.push(c);
+        all.push({ ...c, trim: c.trim && c.trim !== "-" ? c.trim : "" });
       }
     }
   }
@@ -198,15 +198,17 @@ async function main() {
       const v = versionMap.get(vKey)!;
       v.yearFrom = Math.min(v.yearFrom, yf);
       v.yearTo = Math.max(v.yearTo, yt);
-      const tSlug = slugifyVasita(r.trim);
-      if (!v.trims.find((t) => t.slug === tSlug)) {
-        v.trims.push({
-          slug: tSlug,
-          name: r.trim,
-          ...(gen ? { generationCode: gen } : {}),
-          yearFrom: yf,
-          yearTo: yt,
-        });
+      if (r.trim && String(r.trim).trim()) {
+        const tSlug = slugifyVasita(r.trim);
+        if (!v.trims.find((t) => t.slug === tSlug)) {
+          v.trims.push({
+            slug: tSlug,
+            name: r.trim,
+            ...(gen ? { generationCode: gen } : {}),
+            yearFrom: yf,
+            yearTo: yt,
+          });
+        }
       }
     }
 

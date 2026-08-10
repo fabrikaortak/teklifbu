@@ -66,6 +66,7 @@ export function PremiumCategoryLadderPicker({ value, onChange, disabled }: Props
                   brand: "",
                   model: "",
                   trim: "",
+                  version: "",
                 });
               }}
               style={{
@@ -104,6 +105,7 @@ export function PremiumCategoryLadderPicker({ value, onChange, disabled }: Props
                     brand: "",
                     model: "",
                     trim: "",
+                    version: "",
                   })
                 }
                 style={{

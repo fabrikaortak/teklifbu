@@ -93,7 +93,7 @@ function LoginInner() {
           router.replace(nextPath);
           return;
         }
-        router.replace(d.user.role === "ADMIN" ? "/admin" : "/hesabim");
+        router.replace(d.user.role === "ADMIN" || d.user.role === "STAFF" ? "/admin" : "/hesabim");
       });
   }, [router, nextPath]);
 
@@ -102,7 +102,7 @@ function LoginInner() {
     if (nextPath) {
       router.push(nextPath);
     } else {
-      router.push(user?.role === "ADMIN" ? "/admin" : "/hesabim");
+      router.push(user?.role === "ADMIN" || user?.role === "STAFF" ? "/admin" : "/hesabim");
     }
     router.refresh();
   }

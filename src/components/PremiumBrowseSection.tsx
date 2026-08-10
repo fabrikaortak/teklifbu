@@ -131,6 +131,7 @@ export function PremiumBrowseSection({ filters, onSelect, facets }: Props) {
                 rental: "",
                 brand: "",
                 model: "",
+                version: "",
                 trim: "",
               })
             }

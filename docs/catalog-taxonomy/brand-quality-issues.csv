@@ -1,0 +1,8 @@
+issue,detail,severity
+only_diger_placeholder,0 planned leaves with only Diğer/Markasız,MEDIUM
+missing_brand_plan,0 leaves have no row in brands CSV,MEDIUM
+over_populated_plan,0 planned leaves with >40 brands,LOW
+db_over_populated_inherit,0 DB sifir categories with >40 CategoryBrand (sample: ),LOW
+no_blind_parent_inheritance,Plan forbids parent brand copy — verify on apply,INFO
+irrelevant_brand_risk,Cross-vertical brands (e.g. apparel on bike/pet) — validate per leaf before seed,MEDIUM
+brand_required_vs_optional,Phone/laptop/TV should require brand; grocery/pet food often allow unbranded — enforce via allowUnbranded,MEDIUM

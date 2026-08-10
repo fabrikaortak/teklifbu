@@ -17,6 +17,7 @@ export async function GET(req: Request) {
   const { searchParams } = new URL(req.url);
   const id = searchParams.get("id");
   const featured = searchParams.get("featured");
+  const home = searchParams.get("home");
   const category = searchParams.get("category");
   const q = searchParams.get("q");
   const live = searchParams.get("live");
@@ -30,6 +31,7 @@ export async function GET(req: Request) {
   const rental = searchParams.get("rental");
   const brand = searchParams.get("brand");
   const model = searchParams.get("model");
+  const version = searchParams.get("version");
   const trim = searchParams.get("trim");
 
   if (live === "1") {
@@ -49,67 +51,84 @@ export async function GET(req: Request) {
     if (city) listingFilter.city = { equals: city, mode: "insensitive" };
     if (district) listingFilter.district = { equals: district, mode: "insensitive" };
 
-    const recent = await prisma.bid.findMany({
-      take: limitN,
-      orderBy: { createdAt: "desc" },
-      where: Object.keys(listingFilter).length ? { listing: listingFilter } : undefined,
-      include: {
-        listing: {
-          select: {
-            id: true,
-            title: true,
-            city: true,
-            district: true,
-            coverImage: true,
-            askPrice: true,
-            highestBid: true,
-            status: true,
-            category: { select: { name: true, slug: true } },
+    const cacheKey = `live:${limitN}:${category || ""}:${city || ""}:${district || ""}`;
+    const { getOffersFeedCached } = await import("@/core/services/offersFeedCache");
+
+    const { data, fromCache, ttlMs } = await getOffersFeedCached(cacheKey, async () => {
+      const recent = await prisma.bid.findMany({
+        take: limitN,
+        orderBy: { createdAt: "desc" },
+        where: Object.keys(listingFilter).length ? { listing: listingFilter } : undefined,
+        include: {
+          listing: {
+            select: {
+              id: true,
+              title: true,
+              city: true,
+              district: true,
+              coverImage: true,
+              askPrice: true,
+              highestBid: true,
+              status: true,
+              category: { select: { name: true, slug: true } },
+            },
           },
         },
-      },
-    });
+      });
 
-    const listingIds = [...new Set(recent.map((b) => b.listingId))];
-    const history =
-      listingIds.length > 0
-        ? await prisma.bid.findMany({
-            where: { listingId: { in: listingIds } },
-            orderBy: { createdAt: "desc" },
-            select: { id: true, listingId: true, amount: true, createdAt: true },
-            take: Math.min(600, Math.max(listingIds.length * 12, 40)),
-          })
-        : [];
-    const byListing = new Map<string, typeof history>();
-    for (const row of history) {
-      const arr = byListing.get(row.listingId) || [];
-      arr.push(row);
-      byListing.set(row.listingId, arr);
-    }
-
-    function previousAmount(bid: { id: string; listingId: string; createdAt: Date }) {
-      const rows = byListing.get(bid.listingId) || [];
-      for (const row of rows) {
-        if (row.id === bid.id) continue;
-        if (row.createdAt.getTime() < bid.createdAt.getTime()) return Number(row.amount);
+      const listingIds = [...new Set(recent.map((b) => b.listingId))];
+      const history =
+        listingIds.length > 0
+          ? await prisma.bid.findMany({
+              where: { listingId: { in: listingIds } },
+              orderBy: { createdAt: "desc" },
+              select: { id: true, listingId: true, amount: true, createdAt: true },
+              take: Math.min(600, Math.max(listingIds.length * 12, 40)),
+            })
+          : [];
+      const byListing = new Map<string, typeof history>();
+      for (const row of history) {
+        const arr = byListing.get(row.listingId) || [];
+        arr.push(row);
+        byListing.set(row.listingId, arr);
       }
-      return null;
+
+      function previousAmount(bid: { id: string; listingId: string; createdAt: Date }) {
+        const rows = byListing.get(bid.listingId) || [];
+        for (const row of rows) {
+          if (row.id === bid.id) continue;
+          if (row.createdAt.getTime() < bid.createdAt.getTime()) return Number(row.amount);
+        }
+        return null;
+      }
+
+      return {
+        mode: "live" as const,
+        items: recent.map((b) => ({
+          id: b.id,
+          amount: Number(b.amount),
+          previousAmount: previousAmount(b),
+          createdAt: b.createdAt,
+          listing: {
+            ...b.listing,
+            askPrice: Number(b.listing.askPrice),
+            highestBid: Number(b.listing.highestBid),
+          },
+        })),
+      };
+    });
+
+    const headers: Record<string, string> = {};
+    if (ttlMs > 0) {
+      const sec = Math.max(1, Math.floor(ttlMs / 1000));
+      headers["Cache-Control"] = `public, s-maxage=${sec}, stale-while-revalidate=${sec * 2}`;
+      headers["X-Offers-Cache"] = fromCache ? "HIT" : "MISS";
+    } else {
+      headers["Cache-Control"] = "no-store";
+      headers["X-Offers-Cache"] = "OFF";
     }
 
-    return NextResponse.json({
-      mode: "live",
-      items: recent.map((b) => ({
-        id: b.id,
-        amount: Number(b.amount),
-        previousAmount: previousAmount(b),
-        createdAt: b.createdAt,
-        listing: {
-          ...b.listing,
-          askPrice: Number(b.listing.askPrice),
-          highestBid: Number(b.listing.highestBid),
-        },
-      })),
-    });
+    return NextResponse.json(data, { headers });
   }
 
   const sold = searchParams.get("sold");
@@ -226,11 +245,23 @@ export async function GET(req: Request) {
       "seller_visibility_by_category",
       {}
     );
-    const { isClassifiedMode } = await import("@/core/services/marketplaceModeService");
-    const classified = await isClassifiedMode();
-    const rule = classified
-      ? { identity: "logged_in" as const, contact: "logged_in" as const, messaging: "logged_in" as const }
-      : getCategoryAccessRule(visibilityMap, topSlug);
+    const { isClassifiedMembershipPublic, isClassifiedMessagingEveryone } = await import(
+      "@/core/services/marketplaceModeService"
+    );
+    const membershipPublic = await isClassifiedMembershipPublic();
+    const messagingOpen = await isClassifiedMessagingEveryone();
+    const rule = membershipPublic
+      ? {
+          identity: "logged_in" as const,
+          contact: "logged_in" as const,
+          messaging: messagingOpen ? ("logged_in" as const) : getCategoryAccessRule(visibilityMap, topSlug).messaging,
+        }
+      : messagingOpen
+        ? {
+            ...getCategoryAccessRule(visibilityMap, topSlug),
+            messaging: "logged_in" as const,
+          }
+        : getCategoryAccessRule(visibilityMap, topSlug);
     const gateCtx = {
       loggedIn: Boolean(session?.id),
       hasApprovedDeal,
@@ -460,6 +491,47 @@ export async function GET(req: Request) {
     });
   }
 
+  // İlan listesi cache (admin: listings_list_cache_enabled; varsayılan kapalı)
+  const forYouFlag = searchParams.get("forYou") === "1";
+  const listCacheKey = !forYouFlag
+    ? (await import("@/core/services/listingsListCache")).buildListingsListCacheKey(searchParams)
+    : "";
+  if (listCacheKey) {
+    const { peekListingsListCache } = await import("@/core/services/listingsListCache");
+    const peeked = await peekListingsListCache<{
+      mode: string;
+      listings: Array<Record<string, unknown> & { id: string; isFavorited?: boolean }>;
+      premiumBadgeRule?: string;
+      stats?: unknown;
+      categories?: unknown;
+      listingCategories?: unknown;
+      facets?: unknown;
+      pagination?: unknown;
+    }>(listCacheKey);
+    if (peeked) {
+      const session = await getSession();
+      let listings = peeked.data.listings.map((l) => ({ ...l, isFavorited: false }));
+      if (session?.id && listings.length) {
+        const favs = await prisma.favorite.findMany({
+          where: { userId: session.id, listingId: { in: listings.map((l) => l.id) } },
+          select: { listingId: true },
+        });
+        const favIds = new Set(favs.map((f) => f.listingId));
+        listings = listings.map((l) => ({ ...l, isFavorited: favIds.has(l.id) }));
+      }
+      const sec = Math.max(1, Math.floor(peeked.ttlMs / 1000));
+      return NextResponse.json(
+        { ...peeked.data, listings },
+        {
+          headers: {
+            "Cache-Control": `public, s-maxage=${sec}, stale-while-revalidate=${sec * 2}`,
+            "X-Listings-Cache": "HIT",
+          },
+        }
+      );
+    }
+  }
+
   const where: Record<string, unknown> = {};
 
   if (sold === "1" || profitSort) {
@@ -502,11 +574,25 @@ export async function GET(req: Request) {
     }
     if (allIds.length) where.categoryId = { in: [...new Set(allIds)] };
     else where.category = { slug: slugs[0] || category };
+  } else if (home === "1" || featured === "1") {
+    // Klasik anasayfa vitrini: yalnızca Emlak + Vasıta (Alışveriş /premium ayrı sayfalar)
+    const { allEmlakVasitaCategoryParam } = await import("@/data/classicBrowseTree");
+    const { resolveCategoryFilterIds } = await import("@/lib/syncCategories");
+    const slugs = allEmlakVasitaCategoryParam()
+      .split(",")
+      .map((s) => s.trim())
+      .filter(Boolean);
+    const allIds: string[] = [];
+    for (const slug of slugs) {
+      const ids = await resolveCategoryFilterIds(prisma, slug);
+      if (ids?.length) allIds.push(...ids);
+    }
+    if (allIds.length) where.categoryId = { in: [...new Set(allIds)] };
   }
   const sellerId = searchParams.get("sellerId");
   if (sellerId) where.sellerId = sellerId;
   // Premium izolasyonu: Listing sorgusuna isPremium dokunulmaz.
-  // Premium tıklanınca zaten category=premium-* ile daralır; klasik vitrin tüm ilanları gösterir.
+  // Premium tıklanınca zaten category=premium-* ile daralır; klasik vitrin Emlak+Vasıta.
   if (city) where.city = { equals: city, mode: "insensitive" };
   if (district) where.district = { equals: district, mode: "insensitive" };
   if (neighborhood) where.neighborhood = { equals: neighborhood, mode: "insensitive" };
@@ -547,6 +633,18 @@ export async function GET(req: Request) {
   if (model) {
     where.AND = [...((where.AND as unknown[]) || []), { attributes: { path: ["model"], equals: model } }];
   }
+  if (version) {
+    // New listings: attributes.version. Legacy: engine code lived in attributes.trim.
+    where.AND = [
+      ...((where.AND as unknown[]) || []),
+      {
+        OR: [
+          { attributes: { path: ["version"], equals: version } },
+          { attributes: { path: ["trim"], equals: version } },
+        ],
+      },
+    ];
+  }
   if (trim) {
     where.AND = [...((where.AND as unknown[]) || []), { attributes: { path: ["trim"], equals: trim } }];
   }
@@ -575,7 +673,6 @@ export async function GET(req: Request) {
     }
   }
 
-  const home = searchParams.get("home");
   const limitRaw = searchParams.get("limit");
   const pageRaw = Math.floor(Number(searchParams.get("page") || 1) || 1);
   const page = Math.max(1, pageRaw);
@@ -822,7 +919,7 @@ export async function GET(req: Request) {
             ? "forYou"
             : "default";
 
-  return NextResponse.json({
+  const responseBody = {
     mode,
     listings: listingsOut,
     premiumBadgeRule,
@@ -838,7 +935,33 @@ export async function GET(req: Request) {
           totalPages,
         }
       : undefined,
-  });
+  };
+
+  if (listCacheKey) {
+    const { putListingsListCache, getListingsListCacheTtlMs } = await import(
+      "@/core/services/listingsListCache"
+    );
+    const ttlMs = await getListingsListCacheTtlMs();
+    if (ttlMs > 0) {
+      const toStore = {
+        ...responseBody,
+        listings: listingsOut.map((l: { isFavorited?: boolean }) => ({
+          ...l,
+          isFavorited: false,
+        })),
+      };
+      putListingsListCache(listCacheKey, toStore);
+      const sec = Math.max(1, Math.floor(ttlMs / 1000));
+      return NextResponse.json(responseBody, {
+        headers: {
+          "Cache-Control": `public, s-maxage=${sec}, stale-while-revalidate=${sec * 2}`,
+          "X-Listings-Cache": "MISS",
+        },
+      });
+    }
+  }
+
+  return NextResponse.json(responseBody);
 }
 
 export async function POST(req: Request) {
@@ -851,6 +974,12 @@ export async function POST(req: Request) {
     const result = await createListingForSeller(session, body);
     if (!result.ok) {
       return NextResponse.json(result.body, { status: result.status });
+    }
+    try {
+      const { invalidateListingsListCache } = await import("@/core/services/listingsListCache");
+      invalidateListingsListCache();
+    } catch {
+      /* ignore */
     }
     return NextResponse.json({
       ok: true,

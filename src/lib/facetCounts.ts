@@ -9,7 +9,7 @@ export { countForBrowseFilter, buildVehicleBrandNodes } from "@/lib/facetHelpers
 
 type Cache = { at: number; data: FacetCounts };
 let cache: Cache | null = null;
-const TTL_MS = 45_000;
+const TTL_MS = 120_000;
 
 const ACTIVE: ListingStatus[] = [ListingStatus.ACTIVE, ListingStatus.SELECTION, ListingStatus.APPROVED];
 
@@ -29,6 +29,7 @@ export async function getFacetCounts(force = false): Promise<FacetCounts> {
     showEmptyModels,
     showEmptyTrims,
     showEmptyCategories,
+    showRootCounts,
     browseNavRaw,
     activeCats,
   ] = await Promise.all([
@@ -36,6 +37,7 @@ export async function getFacetCounts(force = false): Promise<FacetCounts> {
     getSetting<boolean>("vehicle_nav_show_empty_models", false),
     getSetting<boolean>("vehicle_nav_show_empty_trims", false),
     getSetting<boolean>("category_nav_show_empty", false),
+    getSetting<boolean>("browse_nav_show_root_counts", false),
     getSetting<unknown>("browse_nav_config", null),
     prisma.category.findMany({
       where: { isActive: true },
@@ -66,6 +68,7 @@ export async function getFacetCounts(force = false): Promise<FacetCounts> {
   const subtypes: Record<string, number> = {};
   const brands: Record<string, number> = {};
   const models: Record<string, number> = {};
+  const versions: Record<string, number> = {};
   const trims: Record<string, number> = {};
   const rentals: Record<string, number> = {};
 
@@ -73,8 +76,18 @@ export async function getFacetCounts(force = false): Promise<FacetCounts> {
     const slug = row.category.slug;
     const parentSlug = row.category.parent?.slug;
     const root = parentSlug || slug;
-    categories[root] = (categories[root] || 0) + 1;
-    if (parentSlug) categories[slug] = (categories[slug] || 0) + 1;
+
+    if (slug.includes("__")) {
+      // Dual-root path: her ata segmentine +1 (Ev Aletleri / Beyaz Eşya menü sayıları)
+      const parts = slug.split("__");
+      for (let i = 1; i <= parts.length; i++) {
+        const prefix = parts.slice(0, i).join("__");
+        categories[prefix] = (categories[prefix] || 0) + 1;
+      }
+    } else {
+      categories[root] = (categories[root] || 0) + 1;
+      if (parentSlug) categories[slug] = (categories[slug] || 0) + 1;
+    }
 
     const dtKey = `${root}:${row.dealType}`;
     dealTypes[dtKey] = (dealTypes[dtKey] || 0) + 1;
@@ -104,6 +117,7 @@ export async function getFacetCounts(force = false): Promise<FacetCounts> {
 
     if (root === "arac" || slug === "arac") {
       const model = attr(row, "model");
+      const version = attr(row, "version");
       const trim = attr(row, "trim");
       if (subtype && brand) {
         const bk = `arac:${subtype}:${brand}`;
@@ -113,9 +127,19 @@ export async function getFacetCounts(force = false): Promise<FacetCounts> {
         const mk = `arac:${subtype}:${brand}:${model}`;
         models[mk] = (models[mk] || 0) + 1;
       }
-      if (subtype && brand && model && trim) {
-        const tk = `arac:${subtype}:${brand}:${model}:${trim}`;
-        trims[tk] = (trims[tk] || 0) + 1;
+      if (subtype && brand && model && version) {
+        const vk = `arac:${subtype}:${brand}:${model}:${version}`;
+        versions[vk] = (versions[vk] || 0) + 1;
+        if (trim) {
+          const tk = `arac:${subtype}:${brand}:${model}:${version}:${trim}`;
+          trims[tk] = (trims[tk] || 0) + 1;
+        }
+      } else if (subtype && brand && model && trim) {
+        // Legacy: engine stored in attributes.trim
+        const vk = `arac:${subtype}:${brand}:${model}:${trim}`;
+        versions[vk] = (versions[vk] || 0) + 1;
+        trims[`arac:${subtype}:${brand}:${model}:${trim}`] =
+          (trims[`arac:${subtype}:${brand}:${model}:${trim}`] || 0) + 1;
       }
     }
   }
@@ -126,12 +150,14 @@ export async function getFacetCounts(force = false): Promise<FacetCounts> {
     subtypes,
     brands,
     models,
+    versions,
     trims,
     rentals,
     showEmptyBrands: effectiveShowEmptyBrands,
     showEmptyModels: effectiveShowEmptyModels,
     showEmptyTrims,
     showEmptyCategories: effectiveShowEmptyCategories,
+    showRootCounts: Boolean(showRootCounts),
     activeCategorySlugs: activeCats.map((c) => c.slug),
     browseNavConfig,
   };

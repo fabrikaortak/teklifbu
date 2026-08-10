@@ -483,6 +483,14 @@ export async function PATCH(req: Request) {
     const commercial = parseCommercialProfile(body.commercialProfile || {});
     const cerr = validateCommercialProfile(commercial);
     if (cerr) return NextResponse.json({ error: cerr }, { status: 400 });
+    const { getCommercialPublishMap } = await import("@/core/services/commercialPublishMapService");
+    const { shopFocusFromSubtypes } = await import("@/lib/commercialPublishMap");
+    const { applyShopFocusToCommercial } = await import("@/data/commercialProfile");
+    const publishMap = await getCommercialPublishMap();
+    const commercialWithFocus = applyShopFocusToCommercial(
+      commercial,
+      shopFocusFromSubtypes(subs, publishMap)
+    );
 
     const { getSetting } = await import("@/core/settings");
     const approvalRequired =
@@ -500,7 +508,7 @@ export async function PATCH(req: Request) {
       );
 
     if (!approvalRequired) {
-      const merged = mergeCommercialIntoProfile(asStringMap(), commercial);
+      const merged = mergeCommercialIntoProfile(asStringMap(), commercialWithFocus);
       const updated = await prisma.user.update({
         where: { id: session.id },
         data: {
@@ -526,7 +534,7 @@ export async function PATCH(req: Request) {
       Boolean(getPendingCommercialFromProfile(existing.profile).profile);
 
     if (wasApproved && st !== "REJECTED") {
-      const next = attachPendingCommercial(prev, commercial, subs);
+      const next = attachPendingCommercial(prev, commercialWithFocus, subs);
       const updated = await prisma.user.update({
         where: { id: session.id },
         data: {
@@ -543,7 +551,7 @@ export async function PATCH(req: Request) {
     }
 
     // İlk başvuru / reddedilmiş yeniden başvuru
-    const merged = mergeCommercialIntoProfile(asStringMap(), commercial);
+    const merged = mergeCommercialIntoProfile(asStringMap(), commercialWithFocus);
     const updated = await prisma.user.update({
       where: { id: session.id },
       data: {
@@ -625,7 +633,16 @@ export async function PATCH(req: Request) {
         const commercial = parseCommercialProfile(body.commercialProfile || values);
         const cerr = validateCommercialProfile(commercial);
         if (cerr) return NextResponse.json({ error: cerr }, { status: 400 });
-        const merged = mergeCommercialIntoProfile(nextProfile, commercial);
+        const { getCommercialPublishMap } = await import(
+          "@/core/services/commercialPublishMapService"
+        );
+        const { shopFocusFromSubtypes } = await import("@/lib/commercialPublishMap");
+        const { applyShopFocusToCommercial } = await import("@/data/commercialProfile");
+        const commercialWithFocus = applyShopFocusToCommercial(
+          commercial,
+          shopFocusFromSubtypes(subs, await getCommercialPublishMap())
+        );
+        const merged = mergeCommercialIntoProfile(nextProfile, commercialWithFocus);
         Object.assign(nextProfile, merged);
         data.profile = nextProfile as Prisma.InputJsonValue;
         const existingUser = await prisma.user.findUnique({

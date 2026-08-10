@@ -20,7 +20,7 @@ async function issueSession(user: {
   id: string;
   phone: string;
   name: string | null;
-  role: "USER" | "ADMIN";
+  role: "USER" | "ADMIN" | "STAFF";
   accountType: string;
   tokenBalance: number;
   commercialSubtypes?: string[];
@@ -86,8 +86,31 @@ const loginSchema = z.object({
 });
 
 export async function POST(req: Request) {
-  const body = await req.json();
-  const action = body.action as string;
+  const body = await req.json().catch(() => ({}));
+  const action = String(body.action || "");
+
+  if (
+    action === "login" ||
+    action === "admin-login" ||
+    action === "register-request-otp" ||
+    action === "request-otp" ||
+    action === "register-verify-otp" ||
+    action === "verify-otp"
+  ) {
+    const { checkApiRateLimit, clientIpFromRequest, rateLimitResponse } = await import(
+      "@/core/services/apiRateLimit"
+    );
+    const limited = await checkApiRateLimit({
+      bucket: `auth:${action}`,
+      ip: clientIpFromRequest(req),
+    });
+    if (!limited.ok) {
+      const r = rateLimitResponse(limited.retryAfterSec);
+      return NextResponse.json(r.body, r.init);
+    }
+  }
+
+  // Mevcut üye girişi dışındaki akışlar aşağıda (orijinal handler)
 
   if (action === "logout") {
     await clearSessionCookie();
@@ -152,11 +175,18 @@ export async function POST(req: Request) {
       let commercialStatus: string | null = null;
       let isActive = true;
       if (accountType === "TICARI") {
-        const { parseCommercialProfile, validateCommercialProfile, mergeCommercialIntoProfile } =
+        const { parseCommercialProfile, validateCommercialProfile, mergeCommercialIntoProfile, applyShopFocusToCommercial } =
           await import("@/data/commercialProfile");
-        const commercial = parseCommercialProfile(parsed.data.commercialProfile || {});
+        let commercial = parseCommercialProfile(parsed.data.commercialProfile || {});
         const cerr = validateCommercialProfile(commercial);
         if (cerr) return NextResponse.json({ error: cerr }, { status: 400 });
+        const { getCommercialPublishMap } = await import(
+          "@/core/services/commercialPublishMapService"
+        );
+        const { shopFocusFromSubtypes } = await import("@/lib/commercialPublishMap");
+        const publishMap = await getCommercialPublishMap();
+        const focus = shopFocusFromSubtypes(commercialSubtypes, publishMap);
+        commercial = applyShopFocusToCommercial(commercial, focus);
         profileData = mergeCommercialIntoProfile({}, commercial);
         const { getSetting } = await import("@/core/settings");
         const approvalRequired =

@@ -36,11 +36,43 @@ export async function PATCH(req: Request, ctx: Ctx) {
 
   const listing = await prisma.listing.findUnique({ where: { id } });
   if (!listing) return NextResponse.json({ error: "İlan bulunamadı" }, { status: 404 });
+
+  const body = await req.json();
+
+  // Kazanan teklif sahibi doğrulaması — satıcı olmak zorunlu değil
+  if (body.action === "republish-winner-verify") {
+    const { respondRepublishWinnerVerification } = await import(
+      "@/core/services/listingRepublishService"
+    );
+    const result = await respondRepublishWinnerVerification({
+      listingId: id,
+      userId: session.id,
+      confirmed: body.confirmed === true,
+      note: body.note != null ? String(body.note) : "",
+    });
+    if (!result.ok) {
+      return NextResponse.json(result, { status: 400 });
+    }
+    return NextResponse.json(result);
+  }
+
+  if (body.action === "get-republish-winner-verify") {
+    const { getRepublishWinnerVerification } = await import(
+      "@/core/services/listingRepublishService"
+    );
+    const result = await getRepublishWinnerVerification({
+      listingId: id,
+      userId: session.id,
+    });
+    if (!result.ok) {
+      return NextResponse.json(result, { status: 404 });
+    }
+    return NextResponse.json(result);
+  }
+
   if (listing.sellerId !== session.id) {
     return NextResponse.json({ error: "Yetkisiz" }, { status: 403 });
   }
-
-  const body = await req.json();
 
   // Katalog offer mirror: ticari alanlar Listing PATCH ile değiştirilemez
   if (listing.sellerOfferId) {
@@ -75,6 +107,23 @@ export async function PATCH(req: Request, ctx: Ctx) {
         { status: 403 }
       );
     }
+  }
+
+  if (body.action === "start-republish") {
+    const { startApprovedListingRepublish } = await import(
+      "@/core/services/listingRepublishService"
+    );
+    const result = await startApprovedListingRepublish({
+      listingId: id,
+      sellerId: session.id,
+      reasonCode: String(body.reasonCode || ""),
+      reasonNote: body.reasonNote != null ? String(body.reasonNote) : "",
+    });
+    if (!result.ok) {
+      const status = "code" in result && result.code === "VERTICAL_ACCESS_DENIED" ? 403 : 400;
+      return NextResponse.json(result, { status });
+    }
+    return NextResponse.json(result);
   }
 
   if (body.action === "unpublish") {

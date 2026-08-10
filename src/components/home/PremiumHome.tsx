@@ -363,7 +363,7 @@ export function PremiumHome() {
           style={view === "list" ? { display: "grid", gap: 10 } : undefined}
         >
           {sorted.map((l) => (
-            <ListingCard key={l.id} listing={l} variant={view === "list" ? "row" : "grid"} homeMode />
+            <ListingCard key={l.id} listing={l} variant={view === "list" ? "row" : "grid"} homeMode showFavorite />
           ))}
         </div>
         {!sorted.length && (

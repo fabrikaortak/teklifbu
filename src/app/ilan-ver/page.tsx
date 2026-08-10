@@ -1383,15 +1383,15 @@ function CreateListingInner() {
       display: "flex",
       flexDirection: "column",
       pointerEvents: "none",
-      background: "#fff",
+      background: premium.isColored ? "#ecfdf5" : "#fff",
       borderRadius: 12,
       border: premium.isColored
-        ? "1px solid #ffb380"
+        ? "1px solid #86efac"
         : premium.featuredDays > 0
           ? "1px solid #86efac"
           : "1px solid #eeeeee",
       boxShadow: premium.isColored
-        ? "0 0 0 2px rgba(255, 102, 0, 0.18)"
+        ? "0 0 0 1px rgba(22, 163, 74, 0.12)"
         : premium.featuredDays > 0
           ? "0 0 0 2px rgba(22, 163, 74, 0.14)"
           : "0 1px 3px rgba(15, 23, 42, 0.06)",

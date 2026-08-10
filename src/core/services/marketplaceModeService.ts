@@ -19,3 +19,21 @@ export async function isOffersEnabled(): Promise<boolean> {
 export async function isClassifiedMode(): Promise<boolean> {
   return !(await isOffersEnabled());
 }
+
+/** Teklifsiz modda ilan detayı kalan süre sayacı */
+export async function isClassifiedDetailCountdownEnabled(): Promise<boolean> {
+  if (!(await isClassifiedMode())) return true;
+  return (await getSetting<boolean>("classified_detail_countdown_enabled", true)) !== false;
+}
+
+/** Teklifsiz: tüm üyeler mesaj gönderebilsin */
+export async function isClassifiedMessagingEveryone(): Promise<boolean> {
+  if (!(await isClassifiedMode())) return false;
+  return (await getSetting<boolean>("classified_messaging_everyone", true)) !== false;
+}
+
+/** Teklifsiz: üyelik / iletişim bilgileri giriş yapanlara açık */
+export async function isClassifiedMembershipPublic(): Promise<boolean> {
+  if (!(await isClassifiedMode())) return false;
+  return (await getSetting<boolean>("classified_membership_public", true)) !== false;
+}

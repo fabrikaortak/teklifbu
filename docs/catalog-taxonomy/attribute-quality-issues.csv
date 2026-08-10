@@ -1,0 +1,8 @@
+issue,detail,severity
+washer_has_fridge_attrs,"DB evidence slugs on washer: renk,garanti,hacim,enerji-sinifi,kapi-tipi,no-frost,olculer,urun-durumu; fridge-like: hacim,enerji-sinifi,kapi-tipi,no-frost",CRITICAL
+generic_attr_template_overuse,1097/1111 planned leaves only generic (renk/garanti/durum); 14 have category-specific attrs,HIGH
+bike_leaf_empty_in_db,sifir-urun/spor-outdoor/spor-urunleri/spor-outdoor/bisiklet:1 | ikinci-el/spor-outdoor/bisiklet:0 | ikinci-el/spor-outdoor/bisiklet/bisiklet:0 | sifir-urun/spor-outdoor/bisiklet:0 | ikinci-el/spor-outdoor/spor-urunleri/spor-outdoor/bisiklet:1 | sifir-urun/spor-outdoor/bisiklet/bisiklet:0,HIGH
+fashion_size_vs_shoe_size,Ensure beden vs numara option sets are not shared blindly across Moda leaves,MEDIUM
+electronics_modelMode_mismatch,Phone/laptop leaves need modelMode=BRAND_MODEL; accessories often ATTRIBUTE_ONLY — verify model-mode CSV,MEDIUM
+pet_wrong_brand_attrs,Pet leaves may inherit electronics brands/attrs — manual check before seed,MEDIUM
+industrial_insufficient_technical,Endüstriyel leaf plans often lack voltage/power/capacity — expand before apply,HIGH

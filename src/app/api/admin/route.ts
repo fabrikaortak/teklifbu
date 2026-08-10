@@ -1,6 +1,15 @@
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/db";
-import { getSession, requireAdmin } from "@/lib/auth";
+import { getSession } from "@/lib/auth";
+import {
+  actorToClient,
+  assertApiActionAllowed,
+  assertAdminVertical,
+  assertCanSaveSettingGroup,
+  requireAdminAccess,
+  sessionCanAccessAdmin,
+} from "@/core/guards/adminAccessGuard";
+import { normalizeAdminPermissions } from "@/lib/adminPermissions";
 import { getSettingsMap, getSetting, setSetting, invalidateSettingsCache } from "@/core/settings";
 import { DEFAULT_SETTINGS } from "@/core/defaultSettings";
 import {
@@ -132,14 +141,31 @@ function corporateSubtypeWhere(subtypeKey: string): Record<string, unknown> {
 
 export async function GET(req: Request) {
   const session = await getSession();
-  if (!session || session.role !== "ADMIN") {
+  if (!sessionCanAccessAdmin(session)) {
     return NextResponse.json({ error: "Yetkisiz" }, { status: 403 });
   }
+  const actor = await requireAdminAccess();
 
   const tenant = await ensureDefaultTenant();
 
   const { searchParams } = new URL(req.url);
   const view = searchParams.get("view");
+
+  try {
+    const { assertGetViewAllowed } = await import("@/core/guards/adminAccessGuard");
+    assertGetViewAllowed(actor, view);
+  } catch {
+    return NextResponse.json({ error: "Bu görünüm için yetkiniz yok" }, { status: 403 });
+  }
+
+  const verticalParam = searchParams.get("vertical");
+  if (verticalParam) {
+    try {
+      assertAdminVertical(actor, parseAdminVertical(verticalParam) || verticalParam);
+    } catch {
+      return NextResponse.json({ error: "Bu dikey için yetkiniz yok" }, { status: 403 });
+    }
+  }
 
   /** Menü rozetleri — hafif; shell her sayfada bunu kullanır (dashboard değil) */
   if (view === "nav") {
@@ -248,29 +274,67 @@ export async function GET(req: Request) {
     ]);
     return NextResponse.json({
       adminUser,
+      actor: actorToClient(actor),
       kpis: {
-        unreadMessages,
+        unreadMessages: actor.isSuperAdmin || actor.permissions.menus.includes("mesajlar") ? unreadMessages : 0,
         pendingReviewCount,
         pendingExtensionCount,
         pendingEditCount: pendingEditCount + pendingBulkEditCount,
-        pendingSellerRequestCount,
-        pendingCommercialUserCount,
+        pendingSellerRequestCount:
+          actor.isSuperAdmin ||
+          actor.permissions.actions.includes("users.sellerRequests") ||
+          actor.permissions.menus.includes("kullanicilar")
+            ? pendingSellerRequestCount
+            : 0,
+        pendingCommercialUserCount:
+          actor.isSuperAdmin ||
+          actor.permissions.actions.includes("users.commercialApprove") ||
+          actor.permissions.menus.includes("kullanicilar")
+            ? pendingCommercialUserCount
+            : 0,
         pendingBulkEditCount,
         byVertical: {
           "emlak-vasita": {
-            pending: pendingEmlak,
-            edit: editEmlak,
-            extension: extEmlak,
+            pending:
+              actor.isSuperAdmin || actor.permissions.verticals.includes("emlak-vasita")
+                ? pendingEmlak
+                : 0,
+            edit:
+              actor.isSuperAdmin || actor.permissions.verticals.includes("emlak-vasita")
+                ? editEmlak
+                : 0,
+            extension:
+              actor.isSuperAdmin || actor.permissions.verticals.includes("emlak-vasita")
+                ? extEmlak
+                : 0,
           },
           alisveris: {
-            pending: pendingAlisveris,
-            edit: editAlisveris + pendingBulkEditCount,
-            extension: extAlisveris,
+            pending:
+              actor.isSuperAdmin || actor.permissions.verticals.includes("alisveris")
+                ? pendingAlisveris
+                : 0,
+            edit:
+              actor.isSuperAdmin || actor.permissions.verticals.includes("alisveris")
+                ? editAlisveris + pendingBulkEditCount
+                : 0,
+            extension:
+              actor.isSuperAdmin || actor.permissions.verticals.includes("alisveris")
+                ? extAlisveris
+                : 0,
           },
           premium: {
-            pending: pendingPremium,
-            edit: editPremium,
-            extension: extPremium,
+            pending:
+              actor.isSuperAdmin || actor.permissions.verticals.includes("premium")
+                ? pendingPremium
+                : 0,
+            edit:
+              actor.isSuperAdmin || actor.permissions.verticals.includes("premium")
+                ? editPremium
+                : 0,
+            extension:
+              actor.isSuperAdmin || actor.permissions.verticals.includes("premium")
+                ? extPremium
+                : 0,
           },
         },
       },
@@ -549,9 +613,13 @@ export async function GET(req: Request) {
 
   if (view === "pending-listings") {
     const vertical = parseAdminVertical(searchParams.get("vertical"));
+    const republishOnly = searchParams.get("republish") === "1";
     const pendingWhere: Record<string, unknown> = { status: ListingStatus.PENDING_REVIEW };
     if (vertical) {
       pendingWhere.category = categoryWhereForVertical(vertical);
+    }
+    if (republishOnly) {
+      pendingWhere.republishRequestedAt = { not: null };
     }
     const [pending, autoApprove] = await Promise.all([
       prisma.listing.findMany({
@@ -576,22 +644,55 @@ export async function GET(req: Request) {
     ]);
     const { enrichPendingListingsWithFeeInfo } = await import("@/core/services/revenueService");
     const enriched = await enrichPendingListingsWithFeeInfo(pending);
+    const { normalizeRepublishReasons, DEFAULT_REPUBLISH_REASONS } = await import(
+      "@/core/services/listingRepublishService"
+    );
+    const reasonOpts = normalizeRepublishReasons(
+      await getSetting("listing_republish_reasons", DEFAULT_REPUBLISH_REASONS)
+    );
+    const reasonLabel = (code?: string | null) =>
+      reasonOpts.find((r) => r.id === code)?.label || code || null;
+    const winnerIds = [
+      ...new Set(
+        enriched
+          .map((l) => l.republishWinnerUserId)
+          .filter((id): id is string => Boolean(id))
+      ),
+    ];
+    const winners = winnerIds.length
+      ? await prisma.user.findMany({
+          where: { id: { in: winnerIds } },
+          select: { id: true, name: true, phone: true },
+        })
+      : [];
+    const winnerById = new Map(winners.map((w) => [w.id, w]));
     return NextResponse.json({
       pendingReviewCount: enriched.length,
       autoApprove: autoApprove === true,
-      listings: enriched.map((l) => ({
-        ...l,
-        askPrice: Number(l.askPrice),
-        highestBid: Number(l.highestBid),
-        feePaidTl: Number(l.feePaidTl || 0),
-        feePayment: l.feePayment
-          ? {
-              ...l.feePayment,
-              amountTl: Number(l.feePayment.amountTl),
-              createdAt: l.feePayment.createdAt,
-            }
-          : null,
-      })),
+      listings: enriched.map((l) => {
+        const winner = l.republishWinnerUserId
+          ? winnerById.get(l.republishWinnerUserId) || null
+          : null;
+        return {
+          ...l,
+          askPrice: Number(l.askPrice),
+          highestBid: Number(l.highestBid),
+          feePaidTl: Number(l.feePaidTl || 0),
+          feePayment: l.feePayment
+            ? {
+                ...l.feePayment,
+                amountTl: Number(l.feePayment.amountTl),
+                createdAt: l.feePayment.createdAt,
+              }
+            : null,
+          republishReasonLabel: reasonLabel(l.republishReasonCode),
+          republishWinnerBidAmount:
+            l.republishWinnerBidAmount != null ? Number(l.republishWinnerBidAmount) : null,
+          republishWinner: winner
+            ? { id: winner.id, name: winner.name, phone: winner.phone }
+            : null,
+        };
+      }),
     });
   }
 
@@ -606,7 +707,98 @@ export async function GET(req: Request) {
   if (view === "settings") {
     const force = searchParams.get("force") === "1";
     const map = await getSettingsMap(force);
-    return NextResponse.json({ settings: map, meta: DEFAULT_SETTINGS });
+    const { filterSettingKeysForActor } = await import("@/core/guards/adminAccessGuard");
+    const allowedKeys = filterSettingKeysForActor(actor, DEFAULT_SETTINGS as Record<string, { group?: string }>);
+    if (!allowedKeys) {
+      return NextResponse.json({ settings: map, meta: DEFAULT_SETTINGS, actor: actorToClient(actor) });
+    }
+    const settings: Record<string, unknown> = {};
+    const meta: Record<string, unknown> = {};
+    for (const key of allowedKeys) {
+      if (key in map) settings[key] = map[key];
+      if (key in DEFAULT_SETTINGS) meta[key] = (DEFAULT_SETTINGS as Record<string, unknown>)[key];
+    }
+    return NextResponse.json({ settings, meta, actor: actorToClient(actor) });
+  }
+
+  if (view === "staff") {
+    try {
+      const { listStaffUsers } = await import("@/core/services/adminStaffService");
+      const {
+        ADMIN_MENU_OPTIONS,
+        ADMIN_VERTICAL_OPTIONS,
+        ADMIN_ACTION_OPTIONS,
+        ADMIN_SETTING_GROUP_OPTIONS,
+        ADMIN_PERMISSION_PRESETS,
+      } = await import("@/lib/adminPermissions");
+      const staff = await listStaffUsers();
+      return NextResponse.json({
+        staff,
+        catalog: {
+          menus: ADMIN_MENU_OPTIONS,
+          verticals: ADMIN_VERTICAL_OPTIONS,
+          actions: ADMIN_ACTION_OPTIONS,
+          settingGroups: ADMIN_SETTING_GROUP_OPTIONS,
+          presets: ADMIN_PERMISSION_PRESETS,
+        },
+        actor: actorToClient(actor),
+      });
+    } catch (e) {
+      return NextResponse.json(
+        { error: e instanceof Error ? e.message : "Yüklenemedi" },
+        { status: 400 }
+      );
+    }
+  }
+
+  if (view === "staff-search") {
+    const q = String(searchParams.get("q") || "");
+    const { searchUsersForStaffAssign } = await import("@/core/services/adminStaffService");
+    const users = await searchUsersForStaffAssign(q);
+    return NextResponse.json({
+      users: users.map((u) => ({
+        ...u,
+        role: String(u.role),
+        adminPermissions: normalizeAdminPermissions(u.adminPermissions),
+      })),
+    });
+  }
+
+  if (view === "trust-score") {
+    const {
+      getTrustScoreEngineConfig,
+      listRecentTrustLedger,
+    } = await import("@/core/services/trustScoreService");
+    const [config, ledger] = await Promise.all([
+      getTrustScoreEngineConfig(),
+      listRecentTrustLedger(40),
+    ]);
+    return NextResponse.json({
+      config,
+      ledger: ledger.map((r) => ({
+        ...r,
+        createdAt: r.createdAt,
+      })),
+    });
+  }
+
+  if (view === "commercial-publish-map") {
+    const { getCommercialPublishMap } = await import(
+      "@/core/services/commercialPublishMapService"
+    );
+    const { getSetting } = await import("@/core/settings");
+    const {
+      COMMERCIAL_BUSINESS_TYPES_SETTING_KEY,
+      normalizeCommercialBusinessTypes,
+    } = await import("@/lib/commercialBusinessTypes");
+    const [map, bizRaw] = await Promise.all([
+      getCommercialPublishMap(),
+      getSetting(COMMERCIAL_BUSINESS_TYPES_SETTING_KEY, null),
+    ]);
+    return NextResponse.json({
+      map,
+      businessTypes: normalizeCommercialBusinessTypes(bizRaw),
+    });
   }
 
   if (view === "seller-panel-overview") {
@@ -2060,8 +2252,15 @@ export async function GET(req: Request) {
 
 export async function POST(req: Request) {
   let admin;
+  let actor;
   try {
-    admin = await requireAdmin();
+    actor = await requireAdminAccess();
+    admin = {
+      id: actor.id,
+      phone: actor.phone,
+      name: actor.name,
+      role: actor.role,
+    };
   } catch {
     return NextResponse.json({ error: "Yetkisiz" }, { status: 403 });
   }
@@ -2070,10 +2269,61 @@ export async function POST(req: Request) {
   const body = await req.json();
   const action = body.action as string;
 
+  try {
+    assertApiActionAllowed(actor, action);
+  } catch {
+    return NextResponse.json({ error: "Bu işlem için yetkiniz yok" }, { status: 403 });
+  }
+
+  if (action === "save-staff") {
+    try {
+      const { saveStaffUser } = await import("@/core/services/adminStaffService");
+      const staff = await saveStaffUser({
+        userId: String(body.userId || ""),
+        permissions: body.permissions,
+        actorId: admin.id,
+        tenantId: tenant.id,
+      });
+      return NextResponse.json({ ok: true, staff });
+    } catch (e) {
+      return NextResponse.json(
+        { error: e instanceof Error ? e.message : "Kayıt başarısız" },
+        { status: 400 }
+      );
+    }
+  }
+
+  if (action === "revoke-staff") {
+    try {
+      const { revokeStaffUser } = await import("@/core/services/adminStaffService");
+      const user = await revokeStaffUser({
+        userId: String(body.userId || ""),
+        actorId: admin.id,
+        tenantId: tenant.id,
+      });
+      return NextResponse.json({ ok: true, user });
+    } catch (e) {
+      return NextResponse.json(
+        { error: e instanceof Error ? e.message : "İşlem başarısız" },
+        { status: 400 }
+      );
+    }
+  }
+
   if (action === "save-settings") {
     const entries = body.settings as Record<string, unknown>;
     const { normalizeCommercialBusinessTypes } = await import("@/lib/commercialBusinessTypes");
     for (const [key, value] of Object.entries(entries)) {
+      const meta = (DEFAULT_SETTINGS as Record<string, { group?: string }>)[key];
+      const group = String(meta?.group || "general");
+      try {
+        assertCanSaveSettingGroup(actor, group);
+      } catch {
+        return NextResponse.json(
+          { error: `Ayar grubu için yetkiniz yok: ${group}` },
+          { status: 403 }
+        );
+      }
       let next = value;
       if (key === COMMERCIAL_BUSINESS_TYPES_SETTING_KEY) {
         next = normalizeCommercialBusinessTypes(value);
@@ -2089,6 +2339,64 @@ export async function POST(req: Request) {
       meta: { keys: Object.keys(entries) },
     });
     return NextResponse.json({ ok: true });
+  }
+
+  if (action === "save-trust-score") {
+    const { saveTrustScoreEngineConfig } = await import("@/core/services/trustScoreService");
+    const config = await saveTrustScoreEngineConfig(body.config);
+    invalidateSettingsCache();
+    await writeAuditLog({
+      tenantId: tenant.id,
+      actorId: admin.id,
+      action: "trust_score.save_config",
+      entity: "SystemSetting",
+      meta: { enabled: config.enabled, eventCount: config.events.length },
+    });
+    return NextResponse.json({ ok: true, config });
+  }
+
+  if (action === "save-commercial-publish-map") {
+    const { normalizeCommercialPublishMap, COMMERCIAL_PUBLISH_MAP_SETTING_KEY } = await import(
+      "@/lib/commercialPublishMap"
+    );
+    const map = normalizeCommercialPublishMap(body.map);
+    await setSetting(COMMERCIAL_PUBLISH_MAP_SETTING_KEY, map, "Faaliyet → ilan formu eşlemesi", "commercial");
+    invalidateSettingsCache();
+    await writeAuditLog({
+      tenantId: tenant.id,
+      actorId: admin.id,
+      action: "commercial_publish_map.save",
+      entity: "SystemSetting",
+      meta: { rows: map.rows.length },
+    });
+    return NextResponse.json({ ok: true, map });
+  }
+
+  if (action === "test-trust-score") {
+    const { applyTrustScoreEvent, applyListingCooldown, getTrustScoreEngineConfig } = await import(
+      "@/core/services/trustScoreService"
+    );
+    const userId = String(body.userId || "").trim();
+    const eventKey = String(body.eventKey || "").trim();
+    if (!userId || !eventKey) {
+      return NextResponse.json({ error: "userId ve eventKey gerekli" }, { status: 400 });
+    }
+    const result = await applyTrustScoreEvent({
+      userId,
+      eventKey,
+      actorUserId: admin.id,
+      note: "Admin test",
+      force: true,
+      meta: { test: true },
+    });
+    if (eventKey === "republish_winner_disputed") {
+      const cfg = await getTrustScoreEngineConfig();
+      await applyListingCooldown(userId, cfg.republishDelayHoursOnDispute);
+    }
+    if (!result.ok && "error" in result) {
+      return NextResponse.json(result, { status: 400 });
+    }
+    return NextResponse.json(result);
   }
 
   if (action === "demo-seed") {
@@ -2383,8 +2691,21 @@ export async function POST(req: Request) {
       const {
         parseCommercialProfile,
         mergeCommercialIntoProfile,
+        applyShopFocusToCommercial,
       } = await import("@/data/commercialProfile");
-      const commercial = parseCommercialProfile(body.commercialProfile || {});
+      let commercial = parseCommercialProfile(body.commercialProfile || {});
+      const subtypesForFocus =
+        (data.commercialSubtypes as string[] | undefined) ||
+        existing.commercialSubtypes ||
+        [];
+      const { getCommercialPublishMap } = await import(
+        "@/core/services/commercialPublishMapService"
+      );
+      const { shopFocusFromSubtypes } = await import("@/lib/commercialPublishMap");
+      commercial = applyShopFocusToCommercial(
+        commercial,
+        shopFocusFromSubtypes(subtypesForFocus, await getCommercialPublishMap())
+      );
       const prev =
         existing.profile && typeof existing.profile === "object" && !Array.isArray(existing.profile)
           ? { ...(existing.profile as Record<string, unknown>) }
@@ -2492,26 +2813,32 @@ export async function POST(req: Request) {
       applyPendingCommercialToProfile,
       getPendingCommercialFromProfile,
       parseCommercialProfile,
-      validateShopFocus,
-      commercialToShopFocus,
+      applyShopFocusToCommercial,
+      mergeCommercialIntoProfile,
     } = await import("@/data/commercialProfile");
     const hasPendingUpdate = Boolean(getPendingCommercialFromProfile(user.profile).profile);
 
     if (approved) {
-      const pending = getPendingCommercialFromProfile(user.profile);
-      const profileToCheck = pending.profile
-        ? pending.profile
-        : parseCommercialProfile(user.profile);
-      const focusErr = validateShopFocus(commercialToShopFocus(profileToCheck));
-      if (focusErr) {
-        return NextResponse.json(
-          {
-            error: `Onay için mağaza kategori seçimi zorunlu: ${focusErr}`,
-          },
-          { status: 400 }
-        );
-      }
       const applied = applyPendingCommercialToProfile(user.profile);
+      const subtypes =
+        applied.subtypes !== null
+          ? applied.subtypes
+          : user.commercialSubtypes || [];
+      const { getCommercialPublishMap } = await import(
+        "@/core/services/commercialPublishMapService"
+      );
+      const { shopFocusFromSubtypes } = await import("@/lib/commercialPublishMap");
+      const focus = shopFocusFromSubtypes(subtypes, await getCommercialPublishMap());
+      let profileObj =
+        applied.profile && typeof applied.profile === "object" && !Array.isArray(applied.profile)
+          ? { ...(applied.profile as Record<string, unknown>) }
+          : {};
+      const commercial = applyShopFocusToCommercial(parseCommercialProfile(profileObj), focus);
+      const asStrings = Object.fromEntries(
+        Object.entries(profileObj).map(([k, v]) => [k, v == null ? "" : String(v)])
+      );
+      profileObj = mergeCommercialIntoProfile(asStrings, commercial);
+
       await prisma.user.update({
         where: { id: userId },
         data: {
@@ -2520,7 +2847,7 @@ export async function POST(req: Request) {
           commercialReviewNote: note,
           isActive: true,
           accountType: "TICARI",
-          profile: applied.profile as object,
+          profile: profileObj as object,
           ...(applied.subtypes !== null ? { commercialSubtypes: applied.subtypes } : {}),
         },
       });

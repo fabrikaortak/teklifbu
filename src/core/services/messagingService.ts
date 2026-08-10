@@ -11,8 +11,8 @@ import {
 export type MessagingAccess = "approved" | "everyone" | CategoryAccessMode;
 
 export async function getMessagingAccess(): Promise<"approved" | "everyone"> {
-  const { isClassifiedMode } = await import("@/core/services/marketplaceModeService");
-  if (await isClassifiedMode()) return "everyone";
+  const { isClassifiedMessagingEveryone } = await import("@/core/services/marketplaceModeService");
+  if (await isClassifiedMessagingEveryone()) return "everyone";
   const v = String((await getSetting<string>("messaging_access", "approved")) || "approved");
   return v === "everyone" ? "everyone" : "approved";
 }
@@ -31,8 +31,8 @@ export async function userHasApprovedBidOnListing(userId: string, listingId: str
 }
 
 async function resolveListingMessagingMode(listingId: string): Promise<CategoryAccessMode> {
-  const { isClassifiedMode } = await import("@/core/services/marketplaceModeService");
-  if (await isClassifiedMode()) return "logged_in";
+  const { isClassifiedMessagingEveryone } = await import("@/core/services/marketplaceModeService");
+  if (await isClassifiedMessagingEveryone()) return "logged_in";
   const listing = await prisma.listing.findUnique({
     where: { id: listingId },
     select: {

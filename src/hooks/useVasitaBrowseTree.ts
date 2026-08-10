@@ -30,7 +30,7 @@ async function fetchVasitaBrowseTree(): Promise<State> {
 
   inflight = (async () => {
     try {
-      const res = await fetch("/api/catalog/tree?format=vasita-browse", { cache: "no-store" });
+      const res = await fetch("/api/catalog/tree?format=vasita-browse");
       const data = await res.json();
       if (data.ok && Array.isArray(data.browseTree) && data.browseTree.length) {
         const root: BrowseNode = data.root || {

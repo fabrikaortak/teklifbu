@@ -148,6 +148,13 @@ export async function placeBid(input: {
     );
   }
 
+  try {
+    const { invalidateOffersFeedCache } = await import("@/core/services/offersFeedCache");
+    invalidateOffersFeedCache(input.listingId);
+  } catch {
+    /* ignore */
+  }
+
   return { ok: true as const, bid: result };
 }
 
@@ -196,6 +203,13 @@ export async function approveBid(input: { listingId: string; bidId: string; sell
     eventKey: "bid_approved",
     link: `/ilan/${listing.id}`,
   });
+
+  try {
+    const { invalidateOffersFeedCache } = await import("@/core/services/offersFeedCache");
+    invalidateOffersFeedCache(input.listingId);
+  } catch {
+    /* ignore */
+  }
 
   return { ok: true as const, approvalMode: mode };
 }
@@ -416,6 +430,13 @@ export async function withdrawBidAfterListingChange(input: {
     eventKey: "bid_withdrawn",
     link: `/ilan/${listing.id}`,
   });
+
+  try {
+    const { invalidateOffersFeedCache } = await import("@/core/services/offersFeedCache");
+    invalidateOffersFeedCache(input.listingId);
+  } catch {
+    /* ignore */
+  }
 
   return { ok: true as const, refundedTokens: tokens };
 }

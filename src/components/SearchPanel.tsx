@@ -20,6 +20,7 @@ export type SearchFilters = {
   rental: string;
   brand: string;
   model: string;
+  version: string;
   trim: string;
   city: string;
   district: string;
@@ -36,6 +37,7 @@ export const EMPTY_SEARCH_FILTERS: SearchFilters = {
   rental: "",
   brand: "",
   model: "",
+  version: "",
   trim: "",
   city: "",
   district: "",
@@ -57,6 +59,7 @@ export function filtersFromParams(params: URLSearchParams): SearchFilters {
     rental: params.get("rental") || "",
     brand: params.get("brand") || "",
     model: params.get("model") || "",
+    version: params.get("version") || "",
     trim: params.get("trim") || "",
     city: params.get("city") || "",
     district: params.get("district") || "",
@@ -75,6 +78,7 @@ export function buildSearchHref(filters: SearchFilters) {
   if (filters.rental) params.set("rental", filters.rental);
   if (filters.brand) params.set("brand", filters.brand);
   if (filters.model) params.set("model", filters.model);
+  if (filters.version) params.set("version", filters.version);
   if (filters.trim) params.set("trim", filters.trim);
   if (filters.city) params.set("city", filters.city);
   if (filters.district) params.set("district", filters.district);
@@ -152,6 +156,7 @@ export function SearchPanel({
       next.rental = "";
       next.brand = "";
       next.model = "";
+      next.version = "";
       next.trim = "";
     }
     onChange(next);

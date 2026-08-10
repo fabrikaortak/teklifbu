@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { formatTl } from "@/lib/format";
+import { ListingThumbImg } from "@/components/ListingThumbImg";
 
 export type RecentSalesPlacement = "home" | "listing_detail" | "profile" | "ilanlar";
 
@@ -143,8 +144,7 @@ export function RecentSalesStrip({
               <Link key={s.id} href={`/ilan/${s.id}`} className="recent-sale-card">
                 <div className="recent-sale-card__img">
                   {s.coverImage ? (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img src={s.coverImage} alt="" />
+                    <ListingThumbImg src={s.coverImage} />
                   ) : (
                     <div className="recent-sale-card__ph" />
                   )}

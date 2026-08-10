@@ -12,7 +12,7 @@ export type SessionUser = {
   id: string;
   phone: string;
   name: string | null;
-  role: "USER" | "ADMIN";
+  role: "USER" | "ADMIN" | "STAFF";
   accountType: string;
   tokenBalance: number;
   commercialSubtypes?: string[];
@@ -62,7 +62,7 @@ export function canAccessAccount(user: {
   commercialStatus?: string | null;
 }) {
   if (user.isActive) return true;
-  if (user.role === "ADMIN") return true;
+  if (user.role === "ADMIN" || user.role === "STAFF") return true;
   const t = String(user.accountType || "").toUpperCase();
   const st = String(user.commercialStatus || "").toUpperCase();
   return (t === "TICARI" || t === "EMLAKCI" || t === "GALERICI") && st === "PENDING";
@@ -76,8 +76,16 @@ export async function requireUser() {
   return user;
 }
 
+/** Tam süper admin (eski davranış) */
 export async function requireAdmin() {
   const user = await requireUser();
   if (user.role !== "ADMIN") throw new Error("FORBIDDEN");
+  return user;
+}
+
+/** Admin paneli: ADMIN veya yetkili STAFF */
+export async function requireAdminPanelUser() {
+  const user = await requireUser();
+  if (user.role !== "ADMIN" && user.role !== "STAFF") throw new Error("FORBIDDEN");
   return user;
 }

@@ -52,6 +52,8 @@ export async function approveListing(listingId: string, adminId: string, tenantI
       reviewedById: adminId,
       isFeatured: featuredDays > 0 || listing.isFeatured,
       featuredUntil,
+      // Talep kuyruğundan çıksın; sebep alanları geçmiş için kalır
+      republishRequestedAt: null,
     },
   });
 

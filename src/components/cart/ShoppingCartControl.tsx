@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { ShoppingCart } from "lucide-react";
 import { useCart } from "@/components/cart/CartProvider";
+import { cartItemHref } from "@/lib/cartItemHref";
 import { formatTl } from "@/lib/format";
 
 type Props = {
@@ -95,7 +96,7 @@ export function ShoppingCartControl({ variant = "header", className }: Props) {
               {items.map((item) => (
                 <li key={item.listingId}>
                   <Link
-                    href={`/ilan/${item.listingId}`}
+                    href={cartItemHref(item.listingId)}
                     className="v2-cart-dropdown-item"
                     onClick={() => setOpen(false)}
                   >

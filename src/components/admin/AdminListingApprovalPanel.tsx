@@ -54,6 +54,16 @@ type PendingListing = {
   isColored?: boolean;
   isFeatured?: boolean;
   featuredDays?: number;
+  republishReasonCode?: string | null;
+  republishReasonNote?: string | null;
+  republishReasonLabel?: string | null;
+  republishRequestedAt?: string | null;
+  republishWinnerUserId?: string | null;
+  republishWinnerBidAmount?: number | null;
+  republishWinnerResponse?: string | null;
+  republishWinnerNote?: string | null;
+  republishWinnerRespondedAt?: string | null;
+  republishWinner?: { id: string; name?: string | null; phone?: string | null } | null;
   category?: { name: string; slug: string };
   seller?: {
     id: string;
@@ -731,7 +741,14 @@ function ApprovalDetailModal({
   );
 }
 
-export function AdminListingApprovalPanel({ vertical }: { vertical?: AdminVertical } = {}) {
+export function AdminListingApprovalPanel({
+  vertical,
+  republishOnly = false,
+}: {
+  vertical?: AdminVertical;
+  /** Yalnızca sonuçlanıp yeniden yayınlanmak istenenler */
+  republishOnly?: boolean;
+} = {}) {
   const { confirm, alert } = useDialog();
   const [listings, setListings] = useState<PendingListing[]>([]);
   const [autoApprove, setAutoApprove] = useState(false);
@@ -747,6 +764,7 @@ export function AdminListingApprovalPanel({ vertical }: { vertical?: AdminVertic
     setLoading(true);
     const qs = new URLSearchParams({ view: "pending-listings" });
     if (vertical) qs.set("vertical", vertical);
+    if (republishOnly) qs.set("republish", "1");
     const res = await fetch(`/api/admin?${qs}`);
     if (res.ok) {
       const d = await res.json();
@@ -766,7 +784,7 @@ export function AdminListingApprovalPanel({ vertical }: { vertical?: AdminVertic
       });
     }
     setLoading(false);
-  }, [vertical]);
+  }, [vertical, republishOnly]);
 
   useEffect(() => {
     load();
@@ -975,6 +993,7 @@ export function AdminListingApprovalPanel({ vertical }: { vertical?: AdminVertic
           }}
         >
           Onay bekleyen: {listings.length}
+          {republishOnly ? " · yeniden yayın" : ""}
         </span>
       </div>
 
@@ -1020,7 +1039,8 @@ export function AdminListingApprovalPanel({ vertical }: { vertical?: AdminVertic
             {!listings.length && (
               <tr>
                 <td colSpan={10} style={{ color: "var(--adm-muted)", padding: 18 }}>
-                  Onay bekleyen ilan yok.
+                  Onay bekleyen ilan yok
+                  {republishOnly ? " (yeniden yayın talebi)." : "."}
                 </td>
               </tr>
             )}
@@ -1054,6 +1074,49 @@ export function AdminListingApprovalPanel({ vertical }: { vertical?: AdminVertic
                   </td>
                   <td className="adm-listing-title-cell">
                     <span className="adm-listing-title">{l.title}</span>
+                    {l.republishReasonLabel || l.republishReasonCode ? (
+                      <div style={{ fontSize: 11, color: "#b45309", fontWeight: 700, marginTop: 4 }}>
+                        Yeniden yayın: {l.republishReasonLabel || l.republishReasonCode}
+                        {l.republishReasonNote ? ` — ${l.republishReasonNote}` : ""}
+                      </div>
+                    ) : null}
+                    {l.republishWinnerUserId || l.republishWinnerResponse ? (
+                      <div
+                        style={{
+                          fontSize: 11,
+                          marginTop: 6,
+                          padding: "6px 8px",
+                          borderRadius: 8,
+                          background:
+                            l.republishWinnerResponse === "DISPUTED"
+                              ? "#fef2f2"
+                              : l.republishWinnerResponse === "CONFIRMED"
+                                ? "#ecfdf5"
+                                : "#f8fafc",
+                          border: "1px solid #e2e8f0",
+                          color: "#334155",
+                          lineHeight: 1.4,
+                        }}
+                      >
+                        <strong>Kazanan teklif sahibi cevabı:</strong>{" "}
+                        {l.republishWinnerResponse === "CONFIRMED"
+                          ? "Onaylıyorum"
+                          : l.republishWinnerResponse === "DISPUTED"
+                            ? "Onaylamıyorum"
+                            : "Yanıt bekleniyor"}
+                        {l.republishWinner?.name || l.republishWinner?.phone
+                          ? ` · ${l.republishWinner?.name || l.republishWinner?.phone}`
+                          : ""}
+                        {l.republishWinnerBidAmount != null
+                          ? ` · teklif ${formatTl(l.republishWinnerBidAmount)}`
+                          : ""}
+                        {l.republishWinnerResponse === "DISPUTED" && l.republishWinnerNote ? (
+                          <div style={{ marginTop: 4, color: "#b91c1c" }}>
+                            Sebep: {l.republishWinnerNote}
+                          </div>
+                        ) : null}
+                      </div>
+                    ) : null}
                   </td>
                   <td style={{ fontSize: 12 }}>
                     {l.category?.name || "—"}

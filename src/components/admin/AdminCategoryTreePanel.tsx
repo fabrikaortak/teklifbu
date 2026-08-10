@@ -4,7 +4,6 @@ import { Fragment, useCallback, useEffect, useMemo, useState, type ReactNode } f
 import { ChevronDown, ChevronRight } from "lucide-react";
 import type { AdminVertical } from "@/lib/adminVertical";
 import { ARAC_TYPES, KONUT_TYPES } from "@/data/categoryBrowseTree";
-import { brandsForSubtype } from "@/data/vehicleCatalog";
 import {
   ALISVERIS_GROUP_IDS,
   CLASSIC_SHOP_GROUPS,
@@ -340,6 +339,12 @@ const GROUP_LABELS: Record<string, string> = {
   diger: "Diğer",
 };
 
+type VasitaBrandNode = {
+  slug: string;
+  name: string;
+  models: Array<{ slug: string; name: string; trims?: Array<{ slug: string; name: string }> }>;
+};
+
 export function AdminCategoryTreePanel({ vertical }: { vertical: AdminVertical }) {
   const [config, setConfig] = useState<BrowseNavConfig | null>(null);
   const [facets, setFacets] = useState<FacetCounts | null>(null);
@@ -349,6 +354,8 @@ export function AdminCategoryTreePanel({ vertical }: { vertical: AdminVertical }
   const [openIds, setOpenIds] = useState<Set<string>>(() => new Set());
   const [busyKey, setBusyKey] = useState<string | null>(null);
   const [editTarget, setEditTarget] = useState<EditTarget | null>(null);
+  /** Stage1 DB brands — never vehicleCatalog.ts */
+  const [dbVasitaBrands, setDbVasitaBrands] = useState<Record<string, VasitaBrandNode[]>>({});
 
   const load = useCallback(async () => {
     setLoading(true);
@@ -373,6 +380,39 @@ export function AdminCategoryTreePanel({ vertical }: { vertical: AdminVertical }
   useEffect(() => {
     load();
   }, [load]);
+
+  useEffect(() => {
+    if (vertical !== "emlak-vasita") return;
+    let cancelled = false;
+    void Promise.all(
+      ARAC_TYPES.map(async (t) => {
+        try {
+          const res = await fetch(`/api/vasita/catalog?action=nav&subtype=${encodeURIComponent(t.slug)}`, {
+            cache: "no-store",
+          });
+          const data = await res.json();
+          const brands = Array.isArray(data?.brands)
+            ? data.brands.map((b: { slug: string; name: string; models?: Array<{ slug: string; name: string }> }) => ({
+                slug: b.slug,
+                name: b.name,
+                models: (b.models || []).map((m) => ({ slug: m.slug, name: m.name, trims: [] as Array<{ slug: string; name: string }> })),
+              }))
+            : [];
+          return [t.slug, brands] as const;
+        } catch {
+          return [t.slug, [] as VasitaBrandNode[]] as const;
+        }
+      })
+    ).then((rows) => {
+      if (cancelled) return;
+      const next: Record<string, VasitaBrandNode[]> = {};
+      for (const [slug, brands] of rows) next[slug] = brands;
+      setDbVasitaBrands(next);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [vertical]);
 
   const catBySlug = useMemo(() => {
     const m = new Map<string, CatRow>();
@@ -548,8 +588,9 @@ export function AdminCategoryTreePanel({ vertical }: { vertical: AdminVertical }
           <span>
             <strong>Sahibinden menü ağaç açılımı</strong>
             <div style={{ fontSize: 12.5, color: "var(--adm-muted)", marginTop: 4, lineHeight: 1.45 }}>
-              Açıkken (varsayılan): Vasıta → Otomobil → Mercedes seçilince yalnızca o dal kalır; Audi/BMW
-              kapanır. Üst satıra tıklayınca bir seviye geri dönülür. Kapalıysa klasik açılır/kapanır ağaç.
+              Ana kontrol: <strong>Tema → Kategoriler teması</strong>. «v2» = Sahibinden drill (kardeş dallar
+              gizlenir). «Ağaç» = accordion. Bu kutu artık sol menü davranışını değiştirmez; kayıt uyumu için
+              tutulur.
             </div>
           </span>
         </label>
@@ -561,7 +602,7 @@ export function AdminCategoryTreePanel({ vertical }: { vertical: AdminVertical }
             {ARAC_TYPES.map((t, ti) => {
               const key = aracSubtypeKey(t.slug);
               const open = openIds.has(key);
-              const brands = brandsForSubtype(t.slug);
+              const brands = dbVasitaBrands[t.slug] || [];
               const count = facets?.subtypes[`arac:${t.slug}`] || 0;
               const active = isNodeActive(config, key);
               const sort = sortOrderFor(config, key, ti);
@@ -725,7 +766,7 @@ function VasitaBranch({
   catalogName: string;
   count: number;
   open: boolean;
-  brands: ReturnType<typeof brandsForSubtype>;
+  brands: VasitaBrandNode[];
   openIds: Set<string>;
   config: BrowseNavConfig;
   facets: FacetCounts | null;

@@ -231,10 +231,24 @@ export function formatListingDate(iso: Date | string | null | undefined) {
   return `${day} ${TR_MONTHS[d.getMonth()]} ${d.getFullYear()}`;
 }
 
-export function serializeListing<T extends { askPrice: bigint | number; highestBid: bigint | number }>(listing: T) {
+export function serializeListing<
+  T extends {
+    askPrice: bigint | number;
+    highestBid: bigint | number;
+    republishWinnerBidAmount?: bigint | number | null;
+  },
+>(listing: T) {
   return {
     ...listing,
     askPrice: Number(listing.askPrice),
     highestBid: Number(listing.highestBid),
+    ...(listing.republishWinnerBidAmount !== undefined
+      ? {
+          republishWinnerBidAmount:
+            listing.republishWinnerBidAmount == null
+              ? null
+              : Number(listing.republishWinnerBidAmount),
+        }
+      : {}),
   };
 }

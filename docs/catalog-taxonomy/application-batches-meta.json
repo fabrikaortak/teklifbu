@@ -1,0 +1,38 @@
+{
+  "BATCH_1_SAFE_STRUCTURE": {
+    "count": 1305,
+    "transactionScope": "per ana category create/keep/empty-move; max 200 ops/txn",
+    "checkpoint": "export Category id,parentId,path,slug JSON before batch",
+    "rollback": "delete created rows by batch tag; restore parentId/path from checkpoint",
+    "tests": [
+      "tree depth counts",
+      "no orphan parentId",
+      "slug unique",
+      "smoke /elektronik"
+    ],
+    "affectedEstimate": "structure only — 0 product id changes"
+  },
+  "BATCH_2_RELATION_AWARE": {
+    "count": 158,
+    "transactionScope": "single category move/rename/archive + alias insert",
+    "checkpoint": "Category + CategoryAlias + CategoryBrand counts",
+    "rollback": "SQL parentId/path restore + alias delete",
+    "tests": [
+      "product.categoryId stable",
+      "listing filter",
+      "alias 301"
+    ],
+    "affectedEstimate": "path/breadcrumb; commercial FKs preserved via same id"
+  },
+  "BATCH_3_MANUAL": {
+    "count": 98,
+    "transactionScope": "human-approved one-by-one",
+    "checkpoint": "full row dump for touched ids",
+    "rollback": "per-ticket restore",
+    "tests": [
+      "split mapping queue empty",
+      "risky move checklist"
+    ],
+    "affectedEstimate": "phones/fridge/splits — listings+products"
+  }
+}

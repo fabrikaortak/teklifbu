@@ -62,7 +62,7 @@ export function AlisverisGroupCards({ buckets, limit = 4, activeCategory, onSele
                 <div className="premium-vitrin-empty">Henüz ilan yok.</div>
               ) : (
                 rows.map((l) => (
-                  <ListingCard key={l.id} listing={l} variant="row" homeMode featuredSection />
+                  <ListingCard key={l.id} listing={l} variant="row" homeMode featuredSection showFavorite />
                 ))
               )}
             </div>

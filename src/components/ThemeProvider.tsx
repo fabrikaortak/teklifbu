@@ -5,6 +5,7 @@ import type { MarketplaceMode } from "@/lib/marketplaceMode";
 
 export type UiTheme = "v1" | "v2";
 export type CategoriesTheme = "tree" | "v2";
+export type MenuTheme = "strip" | "mega";
 export type V2GridCols = "4" | "5" | "6";
 export type HeaderBelt = "navy" | "white";
 export type ShoppingCartPlacement = "ust" | "alt";
@@ -36,6 +37,8 @@ const DEFAULT_ESCROW_THEME: EscrowThemeConfig = {
 type ThemeCtx = {
   theme: UiTheme;
   categoriesTheme: CategoriesTheme;
+  /** Alışveriş kategori menü stili */
+  menuTheme: MenuTheme;
   marketplaceMode: MarketplaceMode;
   /** false = Sahibinden Teklifsiz */
   offersEnabled: boolean;
@@ -46,6 +49,10 @@ type ThemeCtx = {
   featuredCardTitlePriceOnly: boolean;
   /** Öne çıkan vitrinde hover ile kartı yükselt */
   featuredCardHoverLift: boolean;
+  /** Emlak/Vasıta liste-vitrin kartlarında favori kalbi */
+  listingCardFavoritesEnabled: boolean;
+  /** Teklifsiz modda ilan detayı kalan süre sayacı */
+  classifiedDetailCountdownEnabled: boolean;
   escrow: EscrowThemeConfig;
   /** Alışveriş sepet ikonu: üst kuşak veya kategori satırı */
   shoppingCartPlacement: ShoppingCartPlacement;
@@ -54,19 +61,23 @@ type ThemeCtx = {
 
 const STORAGE_KEY = "teklifbu:ui-theme";
 const CAT_STORAGE_KEY = "teklifbu:ui-categories-theme";
+const MENU_STORAGE_KEY = "teklifbu:ui-menu-theme";
 const COLS_STORAGE_KEY = "teklifbu:v2-grid-cols";
 const BELT_STORAGE_KEY = "teklifbu:v2-header-belt";
 const MODE_STORAGE_KEY = "teklifbu:marketplace-mode";
 
-function readCachedTheme(): UiTheme {
-  if (typeof window === "undefined") return "v1";
+/** Admin tema kaydı sonrası açık sekmelerde /api/theme yeniden çekilsin */
+export const THEME_CHANGED_EVENT = "teklifbu:theme-changed";
+
+function readCachedTheme(): UiTheme | null {
+  if (typeof window === "undefined") return null;
   try {
     const t = localStorage.getItem(STORAGE_KEY);
     if (t === "v2" || t === "v1") return t;
   } catch {
     /* ignore */
   }
-  return "v1";
+  return null;
 }
 
 function readCachedCategoriesTheme(): CategoriesTheme {
@@ -80,26 +91,26 @@ function readCachedCategoriesTheme(): CategoriesTheme {
   return "v2";
 }
 
-function readCachedCols(): V2GridCols {
-  if (typeof window === "undefined") return "4";
+function readCachedMenuTheme(): MenuTheme {
+  if (typeof window === "undefined") return "mega";
+  try {
+    const t = localStorage.getItem(MENU_STORAGE_KEY);
+    if (t === "strip" || t === "mega") return t;
+  } catch {
+    /* ignore */
+  }
+  return "mega";
+}
+
+function readCachedCols(): V2GridCols | null {
+  if (typeof window === "undefined") return null;
   try {
     const t = localStorage.getItem(COLS_STORAGE_KEY);
     if (t === "5" || t === "6" || t === "4") return t;
   } catch {
     /* ignore */
   }
-  return "4";
-}
-
-function readCachedBelt(): HeaderBelt {
-  if (typeof window === "undefined") return "navy";
-  try {
-    const t = localStorage.getItem(BELT_STORAGE_KEY);
-    if (t === "white" || t === "navy") return t;
-  } catch {
-    /* ignore */
-  }
-  return "navy";
+  return null;
 }
 
 function readCachedMarketplaceMode(): MarketplaceMode {
@@ -140,6 +151,7 @@ function applyHeaderBelt(belt: HeaderBelt) {
 const Ctx = createContext<ThemeCtx>({
   theme: "v1",
   categoriesTheme: "v2",
+  menuTheme: "mega",
   marketplaceMode: "bidding",
   offersEnabled: true,
   homeGridCols: "4",
@@ -147,6 +159,8 @@ const Ctx = createContext<ThemeCtx>({
   brandName: "TeklifBu",
   featuredCardTitlePriceOnly: false,
   featuredCardHoverLift: true,
+  listingCardFavoritesEnabled: true,
+  classifiedDetailCountdownEnabled: true,
   escrow: DEFAULT_ESCROW_THEME,
   shoppingCartPlacement: "alt",
   ready: false,
@@ -156,16 +170,27 @@ export function useTheme() {
   return useContext(Ctx);
 }
 
-export function ThemeProvider({ children }: { children: ReactNode }) {
-  const [theme, setTheme] = useState<UiTheme>("v1");
+export function ThemeProvider({
+  children,
+  initialTheme = "v1",
+  initialHeaderBelt = "navy",
+}: {
+  children: ReactNode;
+  initialTheme?: UiTheme;
+  initialHeaderBelt?: HeaderBelt;
+}) {
+  const [theme, setTheme] = useState<UiTheme>(initialTheme);
   const [categoriesTheme, setCategoriesTheme] = useState<CategoriesTheme>("v2");
+  const [menuTheme, setMenuTheme] = useState<MenuTheme>("mega");
   const [marketplaceMode, setMarketplaceMode] = useState<MarketplaceMode>("bidding");
   const [offersEnabled, setOffersEnabled] = useState(true);
   const [homeGridCols, setHomeGridCols] = useState<V2GridCols>("4");
-  const [headerBelt, setHeaderBelt] = useState<HeaderBelt>("navy");
+  const [headerBelt, setHeaderBelt] = useState<HeaderBelt>(initialHeaderBelt);
   const [brandName, setBrandName] = useState("TeklifBu");
   const [featuredCardTitlePriceOnly, setFeaturedCardTitlePriceOnly] = useState(false);
   const [featuredCardHoverLift, setFeaturedCardHoverLift] = useState(true);
+  const [listingCardFavoritesEnabled, setListingCardFavoritesEnabled] = useState(true);
+  const [classifiedDetailCountdownEnabled, setClassifiedDetailCountdownEnabled] = useState(true);
   const [escrow, setEscrow] = useState<EscrowThemeConfig>(DEFAULT_ESCROW_THEME);
   const [shoppingCartPlacement, setShoppingCartPlacement] = useState<ShoppingCartPlacement>("alt");
   const [ready, setReady] = useState(false);
@@ -174,6 +199,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     function applyFromPayload(d: {
       theme?: string;
       categoriesTheme?: string;
+      menuTheme?: string;
       marketplaceMode?: string;
       offersEnabled?: boolean;
       homeGridCols?: string;
@@ -183,11 +209,14 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
       headerBelt?: string;
       featuredCardTitlePriceOnly?: boolean;
       featuredCardHoverLift?: boolean;
+      listingCardFavoritesEnabled?: boolean;
+      classifiedDetailCountdownEnabled?: boolean;
       escrow?: Partial<EscrowThemeConfig>;
       shoppingCartPlacement?: string;
     }) {
       const t: UiTheme = d.theme === "v2" ? "v2" : "v1";
       const ct: CategoriesTheme = d.categoriesTheme === "v2" ? "v2" : "tree";
+      const mt: MenuTheme = d.menuTheme === "strip" ? "strip" : "mega";
       const mode: MarketplaceMode = d.marketplaceMode === "classified" ? "classified" : "bidding";
       const offers = d.offersEnabled !== false && mode === "bidding";
       const cols: V2GridCols =
@@ -197,9 +226,13 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
       const belt: HeaderBelt = d.headerBelt === "white" ? "white" : "navy";
       const featuredMinimal = Boolean(d.featuredCardTitlePriceOnly);
       const featuredHover = d.featuredCardHoverLift !== false;
+      const cardFavorites = d.listingCardFavoritesEnabled !== false;
+      const detailCountdown =
+        mode === "classified" ? d.classifiedDetailCountdownEnabled !== false : true;
       const cartPlacement: ShoppingCartPlacement = d.shoppingCartPlacement === "ust" ? "ust" : "alt";
       setTheme(t);
       setCategoriesTheme(ct);
+      setMenuTheme(mt);
       setMarketplaceMode(mode);
       setOffersEnabled(offers);
       setHomeGridCols(cols);
@@ -207,6 +240,8 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
       setBrandName(String(d.brandName || "TeklifBu"));
       setFeaturedCardTitlePriceOnly(featuredMinimal);
       setFeaturedCardHoverLift(featuredHover);
+      setListingCardFavoritesEnabled(cardFavorites);
+      setClassifiedDetailCountdownEnabled(detailCountdown);
       setShoppingCartPlacement(cartPlacement);
       setEscrow({
         enabled: Boolean(d.escrow?.enabled),
@@ -220,6 +255,8 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
         allowInBiddingMode: d.escrow?.allowInBiddingMode !== false,
       });
       document.documentElement.setAttribute("data-theme", t);
+      document.documentElement.setAttribute("data-categories-theme", ct);
+      document.documentElement.setAttribute("data-menu-theme", mt);
       document.documentElement.setAttribute("data-marketplace", mode);
       document.documentElement.setAttribute("data-offers", offers ? "1" : "0");
       document.documentElement.setAttribute(
@@ -234,6 +271,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
       try {
         localStorage.setItem(STORAGE_KEY, t);
         localStorage.setItem(CAT_STORAGE_KEY, ct);
+        localStorage.setItem(MENU_STORAGE_KEY, mt);
         localStorage.setItem(COLS_STORAGE_KEY, cols);
         localStorage.setItem(BELT_STORAGE_KEY, belt);
         localStorage.setItem(MODE_STORAGE_KEY, mode);
@@ -269,24 +307,29 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
 
     const cached = readCachedTheme();
     const cachedCols = readCachedCols();
-    const cachedBelt = readCachedBelt();
-    if (cached === "v2") {
-      setTheme("v2");
-      document.documentElement.setAttribute("data-theme", "v2");
+    /* Kuşak: SSR initial’ı koru. localStorage navy→API white flaşını önler. */
+    if (cachedCols && (cached === "v2" || initialTheme === "v2")) {
       applyV2Layout(cachedCols);
-      applyHeaderBelt(cachedBelt);
+      setHomeGridCols(cachedCols);
     }
-    setCategoriesTheme(readCachedCategoriesTheme());
-    setHomeGridCols(cachedCols);
-    setHeaderBelt(cachedBelt);
+    const cachedCats = readCachedCategoriesTheme();
+    setCategoriesTheme(cachedCats);
+    setMenuTheme(readCachedMenuTheme());
+    document.documentElement.setAttribute("data-categories-theme", cachedCats);
+    document.documentElement.setAttribute("data-menu-theme", readCachedMenuTheme());
     const cachedMode = readCachedMarketplaceMode();
     setMarketplaceMode(cachedMode);
     setOffersEnabled(cachedMode === "bidding");
     document.documentElement.setAttribute("data-marketplace", cachedMode);
     document.documentElement.setAttribute("data-offers", cachedMode === "bidding" ? "1" : "0");
+    /* SSR’dan gelen tema/kuşak attribute’larını hydrate anında bozma */
+    if (initialTheme === "v2") {
+      document.documentElement.setAttribute("data-theme", "v2");
+      applyHeaderBelt(initialHeaderBelt);
+    }
 
     function loadTheme() {
-      return fetch("/api/theme")
+      return fetch("/api/theme", { cache: "no-store" })
         .then((r) => r.json())
         .then(applyFromPayload)
         .catch(() => {
@@ -299,8 +342,15 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     function onVisible() {
       if (document.visibilityState === "visible") loadTheme();
     }
+    function onThemeChanged() {
+      void loadTheme();
+    }
     document.addEventListener("visibilitychange", onVisible);
-    return () => document.removeEventListener("visibilitychange", onVisible);
+    window.addEventListener(THEME_CHANGED_EVENT, onThemeChanged);
+    return () => {
+      document.removeEventListener("visibilitychange", onVisible);
+      window.removeEventListener(THEME_CHANGED_EVENT, onThemeChanged);
+    };
   }, []);
 
   return (
@@ -308,6 +358,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
       value={{
         theme,
         categoriesTheme,
+        menuTheme,
         marketplaceMode,
         offersEnabled,
         homeGridCols,
@@ -315,6 +366,8 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
         brandName,
         featuredCardTitlePriceOnly,
         featuredCardHoverLift,
+        listingCardFavoritesEnabled,
+        classifiedDetailCountdownEnabled,
         escrow,
         shoppingCartPlacement,
         ready,

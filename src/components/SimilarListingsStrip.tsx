@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { formatTl } from "@/lib/format";
+import { ListingThumbImg } from "@/components/ListingThumbImg";
 
 type MiniListing = {
   id: string;
@@ -91,8 +92,7 @@ export function SimilarListingsStrip({
             <Link key={l.id} href={`/ilan/${l.id}`} className="similar-mini">
               <div className="similar-mini__img">
                 {l.coverImage ? (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img src={l.coverImage} alt="" />
+                  <ListingThumbImg src={l.coverImage} />
                 ) : (
                   <div className="similar-mini__ph" />
                 )}

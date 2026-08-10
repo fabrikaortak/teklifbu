@@ -1,10 +1,13 @@
 import { commercialToShopFocus, parseCommercialProfile } from "@/data/commercialProfile";
 import { shopFocusNeedsMagazaPanel } from "@/data/shopFocus";
 import { getSetting } from "@/core/settings";
+import { parseCommercialSubtypes } from "@/lib/accountTypes";
+import { verticalRootsForSubtypes } from "@/lib/commercialPublishMap";
 
 export type MagazaPanelUser = {
   accountType?: string | null;
   commercialStatus?: string | null;
+  commercialSubtypes?: string[] | null;
   profile?: unknown;
 } | null;
 
@@ -15,9 +18,11 @@ export function isApprovedCorporate(user: MagazaPanelUser): boolean {
   return String(user.commercialStatus || "").toUpperCase() === "APPROVED";
 }
 
-/** Sync check (ayarlar yok) — alışveriş odağı + onay */
+/** Sync check — alışveriş dikeyi (faaliyet haritası veya eski shopFocus) + onay */
 export function canAccessMagazaPanel(user: MagazaPanelUser): boolean {
   if (!isApprovedCorporate(user)) return false;
+  const subs = parseCommercialSubtypes(user?.commercialSubtypes || [], null, true);
+  if (verticalRootsForSubtypes(subs).has("alisveris")) return true;
   const p = parseCommercialProfile(user?.profile);
   return shopFocusNeedsMagazaPanel(commercialToShopFocus(p));
 }
@@ -52,14 +57,21 @@ export async function resolveMagazaPanelAccess(user: MagazaPanelUser): Promise<{
   const requireFocus =
     (await getSetting<boolean>("seller_panel_require_alisveris_focus", true)) !== false;
   if (requireFocus) {
-    const p = parseCommercialProfile(user?.profile);
-    if (!shopFocusNeedsMagazaPanel(commercialToShopFocus(p))) {
-      return {
-        allowed: false,
-        reason: "Satıcı paneli Alışveriş mağaza odağı için aktiftir.",
-        buttonLabel,
-        modules,
-      };
+    const { getCommercialPublishMap } = await import(
+      "@/core/services/commercialPublishMapService"
+    );
+    const map = await getCommercialPublishMap();
+    const subs = parseCommercialSubtypes(user?.commercialSubtypes || [], null, true);
+    if (!verticalRootsForSubtypes(subs, map).has("alisveris")) {
+      const p = parseCommercialProfile(user?.profile);
+      if (!shopFocusNeedsMagazaPanel(commercialToShopFocus(p))) {
+        return {
+          allowed: false,
+          reason: "Satıcı paneli Alışveriş / Mağaza faaliyeti için aktiftir.",
+          buttonLabel,
+          modules,
+        };
+      }
     }
   }
   return { allowed: true, buttonLabel, modules };

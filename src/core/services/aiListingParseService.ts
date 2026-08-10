@@ -410,7 +410,7 @@ export async function getAiListingConfig() {
   };
 }
 
-function assembleListingDraft(parsed: Record<string, unknown>): AiListingDraft {
+async function assembleListingDraft(parsed: Record<string, unknown>): Promise<AiListingDraft> {
   const title = String(parsed.title || "").trim().slice(0, 160);
   const description = stripContactFromAiDescription(String(parsed.description || ""))
     .trim()
@@ -510,7 +510,7 @@ function assembleListingDraft(parsed: Record<string, unknown>): AiListingDraft {
     if (!subtype || !/^[a-z0-9-]+$/.test(subtype) || (hinted === "arazi-suv-pickup" && subtype === "otomobil")) {
       subtype = hinted;
     }
-    const matched = matchVehicleBrandModel({
+    const matched = await matchVehicleBrandModel({
       subtype,
       brand,
       model: model || series,
@@ -764,5 +764,5 @@ JSON: rooms, m2, netM2, buildingAge, floor, totalFloors, heating, bathrooms, bal
     parsed.tableText = tableText;
   }
 
-  return assembleListingDraft(parsed);
+  return await assembleListingDraft(parsed);
 }

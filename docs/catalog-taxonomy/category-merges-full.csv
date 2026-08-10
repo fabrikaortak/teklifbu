@@ -1,0 +1,2 @@
+sourceCategoryId,sourcePath,targetCategoryPath,preserveTargetId,moveChildren,moveRelations,aliasOldPath,affectedListingCount,affectedProductCount,affectedSellerOfferCount,riskLevel,notes
+cmsg4wpdm002xuzxwz1jpbybb,sifir-urun/spor-outdoor/bisiklet/bisiklet,Spor ve Outdoor › Bisiklet,true,true,true,sifir-urun/spor-outdoor/bisiklet/bisiklet,0,0,0,MEDIUM,Bisiklet→Bisiklet nest: merge leaf into parent or rename parent

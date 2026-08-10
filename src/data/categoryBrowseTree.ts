@@ -1,10 +1,5 @@
 import { SHOP_SUBCATEGORIES, childSlug } from "@/data/shopCategories";
 import { shopChildrenFor } from "@/data/shopBrowseChildren";
-import {
-  brandsForSubtype,
-  modelRequiresTrim,
-  modelsForBrand,
-} from "@/data/vehicleCatalog";
 import { PREMIUM_CATEGORY_SEEDS, childPremiumSlug } from "@/data/premiumCategories";
 import { buildVasitaBrowseNode } from "@/lib/vasitaBrowseFromTarget";
 
@@ -18,6 +13,9 @@ export type BrowseFilter = {
   rental?: "gunluk" | "";
   brand?: string;
   model?: string;
+  /** attributes.version — motor / model kodu (ör. 2.0 TDI) */
+  version?: string;
+  /** attributes.trim — paket / donanım (ör. Design); legacy: engine when version absent */
   trim?: string;
 };
 
@@ -304,7 +302,6 @@ export function validateListingCategorySelection(input: {
   const dealType = String(input.dealType || "").trim();
   const brand = String(attrs.brand || "").trim();
   const model = String(attrs.model || "").trim();
-  const trim = String(attrs.trim || "").trim();
 
   const path = matchBrowsePath({
     category: slug,
@@ -317,24 +314,11 @@ export function validateListingCategorySelection(input: {
   }
   const leaf = findBrowseNode(path[path.length - 1]);
 
-  // Vasıta: merdiven otomobil → marka → model → (paket/versiyon)
-  // Primary cascade is DB (/api/vasita/catalog). vehicleCatalog.ts is emergency fallback —
-  // if brand is in the static list, validate model/trim there; otherwise require non-empty
-  // brand+model (DB-seeded brands not yet mirrored in the TS fallback).
+  // Vasıta: merdiven → marka → model (DB catalog). No vehicleCatalog.ts validation.
   if (slug === "arac") {
     if (!subtype) return "Vasıta alt kategorisi seçin (ör. Otomobil, Motosiklet).";
     if (!brand) return "Araç markası seçmelisiniz.";
     if (!model) return "Araç modeli seçmelisiniz.";
-    const brands = brandsForSubtype(subtype);
-    if (brands.length && brands.some((b) => b.slug === brand)) {
-      const models = modelsForBrand(subtype, brand);
-      if (models.length && !models.some((m) => m.slug === model)) {
-        return "Geçerli bir model seçin.";
-      }
-      if (modelRequiresTrim(subtype, brand, model) && !trim) {
-        return "Model paket / motor seçeneğini seçmelisiniz.";
-      }
-    }
     return null;
   }
 
@@ -469,6 +453,7 @@ export function browseFilterToSearchPatch(filter: BrowseFilter): {
   rental: string;
   brand: string;
   model: string;
+  version: string;
   trim: string;
 } {
   return {
@@ -478,6 +463,7 @@ export function browseFilterToSearchPatch(filter: BrowseFilter): {
     rental: filter.rental || "",
     brand: filter.brand || "",
     model: filter.model || "",
+    version: filter.version || "",
     trim: filter.trim || "",
   };
 }

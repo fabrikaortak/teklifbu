@@ -1,20 +1,9 @@
 /**
- * Vasıta kataloğu — Sahibinden tarzı marka / model / paket (trim)
+ * Vasıta kataloğu — LEGACY STATIC FILE.
  *
- * ⚠️ EMERGENCY FALLBACK ONLY. The DB-backed Stage1 catalog
- * (docs/vertical-taxonomy/vehicle-stage1-catalog.json, built by
- * scripts/build-vehicle-stage1-catalog-v2.ts + applied via
- * scripts/vehicle-stage1-catalog-apply.ts) is the source of truth for
- * brand/model coverage — it has ~75 brands across otomobil/arazi-suv-pickup/
- * motosiklet/ticari-araclar/minivan-panelvan, all real TR-market models,
- * real generations where verified (no fake "Standart"/"default").
- *
- * This static list is only consulted by CategoryLadderPicker/vehicleMatch.ts
- * when the DB/API is unreachable or has no rows for a subtype+brand. It is
- * intentionally NOT kept in full parity with the v2 pack — full validation
- * loosening (accepting any brand/model the DB catalog knows about, not just
- * this static subset) should be handled separately if/when the emergency
- * fallback path needs the same coverage as the primary DB path.
+ * DO NOT import from UI / admin / browse / ladder.
+ * Runtime source of truth: DB + /api/vasita/catalog + CategoryBrand/Model.
+ * Kept only for historical scripts/tests. Prefer src/lib/vasitaLabels.ts for display.
  */
 
 export type VehicleTrim = { slug: string; name: string };

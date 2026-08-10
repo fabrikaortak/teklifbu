@@ -2,6 +2,10 @@
  * DB catalog tree → BrowseNode (UI).
  * Sistem kökleri (ikinci-el / sifir-urun) gizlenir; ana kategoriler birleştirilir.
  * API down → ALISVERIS_BROWSE_TREE emergency fallback.
+ *
+ * Filtre kategorisi: yalnızca düğüm slug'ı (veya ana için iki kök slug).
+ * Altları listings API `resolveCategoryFilterIds` path ile genişletir —
+ * tüm leaf slug'larını join etmek payload/URL'i şişirir ve UI'da ham kod yığını gösterir.
  */
 import type { BrowseNode } from "@/data/categoryBrowseTree";
 import { ALISVERIS_BROWSE_TREE } from "@/data/classicBrowseTree";
@@ -11,12 +15,6 @@ export type AlisverisBrowseMeta = {
   source: "db" | "fallback-ts";
   warning?: string;
 };
-
-function collectSlugs(node: CatalogTreeNode): string[] {
-  const out = [node.slug];
-  for (const c of node.children || []) out.push(...collectSlugs(c));
-  return out;
-}
 
 function catalogToBrowse(node: CatalogTreeNode): BrowseNode {
   const kids = (node.children || []).map(catalogToBrowse);
@@ -81,28 +79,26 @@ export function buildAlisverisBrowseFromDb(roots: CatalogTreeNode[]): BrowseNode
     .map((acc) => {
       const conditionChildren: BrowseNode[] = [];
       if (acc.ikinci) {
-        const slugs = collectSlugs(acc.ikinci);
         conditionChildren.push({
           id: `alisveris/${acc.key}/ikinci-el`,
           name: "İkinci El",
-          filter: { category: slugs.join(",") },
+          filter: { category: acc.ikinci.slug },
           children: (acc.ikinci.children || []).map(catalogToBrowse),
         });
       }
       if (acc.sifir) {
-        const slugs = collectSlugs(acc.sifir);
         conditionChildren.push({
           id: `alisveris/${acc.key}/sifir-urun`,
           name: "Sıfır",
-          filter: { category: slugs.join(",") },
+          filter: { category: acc.sifir.slug },
           children: (acc.sifir.children || []).map(catalogToBrowse),
         });
       }
-      const topSlugs = [acc.ikinci, acc.sifir].filter(Boolean).flatMap((n) => collectSlugs(n!));
+      const topSlugs = [acc.ikinci?.slug, acc.sifir?.slug].filter(Boolean) as string[];
       return {
         id: `alisveris/${acc.key}`,
         name: acc.name,
-        filter: { category: [...new Set(topSlugs)].join(",") },
+        filter: { category: topSlugs.join(",") },
         children: conditionChildren.length ? conditionChildren : undefined,
         ...(acc.icon ? { icon: acc.icon } : {}),
         ...(acc.image ? { image: acc.image } : {}),

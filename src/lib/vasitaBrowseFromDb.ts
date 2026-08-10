@@ -10,7 +10,13 @@
  */
 import type { BrowseNode } from "@/data/categoryBrowseTree";
 import { buildVasitaBrowseNode } from "@/lib/vasitaBrowseFromTarget";
-import { filterForMeta, parseVasitaMeta, readBrowseExtraAttrs, type VasitaMeta } from "@/lib/vasitaBrowseMeta";
+import {
+  filterForMeta,
+  parseVasitaMeta,
+  readBrowseExtraAttrs,
+  isBodySubtypeOnlyBrowseChild,
+  type VasitaMeta,
+} from "@/lib/vasitaBrowseMeta";
 
 export { readBrowseExtraAttrs };
 
@@ -61,24 +67,34 @@ export function buildVasitaBrowseFromDb(rows: VasitaCategoryRow[]): BrowseNode |
   for (const r of active) metaById.set(r.id, parseVasitaMeta(r.description));
 
   function build(row: VasitaCategoryRow, parentRow?: VasitaCategoryRow): BrowseNode {
-    const kids = byParent.get(row.id) || [];
+    const kids = (byParent.get(row.id) || []).filter((k) => {
+      const kMeta = metaById.get(k.id);
+      const pMeta = metaById.get(row.id);
+      return !isBodySubtypeOnlyBrowseChild(kMeta, pMeta);
+    });
     const children = kids.map((k) => build(k, row));
     const meta = metaById.get(row.id);
     // Main-nav nodes (direct children of arac) act as top-of-hierarchy for filter
     // purposes — same convention as vasitaBrowseFromTarget.ts (parent=undefined there).
     const isMain = parentRow?.id === rootId;
     const effectiveParentRow = isMain ? undefined : parentRow;
-    const parentMeta = effectiveParentRow ? metaById.get(effectiveParentRow.id) : null;
+    const effectiveParentMeta = effectiveParentRow ? metaById.get(effectiveParentRow.id) : null;
     const leaf = leafSlugFromPath(row.path, row.slug);
     return {
       id: row.path || row.slug,
       name: row.name,
-      filter: filterForMeta(meta, leaf, Boolean(effectiveParentRow), parentMeta),
+      filter: filterForMeta(meta, leaf, Boolean(effectiveParentRow), effectiveParentMeta),
       children: children.length ? children : undefined,
     };
   }
 
-  const children = (byParent.get(root.id) || []).map((k) => build(k, root));
+  const children = (byParent.get(root.id) || [])
+    .filter((k) => {
+      const kMeta = metaById.get(k.id);
+      const pMeta = metaById.get(root.id);
+      return !isBodySubtypeOnlyBrowseChild(kMeta, pMeta);
+    })
+    .map((k) => build(k, root));
   return { id: "arac", name: root.name, filter: { category: "arac" }, children };
 }
 

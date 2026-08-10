@@ -4,6 +4,12 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState, type ReactNode } from "react";
 import {
+  hasAdminMenu,
+  pathToAdminMenu,
+  type AdminMenuKey,
+  type AdminPermissions,
+} from "@/lib/adminPermissions";
+import {
   LayoutDashboard,
   Users,
   MessageSquare,
@@ -67,6 +73,11 @@ function verticalChildren(
       badge: counts.pending > 0 ? counts.pending : undefined,
     },
     {
+      href: `${base}/yeniden-yayin`,
+      label: "Yeniden yayın (sonuçlanan)",
+    },
+    { href: `${base}/puanlama-motoru`, label: "Puanlama motoru" },
+    {
       href: `${base}/duzenleme-onay`,
       label: "Düzenleme talepleri",
       badge: counts.edit > 0 ? counts.edit : undefined,
@@ -90,9 +101,11 @@ function verticalChildren(
 export function AdminShell({ children }: { children: ReactNode }) {
   const pathname = usePathname();
   const router = useRouter();
-  const [ready, setReady] = useState(true);
+  const [ready, setReady] = useState(false);
   const [adminName, setAdminName] = useState("Admin");
   const [adminPhone, setAdminPhone] = useState("");
+  const [isSuperAdmin, setIsSuperAdmin] = useState(true);
+  const [staffPerms, setStaffPerms] = useState<AdminPermissions | null>(null);
   const [msgCount, setMsgCount] = useState(0);
   const [sellerRequestCount, setSellerRequestCount] = useState(0);
   const [commercialPendingCount, setCommercialPendingCount] = useState(0);
@@ -139,6 +152,17 @@ export function AdminShell({ children }: { children: ReactNode }) {
         if (!d || cancelled) return;
         setAdminName(d.adminUser?.name || "Sistem Admin");
         setAdminPhone(d.adminUser?.phone || "");
+        const actor = d.actor;
+        if (actor?.isSuperAdmin) {
+          setIsSuperAdmin(true);
+          setStaffPerms(null);
+        } else if (actor?.permissions && !("full" in actor.permissions && actor.permissions.full)) {
+          setIsSuperAdmin(false);
+          setStaffPerms(actor.permissions as AdminPermissions);
+        } else {
+          setIsSuperAdmin(false);
+          setStaffPerms({ menus: [], verticals: [], actions: [], settingGroups: [] });
+        }
         setMsgCount(d.kpis?.unreadMessages || 0);
         setSellerRequestCount(d.kpis?.pendingSellerRequestCount || 0);
         setCommercialPendingCount(d.kpis?.pendingCommercialUserCount || 0);
@@ -162,6 +186,7 @@ export function AdminShell({ children }: { children: ReactNode }) {
             },
           });
         }
+        setReady(true);
       })
       .catch(() => {
         if (!cancelled) router.replace("/giris");
@@ -229,7 +254,7 @@ export function AdminShell({ children }: { children: ReactNode }) {
   const bellCount = (msgCount || 0) + (commercialPendingCount || 0) + (sellerRequestCount || 0);
 
   const nav: NavItem[] = [
-    { href: "/admin", label: "Genel Bakış", icon: <LayoutDashboard size={18} /> },
+    { href: "/admin", label: "Genel Bakış", icon: <LayoutDashboard size={18} />, menuKey: "overview" },
     {
       href: "/admin/emlak-vasita",
       label: "Vasıta & Emlak",
@@ -305,12 +330,14 @@ export function AdminShell({ children }: { children: ReactNode }) {
           badge: sellerRequestCount > 0 ? sellerRequestCount : undefined,
         },
         { href: "/admin/kullanicilar/ayarlar", label: "Ayarlar" },
+        { href: "/admin/kullanicilar/alt-yoneticiler", label: "Alt yöneticiler" },
       ],
     },
     {
       href: "/admin/mesajlar",
       label: "Mesajlar",
       icon: <MessageSquare size={18} />,
+      menuKey: "mesajlar",
       badge: msgCount > 0 ? msgCount : undefined,
     },
     {
@@ -335,8 +362,8 @@ export function AdminShell({ children }: { children: ReactNode }) {
       menuKey: "gelirler",
       children: [{ href: "/admin/gelirler", label: "Gelir Özeti" }],
     },
-    { href: "/admin/reklam", label: "Reklam", icon: <Megaphone size={18} /> },
-    { href: "/admin/ai", label: "AI", icon: <Sparkles size={18} /> },
+    { href: "/admin/reklam", label: "Reklam", icon: <Megaphone size={18} />, menuKey: "reklam" },
+    { href: "/admin/ai", label: "AI", icon: <Sparkles size={18} />, menuKey: "ai" },
     {
       href: "/admin/raporlar",
       label: "Raporlar",
@@ -344,9 +371,9 @@ export function AdminShell({ children }: { children: ReactNode }) {
       menuKey: "raporlar",
       children: [{ href: "/admin/raporlar", label: "Özet Rapor" }],
     },
-    { href: "/admin/kullanici-ayarlari", label: "Kullanıcı ayarları", icon: <UserCog size={18} /> },
-    { href: "/admin/tema", label: "Tema", icon: <Palette size={18} /> },
-    { href: "/admin/footer", label: "Footer", icon: <PanelBottom size={18} /> },
+    { href: "/admin/kullanici-ayarlari", label: "Kullanıcı ayarları", icon: <UserCog size={18} />, menuKey: "kullanicilar" },
+    { href: "/admin/tema", label: "Tema", icon: <Palette size={18} />, menuKey: "tema" },
+    { href: "/admin/footer", label: "Footer", icon: <PanelBottom size={18} />, menuKey: "footer" },
     {
       href: "/admin/ayarlar",
       label: "Sistem ayarları",
@@ -354,8 +381,49 @@ export function AdminShell({ children }: { children: ReactNode }) {
       menuKey: "ayarlar",
       children: [{ href: "/admin/ayarlar", label: "Genel" }],
     },
-    { href: "/admin/loglar", label: "Log", icon: <ScrollText size={18} /> },
+    { href: "/admin/loglar", label: "Log", icon: <ScrollText size={18} />, menuKey: "ayarlar" },
   ];
+
+  function canSeeMenu(key?: string) {
+    if (isSuperAdmin || !key) return true;
+    if (key === "alt-yoneticiler") {
+      return (
+        hasAdminMenu("STAFF", staffPerms, "alt-yoneticiler") ||
+        Boolean(staffPerms?.actions?.includes("staff.manage"))
+      );
+    }
+    return hasAdminMenu("STAFF", staffPerms, key as AdminMenuKey);
+  }
+
+  const filteredNav = nav
+    .map((item) => {
+      if (!canSeeMenu(item.menuKey)) return null;
+      if (!item.children) return item;
+      const children = item.children.filter((c) => {
+        if (c.href.includes("/alt-yoneticiler")) return canSeeMenu("alt-yoneticiler");
+        return true;
+      });
+      return { ...item, children };
+    })
+    .filter(Boolean) as NavItem[];
+
+  useEffect(() => {
+    if (!ready || isSuperAdmin) return;
+    const menu = pathToAdminMenu(pathname);
+    if (!menu) return;
+    if (menu === "alt-yoneticiler") {
+      if (!canSeeMenu("alt-yoneticiler")) {
+        const first = filteredNav[0]?.href || "/";
+        router.replace(first);
+      }
+      return;
+    }
+    if (!hasAdminMenu("STAFF", staffPerms, menu)) {
+      const first = filteredNav[0]?.href || "/";
+      router.replace(first);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [ready, pathname, isSuperAdmin, staffPerms]);
 
   function isActive(href: string) {
     if (href === "/admin") return pathname === "/admin";
@@ -409,7 +477,7 @@ export function AdminShell({ children }: { children: ReactNode }) {
         </div>
 
         <nav className="adm-nav">
-          {nav.map((item) => {
+          {filteredNav.map((item) => {
             const active = isActive(item.href);
             const menuKey = item.menuKey || "";
             const expanded = menuKey ? openMenus[menuKey] : false;
@@ -517,7 +585,7 @@ export function AdminShell({ children }: { children: ReactNode }) {
                 <div className="adm-avatar">{adminName.slice(0, 1).toUpperCase()}</div>
                 <div>
                   <div className="adm-user-name">{adminName}</div>
-                  <div className="adm-user-role">Admin</div>
+                  <div className="adm-user-role">{isSuperAdmin ? "Admin" : "Alt yönetici"}</div>
                 </div>
                 <ChevronDown
                   size={14}

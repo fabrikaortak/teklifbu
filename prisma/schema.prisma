@@ -18,6 +18,10 @@ enum AccountType {
 enum UserRole {
   USER
   ADMIN
+  /**
+   * Alt yönetici — admin paneline kısıtlı yetkiyle girer (adminPermissions)
+   */
+  STAFF
 }
 
 enum ListingStatus {
@@ -174,6 +178,10 @@ model User {
   commercialReviewedAt   DateTime?
   commercialReviewNote   String?
   role                   UserRole    @default(USER)
+  /**
+   * STAFF (alt yönetici) yetki matrisi — menü / dikey / işlem / ayar grupları
+   */
+  adminPermissions       Json?
   tokenBalance           Int         @default(0)
   avatarUrl              String?
   /**
@@ -190,6 +198,14 @@ model User {
   isPremiumSeller        Boolean     @default(false)
   premiumSellerUntil     DateTime?
   isActive               Boolean     @default(true)
+  /**
+   * Güven / itibar puanı (puanlama motoru)
+   */
+  trustScore             Int         @default(100)
+  /**
+   * Düşük puan veya itiraz sonrası ilan/yeniden yayın bekleme
+   */
+  listingCooldownUntil   DateTime?
   memberSince            DateTime    @default(now())
   /**
    * EİDS kullaniciKodu (e-Devlet doğrulama sonrası)
@@ -233,6 +249,7 @@ model User {
   bulkListingUpdates    BulkListingUpdateRequest[]
   sellerReviewsReceived SellerReview[]             @relation("SellerReviewsReceived")
   sellerReviewsWritten  SellerReview[]             @relation("SellerReviewsWritten")
+  trustScoreLedger      TrustScoreLedger[]
   escrowBuys            EscrowDeal[]               @relation("EscrowBuyer")
   escrowSells           EscrowDeal[]               @relation("EscrowSeller")
   listingQuestionsAsked ListingQuestion[]          @relation("ListingQuestionsAsked")
@@ -366,6 +383,20 @@ model Listing {
   endsAt               DateTime?
   selectionEndsAt      DateTime?
   republishAvailableAt DateTime?
+  /**
+   * Sonuçlanan ilanı yeniden yayınlama talebi (sebep + zaman)
+   */
+  republishReasonCode  String?
+  republishReasonNote  String?       @db.Text
+  republishRequestedAt DateTime?
+  /**
+   * Yeniden yayın: önceki kazanan teklif sahibi doğrulaması
+   */
+  republishWinnerUserId       String?
+  republishWinnerBidAmount    BigInt?
+  republishWinnerResponse     String?
+  republishWinnerNote         String?   @db.Text
+  republishWinnerRespondedAt  DateTime?
   approvedBidId        String?       @unique
   contactPhone         String?
   attributes           Json?
@@ -426,6 +457,9 @@ model Listing {
   orderItems          OrderItem[]
 
   @@index([status, endsAt])
+  @@index([status, createdAt])
+  @@index([status, isFeatured, createdAt])
+  @@index([isFeatured, featuredUntil])
   @@index([categoryId])
   @@index([sellerId])
   @@index([tenantId])
@@ -667,6 +701,8 @@ model Bid {
   approvedListing Listing? @relation("ApprovedBid")
 
   @@index([listingId, status])
+  @@index([listingId, createdAt])
+  @@index([createdAt])
   @@index([bidderId])
 }
 
@@ -737,6 +773,29 @@ model Message {
   receiver User     @relation("ReceivedMessages", fields: [receiverId], references: [id])
 
   @@index([receiverId, isRead])
+}
+
+/**
+ * Güven puanı hareket defteri
+ */
+model TrustScoreLedger {
+  id         String   @id @default(cuid())
+  userId     String
+  eventKey   String
+  points     Int
+  scoreBefore Int
+  scoreAfter  Int
+  listingId  String?
+  actorUserId String?
+  note       String?  @db.Text
+  meta       Json?
+  createdAt  DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, createdAt])
+  @@index([eventKey, createdAt])
+  @@index([listingId])
 }
 
 model Notification {
