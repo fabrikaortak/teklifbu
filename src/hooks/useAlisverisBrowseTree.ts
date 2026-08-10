@@ -11,9 +11,37 @@ type State = {
   loading: boolean;
 };
 
+const LS_KEY = "teklifbu:alisveris-browse:v2";
+const LS_TTL_MS = 60 * 60_000;
+
 /** Aynı sayfada Home/Nav/Strip üç kez çağırsa tek fetch */
 let inflight: Promise<State> | null = null;
 let sharedCache: State | null = null;
+
+function readLocal(): State | null {
+  if (typeof window === "undefined") return null;
+  try {
+    const raw = window.localStorage.getItem(LS_KEY);
+    if (!raw) return null;
+    const parsed = JSON.parse(raw) as { at: number; tree: BrowseNode[]; meta: AlisverisBrowseMeta };
+    if (!parsed?.tree?.length || Date.now() - parsed.at > LS_TTL_MS) return null;
+    return { tree: parsed.tree, meta: parsed.meta || { source: "db" }, loading: false };
+  } catch {
+    return null;
+  }
+}
+
+function writeLocal(state: State) {
+  if (typeof window === "undefined" || state.meta.source !== "db") return;
+  try {
+    window.localStorage.setItem(
+      LS_KEY,
+      JSON.stringify({ at: Date.now(), tree: state.tree, meta: state.meta })
+    );
+  } catch {
+    /* quota */
+  }
+}
 
 async function fetchBrowseTree(): Promise<State> {
   if (sharedCache && !sharedCache.loading && sharedCache.meta.source === "db") {
@@ -33,6 +61,8 @@ async function fetchBrowseTree(): Promise<State> {
         };
         if (data.meta?.source === "fallback-ts" || data.degraded) {
           console.warn("[useAlisverisBrowseTree] degraded/fallback", data.meta);
+        } else {
+          writeLocal(next);
         }
         sharedCache = next;
         return next;
@@ -64,18 +94,22 @@ async function fetchBrowseTree(): Promise<State> {
 
 /**
  * Alışveriş browse ağacı — /api/catalog/tree?format=browse
- * Hata/boş → TS emergency fallback (boş menü yok).
+ * F5: localStorage anında eski menüyü gösterir, arka planda yeniler.
  */
 export function useAlisverisBrowseTree() {
-  const [state, setState] = useState<State>(() =>
-    sharedCache && !sharedCache.loading
-      ? sharedCache
-      : {
-          tree: ALISVERIS_BROWSE_TREE,
-          meta: { source: "fallback-ts", warning: "loading" },
-          loading: true,
-        }
-  );
+  const [state, setState] = useState<State>(() => {
+    if (sharedCache && !sharedCache.loading) return sharedCache;
+    const local = readLocal();
+    if (local) {
+      sharedCache = local;
+      return local;
+    }
+    return {
+      tree: ALISVERIS_BROWSE_TREE,
+      meta: { source: "fallback-ts", warning: "loading" },
+      loading: true,
+    };
+  });
 
   useEffect(() => {
     let cancelled = false;

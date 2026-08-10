@@ -130,3 +130,16 @@ export function resolveAlisverisBrowseTree(roots: CatalogTreeNode[] | null | und
   }
   return { tree, meta: { source: "db" } };
 }
+
+/**
+ * Sol menü için sığ ağaç: ana → İkinci El/Sıfır → ürün tipi.
+ * Marka/model derinliği (binlerce düğüm) payload'ı ~MB yapıp F5'i 10–15sn geciktiriyordu.
+ */
+export function slimBrowseNodes(nodes: BrowseNode[], keepDepth: number): BrowseNode[] {
+  if (keepDepth < 0) return [];
+  return nodes.map((n) => {
+    const kids =
+      keepDepth === 0 || !n.children?.length ? undefined : slimBrowseNodes(n.children, keepDepth - 1);
+    return kids ? { ...n, children: kids } : { ...n, children: undefined };
+  });
+}

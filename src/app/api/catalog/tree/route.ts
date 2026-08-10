@@ -1,8 +1,13 @@
 import { NextResponse } from "next/server";
 import { getCatalogTreeCached } from "@/core/services/catalog/catalogTreeCache";
-import { resolveAlisverisBrowseTree } from "@/lib/alisverisBrowseFromDb";
+import { resolveAlisverisBrowseTree, slimBrowseNodes } from "@/lib/alisverisBrowseFromDb";
 import { prisma } from "@/lib/db";
 import { resolveVasitaBrowseTree } from "@/lib/vasitaBrowseFromDb";
+import type { BrowseNode } from "@/data/categoryBrowseTree";
+
+type BrowseCache = { at: number; browseTree: BrowseNode[]; meta: { source: string; warning?: string } };
+let browseMemory: BrowseCache | null = null;
+const BROWSE_TTL_MS = 5 * 60_000;
 
 /**
  * Public DB category tree for alışveriş + vasıta.
@@ -37,7 +42,7 @@ export async function GET(req: Request) {
       }
       return NextResponse.json(
         { ok: true, browseTree: node.children || [], meta, root: node },
-        { headers: { "Cache-Control": "public, s-maxage=30, stale-while-revalidate=60" } }
+        { headers: { "Cache-Control": "public, s-maxage=60, stale-while-revalidate=300" } }
       );
     } catch (e) {
       console.error("[api/catalog/tree] vasita-browse failed", e);
@@ -47,34 +52,39 @@ export async function GET(req: Request) {
   }
 
   try {
-    const tree = await getCatalogTreeCached(allowed);
     if (format === "browse") {
-      const { tree: browseTree, meta } = resolveAlisverisBrowseTree(tree);
+      const now = Date.now();
+      if (browseMemory && now - browseMemory.at < BROWSE_TTL_MS) {
+        return NextResponse.json(
+          { ok: true, browseTree: browseMemory.browseTree, meta: browseMemory.meta },
+          { headers: { "Cache-Control": "public, s-maxage=60, stale-while-revalidate=300" } }
+        );
+      }
+      const tree = await getCatalogTreeCached(allowed);
+      const { tree: fullBrowse, meta } = resolveAlisverisBrowseTree(tree);
+      // Ana → koşul → ürün tipi (marka ağacı yok) — sol menü için yeterli
+      const browseTree = slimBrowseNodes(fullBrowse, 2);
       if (meta.source === "fallback-ts") {
         console.warn("[api/catalog/tree] browse fallback:", meta.warning);
+      } else {
+        browseMemory = { at: now, browseTree, meta };
       }
       return NextResponse.json(
-        { ok: true, browseTree, meta, tree },
-        {
-          headers: {
-            "Cache-Control": "public, s-maxage=30, stale-while-revalidate=60",
-          },
-        }
+        { ok: true, browseTree, meta },
+        { headers: { "Cache-Control": "public, s-maxage=60, stale-while-revalidate=300" } }
       );
     }
+
+    const tree = await getCatalogTreeCached(allowed);
     return NextResponse.json(
       { ok: true, tree },
-      {
-        headers: {
-          "Cache-Control": "public, s-maxage=30, stale-while-revalidate=60",
-        },
-      }
+      { headers: { "Cache-Control": "public, s-maxage=60, stale-while-revalidate=300" } }
     );
   } catch (e) {
     console.error("[api/catalog/tree] failed", e);
     if (format === "browse") {
       const { tree: browseTree, meta } = resolveAlisverisBrowseTree(null);
-      return NextResponse.json({ ok: true, browseTree, meta, tree: [], degraded: true });
+      return NextResponse.json({ ok: true, browseTree, meta, degraded: true });
     }
     return NextResponse.json({ ok: false, error: "tree_unavailable", tree: [] }, { status: 500 });
   }

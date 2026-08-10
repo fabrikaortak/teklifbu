@@ -2,7 +2,7 @@ import { prisma } from "@/lib/db";
 import type { CatalogTreeNode } from "@/core/services/catalog/categoryTreeService";
 import { getCatalogTree } from "@/core/services/catalog/categoryTreeService";
 
-const CACHE_TTL_MS = 30_000;
+const CACHE_TTL_MS = 5 * 60_000;
 const TAG = "catalog-tree";
 
 type CacheEntry = {
