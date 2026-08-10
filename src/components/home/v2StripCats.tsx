@@ -11,6 +11,7 @@ import {
   Bike,
   Package,
   ShoppingBag,
+  Sparkles,
   type LucideIcon,
 } from "lucide-react";
 import { getCatIcon } from "@/components/CategoryIcons";
@@ -33,12 +34,13 @@ export const V2_NAV_CATS: V2NavCat[] = CLASSIC_BROWSE_TREE.map((n) => ({
 }));
 
 /**
- * Şerit: Emlak + Vasıta (+ Alışveriş kısayolu)
+ * Şerit: Emlak + Vasıta (+ Alışveriş / Premium — dikey açıksa gösterilir)
  */
 export const V2_CLASSIC_STRIP: V2NavCat[] = [
   { slug: "emlak", name: "Emlak", Icon: Home, mapTo: classicRootCategory("emlak") },
   { slug: "araclar", name: "Vasıta", Icon: Car, mapTo: classicRootCategory("arac") },
   { slug: "alisveris", name: "Alışveriş", Icon: ShoppingBag, mapTo: "alisveris" },
+  { slug: "premium", name: "Premium", Icon: Sparkles, mapTo: "premium" },
 ];
 /** /alisveris şerit kökleri */
 export const V2_ALISVERIS_STRIP: V2NavCat[] = [

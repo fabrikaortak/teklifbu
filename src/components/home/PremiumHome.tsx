@@ -140,7 +140,7 @@ export function PremiumHome() {
     const cat = searchParams.get("category") || "";
     const next = {
       ...browse,
-      category: isPremiumCategorySlug(cat) ? cat : "",
+      category: cat && cat !== "premium" && isPremiumCategorySlug(cat) ? cat : "",
     };
     setBrowse(next);
     loadListings(next);
@@ -246,10 +246,6 @@ export function PremiumHome() {
       ) : (
       <>
       <aside className="v2-left v2-side-card">
-        <PremiumBrowseSection filters={browse} onSelect={onPremiumSelect} facets={facets} />
-
-        <div style={{ height: 1, background: "var(--line)", margin: "10px 0 12px" }} />
-
         {classicCats ? (
           <CategoryBrowseNav
             embedded
@@ -268,6 +264,7 @@ export function PremiumHome() {
         )}
 
         <AlisverisBrowseSection filters={EMPTY_SEARCH_FILTERS} onSelect={onClassicSelect} />
+        <PremiumBrowseSection filters={browse} onSelect={onPremiumSelect} facets={facets} />
 
         <div className="v2-filter-block">
           <div className="v2-filter-label">Fiyat Aralığı</div>

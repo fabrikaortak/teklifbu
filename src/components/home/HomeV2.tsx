@@ -368,7 +368,10 @@ export function HomeV2() {
     trim: string;
   }) {
     if (isPremiumCategorySlug(patch.category)) {
-      const qs = patch.category ? `?category=${encodeURIComponent(patch.category)}` : "";
+      const qs =
+        patch.category && patch.category !== "premium"
+          ? `?category=${encodeURIComponent(patch.category)}`
+          : "";
       router.push(`/premium${qs}`);
       return;
     }
@@ -448,7 +451,11 @@ export function HomeV2() {
 
   return (
     <>
-      <V2CategoryStrip filters={browse} onSelect={onBrowseSelect} />
+      <V2CategoryStrip
+        filters={browse}
+        onSelect={onBrowseSelect}
+        browseNavConfig={facets?.browseNavConfig}
+      />
 
       <SiteMidBeltBanner />
 
@@ -462,8 +469,8 @@ export function HomeV2() {
             onSelect={onBrowseSelect}
           />
 
-          <PremiumBrowseSection filters={browse} onSelect={onBrowseSelect} facets={facets} />
           <AlisverisBrowseSection filters={browse} onSelect={onBrowseSelect} />
+          <PremiumBrowseSection filters={browse} onSelect={onBrowseSelect} facets={facets} />
 
           <div className="v2-filter-block">
             <div className="v2-filter-label">Durumu</div>

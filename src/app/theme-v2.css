@@ -1327,6 +1327,11 @@ html[data-theme="v2"] .listings-stack {
   flex-direction: column;
   gap: 0;
   max-height: min(62vh, 520px);
+  min-height: 0;
+}
+
+/* Derine inildiğinde (marka/model listesi) biraz nefes alanı */
+.v2-browse-drill:has(.v2-browse-drill-trail:not(:empty)) {
   min-height: 120px;
 }
 
@@ -1475,6 +1480,19 @@ html[data-theme="v2"] .listings-stack {
   margin-top: 12px;
   padding-top: 12px;
   border-top: 1px solid var(--line);
+}
+
+/* Alışveriş / Premium: Emlak-Vasıta’ya yapışık kalsın */
+.v2-browse-nav + .v2-alisveris-block.v2-filter-block,
+.v2-browse-nav + .v2-premium-block.v2-filter-block,
+.v2-alisveris-block.v2-filter-block {
+  margin-top: 6px;
+  padding-top: 10px;
+}
+
+.v2-alisveris-block + .v2-premium-block.v2-filter-block {
+  margin-top: 6px;
+  padding-top: 10px;
 }
 
 .v2-filter-label {

@@ -16,6 +16,7 @@ import type { SearchFilters } from "@/components/SearchPanel";
 import { useTheme } from "@/components/ThemeProvider";
 import { ShoppingCartControl } from "@/components/cart/ShoppingCartControl";
 import { useAlisverisBrowseTree } from "@/hooks/useAlisverisBrowseTree";
+import { isNodeActive, type BrowseNavConfig } from "@/lib/browseNavConfig";
 import {
   ChevronLeft,
   ChevronRight,
@@ -67,14 +68,18 @@ export function V2CategoryStrip({
   filters,
   onSelect,
   mode = "home",
+  browseNavConfig,
 }: {
   filters: Pick<SearchFilters, "category">;
   onSelect: (patch: BrowsePatch) => void;
   mode?: "home" | "alisveris";
+  /** Admin kategori ağacı — emlak/vasıta düğüm aktifliği */
+  browseNavConfig?: BrowseNavConfig | null;
 }) {
   const router = useRouter();
   const pathname = usePathname();
-  const { categoriesTheme, shoppingCartPlacement, menuTheme } = useTheme();
+  const { categoriesTheme, shoppingCartPlacement, menuTheme, alisverisEnabled, premiumEnabled } =
+    useTheme();
   const classicCats = categoriesTheme === "v2";
   const { tree: dbTree } = useAlisverisBrowseTree();
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -103,14 +108,26 @@ export function V2CategoryStrip({
     [dbTree]
   );
 
-  const stripCats =
-    mode === "alisveris"
-      ? dbStrip.length
-        ? dbStrip
-        : V2_ALISVERIS_STRIP
-      : classicCats
-        ? V2_CLASSIC_STRIP
-        : V2_NAV_CATS;
+  const stripCats = useMemo(() => {
+    if (mode === "alisveris") {
+      if (!alisverisEnabled) return [];
+      return dbStrip.length ? dbStrip : V2_ALISVERIS_STRIP;
+    }
+    const base = classicCats ? V2_CLASSIC_STRIP : V2_NAV_CATS;
+    return base.filter((c) => {
+      if (c.slug === "alisveris") return alisverisEnabled;
+      if (c.slug === "premium") return premiumEnabled;
+      const nodeKey = c.slug === "araclar" ? "arac" : c.slug;
+      return isNodeActive(browseNavConfig, nodeKey);
+    });
+  }, [
+    mode,
+    alisverisEnabled,
+    premiumEnabled,
+    classicCats,
+    dbStrip,
+    browseNavConfig,
+  ]);
   const showStripCart = mode === "alisveris" && shoppingCartPlacement === "alt";
 
   const updateArrows = useCallback(() => {

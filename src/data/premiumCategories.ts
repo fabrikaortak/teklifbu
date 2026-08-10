@@ -75,6 +75,7 @@ export const PREMIUM_CATEGORY_SEEDS: PremiumCategorySeed[] = [
 
 export function isPremiumCategorySlug(slug?: string | null): boolean {
   if (!slug) return false;
+  if (slug === "premium") return true;
   return slug.startsWith("premium-") || PREMIUM_CATEGORY_SEEDS.some((r) => slug.startsWith(r.slug));
 }
 

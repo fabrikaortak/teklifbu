@@ -5,6 +5,7 @@ import { ChevronDown, ChevronRight, Smartphone, Sofa, Shirt, Bike, Package, Uten
 import { isAlisverisCategorySlug } from "@/data/classicBrowseTree";
 import { browseFilterToSearchPatch, type BrowseFilter } from "@/data/categoryBrowseTree";
 import type { SearchFilters } from "@/components/SearchPanel";
+import { useTheme } from "@/components/ThemeProvider";
 import { useAlisverisBrowseTree } from "@/hooks/useAlisverisBrowseTree";
 
 type Props = {
@@ -33,18 +34,9 @@ const GROUP_ICON: Record<string, typeof Smartphone> = {
 /** Ana sayfa: klasik menünün altında Alışveriş grubu → /alisveris (DB tree) */
 export function AlisverisBrowseSection({ filters, onSelect, alwaysShowClassicBack }: Props) {
   const { tree } = useAlisverisBrowseTree();
+  const { alisverisEnabled: verticalEnabled } = useTheme();
   const [openIds, setOpenIds] = useState<Set<string>>(() => new Set());
   const [userCollapsed, setUserCollapsed] = useState<Set<string>>(() => new Set());
-  const [verticalEnabled, setVerticalEnabled] = useState(true);
-
-  useEffect(() => {
-    fetch("/api/theme")
-      .then((r) => r.json())
-      .then((d) => {
-        if (typeof d?.alisverisEnabled === "boolean") setVerticalEnabled(d.alisverisEnabled);
-      })
-      .catch(() => {});
-  }, []);
 
   useEffect(() => {
     if (!filters.category || !isAlisverisCategorySlug(filters.category)) return;
@@ -99,7 +91,7 @@ export function AlisverisBrowseSection({ filters, onSelect, alwaysShowClassicBac
   if (!verticalEnabled) return null;
 
   return (
-    <div className="v2-filter-block v2-alisveris-block" style={{ marginTop: 4 }}>
+    <div className="v2-filter-block v2-alisveris-block">
       <div className="v2-filter-label" style={{ display: "flex", alignItems: "center", gap: 8 }}>
         <button
           type="button"

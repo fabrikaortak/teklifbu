@@ -234,7 +234,10 @@ function ListingsInner() {
     trim: string;
   }) {
     if (isPremiumCategorySlug(patch.category)) {
-      const qs = patch.category ? `?category=${encodeURIComponent(patch.category)}` : "";
+      const qs =
+        patch.category && patch.category !== "premium"
+          ? `?category=${encodeURIComponent(patch.category)}`
+          : "";
       router.push(`/premium${qs}`);
       return;
     }
@@ -284,7 +287,11 @@ function ListingsInner() {
 
   return (
     <>
-      <V2CategoryStrip filters={filters} onSelect={onBrowseSelect} />
+      <V2CategoryStrip
+        filters={filters}
+        onSelect={onBrowseSelect}
+        browseNavConfig={facets?.browseNavConfig}
+      />
 
       {/* Ana sayfa ile aynı max-width/gutter — sol menü yatayda kaymasın */}
       <div className="v2-home v2-home--listings listings-page">

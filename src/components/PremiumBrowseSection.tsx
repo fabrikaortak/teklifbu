@@ -6,6 +6,7 @@ import { buildPremiumBrowseTree } from "@/data/premiumBrowseTree";
 import { isPremiumCategorySlug } from "@/data/premiumCategories";
 import { browseFilterToSearchPatch, type BrowseFilter } from "@/data/categoryBrowseTree";
 import type { SearchFilters } from "@/components/SearchPanel";
+import { useTheme } from "@/components/ThemeProvider";
 import { displayNameFor, isNodeActive, type BrowseNavConfig } from "@/lib/browseNavConfig";
 import type { FacetCounts } from "@/lib/facetHelpers";
 
@@ -23,6 +24,7 @@ const VERTICAL_ICON: Record<string, typeof Hotel> = {
 
 /** Sidebar: klasik kategorilerin altında, Durumu’nun üstünde Premium grubu */
 export function PremiumBrowseSection({ filters, onSelect, facets }: Props) {
+  const { premiumEnabled: masterEnabled } = useTheme();
   const [enabled, setEnabled] = useState<Record<string, boolean>>({
     hotel: true,
     logistics: true,
@@ -45,6 +47,7 @@ export function PremiumBrowseSection({ filters, onSelect, facets }: Props) {
   const browseCfg: BrowseNavConfig | undefined = facets?.browseNavConfig;
 
   const tree = useMemo(() => {
+    if (!masterEnabled) return [];
     const raw = buildPremiumBrowseTree(enabled);
     if (!browseCfg) return raw;
     return raw
@@ -67,7 +70,7 @@ export function PremiumBrowseSection({ filters, onSelect, facets }: Props) {
         if (active.has(cat)) return true;
         return facets.activeCategorySlugs.some((s) => s === cat || s.startsWith(`${cat}-`));
       });
-  }, [enabled, browseCfg, facets?.activeCategorySlugs]);
+  }, [enabled, masterEnabled, browseCfg, facets?.activeCategorySlugs]);
 
   useEffect(() => {
     if (!filters.category || !isPremiumCategorySlug(filters.category)) return;
@@ -117,7 +120,7 @@ export function PremiumBrowseSection({ filters, onSelect, facets }: Props) {
   if (!tree.length) return null;
 
   return (
-    <div className="v2-filter-block v2-premium-block" style={{ marginTop: 4 }}>
+    <div className="v2-filter-block v2-premium-block">
       <div className="v2-filter-label" style={{ display: "flex", alignItems: "center", gap: 8 }}>
         Premium
         {premiumActive && (

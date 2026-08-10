@@ -56,6 +56,10 @@ type ThemeCtx = {
   escrow: EscrowThemeConfig;
   /** Alışveriş sepet ikonu: üst kuşak veya kategori satırı */
   shoppingCartPlacement: ShoppingCartPlacement;
+  /** Alışveriş dikeyi master (menü / şerit / /alisveris) */
+  alisverisEnabled: boolean;
+  /** Premium dikeyi master (menü / şerit / /premium) */
+  premiumEnabled: boolean;
   ready: boolean;
 };
 
@@ -163,6 +167,8 @@ const Ctx = createContext<ThemeCtx>({
   classifiedDetailCountdownEnabled: true,
   escrow: DEFAULT_ESCROW_THEME,
   shoppingCartPlacement: "alt",
+  alisverisEnabled: true,
+  premiumEnabled: true,
   ready: false,
 });
 
@@ -193,6 +199,8 @@ export function ThemeProvider({
   const [classifiedDetailCountdownEnabled, setClassifiedDetailCountdownEnabled] = useState(true);
   const [escrow, setEscrow] = useState<EscrowThemeConfig>(DEFAULT_ESCROW_THEME);
   const [shoppingCartPlacement, setShoppingCartPlacement] = useState<ShoppingCartPlacement>("alt");
+  const [alisverisEnabled, setAlisverisEnabled] = useState(true);
+  const [premiumEnabled, setPremiumEnabled] = useState(true);
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
@@ -213,6 +221,8 @@ export function ThemeProvider({
       classifiedDetailCountdownEnabled?: boolean;
       escrow?: Partial<EscrowThemeConfig>;
       shoppingCartPlacement?: string;
+      alisverisEnabled?: boolean;
+      premiumEnabled?: boolean;
     }) {
       const t: UiTheme = d.theme === "v2" ? "v2" : "v1";
       const ct: CategoriesTheme = d.categoriesTheme === "v2" ? "v2" : "tree";
@@ -230,6 +240,8 @@ export function ThemeProvider({
       const detailCountdown =
         mode === "classified" ? d.classifiedDetailCountdownEnabled !== false : true;
       const cartPlacement: ShoppingCartPlacement = d.shoppingCartPlacement === "ust" ? "ust" : "alt";
+      setAlisverisEnabled(d.alisverisEnabled !== false);
+      setPremiumEnabled(d.premiumEnabled !== false);
       setTheme(t);
       setCategoriesTheme(ct);
       setMenuTheme(mt);
@@ -370,6 +382,8 @@ export function ThemeProvider({
         classifiedDetailCountdownEnabled,
         escrow,
         shoppingCartPlacement,
+        alisverisEnabled,
+        premiumEnabled,
         ready,
       }}
     >
