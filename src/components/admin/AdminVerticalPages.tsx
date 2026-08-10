@@ -517,6 +517,14 @@ export function VerticalSettingsPage({ vertical }: { vertical: AdminVertical }) 
           <AdminSettingsPanel onlyKeys={["listing_card_favorites_enabled"]} />
         </div>
         <div className="adm-card" style={{ padding: 16 }}>
+          <h2 style={{ margin: "0 0 6px", fontSize: 15, fontWeight: 800 }}>Soru–cevap</h2>
+          <p style={{ margin: "0 0 14px", fontSize: 13, color: "#64748b", lineHeight: 1.45 }}>
+            Emlak ve Vasıta ilan detayındaki soru bölümü. Alışveriş ürün soruları Satıcı paneli →
+            Ayarlar altındadır.
+          </p>
+          <AdminSettingsPanel onlyKeys={["emlak_vasita_listing_questions_enabled"]} />
+        </div>
+        <div className="adm-card" style={{ padding: 16 }}>
           <h2 style={{ margin: "0 0 6px", fontSize: 15, fontWeight: 800 }}>Yeniden yayınlama</h2>
           <p style={{ margin: "0 0 14px", fontSize: 13, color: "#64748b", lineHeight: 1.45 }}>
             Metni yarın/öbür gün buradan değiştirebilirsiniz. İlan adı yazmaya gerek yok.

@@ -48,6 +48,7 @@ export const SETTING_GROUP_LABELS: Record<string, string> = {
   account: "Kullanıcı / Hesap",
   escrow: "Güvenli Öde (Escrow)",
   seller_panel: "Satıcı Paneli",
+  emlak_vasita: "Emlak & Vasıta",
   performance: "Performans / Cache",
   trust: "Puanlama Motoru",
 };
@@ -1818,6 +1819,7 @@ export const DEFAULT_SETTINGS: Record<string, SettingMeta> = {
     value: true,
     label: "Modül: Soru–cevap",
     group: "seller_panel",
+    description: "Yalnızca Alışveriş mağaza / satıcı paneli ürün soruları. Emlak–Vasıta için Emlak & Vasıta → Ayarlar.",
     control: "toggle",
   },
   seller_panel_module_orders: {
@@ -1831,11 +1833,19 @@ export const DEFAULT_SETTINGS: Record<string, SettingMeta> = {
     value: 24,
     label: "Soru yanıtlama süresi (SLA)",
     group: "seller_panel",
-    description: "Kaç saat içinde yanıt beklenir; panelde geciken sorular vurgulanır.",
+    description: "Kaç saat içinde yanıt beklenir; panelde geciken sorular vurgulanır. (Yalnızca Alışveriş / satıcı paneli)",
     control: "number",
     min: 1,
     max: 168,
     unit: "saat",
+  },
+  emlak_vasita_listing_questions_enabled: {
+    value: true,
+    label: "İlan detayında soru–cevap",
+    group: "emlak_vasita",
+    description:
+      "Emlak ve Vasıta ilan detayındaki «Ürün soruları» bölümünü açar/kapatır. Alışveriş ürün soruları Satıcı paneli ayarlarından yönetilir.",
+    control: "toggle",
   },
   seller_panel_ship_reminder_hours: {
     value: 48,

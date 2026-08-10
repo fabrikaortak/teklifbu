@@ -421,6 +421,8 @@ export function AdminSellerPanelSettings() {
         <div style={{ fontSize: 15, fontWeight: 850, marginBottom: 6 }}>Panel & izinler</div>
         <p style={{ margin: "0 0 12px", fontSize: 13, color: "#64748b", lineHeight: 1.5 }}>
           Satıcı panelinin aç/kapa durumu, Alışveriş odağı zorunluluğu, modüller ve SLA süreleri.
+          Bu ayarlar yalnızca Alışveriş mağazaları içindir; Emlak–Vasıta ilan soruları Emlak & Vasıta →
+          Ayarlar menüsündedir.
         </p>
         <AdminSettingsPanel
           onlyKeys={[

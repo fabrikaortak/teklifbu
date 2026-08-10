@@ -13,6 +13,7 @@ type Q = {
 
 export function ListingQuestionsBlock({ listingId }: { listingId: string }) {
   const [items, setItems] = useState<Q[]>([]);
+  const [enabled, setEnabled] = useState<boolean | null>(null);
   const [body, setBody] = useState("");
   const [msg, setMsg] = useState("");
   const [busy, setBusy] = useState(false);
@@ -20,13 +21,19 @@ export function ListingQuestionsBlock({ listingId }: { listingId: string }) {
   function load() {
     fetch(`/api/listings/${encodeURIComponent(listingId)}/questions`)
       .then((r) => r.json())
-      .then((d) => setItems(Array.isArray(d.questions) ? d.questions : []))
-      .catch(() => {});
+      .then((d) => {
+        setEnabled(d.enabled !== false);
+        setItems(Array.isArray(d.questions) ? d.questions : []);
+      })
+      .catch(() => setEnabled(false));
   }
 
   useEffect(() => {
     load();
   }, [listingId]);
+
+  if (enabled === false) return null;
+  if (enabled === null) return null;
 
   async function ask() {
     setMsg("");

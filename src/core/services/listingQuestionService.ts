@@ -1,12 +1,34 @@
 import { prisma } from "@/lib/db";
 import { getSetting } from "@/core/settings";
 import { ListingStatus } from "@prisma/client";
+import { resolveListingVerticalFromDb } from "@/lib/listingVertical";
 
 const ASKABLE: ListingStatus[] = [
   ListingStatus.ACTIVE,
   ListingStatus.SELECTION,
   ListingStatus.PENDING_REVIEW,
 ];
+
+/** Emlak/Vasıta → emlak ayarı; Alışveriş → satıcı paneli modülü */
+export async function isListingQuestionsEnabledForListing(listingId: string): Promise<boolean> {
+  const listing = await prisma.listing.findUnique({
+    where: { id: listingId },
+    select: { id: true, categoryId: true, category: { select: { slug: true } } },
+  });
+  if (!listing) return false;
+  const vertical = await resolveListingVerticalFromDb({
+    categoryId: listing.categoryId,
+    categorySlug: listing.category?.slug,
+  });
+  if (vertical === "alisveris") {
+    return (await getSetting<boolean>("seller_panel_module_questions", true)) !== false;
+  }
+  if (vertical === "emlak" || vertical === "vasita") {
+    return (await getSetting<boolean>("emlak_vasita_listing_questions_enabled", true)) !== false;
+  }
+  // premium / unknown: emlak-vasita anahtarına bağlama — kapalı say
+  return false;
+}
 
 export async function listQuestionsForSeller(sellerId: string, filter: "open" | "answered" | "all" = "open") {
   const qaSla = Number((await getSetting<number>("seller_panel_qa_sla_hours", 24)) || 24);
@@ -88,9 +110,13 @@ export async function askListingQuestion(opts: {
   if (body.length < 5) return { ok: false as const, status: 400, error: "Soru en az 5 karakter olmalı" };
   if (body.length > 1000) return { ok: false as const, status: 400, error: "Soru çok uzun" };
 
+  if (!(await isListingQuestionsEnabledForListing(opts.listingId))) {
+    return { ok: false as const, status: 403, error: "Bu ilan türünde soru–cevap kapalı" };
+  }
+
   const listing = await prisma.listing.findUnique({
     where: { id: opts.listingId },
-    select: { id: true, sellerId: true, status: true, title: true },
+    select: { id: true, sellerId: true, status: true, title: true, category: { select: { slug: true } } },
   });
   if (!listing || !ASKABLE.includes(listing.status)) {
     return { ok: false as const, status: 404, error: "İlana soru sorulamaz" };
@@ -108,12 +134,18 @@ export async function askListingQuestion(opts: {
     },
   });
 
+  const vertical = await resolveListingVerticalFromDb({
+    categorySlug: listing.category?.slug,
+  });
+  const sellerLink =
+    vertical === "alisveris" ? `/magaza/panel/sorular` : `/hesabim?s=mesajlar`;
+
   await prisma.notification.create({
     data: {
       userId: listing.sellerId,
       title: "Yeni ürün sorusu",
       body: `${listing.title}: ${body.slice(0, 120)}`,
-      link: `/magaza/panel/sorular`,
+      link: sellerLink,
       eventKey: "listing_question_new",
     },
   }).catch(() => {});
