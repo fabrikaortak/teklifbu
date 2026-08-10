@@ -2072,7 +2072,9 @@ export async function GET(req: Request) {
 
     // Kurumsal mağaza adı: şirket unvanı (eski "Ad Ofisi" kayıtlarını düzelt)
     const { syncShopNameFromUserProfile } = await import("@/core/services/tenantService");
-    const shopSellerIds = [...new Set(listingsWithFees.filter((l) => l.shopId).map((l) => l.sellerId))];
+    const shopSellerIds = [
+      ...new Set(listingsWithFees.filter((l) => Boolean(l.shop)).map((l) => l.sellerId)),
+    ];
     if (shopSellerIds.length) {
       await Promise.all(shopSellerIds.map((id) => syncShopNameFromUserProfile(id)));
     }
