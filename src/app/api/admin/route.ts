@@ -189,7 +189,7 @@ export async function GET(req: Request) {
       extPremium,
     ] = await Promise.all([
       prisma.user.findUnique({
-        where: { id: session.id },
+        where: { id: actor.id },
         select: { id: true, name: true, phone: true },
       }),
       prisma.message.count({ where: { isRead: false } }),
@@ -1481,7 +1481,7 @@ export async function GET(req: Request) {
     activity.sort((a, b) => +new Date(b.at) - +new Date(a.at));
 
     const adminUser = await prisma.user.findUnique({
-      where: { id: session.id },
+      where: { id: actor.id },
       select: { name: true, phone: true, avatarUrl: true, role: true },
     });
 
