@@ -160,6 +160,58 @@ CREATE TABLE "ProductVariantValue" (
     CONSTRAINT "ProductVariantValue_pkey" PRIMARY KEY ("id")
 );
 
+-- Tenant + Shop (schema drift: never created in init, required by SellerOffer FK)
+CREATE TABLE IF NOT EXISTS "Tenant" (
+    "id" TEXT NOT NULL,
+    "name" TEXT NOT NULL,
+    "slug" TEXT NOT NULL,
+    "ownerId" TEXT NOT NULL,
+    "plan" TEXT NOT NULL DEFAULT 'standard',
+    "isActive" BOOLEAN NOT NULL DEFAULT true,
+    "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updatedAt" TIMESTAMP(3) NOT NULL,
+
+    CONSTRAINT "Tenant_pkey" PRIMARY KEY ("id")
+);
+
+CREATE UNIQUE INDEX IF NOT EXISTS "Tenant_slug_key" ON "Tenant"("slug");
+CREATE INDEX IF NOT EXISTS "Tenant_ownerId_idx" ON "Tenant"("ownerId");
+
+DO $$ BEGIN
+  ALTER TABLE "Tenant" ADD CONSTRAINT "Tenant_ownerId_fkey" FOREIGN KEY ("ownerId") REFERENCES "User"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
+EXCEPTION WHEN duplicate_object THEN NULL;
+END $$;
+
+CREATE TABLE IF NOT EXISTS "Shop" (
+    "id" TEXT NOT NULL,
+    "tenantId" TEXT NOT NULL,
+    "ownerId" TEXT NOT NULL,
+    "accountType" "AccountType" NOT NULL,
+    "name" TEXT NOT NULL,
+    "slug" TEXT,
+    "city" TEXT,
+    "phone" TEXT,
+    "isActive" BOOLEAN NOT NULL DEFAULT true,
+    "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updatedAt" TIMESTAMP(3) NOT NULL,
+
+    CONSTRAINT "Shop_pkey" PRIMARY KEY ("id")
+);
+
+CREATE UNIQUE INDEX IF NOT EXISTS "Shop_tenantId_ownerId_key" ON "Shop"("tenantId", "ownerId");
+CREATE INDEX IF NOT EXISTS "Shop_tenantId_idx" ON "Shop"("tenantId");
+CREATE INDEX IF NOT EXISTS "Shop_ownerId_idx" ON "Shop"("ownerId");
+
+DO $$ BEGIN
+  ALTER TABLE "Shop" ADD CONSTRAINT "Shop_tenantId_fkey" FOREIGN KEY ("tenantId") REFERENCES "Tenant"("id") ON DELETE CASCADE ON UPDATE CASCADE;
+EXCEPTION WHEN duplicate_object THEN NULL;
+END $$;
+
+DO $$ BEGIN
+  ALTER TABLE "Shop" ADD CONSTRAINT "Shop_ownerId_fkey" FOREIGN KEY ("ownerId") REFERENCES "User"("id") ON DELETE CASCADE ON UPDATE CASCADE;
+EXCEPTION WHEN duplicate_object THEN NULL;
+END $$;
+
 -- CreateTable
 CREATE TABLE "SellerOffer" (
     "id" TEXT NOT NULL,

@@ -17,47 +17,31 @@ user_count() {
   node -e "const {PrismaClient}=require('@prisma/client'); const p=new PrismaClient(); p.user.count().then((c)=>{process.stdout.write(String(c)); return p.\$disconnect();}).catch(async ()=>{try{await p.\$disconnect()}catch{}; process.stdout.write('0');})" 2>/dev/null || echo 0
 }
 
-mark_failed_rolled_back() {
-  node <<'NODE' || true
-const { PrismaClient } = require("@prisma/client");
-const p = new PrismaClient();
-(async () => {
-  try {
-    const rows = await p.$queryRawUnsafe(
-      `SELECT migration_name FROM "_prisma_migrations" WHERE finished_at IS NULL OR rolled_back_at IS NOT NULL OR logs LIKE '%failed%'`
-    ).catch(() => []);
-    const failed = await p.$queryRawUnsafe(
-      `SELECT migration_name FROM "_prisma_migrations" WHERE finished_at IS NULL`
-    ).catch(() => []);
-    const names = [...new Set([...(rows || []), ...(failed || [])].map((r) => r.migration_name).filter(Boolean))];
-    for (const name of names) {
-      console.log("[boot] resolve rolled-back:", name);
-      const { execSync } = require("child_process");
-      try {
-        execSync(`npx prisma migrate resolve --rolled-back "${name}"`, { stdio: "inherit" });
-      } catch {}
-    }
-  } finally {
-    await p.$disconnect().catch(() => {});
-  }
-})();
-NODE
+baseline_migrations() {
+  echo "[boot] baselining migration history as applied..."
+  for dir in /app/prisma/migrations/*/ /app/prisma/migrations/*; do
+    [ -d "$dir" ] || continue
+    name="$(basename "$dir")"
+    case "$name" in
+      migration_lock.toml|"") continue ;;
+    esac
+    npx prisma migrate resolve --applied "$name" >/dev/null 2>&1 || true
+  done
+}
+
+bootstrap_schema() {
+  echo "[boot] schema bootstrap via db push (skip broken migrate replay)"
+  npx prisma db push --accept-data-loss --skip-generate
+  baseline_migrations
 }
 
 echo "[boot] applying migrations..."
 if ! npx prisma migrate deploy; then
   USERS="$(user_count)"
   echo "[boot] migrate deploy failed (users=${USERS})"
-
-  mark_failed_rolled_back
-
-  if [ "$USERS" = "0" ]; then
-    echo "[boot] empty DB — hard reset schema"
-    npx prisma migrate reset --force || true
-    if ! npx prisma migrate deploy; then
-      echo "[boot] migrate still failing — schema push bootstrap"
-      npx prisma db push --accept-data-loss --skip-generate
-    fi
+  # migrate reset broken SQL'i tekrar çalıştırıp sonsuz döngü yapıyordu — kullanma
+  if [ "$USERS" = "0" ] || [ "${FORCE_SCHEMA_PUSH:-0}" = "1" ]; then
+    bootstrap_schema
   else
     echo "[boot] fallback: db push --accept-data-loss"
     npx prisma db push --accept-data-loss --skip-generate
