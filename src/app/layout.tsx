@@ -12,7 +12,9 @@ import { SiteTopBeltBanner } from "@/components/SiteBeltBanner";
 import { ConfirmDialogProvider } from "@/components/ui/ConfirmDialog";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { CartProvider } from "@/components/cart/CartProvider";
+import { AlisverisBrowseProvider } from "@/components/AlisverisBrowseProvider";
 import { getSetting } from "@/core/settings";
+import { getAlisverisBrowseNavTree } from "@/lib/alisverisBrowseNav";
 import { THEME_BOOTSTRAP_SCRIPT } from "@/lib/themeBootstrap";
 
 const sans = Plus_Jakarta_Sans({
@@ -32,9 +34,13 @@ export const metadata: Metadata = {
 export const dynamic = "force-dynamic";
 
 export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  const [themeRaw, beltRaw] = await Promise.all([
+  const [themeRaw, beltRaw, alisverisBrowse] = await Promise.all([
     getSetting<string>("ui_theme", "v1"),
     getSetting<string>("v2_header_belt", "navy"),
+    getAlisverisBrowseNavTree().catch((e) => {
+      console.warn("[layout] alisveris browse bootstrap failed", e);
+      return [] as Awaited<ReturnType<typeof getAlisverisBrowseNavTree>>;
+    }),
   ]);
   const theme = themeRaw === "v2" ? "v2" : "v1";
   const belt = beltRaw === "white" ? "white" : "navy";
@@ -69,10 +75,12 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
         <ThemeProvider initialTheme={theme} initialHeaderBelt={belt}>
           <ConfirmDialogProvider>
             <CartProvider>
-              <SiteTopBeltBanner />
-              <SiteHeader />
-              <main>{children}</main>
-              <SiteFooter />
+              <AlisverisBrowseProvider initialTree={alisverisBrowse.length ? alisverisBrowse : null}>
+                <SiteTopBeltBanner />
+                <SiteHeader />
+                <main>{children}</main>
+                <SiteFooter />
+              </AlisverisBrowseProvider>
             </CartProvider>
           </ConfirmDialogProvider>
         </ThemeProvider>

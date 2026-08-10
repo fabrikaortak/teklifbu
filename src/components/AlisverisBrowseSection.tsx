@@ -33,7 +33,7 @@ const GROUP_ICON: Record<string, typeof Smartphone> = {
 
 /** Ana sayfa: klasik menünün altında Alışveriş grubu → /alisveris (DB tree) */
 export function AlisverisBrowseSection({ filters, onSelect, alwaysShowClassicBack }: Props) {
-  const { tree } = useAlisverisBrowseTree();
+  const { tree, loading } = useAlisverisBrowseTree();
   const { alisverisEnabled: verticalEnabled } = useTheme();
   const [openIds, setOpenIds] = useState<Set<string>>(() => new Set());
   const [userCollapsed, setUserCollapsed] = useState<Set<string>>(() => new Set());
@@ -142,6 +142,9 @@ export function AlisverisBrowseSection({ filters, onSelect, alwaysShowClassicBac
         )}
       </div>
       <div className="v2-alisveris-list">
+        {loading && !tree.length ? (
+          <div style={{ fontSize: 12.5, color: "#94a3b8", padding: "8px 4px" }}>Kategoriler yükleniyor…</div>
+        ) : null}
         {tree.map((node) => {
           const Icon =
             GROUP_ICON[node.id] || GROUP_ICON[node.id.replace(/^alisveris\//, "")] || Package;

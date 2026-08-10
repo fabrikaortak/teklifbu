@@ -796,7 +796,11 @@ export function CategoryBrowseNav({
       variant === "classic"
         ? classicSource
         : variant === "alisveris"
-          ? alisverisSource || ALISVERIS_BROWSE_TREE
+          ? alisverisSource?.length
+            ? alisverisSource
+            : alisverisLoading
+              ? []
+              : ALISVERIS_BROWSE_TREE
           : [
               CATEGORY_BROWSE_TREE.find((n) => n.id === "emlak") || CATEGORY_BROWSE_TREE[0],
               { ...dbVasita.root, name: "Vasıta" },
@@ -806,7 +810,7 @@ export function CategoryBrowseNav({
     if (!rootsOnly?.length) return full;
     const allow = new Set(rootsOnly);
     return full.filter((n) => allow.has(n.id));
-  }, [facets, rootsOnly?.join("|"), variant, alisverisSource, dbVasita.root, vasitaCatalogBrands]);
+  }, [facets, rootsOnly?.join("|"), variant, alisverisSource, alisverisLoading, dbVasita.root, vasitaCatalogBrands]);
 
   const matchedPath = useMemo(() => matchNavPath(filters, tree), [filters, tree]);
   const [openIds, setOpenIds] = useState<Set<string>>(() => new Set(matchedPath));

@@ -4,21 +4,19 @@ import { useEffect, useState } from "react";
 import type { BrowseNode } from "@/data/categoryBrowseTree";
 import { ALISVERIS_BROWSE_TREE } from "@/data/classicBrowseTree";
 import type { AlisverisBrowseMeta } from "@/lib/alisverisBrowseFromDb";
-
-type State = {
-  tree: BrowseNode[];
-  meta: AlisverisBrowseMeta;
-  loading: boolean;
-};
+import { useAlisverisBrowseInitial } from "@/components/AlisverisBrowseProvider";
+import {
+  getAlisverisBrowseSharedCache,
+  setAlisverisBrowseSharedCache,
+  type AlisverisBrowseState,
+} from "@/hooks/alisverisBrowseClientCache";
 
 const LS_KEY = "teklifbu:alisveris-browse:v2";
 const LS_TTL_MS = 60 * 60_000;
 
-/** Aynı sayfada Home/Nav/Strip üç kez çağırsa tek fetch */
-let inflight: Promise<State> | null = null;
-let sharedCache: State | null = null;
+let inflight: Promise<AlisverisBrowseState> | null = null;
 
-function readLocal(): State | null {
+function readLocal(): AlisverisBrowseState | null {
   if (typeof window === "undefined") return null;
   try {
     const raw = window.localStorage.getItem(LS_KEY);
@@ -31,7 +29,7 @@ function readLocal(): State | null {
   }
 }
 
-function writeLocal(state: State) {
+function writeLocal(state: AlisverisBrowseState) {
   if (typeof window === "undefined" || state.meta.source !== "db") return;
   try {
     window.localStorage.setItem(
@@ -43,9 +41,10 @@ function writeLocal(state: State) {
   }
 }
 
-async function fetchBrowseTree(): Promise<State> {
-  if (sharedCache && !sharedCache.loading && sharedCache.meta.source === "db") {
-    return sharedCache;
+async function fetchBrowseTree(): Promise<AlisverisBrowseState> {
+  const shared = getAlisverisBrowseSharedCache();
+  if (shared && !shared.loading && shared.meta.source === "db") {
+    return shared;
   }
   if (inflight) return inflight;
 
@@ -54,7 +53,7 @@ async function fetchBrowseTree(): Promise<State> {
       const res = await fetch("/api/catalog/tree?format=browse");
       const data = await res.json();
       if (data.ok && Array.isArray(data.browseTree) && data.browseTree.length) {
-        const next: State = {
+        const next: AlisverisBrowseState = {
           tree: data.browseTree,
           meta: data.meta || { source: "db" },
           loading: false,
@@ -64,25 +63,25 @@ async function fetchBrowseTree(): Promise<State> {
         } else {
           writeLocal(next);
         }
-        sharedCache = next;
+        setAlisverisBrowseSharedCache(next);
         return next;
       }
       console.warn("[useAlisverisBrowseTree] empty/invalid API → TS fallback");
-      const fallback: State = {
+      const fallback: AlisverisBrowseState = {
         tree: ALISVERIS_BROWSE_TREE,
         meta: { source: "fallback-ts", warning: "api_empty" },
         loading: false,
       };
-      sharedCache = fallback;
+      setAlisverisBrowseSharedCache(fallback);
       return fallback;
     } catch (e) {
       console.warn("[useAlisverisBrowseTree] fetch failed → TS fallback", e);
-      const fallback: State = {
+      const fallback: AlisverisBrowseState = {
         tree: ALISVERIS_BROWSE_TREE,
         meta: { source: "fallback-ts", warning: String(e) },
         loading: false,
       };
-      sharedCache = fallback;
+      setAlisverisBrowseSharedCache(fallback);
       return fallback;
     } finally {
       inflight = null;
@@ -93,20 +92,28 @@ async function fetchBrowseTree(): Promise<State> {
 }
 
 /**
- * Alışveriş browse ağacı — /api/catalog/tree?format=browse
- * F5: localStorage anında eski menüyü gösterir, arka planda yeniler.
+ * Alışveriş browse ağacı — SSR seed + /api/catalog/tree?format=browse
+ * İlk açılışta klasik 5'li menü göstermez (layout'tan gelen DB ağacı).
  */
 export function useAlisverisBrowseTree() {
-  const [state, setState] = useState<State>(() => {
-    if (sharedCache && !sharedCache.loading) return sharedCache;
+  const ssrTree = useAlisverisBrowseInitial();
+
+  const [state, setState] = useState<AlisverisBrowseState>(() => {
+    const shared = getAlisverisBrowseSharedCache();
+    if (shared && !shared.loading) return shared;
+    if (ssrTree?.length) {
+      const seeded: AlisverisBrowseState = { tree: ssrTree, meta: { source: "db" }, loading: false };
+      setAlisverisBrowseSharedCache(seeded);
+      return seeded;
+    }
     const local = readLocal();
     if (local) {
-      sharedCache = local;
+      setAlisverisBrowseSharedCache(local);
       return local;
     }
     return {
-      tree: ALISVERIS_BROWSE_TREE,
-      meta: { source: "fallback-ts", warning: "loading" },
+      tree: [],
+      meta: { source: "db", warning: "loading" },
       loading: true,
     };
   });
