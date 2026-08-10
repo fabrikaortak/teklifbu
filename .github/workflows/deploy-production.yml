@@ -1,0 +1,38 @@
+name: Deploy production
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: VPS docker compose
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Deploy over SSH
+        uses: appleboy/ssh-action@v1.2.2
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          port: 22
+          script_stop: true
+          command_timeout: 40m
+          script: |
+            set -eu
+            cd /var/www/teklifbu
+            git fetch origin main
+            git checkout main
+            git reset --hard origin/main
+            sed -i 's/\r$//' scripts/deploy-vps.sh scripts/docker-entrypoint.sh || true
+            chmod +x scripts/deploy-vps.sh scripts/docker-entrypoint.sh
+            export DOCKER_BUILDKIT=1
+            docker compose up -d --build
+            docker compose ps
+            echo "DEPLOY_OK $(git rev-parse --short HEAD)"
