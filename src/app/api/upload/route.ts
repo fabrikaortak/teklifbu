@@ -1,7 +1,6 @@
 import { NextResponse } from "next/server";
 import { writeFile, mkdir } from "node:fs/promises";
 import path from "node:path";
-import sharp from "sharp";
 import { getSession } from "@/lib/auth";
 import {
   LISTING_ORIGINAL_MAX_EDGE,
@@ -10,11 +9,13 @@ import {
 } from "@/lib/listingImage";
 
 export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
 
 const MAX_IMAGE_BYTES = 8 * 1024 * 1024; // 8MB
 const IMAGE_TYPES = new Set(["image/jpeg", "image/png", "image/webp", "image/gif"]);
 
 async function writeOriginalAndThumb(buf: Buffer, type: string, baseName: string, dir: string) {
+  const sharp = (await import("sharp")).default;
   const ext =
     type === "image/png"
       ? "png"

@@ -1,8 +1,13 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
-import sharp from "sharp";
-import { getSetting } from "@/core/settings";
 import { VEHICLE_EKSPERTIZ } from "@/data/vehicleExtras";
+import { getAiListingConfig } from "@/core/services/aiListingConfig";
+
+export { getAiListingConfig } from "@/core/services/aiListingConfig";
+
+async function loadSharp() {
+  return (await import("sharp")).default;
+}
 import {
   extractHousingTableFields,
   fieldStr,
@@ -239,6 +244,7 @@ async function loadPageBuffer(urls: string[]): Promise<Buffer> {
   if (!list.length) throw new Error("Görsel gerekli");
   if (list.length === 1) return loadImageBuffer(list[0]);
 
+  const sharp = await loadSharp();
   const bufs = await Promise.all(list.map((u) => loadImageBuffer(u)));
   const prepared = await Promise.all(
     bufs.map((b) =>
@@ -272,6 +278,7 @@ async function loadPageBuffer(urls: string[]): Promise<Buffer> {
  * Son parça kısa kalırsa beyazla 1418×888’e tamamlanır.
  */
 async function buildFixedPageTiles(buf: Buffer, limit = AI_TILE_COUNT): Promise<ImagePart[]> {
+  const sharp = await loadSharp();
   const page = await sharp(buf)
     .rotate()
     .flatten({ background: "#ffffff" })
@@ -388,26 +395,6 @@ function mergeParsedFields(
     out[k] = v;
   }
   return out;
-}
-
-export async function getAiListingConfig() {
-  const [enabled, offerPopupEnabled, apiKey, baseUrl, model, tokenCost] = await Promise.all([
-    getSetting<boolean>("ai_listing_import_enabled", false),
-    getSetting<boolean>("ai_listing_offer_popup_enabled", true),
-    getSetting<string>("ai_openai_api_key", ""),
-    getSetting<string>("ai_openai_base_url", "https://api.openai.com/v1"),
-    getSetting<string>("ai_openai_model", "gpt-4o"),
-    getSetting<number>("ai_listing_parse_token_cost", 2),
-  ]);
-  return {
-    enabled: Boolean(enabled),
-    /** İlan Ver sayfasındaki kampanya popup’ı */
-    offerPopupEnabled: Boolean(offerPopupEnabled),
-    apiKey: String(apiKey || "").trim(),
-    baseUrl: String(baseUrl || "https://api.openai.com/v1").replace(/\/$/, ""),
-    model: String(model || "gpt-4o").trim() || "gpt-4o",
-    tokenCost: Math.max(0, Math.floor(Number(tokenCost) || 0)),
-  };
 }
 
 async function assembleListingDraft(parsed: Record<string, unknown>): Promise<AiListingDraft> {

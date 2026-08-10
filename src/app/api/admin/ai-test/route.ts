@@ -1,6 +1,9 @@
 import { NextResponse } from "next/server";
 import { requireAdmin } from "@/lib/auth";
-import { getAiListingConfig } from "@/core/services/aiListingParseService";
+import { getAiListingConfig } from "@/core/services/aiListingConfig";
+
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
 
 /** OpenAI bağlantı smoke test — anahtar + model erişimi */
 export async function POST(req: Request) {

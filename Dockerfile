@@ -15,6 +15,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 ENV NEXT_TELEMETRY_DISABLED=1
+# Build sırasında sayfa verisi toplama için placeholder (runtime docker-compose override eder)
+ENV DATABASE_URL="postgresql://teklifbu:teklifbu_secret@127.0.0.1:5432/teklifbu?schema=public"
+ENV AUTH_SECRET="build-time-placeholder"
 # Windows lockfile'dan gelen sharp binary'sini Linux için yenile
 RUN npm rebuild sharp \
   && npx prisma generate \

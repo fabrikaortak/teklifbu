@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 import { getSession } from "@/lib/auth";
-import { getAiListingConfig } from "@/core/services/aiListingParseService";
+import { getAiListingConfig } from "@/core/services/aiListingConfig";
+
+export const dynamic = "force-dynamic";
 
 /** Profil menüsü için — API anahtarı dönmez */
 export async function GET() {

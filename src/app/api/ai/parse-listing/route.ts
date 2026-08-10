@@ -1,12 +1,11 @@
 import { NextResponse } from "next/server";
 import { getSession } from "@/lib/auth";
-import {
-  getAiListingConfig,
-  parseListingFromScreenshot,
-} from "@/core/services/aiListingParseService";
+import { getAiListingConfig } from "@/core/services/aiListingConfig";
+import { parseListingFromScreenshot } from "@/core/services/aiListingParseService";
 import { refundTokens, spendTokens } from "@/core/services/tokenSpendService";
 
 export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
 export const maxDuration = 180;
 
 function collectImageUrls(body: { imageUrl?: string; imageUrls?: unknown }): string[] {
