@@ -1,16 +1,18 @@
 import type { NextConfig } from "next";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const rootDir = path.dirname(fileURLToPath(import.meta.url));
 
 const nextConfig: NextConfig = {
-  turbopack: {
-    root: process.cwd(),
-  },
+  outputFileTracingRoot: rootDir,
   images: {
     remotePatterns: [
       { protocol: "https", hostname: "images.unsplash.com" },
     ],
   },
   serverExternalPackages: ["sharp", "@prisma/client", "prisma"],
-  /** Prod Docker build: ~20 eski tip uyumsuzluğu; canlı sonrası temizlenecek */
+  /** Prod Docker: eski tip uyumsuzlukları canlı sonrası temizlenecek */
   typescript: {
     ignoreBuildErrors: true,
   },

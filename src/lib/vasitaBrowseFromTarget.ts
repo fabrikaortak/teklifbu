@@ -1,7 +1,7 @@
 /**
  * ⚠️ EMERGENCY FALLBACK ONLY ⚠️
  * Vasıta browse tree built directly from the Stage1 target JSON
- * (docs/vertical-taxonomy/vehicle-stage1-target-tree.json).
+ * (src/data/vertical-taxonomy/vehicle-stage1-target-tree.json).
  *
  * Runtime source of truth is the DB (see src/lib/vasitaBrowseFromDb.ts +
  * GET /api/catalog/tree?format=vasita-browse). This module is only used when:
@@ -12,7 +12,7 @@
  * Safe for client import (no fs).
  */
 import type { BrowseFilter, BrowseNode } from "@/data/categoryBrowseTree";
-import targetTree from "../../docs/vertical-taxonomy/vehicle-stage1-target-tree.json";
+import targetTree from "@/data/vertical-taxonomy/vehicle-stage1-target-tree.json";
 import {
   CATALOG_SCOPE_TO_SUBTYPE,
   filterForMeta,

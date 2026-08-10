@@ -9,6 +9,8 @@ node_modules
 backups
 docs
 data
+scripts/**
+!scripts/docker-entrypoint.sh
 *.md
 !README.md
 .env
@@ -25,3 +27,5 @@ TeklifBu-Yedek
 teklifbu-CHECKPOINT*
 agent-transcripts
 terminals
+public/uploads
+.tmp-*

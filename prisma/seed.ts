@@ -116,36 +116,38 @@ async function main() {
     },
   });
 
-  await prisma.tokenPackage.deleteMany();
-  await prisma.tokenPackage.createMany({
-    data: [
-      { name: "Başlangıç", tokenAmount: 10, priceTl: 99, sortOrder: 1 },
-      { name: "Popüler", tokenAmount: 50, priceTl: 399, sortOrder: 2 },
-      { name: "Profesyonel", tokenAmount: 120, priceTl: 799, sortOrder: 3 },
-    ],
-  });
+  const tokenPkgCount = await prisma.tokenPackage.count();
+  if (tokenPkgCount === 0) {
+    await prisma.tokenPackage.createMany({
+      data: [
+        { name: "Başlangıç", tokenAmount: 10, priceTl: 99, sortOrder: 1 },
+        { name: "Popüler", tokenAmount: 50, priceTl: 399, sortOrder: 2 },
+        { name: "Profesyonel", tokenAmount: 120, priceTl: 799, sortOrder: 3 },
+      ],
+    });
+  }
 
-  await prisma.shopSubscription.deleteMany();
-  await prisma.shopPackage.deleteMany();
-  await prisma.shopPackage.createMany({
-    data: [
-      {
-        accountType: AccountType.GALERICI,
-        name: "Galeri Standart",
-        monthlyPrice: 2500,
-        listingLimit: 10,
-        description: "10 araç ilanı / ay",
-      },
-      {
-        accountType: AccountType.EMLAKCI,
-        name: "Emlak Ofisi",
-        monthlyPrice: 3500,
-        listingLimit: 25,
-        description: "25 emlak ilanı / ay",
-      },
-    ],
-  });
-
+  const shopPkgCount = await prisma.shopPackage.count();
+  if (shopPkgCount === 0) {
+    await prisma.shopPackage.createMany({
+      data: [
+        {
+          accountType: AccountType.GALERICI,
+          name: "Galeri Standart",
+          monthlyPrice: 2500,
+          listingLimit: 10,
+          description: "10 araç ilanı / ay",
+        },
+        {
+          accountType: AccountType.EMLAKCI,
+          name: "Emlak Ofisi",
+          monthlyPrice: 3500,
+          listingLimit: 25,
+          description: "25 emlak ilanı / ay",
+        },
+      ],
+    });
+  }
   const cats = await prisma.category.findMany();
   const bySlug = Object.fromEntries(cats.map((c) => [c.slug, c]));
 

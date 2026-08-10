@@ -12,16 +12,24 @@ function defaultsMap(): Record<string, unknown> {
   return map;
 }
 
+function skipDb(): boolean {
+  return process.env.SKIP_DB === "1" || process.env.SKIP_DB === "true";
+}
+
 export async function getSettingsMap(force = false): Promise<Record<string, unknown>> {
   if (!force && cache && Date.now() - cache.at < 5000) return cache.map;
   const map = defaultsMap();
+  if (skipDb()) {
+    cache = { at: Date.now(), map };
+    return map;
+  }
   try {
     const rows = await prisma.systemSetting.findMany();
     for (const row of rows) {
       map[row.key] = row.value;
     }
   } catch {
-    // Docker/CI build veya DB kapalı: varsayılanlarla devam (prerender kırılmasın)
+    // Docker/CI build veya DB kapalı: varsayılanlarla devam
   }
   cache = { at: Date.now(), map };
   return map;
