@@ -28,6 +28,9 @@ export const metadata: Metadata = {
   manifest: "/manifest.webmanifest",
 };
 
+/** Tema ayarı DB'den; Docker build'de DB yok → static prerender yasak */
+export const dynamic = "force-dynamic";
+
 export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   const [themeRaw, beltRaw] = await Promise.all([
     getSetting<string>("ui_theme", "v1"),

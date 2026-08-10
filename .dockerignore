@@ -1,0 +1,27 @@
+# Build context'i küçült — aksi halde her build 10+ dk sürer
+node_modules
+.next
+.git
+.github
+.agents
+.claude
+.windsurf
+backups
+docs
+data
+*.md
+!README.md
+.env
+.env.*
+!.env.example
+npm-debug.log*
+.DS_Store
+coverage
+.turbo
+.vscode
+.idea
+**/*.tsbuildinfo
+TeklifBu-Yedek
+teklifbu-CHECKPOINT*
+agent-transcripts
+terminals

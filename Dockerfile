@@ -1,3 +1,5 @@
+# syntax=docker/dockerfile:1
+
 FROM node:22-bookworm-slim AS deps
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -5,7 +7,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 COPY package.json package-lock.json ./
 COPY prisma ./prisma
-RUN npm ci
+# npm ci + sharp Linux binary — package-lock değişmedikçe cache kalır
+RUN npm ci && npm rebuild sharp && npx prisma generate
 
 FROM node:22-bookworm-slim AS builder
 WORKDIR /app
@@ -15,13 +18,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 ENV NEXT_TELEMETRY_DISABLED=1
-# Build sırasında sayfa verisi toplama için placeholder (runtime docker-compose override eder)
-ENV DATABASE_URL="postgresql://teklifbu:teklifbu_secret@127.0.0.1:5432/teklifbu?schema=public"
 ENV AUTH_SECRET="build-time-placeholder"
-# Windows lockfile'dan gelen sharp binary'sini Linux için yenile
-RUN npm rebuild sharp \
-  && npx prisma generate \
-  && npm run build
+# Build DB'ye bağlanmaz (settings fallback + force-dynamic). Prisma generate şema değişince yeniler.
+RUN npx prisma generate && npm run build
 
 FROM node:22-bookworm-slim AS runner
 WORKDIR /app

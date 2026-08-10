@@ -1,6 +1,8 @@
 import { redirect } from "next/navigation";
 import { getSetting } from "@/core/settings";
 
+export const dynamic = "force-dynamic";
+
 /** Alışveriş ilanı: Modern Tema → Hesabım formu; diğerleri → ilan-ver */
 export default async function AlisverisListingCreatePage() {
   const template = String(

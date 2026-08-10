@@ -4,15 +4,24 @@ import { DEFAULT_SETTINGS } from "@/core/defaultSettings";
 type Cache = { at: number; map: Record<string, unknown> };
 let cache: Cache | null = null;
 
-export async function getSettingsMap(force = false): Promise<Record<string, unknown>> {
-  if (!force && cache && Date.now() - cache.at < 5000) return cache.map;
-  const rows = await prisma.systemSetting.findMany();
+function defaultsMap(): Record<string, unknown> {
   const map: Record<string, unknown> = {};
   for (const [k, meta] of Object.entries(DEFAULT_SETTINGS)) {
     map[k] = meta.value;
   }
-  for (const row of rows) {
-    map[row.key] = row.value;
+  return map;
+}
+
+export async function getSettingsMap(force = false): Promise<Record<string, unknown>> {
+  if (!force && cache && Date.now() - cache.at < 5000) return cache.map;
+  const map = defaultsMap();
+  try {
+    const rows = await prisma.systemSetting.findMany();
+    for (const row of rows) {
+      map[row.key] = row.value;
+    }
+  } catch {
+    // Docker/CI build veya DB kapalı: varsayılanlarla devam (prerender kırılmasın)
   }
   cache = { at: Date.now(), map };
   return map;
