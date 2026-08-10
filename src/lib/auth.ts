@@ -2,14 +2,14 @@ import { SignJWT, jwtVerify } from "jose";
 import { cookies } from "next/headers";
 import { prisma } from "./db";
 
-const COOKIE = "teklifbu_session";
+export const SESSION_COOKIE = "teklifbu_session";
 
 function secret() {
   return new TextEncoder().encode(process.env.AUTH_SECRET || "teklifbu-dev-secret");
 }
 
 /** HTTPS yokken (IP:3010) Secure cookie oturumu düşürür */
-function cookieSecure() {
+export function cookieSecure() {
   const flag = String(process.env.COOKIE_SECURE || "").toLowerCase();
   if (flag === "0" || flag === "false") return false;
   if (flag === "1" || flag === "true") return true;
@@ -17,6 +17,16 @@ function cookieSecure() {
   if (appUrl.startsWith("http://")) return false;
   if (appUrl.startsWith("https://")) return true;
   return process.env.NODE_ENV === "production";
+}
+
+export function sessionCookieOptions() {
+  return {
+    httpOnly: true,
+    sameSite: "lax" as const,
+    secure: cookieSecure(),
+    path: "/",
+    maxAge: 60 * 60 * 24 * 30,
+  };
 }
 
 export type SessionUser = {
@@ -39,23 +49,17 @@ export async function createSessionToken(user: SessionUser) {
 
 export async function setSessionCookie(token: string) {
   const jar = await cookies();
-  jar.set(COOKIE, token, {
-    httpOnly: true,
-    sameSite: "lax",
-    secure: cookieSecure(),
-    path: "/",
-    maxAge: 60 * 60 * 24 * 30,
-  });
+  jar.set(SESSION_COOKIE, token, sessionCookieOptions());
 }
 
 export async function clearSessionCookie() {
   const jar = await cookies();
-  jar.delete(COOKIE);
+  jar.delete(SESSION_COOKIE);
 }
 
 export async function getSession(): Promise<SessionUser | null> {
   const jar = await cookies();
-  const token = jar.get(COOKIE)?.value;
+  const token = jar.get(SESSION_COOKIE)?.value;
   if (!token) return null;
   try {
     const { payload } = await jwtVerify(token, secret());

@@ -3,7 +3,14 @@ import { z } from "zod";
 import bcrypt from "bcryptjs";
 import { prisma } from "@/lib/db";
 import { createAndSendOtp, verifyOtp } from "@/core/otp";
-import { createSessionToken, setSessionCookie, clearSessionCookie, getSession } from "@/lib/auth";
+import {
+  createSessionToken,
+  setSessionCookie,
+  clearSessionCookie,
+  getSession,
+  SESSION_COOKIE,
+  sessionCookieOptions,
+} from "@/lib/auth";
 
 function normalizePhone(phone: string) {
   let d = phone.replace(/\D/g, "");
@@ -34,8 +41,9 @@ async function issueSession(user: {
     tokenBalance: user.tokenBalance,
     commercialSubtypes: user.commercialSubtypes || [],
   });
+  // Route Handler: cookie'yi hem jar hem response üzerine yaz (HTTP oturumu için kritik)
   await setSessionCookie(token);
-  return {
+  const body = {
     id: user.id,
     phone: user.phone,
     name: user.name,
@@ -44,6 +52,9 @@ async function issueSession(user: {
     tokenBalance: user.tokenBalance,
     commercialSubtypes: user.commercialSubtypes || [],
   };
+  const res = NextResponse.json({ ok: true, user: body });
+  res.cookies.set(SESSION_COOKIE, token, sessionCookieOptions());
+  return res;
 }
 
 export async function GET() {
@@ -268,8 +279,7 @@ export async function POST(req: Request) {
       data: { phoneVerified: true },
     });
 
-    const sessionUser = await issueSession(updated);
-    return NextResponse.json({ ok: true, user: sessionUser });
+    return issueSession(updated);
   }
 
   // Mevcut üye girişi: telefon veya e-posta + şifre (OTP yok)
@@ -329,8 +339,7 @@ export async function POST(req: Request) {
       const ok = await bcrypt.compare(parsed.data.password, user.passwordHash);
       if (!ok) return NextResponse.json({ error: "Hatalı şifre" }, { status: 401 });
 
-      const sessionUser = await issueSession(user);
-      return NextResponse.json({ ok: true, user: sessionUser });
+      return issueSession(user);
     } catch (e) {
       console.error("login failed", e);
       const msg = e instanceof Error ? e.message : "Giriş başarısız";
