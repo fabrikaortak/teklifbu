@@ -1,18 +1,17 @@
 import { NextResponse } from "next/server";
-import { getCatalogTreeCached } from "@/core/services/catalog/catalogTreeCache";
+import {
+  getBrowseTreeMemory,
+  getCatalogTreeCached,
+  setBrowseTreeMemory,
+} from "@/core/services/catalog/catalogTreeCache";
 import { resolveAlisverisBrowseTree, slimBrowseNodes } from "@/lib/alisverisBrowseFromDb";
 import { prisma } from "@/lib/db";
 import { resolveVasitaBrowseTree } from "@/lib/vasitaBrowseFromDb";
-import type { BrowseNode } from "@/data/categoryBrowseTree";
-
-type BrowseCache = { at: number; browseTree: BrowseNode[]; meta: { source: string; warning?: string } };
-let browseMemory: BrowseCache | null = null;
-const BROWSE_TTL_MS = 5 * 60_000;
 
 /**
  * Public DB category tree for alışveriş + vasıta.
  * GET /api/catalog/tree?root=sifir-urun|ikinci-el|all
- * GET /api/catalog/tree?format=browse  → UI BrowseNode (kökler gizli, ana kategoriler)
+ * GET /api/catalog/tree?format=browse  → UI BrowseNode (sığ menü; marka ağacı yok)
  * GET /api/catalog/tree?format=vasita-browse → Vasıta (arac) BrowseNode[] — DB source of truth
  */
 export async function GET(req: Request) {
@@ -53,10 +52,10 @@ export async function GET(req: Request) {
 
   try {
     if (format === "browse") {
-      const now = Date.now();
-      if (browseMemory && now - browseMemory.at < BROWSE_TTL_MS) {
+      const hit = getBrowseTreeMemory();
+      if (hit) {
         return NextResponse.json(
-          { ok: true, browseTree: browseMemory.browseTree, meta: browseMemory.meta },
+          { ok: true, browseTree: hit.browseTree, meta: hit.meta },
           { headers: { "Cache-Control": "public, s-maxage=60, stale-while-revalidate=300" } }
         );
       }
@@ -67,7 +66,7 @@ export async function GET(req: Request) {
       if (meta.source === "fallback-ts") {
         console.warn("[api/catalog/tree] browse fallback:", meta.warning);
       } else {
-        browseMemory = { at: now, browseTree, meta };
+        setBrowseTreeMemory({ browseTree, meta });
       }
       return NextResponse.json(
         { ok: true, browseTree, meta },

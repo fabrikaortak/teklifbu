@@ -1,8 +1,10 @@
 import { prisma } from "@/lib/db";
 import type { CatalogTreeNode } from "@/core/services/catalog/categoryTreeService";
 import { getCatalogTree } from "@/core/services/catalog/categoryTreeService";
+import type { BrowseNode } from "@/data/categoryBrowseTree";
 
 const CACHE_TTL_MS = 5 * 60_000;
+const BROWSE_TTL_MS = 5 * 60_000;
 const TAG = "catalog-tree";
 
 type CacheEntry = {
@@ -10,7 +12,14 @@ type CacheEntry = {
   tree: CatalogTreeNode[];
 };
 
+type BrowseCacheEntry = {
+  at: number;
+  browseTree: BrowseNode[];
+  meta: { source: string; warning?: string };
+};
+
 let memory: CacheEntry | null = null;
+let browseMemory: BrowseCacheEntry | null = null;
 
 export function catalogTreeCacheTag() {
   return TAG;
@@ -18,6 +27,7 @@ export function catalogTreeCacheTag() {
 
 export function invalidateCatalogTreeCache() {
   memory = null;
+  browseMemory = null;
   try {
     // Next.js cache tag (best-effort; ignore if unavailable in scripts)
     // eslint-disable-next-line @typescript-eslint/no-require-imports
@@ -29,6 +39,19 @@ export function invalidateCatalogTreeCache() {
   if (typeof console !== "undefined") {
     console.info("[catalog-tree] cache invalidated");
   }
+}
+
+export function getBrowseTreeMemory(): BrowseCacheEntry | null {
+  if (!browseMemory) return null;
+  if (Date.now() - browseMemory.at >= BROWSE_TTL_MS) {
+    browseMemory = null;
+    return null;
+  }
+  return browseMemory;
+}
+
+export function setBrowseTreeMemory(entry: Omit<BrowseCacheEntry, "at">) {
+  browseMemory = { ...entry, at: Date.now() };
 }
 
 export async function getCatalogTreeCached(
