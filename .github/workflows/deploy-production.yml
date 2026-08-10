@@ -16,20 +16,40 @@ jobs:
     timeout-minutes: 50
     steps:
       - name: Deploy over SSH
-        uses: appleboy/ssh-action@v1.2.2
-        with:
-          host: ${{ secrets.VPS_HOST }}
-          username: ${{ secrets.VPS_USER }}
-          key: ${{ secrets.VPS_SSH_KEY }}
-          port: 22
-          script_stop: true
-          command_timeout: 45m
-          script: |
-            set -eu
-            cd /var/www/teklifbu
-            git fetch origin main
-            git checkout main
-            git reset --hard origin/main
-            sed -i 's/\r$//' scripts/deploy-vps.sh
-            chmod +x scripts/deploy-vps.sh
-            ./scripts/deploy-vps.sh
+        env:
+          HOST: ${{ secrets.VPS_HOST }}
+          USERNAME: ${{ secrets.VPS_USER }}
+          SSH_KEY: ${{ secrets.VPS_SSH_KEY }}
+        run: |
+          set -eu
+          if [ -z "${HOST:-}" ] || [ -z "${USERNAME:-}" ] || [ -z "${SSH_KEY:-}" ]; then
+            echo "Eksik secret: VPS_HOST / VPS_USER / VPS_SSH_KEY"
+            exit 1
+          fi
+          # Secret'a yanlışlıkla "Value: " yazıldıysa temizle
+          HOST="$(echo "$HOST" | tr -d '\r' | sed 's/^Value:[[:space:]]*//;s/^[[:space:]]*//;s/[[:space:]]*$//')"
+          USERNAME="$(echo "$USERNAME" | tr -d '\r' | sed 's/^Value:[[:space:]]*//;s/^[[:space:]]*//;s/[[:space:]]*$//')"
+
+          mkdir -p ~/.ssh
+          # Satır sonlarını düzelt (Windows yapıştırma)
+          printf '%s\n' "$SSH_KEY" | tr -d '\r' > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+
+          echo "Bağlanıyor: ${USERNAME}@${HOST}"
+          ssh-keyscan -H "$HOST" >> ~/.ssh/known_hosts 2>/dev/null || true
+
+          ssh -i ~/.ssh/deploy_key \
+            -o IdentitiesOnly=yes \
+            -o StrictHostKeyChecking=accept-new \
+            -o ConnectTimeout=20 \
+            "${USERNAME}@${HOST}" \
+            'bash -s' <<'REMOTE'
+          set -eu
+          cd /var/www/teklifbu
+          git fetch origin main
+          git checkout main
+          git reset --hard origin/main
+          sed -i 's/\r$//' scripts/deploy-vps.sh
+          chmod +x scripts/deploy-vps.sh
+          ./scripts/deploy-vps.sh
+          REMOTE
