@@ -171,6 +171,15 @@ export async function GET() {
       return "classic";
     })(),
     shoppingOffersEnabled: (await getSetting<boolean>("shopping_offers_enabled", true)) !== false,
+    emlakVasitaOffersEnabled:
+      offersEnabled && (await getSetting<boolean>("emlak_vasita_offers_enabled", true)) !== false,
+    bidStepTl: Number((await getSetting<number>("bid_step_tl", 10000)) || 10000),
+    alisverisBidStepTl: Number((await getSetting<number>("alisveris_bid_step_tl", 0.01)) || 0.01),
+    bidDurationOptionsDays: (await getSetting<number[]>("bid_duration_options_days", [1, 3, 7])) || [
+      1, 3, 7,
+    ],
+    alisverisBidDurationOptionsDays:
+      (await getSetting<number[]>("alisveris_bid_duration_options_days", [1, 3, 7])) || [1, 3, 7],
     shoppingCartPlacement:
       String((await getSetting<string>("shopping_cart_placement", "alt")) || "alt") === "ust"
         ? "ust"

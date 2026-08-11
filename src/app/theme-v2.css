@@ -2237,6 +2237,12 @@ html[data-theme="v2"] .listing-card-media .badge-time.v2-only {
   gap: 5px;
 }
 
+html[data-theme="v2"] .listing-card-media .badge-time.v2-only.badge-time--done {
+  background: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+}
+
 html[data-theme="v2"] .badge-premium {
   position: absolute;
   left: 8px;

@@ -1,4 +1,5 @@
 import { getSetting } from "@/core/settings";
+import { isAlisverisCategorySlug } from "@/data/classicBrowseTree";
 import {
   isOffersEnabledMode,
   normalizeMarketplaceMode,
@@ -10,9 +11,31 @@ export async function getMarketplaceMode(): Promise<MarketplaceMode> {
   return normalizeMarketplaceMode(raw);
 }
 
-/** true = klasik TeklifBu teklif akışı açık */
+/** true = klasik TeklifBu teklif akışı açık (site geneli / geriye uyum) */
 export async function isOffersEnabled(): Promise<boolean> {
   return isOffersEnabledMode(await getMarketplaceMode());
+}
+
+/** Emlak–Vasıta teklifleri (dikey ayar) */
+export async function isEmlakVasitaOffersEnabled(): Promise<boolean> {
+  if (!(await isOffersEnabled())) return false;
+  return (await getSetting<boolean>("emlak_vasita_offers_enabled", true)) !== false;
+}
+
+/** Alışveriş teklifleri (dikey ayar; site teklifsiz moda bağlı değil) */
+export async function isShoppingOffersEnabled(): Promise<boolean> {
+  return (await getSetting<boolean>("shopping_offers_enabled", true)) !== false;
+}
+
+/**
+ * İlan kategorisine göre teklif açık mı?
+ * Emlak/Vasıta kapalıyken Alışveriş açık kalabilir.
+ */
+export async function isOffersEnabledForListing(categorySlug?: string | null): Promise<boolean> {
+  if (isAlisverisCategorySlug(categorySlug)) {
+    return isShoppingOffersEnabled();
+  }
+  return isEmlakVasitaOffersEnabled();
 }
 
 /** true = Sahibinden Teklifsiz (ilan / iletişim odaklı) */

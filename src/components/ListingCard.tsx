@@ -215,7 +215,7 @@ export function ListingCard({
         <div className="listing-row-media">
           <ListingThumbImg src={listing.coverImage} alt="" />
           {!hideTimers ? (
-            <span className="badge-time listing-row-time">
+            <span className={`badge-time listing-row-time${isSold ? " badge-time--done" : ""}`}>
               {isSold ? "Sonuçlandı" : remainingLabelCompact(listing.endsAt)}
             </span>
           ) : null}
@@ -252,7 +252,7 @@ export function ListingCard({
           <div className="listing-row-side">
             <strong className={`listing-row-price price-ask${isSold ? " price-final" : ""}`}>{mainPrice}</strong>
             {!classified && !titlePriceOnly && !isSold && listing.highestBid ? (
-              <span className="listing-row-subprice">{formatTl(listing.highestBid)}</span>
+              <span className="listing-row-subprice">{formatTl(listing.highestBid, { fractionDigits: 0 })}</span>
             ) : null}
             {!classified && !titlePriceOnly && listing.profit != null && listing.profit > 0 ? (
               <span className="listing-row-subprice is-profit">+{formatTl(listing.profit)}</span>
@@ -297,10 +297,10 @@ export function ListingCard({
         {!titlePriceOnly && showPremiumBadge ? <span className="v2-only badge-premium">Premium</span> : null}
         {!hideTimers ? (
           <>
-            <div className="badge-time v1-only" style={{ position: "absolute", left: 10, top: 10 }}>
+            <div className={`badge-time v1-only${isSold ? " badge-time--done" : ""}`} style={{ position: "absolute", left: 10, top: 10 }}>
               {isSold ? "Sonuçlandı" : remainingLabel(listing.endsAt)}
             </div>
-            <div className="badge-time v2-only">
+            <div className={`badge-time v2-only${isSold ? " badge-time--done" : ""}`}>
               <Clock size={12} strokeWidth={2.25} aria-hidden />
               <span>{timeText}</span>
             </div>
@@ -346,7 +346,7 @@ export function ListingCard({
           <>
             <div className="v1-only" style={{ fontSize: 12, color: "var(--muted)", fontWeight: 500 }}>
               {listing.category?.name || "İlan"} / {dealTypeLabel(listing.dealType)}
-              {isSold ? " · Sonuçlandı" : ""}
+              {isSold ? <span className="listing-sonuclandi-inline"> · Sonuçlandı</span> : ""}
               {listing.listingNo ? ` · No: ${formatListingNo(listing.listingNo)}` : ""}
             </div>
             {homeMode ? (
@@ -370,7 +370,7 @@ export function ListingCard({
             <div className="v2-only listing-price-grid">
               <div className="listing-price-col">
                 <span className="listing-price-label">İlan Fiyatı</span>
-                <strong className="listing-price-ask">{formatTl(listing.askPrice)}</strong>
+                <strong className="listing-price-ask">{formatTl(listing.askPrice, { fractionDigits: 0 })}</strong>
               </div>
               {!classified ? (
               <div className="listing-price-col">
@@ -381,7 +381,7 @@ export function ListingCard({
                       ? formatTl(salePrice)
                       : "—"
                     : listing.highestBid
-                      ? formatTl(listing.highestBid)
+                      ? formatTl(listing.highestBid, { fractionDigits: 0 })
                       : "—"}
                 </strong>
               </div>
@@ -389,7 +389,7 @@ export function ListingCard({
               {!classified && listing.profit != null && listing.profit > 0 ? (
                 <div className="listing-price-col">
                   <span className="listing-price-label">Kazanç</span>
-                  <strong className="listing-price-final">+{formatTl(listing.profit)}</strong>
+                  <strong className="listing-price-final">+{formatTl(listing.profit, { fractionDigits: 0 })}</strong>
                 </div>
               ) : null}
             </div>
@@ -415,7 +415,7 @@ export function ListingCard({
             <div className="v1-only" style={{ display: "grid", gap: 5, marginTop: 2, fontSize: 13 }}>
               <div style={{ display: "flex", justifyContent: "space-between", gap: 6, alignItems: "baseline" }}>
                 <span style={{ color: "var(--muted)" }}>İlan Fiyatı</span>
-                <span className="price-ask">{formatTl(listing.askPrice)}</span>
+                <span className="price-ask">{formatTl(listing.askPrice, { fractionDigits: 0 })}</span>
               </div>
               {!classified ? (
               <div style={{ display: "flex", justifyContent: "space-between", gap: 6, alignItems: "baseline" }}>
@@ -423,10 +423,10 @@ export function ListingCard({
                 <span className={isSold ? "price-final" : "price-bid"}>
                   {isSold
                     ? salePrice
-                      ? formatTl(salePrice)
+                      ? formatTl(salePrice, { fractionDigits: 0 })
                       : "—"
                     : listing.highestBid
-                      ? formatTl(listing.highestBid)
+                      ? formatTl(listing.highestBid, { fractionDigits: 0 })
                       : "—"}
                 </span>
               </div>

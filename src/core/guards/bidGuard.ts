@@ -1,5 +1,10 @@
 import { prisma } from "@/lib/db";
 import { getSettingsMap } from "@/core/settings";
+import {
+  amountMatchesBidStep,
+  effectiveBidStep,
+  resolveVerticalBidRules,
+} from "@/core/services/bidRulesService";
 
 export type GuardResult =
   | { allowed: true }
@@ -44,23 +49,25 @@ export async function guardPlaceBid(params: {
     return { allowed: false, reason: trust.error, code: trust.code };
   }
 
-  const stepByCat = (settings.bid_step_by_category as Record<string, number>) || {};
-  const step = Number(stepByCat[listing.category.slug] ?? settings.bid_step_tl ?? 10000);
-  if (params.amount <= 0 || params.amount % step !== 0) {
-    return { allowed: false, reason: `Teklif ${step.toLocaleString("tr-TR")} TL ve katları olmalıdır` };
+  const rules = resolveVerticalBidRules(listing.category.slug, settings);
+  const step = effectiveBidStep(rules, listing.category.slug);
+  if (!amountMatchesBidStep(params.amount, step)) {
+    const stepLabel =
+      step < 1
+        ? step.toLocaleString("tr-TR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })
+        : step.toLocaleString("tr-TR");
+    return { allowed: false, reason: `Teklif ${stepLabel} TL ve katları olmalıdır` };
   }
 
-  const requireHigher = Boolean(settings.require_higher_than_highest);
+  const requireHigher = rules.requireHigherThanHighest;
   const highest = Number(listing.highestBid);
   if (requireHigher && highest > 0 && params.amount <= highest) {
     return { allowed: false, reason: "Teklif mevcut en yüksek tekliften yüksek olmalıdır" };
   }
 
-  const maxBids = Number(settings.max_bids_per_user_per_listing ?? 2);
-  const userBids = listing.bids.filter((b) => b.status === "ACTIVE" || b.status === "EXPIRED" || b.status === "WITHDRAWN" || b.status === "REJECTED" || b.status === "APPROVED");
-  // Count attempts: all bids by user on this listing
+  const maxBids = rules.maxBidsPerUserPerListing;
   const attemptCount = listing.bids.length;
-  const replaces = Boolean(settings.second_bid_replaces_previous);
+  const replaces = rules.secondBidReplacesPrevious;
   if (!replaces && attemptCount >= maxBids) {
     return { allowed: false, reason: `Bu ilana en fazla ${maxBids} teklif verebilirsiniz` };
   }
@@ -69,20 +76,20 @@ export async function guardPlaceBid(params: {
   }
 
   const bidNumber = attemptCount + 1;
-  if (bidNumber > 1 && Boolean(settings.second_bid_must_be_higher)) {
+  if (bidNumber > 1 && rules.secondBidMustBeHigher) {
     const last = listing.bids[listing.bids.length - 1];
     if (last && params.amount <= Number(last.amount)) {
       return { allowed: false, reason: "Yeni teklifiniz önceki teklifinizden yüksek olmalıdır" };
     }
   }
 
-  const options = (settings.bid_duration_options_days as number[]) || [1, 3, 7];
+  const options = rules.durationOptionsDays;
   if (!options.includes(params.durationDays)) {
     return { allowed: false, reason: "Geçersiz teklif süresi" };
   }
 
-  const canExceed = Boolean(settings.bid_can_exceed_listing_end);
-  const policy = String(settings.bid_exceed_policy || "clamp");
+  const canExceed = rules.canExceedListingEnd;
+  const policy = rules.exceedPolicy;
   if (listing.endsAt && !canExceed && policy === "block") {
     const bidEnd = Date.now() + params.durationDays * 24 * 60 * 60 * 1000;
     if (bidEnd > listing.endsAt.getTime()) {

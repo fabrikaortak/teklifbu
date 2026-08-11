@@ -347,7 +347,8 @@ export function AdminSettingsPanel({
   }
 
   const groupLabel: Record<string, string> = {
-    bid: "Teklif Kuralları",
+    bid: "Teklif Kuralları (Emlak & Vasıta)",
+    alisveris_bid: "Teklif Kuralları (Alışveriş)",
     token: "Jeton",
     listing: "İlan",
     lifecycle: "Yaşam Döngüsü",

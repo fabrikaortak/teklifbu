@@ -2084,13 +2084,9 @@ a.card.account-stat-card--jeton .account-stat-card__label {
   box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.22);
 }
 
-.badge-time {
-  background: rgba(11, 31, 58, 0.82);
-  color: white;
-  font-size: 12px;
-  font-weight: 600;
-  padding: 6px 10px;
-  border-radius: 999px;
+.listing-sonuclandi-inline {
+  color: #047857;
+  font-weight: 800;
 }
 
 .price-ask { color: #0f172a; font-weight: 700; font-size: 13.5px; }
@@ -3261,9 +3257,29 @@ html[data-featured-hover-lift="1"] .featured-vitrin .listing-row:hover {
   grid-column: 1 / -1;
   text-align: center;
   font-size: 14px;
-  font-weight: 700;
-  color: #64748b;
+  font-weight: 800;
+  color: #047857;
   padding: 6px 0;
+}
+
+.cd-panel--done .cd-panel__done-msg--ok {
+  color: #047857;
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  border-radius: 10px;
+  padding: 10px 12px;
+  letter-spacing: 0.01em;
+}
+
+.badge-time.badge-time--done {
+  background: #ecfdf5 !important;
+  color: #047857 !important;
+  border: 1px solid #a7f3d0;
+  font-weight: 800;
+}
+
+.detail-highest-bid {
+  white-space: nowrap;
 }
 
 /* Teklif bilgilendirme kartı (aside sağında) */

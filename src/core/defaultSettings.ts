@@ -68,31 +68,32 @@ export const CATEGORY_COST_OPTIONS = CAT_COST_KEYS;
 export const DEFAULT_SETTINGS: Record<string, SettingMeta> = {
   bid_step_tl: {
     value: 10000,
-    label: "Teklif basamağı",
+    label: "Teklif basamağı (Emlak & Vasıta)",
     group: "bid",
-    description: "Her yeni teklif en az bu tutar kadar artmalıdır (TL).",
+    description:
+      "Emlak ve Vasıta ilanlarında her yeni teklif en az bu tutar kadar artmalıdır (TL). Alışveriş basamağı Alışveriş → Ayarlar altındadır.",
     control: "number",
     min: 1,
     unit: "TL",
   },
   bid_step_by_category: {
     value: {},
-    label: "Kategoriye özel teklif basamağı",
+    label: "Kategoriye özel teklif basamağı (Emlak & Vasıta)",
     group: "bid",
-    description: "Boş bırakılan kategorilerde genel basamak kullanılır.",
+    description: "Boş bırakılan kategorilerde genel Emlak/Vasıta basamağı kullanılır.",
     control: "categoryCosts",
     unit: "TL",
   },
   require_higher_than_highest: {
     value: true,
-    label: "En yüksek tekliften yüksek olmalı",
+    label: "En yüksek tekliften yüksek olmalı (Emlak & Vasıta)",
     group: "bid",
     description: "Açıksa yeni teklif, mevcut en yüksek tekliften fazla olmalıdır.",
     control: "toggle",
   },
   max_bids_per_user_per_listing: {
     value: 4,
-    label: "Kullanıcı başına max teklif (ilan)",
+    label: "Kullanıcı başına max teklif — Emlak & Vasıta",
     group: "bid",
     description: "Aynı kullanıcı aynı ilana en fazla kaç teklif verebilir.",
     control: "number",
@@ -101,13 +102,13 @@ export const DEFAULT_SETTINGS: Record<string, SettingMeta> = {
   },
   second_bid_replaces_previous: {
     value: true,
-    label: "Yeni teklif eskisinin yerine geçer",
+    label: "Yeni teklif eskisinin yerine geçer (Emlak & Vasıta)",
     group: "bid",
     control: "toggle",
   },
   second_bid_must_be_higher: {
     value: true,
-    label: "2. teklif birinciden yüksek olmalı",
+    label: "2. teklif birinciden yüksek olmalı (Emlak & Vasıta)",
     group: "bid",
     control: "toggle",
   },
@@ -176,21 +177,21 @@ export const DEFAULT_SETTINGS: Record<string, SettingMeta> = {
   },
   bid_duration_options_days: {
     value: [1, 3, 7],
-    label: "Teklif süresi seçenekleri",
+    label: "Teklif süresi seçenekleri (Emlak & Vasıta)",
     group: "bid",
-    description: "Kullanıcıya sunulacak teklif geçerlilik süreleri (gün).",
+    description: "Emlak/Vasıta kullanıcıya sunulacak teklif geçerlilik süreleri (gün).",
     control: "numberList",
     unit: "gün",
   },
   bid_can_exceed_listing_end: {
     value: false,
-    label: "Teklif süresi ilan bitişini aşabilir",
+    label: "Teklif süresi ilan bitişini aşabilir (Emlak & Vasıta)",
     group: "bid",
     control: "toggle",
   },
   bid_exceed_policy: {
     value: "clamp",
-    label: "İlan bitişini aşma politikası",
+    label: "İlan bitişini aşma politikası (Emlak & Vasıta)",
     group: "bid",
     description: "Teklif süresi ilan bitişini geçtiğinde uygulanacak kural.",
     control: "select",
@@ -205,6 +206,75 @@ export const DEFAULT_SETTINGS: Record<string, SettingMeta> = {
     label: "Teklif geri çekmede jeton iadesi",
     group: "bid",
     control: "toggle",
+  },
+
+  alisveris_bid_step_tl: {
+    value: 0.01,
+    label: "Teklif basamağı (Alışveriş)",
+    group: "alisveris_bid",
+    description:
+      "Alışveriş ürünlerinde teklif artışı. Varsayılan 0,01 TL (kuruş). Emlak/Vasıta 10.000 TL basamağından bağımsızdır.",
+    control: "number",
+    min: 0.01,
+    unit: "TL",
+  },
+  alisveris_bid_step_by_category: {
+    value: {},
+    label: "Kategoriye özel teklif basamağı (Alışveriş)",
+    group: "alisveris_bid",
+    description: "Boş bırakılan alışveriş kategorilerinde genel alışveriş basamağı kullanılır.",
+    control: "categoryCosts",
+    unit: "TL",
+  },
+  alisveris_require_higher_than_highest: {
+    value: true,
+    label: "En yüksek tekliften yüksek olmalı (Alışveriş)",
+    group: "alisveris_bid",
+    control: "toggle",
+  },
+  alisveris_max_bids_per_user_per_listing: {
+    value: 4,
+    label: "Kullanıcı başına max teklif — Alışveriş",
+    group: "alisveris_bid",
+    control: "number",
+    min: 1,
+    max: 20,
+  },
+  alisveris_second_bid_replaces_previous: {
+    value: true,
+    label: "Yeni teklif eskisinin yerine geçer (Alışveriş)",
+    group: "alisveris_bid",
+    control: "toggle",
+  },
+  alisveris_second_bid_must_be_higher: {
+    value: true,
+    label: "2. teklif birinciden yüksek olmalı (Alışveriş)",
+    group: "alisveris_bid",
+    control: "toggle",
+  },
+  alisveris_bid_duration_options_days: {
+    value: [1, 3, 7],
+    label: "Teklif süresi seçenekleri (Alışveriş)",
+    group: "alisveris_bid",
+    control: "numberList",
+    unit: "gün",
+  },
+  alisveris_bid_can_exceed_listing_end: {
+    value: false,
+    label: "Teklif süresi ilan bitişini aşabilir (Alışveriş)",
+    group: "alisveris_bid",
+    control: "toggle",
+  },
+  alisveris_bid_exceed_policy: {
+    value: "clamp",
+    label: "İlan bitişini aşma politikası (Alışveriş)",
+    group: "alisveris_bid",
+    control: "select",
+    options: [
+      { value: "allow", label: "İzin ver" },
+      { value: "clamp", label: "Kısalt" },
+      { value: "block", label: "Engelle" },
+    ],
   },
 
   token_cost_base: {
@@ -1847,6 +1917,14 @@ export const DEFAULT_SETTINGS: Record<string, SettingMeta> = {
       "Emlak ve Vasıta ilan detayındaki «Ürün soruları» bölümünü açar/kapatır. Alışveriş ürün soruları Satıcı paneli ayarlarından yönetilir.",
     control: "toggle",
   },
+  emlak_vasita_offers_enabled: {
+    value: true,
+    label: "Emlak & Vasıta teklifleri",
+    group: "emlak_vasita",
+    description:
+      "Açıksa Emlak ve Vasıta ilanlarında teklif verilebilir (site teklifli moddayken). Kapalıysa bu dikeyde teklif alınmaz; Alışveriş teklifleri kendi ayarından bağımsız yönetilir.",
+    control: "toggle",
+  },
   seller_panel_ship_reminder_hours: {
     value: 48,
     label: "Kargo hatırlatma eşiği",
@@ -1887,7 +1965,7 @@ export const DEFAULT_SETTINGS: Record<string, SettingMeta> = {
     label: "Alışveriş ürün detayında teklif kabulü",
     group: "seller_panel",
     description:
-      "Açıksa e-ticaret ürün sayfasında «Teklif Ver» butonu aktif olur (genel site teklifli moda bağlıdır). Kapalıysa genel site teklifli olsa bile alışveriş ürün detayında teklif alınmaz; «Hemen Al» çalışır.",
+      "Açıksa Alışveriş ürün sayfasında «Teklif Ver» aktif olur. Emlak/Vasıta teklif ayarından bağımsızdır — orada kapalı olsa bile burada açık kalabilir. Basamak ve süre kuralları Alışveriş teklif ayarlarındadır (10.000 TL zorunluluğu yok).",
     control: "toggle",
   },
   shopping_cart_placement: {

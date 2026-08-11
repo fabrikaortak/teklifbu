@@ -96,7 +96,12 @@ type Props = {
   onShare?: () => void;
   onBuy: () => void;
   onOffer?: () => void;
-  onSubmitOffer?: (amountTl: number) => boolean | void | Promise<boolean | void>;
+  onSubmitOffer?: (
+    amountTl: number,
+    durationDays: number
+  ) => boolean | void | Promise<boolean | void>;
+  /** Alışveriş teklif süre seçenekleri (gün) */
+  offerDurationOptions?: number[];
   onAddCart?: () => void;
   buyDisabled?: boolean;
   offerDisabled?: boolean;
@@ -138,6 +143,7 @@ export function ShoppingProductDetail({
   onBuy,
   onOffer,
   onSubmitOffer,
+  offerDurationOptions = [1, 3, 7],
   onAddCart,
   buyDisabled,
   offerDisabled,
@@ -170,6 +176,7 @@ export function ShoppingProductDetail({
   const [offerFormOpen, setOfferFormOpen] = useState(false);
   const [offerWhole, setOfferWhole] = useState("");
   const [offerKurus, setOfferKurus] = useState(0);
+  const [offerDurationDays, setOfferDurationDays] = useState<number | "">("");
   const [offerLocalError, setOfferLocalError] = useState("");
   const [premiumPopupOpen, setPremiumPopupOpen] = useState(false);
   const [premiumPopup, setPremiumPopup] = useState<PremiumStorePopupConfig>({
@@ -673,28 +680,51 @@ export function ShoppingProductDetail({
                 Teklifiniz kabul edilirse bildirime ödeme linkiniz Güvenli Ödeme olarak gönderilecek.
               </p>
               {offerLocalError ? <div className="shop-pdp__offer-error">{offerLocalError}</div> : null}
-              <button
-                type="button"
-                className="shop-pdp__offer-submit"
-                disabled={Boolean(offerBusy)}
-                onClick={async () => {
-                  const whole = Number(offerWhole || 0);
-                  if (!Number.isFinite(whole) || whole <= 0) {
-                    setOfferLocalError("Geçerli bir teklif tutarı girin");
-                    return;
-                  }
-                  const amount = Math.round((whole + offerKurus / 100) * 100) / 100;
-                  setOfferLocalError("");
-                  if (onSubmitOffer) {
-                    const ok = await onSubmitOffer(amount);
-                    if (ok !== false) setOfferFormOpen(false);
-                    return;
-                  }
-                  onOffer?.();
-                }}
-              >
-                {offerBusy ? "Gönderiliyor…" : "Teklifi Gönder"}
-              </button>
+              <div className="shop-pdp__offer-submit-row">
+                <button
+                  type="button"
+                  className="shop-pdp__offer-submit"
+                  disabled={Boolean(offerBusy)}
+                  onClick={async () => {
+                    const whole = Number(offerWhole || 0);
+                    if (!Number.isFinite(whole) || whole <= 0) {
+                      setOfferLocalError("Geçerli bir teklif tutarı girin");
+                      return;
+                    }
+                    if (!offerDurationDays) {
+                      setOfferLocalError("Teklif süresi seçin");
+                      return;
+                    }
+                    const amount = Math.round((whole + offerKurus / 100) * 100) / 100;
+                    setOfferLocalError("");
+                    if (onSubmitOffer) {
+                      const ok = await onSubmitOffer(amount, Number(offerDurationDays));
+                      if (ok !== false) setOfferFormOpen(false);
+                      return;
+                    }
+                    onOffer?.();
+                  }}
+                >
+                  {offerBusy ? "Gönderiliyor…" : "Teklifi Gönder"}
+                </button>
+                <label className="shop-pdp__offer-duration">
+                  <span>Süre</span>
+                  <select
+                    value={offerDurationDays}
+                    onChange={(e) =>
+                      setOfferDurationDays(e.target.value ? Number(e.target.value) : "")
+                    }
+                    aria-label="Teklif süresi seçin"
+                  >
+                    <option value="">Seçin</option>
+                    {offerDurationOptions.map((d) => (
+                      <option key={d} value={d}>
+                        {d} Gün
+                      </option>
+                    ))}
+                  </select>
+                </label>
+              </div>
             </div>
           )}
 

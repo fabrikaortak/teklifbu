@@ -351,7 +351,7 @@ export default function ListingDetailInner() {
   );
   const [amountRaw, setAmountRaw] = useState(0);
   const [durationDays, setDurationDays] = useState<number | "">("");
-  const [durations] = useState([1, 3, 7]);
+  const [durations, setDurations] = useState([1, 3, 7]);
   const [msg, setMsg] = useState("");
   const [bidSentOpen, setBidSentOpen] = useState(false);
   const [bidSentAmount, setBidSentAmount] = useState<number | null>(null);
@@ -381,6 +381,10 @@ export default function ListingDetailInner() {
   const [premiumDetailLayout, setPremiumDetailLayout] = useState<"premium" | "sahibinden" | "classic">("premium");
   const [shoppingDetailTemplate, setShoppingDetailTemplate] = useState<"classic" | "ecommerce_v1">("classic");
   const [shoppingOffersEnabled, setShoppingOffersEnabled] = useState(true);
+  const [emlakVasitaOffersEnabled, setEmlakVasitaOffersEnabled] = useState(true);
+  const [bidStepTl, setBidStepTl] = useState(10000);
+  const [alisverisBidStepTl, setAlisverisBidStepTl] = useState(0.01);
+  const [alisverisDurations, setAlisverisDurations] = useState<number[]>([1, 3, 7]);
   const [bidTipsOpen, setBidTipsOpen] = useState(false);
   const [maxBidsPerListing, setMaxBidsPerListing] = useState(4);
   const [escrowOpen, setEscrowOpen] = useState(false);
@@ -406,9 +410,21 @@ export default function ListingDetailInner() {
           d?.shoppingListingDetailTemplate === "ecommerce_v1" ? "ecommerce_v1" : "classic"
         );
         setShoppingOffersEnabled(d?.shoppingOffersEnabled !== false);
+        setEmlakVasitaOffersEnabled(d?.emlakVasitaOffersEnabled !== false);
+        const step = Number(d?.bidStepTl);
+        if (Number.isFinite(step) && step > 0) setBidStepTl(step);
+        const aStep = Number(d?.alisverisBidStepTl);
+        if (Number.isFinite(aStep) && aStep > 0) setAlisverisBidStepTl(aStep);
+        const emlakDur = Array.isArray(d?.bidDurationOptionsDays)
+          ? d.bidDurationOptionsDays.map(Number).filter((n: number) => Number.isFinite(n) && n > 0)
+          : [];
+        const shopDur = Array.isArray(d?.alisverisBidDurationOptionsDays)
+          ? d.alisverisBidDurationOptionsDays.map(Number).filter((n: number) => Number.isFinite(n) && n > 0)
+          : [];
+        if (emlakDur.length) setDurations(emlakDur);
+        if (shopDur.length) setAlisverisDurations(shopDur);
         const maxB = Number(d?.maxBidsPerListing);
-        if (Number.isFinite(maxB) && maxB >= 1) setMaxBidsPerListing(maxB);
-      })
+        if (Number.isFinite(maxB) && maxB >= 1) setMaxBidsPerListing(maxB);      })
       .catch(() => {});
   }, []);
 
@@ -471,8 +487,11 @@ export default function ListingDetailInner() {
     } else {
       setCanMessage(false);
     }
-    if (l.listing?.highestBid) setAmountRaw(Number(l.listing.highestBid) + 10000);
-    else if (l.listing?.askPrice) setAmountRaw(Number(l.listing.askPrice));
+    if (l.listing?.highestBid) {
+      const step = isAlisverisCategorySlug(l.listing?.category?.slug) ? alisverisBidStepTl : bidStepTl;
+      const bump = step >= 1 ? Math.round(step) : step;
+      setAmountRaw(Number(l.listing.highestBid) + bump);
+    } else if (l.listing?.askPrice) setAmountRaw(Number(l.listing.askPrice));
     if (l.listing?.escrowSettings?.defaultShipDays) {
       setEscrowShipDays(l.listing.escrowSettings.defaultShipDays);
     }
@@ -485,6 +504,13 @@ export default function ListingDetailInner() {
 
   const slugForCrumb = String(listing?.category?.slug || "");
   const shoppingSlug = isAlisverisCategorySlug(slugForCrumb);
+  const verticalOffersOn = shoppingSlug ? shoppingOffersEnabled : emlakVasitaOffersEnabled;
+  const activeBidStep = shoppingSlug ? alisverisBidStepTl : bidStepTl;
+  const activeDurations = shoppingSlug ? alisverisDurations : durations;
+  const bidStepHint =
+    activeBidStep < 1
+      ? activeBidStep.toLocaleString("tr-TR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })
+      : activeBidStep.toLocaleString("tr-TR");
   useEffect(() => {
     if (!shoppingSlug || !slugForCrumb) {
       setShopCrumbs(null);
@@ -525,15 +551,15 @@ export default function ListingDetailInner() {
 
   // İlan sahibi kendi ilanına girince önce teklifleri görsün
   useEffect(() => {
-    if (!listing || !me?.id || !offersEnabled) return;
+    if (!listing || !me?.id || !verticalOffersOn) return;
     if (search.get("tab") || search.get("revise") === "1") return;
     if (me.id === listing.seller.id) setTab("teklifler");
-  }, [listing?.id, listing?.seller?.id, me?.id, search, offersEnabled]);
+  }, [listing?.id, listing?.seller?.id, me?.id, search, verticalOffersOn]);
 
   // Klasik modda kapalıysa teklifler sekmesinde kalınmasın
   useEffect(() => {
-    if (!offersEnabled && tab === "teklifler") setTab("detay");
-  }, [offersEnabled, tab]);
+    if (!verticalOffersOn && tab === "teklifler") setTab("detay");
+  }, [verticalOffersOn, tab]);
 
   const images = useMemo(() => {
     if (!listing) return [] as string[];
@@ -937,7 +963,7 @@ export default function ListingDetailInner() {
       );
     }
 
-    const shoppingOffersOn = offersEnabled && shoppingOffersEnabled;
+    const shoppingOffersOn = shoppingOffersEnabled;
     const handleBuyNow = async () => {
       if (!me) {
         router.push(`/giris?next=${encodeURIComponent(`/ilan/${listing.id}`)}`);
@@ -1004,15 +1030,14 @@ export default function ListingDetailInner() {
       if (!shoppingOffersOn || !canPlaceBid) return;
     };
 
-    const placeShoppingOffer = async (amountTl: number) => {
+    const placeShoppingOffer = async (amountTl: number, days: number) => {
       setError("");
       setMsg("");
       if (!me) {
         requireAuth("bid");
         return false;
       }
-      const days = durationDays || 7;
-      if (!durationDays) setDurationDays(7);
+      setDurationDays(days);
       const amount = Math.round(Number(amountTl) * 100) / 100;
       const res = await fetch("/api/bids", {
         method: "POST",
@@ -1058,10 +1083,11 @@ export default function ListingDetailInner() {
           onShare={shareListing}
           onBuy={handleBuyNow}
           onOffer={handleOffer}
-          onSubmitOffer={async (amount) => {
-            const ok = await placeShoppingOffer(amount);
+          onSubmitOffer={async (amount, days) => {
+            const ok = await placeShoppingOffer(amount, days);
             return ok;
           }}
+          offerDurationOptions={alisverisDurations}
           buyDisabled={isCompleted || isSeller || escrowBusy}
           offerDisabled={!shoppingOffersOn || !canPlaceBid}
           buyLabel={escrowBusy ? "Ödemeye yönlendiriliyor…" : "Hemen Al"}
@@ -1518,7 +1544,7 @@ export default function ListingDetailInner() {
                     <span>Kalan Süre</span>
                   </div>
                   <div className="cd-panel__box">
-                    <span className="cd-panel__done-msg">Sonuçlandı</span>
+                    <span className="cd-panel__done-msg cd-panel__done-msg--ok">Sonuçlandı</span>
                   </div>
                 </div>
               ) : showDetailCountdown ? (
@@ -1574,20 +1600,23 @@ export default function ListingDetailInner() {
               style={{
                 marginTop: isSahibindenLayout ? (listing.eidsBadge ? 18 : 20) : 18,
                 display: "grid",
-                gridTemplateColumns: offersEnabled ? "1fr 1fr" : "1fr",
+                gridTemplateColumns: verticalOffersOn ? "1fr 1fr" : "1fr",
                 gap: 16,
                 alignItems: "end",
               }}
             >
               <div>
                 <div style={{ fontSize: 13, color: "#64748b", marginBottom: 12 }}>İlan Fiyatı</div>
-                <div style={{ fontSize: 18, fontWeight: 800, color: "#0f172a", letterSpacing: "-0.02em", lineHeight: 1.1 }}>{formatTl(listing.askPrice)}</div>
+                <div style={{ fontSize: 18, fontWeight: 800, color: "#0f172a", letterSpacing: "-0.02em", lineHeight: 1.1 }}>{formatTl(listing.askPrice, { fractionDigits: 0 })}</div>
               </div>
-              {offersEnabled && (
+              {verticalOffersOn && (
                 <div style={{ textAlign: "right" }}>
                   <div style={{ fontSize: 13, color: "#0f172a", fontWeight: 700, marginBottom: 12 }}>En Yüksek Teklif</div>
-                  <div style={{ fontSize: 22, fontWeight: 800, color: "var(--green)", letterSpacing: "-0.02em", lineHeight: 1.1 }}>
-                    {listing.highestBid ? formatTl(listing.highestBid) : "—"}
+                  <div
+                    className="detail-highest-bid"
+                    style={{ fontSize: 22, fontWeight: 800, color: "var(--green)", letterSpacing: "-0.02em", lineHeight: 1.15, whiteSpace: "nowrap" }}
+                  >
+                    {listing.highestBid ? formatTl(listing.highestBid, { fractionDigits: 0 }) : "—"}
                   </div>
                 </div>
               )}
@@ -1611,7 +1640,7 @@ export default function ListingDetailInner() {
               </button>
             )}
 
-            {offersEnabled && (
+            {verticalOffersOn && (
               <button
                 type="button"
                 onClick={toggleBidsPanel}
@@ -1645,7 +1674,7 @@ export default function ListingDetailInner() {
               </button>
             )}
 
-            {offersEnabled && bidsOpen && (
+            {verticalOffersOn && bidsOpen && (
               <div style={{ marginTop: 10, maxHeight: 260, overflowY: "auto", display: "grid", gap: 8 }}>
                 {bids.length === 0 && <div style={{ fontSize: 13, color: "#64748b", padding: "8px 0" }}>Henüz teklif yok.</div>}
                 {bids.map((b) => (
@@ -1703,17 +1732,17 @@ export default function ListingDetailInner() {
               >
                 {isWinningBuyer
                   ? "Satıcı teklifinizi kabul etti"
-                  : offersEnabled
+                  : verticalOffersOn
                     ? "Bu ilan sonuçlandı. Yeni teklif verilemez."
                     : "Bu ilan sonuçlandı."}
               </div>
             ) : isSeller ? (
               <div style={{ marginTop: 18, fontSize: 13, color: "#64748b", lineHeight: 1.5 }}>
-                {offersEnabled
+                {verticalOffersOn
                   ? "Kendi ilanınıza teklif veremezsiniz. Gelen teklifleri tablodan onaylayabilirsiniz."
                   : "Bu ilanın sahibisiniz. Gelen mesajları hesabım üzerinden takip edebilirsiniz."}
               </div>
-            ) : !offersEnabled ? (
+            ) : !verticalOffersOn ? (
               <div style={{ marginTop: 18, display: "grid", gap: 12 }}>
                 <div style={{ fontSize: 13, color: "#64748b", lineHeight: 1.5 }}>
                   İlan sahibiyle doğrudan iletişime geçebilir veya mesaj gönderebilirsiniz.
@@ -1734,35 +1763,83 @@ export default function ListingDetailInner() {
                   disabled={!canPlaceBid}
                 />
 
-                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: 10 }}>
-                  <label style={{ fontSize: 13, fontWeight: 700, color: "#334155" }}>Teklif Geçerlilik Süresi</label>
-                  <select
-                    className="select"
-                    value={durationDays}
-                    onChange={(e) => setDurationDays(e.target.value ? Number(e.target.value) : "")}
-                    style={{ maxWidth: 140 }}
+                <div
+                  className="bid-submit-with-duration"
+                  style={{
+                    display: "flex",
+                    alignItems: "stretch",
+                    borderRadius: 12,
+                    overflow: "hidden",
+                    background: "var(--orange)",
+                  }}
+                >
+                  <button
+                    type="button"
+                    className="btn-orange"
+                    style={{
+                      flex: 1,
+                      margin: 0,
+                      borderRadius: 0,
+                      padding: "14px 12px",
+                      fontSize: 16,
+                      display: "inline-flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      gap: 8,
+                      boxShadow: "none",
+                    }}
+                    onClick={placeBid}
                     disabled={!canPlaceBid}
                   >
-                    <option value="">Seçiniz</option>
-                    {durations.map((d) => (
-                      <option key={d} value={d}>
-                        {d} Gün
+                    <Gavel size={18} /> Teklif Bu
+                  </button>
+                  <label
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: 6,
+                      padding: "0 12px",
+                      background: "rgba(0,0,0,0.14)",
+                      borderLeft: "1px solid rgba(255,255,255,0.25)",
+                      fontSize: 12,
+                      fontWeight: 700,
+                      color: "#fff",
+                      cursor: canPlaceBid ? "pointer" : "default",
+                      minWidth: 118,
+                    }}
+                  >
+                    <span style={{ opacity: 0.95, whiteSpace: "nowrap" }}>Süre</span>
+                    <select
+                      value={durationDays}
+                      onChange={(e) => setDurationDays(e.target.value ? Number(e.target.value) : "")}
+                      disabled={!canPlaceBid}
+                      aria-label="Teklif süresi seçin"
+                      style={{
+                        border: "none",
+                        background: "transparent",
+                        color: "#fff",
+                        fontWeight: 800,
+                        fontSize: 13,
+                        maxWidth: 72,
+                        cursor: "pointer",
+                        outline: "none",
+                      }}
+                    >
+                      <option value="" style={{ color: "#0f172a" }}>
+                        Seçin
                       </option>
-                    ))}
-                  </select>
+                      {activeDurations.map((d) => (
+                        <option key={d} value={d} style={{ color: "#0f172a" }}>
+                          {d} Gün
+                        </option>
+                      ))}
+                    </select>
+                  </label>
                 </div>
 
-                <button
-                  type="button"
-                  className="btn-orange"
-                  style={{ padding: 15, fontSize: 16, borderRadius: 12, display: "inline-flex", alignItems: "center", justifyContent: "center", gap: 8 }}
-                  onClick={placeBid}
-                  disabled={!canPlaceBid}
-                >
-                  <Gavel size={18} /> Teklif Bu
-                </button>
-
-                <div style={{ fontSize: 12, color: "#94a3b8" }}>1 teklif jeton harcar. Tutarlar 10.000 TL katları olmalıdır.</div>
+                <div style={{ fontSize: 12, color: "#94a3b8" }}>
+                  1 teklif jeton harcar. Tutarlar {bidStepHint} TL katları olmalıdır.
+                </div>
               </div>
             )}
 
@@ -1895,7 +1972,7 @@ export default function ListingDetailInner() {
               )}
             </div>
           </div>
-          {offersEnabled && (
+          {verticalOffersOn && (
             <BidTipsCard
               open={bidTipsOpen && canPlaceBid}
               maxBids={maxBidsPerListing}
@@ -1937,7 +2014,7 @@ export default function ListingDetailInner() {
                   ] as Array<[string, string]>)
             )
           )
-            .filter(([k]) => offersEnabled || k !== "teklifler")
+            .filter(([k]) => verticalOffersOn || k !== "teklifler")
             .map(([k, label]) => (
             <button
               key={k}
@@ -2048,7 +2125,7 @@ export default function ListingDetailInner() {
             </div>
           )}
 
-          {tab === "teklifler" && offersEnabled && (
+          {tab === "teklifler" && verticalOffersOn && (
             <div id="teklifler-panel" className="card" style={{ padding: 0, overflow: "hidden" }}>
               <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 14 }}>
                 <thead style={{ background: "#f8fafc", textAlign: "left" }}>

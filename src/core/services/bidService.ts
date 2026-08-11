@@ -13,11 +13,15 @@ export async function placeBid(input: {
   amount: number;
   durationDays: number;
 }) {
-  const { isOffersEnabled } = await import("@/core/services/marketplaceModeService");
-  if (!(await isOffersEnabled())) {
+  const { isOffersEnabledForListing } = await import("@/core/services/marketplaceModeService");
+  const listingPreview = await prisma.listing.findUnique({
+    where: { id: input.listingId },
+    select: { category: { select: { slug: true } } },
+  });
+  if (!(await isOffersEnabledForListing(listingPreview?.category?.slug))) {
     return {
       ok: false as const,
-      error: "Bu sitede teklif sistemi kapalı. İlan sahibiyle iletişim kurabilirsiniz.",
+      error: "Bu kategoride teklif sistemi kapalı. İlan sahibiyle iletişim kurabilirsiniz.",
       code: "OFFERS_DISABLED" as const,
       requiredTokens: undefined,
       balance: undefined,

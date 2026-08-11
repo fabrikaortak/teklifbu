@@ -478,6 +478,21 @@ export function VerticalSettingsPage({ vertical }: { vertical: AdminVertical }) 
           description="Mağaza paketi satış kuralları. Paket tanımları Mağaza paketleri / Abonelikler menüsündedir."
         />
         <div style={{ display: "grid", gap: 20 }}>
+          <div className="adm-card" style={{ padding: 16 }}>
+            <h2 style={{ margin: "0 0 6px", fontSize: 15, fontWeight: 800 }}>Teklifler</h2>
+            <p style={{ margin: "0 0 14px", fontSize: 13, color: "#64748b", lineHeight: 1.45 }}>
+              Alışveriş ürün detayında teklif kabulü. Emlak/Vasıta ayarından bağımsızdır.
+            </p>
+            <AdminSettingsPanel onlyKeys={["shopping_offers_enabled"]} />
+          </div>
+          <div className="adm-card" style={{ padding: 16 }}>
+            <h2 style={{ margin: "0 0 6px", fontSize: 15, fontWeight: 800 }}>Teklif kuralları</h2>
+            <p style={{ margin: "0 0 14px", fontSize: 13, color: "#64748b", lineHeight: 1.45 }}>
+              Alışverişe özel basamak (varsayılan kuruş), süre seçenekleri ve limitler. 10.000 TL
+              basamağı yalnızca Emlak &amp; Vasıta içindir.
+            </p>
+            <AdminSettingsPanel onlyGroups={["alisveris_bid"]} />
+          </div>
           <AdminSettingsPanel
             onlyKeys={[
               "alisveris_vertical_enabled",
@@ -486,7 +501,6 @@ export function VerticalSettingsPage({ vertical }: { vertical: AdminVertical }) 
               "shop_package_pay_with_tokens_enabled",
               "shopping_listing_form_template",
               "shopping_listing_detail_template",
-              "shopping_offers_enabled",
             ]}
           />
           <div className="adm-card" style={{ padding: 16, lineHeight: 1.55 }}>
@@ -523,6 +537,23 @@ export function VerticalSettingsPage({ vertical }: { vertical: AdminVertical }) 
             Ayarlar altındadır.
           </p>
           <AdminSettingsPanel onlyKeys={["emlak_vasita_listing_questions_enabled"]} />
+        </div>
+        <div className="adm-card" style={{ padding: 16 }}>
+          <h2 style={{ margin: "0 0 6px", fontSize: 15, fontWeight: 800 }}>Teklifler</h2>
+          <p style={{ margin: "0 0 14px", fontSize: 13, color: "#64748b", lineHeight: 1.45 }}>
+            Emlak &amp; Vasıta tekliflerini aç/kapat. Alışveriş teklifleri kendi ayar sayfasındandır.
+          </p>
+          <AdminSettingsPanel onlyKeys={["emlak_vasita_offers_enabled"]} />
+        </div>
+        <div className="adm-card" style={{ padding: 16 }}>
+          <h2 style={{ margin: "0 0 6px", fontSize: 15, fontWeight: 800 }}>Teklif kuralları</h2>
+          <p style={{ margin: "0 0 14px", fontSize: 13, color: "#64748b", lineHeight: 1.45 }}>
+            Basamak (varsayılan 10.000 TL), süre seçenekleri ve limitler — yalnızca Emlak &amp; Vasıta.
+          </p>
+          <AdminSettingsPanel
+            onlyGroups={["bid"]}
+            excludeKeys={["offers_feed_cache_enabled", "offers_feed_cache_ttl_sec", "token_refund_on_withdraw"]}
+          />
         </div>
         <div className="adm-card" style={{ padding: 16 }}>
           <h2 style={{ margin: "0 0 6px", fontSize: 15, fontWeight: 800 }}>Yeniden yayınlama</h2>
