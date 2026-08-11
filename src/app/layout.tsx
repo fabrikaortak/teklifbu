@@ -1,6 +1,16 @@
 import type { Metadata } from "next";
 import type { CSSProperties } from "react";
-import { Plus_Jakarta_Sans } from "next/font/google";
+/* Self-hosted — Docker build Google Fonts'a ihtiyaç duymaz (VPS gstatic engeli) */
+import "@fontsource/plus-jakarta-sans/400.css";
+import "@fontsource/plus-jakarta-sans/500.css";
+import "@fontsource/plus-jakarta-sans/600.css";
+import "@fontsource/plus-jakarta-sans/700.css";
+import "@fontsource/plus-jakarta-sans/800.css";
+import "@fontsource/plus-jakarta-sans/latin-ext-400.css";
+import "@fontsource/plus-jakarta-sans/latin-ext-500.css";
+import "@fontsource/plus-jakarta-sans/latin-ext-600.css";
+import "@fontsource/plus-jakarta-sans/latin-ext-700.css";
+import "@fontsource/plus-jakarta-sans/latin-ext-800.css";
 import "./globals.css";
 import "./theme-v2.css";
 import "./shopping-product.css";
@@ -16,13 +26,6 @@ import { AlisverisBrowseProvider } from "@/components/AlisverisBrowseProvider";
 import { getSetting } from "@/core/settings";
 import { getAlisverisBrowseNavTree } from "@/lib/alisverisBrowseNav";
 import { THEME_BOOTSTRAP_SCRIPT } from "@/lib/themeBootstrap";
-
-const sans = Plus_Jakarta_Sans({
-  subsets: ["latin", "latin-ext"],
-  weight: ["400", "500", "600", "700", "800"],
-  display: "swap",
-  variable: "--font-teklifbu",
-});
 
 export const metadata: Metadata = {
   title: "TeklifBu — Gerçek satıcılar, gerçek alıcılarla buluşur",
@@ -62,16 +65,20 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
   return (
     <html
       lang="tr"
-      className={sans.variable}
       data-theme={theme}
       {...(theme === "v2" ? { "data-v2-belt": belt } : {})}
-      style={beltStyle}
+      style={
+        {
+          ...beltStyle,
+          ["--font-teklifbu" as string]: '"Plus Jakarta Sans"',
+        } as CSSProperties
+      }
       suppressHydrationWarning
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: THEME_BOOTSTRAP_SCRIPT }} />
       </head>
-      <body className={sans.className} suppressHydrationWarning>
+      <body suppressHydrationWarning>
         <ThemeProvider initialTheme={theme} initialHeaderBelt={belt}>
           <ConfirmDialogProvider>
             <CartProvider>
