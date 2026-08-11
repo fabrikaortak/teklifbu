@@ -303,6 +303,10 @@ function ProductDetailInner({ id }: { id: string }) {
       specs={specs}
       favorited={favorited}
       isSeller={false}
+      categorySlug={
+        product.categoryPath?.find((c) => c.slug.startsWith("ikinci-el") || c.slug.startsWith("sifir-urun"))
+          ?.slug || product.categoryPath?.[product.categoryPath.length - 1]?.slug
+      }
       onFavorite={() => setFavorited((f) => !f)}
       onShare={handleShare}
       onBuy={handleBuy}

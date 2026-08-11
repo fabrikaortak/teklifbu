@@ -1,16 +1,6 @@
 import type { Metadata } from "next";
 import type { CSSProperties } from "react";
-/* Self-hosted — Docker build Google Fonts'a ihtiyaç duymaz (VPS gstatic engeli) */
-import "@fontsource/plus-jakarta-sans/400.css";
-import "@fontsource/plus-jakarta-sans/500.css";
-import "@fontsource/plus-jakarta-sans/600.css";
-import "@fontsource/plus-jakarta-sans/700.css";
-import "@fontsource/plus-jakarta-sans/800.css";
-import "@fontsource/plus-jakarta-sans/latin-ext-400.css";
-import "@fontsource/plus-jakarta-sans/latin-ext-500.css";
-import "@fontsource/plus-jakarta-sans/latin-ext-600.css";
-import "@fontsource/plus-jakarta-sans/latin-ext-700.css";
-import "@fontsource/plus-jakarta-sans/latin-ext-800.css";
+import localFont from "next/font/local";
 import "./globals.css";
 import "./theme-v2.css";
 import "./shopping-product.css";
@@ -26,6 +16,24 @@ import { AlisverisBrowseProvider } from "@/components/AlisverisBrowseProvider";
 import { getSetting } from "@/core/settings";
 import { getAlisverisBrowseNavTree } from "@/lib/alisverisBrowseNav";
 import { THEME_BOOTSTRAP_SCRIPT } from "@/lib/themeBootstrap";
+
+/** Repo içi font — Google/gstatic + Turbopack @fontsource CSS sorununu bypass eder */
+const sans = localFont({
+  src: [
+    { path: "../fonts/plus-jakarta-sans/latin-400.woff2", weight: "400", style: "normal" },
+    { path: "../fonts/plus-jakarta-sans/latin-ext-400.woff2", weight: "400", style: "normal" },
+    { path: "../fonts/plus-jakarta-sans/latin-500.woff2", weight: "500", style: "normal" },
+    { path: "../fonts/plus-jakarta-sans/latin-ext-500.woff2", weight: "500", style: "normal" },
+    { path: "../fonts/plus-jakarta-sans/latin-600.woff2", weight: "600", style: "normal" },
+    { path: "../fonts/plus-jakarta-sans/latin-ext-600.woff2", weight: "600", style: "normal" },
+    { path: "../fonts/plus-jakarta-sans/latin-700.woff2", weight: "700", style: "normal" },
+    { path: "../fonts/plus-jakarta-sans/latin-ext-700.woff2", weight: "700", style: "normal" },
+    { path: "../fonts/plus-jakarta-sans/latin-800.woff2", weight: "800", style: "normal" },
+    { path: "../fonts/plus-jakarta-sans/latin-ext-800.woff2", weight: "800", style: "normal" },
+  ],
+  display: "swap",
+  variable: "--font-teklifbu",
+});
 
 export const metadata: Metadata = {
   title: "TeklifBu — Gerçek satıcılar, gerçek alıcılarla buluşur",
@@ -65,20 +73,16 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
   return (
     <html
       lang="tr"
+      className={sans.variable}
       data-theme={theme}
       {...(theme === "v2" ? { "data-v2-belt": belt } : {})}
-      style={
-        {
-          ...beltStyle,
-          ["--font-teklifbu" as string]: '"Plus Jakarta Sans"',
-        } as CSSProperties
-      }
+      style={beltStyle}
       suppressHydrationWarning
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: THEME_BOOTSTRAP_SCRIPT }} />
       </head>
-      <body suppressHydrationWarning>
+      <body className={sans.className} suppressHydrationWarning>
         <ThemeProvider initialTheme={theme} initialHeaderBelt={belt}>
           <ConfirmDialogProvider>
             <CartProvider>

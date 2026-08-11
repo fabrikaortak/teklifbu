@@ -3299,7 +3299,12 @@ export async function POST(req: Request) {
     const nodeKey = body.nodeKey != null ? String(body.nodeKey).trim() : "";
     if (nodeKey) {
       const prev = next.nodes[nodeKey] || {};
-      const patch: { active?: boolean; sortOrder?: number; label?: string } = { ...prev };
+      const patch: {
+        active?: boolean;
+        sortOrder?: number;
+        label?: string;
+        returnPolicyText?: string;
+      } = { ...prev };
       if (typeof body.active === "boolean") patch.active = body.active;
       if (body.sortOrder !== undefined && body.sortOrder !== null && body.sortOrder !== "") {
         const n = Number(body.sortOrder);
@@ -3310,8 +3315,18 @@ export async function POST(req: Request) {
         if (label) patch.label = label;
         else delete patch.label;
       }
+      if (body.returnPolicyText !== undefined) {
+        const returnPolicyText = String(body.returnPolicyText ?? "").trim();
+        if (returnPolicyText) patch.returnPolicyText = returnPolicyText;
+        else delete patch.returnPolicyText;
+      }
       // Boş kayıt bırakma
-      if (patch.active === undefined && patch.sortOrder === undefined && patch.label === undefined) {
+      if (
+        patch.active === undefined &&
+        patch.sortOrder === undefined &&
+        patch.label === undefined &&
+        patch.returnPolicyText === undefined
+      ) {
         delete next.nodes[nodeKey];
       } else {
         next.nodes[nodeKey] = patch;
@@ -3341,6 +3356,10 @@ export async function POST(req: Request) {
         active: typeof body.active === "boolean" ? body.active : undefined,
         sortOrder: body.sortOrder,
         label: body.label !== undefined ? String(body.label ?? "").trim() || null : undefined,
+        returnPolicyText:
+          body.returnPolicyText !== undefined
+            ? String(body.returnPolicyText ?? "").trim() || null
+            : undefined,
       },
     });
 

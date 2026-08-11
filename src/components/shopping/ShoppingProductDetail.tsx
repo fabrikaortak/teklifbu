@@ -42,6 +42,7 @@ import {
 } from "@/components/shopping/PremiumStoreInfoModal";
 import { useCart, useRegisterShoppingSurface } from "@/components/cart/CartProvider";
 import { PriceWithKurus } from "@/components/shopping/PriceWithKurus";
+import { isShoppingSecondHandSlug } from "@/lib/browseNavConfig";
 
 export type ShoppingPdpListing = {
   id: string;
@@ -118,6 +119,8 @@ type Props = {
   /** Verilirse demo satıcılar yerine gerçek teklif listesi */
   otherSellersList?: ShoppingPdpOtherSeller[];
   onSelectOtherSeller?: (id: string) => void;
+  /** Alışveriş kategori slug (ikinci-el-… / sifir-urun-…) */
+  categorySlug?: string | null;
 };
 
 const DEMO_BUYERS = [
@@ -157,6 +160,7 @@ export function ShoppingProductDetail({
   questionsEnabled = true,
   otherSellersList,
   onSelectOtherSeller,
+  categorySlug = null,
 }: Props) {
   useRegisterShoppingSurface(true);
   const { addItem } = useCart();
@@ -190,13 +194,24 @@ export function ShoppingProductDetail({
 
   const [detailTab, setDetailTab] = useState<"specs" | "desc" | "qa" | "reviews" | "shipping">("specs");
   const [buyButtonColor, setBuyButtonColor] = useState("#2563eb");
+  const [adminReturnPolicyText, setAdminReturnPolicyText] = useState<string | null>(null);
+
+  const isSecondHand = isShoppingSecondHandSlug(categorySlug);
 
   useEffect(() => {
+    const slug = String(categorySlug || "").trim();
     fetch("/api/theme")
       .then((r) => r.json())
       .then((d) => {
         const c = String(d?.shoppingBuyButtonColor || "").trim();
         if (/^#[0-9a-fA-F]{6}$/.test(c)) setBuyButtonColor(c);
+        const policies = d?.shoppingReturnPolicies;
+        if (slug && policies && typeof policies === "object" && !Array.isArray(policies)) {
+          const custom = String((policies as Record<string, unknown>)[slug] || "").trim();
+          setAdminReturnPolicyText(custom || null);
+        } else {
+          setAdminReturnPolicyText(null);
+        }
         const p = d?.premiumStorePopup;
         if (!p || typeof p !== "object") return;
         setPremiumPopup({
@@ -209,7 +224,7 @@ export function ShoppingProductDetail({
         });
       })
       .catch(() => {});
-  }, []);
+  }, [categorySlug]);
 
   function openPremiumPopup() {
     if (!premiumPopup.enabled) return;
@@ -242,6 +257,11 @@ export function ShoppingProductDetail({
   const view360 = String(attrs.viewAngle360 || "").trim();
   const installmentNote = String(attrs.installmentNote || "").trim();
   const returnDays = parseNumAttr(attrs.returnDays) || 14;
+  const returnPolicyBody =
+    adminReturnPolicyText ||
+    (isSecondHand
+      ? "İkinci el ürünlerde iade koşulları satıcıya ve ürün durumuna göre değişebilir."
+      : `Teslimattan sonra ${returnDays} gün içinde kolay iade`);
 
   const storeName =
     listing.seller.shopName ||
@@ -535,10 +555,12 @@ export function ShoppingProductDetail({
               <Truck size={18} />
               {sameDay ? "Aynı Gün Kargo" : "Hızlı Kargo"}
             </div>
-            <div className="shop-pdp__trust-item">
-              <RotateCcw size={18} />
-              Kolay {returnDays} Gün İade
-            </div>
+            {!isSecondHand ? (
+              <div className="shop-pdp__trust-item">
+                <RotateCcw size={18} />
+                Kolay {returnDays} Gün İade
+              </div>
+            ) : null}
             <div className="shop-pdp__trust-item">
               <Lock size={18} />
               Güvenli Ödeme
@@ -830,20 +852,24 @@ export function ShoppingProductDetail({
           <div className="shop-pdp__side-assure">
             <h3>Alışverişini Güvenceye Al</h3>
             <ul>
-              <li>
-                <span className="shop-pdp__side-assure-icon">
-                  <RotateCcw size={16} />
-                </span>
-                <span>{returnDays} gün içinde koşulsuz iade</span>
-                <ChevronRight size={16} className="shop-pdp__side-assure-arrow" />
-              </li>
-              <li>
-                <span className="shop-pdp__side-assure-icon">
-                  <ShieldCheck size={16} />
-                </span>
-                <span>Ürün garantisi</span>
-                <ChevronRight size={16} className="shop-pdp__side-assure-arrow" />
-              </li>
+              {!isSecondHand ? (
+                <>
+                  <li>
+                    <span className="shop-pdp__side-assure-icon">
+                      <RotateCcw size={16} />
+                    </span>
+                    <span>{returnDays} gün içinde koşulsuz iade</span>
+                    <ChevronRight size={16} className="shop-pdp__side-assure-arrow" />
+                  </li>
+                  <li>
+                    <span className="shop-pdp__side-assure-icon">
+                      <ShieldCheck size={16} />
+                    </span>
+                    <span>Ürün garantisi</span>
+                    <ChevronRight size={16} className="shop-pdp__side-assure-arrow" />
+                  </li>
+                </>
+              ) : null}
               <li>
                 <span className="shop-pdp__side-assure-icon">
                   <BadgeCheck size={16} />
@@ -980,10 +1006,12 @@ export function ShoppingProductDetail({
           <Package size={20} />
           Aynı gün / ertesi gün teslimat
         </div>
-        <div className="shop-pdp__footer-item">
-          <RotateCcw size={20} />
-          {returnDays} gün iade garantisi
-        </div>
+        {!isSecondHand ? (
+          <div className="shop-pdp__footer-item">
+            <RotateCcw size={20} />
+            {returnDays} gün iade garantisi
+          </div>
+        ) : null}
         <div className="shop-pdp__footer-item">
           <ShieldCheck size={20} />
           %100 orijinal ürün
@@ -1108,7 +1136,7 @@ export function ShoppingProductDetail({
                 <RotateCcw size={18} />
                 <div>
                   <strong>İade</strong>
-                  <p>Teslimattan sonra {returnDays} gün içinde kolay iade</p>
+                  <p>{returnPolicyBody}</p>
                 </div>
               </div>
               <div className="shop-pdp__ship-row">

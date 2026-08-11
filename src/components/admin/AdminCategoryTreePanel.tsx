@@ -163,26 +163,34 @@ function EditMenuModal({
   onClose,
   onSave,
 }: {
-  target: EditTarget;
+  target: EditTarget & { returnPolicyText?: string };
   busy: boolean;
   onClose: () => void;
-  onSave: (patch: { label: string; sortOrder: number; active: boolean }) => void;
+  onSave: (patch: {
+    label: string;
+    sortOrder: number;
+    active: boolean;
+    returnPolicyText?: string;
+  }) => void;
 }) {
+  const isShopLeaf = Boolean(target.categorySlug) && target.nodeKey.startsWith("shop/leaf/");
   const [label, setLabel] = useState(target.defaultName);
   const [sortOrder, setSortOrder] = useState(String(target.sortValue));
   const [active, setActive] = useState(target.active);
+  const [returnPolicyText, setReturnPolicyText] = useState(target.returnPolicyText || "");
 
   useEffect(() => {
     setLabel(target.defaultName);
     setSortOrder(String(target.sortValue));
     setActive(target.active);
+    setReturnPolicyText(target.returnPolicyText || "");
   }, [target]);
 
   return (
     <div className="tb-dialog-backdrop" onClick={onClose}>
       <div
         className="tb-dialog"
-        style={{ textAlign: "left", width: "min(440px, 100%)" }}
+        style={{ textAlign: "left", width: "min(480px, 100%)" }}
         onClick={(e) => e.stopPropagation()}
       >
         <button type="button" className="tb-dialog-close" onClick={onClose} aria-label="Kapat">
@@ -231,6 +239,28 @@ function EditMenuModal({
           Sitede görünür
         </label>
 
+        {isShopLeaf ? (
+          <label style={{ display: "grid", gap: 6, marginBottom: 14, fontSize: 13, fontWeight: 650 }}>
+            Kargo &amp; İade — iade metni
+            <textarea
+              className="input"
+              rows={3}
+              value={returnPolicyText}
+              onChange={(e) => setReturnPolicyText(e.target.value)}
+              placeholder={
+                String(target.categorySlug || "").startsWith("ikinci-el")
+                  ? "Örn. İkinci el ürünlerde iade koşulları satıcıya özeldir."
+                  : "Örn. Teslimattan sonra 14 gün içinde kolay iade"
+              }
+              style={{ resize: "vertical", minHeight: 72, fontWeight: 500 }}
+            />
+            <span style={{ fontSize: 12, color: "#64748b", fontWeight: 500, lineHeight: 1.4 }}>
+              Ürün detayındaki «Kargo &amp; İade» sekmesinde görünür. Boş bırakılırsa kategori tipine göre
+              varsayılan metin kullanılır.
+            </span>
+          </label>
+        ) : null}
+
         <div
           style={{
             fontSize: 12,
@@ -260,6 +290,7 @@ function EditMenuModal({
                 label: label.trim(),
                 sortOrder: Number.isFinite(n) ? n : target.sortValue,
                 active,
+                ...(isShopLeaf ? { returnPolicyText: returnPolicyText.trim() } : {}),
               });
             }}
           >
@@ -595,7 +626,12 @@ export function AdminCategoryTreePanel({ vertical }: { vertical: AdminVertical }
     }
   }
 
-  async function saveEdit(patch: { label: string; sortOrder: number; active: boolean }) {
+  async function saveEdit(patch: {
+    label: string;
+    sortOrder: number;
+    active: boolean;
+    returnPolicyText?: string;
+  }) {
     if (!editTarget) return;
     const t = editTarget;
     setBusyKey(t.nodeKey);
@@ -609,6 +645,9 @@ export function AdminCategoryTreePanel({ vertical }: { vertical: AdminVertical }
           label: patch.label,
           sortOrder: patch.sortOrder,
           active: patch.active,
+          ...(patch.returnPolicyText !== undefined
+            ? { returnPolicyText: patch.returnPolicyText }
+            : {}),
         }),
       });
       const j = await res.json().catch(() => ({}));
@@ -675,6 +714,7 @@ export function AdminCategoryTreePanel({ vertical }: { vertical: AdminVertical }
           target={{
             ...editTarget,
             defaultName: displayNameFor(config, editTarget.nodeKey, editTarget.defaultName),
+            returnPolicyText: config.nodes[editTarget.nodeKey]?.returnPolicyText || "",
           }}
           busy={busyKey === editTarget.nodeKey}
           onClose={() => setEditTarget(null)}

@@ -1080,6 +1080,7 @@ export default function ListingDetailInner() {
           specs={attrSpecs.length ? attrSpecs : midSpecs}
           favorited={favorited}
           isSeller={isSeller}
+          categorySlug={listing.category?.slug}
           onFavorite={toggleFavorite}
           onShare={shareListing}
           onBuy={handleBuyNow}

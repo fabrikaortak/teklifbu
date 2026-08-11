@@ -3,6 +3,7 @@ import { getSetting } from "@/core/settings";
 import { getMarketplaceMode } from "@/core/services/marketplaceModeService";
 import { isOffersEnabledMode } from "@/lib/marketplaceMode";
 import { getEscrowRuntimeSettings } from "@/core/services/escrowSettingsService";
+import { normalizeBrowseNavConfig } from "@/lib/browseNavConfig";
 
 /** Satırdaki ilan → içerik max genişlik */
 export const V2_COLS_MAX_WIDTH: Record<string, string> = {
@@ -71,6 +72,14 @@ export async function GET() {
     (await getSetting<string>("shopping_buy_button_color", "#2563eb")) || "#2563eb"
   ).trim();
   const shoppingBuyButtonColor = /^#[0-9a-fA-F]{6}$/.test(buyColorRaw) ? buyColorRaw : "#2563eb";
+  const browseNav = normalizeBrowseNavConfig(await getSetting<unknown>("browse_nav_config", null));
+  const shoppingReturnPolicies: Record<string, string> = {};
+  for (const [key, node] of Object.entries(browseNav.nodes)) {
+    if (!key.startsWith("shop/leaf/")) continue;
+    const text = node.returnPolicyText?.trim();
+    if (!text) continue;
+    shoppingReturnPolicies[key.slice("shop/leaf/".length)] = text;
+  }
   /** Teklifsiz modda teklif panelleri zorla kapalı; harita üye haritası olarak kalır */
   const homeInsightSections = offersEnabled
     ? insightRaw
@@ -201,6 +210,7 @@ export async function GET() {
         ? "ust"
         : "alt",
     shoppingBuyButtonColor,
+    shoppingReturnPolicies,
     premiumStorePopup: {
       enabled: (await getSetting<boolean>("premium_store_popup_enabled", true)) !== false,
       title: String(

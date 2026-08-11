@@ -5,6 +5,8 @@ export type BrowseNavNodeState = {
   sortOrder?: number;
   /** Sitede görünen menü adı (slug değişmez) */
   label?: string;
+  /** Alışveriş PDP «Kargo & İade» sekmesindeki iade paragrafı */
+  returnPolicyText?: string;
 };
 
 export type BrowseNavConfig = {
@@ -44,7 +46,16 @@ export function normalizeBrowseNavConfig(raw: unknown): BrowseNavConfig {
         const label = n.label.trim();
         if (label) entry.label = label;
       }
-      if (entry.active !== undefined || entry.sortOrder !== undefined || entry.label !== undefined) {
+      if (typeof n.returnPolicyText === "string") {
+        const returnPolicyText = n.returnPolicyText.trim();
+        if (returnPolicyText) entry.returnPolicyText = returnPolicyText;
+      }
+      if (
+        entry.active !== undefined ||
+        entry.sortOrder !== undefined ||
+        entry.label !== undefined ||
+        entry.returnPolicyText !== undefined
+      ) {
         nodes[k] = entry;
       }
     }
@@ -170,4 +181,27 @@ export function resolveBrowseNodeKey(
   const fromFilter = keyFromBrowseFilter(filter);
   if (fromFilter) return fromFilter;
   return id;
+}
+
+/** Alışveriş DB leaf → browse nav anahtarı */
+export function shopLeafNodeKey(categorySlug: string) {
+  return browseNodeKey("shop", "leaf", String(categorySlug || "").trim());
+}
+
+/** İkinci el alışveriş kategorisi (sıfır ürün değil) */
+export function isShoppingSecondHandSlug(categorySlug?: string | null): boolean {
+  const slug = String(categorySlug || "").trim().toLowerCase();
+  if (!slug) return false;
+  return slug === "ikinci-el" || slug.startsWith("ikinci-el-") || slug.startsWith("ikinci-el__");
+}
+
+export function returnPolicyTextForShopSlug(
+  config: BrowseNavConfig | null | undefined,
+  categorySlug?: string | null
+): string | null {
+  const slug = String(categorySlug || "").trim();
+  if (!slug) return null;
+  const text = config?.nodes?.[shopLeafNodeKey(slug)]?.returnPolicyText;
+  if (typeof text === "string" && text.trim()) return text.trim();
+  return null;
 }
