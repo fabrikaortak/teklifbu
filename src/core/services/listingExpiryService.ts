@@ -27,42 +27,20 @@ export async function getListingExpiryRules(): Promise<ListingExpiryRules> {
   return rules;
 }
 
-/** Vitrin / liste için status filtresi */
-export async function publicListingStatusWhere(now = new Date()) {
-  const rules = await getListingExpiryRules();
-  const maxExpiredDays = Math.max(
-    rules.bidding.expiredVisibleDays,
-    rules.classified.afterEnd === "hide_immediate" ? 0 : rules.classified.graceDays,
-    rules.buy.afterEnd === "hide_immediate" ? 0 : rules.buy.graceDays,
-    rules.classified.expiredVisibleDays,
-    rules.buy.expiredVisibleDays
-  );
-  const maxApprovedDays =
-    rules.bidding.onApprove === "hide_immediate" ? 0 : rules.bidding.approvedVisibleDays;
-
-  const expiredAfter = new Date(now.getTime() - daysMs(maxExpiredDays));
-  const approvedAfter = new Date(now.getTime() - daysMs(maxApprovedDays));
-
-  const or: object[] = [
-    { status: { in: [ListingStatus.ACTIVE, ListingStatus.SELECTION] } },
-  ];
-  if (maxExpiredDays > 0) {
-    or.push({
-      status: ListingStatus.EXPIRED,
-      updatedAt: { gte: expiredAfter },
-    });
-  }
-  if (maxApprovedDays > 0) {
-    or.push({
-      status: ListingStatus.APPROVED,
-      updatedAt: { gte: approvedAfter },
-    });
-  } else {
-    // Onay sonrası hemen kalksa bile “satılanlar” feed’i APPROVED ister — sold=1 ayrı
-    or.push({ status: ListingStatus.APPROVED });
-  }
-
-  return { OR: or };
+/** Vitrin / liste / kategori sayısı — arşivlenene veya silinene kadar görünür. */
+export async function publicListingStatusWhere(_now = new Date()) {
+  // Süre dolsa / sonuçlansa bile ilan kalkmadıkça (ARCHIVED değil) sayılır ve listelenir.
+  // Gün bazlı gizleme kaldırıldı; kalkış processExpiredListings → ARCHIVED ile olur.
+  return {
+    status: {
+      in: [
+        ListingStatus.ACTIVE,
+        ListingStatus.SELECTION,
+        ListingStatus.EXPIRED,
+        ListingStatus.APPROVED,
+      ],
+    },
+  };
 }
 
 /**

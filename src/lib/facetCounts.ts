@@ -1,8 +1,8 @@
 import { prisma } from "@/lib/db";
-import { ListingStatus } from "@prisma/client";
 import { getSetting } from "@/core/settings";
 import type { FacetCounts } from "@/lib/facetHelpers";
 import { normalizeBrowseNavConfig, type BrowseNavConfig } from "@/lib/browseNavConfig";
+import { publicListingStatusWhere } from "@/core/services/listingExpiryService";
 
 export type { FacetCounts } from "@/lib/facetHelpers";
 export { countForBrowseFilter, buildVehicleBrandNodes } from "@/lib/facetHelpers";
@@ -11,8 +11,6 @@ type Cache = { at: number; data: FacetCounts };
 let cache: Cache | null = null;
 const TTL_MS = 120_000;
 
-const ACTIVE: ListingStatus[] = [ListingStatus.ACTIVE, ListingStatus.SELECTION, ListingStatus.APPROVED];
-
 function attr(row: { attributes: unknown }, key: string): string {
   const a = row.attributes;
   if (!a || typeof a !== "object" || Array.isArray(a)) return "";
@@ -20,7 +18,7 @@ function attr(row: { attributes: unknown }, key: string): string {
   return v == null ? "" : String(v).trim();
 }
 
-/** İlan sayılarını toplayıp cache’ler — menü/filtre için (45 sn cache, max 5k ilan). */
+/** İlan sayılarını toplayıp cache’ler — menü; arşivlenene kadar vitrinle aynı status seti. */
 export async function getFacetCounts(force = false): Promise<FacetCounts> {
   if (!force && cache && Date.now() - cache.at < TTL_MS) return cache.data;
 
@@ -32,6 +30,7 @@ export async function getFacetCounts(force = false): Promise<FacetCounts> {
     showRootCounts,
     browseNavRaw,
     activeCats,
+    publicWhere,
   ] = await Promise.all([
     getSetting<boolean>("vehicle_nav_show_empty_brands", false),
     getSetting<boolean>("vehicle_nav_show_empty_models", false),
@@ -43,6 +42,7 @@ export async function getFacetCounts(force = false): Promise<FacetCounts> {
       where: { isActive: true },
       select: { slug: true },
     }),
+    publicListingStatusWhere(),
   ]);
 
   const browseNavConfig: BrowseNavConfig = normalizeBrowseNavConfig(browseNavRaw);
@@ -54,7 +54,7 @@ export async function getFacetCounts(force = false): Promise<FacetCounts> {
   const effectiveShowEmptyCategories = hideEmpty ? false : showEmptyCategories;
 
   const rows = await prisma.listing.findMany({
-    where: { status: { in: ACTIVE } },
+    where: publicWhere,
     select: {
       category: { select: { slug: true, parentId: true, parent: { select: { slug: true } } } },
       dealType: true,
@@ -89,8 +89,14 @@ export async function getFacetCounts(force = false): Promise<FacetCounts> {
       if (parentSlug) categories[slug] = (categories[slug] || 0) + 1;
     }
 
-    const dtKey = `${root}:${row.dealType}`;
-    dealTypes[dtKey] = (dealTypes[dtKey] || 0) + 1;
+    const dealType = String(row.dealType || "").trim();
+    if (dealType) {
+      const dtKey = `${root}:${dealType}`;
+      dealTypes[dtKey] = (dealTypes[dtKey] || 0) + 1;
+      if (slug !== root) {
+        dealTypes[`${slug}:${dealType}`] = (dealTypes[`${slug}:${dealType}`] || 0) + 1;
+      }
+    }
 
     const subtype = attr(row, "subtype");
     if (subtype) {
@@ -98,6 +104,16 @@ export async function getFacetCounts(force = false): Promise<FacetCounts> {
       subtypes[sk] = (subtypes[sk] || 0) + 1;
       if (slug !== root) {
         subtypes[`${slug}:${subtype}`] = (subtypes[`${slug}:${subtype}`] || 0) + 1;
+      }
+      // Menü yaprağı hem dealType hem subtype ister — ayrı ayrı saymak Satılık altında
+      // yanlış (1) gösterir, tıklanınca 0 ilan çıkar.
+      if (dealType) {
+        const combined = `${root}:${dealType}:${subtype}`;
+        subtypes[combined] = (subtypes[combined] || 0) + 1;
+        if (slug !== root) {
+          subtypes[`${slug}:${dealType}:${subtype}`] =
+            (subtypes[`${slug}:${dealType}:${subtype}`] || 0) + 1;
+        }
       }
     }
     const rental = attr(row, "rentalPeriod");

@@ -199,7 +199,7 @@ async function main() {
         categoryId: bySlug.isyeri.id,
         coverImage: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800",
         images: ["https://images.unsplash.com/photo-1497366216548-37526070297c?w=800"],
-        attributes: { m2: 120, frontage: "Cadde" },
+        attributes: { subtype: "dukkan-magaza", m2: 120, frontage: "Cadde" },
         isFeatured: true,
       },
       {

@@ -86,6 +86,9 @@ export function countForBrowseFilter(
   if (filter.brand && filter.subtype) {
     return facets.brands[`arac:${filter.subtype}:${filter.brand}`] || 0;
   }
+  if (filter.subtype && filter.dealType) {
+    return facets.subtypes[`${cat}:${filter.dealType}:${filter.subtype}`] || 0;
+  }
   if (filter.subtype) {
     return facets.subtypes[`${cat}:${filter.subtype}`] || 0;
   }
