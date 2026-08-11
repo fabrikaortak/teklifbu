@@ -1925,6 +1925,35 @@ export const DEFAULT_SETTINGS: Record<string, SettingMeta> = {
       "Açıksa Emlak ve Vasıta ilanlarında teklif verilebilir (site teklifli moddayken). Kapalıysa bu dikeyde teklif alınmaz; Alışveriş teklifleri kendi ayarından bağımsız yönetilir.",
     control: "toggle",
   },
+  favorites_inactive_dim_enabled: {
+    value: true,
+    label: "Favorilerde pasif ilanları soluk göster",
+    group: "emlak_vasita",
+    description:
+      "Süresi dolmuş / yayından kalkmış / kapanmış favori ilan kartları soluk görünür. Hesabım → Favorilerim.",
+    control: "toggle",
+  },
+  favorites_label_expired: {
+    value: "İlanın süresi dolmuştur",
+    label: "Favori — süre doldu metni",
+    group: "emlak_vasita",
+    description: "EXPIRED ilan kartı ve buton metni.",
+    control: "text",
+  },
+  favorites_label_removed: {
+    value: "Bu ilan yayından kaldırılmıştır",
+    label: "Favori — yayından kalktı metni",
+    group: "emlak_vasita",
+    description: "ARCHIVED / REJECTED ilan kartı ve buton metni.",
+    control: "text",
+  },
+  favorites_label_closed: {
+    value: "İlan kapanmıştır",
+    label: "Favori — kapandı metni",
+    group: "emlak_vasita",
+    description: "APPROVED (sonuçlanan) ilanlarda buton/açıklama (yeşil Sonuçlandı ile birlikte).",
+    control: "text",
+  },
   seller_panel_ship_reminder_hours: {
     value: 48,
     label: "Kargo hatırlatma eşiği",

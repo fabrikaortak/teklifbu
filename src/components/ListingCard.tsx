@@ -90,6 +90,25 @@ function listingTimeAgo(iso?: string | Date | null) {
   return `${d} gün önce`;
 }
 
+export type ListingInactiveLabels = {
+  dimEnabled: boolean;
+  expired: string;
+  removed: string;
+  closed: string;
+};
+
+function resolveInactiveLabel(
+  status: string | undefined,
+  labels: ListingInactiveLabels | undefined
+): { kind: "expired" | "removed" | "closed" | null; text: string } {
+  const s = String(status || "").toUpperCase();
+  if (!labels) return { kind: null, text: "" };
+  if (s === "EXPIRED") return { kind: "expired", text: labels.expired };
+  if (s === "ARCHIVED" || s === "REJECTED") return { kind: "removed", text: labels.removed };
+  if (s === "APPROVED") return { kind: "closed", text: labels.closed };
+  return { kind: null, text: "" };
+}
+
 export function ListingCard({
   listing,
   variant = "grid",
@@ -102,6 +121,8 @@ export function ListingCard({
   onFavoriteChange,
   /** true/false zorla; verilmezse admin ayarı (listing_card_favorites_enabled) */
   showFavorite,
+  /** Favoriler: pasif ilan soluk + admin metinleri */
+  inactiveLabels,
 }: {
   listing: ListingCardData;
   variant?: "grid" | "row";
@@ -110,12 +131,17 @@ export function ListingCard({
   rank?: number;
   onFavoriteChange?: (listingId: string, favorited: boolean) => void;
   showFavorite?: boolean;
+  inactiveLabels?: ListingInactiveLabels;
 }) {
   const { featuredCardTitlePriceOnly, offersEnabled, listingCardFavoritesEnabled } = useTheme();
   const titlePriceOnly = featuredSection && featuredCardTitlePriceOnly;
   const classified = !offersEnabled;
   const favOnCard = showFavorite ?? listingCardFavoritesEnabled;
   const [favorited, setFavorited] = useState(Boolean(listing.isFavorited));
+  const inactive = resolveInactiveLabel(listing.status, inactiveLabels);
+  const dimInactive = Boolean(
+    inactiveLabels?.dimEnabled && (inactive.kind === "expired" || inactive.kind === "removed")
+  );
 
   useEffect(() => {
     setFavorited(Boolean(listing.isFavorited));
@@ -143,6 +169,16 @@ export function ListingCard({
 
   const featuredActive = isFeaturedHomepageActive(listing);
   const isSold = listing.status === "APPROVED";
+  const isExpired = listing.status === "EXPIRED";
+  const inactiveCta = inactive.kind ? inactive.text : "";
+  const badgeInactiveText =
+    inactive.kind === "expired"
+      ? inactive.text
+      : inactive.kind === "removed"
+        ? inactive.text
+        : isSold
+          ? "Sonuçlandı"
+          : null;
   const salePrice =
     listing.finalPrice != null && listing.finalPrice > 0
       ? listing.finalPrice
@@ -173,6 +209,10 @@ export function ListingCard({
     listing.isColored ? "is-colored" : "",
     featuredActive ? "is-featured" : "",
     titlePriceOnly ? "listing-card--title-price" : "",
+    dimInactive ? "listing-card--inactive" : "",
+    inactive.kind === "expired" ? "is-expired" : "",
+    inactive.kind === "removed" ? "is-removed" : "",
+    inactive.kind === "closed" ? "is-closed-fav" : "",
   ]
     .filter(Boolean)
     .join(" ");
@@ -215,8 +255,12 @@ export function ListingCard({
         <div className="listing-row-media">
           <ListingThumbImg src={listing.coverImage} alt="" />
           {!hideTimers ? (
-            <span className={`badge-time listing-row-time${isSold ? " badge-time--done" : ""}`}>
-              {isSold ? "Sonuçlandı" : remainingLabelCompact(listing.endsAt)}
+            <span
+              className={`badge-time listing-row-time${isSold || inactive.kind ? " badge-time--done" : ""}${
+                inactive.kind === "expired" || inactive.kind === "removed" ? " badge-time--inactive" : ""
+              }`}
+            >
+              {badgeInactiveText || (isSold ? "Sonuçlandı" : remainingLabelCompact(listing.endsAt))}
             </span>
           ) : null}
           {favOnCard ? (
@@ -265,7 +309,11 @@ export function ListingCard({
     );
   }
 
-  const timeText = isSold ? "Sonuçlandı" : remainingLabelCompact(listing.endsAt);
+  const timeText = badgeInactiveText
+    ? badgeInactiveText
+    : isSold
+      ? "Sonuçlandı"
+      : remainingLabelCompact(listing.endsAt);
 
   return (
     <article
@@ -297,10 +345,19 @@ export function ListingCard({
         {!titlePriceOnly && showPremiumBadge ? <span className="v2-only badge-premium">Premium</span> : null}
         {!hideTimers ? (
           <>
-            <div className={`badge-time v1-only${isSold ? " badge-time--done" : ""}`} style={{ position: "absolute", left: 10, top: 10 }}>
-              {isSold ? "Sonuçlandı" : remainingLabel(listing.endsAt)}
+            <div
+              className={`badge-time v1-only${isSold || inactive.kind ? " badge-time--done" : ""}${
+                inactive.kind === "expired" || inactive.kind === "removed" ? " badge-time--inactive" : ""
+              }`}
+              style={{ position: "absolute", left: 10, top: 10 }}
+            >
+              {badgeInactiveText || (isSold ? "Sonuçlandı" : remainingLabel(listing.endsAt))}
             </div>
-            <div className={`badge-time v2-only${isSold ? " badge-time--done" : ""}`}>
+            <div
+              className={`badge-time v2-only${isSold || inactive.kind ? " badge-time--done" : ""}${
+                inactive.kind === "expired" || inactive.kind === "removed" ? " badge-time--inactive" : ""
+              }`}
+            >
               <Clock size={12} strokeWidth={2.25} aria-hidden />
               <span>{timeText}</span>
             </div>
@@ -397,8 +454,12 @@ export function ListingCard({
             {classified && ago ? <div className="v2-only listing-card-stats">{ago}</div> : null}
             {!homeMode && !classified ? (
               isSold ? (
-                <span className="btn-sonuclandi v2-only" aria-label="Sonuçlandı">
-                  Sonuçlandı
+                <span className="btn-sonuclandi v2-only" aria-label={inactiveCta || "Sonuçlandı"}>
+                  {inactiveCta || "Sonuçlandı"}
+                </span>
+              ) : inactiveCta ? (
+                <span className="btn-inactive-listing v2-only" aria-label={inactiveCta}>
+                  {inactiveCta}
                 </span>
               ) : (
                 <Link href={`/ilan/${listing.id}`} className="btn-teklifbu v2-only">
@@ -440,8 +501,12 @@ export function ListingCard({
             </div>
             {!homeMode && !classified ? (
               isSold ? (
-                <span className="btn-sonuclandi v1-only" aria-label="Sonuçlandı">
-                  Sonuçlandı
+                <span className="btn-sonuclandi v1-only" aria-label={inactiveCta || "Sonuçlandı"}>
+                  {inactiveCta || "Sonuçlandı"}
+                </span>
+              ) : inactiveCta ? (
+                <span className="btn-inactive-listing v1-only" aria-label={inactiveCta}>
+                  {inactiveCta}
                 </span>
               ) : (
                 <Link href={`/ilan/${listing.id}?tab=teklifler`} className="btn-teklifleri-gor v1-only">

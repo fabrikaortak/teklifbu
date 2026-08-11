@@ -531,6 +531,21 @@ export function VerticalSettingsPage({ vertical }: { vertical: AdminVertical }) 
           <AdminSettingsPanel onlyKeys={["listing_card_favorites_enabled"]} />
         </div>
         <div className="adm-card" style={{ padding: 16 }}>
+          <h2 style={{ margin: "0 0 6px", fontSize: 15, fontWeight: 800 }}>Favoriler — pasif ilanlar</h2>
+          <p style={{ margin: "0 0 14px", fontSize: 13, color: "#64748b", lineHeight: 1.45 }}>
+            Süresi dolan / yayından kalkan / kapanan ilanların Hesabım → Favorilerim görünümü.
+            Soluk kart + buton metinleri.
+          </p>
+          <AdminSettingsPanel
+            onlyKeys={[
+              "favorites_inactive_dim_enabled",
+              "favorites_label_expired",
+              "favorites_label_removed",
+              "favorites_label_closed",
+            ]}
+          />
+        </div>
+        <div className="adm-card" style={{ padding: 16 }}>
           <h2 style={{ margin: "0 0 6px", fontSize: 15, fontWeight: 800 }}>Soru–cevap</h2>
           <p style={{ margin: "0 0 14px", fontSize: 13, color: "#64748b", lineHeight: 1.45 }}>
             Emlak ve Vasıta ilan detayındaki soru bölümü. Alışveriş ürün soruları Satıcı paneli →

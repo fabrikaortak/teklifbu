@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { formatTl, paymentPurposeLabel, paymentStatusLabel, maskName } from "@/lib/format";
-import { ListingCard, ListingCardData } from "@/components/ListingCard";
+import { ListingCard, ListingCardData, type ListingInactiveLabels } from "@/components/ListingCard";
 import { ListingViewToggle, useListingView } from "@/components/ListingViewToggle";
 import {
   canSellerEditListing,
@@ -2004,16 +2004,34 @@ function MyListingsPanel({
 function FavoritesPanel() {
   const [items, setItems] = useState<ListingCardData[]>([]);
   const [loading, setLoading] = useState(true);
+  const [inactiveLabels, setInactiveLabels] = useState<ListingInactiveLabels>({
+    dimEnabled: true,
+    expired: "İlanın süresi dolmuştur",
+    removed: "Bu ilan yayından kaldırılmıştır",
+    closed: "İlan kapanmıştır",
+  });
   const { view, changeView } = useListingView("teklifbu:favorites-view", "grid");
 
   async function load() {
     setLoading(true);
-    const res = await fetch("/api/favorites");
-    if (res.ok) {
-      const d = await res.json();
+    const [favRes, themeRes] = await Promise.all([fetch("/api/favorites"), fetch("/api/theme")]);
+    if (favRes.ok) {
+      const d = await favRes.json();
       setItems((d.items || []).map((x: any) => ({ ...x.listing, isFavorited: true })));
     } else {
       setItems([]);
+    }
+    if (themeRes.ok) {
+      const t = await themeRes.json();
+      const f = t?.favoritesInactive;
+      if (f && typeof f === "object") {
+        setInactiveLabels({
+          dimEnabled: f.dimEnabled !== false,
+          expired: String(f.expired || "İlanın süresi dolmuştur"),
+          removed: String(f.removed || "Bu ilan yayından kaldırılmıştır"),
+          closed: String(f.closed || "İlan kapanmıştır"),
+        });
+      }
     }
     setLoading(false);
   }
@@ -2061,6 +2079,7 @@ function FavoritesPanel() {
             listing={l}
             variant={view === "list" ? "row" : "grid"}
             showFavorite
+            inactiveLabels={inactiveLabels}
             onFavoriteChange={(id, favorited) => {
               if (!favorited) setItems((prev) => prev.filter((x) => x.id !== id));
             }}

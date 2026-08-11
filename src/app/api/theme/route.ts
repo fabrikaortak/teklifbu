@@ -180,6 +180,22 @@ export async function GET() {
     ],
     alisverisBidDurationOptionsDays:
       (await getSetting<number[]>("alisveris_bid_duration_options_days", [1, 3, 7])) || [1, 3, 7],
+    favoritesInactive: {
+      dimEnabled: (await getSetting<boolean>("favorites_inactive_dim_enabled", true)) !== false,
+      expired: String(
+        (await getSetting<string>("favorites_label_expired", "İlanın süresi dolmuştur")) ||
+          "İlanın süresi dolmuştur"
+      ),
+      removed: String(
+        (await getSetting<string>(
+          "favorites_label_removed",
+          "Bu ilan yayından kaldırılmıştır"
+        )) || "Bu ilan yayından kaldırılmıştır"
+      ),
+      closed: String(
+        (await getSetting<string>("favorites_label_closed", "İlan kapanmıştır")) || "İlan kapanmıştır"
+      ),
+    },
     shoppingCartPlacement:
       String((await getSetting<string>("shopping_cart_placement", "alt")) || "alt") === "ust"
         ? "ust"

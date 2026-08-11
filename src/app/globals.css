@@ -2084,9 +2084,40 @@ a.card.account-stat-card--jeton .account-stat-card__label {
   box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.22);
 }
 
-.listing-sonuclandi-inline {
-  color: #047857;
+.listing-card--inactive {
+  opacity: 0.62;
+  filter: grayscale(0.25);
+}
+.listing-card--inactive:hover {
+  opacity: 0.78;
+}
+.btn-inactive-listing {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 12px;
+  border-radius: 10px;
+  background: #f1f5f9;
+  color: #475569;
+  border: 1px solid #cbd5e1;
+  font-size: 12.5px;
   font-weight: 800;
+  letter-spacing: 0.01em;
+  cursor: default;
+  user-select: none;
+  pointer-events: none;
+  text-align: center;
+  line-height: 1.25;
+}
+.badge-time.badge-time--inactive {
+  background: #fff7ed !important;
+  color: #9a3412 !important;
+  border: 1px solid #fed7aa;
+  font-weight: 800;
+  max-width: calc(100% - 20px);
+  white-space: normal;
+  line-height: 1.2;
 }
 
 .price-ask { color: #0f172a; font-weight: 700; font-size: 13.5px; }
