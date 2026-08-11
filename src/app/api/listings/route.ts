@@ -206,16 +206,31 @@ export async function GET(req: Request) {
     const session = await getSession();
     const isOwner = session?.id === listing.sellerId;
     const isAdmin = session?.role === "ADMIN";
-    const isPublic =
-      listing.status === ListingStatus.ACTIVE ||
-      listing.status === ListingStatus.SELECTION ||
-      listing.status === ListingStatus.APPROVED;
+
+    // Vitrin ile aynı görünürlük: ACTIVE/SELECTION + (kurallı) EXPIRED + APPROVED
+    const { publicListingStatusWhere } = await import("@/core/services/listingExpiryService");
+    const publicWhere = await publicListingStatusWhere();
+    const publiclyVisible = await prisma.listing.findFirst({
+      where: { id: listing.id, ...publicWhere },
+      select: { id: true },
+    });
+    const isPublic = Boolean(publiclyVisible);
 
     if (!isPublic && !isOwner && !isAdmin) {
-      return NextResponse.json({ error: "Bu ilan henüz yayında değil" }, { status: 404 });
+      const softMsg =
+        listing.status === ListingStatus.EXPIRED || listing.status === ListingStatus.ARCHIVED
+          ? "Bu ilanın yayın süresi dolmuş"
+          : listing.status === ListingStatus.PENDING_REVIEW
+            ? "Bu ilan onay bekliyor"
+            : "Bu ilan henüz yayında değil";
+      return NextResponse.json({ error: softMsg }, { status: 404 });
     }
 
-    if (isPublic) {
+    // Yalnızca aktif/seçim ilanlarında görüntülenme say — süresi dolmuş vitrin tıklamaları şişirmesin
+    if (
+      listing.status === ListingStatus.ACTIVE ||
+      listing.status === ListingStatus.SELECTION
+    ) {
       await prisma.listing.update({ where: { id }, data: { viewCount: { increment: 1 } } });
     }
 

@@ -815,6 +815,7 @@ export default function ListingDetailInner() {
 
   const isSeller = Boolean(me?.id && me.id === listing.seller.id);
   const isCompleted = listing.status === "APPROVED";
+  const isExpired = listing.status === "EXPIRED";
   const isWinningBuyer = Boolean(
     me?.id && listing.approvedBid?.bidderId && me.id === listing.approvedBid.bidderId
   );
@@ -1342,6 +1343,24 @@ export default function ListingDetailInner() {
             : offersEnabled
               ? "Sonuçlandı — Bu ilanda teklif süreci tamamlandı. Yeni teklif kabul edilmiyor."
               : "Sonuçlandı — Bu ilan artık yayında değil."}
+        </div>
+      )}
+
+      {isExpired && (
+        <div
+          style={{
+            marginBottom: 14,
+            padding: "12px 14px",
+            borderRadius: 12,
+            background: "#fff7ed",
+            border: "1px solid #fed7aa",
+            color: "#9a3412",
+            fontSize: 14,
+            fontWeight: 700,
+            lineHeight: 1.45,
+          }}
+        >
+          Süre doldu — Bu ilan artık teklife kapalı. İlanı inceleyebilirsiniz; yeni teklif verilemez.
         </div>
       )}
 
