@@ -152,9 +152,11 @@ export function AlisverisCategoryMosaic({
 export function AlisverisOfferProductCard({
   listing,
   index = 0,
+  variant = "grid",
 }: {
   listing: ListingCardData;
   index?: number;
+  variant?: "grid" | "list";
 }) {
   const bids = Number(listing.bidCount || 0);
   const top = Number(listing.highestBid || 0);
@@ -164,11 +166,14 @@ export function AlisverisOfferProductCard({
       : bids > 0
         ? `${bids} teklif geldi`
         : "Teklif verebilirsin";
+  const isList = variant === "list";
+  const isExpired = String(listing.status || "").toUpperCase() === "EXPIRED";
+  const isSold = String(listing.status || "").toUpperCase() === "APPROVED";
 
   return (
     <Link
       href={`/ilan/${listing.id}`}
-      className="tb-pcard"
+      className={`tb-pcard${isList ? " tb-pcard--list" : ""}${isExpired || isSold ? " tb-pcard--inactive" : ""}`}
       style={{ animationDelay: `${Math.min(index, 8) * 40}ms` }}
     >
       <div className="tb-pcard-media">
@@ -176,17 +181,31 @@ export function AlisverisOfferProductCard({
         <span className="tb-pcard-heart" aria-hidden>
           <Heart size={15} />
         </span>
-        {listing.endsAt ? (
-          <span className="tb-pcard-time">{remainingLabelCompact(listing.endsAt)}</span>
+        {listing.endsAt || isExpired || isSold ? (
+          <span className={`tb-pcard-time${isExpired || isSold ? " is-done" : ""}`}>
+            {isSold ? "Sonuçlandı" : isExpired ? "Süre doldu" : remainingLabelCompact(listing.endsAt)}
+          </span>
         ) : null}
       </div>
       <div className="tb-pcard-body">
         <div className="tb-pcard-title">{listing.title}</div>
-        <div className="tb-pcard-bid-label">Satıcı {formatTl(listing.askPrice)}</div>
-        <div className="tb-pcard-bid">{offerLine}</div>
-        <div className="tb-pcard-count">
-          {bids <= 0 ? "Teklif verebilirsin" : `${bids} teklif`}
-        </div>
+        {isList ? (
+          <div className="tb-pcard-list-meta">
+            <span className="tb-pcard-bid-label">Satıcı {formatTl(listing.askPrice)}</span>
+            <span className="tb-pcard-bid">{offerLine}</span>
+            <span className="tb-pcard-count">
+              {bids <= 0 ? "Teklif verebilirsin" : `${bids} teklif`}
+            </span>
+          </div>
+        ) : (
+          <>
+            <div className="tb-pcard-bid-label">Satıcı {formatTl(listing.askPrice)}</div>
+            <div className="tb-pcard-bid">{offerLine}</div>
+            <div className="tb-pcard-count">
+              {bids <= 0 ? "Teklif verebilirsin" : `${bids} teklif`}
+            </div>
+          </>
+        )}
       </div>
     </Link>
   );

@@ -877,9 +877,21 @@ export function AlisverisHome() {
             </div>
           </div>
 
-          <div className="tb-product-row" style={{ gridTemplateColumns: "repeat(3, minmax(0,1fr))" }}>
+          <div
+            className={`tb-product-row${view === "list" ? " tb-product-row--list" : ""}`}
+            style={
+              view === "list"
+                ? { gridTemplateColumns: "1fr" }
+                : { gridTemplateColumns: "repeat(3, minmax(0,1fr))" }
+            }
+          >
             {listings.map((l, i) => (
-              <AlisverisOfferProductCard key={l.id} listing={l} index={i} />
+              <AlisverisOfferProductCard
+                key={l.id}
+                listing={l}
+                index={i}
+                variant={view === "list" ? "list" : "grid"}
+              />
             ))}
           </div>
           {!listings.length && <div className="tb-empty">Bu kategoride henüz ürün yok.</div>}
