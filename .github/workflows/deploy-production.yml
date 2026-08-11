@@ -26,30 +26,112 @@ jobs:
             echo "Eksik secret: VPS_HOST / VPS_USER / VPS_SSH_KEY"
             exit 1
           fi
-          # Secret'a yanlışlıkla "Value: " yazıldıysa temizle
           HOST="$(echo "$HOST" | tr -d '\r' | sed 's/^Value:[[:space:]]*//;s/^[[:space:]]*//;s/[[:space:]]*$//')"
           USERNAME="$(echo "$USERNAME" | tr -d '\r' | sed 's/^Value:[[:space:]]*//;s/^[[:space:]]*//;s/[[:space:]]*$//')"
 
           mkdir -p ~/.ssh
-          # Satır sonlarını düzelt (Windows yapıştırma)
           printf '%s\n' "$SSH_KEY" | tr -d '\r' > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
-
-          echo "Bağlanıyor: ${USERNAME}@${HOST}"
           ssh-keyscan -H "$HOST" >> ~/.ssh/known_hosts 2>/dev/null || true
 
-          ssh -i ~/.ssh/deploy_key \
-            -o IdentitiesOnly=yes \
-            -o StrictHostKeyChecking=accept-new \
-            -o ConnectTimeout=20 \
-            "${USERNAME}@${HOST}" \
-            'bash -s' <<'REMOTE'
+          ssh_cmd() {
+            ssh -i ~/.ssh/deploy_key \
+              -o IdentitiesOnly=yes \
+              -o StrictHostKeyChecking=accept-new \
+              -o ConnectTimeout=20 \
+              -o ServerAliveInterval=15 \
+              -o ServerAliveCountMax=40 \
+              "${USERNAME}@${HOST}" "$@"
+          }
+
+          echo "Bağlanıyor: ${USERNAME}@${HOST}"
+
+          # 1) Kod sync + arka planda deploy (SSH Broken pipe olsa bile build ölmez)
+          ssh_cmd 'bash -s' <<'REMOTE'
           set -eu
           cd /var/www/teklifbu
           git fetch origin main
           git checkout main
           git reset --hard origin/main
-          sed -i 's/\r$//' scripts/deploy-vps.sh
-          chmod +x scripts/deploy-vps.sh
-          ./scripts/deploy-vps.sh
+          sed -i 's/\r$//' scripts/deploy-vps.sh scripts/docker-entrypoint.sh 2>/dev/null || true
+          chmod +x scripts/deploy-vps.sh scripts/docker-entrypoint.sh
+
+          LOG=/tmp/teklifbu-deploy.log
+          EXITF=/tmp/teklifbu-deploy.exit
+          PIDF=/tmp/teklifbu-deploy.pid
+          OFF=/tmp/teklifbu-deploy.off
+          rm -f "$EXITF"
+          : > "$LOG"
+          echo 0 > "$OFF"
+
+          if [ -f "$PIDF" ] && kill -0 "$(cat "$PIDF")" 2>/dev/null; then
+            echo "Önceki deploy hâlâ çalışıyor (pid $(cat "$PIDF"))"
+            exit 1
+          fi
+
+          setsid bash -c '
+            set +e
+            cd /var/www/teklifbu
+            ./scripts/deploy-vps.sh > /tmp/teklifbu-deploy.log 2>&1
+            echo $? > /tmp/teklifbu-deploy.exit
+          ' </dev/null >/dev/null 2>&1 &
+          echo $! > "$PIDF"
+          echo "Deploy arka planda başladı pid=$(cat "$PIDF")"
           REMOTE
+
+          # 2) Poll: yeni satırları bas, bitince exit koduna bak
+          echo "Deploy izleniyor (SSH kopsa bile VPS build devam eder)…"
+          DEADLINE=$((SECONDS + 2700))
+          while [ "$SECONDS" -lt "$DEADLINE" ]; do
+            if ! RESULT="$(ssh_cmd 'bash -s' <<'POLL'
+          set -e
+          LOG=/tmp/teklifbu-deploy.log
+          EXITF=/tmp/teklifbu-deploy.exit
+          OFF=/tmp/teklifbu-deploy.off
+          PIDF=/tmp/teklifbu-deploy.pid
+          seen=$(cat "$OFF" 2>/dev/null || echo 0)
+          total=0
+          if [ -f "$LOG" ]; then
+            total=$(wc -l < "$LOG" | tr -d " ")
+            if [ "$total" -gt "$seen" ]; then
+              sed -n "$((seen + 1)),${total}p" "$LOG"
+              echo "$total" > "$OFF"
+            fi
+          fi
+          echo "---MARK---"
+          if [ -f "$EXITF" ]; then
+            echo "EXIT:$(cat "$EXITF")"
+          elif [ -f "$PIDF" ] && ! kill -0 "$(cat "$PIDF")" 2>/dev/null; then
+            echo "EXIT:MISSING"
+          else
+            echo "EXIT:RUNNING"
+          fi
+          POLL
+          )"; then
+              echo "Uyarı: poll SSH başarısız — 20s sonra tekrar"
+              sleep 20
+              continue
+            fi
+
+            printf '%s\n' "$RESULT" | sed '/---MARK---/,$d'
+            STATUS="$(printf '%s\n' "$RESULT" | sed -n 's/^EXIT://p' | tail -n 1)"
+
+            case "$STATUS" in
+              RUNNING|"") sleep 20 ;;
+              0)
+                echo "Deploy HEALTHY (exit 0)"
+                exit 0
+                ;;
+              MISSING)
+                echo "Deploy process beklenmedik şekilde bitti"
+                exit 1
+                ;;
+              *)
+                echo "Deploy FAILED (exit ${STATUS})"
+                exit 1
+                ;;
+            esac
+          done
+
+          echo "Deploy zaman aşımı (45dk)"
+          exit 1
